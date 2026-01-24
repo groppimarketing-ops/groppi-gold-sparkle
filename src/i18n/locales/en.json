@@ -57,8 +57,12 @@
     "success": "Message sent successfully!",
     "error": "Failed to send message. Please try again.",
     "address": "Address",
+    "mobileLabel": "Mobile",
+    "officeLabel": "Office Line",
     "phoneLabel": "Phone",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "hoursLabel": "Working Hours",
+    "hoursValue": "Mon - Fri: 9:00 - 18:00"
   },
   "footer": {
     "rights": "All rights reserved.",

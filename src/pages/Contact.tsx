@@ -67,10 +67,40 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: MapPin, title: t('contact.address'), content: '123 Luxury Avenue, Cairo, Egypt' },
-    { icon: Phone, title: t('contact.phoneLabel'), content: '+20 123 456 7890' },
-    { icon: Mail, title: t('contact.emailLabel'), content: 'info@groppi.com' },
-    { icon: Clock, title: isRtl ? 'ساعات العمل' : 'Working Hours', content: 'Sun - Thu: 9AM - 6PM' },
+    { 
+      icon: MapPin, 
+      title: t('contact.address'), 
+      content: 'Het Steeke 5A, 2330 Merksplas, Belgium',
+      href: 'https://maps.google.com/?q=Het+Steeke+5A,+2330+Merksplas,+Belgium',
+      isLink: true
+    },
+    { 
+      icon: Phone, 
+      title: t('contact.mobileLabel'), 
+      content: '+32 494 311 119',
+      href: 'tel:+32494311119',
+      isLink: true
+    },
+    { 
+      icon: Phone, 
+      title: t('contact.officeLabel'), 
+      content: '+32 14 63 50 05',
+      href: 'tel:+3214635005',
+      isLink: true
+    },
+    { 
+      icon: Mail, 
+      title: t('contact.emailLabel'), 
+      content: 'info@groppi.be',
+      href: 'mailto:info@groppi.be',
+      isLink: true
+    },
+    { 
+      icon: Clock, 
+      title: t('contact.hoursLabel'), 
+      content: t('contact.hoursValue'),
+      isLink: false
+    },
   ];
 
   return (
@@ -211,32 +241,52 @@ const Contact = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="flex items-start gap-4 p-6"
+                  className="flex items-start gap-4 p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 group"
                 >
                   <motion.div 
-                    className="w-12 h-12 rounded-xl glass-card flex items-center justify-center shrink-0"
-                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    className="w-14 h-14 rounded-2xl glass-card flex items-center justify-center shrink-0 border border-primary/30 shadow-lg shadow-primary/10"
+                    whileHover={{ scale: 1.15, rotate: 10 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                   >
-                    <info.icon className="w-6 h-6 text-primary" />
+                    <info.icon className="w-7 h-7 text-primary drop-shadow-[0_0_8px_rgba(218,165,32,0.5)]" />
                   </motion.div>
-                  <div>
-                    <h4 className="font-semibold mb-1 gold-gradient-text">{info.title}</h4>
-                    <p className="text-muted-foreground">{info.content}</p>
+                  <div className="flex-1">
+                    <h4 className="font-semibold mb-2 gold-gradient-text text-lg">{info.title}</h4>
+                    {info.isLink ? (
+                      <motion.a
+                        href={info.href}
+                        target={info.icon === MapPin ? '_blank' : undefined}
+                        rel={info.icon === MapPin ? 'noopener noreferrer' : undefined}
+                        className="text-muted-foreground hover:text-primary transition-colors duration-300 inline-flex items-center gap-2 group-hover:text-primary"
+                        whileHover={{ x: 5 }}
+                      >
+                        {info.content}
+                        <motion.span
+                          initial={{ opacity: 0, x: -5 }}
+                          whileHover={{ opacity: 1, x: 0 }}
+                          className="text-primary"
+                        >
+                          →
+                        </motion.span>
+                      </motion.a>
+                    ) : (
+                      <p className="text-muted-foreground">{info.content}</p>
+                    )}
                   </div>
                 </GlassCard>
               ))}
 
               {/* Map */}
-              <GlassCard className="aspect-video overflow-hidden !p-0">
+              <GlassCard className="aspect-video overflow-hidden !p-0 border border-primary/20">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.5!2d31.2357!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzM5LjgiTiAzMcKwMTQnMDguNSJF!5e0!3m2!1sen!2seg!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2496.8!2d4.8547!3d51.3547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6a9d15e52d8e7%3A0x1!2sHet+Steeke+5A%2C+2330+Merksplas%2C+Belgium!5e0!3m2!1sen!2sbe!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: 'invert(0.9) hue-rotate(180deg)' }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Location Map"
+                  title="GROPPI Location - Merksplas, Belgium"
                 />
               </GlassCard>
             </motion.div>

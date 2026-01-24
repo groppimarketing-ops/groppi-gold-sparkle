@@ -43,6 +43,10 @@
     "description": "Explorez notre collection de visuels époustouflants présentant notre travail et nos réalisations."
   },
   "contact": {
+    "mobileLabel": "Mobile",
+    "officeLabel": "Ligne de bureau",
+    "hoursLabel": "Heures d'ouverture",
+    "hoursValue": "Lun - Ven: 9h00 - 18h00",
     "title": "Contactez-nous",
     "subtitle": "Prenez contact",
     "description": "Nous serions ravis de vous entendre. Envoyez-nous un message et nous vous répondrons dès que possible.",

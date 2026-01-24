@@ -45,6 +45,10 @@
   "contact": {
     "title": "Contact",
     "subtitle": "Neem contact op",
+    "mobileLabel": "Mobiel",
+    "officeLabel": "Kantoorlijn",
+    "hoursLabel": "Openingstijden",
+    "hoursValue": "Ma - Vr: 9:00 - 18:00",
     "description": "We horen graag van u. Stuur ons een bericht en we reageren zo snel mogelijk.",
     "name": "Uw naam",
     "email": "E-mailadres",

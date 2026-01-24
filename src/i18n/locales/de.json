@@ -43,6 +43,10 @@
     "description": "Entdecken Sie unsere Sammlung atemberaubender Bilder, die unsere Arbeit und Erfolge zeigen."
   },
   "contact": {
+    "mobileLabel": "Mobil",
+    "officeLabel": "Bürolinie",
+    "hoursLabel": "Öffnungszeiten",
+    "hoursValue": "Mo - Fr: 9:00 - 18:00",
     "title": "Kontakt",
     "subtitle": "Nehmen Sie Kontakt auf",
     "description": "Wir freuen uns von Ihnen zu hören. Senden Sie uns eine Nachricht und wir antworten so schnell wie möglich.",
