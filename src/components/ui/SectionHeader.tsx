@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
 
@@ -9,15 +10,16 @@ interface SectionHeaderProps {
   showSparkle?: boolean;
 }
 
-const SectionHeader = ({ 
+const SectionHeader = forwardRef<HTMLDivElement, SectionHeaderProps>(({ 
   title, 
   subtitle, 
   description, 
   centered = true,
   showSparkle = false 
-}: SectionHeaderProps) => {
+}, ref) => {
   return (
     <motion.div
+      ref={ref}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -76,6 +78,8 @@ const SectionHeader = ({
       </motion.div>
     </motion.div>
   );
-};
+});
+
+SectionHeader.displayName = 'SectionHeader';
 
 export default SectionHeader;

@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Sparkles, ArrowRight, ChevronRight, Crown, Diamond, Star } from 'lucide-react';
@@ -13,7 +14,7 @@ interface DynamicSectionProps {
   getMediaUrl: (sectionId: string, contentKey: string, fallback?: string | null) => string | null;
 }
 
-const DynamicSection = ({ section, getContent, getMediaUrl }: DynamicSectionProps) => {
+const DynamicSection = forwardRef<HTMLElement, DynamicSectionProps>(({ section, getContent, getMediaUrl }, ref) => {
   const { t, i18n } = useTranslation();
   const isRtl = i18n.language === 'ar' || i18n.language === 'ur';
 
@@ -333,6 +334,8 @@ const DynamicSection = ({ section, getContent, getMediaUrl }: DynamicSectionProp
     default:
       return null;
   }
-};
+});
+
+DynamicSection.displayName = 'DynamicSection';
 
 export default DynamicSection;
