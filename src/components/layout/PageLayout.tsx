@@ -12,7 +12,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
     <div className="min-h-screen bg-background flex flex-col">
       <TopBar />
       <Header />
-      <main className="flex-1 pt-28">
+      <main className="flex-1 pt-32">
         {children}
       </main>
       <Footer />
