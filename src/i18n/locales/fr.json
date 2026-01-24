@@ -4,121 +4,151 @@
     "about": "À propos",
     "services": "Services",
     "blog": "Blog",
-    "gallery": "Galerie",
+    "gallery": "Portfolio",
     "contact": "Contact",
-    "franchise": "Franchise"
+    "franchise": "Partenariat"
   },
   "hero": {
-    "title": "GROPPI: Créativité Numérique Sans Frontières",
-    "subtitle": "L'excellence dans chaque détail",
-    "description": "Nous utilisons des solutions alimentées par l'IA pour transformer votre présence numérique. Découvrez des services innovants de création de contenu et de marketing qui génèrent des résultats.",
+    "title": "GROPPI – Expertise humaine, renforcée par une technologie intelligente",
+    "subtitle": "Votre partenaire digital stratégique depuis 2016",
+    "description": "GROPPI a été fondée en Belgique en 2016 et repose sur une expérience réelle, une vision stratégique et des partenariats durables. Avec une équipe multidisciplinaire de plus de 9 professionnels, nous accompagnons les entreprises en Belgique, en Europe et au Moyen-Orient avec des solutions digitales sur mesure. Nous utilisons l'IA comme accélérateur intelligent, jamais comme substitut à la créativité humaine ou à la prise de décision.",
     "cta": "Réserver une consultation gratuite",
     "ctaSecondary": "Voir nos réalisations"
   },
   "about": {
-    "title": "À propos",
+    "title": "À propos de GROPPI",
     "subtitle": "Notre histoire",
-    "description": "GROPPI est une agence de marketing digital pionnière dans l'utilisation de l'IA pour la création de contenu et les services marketing. Notre engagement envers l'innovation et la qualité fait de nous un partenaire de confiance pour les entreprises à travers l'Europe.",
+    "description": "GROPPI a débuté en Belgique en 2016 et a grandi grâce à des années d'expérience pratique, de partenariats solides et de résultats prouvés. Aujourd'hui, nous collaborons avec des clients en Europe et au Moyen-Orient, combinant stratégie, créativité et technologie pour une croissance digitale durable.",
     "mission": "Notre mission",
-    "missionText": "Offrir des solutions numériques exceptionnelles qui dépassent les attentes et stimulent une croissance commerciale mesurable.",
+    "missionText": "Aider les entreprises à croître grâce à des solutions digitales stratégiques basées sur l'expertise humaine, soutenues par une technologie intelligente.",
     "vision": "Notre vision",
-    "visionText": "Être l'agence de marketing digital leader utilisant l'IA pour l'excellence créative.",
+    "visionText": "Être un partenaire de confiance pour les entreprises recherchant une croissance digitale durable, avec une équipe qui comprend vraiment ce qui fonctionne.",
     "values": "Nos valeurs",
-    "valuesText": "Innovation, transparence, qualité et succès client."
+    "valuesText": "Fiabilité, savoir-faire, transparence et relations à long terme.",
+    "stats": {
+      "years": "Années d'expérience",
+      "clients": "Clients satisfaits",
+      "projects": "Projets réalisés",
+      "team": "Professionnels"
+    },
+    "timeline": {
+      "2016": {
+        "title": "Fondation en Belgique",
+        "description": "GROPPI a été fondée avec une vision claire : le marketing digital avec une approche personnelle."
+      },
+      "2018": {
+        "title": "Expansion de l'équipe",
+        "description": "L'équipe s'est agrandie à 5 spécialistes avec des expertises dans différents domaines."
+      },
+      "2020": {
+        "title": "Croissance européenne",
+        "description": "Collaborations réussies avec des clients aux Pays-Bas, en Allemagne et en France."
+      },
+      "2023": {
+        "title": "Moyen-Orient",
+        "description": "Expansion vers le marché arabe grâce à des partenariats locaux."
+      }
+    }
+  },
+  "ai": {
+    "title": "L'IA comme force de soutien",
+    "description": "Chez GROPPI, nous utilisons l'intelligence artificielle pour accélérer les processus, analyser les données et optimiser les performances. Cependant, la vision, la stratégie et les décisions créatives restent toujours entre les mains de professionnels expérimentés.",
+    "subtitle": "La technologie au service de l'humain"
   },
   "services": {
     "title": "Nos services",
     "subtitle": "Ce que nous offrons",
-    "description": "Solutions de marketing digital complètes alimentées par l'IA pour élever votre marque et stimuler la croissance.",
+    "description": "Nous ne travaillons pas avec des forfaits fixes. Chaque service est adapté aux objectifs du client et exécuté par une équipe spécialisée, soutenue par une technologie intelligente là où elle apporte de la valeur.",
     "monthly": "Mensuel",
-    "oneTime": "Unique",
+    "oneTime": "Ponctuel",
     "customQuote": "Sur mesure",
     "startingFrom": "À partir de",
     "requestQuote": "Demander un devis",
-    "getQuote": "Obtenir un devis personnalisé",
-    "noResults": "Aucun service ne correspond à vos critères de filtrage.",
+    "getQuote": "Obtenir un devis",
+    "videoPlaceholder": "Voir la vidéo explicative",
+    "noResults": "Aucun service ne correspond à vos critères.",
     "filters": {
       "all": "Tous les services",
-      "monthly": "Abonnement",
-      "oneTime": "Paiement unique",
+      "monthly": "Abonnement mensuel",
+      "oneTime": "Projets ponctuels",
       "custom": "Projets sur mesure"
     },
     "items": {
       "aiContent": {
-        "title": "Contenu Visuel & Branding IA",
-        "description": "Créez du contenu visuel époustouflant et une identité de marque grâce à la technologie IA de pointe. Des logos aux campagnes visuelles complètes.",
+        "title": "Contenu visuel & Branding",
+        "description": "Contenu visuel professionnel et identité de marque, soutenus par des outils modernes. De la conception de logo aux campagnes visuelles complètes.",
         "features": {
-          "0": "Assets visuels générés par IA",
+          "0": "Assets visuels professionnels",
           "1": "Design d'identité de marque",
-          "2": "Packs de contenu social media",
-          "3": "Amélioration de photos produits"
+          "2": "Packs de contenu réseaux sociaux",
+          "3": "Photographie produit & retouche"
         }
       },
       "webDev": {
-        "title": "Conception & Développement Web",
-        "description": "Sites web sur mesure et responsives qui convertissent les visiteurs en clients. Designs modernes avec performances optimales.",
+        "title": "Conception & Développement web",
+        "description": "Sites web sur mesure et responsifs qui convertissent les visiteurs en clients. Designs modernes avec des performances optimales.",
         "features": {
           "0": "Design responsive personnalisé",
           "1": "Structure optimisée SEO",
-          "2": "Vitesse de chargement rapide",
-          "3": "Intégration CMS"
+          "2": "Temps de chargement rapides",
+          "3": "Système de gestion de contenu"
         }
       },
       "ecommerce": {
-        "title": "Solutions E-Commerce",
+        "title": "Solutions e-commerce",
         "description": "Configuration complète de boutique en ligne avec intégration de paiement, gestion des stocks et optimisation des conversions.",
         "features": {
           "0": "Configuration complète de boutique",
           "1": "Intégration passerelle de paiement",
-          "2": "Système de gestion produits",
+          "2": "Système de gestion des produits",
           "3": "Optimisation des conversions"
         }
       },
       "ads": {
-        "title": "Gestion Publicitaire",
-        "description": "Campagnes publicitaires stratégiques sur Google, Meta et autres plateformes. Optimisation basée sur les données pour un ROI maximum.",
+        "title": "Gestion publicitaire",
+        "description": "Campagnes publicitaires stratégiques via Google, Meta et autres plateformes. Optimisation basée sur les données pour un ROI maximal.",
         "features": {
           "0": "Gestion Google Ads",
           "1": "Publicité Meta",
-          "2": "Analyse de campagnes",
+          "2": "Analyse de campagne",
           "3": "Tests A/B & optimisation"
         }
       },
       "seo": {
-        "title": "Référencement Naturel",
-        "description": "Améliorez votre visibilité organique et classez-vous mieux dans les moteurs de recherche. SEO technique, stratégie de contenu et netlinking.",
+        "title": "Optimisation pour les moteurs de recherche",
+        "description": "Améliorez votre visibilité organique et classez-vous plus haut dans les moteurs de recherche. SEO technique, stratégie de contenu et netlinking.",
         "features": {
           "0": "Audit SEO technique",
-          "1": "Recherche & stratégie mots-clés",
+          "1": "Recherche de mots-clés",
           "2": "Optimisation de contenu",
-          "3": "Netlinking"
+          "3": "Stratégie de netlinking"
         }
       },
       "social": {
-        "title": "Gestion Réseaux Sociaux",
+        "title": "Gestion des réseaux sociaux",
         "description": "Gestion complète de votre présence sur les réseaux sociaux. Création de contenu, planification, engagement et stratégies de croissance.",
         "features": {
-          "0": "Calendrier & planification contenu",
+          "0": "Calendrier & planification de contenu",
           "1": "Gestion de communauté",
           "2": "Engagement & croissance",
-          "3": "Analytics & reporting"
+          "3": "Rapports mensuels"
         }
       },
       "reputation": {
-        "title": "Gestion Réputation & Avis",
-        "description": "Construisez et protégez votre réputation en ligne. Gestion des avis, stratégies de réponse et surveillance de marque.",
+        "title": "Gestion de la réputation & des avis",
+        "description": "Construisez et protégez votre réputation en ligne. Gestion des avis, stratégies de réponse et surveillance de la marque.",
         "features": {
           "0": "Surveillance des avis",
           "1": "Gestion des réponses",
-          "2": "Récupération de réputation",
+          "2": "Restauration de réputation",
           "3": "Analyse du sentiment de marque"
         }
       },
       "dataSync": {
-        "title": "Synchronisation de Données",
+        "title": "Synchronisation des données",
         "description": "Gardez vos données d'entreprise synchronisées sur toutes les plateformes. Gestion des stocks, prix et informations produits.",
         "features": {
-          "0": "Sync multi-plateformes",
+          "0": "Synchronisation multi-plateformes",
           "1": "Mises à jour en temps réel",
           "2": "Gestion des stocks",
           "3": "Intégrations API"
@@ -126,73 +156,117 @@
       }
     },
     "ai": {
-      "title": "Propulsé par l'IA",
-      "description": "Nous exploitons l'intelligence artificielle de pointe pour offrir des solutions marketing plus rapides, plus intelligentes et plus efficaces. Nos workflows améliorés par l'IA garantissent cohérence et qualité à grande échelle.",
-      "cta": "Commencer",
+      "title": "Soutenu par une technologie intelligente",
+      "description": "Nous exploitons la technologie moderne pour travailler plus efficacement et livrer de meilleurs résultats. La stratégie et les décisions créatives restent toujours entre les mains de notre équipe expérimentée.",
+      "cta": "Nous contacter",
       "learnMore": "En savoir plus"
     },
     "process": {
-      "subtitle": "Notre façon de travailler",
+      "subtitle": "Comment nous travaillons",
       "title": "Notre processus",
       "steps": {
         "0": {
-          "title": "Consultation",
-          "description": "Nous commençons par une consultation gratuite pour comprendre votre entreprise, vos objectifs et vos défis."
+          "title": "Prise de contact",
+          "description": "Nous commençons par une conversation gratuite pour comprendre votre entreprise, vos objectifs et vos défis."
         },
         "1": {
-          "title": "Proposition personnalisée",
-          "description": "Selon vos besoins, nous créons une proposition détaillée avec des prix transparents et des délais."
+          "title": "Proposition sur mesure",
+          "description": "En fonction de vos besoins, nous créons une proposition détaillée avec des prix transparents et un calendrier."
         },
         "2": {
           "title": "Exécution & Optimisation",
-          "description": "Nous mettons en œuvre la solution et optimisons continuellement en fonction des données de performance."
+          "description": "Nous implémentons la solution et optimisons continuellement en fonction des résultats et des retours."
         }
       }
     },
     "cta": {
-      "title": "Prêt à transformer votre présence numérique ?",
-      "description": "Contactez-nous aujourd'hui pour discuter de la façon dont nous pouvons vous aider à atteindre vos objectifs commerciaux avec nos solutions alimentées par l'IA.",
-      "button": "Obtenez votre devis personnalisé"
+      "title": "Prêt à renforcer votre présence digitale ?",
+      "description": "Contactez-nous aujourd'hui pour une conversation sans engagement sur la façon dont nous pouvons vous aider à atteindre vos objectifs commerciaux.",
+      "button": "Demander un devis gratuit"
     }
   },
   "blog": {
-    "title": "Conseils & Insights",
+    "title": "Insights & Conseils",
     "subtitle": "Restez informé",
     "readMore": "Lire la suite",
     "publishedOn": "Publié le",
     "by": "par"
   },
   "gallery": {
-    "title": "Galerie",
-    "subtitle": "Excellence visuelle",
-    "description": "Explorez notre collection de visuels époustouflants présentant notre travail et nos réalisations."
+    "title": "Nos réalisations",
+    "subtitle": "Portfolio",
+    "description": "Découvrez une sélection de projets que nous avons réalisés pour nos clients.",
+    "filters": {
+      "all": "Tout",
+      "web": "Sites web",
+      "branding": "Branding",
+      "social": "Réseaux sociaux",
+      "ecommerce": "E-commerce"
+    }
   },
   "contact": {
+    "title": "Nous contacter",
+    "subtitle": "Parlons ensemble",
+    "intro": "Vous avez un projet en tête ou souhaitez renforcer votre présence digitale ? Contactez-nous pour une conversation sans engagement.",
     "mobileLabel": "Mobile",
-    "officeLabel": "Ligne de bureau",
+    "officeLabel": "Bureau",
     "hoursLabel": "Heures d'ouverture",
-    "hoursValue": "Lun - Ven: 9h00 - 18h00",
-    "title": "Contactez-nous",
-    "subtitle": "Prenez contact",
-    "description": "Nous serions ravis de vous entendre. Envoyez-nous un message et nous vous répondrons dès que possible.",
-    "name": "Votre nom",
+    "hoursValue": "Lun - Ven : 9h00 - 18h00",
+    "description": "Nous serions ravis de vous entendre. Remplissez le formulaire et nous vous recontacterons dès que possible.",
+    "name": "Nom",
     "email": "Adresse e-mail",
     "phone": "Numéro de téléphone",
+    "company": "Entreprise",
     "subject": "Sujet",
     "message": "Votre message",
-    "send": "Envoyer le message",
+    "send": "Envoyer",
     "sending": "Envoi en cours...",
-    "success": "Message envoyé avec succès !",
-    "error": "Échec de l'envoi. Veuillez réessayer.",
+    "success": "Message envoyé avec succès ! Nous vous recontacterons dès que possible.",
+    "error": "Une erreur s'est produite. Veuillez réessayer ou nous appeler.",
     "address": "Adresse",
     "phoneLabel": "Téléphone",
     "emailLabel": "E-mail"
   },
+  "franchise": {
+    "title": "Partenariat",
+    "subtitle": "Devenir partenaire",
+    "description": "Vous êtes intéressé par un partenariat avec GROPPI ? Découvrez les opportunités de croître ensemble.",
+    "benefits": {
+      "title": "Avantages du partenariat",
+      "items": {
+        "0": "Accès à des processus et méthodologies éprouvés",
+        "1": "Soutien de notre équipe expérimentée",
+        "2": "Efforts marketing conjoints",
+        "3": "Partage de connaissances et formation"
+      }
+    },
+    "requirements": {
+      "title": "Ce que nous recherchons",
+      "items": {
+        "0": "Expérience en marketing digital ou domaine connexe",
+        "1": "Esprit entrepreneurial et mentalité de croissance",
+        "2": "Engagement envers la qualité et la satisfaction client",
+        "3": "Volonté de collaboration à long terme"
+      }
+    },
+    "cta": "Contactez-nous pour plus d'informations",
+    "apply": "Postuler maintenant",
+    "call": "Appelez-nous"
+  },
   "footer": {
     "rights": "Tous droits réservés.",
+    "description": "Solutions digitales depuis 2016. Basé en Belgique.",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
-    "followUs": "Suivez-nous"
+    "followUs": "Suivez-nous",
+    "quickLinks": "Liens rapides",
+    "contact": "Coordonnées",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Restez informé de nos derniers insights et conseils.",
+      "placeholder": "Votre adresse e-mail",
+      "button": "S'abonner"
+    }
   },
   "common": {
     "loading": "Chargement...",
@@ -203,13 +277,26 @@
     "previous": "Précédent",
     "close": "Fermer",
     "search": "Rechercher",
-    "noResults": "Aucun résultat"
+    "noResults": "Aucun résultat trouvé",
+    "learnMore": "En savoir plus",
+    "getStarted": "Commencer",
+    "viewAll": "Voir tout"
   },
   "validation": {
-    "required": "Ce champ est requis",
+    "required": "Ce champ est obligatoire",
     "email": "Veuillez entrer une adresse e-mail valide",
-    "minLength": "Doit contenir au moins {{count}} caractères",
-    "maxLength": "Doit contenir moins de {{count}} caractères"
+    "minLength": "Minimum {{count}} caractères requis",
+    "maxLength": "Maximum {{count}} caractères autorisés"
+  },
+  "stats": {
+    "years": "Années d'expérience",
+    "yearsValue": "9+",
+    "clients": "Clients satisfaits",
+    "clientsValue": "150+",
+    "projects": "Projets",
+    "projectsValue": "500+",
+    "team": "Membres de l'équipe",
+    "teamValue": "9+"
   },
   "admin": {
     "dashboard": "Tableau de bord",

@@ -4,70 +4,269 @@
     "about": "Über uns",
     "services": "Dienstleistungen",
     "blog": "Blog",
-    "gallery": "Galerie",
-    "contact": "Kontakt"
+    "gallery": "Portfolio",
+    "contact": "Kontakt",
+    "franchise": "Partnerschaft"
   },
   "hero": {
-    "title": "Groppi Gold Standard",
-    "subtitle": "Exzellenz in jedem Detail",
-    "description": "Wir setzen seit 1891 den Maßstab für Luxus und Qualität. Erleben Sie feinste Handwerkskunst und unvergleichlichen Service.",
-    "cta": "Mehr entdecken",
-    "ctaSecondary": "Kontaktieren Sie uns"
+    "title": "GROPPI – Menschliche Expertise, unterstützt durch intelligente Technologie",
+    "subtitle": "Ihr strategischer digitaler Partner seit 2016",
+    "description": "GROPPI wurde 2016 in Belgien gegründet und basiert auf echter Erfahrung, strategischer Einsicht und nachhaltigen Partnerschaften. Mit einem multidisziplinären Team von über 9 Fachleuten unterstützen wir Unternehmen in Belgien, Europa und dem Nahen Osten mit maßgeschneiderten digitalen Lösungen. Wir nutzen KI als intelligenten Beschleuniger, niemals als Ersatz für menschliche Kreativität oder Entscheidungsfindung.",
+    "cta": "Kostenlose Beratung buchen",
+    "ctaSecondary": "Unsere Arbeit ansehen"
   },
   "about": {
-    "title": "Über uns",
+    "title": "Über GROPPI",
     "subtitle": "Unsere Geschichte",
-    "description": "Seit über einem Jahrhundert steht Groppi für Exzellenz und Luxus. Unser Engagement für Qualität und Tradition hat uns zu einem vertrauenswürdigen Namen in der Branche gemacht.",
+    "description": "GROPPI begann 2016 in Belgien und wuchs durch Jahre praktischer Erfahrung, starker Partnerschaften und bewährter Ergebnisse. Heute arbeiten wir mit Kunden in Europa und dem Nahen Osten zusammen und verbinden Strategie, Kreativität und Technologie für nachhaltiges digitales Wachstum.",
     "mission": "Unsere Mission",
-    "missionText": "Außergewöhnliche Produkte und Dienstleistungen zu liefern, die Erwartungen übertreffen und bleibende Erinnerungen schaffen.",
+    "missionText": "Unternehmen beim Wachstum durch strategische digitale Lösungen zu helfen, die auf menschlicher Expertise basieren und durch intelligente Technologie unterstützt werden.",
     "vision": "Unsere Vision",
-    "visionText": "Der globale Marktführer für Luxus- und Premium-Qualitätserlebnisse zu sein.",
+    "visionText": "Ein vertrauenswürdiger Partner für Unternehmen zu sein, die nachhaltiges digitales Wachstum anstreben, mit einem Team, das wirklich versteht, was funktioniert.",
     "values": "Unsere Werte",
-    "valuesText": "Exzellenz, Integrität, Innovation und Kundenzufriedenheit."
+    "valuesText": "Zuverlässigkeit, Handwerkskunst, Transparenz und langfristige Beziehungen.",
+    "stats": {
+      "years": "Jahre Erfahrung",
+      "clients": "Zufriedene Kunden",
+      "projects": "Abgeschlossene Projekte",
+      "team": "Fachleute"
+    },
+    "timeline": {
+      "2016": {
+        "title": "Gründung in Belgien",
+        "description": "GROPPI wurde mit einer klaren Vision gegründet: digitales Marketing mit persönlichem Ansatz."
+      },
+      "2018": {
+        "title": "Teamerweiterung",
+        "description": "Das Team wuchs auf 5 Spezialisten mit Expertise in verschiedenen Bereichen."
+      },
+      "2020": {
+        "title": "Europäisches Wachstum",
+        "description": "Erfolgreiche Zusammenarbeit mit Kunden in den Niederlanden, Deutschland und Frankreich."
+      },
+      "2023": {
+        "title": "Naher Osten",
+        "description": "Expansion in den arabischen Markt durch lokale Partnerschaften."
+      }
+    }
+  },
+  "ai": {
+    "title": "KI als unterstützende Kraft",
+    "description": "Bei GROPPI nutzen wir künstliche Intelligenz, um Prozesse zu beschleunigen, Daten zu analysieren und die Leistung zu optimieren. Vision, Strategie und kreative Entscheidungen bleiben jedoch immer in den Händen erfahrener Fachleute.",
+    "subtitle": "Technologie im Dienst des Menschen"
   },
   "services": {
     "title": "Unsere Dienstleistungen",
     "subtitle": "Was wir anbieten",
-    "description": "Entdecken Sie unser umfassendes Angebot an Premium-Dienstleistungen, die auf Ihre höchsten Erwartungen zugeschnitten sind."
+    "description": "Wir arbeiten nicht mit festen Paketen. Jede Dienstleistung wird auf die Ziele des Kunden abgestimmt und von einem spezialisierten Team ausgeführt, unterstützt durch intelligente Technologie, wo sie Mehrwert bietet.",
+    "monthly": "Monatlich",
+    "oneTime": "Einmalig",
+    "customQuote": "Individuell",
+    "startingFrom": "Ab",
+    "requestQuote": "Angebot anfordern",
+    "getQuote": "Angebot erhalten",
+    "videoPlaceholder": "Kurzes Erklärvideo ansehen",
+    "noResults": "Keine Dienstleistungen entsprechen Ihren Filterkriterien.",
+    "filters": {
+      "all": "Alle Dienstleistungen",
+      "monthly": "Monatliches Abonnement",
+      "oneTime": "Einmalige Projekte",
+      "custom": "Individuelle Projekte"
+    },
+    "items": {
+      "aiContent": {
+        "title": "Visueller Content & Branding",
+        "description": "Professioneller visueller Content und Markenidentität, unterstützt durch moderne Tools. Vom Logo-Design bis hin zu kompletten visuellen Kampagnen.",
+        "features": {
+          "0": "Professionelle visuelle Assets",
+          "1": "Markenidentitätsdesign",
+          "2": "Social-Media-Content-Pakete",
+          "3": "Produktfotografie & Bearbeitung"
+        }
+      },
+      "webDev": {
+        "title": "Webdesign & Entwicklung",
+        "description": "Maßgeschneiderte, responsive Websites, die Besucher in Kunden verwandeln. Moderne Designs mit optimaler Leistung.",
+        "features": {
+          "0": "Individuelles responsives Design",
+          "1": "SEO-optimierte Struktur",
+          "2": "Schnelle Ladezeiten",
+          "3": "Content-Management-System"
+        }
+      },
+      "ecommerce": {
+        "title": "E-Commerce-Lösungen",
+        "description": "Komplette Webshop-Einrichtung mit Zahlungsintegration, Bestandsverwaltung und Conversion-Optimierung.",
+        "features": {
+          "0": "Komplette Webshop-Einrichtung",
+          "1": "Zahlungsgateway-Integration",
+          "2": "Produktmanagementsystem",
+          "3": "Conversion-Optimierung"
+        }
+      },
+      "ads": {
+        "title": "Werbungsmanagement",
+        "description": "Strategische Werbekampagnen über Google, Meta und andere Plattformen. Datengesteuerte Optimierung für maximalen ROI.",
+        "features": {
+          "0": "Google Ads Management",
+          "1": "Meta-Werbung",
+          "2": "Kampagnenanalyse",
+          "3": "A/B-Tests & Optimierung"
+        }
+      },
+      "seo": {
+        "title": "Suchmaschinenoptimierung",
+        "description": "Verbessern Sie Ihre organische Sichtbarkeit und ranken Sie höher in Suchmaschinen. Technisches SEO, Content-Strategie und Linkaufbau.",
+        "features": {
+          "0": "Technisches SEO-Audit",
+          "1": "Keyword-Recherche",
+          "2": "Content-Optimierung",
+          "3": "Linkaufbau-Strategie"
+        }
+      },
+      "social": {
+        "title": "Social-Media-Management",
+        "description": "Vollständiges Management Ihrer Social-Media-Präsenz. Content-Erstellung, Planung, Engagement und Wachstumsstrategien.",
+        "features": {
+          "0": "Content-Kalender & Planung",
+          "1": "Community-Management",
+          "2": "Engagement & Wachstum",
+          "3": "Monatliche Berichte"
+        }
+      },
+      "reputation": {
+        "title": "Reputations- & Bewertungsmanagement",
+        "description": "Bauen und schützen Sie Ihre Online-Reputation. Bewertungsmanagement, Antwortstrategien und Markenüberwachung.",
+        "features": {
+          "0": "Bewertungsüberwachung",
+          "1": "Antwortmanagement",
+          "2": "Reputationswiederherstellung",
+          "3": "Markenstimmungsanalyse"
+        }
+      },
+      "dataSync": {
+        "title": "Datensynchronisation",
+        "description": "Halten Sie Ihre Geschäftsdaten über alle Plattformen hinweg synchron. Bestands-, Preis- und Produktinformationsverwaltung.",
+        "features": {
+          "0": "Multi-Plattform-Synchronisation",
+          "1": "Echtzeit-Updates",
+          "2": "Bestandsverwaltung",
+          "3": "API-Integrationen"
+        }
+      }
+    },
+    "ai": {
+      "title": "Unterstützt durch intelligente Technologie",
+      "description": "Wir nutzen moderne Technologie, um effizienter zu arbeiten und bessere Ergebnisse zu liefern. Strategie und kreative Entscheidungen bleiben immer in den Händen unseres erfahrenen Teams.",
+      "cta": "Kontakt aufnehmen",
+      "learnMore": "Mehr erfahren"
+    },
+    "process": {
+      "subtitle": "Wie wir arbeiten",
+      "title": "Unser Prozess",
+      "steps": {
+        "0": {
+          "title": "Kennenlernen",
+          "description": "Wir beginnen mit einem kostenlosen Gespräch, um Ihr Unternehmen, Ihre Ziele und Herausforderungen zu verstehen."
+        },
+        "1": {
+          "title": "Individuelles Angebot",
+          "description": "Basierend auf Ihren Bedürfnissen erstellen wir ein detailliertes Angebot mit transparenten Preisen und Zeitplan."
+        },
+        "2": {
+          "title": "Umsetzung & Optimierung",
+          "description": "Wir implementieren die Lösung und optimieren kontinuierlich basierend auf Ergebnissen und Feedback."
+        }
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihre digitale Präsenz zu stärken?",
+      "description": "Kontaktieren Sie uns noch heute für ein unverbindliches Gespräch darüber, wie wir Ihnen helfen können, Ihre Geschäftsziele zu erreichen.",
+      "button": "Kostenloses Angebot anfordern"
+    }
   },
   "blog": {
-    "title": "Neueste Nachrichten",
+    "title": "Einblicke & Tipps",
     "subtitle": "Bleiben Sie informiert",
     "readMore": "Mehr lesen",
     "publishedOn": "Veröffentlicht am",
     "by": "von"
   },
   "gallery": {
-    "title": "Galerie",
-    "subtitle": "Visuelle Exzellenz",
-    "description": "Entdecken Sie unsere Sammlung atemberaubender Bilder, die unsere Arbeit und Erfolge zeigen."
+    "title": "Unsere Arbeit",
+    "subtitle": "Portfolio",
+    "description": "Entdecken Sie eine Auswahl von Projekten, die wir für unsere Kunden realisiert haben.",
+    "filters": {
+      "all": "Alle",
+      "web": "Websites",
+      "branding": "Branding",
+      "social": "Social Media",
+      "ecommerce": "E-Commerce"
+    }
   },
   "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Lassen Sie uns sprechen",
+    "intro": "Haben Sie ein Projekt im Sinn oder möchten Sie Ihre digitale Präsenz stärken? Kontaktieren Sie uns für ein unverbindliches Gespräch.",
     "mobileLabel": "Mobil",
-    "officeLabel": "Bürolinie",
+    "officeLabel": "Büro",
     "hoursLabel": "Öffnungszeiten",
     "hoursValue": "Mo - Fr: 9:00 - 18:00",
-    "title": "Kontakt",
-    "subtitle": "Nehmen Sie Kontakt auf",
-    "description": "Wir freuen uns von Ihnen zu hören. Senden Sie uns eine Nachricht und wir antworten so schnell wie möglich.",
-    "name": "Ihr Name",
+    "description": "Wir freuen uns, von Ihnen zu hören. Füllen Sie das Formular aus und wir melden uns so schnell wie möglich.",
+    "name": "Name",
     "email": "E-Mail-Adresse",
     "phone": "Telefonnummer",
+    "company": "Unternehmen",
     "subject": "Betreff",
     "message": "Ihre Nachricht",
-    "send": "Nachricht senden",
+    "send": "Senden",
     "sending": "Wird gesendet...",
-    "success": "Nachricht erfolgreich gesendet!",
-    "error": "Senden fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "success": "Nachricht erfolgreich gesendet! Wir melden uns so schnell wie möglich.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder rufen Sie uns an.",
     "address": "Adresse",
     "phoneLabel": "Telefon",
     "emailLabel": "E-Mail"
   },
+  "franchise": {
+    "title": "Partnerschaft",
+    "subtitle": "Partner werden",
+    "description": "Interessieren Sie sich für eine Partnerschaft mit GROPPI? Entdecken Sie die Möglichkeiten, gemeinsam zu wachsen.",
+    "benefits": {
+      "title": "Partnerschaftsvorteile",
+      "items": {
+        "0": "Zugang zu bewährten Prozessen und Methoden",
+        "1": "Unterstützung durch unser erfahrenes Team",
+        "2": "Gemeinsame Marketingaktivitäten",
+        "3": "Wissensaustausch und Schulung"
+      }
+    },
+    "requirements": {
+      "title": "Was wir suchen",
+      "items": {
+        "0": "Erfahrung im digitalen Marketing oder verwandtem Bereich",
+        "1": "Unternehmerisches Denken und Wachstumsmentalität",
+        "2": "Engagement für Qualität und Kundenzufriedenheit",
+        "3": "Bereitschaft zur langfristigen Zusammenarbeit"
+      }
+    },
+    "cta": "Kontaktieren Sie uns für weitere Informationen",
+    "apply": "Jetzt bewerben",
+    "call": "Rufen Sie uns an"
+  },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",
+    "description": "Digitale Lösungen seit 2016. Sitz in Belgien.",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
-    "followUs": "Folgen Sie uns"
+    "followUs": "Folgen Sie uns",
+    "quickLinks": "Schnelllinks",
+    "contact": "Kontaktdaten",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Bleiben Sie über unsere neuesten Einblicke und Tipps informiert.",
+      "placeholder": "Ihre E-Mail-Adresse",
+      "button": "Abonnieren"
+    }
   },
   "common": {
     "loading": "Laden...",
@@ -75,16 +274,29 @@
     "retry": "Erneut versuchen",
     "back": "Zurück",
     "next": "Weiter",
-    "previous": "Vorherige",
+    "previous": "Zurück",
     "close": "Schließen",
     "search": "Suchen",
-    "noResults": "Keine Ergebnisse gefunden"
+    "noResults": "Keine Ergebnisse gefunden",
+    "learnMore": "Mehr erfahren",
+    "getStarted": "Loslegen",
+    "viewAll": "Alle ansehen"
   },
   "validation": {
     "required": "Dieses Feld ist erforderlich",
     "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-    "minLength": "Muss mindestens {{count}} Zeichen lang sein",
-    "maxLength": "Muss weniger als {{count}} Zeichen haben"
+    "minLength": "Mindestens {{count}} Zeichen erforderlich",
+    "maxLength": "Maximal {{count}} Zeichen erlaubt"
+  },
+  "stats": {
+    "years": "Jahre Erfahrung",
+    "yearsValue": "9+",
+    "clients": "Zufriedene Kunden",
+    "clientsValue": "150+",
+    "projects": "Projekte",
+    "projectsValue": "500+",
+    "team": "Teammitglieder",
+    "teamValue": "9+"
   },
   "admin": {
     "dashboard": "Dashboard",
