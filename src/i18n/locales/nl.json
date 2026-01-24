@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over ons",
+    "services": "Diensten",
+    "blog": "Blog",
+    "gallery": "Galerij",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Groppi Gold Standard",
+    "subtitle": "Excellentie in elk detail",
+    "description": "Sinds 1891 de standaard voor luxe en kwaliteit. Ervaar het fijnste vakmanschap en ongeëvenaarde service.",
+    "cta": "Ontdek meer",
+    "ctaSecondary": "Neem contact op"
+  },
+  "about": {
+    "title": "Over ons",
+    "subtitle": "Ons verhaal",
+    "description": "Al meer dan een eeuw staat Groppi synoniem voor excellentie en luxe. Onze toewijding aan kwaliteit en traditie heeft ons tot een vertrouwde naam in de industrie gemaakt.",
+    "mission": "Onze missie",
+    "missionText": "Uitzonderlijke producten en diensten leveren die verwachtingen overtreffen en blijvende herinneringen creëren.",
+    "vision": "Onze visie",
+    "visionText": "De wereldleider zijn in luxe en premium kwaliteitservaringen.",
+    "values": "Onze waarden",
+    "valuesText": "Excellentie, integriteit, innovatie en klanttevredenheid."
+  },
+  "services": {
+    "title": "Onze diensten",
+    "subtitle": "Wat wij bieden",
+    "description": "Ontdek ons uitgebreide aanbod van premium diensten ontworpen om aan uw hoogste verwachtingen te voldoen."
+  },
+  "blog": {
+    "title": "Laatste nieuws",
+    "subtitle": "Blijf op de hoogte",
+    "readMore": "Lees meer",
+    "publishedOn": "Gepubliceerd op",
+    "by": "door"
+  },
+  "gallery": {
+    "title": "Galerij",
+    "subtitle": "Visuele excellentie",
+    "description": "Ontdek onze collectie van prachtige beelden die ons werk en prestaties tonen."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Neem contact op",
+    "description": "We horen graag van u. Stuur ons een bericht en we reageren zo snel mogelijk.",
+    "name": "Uw naam",
+    "email": "E-mailadres",
+    "phone": "Telefoonnummer",
+    "subject": "Onderwerp",
+    "message": "Uw bericht",
+    "send": "Verstuur bericht",
+    "sending": "Verzenden...",
+    "success": "Bericht succesvol verzonden!",
+    "error": "Verzenden mislukt. Probeer het opnieuw.",
+    "address": "Adres",
+    "phoneLabel": "Telefoon",
+    "emailLabel": "E-mail"
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden.",
+    "privacy": "Privacybeleid",
+    "terms": "Servicevoorwaarden",
+    "followUs": "Volg ons"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "retry": "Opnieuw proberen",
+    "back": "Terug",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "close": "Sluiten",
+    "search": "Zoeken",
+    "noResults": "Geen resultaten gevonden"
+  },
+  "validation": {
+    "required": "Dit veld is verplicht",
+    "email": "Voer een geldig e-mailadres in",
+    "minLength": "Moet minimaal {{count}} tekens bevatten",
+    "maxLength": "Moet minder dan {{count}} tekens bevatten"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "articles": "Artikelen",
+    "media": "Media",
+    "services": "Diensten",
+    "messages": "Berichten",
+    "settings": "Instellingen",
+    "logout": "Uitloggen",
+    "login": "Inloggen",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "loginTitle": "Admin login",
+    "loginButton": "Inloggen"
+  }
+}

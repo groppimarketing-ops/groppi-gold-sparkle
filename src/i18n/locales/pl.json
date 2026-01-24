@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "services": "Usługi",
+    "blog": "Blog",
+    "gallery": "Galeria",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Groppi Gold Standard",
+    "subtitle": "Doskonałość w każdym szczególe",
+    "description": "Wyznaczamy standardy luksusu i jakości od 1891 roku. Doświadcz najwyższego rzemiosła i niezrównanej obsługi.",
+    "cta": "Odkryj więcej",
+    "ctaSecondary": "Skontaktuj się"
+  },
+  "about": {
+    "title": "O nas",
+    "subtitle": "Nasza historia",
+    "description": "Od ponad wieku Groppi jest synonimem doskonałości i luksusu. Nasze zaangażowanie w jakość i tradycję uczyniło nas zaufaną marką w branży.",
+    "mission": "Nasza misja",
+    "missionText": "Dostarczać wyjątkowe produkty i usługi, które przekraczają oczekiwania i tworzą trwałe wspomnienia.",
+    "vision": "Nasza wizja",
+    "visionText": "Być globalnym liderem w doświadczeniach luksusowych i najwyższej jakości.",
+    "values": "Nasze wartości",
+    "valuesText": "Doskonałość, uczciwość, innowacja i satysfakcja klienta."
+  },
+  "services": {
+    "title": "Nasze usługi",
+    "subtitle": "Co oferujemy",
+    "description": "Poznaj naszą pełną gamę usług premium zaprojektowanych, aby spełnić Twoje najwyższe oczekiwania."
+  },
+  "blog": {
+    "title": "Aktualności",
+    "subtitle": "Bądź na bieżąco",
+    "readMore": "Czytaj więcej",
+    "publishedOn": "Opublikowano",
+    "by": "przez"
+  },
+  "gallery": {
+    "title": "Galeria",
+    "subtitle": "Wizualna doskonałość",
+    "description": "Odkryj naszą kolekcję wspaniałych wizualizacji prezentujących naszą pracę i osiągnięcia."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Skontaktuj się",
+    "description": "Chętnie usłyszymy od Ciebie. Wyślij nam wiadomość, a odpowiemy najszybciej jak to możliwe.",
+    "name": "Twoje imię",
+    "email": "Adres e-mail",
+    "phone": "Numer telefonu",
+    "subject": "Temat",
+    "message": "Twoja wiadomość",
+    "send": "Wyślij wiadomość",
+    "sending": "Wysyłanie...",
+    "success": "Wiadomość wysłana pomyślnie!",
+    "error": "Wysyłanie nie powiodło się. Spróbuj ponownie.",
+    "address": "Adres",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-mail"
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "privacy": "Polityka prywatności",
+    "terms": "Warunki usługi",
+    "followUs": "Śledź nas"
+  },
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Wystąpił błąd",
+    "retry": "Spróbuj ponownie",
+    "back": "Wstecz",
+    "next": "Dalej",
+    "previous": "Poprzedni",
+    "close": "Zamknij",
+    "search": "Szukaj",
+    "noResults": "Nie znaleziono wyników"
+  },
+  "validation": {
+    "required": "To pole jest wymagane",
+    "email": "Wprowadź poprawny adres e-mail",
+    "minLength": "Musi zawierać co najmniej {{count}} znaków",
+    "maxLength": "Musi zawierać mniej niż {{count}} znaków"
+  },
+  "admin": {
+    "dashboard": "Panel",
+    "articles": "Artykuły",
+    "media": "Media",
+    "services": "Usługi",
+    "messages": "Wiadomości",
+    "settings": "Ustawienia",
+    "logout": "Wyloguj",
+    "login": "Zaloguj",
+    "email": "E-mail",
+    "password": "Hasło",
+    "loginTitle": "Logowanie admina",
+    "loginButton": "Zaloguj się"
+  }
+}

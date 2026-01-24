@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "blog": "Blog",
+    "gallery": "Galería",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Groppi Gold Standard",
+    "subtitle": "Excelencia en cada detalle",
+    "description": "Estableciendo el estándar de lujo y calidad desde 1891. Experimente la artesanía más fina y un servicio incomparable.",
+    "cta": "Descubrir más",
+    "ctaSecondary": "Contáctenos"
+  },
+  "about": {
+    "title": "Nosotros",
+    "subtitle": "Nuestra historia",
+    "description": "Durante más de un siglo, Groppi ha sido sinónimo de excelencia y lujo. Nuestro compromiso con la calidad y la tradición nos ha convertido en un nombre de confianza en la industria.",
+    "mission": "Nuestra misión",
+    "missionText": "Ofrecer productos y servicios excepcionales que superen las expectativas y creen recuerdos duraderos.",
+    "vision": "Nuestra visión",
+    "visionText": "Ser el líder global en experiencias de lujo y calidad premium.",
+    "values": "Nuestros valores",
+    "valuesText": "Excelencia, integridad, innovación y satisfacción del cliente."
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "subtitle": "Lo que ofrecemos",
+    "description": "Explore nuestra gama completa de servicios premium diseñados para satisfacer sus más altas expectativas."
+  },
+  "blog": {
+    "title": "Últimas noticias",
+    "subtitle": "Manténgase informado",
+    "readMore": "Leer más",
+    "publishedOn": "Publicado el",
+    "by": "por"
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Excelencia visual",
+    "description": "Explore nuestra colección de imágenes impresionantes que muestran nuestro trabajo y logros."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Póngase en contacto",
+    "description": "Nos encantaría saber de usted. Envíenos un mensaje y le responderemos lo antes posible.",
+    "name": "Su nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "subject": "Asunto",
+    "message": "Su mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Error al enviar. Por favor, inténtelo de nuevo.",
+    "address": "Dirección",
+    "phoneLabel": "Teléfono",
+    "emailLabel": "Correo"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio",
+    "followUs": "Síguenos"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "retry": "Reintentar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "close": "Cerrar",
+    "search": "Buscar",
+    "noResults": "No se encontraron resultados"
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "email": "Por favor, ingrese un correo válido",
+    "minLength": "Debe tener al menos {{count}} caracteres",
+    "maxLength": "Debe tener menos de {{count}} caracteres"
+  },
+  "admin": {
+    "dashboard": "Panel",
+    "articles": "Artículos",
+    "media": "Medios",
+    "services": "Servicios",
+    "messages": "Mensajes",
+    "settings": "Configuración",
+    "logout": "Cerrar sesión",
+    "login": "Iniciar sesión",
+    "email": "Correo",
+    "password": "Contraseña",
+    "loginTitle": "Acceso administrador",
+    "loginButton": "Iniciar sesión"
+  }
+}

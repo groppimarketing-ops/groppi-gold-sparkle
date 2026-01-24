@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre nós",
+    "services": "Serviços",
+    "blog": "Blog",
+    "gallery": "Galeria",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Groppi Gold Standard",
+    "subtitle": "Excelência em cada detalhe",
+    "description": "Estabelecendo o padrão de luxo e qualidade desde 1891. Experimente o melhor artesanato e serviço incomparável.",
+    "cta": "Descobrir mais",
+    "ctaSecondary": "Entre em contato"
+  },
+  "about": {
+    "title": "Sobre nós",
+    "subtitle": "Nossa história",
+    "description": "Por mais de um século, Groppi tem sido sinônimo de excelência e luxo. Nosso compromisso com qualidade e tradição nos tornou um nome de confiança na indústria.",
+    "mission": "Nossa missão",
+    "missionText": "Entregar produtos e serviços excepcionais que superem expectativas e criem memórias duradouras.",
+    "vision": "Nossa visão",
+    "visionText": "Ser o líder global em experiências de luxo e qualidade premium.",
+    "values": "Nossos valores",
+    "valuesText": "Excelência, integridade, inovação e satisfação do cliente."
+  },
+  "services": {
+    "title": "Nossos serviços",
+    "subtitle": "O que oferecemos",
+    "description": "Explore nossa gama completa de serviços premium projetados para atender às suas mais altas expectativas."
+  },
+  "blog": {
+    "title": "Últimas notícias",
+    "subtitle": "Fique atualizado",
+    "readMore": "Leia mais",
+    "publishedOn": "Publicado em",
+    "by": "por"
+  },
+  "gallery": {
+    "title": "Galeria",
+    "subtitle": "Excelência visual",
+    "description": "Explore nossa coleção de visuais impressionantes mostrando nosso trabalho e conquistas."
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Entre em contato",
+    "description": "Adoraríamos ouvir você. Envie-nos uma mensagem e responderemos o mais rápido possível.",
+    "name": "Seu nome",
+    "email": "Endereço de e-mail",
+    "phone": "Telefone",
+    "subject": "Assunto",
+    "message": "Sua mensagem",
+    "send": "Enviar mensagem",
+    "sending": "Enviando...",
+    "success": "Mensagem enviada com sucesso!",
+    "error": "Falha ao enviar. Por favor, tente novamente.",
+    "address": "Endereço",
+    "phoneLabel": "Telefone",
+    "emailLabel": "E-mail"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "followUs": "Siga-nos"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Ocorreu um erro",
+    "retry": "Tentar novamente",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "close": "Fechar",
+    "search": "Pesquisar",
+    "noResults": "Nenhum resultado encontrado"
+  },
+  "validation": {
+    "required": "Este campo é obrigatório",
+    "email": "Por favor, insira um e-mail válido",
+    "minLength": "Deve ter pelo menos {{count}} caracteres",
+    "maxLength": "Deve ter menos de {{count}} caracteres"
+  },
+  "admin": {
+    "dashboard": "Painel",
+    "articles": "Artigos",
+    "media": "Mídia",
+    "services": "Serviços",
+    "messages": "Mensagens",
+    "settings": "Configurações",
+    "logout": "Sair",
+    "login": "Entrar",
+    "email": "E-mail",
+    "password": "Senha",
+    "loginTitle": "Login do administrador",
+    "loginButton": "Entrar"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "services": "Servizi",
+    "blog": "Blog",
+    "gallery": "Galleria",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "title": "Groppi Gold Standard",
+    "subtitle": "Eccellenza in ogni dettaglio",
+    "description": "Stabiliamo lo standard del lusso e della qualità dal 1891. Scopri la più fine artigianalità e un servizio impareggiabile.",
+    "cta": "Scopri di più",
+    "ctaSecondary": "Contattaci"
+  },
+  "about": {
+    "title": "Chi siamo",
+    "subtitle": "La nostra storia",
+    "description": "Per oltre un secolo, Groppi è stato sinonimo di eccellenza e lusso. Il nostro impegno per la qualità e la tradizione ci ha reso un nome di fiducia nel settore.",
+    "mission": "La nostra missione",
+    "missionText": "Offrire prodotti e servizi eccezionali che superino le aspettative e creino ricordi duraturi.",
+    "vision": "La nostra visione",
+    "visionText": "Essere il leader globale nelle esperienze di lusso e qualità premium.",
+    "values": "I nostri valori",
+    "valuesText": "Eccellenza, integrità, innovazione e soddisfazione del cliente."
+  },
+  "services": {
+    "title": "I nostri servizi",
+    "subtitle": "Cosa offriamo",
+    "description": "Esplora la nostra gamma completa di servizi premium progettati per soddisfare le tue più alte aspettative."
+  },
+  "blog": {
+    "title": "Ultime notizie",
+    "subtitle": "Resta aggiornato",
+    "readMore": "Leggi di più",
+    "publishedOn": "Pubblicato il",
+    "by": "da"
+  },
+  "gallery": {
+    "title": "Galleria",
+    "subtitle": "Eccellenza visiva",
+    "description": "Esplora la nostra collezione di immagini mozzafiato che mostrano il nostro lavoro e i nostri successi."
+  },
+  "contact": {
+    "title": "Contatti",
+    "subtitle": "Mettiti in contatto",
+    "description": "Ci piacerebbe sentirti. Inviaci un messaggio e ti risponderemo il prima possibile.",
+    "name": "Il tuo nome",
+    "email": "Indirizzo email",
+    "phone": "Numero di telefono",
+    "subject": "Oggetto",
+    "message": "Il tuo messaggio",
+    "send": "Invia messaggio",
+    "sending": "Invio in corso...",
+    "success": "Messaggio inviato con successo!",
+    "error": "Invio fallito. Riprova.",
+    "address": "Indirizzo",
+    "phoneLabel": "Telefono",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati.",
+    "privacy": "Privacy Policy",
+    "terms": "Termini di servizio",
+    "followUs": "Seguici"
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "retry": "Riprova",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente",
+    "close": "Chiudi",
+    "search": "Cerca",
+    "noResults": "Nessun risultato trovato"
+  },
+  "validation": {
+    "required": "Questo campo è obbligatorio",
+    "email": "Inserisci un indirizzo email valido",
+    "minLength": "Deve contenere almeno {{count}} caratteri",
+    "maxLength": "Deve contenere meno di {{count}} caratteri"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "articles": "Articoli",
+    "media": "Media",
+    "services": "Servizi",
+    "messages": "Messaggi",
+    "settings": "Impostazioni",
+    "logout": "Esci",
+    "login": "Accedi",
+    "email": "Email",
+    "password": "Password",
+    "loginTitle": "Accesso admin",
+    "loginButton": "Accedi"
+  }
+}
