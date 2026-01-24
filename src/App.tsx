@@ -24,6 +24,7 @@ const AdminLogin = lazy(() => import("./pages/admin/Login"));
 const AdminDashboard = lazy(() => import("./pages/admin/Dashboard"));
 const AdminPages = lazy(() => import("./pages/admin/Pages"));
 const AdminArticles = lazy(() => import("./pages/admin/Articles"));
+const AdminArticleEditor = lazy(() => import("./pages/admin/ArticleEditor"));
 const AdminServices = lazy(() => import("./pages/admin/ServicesAdmin"));
 const AdminMedia = lazy(() => import("./pages/admin/Media"));
 const AdminMessages = lazy(() => import("./pages/admin/Messages"));
@@ -77,6 +78,8 @@ const App = () => (
                 <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
                 <Route path="/admin/pages" element={<ProtectedRoute><AdminPages /></ProtectedRoute>} />
                 <Route path="/admin/articles" element={<ProtectedRoute><AdminArticles /></ProtectedRoute>} />
+                <Route path="/admin/articles/new" element={<ProtectedRoute><AdminArticleEditor /></ProtectedRoute>} />
+                <Route path="/admin/articles/:id" element={<ProtectedRoute><AdminArticleEditor /></ProtectedRoute>} />
                 <Route path="/admin/services" element={<ProtectedRoute><AdminServices /></ProtectedRoute>} />
                 <Route path="/admin/media" element={<ProtectedRoute><AdminMedia /></ProtectedRoute>} />
                 <Route path="/admin/messages" element={<ProtectedRoute><AdminMessages /></ProtectedRoute>} />
