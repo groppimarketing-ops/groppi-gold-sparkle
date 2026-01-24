@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Star, RefreshCw, Brain, Rocket, Filter } from 'lucide-react';
+import { ArrowRight, Sparkles, Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Star, RefreshCw, Brain, Rocket, Filter, FileText, Layout, Store } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import PageLayout from '@/components/layout/PageLayout';
@@ -13,43 +13,100 @@ const Services = () => {
   const { t } = useTranslation();
   const [filter, setFilter] = useState<'all' | 'monthly' | 'one_time' | 'custom'>('all');
 
-  // GROPPI's actual services based on their offerings
+  // Enhanced GROPPI services with full deliverables and pricing clarity
   const services: ServiceData[] = [
+    // Content Production - Core Service with Packages
     {
-      id: 'ai-content',
+      id: 'content-production',
       icon: Camera,
-      titleKey: 'services.items.aiContent.title',
-      descriptionKey: 'services.items.aiContent.description',
+      titleKey: 'services.items.contentProduction.title',
+      descriptionKey: 'services.items.contentProduction.description',
       features: [
-        'services.items.aiContent.features.0',
-        'services.items.aiContent.features.1',
-        'services.items.aiContent.features.2',
-        'services.items.aiContent.features.3',
+        'services.items.contentProduction.features.0',
+        'services.items.contentProduction.features.1',
+        'services.items.contentProduction.features.2',
+        'services.items.contentProduction.features.3',
+        'services.items.contentProduction.features.4',
       ],
       gradient: 'from-purple-500/20 to-blue-500/20',
       pricingType: 'custom',
       priceMin: 500,
-      imageUrl: '/placeholder.svg',
+      targetAudience: ['business', 'creator'],
+      packages: [
+        {
+          id: 'starter',
+          titleKey: 'services.packages.starter',
+          features: [
+            'services.items.contentProduction.packages.starter.0',
+            'services.items.contentProduction.packages.starter.1',
+            'services.items.contentProduction.packages.starter.2',
+            'services.items.contentProduction.packages.starter.3',
+          ],
+        },
+        {
+          id: 'growth',
+          titleKey: 'services.packages.growth',
+          features: [
+            'services.items.contentProduction.packages.growth.0',
+            'services.items.contentProduction.packages.growth.1',
+            'services.items.contentProduction.packages.growth.2',
+            'services.items.contentProduction.packages.growth.3',
+          ],
+        },
+        {
+          id: 'pro',
+          titleKey: 'services.packages.pro',
+          features: [
+            'services.items.contentProduction.packages.pro.0',
+            'services.items.contentProduction.packages.pro.1',
+            'services.items.contentProduction.packages.pro.2',
+            'services.items.contentProduction.packages.pro.3',
+          ],
+        },
+      ],
     },
+    // One-Page Website
     {
-      id: 'web-development',
-      icon: Globe,
-      titleKey: 'services.items.webDev.title',
-      descriptionKey: 'services.items.webDev.description',
+      id: 'one-page-website',
+      icon: FileText,
+      titleKey: 'services.items.onePage.title',
+      descriptionKey: 'services.items.onePage.description',
       features: [
-        'services.items.webDev.features.0',
-        'services.items.webDev.features.1',
-        'services.items.webDev.features.2',
-        'services.items.webDev.features.3',
+        'services.items.onePage.features.0',
+        'services.items.onePage.features.1',
+        'services.items.onePage.features.2',
+        'services.items.onePage.features.3',
       ],
       gradient: 'from-cyan-500/20 to-teal-500/20',
       pricingType: 'one_time',
-      priceMin: 1500,
-      priceMax: 15000,
-      imageUrl: '/placeholder.svg',
+      priceMin: 500,
+      priceMax: 1500,
+      targetAudience: ['individual', 'business'],
+      packageTier: 'starter',
     },
+    // Business Website
     {
-      id: 'ecommerce',
+      id: 'business-website',
+      icon: Globe,
+      titleKey: 'services.items.businessWebsite.title',
+      descriptionKey: 'services.items.businessWebsite.description',
+      features: [
+        'services.items.businessWebsite.features.0',
+        'services.items.businessWebsite.features.1',
+        'services.items.businessWebsite.features.2',
+        'services.items.businessWebsite.features.3',
+        'services.items.businessWebsite.features.4',
+      ],
+      gradient: 'from-blue-500/20 to-indigo-500/20',
+      pricingType: 'one_time',
+      priceMin: 1500,
+      priceMax: 8000,
+      targetAudience: ['business'],
+      packageTier: 'growth',
+    },
+    // E-commerce Website
+    {
+      id: 'ecommerce-website',
       icon: ShoppingCart,
       titleKey: 'services.items.ecommerce.title',
       descriptionKey: 'services.items.ecommerce.description',
@@ -58,13 +115,16 @@ const Services = () => {
         'services.items.ecommerce.features.1',
         'services.items.ecommerce.features.2',
         'services.items.ecommerce.features.3',
+        'services.items.ecommerce.features.4',
       ],
       gradient: 'from-green-500/20 to-emerald-500/20',
       pricingType: 'one_time',
-      priceMin: 2500,
+      priceMin: 3000,
       priceMax: 25000,
-      imageUrl: '/placeholder.svg',
+      targetAudience: ['business'],
+      packageTier: 'pro',
     },
+    // Ads Management
     {
       id: 'ads-management',
       icon: Megaphone,
@@ -80,8 +140,9 @@ const Services = () => {
       pricingType: 'monthly',
       priceMin: 500,
       priceMax: 5000,
-      imageUrl: '/placeholder.svg',
+      targetAudience: ['business'],
     },
+    // SEO
     {
       id: 'seo',
       icon: Search,
@@ -97,8 +158,9 @@ const Services = () => {
       pricingType: 'monthly',
       priceMin: 300,
       priceMax: 2000,
-      imageUrl: '/placeholder.svg',
+      targetAudience: ['business'],
     },
+    // Social Media Management
     {
       id: 'social-media',
       icon: Share2,
@@ -114,8 +176,9 @@ const Services = () => {
       pricingType: 'monthly',
       priceMin: 400,
       priceMax: 3000,
-      imageUrl: '/placeholder.svg',
+      targetAudience: ['business', 'creator'],
     },
+    // Reputation Management
     {
       id: 'reputation',
       icon: Star,
@@ -131,8 +194,9 @@ const Services = () => {
       pricingType: 'monthly',
       priceMin: 200,
       priceMax: 1000,
-      imageUrl: '/placeholder.svg',
+      targetAudience: ['business'],
     },
+    // Data Sync
     {
       id: 'data-sync',
       icon: RefreshCw,
@@ -146,7 +210,7 @@ const Services = () => {
       ],
       gradient: 'from-violet-500/20 to-purple-500/20',
       pricingType: 'custom',
-      imageUrl: '/placeholder.svg',
+      targetAudience: ['business'],
     },
   ];
 

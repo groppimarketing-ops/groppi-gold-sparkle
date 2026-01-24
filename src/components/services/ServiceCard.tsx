@@ -1,12 +1,22 @@
 import { forwardRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play, Calendar, CreditCard, MessageSquare, LucideIcon, Check } from 'lucide-react';
+import { ArrowRight, Play, Calendar, CreditCard, MessageSquare, LucideIcon, Check, Users, User, Video, Briefcase, Zap, Crown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import ServiceVideoModal from './ServiceVideoModal';
+import ServiceDetailModal from './ServiceDetailModal';
+
+export interface ServicePackage {
+  id: 'starter' | 'growth' | 'pro';
+  titleKey: string;
+  features: string[];
+}
+
+export interface ServiceDeliverable {
+  key: string;
+  quantity?: string;
+}
 
 export interface ServiceData {
   id: string;
@@ -20,6 +30,12 @@ export interface ServiceData {
   priceMax?: number;
   videoUrl?: string;
   imageUrl?: string;
+  // New fields for enhanced services
+  targetAudience: ('business' | 'individual' | 'creator')[];
+  packageTier?: 'starter' | 'growth' | 'pro';
+  packages?: ServicePackage[];
+  deliverables?: ServiceDeliverable[];
+  pricingExplanationKey?: string;
 }
 
 interface ServiceCardProps {
@@ -31,6 +47,39 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
   const { t, i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
+
+  const getTargetAudienceIcon = (audience: string) => {
+    switch (audience) {
+      case 'business':
+        return <Briefcase className="w-3 h-3" />;
+      case 'individual':
+        return <User className="w-3 h-3" />;
+      case 'creator':
+        return <Video className="w-3 h-3" />;
+      default:
+        return <Users className="w-3 h-3" />;
+    }
+  };
+
+  const getPackageBadge = () => {
+    if (!service.packageTier) return null;
+    
+    const configs = {
+      starter: { icon: Zap, colorClass: 'bg-blue-500/20 text-blue-400 border-blue-500/30' },
+      growth: { icon: Users, colorClass: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' },
+      pro: { icon: Crown, colorClass: 'bg-primary/20 text-primary border-primary/30' },
+    };
+    
+    const config = configs[service.packageTier];
+    const Icon = config.icon;
+    
+    return (
+      <Badge className={`${config.colorClass} gap-1`}>
+        <Icon className="w-3 h-3" />
+        {t(`services.packages.${service.packageTier}`)}
+      </Badge>
+    );
+  };
 
   const getPricingBadge = () => {
     switch (service.pricingType) {
@@ -92,7 +141,7 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
         <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
           <span className="text-xs text-muted-foreground">{t('services.startingFrom')}</span>
           <span className="text-xl font-bold text-primary">
-            €{service.priceMin.toLocaleString()}
+            €{service.priceMin.toLocaleString()}+
           </span>
           {pricingLabel && (
             <span className="text-xs text-muted-foreground">{pricingLabel}</span>
@@ -106,7 +155,7 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
     );
   };
 
-  const handleCardClick = () => {
+  const handleViewDetails = () => {
     setIsModalOpen(true);
   };
 
@@ -124,16 +173,34 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
         viewport={{ once: true }}
         transition={{ delay: index * 0.1 }}
         className="group relative overflow-hidden flex flex-col h-full cursor-pointer"
-        onClick={handleCardClick}
+        onClick={handleViewDetails}
       >
         {/* Gradient Background */}
         <div 
           className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} 
         />
 
-        {/* Top Section: Badge + Price */}
-        <div className="relative flex items-start justify-between mb-5 gap-3">
+        {/* Top Section: Badges */}
+        <div className="relative flex flex-wrap items-start gap-2 mb-4">
           {getPricingBadge()}
+          {getPackageBadge()}
+        </div>
+
+        {/* Target Audience */}
+        <div className="relative flex flex-wrap gap-1.5 mb-4">
+          {service.targetAudience.map((audience) => (
+            <span 
+              key={audience}
+              className="inline-flex items-center gap-1 text-xs text-muted-foreground bg-muted/30 px-2 py-1 rounded-full"
+            >
+              {getTargetAudienceIcon(audience)}
+              {t(`services.audience.${audience}`)}
+            </span>
+          ))}
+        </div>
+
+        {/* Price Display */}
+        <div className="relative mb-4">
           {getPriceDisplay()}
         </div>
 
@@ -174,14 +241,14 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
         <div className="relative space-y-3 mt-auto">
           {/* Primary CTA */}
           <Button
-            asChild
             className="w-full luxury-button"
-            onClick={(e) => e.stopPropagation()}
+            onClick={(e) => {
+              e.stopPropagation();
+              handleViewDetails();
+            }}
           >
-            <Link to={`/contact?service=${service.id}`}>
-              {t('services.getQuote')}
-              <ArrowRight className={`h-4 w-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'} group-hover:translate-x-1 transition-transform`} />
-            </Link>
+            {t('services.modal.viewDetails')}
+            <ArrowRight className={`h-4 w-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'} group-hover:translate-x-1 transition-transform`} />
           </Button>
 
           {/* Secondary CTA - Watch Video */}
@@ -196,14 +263,11 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
         </div>
       </GlassCard>
 
-      {/* Video Modal */}
-      <ServiceVideoModal
+      {/* Detail Modal */}
+      <ServiceDetailModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        videoUrl={service.videoUrl}
-        serviceTitle={t(service.titleKey)}
-        serviceDescription={t(service.descriptionKey)}
-        serviceId={service.id}
+        service={service}
       />
     </>
   );

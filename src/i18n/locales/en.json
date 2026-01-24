@@ -70,13 +70,51 @@
     "keyInclusions": "What's included",
     "videoPlaceholder": "Watch short explainer video",
     "noResults": "No services match your filter criteria.",
+    "audience": {
+      "business": "Businesses",
+      "individual": "Individuals",
+      "creator": "Creators"
+    },
+    "packages": {
+      "starter": "Starter",
+      "growth": "Growth",
+      "pro": "Pro"
+    },
     "modal": {
+      "viewDetails": "View details",
       "watchVideo": "Watch video",
       "close": "Close",
       "videoDuration": "⏱ Video duration: 60 seconds",
       "cta": "Request a custom offer",
-      "description": "Final pricing depends on your specific needs and project scope. Contact us for a no-obligation conversation and a personalized quote.",
-      "noVideo": "Video coming soon"
+      "description": "Final pricing depends on your specific needs and project scope.",
+      "noVideo": "Video coming soon",
+      "whatYouGet": "What you get",
+      "pricingLogic": "How pricing works",
+      "explainerVideo": "Explainer video",
+      "indicativePrice": "Indicative price",
+      "pricingFactors": "What affects the price?",
+      "pricingNote": "Final pricing is determined based on your specific requirements and project scope. Contact us for a no-obligation conversation and a personalized quote.",
+      "availablePackages": "Available packages",
+      "packagesNote": "Packages can be customized based on the number and type of content.",
+      "videoSummary": "See how this service can transform your business and discover what we can do for you.",
+      "factors": {
+        "quantity": {
+          "title": "Content quantity",
+          "description": "More content means a higher price, but also more value for your investment."
+        },
+        "complexity": {
+          "title": "Complexity & editing",
+          "description": "Video editing, animations, and special effects influence the price."
+        },
+        "onsite": {
+          "title": "On-site filming",
+          "description": "On-location filming requires additional costs for travel and professional equipment."
+        },
+        "customization": {
+          "title": "Customization & strategy",
+          "description": "Personalized strategies and creative concepts are always included."
+        }
+      }
     },
     "filters": {
       "all": "All Services",
@@ -85,34 +123,67 @@
       "custom": "Custom Projects"
     },
     "items": {
-      "aiContent": {
-        "title": "Visual Content & Branding",
-        "description": "Professional visual content and brand identity, supported by modern tools. From logo design to complete visual campaigns.",
+      "contentProduction": {
+        "title": "Visual Content & Video",
+        "description": "Professional videos, photos, and visual content for your brand. From short social media clips to extensive production videos.",
         "features": {
-          "0": "Professional visual assets",
-          "1": "Brand identity design",
-          "2": "Social media content packages",
-          "3": "Product photography & editing"
+          "0": "Short videos (30-60 sec) for social media",
+          "1": "Long-form videos for website & YouTube",
+          "2": "Professional product photography",
+          "3": "Social media visuals & graphics",
+          "4": "Brand-aligned content calendar"
+        },
+        "packages": {
+          "starter": {
+            "0": "2-4 short videos per month",
+            "1": "8 social media posts",
+            "2": "Basic content planning",
+            "3": "1 platform focus"
+          },
+          "growth": {
+            "0": "4-8 short + 1-2 long videos",
+            "1": "16 social media posts",
+            "2": "Articles (priced per word count)",
+            "3": "Multi-platform optimization"
+          },
+          "pro": {
+            "0": "Unlimited video production",
+            "1": "Complete content calendar",
+            "2": "Advanced brand strategy",
+            "3": "Multi-platform campaigns"
+          }
         }
       },
-      "webDev": {
-        "title": "Website Design & Development",
-        "description": "Custom-built, responsive websites that convert visitors into customers. Modern designs with optimal performance.",
+      "onePage": {
+        "title": "One-page website",
+        "description": "A stylish, fast landing page perfect for freelancers, startups, or specific campaigns.",
         "features": {
-          "0": "Custom responsive design",
-          "1": "SEO-optimized structure",
-          "2": "Fast loading times",
-          "3": "Content management system"
+          "0": "1 long scrolling page with sections",
+          "1": "Responsive design (mobile/tablet/desktop)",
+          "2": "Contact form integration",
+          "3": "Basic SEO optimization"
+        }
+      },
+      "businessWebsite": {
+        "title": "Business website",
+        "description": "Complete business website with multiple pages, CMS, and all the functionality you need.",
+        "features": {
+          "0": "5-15 pages of your choice",
+          "1": "Content management system (CMS)",
+          "2": "Blog functionality",
+          "3": "Advanced SEO optimization",
+          "4": "Analytics integration"
         }
       },
       "ecommerce": {
-        "title": "E-commerce Solutions",
-        "description": "Complete webshop setup with payment integration, inventory management, and conversion optimization.",
+        "title": "E-commerce webshop",
+        "description": "Complete webshop with product management, payments, and inventory management. Ready to sell.",
         "features": {
-          "0": "Complete webshop setup",
-          "1": "Payment gateway integration",
-          "2": "Product management system",
-          "3": "Conversion optimization"
+          "0": "Unlimited products",
+          "1": "Payment gateway integration (Stripe, PayPal, etc.)",
+          "2": "Inventory management system",
+          "3": "Customer accounts & orders",
+          "4": "Conversion optimization"
         }
       },
       "ads": {
@@ -120,8 +191,8 @@
         "description": "Strategic advertising campaigns via Google, Meta, and other platforms. Data-driven optimization for maximum ROI.",
         "features": {
           "0": "Google Ads management",
-          "1": "Meta advertising",
-          "2": "Campaign analysis",
+          "1": "Meta advertising (Facebook/Instagram)",
+          "2": "Campaign analysis & reporting",
           "3": "A/B testing & optimization"
         }
       },

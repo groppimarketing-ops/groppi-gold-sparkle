@@ -70,13 +70,51 @@
     "keyInclusions": "Wat inbegrepen is",
     "videoPlaceholder": "Bekijk korte uitlegvideo",
     "noResults": "Geen diensten voldoen aan uw filtercriteria.",
+    "audience": {
+      "business": "Bedrijven",
+      "individual": "Particulieren",
+      "creator": "Creators"
+    },
+    "packages": {
+      "starter": "Starter",
+      "growth": "Growth",
+      "pro": "Pro"
+    },
     "modal": {
+      "viewDetails": "Bekijk details",
       "watchVideo": "Bekijk video",
       "close": "Sluiten",
       "videoDuration": "⏱ Videoduur: 60 seconden",
       "cta": "Vraag een offerte op maat aan",
-      "description": "De uiteindelijke prijs hangt af van uw specifieke behoeften en projectomvang. Neem contact op voor een vrijblijvend gesprek en een gepersonaliseerde offerte.",
-      "noVideo": "Video binnenkort beschikbaar"
+      "description": "De uiteindelijke prijs hangt af van uw specifieke behoeften en projectomvang.",
+      "noVideo": "Video binnenkort beschikbaar",
+      "whatYouGet": "Wat u krijgt",
+      "pricingLogic": "Hoe prijzen werken",
+      "explainerVideo": "Uitlegvideo",
+      "indicativePrice": "Indicatieve prijs",
+      "pricingFactors": "Waar hangt de prijs van af?",
+      "pricingNote": "De uiteindelijke prijs wordt bepaald op basis van uw specifieke wensen en projectomvang. Neem contact op voor een vrijblijvend gesprek en een gepersonaliseerde offerte.",
+      "availablePackages": "Beschikbare pakketten",
+      "packagesNote": "Pakketten kunnen worden aangepast op basis van het aantal en type content.",
+      "videoSummary": "Bekijk hoe deze dienst uw bedrijf kan transformeren en ontdek wat we voor u kunnen betekenen.",
+      "factors": {
+        "quantity": {
+          "title": "Hoeveelheid content",
+          "description": "Meer content betekent een hogere prijs, maar ook meer waarde voor uw investering."
+        },
+        "complexity": {
+          "title": "Complexiteit & bewerking",
+          "description": "Video-editing, animaties en speciale effecten beïnvloeden de prijs."
+        },
+        "onsite": {
+          "title": "Opnames op locatie",
+          "description": "Filmopnames op locatie vereisen extra kosten voor reizen en professionele apparatuur."
+        },
+        "customization": {
+          "title": "Maatwerk & strategie",
+          "description": "Gepersonaliseerde strategieën en creatieve concepten zijn altijd inbegrepen."
+        }
+      }
     },
     "filters": {
       "all": "Alle diensten",
@@ -85,34 +123,67 @@
       "custom": "Projecten op maat"
     },
     "items": {
-      "aiContent": {
-        "title": "Visuele content & Branding",
-        "description": "Professionele visuele content en merkidentiteit, ondersteund door moderne tools. Van logo-ontwerp tot complete visuele campagnes.",
+      "contentProduction": {
+        "title": "Visuele content & Video",
+        "description": "Professionele video's, foto's en visuele content voor uw merk. Van korte social media clips tot uitgebreide productievideo's.",
         "features": {
-          "0": "Professionele visuele assets",
-          "1": "Merkidentiteit ontwerp",
-          "2": "Social media contentpakketten",
-          "3": "Productfotografie & bewerking"
+          "0": "Korte video's (30-60 sec) voor social media",
+          "1": "Lange video's voor website & YouTube",
+          "2": "Professionele productfotografie",
+          "3": "Social media visuals & graphics",
+          "4": "Merkgebonden contentkalender"
+        },
+        "packages": {
+          "starter": {
+            "0": "2-4 korte video's per maand",
+            "1": "8 social media posts",
+            "2": "Basiscontentplanning",
+            "3": "1 platform focus"
+          },
+          "growth": {
+            "0": "4-8 korte + 1-2 lange video's",
+            "1": "16 social media posts",
+            "2": "Artikelen (per woordaantal)",
+            "3": "Multi-platform optimalisatie"
+          },
+          "pro": {
+            "0": "Onbeperkt videoproductie",
+            "1": "Volledige contentkalender",
+            "2": "Geavanceerde merkstrategie",
+            "3": "Multi-platform campagnes"
+          }
         }
       },
-      "webDev": {
-        "title": "Website ontwerp & Ontwikkeling",
-        "description": "Op maat gemaakte, responsieve websites die bezoekers omzetten in klanten. Moderne ontwerpen met optimale prestaties.",
+      "onePage": {
+        "title": "One-page website",
+        "description": "Een stijlvolle, snelle landingspagina perfect voor freelancers, startups of specifieke campagnes.",
         "features": {
-          "0": "Aangepast responsief ontwerp",
-          "1": "SEO-geoptimaliseerde structuur",
-          "2": "Snelle laadtijden",
-          "3": "Contentbeheersysteem"
+          "0": "1 lange scrollpagina met secties",
+          "1": "Responsief design (mobiel/tablet/desktop)",
+          "2": "Contactformulier integratie",
+          "3": "SEO basisoptimalisatie"
+        }
+      },
+      "businessWebsite": {
+        "title": "Bedrijfswebsite",
+        "description": "Complete bedrijfswebsite met meerdere pagina's, CMS en alle functionaliteiten die u nodig heeft.",
+        "features": {
+          "0": "5-15 pagina's naar keuze",
+          "1": "Contentbeheersysteem (CMS)",
+          "2": "Blog functionaliteit",
+          "3": "Geavanceerde SEO optimalisatie",
+          "4": "Analytics integratie"
         }
       },
       "ecommerce": {
-        "title": "E-commerce oplossingen",
-        "description": "Complete webshop setup met betalingsintegratie, voorraadbeheer en conversie-optimalisatie.",
+        "title": "E-commerce webshop",
+        "description": "Volledige webshop met productbeheer, betalingen en voorraadbeheer. Klaar om te verkopen.",
         "features": {
-          "0": "Volledige webshop opzet",
-          "1": "Betaalgateway integratie",
-          "2": "Productbeheersysteem",
-          "3": "Conversie-optimalisatie"
+          "0": "Onbeperkt producten toevoegen",
+          "1": "Betaalgateway integratie (iDEAL, Bancontact, etc.)",
+          "2": "Voorraadbeheer systeem",
+          "3": "Klantaccounts & bestellingen",
+          "4": "Conversie-optimalisatie"
         }
       },
       "ads": {
@@ -120,8 +191,8 @@
         "description": "Strategische advertentiecampagnes via Google, Meta en andere platforms. Data-gedreven optimalisatie voor maximale ROI.",
         "features": {
           "0": "Google Ads beheer",
-          "1": "Meta advertenties",
-          "2": "Campagne-analyse",
+          "1": "Meta advertenties (Facebook/Instagram)",
+          "2": "Campagne-analyse & rapportage",
           "3": "A/B testen & optimalisatie"
         }
       },
