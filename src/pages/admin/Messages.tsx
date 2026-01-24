@@ -97,10 +97,24 @@ const Messages = () => {
     if (!deleteId) return;
 
     try {
-      // Note: This might fail due to RLS - delete not allowed
+      const { error } = await supabase
+        .from('contact_messages')
+        .delete()
+        .eq('id', deleteId);
+
+      if (error) throw error;
+
+      setMessages(messages.filter(m => m.id !== deleteId));
       toast({
-        title: 'Info',
-        description: 'Message deletion is restricted for data retention',
+        title: 'Success',
+        description: 'Message deleted successfully',
+      });
+    } catch (error) {
+      console.error('Error deleting message:', error);
+      toast({
+        title: 'Error',
+        description: 'Failed to delete message',
+        variant: 'destructive',
       });
     } finally {
       setDeleteId(null);
@@ -232,6 +246,17 @@ const Messages = () => {
                       >
                         <Eye className="w-4 h-4 text-muted-foreground" />
                       </Button>
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className="h-8 w-8 text-destructive hover:text-destructive"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setDeleteId(message.id);
+                        }}
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </Button>
                     </div>
                   </div>
                 </GlassCard>
@@ -311,6 +336,27 @@ const Messages = () => {
           )}
         </DialogContent>
       </Dialog>
+
+      {/* Delete Confirmation Dialog */}
+      <AlertDialog open={!!deleteId} onOpenChange={(open) => !open && setDeleteId(null)}>
+        <AlertDialogContent className="glass-card border-primary/20">
+          <AlertDialogHeader>
+            <AlertDialogTitle>Delete Message</AlertDialogTitle>
+            <AlertDialogDescription>
+              Are you sure you want to delete this message? This action cannot be undone.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>Cancel</AlertDialogCancel>
+            <AlertDialogAction
+              onClick={handleDelete}
+              className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
+            >
+              Delete
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </AdminLayout>
   );
 };
