@@ -393,5 +393,17 @@
     "password": "Password",
     "loginTitle": "Admin Login",
     "loginButton": "Log In"
+  },
+  "social": {
+    "whatsapp": "WhatsApp",
+    "whatsappChat": "Chat via WhatsApp",
+    "callUs": "Call us",
+    "emailUs": "Send an email",
+    "followUs": "Follow us on social media",
+    "actions": {
+      "chat": "Start a conversation via WhatsApp",
+      "call": "Call +32 494 31 11 19",
+      "email": "Email info@groppi.be"
+    }
   }
 }

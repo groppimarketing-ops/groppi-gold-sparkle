@@ -326,5 +326,21 @@
     "password": "پاس ورڈ",
     "loginTitle": "ایڈمن لاگ ان",
     "loginButton": "سائن ان"
+  },
+  "social": {
+    "whatsapp": "واٹس ایپ",
+    "whatsappChat": "واٹس ایپ پر چیٹ کریں",
+    "callUs": "ہمیں کال کریں",
+    "emailUs": "ای میل بھیجیں",
+    "followUs": "سوشل میڈیا پر ہمیں فالو کریں",
+    "actions": {
+      "chat": "واٹس ایپ پر بات چیت شروع کریں",
+      "call": "+32 494 31 11 19 پر کال کریں",
+      "email": "info@groppi.be پر ای میل کریں"
+    },
+    "followInstagram": "انسٹاگرام پر فالو کریں",
+    "followFacebook": "فیس بک پر فالو کریں",
+    "followTiktok": "ٹک ٹاک پر فالو کریں",
+    "followLinkedin": "لنکڈ ان پر فالو کریں"
   }
 }

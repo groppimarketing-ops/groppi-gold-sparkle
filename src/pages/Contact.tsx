@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, Send, Loader2, Sparkles } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, Loader2, Sparkles, MessageCircle, Instagram, Facebook, Linkedin } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -10,7 +10,14 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
+import { trackEvent, socialLinks as socialUrls, contactInfo } from '@/utils/tracking';
 
+// TikTok icon component
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+  </svg>
+);
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters').max(100),
@@ -83,33 +90,55 @@ const Contact = () => {
     }
   };
 
-  const contactInfo = [
+  // Contact method cards for direct actions
+  const contactMethods = [
     { 
-      icon: MapPin, 
-      title: t('contact.address'), 
-      content: 'Het Steeke 5A, 2330 Merksplas, Belgium',
-      href: 'https://maps.google.com/?q=Het+Steeke+5A,+2330+Merksplas,+Belgium',
-      isLink: true
+      icon: MessageCircle, 
+      title: t('social.whatsappChat'),
+      action: t('social.actions.chat'),
+      href: socialUrls.whatsapp,
+      isExternal: true,
+      color: 'bg-[#25D366]/10 text-[#25D366]',
+      iconColor: 'text-[#25D366]',
+      event: 'whatsapp_click' as const,
     },
     { 
       icon: Phone, 
-      title: t('contact.mobileLabel'), 
-      content: '+32 494 311 119',
-      href: 'tel:+32494311119',
-      isLink: true
-    },
-    { 
-      icon: Phone, 
-      title: t('contact.officeLabel'), 
-      content: '+32 14 63 50 05',
-      href: 'tel:+3214635005',
-      isLink: true
+      title: t('social.callUs'),
+      action: t('social.actions.call'),
+      href: socialUrls.phone,
+      isExternal: false,
+      color: 'bg-primary/10',
+      iconColor: 'text-primary',
+      event: 'phone_click' as const,
     },
     { 
       icon: Mail, 
-      title: t('contact.emailLabel'), 
-      content: 'info@groppi.be',
-      href: 'mailto:info@groppi.be',
+      title: t('social.emailUs'),
+      action: t('social.actions.email'),
+      href: socialUrls.email,
+      isExternal: false,
+      color: 'bg-primary/10',
+      iconColor: 'text-primary',
+      event: 'email_click' as const,
+    },
+  ];
+
+  // Social media profiles
+  const socialProfiles = [
+    { icon: Instagram, href: socialUrls.instagram, label: 'Instagram', event: 'instagram_click' as const },
+    { icon: Facebook, href: socialUrls.facebook, label: 'Facebook', event: 'facebook_click' as const },
+    { icon: TikTokIcon, href: socialUrls.tiktok, label: 'TikTok', event: 'tiktok_click' as const },
+    { icon: Linkedin, href: socialUrls.linkedin, label: 'LinkedIn', event: 'linkedin_click' as const },
+  ];
+
+  // Contact info items
+  const contactInfoItems = [
+    { 
+      icon: MapPin, 
+      title: t('contact.address'), 
+      content: contactInfo.address,
+      href: 'https://maps.google.com/?q=Het+Steeke+5A,+2330+Merksplas,+Belgium',
       isLink: true
     },
     { 
@@ -244,14 +273,79 @@ const Contact = () => {
               </form>
             </GlassCard>
 
-            {/* Contact Info */}
+            {/* Contact Methods Cards + Info */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="space-y-6"
             >
-              {contactInfo.map((info, index) => (
+              {/* Quick Contact Methods */}
+              <div className="grid gap-4">
+                {contactMethods.map((method, index) => (
+                  <motion.a
+                    key={index}
+                    href={method.href}
+                    target={method.isExternal ? '_blank' : undefined}
+                    rel={method.isExternal ? 'noopener noreferrer' : undefined}
+                    onClick={() => trackEvent({ event: method.event, location: 'contact_page' })}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    className="block"
+                  >
+                    <GlassCard className="flex items-center gap-4 p-5 border border-primary/20 hover:border-primary/40 transition-all duration-300 group cursor-pointer">
+                      <motion.div 
+                        className={`w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 ${method.color} shadow-lg`}
+                        whileHover={{ scale: 1.15, rotate: 10 }}
+                        transition={{ type: "spring", stiffness: 300 }}
+                      >
+                        <method.icon className={`w-7 h-7 ${method.iconColor}`} />
+                      </motion.div>
+                      <div className="flex-1">
+                        <h4 className="font-semibold gold-gradient-text text-lg">{method.title}</h4>
+                        <p className="text-muted-foreground text-sm">{method.action}</p>
+                      </div>
+                      <motion.span
+                        className="text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                        whileHover={{ x: 5 }}
+                      >
+                        →
+                      </motion.span>
+                    </GlassCard>
+                  </motion.a>
+                ))}
+              </div>
+
+              {/* Social Media Profiles */}
+              <GlassCard className="p-6 border border-primary/20">
+                <h4 className="font-semibold gold-gradient-text text-lg mb-4">{t('social.followUs')}</h4>
+                <div className="flex gap-3">
+                  {socialProfiles.map((social, index) => (
+                    <motion.a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => trackEvent({ event: social.event, location: 'contact_page' })}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.05 }}
+                      whileHover={{ scale: 1.15, y: -2 }}
+                      className="w-12 h-12 rounded-xl glass-card flex items-center justify-center text-muted-foreground hover:text-primary hover:gold-glow transition-all"
+                      aria-label={social.label}
+                    >
+                      <social.icon className="h-5 w-5" />
+                    </motion.a>
+                  ))}
+                </div>
+              </GlassCard>
+
+              {/* Additional Contact Info */}
+              {contactInfoItems.map((info, index) => (
                 <GlassCard
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -272,8 +366,8 @@ const Contact = () => {
                     {info.isLink ? (
                       <motion.a
                         href={info.href}
-                        target={info.icon === MapPin ? '_blank' : undefined}
-                        rel={info.icon === MapPin ? 'noopener noreferrer' : undefined}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors duration-300 inline-flex items-center gap-2 group-hover:text-primary"
                         whileHover={{ x: 5 }}
                       >

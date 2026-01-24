@@ -112,5 +112,21 @@
     "password": "पासवर्ड",
     "loginTitle": "एडमिन लॉगिन",
     "loginButton": "साइन इन"
+  },
+  "social": {
+    "whatsapp": "व्हाट्सएप",
+    "whatsappChat": "व्हाट्सएप पर चैट करें",
+    "callUs": "हमें कॉल करें",
+    "emailUs": "ईमेल भेजें",
+    "followUs": "सोशल मीडिया पर हमें फॉलो करें",
+    "actions": {
+      "chat": "व्हाट्सएप पर बातचीत शुरू करें",
+      "call": "+32 494 31 11 19 पर कॉल करें",
+      "email": "info@groppi.be पर ईमेल करें"
+    },
+    "followInstagram": "इंस्टाग्राम पर फॉलो करें",
+    "followFacebook": "फेसबुक पर फॉलो करें",
+    "followTiktok": "टिकटॉक पर फॉलो करें",
+    "followLinkedin": "लिंक्डइन पर फॉलो करें"
   }
 }

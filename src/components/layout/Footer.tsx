@@ -1,19 +1,26 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import groppiLogo from '@/assets/groppi-logo.png';
+import { trackEvent, socialLinks as socialUrls, contactInfo } from '@/utils/tracking';
+
+// TikTok icon component
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+  </svg>
+);
 
 const Footer = () => {
   const { t } = useTranslation();
 
-  const socialLinks = [
-    { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Youtube, href: 'https://youtube.com', label: 'YouTube' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+  const socialLinksData = [
+    { icon: Instagram, href: socialUrls.instagram, label: 'Instagram', event: 'instagram_click' as const },
+    { icon: Facebook, href: socialUrls.facebook, label: 'Facebook', event: 'facebook_click' as const },
+    { icon: TikTokIcon, href: socialUrls.tiktok, label: 'TikTok', event: 'tiktok_click' as const },
+    { icon: Linkedin, href: socialUrls.linkedin, label: 'LinkedIn', event: 'linkedin_click' as const },
   ];
 
   const quickLinks = [
@@ -49,16 +56,17 @@ const Footer = () => {
               />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              {t('hero.description')}
+              {t('footer.description')}
             </p>
             <div className="flex gap-3">
-              {socialLinks.map((social) => (
+              {socialLinksData.map((social) => (
                 <motion.a
                   key={social.label}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
+                  onClick={() => trackEvent({ event: social.event, location: 'footer' })}
                   whileHover={{ scale: 1.1, y: -2 }}
                   className="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-muted-foreground hover:text-primary hover:gold-glow transition-all"
                 >
@@ -104,26 +112,53 @@ const Footer = () => {
               {t('contact.title')}
             </h3>
             <ul className="space-y-4">
+              {/* WhatsApp */}
+              <li className="flex items-start gap-3 text-sm text-muted-foreground group">
+                <div className="w-8 h-8 rounded-lg glass-card flex items-center justify-center shrink-0 group-hover:gold-glow transition-all bg-[#25D366]/10">
+                  <MessageCircle className="h-4 w-4 text-[#25D366]" />
+                </div>
+                <a 
+                  href={socialUrls.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackEvent({ event: 'whatsapp_click', location: 'footer' })}
+                  className="pt-1 hover:text-primary transition-colors"
+                >
+                  {t('social.whatsappChat')}
+                </a>
+              </li>
+              {/* Address */}
               <li className="flex items-start gap-3 text-sm text-muted-foreground group">
                 <div className="w-8 h-8 rounded-lg glass-card flex items-center justify-center shrink-0 group-hover:gold-glow transition-all">
                   <MapPin className="h-4 w-4 text-primary" />
                 </div>
-                <span className="pt-1">Het Steeke 5A, 2330 Merksplas, Belgium</span>
+                <span className="pt-1">{contactInfo.address}</span>
               </li>
+              {/* Phone */}
               <li className="flex items-start gap-3 text-sm text-muted-foreground group">
                 <div className="w-8 h-8 rounded-lg glass-card flex items-center justify-center shrink-0 group-hover:gold-glow transition-all">
                   <Phone className="h-4 w-4 text-primary" />
                 </div>
-                <div className="flex flex-col gap-1 pt-1">
-                  <a href="tel:+32494311119" className="hover:text-primary transition-colors">+32 494 311 119 (Mobile)</a>
-                  <a href="tel:+3214635005" className="hover:text-primary transition-colors">+32 14 63 50 05 (Office)</a>
-                </div>
+                <a 
+                  href={socialUrls.phone}
+                  onClick={() => trackEvent({ event: 'phone_click', location: 'footer' })}
+                  className="pt-1 hover:text-primary transition-colors"
+                >
+                  {contactInfo.phone}
+                </a>
               </li>
+              {/* Email */}
               <li className="flex items-center gap-3 text-sm text-muted-foreground group">
                 <div className="w-8 h-8 rounded-lg glass-card flex items-center justify-center shrink-0 group-hover:gold-glow transition-all">
                   <Mail className="h-4 w-4 text-primary" />
                 </div>
-                <a href="mailto:info@groppi.be" className="hover:text-primary transition-colors">info@groppi.be</a>
+                <a 
+                  href={socialUrls.email}
+                  onClick={() => trackEvent({ event: 'email_click', location: 'footer' })}
+                  className="hover:text-primary transition-colors"
+                >
+                  {contactInfo.email}
+                </a>
               </li>
             </ul>
           </motion.div>
@@ -136,15 +171,15 @@ const Footer = () => {
             transition={{ delay: 0.3 }}
           >
             <h3 className="font-bold text-lg mb-6 gold-gradient-text">
-              Stay Updated
+              {t('footer.newsletter.title')}
             </h3>
             <p className="text-muted-foreground text-sm mb-4">
-              Subscribe to our newsletter for the latest updates.
+              {t('footer.newsletter.description')}
             </p>
             <div className="flex gap-2">
               <input
                 type="email"
-                placeholder="Email"
+                placeholder={t('footer.newsletter.placeholder')}
                 className="flex-1 px-4 py-3 glass-card !rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 bg-transparent"
               />
               <Button className="luxury-button !rounded-xl !px-4">
