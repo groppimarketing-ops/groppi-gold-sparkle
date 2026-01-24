@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Globe, Sparkles } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { languages, type LanguageCode } from '@/i18n/config';
@@ -11,6 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import groppiLogo from '@/assets/groppi-logo.png';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -49,26 +50,23 @@ const Header = () => {
     <motion.header 
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-10 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled 
           ? 'glass-card !rounded-none border-x-0 border-t-0' 
           : 'bg-transparent'
       }`}
     >
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <motion.div
-              whileHover={{ rotate: 180 }}
-              transition={{ duration: 0.5 }}
-              className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center gold-border-glow"
-            >
-              <Sparkles className="w-4 h-4 text-primary" />
-            </motion.div>
-            <span className="text-2xl font-bold gold-gradient-text group-hover:gold-shimmer-text transition-all">
-              GROPPI
-            </span>
+          <Link to="/" className="flex items-center group">
+            <motion.img
+              src={groppiLogo}
+              alt="GROPPI Digital Marketing Bureau"
+              className="h-14 md:h-16 w-auto object-contain"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            />
           </Link>
 
           {/* Desktop Navigation */}

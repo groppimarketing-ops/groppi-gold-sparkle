@@ -1,17 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Sparkles, Send } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, MapPin, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import groppiLogo from '@/assets/groppi-logo.png';
 
 const Footer = () => {
   const { t } = useTranslation();
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
+    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
+    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: Youtube, href: 'https://youtube.com', label: 'YouTube' },
+    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
   ];
 
   const quickLinks = [
@@ -37,13 +39,14 @@ const Footer = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <Link to="/" className="inline-flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl glass-card flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-primary" />
-              </div>
-              <span className="text-2xl font-bold gold-gradient-text">
-                GROPPI
-              </span>
+            <Link to="/" className="inline-block">
+              <motion.img
+                src={groppiLogo}
+                alt="GROPPI Digital Marketing Bureau"
+                className="h-20 w-auto object-contain"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               {t('hero.description')}
@@ -53,9 +56,11 @@ const Footer = () => {
                 <motion.a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   whileHover={{ scale: 1.1, y: -2 }}
-                  className="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-muted-foreground hover:text-primary transition-colors"
+                  className="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-muted-foreground hover:text-primary hover:gold-glow transition-all"
                 >
                   <social.icon className="h-4 w-4" />
                 </motion.a>
