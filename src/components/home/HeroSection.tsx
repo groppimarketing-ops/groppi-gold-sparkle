@@ -103,7 +103,7 @@ const HeroSection = () => {
               size="lg"
               className="luxury-button text-primary-foreground font-bold px-8 py-6 text-lg rounded-xl"
             >
-              <Link to="/services">
+              <Link to="/contact">
                 {t('hero.cta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
