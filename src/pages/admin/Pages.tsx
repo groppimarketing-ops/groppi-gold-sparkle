@@ -15,7 +15,7 @@ import {
   sortableKeyboardCoordinates,
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
-import { Layers, Plus, Save, Eye, EyeOff, Trash2, GripVertical, Settings } from 'lucide-react';
+import { Layers, Plus, Save } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
 import AdminLayout from '@/components/admin/AdminLayout';
@@ -30,15 +30,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-
-interface PageSection {
-  id: string;
-  page_slug: string;
-  section_type: string;
-  display_order: number;
-  is_visible: boolean;
-  settings: unknown;
-}
+import type { PageSection, SectionType } from '@/types/cms';
 
 const AVAILABLE_PAGES = [
   { slug: 'home', label: 'Home Page' },
@@ -50,7 +42,7 @@ const AVAILABLE_PAGES = [
   { slug: 'franchise', label: 'Franchise Page' },
 ];
 
-const SECTION_TYPES = [
+const SECTION_TYPES: SectionType[] = [
   { type: 'hero', label: 'Hero Section', icon: '🎯' },
   { type: 'features', label: 'Features Grid', icon: '✨' },
   { type: 'stats', label: 'Statistics', icon: '📊' },
@@ -92,7 +84,12 @@ const Pages = () => {
         .order('display_order', { ascending: true });
 
       if (error) throw error;
-      setSections(data || []);
+      // Ensure settings is properly typed
+      const typedData = (data || []).map(section => ({
+        ...section,
+        settings: (section.settings as Record<string, unknown>) || {}
+      }));
+      setSections(typedData);
     } catch (error) {
       console.error('Error fetching sections:', error);
       toast({
@@ -166,7 +163,11 @@ const Pages = () => {
 
       if (error) throw error;
       
-      setSections([...sections, data]);
+      const typedSection = {
+        ...data,
+        settings: (data.settings as Record<string, unknown>) || {}
+      };
+      setSections([...sections, typedSection]);
       toast({
         title: 'Section added',
         description: `Added ${sectionType} section to the page`,

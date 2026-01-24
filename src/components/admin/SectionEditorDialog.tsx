@@ -8,29 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import GlassCard from '@/components/ui/GlassCard';
-
-interface PageSection {
-  id: string;
-  page_slug: string;
-  section_type: string;
-  display_order: number;
-  is_visible: boolean;
-  settings: Record<string, unknown>;
-}
-
-interface PageContent {
-  id: string;
-  section_id: string;
-  content_key: string;
-  content_en: string | null;
-  content_ar: string | null;
-  content_nl: string | null;
-  content_fr: string | null;
-  content_de: string | null;
-  content_es: string | null;
-  content_type: string;
-  media_url: string | null;
-}
+import type { PageSection, PageContent } from '@/types/cms';
 
 interface SectionEditorDialogProps {
   section: PageSection;

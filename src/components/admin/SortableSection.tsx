@@ -3,19 +3,11 @@ import { CSS } from '@dnd-kit/utilities';
 import { motion } from 'framer-motion';
 import { GripVertical, Eye, EyeOff, Settings, Trash2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
-interface PageSection {
-  id: string;
-  page_slug: string;
-  section_type: string;
-  display_order: number;
-  is_visible: boolean;
-  settings: unknown;
-}
+import type { PageSection, SectionType } from '@/types/cms';
 
 interface SortableSectionProps {
   section: PageSection;
-  sectionTypes: { type: string; label: string; icon: string }[];
+  sectionTypes: SectionType[];
   onToggleVisibility: (id: string) => void;
   onDelete: (id: string) => void;
   onEdit: (section: PageSection) => void;
