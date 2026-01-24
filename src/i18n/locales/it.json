@@ -63,10 +63,21 @@
     "oneTime": "Una tantum",
     "customQuote": "Personalizzato",
     "startingFrom": "A partire da",
+    "perMonth": "/ mese",
+    "oneTimePayment": "pagamento unico",
     "requestQuote": "Richiedi preventivo",
     "getQuote": "Ottieni un preventivo",
+    "keyInclusions": "Cosa è incluso",
     "videoPlaceholder": "Guarda il video esplicativo",
     "noResults": "Nessun servizio corrisponde ai tuoi criteri di filtro.",
+    "modal": {
+      "watchVideo": "Guarda il video",
+      "close": "Chiudi",
+      "videoDuration": "⏱ Durata video: 60 secondi",
+      "cta": "Richiedi un'offerta personalizzata",
+      "description": "Il prezzo finale dipende dalle tue esigenze specifiche e dall'ambito del progetto. Contattaci per una conversazione senza impegno e un preventivo personalizzato.",
+      "noVideo": "Video in arrivo"
+    },
     "filters": {
       "all": "Tutti i servizi",
       "monthly": "Abbonamento mensile",

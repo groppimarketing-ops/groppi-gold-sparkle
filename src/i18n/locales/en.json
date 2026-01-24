@@ -63,10 +63,21 @@
     "oneTime": "One-time",
     "customQuote": "Custom",
     "startingFrom": "Starting from",
+    "perMonth": "/ month",
+    "oneTimePayment": "one-time payment",
     "requestQuote": "Request Quote",
     "getQuote": "Get a Quote",
+    "keyInclusions": "What's included",
     "videoPlaceholder": "Watch short explainer video",
     "noResults": "No services match your filter criteria.",
+    "modal": {
+      "watchVideo": "Watch video",
+      "close": "Close",
+      "videoDuration": "⏱ Video duration: 60 seconds",
+      "cta": "Request a custom offer",
+      "description": "Final pricing depends on your specific needs and project scope. Contact us for a no-obligation conversation and a personalized quote.",
+      "noVideo": "Video coming soon"
+    },
     "filters": {
       "all": "All Services",
       "monthly": "Monthly Subscription",

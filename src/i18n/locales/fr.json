@@ -63,10 +63,21 @@
     "oneTime": "Ponctuel",
     "customQuote": "Sur mesure",
     "startingFrom": "À partir de",
+    "perMonth": "/ mois",
+    "oneTimePayment": "paiement unique",
     "requestQuote": "Demander un devis",
     "getQuote": "Obtenir un devis",
+    "keyInclusions": "Ce qui est inclus",
     "videoPlaceholder": "Voir la vidéo explicative",
     "noResults": "Aucun service ne correspond à vos critères.",
+    "modal": {
+      "watchVideo": "Voir la vidéo",
+      "close": "Fermer",
+      "videoDuration": "⏱ Durée de la vidéo : 60 secondes",
+      "cta": "Demander une offre personnalisée",
+      "description": "Le prix final dépend de vos besoins spécifiques et de l'envergure du projet. Contactez-nous pour une conversation sans engagement et un devis personnalisé.",
+      "noVideo": "Vidéo bientôt disponible"
+    },
     "filters": {
       "all": "Tous les services",
       "monthly": "Abonnement mensuel",

@@ -63,10 +63,21 @@
     "oneTime": "Jednorazowo",
     "customQuote": "Na zamówienie",
     "startingFrom": "Od",
+    "perMonth": "/ miesiąc",
+    "oneTimePayment": "płatność jednorazowa",
     "requestQuote": "Poproś o wycenę",
     "getQuote": "Uzyskaj wycenę",
+    "keyInclusions": "Co zawiera",
     "videoPlaceholder": "Obejrzyj krótki film wyjaśniający",
     "noResults": "Brak usług spełniających kryteria filtrowania.",
+    "modal": {
+      "watchVideo": "Obejrzyj film",
+      "close": "Zamknij",
+      "videoDuration": "⏱ Czas trwania filmu: 60 sekund",
+      "cta": "Poproś o indywidualną ofertę",
+      "description": "Ostateczna cena zależy od Twoich konkretnych potrzeb i zakresu projektu. Skontaktuj się z nami, aby porozmawiać bez zobowiązań i uzyskać spersonalizowaną wycenę.",
+      "noVideo": "Film wkrótce dostępny"
+    },
     "filters": {
       "all": "Wszystkie usługi",
       "monthly": "Subskrypcja miesięczna",

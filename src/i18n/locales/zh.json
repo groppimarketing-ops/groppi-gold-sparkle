@@ -63,10 +63,21 @@
     "oneTime": "一次性",
     "customQuote": "定制",
     "startingFrom": "起价",
+    "perMonth": "/ 月",
+    "oneTimePayment": "一次性付款",
     "requestQuote": "请求报价",
     "getQuote": "获取报价",
+    "keyInclusions": "包含内容",
     "videoPlaceholder": "观看简短说明视频",
     "noResults": "没有符合您筛选条件的服务。",
+    "modal": {
+      "watchVideo": "观看视频",
+      "close": "关闭",
+      "videoDuration": "⏱ 视频时长：60秒",
+      "cta": "请求定制报价",
+      "description": "最终价格取决于您的具体需求和项目范围。联系我们进行无义务对话。",
+      "noVideo": "视频即将推出"
+    },
     "filters": {
       "all": "所有服务",
       "monthly": "月度订阅",

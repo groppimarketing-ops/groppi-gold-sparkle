@@ -63,10 +63,21 @@
     "oneTime": "Único",
     "customQuote": "Personalizado",
     "startingFrom": "A partir de",
+    "perMonth": "/ mês",
+    "oneTimePayment": "pagamento único",
     "requestQuote": "Pedir orçamento",
     "getQuote": "Obter orçamento",
+    "keyInclusions": "O que está incluído",
     "videoPlaceholder": "Ver vídeo explicativo",
     "noResults": "Nenhum serviço corresponde aos seus critérios de filtro.",
+    "modal": {
+      "watchVideo": "Ver vídeo",
+      "close": "Fechar",
+      "videoDuration": "⏱ Duração do vídeo: 60 segundos",
+      "cta": "Pedir orçamento personalizado",
+      "description": "O preço final depende das suas necessidades específicas e do âmbito do projeto. Contacte-nos para uma conversa sem compromisso e um orçamento personalizado.",
+      "noVideo": "Vídeo em breve"
+    },
     "filters": {
       "all": "Todos os serviços",
       "monthly": "Subscrição mensal",

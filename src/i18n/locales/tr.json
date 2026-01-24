@@ -63,10 +63,21 @@
     "oneTime": "Tek Seferlik",
     "customQuote": "Özel",
     "startingFrom": "Başlangıç",
+    "perMonth": "/ ay",
+    "oneTimePayment": "tek seferlik ödeme",
     "requestQuote": "Teklif İste",
     "getQuote": "Teklif Al",
+    "keyInclusions": "Neler dahil",
     "videoPlaceholder": "Kısa açıklama videosunu izle",
     "noResults": "Filtre kriterlerinize uyan hizmet bulunamadı.",
+    "modal": {
+      "watchVideo": "Videoyu izle",
+      "close": "Kapat",
+      "videoDuration": "⏱ Video süresi: 60 saniye",
+      "cta": "Özel teklif isteyin",
+      "description": "Nihai fiyat, özel ihtiyaçlarınıza ve proje kapsamına bağlıdır. Bağlayıcı olmayan bir görüşme için bizimle iletişime geçin.",
+      "noVideo": "Video yakında"
+    },
     "filters": {
       "all": "Tüm Hizmetler",
       "monthly": "Aylık Abonelik",

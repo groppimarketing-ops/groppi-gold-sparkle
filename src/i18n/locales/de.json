@@ -63,10 +63,21 @@
     "oneTime": "Einmalig",
     "customQuote": "Individuell",
     "startingFrom": "Ab",
+    "perMonth": "/ Monat",
+    "oneTimePayment": "einmalige Zahlung",
     "requestQuote": "Angebot anfordern",
     "getQuote": "Angebot erhalten",
+    "keyInclusions": "Was enthalten ist",
     "videoPlaceholder": "Kurzes Erklärvideo ansehen",
     "noResults": "Keine Dienstleistungen entsprechen Ihren Filterkriterien.",
+    "modal": {
+      "watchVideo": "Video ansehen",
+      "close": "Schließen",
+      "videoDuration": "⏱ Videodauer: 60 Sekunden",
+      "cta": "Individuelles Angebot anfordern",
+      "description": "Der Endpreis hängt von Ihren spezifischen Bedürfnissen und dem Projektumfang ab. Kontaktieren Sie uns für ein unverbindliches Gespräch und ein personalisiertes Angebot.",
+      "noVideo": "Video bald verfügbar"
+    },
     "filters": {
       "all": "Alle Dienstleistungen",
       "monthly": "Monatliches Abonnement",

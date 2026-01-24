@@ -63,10 +63,21 @@
     "oneTime": "لمرة واحدة",
     "customQuote": "مخصص",
     "startingFrom": "يبدأ من",
+    "perMonth": "/ شهرياً",
+    "oneTimePayment": "دفعة واحدة",
     "requestQuote": "اطلب عرض سعر",
     "getQuote": "احصل على عرض سعر",
+    "keyInclusions": "ما يتضمنه",
     "videoPlaceholder": "شاهد فيديو توضيحي قصير",
     "noResults": "لا توجد خدمات تطابق معايير البحث.",
+    "modal": {
+      "watchVideo": "شاهد الفيديو",
+      "close": "إغلاق",
+      "videoDuration": "⏱ مدة الفيديو: 60 ثانية",
+      "cta": "اطلب عرض سعر مخصص",
+      "description": "يعتمد السعر النهائي على احتياجاتك ونطاق المشروع. تواصل معنا لمحادثة بدون التزام وعرض سعر مخصص.",
+      "noVideo": "الفيديو قريباً"
+    },
     "filters": {
       "all": "جميع الخدمات",
       "monthly": "اشتراك شهري",

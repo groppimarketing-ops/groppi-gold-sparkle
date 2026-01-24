@@ -1,11 +1,12 @@
+import { forwardRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play, Calendar, CreditCard, MessageSquare, LucideIcon } from 'lucide-react';
+import { ArrowRight, Play, Calendar, CreditCard, MessageSquare, LucideIcon, Check } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { useState } from 'react';
+import ServiceVideoModal from './ServiceVideoModal';
 
 export interface ServiceData {
   id: string;
@@ -26,9 +27,10 @@ interface ServiceCardProps {
   index: number;
 }
 
-const ServiceCard = ({ service, index }: ServiceCardProps) => {
-  const { t } = useTranslation();
-  const [showVideo, setShowVideo] = useState(false);
+const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, index }, ref) => {
+  const { t, i18n } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
 
   const getPricingBadge = () => {
     switch (service.pricingType) {
@@ -56,115 +58,157 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
     }
   };
 
-  const getPriceRange = () => {
+  const getPriceDisplay = () => {
+    const pricingLabel = service.pricingType === 'monthly' 
+      ? t('services.perMonth')
+      : service.pricingType === 'one_time'
+      ? t('services.oneTimePayment')
+      : '';
+
     if (service.pricingType === 'custom') {
-      return t('services.requestQuote');
+      return (
+        <div className="text-center">
+          <span className="text-lg font-bold text-primary">{t('services.requestQuote')}</span>
+        </div>
+      );
     }
+    
     if (service.priceMin && service.priceMax) {
-      return `€${service.priceMin.toLocaleString()} - €${service.priceMax.toLocaleString()}`;
+      return (
+        <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
+          <span className="text-xs text-muted-foreground">{t('services.startingFrom')}</span>
+          <span className="text-xl font-bold text-primary">
+            €{service.priceMin.toLocaleString()} - €{service.priceMax.toLocaleString()}
+          </span>
+          {pricingLabel && (
+            <span className="text-xs text-muted-foreground">{pricingLabel}</span>
+          )}
+        </div>
+      );
     }
+    
     if (service.priceMin) {
-      return `${t('services.startingFrom')} €${service.priceMin.toLocaleString()}`;
+      return (
+        <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
+          <span className="text-xs text-muted-foreground">{t('services.startingFrom')}</span>
+          <span className="text-xl font-bold text-primary">
+            €{service.priceMin.toLocaleString()}
+          </span>
+          {pricingLabel && (
+            <span className="text-xs text-muted-foreground">{pricingLabel}</span>
+          )}
+        </div>
+      );
     }
-    return t('services.requestQuote');
+    
+    return (
+      <span className="text-lg font-bold text-primary">{t('services.requestQuote')}</span>
+    );
+  };
+
+  const handleCardClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleWatchVideo = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsModalOpen(true);
   };
 
   return (
-    <GlassCard
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
-      className="group relative overflow-hidden flex flex-col h-full"
-    >
-      {/* Gradient Background */}
-      <div 
-        className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} 
-      />
+    <>
+      <GlassCard
+        ref={ref}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: index * 0.1 }}
+        className="group relative overflow-hidden flex flex-col h-full cursor-pointer"
+        onClick={handleCardClick}
+      >
+        {/* Gradient Background */}
+        <div 
+          className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} 
+        />
 
-      {/* Image/Video Section */}
-      {(service.imageUrl || service.videoUrl) && (
-        <div className="relative -mx-6 -mt-6 mb-6 aspect-video overflow-hidden rounded-t-2xl">
-          {showVideo && service.videoUrl ? (
-            <video
-              src={service.videoUrl}
-              controls
-              autoPlay
-              className="w-full h-full object-cover"
-            />
-          ) : (
-            <>
-              <img
-                src={service.imageUrl || '/placeholder.svg'}
-                alt={t(service.titleKey)}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-              {service.videoUrl && (
-                <motion.button
-                  onClick={() => setShowVideo(true)}
-                  className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <div className="w-16 h-16 rounded-full glass-card flex items-center justify-center">
-                    <Play className="w-8 h-8 text-primary fill-primary" />
-                  </div>
-                </motion.button>
-              )}
-            </>
-          )}
+        {/* Top Section: Badge + Price */}
+        <div className="relative flex items-start justify-between mb-5 gap-3">
+          {getPricingBadge()}
+          {getPriceDisplay()}
         </div>
-      )}
 
-      {/* Pricing Badge */}
-      <div className="relative flex items-center justify-between mb-4">
-        {getPricingBadge()}
-        <span className="text-sm font-semibold text-primary">
-          {getPriceRange()}
-        </span>
-      </div>
+        {/* Icon */}
+        <motion.div 
+          className="relative w-14 h-14 rounded-xl glass-card flex items-center justify-center mb-4 icon-3d"
+          whileHover={{ rotate: 5, scale: 1.1 }}
+        >
+          <service.icon className="w-7 h-7 text-primary" />
+        </motion.div>
+        
+        {/* Title */}
+        <h3 className="relative text-xl font-bold mb-3 group-hover:gold-gradient-text transition-all duration-300">
+          {t(service.titleKey)}
+        </h3>
+        
+        {/* Description */}
+        <p className="relative text-muted-foreground mb-5 text-sm leading-relaxed line-clamp-3">
+          {t(service.descriptionKey)}
+        </p>
+        
+        {/* Features / Key Inclusions */}
+        <div className="relative mb-6 flex-grow">
+          <p className="text-xs uppercase tracking-wider text-muted-foreground mb-3 font-medium">
+            {t('services.keyInclusions')}
+          </p>
+          <ul className="space-y-2">
+            {service.features.slice(0, 4).map((featureKey, idx) => (
+              <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                <Check className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                <span>{t(featureKey)}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        
+        {/* CTA Buttons */}
+        <div className="relative space-y-3 mt-auto">
+          {/* Primary CTA */}
+          <Button
+            asChild
+            className="w-full luxury-button"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Link to={`/contact?service=${service.id}`}>
+              {t('services.getQuote')}
+              <ArrowRight className={`h-4 w-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'} group-hover:translate-x-1 transition-transform`} />
+            </Link>
+          </Button>
 
-      {/* Icon */}
-      <motion.div 
-        className="relative w-14 h-14 rounded-xl glass-card flex items-center justify-center mb-4 icon-3d"
-        whileHover={{ rotate: 5, scale: 1.1 }}
-      >
-        <service.icon className="w-7 h-7 text-primary" />
-      </motion.div>
-      
-      {/* Title */}
-      <h3 className="relative text-xl font-bold mb-3 group-hover:gold-gradient-text transition-all duration-300">
-        {t(service.titleKey)}
-      </h3>
-      
-      {/* Description */}
-      <p className="relative text-muted-foreground mb-4 text-sm leading-relaxed">
-        {t(service.descriptionKey)}
-      </p>
-      
-      {/* Features */}
-      <ul className="relative space-y-2 mb-6 flex-grow">
-        {service.features.map((featureKey, idx) => (
-          <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
-            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse-glow flex-shrink-0" />
-            {t(featureKey)}
-          </li>
-        ))}
-      </ul>
-      
-      {/* CTA Button */}
-      <Button
-        asChild
-        className="relative w-full luxury-button mt-auto"
-      >
-        <Link to={`/contact?service=${service.id}`}>
-          {t('services.getQuote')}
-          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-        </Link>
-      </Button>
-    </GlassCard>
+          {/* Secondary CTA - Watch Video */}
+          <Button
+            variant="outline"
+            className="w-full glass-button gap-2"
+            onClick={handleWatchVideo}
+          >
+            <Play className="w-4 h-4 text-primary" />
+            {t('services.modal.watchVideo')}
+          </Button>
+        </div>
+      </GlassCard>
+
+      {/* Video Modal */}
+      <ServiceVideoModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        videoUrl={service.videoUrl}
+        serviceTitle={t(service.titleKey)}
+        serviceDescription={t(service.descriptionKey)}
+        serviceId={service.id}
+      />
+    </>
   );
-};
+});
+
+ServiceCard.displayName = 'ServiceCard';
 
 export default ServiceCard;

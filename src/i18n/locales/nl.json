@@ -63,10 +63,21 @@
     "oneTime": "Eenmalig",
     "customQuote": "Op maat",
     "startingFrom": "Vanaf",
+    "perMonth": "/ maand",
+    "oneTimePayment": "eenmalige betaling",
     "requestQuote": "Offerte aanvragen",
     "getQuote": "Vraag een offerte aan",
+    "keyInclusions": "Wat inbegrepen is",
     "videoPlaceholder": "Bekijk korte uitlegvideo",
     "noResults": "Geen diensten voldoen aan uw filtercriteria.",
+    "modal": {
+      "watchVideo": "Bekijk video",
+      "close": "Sluiten",
+      "videoDuration": "⏱ Videoduur: 60 seconden",
+      "cta": "Vraag een offerte op maat aan",
+      "description": "De uiteindelijke prijs hangt af van uw specifieke behoeften en projectomvang. Neem contact op voor een vrijblijvend gesprek en een gepersonaliseerde offerte.",
+      "noVideo": "Video binnenkort beschikbaar"
+    },
     "filters": {
       "all": "Alle diensten",
       "monthly": "Maandelijks abonnement",
