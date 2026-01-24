@@ -114,7 +114,7 @@ const HeroSection = () => {
               size="lg"
               className="glass-button text-foreground px-8 py-6 text-lg"
             >
-              <Link to="/contact">
+              <Link to="/gallery">
                 {t('hero.ctaSecondary')}
               </Link>
             </Button>

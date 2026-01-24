@@ -54,7 +54,7 @@ const DynamicSection = forwardRef<HTMLElement, DynamicSectionProps>(({ section, 
                 </Link>
               </Button>
               <Button asChild size="lg" className="glass-button">
-                <Link to="/contact">
+                <Link to="/gallery">
                   {t('hero.ctaSecondary')}
                 </Link>
               </Button>
