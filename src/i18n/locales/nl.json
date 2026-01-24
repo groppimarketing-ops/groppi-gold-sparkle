@@ -9,11 +9,102 @@
     "franchise": "Samenwerking"
   },
   "hero": {
-    "title": "GROPPI – Menselijke expertise, versterkt door slimme technologie",
-    "subtitle": "Uw strategische digitale partner sinds 2016",
-    "description": "GROPPI werd opgericht in België in 2016 en is gebouwd op echte ervaring, strategisch inzicht en duurzame samenwerkingen. Met een multidisciplinair team van meer dan 9 professionals ondersteunen wij bedrijven in België, Europa en het Midden-Oosten met digitale oplossingen op maat. Wij gebruiken AI als een slimme versneller, nooit als vervanging van menselijke creativiteit of besluitvorming.",
-    "cta": "Boek een gratis consult",
-    "ctaSecondary": "Bekijk ons werk"
+    "title": "GROPPI Gold Standard",
+    "subtitle": "Excellence in Every Detail",
+    "description": "Premium services since 2016.",
+    "cta": "Book a Free Consultation",
+    "ctaSecondary": "View Our Services"
+  },
+  "home": {
+    "hero": {
+      "badge": "Belgisch bureau sinds 2016",
+      "title": "Digitale groei gebouwd op echte ervaring",
+      "description": "GROPPI is een Belgisch digitaal bureau, opgericht in 2016. Met een team van meer dan 9 professionals helpen wij bedrijven en creators in Europa en het Midden-Oosten om een sterke digitale aanwezigheid op te bouwen. Technologie ondersteunt ons werk, maar strategie en creativiteit blijven menselijk.",
+      "cta": "Plan een gratis gesprek",
+      "ctaSecondary": "Bekijk onze diensten"
+    },
+    "whatWeDo": {
+      "subtitle": "Wat wij doen",
+      "title": "Onze diensten",
+      "description": "Duidelijke, resultaatgerichte diensten zonder hype. Elk project wordt afgestemd op uw specifieke doelen.",
+      "cta": "Bekijk alle diensten"
+    },
+    "services": {
+      "content": {
+        "title": "Contentproductie & Creators",
+        "desc": "Professionele video's, foto's en visuele content voor uw merk."
+      },
+      "websites": {
+        "title": "Websiteontwikkeling",
+        "desc": "Van one-pagers tot complete webshops, gebouwd voor conversie."
+      },
+      "marketing": {
+        "title": "Digitale marketing",
+        "desc": "Advertentiebeheer, SEO en social media management."
+      },
+      "branding": {
+        "title": "Branding & Design",
+        "desc": "Visuele identiteit en merkstrategie die blijft hangen."
+      }
+    },
+    "whyGroppi": {
+      "subtitle": "Waarom GROPPI",
+      "title": "Vertrouwen gebouwd op feiten",
+      "description": "Geen overdreven claims, alleen eerlijke resultaten en bewezen ervaring."
+    },
+    "trust": {
+      "founded": {
+        "title": "Opgericht in 2016",
+        "desc": "Meer dan 8 jaar ervaring in digitale marketing"
+      },
+      "team": {
+        "title": "9+ Professionals",
+        "desc": "Een multidisciplinair team van experts"
+      },
+      "reach": {
+        "title": "Europa & Midden-Oosten",
+        "desc": "Internationale samenwerkingen en partnerships"
+      },
+      "partnerships": {
+        "title": "Langetermijnrelaties",
+        "desc": "Wij bouwen duurzame partnerships"
+      }
+    },
+    "approach": {
+      "badge": "Onze aanpak",
+      "title": "Menselijke expertise, ondersteund door slimme technologie",
+      "text": "Wij geloven niet in snelle trends of automatisering zonder visie. Bij GROPPI combineren we menselijke expertise met slimme technologie om duurzame digitale resultaten te behalen.",
+      "cta": "Meer over ons",
+      "tags": {
+        "humanExpertise": "Menselijke expertise",
+        "smartTechnology": "Slimme technologie",
+        "sustainableResults": "Duurzame resultaten"
+      },
+      "human": {
+        "title": "Mens eerst",
+        "desc": "Strategie en creativiteit door ervaren professionals"
+      },
+      "ai": {
+        "title": "AI als tool",
+        "desc": "Technologie ter ondersteuning, niet ter vervanging"
+      }
+    },
+    "featured": {
+      "subtitle": "Pakketten",
+      "title": "Flexibele opties voor elk budget",
+      "description": "Kies het pakket dat past bij uw behoeften, of vraag een oplossing op maat.",
+      "starter": "Perfect voor starters en kleine projecten",
+      "growth": "Ideaal voor groeiende bedrijven",
+      "pro": "Volledige ondersteuning voor ambitieuze merken",
+      "popular": "Populair",
+      "cta": "Bekijk alle pakketten"
+    },
+    "cta": {
+      "title": "Klaar om uw digitale groei serieus aan te pakken?",
+      "description": "Laten we samen bespreken hoe we uw bedrijf kunnen helpen groeien met een strategie die werkt.",
+      "contact": "Neem contact op",
+      "whatsapp": "Chat via WhatsApp"
+    }
   },
   "about": {
     "title": "Over GROPPI",
