@@ -209,6 +209,122 @@ export type Database = {
         }
         Relationships: []
       }
+      page_content: {
+        Row: {
+          content_ar: string | null
+          content_bn: string | null
+          content_de: string | null
+          content_en: string | null
+          content_es: string | null
+          content_fr: string | null
+          content_hi: string | null
+          content_it: string | null
+          content_key: string
+          content_nl: string | null
+          content_pl: string | null
+          content_pt: string | null
+          content_ru: string | null
+          content_tr: string | null
+          content_type: string
+          content_ur: string | null
+          content_zh: string | null
+          created_at: string
+          id: string
+          media_url: string | null
+          section_id: string
+          updated_at: string
+        }
+        Insert: {
+          content_ar?: string | null
+          content_bn?: string | null
+          content_de?: string | null
+          content_en?: string | null
+          content_es?: string | null
+          content_fr?: string | null
+          content_hi?: string | null
+          content_it?: string | null
+          content_key: string
+          content_nl?: string | null
+          content_pl?: string | null
+          content_pt?: string | null
+          content_ru?: string | null
+          content_tr?: string | null
+          content_type?: string
+          content_ur?: string | null
+          content_zh?: string | null
+          created_at?: string
+          id?: string
+          media_url?: string | null
+          section_id: string
+          updated_at?: string
+        }
+        Update: {
+          content_ar?: string | null
+          content_bn?: string | null
+          content_de?: string | null
+          content_en?: string | null
+          content_es?: string | null
+          content_fr?: string | null
+          content_hi?: string | null
+          content_it?: string | null
+          content_key?: string
+          content_nl?: string | null
+          content_pl?: string | null
+          content_pt?: string | null
+          content_ru?: string | null
+          content_tr?: string | null
+          content_type?: string
+          content_ur?: string | null
+          content_zh?: string | null
+          created_at?: string
+          id?: string
+          media_url?: string | null
+          section_id?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "page_content_section_id_fkey"
+            columns: ["section_id"]
+            isOneToOne: false
+            referencedRelation: "page_sections"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      page_sections: {
+        Row: {
+          created_at: string
+          display_order: number
+          id: string
+          is_visible: boolean
+          page_slug: string
+          section_type: string
+          settings: Json | null
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_visible?: boolean
+          page_slug: string
+          section_type: string
+          settings?: Json | null
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_visible?: boolean
+          page_slug?: string
+          section_type?: string
+          settings?: Json | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           avatar_url: string | null
