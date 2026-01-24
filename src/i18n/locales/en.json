@@ -9,11 +9,102 @@
     "franchise": "Partnership"
   },
   "hero": {
-    "title": "GROPPI – Human Expertise, Powered by Smart Technology",
-    "subtitle": "Your Strategic Digital Partner Since 2016",
-    "description": "GROPPI was founded in Belgium in 2016 and is built on real experience, strategic insight, and lasting partnerships. With a multidisciplinary team of over 9 professionals, we support businesses in Belgium, Europe, and the Middle East with tailored digital solutions. We use AI as a smart accelerator, never as a replacement for human creativity or decision-making.",
+    "title": "GROPPI Gold Standard",
+    "subtitle": "Excellence in Every Detail",
+    "description": "Premium services since 2016.",
     "cta": "Book a Free Consultation",
-    "ctaSecondary": "View Our Work"
+    "ctaSecondary": "View Our Services"
+  },
+  "home": {
+    "hero": {
+      "badge": "Belgian agency since 2016",
+      "title": "Digital growth built on real experience",
+      "description": "GROPPI is a Belgian digital agency, founded in 2016. With a team of over 9 professionals, we help businesses and creators across Europe and the Middle East build a strong digital presence. Technology supports our work, but strategy and creativity remain human.",
+      "cta": "Schedule a free consultation",
+      "ctaSecondary": "View our services"
+    },
+    "whatWeDo": {
+      "subtitle": "What we do",
+      "title": "Our services",
+      "description": "Clear, results-driven services without the hype. Every project is tailored to your specific goals.",
+      "cta": "View all services"
+    },
+    "services": {
+      "content": {
+        "title": "Content Production & Creators",
+        "desc": "Professional videos, photos, and visual content for your brand."
+      },
+      "websites": {
+        "title": "Website Development",
+        "desc": "From one-pagers to complete webshops, built for conversion."
+      },
+      "marketing": {
+        "title": "Digital Marketing",
+        "desc": "Ad management, SEO, and social media management."
+      },
+      "branding": {
+        "title": "Branding & Design",
+        "desc": "Visual identity and brand strategy that sticks."
+      }
+    },
+    "whyGroppi": {
+      "subtitle": "Why GROPPI",
+      "title": "Trust built on facts",
+      "description": "No exaggerated claims, just honest results and proven experience."
+    },
+    "trust": {
+      "founded": {
+        "title": "Founded in 2016",
+        "desc": "Over 8 years of digital marketing experience"
+      },
+      "team": {
+        "title": "9+ Professionals",
+        "desc": "A multidisciplinary team of experts"
+      },
+      "reach": {
+        "title": "Europe & Middle East",
+        "desc": "International collaborations and partnerships"
+      },
+      "partnerships": {
+        "title": "Long-term Relationships",
+        "desc": "We build lasting partnerships"
+      }
+    },
+    "approach": {
+      "badge": "Our approach",
+      "title": "Human expertise, supported by smart technology",
+      "text": "We don't believe in quick trends or automation without vision. At GROPPI, we combine human expertise with smart technology to achieve sustainable digital results.",
+      "cta": "Learn more about us",
+      "tags": {
+        "humanExpertise": "Human expertise",
+        "smartTechnology": "Smart technology",
+        "sustainableResults": "Sustainable results"
+      },
+      "human": {
+        "title": "Human first",
+        "desc": "Strategy and creativity by experienced professionals"
+      },
+      "ai": {
+        "title": "AI as a tool",
+        "desc": "Technology as support, not replacement"
+      }
+    },
+    "featured": {
+      "subtitle": "Packages",
+      "title": "Flexible options for every budget",
+      "description": "Choose the package that fits your needs, or request a custom solution.",
+      "starter": "Perfect for starters and small projects",
+      "growth": "Ideal for growing businesses",
+      "pro": "Full support for ambitious brands",
+      "popular": "Popular",
+      "cta": "View all packages"
+    },
+    "cta": {
+      "title": "Ready to take your digital growth seriously?",
+      "description": "Let's discuss together how we can help your business grow with a strategy that works.",
+      "contact": "Get in touch",
+      "whatsapp": "Chat via WhatsApp"
+    }
   },
   "about": {
     "title": "About GROPPI",

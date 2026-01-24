@@ -54,7 +54,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-5xl mx-auto"
         >
-          {/* AI Spark Badge */}
+          {/* Since 2016 Badge */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -62,40 +62,31 @@ const HeroSection = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8"
           >
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm text-primary font-medium">AI-Powered Excellence</span>
+            <span className="text-sm text-primary font-medium">{t('home.hero.badge')}</span>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 gold-shimmer-text gold-text-glow tracking-tight"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 gold-shimmer-text gold-text-glow tracking-tight"
           >
-            {t('hero.title')}
+            {t('home.hero.title')}
           </motion.h1>
           
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-xl md:text-2xl text-primary font-medium mb-4 tracking-wide"
+            className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            {t('hero.subtitle')}
-          </motion.p>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12"
-          >
-            {t('hero.description')}
+            {t('home.hero.description')}
           </motion.p>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button
@@ -104,7 +95,7 @@ const HeroSection = () => {
               className="luxury-button text-primary-foreground font-bold px-8 py-6 text-lg rounded-xl"
             >
               <Link to="/contact">
-                {t('hero.cta')}
+                {t('home.hero.cta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -114,8 +105,8 @@ const HeroSection = () => {
               size="lg"
               className="glass-button text-foreground px-8 py-6 text-lg"
             >
-              <Link to="/gallery">
-                {t('hero.ctaSecondary')}
+              <Link to="/services">
+                {t('home.hero.ctaSecondary')}
               </Link>
             </Button>
           </motion.div>
@@ -126,7 +117,7 @@ const HeroSection = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
+        transition={{ delay: 1.2 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
         <motion.div
