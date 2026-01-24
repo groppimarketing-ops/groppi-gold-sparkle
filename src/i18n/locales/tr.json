@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "blog": "Blog",
+    "gallery": "Galeri",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Groppi Gold Standard",
+    "subtitle": "Her detayda mükemmellik",
+    "description": "1891'den beri lüks ve kalite standardını belirliyoruz. En iyi işçiliği ve benzersiz hizmeti deneyimleyin.",
+    "cta": "Daha Fazla Keşfet",
+    "ctaSecondary": "Bize Ulaşın"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Hikayemiz",
+    "description": "Bir asırdan fazla süredir Groppi, mükemmellik ve lüksün eş anlamlısıdır. Kalite ve geleneğe olan bağlılığımız bizi sektörde güvenilir bir isim haline getirdi.",
+    "mission": "Misyonumuz",
+    "missionText": "Beklentileri aşan ve kalıcı anılar yaratan olağanüstü ürünler ve hizmetler sunmak.",
+    "vision": "Vizyonumuz",
+    "visionText": "Lüks ve premium kalite deneyimlerinde küresel lider olmak.",
+    "values": "Değerlerimiz",
+    "valuesText": "Mükemmellik, dürüstlük, yenilikçilik ve müşteri memnuniyeti."
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Neler sunuyoruz",
+    "description": "En yüksek beklentilerinizi karşılamak için tasarlanmış kapsamlı premium hizmet yelpazemizi keşfedin."
+  },
+  "blog": {
+    "title": "Son Haberler",
+    "subtitle": "Güncel Kalın",
+    "readMore": "Devamını Oku",
+    "publishedOn": "Yayınlanma tarihi",
+    "by": "yazar"
+  },
+  "gallery": {
+    "title": "Galeri",
+    "subtitle": "Görsel mükemmellik",
+    "description": "Çalışmalarımızı ve başarılarımızı sergileyen etkileyici görsellerimizi keşfedin."
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Bize Ulaşın",
+    "description": "Sizden haber almak isteriz. Bize bir mesaj gönderin, en kısa sürede yanıtlayacağız.",
+    "name": "Adınız",
+    "email": "E-posta adresi",
+    "phone": "Telefon numarası",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "send": "Mesaj Gönder",
+    "sending": "Gönderiliyor...",
+    "success": "Mesaj başarıyla gönderildi!",
+    "error": "Gönderme başarısız. Lütfen tekrar deneyin.",
+    "address": "Adres",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-posta"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "followUs": "Bizi Takip Edin"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "retry": "Tekrar Dene",
+    "back": "Geri",
+    "next": "İleri",
+    "previous": "Önceki",
+    "close": "Kapat",
+    "search": "Ara",
+    "noResults": "Sonuç bulunamadı"
+  },
+  "validation": {
+    "required": "Bu alan gereklidir",
+    "email": "Lütfen geçerli bir e-posta adresi girin",
+    "minLength": "En az {{count}} karakter olmalıdır",
+    "maxLength": "{{count}} karakterden az olmalıdır"
+  },
+  "admin": {
+    "dashboard": "Panel",
+    "articles": "Makaleler",
+    "media": "Medya",
+    "services": "Hizmetler",
+    "messages": "Mesajlar",
+    "settings": "Ayarlar",
+    "logout": "Çıkış Yap",
+    "login": "Giriş Yap",
+    "email": "E-posta",
+    "password": "Şifre",
+    "loginTitle": "Yönetici Girişi",
+    "loginButton": "Giriş Yap"
+  }
+}

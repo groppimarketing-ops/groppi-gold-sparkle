@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "blog": "Blog",
+    "gallery": "Galerie",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Groppi Gold Standard",
+    "subtitle": "Exzellenz in jedem Detail",
+    "description": "Wir setzen seit 1891 den Maßstab für Luxus und Qualität. Erleben Sie feinste Handwerkskunst und unvergleichlichen Service.",
+    "cta": "Mehr entdecken",
+    "ctaSecondary": "Kontaktieren Sie uns"
+  },
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Unsere Geschichte",
+    "description": "Seit über einem Jahrhundert steht Groppi für Exzellenz und Luxus. Unser Engagement für Qualität und Tradition hat uns zu einem vertrauenswürdigen Namen in der Branche gemacht.",
+    "mission": "Unsere Mission",
+    "missionText": "Außergewöhnliche Produkte und Dienstleistungen zu liefern, die Erwartungen übertreffen und bleibende Erinnerungen schaffen.",
+    "vision": "Unsere Vision",
+    "visionText": "Der globale Marktführer für Luxus- und Premium-Qualitätserlebnisse zu sein.",
+    "values": "Unsere Werte",
+    "valuesText": "Exzellenz, Integrität, Innovation und Kundenzufriedenheit."
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Was wir anbieten",
+    "description": "Entdecken Sie unser umfassendes Angebot an Premium-Dienstleistungen, die auf Ihre höchsten Erwartungen zugeschnitten sind."
+  },
+  "blog": {
+    "title": "Neueste Nachrichten",
+    "subtitle": "Bleiben Sie informiert",
+    "readMore": "Mehr lesen",
+    "publishedOn": "Veröffentlicht am",
+    "by": "von"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Visuelle Exzellenz",
+    "description": "Entdecken Sie unsere Sammlung atemberaubender Bilder, die unsere Arbeit und Erfolge zeigen."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Nehmen Sie Kontakt auf",
+    "description": "Wir freuen uns von Ihnen zu hören. Senden Sie uns eine Nachricht und wir antworten so schnell wie möglich.",
+    "name": "Ihr Name",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "subject": "Betreff",
+    "message": "Ihre Nachricht",
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "success": "Nachricht erfolgreich gesendet!",
+    "error": "Senden fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "address": "Adresse",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "followUs": "Folgen Sie uns"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Erneut versuchen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Vorherige",
+    "close": "Schließen",
+    "search": "Suchen",
+    "noResults": "Keine Ergebnisse gefunden"
+  },
+  "validation": {
+    "required": "Dieses Feld ist erforderlich",
+    "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "minLength": "Muss mindestens {{count}} Zeichen lang sein",
+    "maxLength": "Muss weniger als {{count}} Zeichen haben"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "articles": "Artikel",
+    "media": "Medien",
+    "services": "Dienstleistungen",
+    "messages": "Nachrichten",
+    "settings": "Einstellungen",
+    "logout": "Abmelden",
+    "login": "Anmelden",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "loginTitle": "Admin-Anmeldung",
+    "loginButton": "Anmelden"
+  }
+}
