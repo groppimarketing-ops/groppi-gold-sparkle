@@ -4,71 +4,101 @@
     "about": "Over ons",
     "services": "Diensten",
     "blog": "Blog",
-    "gallery": "Galerij",
+    "gallery": "Portfolio",
     "contact": "Contact",
-    "franchise": "Franchise"
+    "franchise": "Samenwerking"
   },
   "hero": {
-    "title": "GROPPI: Digitale Creativiteit Voorbij Grenzen",
-    "subtitle": "Excellentie in elk detail",
-    "description": "We benutten AI-gestuurde oplossingen om uw digitale aanwezigheid te transformeren. Ervaar innovatieve contentcreatie en marketingdiensten die resultaten opleveren.",
-    "cta": "Boek gratis consultatie",
+    "title": "GROPPI – Menselijke expertise, versterkt door slimme technologie",
+    "subtitle": "Uw strategische digitale partner sinds 2016",
+    "description": "GROPPI werd opgericht in België in 2016 en is gebouwd op echte ervaring, strategisch inzicht en duurzame samenwerkingen. Met een multidisciplinair team van meer dan 9 professionals ondersteunen wij bedrijven in België, Europa en het Midden-Oosten met digitale oplossingen op maat. Wij gebruiken AI als een slimme versneller, nooit als vervanging van menselijke creativiteit of besluitvorming.",
+    "cta": "Boek een gratis consult",
     "ctaSecondary": "Bekijk ons werk"
   },
   "about": {
-    "title": "Over ons",
+    "title": "Over GROPPI",
     "subtitle": "Ons verhaal",
-    "description": "GROPPI is een digitaal marketingbureau dat pioniert in het gebruik van AI bij contentcreatie en marketingdiensten. Onze toewijding aan innovatie en kwaliteit heeft ons tot een vertrouwde partner gemaakt voor bedrijven in heel Europa.",
+    "description": "GROPPI begon in België in 2016 en groeide door jaren van praktijkervaring, sterke partnerships en bewezen resultaten. Vandaag werken wij samen met klanten in Europa en het Midden-Oosten en combineren wij strategie, creativiteit en technologie om duurzame digitale groei te realiseren.",
     "mission": "Onze missie",
-    "missionText": "Uitzonderlijke digitale oplossingen leveren die verwachtingen overtreffen en meetbare bedrijfsgroei stimuleren.",
+    "missionText": "Bedrijven helpen groeien door strategische digitale oplossingen die zijn gebaseerd op menselijke expertise, ondersteund door slimme technologie.",
     "vision": "Onze visie",
-    "visionText": "Het toonaangevende digitale marketingbureau zijn dat AI inzet voor creatieve excellentie.",
+    "visionText": "Een betrouwbare partner zijn voor bedrijven die duurzame digitale groei nastreven, met een team dat écht begrijpt wat werkt.",
     "values": "Onze waarden",
-    "valuesText": "Innovatie, transparantie, kwaliteit en klantsucces."
+    "valuesText": "Betrouwbaarheid, vakmanschap, transparantie en langetermijnrelaties.",
+    "stats": {
+      "years": "Jaar ervaring",
+      "clients": "Tevreden klanten",
+      "projects": "Afgeronde projecten",
+      "team": "Professionals"
+    },
+    "timeline": {
+      "2016": {
+        "title": "Oprichting in België",
+        "description": "GROPPI werd opgericht met een duidelijke visie: digitale marketing met een persoonlijke aanpak."
+      },
+      "2018": {
+        "title": "Uitbreiding team",
+        "description": "Het team groeide naar 5 specialisten met expertise in verschillende domeinen."
+      },
+      "2020": {
+        "title": "Europese groei",
+        "description": "Succesvolle samenwerkingen met klanten in Nederland, Duitsland en Frankrijk."
+      },
+      "2023": {
+        "title": "Midden-Oosten",
+        "description": "Uitbreiding naar de Arabische markt met lokale partnerships."
+      }
+    }
+  },
+  "ai": {
+    "title": "AI als ondersteunende kracht",
+    "description": "Bij GROPPI gebruiken we artificiële intelligentie om processen te versnellen, data te analyseren en prestaties te optimaliseren. De visie, strategie en creatieve beslissingen blijven echter altijd in handen van ervaren professionals.",
+    "subtitle": "Technologie in dienst van mensen"
   },
   "services": {
     "title": "Onze diensten",
     "subtitle": "Wat wij bieden",
-    "description": "Uitgebreide digitale marketingoplossingen aangedreven door AI om uw merk te verheffen en groei te stimuleren.",
+    "description": "Wij werken niet met vaste pakketten. Elke dienst wordt afgestemd op de doelstellingen van de klant en uitgevoerd door een gespecialiseerd team, ondersteund door slimme technologie waar dat waarde toevoegt.",
     "monthly": "Maandelijks",
     "oneTime": "Eenmalig",
     "customQuote": "Op maat",
     "startingFrom": "Vanaf",
-    "requestQuote": "Vraag offerte aan",
-    "getQuote": "Vraag offerte op maat aan",
+    "requestQuote": "Offerte aanvragen",
+    "getQuote": "Vraag een offerte aan",
+    "videoPlaceholder": "Bekijk korte uitlegvideo",
     "noResults": "Geen diensten voldoen aan uw filtercriteria.",
     "filters": {
       "all": "Alle diensten",
-      "monthly": "Abonnement",
-      "oneTime": "Eenmalig",
-      "custom": "Op maat projecten"
+      "monthly": "Maandelijks abonnement",
+      "oneTime": "Eenmalige projecten",
+      "custom": "Projecten op maat"
     },
     "items": {
       "aiContent": {
-        "title": "AI Visuele Content & Branding",
-        "description": "Creëer verbluffende visuele content en merkidentiteit met geavanceerde AI-technologie. Van logo's tot complete visuele campagnes.",
+        "title": "Visuele content & Branding",
+        "description": "Professionele visuele content en merkidentiteit, ondersteund door moderne tools. Van logo-ontwerp tot complete visuele campagnes.",
         "features": {
-          "0": "AI-gegenereerde visuele assets",
+          "0": "Professionele visuele assets",
           "1": "Merkidentiteit ontwerp",
           "2": "Social media contentpakketten",
-          "3": "Productfotografie verbetering"
+          "3": "Productfotografie & bewerking"
         }
       },
       "webDev": {
-        "title": "Website Ontwerp & Ontwikkeling",
+        "title": "Website ontwerp & Ontwikkeling",
         "description": "Op maat gemaakte, responsieve websites die bezoekers omzetten in klanten. Moderne ontwerpen met optimale prestaties.",
         "features": {
           "0": "Aangepast responsief ontwerp",
           "1": "SEO-geoptimaliseerde structuur",
-          "2": "Snelle laadtijd",
-          "3": "CMS-integratie"
+          "2": "Snelle laadtijden",
+          "3": "Contentbeheersysteem"
         }
       },
       "ecommerce": {
-        "title": "E-Commerce Oplossingen",
+        "title": "E-commerce oplossingen",
         "description": "Complete webshop setup met betalingsintegratie, voorraadbeheer en conversie-optimalisatie.",
         "features": {
-          "0": "Volledige webshop setup",
+          "0": "Volledige webshop opzet",
           "1": "Betaalgateway integratie",
           "2": "Productbeheersysteem",
           "3": "Conversie-optimalisatie"
@@ -79,7 +109,7 @@
         "description": "Strategische advertentiecampagnes via Google, Meta en andere platforms. Data-gedreven optimalisatie voor maximale ROI.",
         "features": {
           "0": "Google Ads beheer",
-          "1": "Meta adverteren",
+          "1": "Meta advertenties",
           "2": "Campagne-analyse",
           "3": "A/B testen & optimalisatie"
         }
@@ -89,19 +119,19 @@
         "description": "Verbeter uw organische zichtbaarheid en scoor hoger in zoekmachines. Technische SEO, contentstrategie en linkbuilding.",
         "features": {
           "0": "Technische SEO-audit",
-          "1": "Zoekwoordonderzoek & strategie",
+          "1": "Zoekwoordonderzoek",
           "2": "Content optimalisatie",
-          "3": "Linkbuilding"
+          "3": "Linkbuilding strategie"
         }
       },
       "social": {
-        "title": "Social Media Beheer",
+        "title": "Social media beheer",
         "description": "Volledig beheer van uw social media aanwezigheid. Contentcreatie, planning, engagement en groeistrategieën.",
         "features": {
           "0": "Contentkalender & planning",
           "1": "Community management",
           "2": "Engagement & groei",
-          "3": "Analytics & rapportage"
+          "3": "Maandelijkse rapportage"
         }
       },
       "reputation": {
@@ -115,10 +145,10 @@
         }
       },
       "dataSync": {
-        "title": "Data Synchronisatie",
+        "title": "Data synchronisatie",
         "description": "Houd uw bedrijfsgegevens gesynchroniseerd over alle platforms. Voorraad, prijzen en productinformatiebeheer.",
         "features": {
-          "0": "Multi-platform sync",
+          "0": "Multi-platform synchronisatie",
           "1": "Realtime updates",
           "2": "Voorraadbeheer",
           "3": "API-integraties"
@@ -126,9 +156,9 @@
       }
     },
     "ai": {
-      "title": "Aangedreven door AI",
-      "description": "We benutten geavanceerde kunstmatige intelligentie om snellere, slimmere en effectievere marketingoplossingen te leveren. Onze AI-verbeterde workflows zorgen voor consistentie en kwaliteit op schaal.",
-      "cta": "Aan de slag",
+      "title": "Ondersteund door slimme technologie",
+      "description": "Wij benutten moderne technologie om efficiënter te werken en betere resultaten te leveren. De strategie en creatieve beslissingen blijven altijd in handen van ons ervaren team.",
+      "cta": "Neem contact op",
       "learnMore": "Meer informatie"
     },
     "process": {
@@ -136,23 +166,23 @@
       "title": "Ons proces",
       "steps": {
         "0": {
-          "title": "Consultatie",
-          "description": "We beginnen met een gratis consultatie om uw bedrijf, doelen en uitdagingen te begrijpen."
+          "title": "Kennismaking",
+          "description": "We beginnen met een gratis gesprek om uw bedrijf, doelen en uitdagingen te begrijpen."
         },
         "1": {
-          "title": "Op maat voorstel",
-          "description": "Op basis van uw behoeften maken we een gedetailleerd voorstel met transparante prijzen en tijdlijnen."
+          "title": "Voorstel op maat",
+          "description": "Op basis van uw behoeften maken we een gedetailleerd voorstel met transparante prijzen en planning."
         },
         "2": {
           "title": "Uitvoering & Optimalisatie",
-          "description": "We implementeren de oplossing en optimaliseren continu op basis van prestatiegegevens."
+          "description": "We implementeren de oplossing en optimaliseren continu op basis van resultaten en feedback."
         }
       }
     },
     "cta": {
-      "title": "Klaar om uw digitale aanwezigheid te transformeren?",
-      "description": "Neem vandaag nog contact met ons op om te bespreken hoe we u kunnen helpen uw bedrijfsdoelen te bereiken met onze AI-gestuurde oplossingen.",
-      "button": "Vraag uw offerte op maat aan"
+      "title": "Klaar om uw digitale aanwezigheid te versterken?",
+      "description": "Neem vandaag nog contact met ons op voor een vrijblijvend gesprek over hoe we u kunnen helpen uw bedrijfsdoelen te bereiken.",
+      "button": "Vraag een vrijblijvende offerte aan"
     }
   },
   "blog": {
@@ -163,36 +193,80 @@
     "by": "door"
   },
   "gallery": {
-    "title": "Galerij",
-    "subtitle": "Visuele excellentie",
-    "description": "Ontdek onze collectie van prachtige beelden die ons werk en prestaties tonen."
+    "title": "Ons werk",
+    "subtitle": "Portfolio",
+    "description": "Ontdek een selectie van projecten die we voor onze klanten hebben gerealiseerd.",
+    "filters": {
+      "all": "Alles",
+      "web": "Websites",
+      "branding": "Branding",
+      "social": "Social Media",
+      "ecommerce": "E-commerce"
+    }
   },
   "contact": {
-    "title": "Contact",
-    "subtitle": "Neem contact op",
+    "title": "Contact opnemen",
+    "subtitle": "Laten we praten",
+    "intro": "Heeft u een project in gedachten of wilt u uw digitale aanwezigheid versterken? Neem contact met ons op voor een vrijblijvend gesprek.",
     "mobileLabel": "Mobiel",
-    "officeLabel": "Kantoorlijn",
+    "officeLabel": "Kantoor",
     "hoursLabel": "Openingstijden",
     "hoursValue": "Ma - Vr: 9:00 - 18:00",
-    "description": "We horen graag van u. Stuur ons een bericht en we reageren zo snel mogelijk.",
-    "name": "Uw naam",
+    "description": "We horen graag van u. Vul het formulier in en we nemen zo snel mogelijk contact met u op.",
+    "name": "Naam",
     "email": "E-mailadres",
     "phone": "Telefoonnummer",
+    "company": "Bedrijf",
     "subject": "Onderwerp",
     "message": "Uw bericht",
-    "send": "Verstuur bericht",
+    "send": "Verzenden",
     "sending": "Verzenden...",
-    "success": "Bericht succesvol verzonden!",
-    "error": "Verzenden mislukt. Probeer het opnieuw.",
+    "success": "Bericht succesvol verzonden! We nemen zo snel mogelijk contact met u op.",
+    "error": "Er ging iets mis. Probeer het opnieuw of neem telefonisch contact op.",
     "address": "Adres",
     "phoneLabel": "Telefoon",
     "emailLabel": "E-mail"
   },
+  "franchise": {
+    "title": "Samenwerking",
+    "subtitle": "Word partner",
+    "description": "Bent u geïnteresseerd in een samenwerking met GROPPI? Ontdek de mogelijkheden om samen te groeien.",
+    "benefits": {
+      "title": "Voordelen van samenwerking",
+      "items": {
+        "0": "Toegang tot bewezen processen en methodologieën",
+        "1": "Ondersteuning van ons ervaren team",
+        "2": "Gezamenlijke marketinginspanningen",
+        "3": "Kennisdeling en training"
+      }
+    },
+    "requirements": {
+      "title": "Wat wij zoeken",
+      "items": {
+        "0": "Ervaring in digitale marketing of aanverwante sector",
+        "1": "Ondernemersmentaliteit en groeimindset",
+        "2": "Commitment aan kwaliteit en klanttevredenheid",
+        "3": "Bereidheid tot langetermijnsamenwerking"
+      }
+    },
+    "cta": "Neem contact op voor meer informatie",
+    "apply": "Solliciteer nu",
+    "call": "Bel ons"
+  },
   "footer": {
     "rights": "Alle rechten voorbehouden.",
+    "description": "Digitale oplossingen sinds 2016. Gebaseerd in België.",
     "privacy": "Privacybeleid",
-    "terms": "Servicevoorwaarden",
-    "followUs": "Volg ons"
+    "terms": "Algemene voorwaarden",
+    "followUs": "Volg ons",
+    "quickLinks": "Snelle links",
+    "contact": "Contactgegevens",
+    "newsletter": {
+      "title": "Nieuwsbrief",
+      "description": "Blijf op de hoogte van onze laatste inzichten en tips.",
+      "placeholder": "Uw e-mailadres",
+      "button": "Inschrijven"
+    }
   },
   "common": {
     "loading": "Laden...",
@@ -203,13 +277,26 @@
     "previous": "Vorige",
     "close": "Sluiten",
     "search": "Zoeken",
-    "noResults": "Geen resultaten gevonden"
+    "noResults": "Geen resultaten gevonden",
+    "learnMore": "Meer informatie",
+    "getStarted": "Aan de slag",
+    "viewAll": "Bekijk alles"
   },
   "validation": {
     "required": "Dit veld is verplicht",
     "email": "Voer een geldig e-mailadres in",
-    "minLength": "Moet minimaal {{count}} tekens bevatten",
-    "maxLength": "Moet minder dan {{count}} tekens bevatten"
+    "minLength": "Minimaal {{count}} tekens vereist",
+    "maxLength": "Maximaal {{count}} tekens toegestaan"
+  },
+  "stats": {
+    "years": "Jaar ervaring",
+    "yearsValue": "9+",
+    "clients": "Tevreden klanten",
+    "clientsValue": "150+",
+    "projects": "Projecten",
+    "projectsValue": "500+",
+    "team": "Teamleden",
+    "teamValue": "9+"
   },
   "admin": {
     "dashboard": "Dashboard",

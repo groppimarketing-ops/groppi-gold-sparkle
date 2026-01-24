@@ -4,131 +4,161 @@
     "about": "About Us",
     "services": "Services",
     "blog": "Blog",
-    "gallery": "Gallery",
+    "gallery": "Portfolio",
     "contact": "Contact",
-    "franchise": "Franchise"
+    "franchise": "Partnership"
   },
   "hero": {
-    "title": "GROPPI: Digital Creativity Beyond Borders",
-    "subtitle": "Excellence in Every Detail",
-    "description": "Leveraging AI-powered solutions to transform your digital presence. Experience innovative content creation and marketing services that drive results.",
-    "cta": "Book Free Consultation",
+    "title": "GROPPI – Human Expertise, Powered by Smart Technology",
+    "subtitle": "Your Strategic Digital Partner Since 2016",
+    "description": "GROPPI was founded in Belgium in 2016 and is built on real experience, strategic insight, and lasting partnerships. With a multidisciplinary team of over 9 professionals, we support businesses in Belgium, Europe, and the Middle East with tailored digital solutions. We use AI as a smart accelerator, never as a replacement for human creativity or decision-making.",
+    "cta": "Book a Free Consultation",
     "ctaSecondary": "View Our Work"
   },
   "about": {
-    "title": "About Us",
+    "title": "About GROPPI",
     "subtitle": "Our Story",
-    "description": "GROPPI is a digital marketing bureau pioneering the use of AI in content creation and marketing services. Our commitment to innovation and quality has made us a trusted partner for businesses across Europe.",
+    "description": "GROPPI started in Belgium in 2016 and grew through years of hands-on experience, strong partnerships, and proven results. Today, we collaborate with clients across Europe and the Middle East, combining strategy, creativity, and technology to achieve sustainable digital growth.",
     "mission": "Our Mission",
-    "missionText": "To deliver exceptional digital solutions that exceed expectations and drive measurable business growth.",
+    "missionText": "Helping businesses grow through strategic digital solutions based on human expertise, supported by smart technology.",
     "vision": "Our Vision",
-    "visionText": "To be the leading digital marketing agency leveraging AI for creative excellence.",
+    "visionText": "To be a trusted partner for businesses seeking sustainable digital growth, with a team that truly understands what works.",
     "values": "Our Values",
-    "valuesText": "Innovation, Transparency, Quality, and Client Success."
+    "valuesText": "Reliability, craftsmanship, transparency, and long-term relationships.",
+    "stats": {
+      "years": "Years of Experience",
+      "clients": "Happy Clients",
+      "projects": "Completed Projects",
+      "team": "Professionals"
+    },
+    "timeline": {
+      "2016": {
+        "title": "Founded in Belgium",
+        "description": "GROPPI was founded with a clear vision: digital marketing with a personal approach."
+      },
+      "2018": {
+        "title": "Team Expansion",
+        "description": "The team grew to 5 specialists with expertise in various domains."
+      },
+      "2020": {
+        "title": "European Growth",
+        "description": "Successful collaborations with clients in the Netherlands, Germany, and France."
+      },
+      "2023": {
+        "title": "Middle East",
+        "description": "Expansion to the Arab market through local partnerships."
+      }
+    }
+  },
+  "ai": {
+    "title": "AI as a Supporting Force",
+    "description": "At GROPPI, we use artificial intelligence to accelerate processes, analyze data, and optimize performance. However, the vision, strategy, and creative decisions always remain in the hands of experienced professionals.",
+    "subtitle": "Technology in Service of People"
   },
   "services": {
     "title": "Our Services",
     "subtitle": "What We Offer",
-    "description": "Comprehensive digital marketing solutions powered by AI to elevate your brand and drive growth.",
+    "description": "We don't work with fixed packages. Every service is tailored to the client's objectives and executed by a specialized team, supported by smart technology where it adds value.",
     "monthly": "Monthly",
     "oneTime": "One-time",
-    "customQuote": "Custom Quote",
+    "customQuote": "Custom",
     "startingFrom": "Starting from",
     "requestQuote": "Request Quote",
-    "getQuote": "Get Custom Quote",
+    "getQuote": "Get a Quote",
+    "videoPlaceholder": "Watch short explainer video",
     "noResults": "No services match your filter criteria.",
     "filters": {
       "all": "All Services",
-      "monthly": "Subscription",
-      "oneTime": "One-time",
+      "monthly": "Monthly Subscription",
+      "oneTime": "One-time Projects",
       "custom": "Custom Projects"
     },
     "items": {
       "aiContent": {
-        "title": "AI Visual Content & Branding",
-        "description": "Create stunning visual content and brand identity using cutting-edge AI technology. From logos to complete visual campaigns.",
+        "title": "Visual Content & Branding",
+        "description": "Professional visual content and brand identity, supported by modern tools. From logo design to complete visual campaigns.",
         "features": {
-          "0": "AI-Generated Visual Assets",
-          "1": "Brand Identity Design",
-          "2": "Social Media Content Packs",
-          "3": "Product Photography Enhancement"
+          "0": "Professional visual assets",
+          "1": "Brand identity design",
+          "2": "Social media content packages",
+          "3": "Product photography & editing"
         }
       },
       "webDev": {
         "title": "Website Design & Development",
         "description": "Custom-built, responsive websites that convert visitors into customers. Modern designs with optimal performance.",
         "features": {
-          "0": "Custom Responsive Design",
-          "1": "SEO-Optimized Structure",
-          "2": "Fast Loading Speed",
-          "3": "CMS Integration"
+          "0": "Custom responsive design",
+          "1": "SEO-optimized structure",
+          "2": "Fast loading times",
+          "3": "Content management system"
         }
       },
       "ecommerce": {
-        "title": "E-Commerce Solutions",
-        "description": "Complete online store setup with payment integration, inventory management, and conversion optimization.",
+        "title": "E-commerce Solutions",
+        "description": "Complete webshop setup with payment integration, inventory management, and conversion optimization.",
         "features": {
-          "0": "Full Store Setup",
-          "1": "Payment Gateway Integration",
-          "2": "Product Management System",
-          "3": "Conversion Optimization"
+          "0": "Complete webshop setup",
+          "1": "Payment gateway integration",
+          "2": "Product management system",
+          "3": "Conversion optimization"
         }
       },
       "ads": {
         "title": "Advertising Management",
-        "description": "Strategic ad campaigns across Google, Meta, and other platforms. Data-driven optimization for maximum ROI.",
+        "description": "Strategic advertising campaigns via Google, Meta, and other platforms. Data-driven optimization for maximum ROI.",
         "features": {
-          "0": "Google Ads Management",
-          "1": "Meta Advertising",
-          "2": "Campaign Analytics",
-          "3": "A/B Testing & Optimization"
+          "0": "Google Ads management",
+          "1": "Meta advertising",
+          "2": "Campaign analysis",
+          "3": "A/B testing & optimization"
         }
       },
       "seo": {
         "title": "Search Engine Optimization",
-        "description": "Improve your organic visibility and rank higher on search engines. Technical SEO, content strategy, and link building.",
+        "description": "Improve your organic visibility and rank higher in search engines. Technical SEO, content strategy, and link building.",
         "features": {
-          "0": "Technical SEO Audit",
-          "1": "Keyword Research & Strategy",
-          "2": "Content Optimization",
-          "3": "Link Building"
+          "0": "Technical SEO audit",
+          "1": "Keyword research",
+          "2": "Content optimization",
+          "3": "Link building strategy"
         }
       },
       "social": {
         "title": "Social Media Management",
-        "description": "Complete social media presence management. Content creation, scheduling, engagement, and growth strategies.",
+        "description": "Full management of your social media presence. Content creation, scheduling, engagement, and growth strategies.",
         "features": {
-          "0": "Content Calendar & Planning",
-          "1": "Community Management",
-          "2": "Engagement & Growth",
-          "3": "Analytics & Reporting"
+          "0": "Content calendar & scheduling",
+          "1": "Community management",
+          "2": "Engagement & growth",
+          "3": "Monthly reporting"
         }
       },
       "reputation": {
         "title": "Reputation & Review Management",
         "description": "Build and protect your online reputation. Review management, response strategies, and brand monitoring.",
         "features": {
-          "0": "Review Monitoring",
-          "1": "Response Management",
-          "2": "Reputation Recovery",
-          "3": "Brand Sentiment Analysis"
+          "0": "Review monitoring",
+          "1": "Response management",
+          "2": "Reputation recovery",
+          "3": "Brand sentiment analysis"
         }
       },
       "dataSync": {
         "title": "Data Synchronization",
         "description": "Keep your business data synchronized across all platforms. Inventory, pricing, and product information management.",
         "features": {
-          "0": "Multi-Platform Sync",
-          "1": "Real-time Updates",
-          "2": "Inventory Management",
-          "3": "API Integrations"
+          "0": "Multi-platform synchronization",
+          "1": "Real-time updates",
+          "2": "Inventory management",
+          "3": "API integrations"
         }
       }
     },
     "ai": {
-      "title": "Powered by AI",
-      "description": "We leverage cutting-edge artificial intelligence to deliver faster, smarter, and more effective marketing solutions. Our AI-enhanced workflows ensure consistency and quality at scale.",
-      "cta": "Get Started",
+      "title": "Powered by Smart Technology",
+      "description": "We leverage modern technology to work more efficiently and deliver better results. Strategy and creative decisions always remain in the hands of our experienced team.",
+      "cta": "Get in Touch",
       "learnMore": "Learn More"
     },
     "process": {
@@ -136,63 +166,107 @@
       "title": "Our Process",
       "steps": {
         "0": {
-          "title": "Consultation",
-          "description": "We start with a free consultation to understand your business, goals, and challenges."
+          "title": "Introduction",
+          "description": "We start with a free conversation to understand your business, goals, and challenges."
         },
         "1": {
           "title": "Custom Proposal",
-          "description": "Based on your needs, we create a detailed proposal with transparent pricing and timelines."
+          "description": "Based on your needs, we create a detailed proposal with transparent pricing and timeline."
         },
         "2": {
           "title": "Execution & Optimization",
-          "description": "We implement the solution and continuously optimize based on performance data."
+          "description": "We implement the solution and continuously optimize based on results and feedback."
         }
       }
     },
     "cta": {
-      "title": "Ready to Transform Your Digital Presence?",
-      "description": "Contact us today to discuss how we can help you achieve your business goals with our AI-powered solutions.",
-      "button": "Get Your Custom Quote"
+      "title": "Ready to Strengthen Your Digital Presence?",
+      "description": "Contact us today for a no-obligation conversation about how we can help you achieve your business goals.",
+      "button": "Request a Free Quote"
     }
   },
   "blog": {
     "title": "Insights & Tips",
-    "subtitle": "Stay Updated",
+    "subtitle": "Stay Informed",
     "readMore": "Read More",
     "publishedOn": "Published on",
     "by": "by"
   },
   "gallery": {
-    "title": "Gallery",
-    "subtitle": "Visual Excellence",
-    "description": "Explore our collection of stunning visuals showcasing our work and achievements."
+    "title": "Our Work",
+    "subtitle": "Portfolio",
+    "description": "Discover a selection of projects we've delivered for our clients.",
+    "filters": {
+      "all": "All",
+      "web": "Websites",
+      "branding": "Branding",
+      "social": "Social Media",
+      "ecommerce": "E-commerce"
+    }
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "Get in Touch",
-    "description": "We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
-    "name": "Your Name",
+    "title": "Get in Touch",
+    "subtitle": "Let's Talk",
+    "intro": "Do you have a project in mind or want to strengthen your digital presence? Contact us for a no-obligation conversation.",
+    "mobileLabel": "Mobile",
+    "officeLabel": "Office",
+    "hoursLabel": "Business Hours",
+    "hoursValue": "Mon - Fri: 9:00 AM - 6:00 PM",
+    "description": "We'd love to hear from you. Fill out the form and we'll get back to you as soon as possible.",
+    "name": "Name",
     "email": "Email Address",
     "phone": "Phone Number",
+    "company": "Company",
     "subject": "Subject",
     "message": "Your Message",
-    "send": "Send Message",
+    "send": "Send",
     "sending": "Sending...",
-    "success": "Message sent successfully!",
-    "error": "Failed to send message. Please try again.",
+    "success": "Message sent successfully! We'll get back to you as soon as possible.",
+    "error": "Something went wrong. Please try again or contact us by phone.",
     "address": "Address",
-    "mobileLabel": "Mobile",
-    "officeLabel": "Office Line",
     "phoneLabel": "Phone",
-    "emailLabel": "Email",
-    "hoursLabel": "Working Hours",
-    "hoursValue": "Mon - Fri: 9:00 - 18:00"
+    "emailLabel": "Email"
+  },
+  "franchise": {
+    "title": "Partnership",
+    "subtitle": "Become a Partner",
+    "description": "Are you interested in partnering with GROPPI? Discover the opportunities to grow together.",
+    "benefits": {
+      "title": "Partnership Benefits",
+      "items": {
+        "0": "Access to proven processes and methodologies",
+        "1": "Support from our experienced team",
+        "2": "Joint marketing efforts",
+        "3": "Knowledge sharing and training"
+      }
+    },
+    "requirements": {
+      "title": "What We're Looking For",
+      "items": {
+        "0": "Experience in digital marketing or related field",
+        "1": "Entrepreneurial mindset and growth mentality",
+        "2": "Commitment to quality and customer satisfaction",
+        "3": "Willingness for long-term collaboration"
+      }
+    },
+    "cta": "Contact us for more information",
+    "apply": "Apply Now",
+    "call": "Call Us"
   },
   "footer": {
     "rights": "All rights reserved.",
+    "description": "Digital solutions since 2016. Based in Belgium.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "followUs": "Follow Us"
+    "followUs": "Follow Us",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Info",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Stay updated with our latest insights and tips.",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    }
   },
   "common": {
     "loading": "Loading...",
@@ -203,13 +277,26 @@
     "previous": "Previous",
     "close": "Close",
     "search": "Search",
-    "noResults": "No results found"
+    "noResults": "No results found",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "viewAll": "View All"
   },
   "validation": {
     "required": "This field is required",
     "email": "Please enter a valid email address",
-    "minLength": "Must be at least {{count}} characters",
-    "maxLength": "Must be less than {{count}} characters"
+    "minLength": "Minimum {{count}} characters required",
+    "maxLength": "Maximum {{count}} characters allowed"
+  },
+  "stats": {
+    "years": "Years of Experience",
+    "yearsValue": "9+",
+    "clients": "Happy Clients",
+    "clientsValue": "150+",
+    "projects": "Projects",
+    "projectsValue": "500+",
+    "team": "Team Members",
+    "teamValue": "9+"
   },
   "admin": {
     "dashboard": "Dashboard",
@@ -218,11 +305,11 @@
     "services": "Services",
     "messages": "Messages",
     "settings": "Settings",
-    "logout": "Logout",
-    "login": "Login",
+    "logout": "Log Out",
+    "login": "Log In",
     "email": "Email",
     "password": "Password",
     "loginTitle": "Admin Login",
-    "loginButton": "Sign In"
+    "loginButton": "Log In"
   }
 }
