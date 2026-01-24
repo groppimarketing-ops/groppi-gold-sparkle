@@ -108,19 +108,22 @@ const Footer = () => {
                 <div className="w-8 h-8 rounded-lg glass-card flex items-center justify-center shrink-0 group-hover:gold-glow transition-all">
                   <MapPin className="h-4 w-4 text-primary" />
                 </div>
-                <span className="pt-1">123 Luxury Avenue, Cairo, Egypt</span>
+                <span className="pt-1">Het Steeke 5A, 2330 Merksplas, Belgium</span>
               </li>
-              <li className="flex items-center gap-3 text-sm text-muted-foreground group">
+              <li className="flex items-start gap-3 text-sm text-muted-foreground group">
                 <div className="w-8 h-8 rounded-lg glass-card flex items-center justify-center shrink-0 group-hover:gold-glow transition-all">
                   <Phone className="h-4 w-4 text-primary" />
                 </div>
-                <span>+20 123 456 7890</span>
+                <div className="flex flex-col gap-1 pt-1">
+                  <a href="tel:+32494311119" className="hover:text-primary transition-colors">+32 494 311 119 (Mobile)</a>
+                  <a href="tel:+3214635005" className="hover:text-primary transition-colors">+32 14 63 50 05 (Office)</a>
+                </div>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground group">
                 <div className="w-8 h-8 rounded-lg glass-card flex items-center justify-center shrink-0 group-hover:gold-glow transition-all">
                   <Mail className="h-4 w-4 text-primary" />
                 </div>
-                <span>info@groppi.com</span>
+                <a href="mailto:info@groppi.be" className="hover:text-primary transition-colors">info@groppi.be</a>
               </li>
             </ul>
           </motion.div>
