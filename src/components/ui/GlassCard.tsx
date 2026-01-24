@@ -1,23 +1,24 @@
-import { ReactNode } from 'react';
+import { forwardRef, ReactNode } from 'react';
 import { motion, HTMLMotionProps } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
-interface GlassCardProps extends HTMLMotionProps<'div'> {
+interface GlassCardProps extends Omit<HTMLMotionProps<'div'>, 'ref'> {
   children: ReactNode;
   className?: string;
   hover3D?: boolean;
   glowOnHover?: boolean;
 }
 
-const GlassCard = ({ 
+const GlassCard = forwardRef<HTMLDivElement, GlassCardProps>(({ 
   children, 
   className, 
   hover3D = true,
   glowOnHover = true,
   ...props 
-}: GlassCardProps) => {
+}, ref) => {
   return (
     <motion.div
+      ref={ref}
       className={cn(
         'glass-card p-6 transition-all duration-500',
         hover3D && 'card-3d',
@@ -36,6 +37,8 @@ const GlassCard = ({
       {children}
     </motion.div>
   );
-};
+});
+
+GlassCard.displayName = 'GlassCard';
 
 export default GlassCard;

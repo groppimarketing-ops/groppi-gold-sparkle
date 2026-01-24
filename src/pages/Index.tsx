@@ -33,8 +33,10 @@ const Index = () => {
     { value: '25+', label: isRtl ? 'دولة' : 'Countries' },
   ];
 
-  // If we have dynamic sections, render them
-  const hasDynamicContent = sections.length > 0;
+  // Only use dynamic content if we have meaningful sections (not just empty gallery)
+  const validSectionTypes = ['hero', 'features', 'stats', 'content', 'cta'];
+  const hasDynamicContent = sections.length > 0 && 
+    sections.some(s => validSectionTypes.includes(s.section_type));
 
   // Render default static content when no dynamic sections exist
   const renderStaticContent = () => (
