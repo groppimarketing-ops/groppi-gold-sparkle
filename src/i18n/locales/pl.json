@@ -4,66 +4,269 @@
     "about": "O nas",
     "services": "Usługi",
     "blog": "Blog",
-    "gallery": "Galeria",
-    "contact": "Kontakt"
+    "gallery": "Portfolio",
+    "contact": "Kontakt",
+    "franchise": "Partnerstwo"
   },
   "hero": {
-    "title": "Groppi Gold Standard",
-    "subtitle": "Doskonałość w każdym szczególe",
-    "description": "Wyznaczamy standardy luksusu i jakości od 1891 roku. Doświadcz najwyższego rzemiosła i niezrównanej obsługi.",
-    "cta": "Odkryj więcej",
-    "ctaSecondary": "Skontaktuj się"
+    "title": "GROPPI – Ludzka ekspertyza, wspierana przez inteligentną technologię",
+    "subtitle": "Twój strategiczny partner cyfrowy od 2016",
+    "description": "GROPPI została założona w Belgii w 2016 roku i opiera się na prawdziwym doświadczeniu, strategicznej wizji i trwałych partnerstwach. Z multidyscyplinarnym zespołem ponad 9 profesjonalistów wspieramy firmy w Belgii, Europie i na Bliskim Wschodzie, oferując dostosowane rozwiązania cyfrowe. Wykorzystujemy AI jako inteligentny akcelerator, nigdy jako zamiennik ludzkiej kreatywności czy podejmowania decyzji.",
+    "cta": "Umów bezpłatną konsultację",
+    "ctaSecondary": "Zobacz nasze prace"
   },
   "about": {
-    "title": "O nas",
+    "title": "O GROPPI",
     "subtitle": "Nasza historia",
-    "description": "Od ponad wieku Groppi jest synonimem doskonałości i luksusu. Nasze zaangażowanie w jakość i tradycję uczyniło nas zaufaną marką w branży.",
+    "description": "GROPPI rozpoczęła działalność w Belgii w 2016 roku i rozwijała się przez lata praktycznego doświadczenia, silnych partnerstw i udowodnionych rezultatów. Dziś współpracujemy z klientami w Europie i na Bliskim Wschodzie, łącząc strategię, kreatywność i technologię, aby osiągnąć zrównoważony rozwój cyfrowy.",
     "mission": "Nasza misja",
-    "missionText": "Dostarczać wyjątkowe produkty i usługi, które przekraczają oczekiwania i tworzą trwałe wspomnienia.",
+    "missionText": "Pomaganie firmom w rozwoju poprzez strategiczne rozwiązania cyfrowe oparte na ludzkiej ekspertyzie, wspierane przez inteligentną technologię.",
     "vision": "Nasza wizja",
-    "visionText": "Być globalnym liderem w doświadczeniach luksusowych i najwyższej jakości.",
+    "visionText": "Być zaufanym partnerem dla firm dążących do zrównoważonego rozwoju cyfrowego, z zespołem, który naprawdę rozumie, co działa.",
     "values": "Nasze wartości",
-    "valuesText": "Doskonałość, uczciwość, innowacja i satysfakcja klienta."
+    "valuesText": "Niezawodność, rzemiosło, przejrzystość i długoterminowe relacje.",
+    "stats": {
+      "years": "Lat doświadczenia",
+      "clients": "Zadowolonych klientów",
+      "projects": "Zrealizowanych projektów",
+      "team": "Profesjonalistów"
+    },
+    "timeline": {
+      "2016": {
+        "title": "Założenie w Belgii",
+        "description": "GROPPI została założona z jasną wizją: marketing cyfrowy z osobistym podejściem."
+      },
+      "2018": {
+        "title": "Rozszerzenie zespołu",
+        "description": "Zespół urósł do 5 specjalistów z ekspertyzą w różnych dziedzinach."
+      },
+      "2020": {
+        "title": "Ekspansja europejska",
+        "description": "Udane współprace z klientami w Holandii, Niemczech i Francji."
+      },
+      "2023": {
+        "title": "Bliski Wschód",
+        "description": "Ekspansja na rynek arabski poprzez lokalne partnerstwa."
+      }
+    }
+  },
+  "ai": {
+    "title": "AI jako siła wspierająca",
+    "description": "W GROPPI wykorzystujemy sztuczną inteligencję do przyspieszania procesów, analizy danych i optymalizacji wydajności. Jednak wizja, strategia i decyzje kreatywne zawsze pozostają w rękach doświadczonych profesjonalistów.",
+    "subtitle": "Technologia w służbie człowieka"
   },
   "services": {
     "title": "Nasze usługi",
     "subtitle": "Co oferujemy",
-    "description": "Poznaj naszą pełną gamę usług premium zaprojektowanych, aby spełnić Twoje najwyższe oczekiwania."
+    "description": "Nie pracujemy z ustalonymi pakietami. Każda usługa jest dostosowana do celów klienta i realizowana przez wyspecjalizowany zespół, wspierany przez inteligentną technologię tam, gdzie dodaje wartość.",
+    "monthly": "Miesięcznie",
+    "oneTime": "Jednorazowo",
+    "customQuote": "Na zamówienie",
+    "startingFrom": "Od",
+    "requestQuote": "Poproś o wycenę",
+    "getQuote": "Uzyskaj wycenę",
+    "videoPlaceholder": "Obejrzyj krótki film wyjaśniający",
+    "noResults": "Brak usług spełniających kryteria filtrowania.",
+    "filters": {
+      "all": "Wszystkie usługi",
+      "monthly": "Subskrypcja miesięczna",
+      "oneTime": "Projekty jednorazowe",
+      "custom": "Projekty na zamówienie"
+    },
+    "items": {
+      "aiContent": {
+        "title": "Treści wizualne i branding",
+        "description": "Profesjonalne treści wizualne i tożsamość marki, wspierane przez nowoczesne narzędzia. Od projektu logo po kompletne kampanie wizualne.",
+        "features": {
+          "0": "Profesjonalne zasoby wizualne",
+          "1": "Projektowanie tożsamości marki",
+          "2": "Pakiety treści do social media",
+          "3": "Fotografia produktowa i edycja"
+        }
+      },
+      "webDev": {
+        "title": "Projektowanie i tworzenie stron",
+        "description": "Niestandardowe, responsywne strony, które przekształcają odwiedzających w klientów. Nowoczesne projekty z optymalną wydajnością.",
+        "features": {
+          "0": "Niestandardowy responsywny design",
+          "1": "Struktura zoptymalizowana pod SEO",
+          "2": "Szybkie czasy ładowania",
+          "3": "System zarządzania treścią"
+        }
+      },
+      "ecommerce": {
+        "title": "Rozwiązania e-commerce",
+        "description": "Kompletna konfiguracja sklepu internetowego z integracją płatności, zarządzaniem zapasami i optymalizacją konwersji.",
+        "features": {
+          "0": "Kompletna konfiguracja sklepu",
+          "1": "Integracja bramki płatności",
+          "2": "System zarządzania produktami",
+          "3": "Optymalizacja konwersji"
+        }
+      },
+      "ads": {
+        "title": "Zarządzanie reklamami",
+        "description": "Strategiczne kampanie reklamowe przez Google, Meta i inne platformy. Optymalizacja oparta na danych dla maksymalnego ROI.",
+        "features": {
+          "0": "Zarządzanie Google Ads",
+          "1": "Reklamy Meta",
+          "2": "Analiza kampanii",
+          "3": "Testy A/B i optymalizacja"
+        }
+      },
+      "seo": {
+        "title": "Optymalizacja wyszukiwarek",
+        "description": "Popraw swoją organiczną widoczność i pozycjonuj się wyżej w wyszukiwarkach. Techniczne SEO, strategia treści i budowanie linków.",
+        "features": {
+          "0": "Audyt technicznego SEO",
+          "1": "Badanie słów kluczowych",
+          "2": "Optymalizacja treści",
+          "3": "Strategia budowania linków"
+        }
+      },
+      "social": {
+        "title": "Zarządzanie social media",
+        "description": "Pełne zarządzanie obecnością w mediach społecznościowych. Tworzenie treści, planowanie, zaangażowanie i strategie wzrostu.",
+        "features": {
+          "0": "Kalendarz treści i planowanie",
+          "1": "Zarządzanie społecznością",
+          "2": "Zaangażowanie i wzrost",
+          "3": "Miesięczne raporty"
+        }
+      },
+      "reputation": {
+        "title": "Zarządzanie reputacją i opiniami",
+        "description": "Buduj i chroń swoją reputację online. Zarządzanie opiniami, strategie odpowiedzi i monitoring marki.",
+        "features": {
+          "0": "Monitoring opinii",
+          "1": "Zarządzanie odpowiedziami",
+          "2": "Odbudowa reputacji",
+          "3": "Analiza sentymentu marki"
+        }
+      },
+      "dataSync": {
+        "title": "Synchronizacja danych",
+        "description": "Utrzymuj synchronizację danych biznesowych na wszystkich platformach. Zarządzanie zapasami, cenami i informacjami o produktach.",
+        "features": {
+          "0": "Synchronizacja wieloplatformowa",
+          "1": "Aktualizacje w czasie rzeczywistym",
+          "2": "Zarządzanie zapasami",
+          "3": "Integracje API"
+        }
+      }
+    },
+    "ai": {
+      "title": "Wspierane przez inteligentną technologię",
+      "description": "Wykorzystujemy nowoczesną technologię, aby pracować efektywniej i dostarczać lepsze wyniki. Strategia i decyzje kreatywne zawsze pozostają w rękach naszego doświadczonego zespołu.",
+      "cta": "Skontaktuj się",
+      "learnMore": "Dowiedz się więcej"
+    },
+    "process": {
+      "subtitle": "Jak pracujemy",
+      "title": "Nasz proces",
+      "steps": {
+        "0": {
+          "title": "Poznanie",
+          "description": "Zaczynamy od bezpłatnej rozmowy, aby zrozumieć Twój biznes, cele i wyzwania."
+        },
+        "1": {
+          "title": "Propozycja na miarę",
+          "description": "Na podstawie Twoich potrzeb tworzymy szczegółową propozycję z przejrzystymi cenami i harmonogramem."
+        },
+        "2": {
+          "title": "Realizacja i optymalizacja",
+          "description": "Wdrażamy rozwiązanie i stale optymalizujemy na podstawie wyników i opinii."
+        }
+      }
+    },
+    "cta": {
+      "title": "Gotowy, aby wzmocnić swoją obecność cyfrową?",
+      "description": "Skontaktuj się z nami dziś, aby porozmawiać bez zobowiązań o tym, jak możemy pomóc Ci osiągnąć cele biznesowe.",
+      "button": "Poproś o bezpłatną wycenę"
+    }
   },
   "blog": {
-    "title": "Aktualności",
+    "title": "Wskazówki i porady",
     "subtitle": "Bądź na bieżąco",
     "readMore": "Czytaj więcej",
     "publishedOn": "Opublikowano",
     "by": "przez"
   },
   "gallery": {
-    "title": "Galeria",
-    "subtitle": "Wizualna doskonałość",
-    "description": "Odkryj naszą kolekcję wspaniałych wizualizacji prezentujących naszą pracę i osiągnięcia."
+    "title": "Nasze prace",
+    "subtitle": "Portfolio",
+    "description": "Odkryj wybór projektów, które zrealizowaliśmy dla naszych klientów.",
+    "filters": {
+      "all": "Wszystko",
+      "web": "Strony internetowe",
+      "branding": "Branding",
+      "social": "Social Media",
+      "ecommerce": "E-commerce"
+    }
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Skontaktuj się",
-    "description": "Chętnie usłyszymy od Ciebie. Wyślij nam wiadomość, a odpowiemy najszybciej jak to możliwe.",
-    "name": "Twoje imię",
+    "subtitle": "Porozmawiajmy",
+    "intro": "Masz projekt w głowie lub chcesz wzmocnić swoją obecność cyfrową? Skontaktuj się z nami, aby porozmawiać bez zobowiązań.",
+    "mobileLabel": "Komórka",
+    "officeLabel": "Biuro",
+    "hoursLabel": "Godziny pracy",
+    "hoursValue": "Pon - Pt: 9:00 - 18:00",
+    "description": "Chętnie usłyszymy od Ciebie. Wypełnij formularz, a skontaktujemy się najszybciej jak to możliwe.",
+    "name": "Imię i nazwisko",
     "email": "Adres e-mail",
     "phone": "Numer telefonu",
+    "company": "Firma",
     "subject": "Temat",
     "message": "Twoja wiadomość",
-    "send": "Wyślij wiadomość",
+    "send": "Wyślij",
     "sending": "Wysyłanie...",
-    "success": "Wiadomość wysłana pomyślnie!",
-    "error": "Wysyłanie nie powiodło się. Spróbuj ponownie.",
+    "success": "Wiadomość wysłana pomyślnie! Skontaktujemy się najszybciej jak to możliwe.",
+    "error": "Coś poszło nie tak. Spróbuj ponownie lub skontaktuj się telefonicznie.",
     "address": "Adres",
     "phoneLabel": "Telefon",
     "emailLabel": "E-mail"
   },
+  "franchise": {
+    "title": "Partnerstwo",
+    "subtitle": "Zostań partnerem",
+    "description": "Zainteresowany partnerstwem z GROPPI? Odkryj możliwości wspólnego rozwoju.",
+    "benefits": {
+      "title": "Korzyści z partnerstwa",
+      "items": {
+        "0": "Dostęp do sprawdzonych procesów i metodologii",
+        "1": "Wsparcie naszego doświadczonego zespołu",
+        "2": "Wspólne działania marketingowe",
+        "3": "Wymiana wiedzy i szkolenia"
+      }
+    },
+    "requirements": {
+      "title": "Czego szukamy",
+      "items": {
+        "0": "Doświadczenie w marketingu cyfrowym lub pokrewnej dziedzinie",
+        "1": "Przedsiębiorczy sposób myślenia i nastawienie na rozwój",
+        "2": "Zobowiązanie do jakości i satysfakcji klienta",
+        "3": "Gotowość do długoterminowej współpracy"
+      }
+    },
+    "cta": "Skontaktuj się po więcej informacji",
+    "apply": "Aplikuj teraz",
+    "call": "Zadzwoń do nas"
+  },
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone.",
+    "description": "Rozwiązania cyfrowe od 2016. Siedziba w Belgii.",
     "privacy": "Polityka prywatności",
-    "terms": "Warunki usługi",
-    "followUs": "Śledź nas"
+    "terms": "Regulamin",
+    "followUs": "Obserwuj nas",
+    "quickLinks": "Szybkie linki",
+    "contact": "Dane kontaktowe",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Bądź na bieżąco z naszymi najnowszymi wskazówkami i poradami.",
+      "placeholder": "Twój adres e-mail",
+      "button": "Subskrybuj"
+    }
   },
   "common": {
     "loading": "Ładowanie...",
@@ -74,13 +277,26 @@
     "previous": "Poprzedni",
     "close": "Zamknij",
     "search": "Szukaj",
-    "noResults": "Nie znaleziono wyników"
+    "noResults": "Nie znaleziono wyników",
+    "learnMore": "Dowiedz się więcej",
+    "getStarted": "Rozpocznij",
+    "viewAll": "Zobacz wszystko"
   },
   "validation": {
     "required": "To pole jest wymagane",
     "email": "Wprowadź poprawny adres e-mail",
-    "minLength": "Musi zawierać co najmniej {{count}} znaków",
-    "maxLength": "Musi zawierać mniej niż {{count}} znaków"
+    "minLength": "Minimum {{count}} znaków wymaganych",
+    "maxLength": "Maksimum {{count}} znaków dozwolonych"
+  },
+  "stats": {
+    "years": "Lat doświadczenia",
+    "yearsValue": "9+",
+    "clients": "Zadowolonych klientów",
+    "clientsValue": "150+",
+    "projects": "Projektów",
+    "projectsValue": "500+",
+    "team": "Członków zespołu",
+    "teamValue": "9+"
   },
   "admin": {
     "dashboard": "Panel",
@@ -93,7 +309,7 @@
     "login": "Zaloguj",
     "email": "E-mail",
     "password": "Hasło",
-    "loginTitle": "Logowanie admina",
+    "loginTitle": "Logowanie administratora",
     "loginButton": "Zaloguj się"
   }
 }

@@ -4,66 +4,269 @@
     "about": "Hakkımızda",
     "services": "Hizmetler",
     "blog": "Blog",
-    "gallery": "Galeri",
-    "contact": "İletişim"
+    "gallery": "Portföy",
+    "contact": "İletişim",
+    "franchise": "Ortaklık"
   },
   "hero": {
-    "title": "Groppi Gold Standard",
-    "subtitle": "Her detayda mükemmellik",
-    "description": "1891'den beri lüks ve kalite standardını belirliyoruz. En iyi işçiliği ve benzersiz hizmeti deneyimleyin.",
-    "cta": "Daha Fazla Keşfet",
-    "ctaSecondary": "Bize Ulaşın"
+    "title": "GROPPI – İnsan Uzmanlığı, Akıllı Teknoloji ile Güçlendirilmiş",
+    "subtitle": "2016'dan Beri Stratejik Dijital Ortağınız",
+    "description": "GROPPI, 2016 yılında Belçika'da kuruldu ve gerçek deneyim, stratejik vizyon ve kalıcı ortaklıklar üzerine inşa edildi. 9'dan fazla profesyonelden oluşan multidisipliner bir ekiple Belçika, Avrupa ve Orta Doğu'daki işletmeleri özel dijital çözümlerle destekliyoruz. Yapay zekayı akıllı bir hızlandırıcı olarak kullanıyoruz, asla insan yaratıcılığının veya karar vermenin yerini almak için değil.",
+    "cta": "Ücretsiz Danışmanlık Al",
+    "ctaSecondary": "Çalışmalarımızı Görün"
   },
   "about": {
-    "title": "Hakkımızda",
+    "title": "GROPPI Hakkında",
     "subtitle": "Hikayemiz",
-    "description": "Bir asırdan fazla süredir Groppi, mükemmellik ve lüksün eş anlamlısıdır. Kalite ve geleneğe olan bağlılığımız bizi sektörde güvenilir bir isim haline getirdi.",
+    "description": "GROPPI, 2016 yılında Belçika'da başladı ve yıllar süren pratik deneyim, güçlü ortaklıklar ve kanıtlanmış sonuçlarla büyüdü. Bugün, Avrupa ve Orta Doğu'daki müşterilerle işbirliği yaparak sürdürülebilir dijital büyüme için strateji, yaratıcılık ve teknolojiyi bir araya getiriyoruz.",
     "mission": "Misyonumuz",
-    "missionText": "Beklentileri aşan ve kalıcı anılar yaratan olağanüstü ürünler ve hizmetler sunmak.",
+    "missionText": "İşletmelerin insan uzmanlığına dayalı stratejik dijital çözümlerle büyümelerine yardımcı olmak, akıllı teknoloji desteğiyle.",
     "vision": "Vizyonumuz",
-    "visionText": "Lüks ve premium kalite deneyimlerinde küresel lider olmak.",
+    "visionText": "Sürdürülebilir dijital büyüme arayan işletmeler için neyin işe yaradığını gerçekten anlayan bir ekiple güvenilir bir ortak olmak.",
     "values": "Değerlerimiz",
-    "valuesText": "Mükemmellik, dürüstlük, yenilikçilik ve müşteri memnuniyeti."
+    "valuesText": "Güvenilirlik, ustalık, şeffaflık ve uzun vadeli ilişkiler.",
+    "stats": {
+      "years": "Yıllık Deneyim",
+      "clients": "Mutlu Müşteri",
+      "projects": "Tamamlanan Proje",
+      "team": "Profesyonel"
+    },
+    "timeline": {
+      "2016": {
+        "title": "Belçika'da Kuruluş",
+        "description": "GROPPI, net bir vizyonla kuruldu: kişisel yaklaşımla dijital pazarlama."
+      },
+      "2018": {
+        "title": "Ekip Genişlemesi",
+        "description": "Ekip, farklı alanlarda uzmanlığa sahip 5 uzmana ulaştı."
+      },
+      "2020": {
+        "title": "Avrupa Büyümesi",
+        "description": "Hollanda, Almanya ve Fransa'daki müşterilerle başarılı işbirlikleri."
+      },
+      "2023": {
+        "title": "Orta Doğu",
+        "description": "Yerel ortaklıklarla Arap pazarına genişleme."
+      }
+    }
+  },
+  "ai": {
+    "title": "Destekleyici Bir Güç Olarak Yapay Zeka",
+    "description": "GROPPI'de süreçleri hızlandırmak, verileri analiz etmek ve performansı optimize etmek için yapay zeka kullanıyoruz. Ancak vizyon, strateji ve yaratıcı kararlar her zaman deneyimli profesyonellerin elinde kalır.",
+    "subtitle": "İnsanın Hizmetinde Teknoloji"
   },
   "services": {
     "title": "Hizmetlerimiz",
-    "subtitle": "Neler sunuyoruz",
-    "description": "En yüksek beklentilerinizi karşılamak için tasarlanmış kapsamlı premium hizmet yelpazemizi keşfedin."
+    "subtitle": "Neler Sunuyoruz",
+    "description": "Sabit paketlerle çalışmıyoruz. Her hizmet müşterinin hedeflerine göre uyarlanır ve değer kattığı yerde akıllı teknoloji desteğiyle uzman bir ekip tarafından yürütülür.",
+    "monthly": "Aylık",
+    "oneTime": "Tek Seferlik",
+    "customQuote": "Özel",
+    "startingFrom": "Başlangıç",
+    "requestQuote": "Teklif İste",
+    "getQuote": "Teklif Al",
+    "videoPlaceholder": "Kısa açıklama videosunu izle",
+    "noResults": "Filtre kriterlerinize uyan hizmet bulunamadı.",
+    "filters": {
+      "all": "Tüm Hizmetler",
+      "monthly": "Aylık Abonelik",
+      "oneTime": "Tek Seferlik Projeler",
+      "custom": "Özel Projeler"
+    },
+    "items": {
+      "aiContent": {
+        "title": "Görsel İçerik ve Marka Kimliği",
+        "description": "Modern araçlarla desteklenen profesyonel görsel içerik ve marka kimliği. Logo tasarımından eksiksiz görsel kampanyalara.",
+        "features": {
+          "0": "Profesyonel görsel varlıklar",
+          "1": "Marka kimliği tasarımı",
+          "2": "Sosyal medya içerik paketleri",
+          "3": "Ürün fotoğrafçılığı ve düzenleme"
+        }
+      },
+      "webDev": {
+        "title": "Web Sitesi Tasarım ve Geliştirme",
+        "description": "Ziyaretçileri müşteriye dönüştüren özel, duyarlı web siteleri. Optimum performansla modern tasarımlar.",
+        "features": {
+          "0": "Özel duyarlı tasarım",
+          "1": "SEO optimize edilmiş yapı",
+          "2": "Hızlı yükleme süreleri",
+          "3": "İçerik yönetim sistemi"
+        }
+      },
+      "ecommerce": {
+        "title": "E-ticaret Çözümleri",
+        "description": "Ödeme entegrasyonu, envanter yönetimi ve dönüşüm optimizasyonu ile eksiksiz e-ticaret kurulumu.",
+        "features": {
+          "0": "Eksiksiz mağaza kurulumu",
+          "1": "Ödeme geçidi entegrasyonu",
+          "2": "Ürün yönetim sistemi",
+          "3": "Dönüşüm optimizasyonu"
+        }
+      },
+      "ads": {
+        "title": "Reklam Yönetimi",
+        "description": "Google, Meta ve diğer platformlar aracılığıyla stratejik reklam kampanyaları. Maksimum ROI için veriye dayalı optimizasyon.",
+        "features": {
+          "0": "Google Ads yönetimi",
+          "1": "Meta reklamcılığı",
+          "2": "Kampanya analizi",
+          "3": "A/B testi ve optimizasyon"
+        }
+      },
+      "seo": {
+        "title": "Arama Motoru Optimizasyonu",
+        "description": "Organik görünürlüğünüzü artırın ve arama motorlarında daha üst sıralara çıkın. Teknik SEO, içerik stratejisi ve bağlantı oluşturma.",
+        "features": {
+          "0": "Teknik SEO denetimi",
+          "1": "Anahtar kelime araştırması",
+          "2": "İçerik optimizasyonu",
+          "3": "Bağlantı oluşturma stratejisi"
+        }
+      },
+      "social": {
+        "title": "Sosyal Medya Yönetimi",
+        "description": "Sosyal medya varlığınızın tam yönetimi. İçerik oluşturma, planlama, etkileşim ve büyüme stratejileri.",
+        "features": {
+          "0": "İçerik takvimi ve planlama",
+          "1": "Topluluk yönetimi",
+          "2": "Etkileşim ve büyüme",
+          "3": "Aylık raporlama"
+        }
+      },
+      "reputation": {
+        "title": "İtibar ve Yorum Yönetimi",
+        "description": "Çevrimiçi itibarınızı oluşturun ve koruyun. Yorum yönetimi, yanıt stratejileri ve marka izleme.",
+        "features": {
+          "0": "Yorum izleme",
+          "1": "Yanıt yönetimi",
+          "2": "İtibar kurtarma",
+          "3": "Marka duyarlılık analizi"
+        }
+      },
+      "dataSync": {
+        "title": "Veri Senkronizasyonu",
+        "description": "İş verilerinizi tüm platformlarda senkronize tutun. Envanter, fiyatlandırma ve ürün bilgisi yönetimi.",
+        "features": {
+          "0": "Çoklu platform senkronizasyonu",
+          "1": "Gerçek zamanlı güncellemeler",
+          "2": "Envanter yönetimi",
+          "3": "API entegrasyonları"
+        }
+      }
+    },
+    "ai": {
+      "title": "Akıllı Teknoloji ile Güçlendirilmiş",
+      "description": "Daha verimli çalışmak ve daha iyi sonuçlar sunmak için modern teknolojiyi kullanıyoruz. Strateji ve yaratıcı kararlar her zaman deneyimli ekibimizin elinde kalır.",
+      "cta": "İletişime Geçin",
+      "learnMore": "Daha Fazla Bilgi"
+    },
+    "process": {
+      "subtitle": "Nasıl Çalışıyoruz",
+      "title": "Sürecimiz",
+      "steps": {
+        "0": {
+          "title": "Tanışma",
+          "description": "İşinizi, hedeflerinizi ve zorluklarınızı anlamak için ücretsiz bir görüşmeyle başlıyoruz."
+        },
+        "1": {
+          "title": "Özel Teklif",
+          "description": "İhtiyaçlarınıza göre şeffaf fiyatlandırma ve zaman çizelgesi ile detaylı bir teklif oluşturuyoruz."
+        },
+        "2": {
+          "title": "Uygulama ve Optimizasyon",
+          "description": "Çözümü uyguluyoruz ve sonuçlara ve geri bildirimlere göre sürekli optimize ediyoruz."
+        }
+      }
+    },
+    "cta": {
+      "title": "Dijital Varlığınızı Güçlendirmeye Hazır mısınız?",
+      "description": "İş hedeflerinize ulaşmanıza nasıl yardımcı olabileceğimiz hakkında bağlayıcı olmayan bir görüşme için bugün bizimle iletişime geçin.",
+      "button": "Ücretsiz Teklif İsteyin"
+    }
   },
   "blog": {
-    "title": "Son Haberler",
+    "title": "İpuçları ve Öneriler",
     "subtitle": "Güncel Kalın",
     "readMore": "Devamını Oku",
     "publishedOn": "Yayınlanma tarihi",
     "by": "yazar"
   },
   "gallery": {
-    "title": "Galeri",
-    "subtitle": "Görsel mükemmellik",
-    "description": "Çalışmalarımızı ve başarılarımızı sergileyen etkileyici görsellerimizi keşfedin."
+    "title": "Çalışmalarımız",
+    "subtitle": "Portföy",
+    "description": "Müşterilerimiz için gerçekleştirdiğimiz projelerden bir seçki keşfedin.",
+    "filters": {
+      "all": "Tümü",
+      "web": "Web Siteleri",
+      "branding": "Marka Kimliği",
+      "social": "Sosyal Medya",
+      "ecommerce": "E-ticaret"
+    }
   },
   "contact": {
-    "title": "İletişim",
-    "subtitle": "Bize Ulaşın",
-    "description": "Sizden haber almak isteriz. Bize bir mesaj gönderin, en kısa sürede yanıtlayacağız.",
-    "name": "Adınız",
-    "email": "E-posta adresi",
-    "phone": "Telefon numarası",
+    "title": "İletişime Geçin",
+    "subtitle": "Konuşalım",
+    "intro": "Aklınızda bir proje mi var veya dijital varlığınızı güçlendirmek mi istiyorsunuz? Bağlayıcı olmayan bir görüşme için bizimle iletişime geçin.",
+    "mobileLabel": "Mobil",
+    "officeLabel": "Ofis",
+    "hoursLabel": "Çalışma Saatleri",
+    "hoursValue": "Pzt - Cum: 09:00 - 18:00",
+    "description": "Sizden haber almak isteriz. Formu doldurun, en kısa sürede size geri döneceğiz.",
+    "name": "Ad Soyad",
+    "email": "E-posta Adresi",
+    "phone": "Telefon Numarası",
+    "company": "Şirket",
     "subject": "Konu",
     "message": "Mesajınız",
-    "send": "Mesaj Gönder",
+    "send": "Gönder",
     "sending": "Gönderiliyor...",
-    "success": "Mesaj başarıyla gönderildi!",
-    "error": "Gönderme başarısız. Lütfen tekrar deneyin.",
+    "success": "Mesaj başarıyla gönderildi! En kısa sürede size geri döneceğiz.",
+    "error": "Bir şeyler yanlış gitti. Lütfen tekrar deneyin veya bizi arayın.",
     "address": "Adres",
     "phoneLabel": "Telefon",
     "emailLabel": "E-posta"
   },
+  "franchise": {
+    "title": "Ortaklık",
+    "subtitle": "Ortak Olun",
+    "description": "GROPPI ile ortaklık kurmakla ilgileniyor musunuz? Birlikte büyüme fırsatlarını keşfedin.",
+    "benefits": {
+      "title": "Ortaklık Avantajları",
+      "items": {
+        "0": "Kanıtlanmış süreç ve metodolojilere erişim",
+        "1": "Deneyimli ekibimizden destek",
+        "2": "Ortak pazarlama çalışmaları",
+        "3": "Bilgi paylaşımı ve eğitim"
+      }
+    },
+    "requirements": {
+      "title": "Ne Arıyoruz",
+      "items": {
+        "0": "Dijital pazarlama veya ilgili alanda deneyim",
+        "1": "Girişimci zihniyet ve büyüme odaklılık",
+        "2": "Kalite ve müşteri memnuniyetine bağlılık",
+        "3": "Uzun vadeli işbirliğine hazırlık"
+      }
+    },
+    "cta": "Daha fazla bilgi için bizimle iletişime geçin",
+    "apply": "Şimdi Başvur",
+    "call": "Bizi Arayın"
+  },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
+    "description": "2016'dan beri dijital çözümler. Belçika merkezli.",
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Koşulları",
-    "followUs": "Bizi Takip Edin"
+    "followUs": "Bizi Takip Edin",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contact": "İletişim Bilgileri",
+    "newsletter": {
+      "title": "Bülten",
+      "description": "En son ipuçları ve önerilerimizden haberdar olun.",
+      "placeholder": "E-posta adresiniz",
+      "button": "Abone Ol"
+    }
   },
   "common": {
     "loading": "Yükleniyor...",
@@ -74,13 +277,26 @@
     "previous": "Önceki",
     "close": "Kapat",
     "search": "Ara",
-    "noResults": "Sonuç bulunamadı"
+    "noResults": "Sonuç bulunamadı",
+    "learnMore": "Daha Fazla Bilgi",
+    "getStarted": "Başlayın",
+    "viewAll": "Tümünü Gör"
   },
   "validation": {
-    "required": "Bu alan gereklidir",
-    "email": "Lütfen geçerli bir e-posta adresi girin",
-    "minLength": "En az {{count}} karakter olmalıdır",
-    "maxLength": "{{count}} karakterden az olmalıdır"
+    "required": "Bu alan zorunludur",
+    "email": "Geçerli bir e-posta adresi girin",
+    "minLength": "En az {{count}} karakter gerekli",
+    "maxLength": "En fazla {{count}} karakter izin verilir"
+  },
+  "stats": {
+    "years": "Yıllık Deneyim",
+    "yearsValue": "9+",
+    "clients": "Mutlu Müşteri",
+    "clientsValue": "150+",
+    "projects": "Proje",
+    "projectsValue": "500+",
+    "team": "Ekip Üyesi",
+    "teamValue": "9+"
   },
   "admin": {
     "dashboard": "Panel",

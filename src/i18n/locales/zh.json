@@ -4,66 +4,269 @@
     "about": "关于我们",
     "services": "服务",
     "blog": "博客",
-    "gallery": "画廊",
-    "contact": "联系我们"
+    "gallery": "作品集",
+    "contact": "联系我们",
+    "franchise": "合作伙伴"
   },
   "hero": {
-    "title": "Groppi 金标准",
-    "subtitle": "每个细节都追求卓越",
-    "description": "自1891年以来，我们一直在设定奢华和品质的标杆。体验最精湛的工艺和无与伦比的服务。",
-    "cta": "了解更多",
-    "ctaSecondary": "联系我们"
+    "title": "GROPPI – 人类专业知识，智能技术赋能",
+    "subtitle": "自2016年以来，您的战略数字合作伙伴",
+    "description": "GROPPI于2016年在比利时成立，建立在真实经验、战略洞察和持久合作伙伴关系的基础上。凭借由9+专业人士组成的多学科团队，我们为比利时、欧洲和中东的企业提供定制数字解决方案。我们将AI用作智能加速器，而非替代人类创造力或决策的工具。",
+    "cta": "预约免费咨询",
+    "ctaSecondary": "查看我们的作品"
   },
   "about": {
-    "title": "关于我们",
+    "title": "关于GROPPI",
     "subtitle": "我们的故事",
-    "description": "一个多世纪以来，Groppi一直是卓越和奢华的代名词。我们对质量和传统的承诺使我们成为行业中值得信赖的名字。",
+    "description": "GROPPI于2016年在比利时起步，通过多年的实践经验、强大的合作伙伴关系和经过验证的成果不断成长。如今，我们与欧洲和中东的客户合作，将战略、创意和技术相结合，实现可持续的数字增长。",
     "mission": "我们的使命",
-    "missionText": "提供超越期望并创造持久记忆的卓越产品和服务。",
+    "missionText": "通过基于人类专业知识的战略数字解决方案帮助企业成长，并辅以智能技术支持。",
     "vision": "我们的愿景",
-    "visionText": "成为奢华和高端品质体验的全球领导者。",
+    "visionText": "成为寻求可持续数字增长的企业的值得信赖的合作伙伴，拥有真正了解有效方法的团队。",
     "values": "我们的价值观",
-    "valuesText": "卓越、诚信、创新和客户满意度。"
+    "valuesText": "可靠性、专业技能、透明度和长期合作关系。",
+    "stats": {
+      "years": "年经验",
+      "clients": "满意客户",
+      "projects": "完成项目",
+      "team": "专业人士"
+    },
+    "timeline": {
+      "2016": {
+        "title": "在比利时成立",
+        "description": "GROPPI以清晰的愿景成立：个性化的数字营销方法。"
+      },
+      "2018": {
+        "title": "团队扩展",
+        "description": "团队扩展到5位在不同领域拥有专业知识的专家。"
+      },
+      "2020": {
+        "title": "欧洲增长",
+        "description": "与荷兰、德国和法国的客户成功合作。"
+      },
+      "2023": {
+        "title": "中东市场",
+        "description": "通过本地合作伙伴关系扩展到阿拉伯市场。"
+      }
+    }
+  },
+  "ai": {
+    "title": "AI作为支持力量",
+    "description": "在GROPPI，我们使用人工智能来加速流程、分析数据和优化性能。然而，愿景、战略和创意决策始终掌握在经验丰富的专业人士手中。",
+    "subtitle": "服务于人的技术"
   },
   "services": {
     "title": "我们的服务",
     "subtitle": "我们提供的服务",
-    "description": "探索我们为满足您最高期望而设计的全面高端服务。"
+    "description": "我们不提供固定套餐。每项服务都根据客户的目标量身定制，由专业团队执行，并在能创造价值的地方辅以智能技术。",
+    "monthly": "月付",
+    "oneTime": "一次性",
+    "customQuote": "定制",
+    "startingFrom": "起价",
+    "requestQuote": "请求报价",
+    "getQuote": "获取报价",
+    "videoPlaceholder": "观看简短说明视频",
+    "noResults": "没有符合您筛选条件的服务。",
+    "filters": {
+      "all": "所有服务",
+      "monthly": "月度订阅",
+      "oneTime": "一次性项目",
+      "custom": "定制项目"
+    },
+    "items": {
+      "aiContent": {
+        "title": "视觉内容与品牌",
+        "description": "由现代工具支持的专业视觉内容和品牌标识。从标志设计到完整的视觉营销活动。",
+        "features": {
+          "0": "专业视觉资产",
+          "1": "品牌标识设计",
+          "2": "社交媒体内容包",
+          "3": "产品摄影与编辑"
+        }
+      },
+      "webDev": {
+        "title": "网站设计与开发",
+        "description": "定制响应式网站，将访问者转化为客户。具有最佳性能的现代设计。",
+        "features": {
+          "0": "定制响应式设计",
+          "1": "SEO优化结构",
+          "2": "快速加载时间",
+          "3": "内容管理系统"
+        }
+      },
+      "ecommerce": {
+        "title": "电子商务解决方案",
+        "description": "完整的网店设置，包括支付集成、库存管理和转化优化。",
+        "features": {
+          "0": "完整网店设置",
+          "1": "支付网关集成",
+          "2": "产品管理系统",
+          "3": "转化优化"
+        }
+      },
+      "ads": {
+        "title": "广告管理",
+        "description": "通过Google、Meta和其他平台进行战略性广告活动。数据驱动的优化，实现最大投资回报率。",
+        "features": {
+          "0": "Google广告管理",
+          "1": "Meta广告",
+          "2": "活动分析",
+          "3": "A/B测试与优化"
+        }
+      },
+      "seo": {
+        "title": "搜索引擎优化",
+        "description": "提高您的有机可见度，在搜索引擎中获得更高排名。技术SEO、内容策略和链接建设。",
+        "features": {
+          "0": "技术SEO审核",
+          "1": "关键词研究",
+          "2": "内容优化",
+          "3": "链接建设策略"
+        }
+      },
+      "social": {
+        "title": "社交媒体管理",
+        "description": "全面管理您的社交媒体形象。内容创作、排程、互动和增长策略。",
+        "features": {
+          "0": "内容日历和排程",
+          "1": "社区管理",
+          "2": "互动与增长",
+          "3": "月度报告"
+        }
+      },
+      "reputation": {
+        "title": "声誉与评价管理",
+        "description": "建立和保护您的在线声誉。评价管理、回复策略和品牌监控。",
+        "features": {
+          "0": "评价监控",
+          "1": "回复管理",
+          "2": "声誉恢复",
+          "3": "品牌情感分析"
+        }
+      },
+      "dataSync": {
+        "title": "数据同步",
+        "description": "保持所有平台上的业务数据同步。库存、定价和产品信息管理。",
+        "features": {
+          "0": "多平台同步",
+          "1": "实时更新",
+          "2": "库存管理",
+          "3": "API集成"
+        }
+      }
+    },
+    "ai": {
+      "title": "智能技术赋能",
+      "description": "我们利用现代技术更高效地工作，提供更好的结果。战略和创意决策始终掌握在我们经验丰富的团队手中。",
+      "cta": "联系我们",
+      "learnMore": "了解更多"
+    },
+    "process": {
+      "subtitle": "我们的工作方式",
+      "title": "我们的流程",
+      "steps": {
+        "0": {
+          "title": "初次会面",
+          "description": "我们从免费对话开始，了解您的业务、目标和挑战。"
+        },
+        "1": {
+          "title": "定制提案",
+          "description": "根据您的需求，我们创建详细的提案，包含透明的定价和时间表。"
+        },
+        "2": {
+          "title": "执行与优化",
+          "description": "我们实施解决方案，并根据结果和反馈持续优化。"
+        }
+      }
+    },
+    "cta": {
+      "title": "准备好加强您的数字形象了吗？",
+      "description": "今天就联系我们，进行一次无义务对话，了解我们如何帮助您实现业务目标。",
+      "button": "请求免费报价"
+    }
   },
   "blog": {
-    "title": "最新消息",
+    "title": "洞察与技巧",
     "subtitle": "保持更新",
     "readMore": "阅读更多",
     "publishedOn": "发布于",
     "by": "作者"
   },
   "gallery": {
-    "title": "画廊",
-    "subtitle": "视觉卓越",
-    "description": "探索我们展示工作和成就的精彩视觉收藏。"
+    "title": "我们的作品",
+    "subtitle": "作品集",
+    "description": "探索我们为客户完成的精选项目。",
+    "filters": {
+      "all": "全部",
+      "web": "网站",
+      "branding": "品牌",
+      "social": "社交媒体",
+      "ecommerce": "电子商务"
+    }
   },
   "contact": {
     "title": "联系我们",
-    "subtitle": "取得联系",
-    "description": "我们很乐意听到您的声音。给我们发送消息，我们会尽快回复。",
-    "name": "您的姓名",
-    "email": "电子邮件地址",
+    "subtitle": "让我们谈谈",
+    "intro": "您有项目想法或想加强您的数字形象？联系我们进行无义务对话。",
+    "mobileLabel": "手机",
+    "officeLabel": "办公室",
+    "hoursLabel": "营业时间",
+    "hoursValue": "周一至周五：上午9:00 - 下午6:00",
+    "description": "我们很乐意听到您的声音。填写表格，我们会尽快回复您。",
+    "name": "姓名",
+    "email": "电子邮箱",
     "phone": "电话号码",
+    "company": "公司",
     "subject": "主题",
     "message": "您的留言",
-    "send": "发送消息",
+    "send": "发送",
     "sending": "发送中...",
-    "success": "消息发送成功！",
-    "error": "发送失败。请重试。",
+    "success": "消息发送成功！我们会尽快与您联系。",
+    "error": "出了点问题。请重试或电话联系我们。",
     "address": "地址",
     "phoneLabel": "电话",
     "emailLabel": "邮箱"
   },
+  "franchise": {
+    "title": "合作伙伴",
+    "subtitle": "成为合作伙伴",
+    "description": "有兴趣与GROPPI合作？发现共同成长的机会。",
+    "benefits": {
+      "title": "合作伙伴优势",
+      "items": {
+        "0": "获取经过验证的流程和方法论",
+        "1": "我们经验丰富的团队提供支持",
+        "2": "联合营销努力",
+        "3": "知识共享和培训"
+      }
+    },
+    "requirements": {
+      "title": "我们在寻找什么",
+      "items": {
+        "0": "数字营销或相关领域的经验",
+        "1": "企业家精神和成长心态",
+        "2": "对质量和客户满意度的承诺",
+        "3": "愿意长期合作"
+      }
+    },
+    "cta": "联系我们获取更多信息",
+    "apply": "立即申请",
+    "call": "致电我们"
+  },
   "footer": {
     "rights": "版权所有。",
+    "description": "自2016年以来的数字解决方案。总部位于比利时。",
     "privacy": "隐私政策",
     "terms": "服务条款",
-    "followUs": "关注我们"
+    "followUs": "关注我们",
+    "quickLinks": "快速链接",
+    "contact": "联系信息",
+    "newsletter": {
+      "title": "订阅通讯",
+      "description": "获取我们最新的洞察和技巧。",
+      "placeholder": "您的电子邮箱",
+      "button": "订阅"
+    }
   },
   "common": {
     "loading": "加载中...",
@@ -74,13 +277,26 @@
     "previous": "上一步",
     "close": "关闭",
     "search": "搜索",
-    "noResults": "未找到结果"
+    "noResults": "未找到结果",
+    "learnMore": "了解更多",
+    "getStarted": "开始",
+    "viewAll": "查看全部"
   },
   "validation": {
     "required": "此字段为必填项",
-    "email": "请输入有效的电子邮件地址",
-    "minLength": "必须至少{{count}}个字符",
-    "maxLength": "必须少于{{count}}个字符"
+    "email": "请输入有效的电子邮箱地址",
+    "minLength": "最少需要{{count}}个字符",
+    "maxLength": "最多允许{{count}}个字符"
+  },
+  "stats": {
+    "years": "年经验",
+    "yearsValue": "9+",
+    "clients": "满意客户",
+    "clientsValue": "150+",
+    "projects": "项目",
+    "projectsValue": "500+",
+    "team": "团队成员",
+    "teamValue": "9+"
   },
   "admin": {
     "dashboard": "仪表板",
