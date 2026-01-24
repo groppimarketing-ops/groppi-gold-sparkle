@@ -25,6 +25,59 @@
     "visionText": "Een betrouwbare partner zijn voor bedrijven die duurzame digitale groei nastreven, met een team dat écht begrijpt wat werkt.",
     "values": "Onze waarden",
     "valuesText": "Betrouwbaarheid, vakmanschap, transparantie en langetermijnrelaties.",
+    "hero": {
+      "badge": "Sinds 2016",
+      "title": "Onze reis begon in België in 2016",
+      "text": "GROPPI begon in België in 2016 met één duidelijke visie: bedrijven helpen om een sterke en eerlijke digitale aanwezigheid op te bouwen. Geen trends om trends, maar oplossingen die echt werken."
+    },
+    "whoWeAre": {
+      "subtitle": "Wie wij zijn",
+      "title": "Gebouwd op ervaring en vertrouwen",
+      "points": {
+        "founded": {
+          "title": "Opgericht in 2016",
+          "text": "Meer dan 8 jaar ervaring in digitale marketing"
+        },
+        "location": {
+          "title": "België-gebaseerd",
+          "text": "Hoofdkantoor in België, lokale service"
+        },
+        "reach": {
+          "title": "Europa & Midden-Oosten",
+          "text": "Actief in meerdere landen en markten"
+        },
+        "team": {
+          "title": "9+ professionals",
+          "text": "Multidisciplinair team van experts"
+        },
+        "partnerships": {
+          "title": "Langetermijnrelaties",
+          "text": "Wij bouwen duurzame partnerships"
+        }
+      }
+    },
+    "approach": {
+      "badge": "Onze aanpak",
+      "title": "Menselijke expertise, ondersteund door technologie",
+      "text": "Bij GROPPI geloven we in menselijke expertise. Technologie en AI ondersteunen ons werk, maar strategie, creativiteit en beslissingen worden altijd genomen door mensen.",
+      "tags": {
+        "strategy": "Strategie",
+        "creativity": "Creativiteit",
+        "technology": "Technologie"
+      },
+      "humanExpertise": {
+        "title": "Menselijke besluitvorming",
+        "text": "Ervaren professionals nemen alle strategische en creatieve beslissingen."
+      },
+      "aiSupport": {
+        "title": "AI als versneller",
+        "text": "Slimme technologie versnelt processen, maar vervangt nooit menselijk inzicht."
+      }
+    },
+    "growth": {
+      "subtitle": "Onze groei",
+      "title": "Van België naar de wereld"
+    },
     "stats": {
       "years": "Jaar ervaring",
       "clients": "Tevreden klanten",
@@ -48,6 +101,38 @@
         "title": "Midden-Oosten",
         "description": "Uitbreiding naar de Arabische markt met lokale partnerships."
       }
+    },
+    "valuesSection": {
+      "subtitle": "Waar wij voor staan",
+      "title": "Onze kernwaarden",
+      "items": {
+        "transparency": {
+          "title": "Transparantie",
+          "text": "Eerlijke communicatie en duidelijke verwachtingen"
+        },
+        "quality": {
+          "title": "Kwaliteit boven kwantiteit",
+          "text": "Wij kiezen voor diepgang, niet voor volume"
+        },
+        "relationships": {
+          "title": "Langetermijnrelaties",
+          "text": "Wij bouwen partnerships die duren"
+        },
+        "results": {
+          "title": "Echte resultaten",
+          "text": "Meetbare impact, geen loze beloftes"
+        },
+        "humanFirst": {
+          "title": "Mens eerst",
+          "text": "Technologie in dienst van mensen"
+        }
+      }
+    },
+    "cta": {
+      "title": "Wilt u samenwerken met een team dat meedenkt en vooruitkijkt?",
+      "text": "Laten we samen ontdekken hoe we uw digitale aanwezigheid kunnen versterken.",
+      "bookConsultation": "Plan een gratis gesprek",
+      "contactUs": "Neem contact op"
     }
   },
   "ai": {

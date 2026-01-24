@@ -25,6 +25,59 @@
     "visionText": "To be a trusted partner for businesses seeking sustainable digital growth, with a team that truly understands what works.",
     "values": "Our Values",
     "valuesText": "Reliability, craftsmanship, transparency, and long-term relationships.",
+    "hero": {
+      "badge": "Since 2016",
+      "title": "Our journey started in Belgium in 2016",
+      "text": "GROPPI started in Belgium in 2016 with one clear vision: helping businesses build a strong and authentic digital presence. No trends for the sake of trends, but solutions that truly work."
+    },
+    "whoWeAre": {
+      "subtitle": "Who we are",
+      "title": "Built on experience and trust",
+      "points": {
+        "founded": {
+          "title": "Founded in 2016",
+          "text": "Over 8 years of digital marketing experience"
+        },
+        "location": {
+          "title": "Belgium-based",
+          "text": "Headquarters in Belgium, local service"
+        },
+        "reach": {
+          "title": "Europe & Middle East",
+          "text": "Active in multiple countries and markets"
+        },
+        "team": {
+          "title": "9+ professionals",
+          "text": "Multidisciplinary team of experts"
+        },
+        "partnerships": {
+          "title": "Long-term relationships",
+          "text": "We build lasting partnerships"
+        }
+      }
+    },
+    "approach": {
+      "badge": "Our approach",
+      "title": "Human expertise, supported by technology",
+      "text": "At GROPPI, we believe in human expertise. Technology and AI support our work, but strategy, creativity, and decisions are always made by people.",
+      "tags": {
+        "strategy": "Strategy",
+        "creativity": "Creativity",
+        "technology": "Technology"
+      },
+      "humanExpertise": {
+        "title": "Human decision-making",
+        "text": "Experienced professionals make all strategic and creative decisions."
+      },
+      "aiSupport": {
+        "title": "AI as accelerator",
+        "text": "Smart technology speeds up processes but never replaces human insight."
+      }
+    },
+    "growth": {
+      "subtitle": "Our growth",
+      "title": "From Belgium to the world"
+    },
     "stats": {
       "years": "Years of Experience",
       "clients": "Happy Clients",
@@ -48,6 +101,38 @@
         "title": "Middle East",
         "description": "Expansion to the Arab market through local partnerships."
       }
+    },
+    "valuesSection": {
+      "subtitle": "What we stand for",
+      "title": "Our core values",
+      "items": {
+        "transparency": {
+          "title": "Transparency",
+          "text": "Honest communication and clear expectations"
+        },
+        "quality": {
+          "title": "Quality over quantity",
+          "text": "We choose depth, not volume"
+        },
+        "relationships": {
+          "title": "Long-term relationships",
+          "text": "We build partnerships that last"
+        },
+        "results": {
+          "title": "Real results",
+          "text": "Measurable impact, no empty promises"
+        },
+        "humanFirst": {
+          "title": "Human first",
+          "text": "Technology in service of people"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to work with a team that thinks ahead?",
+      "text": "Let's discover together how we can strengthen your digital presence.",
+      "bookConsultation": "Book a free consultation",
+      "contactUs": "Contact us"
     }
   },
   "ai": {
