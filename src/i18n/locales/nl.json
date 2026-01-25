@@ -413,6 +413,68 @@
         }
       }
     },
+    "ads": {
+      "tab": {
+        "framework": "Budgetadvies"
+      },
+      "recommendedBudget": "Aanbevolen budget",
+      "qualification": {
+        "headline": "Start met uw doel",
+        "description": "Advertentiesucces begint met een duidelijk doel. Verschillende doelen vereisen verschillende budgetniveaus voor betekenisvolle resultaten.",
+        "note": "Budgetten onder deze niveaus kunnen dataverzameling en resultaatnauwkeurigheid beperken."
+      },
+      "goals": {
+        "leadGeneration": {
+          "title": "Leadgeneratie",
+          "description": "Voldoende data om campagnes te optimaliseren en gekwalificeerde leads te genereren."
+        },
+        "ecommerce": {
+          "title": "E-commerce verkoop",
+          "description": "Zorgt voor stabiel verkeer, conversietesten en prestatieschaling."
+        },
+        "brandAwareness": {
+          "title": "Merkbekendheid",
+          "description": "Levert effectief bereik en frequentie voor zichtbaarheid."
+        }
+      },
+      "transparency": {
+        "headline": "Volledige budgetcontrole",
+        "subheadline": "U bepaalt het budget. Wij maximaliseren de prestaties.",
+        "description": "Onze beheerskosten dekken strategie, setup, optimalisatie en rapportage. Advertentiebudgetten worden rechtstreeks aan platforms zoals Google of Meta betaald, wat u volledige transparantie en controle geeft.",
+        "shortNote": "Advertentie-uitgaven worden rechtstreeks aan advertentieplatforms betaald."
+      },
+      "salesFlow": {
+        "title": "Ons samenwerkingsproces",
+        "steps": {
+          "0": "Klant definieert advertentiedoel",
+          "1": "GROPPI adviseert geschikt budgetbereik",
+          "2": "Klant keurt budget goed",
+          "3": "Campagne setup en lancering",
+          "4": "Dataverzameling en optimalisatie",
+          "5": "Prestatierapportage en opschaling"
+        },
+        "closingStatement": "Wij begeleiden de strategie. U controleert het budget. Resultaten komen voort uit de afstemming tussen beide."
+      },
+      "faq": {
+        "title": "Veelgestelde vragen over advertenties",
+        "budgetIncluded": {
+          "question": "Is het advertentiebudget inbegrepen in de beheerprijs?",
+          "answer": "Nee. Beheerskosten dekken strategie, setup, optimalisatie en rapportage. Advertentie-uitgaven worden rechtstreeks aan advertentieplatforms betaald."
+        },
+        "smallBudget": {
+          "question": "Kan ik advertenties draaien met een zeer klein budget?",
+          "answer": "Ja, maar zeer lage budgetten genereren mogelijk niet genoeg data voor betekenisvolle of meetbare resultaten."
+        },
+        "whoDecides": {
+          "question": "Wie bepaalt het advertentiebudget?",
+          "answer": "Wij adviseren een budget op basis van uw doel en markt. U keurt het definitieve budget goed en behoudt de controle."
+        },
+        "lowerBudget": {
+          "question": "Wat gebeurt er als ik een lager budget kies dan aanbevolen?",
+          "answer": "Campagnes worden professioneel beheerd, maar prestaties en optimalisatie kunnen beperkt zijn door onvoldoende data."
+        }
+      }
+    },
     "ai": {
       "title": "Ondersteund door slimme technologie",
       "description": "Wij benutten moderne technologie om efficiënter te werken en betere resultaten te leveren. De strategie en creatieve beslissingen blijven altijd in handen van ons ervaren team.",

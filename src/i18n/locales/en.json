@@ -413,6 +413,68 @@
         }
       }
     },
+    "ads": {
+      "tab": {
+        "framework": "Budget Advisor"
+      },
+      "recommendedBudget": "Recommended budget",
+      "qualification": {
+        "headline": "Start With Your Goal",
+        "description": "Advertising success starts with a clear goal. Different goals require different budget levels to generate meaningful results.",
+        "note": "Budgets below these levels may limit data collection and result accuracy."
+      },
+      "goals": {
+        "leadGeneration": {
+          "title": "Lead Generation",
+          "description": "Allows enough data to optimize campaigns and generate qualified leads."
+        },
+        "ecommerce": {
+          "title": "E-commerce Sales",
+          "description": "Ensures stable traffic, conversion testing, and performance scaling."
+        },
+        "brandAwareness": {
+          "title": "Brand Awareness",
+          "description": "Delivers effective reach and frequency for visibility."
+        }
+      },
+      "transparency": {
+        "headline": "Full Budget Control",
+        "subheadline": "You decide the budget. We maximize its performance.",
+        "description": "Our advertising management fees cover strategy, setup, optimization, and reporting only. Advertising budgets are paid directly to platforms such as Google or Meta, giving you full transparency and control.",
+        "shortNote": "Ad spend is paid directly to advertising platforms."
+      },
+      "salesFlow": {
+        "title": "Our Collaboration Process",
+        "steps": {
+          "0": "Client defines advertising goal",
+          "1": "GROPPI recommends suitable budget range",
+          "2": "Client approves budget",
+          "3": "Campaign setup and launch",
+          "4": "Data collection and optimization",
+          "5": "Performance reporting and scaling"
+        },
+        "closingStatement": "We guide the strategy. You control the budget. Results come from alignment between both."
+      },
+      "faq": {
+        "title": "Advertising FAQs",
+        "budgetIncluded": {
+          "question": "Is the advertising budget included in the management price?",
+          "answer": "No. Management fees cover strategy, setup, optimization, and reporting only. Ad spend is paid directly to advertising platforms."
+        },
+        "smallBudget": {
+          "question": "Can I run ads with a very small budget?",
+          "answer": "Yes, but very low budgets may not generate enough data for meaningful or measurable results."
+        },
+        "whoDecides": {
+          "question": "Who decides the advertising budget?",
+          "answer": "We recommend a budget based on your goal and market. You approve and control the final budget."
+        },
+        "lowerBudget": {
+          "question": "What happens if I choose a lower budget than recommended?",
+          "answer": "Campaigns will be managed professionally, but performance and optimization may be limited due to insufficient data."
+        }
+      }
+    },
     "ai": {
       "title": "Powered by Smart Technology",
       "description": "We leverage modern technology to work more efficiently and deliver better results. Strategy and creative decisions always remain in the hands of our experienced team.",

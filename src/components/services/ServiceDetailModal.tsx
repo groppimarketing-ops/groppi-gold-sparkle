@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Play, Clock, ArrowRight, Check, Package, CreditCard, Info } from 'lucide-react';
+import { X, Play, Clock, ArrowRight, Check, Package, CreditCard, Info, Megaphone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import type { ServiceData } from './ServiceCard';
+import AdsServiceContent from './AdsServiceContent';
 
 interface ServiceDetailModalProps {
   isOpen: boolean;
@@ -170,8 +171,14 @@ const ServiceDetailModal = ({
               </div>
 
               {/* Tabbed Content */}
-              <Tabs defaultValue="deliverables" className="w-full">
-                <TabsList className="grid w-full grid-cols-3 mb-6 bg-muted/30">
+              <Tabs defaultValue={service.id === 'ads-management' ? 'ads-framework' : 'deliverables'} className="w-full">
+                <TabsList className={`grid w-full mb-6 bg-muted/30 ${service.id === 'ads-management' ? 'grid-cols-4' : 'grid-cols-3'}`}>
+                  {service.id === 'ads-management' && (
+                    <TabsTrigger value="ads-framework" className="gap-2 data-[state=active]:bg-primary/20">
+                      <Megaphone className="w-4 h-4" />
+                      <span className="hidden sm:inline">{t('services.ads.tab.framework')}</span>
+                    </TabsTrigger>
+                  )}
                   <TabsTrigger value="deliverables" className="gap-2 data-[state=active]:bg-primary/20">
                     <Package className="w-4 h-4" />
                     <span className="hidden sm:inline">{t('services.modal.whatYouGet')}</span>
@@ -185,6 +192,13 @@ const ServiceDetailModal = ({
                     <span className="hidden sm:inline">{t('services.modal.watchVideo')}</span>
                   </TabsTrigger>
                 </TabsList>
+
+                {/* Ads Management Framework Tab */}
+                {service.id === 'ads-management' && (
+                  <TabsContent value="ads-framework" className="mt-0">
+                    <AdsServiceContent />
+                  </TabsContent>
+                )}
 
                 {/* Section 1: What You Get */}
                 <TabsContent value="deliverables" className="mt-0">
