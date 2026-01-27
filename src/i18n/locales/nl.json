@@ -247,6 +247,81 @@
     "videoPlaceholder": "Bekijk korte uitlegvideo",
     "noResults": "Geen diensten voldoen aan uw filtercriteria.",
     "featuredBadge": "Meest gekozen",
+    "gridTitle": "Alle diensten",
+    "gridSubtitle": "Bekijk eerst de video om te begrijpen hoe elke dienst werkt, daarna kan je verder gaan naar de details.",
+    "goalEntry": {
+      "badge": "Start hier",
+      "title": "Wat wil je bereiken?",
+      "subtitle": "Kies je doel. Wij tonen je de juiste dienst.",
+      "browseHint": "Of scroll naar beneden om alle diensten te bekijken",
+      "visibility": {
+        "title": "Meer zichtbaarheid",
+        "description": "Bouw een sterke en consistente online aanwezigheid op.",
+        "cta": "Bekijk hoe dit werkt"
+      },
+      "leads": {
+        "title": "Meer leads",
+        "description": "Trek mensen aan die klaar zijn om contact op te nemen.",
+        "cta": "Bekijk aanbevolen diensten"
+      },
+      "sales": {
+        "title": "Meer verkoop",
+        "description": "Zet verkeer om in echte omzet.",
+        "cta": "Bouw mijn setup"
+      }
+    },
+    "card": {
+      "watchVideo": "Bekijk hoe het werkt (60 sec)",
+      "buildPlan": "Stel je plan samen",
+      "calculatorHint": "Krijg meteen een richtprijs"
+    },
+    "videoModal": {
+      "continueToDetails": "Verder naar details",
+      "comingSoon": "Video wordt binnenkort geüpload",
+      "defaultBullets": {
+        "when": "Wanneer deze dienst geschikt is voor jou",
+        "problem": "Welk probleem het oplost",
+        "result": "Welk resultaat je kan verwachten"
+      },
+      "bullets": {
+        "social_media": {
+          "when": "Voor bedrijven die consistent resultaat willen zonder alles zelf te beheren.",
+          "problem": "Lost het probleem op van inconsistente posting en lage engagement.",
+          "result": "Een groeiende, betrokken community die je merk versterkt."
+        },
+        "content_production": {
+          "when": "Voor merken die visueel willen opvallen en professionele content nodig hebben.",
+          "problem": "Lost het probleem op van amateuristische content die niet converteert.",
+          "result": "Hoogwaardige video's en foto's die je merk naar een hoger niveau tillen."
+        },
+        "ads_management": {
+          "when": "Voor bedrijven die hun advertentiebudget effectief willen inzetten.",
+          "problem": "Lost het probleem op van verspild budget en slechte ROI.",
+          "result": "Data-gedreven campagnes die meetbare resultaten opleveren."
+        },
+        "seo": {
+          "when": "Voor bedrijven die organisch gevonden willen worden.",
+          "problem": "Lost het probleem op van onzichtbaarheid in zoekmachines.",
+          "result": "Duurzame organische groei en meer gekwalificeerd verkeer."
+        },
+        "ecommerce_website": {
+          "when": "Voor bedrijven die online willen verkopen met een professionele webshop.",
+          "problem": "Lost het probleem op van gemiste verkoopkansen online.",
+          "result": "Een geoptimaliseerde webshop die bezoekers omzet in klanten."
+        }
+      }
+    },
+    "simpleExplanation": {
+      "content_production": "Voor bedrijven die professionele content nodig hebben die opvalt.",
+      "one_page_website": "Ideaal voor een snelle, professionele online start.",
+      "business_website": "De basis voor een serieuze online aanwezigheid.",
+      "ecommerce_website": "Klaar om online te verkopen met een volledige webshop.",
+      "ads_management": "Laat je advertentiebudget effectief werken met data-gedreven campagnes.",
+      "seo": "Groei organisch en word gevonden door je doelgroep.",
+      "social_media": "Voor bedrijven die consistente resultaten willen zonder alles zelf te beheren.",
+      "reputation": "Bescherm en versterk je online reputatie.",
+      "data_sync": "Houd al je bedrijfsdata gesynchroniseerd en up-to-date."
+    },
     "guidedEntry": {
       "title": "Niet zeker waar te beginnen?",
       "subtitle": "Vertel ons je doel, wij helpen je kiezen.",
@@ -308,6 +383,7 @@
       "growth": "Growth",
       "pro": "Pro"
     },
+    "calculatorHelperText": "Gebruik deze tool om een richtprijs te krijgen op basis van jouw behoeften.",
     "modal": {
       "viewDetails": "Bekijk details",
       "watchVideo": "Bekijk video",
