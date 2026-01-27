@@ -247,6 +247,81 @@
     "videoPlaceholder": "Watch short explainer video",
     "noResults": "No services match your filter criteria.",
     "featuredBadge": "Most chosen",
+    "gridTitle": "All services",
+    "gridSubtitle": "Watch the video first to understand how each service works, then continue to the details.",
+    "goalEntry": {
+      "badge": "Start here",
+      "title": "What do you want to achieve?",
+      "subtitle": "Choose your goal. We'll show you the right service.",
+      "browseHint": "Or scroll down to browse all services",
+      "visibility": {
+        "title": "Get more visibility",
+        "description": "Build a strong and consistent online presence.",
+        "cta": "See how this works"
+      },
+      "leads": {
+        "title": "Get more leads",
+        "description": "Attract people who are ready to contact you.",
+        "cta": "See recommended services"
+      },
+      "sales": {
+        "title": "Get more sales",
+        "description": "Turn traffic into real revenue.",
+        "cta": "Build my setup"
+      }
+    },
+    "card": {
+      "watchVideo": "Watch how it works (60 sec)",
+      "buildPlan": "Build your plan",
+      "calculatorHint": "Get an indicative price instantly"
+    },
+    "videoModal": {
+      "continueToDetails": "Continue to details",
+      "comingSoon": "Video will be uploaded soon",
+      "defaultBullets": {
+        "when": "When this service is right for you",
+        "problem": "What problem it solves",
+        "result": "What result to expect"
+      },
+      "bullets": {
+        "social_media": {
+          "when": "For businesses that want consistent results without managing everything themselves.",
+          "problem": "Solves the problem of inconsistent posting and low engagement.",
+          "result": "A growing, engaged community that strengthens your brand."
+        },
+        "content_production": {
+          "when": "For brands that want to stand out visually and need professional content.",
+          "problem": "Solves the problem of amateur content that doesn't convert.",
+          "result": "High-quality videos and photos that elevate your brand."
+        },
+        "ads_management": {
+          "when": "For businesses that want to effectively deploy their advertising budget.",
+          "problem": "Solves the problem of wasted budget and poor ROI.",
+          "result": "Data-driven campaigns that deliver measurable results."
+        },
+        "seo": {
+          "when": "For businesses that want to be found organically.",
+          "problem": "Solves the problem of invisibility in search engines.",
+          "result": "Sustainable organic growth and more qualified traffic."
+        },
+        "ecommerce_website": {
+          "when": "For businesses that want to sell online with a professional webshop.",
+          "problem": "Solves the problem of missed sales opportunities online.",
+          "result": "An optimized webshop that converts visitors into customers."
+        }
+      }
+    },
+    "simpleExplanation": {
+      "content_production": "For businesses that need professional content that stands out.",
+      "one_page_website": "Ideal for a quick, professional online start.",
+      "business_website": "The foundation for a serious online presence.",
+      "ecommerce_website": "Ready to sell online with a complete webshop.",
+      "ads_management": "Make your advertising budget work effectively with data-driven campaigns.",
+      "seo": "Grow organically and be found by your target audience.",
+      "social_media": "For businesses that want consistent results without managing everything themselves.",
+      "reputation": "Protect and strengthen your online reputation.",
+      "data_sync": "Keep all your business data synchronized and up-to-date."
+    },
     "guidedEntry": {
       "title": "Not sure where to start?",
       "subtitle": "Tell us your goal, we'll help you choose.",
@@ -308,6 +383,7 @@
       "growth": "Growth",
       "pro": "Pro"
     },
+    "calculatorHelperText": "Use this tool to get an indicative price based on your needs.",
     "modal": {
       "viewDetails": "View details",
       "watchVideo": "Watch video",

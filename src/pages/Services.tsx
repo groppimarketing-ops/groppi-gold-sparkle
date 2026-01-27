@@ -1,15 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Star, RefreshCw, Brain, Rocket, Filter, FileText, Layout, Store, Award } from 'lucide-react';
+import { ArrowRight, Sparkles, Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Star, RefreshCw, Brain, Rocket, Filter, FileText, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import PageLayout from '@/components/layout/PageLayout';
 import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import ServiceCard, { ServiceData } from '@/components/services/ServiceCard';
-import ServicesGuidedEntry from '@/components/services/ServicesGuidedEntry';
+import GoalBasedEntry from '@/components/services/GoalBasedEntry';
 import ServiceDetailModal from '@/components/services/ServiceDetailModal';
 
 const Services = () => {
@@ -17,7 +17,30 @@ const Services = () => {
   const [filter, setFilter] = useState<'all' | 'monthly' | 'one_time' | 'custom'>('all');
   const [selectedService, setSelectedService] = useState<ServiceData | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [highlightedServices, setHighlightedServices] = useState<string[]>([]);
+  const servicesGridRef = useRef<HTMLElement>(null);
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
+
+  // Handle goal selection from goal-based entry
+  const handleGoalSelect = (goal: 'visibility' | 'leads' | 'sales') => {
+    const goalToServicesMap: Record<string, string[]> = {
+      visibility: ['social-media', 'content-production'],
+      leads: ['ads-management', 'seo'],
+      sales: ['ecommerce-website', 'ads-management'],
+    };
+    
+    setHighlightedServices(goalToServicesMap[goal]);
+    
+    // Scroll to services grid
+    setTimeout(() => {
+      servicesGridRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+    
+    // Clear highlights after a few seconds
+    setTimeout(() => {
+      setHighlightedServices([]);
+    }, 5000);
+  };
 
   // Featured service ID for the "Most chosen by growing businesses" badge
   const featuredServiceId = 'social-media';
@@ -262,8 +285,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Guided Entry Section */}
-      <ServicesGuidedEntry onRecommendationSelect={handleRecommendationSelect} />
+      {/* Goal-Based Entry Section */}
+      <GoalBasedEntry onGoalSelect={handleGoalSelect} />
 
       {/* Filter Tabs */}
       <section className="py-8 border-b border-primary/10">
@@ -290,11 +313,22 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section id="services-grid" className="py-24">
+      <section id="services-grid" ref={servicesGridRef} className="py-24">
         <div className="container mx-auto px-4">
+          {/* Section Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">{t('services.gridTitle')}</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">{t('services.gridSubtitle')}</p>
+          </motion.div>
+
           {/* Grid with enhanced spacing */}
           <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-10"
             layout
           >
             {filteredServices.map((service, index) => (
@@ -316,6 +350,7 @@ const Services = () => {
                   service={service} 
                   index={index} 
                   isFeatured={service.id === featuredServiceId}
+                  isHighlighted={highlightedServices.includes(service.id)}
                 />
               </div>
             ))}

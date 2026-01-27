@@ -210,6 +210,12 @@ const ServiceDetailModal = ({
                 {/* Social Media Plan Builder Tab */}
                 {service.id === 'social-media' && (
                   <TabsContent value="plan-builder" className="mt-0">
+                    {/* Calculator helper text */}
+                    <div className="mb-6 p-4 rounded-lg bg-primary/5 border border-primary/10">
+                      <p className="text-sm text-muted-foreground">
+                        {t('services.calculatorHelperText')}
+                      </p>
+                    </div>
                     <PlanBuilderSocial />
                   </TabsContent>
                 )}

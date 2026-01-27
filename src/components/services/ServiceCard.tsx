@@ -1,11 +1,12 @@
 import { forwardRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play, Calendar, CreditCard, MessageSquare, LucideIcon, Check, Users, User, Video, Briefcase, Zap, Crown } from 'lucide-react';
+import { ArrowRight, Play, Calendar, CreditCard, MessageSquare, LucideIcon, Check, Users, User, Video, Briefcase, Zap, Crown, Calculator } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import ServiceDetailModal from './ServiceDetailModal';
+import ServiceVideoModal from './ServiceVideoModal';
 
 export interface ServicePackage {
   id: 'starter' | 'growth' | 'pro';
@@ -36,51 +37,24 @@ export interface ServiceData {
   packages?: ServicePackage[];
   deliverables?: ServiceDeliverable[];
   pricingExplanationKey?: string;
+  hasCalculator?: boolean;
 }
 
 interface ServiceCardProps {
   service: ServiceData;
   index: number;
   isFeatured?: boolean;
+  isHighlighted?: boolean;
 }
 
-const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, index, isFeatured = false }, ref) => {
+const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, index, isFeatured = false, isHighlighted = false }, ref) => {
   const { t, i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
 
-  const getTargetAudienceIcon = (audience: string) => {
-    switch (audience) {
-      case 'business':
-        return <Briefcase className="w-3 h-3" />;
-      case 'individual':
-        return <User className="w-3 h-3" />;
-      case 'creator':
-        return <Video className="w-3 h-3" />;
-      default:
-        return <Users className="w-3 h-3" />;
-    }
-  };
-
-  const getPackageBadge = () => {
-    if (!service.packageTier) return null;
-    
-    const configs = {
-      starter: { icon: Zap, colorClass: 'bg-blue-500/20 text-blue-400 border-blue-500/30' },
-      growth: { icon: Users, colorClass: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' },
-      pro: { icon: Crown, colorClass: 'bg-primary/20 text-primary border-primary/30' },
-    };
-    
-    const config = configs[service.packageTier];
-    const Icon = config.icon;
-    
-    return (
-      <Badge className={`${config.colorClass} gap-1`}>
-        <Icon className="w-3 h-3" />
-        {t(`services.packages.${service.packageTier}`)}
-      </Badge>
-    );
-  };
+  // Determine if this service has a calculator
+  const hasCalculator = service.id === 'social-media' || service.id === 'ads-management';
 
   const getPricingBadge = () => {
     switch (service.pricingType) {
@@ -111,8 +85,6 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
   const getPriceDisplay = () => {
     const pricingLabel = service.pricingType === 'monthly' 
       ? t('services.perMonth')
-      : service.pricingType === 'one_time'
-      ? t('services.oneTimePayment')
       : '';
 
     if (service.pricingType === 'custom') {
@@ -127,8 +99,8 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
       return (
         <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
           <span className="text-xs text-muted-foreground">{t('services.startingFrom')}</span>
-          <span className="text-xl font-bold text-primary">
-            €{service.priceMin.toLocaleString()} - €{service.priceMax.toLocaleString()}
+          <span className="text-2xl font-bold text-primary">
+            €{service.priceMin.toLocaleString()}
           </span>
           {pricingLabel && (
             <span className="text-xs text-muted-foreground">{pricingLabel}</span>
@@ -141,8 +113,8 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
       return (
         <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
           <span className="text-xs text-muted-foreground">{t('services.startingFrom')}</span>
-          <span className="text-xl font-bold text-primary">
-            €{service.priceMin.toLocaleString()}+
+          <span className="text-2xl font-bold text-primary">
+            €{service.priceMin.toLocaleString()}
           </span>
           {pricingLabel && (
             <span className="text-xs text-muted-foreground">{pricingLabel}</span>
@@ -162,15 +134,19 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
 
   const handleWatchVideo = (e: React.MouseEvent) => {
     e.stopPropagation();
+    setIsVideoModalOpen(true);
+  };
+
+  const handleVideoModalContinue = () => {
+    setIsVideoModalOpen(false);
     setIsModalOpen(true);
   };
 
-  // Get micro-guidance helper text for the service
-  const getMicroGuidance = (): string => {
-    const guidanceKey = `services.microGuidance.${service.id.replace(/-/g, '_')}`;
-    const guidance = t(guidanceKey);
-    // Return empty if the key doesn't exist (returns the key itself)
-    return guidance !== guidanceKey ? guidance : '';
+  // Get simple explanation line for the service
+  const getSimpleExplanation = (): string => {
+    const explanationKey = `services.simpleExplanation.${service.id.replace(/-/g, '_')}`;
+    const explanation = t(explanationKey);
+    return explanation !== explanationKey ? explanation : '';
   };
 
   return (
@@ -181,38 +157,20 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: index * 0.1 }}
-        className={`group relative overflow-hidden flex flex-col h-full cursor-pointer transition-all duration-500 ${
+        className={`group relative overflow-hidden flex flex-col h-full transition-all duration-500 ${
           isFeatured ? 'ring-2 ring-primary/40 shadow-[0_0_30px_hsl(var(--primary)/0.15)]' : ''
+        } ${
+          isHighlighted ? 'ring-2 ring-primary/60 shadow-[0_0_50px_hsl(var(--primary)/0.25)]' : ''
         }`}
-        onClick={handleViewDetails}
       >
         {/* Gradient Background */}
         <div 
           className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} 
         />
 
-        {/* Top Section: Badges */}
+        {/* Top Section: Badge */}
         <div className="relative flex flex-wrap items-start gap-2 mb-4">
           {getPricingBadge()}
-          {getPackageBadge()}
-        </div>
-
-        {/* Target Audience */}
-        <div className="relative flex flex-wrap gap-1.5 mb-4">
-          {service.targetAudience.map((audience) => (
-            <span 
-              key={audience}
-              className="inline-flex items-center gap-1 text-xs text-muted-foreground bg-muted/30 px-2 py-1 rounded-full"
-            >
-              {getTargetAudienceIcon(audience)}
-              {t(`services.audience.${audience}`)}
-            </span>
-          ))}
-        </div>
-
-        {/* Price Display */}
-        <div className="relative mb-4">
-          {getPriceDisplay()}
         </div>
 
         {/* Icon */}
@@ -228,58 +186,83 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
           {t(service.titleKey)}
         </h3>
 
-        {/* Micro-guidance helper line */}
-        {getMicroGuidance() && (
-          <p className="relative text-xs text-primary/80 mb-3 italic">
-            {getMicroGuidance()}
+        {/* Simple Explanation Line */}
+        {getSimpleExplanation() && (
+          <p className="relative text-sm text-muted-foreground mb-4 leading-relaxed">
+            {getSimpleExplanation()}
           </p>
         )}
-        
-        {/* Description */}
-        <p className="relative text-muted-foreground mb-5 text-sm leading-relaxed line-clamp-3">
-          {t(service.descriptionKey)}
-        </p>
-        
-        {/* Features / Key Inclusions */}
-        <div className="relative mb-6 flex-grow">
-          <p className="text-xs uppercase tracking-wider text-muted-foreground mb-3 font-medium">
-            {t('services.keyInclusions')}
-          </p>
-          <ul className="space-y-2">
-            {service.features.slice(0, 4).map((featureKey, idx) => (
-              <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                <Check className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                <span>{t(featureKey)}</span>
-              </li>
-            ))}
-          </ul>
+
+        {/* Price Display - Now more prominent */}
+        <div className="relative mb-6 p-3 rounded-lg bg-primary/5 border border-primary/10">
+          {getPriceDisplay()}
         </div>
         
-        {/* CTA Buttons */}
+        {/* CTA Buttons - VIDEO FIRST */}
         <div className="relative space-y-3 mt-auto">
-          {/* Primary CTA */}
+          {/* PRIMARY CTA - Watch Video */}
           <Button
-            className="w-full luxury-button"
-            onClick={(e) => {
-              e.stopPropagation();
-              handleViewDetails();
-            }}
-          >
-            {t('services.modal.viewDetails')}
-            <ArrowRight className={`h-4 w-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'} group-hover:translate-x-1 transition-transform`} />
-          </Button>
-
-          {/* Secondary CTA - Watch Video */}
-          <Button
-            variant="outline"
-            className="w-full glass-button gap-2"
+            className="w-full luxury-button group/btn relative overflow-hidden"
             onClick={handleWatchVideo}
           >
-            <Play className="w-4 h-4 text-primary" />
-            {t('services.modal.watchVideo')}
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-r from-primary/0 via-white/10 to-primary/0"
+              animate={{
+                x: ['-100%', '100%'],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatDelay: 3,
+              }}
+            />
+            <Play className="w-5 h-5 fill-current" />
+            <span className={`${isRTL ? 'mr-2' : 'ml-2'}`}>{t('services.card.watchVideo')}</span>
           </Button>
+
+          {/* SECONDARY CTA - Build Plan or View Details */}
+          {hasCalculator ? (
+            <Button
+              variant="outline"
+              className="w-full glass-button gap-2 hover:border-primary/50 group/calc"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleViewDetails();
+              }}
+            >
+              <Calculator className="w-4 h-4 text-primary group-hover/calc:scale-110 transition-transform" />
+              {t('services.card.buildPlan')}
+            </Button>
+          ) : (
+            <Button
+              variant="outline"
+              className="w-full glass-button gap-2"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleViewDetails();
+              }}
+            >
+              {t('services.modal.viewDetails')}
+              <ArrowRight className={`h-4 w-4 ${isRTL ? 'mr-1 rotate-180' : 'ml-1'}`} />
+            </Button>
+          )}
+
+          {/* Helper micro-text for calculator */}
+          {hasCalculator && (
+            <p className="text-xs text-center text-muted-foreground">
+              {t('services.card.calculatorHint')}
+            </p>
+          )}
         </div>
       </GlassCard>
+
+      {/* Video Modal - Primary explanation layer */}
+      <ServiceVideoModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+        onContinueToDetails={handleVideoModalContinue}
+        service={service}
+      />
 
       {/* Detail Modal */}
       <ServiceDetailModal
