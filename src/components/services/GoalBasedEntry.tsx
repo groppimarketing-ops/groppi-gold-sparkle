@@ -13,6 +13,7 @@ const GoalBasedEntry = ({ onGoalSelect }: GoalBasedEntryProps) => {
   const [hoveredGoal, setHoveredGoal] = useState<string | null>(null);
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
 
+  // All goal cards use gold-only gradients - no colored variants
   const goals = [
     {
       id: 'visibility' as const,
@@ -21,7 +22,6 @@ const GoalBasedEntry = ({ onGoalSelect }: GoalBasedEntryProps) => {
       descriptionKey: 'services.goalEntry.visibility.description',
       ctaKey: 'services.goalEntry.visibility.cta',
       services: ['social-media', 'content-production'],
-      gradient: 'from-blue-500/20 to-cyan-500/20',
     },
     {
       id: 'leads' as const,
@@ -30,7 +30,6 @@ const GoalBasedEntry = ({ onGoalSelect }: GoalBasedEntryProps) => {
       descriptionKey: 'services.goalEntry.leads.description',
       ctaKey: 'services.goalEntry.leads.cta',
       services: ['ads-management', 'seo'],
-      gradient: 'from-emerald-500/20 to-green-500/20',
     },
     {
       id: 'sales' as const,
@@ -39,7 +38,6 @@ const GoalBasedEntry = ({ onGoalSelect }: GoalBasedEntryProps) => {
       descriptionKey: 'services.goalEntry.sales.description',
       ctaKey: 'services.goalEntry.sales.cta',
       services: ['ecommerce-website', 'ads-management'],
-      gradient: 'from-primary/20 to-amber-500/20',
     },
   ];
 
@@ -116,9 +114,9 @@ const GoalBasedEntry = ({ onGoalSelect }: GoalBasedEntryProps) => {
                   onClick={() => onGoalSelect(goal.id)}
                   whileHover={{ y: -8 }}
                 >
-                  {/* Gradient Background */}
+                  {/* Gold Gradient Background on hover - no colored gradients */}
                   <div 
-                    className={`absolute inset-0 bg-gradient-to-br ${goal.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl`} 
+                    className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" 
                   />
 
                   {/* Icon */}

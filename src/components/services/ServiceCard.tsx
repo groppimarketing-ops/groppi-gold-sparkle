@@ -57,24 +57,25 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
   const hasCalculator = service.id === 'social-media' || service.id === 'ads-management';
 
   const getPricingBadge = () => {
+    // All badges use gold styling only - no colored badges
     switch (service.pricingType) {
       case 'monthly':
         return (
-          <Badge className="bg-primary/20 text-primary border-primary/30 gap-1">
+          <Badge className="bg-primary/10 text-primary border-primary/30 gap-1">
             <Calendar className="w-3 h-3" />
             {t('services.monthly')}
           </Badge>
         );
       case 'one_time':
         return (
-          <Badge className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30 gap-1">
+          <Badge className="bg-primary/10 text-primary border-primary/30 gap-1">
             <CreditCard className="w-3 h-3" />
             {t('services.oneTime')}
           </Badge>
         );
       default:
         return (
-          <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30 gap-1">
+          <Badge className="bg-primary/10 text-primary border-primary/30 gap-1">
             <MessageSquare className="w-3 h-3" />
             {t('services.customQuote')}
           </Badge>
@@ -157,15 +158,15 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: index * 0.1 }}
-        className={`group relative overflow-hidden flex flex-col h-full transition-all duration-500 ${
+        className={`group relative overflow-hidden flex flex-col h-full transition-all duration-500 hover:ring-1 hover:ring-primary/40 hover:shadow-[0_0_30px_hsl(var(--primary)/0.15)] ${
           isFeatured ? 'ring-2 ring-primary/40 shadow-[0_0_30px_hsl(var(--primary)/0.15)]' : ''
         } ${
           isHighlighted ? 'ring-2 ring-primary/60 shadow-[0_0_50px_hsl(var(--primary)/0.25)]' : ''
         }`}
       >
-        {/* Gradient Background */}
+        {/* Gold Gradient Background on hover - no colored gradients */}
         <div 
-          className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} 
+          className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" 
         />
 
         {/* Top Section: Badge */}

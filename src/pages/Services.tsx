@@ -46,6 +46,7 @@ const Services = () => {
   const featuredServiceId = 'social-media';
 
   // Enhanced GROPPI services with full deliverables and pricing clarity
+  // All services use unified gold styling - no colored gradients
   const services: ServiceData[] = [
     // Content Production - Core Service with Packages
     {
@@ -60,7 +61,7 @@ const Services = () => {
         'services.items.contentProduction.features.3',
         'services.items.contentProduction.features.4',
       ],
-      gradient: 'from-purple-500/20 to-blue-500/20',
+      gradient: 'from-primary/5 to-primary/15',
       pricingType: 'custom',
       priceMin: 500,
       targetAudience: ['business', 'creator'],
@@ -109,7 +110,7 @@ const Services = () => {
         'services.items.onePage.features.2',
         'services.items.onePage.features.3',
       ],
-      gradient: 'from-cyan-500/20 to-teal-500/20',
+      gradient: 'from-primary/5 to-primary/15',
       pricingType: 'one_time',
       priceMin: 500,
       priceMax: 1500,
@@ -129,7 +130,7 @@ const Services = () => {
         'services.items.businessWebsite.features.3',
         'services.items.businessWebsite.features.4',
       ],
-      gradient: 'from-blue-500/20 to-indigo-500/20',
+      gradient: 'from-primary/5 to-primary/15',
       pricingType: 'one_time',
       priceMin: 1500,
       priceMax: 8000,
@@ -149,7 +150,7 @@ const Services = () => {
         'services.items.ecommerce.features.3',
         'services.items.ecommerce.features.4',
       ],
-      gradient: 'from-green-500/20 to-emerald-500/20',
+      gradient: 'from-primary/5 to-primary/15',
       pricingType: 'one_time',
       priceMin: 3000,
       priceMax: 25000,
@@ -168,7 +169,7 @@ const Services = () => {
         'services.items.ads.features.2',
         'services.items.ads.features.3',
       ],
-      gradient: 'from-orange-500/20 to-red-500/20',
+      gradient: 'from-primary/5 to-primary/15',
       pricingType: 'monthly',
       priceMin: 500,
       priceMax: 5000,
@@ -186,7 +187,7 @@ const Services = () => {
         'services.items.seo.features.2',
         'services.items.seo.features.3',
       ],
-      gradient: 'from-blue-500/20 to-indigo-500/20',
+      gradient: 'from-primary/5 to-primary/15',
       pricingType: 'monthly',
       priceMin: 300,
       priceMax: 2000,
@@ -204,7 +205,7 @@ const Services = () => {
         'services.items.social.features.2',
         'services.items.social.features.3',
       ],
-      gradient: 'from-pink-500/20 to-rose-500/20',
+      gradient: 'from-primary/5 to-primary/15',
       pricingType: 'monthly',
       priceMin: 400,
       priceMax: 3000,
@@ -222,7 +223,7 @@ const Services = () => {
         'services.items.reputation.features.2',
         'services.items.reputation.features.3',
       ],
-      gradient: 'from-amber-500/20 to-yellow-500/20',
+      gradient: 'from-primary/5 to-primary/15',
       pricingType: 'monthly',
       priceMin: 200,
       priceMax: 1000,
@@ -240,7 +241,7 @@ const Services = () => {
         'services.items.dataSync.features.2',
         'services.items.dataSync.features.3',
       ],
-      gradient: 'from-violet-500/20 to-purple-500/20',
+      gradient: 'from-primary/5 to-primary/15',
       pricingType: 'custom',
       targetAudience: ['business'],
     },
