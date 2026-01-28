@@ -15,6 +15,18 @@
     "cta": "Réserver une consultation gratuite",
     "ctaSecondary": "Voir nos réalisations"
   },
+  "home": {
+    "heroNew": {
+      "badge": "Structure. Contenu. Croissance.",
+      "headline": "Nous construisons votre présence digitale — avant de la développer.",
+      "subtitle": "Groopy est conçu comme un outil d'aide à la décision : vous comprenez nos services, la logique de prix et la valeur avant de nous contacter.",
+      "proof1": "Structure de services claire",
+      "proof2": "Fourchettes de prix transparentes",
+      "proof3": "Leads de meilleure qualité, moins de friction",
+      "ctaPrimary": "Voir services & prix",
+      "ctaSecondary": "Demander une offre sur mesure"
+    }
+  },
   "about": {
     "title": "À propos de GROPPI",
     "subtitle": "Notre histoire",

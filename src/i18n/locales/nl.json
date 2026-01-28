@@ -16,6 +16,16 @@
     "ctaSecondary": "View Our Services"
   },
   "home": {
+    "heroNew": {
+      "badge": "Structuur. Content. Groei.",
+      "headline": "We bouwen je digitale presence — vóór we die opschalen.",
+      "subtitle": "Groopy is gebouwd als een beslissingshulp: je snapt onze diensten, de prijslogica en de waarde nog vóór je contact opneemt.",
+      "proof1": "Duidelijke service-structuur",
+      "proof2": "Transparante prijsvorken",
+      "proof3": "Betere leads, minder tijdverlies",
+      "ctaPrimary": "Bekijk diensten & prijzen",
+      "ctaSecondary": "Vraag een voorstel op maat"
+    },
     "hero": {
       "badge": "Belgisch bureau sinds 2016",
       "title": "Digitale groei gebouwd op echte ervaring",
