@@ -18,13 +18,27 @@
   "home": {
     "heroNew": {
       "badge": "Structure. Content. Growth.",
-      "headline": "We Build Digital Presence — Before We Scale It",
-      "subtitle": "Groopy is built as a decision-support tool—so clients understand the service, the pricing logic, and the value before contacting us.",
-      "proof1": "Clear service structure",
-      "proof2": "Transparent price ranges",
-      "proof3": "Higher-quality leads, less friction",
+      "headline": "More Clients. Less Wasted Time.",
+      "subtitle": "Groopy helps your business grow with a clear approach: professional website, strong content and marketing that actually works — no fluff.",
+      "proof1": "Clear services (no confusion)",
+      "proof2": "Transparent prices (no surprises)",
+      "proof3": "Faster decisions = better leads",
       "ctaPrimary": "View services & pricing",
-      "ctaSecondary": "Request a custom offer"
+      "ctaSecondary": "Request a custom quote"
+    },
+    "trustBar": {
+      "item1": {
+        "title": "Transparent Pricing",
+        "text": "You know exactly what to expect."
+      },
+      "item2": {
+        "title": "Fast Communication",
+        "text": "Response within 24 hours."
+      },
+      "item3": {
+        "title": "Results-Driven",
+        "text": "No hype, only growth."
+      }
     },
     "hero": {
       "badge": "Belgian agency since 2016",

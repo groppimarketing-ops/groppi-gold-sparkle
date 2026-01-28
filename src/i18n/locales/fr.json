@@ -18,13 +18,27 @@
   "home": {
     "heroNew": {
       "badge": "Structure. Contenu. Croissance.",
-      "headline": "Nous construisons votre présence digitale — avant de la développer.",
-      "subtitle": "Groopy est conçu comme un outil d'aide à la décision : vous comprenez nos services, la logique de prix et la valeur avant de nous contacter.",
-      "proof1": "Structure de services claire",
-      "proof2": "Fourchettes de prix transparentes",
-      "proof3": "Leads de meilleure qualité, moins de friction",
-      "ctaPrimary": "Voir services & prix",
-      "ctaSecondary": "Demander une offre sur mesure"
+      "headline": "Plus de clients. Moins de temps perdu.",
+      "subtitle": "Groopy aide votre entreprise à croître avec une approche claire: site web professionnel, contenu solide et marketing qui fonctionne vraiment — sans blabla.",
+      "proof1": "Services clairs (pas de confusion)",
+      "proof2": "Prix transparents (pas de surprises)",
+      "proof3": "Décisions rapides = meilleurs prospects",
+      "ctaPrimary": "Voir les services et prix",
+      "ctaSecondary": "Demander un devis personnalisé"
+    },
+    "trustBar": {
+      "item1": {
+        "title": "Prix transparents",
+        "text": "Vous savez exactement à quoi vous attendre."
+      },
+      "item2": {
+        "title": "Communication rapide",
+        "text": "Réponse sous 24 heures."
+      },
+      "item3": {
+        "title": "Orienté résultats",
+        "text": "Pas de battage, que de la croissance."
+      }
     }
   },
   "about": {

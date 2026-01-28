@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ArrowRight, Check } from 'lucide-react';
+import { ArrowRight, Check, Eye, MessageCircle, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { useState, useRef, useEffect } from 'react';
@@ -28,19 +28,16 @@ const HeroSection = () => {
     };
   }, []);
 
-  const scrollToServices = () => {
-    const servicesSection = document.getElementById('services-section');
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      window.location.href = '/services';
-    }
-  };
-
   const proofPoints = [
     t('home.heroNew.proof1'),
     t('home.heroNew.proof2'),
     t('home.heroNew.proof3'),
+  ];
+
+  const trustItems = [
+    { icon: Eye, titleKey: 'home.trustBar.item1.title', textKey: 'home.trustBar.item1.text' },
+    { icon: MessageCircle, titleKey: 'home.trustBar.item2.title', textKey: 'home.trustBar.item2.text' },
+    { icon: Target, titleKey: 'home.trustBar.item3.title', textKey: 'home.trustBar.item3.text' },
   ];
 
   return (
@@ -155,19 +152,21 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button
-              onClick={scrollToServices}
+              asChild
               size="lg"
-              className="luxury-button text-primary-foreground font-semibold px-8 py-6 text-base rounded-xl transition-all duration-300 hover:brightness-110"
+              className="luxury-button text-primary-foreground font-semibold px-8 py-6 text-base rounded-xl transition-all duration-300 hover:brightness-110 hover:shadow-[0_0_20px_hsl(43_100%_50%/0.4)]"
             >
-              {t('home.heroNew.ctaPrimary')}
-              <ArrowRight className={`h-5 w-5 ${isRtl ? 'mr-2 rotate-180' : 'ml-2'}`} />
+              <Link to="/services">
+                {t('home.heroNew.ctaPrimary')}
+                <ArrowRight className={`h-5 w-5 ${isRtl ? 'mr-2 rotate-180' : 'ml-2'}`} />
+              </Link>
             </Button>
             
             <Button
               asChild
               size="lg"
               variant="outline"
-              className="border-primary/50 text-primary hover:bg-primary/10 hover:border-primary px-8 py-6 text-base rounded-xl transition-all duration-300"
+              className="border-primary/50 text-primary hover:bg-primary/10 hover:border-primary hover:shadow-[0_0_15px_hsl(43_100%_50%/0.3)] px-8 py-6 text-base rounded-xl transition-all duration-300"
             >
               <Link to="/contact">
                 {t('home.heroNew.ctaSecondary')}
@@ -177,22 +176,56 @@ const HeroSection = () => {
         </motion.div>
       </div>
       
+      {/* Trust Bar */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 1 }}
+        className="absolute bottom-20 left-0 right-0 z-10"
+      >
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
+            {trustItems.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1.1 + index * 0.1 }}
+                className="flex items-center gap-3 text-center sm:text-left"
+              >
+                <div className="w-10 h-10 rounded-full border border-primary/40 bg-background/10 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
+                  <item.icon className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-semibold text-foreground" style={{ color: '#EAEAEA' }}>
+                    {t(item.titleKey)}
+                  </h4>
+                  <p className="text-xs text-muted-foreground">
+                    {t(item.textKey)}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </motion.div>
+      
       {/* Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        transition={{ delay: 1.5 }}
+        className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10"
       >
         <motion.div
-          animate={{ y: [0, 10, 0] }}
+          animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-8 h-12 rounded-full border border-primary/30 bg-background/10 backdrop-blur-sm flex justify-center pt-2"
+          className="w-6 h-10 rounded-full border border-primary/30 bg-background/10 backdrop-blur-sm flex justify-center pt-1.5"
         >
           <motion.div
-            animate={{ y: [0, 12, 0], opacity: [0.5, 1, 0.5] }}
+            animate={{ y: [0, 10, 0], opacity: [0.5, 1, 0.5] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-3 bg-primary rounded-full"
+            className="w-1 h-2 bg-primary rounded-full"
           />
         </motion.div>
       </motion.div>

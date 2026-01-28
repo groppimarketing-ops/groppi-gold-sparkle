@@ -18,13 +18,27 @@
   "home": {
     "heroNew": {
       "badge": "Structuur. Content. Groei.",
-      "headline": "We bouwen je digitale presence — vóór we die opschalen.",
-      "subtitle": "Groopy is gebouwd als een beslissingshulp: je snapt onze diensten, de prijslogica en de waarde nog vóór je contact opneemt.",
-      "proof1": "Duidelijke service-structuur",
-      "proof2": "Transparante prijsvorken",
-      "proof3": "Betere leads, minder tijdverlies",
+      "headline": "Meer klanten. Minder tijdverlies.",
+      "subtitle": "Groopy helpt je bedrijf groeien met een duidelijke aanpak: professionele website, sterke content en marketing die écht werkt — zonder bla bla.",
+      "proof1": "Duidelijke diensten (geen verwarring)",
+      "proof2": "Transparante prijzen (geen verrassingen)",
+      "proof3": "Sneller beslissen = betere leads",
       "ctaPrimary": "Bekijk diensten & prijzen",
-      "ctaSecondary": "Vraag een voorstel op maat"
+      "ctaSecondary": "Vraag een offerte op maat"
+    },
+    "trustBar": {
+      "item1": {
+        "title": "Transparante prijzen",
+        "text": "Je weet waar je aan toe bent."
+      },
+      "item2": {
+        "title": "Snelle communicatie",
+        "text": "Antwoord binnen 24u."
+      },
+      "item3": {
+        "title": "Resultaatgericht",
+        "text": "Geen hype, alleen groei."
+      }
     },
     "hero": {
       "badge": "Belgisch bureau sinds 2016",
