@@ -72,10 +72,10 @@ const DynamicSection = forwardRef<HTMLElement, DynamicSectionProps>(({ section, 
 
     // Default features if no dynamic content
     const defaultFeatures = [
-      { icon: Crown, title: 'Premium Consulting', titleAr: 'استشارات متميزة', gradient: 'from-amber-500/20 to-orange-500/20' },
-      { icon: Diamond, title: 'Luxury Products', titleAr: 'منتجات فاخرة', gradient: 'from-cyan-500/20 to-teal-500/20' },
-      { icon: Sparkles, title: 'AI Solutions', titleAr: 'حلول الذكاء الاصطناعي', gradient: 'from-purple-500/20 to-blue-500/20' },
-      { icon: Star, title: 'VIP Experience', titleAr: 'تجربة VIP', gradient: 'from-yellow-500/20 to-amber-500/20' },
+      { icon: Crown, title: 'Premium Consulting', titleAr: 'استشارات متميزة', gradient: 'from-primary/5 to-primary/15' },
+      { icon: Diamond, title: 'Luxury Products', titleAr: 'منتجات فاخرة', gradient: 'from-primary/5 to-primary/15' },
+      { icon: Sparkles, title: 'AI Solutions', titleAr: 'حلول الذكاء الاصطناعي', gradient: 'from-primary/5 to-primary/15' },
+      { icon: Star, title: 'VIP Experience', titleAr: 'تجربة VIP', gradient: 'from-primary/5 to-primary/15' },
     ];
 
     return (

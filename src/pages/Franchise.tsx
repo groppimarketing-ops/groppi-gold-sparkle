@@ -25,10 +25,10 @@ const Franchise = () => {
   const isRtl = i18n.language === 'ar' || i18n.language === 'ur';
 
   const benefits = [
-    { icon: Award, title: 'Established Brand', titleAr: 'علامة تجارية راسخة', description: 'Join a century-old legacy.', gradient: 'from-amber-500/20 to-orange-500/20' },
-    { icon: TrendingUp, title: 'Proven Model', titleAr: 'نموذج مثبت', description: 'Tested business strategies.', gradient: 'from-green-500/20 to-emerald-500/20' },
-    { icon: Users, title: 'Full Training', titleAr: 'تدريب كامل', description: 'Comprehensive support.', gradient: 'from-blue-500/20 to-cyan-500/20' },
-    { icon: Globe, title: 'Global Network', titleAr: 'شبكة عالمية', description: 'International presence.', gradient: 'from-purple-500/20 to-pink-500/20' },
+    { icon: Award, title: 'Established Brand', titleAr: 'علامة تجارية راسخة', description: 'Join a century-old legacy.', gradient: 'from-primary/5 to-primary/15' },
+    { icon: TrendingUp, title: 'Proven Model', titleAr: 'نموذج مثبت', description: 'Tested business strategies.', gradient: 'from-primary/5 to-primary/15' },
+    { icon: Users, title: 'Full Training', titleAr: 'تدريب كامل', description: 'Comprehensive support.', gradient: 'from-primary/5 to-primary/15' },
+    { icon: Globe, title: 'Global Network', titleAr: 'شبكة عالمية', description: 'International presence.', gradient: 'from-primary/5 to-primary/15' },
   ];
 
   const steps = [

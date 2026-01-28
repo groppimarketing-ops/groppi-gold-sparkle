@@ -23,7 +23,7 @@ const Blog = () => {
       author: 'Groppi Team',
       date: '2024-01-15',
       readTime: '5 min',
-      gradient: 'from-amber-500/20 to-orange-500/20',
+      gradient: 'from-primary/5 to-primary/15',
     },
     {
       id: '2',
@@ -36,7 +36,7 @@ const Blog = () => {
       author: 'Innovation Team',
       date: '2024-01-12',
       readTime: '7 min',
-      gradient: 'from-purple-500/20 to-blue-500/20',
+      gradient: 'from-primary/5 to-primary/15',
     },
     {
       id: '3',
@@ -49,7 +49,7 @@ const Blog = () => {
       author: 'Editorial Team',
       date: '2024-01-10',
       readTime: '6 min',
-      gradient: 'from-cyan-500/20 to-teal-500/20',
+      gradient: 'from-primary/5 to-primary/15',
     },
     {
       id: '4',
@@ -62,7 +62,7 @@ const Blog = () => {
       author: 'Innovation Team',
       date: '2024-01-05',
       readTime: '5 min',
-      gradient: 'from-pink-500/20 to-rose-500/20',
+      gradient: 'from-primary/5 to-primary/15',
     },
     {
       id: '5',
@@ -75,7 +75,7 @@ const Blog = () => {
       author: 'Sustainability Team',
       date: '2023-12-28',
       readTime: '8 min',
-      gradient: 'from-green-500/20 to-emerald-500/20',
+      gradient: 'from-primary/5 to-primary/15',
     },
   ];
 
