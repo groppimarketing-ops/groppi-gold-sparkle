@@ -18,13 +18,14 @@
   "home": {
     "heroNew": {
       "badge": "Structuur. Content. Groei.",
-      "headline": "Meer klanten. Minder tijdverlies.",
-      "subtitle": "Groopy helpt je bedrijf groeien met een duidelijke aanpak: professionele website, sterke content en marketing die écht werkt — zonder bla bla.",
-      "proof1": "Duidelijke diensten (geen verwarring)",
-      "proof2": "Transparante prijzen (geen verrassingen)",
-      "proof3": "Sneller beslissen = betere leads",
+      "headline": "Wij bouwen je digitale basis — en schalen je groei.",
+      "subtitle": "Website, branding, content en marketing die niet alleen mooi zijn… maar verkopen.",
+      "proof1": "Heldere service-structuur",
+      "proof2": "Transparante prijzen",
+      "proof3": "Betere leads, minder tijdverlies",
       "ctaPrimary": "Bekijk diensten & prijzen",
-      "ctaSecondary": "Vraag een offerte op maat"
+      "ctaSecondary": "Vraag een voorstel op maat",
+      "scrollHint": "Scroll"
     },
     "trustBar": {
       "item1": {
@@ -39,6 +40,164 @@
         "title": "Resultaatgericht",
         "text": "Geen hype, alleen groei."
       }
+    },
+    "quickChoice": {
+      "badge": "Start hier",
+      "title": "Niet zeker wat je nodig hebt?",
+      "subtitle": "Kies je doel. Wij tonen de juiste diensten.",
+      "cta": "Toon aanbevolen diensten",
+      "visibility": {
+        "title": "Meer zichtbaarheid",
+        "desc": "Bouw een sterke online aanwezigheid op met consistente content en social media."
+      },
+      "leads": {
+        "title": "Meer leads",
+        "desc": "Trek gekwalificeerde bezoekers aan met advertenties en zoekmachine-optimalisatie."
+      },
+      "sales": {
+        "title": "Meer verkoop",
+        "desc": "Zet bezoekers om in klanten met een professionele webshop en gerichte campagnes."
+      }
+    },
+    "servicesGrid": {
+      "subtitle": "Onze diensten",
+      "title": "Onze diensten",
+      "description": "Kies een dienst. Bekijk meteen wat je krijgt, hoe de prijs werkt en bekijk een korte video.",
+      "featured": "Meest gekozen",
+      "viewDetails": "Bekijk details",
+      "watchVideo": "Video",
+      "buildPlan": "Stel plan samen",
+      "seePricing": "Zie prijs",
+      "customQuote": "Offerte op maat",
+      "perMonth": "/ maand",
+      "oneTime": "eenmalig",
+      "items": {
+        "contentProduction": {
+          "title": "Contentproductie",
+          "desc": "Professionele video's en foto's die je merk versterken.",
+          "deliverables": {
+            "0": "Video productie (kort of lang formaat)",
+            "1": "Professionele fotografie",
+            "2": "Post-productie & editing"
+          }
+        },
+        "businessWebsite": {
+          "title": "Business Website",
+          "desc": "Een professionele website die vertrouwen opbouwt.",
+          "deliverables": {
+            "0": "Responsive design voor alle apparaten",
+            "1": "SEO-geoptimaliseerde structuur",
+            "2": "Content management systeem"
+          }
+        },
+        "ecommerce": {
+          "title": "Webshop",
+          "desc": "Online verkopen met een geoptimaliseerde e-commerce oplossing.",
+          "deliverables": {
+            "0": "Volledige webshop setup",
+            "1": "Betalings- en verzendintegratie",
+            "2": "Product management"
+          }
+        },
+        "ads": {
+          "title": "Advertentie Beheer",
+          "desc": "Data-gedreven campagnes die resultaat opleveren.",
+          "deliverables": {
+            "0": "Campagne strategie & setup",
+            "1": "Targeting & optimalisatie",
+            "2": "Maandelijkse rapportage"
+          }
+        },
+        "seo": {
+          "title": "SEO",
+          "desc": "Groei organisch met zoekmachine-optimalisatie.",
+          "deliverables": {
+            "0": "Technische SEO audit",
+            "1": "Keyword strategie",
+            "2": "Maandelijkse content optimalisatie"
+          }
+        },
+        "social": {
+          "title": "Social Media Beheer",
+          "desc": "Consistente aanwezigheid op alle sociale kanalen.",
+          "deliverables": {
+            "0": "Content planning & creatie",
+            "1": "Community management",
+            "2": "Maandelijkse analyse"
+          }
+        }
+      }
+    },
+    "serviceModal": {
+      "tabs": {
+        "overview": "Overzicht",
+        "deliverables": "Wat je krijgt",
+        "pricing": "Prijs & logica",
+        "video": "Video",
+        "calculator": "Plan Builder"
+      },
+      "overview": {
+        "about": "Over deze dienst",
+        "priceRange": "Prijsindicatie",
+        "content_production": "Professionele contentproductie versterkt je merk met kwalitatieve video's en foto's die je boodschap duidelijk overbrengen en je doelgroep aanspreken.",
+        "business_website": "Een professionele website is de basis van je online aanwezigheid. Wij bouwen websites die niet alleen mooi zijn, maar ook converteren.",
+        "ecommerce_website": "Start met online verkopen via een volledig geoptimaliseerde webshop met alle functionaliteiten die je nodig hebt.",
+        "ads_management": "Maximaliseer je advertentiebudget met data-gedreven campagnes op Google, Facebook, Instagram en meer.",
+        "seo": "Groei duurzaam met organisch verkeer door geoptimaliseerde content en technische SEO verbeteringen.",
+        "social_media": "Bouw een betrokken community op met consistente, kwalitatieve content op al je sociale media kanalen."
+      },
+      "deliverables": {
+        "title": "Wat je krijgt"
+      },
+      "pricing": {
+        "title": "Hoe werkt de prijs?",
+        "note": "De uiteindelijke prijs hangt af van je specifieke wensen en projectomvang.",
+        "factors": "Prijsfactoren:",
+        "factor1": "Omvang en complexiteit van het project",
+        "factor2": "Aantal assets of uren inbegrepen",
+        "factor3": "Specifieke aanpassingen en extra's"
+      },
+      "video": {
+        "comingSoon": "Video wordt binnenkort geüpload",
+        "uploadNote": "Admin kan hier een mp4 video uploaden"
+      },
+      "calculator": {
+        "title": "Plan Builder",
+        "desc": "Stel je eigen plan samen en krijg meteen een richtprijs.",
+        "cta": "Open volledige calculator"
+      },
+      "cta": {
+        "quote": "Vraag een offerte op maat",
+        "whatsapp": "WhatsApp ons"
+      }
+    },
+    "trustSection": {
+      "subtitle": "Waarom Groopy",
+      "title": "Vertrouwen gebouwd op feiten.",
+      "items": {
+        "founded": {
+          "title": "Opgericht in 2016",
+          "desc": "Meer dan 8 jaar ervaring in digitale marketing"
+        },
+        "team": {
+          "title": "9+ Professionals",
+          "desc": "Een multidisciplinair team van experts"
+        },
+        "reach": {
+          "title": "Europa & Midden-Oosten",
+          "desc": "Internationale samenwerkingen en partnerships"
+        },
+        "partnerships": {
+          "title": "Langetermijnrelaties",
+          "desc": "Wij bouwen duurzame partnerships"
+        }
+      }
+    },
+    "finalCTA": {
+      "title": "Klaar om te groeien met duidelijkheid?",
+      "description": "Laten we samen bespreken hoe we je bedrijf kunnen helpen groeien met een strategie die werkt.",
+      "ctaPrimary": "Vraag een voorstel op maat",
+      "ctaWhatsApp": "WhatsApp ons"
     },
     "hero": {
       "badge": "Belgisch bureau sinds 2016",

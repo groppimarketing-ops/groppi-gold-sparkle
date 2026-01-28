@@ -22,6 +22,7 @@ interface TrackingParams {
   event: TrackingEvent;
   location?: string;
   label?: string;
+  service?: string;
 }
 
 declare global {
