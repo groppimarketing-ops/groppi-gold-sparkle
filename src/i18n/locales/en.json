@@ -18,13 +18,14 @@
   "home": {
     "heroNew": {
       "badge": "Structure. Content. Growth.",
-      "headline": "More Clients. Less Wasted Time.",
-      "subtitle": "Groopy helps your business grow with a clear approach: professional website, strong content and marketing that actually works — no fluff.",
-      "proof1": "Clear services (no confusion)",
-      "proof2": "Transparent prices (no surprises)",
-      "proof3": "Faster decisions = better leads",
+      "headline": "We build your digital foundation — and scale your growth.",
+      "subtitle": "Website, branding, content and marketing that don't just look good… but sell.",
+      "proof1": "Clear service structure",
+      "proof2": "Transparent pricing",
+      "proof3": "Better leads, less wasted time",
       "ctaPrimary": "View services & pricing",
-      "ctaSecondary": "Request a custom quote"
+      "ctaSecondary": "Request a custom quote",
+      "scrollHint": "Scroll"
     },
     "trustBar": {
       "item1": {
@@ -39,6 +40,164 @@
         "title": "Results-Driven",
         "text": "No hype, only growth."
       }
+    },
+    "quickChoice": {
+      "badge": "Start here",
+      "title": "Not sure what you need?",
+      "subtitle": "Choose your goal. We'll show the right services.",
+      "cta": "Show recommended services",
+      "visibility": {
+        "title": "More visibility",
+        "desc": "Build a strong online presence with consistent content and social media."
+      },
+      "leads": {
+        "title": "More leads",
+        "desc": "Attract qualified visitors with advertising and search engine optimization."
+      },
+      "sales": {
+        "title": "More sales",
+        "desc": "Convert visitors into customers with a professional webshop and targeted campaigns."
+      }
+    },
+    "servicesGrid": {
+      "subtitle": "Our Services",
+      "title": "Our Services",
+      "description": "Choose a service. See immediately what you get, how pricing works, and watch a short video.",
+      "featured": "Most chosen",
+      "viewDetails": "View details",
+      "watchVideo": "Video",
+      "buildPlan": "Build plan",
+      "seePricing": "See pricing",
+      "customQuote": "Custom quote",
+      "perMonth": "/ month",
+      "oneTime": "one-time",
+      "items": {
+        "contentProduction": {
+          "title": "Content Production",
+          "desc": "Professional videos and photos that strengthen your brand.",
+          "deliverables": {
+            "0": "Video production (short or long format)",
+            "1": "Professional photography",
+            "2": "Post-production & editing"
+          }
+        },
+        "businessWebsite": {
+          "title": "Business Website",
+          "desc": "A professional website that builds trust.",
+          "deliverables": {
+            "0": "Responsive design for all devices",
+            "1": "SEO-optimized structure",
+            "2": "Content management system"
+          }
+        },
+        "ecommerce": {
+          "title": "Webshop",
+          "desc": "Sell online with an optimized e-commerce solution.",
+          "deliverables": {
+            "0": "Complete webshop setup",
+            "1": "Payment & shipping integration",
+            "2": "Product management"
+          }
+        },
+        "ads": {
+          "title": "Ad Management",
+          "desc": "Data-driven campaigns that deliver results.",
+          "deliverables": {
+            "0": "Campaign strategy & setup",
+            "1": "Targeting & optimization",
+            "2": "Monthly reporting"
+          }
+        },
+        "seo": {
+          "title": "SEO",
+          "desc": "Grow organically with search engine optimization.",
+          "deliverables": {
+            "0": "Technical SEO audit",
+            "1": "Keyword strategy",
+            "2": "Monthly content optimization"
+          }
+        },
+        "social": {
+          "title": "Social Media Management",
+          "desc": "Consistent presence on all social channels.",
+          "deliverables": {
+            "0": "Content planning & creation",
+            "1": "Community management",
+            "2": "Monthly analysis"
+          }
+        }
+      }
+    },
+    "serviceModal": {
+      "tabs": {
+        "overview": "Overview",
+        "deliverables": "What you get",
+        "pricing": "Price & logic",
+        "video": "Video",
+        "calculator": "Plan Builder"
+      },
+      "overview": {
+        "about": "About this service",
+        "priceRange": "Price indication",
+        "content_production": "Professional content production strengthens your brand with quality videos and photos that clearly convey your message and appeal to your target audience.",
+        "business_website": "A professional website is the foundation of your online presence. We build websites that are not only beautiful, but also convert.",
+        "ecommerce_website": "Start selling online with a fully optimized webshop with all the functionality you need.",
+        "ads_management": "Maximize your advertising budget with data-driven campaigns on Google, Facebook, Instagram and more.",
+        "seo": "Grow sustainably with organic traffic through optimized content and technical SEO improvements.",
+        "social_media": "Build an engaged community with consistent, quality content on all your social media channels."
+      },
+      "deliverables": {
+        "title": "What you get"
+      },
+      "pricing": {
+        "title": "How does pricing work?",
+        "note": "The final price depends on your specific needs and project scope.",
+        "factors": "Price factors:",
+        "factor1": "Scope and complexity of the project",
+        "factor2": "Number of assets or hours included",
+        "factor3": "Specific customizations and extras"
+      },
+      "video": {
+        "comingSoon": "Video coming soon",
+        "uploadNote": "Admin can upload an mp4 video here"
+      },
+      "calculator": {
+        "title": "Plan Builder",
+        "desc": "Build your own plan and get an indicative price immediately.",
+        "cta": "Open full calculator"
+      },
+      "cta": {
+        "quote": "Request a custom quote",
+        "whatsapp": "WhatsApp us"
+      }
+    },
+    "trustSection": {
+      "subtitle": "Why Groopy",
+      "title": "Trust built on facts.",
+      "items": {
+        "founded": {
+          "title": "Founded in 2016",
+          "desc": "Over 8 years of digital marketing experience"
+        },
+        "team": {
+          "title": "9+ Professionals",
+          "desc": "A multidisciplinary team of experts"
+        },
+        "reach": {
+          "title": "Europe & Middle East",
+          "desc": "International collaborations and partnerships"
+        },
+        "partnerships": {
+          "title": "Long-term Relationships",
+          "desc": "We build lasting partnerships"
+        }
+      }
+    },
+    "finalCTA": {
+      "title": "Ready to grow with clarity?",
+      "description": "Let's discuss how we can help your business grow with a strategy that works.",
+      "ctaPrimary": "Request a custom quote",
+      "ctaWhatsApp": "WhatsApp us"
     },
     "hero": {
       "badge": "Belgian agency since 2016",
