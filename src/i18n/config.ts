@@ -19,22 +19,28 @@ import hi from './locales/hi.json';
 import ur from './locales/ur.json';
 import zh from './locales/zh.json';
 
+// Brand name constant - use this everywhere
+export const BRAND_NAME = 'GROPPI';
+
+// RTL languages
+export const RTL_LANGUAGES = ['ar', 'ur'] as const;
+
 export const languages = [
-  { code: 'ar', name: 'العربية', dir: 'rtl', flag: '🇸🇦' },
-  { code: 'en', name: 'English', dir: 'ltr', flag: '🇬🇧' },
-  { code: 'fr', name: 'Français', dir: 'ltr', flag: '🇫🇷' },
-  { code: 'de', name: 'Deutsch', dir: 'ltr', flag: '🇩🇪' },
-  { code: 'es', name: 'Español', dir: 'ltr', flag: '🇪🇸' },
-  { code: 'it', name: 'Italiano', dir: 'ltr', flag: '🇮🇹' },
-  { code: 'pt', name: 'Português', dir: 'ltr', flag: '🇵🇹' },
-  { code: 'nl', name: 'Nederlands', dir: 'ltr', flag: '🇳🇱' },
-  { code: 'pl', name: 'Polski', dir: 'ltr', flag: '🇵🇱' },
-  { code: 'ru', name: 'Русский', dir: 'ltr', flag: '🇷🇺' },
-  { code: 'tr', name: 'Türkçe', dir: 'ltr', flag: '🇹🇷' },
-  { code: 'bn', name: 'বাংলা', dir: 'ltr', flag: '🇧🇩' },
-  { code: 'hi', name: 'हिन्दी', dir: 'ltr', flag: '🇮🇳' },
-  { code: 'ur', name: 'اردو', dir: 'rtl', flag: '🇵🇰' },
-  { code: 'zh', name: '中文', dir: 'ltr', flag: '🇨🇳' },
+  { code: 'nl', name: 'Nederlands (BE)', dir: 'ltr' as const, flag: '🇧🇪' },
+  { code: 'en', name: 'English', dir: 'ltr' as const, flag: '🇬🇧' },
+  { code: 'fr', name: 'Français', dir: 'ltr' as const, flag: '🇫🇷' },
+  { code: 'de', name: 'Deutsch', dir: 'ltr' as const, flag: '🇩🇪' },
+  { code: 'ar', name: 'العربية', dir: 'rtl' as const, flag: '🇸🇦' },
+  { code: 'es', name: 'Español', dir: 'ltr' as const, flag: '🇪🇸' },
+  { code: 'it', name: 'Italiano', dir: 'ltr' as const, flag: '🇮🇹' },
+  { code: 'pt', name: 'Português', dir: 'ltr' as const, flag: '🇵🇹' },
+  { code: 'pl', name: 'Polski', dir: 'ltr' as const, flag: '🇵🇱' },
+  { code: 'ru', name: 'Русский', dir: 'ltr' as const, flag: '🇷🇺' },
+  { code: 'tr', name: 'Türkçe', dir: 'ltr' as const, flag: '🇹🇷' },
+  { code: 'bn', name: 'বাংলা', dir: 'ltr' as const, flag: '🇧🇩' },
+  { code: 'hi', name: 'हिन्दी', dir: 'ltr' as const, flag: '🇮🇳' },
+  { code: 'ur', name: 'اردو', dir: 'rtl' as const, flag: '🇵🇰' },
+  { code: 'zh', name: '中文', dir: 'ltr' as const, flag: '🇨🇳' },
 ] as const;
 
 export type LanguageCode = typeof languages[number]['code'];
@@ -57,6 +63,37 @@ const resources = {
   zh: { translation: zh },
 };
 
+/**
+ * Get language direction for a given locale
+ */
+export function getLanguageDirection(code: string): 'ltr' | 'rtl' {
+  const lang = languages.find(l => l.code === code);
+  return lang?.dir || 'ltr';
+}
+
+/**
+ * Check if a language is RTL
+ */
+export function isRtlLanguage(code: string): boolean {
+  return RTL_LANGUAGES.includes(code as any);
+}
+
+/**
+ * Apply document direction based on language
+ */
+export function applyDocumentDirection(code: string): void {
+  const dir = getLanguageDirection(code);
+  document.documentElement.dir = dir;
+  document.documentElement.lang = code;
+  
+  // Add/remove RTL class for CSS targeting
+  if (dir === 'rtl') {
+    document.documentElement.classList.add('rtl');
+  } else {
+    document.documentElement.classList.remove('rtl');
+  }
+}
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -73,6 +110,23 @@ i18n
     },
     returnEmptyString: false,
     returnNull: false,
+    // Dev-only: log missing keys
+    saveMissing: import.meta.env.DEV,
+    missingKeyHandler: (lngs, ns, key, fallbackValue) => {
+      if (import.meta.env.DEV) {
+        console.warn(
+          `[i18n] Missing key: "${key}" for locales [${lngs.join(', ')}] in namespace "${ns}". Fallback: "${fallbackValue}"`
+        );
+      }
+    },
   });
+
+// Apply initial direction
+applyDocumentDirection(i18n.language);
+
+// Listen for language changes
+i18n.on('languageChanged', (lng) => {
+  applyDocumentDirection(lng);
+});
 
 export default i18n;

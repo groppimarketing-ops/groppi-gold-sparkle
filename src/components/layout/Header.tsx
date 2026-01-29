@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Globe } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { languages, type LanguageCode } from '@/i18n/config';
+import { languages, type LanguageCode, applyDocumentDirection } from '@/i18n/config';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,7 +18,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  const currentLang = languages.find(l => l.code === i18n.language) || languages[1];
+  const currentLang = languages.find(l => l.code === i18n.language) || languages[0];
   const isRtl = currentLang.dir === 'rtl';
 
   useEffect(() => {
@@ -35,15 +35,13 @@ const Header = () => {
     { path: '/services', label: t('nav.services') },
     { path: '/blog', label: t('nav.blog') },
     { path: '/gallery', label: t('nav.gallery') },
-    { path: '/franchise', label: t('nav.franchise') },
+    { path: '/franchise', label: t('nav.partnership') },
     { path: '/contact', label: t('nav.contact') },
   ];
 
   const changeLanguage = (code: LanguageCode) => {
     i18n.changeLanguage(code);
-    const lang = languages.find(l => l.code === code);
-    document.documentElement.dir = lang?.dir || 'ltr';
-    document.documentElement.lang = code;
+    applyDocumentDirection(code);
   };
 
   return (

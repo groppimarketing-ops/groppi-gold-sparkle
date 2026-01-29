@@ -115,13 +115,67 @@
     font-weight: 700;
   }
 
-  /* RTL Support */
+  /* RTL Support - Comprehensive */
   [dir="rtl"] {
     font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
   }
 
-  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 {
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] h5, [dir="rtl"] h6 {
     font-family: 'Noto Sans Arabic', sans-serif;
+  }
+
+  /* RTL class for JS-based toggle */
+  html.rtl {
+    direction: rtl;
+  }
+
+  /* Isolate LTR content (like brand names) in RTL context */
+  [dir="rtl"] .ltr-isolate,
+  .ltr-isolate {
+    unicode-bidi: isolate;
+    direction: ltr;
+  }
+
+  /* Force LTR for numbers, codes, brand names */
+  [dir="rtl"] .ltr-force {
+    unicode-bidi: bidi-override;
+    direction: ltr;
+  }
+
+  /* RTL-aware flex containers */
+  [dir="rtl"] .flex-row {
+    flex-direction: row-reverse;
+  }
+
+  [dir="rtl"] .flex-row-rtl-aware {
+    flex-direction: row-reverse;
+  }
+
+  /* RTL-aware margins and paddings */
+  [dir="rtl"] .ml-auto {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  [dir="rtl"] .mr-auto {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  /* RTL-aware text alignment */
+  [dir="rtl"] .text-left {
+    text-align: right;
+  }
+
+  [dir="rtl"] .text-right {
+    text-align: left;
+  }
+
+  /* Keep certain elements always LTR (like GROPPI brand) */
+  .brand-name {
+    unicode-bidi: isolate;
+    direction: ltr;
+    display: inline-block;
   }
 }
 

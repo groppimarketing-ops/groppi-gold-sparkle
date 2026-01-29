@@ -5,10 +5,15 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { languages } from "@/i18n/config";
+import { applyDocumentDirection } from "@/i18n/config";
 import { AuthProvider } from "@/contexts/AuthContext";
 import ProtectedRoute from "@/components/admin/ProtectedRoute";
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
+
+// Import i18n validation in dev mode
+if (import.meta.env.DEV) {
+  import("@/utils/i18nValidation");
+}
 
 // Lazy load pages for better performance
 const Index = lazy(() => import("./pages/Index"));
@@ -43,14 +48,12 @@ const PageLoader = () => (
   </div>
 );
 
-// RTL Handler component
+// RTL Handler component - uses the improved applyDocumentDirection
 const RTLHandler = ({ children }: { children: React.ReactNode }) => {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    const currentLang = languages.find(l => l.code === i18n.language);
-    document.documentElement.dir = currentLang?.dir || 'ltr';
-    document.documentElement.lang = i18n.language;
+    applyDocumentDirection(i18n.language);
   }, [i18n.language]);
 
   return <>{children}</>;
