@@ -14,7 +14,7 @@ const PartnerMarquee = () => {
   ];
 
   return (
-    <section className="py-8 relative overflow-hidden border-y border-primary/10">
+    <section className="py-8 relative overflow-hidden border-y border-primary/10" dir="ltr">
       <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background z-10 pointer-events-none" />
       
       <div className="overflow-hidden">
@@ -34,6 +34,8 @@ const PartnerMarquee = () => {
             <span
               key={index}
               className="text-primary font-medium text-sm md:text-base tracking-wide flex items-center gap-3"
+              dir="ltr"
+              style={{ unicodeBidi: 'isolate' }}
             >
               <span className="text-primary/50">•</span>
               {item}

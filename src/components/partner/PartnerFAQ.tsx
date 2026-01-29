@@ -14,7 +14,7 @@ const PartnerFAQ = () => {
   const faqKeys = ['isJob', 'bureau', 'exclusivity', 'leads', 'team', 'howToApply'];
 
   return (
-    <section className="py-20">
+    <section className="py-20" dir="ltr">
       <div className="container mx-auto px-4 max-w-[1100px]">
         <SectionHeader
           subtitle={t('partner.faq.subtitle')}
@@ -36,11 +36,19 @@ const PartnerFAQ = () => {
                 className="glass-card border border-primary/20 rounded-xl px-6 data-[state=open]:border-primary/40 transition-colors"
               >
                 <AccordionTrigger className="text-left hover:no-underline py-5">
-                  <span className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                  <span 
+                    className="font-semibold text-foreground group-hover:text-primary transition-colors"
+                    dir="ltr"
+                    style={{ unicodeBidi: 'isolate' }}
+                  >
                     {t(`partner.faq.items.${key}.question`)}
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-5">
+                <AccordionContent 
+                  className="text-muted-foreground pb-5"
+                  dir="ltr"
+                  style={{ unicodeBidi: 'isolate' }}
+                >
                   {t(`partner.faq.items.${key}.answer`)}
                 </AccordionContent>
               </AccordionItem>

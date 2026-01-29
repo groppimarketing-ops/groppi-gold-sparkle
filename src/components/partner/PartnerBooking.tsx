@@ -8,7 +8,7 @@ const PartnerBooking = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="call" className="py-20 relative overflow-hidden">
+    <section id="call" className="py-20 relative overflow-hidden" dir="ltr">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
       
       <div className="container mx-auto px-4 relative z-10 max-w-[1100px]">
@@ -26,11 +26,19 @@ const PartnerBooking = () => {
             <Calendar className="w-7 h-7 text-primary" />
           </motion.div>
           
-          <h2 className="text-2xl md:text-3xl font-bold mb-3 gold-shimmer-text">
+          <h2 
+            className="text-2xl md:text-3xl font-bold mb-3 gold-shimmer-text"
+            dir="ltr"
+            style={{ unicodeBidi: 'isolate' }}
+          >
             {t('partner.booking.title')}
           </h2>
           
-          <p className="text-muted-foreground mb-6">
+          <p 
+            className="text-muted-foreground mb-6"
+            dir="ltr"
+            style={{ unicodeBidi: 'isolate' }}
+          >
             {t('partner.booking.subtitle')}
           </p>
           

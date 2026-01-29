@@ -13,7 +13,7 @@ const PartnerSteps = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden" dir="ltr">
       <div className="absolute inset-0 neural-bg opacity-20" />
       
       <div className="container mx-auto px-4 relative z-10 max-w-[1100px]">
@@ -55,10 +55,18 @@ const PartnerSteps = () => {
                 >
                   {step.number}
                 </motion.div>
-                <h3 className="font-bold text-lg mb-2">
+                <h3 
+                  className="font-bold text-lg mb-2"
+                  dir="ltr"
+                  style={{ unicodeBidi: 'isolate' }}
+                >
                   {t(`partner.howItWorks.steps.${step.key}.title`)}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p 
+                  className="text-muted-foreground text-sm leading-relaxed"
+                  dir="ltr"
+                  style={{ unicodeBidi: 'isolate' }}
+                >
                   {t(`partner.howItWorks.steps.${step.key}.desc`)}
                 </p>
               </GlassCard>

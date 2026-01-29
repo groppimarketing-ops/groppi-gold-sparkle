@@ -9,7 +9,7 @@ const PartnerHero = () => {
   const bullets = ['bullet1', 'bullet2', 'bullet3'] as const;
 
   return (
-    <section className="relative py-24 md:py-36 overflow-hidden">
+    <section className="relative py-24 md:py-36 overflow-hidden" dir="ltr">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
       <div className="neural-lines opacity-30" />
       
@@ -18,6 +18,7 @@ const PartnerHero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="max-w-4xl mx-auto text-center"
+          style={{ unicodeBidi: 'isolate', direction: 'ltr' }}
         >
           {/* Eyebrow */}
           <motion.span
@@ -27,7 +28,7 @@ const PartnerHero = () => {
             className="inline-flex items-center gap-2 text-primary font-medium text-sm uppercase tracking-[0.2em] mb-6"
           >
             <Handshake className="w-4 h-4" />
-            {t('partner.badge')}
+            <span dir="ltr" style={{ unicodeBidi: 'isolate' }}>{t('partner.badge')}</span>
           </motion.span>
 
           {/* Headline */}
@@ -36,6 +37,8 @@ const PartnerHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold gold-shimmer-text mb-6"
+            dir="ltr"
+            style={{ unicodeBidi: 'isolate' }}
           >
             {t('partner.hero.title')}
           </motion.h1>
@@ -46,6 +49,8 @@ const PartnerHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
+            dir="ltr"
+            style={{ unicodeBidi: 'isolate' }}
           >
             {t('partner.hero.subtitle')}
           </motion.p>
@@ -58,9 +63,9 @@ const PartnerHero = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-10"
           >
             {bullets.map((key) => (
-              <div key={key} className="flex items-center gap-2">
+              <div key={key} className="flex items-center gap-2" dir="ltr">
                 <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-foreground">{t(`partner.hero.${key}`)}</span>
+                <span className="text-foreground" style={{ unicodeBidi: 'isolate' }}>{t(`partner.hero.${key}`)}</span>
               </div>
             ))}
           </motion.div>
@@ -96,6 +101,8 @@ const PartnerHero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
             className="text-sm text-muted-foreground"
+            dir="ltr"
+            style={{ unicodeBidi: 'isolate' }}
           >
             {t('partner.hero.microcopy')}
           </motion.p>

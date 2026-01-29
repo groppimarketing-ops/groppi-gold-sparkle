@@ -25,6 +25,7 @@ const SectionHeader = forwardRef<HTMLDivElement, SectionHeaderProps>(({
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       className={`mb-16 ${centered ? 'text-center' : ''}`}
+      dir="ltr"
     >
       {subtitle && (
         <motion.div 
@@ -35,7 +36,10 @@ const SectionHeader = forwardRef<HTMLDivElement, SectionHeaderProps>(({
           className={`flex items-center gap-2 mb-4 ${centered ? 'justify-center' : ''}`}
         >
           {showSparkle && <Sparkles className="w-4 h-4 text-primary" />}
-          <span className="text-primary font-medium text-sm uppercase tracking-[0.2em]">
+          <span 
+            className="text-primary font-medium text-sm uppercase tracking-[0.2em]"
+            style={{ unicodeBidi: 'isolate' }}
+          >
             {subtitle}
           </span>
           {showSparkle && <Sparkles className="w-4 h-4 text-primary" />}
@@ -48,6 +52,7 @@ const SectionHeader = forwardRef<HTMLDivElement, SectionHeaderProps>(({
         viewport={{ once: true }}
         transition={{ delay: 0.2 }}
         className="text-4xl md:text-5xl lg:text-6xl font-bold gold-shimmer-text mb-6 tracking-tight"
+        style={{ unicodeBidi: 'isolate' }}
       >
         {title}
       </motion.h2>
@@ -59,6 +64,7 @@ const SectionHeader = forwardRef<HTMLDivElement, SectionHeaderProps>(({
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
           className="text-muted-foreground max-w-2xl mx-auto text-lg"
+          style={{ unicodeBidi: 'isolate' }}
         >
           {description}
         </motion.p>

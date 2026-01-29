@@ -1144,19 +1144,19 @@
     }
   },
 "partner": {
-    "badge": "PARTNER NETWORK",
+    "badge": "WHAT THIS PROGRAM IS",
     "seo": {
-      "title": "Partner with GROPPI (win-win) | Partner Network",
+      "title": "Partner with GROPPI | Partner Network",
       "description": "Become a GROPPI partner: a license-driven partnership with brand, system and support. Not a job, not recruitment. Limited spots per region."
     },
     "hero": {
-      "title": "Partner with GROPPI (win-win).",
-      "subtitle": "We bring the brand, the system and the credibility. You bring the local market. Together we grow faster — with proven structure and support.",
-      "bullet1": "Proven services and pricing structure",
-      "bullet2": "Premium brand built on trust",
-      "bullet3": "You keep control over your local growth",
-      "ctaPrimary": "Become a partner",
-      "ctaSecondary": "Schedule a quick intro",
+      "title": "This is not a job. This is a partner network.",
+      "subtitle": "For agencies and specialists who want to grow under a strong brand — with clear agreements, transparent delivery and real support.",
+      "bullet1": "No talk. Just structure.",
+      "bullet2": "Transparent delivery system.",
+      "bullet3": "Premium brand & positioning.",
+      "ctaPrimary": "Schedule an intro",
+      "ctaSecondary": "See how it works",
       "microcopy": "Limited number of partners per region."
     },
     "marquee": {
@@ -1175,14 +1175,14 @@
         "brand": {
           "title": "Brand & positioning",
           "bullets": {
-            "0": "Use the GROPPI brand and premium positioning",
-            "1": "Trust from day one"
+            "0": "Use the GROPPI brand",
+            "1": "Premium presence from day one"
           }
         },
         "delivery": {
           "title": "Delivery system",
           "bullets": {
-            "0": "Clear services, pricing logic and processes",
+            "0": "Clear services & pricing logic",
             "1": "Tools & frameworks that work in practice"
           }
         },

@@ -15,7 +15,7 @@ const PartnerValue = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden" dir="ltr">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
       
       <div className="container mx-auto px-4 relative z-10 max-w-[1100px]">
@@ -43,11 +43,19 @@ const PartnerValue = () => {
                 <card.icon className="w-6 h-6 text-primary" />
               </motion.div>
               
-              <h3 className="font-bold text-lg mb-3 group-hover:text-primary transition-colors">
+              <h3 
+                className="font-bold text-lg mb-3 group-hover:text-primary transition-colors"
+                dir="ltr"
+                style={{ unicodeBidi: 'isolate' }}
+              >
                 {t(`partner.value.cards.${card.key}.title`)}
               </h3>
               
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p 
+                className="text-sm text-muted-foreground leading-relaxed"
+                dir="ltr"
+                style={{ unicodeBidi: 'isolate' }}
+              >
                 {t(`partner.value.cards.${card.key}.body`)}
               </p>
             </GlassCard>
@@ -63,7 +71,11 @@ const PartnerValue = () => {
         >
           <div className="inline-flex items-center gap-3 glass-card px-6 py-4 rounded-full border border-primary/30">
             <Sparkles className="w-5 h-5 text-primary flex-shrink-0" />
-            <span className="text-foreground font-medium">
+            <span 
+              className="text-foreground font-medium"
+              dir="ltr"
+              style={{ unicodeBidi: 'isolate' }}
+            >
               {t('partner.value.highlight')}
             </span>
           </div>

@@ -9,7 +9,7 @@ const PartnerApplyCTA = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="apply" className="py-20">
+    <section id="apply" className="py-20" dir="ltr">
       <div className="container mx-auto px-4 max-w-[1100px]">
         <GlassCard
           initial={{ opacity: 0, y: 30 }}
@@ -32,11 +32,19 @@ const PartnerApplyCTA = () => {
             <Handshake className="w-8 h-8 text-primary" />
           </motion.div>
           
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 gold-shimmer-text">
+          <h2 
+            className="text-3xl md:text-4xl font-bold mb-4 gold-shimmer-text"
+            dir="ltr"
+            style={{ unicodeBidi: 'isolate' }}
+          >
             {t('partner.apply.title')}
           </h2>
           
-          <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
+          <p 
+            className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto"
+            dir="ltr"
+            style={{ unicodeBidi: 'isolate' }}
+          >
             {t('partner.apply.subtitle')}
           </p>
           

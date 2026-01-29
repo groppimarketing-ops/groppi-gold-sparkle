@@ -26,7 +26,7 @@ const PartnerForWho = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden" dir="ltr">
       <div className="absolute inset-0 neural-bg opacity-20" />
       
       <div className="container mx-auto px-4 relative z-10 max-w-[1100px]">
@@ -41,6 +41,8 @@ const PartnerForWho = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center text-muted-foreground max-w-2xl mx-auto mb-12"
+          dir="ltr"
+          style={{ unicodeBidi: 'isolate' }}
         >
           {t('partner.forWho.description')}
         </motion.p>
@@ -63,7 +65,11 @@ const PartnerForWho = () => {
                 <item.icon className="w-6 h-6 text-primary" />
               </motion.div>
               
-              <h3 className="font-semibold text-sm md:text-base group-hover:text-primary transition-colors">
+              <h3 
+                className="font-semibold text-sm md:text-base group-hover:text-primary transition-colors"
+                dir="ltr"
+                style={{ unicodeBidi: 'isolate' }}
+              >
                 {t(`partner.forWho.items.${item.key}`)}
               </h3>
             </GlassCard>
@@ -75,6 +81,8 @@ const PartnerForWho = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center text-muted-foreground text-sm mt-8 italic"
+          dir="ltr"
+          style={{ unicodeBidi: 'isolate' }}
         >
           {t('partner.forWho.note')}
         </motion.p>

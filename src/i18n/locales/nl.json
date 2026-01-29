@@ -1144,19 +1144,19 @@
     }
   },
 "partner": {
-    "badge": "PARTNER NETWORK",
+    "badge": "WAT DIT PROGRAMMA IS",
     "seo": {
-      "title": "Partner met GROPPI (win-win) | Partner Network",
+      "title": "Partner met GROPPI | Partnernetwerk",
       "description": "Word GROPPI-partner: een licentie-gedreven partnerschap met merk, systeem en support. Geen job, geen recruitment. Beperkte plekken per regio."
     },
     "hero": {
-      "title": "Partner met GROPPI (win-win).",
-      "subtitle": "Wij brengen het merk, het systeem en de geloofwaardigheid. Jij brengt de lokale markt. Samen groeien we sneller — met bewezen structuur en ondersteuning.",
-      "bullet1": "Bewezen diensten- en prijsstructuur",
-      "bullet2": "Premium merk gebouwd op vertrouwen",
-      "bullet3": "Jij behoudt controle over je lokale groei",
-      "ctaPrimary": "Word partner",
-      "ctaSecondary": "Plan een korte kennismaking",
+      "title": "Dit is géén job. Dit is een partnernetwerk.",
+      "subtitle": "Voor bureaus en specialisten die willen groeien onder een sterk merk — met duidelijke afspraken, heldere delivery en échte support.",
+      "bullet1": "Geen praatjes. Wel structuur.",
+      "bullet2": "Transparant delivery-systeem.",
+      "bullet3": "Premium merk & positionering.",
+      "ctaPrimary": "Plan een kennismaking",
+      "ctaSecondary": "Bekijk hoe het werkt",
       "microcopy": "Beperkt aantal partners per regio."
     },
     "marquee": {
@@ -1175,14 +1175,14 @@
         "brand": {
           "title": "Merk & positionering",
           "bullets": {
-            "0": "Gebruik het GROPPI-merk en de premium positionering",
-            "1": "Vertrouwen vanaf dag één"
+            "0": "Gebruik het GROPPI-merk",
+            "1": "Premium uitstraling vanaf dag één"
           }
         },
         "delivery": {
           "title": "Delivery-systeem",
           "bullets": {
-            "0": "Heldere diensten, pricing-logica en processen",
+            "0": "Heldere diensten & pricing-logica",
             "1": "Tools & frameworks die werken in de praktijk"
           }
         },

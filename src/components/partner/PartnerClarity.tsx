@@ -14,7 +14,7 @@ const PartnerClarity = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden" dir="ltr">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
       
       <div className="container mx-auto px-4 relative z-10 max-w-[1100px]">
@@ -29,6 +29,8 @@ const PartnerClarity = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center text-muted-foreground max-w-3xl mx-auto mb-12 text-lg leading-relaxed"
+          dir="ltr"
+          style={{ unicodeBidi: 'isolate' }}
         >
           {t('partner.clarity.body')}
         </motion.p>
@@ -51,15 +53,19 @@ const PartnerClarity = () => {
                 <card.icon className="w-7 h-7 text-primary" />
               </motion.div>
               
-              <h3 className="font-bold text-xl mb-4 group-hover:text-primary transition-colors">
+              <h3 
+                className="font-bold text-xl mb-4 group-hover:text-primary transition-colors"
+                dir="ltr"
+                style={{ unicodeBidi: 'isolate' }}
+              >
                 {t(`partner.clarity.cards.${card.key}.title`)}
               </h3>
               
-              <ul className="space-y-3 text-left">
+              <ul className="space-y-3 text-left" dir="ltr">
                 {[0, 1].map((bulletIndex) => (
                   <li key={bulletIndex} className="flex items-start gap-2 text-muted-foreground">
                     <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
-                    <span className="text-sm">
+                    <span className="text-sm" style={{ unicodeBidi: 'isolate' }}>
                       {t(`partner.clarity.cards.${card.key}.bullets.${bulletIndex}`)}
                     </span>
                   </li>
