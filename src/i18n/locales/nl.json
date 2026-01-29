@@ -277,6 +277,41 @@
       },
       "microNote": "*Resultaten verschillen per sector en budget. We bouwen systemen die schaalbaar zijn."
     },
+    "trustedBelgium": {
+      "eyebrow": "Social proof",
+      "title": "Vertrouwd door teams in België",
+      "subtitle": "Sommige klantnamen tonen we niet publiek wegens NDA's — maar je ziet wél het type resultaten dat we leveren.",
+      "disclaimer": "Klantnamen worden soms niet gedeeld wegens NDA's.",
+      "industries": {
+        "restaurants": "Restaurants",
+        "retail": "Retail",
+        "construction": "Bouw",
+        "interior": "Interieur & Renovatie",
+        "localServices": "Lokale diensten",
+        "beauty": "Beauty & wellness",
+        "ecommerce": "E-commerce",
+        "sme": "SME's & startups",
+        "restaurant": "Restaurant",
+        "services": "Diensten"
+      },
+      "locations": {
+        "antwerpen": "Antwerpen",
+        "mechelen": "Mechelen",
+        "brussel": "Brussel",
+        "vlaanderen": "Vlaanderen",
+        "gent": "Gent",
+        "leuven": "Leuven"
+      },
+      "outcomes": {
+        "outcome1": "Meer aanvragen via Google & WhatsApp",
+        "outcome2": "Betere zichtbaarheid + consistente leads",
+        "outcome3": "Sterkere merklook + hogere conversie",
+        "outcome4": "Meer offerteaanvragen via de website",
+        "outcome5": "Hogere boekingsgraad + sterkere merkwaarde",
+        "outcome6": "Betere productpagina's + meer verkoop"
+      },
+      "officialClients": "Officiële klanten (met toestemming)"
+    },
     "portfolio": {
       "subtitle": "Ons werk",
       "title": "Portfolio highlights",
