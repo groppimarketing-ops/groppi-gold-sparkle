@@ -227,6 +227,35 @@
       "ndaNote": "*Sommige projecten vallen onder NDA en kunnen niet publiek worden getoond.*",
       "logoPlaceholder": "LOGO"
     },
+    "clientLogoMarquee": {
+      "subtitle": "Vertrouwd door teams in België & Europa",
+      "title": "Vertrouwd door teams in België & Europa",
+      "ndaNote": "Wegens NDA's worden sommige merken als geanonimiseerde referenties weergegeven.",
+      "clients": {
+        "restaurant": "Belgisch Restaurant Groep",
+        "interior": "Antwerpen Interieurs",
+        "retail": "Lokale Retailketen",
+        "ecommerce": "E-commerce Merk",
+        "beauty": "Beauty Clinic België",
+        "realEstate": "Vastgoed België",
+        "construction": "Brussel Bouw",
+        "startup": "Tech Startup EU"
+      },
+      "testimonials": {
+        "testimonial1": {
+          "quote": "Eindelijk structuur in onze marketing. Het team weet precies wat ze doen.",
+          "role": "Eigenaar, Antwerpen"
+        },
+        "testimonial2": {
+          "quote": "Professionele aanpak, snelle communicatie en meetbare resultaten.",
+          "role": "Manager, Brussel"
+        },
+        "testimonial3": {
+          "quote": "Geen loze beloftes, alleen duidelijke strategie die werkt.",
+          "role": "Directeur, Gent"
+        }
+      }
+    },
     "trustSectors": {
       "eyebrow": "Onze sectoren",
       "headline": "Vertrouwd door groeiende bedrijven in België & Europa",

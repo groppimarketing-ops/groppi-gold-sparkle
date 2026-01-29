@@ -10,6 +10,7 @@ import HomeQuickChoice from '@/components/home/HomeQuickChoice';
 import HomeServicesGrid from '@/components/home/HomeServicesGrid';
 import HomePortfolioGrid from '@/components/home/HomePortfolioGrid';
 import HomeCaseStudies from '@/components/home/HomeCaseStudies';
+import HomeClientLogoMarquee from '@/components/home/HomeClientLogoMarquee';
 import HomeTrustSection from '@/components/home/HomeTrustSection';
 import HomeFinalCTA from '@/components/home/HomeFinalCTA';
 import DynamicSection from '@/components/sections/DynamicSection';
@@ -78,6 +79,9 @@ const Index = () => {
 
       {/* Case Studies - Proof-based */}
       <HomeCaseStudies />
+
+      {/* Client Logo Marquee + Testimonials - NEW Trust proof section */}
+      <HomeClientLogoMarquee />
 
       {/* Trust Section - 10+ years credibility */}
       <HomeTrustSection />

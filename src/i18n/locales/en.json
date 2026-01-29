@@ -227,6 +227,35 @@
       "ndaNote": "*Some projects are under NDA and cannot be publicly displayed.*",
       "logoPlaceholder": "LOGO"
     },
+    "clientLogoMarquee": {
+      "subtitle": "Trusted by teams in Belgium & Europe",
+      "title": "Trusted by teams in Belgium & Europe",
+      "ndaNote": "Due to NDAs, some brands are displayed as anonymized references.",
+      "clients": {
+        "restaurant": "Belgian Restaurant Group",
+        "interior": "Antwerp Interiors",
+        "retail": "Local Retail Chain",
+        "ecommerce": "E-commerce Brand",
+        "beauty": "Beauty Clinic Belgium",
+        "realEstate": "Real Estate Belgium",
+        "construction": "Brussels Construction",
+        "startup": "Tech Startup EU"
+      },
+      "testimonials": {
+        "testimonial1": {
+          "quote": "Finally structure in our marketing. The team knows exactly what they're doing.",
+          "role": "Owner, Antwerp"
+        },
+        "testimonial2": {
+          "quote": "Professional approach, fast communication and measurable results.",
+          "role": "Manager, Brussels"
+        },
+        "testimonial3": {
+          "quote": "No empty promises, just a clear strategy that works.",
+          "role": "Director, Ghent"
+        }
+      }
+    },
     "trustSectors": {
       "eyebrow": "Our sectors",
       "headline": "Trusted by growing businesses in Belgium & Europe",
