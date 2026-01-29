@@ -54,11 +54,11 @@ const Index = () => {
       {/* Hero with Video Background */}
       <HeroSection />
 
+      {/* Trusted across Belgium - Social proof (directly after Hero) */}
+      <HomeTrustedBelgium />
+
       {/* Trust Sectors - Premium credibility section */}
       <HomeTrustSectors />
-
-      {/* Trusted across Belgium - Social proof without logos */}
-      <HomeTrustedBelgium />
 
       {/* Quick Choice - For non-expert visitors */}
       <HomeQuickChoice onGoalSelect={handleGoalSelect} />
