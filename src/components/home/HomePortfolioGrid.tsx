@@ -4,23 +4,37 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import SectionHeader from '@/components/ui/SectionHeader';
-import GlassCard from '@/components/ui/GlassCard';
 import { Badge } from '@/components/ui/badge';
+
+// Import portfolio images
+import restaurantBranding from '@/assets/portfolio/restaurant-branding.jpg';
+import modeWebshop from '@/assets/portfolio/mode-webshop.jpg';
+import b2bPlatform from '@/assets/portfolio/b2b-platform.jpg';
+import bouwbedrijfWebsite from '@/assets/portfolio/bouwbedrijf-website.jpg';
+import influencerCampagne from '@/assets/portfolio/influencer-campagne.jpg';
+import techStartupBranding from '@/assets/portfolio/tech-startup-branding.jpg';
+import ecommerceGroei from '@/assets/portfolio/e-commerce-groei.jpg';
+import contentStrategie from '@/assets/portfolio/content-strategie.jpg';
+
+interface Project {
+  slug: string;
+  tags: string[];
+  image: string;
+}
+
+const projects: Project[] = [
+  { slug: 'restaurant-branding', tags: ['website', 'branding'], image: restaurantBranding },
+  { slug: 'mode-webshop', tags: ['ecommerce', 'ads'], image: modeWebshop },
+  { slug: 'b2b-platform', tags: ['website', 'seo'], image: b2bPlatform },
+  { slug: 'bouwbedrijf-website', tags: ['website', 'seo'], image: bouwbedrijfWebsite },
+  { slug: 'influencer-campagne', tags: ['social', 'content'], image: influencerCampagne },
+  { slug: 'tech-startup-branding', tags: ['branding', 'website'], image: techStartupBranding },
+  { slug: 'e-commerce-groei', tags: ['ads', 'ecommerce'], image: ecommerceGroei },
+  { slug: 'content-strategie', tags: ['content', 'social'], image: contentStrategie },
+];
 
 const HomePortfolioGrid = () => {
   const { t } = useTranslation();
-
-  // 8 portfolio project placeholders
-  const projects = [
-    { id: 1, tags: ['website', 'branding'], metricKey: 'project1' },
-    { id: 2, tags: ['ads', 'social'], metricKey: 'project2' },
-    { id: 3, tags: ['ecommerce', 'ads'], metricKey: 'project3' },
-    { id: 4, tags: ['website', 'seo'], metricKey: 'project4' },
-    { id: 5, tags: ['social', 'content'], metricKey: 'project5' },
-    { id: 6, tags: ['branding', 'website'], metricKey: 'project6' },
-    { id: 7, tags: ['ads', 'ecommerce'], metricKey: 'project7' },
-    { id: 8, tags: ['content', 'social'], metricKey: 'project8' },
-  ];
 
   const tagLabels: Record<string, string> = {
     website: t('home.portfolio.tags.website'),
@@ -47,65 +61,64 @@ const HomePortfolioGrid = () => {
         {/* Projects Grid - 4 cols desktop, 2 tablet, 1 mobile */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {projects.map((project, index) => (
-            <GlassCard
-              key={project.id}
+            <motion.div
+              key={project.slug}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group p-0 overflow-hidden hover:border-primary/40"
-              hover3D={false}
-              glowOnHover={false}
             >
-              {/* Thumbnail placeholder */}
-              <div className="aspect-[4/3] bg-muted/30 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-muted-foreground/40 text-sm">
-                    {t('home.portfolio.thumbnailPlaceholder')}
+              <Link
+                to={`/portfolio/${project.slug}`}
+                className="group block glass-card p-0 overflow-hidden rounded-xl border border-border/50 hover:border-primary/40 transition-all duration-300 cursor-pointer"
+              >
+                {/* Thumbnail */}
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={t(`home.portfolio.projects.${project.slug}.title`)}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  {/* Dark gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+
+                {/* Content */}
+                <div className="p-5">
+                  <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
+                    {t(`home.portfolio.projects.${project.slug}.title`)}
+                  </h3>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    {project.tags.map((tag) => (
+                      <Badge
+                        key={tag}
+                        variant="outline"
+                        className="text-[10px] px-2 py-0.5 border-primary/30 text-primary/80"
+                      >
+                        {tagLabels[tag]}
+                      </Badge>
+                    ))}
+                  </div>
+
+                  {/* Result metric */}
+                  <p className="text-primary font-medium text-sm mb-4">
+                    {t(`home.portfolio.projects.${project.slug}.metric`)}
+                  </p>
+
+                  {/* CTA */}
+                  <span className="inline-flex items-center text-sm text-muted-foreground group-hover:text-primary transition-colors">
+                    {t('home.portfolio.viewCase')}
+                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
-                {/* Hover overlay */}
-                <motion.div
-                  className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                />
-              </div>
-
-              {/* Content */}
-              <div className="p-5">
-                <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
-                  {t(`home.portfolio.projects.${project.metricKey}.title`)}
-                </h3>
-
-                {/* Tags */}
-                <div className="flex flex-wrap gap-1.5 mb-3">
-                  {project.tags.map((tag) => (
-                    <Badge
-                      key={tag}
-                      variant="outline"
-                      className="text-[10px] px-2 py-0.5 border-primary/30 text-primary/80"
-                    >
-                      {tagLabels[tag]}
-                    </Badge>
-                  ))}
-                </div>
-
-                {/* Result metric */}
-                <p className="text-primary font-medium text-sm mb-4">
-                  {t(`home.portfolio.projects.${project.metricKey}.metric`)}
-                </p>
-
-                {/* CTA */}
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="p-0 h-auto text-muted-foreground hover:text-primary group/btn"
-                >
-                  {t('home.portfolio.viewCase')}
-                  <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
-                </Button>
-              </div>
-            </GlassCard>
+              </Link>
+            </motion.div>
           ))}
         </div>
 

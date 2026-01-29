@@ -2,6 +2,7 @@ import { forwardRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Star, RefreshCw, FileText, Award, Play, ArrowRight, Calculator } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
@@ -287,6 +288,26 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
               </GlassCard>
             ))}
           </div>
+
+          {/* View all services CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex justify-center mt-12"
+          >
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-primary/40 hover:bg-primary/10 hover:border-primary/60"
+            >
+              <Link to="/services">
+                {t('common.viewAll')}
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
+            </Button>
+          </motion.div>
 
           {/* Decorative divider */}
           <motion.div

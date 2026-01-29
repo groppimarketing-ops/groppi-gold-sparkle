@@ -319,7 +319,7 @@
       "subtitle": "Our work",
       "title": "Portfolio highlights",
       "thumbnailPlaceholder": "Project image",
-      "viewCase": "View case study",
+      "viewCase": "View case",
       "viewAll": "View full portfolio",
       "tags": {
         "website": "Website",
@@ -331,37 +331,37 @@
         "content": "Content"
       },
       "projects": {
-        "project1": {
+        "restaurant-branding": {
           "title": "Restaurant Branding",
-          "metric": "+180% online reservations"
+          "metric": "+180% reservations"
         },
-        "project2": {
+        "mode-webshop": {
           "title": "Fashion Webshop",
           "metric": "€85K revenue in 3 months"
         },
-        "project3": {
+        "b2b-platform": {
           "title": "B2B Platform",
-          "metric": "+320% qualified leads"
+          "metric": "+320% leads"
         },
-        "project4": {
-          "title": "Construction Company Website",
-          "metric": "#1 on Google locally"
+        "bouwbedrijf-website": {
+          "title": "Construction Website",
+          "metric": "#1 Google local"
         },
-        "project5": {
+        "influencer-campagne": {
           "title": "Influencer Campaign",
           "metric": "2.4M reach"
         },
-        "project6": {
+        "tech-startup-branding": {
           "title": "Tech Startup Branding",
           "metric": "Complete brand identity"
         },
-        "project7": {
+        "e-commerce-groei": {
           "title": "E-commerce Growth",
           "metric": "+240% ROAS"
         },
-        "project8": {
+        "content-strategie": {
           "title": "Content Strategy",
-          "metric": "50+ videos per month"
+          "metric": "50+ videos/month"
         }
       }
     },
@@ -1429,6 +1429,68 @@
       "title": "Schedule a quick intro",
       "subtitle": "15–20 minutes. We check match and next steps.",
       "cta": "Schedule call"
+    }
+  },
+  "caseStudy": {
+    "backToPortfolio": "Back to portfolio",
+    "challengeLabel": "Challenge",
+    "approachLabel": "Approach",
+    "resultsLabel": "Result",
+    "servicesUsed": "Services used",
+    "ctaQuote": "Request a quote",
+    "ctaServices": "View services & pricing",
+    "prevCase": "Previous case",
+    "nextCase": "Next case",
+    "allCases": "All cases",
+    "cases": {
+      "restaurant-branding": {
+        "title": "Restaurant Branding & Website",
+        "challenge": "Low online visibility and few digital reservations.",
+        "approach": "New brand identity + modern website + Google Ads campaign.",
+        "result": "+180% online reservations"
+      },
+      "mode-webshop": {
+        "title": "Fashion Webshop Launch",
+        "challenge": "New brand without online presence or customer base.",
+        "approach": "Complete webshop + social media strategy + influencer marketing.",
+        "result": "€85K revenue in first 3 months"
+      },
+      "b2b-platform": {
+        "title": "B2B Lead Generation Platform",
+        "challenge": "Too few qualified leads for B2B services.",
+        "approach": "Lead generation website + LinkedIn Ads + content marketing.",
+        "result": "+320% qualified leads"
+      },
+      "bouwbedrijf-website": {
+        "title": "Construction Company Website & SEO",
+        "challenge": "Invisible on Google despite good offline reputation.",
+        "approach": "SEO-optimized website + local SEO + Google My Business.",
+        "result": "#1 ranking on Google locally"
+      },
+      "influencer-campagne": {
+        "title": "Influencer Marketing Campaign",
+        "challenge": "Increase brand awareness among younger audience.",
+        "approach": "Influencer selection + content strategy + social media amplification.",
+        "result": "2.4 million reach"
+      },
+      "tech-startup-branding": {
+        "title": "Tech Startup Complete Branding",
+        "challenge": "Startup without visual identity or brand position.",
+        "approach": "Brand strategy + logo design + website + pitch deck.",
+        "result": "Complete brand identity launched"
+      },
+      "e-commerce-groei": {
+        "title": "E-commerce Growth Strategy",
+        "challenge": "Low ROAS and high advertising costs.",
+        "approach": "Campaign audit + A/B testing + retargeting optimization.",
+        "result": "+240% ROAS improvement"
+      },
+      "content-strategie": {
+        "title": "Content Production Strategy",
+        "challenge": "Inconsistent content and lack of engagement.",
+        "approach": "Content calendar + video production + social media management.",
+        "result": "50+ videos per month"
+      }
     }
   }
 }

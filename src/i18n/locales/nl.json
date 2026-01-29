@@ -319,7 +319,7 @@
       "subtitle": "Ons werk",
       "title": "Portfolio highlights",
       "thumbnailPlaceholder": "Project afbeelding",
-      "viewCase": "Bekijk case study",
+      "viewCase": "Bekijk case",
       "viewAll": "Bekijk volledig portfolio",
       "tags": {
         "website": "Website",
@@ -331,37 +331,37 @@
         "content": "Content"
       },
       "projects": {
-        "project1": {
+        "restaurant-branding": {
           "title": "Restaurant Branding",
-          "metric": "+180% online reserveringen"
+          "metric": "+180% reserveringen"
         },
-        "project2": {
+        "mode-webshop": {
           "title": "Mode Webshop",
           "metric": "€85K omzet in 3 maanden"
         },
-        "project3": {
+        "b2b-platform": {
           "title": "B2B Platform",
-          "metric": "+320% gekwalificeerde leads"
+          "metric": "+320% leads"
         },
-        "project4": {
+        "bouwbedrijf-website": {
           "title": "Bouwbedrijf Website",
-          "metric": "#1 op Google lokaal"
+          "metric": "#1 Google lokaal"
         },
-        "project5": {
+        "influencer-campagne": {
           "title": "Influencer Campagne",
           "metric": "2.4M bereik"
         },
-        "project6": {
+        "tech-startup-branding": {
           "title": "Tech Startup Branding",
           "metric": "Complete merkidentiteit"
         },
-        "project7": {
+        "e-commerce-groei": {
           "title": "E-commerce Groei",
           "metric": "+240% ROAS"
         },
-        "project8": {
+        "content-strategie": {
           "title": "Content Strategie",
-          "metric": "50+ video's per maand"
+          "metric": "50+ video's/maand"
         }
       }
     },
@@ -1429,6 +1429,68 @@
       "title": "Plan een korte kennismaking",
       "subtitle": "15–20 minuten. We checken match en volgende stappen.",
       "cta": "Plan call"
+    }
+  },
+  "caseStudy": {
+    "backToPortfolio": "Terug naar portfolio",
+    "challengeLabel": "Uitdaging",
+    "approachLabel": "Aanpak",
+    "resultsLabel": "Resultaat",
+    "servicesUsed": "Gebruikte diensten",
+    "ctaQuote": "Vraag een offerte aan",
+    "ctaServices": "Bekijk diensten & prijzen",
+    "prevCase": "Vorige case",
+    "nextCase": "Volgende case",
+    "allCases": "Alle cases",
+    "cases": {
+      "restaurant-branding": {
+        "title": "Restaurant Branding & Website",
+        "challenge": "Lage online zichtbaarheid en weinig reserveringen via digitale kanalen.",
+        "approach": "Nieuwe merkidentiteit + moderne website + Google Ads campagne.",
+        "result": "+180% online reserveringen"
+      },
+      "mode-webshop": {
+        "title": "Mode Webshop Launch",
+        "challenge": "Nieuw merk zonder online aanwezigheid of klantenbasis.",
+        "approach": "Complete webshop + social media strategie + influencer marketing.",
+        "result": "€85K omzet in eerste 3 maanden"
+      },
+      "b2b-platform": {
+        "title": "B2B Lead Generation Platform",
+        "challenge": "Te weinig gekwalificeerde leads voor B2B dienstverlening.",
+        "approach": "Lead generation website + LinkedIn Ads + content marketing.",
+        "result": "+320% gekwalificeerde leads"
+      },
+      "bouwbedrijf-website": {
+        "title": "Bouwbedrijf Website & SEO",
+        "challenge": "Onvindbaar op Google ondanks goede reputatie offline.",
+        "approach": "SEO-geoptimaliseerde website + lokale SEO + Google My Business.",
+        "result": "#1 ranking op Google lokaal"
+      },
+      "influencer-campagne": {
+        "title": "Influencer Marketing Campagne",
+        "challenge": "Merkbekendheid verhogen bij jongere doelgroep.",
+        "approach": "Influencer selectie + content strategie + social media amplificatie.",
+        "result": "2.4 miljoen bereik"
+      },
+      "tech-startup-branding": {
+        "title": "Tech Startup Complete Branding",
+        "challenge": "Startup zonder visuele identiteit of merkpositie.",
+        "approach": "Merkstrategie + logo design + website + pitch deck.",
+        "result": "Complete merkidentiteit gelanceerd"
+      },
+      "e-commerce-groei": {
+        "title": "E-commerce Groei Strategie",
+        "challenge": "Lage ROAS en hoge advertentiekosten.",
+        "approach": "Campagne audit + A/B testing + retargeting optimalisatie.",
+        "result": "+240% ROAS verbetering"
+      },
+      "content-strategie": {
+        "title": "Content Productie Strategie",
+        "challenge": "Inconsistente content en gebrek aan engagement.",
+        "approach": "Content kalender + video productie + social media beheer.",
+        "result": "50+ video's per maand"
+      }
     }
   }
 }

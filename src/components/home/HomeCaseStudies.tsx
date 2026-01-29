@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, TrendingUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
@@ -104,11 +105,14 @@ const HomeCaseStudies = () => {
           className="flex justify-center mt-12"
         >
           <Button
+            asChild
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_8px_25px_hsl(43_100%_50%/0.25)] hover:translate-y-[-2px] transition-all duration-300"
           >
-            {t('home.caseStudies.cta')}
-            <ArrowRight className="w-5 h-5 ml-2" />
+            <Link to="/gallery">
+              {t('home.caseStudies.cta')}
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Link>
           </Button>
         </motion.div>
       </div>

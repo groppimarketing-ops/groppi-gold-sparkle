@@ -23,6 +23,7 @@ const Blog = lazy(() => import("./pages/Blog"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Franchise = lazy(() => import("./pages/Franchise"));
+const CaseStudy = lazy(() => import("./pages/CaseStudy"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Admin pages
@@ -85,6 +86,7 @@ const App = () => (
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/franchise" element={<Franchise />} />
+                <Route path="/portfolio/:slug" element={<CaseStudy />} />
                 
                 {/* Admin Routes */}
                 <Route path="/admin/login" element={<AdminLogin />} />

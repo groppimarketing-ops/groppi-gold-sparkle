@@ -177,12 +177,14 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Button
+              asChild
               size="lg"
               className="bg-primary text-primary-foreground font-semibold px-8 py-5 text-sm rounded-lg transition-all duration-300 hover:bg-primary/90 hover:translate-y-[-2px] hover:shadow-[0_8px_25px_hsl(43_100%_50%/0.25)]"
-              onClick={scrollToServices}
             >
-              {t('home.heroNew.ctaPrimary')}
-              <ArrowRight className={`h-4 w-4 ${isRtl ? 'mr-2 rotate-180' : 'ml-2'}`} />
+              <Link to="/services">
+                {t('home.heroNew.ctaPrimary')}
+                <ArrowRight className={`h-4 w-4 ${isRtl ? 'mr-2 rotate-180' : 'ml-2'}`} />
+              </Link>
             </Button>
             
             <Button

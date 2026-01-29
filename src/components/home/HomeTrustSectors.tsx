@@ -12,6 +12,7 @@ import {
   Check
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const sectorIcons = {
   restaurant: UtensilsCrossed,
@@ -189,10 +190,12 @@ const HomeTrustSectors = () => {
               transition={{ delay: 0.4 }}
             >
               <Button
-                onClick={scrollToServices}
+                asChild
                 className="luxury-button text-primary-foreground px-8 py-6 text-base rounded-xl"
               >
-                {t('home.trustSectors.cta')}
+                <Link to="/services">
+                  {t('home.trustSectors.cta')}
+                </Link>
               </Button>
             </motion.div>
           </motion.div>

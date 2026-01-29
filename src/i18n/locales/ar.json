@@ -232,13 +232,50 @@
       "subtitle": "أعمالنا",
       "title": "أبرز المشاريع",
       "thumbnailPlaceholder": "صورة المشروع",
-      "viewCase": "عرض دراسة الحالة",
+      "viewCase": "عرض الحالة",
       "viewAll": "عرض كل الأعمال",
       "tags": {
         "website": "موقع",
         "branding": "هوية بصرية",
         "ads": "إعلانات",
+        "social": "اجتماعي",
+        "ecommerce": "تجارة إلكترونية",
+        "seo": "تحسين محركات البحث",
         "content": "محتوى"
+      },
+      "projects": {
+        "restaurant-branding": {
+          "title": "هوية مطعم",
+          "metric": "+180% حجوزات"
+        },
+        "mode-webshop": {
+          "title": "متجر أزياء",
+          "metric": "€85K في 3 أشهر"
+        },
+        "b2b-platform": {
+          "title": "منصة B2B",
+          "metric": "+320% عملاء محتملين"
+        },
+        "bouwbedrijf-website": {
+          "title": "موقع شركة بناء",
+          "metric": "#1 Google محلي"
+        },
+        "influencer-campagne": {
+          "title": "حملة مؤثرين",
+          "metric": "2.4M وصول"
+        },
+        "tech-startup-branding": {
+          "title": "هوية شركة تقنية ناشئة",
+          "metric": "هوية علامة كاملة"
+        },
+        "e-commerce-groei": {
+          "title": "نمو التجارة الإلكترونية",
+          "metric": "+240% ROAS"
+        },
+        "content-strategie": {
+          "title": "استراتيجية المحتوى",
+          "metric": "50+ فيديو/شهر"
+        }
       }
     }
   },
@@ -1160,6 +1197,68 @@
       "title": "احجز موعداً قصيراً للتعارف",
       "subtitle": "15-20 دقيقة. نتحقق من التوافق والخطوات التالية.",
       "cta": "احجز مكالمة"
+    }
+  },
+  "caseStudy": {
+    "backToPortfolio": "العودة إلى المحفظة",
+    "challengeLabel": "التحدي",
+    "approachLabel": "النهج",
+    "resultsLabel": "النتيجة",
+    "servicesUsed": "الخدمات المستخدمة",
+    "ctaQuote": "طلب عرض سعر",
+    "ctaServices": "عرض الخدمات والأسعار",
+    "prevCase": "الحالة السابقة",
+    "nextCase": "الحالة التالية",
+    "allCases": "جميع الحالات",
+    "cases": {
+      "restaurant-branding": {
+        "title": "هوية مطعم وموقع",
+        "challenge": "انخفاض الظهور الإلكتروني وقلة الحجوزات الرقمية.",
+        "approach": "هوية جديدة + موقع حديث + حملة Google Ads.",
+        "result": "+180% حجوزات إلكترونية"
+      },
+      "mode-webshop": {
+        "title": "إطلاق متجر أزياء",
+        "challenge": "علامة جديدة بدون حضور إلكتروني أو قاعدة عملاء.",
+        "approach": "متجر كامل + استراتيجية وسائل التواصل + تسويق المؤثرين.",
+        "result": "€85K إيرادات في 3 أشهر"
+      },
+      "b2b-platform": {
+        "title": "منصة توليد العملاء B2B",
+        "challenge": "قلة العملاء المحتملين المؤهلين لخدمات B2B.",
+        "approach": "موقع توليد عملاء + إعلانات LinkedIn + تسويق المحتوى.",
+        "result": "+320% عملاء محتملين مؤهلين"
+      },
+      "bouwbedrijf-website": {
+        "title": "موقع شركة بناء وSEO",
+        "challenge": "غير مرئي على Google رغم السمعة الجيدة.",
+        "approach": "موقع محسّن + SEO محلي + Google My Business.",
+        "result": "#1 في ترتيب Google المحلي"
+      },
+      "influencer-campagne": {
+        "title": "حملة تسويق المؤثرين",
+        "challenge": "زيادة الوعي بالعلامة لدى الجمهور الأصغر.",
+        "approach": "اختيار المؤثرين + استراتيجية المحتوى + تضخيم وسائل التواصل.",
+        "result": "2.4 مليون وصول"
+      },
+      "tech-startup-branding": {
+        "title": "هوية شركة تقنية ناشئة كاملة",
+        "challenge": "شركة ناشئة بدون هوية بصرية أو موقع علامة.",
+        "approach": "استراتيجية العلامة + تصميم الشعار + الموقع + عرض المستثمرين.",
+        "result": "إطلاق هوية علامة كاملة"
+      },
+      "e-commerce-groei": {
+        "title": "استراتيجية نمو التجارة الإلكترونية",
+        "challenge": "انخفاض ROAS وارتفاع تكاليف الإعلان.",
+        "approach": "تدقيق الحملة + اختبار A/B + تحسين إعادة الاستهداف.",
+        "result": "+240% تحسين ROAS"
+      },
+      "content-strategie": {
+        "title": "استراتيجية إنتاج المحتوى",
+        "challenge": "محتوى غير متسق ونقص التفاعل.",
+        "approach": "تقويم المحتوى + إنتاج الفيديو + إدارة وسائل التواصل.",
+        "result": "50+ فيديو شهرياً"
+      }
     }
   }
 }
