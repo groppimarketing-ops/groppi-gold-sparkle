@@ -30,6 +30,7 @@ export interface MediaItem {
   url: string;
   posterUrl?: string; // For videos: poster/thumbnail
   alt?: string;
+  aspectRatio?: '16:9' | '4:5' | '1:1' | '9:16'; // For proper display in gallery
 }
 
 export interface PortfolioItem {
@@ -37,14 +38,16 @@ export interface PortfolioItem {
   clientName: string;
   slug: string;
   industry: Industry;
-  services: ServiceTag[]; // Max 2
+  services: ServiceTag[]; // Max 3
   coverMedia: MediaItem;
   galleryMedia: MediaItem[];
-  shortResultLine: string; // 1 KPI line
+  shortResultLine: string; // 1 KPI line for card display
   popupContent: {
-    challenge: string; // 1-2 lines
-    approach: string; // 1-2 lines
-    results: string; // 1 KPI line
+    challenge: string; // 2-3 lines describing the problem
+    approachPoints: string[]; // 3-5 bullet points for approach
+    resultPoints: string[]; // 3-6 bullet points for results
+    resultDisclaimer?: string; // Optional disclaimer for indicative metrics
+    deliverables: string[]; // Chips list of what was delivered
   };
   featured?: boolean;
   createdAt: Date;
@@ -76,4 +79,29 @@ export const serviceTagLabels: Record<ServiceTag, { nl: string; en: string }> = 
   seo: { nl: 'SEO', en: 'SEO' },
   content: { nl: 'Content', en: 'Content' },
   video: { nl: 'Video', en: 'Video' },
+};
+
+// Deliverable labels for chips display
+export const deliverableLabels: Record<string, { nl: string; en: string }> = {
+  'logo-design': { nl: 'Logo design', en: 'Logo design' },
+  'brand-identity': { nl: 'Merkidentiteit', en: 'Brand identity' },
+  'website-design': { nl: 'Website design', en: 'Website design' },
+  'website-dev': { nl: 'Website ontwikkeling', en: 'Website development' },
+  'social-content': { nl: 'Social content', en: 'Social content' },
+  'photo-shoot': { nl: 'Fotoshoot', en: 'Photo shoot' },
+  'video-production': { nl: 'Videoproductie', en: 'Video production' },
+  'instagram-strategy': { nl: 'Instagram strategie', en: 'Instagram strategy' },
+  'facebook-ads': { nl: 'Facebook Ads', en: 'Facebook Ads' },
+  'google-ads': { nl: 'Google Ads', en: 'Google Ads' },
+  'seo-optimization': { nl: 'SEO optimalisatie', en: 'SEO optimization' },
+  'content-calendar': { nl: 'Contentkalender', en: 'Content calendar' },
+  'copywriting': { nl: 'Copywriting', en: 'Copywriting' },
+  'email-marketing': { nl: 'E-mail marketing', en: 'Email marketing' },
+  'influencer-campaign': { nl: 'Influencer campagne', en: 'Influencer campaign' },
+  'menu-design': { nl: 'Menu design', en: 'Menu design' },
+  'packaging': { nl: 'Verpakking', en: 'Packaging' },
+  'pitch-deck': { nl: 'Pitch deck', en: 'Pitch deck' },
+  'gmb-optimization': { nl: 'Google Mijn Bedrijf', en: 'Google My Business' },
+  'reels-production': { nl: 'Reels productie', en: 'Reels production' },
+  'story-content': { nl: 'Stories content', en: 'Stories content' },
 };
