@@ -38,6 +38,13 @@ const HomeTrustSectors = () => {
     { key: 'sme', icon: sectorIcons.sme },
   ];
 
+  const stats = [
+    { value: '10+', labelKey: 'home.trustSectors.stats.experience' },
+    { value: 'BE + EU', labelKey: 'home.trustSectors.stats.focus' },
+    { value: 'System-driven', labelKey: 'home.trustSectors.stats.system' },
+    { value: 'Premium', labelKey: 'home.trustSectors.stats.premium' },
+  ];
+
   const proofPoints = [
     t('home.trustSectors.proofPoints.experience'),
     t('home.trustSectors.proofPoints.pricing'),
@@ -59,8 +66,88 @@ const HomeTrustSectors = () => {
       <div className="absolute inset-0 neural-bg opacity-20" />
 
       <div className="container mx-auto px-4 relative z-10">
+        {/* Top Section - Headline & Stats */}
+        <div className="text-center mb-16">
+          {/* Eyebrow */}
+          <motion.span
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-block text-primary text-sm font-medium tracking-wider uppercase mb-4"
+          >
+            {t('home.trustSectors.eyebrow')}
+          </motion.span>
+
+          {/* Headline */}
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
+            dir="ltr"
+            style={{ unicodeBidi: 'isolate' }}
+          >
+            <span className="gold-gradient-text">
+              {t('home.trustSectors.headline')}
+            </span>
+          </motion.h2>
+
+          {/* Subheadline */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto"
+            dir="ltr"
+            style={{ unicodeBidi: 'isolate' }}
+          >
+            {t('home.trustSectors.subheadline')}
+          </motion.p>
+        </div>
+
+        {/* Numbers Proof Strip */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-16"
+        >
+          {stats.map((stat, index) => (
+            <motion.div
+              key={stat.labelKey}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 + index * 0.1 }}
+              className="group glass-card p-6 text-center hover:border-primary/40 hover:shadow-[0_0_25px_hsl(43_100%_50%/0.12)] transition-all duration-500"
+            >
+              <p className="text-2xl md:text-3xl font-bold text-primary mb-2 gold-text-glow">
+                {stat.value}
+              </p>
+              <p className="text-sm text-muted-foreground">
+                {t(stat.labelKey)}
+              </p>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Micro Note */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="text-center text-xs text-muted-foreground/60 italic mb-16"
+        >
+          {t('home.trustSectors.microNote')}
+        </motion.p>
+
+        {/* Main Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left Column - Content */}
+          {/* Left Column - Proof Points */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -70,28 +157,6 @@ const HomeTrustSectors = () => {
             dir="ltr"
             style={{ unicodeBidi: 'isolate' }}
           >
-            {/* Eyebrow */}
-            <motion.span
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="inline-block text-primary text-sm font-medium tracking-wider uppercase"
-            >
-              {t('home.trustSectors.eyebrow')}
-            </motion.span>
-
-            {/* Headline */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-              <span className="gold-gradient-text">
-                {t('home.trustSectors.headline')}
-              </span>
-            </h2>
-
-            {/* Subheadline */}
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              {t('home.trustSectors.subheadline')}
-            </p>
-
             {/* Proof Points */}
             <ul className="space-y-4">
               {proofPoints.map((point, index) => (
