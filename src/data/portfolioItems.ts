@@ -27,7 +27,102 @@ import lebanonCover from '@/assets/portfolio/lebanon-restaurant/cover.jpg';
 import lebanonBurger from '@/assets/portfolio/lebanon-restaurant/burger-special.jpg';
 import lebanonMezze from '@/assets/portfolio/lebanon-restaurant/mezze-menu.jpg';
 
+// KMA WANDPANELEN assets
+import kmaCover from '@/assets/portfolio/kma/cover.jpg';
+import kmaMaterialen from '@/assets/portfolio/kma/materialen.jpg';
+import kmaTouchWood from '@/assets/portfolio/kma/touch-wood.jpg';
+import kmaWpcDark from '@/assets/portfolio/kma/wpc-dark.jpg';
+import kmaWpcInterior from '@/assets/portfolio/kma/wpc-interior.jpg';
+import kmaDiensten from '@/assets/portfolio/kma/diensten.jpg';
+import kmaShowroom from '@/assets/portfolio/kma/showroom.jpg';
+import kmaHoutAlternatief from '@/assets/portfolio/kma/hout-alternatief.jpg';
+import kmaMarmerKeuken from '@/assets/portfolio/kma/marmer-keuken.jpg';
+import kmaKrasbestendig from '@/assets/portfolio/kma/krasbestendig.jpg';
+
 export const portfolioItems: PortfolioItem[] = [
+  {
+    id: '11',
+    clientName: 'KMA Wandpanelen',
+    slug: 'kma-wandpanelen',
+    industry: 'interior',
+    services: ['branding', 'social'],
+    coverMedia: {
+      id: 'cover-11',
+      type: 'image',
+      url: kmaCover,
+      alt: 'KMA Wandpanelen - WPC panelen in diverse kleuren',
+    },
+    galleryMedia: [
+      {
+        id: 'gallery-11-1',
+        type: 'image',
+        url: kmaCover,
+        alt: 'KMA - WPC wandpanelen collectie',
+      },
+      {
+        id: 'gallery-11-2',
+        type: 'image',
+        url: kmaMaterialen,
+        alt: 'KMA - Eén materiaal, meerdere stijlen',
+      },
+      {
+        id: 'gallery-11-3',
+        type: 'image',
+        url: kmaTouchWood,
+        alt: 'KMA - Foto\'s zijn mooi, materialen moet je voelen',
+      },
+      {
+        id: 'gallery-11-4',
+        type: 'image',
+        url: kmaWpcDark,
+        alt: 'KMA - WPC wandpanelen donkere variant',
+      },
+      {
+        id: 'gallery-11-5',
+        type: 'image',
+        url: kmaWpcInterior,
+        alt: 'KMA - Exclusief aanbod wandpanelen',
+      },
+      {
+        id: 'gallery-11-6',
+        type: 'image',
+        url: kmaDiensten,
+        alt: 'KMA - Kwaliteit en stijl voor elke muur',
+      },
+      {
+        id: 'gallery-11-7',
+        type: 'image',
+        url: kmaShowroom,
+        alt: 'KMA - Wij verkopen de panelen',
+      },
+      {
+        id: 'gallery-11-8',
+        type: 'image',
+        url: kmaHoutAlternatief,
+        alt: 'KMA - Vochtbestendig alternatief voor hout',
+      },
+      {
+        id: 'gallery-11-9',
+        type: 'image',
+        url: kmaMarmerKeuken,
+        alt: 'KMA - Marmeren vorm, minder onderhoud',
+      },
+      {
+        id: 'gallery-11-10',
+        type: 'image',
+        url: kmaKrasbestendig,
+        alt: 'KMA - Krasbestendig materiaal',
+      },
+    ],
+    shortResultLine: '+85% showroom bezoekers',
+    popupContent: {
+      challenge: 'KMA Wandpanelen in Antwerpen wilde hun premium aanbod van hout- en marmeralternatieven visueel sterker positioneren tegenover traditionele materialen.',
+      approach: 'Professionele productfotografie en social media content die de voordelen van WPC panelen (vochtbestendig, krasbestendig, eenvoudig onderhoud) helder communiceert.',
+      results: '+85% showroom bezoekers en sterke online productinteresse via Instagram en Facebook',
+    },
+    featured: true,
+    createdAt: new Date('2025-01-29'),
+  },
   {
     id: '10',
     clientName: 'Lebanon Restaurant',
