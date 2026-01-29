@@ -22,7 +22,102 @@ import ilFuocoEvents from '@/assets/portfolio/il-fuoco/events.png';
 import ilFuocoDeals from '@/assets/portfolio/il-fuoco/deals.png';
 import ilFuocoInstagram from '@/assets/portfolio/il-fuoco/instagram.png';
 
+// LEBANON RESTAURANT assets
+import lebanonCover from '@/assets/portfolio/lebanon-restaurant/cover.jpg';
+import lebanonBurger from '@/assets/portfolio/lebanon-restaurant/burger-special.jpg';
+import lebanonMezze from '@/assets/portfolio/lebanon-restaurant/mezze-menu.jpg';
+
 export const portfolioItems: PortfolioItem[] = [
+  {
+    id: '10',
+    clientName: 'Lebanon Restaurant',
+    slug: 'lebanon-restaurant',
+    industry: 'restaurant',
+    services: ['branding', 'social', 'content'],
+    coverMedia: {
+      id: 'cover-10',
+      type: 'image',
+      url: lebanonCover,
+      alt: 'Lebanon Restaurant - Authentieke Libanese keuken',
+    },
+    galleryMedia: [
+      {
+        id: 'gallery-10-1',
+        type: 'image',
+        url: lebanonCover,
+        alt: 'Lebanon Restaurant - Hummus review post',
+      },
+      {
+        id: 'gallery-10-2',
+        type: 'video',
+        url: '/videos/portfolio/lebanon-promo-1.mp4',
+        posterUrl: lebanonCover,
+        alt: 'Lebanon Restaurant - Promo video',
+      },
+      {
+        id: 'gallery-10-3',
+        type: 'video',
+        url: '/videos/portfolio/lebanon-promo-2.mp4',
+        posterUrl: lebanonMezze,
+        alt: 'Lebanon Restaurant - Brand video',
+      },
+      {
+        id: 'gallery-10-4',
+        type: 'image',
+        url: lebanonBurger,
+        alt: 'Lebanon Restaurant - Burger special',
+      },
+      {
+        id: 'gallery-10-5',
+        type: 'image',
+        url: lebanonMezze,
+        alt: 'Lebanon Restaurant - Mezze plateau menu',
+      },
+      {
+        id: 'gallery-10-6',
+        type: 'video',
+        url: '/videos/portfolio/lebanon-social-1.mp4',
+        posterUrl: lebanonBurger,
+        alt: 'Lebanon Restaurant - Social content 1',
+      },
+      {
+        id: 'gallery-10-7',
+        type: 'video',
+        url: '/videos/portfolio/lebanon-social-2.mp4',
+        posterUrl: lebanonMezze,
+        alt: 'Lebanon Restaurant - Social content 2',
+      },
+      {
+        id: 'gallery-10-8',
+        type: 'video',
+        url: '/videos/portfolio/lebanon-social-3.mp4',
+        posterUrl: lebanonCover,
+        alt: 'Lebanon Restaurant - Social content 3',
+      },
+      {
+        id: 'gallery-10-9',
+        type: 'video',
+        url: '/videos/portfolio/lebanon-social-4.mp4',
+        posterUrl: lebanonBurger,
+        alt: 'Lebanon Restaurant - Social content 4',
+      },
+      {
+        id: 'gallery-10-10',
+        type: 'video',
+        url: '/videos/portfolio/lebanon-social-5.mp4',
+        posterUrl: lebanonMezze,
+        alt: 'Lebanon Restaurant - Social content 5',
+      },
+    ],
+    shortResultLine: '+120% social media bereik',
+    popupContent: {
+      challenge: 'Libanees restaurant in Brussel wilde hun authentieke keuken en gezellige sfeer online beter in de verf zetten.',
+      approach: 'Complete social media strategie met professionele foodfotografie, korte video\'s en wekelijkse content voor Instagram en Facebook.',
+      results: '+120% social media bereik en merkbare stijging in nieuwe klanten via Instagram',
+    },
+    featured: true,
+    createdAt: new Date('2025-01-29'),
+  },
   {
     id: '9',
     clientName: 'IL FUOCO PIZZA',
