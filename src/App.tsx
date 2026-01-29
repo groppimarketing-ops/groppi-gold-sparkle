@@ -21,6 +21,7 @@ const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
 const Blog = lazy(() => import("./pages/Blog"));
 const Gallery = lazy(() => import("./pages/Gallery"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Franchise = lazy(() => import("./pages/Franchise"));
 const CaseStudy = lazy(() => import("./pages/CaseStudy"));
@@ -79,11 +80,12 @@ const App = () => (
           <RTLHandler>
             <Suspense fallback={<PageLoader />}>
               <Routes>
-                <Route path="/" element={<Index />} />
+              <Route path="/" element={<Index />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/gallery" element={<Gallery />} />
+                <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/franchise" element={<Franchise />} />
                 <Route path="/portfolio/:slug" element={<CaseStudy />} />
