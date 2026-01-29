@@ -65,7 +65,7 @@ const HomeCaseStudies = () => {
               >
                 <Link
                   to={study.link}
-                  className="group block glass-card py-8 px-6 h-full cursor-pointer hover:border-primary/40 hover:shadow-[0_0_30px_hsl(43_100%_50%/0.15)] hover:-translate-y-1 transition-all duration-300"
+                  className="group block glass-card py-8 px-6 h-full cursor-pointer hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] hover:-translate-y-2 transition-all duration-300"
                 >
                   {/* Industry Badge with Icon */}
                   <div className="flex items-center justify-between mb-4">
@@ -75,7 +75,7 @@ const HomeCaseStudies = () => {
                     >
                       {t(`home.caseStudies.industries.${study.industryKey}`)}
                     </Badge>
-                    <div className="w-10 h-10 rounded-lg glass-card flex items-center justify-center border border-primary/30 group-hover:border-primary/50 group-hover:shadow-[0_0_15px_hsl(43_100%_50%/0.2)] transition-all">
+                    <div className="w-10 h-10 rounded-lg glass-card flex items-center justify-center border border-primary/30 group-hover:border-primary/60 group-hover:shadow-[0_0_18px_hsl(var(--gold)/0.25)] transition-all">
                       <Icon className="w-5 h-5 text-primary" />
                     </div>
                   </div>
@@ -101,7 +101,7 @@ const HomeCaseStudies = () => {
                   </div>
 
                   {/* Result Metric - Bold Gold with glow */}
-                  <div className="flex items-center gap-3 p-4 rounded-lg bg-primary/10 border border-primary/30 group-hover:border-primary/50 group-hover:shadow-[0_0_20px_hsl(43_100%_50%/0.15)] transition-all">
+                  <div className="flex items-center gap-3 p-4 rounded-lg bg-primary/10 border border-primary/30 group-hover:border-primary/60 group-hover:shadow-[0_0_25px_hsl(var(--gold)/0.2)] transition-all">
                     <TrendingUp className="w-6 h-6 text-primary flex-shrink-0" />
                     <p className="text-primary font-bold text-lg">
                       {t(`home.caseStudies.${study.metricKey}`)}
@@ -129,9 +129,9 @@ const HomeCaseStudies = () => {
           <Button
             asChild
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_8px_30px_hsl(43_100%_50%/0.3)] hover:translate-y-[-2px] transition-all duration-300 text-base px-8"
+            className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 hover:shadow-[0_8px_35px_hsl(var(--gold)/0.4)] hover:translate-y-[-2px] transition-all duration-300 text-base px-10 py-6 rounded-xl"
           >
-            <Link to="/gallery">
+            <Link to="/contact">
               {t('home.caseStudies.cta')}
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>

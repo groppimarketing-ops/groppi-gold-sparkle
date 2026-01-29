@@ -169,8 +169,8 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className={`group relative p-6 flex flex-col h-full transition-all duration-500 hover:border-primary/40 ${
-                  highlightedServices.includes(service.id) ? 'ring-2 ring-primary/60 shadow-[0_0_50px_hsl(43_100%_50%/0.25)]' : ''
+                className={`group relative p-6 flex flex-col h-full transition-all duration-500 hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] hover:-translate-y-1 cursor-pointer ${
+                  highlightedServices.includes(service.id) ? 'ring-2 ring-primary/60 shadow-[0_0_50px_hsl(var(--gold)/0.25)]' : ''
                 } ${service.id === featuredServiceId ? 'ring-1 ring-primary/40' : ''}`}
               >
                 {/* Featured Badge */}
@@ -244,7 +244,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                 {/* CTA Buttons */}
                 <div className="relative space-y-3 mt-auto">
                   <Button
-                    className="w-full glass-button hover:border-primary/50 hover:shadow-[0_0_20px_hsl(43_100%_50%/0.2)]"
+                    className="w-full glass-button hover:border-primary/60 hover:shadow-[0_0_25px_hsl(var(--gold)/0.25)] transition-all duration-300"
                     variant="outline"
                     onClick={() => handleOpenModal(service, 'overview')}
                   >
@@ -256,7 +256,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                     <Button
                       variant="outline"
                       size="sm"
-                      className="glass-button text-xs hover:border-primary/50 hover:shadow-[0_0_15px_hsl(43_100%_50%/0.15)]"
+                      className="glass-button text-xs hover:border-primary/60 hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
                       onClick={() => handleOpenModal(service, 'video')}
                     >
                       <Play className="w-3 h-3 fill-current" />
@@ -267,7 +267,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                       <Button
                         variant="outline"
                         size="sm"
-                        className="glass-button text-xs hover:border-primary/50 hover:shadow-[0_0_15px_hsl(43_100%_50%/0.15)]"
+                        className="glass-button text-xs hover:border-primary/60 hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
                         onClick={() => handleOpenModal(service, 'calculator')}
                       >
                         <Calculator className="w-3 h-3" />
@@ -277,7 +277,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                       <Button
                         variant="outline"
                         size="sm"
-                        className="glass-button text-xs hover:border-primary/50 hover:shadow-[0_0_15px_hsl(43_100%_50%/0.15)]"
+                        className="glass-button text-xs hover:border-primary/60 hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
                         onClick={() => handleOpenModal(service, 'pricing')}
                       >
                         {t('home.servicesGrid.seePricing')}
@@ -294,13 +294,12 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="flex justify-center mt-12"
+            className="flex justify-center mt-14"
           >
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="border-primary/40 hover:bg-primary/10 hover:border-primary/60"
+              className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 hover:shadow-[0_8px_35px_hsl(var(--gold)/0.4)] hover:-translate-y-1 transition-all duration-300 px-10 py-6 rounded-xl text-base"
             >
               <Link to="/services">
                 {t('common.viewAll')}

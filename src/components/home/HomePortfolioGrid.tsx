@@ -70,7 +70,7 @@ const HomePortfolioGrid = () => {
             >
               <Link
                 to={`/portfolio/${project.slug}`}
-                className="group block glass-card p-0 overflow-hidden rounded-xl border border-border/50 hover:border-primary/50 hover:shadow-[0_0_35px_hsl(43_100%_50%/0.2)] hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+                className="group block glass-card p-0 overflow-hidden rounded-xl border border-border/50 hover:border-primary/60 hover:shadow-[0_0_40px_hsl(var(--gold)/0.22)] hover:-translate-y-2 transition-all duration-300 cursor-pointer"
               >
                 {/* Thumbnail */}
                 <div className="aspect-[4/3] relative overflow-hidden">
@@ -88,7 +88,7 @@ const HomePortfolioGrid = () => {
 
                   {/* View case overlay */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span className="px-4 py-2 rounded-full bg-primary/90 text-primary-foreground text-sm font-medium flex items-center gap-2 shadow-[0_0_20px_hsl(43_100%_50%/0.4)]">
+                    <span className="px-5 py-2.5 rounded-full bg-primary/95 text-primary-foreground text-sm font-semibold flex items-center gap-2 shadow-[0_0_25px_hsl(var(--gold)/0.5)]">
                       {t('home.portfolio.viewCase')}
                       <ArrowRight className="w-4 h-4" />
                     </span>
@@ -129,12 +129,12 @@ const HomePortfolioGrid = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex justify-center mt-12"
+          className="flex justify-center mt-14"
         >
           <Button
             asChild
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_8px_30px_hsl(43_100%_50%/0.35)] hover:translate-y-[-2px] transition-all duration-300 text-base px-10 py-6"
+            className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 hover:shadow-[0_8px_35px_hsl(var(--gold)/0.4)] hover:translate-y-[-3px] transition-all duration-300 text-lg px-12 py-7 rounded-xl"
           >
             <Link to="/gallery">
               {t('home.portfolio.viewAll')}

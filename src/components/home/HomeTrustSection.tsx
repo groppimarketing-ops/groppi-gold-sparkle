@@ -55,12 +55,12 @@ const HomeTrustSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="group text-center py-8 px-6 hover:border-primary/40 hover:shadow-[0_0_25px_hsl(43_100%_50%/0.15)] transition-all duration-500"
+              className="group text-center py-8 px-6 hover:border-primary/50 hover:shadow-[0_0_30px_hsl(var(--gold)/0.18)] hover:-translate-y-1 transition-all duration-500"
               hover3D={false}
             >
               {/* Icon container with subtle animation */}
               <motion.div
-                className="w-16 h-16 rounded-full glass-card flex items-center justify-center mx-auto mb-4 border border-primary/30 group-hover:border-primary/50 transition-colors"
+                className="w-16 h-16 rounded-full glass-card flex items-center justify-center mx-auto mb-4 border border-primary/30 group-hover:border-primary/60 group-hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
               >
                 <item.icon className="w-7 h-7 text-primary" />

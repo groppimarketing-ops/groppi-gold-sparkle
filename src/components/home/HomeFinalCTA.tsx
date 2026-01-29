@@ -58,7 +58,7 @@ const HomeFinalCTA = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="luxury-button hover:shadow-[0_0_30px_hsl(43_100%_50%/0.4)]"
+                className="luxury-button hover:shadow-[0_0_40px_hsl(var(--gold)/0.45)] hover:-translate-y-1 transition-all duration-300 px-10 py-6 rounded-xl text-base font-semibold"
               >
                 <Link to="/contact">
                   {t('home.finalCTA.ctaPrimary')}
@@ -69,7 +69,7 @@ const HomeFinalCTA = () => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="glass-button hover:border-primary/50 hover:shadow-[0_0_20px_hsl(43_100%_50%/0.2)]"
+                className="glass-button hover:border-primary/60 hover:shadow-[0_0_25px_hsl(var(--gold)/0.25)] hover:-translate-y-1 transition-all duration-300 px-10 py-6 rounded-xl text-base"
                 onClick={handleWhatsAppClick}
               >
                 <MessageCircle className="w-5 h-5" />

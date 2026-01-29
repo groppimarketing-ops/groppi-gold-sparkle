@@ -73,16 +73,17 @@ const HeroSection = () => {
         )}
       </div>
 
-      {/* Strong Premium Overlay */}
+      {/* Strong Premium Overlay - Darker for better text readability */}
       <div 
         className="absolute inset-0 z-[1]"
         style={{
           background: `
             linear-gradient(180deg, 
-              rgba(0,0,0,0.92) 0%, 
-              rgba(0,0,0,0.75) 35%,
-              rgba(0,0,0,0.70) 65%,
-              rgba(0,0,0,0.92) 100%
+              rgba(0,0,0,0.95) 0%, 
+              rgba(0,0,0,0.85) 25%,
+              rgba(0,0,0,0.80) 50%,
+              rgba(0,0,0,0.85) 75%,
+              rgba(0,0,0,0.95) 100%
             )
           `
         }}
@@ -179,11 +180,11 @@ const HeroSection = () => {
             <Button
               asChild
               size="lg"
-              className="bg-primary text-primary-foreground font-semibold px-8 py-5 text-sm rounded-lg transition-all duration-300 hover:bg-primary/90 hover:translate-y-[-2px] hover:shadow-[0_8px_25px_hsl(43_100%_50%/0.25)]"
+              className="bg-primary text-primary-foreground font-semibold px-10 py-6 text-base rounded-xl transition-all duration-300 hover:bg-primary/90 hover:translate-y-[-2px] hover:shadow-[0_8px_30px_hsl(var(--gold)/0.35)]"
             >
               <Link to="/services">
                 {t('home.heroNew.ctaPrimary')}
-                <ArrowRight className={`h-4 w-4 ${isRtl ? 'mr-2 rotate-180' : 'ml-2'}`} />
+                <ArrowRight className={`h-5 w-5 ${isRtl ? 'mr-2 rotate-180' : 'ml-2'}`} />
               </Link>
             </Button>
             
@@ -191,7 +192,7 @@ const HeroSection = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-primary/40 text-primary font-medium px-8 py-5 text-sm rounded-lg transition-all duration-300 hover:bg-primary/5 hover:border-primary/60 hover:translate-y-[-2px]"
+              className="border-primary/50 text-primary font-semibold px-10 py-6 text-base rounded-xl transition-all duration-300 hover:bg-primary/10 hover:border-primary hover:translate-y-[-2px] hover:shadow-[0_8px_25px_hsl(var(--gold)/0.15)]"
             >
               <Link to="/contact">
                 {t('home.heroNew.ctaSecondary')}

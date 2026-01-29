@@ -123,7 +123,7 @@ const HomeTrustSectors = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 + index * 0.1 }}
-              className="group glass-card p-6 text-center hover:border-primary/40 hover:shadow-[0_0_25px_hsl(43_100%_50%/0.12)] transition-all duration-500"
+              className="group glass-card p-6 text-center hover:border-primary/50 hover:shadow-[0_0_30px_hsl(var(--gold)/0.15)] transition-all duration-500"
             >
               <p className="text-2xl md:text-3xl font-bold text-primary mb-2 gold-text-glow">
                 {stat.value}
@@ -217,10 +217,10 @@ const HomeTrustSectors = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 + index * 0.05 }}
-                  className="group glass-card p-5 hover:border-primary/40 hover:shadow-[0_0_25px_hsl(43_100%_50%/0.12)] transition-all duration-500 hover:-translate-y-1"
+                  className="group glass-card p-5 hover:border-primary/50 hover:shadow-[0_0_30px_hsl(var(--gold)/0.15)] transition-all duration-500 hover:-translate-y-1 cursor-pointer"
                 >
                   {/* Icon */}
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center mb-3 group-hover:border-primary/40 transition-colors">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center mb-3 group-hover:border-primary/50 group-hover:shadow-[0_0_15px_hsl(var(--gold)/0.2)] transition-all duration-300">
                     <Icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
                   </div>
 

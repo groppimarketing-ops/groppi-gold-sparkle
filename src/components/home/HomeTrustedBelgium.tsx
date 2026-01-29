@@ -201,7 +201,7 @@ const IndustryMarquee = () => {
           return (
             <div
               key={`badge-${index}`}
-              className="flex-shrink-0 px-5 py-3 rounded-full border border-primary/30 bg-primary/5 flex items-center gap-3 hover:border-primary/60 hover:bg-primary/10 hover:shadow-[0_0_15px_hsl(43_100%_50%/0.2)] transition-all duration-300 cursor-default"
+              className="flex-shrink-0 px-5 py-3 rounded-full border border-primary/30 bg-primary/5 flex items-center gap-3 hover:border-primary/60 hover:bg-primary/10 hover:shadow-[0_0_20px_hsl(var(--gold)/0.25)] transition-all duration-300 cursor-default"
             >
               <Icon className="w-4 h-4 text-primary" strokeWidth={1.5} />
               <span className="text-sm font-medium text-foreground whitespace-nowrap">
@@ -231,7 +231,7 @@ const ProofCard = ({ locationKey, industryKey, outcomeKey, index }: ProofCardPro
       whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.08, duration: 0.5 }}
-      className="group glass-card p-5 hover:border-primary/40 hover:shadow-[0_0_25px_hsl(43_100%_50%/0.12)] transition-all duration-500"
+      className="group glass-card p-5 hover:border-primary/50 hover:shadow-[0_0_30px_hsl(var(--gold)/0.15)] hover:-translate-y-1 transition-all duration-500 cursor-pointer"
     >
       {/* Location + Industry Row */}
       <div className="flex items-center justify-between mb-3 gap-2">

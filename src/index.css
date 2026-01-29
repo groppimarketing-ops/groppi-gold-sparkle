@@ -11,31 +11,31 @@
 
 @layer base {
   :root {
-    /* Core Dark Palette */
-    --background: 0 0% 4%;
+    /* Core Dark Palette - GROPPI Premium Black */
+    --background: 0 0% 2%;
     --foreground: 45 10% 95%;
 
     /* Card & Surfaces - Glassmorphism base */
-    --card: 0 0% 8%;
+    --card: 0 0% 6%;
     --card-foreground: 45 10% 95%;
 
-    --popover: 0 0% 6%;
+    --popover: 0 0% 5%;
     --popover-foreground: 45 10% 95%;
 
-    /* Primary - Metallic Gold */
-    --primary: 43 100% 50%;
+    /* Primary - GROPPI Gold (#D4AF37 equivalent in HSL) */
+    --primary: 43 76% 52%;
     --primary-foreground: 0 0% 4%;
 
     /* Secondary - Dark Gray */
-    --secondary: 0 0% 12%;
+    --secondary: 0 0% 10%;
     --secondary-foreground: 45 10% 95%;
 
     /* Muted */
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 55%;
 
-    /* Accent - Shiny Gold */
-    --accent: 45 100% 55%;
+    /* Accent - Soft Gold */
+    --accent: 43 76% 52%;
     --accent-foreground: 0 0% 4%;
 
     /* Destructive */
@@ -43,60 +43,63 @@
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 43 50% 20%;
-    --input: 0 0% 12%;
-    --ring: 43 100% 50%;
+    --border: 43 40% 18%;
+    --input: 0 0% 10%;
+    --ring: 43 76% 52%;
 
     --radius: 1rem;
 
-    /* Extended Gold Palette */
+    /* GROPPI Gold Palette - Single source of truth */
+    --gold: 43 76% 52%;
+    --gold-soft: 43 76% 52%;
+    --gold-glow: 43 76% 52%;
     --gold-50: 45 100% 95%;
     --gold-100: 45 100% 85%;
     --gold-200: 45 100% 75%;
     --gold-300: 45 100% 65%;
-    --gold-400: 43 100% 55%;
-    --gold-500: 43 100% 50%;
-    --gold-600: 40 100% 45%;
-    --gold-700: 38 100% 38%;
-    --gold-800: 35 100% 30%;
-    --gold-900: 30 100% 20%;
+    --gold-400: 43 80% 55%;
+    --gold-500: 43 76% 52%;
+    --gold-600: 40 80% 45%;
+    --gold-700: 38 85% 38%;
+    --gold-800: 35 90% 30%;
+    --gold-900: 30 95% 20%;
 
     /* Glass Effects */
     --glass-blur: 20px;
-    --glass-opacity: 0.1;
-    --glass-border-opacity: 0.2;
+    --glass-opacity: 0.08;
+    --glass-border-opacity: 0.15;
 
     /* Sidebar */
-    --sidebar-background: 0 0% 3%;
+    --sidebar-background: 0 0% 2%;
     --sidebar-foreground: 45 10% 95%;
-    --sidebar-primary: 43 100% 50%;
+    --sidebar-primary: 43 76% 52%;
     --sidebar-primary-foreground: 0 0% 4%;
-    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent: 0 0% 6%;
     --sidebar-accent-foreground: 45 10% 95%;
-    --sidebar-border: 43 50% 15%;
-    --sidebar-ring: 43 100% 50%;
+    --sidebar-border: 43 40% 15%;
+    --sidebar-ring: 43 76% 52%;
   }
 
   .dark {
-    --background: 0 0% 4%;
+    --background: 0 0% 2%;
     --foreground: 45 10% 95%;
-    --card: 0 0% 8%;
+    --card: 0 0% 6%;
     --card-foreground: 45 10% 95%;
-    --popover: 0 0% 6%;
+    --popover: 0 0% 5%;
     --popover-foreground: 45 10% 95%;
-    --primary: 43 100% 50%;
+    --primary: 43 76% 52%;
     --primary-foreground: 0 0% 4%;
-    --secondary: 0 0% 12%;
+    --secondary: 0 0% 10%;
     --secondary-foreground: 45 10% 95%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
-    --accent: 45 100% 55%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 55%;
+    --accent: 43 76% 52%;
     --accent-foreground: 0 0% 4%;
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 100%;
-    --border: 43 50% 20%;
-    --input: 0 0% 12%;
-    --ring: 43 100% 50%;
+    --border: 43 40% 18%;
+    --input: 0 0% 10%;
+    --ring: 43 76% 52%;
   }
 }
 
@@ -199,47 +202,47 @@
     @apply relative backdrop-blur-xl rounded-2xl overflow-hidden;
     background: linear-gradient(
       135deg,
-      hsl(0 0% 100% / 0.08) 0%,
+      hsl(0 0% 100% / 0.06) 0%,
       hsl(0 0% 100% / 0.02) 100%
     );
-    border: 1px solid hsl(43 100% 50% / 0.2);
+    border: 1px solid hsl(var(--gold) / 0.18);
     box-shadow: 
       0 8px 32px hsl(0 0% 0% / 0.4),
       0 0 0 1px hsl(0 0% 0% / 0.5) inset,
-      inset 0 1px 0 hsl(0 0% 100% / 0.05);
+      inset 0 1px 0 hsl(0 0% 100% / 0.04);
   }
 
   .glass-card:hover {
-    border-color: hsl(43 100% 50% / 0.4);
+    border-color: hsl(var(--gold) / 0.45);
     box-shadow: 
-      0 8px 32px hsl(0 0% 0% / 0.4),
-      0 0 30px hsl(43 100% 50% / 0.15),
-      inset 0 1px 0 hsl(0 0% 100% / 0.08);
+      0 8px 32px hsl(0 0% 0% / 0.45),
+      0 0 35px hsl(var(--gold) / 0.18),
+      inset 0 1px 0 hsl(0 0% 100% / 0.06);
   }
 
   .glass-button {
     @apply relative backdrop-blur-md rounded-xl px-6 py-3 font-semibold transition-all duration-300;
     background: linear-gradient(
       135deg,
-      hsl(43 100% 50% / 0.2) 0%,
-      hsl(43 100% 50% / 0.1) 100%
+      hsl(var(--gold) / 0.18) 0%,
+      hsl(var(--gold) / 0.08) 100%
     );
-    border: 1px solid hsl(43 100% 50% / 0.3);
+    border: 1px solid hsl(var(--gold) / 0.28);
     box-shadow: 
       0 4px 15px hsl(0 0% 0% / 0.3),
-      inset 0 1px 0 hsl(43 100% 70% / 0.2);
+      inset 0 1px 0 hsl(var(--gold) / 0.15);
   }
 
   .glass-button:hover {
     background: linear-gradient(
       135deg,
-      hsl(43 100% 50% / 0.3) 0%,
-      hsl(43 100% 50% / 0.15) 100%
+      hsl(var(--gold) / 0.28) 0%,
+      hsl(var(--gold) / 0.12) 100%
     );
-    border-color: hsl(43 100% 50% / 0.5);
+    border-color: hsl(var(--gold) / 0.55);
     box-shadow: 
-      0 4px 20px hsl(43 100% 50% / 0.3),
-      inset 0 1px 0 hsl(43 100% 70% / 0.3);
+      0 4px 22px hsl(var(--gold) / 0.32),
+      inset 0 1px 0 hsl(var(--gold) / 0.25);
     transform: translateY(-2px);
   }
 

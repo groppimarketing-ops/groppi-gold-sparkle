@@ -72,7 +72,7 @@ const HomeQuickChoice = ({ onGoalSelect }: HomeQuickChoiceProps) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="group relative p-8 text-center hover:border-primary/40 transition-all duration-500 cursor-pointer"
+              className="group relative p-8 text-center hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] hover:-translate-y-1 transition-all duration-500 cursor-pointer"
               onClick={() => onGoalSelect(goal.id)}
             >
               {/* Hover glow - gold only */}
@@ -80,7 +80,7 @@ const HomeQuickChoice = ({ onGoalSelect }: HomeQuickChoiceProps) => {
               <motion.div
                 className="absolute inset-0 rounded-xl"
                 whileHover={{
-                  boxShadow: '0 0 40px hsl(43 100% 50% / 0.2)',
+                  boxShadow: '0 0 45px hsl(var(--gold) / 0.22)',
                 }}
               />
               
@@ -104,7 +104,7 @@ const HomeQuickChoice = ({ onGoalSelect }: HomeQuickChoiceProps) => {
 
               {/* CTA Button */}
               <Button
-                className="w-full glass-button group/btn hover:border-primary/50 hover:shadow-[0_0_20px_hsl(43_100%_50%/0.2)]"
+                className="w-full glass-button group/btn hover:border-primary/60 hover:shadow-[0_0_25px_hsl(var(--gold)/0.22)]"
                 variant="outline"
               >
                 <span>{t('home.quickChoice.cta')}</span>

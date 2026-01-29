@@ -129,7 +129,7 @@ const HomeClientLogoMarquee = () => {
               return (
                 <div
                   key={`logo-${index}`}
-                  className="flex-shrink-0 w-44 h-16 glass-card flex items-center justify-center gap-3 border border-primary/20 hover:border-primary/40 hover:shadow-[0_0_20px_hsl(43_100%_50%/0.15)] transition-all duration-300 cursor-default px-4"
+                  className="flex-shrink-0 w-44 h-16 glass-card flex items-center justify-center gap-3 border border-primary/20 hover:border-primary/50 hover:shadow-[0_0_25px_hsl(var(--gold)/0.2)] transition-all duration-300 cursor-default px-4"
                 >
                   <Icon className="w-5 h-5 text-primary/70 flex-shrink-0" strokeWidth={1.5} />
                   <span className="text-xs font-medium text-muted-foreground whitespace-nowrap">
@@ -158,7 +158,7 @@ const HomeClientLogoMarquee = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="glass-card p-6 hover:border-primary/40 hover:shadow-[0_0_20px_hsl(43_100%_50%/0.12)] transition-all duration-500"
+              className="glass-card p-6 hover:border-primary/50 hover:shadow-[0_0_25px_hsl(var(--gold)/0.15)] hover:-translate-y-1 transition-all duration-500"
             >
               {/* Quote icon */}
               <Quote className="w-5 h-5 text-primary/40 mb-3" />
@@ -205,11 +205,11 @@ const HomeClientLogoMarquee = () => {
             <Button 
               asChild
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-[0_0_25px_hsl(43_100%_50%/0.25)] hover:shadow-[0_0_35px_hsl(43_100%_50%/0.35)] transition-all duration-300"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-[0_0_25px_hsl(var(--gold)/0.25)] hover:shadow-[0_0_40px_hsl(var(--gold)/0.4)] hover:-translate-y-1 transition-all duration-300 px-10 py-6 rounded-xl text-base"
             >
               <Link to="/contact">
                 {t('home.clientLogoMarquee.cta.primaryButton')}
-                <ArrowRight className="w-4 h-4 ml-2" />
+                <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
             
@@ -217,14 +217,14 @@ const HomeClientLogoMarquee = () => {
               asChild
               variant="outline"
               size="lg"
-              className="border-primary/30 hover:border-primary/60 hover:bg-primary/10 transition-all duration-300"
+              className="border-primary/40 hover:border-primary hover:bg-primary/10 hover:shadow-[0_0_20px_hsl(var(--gold)/0.15)] hover:-translate-y-1 transition-all duration-300 px-10 py-6 rounded-xl text-base"
             >
               <a 
                 href="https://wa.me/32494396641?text=Hallo%2C%20ik%20wil%20graag%20meer%20weten%20over%20jullie%20diensten."
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle className="w-4 h-4 mr-2" />
+                <MessageCircle className="w-5 h-5 mr-2" />
                 {t('home.clientLogoMarquee.cta.secondaryButton')}
               </a>
             </Button>
