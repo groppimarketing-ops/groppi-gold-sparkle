@@ -277,6 +277,41 @@
       },
       "microNote": "*Results vary by industry and budget. We build scalable systems."
     },
+    "trustedBelgium": {
+      "eyebrow": "Social proof",
+      "title": "Trusted by teams across Belgium",
+      "subtitle": "Some client names are not shown publicly due to NDAs — but you can see the type of results we deliver.",
+      "disclaimer": "Client names are sometimes not shared due to NDAs.",
+      "industries": {
+        "restaurants": "Restaurants",
+        "retail": "Retail",
+        "construction": "Construction",
+        "interior": "Interior & Renovation",
+        "localServices": "Local services",
+        "beauty": "Beauty & wellness",
+        "ecommerce": "E-commerce",
+        "sme": "SMEs & startups",
+        "restaurant": "Restaurant",
+        "services": "Services"
+      },
+      "locations": {
+        "antwerpen": "Antwerp",
+        "mechelen": "Mechelen",
+        "brussel": "Brussels",
+        "vlaanderen": "Flanders",
+        "gent": "Ghent",
+        "leuven": "Leuven"
+      },
+      "outcomes": {
+        "outcome1": "More inquiries via Google & WhatsApp",
+        "outcome2": "Better visibility + consistent leads",
+        "outcome3": "Stronger brand look + higher conversion",
+        "outcome4": "More quote requests via website",
+        "outcome5": "Higher booking rate + stronger brand value",
+        "outcome6": "Better product pages + more sales"
+      },
+      "officialClients": "Official clients (with permission)"
+    },
     "portfolio": {
       "subtitle": "Our work",
       "title": "Portfolio highlights",

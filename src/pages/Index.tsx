@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/home/HeroSection';
 import HomeTrustSectors from '@/components/home/HomeTrustSectors';
+import HomeTrustedBelgium from '@/components/home/HomeTrustedBelgium';
 import HomeQuickChoice from '@/components/home/HomeQuickChoice';
 import HomeServicesGrid from '@/components/home/HomeServicesGrid';
 import HomePortfolioGrid from '@/components/home/HomePortfolioGrid';
@@ -55,6 +56,9 @@ const Index = () => {
 
       {/* Trust Sectors - Premium credibility section */}
       <HomeTrustSectors />
+
+      {/* Trusted across Belgium - Social proof without logos */}
+      <HomeTrustedBelgium />
 
       {/* Quick Choice - For non-expert visitors */}
       <HomeQuickChoice onGoalSelect={handleGoalSelect} />
