@@ -1141,115 +1141,154 @@
       }
     }
   },
-  "partner": {
-    "badge": "Partner Network",
-    "hero": {
-      "title": "Partner with Groppi (win-win)",
-      "subtitle": "We bring clients. You grow faster.",
-      "bullet1": "You keep your own pricing",
-      "bullet2": "No commission on your work",
-      "bullet3": "Real projects in Belgium & Europe",
-      "ctaPrimary": "Become a partner",
-      "ctaSecondary": "Schedule a quick intro call"
+"partner": {
+    "badge": "PARTNER NETWORK",
+    "seo": {
+      "title": "Partner with GROPPI (win-win) | Partner Network",
+      "description": "Become a GROPPI partner: a license-driven partnership with brand, system and support. Not a job, not recruitment. Limited spots per region."
     },
-    "whoWeSeek": {
-      "subtitle": "Who we're looking for",
-      "title": "Partners who want to grow",
-      "types": {
-        "videomaker": {
-          "title": "Video Makers",
-          "desc": "Short and long-form video content"
+    "hero": {
+      "title": "Partner with GROPPI (win-win).",
+      "subtitle": "We bring the brand, the system and the credibility. You bring the local market. Together we grow faster — with proven structure and support.",
+      "bullet1": "Proven services and pricing structure",
+      "bullet2": "Premium brand built on trust",
+      "bullet3": "You keep control over your local growth",
+      "ctaPrimary": "Become a partner",
+      "ctaSecondary": "Schedule a quick intro",
+      "microcopy": "Limited number of partners per region."
+    },
+    "marquee": {
+      "item1": "10+ years experience",
+      "item2": "Belgium & Europe",
+      "item3": "Transparent pricing",
+      "item4": "Systems that scale",
+      "item5": "Premium delivery",
+      "item6": "Win-win partners"
+    },
+    "clarity": {
+      "subtitle": "What this program is",
+      "title": "This is not a job. This is a partner network.",
+      "body": "This program is designed for agencies and specialists who want to grow under a strong brand. No employment. No recruitment. And no 'talk' without system. Instead: a license-driven partnership with clear quality standards.",
+      "cards": {
+        "brand": {
+          "title": "Brand & positioning",
+          "bullets": {
+            "0": "Use the GROPPI brand and premium positioning",
+            "1": "Trust from day one"
+          }
         },
-        "photographer": {
-          "title": "Photographers",
-          "desc": "Product, lifestyle & branding"
+        "delivery": {
+          "title": "Delivery system",
+          "bullets": {
+            "0": "Clear services, pricing logic and processes",
+            "1": "Tools & frameworks that work in practice"
+          }
         },
-        "designer": {
-          "title": "Designers",
-          "desc": "Branding, UI/UX, graphics"
-        },
-        "developer": {
-          "title": "Web Developers",
-          "desc": "Websites, webshops, apps"
-        },
-        "copywriter": {
-          "title": "Copywriters",
-          "desc": "Content, blogs, sales copy"
-        },
-        "adsSpecialist": {
-          "title": "Ads Specialists",
-          "desc": "Meta, Google, TikTok Ads"
-        },
-        "influencer": {
-          "title": "Influencers / UGC Creators",
-          "desc": "Branded content & reach"
+        "growth": {
+          "title": "Growth & support",
+          "bullets": {
+            "0": "Strategic guidance",
+            "1": "Scalable without chaos"
+          }
         }
       }
     },
-    "benefits": {
-      "subtitle": "Why you win",
-      "title": "What you get as a partner",
-      "trustLine": "You invoice directly. We take no commission.",
+    "forWho": {
+      "subtitle": "For whom",
+      "title": "For partners who want to grow",
+      "description": "We work with people who can deliver quality and want to scale locally.",
       "items": {
-        "moreClients": {
-          "title": "More clients without ads",
-          "desc": "We bring qualified leads, you don't have to prospect."
+        "bureauOwners": "Marketing agency owners",
+        "growthMarketeers": "Freelance growth marketers",
+        "webStudios": "Web & development studios",
+        "contentTeams": "Content & video teams",
+        "adsSpecialists": "Ads specialists",
+        "seoSpecialists": "SEO specialists",
+        "socialAgencies": "Social media agencies"
+      },
+      "note": "Selection is based on quality and mindset."
+    },
+    "value": {
+      "subtitle": "What you get",
+      "title": "What you get as a partner",
+      "cards": {
+        "credibility": {
+          "title": "Instant credibility",
+          "body": "Over 10 years of experience translated into strong positioning and clear service logic."
         },
-        "biggerProjects": {
-          "title": "Bigger projects",
-          "desc": "Access to projects you wouldn't reach on your own."
+        "salesReady": {
+          "title": "Sales-ready structure",
+          "body": "Services, pricing and calculators that speed up decisions and reduce friction."
         },
         "portfolio": {
-          "title": "Portfolio + credibility",
-          "desc": "Build your portfolio with real Belgian and European projects."
+          "title": "Portfolio support",
+          "body": "Case study formats, templates and quality guidelines to stay premium."
         },
         "longterm": {
           "title": "Long-term collaboration",
-          "desc": "No one-time gigs, but lasting partnerships."
+          "body": "Projects, upsells and lasting relationships — built on trust and delivery."
         }
-      }
+      },
+      "highlight": "You're not buying a logo. You're getting a proven system."
     },
     "howItWorks": {
       "subtitle": "How it works",
-      "title": "3 simple steps",
+      "title": "How it works",
       "steps": {
         "step1": {
           "title": "Sign up",
-          "desc": "Fill out the contact form with your portfolio or website."
+          "desc": "Leave your details and briefly tell us about your region and team."
         },
         "step2": {
-          "title": "Quick intro call",
-          "desc": "We schedule a short call to see if it's a match."
+          "title": "Short fit-call",
+          "desc": "We check match, quality and expectations (15–20 min)."
         },
         "step3": {
-          "title": "We match you with projects",
-          "desc": "When a project fits your skills, we'll reach out."
+          "title": "Start with the GROPPI system",
+          "desc": "You get onboarding, guidelines and starting assets to deliver."
         }
       }
     },
     "faq": {
       "subtitle": "Questions",
-      "title": "Frequently asked questions",
+      "title": "FAQ",
       "items": {
-        "paid": {
-          "question": "Is this paid?",
-          "answer": "Yes. You invoice per project, directly to the client or to us. No commission."
+        "isJob": {
+          "question": "Is this a job?",
+          "answer": "No. This is a partnership, not employment."
         },
-        "exclusive": {
-          "question": "Do I have to be exclusive?",
-          "answer": "No. You remain completely free to work with other clients."
+        "bureau": {
+          "question": "Do I need to already have an agency?",
+          "answer": "Preferably yes. Strong specialists with delivery capacity also qualify."
         },
-        "speed": {
-          "question": "How quickly will I get projects?",
-          "answer": "Depends on your skills, availability, and incoming projects. We promise nothing, but actively match."
+        "exclusivity": {
+          "question": "Do I get exclusivity?",
+          "answer": "Yes. Limited number of partners per region/market."
+        },
+        "leads": {
+          "question": "Do you deliver leads?",
+          "answer": "We support positioning and growth systems. Results depend on region and execution."
+        },
+        "team": {
+          "question": "Can I work with my own team?",
+          "answer": "Yes, as long as quality standards are followed."
+        },
+        "howToApply": {
+          "question": "How can I become a partner?",
+          "answer": "Via the partner form. We'll contact you within 24 hours."
         }
       }
     },
-    "cta": {
-      "title": "Ready to grow together?",
-      "description": "Tell us what you do and we'll see if there's a match. No obligations.",
+    "apply": {
+      "title": "Ready to become a GROPPI partner?",
+      "subtitle": "Check if your region is still available.",
       "ctaPrimary": "Become a partner",
-      "ctaWhatsApp": "WhatsApp us"
+      "ctaSecondary": "Schedule a call"
+    },
+    "booking": {
+      "title": "Schedule a quick intro",
+      "subtitle": "15–20 minutes. We check match and next steps.",
+      "cta": "Schedule call"
     }
   }
 }

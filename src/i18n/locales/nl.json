@@ -1141,115 +1141,154 @@
       }
     }
   },
-  "partner": {
-    "badge": "Partner Netwerk",
-    "hero": {
-      "title": "Partner met Groppi (win-win)",
-      "subtitle": "Wij brengen klanten. Jij groeit sneller.",
-      "bullet1": "Jij houdt je eigen prijzen",
-      "bullet2": "Geen commissie op jouw werk",
-      "bullet3": "Echte projecten in België & Europa",
-      "ctaPrimary": "Word partner",
-      "ctaSecondary": "Plan een korte kennismaking"
+"partner": {
+    "badge": "PARTNER NETWORK",
+    "seo": {
+      "title": "Partner met GROPPI (win-win) | Partner Network",
+      "description": "Word GROPPI-partner: een licentie-gedreven partnerschap met merk, systeem en support. Geen job, geen recruitment. Beperkte plekken per regio."
     },
-    "whoWeSeek": {
-      "subtitle": "Wie zoeken we",
-      "title": "Partners die willen groeien",
-      "types": {
-        "videomaker": {
-          "title": "Videomakers",
-          "desc": "Korte en lange video content"
+    "hero": {
+      "title": "Partner met GROPPI (win-win).",
+      "subtitle": "Wij brengen het merk, het systeem en de geloofwaardigheid. Jij brengt de lokale markt. Samen groeien we sneller — met bewezen structuur en ondersteuning.",
+      "bullet1": "Bewezen diensten- en prijsstructuur",
+      "bullet2": "Premium merk gebouwd op vertrouwen",
+      "bullet3": "Jij behoudt controle over je lokale groei",
+      "ctaPrimary": "Word partner",
+      "ctaSecondary": "Plan een korte kennismaking",
+      "microcopy": "Beperkt aantal partners per regio."
+    },
+    "marquee": {
+      "item1": "10+ jaar ervaring",
+      "item2": "België & Europa",
+      "item3": "Transparante pricing",
+      "item4": "Systems that scale",
+      "item5": "Premium delivery",
+      "item6": "Win-win partners"
+    },
+    "clarity": {
+      "subtitle": "Wat dit programma is",
+      "title": "Dit is géén job. Dit is een partnernetwerk.",
+      "body": "Dit programma is bedoeld voor bureaus en specialisten die willen groeien onder een sterk merk. Geen tewerkstelling. Geen recruitment. En ook geen 'praatjes' zonder systeem. Wel: een licentie-gedreven partnerschap met duidelijke kwaliteitsstandaarden.",
+      "cards": {
+        "brand": {
+          "title": "Merk & positionering",
+          "bullets": {
+            "0": "Gebruik het GROPPI-merk en de premium positionering",
+            "1": "Vertrouwen vanaf dag één"
+          }
         },
-        "photographer": {
-          "title": "Fotografen",
-          "desc": "Product, lifestyle & branding"
+        "delivery": {
+          "title": "Delivery-systeem",
+          "bullets": {
+            "0": "Heldere diensten, pricing-logica en processen",
+            "1": "Tools & frameworks die werken in de praktijk"
+          }
         },
-        "designer": {
-          "title": "Designers",
-          "desc": "Branding, UI/UX, graphics"
-        },
-        "developer": {
-          "title": "Web developers",
-          "desc": "Websites, webshops, apps"
-        },
-        "copywriter": {
-          "title": "Copywriters",
-          "desc": "Content, blogs, sales copy"
-        },
-        "adsSpecialist": {
-          "title": "Ads specialisten",
-          "desc": "Meta, Google, TikTok Ads"
-        },
-        "influencer": {
-          "title": "Influencers / UGC creators",
-          "desc": "Branded content & bereik"
+        "growth": {
+          "title": "Groei & support",
+          "bullets": {
+            "0": "Strategische begeleiding",
+            "1": "Schaalbaar zonder chaos"
+          }
         }
       }
     },
-    "benefits": {
-      "subtitle": "Waarom jij wint",
-      "title": "Wat jij krijgt als partner",
-      "trustLine": "Jij factureert rechtstreeks. Wij nemen geen commissie.",
+    "forWho": {
+      "subtitle": "Voor wie",
+      "title": "Voor partners die willen groeien",
+      "description": "We werken met mensen die kwaliteit kunnen leveren en lokaal willen opschalen.",
       "items": {
-        "moreClients": {
-          "title": "Meer klanten zonder ads",
-          "desc": "Wij brengen gekwalificeerde leads, jij hoeft niet te prospecteren."
+        "bureauOwners": "Marketingbureau-eigenaars",
+        "growthMarketeers": "Freelance growth marketeers",
+        "webStudios": "Web- & development studios",
+        "contentTeams": "Content & video teams",
+        "adsSpecialists": "Ads-specialisten",
+        "seoSpecialists": "SEO-specialisten",
+        "socialAgencies": "Social media agencies"
+      },
+      "note": "Selectie gebeurt op kwaliteit en mindset."
+    },
+    "value": {
+      "subtitle": "Wat jij krijgt",
+      "title": "Wat jij krijgt als partner",
+      "cards": {
+        "credibility": {
+          "title": "Instant geloofwaardigheid",
+          "body": "Meer dan 10 jaar ervaring vertaald naar sterke positionering en duidelijke service-logica."
         },
-        "biggerProjects": {
-          "title": "Grotere projecten",
-          "desc": "Toegang tot projecten waar je alleen niet bij zou komen."
+        "salesReady": {
+          "title": "Sales-klare structuur",
+          "body": "Diensten, pricing en calculators die beslissingen versnellen en frictie verlagen."
         },
         "portfolio": {
-          "title": "Portfolio + credibility",
-          "desc": "Bouw je portfolio uit met echte Belgische en Europese projecten."
+          "title": "Portfolio-ondersteuning",
+          "body": "Case-study formats, templates en kwaliteitsrichtlijnen om premium te blijven."
         },
         "longterm": {
-          "title": "Langetermijn samenwerking",
-          "desc": "Geen eenmalige gigs, maar duurzame partnerships."
+          "title": "Langetermijnsamenwerking",
+          "body": "Projecten, upsells en duurzame relaties — gebouwd op vertrouwen en delivery."
         }
-      }
+      },
+      "highlight": "Je koopt geen logo. Je krijgt een bewezen systeem."
     },
     "howItWorks": {
       "subtitle": "Hoe het werkt",
-      "title": "3 eenvoudige stappen",
+      "title": "Zo werkt het",
       "steps": {
         "step1": {
-          "title": "Meld je aan",
-          "desc": "Vul het contactformulier in met je portfolio of website."
+          "title": "Aanmelden",
+          "desc": "Laat je gegevens achter en vertel kort over je regio en team."
         },
         "step2": {
-          "title": "Korte kennismaking",
-          "desc": "We plannen een kort gesprek om te zien of het matcht."
+          "title": "Korte fit-call",
+          "desc": "We checken match, kwaliteit en verwachtingen (15–20 min)."
         },
         "step3": {
-          "title": "We matchen je met projecten",
-          "desc": "Zodra er een project past bij jouw skills, nemen we contact op."
+          "title": "Start met het GROPPI-systeem",
+          "desc": "Je krijgt onboarding, richtlijnen en start-assets om te leveren."
         }
       }
     },
     "faq": {
       "subtitle": "Vragen",
-      "title": "Veelgestelde vragen",
+      "title": "FAQ",
       "items": {
-        "paid": {
-          "question": "Is dit betaald?",
-          "answer": "Ja. Je factureert per project, rechtstreeks aan de klant of aan ons. Geen commissie."
+        "isJob": {
+          "question": "Is dit een job?",
+          "answer": "Nee. Dit is een partnerschap, geen tewerkstelling."
         },
-        "exclusive": {
-          "question": "Moet ik exclusief zijn?",
-          "answer": "Nee. Je blijft volledig vrij om met andere klanten te werken."
+        "bureau": {
+          "question": "Moet ik al een bureau hebben?",
+          "answer": "Bij voorkeur wel. Sterke specialisten met delivery-capaciteit komen ook in aanmerking."
         },
-        "speed": {
-          "question": "Hoe snel krijg ik projecten?",
-          "answer": "Afhankelijk van je skills, beschikbaarheid en de projecten die binnenkomen. We beloven niets, maar matchen actief."
+        "exclusivity": {
+          "question": "Krijg ik exclusiviteit?",
+          "answer": "Ja. Beperkt aantal partners per regio/markt."
+        },
+        "leads": {
+          "question": "Leveren jullie leads?",
+          "answer": "We ondersteunen positionering en groeisystemen. Resultaten hangen af van regio en uitvoering."
+        },
+        "team": {
+          "question": "Mag ik met mijn eigen team werken?",
+          "answer": "Ja, zolang de kwaliteitsstandaarden worden gevolgd."
+        },
+        "howToApply": {
+          "question": "Hoe kan ik partner worden?",
+          "answer": "Via het partnerformulier. We nemen binnen 24 uur contact op."
         }
       }
     },
-    "cta": {
-      "title": "Klaar om samen te groeien?",
-      "description": "Laat ons weten wat je doet en we bekijken of er een match is. Geen verplichtingen.",
+    "apply": {
+      "title": "Klaar om GROPPI-partner te worden?",
+      "subtitle": "Bekijk of jouw regio nog beschikbaar is.",
       "ctaPrimary": "Word partner",
-      "ctaWhatsApp": "WhatsApp ons"
+      "ctaSecondary": "Plan een gesprek"
+    },
+    "booking": {
+      "title": "Plan een korte kennismaking",
+      "subtitle": "15–20 minuten. We checken match en volgende stappen.",
+      "cta": "Plan call"
     }
   }
 }
