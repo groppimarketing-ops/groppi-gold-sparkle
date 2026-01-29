@@ -62,14 +62,17 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'nl',
+    fallbackLng: ['nl', 'en'],
     interpolation: {
       escapeValue: false,
     },
     detection: {
       order: ['localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage'],
+      lookupLocalStorage: 'i18nextLng',
     },
+    returnEmptyString: false,
+    returnNull: false,
   });
 
 export default i18n;

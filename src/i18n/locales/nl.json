@@ -174,7 +174,8 @@
     "clientMarquee": {
       "subtitle": "Vertrouwd door bedrijven",
       "title": "Vertrouwd door bedrijven in België & Europa",
-      "ndaNote": "*Sommige projecten vallen onder NDA en kunnen niet publiek worden getoond.*"
+      "ndaNote": "*Sommige projecten vallen onder NDA en kunnen niet publiek worden getoond.*",
+      "logoPlaceholder": "LOGO"
     },
     "portfolio": {
       "subtitle": "Ons werk",
@@ -543,6 +544,7 @@
     "videoModal": {
       "continueToDetails": "Verder naar details",
       "comingSoon": "Video wordt binnenkort geüpload",
+      "duration": "60 sec",
       "defaultBullets": {
         "when": "Wanneer deze dienst geschikt is voor jou",
         "problem": "Welk probleem het oplost",
@@ -1160,9 +1162,9 @@
     "marquee": {
       "item1": "10+ jaar ervaring",
       "item2": "België & Europa",
-      "item3": "Transparante pricing",
-      "item4": "Systems that scale",
-      "item5": "Premium delivery",
+      "item3": "Transparante prijzen",
+      "item4": "Systemen die schalen",
+      "item5": "Premium oplevering",
       "item6": "Win-win partners"
     },
     "clarity": {

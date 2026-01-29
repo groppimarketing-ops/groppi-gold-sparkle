@@ -228,7 +228,7 @@ const ServiceVideoModal = ({
               {/* Video duration badge */}
               <div className="absolute bottom-4 left-4 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-sm text-sm text-white/80">
                 <Clock className="w-4 h-4" />
-                <span>60 sec</span>
+                <span>{t('services.videoModal.duration')}</span>
               </div>
             </div>
 

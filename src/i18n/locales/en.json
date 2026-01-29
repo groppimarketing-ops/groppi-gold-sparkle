@@ -174,7 +174,8 @@
     "clientMarquee": {
       "subtitle": "Trusted by businesses",
       "title": "Trusted by businesses in Belgium & Europe",
-      "ndaNote": "*Some projects are under NDA and cannot be publicly displayed.*"
+      "ndaNote": "*Some projects are under NDA and cannot be publicly displayed.*",
+      "logoPlaceholder": "LOGO"
     },
     "portfolio": {
       "subtitle": "Our work",
@@ -543,6 +544,7 @@
     "videoModal": {
       "continueToDetails": "Continue to details",
       "comingSoon": "Video will be uploaded soon",
+      "duration": "60 sec",
       "defaultBullets": {
         "when": "When this service is right for you",
         "problem": "What problem it solves",

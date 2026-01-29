@@ -101,6 +101,8 @@ interface LogoPlaceholderProps {
 }
 
 const LogoPlaceholder = ({ logo }: LogoPlaceholderProps) => {
+  const { t } = useTranslation();
+  
   return (
     <motion.div
       className="flex-shrink-0 w-32 h-16 glass-card flex items-center justify-center border border-primary/10 rounded-lg cursor-pointer transition-all duration-500 group/logo"
@@ -112,7 +114,7 @@ const LogoPlaceholder = ({ logo }: LogoPlaceholderProps) => {
       {/* Placeholder logo - monochrome by default, gold on hover */}
       <div className="w-20 h-8 rounded bg-muted-foreground/20 group-hover/logo:bg-primary/30 transition-colors duration-500 flex items-center justify-center">
         <span className="text-[10px] text-muted-foreground/50 group-hover/logo:text-primary transition-colors duration-500 font-medium">
-          LOGO
+          {t('home.clientMarquee.logoPlaceholder')}
         </span>
       </div>
     </motion.div>
