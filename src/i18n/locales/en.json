@@ -1140,5 +1140,116 @@
         "answer": "No. Advertising budget is paid directly to Meta/Google. Our cost is for management and optimization."
       }
     }
+  },
+  "partner": {
+    "badge": "Partner Network",
+    "hero": {
+      "title": "Partner with Groppi (win-win)",
+      "subtitle": "We bring clients. You grow faster.",
+      "bullet1": "You keep your own pricing",
+      "bullet2": "No commission on your work",
+      "bullet3": "Real projects in Belgium & Europe",
+      "ctaPrimary": "Become a partner",
+      "ctaSecondary": "Schedule a quick intro call"
+    },
+    "whoWeSeek": {
+      "subtitle": "Who we're looking for",
+      "title": "Partners who want to grow",
+      "types": {
+        "videomaker": {
+          "title": "Video Makers",
+          "desc": "Short and long-form video content"
+        },
+        "photographer": {
+          "title": "Photographers",
+          "desc": "Product, lifestyle & branding"
+        },
+        "designer": {
+          "title": "Designers",
+          "desc": "Branding, UI/UX, graphics"
+        },
+        "developer": {
+          "title": "Web Developers",
+          "desc": "Websites, webshops, apps"
+        },
+        "copywriter": {
+          "title": "Copywriters",
+          "desc": "Content, blogs, sales copy"
+        },
+        "adsSpecialist": {
+          "title": "Ads Specialists",
+          "desc": "Meta, Google, TikTok Ads"
+        },
+        "influencer": {
+          "title": "Influencers / UGC Creators",
+          "desc": "Branded content & reach"
+        }
+      }
+    },
+    "benefits": {
+      "subtitle": "Why you win",
+      "title": "What you get as a partner",
+      "trustLine": "You invoice directly. We take no commission.",
+      "items": {
+        "moreClients": {
+          "title": "More clients without ads",
+          "desc": "We bring qualified leads, you don't have to prospect."
+        },
+        "biggerProjects": {
+          "title": "Bigger projects",
+          "desc": "Access to projects you wouldn't reach on your own."
+        },
+        "portfolio": {
+          "title": "Portfolio + credibility",
+          "desc": "Build your portfolio with real Belgian and European projects."
+        },
+        "longterm": {
+          "title": "Long-term collaboration",
+          "desc": "No one-time gigs, but lasting partnerships."
+        }
+      }
+    },
+    "howItWorks": {
+      "subtitle": "How it works",
+      "title": "3 simple steps",
+      "steps": {
+        "step1": {
+          "title": "Sign up",
+          "desc": "Fill out the contact form with your portfolio or website."
+        },
+        "step2": {
+          "title": "Quick intro call",
+          "desc": "We schedule a short call to see if it's a match."
+        },
+        "step3": {
+          "title": "We match you with projects",
+          "desc": "When a project fits your skills, we'll reach out."
+        }
+      }
+    },
+    "faq": {
+      "subtitle": "Questions",
+      "title": "Frequently asked questions",
+      "items": {
+        "paid": {
+          "question": "Is this paid?",
+          "answer": "Yes. You invoice per project, directly to the client or to us. No commission."
+        },
+        "exclusive": {
+          "question": "Do I have to be exclusive?",
+          "answer": "No. You remain completely free to work with other clients."
+        },
+        "speed": {
+          "question": "How quickly will I get projects?",
+          "answer": "Depends on your skills, availability, and incoming projects. We promise nothing, but actively match."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to grow together?",
+      "description": "Tell us what you do and we'll see if there's a match. No obligations.",
+      "ctaPrimary": "Become a partner",
+      "ctaWhatsApp": "WhatsApp us"
+    }
   }
 }

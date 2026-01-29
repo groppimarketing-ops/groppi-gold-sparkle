@@ -1140,5 +1140,116 @@
         "answer": "Nee. Advertentiebudget betaal je rechtstreeks aan Meta/Google. Onze kost is voor beheer en optimalisatie."
       }
     }
+  },
+  "partner": {
+    "badge": "Partner Netwerk",
+    "hero": {
+      "title": "Partner met Groppi (win-win)",
+      "subtitle": "Wij brengen klanten. Jij groeit sneller.",
+      "bullet1": "Jij houdt je eigen prijzen",
+      "bullet2": "Geen commissie op jouw werk",
+      "bullet3": "Echte projecten in België & Europa",
+      "ctaPrimary": "Word partner",
+      "ctaSecondary": "Plan een korte kennismaking"
+    },
+    "whoWeSeek": {
+      "subtitle": "Wie zoeken we",
+      "title": "Partners die willen groeien",
+      "types": {
+        "videomaker": {
+          "title": "Videomakers",
+          "desc": "Korte en lange video content"
+        },
+        "photographer": {
+          "title": "Fotografen",
+          "desc": "Product, lifestyle & branding"
+        },
+        "designer": {
+          "title": "Designers",
+          "desc": "Branding, UI/UX, graphics"
+        },
+        "developer": {
+          "title": "Web developers",
+          "desc": "Websites, webshops, apps"
+        },
+        "copywriter": {
+          "title": "Copywriters",
+          "desc": "Content, blogs, sales copy"
+        },
+        "adsSpecialist": {
+          "title": "Ads specialisten",
+          "desc": "Meta, Google, TikTok Ads"
+        },
+        "influencer": {
+          "title": "Influencers / UGC creators",
+          "desc": "Branded content & bereik"
+        }
+      }
+    },
+    "benefits": {
+      "subtitle": "Waarom jij wint",
+      "title": "Wat jij krijgt als partner",
+      "trustLine": "Jij factureert rechtstreeks. Wij nemen geen commissie.",
+      "items": {
+        "moreClients": {
+          "title": "Meer klanten zonder ads",
+          "desc": "Wij brengen gekwalificeerde leads, jij hoeft niet te prospecteren."
+        },
+        "biggerProjects": {
+          "title": "Grotere projecten",
+          "desc": "Toegang tot projecten waar je alleen niet bij zou komen."
+        },
+        "portfolio": {
+          "title": "Portfolio + credibility",
+          "desc": "Bouw je portfolio uit met echte Belgische en Europese projecten."
+        },
+        "longterm": {
+          "title": "Langetermijn samenwerking",
+          "desc": "Geen eenmalige gigs, maar duurzame partnerships."
+        }
+      }
+    },
+    "howItWorks": {
+      "subtitle": "Hoe het werkt",
+      "title": "3 eenvoudige stappen",
+      "steps": {
+        "step1": {
+          "title": "Meld je aan",
+          "desc": "Vul het contactformulier in met je portfolio of website."
+        },
+        "step2": {
+          "title": "Korte kennismaking",
+          "desc": "We plannen een kort gesprek om te zien of het matcht."
+        },
+        "step3": {
+          "title": "We matchen je met projecten",
+          "desc": "Zodra er een project past bij jouw skills, nemen we contact op."
+        }
+      }
+    },
+    "faq": {
+      "subtitle": "Vragen",
+      "title": "Veelgestelde vragen",
+      "items": {
+        "paid": {
+          "question": "Is dit betaald?",
+          "answer": "Ja. Je factureert per project, rechtstreeks aan de klant of aan ons. Geen commissie."
+        },
+        "exclusive": {
+          "question": "Moet ik exclusief zijn?",
+          "answer": "Nee. Je blijft volledig vrij om met andere klanten te werken."
+        },
+        "speed": {
+          "question": "Hoe snel krijg ik projecten?",
+          "answer": "Afhankelijk van je skills, beschikbaarheid en de projecten die binnenkomen. We beloven niets, maar matchen actief."
+        }
+      }
+    },
+    "cta": {
+      "title": "Klaar om samen te groeien?",
+      "description": "Laat ons weten wat je doet en we bekijken of er een match is. Geen verplichtingen.",
+      "ctaPrimary": "Word partner",
+      "ctaWhatsApp": "WhatsApp ons"
+    }
   }
 }
