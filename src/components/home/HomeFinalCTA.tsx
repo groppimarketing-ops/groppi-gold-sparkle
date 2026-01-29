@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight, MessageCircle, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -5,9 +6,8 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import GlassCard from '@/components/ui/GlassCard';
 import { socialLinks, trackEvent } from '@/utils/tracking';
-import { memo } from 'react';
 
-const HomeFinalCTA = memo(() => {
+const HomeFinalCTA = forwardRef<HTMLElement>((_, ref) => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
   const prefersReducedMotion = useReducedMotion();
@@ -17,7 +17,7 @@ const HomeFinalCTA = memo(() => {
   };
 
   return (
-    <section className="section-spacing relative overflow-hidden">
+    <section ref={ref} className="section-spacing relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent" />
       

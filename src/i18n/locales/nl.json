@@ -1103,6 +1103,31 @@
       "ecommerce": "E-commerce"
     }
   },
+  "portfolio": {
+    "page": {
+      "subtitle": "Ons werk",
+      "title": "Portfolio",
+      "description": "Ontdek onze projecten en de resultaten die we voor onze klanten hebben bereikt.",
+      "resultSingle": "project gevonden",
+      "resultPlural": "projecten gevonden",
+      "noResults": "Geen projecten gevonden met deze filters."
+    },
+    "viewCase": "Bekijk case",
+    "filters": {
+      "all": "Alle",
+      "searchPlaceholder": "Zoek op klantnaam...",
+      "industryLabel": "Filter op sector",
+      "serviceLabel": "Filter op dienst",
+      "clearAll": "Wis alle filters"
+    },
+    "modal": {
+      "challenge": "Uitdaging",
+      "approach": "Onze aanpak",
+      "results": "Resultaat",
+      "ctaPrimary": "Vraag een offerte aan",
+      "ctaWhatsApp": "Chat via WhatsApp"
+    }
+  },
   "contact": {
     "title": "Contact opnemen",
     "subtitle": "Laten we praten",

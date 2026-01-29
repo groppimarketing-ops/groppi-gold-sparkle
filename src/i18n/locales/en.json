@@ -1103,6 +1103,31 @@
       "ecommerce": "E-commerce"
     }
   },
+  "portfolio": {
+    "page": {
+      "subtitle": "Our work",
+      "title": "Portfolio",
+      "description": "Discover our projects and the results we achieved for our clients.",
+      "resultSingle": "project found",
+      "resultPlural": "projects found",
+      "noResults": "No projects found with these filters."
+    },
+    "viewCase": "View case",
+    "filters": {
+      "all": "All",
+      "searchPlaceholder": "Search by client name...",
+      "industryLabel": "Filter by industry",
+      "serviceLabel": "Filter by service",
+      "clearAll": "Clear all filters"
+    },
+    "modal": {
+      "challenge": "Challenge",
+      "approach": "Our approach",
+      "results": "Result",
+      "ctaPrimary": "Request a quote",
+      "ctaWhatsApp": "Chat via WhatsApp"
+    }
+  },
   "contact": {
     "title": "Get in Touch",
     "subtitle": "Let's Talk",

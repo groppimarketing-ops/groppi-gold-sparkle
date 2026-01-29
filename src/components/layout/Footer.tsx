@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -13,7 +14,7 @@ const TikTokIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const Footer = () => {
+const Footer = forwardRef<HTMLElement>((_, ref) => {
   const { t } = useTranslation();
 
   const socialLinksData = [
@@ -33,7 +34,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative border-t border-primary/20 bg-gradient-to-b from-background to-[hsl(0,0%,2%)]">
+    <footer ref={ref} className="relative border-t border-primary/20 bg-gradient-to-b from-background to-[hsl(0,0%,2%)]">
       {/* Neural Pattern Overlay */}
       <div className="absolute inset-0 neural-lines opacity-50" />
       
@@ -211,6 +212,8 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
+
+Footer.displayName = 'Footer';
 
 export default Footer;
