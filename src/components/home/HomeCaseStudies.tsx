@@ -1,14 +1,14 @@
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, TrendingUp, UtensilsCrossed, ShoppingCart, Building2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { Badge } from '@/components/ui/badge';
+import { memo } from 'react';
 
-const HomeCaseStudies = () => {
+const HomeCaseStudies = memo(() => {
   const { t } = useTranslation();
-
   const caseStudies = [
     {
       id: 1,
@@ -39,8 +39,9 @@ const HomeCaseStudies = () => {
     },
   ];
 
+
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="section-spacing relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
       
@@ -140,6 +141,8 @@ const HomeCaseStudies = () => {
       </div>
     </section>
   );
-};
+});
+
+HomeCaseStudies.displayName = 'HomeCaseStudies';
 
 export default HomeCaseStudies;

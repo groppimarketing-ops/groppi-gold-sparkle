@@ -1,7 +1,8 @@
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { 
-  UtensilsCrossed, 
+import { memo } from 'react';
+import {
+  UtensilsCrossed,
   Sofa, 
   Store, 
   ShoppingCart, 
@@ -25,9 +26,9 @@ const sectorIcons = {
   sme: Rocket,
 };
 
-const HomeTrustSectors = () => {
+const HomeTrustSectors = memo(() => {
   const { t } = useTranslation();
-
+  const prefersReducedMotion = useReducedMotion();
   const sectors = [
     { key: 'restaurant', icon: sectorIcons.restaurant },
     { key: 'interior', icon: sectorIcons.interior },
@@ -61,7 +62,7 @@ const HomeTrustSectors = () => {
   };
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="section-spacing relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/[0.02] to-background" />
       <div className="absolute inset-0 neural-bg opacity-20" />
@@ -241,6 +242,8 @@ const HomeTrustSectors = () => {
       </div>
     </section>
   );
-};
+});
+
+HomeTrustSectors.displayName = 'HomeTrustSectors';
 
 export default HomeTrustSectors;

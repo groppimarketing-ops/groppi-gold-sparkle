@@ -1,7 +1,8 @@
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { 
+import { memo } from 'react';
+import {
   Building2, 
   UtensilsCrossed, 
   Store, 
@@ -45,14 +46,14 @@ const testimonials = [
   { key: 'testimonial3' },
 ];
 
-const HomeClientLogoMarquee = () => {
+const HomeClientLogoMarquee = memo(() => {
   const { t } = useTranslation();
 
   // Duplicate for seamless loop
   const logos = [...clientPlaceholders, ...clientPlaceholders];
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="section-spacing relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-transparent" />
       
@@ -236,6 +237,8 @@ const HomeClientLogoMarquee = () => {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
     </section>
   );
-};
+});
+
+HomeClientLogoMarquee.displayName = 'HomeClientLogoMarquee';
 
 export default HomeClientLogoMarquee;

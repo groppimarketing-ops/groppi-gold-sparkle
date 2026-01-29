@@ -30,9 +30,9 @@
     --secondary: 0 0% 10%;
     --secondary-foreground: 45 10% 95%;
 
-    /* Muted */
+    /* Muted - brighter for better readability on dark */
     --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 55%;
+    --muted-foreground: 0 0% 65%;
 
     /* Accent - Soft Gold */
     --accent: 43 76% 52%;
@@ -92,7 +92,7 @@
     --secondary: 0 0% 10%;
     --secondary-foreground: 45 10% 95%;
     --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 55%;
+    --muted-foreground: 0 0% 65%;
     --accent: 43 76% 52%;
     --accent-foreground: 0 0% 4%;
     --destructive: 0 62% 30%;
@@ -397,6 +397,60 @@
 }
 
 @layer utilities {
+  /* ===== SECTION SPACING - Consistent vertical rhythm ===== */
+  .section-spacing {
+    padding-top: clamp(4rem, 8vw, 6rem);
+    padding-bottom: clamp(4rem, 8vw, 6rem);
+  }
+  
+  .section-spacing-lg {
+    padding-top: clamp(5rem, 10vw, 8rem);
+    padding-bottom: clamp(5rem, 10vw, 8rem);
+  }
+
+  /* ===== TYPOGRAPHY IMPROVEMENTS ===== */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .prose-readable {
+    line-height: 1.75;
+    max-width: 65ch;
+  }
+  
+  /* Prevent orphans in headings */
+  .heading-balanced {
+    text-wrap: balance;
+    hyphens: none;
+  }
+
+  /* ===== FOCUS STATES - Gold outline for accessibility ===== */
+  .focus-gold:focus-visible {
+    outline: 2px solid hsl(var(--gold));
+    outline-offset: 2px;
+    border-radius: 0.5rem;
+  }
+  
+  /* Apply focus states globally */
+  button:focus-visible,
+  a:focus-visible,
+  [role="button"]:focus-visible {
+    outline: 2px solid hsl(var(--gold) / 0.8);
+    outline-offset: 2px;
+  }
+
+  /* ===== REDUCED MOTION ===== */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
   /* ===== KEYFRAMES ===== */
   
   @keyframes shimmer {
@@ -445,12 +499,15 @@
     }
   }
 
-  @keyframes glitch {
-    0%, 90%, 100% { opacity: 1; }
-    92% { opacity: 0.8; transform: translateX(2px); }
-    94% { opacity: 0.6; transform: translateX(-2px); }
-    96% { opacity: 0.8; transform: translateX(1px); }
-    98% { opacity: 0.9; transform: translateX(-1px); }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .animate-shimmer {
@@ -465,11 +522,20 @@
     animation: borderGlow 3s ease-in-out infinite;
   }
 
-  .animate-glitch {
-    animation: glitch 5s ease-in-out infinite;
+  .animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-out forwards;
   }
 
   .animate-float-3d {
     animation: float3d 6s ease-in-out infinite;
+  }
+
+  /* ===== HOVER TRANSITIONS - Consistent timing ===== */
+  .hover-lift {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
   }
 }

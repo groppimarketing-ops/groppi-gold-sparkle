@@ -1,17 +1,17 @@
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { Eye, Users, ShoppingCart, ArrowRight, HelpCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
-
+import { memo } from 'react';
 interface HomeQuickChoiceProps {
   onGoalSelect: (goal: 'visibility' | 'leads' | 'sales') => void;
 }
 
-const HomeQuickChoice = ({ onGoalSelect }: HomeQuickChoiceProps) => {
+const HomeQuickChoice = memo(({ onGoalSelect }: HomeQuickChoiceProps) => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
-
+  const prefersReducedMotion = useReducedMotion();
   const goals = [
     {
       id: 'visibility' as const,
@@ -36,8 +36,12 @@ const HomeQuickChoice = ({ onGoalSelect }: HomeQuickChoiceProps) => {
     },
   ];
 
+  const itemVariants = prefersReducedMotion
+    ? { hidden: { opacity: 0 }, visible: { opacity: 1 } }
+    : { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } };
+
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="section-spacing relative overflow-hidden">
       {/* Background subtle effect */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
       
@@ -116,6 +120,8 @@ const HomeQuickChoice = ({ onGoalSelect }: HomeQuickChoiceProps) => {
       </div>
     </section>
   );
-};
+});
+
+HomeQuickChoice.displayName = 'HomeQuickChoice';
 
 export default HomeQuickChoice;

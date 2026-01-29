@@ -1,15 +1,16 @@
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight, Check, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, memo } from 'react';
 import { Link } from 'react-router-dom';
 
-const HeroSection = () => {
+const HeroSection = memo(() => {
   const { t, i18n } = useTranslation();
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [videoError, setVideoError] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const prefersReducedMotion = useReducedMotion();
 
   const isRtl = i18n.language === 'ar' || i18n.language === 'ur';
 
@@ -40,11 +41,20 @@ const HeroSection = () => {
     t('home.heroNew.proof3'),
   ];
 
+  // Animation variants respecting reduced motion
+  const fadeUp = prefersReducedMotion 
+    ? { opacity: 0 } 
+    : { opacity: 0, y: 20 };
+  const fadeUpVisible = prefersReducedMotion 
+    ? { opacity: 1 } 
+    : { opacity: 1, y: 0 };
+
   return (
     <section 
       className="relative flex items-center justify-center overflow-hidden"
-      style={{ minHeight: 'min(85vh, 800px)' }}
+      style={{ minHeight: 'min(80vh, 750px)' }}
       dir={isRtl ? 'rtl' : 'ltr'}
+      aria-label={t('home.heroNew.badge')}
     >
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
@@ -220,6 +230,8 @@ const HeroSection = () => {
       </motion.div>
     </section>
   );
-};
+});
+
+HeroSection.displayName = 'HeroSection';
 
 export default HeroSection;

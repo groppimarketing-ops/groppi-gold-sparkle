@@ -1,22 +1,23 @@
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight, MessageCircle, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import GlassCard from '@/components/ui/GlassCard';
 import { socialLinks, trackEvent } from '@/utils/tracking';
+import { memo } from 'react';
 
-const HomeFinalCTA = () => {
+const HomeFinalCTA = memo(() => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
-
+  const prefersReducedMotion = useReducedMotion();
   const handleWhatsAppClick = () => {
     trackEvent({ event: 'whatsapp_click', location: 'home_final_cta' });
     window.open(socialLinks.whatsapp, '_blank');
   };
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="section-spacing relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent" />
       
@@ -81,6 +82,8 @@ const HomeFinalCTA = () => {
       </div>
     </section>
   );
-};
+});
+
+HomeFinalCTA.displayName = 'HomeFinalCTA';
 
 export default HomeFinalCTA;

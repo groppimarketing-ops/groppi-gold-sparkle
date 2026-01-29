@@ -1,11 +1,13 @@
-import { motion } from 'framer-motion';
-import { Calendar, Users, MapPin, Handshake, Award, Building } from 'lucide-react';
+import { motion, useReducedMotion } from 'framer-motion';
+import { Calendar, Users, MapPin, Handshake } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
+import { memo } from 'react';
 
-const HomeTrustSection = () => {
+const HomeTrustSection = memo(() => {
   const { t } = useTranslation();
+  const prefersReducedMotion = useReducedMotion();
 
   const trustItems = [
     {
@@ -34,8 +36,12 @@ const HomeTrustSection = () => {
     },
   ];
 
+  const itemVariants = prefersReducedMotion
+    ? { hidden: { opacity: 0 }, visible: { opacity: 1 } }
+    : { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } };
+
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="section-spacing relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
       <div className="absolute inset-0 neural-bg opacity-30" />
@@ -51,17 +57,17 @@ const HomeTrustSection = () => {
           {trustItems.map((item, index) => (
             <GlassCard
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={itemVariants.hidden}
+              whileInView={itemVariants.visible}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.15 }}
-              className="group text-center py-8 px-6 hover:border-primary/50 hover:shadow-[0_0_30px_hsl(var(--gold)/0.18)] hover:-translate-y-1 transition-all duration-500"
+              transition={{ delay: prefersReducedMotion ? 0 : index * 0.1, duration: 0.5 }}
+              className="group text-center py-8 px-6 hover:border-primary/50 hover:shadow-[0_0_30px_hsl(var(--gold)/0.18)] hover:-translate-y-1 transition-all duration-300"
               hover3D={false}
             >
-              {/* Icon container with subtle animation */}
+              {/* Icon container */}
               <motion.div
                 className="w-16 h-16 rounded-full glass-card flex items-center justify-center mx-auto mb-4 border border-primary/30 group-hover:border-primary/60 group-hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
-                whileHover={{ scale: 1.05 }}
+                whileHover={prefersReducedMotion ? {} : { scale: 1.05 }}
               >
                 <item.icon className="w-7 h-7 text-primary" />
               </motion.div>
@@ -86,6 +92,8 @@ const HomeTrustSection = () => {
       </div>
     </section>
   );
-};
+});
+
+HomeTrustSection.displayName = 'HomeTrustSection';
 
 export default HomeTrustSection;

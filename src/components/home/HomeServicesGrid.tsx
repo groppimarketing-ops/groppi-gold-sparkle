@@ -147,7 +147,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
 
   return (
     <>
-      <section ref={ref} id="services-section" className="py-24 relative overflow-hidden">
+      <section ref={ref} id="services-section" className="section-spacing relative overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 neural-lines opacity-20" />
         

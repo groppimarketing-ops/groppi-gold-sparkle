@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { 
+import { memo } from 'react';
+import {
   UtensilsCrossed, 
   Store, 
   Hammer, 
@@ -23,7 +24,7 @@ const industryBadges = [
   { key: 'sme', icon: Rocket },
 ];
 
-const HomeTrustedBelgium = () => {
+const HomeTrustedBelgium = memo(() => {
   const { t } = useTranslation();
 
   const proofCards = [
@@ -42,7 +43,7 @@ const HomeTrustedBelgium = () => {
   return (
     <section 
       id="trusted-belgium" 
-      className="py-24 relative overflow-hidden scroll-mt-20"
+      className="section-spacing relative overflow-hidden scroll-mt-20"
     >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/[0.02] to-background" />
@@ -170,7 +171,9 @@ const HomeTrustedBelgium = () => {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
     </section>
   );
-};
+});
+
+HomeTrustedBelgium.displayName = 'HomeTrustedBelgium';
 
 const IndustryMarquee = () => {
   const { t } = useTranslation();

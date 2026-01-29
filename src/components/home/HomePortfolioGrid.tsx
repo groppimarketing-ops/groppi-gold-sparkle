@@ -1,10 +1,11 @@
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { Badge } from '@/components/ui/badge';
+import { memo } from 'react';
 
 // Import portfolio images
 import restaurantBranding from '@/assets/portfolio/restaurant-branding.jpg';
@@ -33,8 +34,9 @@ const projects: Project[] = [
   { slug: 'content-strategie', tags: ['content', 'social'], image: contentStrategie },
 ];
 
-const HomePortfolioGrid = () => {
+const HomePortfolioGrid = memo(() => {
   const { t } = useTranslation();
+  const prefersReducedMotion = useReducedMotion();
 
   const tagLabels: Record<string, string> = {
     website: t('home.portfolio.tags.website'),
@@ -46,8 +48,15 @@ const HomePortfolioGrid = () => {
     content: t('home.portfolio.tags.content'),
   };
 
+  const itemVariants = prefersReducedMotion
+    ? { hidden: { opacity: 0 }, visible: { opacity: 1 } }
+    : { 
+        hidden: { opacity: 0, y: 24 }, 
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } } 
+      };
+
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="section-spacing relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 neural-bg opacity-20" />
       
@@ -145,6 +154,8 @@ const HomePortfolioGrid = () => {
       </div>
     </section>
   );
-};
+});
+
+HomePortfolioGrid.displayName = 'HomePortfolioGrid';
 
 export default HomePortfolioGrid;
