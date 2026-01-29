@@ -14,7 +14,81 @@ import techStartupBranding from '@/assets/portfolio/tech-startup-branding.jpg';
 import ecommerceGroei from '@/assets/portfolio/e-commerce-groei.jpg';
 import contentStrategie from '@/assets/portfolio/content-strategie.jpg';
 
+// IL FUOCO PIZZA assets
+import ilFuocoChef from '@/assets/portfolio/il-fuoco/chef-pizza.jpg';
+import ilFuocoMenu from '@/assets/portfolio/il-fuoco/menu.png';
+import ilFuocoReviews from '@/assets/portfolio/il-fuoco/reviews.png';
+import ilFuocoEvents from '@/assets/portfolio/il-fuoco/events.png';
+import ilFuocoDeals from '@/assets/portfolio/il-fuoco/deals.png';
+import ilFuocoInstagram from '@/assets/portfolio/il-fuoco/instagram.png';
+
 export const portfolioItems: PortfolioItem[] = [
+  {
+    id: '9',
+    clientName: 'IL FUOCO PIZZA',
+    slug: 'il-fuoco-pizza',
+    industry: 'restaurant',
+    services: ['branding', 'social'],
+    coverMedia: {
+      id: 'cover-9',
+      type: 'image',
+      url: ilFuocoChef,
+      alt: 'IL FUOCO PIZZA - Pizzaiolo aan het werk',
+    },
+    galleryMedia: [
+      {
+        id: 'gallery-9-1',
+        type: 'image',
+        url: ilFuocoChef,
+        alt: 'IL FUOCO PIZZA - Chef bereidt pizza',
+      },
+      {
+        id: 'gallery-9-2',
+        type: 'video',
+        url: '/videos/portfolio/il-fuoco-promo.mp4',
+        posterUrl: ilFuocoChef,
+        alt: 'IL FUOCO PIZZA - Promo video',
+      },
+      {
+        id: 'gallery-9-3',
+        type: 'image',
+        url: ilFuocoMenu,
+        alt: 'IL FUOCO PIZZA - Menu design',
+      },
+      {
+        id: 'gallery-9-4',
+        type: 'image',
+        url: ilFuocoReviews,
+        alt: 'IL FUOCO PIZZA - Reviews sectie',
+      },
+      {
+        id: 'gallery-9-5',
+        type: 'image',
+        url: ilFuocoEvents,
+        alt: 'IL FUOCO PIZZA - Events pagina',
+      },
+      {
+        id: 'gallery-9-6',
+        type: 'image',
+        url: ilFuocoDeals,
+        alt: 'IL FUOCO PIZZA - Deals en acties',
+      },
+      {
+        id: 'gallery-9-7',
+        type: 'image',
+        url: ilFuocoInstagram,
+        alt: 'IL FUOCO PIZZA - Instagram post',
+      },
+    ],
+    shortResultLine: '+65% online reserveringen',
+    popupContent: {
+      challenge: 'Authentieke Italiaanse pizzeria wilde hun huiselijke sfeer en ambachtelijke aanpak online vertalen.',
+      approach: 'Complete visuele identiteit met professionele fotografie, social media content en digitaal menukaart-systeem.',
+      results: '+65% online reserveringen en sterke merkbekendheid in de regio',
+    },
+    featured: true,
+    createdAt: new Date('2025-01-28'),
+  },
   {
     id: '1',
     clientName: 'La Maison Dorée',
