@@ -1,12 +1,12 @@
 import { useEffect, useCallback, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ArrowRight, MessageCircle } from 'lucide-react';
+import { X, ArrowRight, MessageCircle, Check, Info } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import MediaCarousel from './MediaCarousel';
 import type { PortfolioItem } from '@/types/portfolio';
-import { industryLabels, serviceTagLabels } from '@/types/portfolio';
+import { industryLabels, serviceTagLabels, deliverableLabels } from '@/types/portfolio';
 
 interface CaseStudyModalProps {
   item: PortfolioItem | null;
@@ -80,7 +80,7 @@ const CaseStudyModal = memo(({ item, isOpen, onClose }: CaseStudyModalProps) => 
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-            className="w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl glass-card border border-primary/20"
+            className="w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-2xl glass-card border border-primary/20"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Media Carousel */}
@@ -92,9 +92,9 @@ const CaseStudyModal = memo(({ item, isOpen, onClose }: CaseStudyModalProps) => 
             </div>
 
             {/* Content */}
-            <div className="p-6 md:p-8 space-y-6">
+            <div className="p-6 md:p-8 space-y-8">
               {/* Header */}
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <div className="flex flex-wrap items-center gap-2">
                   <Badge 
                     variant="outline" 
@@ -120,43 +120,85 @@ const CaseStudyModal = memo(({ item, isOpen, onClose }: CaseStudyModalProps) => 
                   {item.clientName}
                 </h2>
                 
-                <p className="text-primary font-semibold text-lg">
+                <p className="text-primary font-semibold text-xl">
                   {item.shortResultLine}
                 </p>
               </div>
 
-              {/* Challenge / Approach / Results */}
-              <div className="grid md:grid-cols-3 gap-4">
-                <div className="glass-card p-4 rounded-xl border-l-2 border-l-primary/50">
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">
-                    {t('portfolio.modal.challenge', 'Uitdaging')}
-                  </p>
-                  <p className="text-foreground text-sm leading-relaxed">
-                    {item.popupContent.challenge}
-                  </p>
-                </div>
-                
-                <div className="glass-card p-4 rounded-xl border-l-2 border-l-primary/50">
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">
-                    {t('portfolio.modal.approach', 'Onze aanpak')}
-                  </p>
-                  <p className="text-foreground text-sm leading-relaxed">
-                    {item.popupContent.approach}
-                  </p>
-                </div>
-                
-                <div className="glass-card p-4 rounded-xl border-l-2 border-l-primary bg-primary/5">
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">
-                    {t('portfolio.modal.results', 'Resultaat')}
-                  </p>
-                  <p className="text-primary font-bold text-base">
-                    {item.popupContent.results}
-                  </p>
+              {/* Challenge Section */}
+              <div className="space-y-3">
+                <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
+                  {t('portfolio.modal.challenge', 'Uitdaging')}
+                </h3>
+                <p className="text-foreground leading-relaxed">
+                  {item.popupContent.challenge}
+                </p>
+              </div>
+
+              {/* Approach Section - Bullet Points */}
+              <div className="space-y-3">
+                <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
+                  {t('portfolio.modal.approach', 'Aanpak')}
+                </h3>
+                <ul className="space-y-2">
+                  {item.popupContent.approachPoints.map((point, index) => (
+                    <li key={index} className="flex items-start gap-3 text-foreground">
+                      <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <Check className="w-3 h-3 text-primary" />
+                      </div>
+                      <span className="leading-relaxed">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Results Section - Bullet Points */}
+              <div className="space-y-3">
+                <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
+                  {t('portfolio.modal.results', 'Resultaten')}
+                </h3>
+                <ul className="space-y-2">
+                  {item.popupContent.resultPoints.map((point, index) => (
+                    <li key={index} className="flex items-start gap-3 text-foreground">
+                      <div className="w-5 h-5 rounded-full bg-primary/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <Check className="w-3 h-3 text-primary" />
+                      </div>
+                      <span className="leading-relaxed font-medium">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                {item.popupContent.resultDisclaimer && (
+                  <div className="flex items-start gap-2 mt-3 p-3 rounded-lg bg-muted/30 border border-border/50">
+                    <Info className="w-4 h-4 text-muted-foreground flex-shrink-0 mt-0.5" />
+                    <p className="text-xs text-muted-foreground italic">
+                      {item.popupContent.resultDisclaimer}
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* Deliverables Section - Chips */}
+              <div className="space-y-3">
+                <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
+                  {t('portfolio.modal.deliverables', 'Wat we geleverd hebben')}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {item.popupContent.deliverables.map((deliverable) => {
+                    const label = deliverableLabels[deliverable]?.[lang] || deliverable;
+                    return (
+                      <Badge 
+                        key={deliverable}
+                        className="bg-primary/10 text-primary border-primary/30 hover:bg-primary/20"
+                      >
+                        {label}
+                      </Badge>
+                    );
+                  })}
                 </div>
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-border/50">
+              <div className="flex flex-col sm:flex-row gap-3 pt-6 border-t border-border/50">
                 <Button
                   size="lg"
                   className="flex-1 bg-primary text-primary-foreground font-semibold hover:bg-primary/90 hover:shadow-[0_8px_30px_hsl(var(--gold)/0.35)] hover:-translate-y-0.5 transition-all"
