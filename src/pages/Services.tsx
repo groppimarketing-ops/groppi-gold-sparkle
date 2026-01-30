@@ -13,7 +13,7 @@ import GoalBasedEntry from '@/components/services/GoalBasedEntry';
 import ServiceDetailModal from '@/components/services/ServiceDetailModal';
 
 const Services = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation(); // rebuilt
   const [filter, setFilter] = useState<'all' | 'monthly' | 'one_time' | 'custom'>('all');
   const [selectedService, setSelectedService] = useState<ServiceData | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
