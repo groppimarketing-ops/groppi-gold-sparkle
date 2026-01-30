@@ -69,6 +69,11 @@
     --glass-opacity: 0.08;
     --glass-border-opacity: 0.15;
 
+    /* Header offset for fixed header */
+    --header-offset-desktop: 160px;
+    --header-offset-tablet: 130px;
+    --header-offset-mobile: 110px;
+
     /* Sidebar */
     --sidebar-background: 0 0% 2%;
     --sidebar-foreground: 45 10% 95%;
@@ -537,6 +542,39 @@
   
   .hover-lift:hover {
     transform: translateY(-4px);
+  }
+
+  /* ===== FIX HERO OVERLAP UNDER FIXED HEADER ===== */
+  
+  main,
+  #root main,
+  .page-content,
+  [data-page-content],
+  .hero,
+  section:first-of-type {
+    padding-top: var(--header-offset-desktop);
+  }
+
+  @media (max-width: 1024px) {
+    main,
+    #root main,
+    .page-content,
+    [data-page-content],
+    .hero,
+    section:first-of-type {
+      padding-top: var(--header-offset-tablet);
+    }
+  }
+
+  @media (max-width: 640px) {
+    main,
+    #root main,
+    .page-content,
+    [data-page-content],
+    .hero,
+    section:first-of-type {
+      padding-top: var(--header-offset-mobile);
+    }
   }
 
   /* ===== HEADER HEIGHT FOR BIG LOGO ===== */
