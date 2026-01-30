@@ -544,92 +544,104 @@
     transform: translateY(-4px);
   }
 
-  /* ===== FIX HERO OVERLAP UNDER FIXED HEADER ===== */
-  
-  main,
-  #root main,
-  .page-content,
-  [data-page-content],
-  .hero,
-  section:first-of-type {
-    padding-top: var(--header-offset-desktop);
-  }
+  /* =====================================================
+     FINAL PATCH - Fix header size + hero overlap
+     Groppi logo ONLY in header/footer
+     ===================================================== */
 
-  @media (max-width: 1024px) {
-    main,
-    #root main,
-    .page-content,
-    [data-page-content],
-    .hero,
-    section:first-of-type {
-      padding-top: var(--header-offset-tablet);
-    }
-  }
-
-  @media (max-width: 640px) {
-    main,
-    #root main,
-    .page-content,
-    [data-page-content],
-    .hero,
-    section:first-of-type {
-      padding-top: var(--header-offset-mobile);
-    }
-  }
-
-  /* ===== HEADER HEIGHT FOR BIG LOGO ===== */
-  
+  /* 1) Set a controlled header height (prevents huge black bar) */
   header,
+  .site-header,
   .navbar,
-  .site-header {
-    min-height: 160px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+  .sticky-header {
+    height: auto !important;
+    min-height: 110px !important;
+    padding-block: 10px !important;
+    display: flex !important;
+    align-items: center !important;
   }
 
-  @media (max-width: 1024px) {
-    header,
-    .navbar,
-    .site-header {
-      min-height: 130px;
-    }
-  }
-
-  @media (max-width: 640px) {
-    header,
-    .navbar,
-    .site-header {
-      min-height: 110px;
-    }
-  }
-
-  /* ===== GROPPI LOGO SIZING ===== */
-  
-  /* Header Groppi logo */
+  /* 2) Groppi logo ONLY in HEADER */
   header img[src*="groppi" i],
-  header img[alt*="groppi" i] {
-    height: 120px !important;
+  header img[alt*="groppi" i],
+  .site-header img[src*="groppi" i],
+  .site-header img[alt*="groppi" i],
+  .navbar img[src*="groppi" i],
+  .navbar img[alt*="groppi" i] {
+    height: 90px !important;
     width: auto !important;
     object-fit: contain !important;
+    max-height: none !important;
   }
 
-  /* Footer Groppi logo */
+  /* 3) Groppi logo ONLY in FOOTER */
   footer img[src*="groppi" i],
   footer img[alt*="groppi" i] {
-    height: 100px !important;
+    height: 80px !important;
     width: auto !important;
     object-fit: contain !important;
+    max-height: none !important;
   }
 
-  @media (max-width: 640px) {
+  /* 4) Stop hero/content from going under the header
+        We use margin-top, NOT padding-top, so it won't stack badly. */
+  main {
+    margin-top: 110px !important;
+  }
+
+  /* 5) Responsive */
+  @media (max-width: 1024px) {
+    header,
+    .site-header,
+    .navbar,
+    .sticky-header {
+      min-height: 96px !important;
+      padding-block: 8px !important;
+    }
+
     header img[src*="groppi" i],
-    header img[alt*="groppi" i] {
-      height: 90px !important;
+    header img[alt*="groppi" i],
+    .site-header img[src*="groppi" i],
+    .site-header img[alt*="groppi" i],
+    .navbar img[src*="groppi" i],
+    .navbar img[alt*="groppi" i] {
+      height: 76px !important;
     }
 
     footer img[src*="groppi" i],
     footer img[alt*="groppi" i] {
-      height: 80px !important;
+      height: 70px !important;
+    }
+
+    main {
+      margin-top: 96px !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    header,
+    .site-header,
+    .navbar,
+    .sticky-header {
+      min-height: 84px !important;
+    }
+
+    header img[src*="groppi" i],
+    header img[alt*="groppi" i],
+    .site-header img[src*="groppi" i],
+    .site-header img[alt*="groppi" i],
+    .navbar img[src*="groppi" i],
+    .navbar img[alt*="groppi" i] {
+      height: 64px !important;
+    }
+
+    footer img[src*="groppi" i],
+    footer img[alt*="groppi" i] {
+      height: 60px !important;
+    }
+
+    main {
+      margin-top: 84px !important;
     }
   }
 }

@@ -51,7 +51,7 @@ const HeroSection = memo(() => {
 
   return (
     <section 
-      className="relative flex items-center justify-center overflow-hidden pt-[160px] md:pt-[130px] sm:pt-[110px]"
+      className="relative flex items-center justify-center overflow-hidden"
       style={{ minHeight: 'min(80vh, 750px)' }}
       dir={isRtl ? 'rtl' : 'ltr'}
       aria-label={t('home.heroNew.badge')}
