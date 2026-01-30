@@ -330,41 +330,31 @@
     "trustedBelgium": {
       "eyebrow": "SOCIAL PROOF",
       "title": "Vertrouwd door groeiende bedrijven in België & Europa",
-      "subtitle": "We tonen niet altijd klantnamen publiek wegens NDA's — maar je ziet wél het type resultaten dat we leveren.",
+      "subtitle": "We zijn actief in 7 landen met focus op meetbare groei en duidelijke resultaten.",
       "europeCredibility": "Actief voor ambitieuze teams in België & Europa.",
-      "disclaimer": "Sommige klantnamen worden niet publiek gedeeld wegens NDA's (Non-Disclosure Agreements).",
-      "industries": {
-        "restaurants": "Restaurants",
+      "disclaimer": "Sommige klantnamen worden niet openbaar gedeeld vanwege NDA's (geheimhoudingsovereenkomsten).",
+      "activeClients": "actieve klanten",
+      "sectorsWeServe": "Sectoren die we bedienen",
+      "countries": {
+        "belgium": "België",
+        "netherlands": "Nederland",
+        "germany": "Duitsland",
+        "france": "Frankrijk",
+        "luxembourg": "Luxemburg",
+        "uk": "Verenigd Koninkrijk",
+        "switzerland": "Zwitserland"
+      },
+      "sectors": {
+        "restaurants": "Restaurants & horeca",
         "retail": "Retail & lokale winkels",
-        "construction": "Bouw & renovatie",
-        "interior": "Interieur & design",
-        "localServices": "Lokale diensten",
+        "interior": "Interieur & renovatie",
         "beauty": "Beauty & wellness",
         "ecommerce": "E-commerce",
+        "realEstate": "Vastgoed",
+        "localServices": "Lokale diensten",
         "sme": "KMO's & starters",
-        "restaurant": "Restaurant"
-      },
-      "locations": {
-        "antwerpen": "Antwerpen",
-        "brussel": "Brussel",
-        "gent": "Gent",
-        "netherlands": "Nederland (Amsterdam)",
-        "germany": "Duitsland (Berlijn)",
-        "france": "Frankrijk (Parijs)",
-        "luxembourg": "Luxemburg",
-        "uk": "Verenigd Koninkrijk (Londen)"
-      },
-      "outcomes": {
-        "outcome1": "Meer reservaties via Google & WhatsApp",
-        "outcome2": "Premium uitstraling + kwalitatieve leads",
-        "outcome3": "Meer bookings zonder marketing chaos",
-        "outcome4": "Hogere kwaliteit leads + schaalbare groei",
-        "outcome5": "Sterkere positionering + betere conversie",
-        "outcome6": "Premium merkpresentatie + gekwalificeerde aanvragen",
-        "outcome7": "High-value klanten + clean lead flow",
-        "outcome8": "Performance strategie + meetbare groei"
-      },
-      "officialClients": "Officiële klanten (met toestemming)"
+        "medical": "Medisch / klinieken"
+      }
     },
     "portfolio": {
       "subtitle": "Ons werk",
