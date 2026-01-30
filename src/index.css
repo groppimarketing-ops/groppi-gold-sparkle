@@ -539,60 +539,62 @@
     transform: translateY(-4px);
   }
 
-  /* ===== GROPPI LOGO SIZING ===== */
+  /* ===== GROPPI LOGO SIZING - BIG SIZE ===== */
   
   /* Header Groppi logo */
-  header img[src*="groppi-logo" i],
+  header img[src*="groppi" i],
   header img[alt*="groppi" i],
-  .navbar img[src*="groppi-logo" i],
+  .navbar img[src*="groppi" i],
   .navbar img[alt*="groppi" i],
-  .site-header img[src*="groppi-logo" i],
+  .site-header img[src*="groppi" i],
   .site-header img[alt*="groppi" i] {
-    height: 80px !important;
+    height: 140px !important;
     width: auto !important;
     object-fit: contain !important;
     max-height: none !important;
+    flex-shrink: 0 !important;
   }
 
   /* Footer Groppi logo */
-  footer img[src*="groppi-logo" i],
+  footer img[src*="groppi" i],
   footer img[alt*="groppi" i] {
-    height: 70px !important;
+    height: 120px !important;
     width: auto !important;
     object-fit: contain !important;
     max-height: none !important;
+    flex-shrink: 0 !important;
   }
 
   /* Responsive logo sizing */
   @media (max-width: 1024px) {
-    header img[src*="groppi-logo" i],
+    header img[src*="groppi" i],
     header img[alt*="groppi" i],
-    .navbar img[src*="groppi-logo" i],
+    .navbar img[src*="groppi" i],
     .navbar img[alt*="groppi" i],
-    .site-header img[src*="groppi-logo" i],
+    .site-header img[src*="groppi" i],
     .site-header img[alt*="groppi" i] {
-      height: 64px !important;
+      height: 110px !important;
     }
 
-    footer img[src*="groppi-logo" i],
+    footer img[src*="groppi" i],
     footer img[alt*="groppi" i] {
-      height: 56px !important;
+      height: 100px !important;
     }
   }
 
   @media (max-width: 640px) {
-    header img[src*="groppi-logo" i],
+    header img[src*="groppi" i],
     header img[alt*="groppi" i],
-    .navbar img[src*="groppi-logo" i],
+    .navbar img[src*="groppi" i],
     .navbar img[alt*="groppi" i],
-    .site-header img[src*="groppi-logo" i],
+    .site-header img[src*="groppi" i],
     .site-header img[alt*="groppi" i] {
-      height: 52px !important;
+      height: 90px !important;
     }
 
-    footer img[src*="groppi-logo" i],
+    footer img[src*="groppi" i],
     footer img[alt*="groppi" i] {
-      height: 44px !important;
+      height: 80px !important;
     }
   }
 }
