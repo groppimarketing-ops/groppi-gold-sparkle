@@ -545,11 +545,11 @@
   }
 
   /* =====================================================
-     FINAL PATCH - Fix header size + hero overlap
-     Groppi logo ONLY in header/footer
+     Header layout + Hero overlap fix
+     Logo sizing is handled in components directly
      ===================================================== */
 
-  /* 1) Set a controlled header height (prevents huge black bar) */
+  /* Header layout - controlled height */
   header,
   .site-header,
   .navbar,
@@ -561,35 +561,12 @@
     align-items: center !important;
   }
 
-  /* 2) Groppi logo ONLY in HEADER */
-  header img[src*="groppi" i],
-  header img[alt*="groppi" i],
-  .site-header img[src*="groppi" i],
-  .site-header img[alt*="groppi" i],
-  .navbar img[src*="groppi" i],
-  .navbar img[alt*="groppi" i] {
-    height: 90px !important;
-    width: auto !important;
-    object-fit: contain !important;
-    max-height: none !important;
-  }
-
-  /* 3) Groppi logo ONLY in FOOTER */
-  footer img[src*="groppi" i],
-  footer img[alt*="groppi" i] {
-    height: 80px !important;
-    width: auto !important;
-    object-fit: contain !important;
-    max-height: none !important;
-  }
-
-  /* 4) Stop hero/content from going under the header
-        We use margin-top, NOT padding-top, so it won't stack badly. */
+  /* Content offset for fixed header */
   main {
     margin-top: 110px !important;
   }
 
-  /* 5) Responsive */
+  /* Responsive header + content offset */
   @media (max-width: 1024px) {
     header,
     .site-header,
@@ -597,20 +574,6 @@
     .sticky-header {
       min-height: 96px !important;
       padding-block: 8px !important;
-    }
-
-    header img[src*="groppi" i],
-    header img[alt*="groppi" i],
-    .site-header img[src*="groppi" i],
-    .site-header img[alt*="groppi" i],
-    .navbar img[src*="groppi" i],
-    .navbar img[alt*="groppi" i] {
-      height: 76px !important;
-    }
-
-    footer img[src*="groppi" i],
-    footer img[alt*="groppi" i] {
-      height: 70px !important;
     }
 
     main {
@@ -624,20 +587,6 @@
     .navbar,
     .sticky-header {
       min-height: 84px !important;
-    }
-
-    header img[src*="groppi" i],
-    header img[alt*="groppi" i],
-    .site-header img[src*="groppi" i],
-    .site-header img[alt*="groppi" i],
-    .navbar img[src*="groppi" i],
-    .navbar img[alt*="groppi" i] {
-      height: 64px !important;
-    }
-
-    footer img[src*="groppi" i],
-    footer img[alt*="groppi" i] {
-      height: 60px !important;
     }
 
     main {

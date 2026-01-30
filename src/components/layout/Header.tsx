@@ -61,7 +61,7 @@ const Header = () => {
             <motion.img
               src={groppiLogo}
               alt="GROPPI Digital Marketing Bureau"
-              className="h-14 md:h-16 w-auto object-contain"
+              className="h-[64px] md:h-[76px] lg:h-[90px] w-auto object-contain"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />

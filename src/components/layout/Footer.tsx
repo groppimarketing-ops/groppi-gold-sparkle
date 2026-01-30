@@ -51,7 +51,7 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
               <motion.img
                 src={groppiLogo}
                 alt="GROPPI Digital Marketing Bureau"
-                className="h-20 w-auto object-contain"
+                className="h-[60px] md:h-[70px] lg:h-[80px] w-auto object-contain"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               />
