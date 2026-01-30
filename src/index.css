@@ -603,56 +603,27 @@
     }
   }
 
-  /* ===== GROPPI LOGO SIZING - BIG SIZE ===== */
+  /* ===== GROPPI LOGO SIZING ===== */
   
   /* Header Groppi logo */
   header img[src*="groppi" i],
-  header img[alt*="groppi" i],
-  .navbar img[src*="groppi" i],
-  .navbar img[alt*="groppi" i],
-  .site-header img[src*="groppi" i],
-  .site-header img[alt*="groppi" i] {
-    height: 140px !important;
+  header img[alt*="groppi" i] {
+    height: 120px !important;
     width: auto !important;
     object-fit: contain !important;
-    max-height: none !important;
-    flex-shrink: 0 !important;
   }
 
   /* Footer Groppi logo */
   footer img[src*="groppi" i],
   footer img[alt*="groppi" i] {
-    height: 120px !important;
+    height: 100px !important;
     width: auto !important;
     object-fit: contain !important;
-    max-height: none !important;
-    flex-shrink: 0 !important;
-  }
-
-  /* Responsive logo sizing */
-  @media (max-width: 1024px) {
-    header img[src*="groppi" i],
-    header img[alt*="groppi" i],
-    .navbar img[src*="groppi" i],
-    .navbar img[alt*="groppi" i],
-    .site-header img[src*="groppi" i],
-    .site-header img[alt*="groppi" i] {
-      height: 110px !important;
-    }
-
-    footer img[src*="groppi" i],
-    footer img[alt*="groppi" i] {
-      height: 100px !important;
-    }
   }
 
   @media (max-width: 640px) {
     header img[src*="groppi" i],
-    header img[alt*="groppi" i],
-    .navbar img[src*="groppi" i],
-    .navbar img[alt*="groppi" i],
-    .site-header img[src*="groppi" i],
-    .site-header img[alt*="groppi" i] {
+    header img[alt*="groppi" i] {
       height: 90px !important;
     }
 
