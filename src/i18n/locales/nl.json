@@ -329,8 +329,9 @@
     },
     "trustedBelgium": {
       "eyebrow": "SOCIAL PROOF",
-      "title": "Vertrouwd door groeiende bedrijven in België",
+      "title": "Vertrouwd door groeiende bedrijven in België & Europa",
       "subtitle": "We tonen niet altijd klantnamen publiek wegens NDA's — maar je ziet wél het type resultaten dat we leveren.",
+      "europeCredibility": "Actief voor ambitieuze teams in België & Europa.",
       "disclaimer": "Sommige klantnamen worden niet publiek gedeeld wegens NDA's (Non-Disclosure Agreements).",
       "industries": {
         "restaurants": "Restaurants",
@@ -345,19 +346,23 @@
       },
       "locations": {
         "antwerpen": "Antwerpen",
-        "mechelen": "Mechelen",
         "brussel": "Brussel",
-        "vlaanderen": "Vlaanderen",
         "gent": "Gent",
-        "belgie": "België"
+        "netherlands": "Nederland (Amsterdam)",
+        "germany": "Duitsland (Berlijn)",
+        "france": "Frankrijk (Parijs)",
+        "luxembourg": "Luxemburg",
+        "uk": "Verenigd Koninkrijk (Londen)"
       },
       "outcomes": {
         "outcome1": "Meer reservaties via Google & WhatsApp",
-        "outcome2": "Sterkere merklook + betere conversie",
-        "outcome3": "Premium uitstraling + kwalitatieve leads",
-        "outcome4": "Meer zichtbaarheid + stabiele aanvragen",
-        "outcome5": "Meer bookings zonder marketing chaos",
-        "outcome6": "Betere ROAS door structuur en testing"
+        "outcome2": "Premium uitstraling + kwalitatieve leads",
+        "outcome3": "Meer bookings zonder marketing chaos",
+        "outcome4": "Hogere kwaliteit leads + schaalbare groei",
+        "outcome5": "Sterkere positionering + betere conversie",
+        "outcome6": "Premium merkpresentatie + gekwalificeerde aanvragen",
+        "outcome7": "High-value klanten + clean lead flow",
+        "outcome8": "Performance strategie + meetbare groei"
       },
       "officialClients": "Officiële klanten (met toestemming)"
     },

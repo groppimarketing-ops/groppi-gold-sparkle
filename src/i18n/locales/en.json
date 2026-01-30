@@ -329,8 +329,9 @@
     },
     "trustedBelgium": {
       "eyebrow": "SOCIAL PROOF",
-      "title": "Trusted by growing businesses in Belgium",
+      "title": "Trusted by growing businesses in Belgium & Europe",
       "subtitle": "We don't always display client names publicly due to NDAs — but you can see the type of results we deliver.",
+      "europeCredibility": "Serving ambitious teams across Belgium & Europe.",
       "disclaimer": "Some client names are not shared publicly due to NDAs (Non-Disclosure Agreements).",
       "industries": {
         "restaurants": "Restaurants",
@@ -345,19 +346,23 @@
       },
       "locations": {
         "antwerpen": "Antwerp",
-        "mechelen": "Mechelen",
         "brussel": "Brussels",
-        "vlaanderen": "Flanders",
         "gent": "Ghent",
-        "belgie": "Belgium"
+        "netherlands": "Netherlands (Amsterdam)",
+        "germany": "Germany (Berlin)",
+        "france": "France (Paris)",
+        "luxembourg": "Luxembourg",
+        "uk": "United Kingdom (London)"
       },
       "outcomes": {
         "outcome1": "More reservations via Google & WhatsApp",
-        "outcome2": "Stronger brand look + better conversion",
-        "outcome3": "Premium appearance + quality leads",
-        "outcome4": "More visibility + stable inquiries",
-        "outcome5": "More bookings without marketing chaos",
-        "outcome6": "Better ROAS through structure and testing"
+        "outcome2": "Premium appearance + quality leads",
+        "outcome3": "More bookings without marketing chaos",
+        "outcome4": "Higher-quality leads + scalable growth",
+        "outcome5": "Stronger positioning + better conversion rate",
+        "outcome6": "Premium brand presence + qualified inquiries",
+        "outcome7": "High-value clients + clean lead flow",
+        "outcome8": "Performance strategy + measurable growth"
       },
       "officialClients": "Official clients (with permission)"
     },

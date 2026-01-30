@@ -27,13 +27,18 @@ const industryBadges = [
 const HomeTrustedBelgium = memo(() => {
   const { t } = useTranslation();
 
+  // 3 Belgian cities + 5 European countries = 8 cards total
   const proofCards = [
+    // Belgian cities (local proof)
     { locationKey: 'antwerpen', industryKey: 'restaurant', outcomeKey: 'outcome1' },
-    { locationKey: 'mechelen', industryKey: 'retail', outcomeKey: 'outcome2' },
-    { locationKey: 'brussel', industryKey: 'interior', outcomeKey: 'outcome3' },
-    { locationKey: 'vlaanderen', industryKey: 'localServices', outcomeKey: 'outcome4' },
-    { locationKey: 'gent', industryKey: 'beauty', outcomeKey: 'outcome5' },
-    { locationKey: 'belgie', industryKey: 'ecommerce', outcomeKey: 'outcome6' },
+    { locationKey: 'brussel', industryKey: 'interior', outcomeKey: 'outcome2' },
+    { locationKey: 'gent', industryKey: 'beauty', outcomeKey: 'outcome3' },
+    // European countries (international proof)
+    { locationKey: 'netherlands', industryKey: 'ecommerce', outcomeKey: 'outcome4' },
+    { locationKey: 'germany', industryKey: 'sme', outcomeKey: 'outcome5' },
+    { locationKey: 'france', industryKey: 'retail', outcomeKey: 'outcome6' },
+    { locationKey: 'luxembourg', industryKey: 'localServices', outcomeKey: 'outcome7' },
+    { locationKey: 'uk', industryKey: 'ecommerce', outcomeKey: 'outcome8' },
   ];
 
   // TODO: In future, fetch admin-uploaded logos from Supabase storage
@@ -82,6 +87,11 @@ const HomeTrustedBelgium = memo(() => {
             style={{ unicodeBidi: 'isolate' }}
           >
             {t('home.trustedBelgium.subtitle')}
+          </p>
+          
+          {/* Europe-wide credibility line */}
+          <p className="text-primary/80 text-sm font-medium mt-3 tracking-wide">
+            {t('home.trustedBelgium.europeCredibility')}
           </p>
         </motion.div>
 
