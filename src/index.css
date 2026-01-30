@@ -539,6 +539,32 @@
     transform: translateY(-4px);
   }
 
+  /* ===== HEADER HEIGHT FOR BIG LOGO ===== */
+  
+  header,
+  .navbar,
+  .site-header {
+    min-height: 160px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  @media (max-width: 1024px) {
+    header,
+    .navbar,
+    .site-header {
+      min-height: 130px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    header,
+    .navbar,
+    .site-header {
+      min-height: 110px;
+    }
+  }
+
   /* ===== GROPPI LOGO SIZING - BIG SIZE ===== */
   
   /* Header Groppi logo */
