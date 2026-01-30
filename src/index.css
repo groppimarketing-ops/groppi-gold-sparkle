@@ -538,4 +538,61 @@
   .hover-lift:hover {
     transform: translateY(-4px);
   }
+
+  /* ===== GROPPI LOGO SIZING ===== */
+  
+  /* Header Groppi logo */
+  header img[src*="groppi-logo" i],
+  header img[alt*="groppi" i],
+  .navbar img[src*="groppi-logo" i],
+  .navbar img[alt*="groppi" i],
+  .site-header img[src*="groppi-logo" i],
+  .site-header img[alt*="groppi" i] {
+    height: 80px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    max-height: none !important;
+  }
+
+  /* Footer Groppi logo */
+  footer img[src*="groppi-logo" i],
+  footer img[alt*="groppi" i] {
+    height: 70px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    max-height: none !important;
+  }
+
+  /* Responsive logo sizing */
+  @media (max-width: 1024px) {
+    header img[src*="groppi-logo" i],
+    header img[alt*="groppi" i],
+    .navbar img[src*="groppi-logo" i],
+    .navbar img[alt*="groppi" i],
+    .site-header img[src*="groppi-logo" i],
+    .site-header img[alt*="groppi" i] {
+      height: 64px !important;
+    }
+
+    footer img[src*="groppi-logo" i],
+    footer img[alt*="groppi" i] {
+      height: 56px !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    header img[src*="groppi-logo" i],
+    header img[alt*="groppi" i],
+    .navbar img[src*="groppi-logo" i],
+    .navbar img[alt*="groppi" i],
+    .site-header img[src*="groppi-logo" i],
+    .site-header img[alt*="groppi" i] {
+      height: 52px !important;
+    }
+
+    footer img[src*="groppi-logo" i],
+    footer img[alt*="groppi" i] {
+      height: 44px !important;
+    }
+  }
 }
