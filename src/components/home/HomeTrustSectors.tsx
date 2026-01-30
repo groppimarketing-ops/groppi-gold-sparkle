@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import GoldAnimatedBackground from '@/components/effects/GoldAnimatedBackground';
 
 const sectorIcons = {
   restaurant: UtensilsCrossed,
@@ -63,9 +64,12 @@ const HomeTrustSectors = memo(() => {
 
   return (
     <section className="section-spacing relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/[0.02] to-background" />
-      <div className="absolute inset-0 neural-bg opacity-20" />
+      {/* Premium Gold Animated Background */}
+      <GoldAnimatedBackground intensity="medium" showVignette={true} />
+      
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-[1]" />
+      <div className="absolute inset-0 neural-bg opacity-20 z-[1]" />
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Top Section - Headline & Stats */}
@@ -124,7 +128,11 @@ const HomeTrustSectors = memo(() => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 + index * 0.1 }}
-              className="group glass-card p-6 text-center hover:border-primary/50 hover:shadow-[0_0_30px_hsl(var(--gold)/0.15)] transition-all duration-500"
+              whileHover={{ 
+                scale: 1.02,
+                transition: { duration: 0.3 }
+              }}
+              className="group glass-card p-6 text-center hover:border-primary/50 hover:shadow-[0_0_40px_hsl(var(--gold)/0.2),0_0_80px_hsl(var(--gold)/0.08)] transition-all duration-500"
             >
               <p className="text-2xl md:text-3xl font-bold text-primary mb-2 gold-text-glow">
                 {stat.value}
@@ -218,10 +226,14 @@ const HomeTrustSectors = memo(() => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 + index * 0.05 }}
-                  className="group glass-card p-5 hover:border-primary/50 hover:shadow-[0_0_30px_hsl(var(--gold)/0.15)] transition-all duration-500 hover:-translate-y-1 cursor-pointer"
+                  whileHover={{ 
+                    y: -4,
+                    transition: { duration: 0.3 }
+                  }}
+                  className="group glass-card p-5 hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18),0_0_70px_hsl(var(--gold)/0.06)] transition-all duration-500 cursor-pointer"
                 >
                   {/* Icon */}
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center mb-3 group-hover:border-primary/50 group-hover:shadow-[0_0_15px_hsl(var(--gold)/0.2)] transition-all duration-300">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center mb-3 group-hover:border-primary/50 group-hover:shadow-[0_0_20px_hsl(var(--gold)/0.25)] transition-all duration-300">
                     <Icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
                   </div>
 
