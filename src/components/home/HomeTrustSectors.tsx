@@ -14,7 +14,6 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import GoldAnimatedBackground from '@/components/effects/GoldAnimatedBackground';
 
 const sectorIcons = {
   restaurant: UtensilsCrossed,
@@ -64,12 +63,7 @@ const HomeTrustSectors = memo(() => {
 
   return (
     <section className="section-spacing relative overflow-hidden">
-      {/* Premium Gold Animated Background */}
-      <GoldAnimatedBackground intensity="medium" showVignette={true} />
-      
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-[1]" />
-      <div className="absolute inset-0 neural-bg opacity-20 z-[1]" />
+      {/* Background is now provided by HomeAfterHeroWrapper - no duplicate needed */}
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Top Section - Headline & Stats */}

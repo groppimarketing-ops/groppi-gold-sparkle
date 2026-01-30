@@ -13,6 +13,7 @@ import HomeCaseStudies from '@/components/home/HomeCaseStudies';
 import HomeClientLogoMarquee from '@/components/home/HomeClientLogoMarquee';
 import HomeTrustSection from '@/components/home/HomeTrustSection';
 import HomeFinalCTA from '@/components/home/HomeFinalCTA';
+import HomeAfterHeroWrapper from '@/components/home/HomeAfterHeroWrapper';
 import DynamicSection from '@/components/sections/DynamicSection';
 import usePageContent from '@/hooks/usePageContent';
 
@@ -53,41 +54,44 @@ const Index = () => {
   // Render default static content when no dynamic sections exist
   const renderStaticContent = () => (
     <>
-      {/* Hero with Video Background */}
+      {/* Hero with Video Background - keeps its own background */}
       <HeroSection />
 
-      {/* Post-Hero Trust Line */}
-      <PostHeroTrust />
+      {/* All sections after Hero wrapped with continuous gold animated background */}
+      <HomeAfterHeroWrapper>
+        {/* Post-Hero Trust Line */}
+        <PostHeroTrust />
 
-      {/* Trusted across Belgium - Social proof (directly after Hero) */}
-      <HomeTrustedBelgium />
+        {/* Trusted across Belgium - Social proof (directly after Hero) */}
+        <HomeTrustedBelgium />
 
-      {/* Trust Sectors - Premium credibility section */}
-      <HomeTrustSectors />
+        {/* Trust Sectors - Premium credibility section */}
+        <HomeTrustSectors />
 
-      {/* Quick Choice - For non-expert visitors */}
-      <HomeQuickChoice onGoalSelect={handleGoalSelect} />
+        {/* Quick Choice - For non-expert visitors */}
+        <HomeQuickChoice onGoalSelect={handleGoalSelect} />
 
-      {/* Services Grid - Main section */}
-      <HomeServicesGrid 
-        ref={servicesGridRef}
-        highlightedServices={highlightedServices}
-      />
+        {/* Services Grid - Main section */}
+        <HomeServicesGrid 
+          ref={servicesGridRef}
+          highlightedServices={highlightedServices}
+        />
 
-      {/* Portfolio Highlights */}
-      <HomePortfolioGrid />
+        {/* Portfolio Highlights */}
+        <HomePortfolioGrid />
 
-      {/* Case Studies - Proof-based */}
-      <HomeCaseStudies />
+        {/* Case Studies - Proof-based */}
+        <HomeCaseStudies />
 
-      {/* Client Logo Marquee + Testimonials - NEW Trust proof section */}
-      <HomeClientLogoMarquee />
+        {/* Client Logo Marquee + Testimonials - NEW Trust proof section */}
+        <HomeClientLogoMarquee />
 
-      {/* Trust Section - 10+ years credibility */}
-      <HomeTrustSection />
+        {/* Trust Section - 10+ years credibility */}
+        <HomeTrustSection />
 
-      {/* Final CTA */}
-      <HomeFinalCTA />
+        {/* Final CTA */}
+        <HomeFinalCTA />
+      </HomeAfterHeroWrapper>
     </>
   );
 

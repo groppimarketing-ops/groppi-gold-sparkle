@@ -12,7 +12,6 @@ import {
   Rocket,
   MapPin
 } from 'lucide-react';
-import GoldAnimatedBackground from '@/components/effects/GoldAnimatedBackground';
 
 const industryBadges = [
   { key: 'restaurants', icon: UtensilsCrossed },
@@ -46,12 +45,7 @@ const HomeTrustedBelgium = memo(() => {
       id="trusted-belgium" 
       className="section-spacing relative overflow-hidden scroll-mt-20"
     >
-      {/* Premium Gold Animated Background */}
-      <GoldAnimatedBackground intensity="medium" showVignette={true} />
-      
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-[1]" />
-      <div className="absolute inset-0 neural-bg opacity-10 z-[1]" />
+      {/* Background is now provided by HomeAfterHeroWrapper - no duplicate needed */}
       
       {/* Top gold separator */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent z-10" />
