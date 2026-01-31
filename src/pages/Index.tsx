@@ -3,10 +3,9 @@ import { useRef, useState } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/home/HeroSection';
-import HomeServiceMap from '@/components/home/HomeServiceMap';
 import PostHeroTrust from '@/components/home/PostHeroTrust';
-import HomeTrustSectors from '@/components/home/HomeTrustSectors';
 import HomeTrustedBelgium from '@/components/home/HomeTrustedBelgium';
+import HomeTrustSectors from '@/components/home/HomeTrustSectors';
 import HomeQuickChoice from '@/components/home/HomeQuickChoice';
 import HomeServicesGrid from '@/components/home/HomeServicesGrid';
 import HomePortfolioGrid from '@/components/home/HomePortfolioGrid';
@@ -53,42 +52,40 @@ const Index = () => {
     sections.some(s => validSectionTypes.includes(s.section_type));
 
   // Render default static content when no dynamic sections exist
+  // HOMEPAGE FLOW: Hero → Social Proof → Portfolio → Case Studies → Trust → CTA
   const renderStaticContent = () => (
     <>
-      {/* Hero with Video Background - keeps its own background */}
+      {/* Hero with Video Background */}
       <HeroSection />
-
-      {/* Service Map - Immediately after Hero for clarity */}
-      <HomeServiceMap />
 
       {/* All sections after Hero wrapped with continuous gold animated background */}
       <HomeAfterHeroWrapper>
-        {/* Post-Hero Trust Line */}
+        {/* Post-Hero Trust Line - Immediate positioning */}
         <PostHeroTrust />
 
-        {/* Trusted across Belgium - Social proof (directly after Hero) */}
+        {/* Social Proof - Trusted across Belgium & Europe (RIGHT AFTER HERO) */}
         <HomeTrustedBelgium />
 
         {/* Trust Sectors - Premium credibility section */}
         <HomeTrustSectors />
 
-        {/* Quick Choice - For non-expert visitors */}
+        {/* Portfolio Highlights - 8 clickable cards */}
+        <HomePortfolioGrid />
+
+        {/* Case Studies - Proof-based (3 cards) */}
+        <HomeCaseStudies />
+
+        {/* Client Logo Marquee + Testimonials */}
+        <HomeClientLogoMarquee />
+
+        {/* Quick Choice - For non-expert visitors (optional - links to services) */}
         <HomeQuickChoice onGoalSelect={handleGoalSelect} />
 
-        {/* Services Grid - Main section */}
+        {/* Services Grid - Minimal on homepage, link to /services */}
         <HomeServicesGrid 
           ref={servicesGridRef}
           highlightedServices={highlightedServices}
         />
-
-        {/* Portfolio Highlights */}
-        <HomePortfolioGrid />
-
-        {/* Case Studies - Proof-based */}
-        <HomeCaseStudies />
-
-        {/* Client Logo Marquee + Testimonials - NEW Trust proof section */}
-        <HomeClientLogoMarquee />
 
         {/* Trust Section - 10+ years credibility */}
         <HomeTrustSection />

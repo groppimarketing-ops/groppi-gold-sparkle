@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Star, RefreshCw, Brain, Rocket, Filter, FileText, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import PageLayout from '@/components/layout/PageLayout';
 import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
@@ -11,6 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import ServiceCard, { ServiceData } from '@/components/services/ServiceCard';
 import GoalBasedEntry from '@/components/services/GoalBasedEntry';
 import ServiceDetailModal from '@/components/services/ServiceDetailModal';
+import HomeServiceMap from '@/components/home/HomeServiceMap';
 
 const Services = () => {
   const { t, i18n } = useTranslation(); // rebuilt
@@ -285,6 +286,9 @@ const Services = () => {
           />
         </div>
       </section>
+
+      {/* Service Map - What We Do (moved from homepage) */}
+      <HomeServiceMap />
 
       {/* Goal-Based Entry Section */}
       <GoalBasedEntry onGoalSelect={handleGoalSelect} />
