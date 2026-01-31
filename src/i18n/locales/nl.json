@@ -1605,5 +1605,268 @@
         "result": "50+ video's per maand"
       }
     }
+  },
+  "servicePage": {
+    "cta": {
+      "requestQuote": "Vraag een offerte aan",
+      "whatsapp": "Chat via WhatsApp"
+    },
+    "trustNote": "Transparante prijzen. Geen verborgen kosten.",
+    "videoPlaceholder": "Video binnenkort beschikbaar",
+    "whatsapp": {
+      "template": "Hallo! Ik wil graag meer info over {{service}}. Kan je me helpen?"
+    },
+    "deliverables": {
+      "label": "Wat je krijgt",
+      "title": "Wat zit er in?"
+    },
+    "process": {
+      "label": "Hoe het werkt",
+      "title": "Ons proces"
+    },
+    "calculator": {
+      "label": "Prijscalculator",
+      "title": "Bereken je prijs in 60 sec",
+      "businessTypeLabel": "Type onderneming",
+      "goalLabel": "Jouw doel",
+      "packageLabel": "Pakket",
+      "adBudgetLabel": "Advertentiebudget",
+      "addonsLabel": "Extra opties",
+      "selectPlaceholder": "Selecteer...",
+      "month": "maand",
+      "monthlyFee": "Geschatte maandelijkse service fee",
+      "setupFee": "Setup fee",
+      "oneTime": "eenmalig",
+      "firstMonthTotal": "Totaal eerste maand",
+      "disclaimer": "Indicatieve prijs. Definitieve offerte na korte intake.",
+      "sendCalculation": "Stuur mij deze berekening",
+      "sendWhatsapp": "Stuur via WhatsApp",
+      "noAddons": "Geen extra opties",
+      "businessTypes": {
+        "restaurant": "Restaurant / horeca",
+        "retail": "Retail & lokale shops",
+        "construction": "Bouw & renovatie",
+        "beauty": "Beauty & wellness",
+        "ecommerce": "E-commerce",
+        "other": "Andere"
+      },
+      "goals": {
+        "visibility": "Meer zichtbaarheid",
+        "leads": "Meer leads",
+        "sales": "Meer verkoop"
+      },
+      "packages": {
+        "starter": "Starter",
+        "growth": "Growth",
+        "pro": "Pro"
+      },
+      "addons": {
+        "extraContent4": "Extra content (4 posts/maand)",
+        "extraContent12": "Extra content (12 posts/maand)",
+        "extraVideo2": "Extra video ads (2/maand)",
+        "extraVideo6": "Extra video ads (6/maand)",
+        "extraLandingPage": "Extra landing page",
+        "extraTracking": "Extra tracking setup"
+      },
+      "whatsappTemplate": "Hallo! Mijn berekening voor {{service}}:\n\n• Bedrijfstype: {{businessType}}\n• Doel: {{goal}}\n• Pakket: {{package}}\n• Advertentiebudget: {{adBudget}}\n• Extra opties: {{addons}}\n\n💰 Geschatte prijs: {{monthlyRange}} / maand\n📋 Setup: {{setup}}\n\nKan je me een offerte op maat sturen?"
+    },
+    "faq": {
+      "label": "Veelgestelde vragen",
+      "title": "FAQ",
+      "q1": "Is dit een contract per maand?",
+      "a1": "Ja, je betaalt maandelijks. Geen jaarcontract verplicht.",
+      "q2": "Kan ik stoppen wanneer ik wil?",
+      "a2": "Ja, met 30 dagen opzegtermijn. Geen verborgen clausules.",
+      "q3": "Werken jullie met vaste prijzen?",
+      "a3": "We werken met prijsranges. Na de intake krijg je een exacte offerte.",
+      "q4": "Wat als ik nog geen content heb?",
+      "a4": "Geen probleem. We produceren content voor je of begeleiden je team.",
+      "q5": "Hoe snel zie ik resultaat?",
+      "a5": "Eerste resultaten binnen 2-4 weken. Significante groei na 2-3 maanden.",
+      "q6": "Wat als ik een klein budget heb?",
+      "a6": "We hebben Starter-pakketten voor kleine budgetten. Vraag advies aan."
+    },
+    "finalCTA": {
+      "title": "Klaar om te groeien met duidelijkheid?",
+      "subtitle": "Geen loze beloftes. Alleen concrete stappen naar meer klanten.",
+      "primaryCTA": "Vraag een offerte op maat",
+      "secondaryCTA": "Chat via WhatsApp"
+    },
+    "socialMedia": {
+      "title": "Social Media Management",
+      "subtitle": "Consistente content die je merk laat groeien op elk platform.",
+      "benefits": {
+        "1": "Professionele content op al je kanalen",
+        "2": "Meer engagement en bereik",
+        "3": "Tijdsbesparing voor jouw team"
+      },
+      "deliverables": {
+        "1": { "title": "Strategie & planning", "desc": "Content kalender op maat van jouw doelen." },
+        "2": { "title": "Content creatie", "desc": "Posts, stories en reels die aanslaan." },
+        "3": { "title": "Community management", "desc": "Actief reageren op comments en DM's." },
+        "4": { "title": "Advertentiebeheer", "desc": "Gerichte ads voor maximaal bereik." },
+        "5": { "title": "Maandelijkse rapportage", "desc": "Duidelijke cijfers en inzichten." },
+        "6": { "title": "Dedicated support", "desc": "Altijd bereikbaar voor vragen." }
+      },
+      "process": {
+        "1": { "title": "Analyse", "desc": "We analyseren je huidige aanwezigheid en concurrentie." },
+        "2": { "title": "Uitvoering", "desc": "We creëren en publiceren content volgens planning." },
+        "3": { "title": "Groei & optimalisatie", "desc": "Continue verbetering op basis van data." }
+      }
+    },
+    "adsManagement": {
+      "title": "Advertising Management",
+      "subtitle": "Gerichte advertenties die leads en verkoop opleveren.",
+      "benefits": {
+        "1": "Hogere ROI op advertentie-uitgaven",
+        "2": "Gerichte campagnes voor jouw doelgroep",
+        "3": "Transparante rapportage elke maand"
+      },
+      "deliverables": {
+        "1": { "title": "Campagne strategie", "desc": "Doelgerichte aanpak per platform." },
+        "2": { "title": "Advertentie creatie", "desc": "Visuals en copy die converteren." },
+        "3": { "title": "A/B testing", "desc": "Continu testen voor betere resultaten." },
+        "4": { "title": "Budget optimalisatie", "desc": "Maximaal resultaat uit je budget." },
+        "5": { "title": "Conversie tracking", "desc": "Volledige inzicht in je ROI." },
+        "6": { "title": "Wekelijkse updates", "desc": "Je weet altijd wat er gebeurt." }
+      },
+      "process": {
+        "1": { "title": "Analyse", "desc": "We onderzoeken je markt en concurrentie." },
+        "2": { "title": "Uitvoering", "desc": "We lanceren en beheren je campagnes." },
+        "3": { "title": "Groei & optimalisatie", "desc": "Continue verbetering voor meer conversies." }
+      }
+    },
+    "contentProduction": {
+      "title": "Content Productie",
+      "subtitle": "Video's en visuals die je merk tot leven brengen.",
+      "benefits": {
+        "1": "Professionele video's en foto's",
+        "2": "Content die past bij elk platform",
+        "3": "Snelle levering en revisies"
+      },
+      "deliverables": {
+        "1": { "title": "Concept & planning", "desc": "Creatieve ideeën afgestemd op je merk." },
+        "2": { "title": "Video productie", "desc": "Van scripts tot eindmontage." },
+        "3": { "title": "Fotografie", "desc": "Product- en lifestyle foto's." },
+        "4": { "title": "Editing & postproductie", "desc": "Professionele afwerking." },
+        "5": { "title": "Platform optimalisatie", "desc": "Formats voor elk kanaal." },
+        "6": { "title": "Content bibliotheek", "desc": "Alle assets overzichtelijk opgeslagen." }
+      },
+      "process": {
+        "1": { "title": "Analyse", "desc": "We bepalen wat jouw merk nodig heeft." },
+        "2": { "title": "Uitvoering", "desc": "Productie op locatie of in studio." },
+        "3": { "title": "Groei & optimalisatie", "desc": "Feedback verwerken en verbeteren." }
+      }
+    },
+    "seo": {
+      "title": "SEO",
+      "subtitle": "Hoger in Google voor meer organisch verkeer.",
+      "benefits": {
+        "1": "Betere vindbaarheid in zoekmachines",
+        "2": "Meer kwalitatief verkeer naar je site",
+        "3": "Langetermijn groei zonder advertentiekosten"
+      },
+      "deliverables": {
+        "1": { "title": "Technische audit", "desc": "We checken snelheid, structuur en indexatie." },
+        "2": { "title": "Keyword research", "desc": "De juiste zoekwoorden voor jouw markt." },
+        "3": { "title": "On-page optimalisatie", "desc": "Titels, meta's en content verbeteren." },
+        "4": { "title": "Content strategie", "desc": "SEO-gerichte artikelen en pagina's." },
+        "5": { "title": "Linkbuilding", "desc": "Kwalitatieve backlinks voor autoriteit." },
+        "6": { "title": "Maandelijkse rapportage", "desc": "Rankings en verkeerscijfers." }
+      },
+      "process": {
+        "1": { "title": "Analyse", "desc": "Technische en content audit van je site." },
+        "2": { "title": "Uitvoering", "desc": "Optimalisaties en content implementeren." },
+        "3": { "title": "Groei & optimalisatie", "desc": "Continue verbetering van rankings." }
+      }
+    },
+    "businessWebsite": {
+      "title": "Business Website",
+      "subtitle": "Een professionele website die klanten overtuigt.",
+      "benefits": {
+        "1": "Modern design dat vertrouwen wekt",
+        "2": "Geoptimaliseerd voor conversies",
+        "3": "Mobiel-vriendelijk en snel"
+      },
+      "deliverables": {
+        "1": { "title": "Design & UX", "desc": "Custom ontwerp passend bij je merk." },
+        "2": { "title": "Development", "desc": "Technisch solide en schaalbaar." },
+        "3": { "title": "Content integratie", "desc": "Teksten en visuals professioneel verwerkt." },
+        "4": { "title": "SEO basis", "desc": "Technische SEO meegenomen." },
+        "5": { "title": "CMS training", "desc": "Je leert zelf content aanpassen." },
+        "6": { "title": "Onderhoud optie", "desc": "Maandelijkse updates en support." }
+      },
+      "process": {
+        "1": { "title": "Analyse", "desc": "We bespreken je wensen en doelen." },
+        "2": { "title": "Uitvoering", "desc": "Design, development en lancering." },
+        "3": { "title": "Groei & optimalisatie", "desc": "Updates en verbeteringen na launch." }
+      }
+    },
+    "onePageWebsite": {
+      "title": "One-page Website",
+      "subtitle": "Een krachtige landingspagina voor snelle impact.",
+      "benefits": {
+        "1": "Snel online met je boodschap",
+        "2": "Perfect voor lancering of campagnes",
+        "3": "Betaalbaar en effectief"
+      },
+      "deliverables": {
+        "1": { "title": "Design", "desc": "Aantrekkelijk en on-brand ontwerp." },
+        "2": { "title": "Development", "desc": "Snelle en responsive pagina." },
+        "3": { "title": "Formulier integratie", "desc": "Lead capture functionaliteit." },
+        "4": { "title": "Mobiel geoptimaliseerd", "desc": "Perfect op elk apparaat." },
+        "5": { "title": "Analytics setup", "desc": "Tracking vanaf dag één." },
+        "6": { "title": "Snelle levering", "desc": "Live binnen 1-2 weken." }
+      },
+      "process": {
+        "1": { "title": "Analyse", "desc": "Briefing en doelen bepalen." },
+        "2": { "title": "Uitvoering", "desc": "Design en development in één sprint." },
+        "3": { "title": "Groei & optimalisatie", "desc": "A/B testing en verbeteringen." }
+      }
+    },
+    "ecommerceWebsite": {
+      "title": "E-commerce Website",
+      "subtitle": "Een webshop die verkoopt terwijl je slaapt.",
+      "benefits": {
+        "1": "Gebruiksvriendelijke winkelervaring",
+        "2": "Veilige betalingen geïntegreerd",
+        "3": "Schaalbaar voor groei"
+      },
+      "deliverables": {
+        "1": { "title": "Shop design", "desc": "Conversiegerichte productpagina's." },
+        "2": { "title": "Development", "desc": "Robuust e-commerce platform." },
+        "3": { "title": "Payment integratie", "desc": "Alle gangbare betaalmethodes." },
+        "4": { "title": "Voorraadbeheer", "desc": "Eenvoudig producten beheren." },
+        "5": { "title": "Marketing tools", "desc": "Kortingscodes, upsells, etc." },
+        "6": { "title": "Training & support", "desc": "Je leert alles zelf beheren." }
+      },
+      "process": {
+        "1": { "title": "Analyse", "desc": "Productcatalogus en doelen bespreken." },
+        "2": { "title": "Uitvoering", "desc": "Design, development en producten laden." },
+        "3": { "title": "Groei & optimalisatie", "desc": "Conversie-optimalisatie na launch." }
+      }
+    },
+    "branding": {
+      "title": "Branding",
+      "subtitle": "Een visuele identiteit die blijft hangen.",
+      "benefits": {
+        "1": "Herkenbaar en professioneel",
+        "2": "Consistentie over alle kanalen",
+        "3": "Onderscheidend van concurrenten"
+      },
+      "deliverables": {
+        "1": { "title": "Logo ontwerp", "desc": "Uniek logo met variaties." },
+        "2": { "title": "Kleurenpalet", "desc": "Strategische kleurkeuzes." },
+        "3": { "title": "Typografie", "desc": "Lettertypen die passen bij je merk." },
+        "4": { "title": "Brand guidelines", "desc": "Handleiding voor consistent gebruik." },
+        "5": { "title": "Templates", "desc": "Social media en print templates." },
+        "6": { "title": "Brand assets", "desc": "Alle bestanden in hoge kwaliteit." }
+      },
+      "process": {
+        "1": { "title": "Analyse", "desc": "We leren je merk en doelgroep kennen." },
+        "2": { "title": "Uitvoering", "desc": "Concepten, feedback en finalisatie." },
+        "3": { "title": "Groei & optimalisatie", "desc": "Doorontwikkeling waar nodig." }
+      }
+    }
   }
 }

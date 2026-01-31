@@ -1605,5 +1605,268 @@
         "result": "50+ videos per month"
       }
     }
+  },
+  "servicePage": {
+    "cta": {
+      "requestQuote": "Request a quote",
+      "whatsapp": "Chat via WhatsApp"
+    },
+    "trustNote": "Transparent pricing. No hidden costs.",
+    "videoPlaceholder": "Video coming soon",
+    "whatsapp": {
+      "template": "Hello! I'd like more info about {{service}}. Can you help?"
+    },
+    "deliverables": {
+      "label": "What you get",
+      "title": "What's included?"
+    },
+    "process": {
+      "label": "How it works",
+      "title": "Our process"
+    },
+    "calculator": {
+      "label": "Price calculator",
+      "title": "Calculate your price in 60 sec",
+      "businessTypeLabel": "Business type",
+      "goalLabel": "Your goal",
+      "packageLabel": "Package",
+      "adBudgetLabel": "Ad budget",
+      "addonsLabel": "Extra options",
+      "selectPlaceholder": "Select...",
+      "month": "month",
+      "monthlyFee": "Estimated monthly service fee",
+      "setupFee": "Setup fee",
+      "oneTime": "one-time",
+      "firstMonthTotal": "Total first month",
+      "disclaimer": "Indicative price. Final quote after short intake.",
+      "sendCalculation": "Send me this calculation",
+      "sendWhatsapp": "Send via WhatsApp",
+      "noAddons": "No extra options",
+      "businessTypes": {
+        "restaurant": "Restaurant / hospitality",
+        "retail": "Retail & local shops",
+        "construction": "Construction & renovation",
+        "beauty": "Beauty & wellness",
+        "ecommerce": "E-commerce",
+        "other": "Other"
+      },
+      "goals": {
+        "visibility": "More visibility",
+        "leads": "More leads",
+        "sales": "More sales"
+      },
+      "packages": {
+        "starter": "Starter",
+        "growth": "Growth",
+        "pro": "Pro"
+      },
+      "addons": {
+        "extraContent4": "Extra content (4 posts/month)",
+        "extraContent12": "Extra content (12 posts/month)",
+        "extraVideo2": "Extra video ads (2/month)",
+        "extraVideo6": "Extra video ads (6/month)",
+        "extraLandingPage": "Extra landing page",
+        "extraTracking": "Extra tracking setup"
+      },
+      "whatsappTemplate": "Hello! My calculation for {{service}}:\n\n• Business type: {{businessType}}\n• Goal: {{goal}}\n• Package: {{package}}\n• Ad budget: {{adBudget}}\n• Extra options: {{addons}}\n\n💰 Estimated price: {{monthlyRange}} / month\n📋 Setup: {{setup}}\n\nCan you send me a custom quote?"
+    },
+    "faq": {
+      "label": "Frequently asked questions",
+      "title": "FAQ",
+      "q1": "Is this a monthly contract?",
+      "a1": "Yes, you pay monthly. No annual contract required.",
+      "q2": "Can I cancel whenever I want?",
+      "a2": "Yes, with 30 days notice. No hidden clauses.",
+      "q3": "Do you work with fixed prices?",
+      "a3": "We work with price ranges. After the intake you'll get an exact quote.",
+      "q4": "What if I don't have content yet?",
+      "a4": "No problem. We produce content for you or guide your team.",
+      "q5": "How fast will I see results?",
+      "a5": "First results within 2-4 weeks. Significant growth after 2-3 months.",
+      "q6": "What if I have a small budget?",
+      "a6": "We have Starter packages for small budgets. Ask for advice."
+    },
+    "finalCTA": {
+      "title": "Ready to grow with clarity?",
+      "subtitle": "No empty promises. Just concrete steps to more customers.",
+      "primaryCTA": "Request a custom quote",
+      "secondaryCTA": "Chat via WhatsApp"
+    },
+    "socialMedia": {
+      "title": "Social Media Management",
+      "subtitle": "Consistent content that grows your brand on every platform.",
+      "benefits": {
+        "1": "Professional content on all your channels",
+        "2": "More engagement and reach",
+        "3": "Time savings for your team"
+      },
+      "deliverables": {
+        "1": { "title": "Strategy & planning", "desc": "Content calendar tailored to your goals." },
+        "2": { "title": "Content creation", "desc": "Posts, stories and reels that resonate." },
+        "3": { "title": "Community management", "desc": "Actively responding to comments and DMs." },
+        "4": { "title": "Ad management", "desc": "Targeted ads for maximum reach." },
+        "5": { "title": "Monthly reporting", "desc": "Clear numbers and insights." },
+        "6": { "title": "Dedicated support", "desc": "Always available for questions." }
+      },
+      "process": {
+        "1": { "title": "Analysis", "desc": "We analyze your current presence and competition." },
+        "2": { "title": "Execution", "desc": "We create and publish content according to schedule." },
+        "3": { "title": "Growth & optimization", "desc": "Continuous improvement based on data." }
+      }
+    },
+    "adsManagement": {
+      "title": "Advertising Management",
+      "subtitle": "Targeted ads that deliver leads and sales.",
+      "benefits": {
+        "1": "Higher ROI on ad spend",
+        "2": "Targeted campaigns for your audience",
+        "3": "Transparent reporting every month"
+      },
+      "deliverables": {
+        "1": { "title": "Campaign strategy", "desc": "Targeted approach per platform." },
+        "2": { "title": "Ad creation", "desc": "Visuals and copy that convert." },
+        "3": { "title": "A/B testing", "desc": "Continuous testing for better results." },
+        "4": { "title": "Budget optimization", "desc": "Maximum results from your budget." },
+        "5": { "title": "Conversion tracking", "desc": "Full insight into your ROI." },
+        "6": { "title": "Weekly updates", "desc": "You always know what's happening." }
+      },
+      "process": {
+        "1": { "title": "Analysis", "desc": "We research your market and competition." },
+        "2": { "title": "Execution", "desc": "We launch and manage your campaigns." },
+        "3": { "title": "Growth & optimization", "desc": "Continuous improvement for more conversions." }
+      }
+    },
+    "contentProduction": {
+      "title": "Content Production",
+      "subtitle": "Videos and visuals that bring your brand to life.",
+      "benefits": {
+        "1": "Professional videos and photos",
+        "2": "Content that fits every platform",
+        "3": "Fast delivery and revisions"
+      },
+      "deliverables": {
+        "1": { "title": "Concept & planning", "desc": "Creative ideas aligned with your brand." },
+        "2": { "title": "Video production", "desc": "From scripts to final edit." },
+        "3": { "title": "Photography", "desc": "Product and lifestyle photos." },
+        "4": { "title": "Editing & post-production", "desc": "Professional finishing." },
+        "5": { "title": "Platform optimization", "desc": "Formats for every channel." },
+        "6": { "title": "Content library", "desc": "All assets neatly stored." }
+      },
+      "process": {
+        "1": { "title": "Analysis", "desc": "We determine what your brand needs." },
+        "2": { "title": "Execution", "desc": "Production on location or in studio." },
+        "3": { "title": "Growth & optimization", "desc": "Processing feedback and improving." }
+      }
+    },
+    "seo": {
+      "title": "SEO",
+      "subtitle": "Rank higher in Google for more organic traffic.",
+      "benefits": {
+        "1": "Better visibility in search engines",
+        "2": "More quality traffic to your site",
+        "3": "Long-term growth without ad costs"
+      },
+      "deliverables": {
+        "1": { "title": "Technical audit", "desc": "We check speed, structure and indexation." },
+        "2": { "title": "Keyword research", "desc": "The right keywords for your market." },
+        "3": { "title": "On-page optimization", "desc": "Improve titles, metas and content." },
+        "4": { "title": "Content strategy", "desc": "SEO-focused articles and pages." },
+        "5": { "title": "Link building", "desc": "Quality backlinks for authority." },
+        "6": { "title": "Monthly reporting", "desc": "Rankings and traffic numbers." }
+      },
+      "process": {
+        "1": { "title": "Analysis", "desc": "Technical and content audit of your site." },
+        "2": { "title": "Execution", "desc": "Implementing optimizations and content." },
+        "3": { "title": "Growth & optimization", "desc": "Continuous improvement of rankings." }
+      }
+    },
+    "businessWebsite": {
+      "title": "Business Website",
+      "subtitle": "A professional website that convinces customers.",
+      "benefits": {
+        "1": "Modern design that builds trust",
+        "2": "Optimized for conversions",
+        "3": "Mobile-friendly and fast"
+      },
+      "deliverables": {
+        "1": { "title": "Design & UX", "desc": "Custom design matching your brand." },
+        "2": { "title": "Development", "desc": "Technically solid and scalable." },
+        "3": { "title": "Content integration", "desc": "Text and visuals professionally processed." },
+        "4": { "title": "SEO basics", "desc": "Technical SEO included." },
+        "5": { "title": "CMS training", "desc": "Learn to update content yourself." },
+        "6": { "title": "Maintenance option", "desc": "Monthly updates and support." }
+      },
+      "process": {
+        "1": { "title": "Analysis", "desc": "We discuss your wishes and goals." },
+        "2": { "title": "Execution", "desc": "Design, development and launch." },
+        "3": { "title": "Growth & optimization", "desc": "Updates and improvements post-launch." }
+      }
+    },
+    "onePageWebsite": {
+      "title": "One-page Website",
+      "subtitle": "A powerful landing page for quick impact.",
+      "benefits": {
+        "1": "Get online fast with your message",
+        "2": "Perfect for launches or campaigns",
+        "3": "Affordable and effective"
+      },
+      "deliverables": {
+        "1": { "title": "Design", "desc": "Attractive and on-brand design." },
+        "2": { "title": "Development", "desc": "Fast and responsive page." },
+        "3": { "title": "Form integration", "desc": "Lead capture functionality." },
+        "4": { "title": "Mobile optimized", "desc": "Perfect on every device." },
+        "5": { "title": "Analytics setup", "desc": "Tracking from day one." },
+        "6": { "title": "Fast delivery", "desc": "Live within 1-2 weeks." }
+      },
+      "process": {
+        "1": { "title": "Analysis", "desc": "Briefing and defining goals." },
+        "2": { "title": "Execution", "desc": "Design and development in one sprint." },
+        "3": { "title": "Growth & optimization", "desc": "A/B testing and improvements." }
+      }
+    },
+    "ecommerceWebsite": {
+      "title": "E-commerce Website",
+      "subtitle": "A webshop that sells while you sleep.",
+      "benefits": {
+        "1": "User-friendly shopping experience",
+        "2": "Secure payments integrated",
+        "3": "Scalable for growth"
+      },
+      "deliverables": {
+        "1": { "title": "Shop design", "desc": "Conversion-focused product pages." },
+        "2": { "title": "Development", "desc": "Robust e-commerce platform." },
+        "3": { "title": "Payment integration", "desc": "All common payment methods." },
+        "4": { "title": "Inventory management", "desc": "Easy product management." },
+        "5": { "title": "Marketing tools", "desc": "Discount codes, upsells, etc." },
+        "6": { "title": "Training & support", "desc": "Learn to manage everything yourself." }
+      },
+      "process": {
+        "1": { "title": "Analysis", "desc": "Discuss product catalog and goals." },
+        "2": { "title": "Execution", "desc": "Design, development and loading products." },
+        "3": { "title": "Growth & optimization", "desc": "Conversion optimization post-launch." }
+      }
+    },
+    "branding": {
+      "title": "Branding",
+      "subtitle": "A visual identity that sticks.",
+      "benefits": {
+        "1": "Recognizable and professional",
+        "2": "Consistency across all channels",
+        "3": "Stand out from competitors"
+      },
+      "deliverables": {
+        "1": { "title": "Logo design", "desc": "Unique logo with variations." },
+        "2": { "title": "Color palette", "desc": "Strategic color choices." },
+        "3": { "title": "Typography", "desc": "Fonts that match your brand." },
+        "4": { "title": "Brand guidelines", "desc": "Guide for consistent usage." },
+        "5": { "title": "Templates", "desc": "Social media and print templates." },
+        "6": { "title": "Brand assets", "desc": "All files in high quality." }
+      },
+      "process": {
+        "1": { "title": "Analysis", "desc": "We get to know your brand and audience." },
+        "2": { "title": "Execution", "desc": "Concepts, feedback and finalization." },
+        "3": { "title": "Growth & optimization", "desc": "Further development where needed." }
+      }
+    }
   }
 }

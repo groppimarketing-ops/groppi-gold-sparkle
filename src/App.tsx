@@ -19,6 +19,7 @@ if (import.meta.env.DEV) {
 const Index = lazy(() => import("./pages/Index"));
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
+const ServiceDetail = lazy(() => import("./pages/ServiceDetail"));
 const Blog = lazy(() => import("./pages/Blog"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
@@ -83,6 +84,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/services/:slug" element={<ServiceDetail />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/portfolio" element={<Portfolio />} />
