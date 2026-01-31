@@ -1,7 +1,8 @@
-import { forwardRef, useState } from 'react';
+import { forwardRef, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, Calendar, CreditCard, MessageSquare, LucideIcon, Check, Users, User, Video, Briefcase, Zap, Crown, Calculator } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -49,9 +50,23 @@ interface ServiceCardProps {
 
 const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, index, isFeatured = false, isHighlighted = false }, ref) => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
+
+  // Canonical service detail routes (requested)
+  const detailPath = useMemo(() => {
+    const map: Record<string, string> = {
+      'social-media': '/services/social-media-management',
+      'ads-management': '/services/advertising-management',
+      'seo': '/services/seo',
+      'business-website': '/services/business-website',
+      'ecommerce-website': '/services/webshop',
+      'content-production': '/services/visual-content-video',
+    };
+    return map[service.id];
+  }, [service.id]);
 
   // Determine if this service has a calculator
   const hasCalculator = service.id === 'social-media' || service.id === 'ads-management';
@@ -130,7 +145,11 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
   };
 
   const handleViewDetails = () => {
-    setIsModalOpen(true);
+    if (detailPath) {
+      navigate(detailPath);
+      return;
+    }
+    setIsModalOpen(true); // fallback for services without a detail page
   };
 
   const handleWatchVideo = (e: React.MouseEvent) => {
@@ -158,7 +177,27 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: index * 0.1 }}
-        className={`group relative overflow-hidden flex flex-col h-full transition-all duration-500 hover:ring-1 hover:ring-primary/40 hover:shadow-[0_0_30px_hsl(var(--primary)/0.15)] ${
+        role={detailPath ? 'link' : 'button'}
+        tabIndex={0}
+        onClick={() => {
+          if (detailPath) {
+            navigate(detailPath);
+            return;
+          }
+          setIsModalOpen(true);
+        }}
+        onKeyDown={(e) => {
+          if (e.key !== 'Enter' && e.key !== ' ') return;
+          e.preventDefault();
+
+          if (detailPath) {
+            navigate(detailPath);
+            return;
+          }
+
+          setIsModalOpen(true);
+        }}
+        className={`group relative overflow-hidden flex flex-col h-full cursor-pointer transition-all duration-500 hover:ring-1 hover:ring-primary/40 hover:shadow-[0_0_30px_hsl(var(--primary)/0.15)] ${
           isFeatured ? 'ring-2 ring-primary/40 shadow-[0_0_30px_hsl(var(--primary)/0.15)]' : ''
         } ${
           isHighlighted ? 'ring-2 ring-primary/60 shadow-[0_0_50px_hsl(var(--primary)/0.25)]' : ''
