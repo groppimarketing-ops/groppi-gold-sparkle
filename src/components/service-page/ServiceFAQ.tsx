@@ -15,6 +15,7 @@ interface ServiceFAQProps {
 const ServiceFAQ = memo(({ serviceKey }: ServiceFAQProps) => {
   const { t } = useTranslation();
 
+  // 6 FAQ items with specific service-related questions
   const faqs = [
     { questionKey: 'servicePage.faq.q1', answerKey: 'servicePage.faq.a1' },
     { questionKey: 'servicePage.faq.q2', answerKey: 'servicePage.faq.a2' },
@@ -25,7 +26,7 @@ const ServiceFAQ = memo(({ serviceKey }: ServiceFAQProps) => {
   ];
 
   return (
-    <section className="relative py-16 lg:py-24 bg-background">
+    <section id="section-faq" className="relative py-16 lg:py-24 bg-background">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-transparent pointer-events-none" />
       
       <div className="container mx-auto px-4 relative z-10">

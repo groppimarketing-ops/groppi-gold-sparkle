@@ -1,7 +1,7 @@
 import { memo, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Calculator, Send, MessageCircle } from 'lucide-react';
+import { Calculator, Send, MessageCircle, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -80,14 +80,18 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
     const firstMonthMin = monthlyMin + setup;
     const firstMonthMax = monthlyMax + setup;
 
+    // Recommended package based on selections
+    const recommendedPackage = addonsTotal > 300 ? 'pro' : goal === 'sales' ? 'growth' : 'starter';
+
     return {
       monthlyMin,
       monthlyMax,
       setup,
       firstMonthMin,
       firstMonthMax,
+      recommendedPackage,
     };
-  }, [packageLevel, adBudget, addons]);
+  }, [packageLevel, adBudget, addons, goal]);
 
   const handleAddonToggle = (key: string) => {
     setAddons(prev => ({ ...prev, [key]: !prev[key] }));
@@ -122,7 +126,7 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
       <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.02] via-primary/[0.04] to-primary/[0.02] pointer-events-none" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-10">
             <motion.div
@@ -142,10 +146,20 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-3xl md:text-4xl font-bold gold-gradient-text"
+              className="text-3xl md:text-4xl font-bold gold-gradient-text mb-3"
             >
               {t('servicePage.calculator.title')}
             </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.15 }}
+              className="text-muted-foreground max-w-xl mx-auto"
+            >
+              {t('servicePage.calculator.subtitle')}
+            </motion.p>
           </div>
 
           {/* Calculator Card */}
@@ -154,7 +168,7 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="glass-card p-6 lg:p-8 border-primary/20"
+            className="glass-card p-6 lg:p-8 border-primary/20 rounded-2xl"
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* LEFT: Inputs */}
@@ -268,6 +282,25 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
 
               {/* RIGHT: Output */}
               <div className="space-y-6 lg:pl-8 lg:border-l lg:border-primary/20">
+                {/* Recommendation Badge */}
+                {goal && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="p-4 rounded-xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20"
+                  >
+                    <div className="flex items-center gap-2 mb-2">
+                      <Sparkles className="w-4 h-4 text-primary" />
+                      <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                        {t('servicePage.calculator.recommendation')}
+                      </span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      {t('servicePage.calculator.recommendationText', { package: t(`servicePage.calculator.packages.${pricing.recommendedPackage}`) })}
+                    </p>
+                  </motion.div>
+                )}
+
                 <div className="space-y-4">
                   {/* Monthly Service Fee */}
                   <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">

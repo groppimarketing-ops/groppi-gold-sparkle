@@ -1607,6 +1607,13 @@
     }
   },
   "servicePage": {
+    "tabs": {
+      "why": "Why?",
+      "howItWorks": "How it works",
+      "approach": "Approach",
+      "pricing": "Options & pricing",
+      "faq": "FAQ"
+    },
     "cta": {
       "requestQuote": "Request a quote",
       "whatsapp": "Chat via WhatsApp"
@@ -1616,6 +1623,9 @@
     "whatsapp": {
       "template": "Hello! I'd like more info about {{service}}. Can you help?"
     },
+    "why": {
+      "label": "Why this service"
+    },
     "deliverables": {
       "label": "What you get",
       "title": "What's included?"
@@ -1624,9 +1634,48 @@
       "label": "How it works",
       "title": "Our process"
     },
+    "approach": {
+      "label": "Our approach",
+      "title": "How we work",
+      "cards": {
+        "strategy": {
+          "title": "Strategy",
+          "description": "We start with a thorough analysis of your market, audience and competition to develop an effective strategy."
+        },
+        "execution": {
+          "title": "Execution",
+          "description": "Our team executes the strategy with attention to detail, quality and deadlines."
+        },
+        "reporting": {
+          "title": "Reporting",
+          "description": "Monthly reports with clear KPIs and concrete insights for improvement."
+        }
+      }
+    },
+    "packages": {
+      "label": "Packages & pricing",
+      "title": "Choose your package",
+      "subtitle": "Transparent pricing. No surprises.",
+      "perMonth": "month",
+      "setupFee": "Setup fee",
+      "choosePlan": "Choose this package",
+      "popular": "Most popular",
+      "customNote": "No fitting package? We're happy to create a custom proposal.",
+      "customCta": "Request a custom quote",
+      "starter": {
+        "name": "Starter"
+      },
+      "growth": {
+        "name": "Growth"
+      },
+      "pro": {
+        "name": "Pro"
+      }
+    },
     "calculator": {
       "label": "Price calculator",
       "title": "Calculate your price in 60 sec",
+      "subtitle": "Choose your preferences and get an indicative price instantly.",
       "businessTypeLabel": "Business type",
       "goalLabel": "Your goal",
       "packageLabel": "Package",
@@ -1642,6 +1691,8 @@
       "sendCalculation": "Send me this calculation",
       "sendWhatsapp": "Send via WhatsApp",
       "noAddons": "No extra options",
+      "recommendation": "Our recommendation",
+      "recommendationText": "Based on your choices, we recommend {{package}}.",
       "businessTypes": {
         "restaurant": "Restaurant / hospitality",
         "retail": "Retail & local shops",
@@ -1700,6 +1751,47 @@
         "2": "More engagement and reach",
         "3": "Time savings for your team"
       },
+      "why": {
+        "title": "Why outsource social media?",
+        "subtitle": "Focus on your core business while we grow your online presence.",
+        "benefit1": "Consistent posting without losing your time",
+        "benefit2": "Professional content that converts",
+        "benefit3": "Community management and engagement",
+        "metric1": { "value": "+180%", "label": "Average reach growth" },
+        "metric2": { "value": "12h", "label": "Time saved per week" }
+      },
+      "packages": {
+        "starter": {
+          "description": "Perfect for small businesses starting out.",
+          "price": "€350–€450",
+          "setup": "€150",
+          "feature1": "1 platform management",
+          "feature2": "8 posts per month",
+          "feature3": "Community management",
+          "feature4": "Monthly reporting",
+          "feature5": "Email support"
+        },
+        "growth": {
+          "description": "For businesses serious about growth.",
+          "price": "€550–€750",
+          "setup": "€250",
+          "feature1": "Up to 3 platforms",
+          "feature2": "16 posts per month",
+          "feature3": "Stories & reels",
+          "feature4": "Weekly reporting",
+          "feature5": "Dedicated account manager"
+        },
+        "pro": {
+          "description": "Full management for maximum impact.",
+          "price": "€950–€1,350",
+          "setup": "€450",
+          "feature1": "All platforms",
+          "feature2": "30+ posts per month",
+          "feature3": "Video content included",
+          "feature4": "Influencer outreach",
+          "feature5": "24/7 community management"
+        }
+      },
       "deliverables": {
         "1": { "title": "Strategy & planning", "desc": "Content calendar tailored to your goals." },
         "2": { "title": "Content creation", "desc": "Posts, stories and reels that resonate." },
@@ -1721,6 +1813,47 @@
         "1": "Higher ROI on ad spend",
         "2": "Targeted campaigns for your audience",
         "3": "Transparent reporting every month"
+      },
+      "why": {
+        "title": "Why outsource ad management?",
+        "subtitle": "Let your budget work with experts who know what converts.",
+        "benefit1": "No wasted budget on poor campaigns",
+        "benefit2": "Data-driven optimization for maximum ROI",
+        "benefit3": "Focus on leads that actually convert",
+        "metric1": { "value": "+240%", "label": "Average ROAS improvement" },
+        "metric2": { "value": "3x", "label": "More qualified leads" }
+      },
+      "packages": {
+        "starter": {
+          "description": "For businesses starting with ads.",
+          "price": "€400–€500",
+          "setup": "€200",
+          "feature1": "1 platform (Google or Meta)",
+          "feature2": "Up to €500 ad spend management",
+          "feature3": "Monthly reporting",
+          "feature4": "Basic A/B testing",
+          "feature5": "Email support"
+        },
+        "growth": {
+          "description": "For serious growth with multiple channels.",
+          "price": "€650–€850",
+          "setup": "€350",
+          "feature1": "Up to 3 platforms",
+          "feature2": "Up to €2,000 ad spend management",
+          "feature3": "Weekly reporting",
+          "feature4": "Retargeting campaigns",
+          "feature5": "Dedicated account manager"
+        },
+        "pro": {
+          "description": "Full-service advertising for maximum impact.",
+          "price": "€1,100–€1,500",
+          "setup": "€500",
+          "feature1": "Unlimited platforms",
+          "feature2": "Unlimited ad spend management",
+          "feature3": "Real-time dashboard",
+          "feature4": "Video ad creation",
+          "feature5": "Weekly strategy calls"
+        }
       },
       "deliverables": {
         "1": { "title": "Campaign strategy", "desc": "Targeted approach per platform." },
@@ -1744,6 +1877,47 @@
         "2": "Content that fits every platform",
         "3": "Fast delivery and revisions"
       },
+      "why": {
+        "title": "Why professional content?",
+        "subtitle": "Quality content sets you apart from the competition.",
+        "benefit1": "Professional appearance that builds trust",
+        "benefit2": "Content optimized for every platform",
+        "benefit3": "Consistent branding in everything you share",
+        "metric1": { "value": "50+", "label": "Videos per month possible" },
+        "metric2": { "value": "48h", "label": "Average delivery time" }
+      },
+      "packages": {
+        "starter": {
+          "description": "Basic content for your online presence.",
+          "price": "€500–€700",
+          "setup": "€0",
+          "feature1": "4 social media posts",
+          "feature2": "2 short videos",
+          "feature3": "Basic editing",
+          "feature4": "1 revision round",
+          "feature5": "Digital delivery"
+        },
+        "growth": {
+          "description": "More content for consistent presence.",
+          "price": "€900–€1,200",
+          "setup": "€0",
+          "feature1": "12 social media posts",
+          "feature2": "4 short videos",
+          "feature3": "Advanced editing",
+          "feature4": "2 revision rounds",
+          "feature5": "Platform-specific formats"
+        },
+        "pro": {
+          "description": "Premium content production at scale.",
+          "price": "€1,500–€2,500",
+          "setup": "€0",
+          "feature1": "30+ posts per month",
+          "feature2": "8+ videos",
+          "feature3": "Photo shoots included",
+          "feature4": "Unlimited revisions",
+          "feature5": "Dedicated creative team"
+        }
+      },
       "deliverables": {
         "1": { "title": "Concept & planning", "desc": "Creative ideas aligned with your brand." },
         "2": { "title": "Video production", "desc": "From scripts to final edit." },
@@ -1765,6 +1939,47 @@
         "1": "Better visibility in search engines",
         "2": "More quality traffic to your site",
         "3": "Long-term growth without ad costs"
+      },
+      "why": {
+        "title": "Why invest in SEO?",
+        "subtitle": "Organic traffic is the most sustainable source of leads.",
+        "benefit1": "Free traffic that keeps growing",
+        "benefit2": "Higher authority in your market",
+        "benefit3": "Visitors with high buying intent",
+        "metric1": { "value": "#1", "label": "Rankings for local search terms" },
+        "metric2": { "value": "+320%", "label": "Organic traffic growth" }
+      },
+      "packages": {
+        "starter": {
+          "description": "Basic SEO for local visibility.",
+          "price": "€350–€450",
+          "setup": "€200",
+          "feature1": "Technical audit",
+          "feature2": "5 keywords optimization",
+          "feature3": "Google My Business setup",
+          "feature4": "Monthly reporting",
+          "feature5": "Email support"
+        },
+        "growth": {
+          "description": "Comprehensive SEO for regional growth.",
+          "price": "€600–€800",
+          "setup": "€300",
+          "feature1": "Full technical optimization",
+          "feature2": "15 keywords",
+          "feature3": "2 SEO articles per month",
+          "feature4": "Basic link building",
+          "feature5": "Weekly reporting"
+        },
+        "pro": {
+          "description": "Enterprise SEO for national dominance.",
+          "price": "€1,000–€1,500",
+          "setup": "€500",
+          "feature1": "Unlimited keywords",
+          "feature2": "4+ articles per month",
+          "feature3": "Active link building",
+          "feature4": "Competitor analysis",
+          "feature5": "Dedicated SEO specialist"
+        }
       },
       "deliverables": {
         "1": { "title": "Technical audit", "desc": "We check speed, structure and indexation." },
@@ -1788,6 +2003,47 @@
         "2": "Optimized for conversions",
         "3": "Mobile-friendly and fast"
       },
+      "why": {
+        "title": "Why a professional website?",
+        "subtitle": "Your website is your digital business card and sales channel.",
+        "benefit1": "First impression that builds trust",
+        "benefit2": "24/7 available for potential customers",
+        "benefit3": "Foundation for all your online marketing",
+        "metric1": { "value": "75%", "label": "Decide based on website" },
+        "metric2": { "value": "+180%", "label": "More leads with pro website" }
+      },
+      "packages": {
+        "starter": {
+          "description": "Simple professional website.",
+          "price": "€1,500–€2,000",
+          "setup": "One-time",
+          "feature1": "Up to 5 pages",
+          "feature2": "Responsive design",
+          "feature3": "Contact form",
+          "feature4": "Basic SEO",
+          "feature5": "CMS training"
+        },
+        "growth": {
+          "description": "Complete business website with extras.",
+          "price": "€2,500–€3,500",
+          "setup": "One-time",
+          "feature1": "Up to 10 pages",
+          "feature2": "Custom design",
+          "feature3": "Blog functionality",
+          "feature4": "Comprehensive SEO",
+          "feature5": "3 months support"
+        },
+        "pro": {
+          "description": "Premium website with all bells and whistles.",
+          "price": "€4,000–€6,000",
+          "setup": "One-time",
+          "feature1": "Unlimited pages",
+          "feature2": "Premium animations",
+          "feature3": "Multilingual support",
+          "feature4": "Advanced integrations",
+          "feature5": "12 months support"
+        }
+      },
       "deliverables": {
         "1": { "title": "Design & UX", "desc": "Custom design matching your brand." },
         "2": { "title": "Development", "desc": "Technically solid and scalable." },
@@ -1809,6 +2065,47 @@
         "1": "Get online fast with your message",
         "2": "Perfect for launches or campaigns",
         "3": "Affordable and effective"
+      },
+      "why": {
+        "title": "Why a one-page website?",
+        "subtitle": "Get online quickly with maximum impact.",
+        "benefit1": "Live within 1-2 weeks",
+        "benefit2": "Perfect for campaigns and launches",
+        "benefit3": "Affordable entry point",
+        "metric1": { "value": "1-2", "label": "Weeks to go live" },
+        "metric2": { "value": "€", "label": "Budget-friendly" }
+      },
+      "packages": {
+        "starter": {
+          "description": "Simple landing page.",
+          "price": "€500–€750",
+          "setup": "One-time",
+          "feature1": "1 page",
+          "feature2": "Responsive design",
+          "feature3": "Contact form",
+          "feature4": "Basic analytics",
+          "feature5": "1 revision round"
+        },
+        "growth": {
+          "description": "Landing page with extra features.",
+          "price": "€900–€1,200",
+          "setup": "One-time",
+          "feature1": "1 page with sections",
+          "feature2": "Custom design",
+          "feature3": "Lead capture form",
+          "feature4": "A/B testing ready",
+          "feature5": "2 revision rounds"
+        },
+        "pro": {
+          "description": "Premium landing page.",
+          "price": "€1,500–€2,000",
+          "setup": "One-time",
+          "feature1": "Premium animations",
+          "feature2": "Video integration",
+          "feature3": "CRM integration",
+          "feature4": "Conversion tracking",
+          "feature5": "Unlimited revisions"
+        }
       },
       "deliverables": {
         "1": { "title": "Design", "desc": "Attractive and on-brand design." },
@@ -1832,6 +2129,47 @@
         "2": "Secure payments integrated",
         "3": "Scalable for growth"
       },
+      "why": {
+        "title": "Why a webshop?",
+        "subtitle": "Sell 24/7 without borders.",
+        "benefit1": "Sell while you sleep",
+        "benefit2": "Reach customers across Belgium and beyond",
+        "benefit3": "Scalable without extra staff",
+        "metric1": { "value": "24/7", "label": "Online sales" },
+        "metric2": { "value": "∞", "label": "Scalability" }
+      },
+      "packages": {
+        "starter": {
+          "description": "Simple webshop to get started.",
+          "price": "€2,500–€3,500",
+          "setup": "One-time",
+          "feature1": "Up to 50 products",
+          "feature2": "Basic payments",
+          "feature3": "Standard template",
+          "feature4": "Inventory management",
+          "feature5": "CMS training"
+        },
+        "growth": {
+          "description": "Professional webshop for growth.",
+          "price": "€4,000–€6,000",
+          "setup": "One-time",
+          "feature1": "Up to 500 products",
+          "feature2": "All payment methods",
+          "feature3": "Custom design",
+          "feature4": "Discount codes",
+          "feature5": "3 months support"
+        },
+        "pro": {
+          "description": "Enterprise e-commerce solution.",
+          "price": "€7,000–€12,000",
+          "setup": "One-time",
+          "feature1": "Unlimited products",
+          "feature2": "ERP/CRM integration",
+          "feature3": "Multi-currency",
+          "feature4": "Advanced filtering",
+          "feature5": "12 months support"
+        }
+      },
       "deliverables": {
         "1": { "title": "Shop design", "desc": "Conversion-focused product pages." },
         "2": { "title": "Development", "desc": "Robust e-commerce platform." },
@@ -1853,6 +2191,47 @@
         "1": "Recognizable and professional",
         "2": "Consistency across all channels",
         "3": "Stand out from competitors"
+      },
+      "why": {
+        "title": "Why invest in branding?",
+        "subtitle": "A strong brand is the foundation of all your marketing.",
+        "benefit1": "Instantly recognizable by your audience",
+        "benefit2": "Consistency in all communication",
+        "benefit3": "Higher perceived value",
+        "metric1": { "value": "∞", "label": "Brand value impact" },
+        "metric2": { "value": "100%", "label": "Consistency" }
+      },
+      "packages": {
+        "starter": {
+          "description": "Basic brand identity.",
+          "price": "€800–€1,200",
+          "setup": "One-time",
+          "feature1": "Logo design",
+          "feature2": "Color palette",
+          "feature3": "2 fonts",
+          "feature4": "Basic guidelines",
+          "feature5": "Digital files"
+        },
+        "growth": {
+          "description": "Complete brand identity.",
+          "price": "€1,500–€2,500",
+          "setup": "One-time",
+          "feature1": "Logo with variations",
+          "feature2": "Extended color palette",
+          "feature3": "Typography system",
+          "feature4": "Social media templates",
+          "feature5": "Brand guidelines PDF"
+        },
+        "pro": {
+          "description": "Premium brand package.",
+          "price": "€3,000–€5,000",
+          "setup": "One-time",
+          "feature1": "Full brand strategy",
+          "feature2": "Logo animation",
+          "feature3": "Print templates",
+          "feature4": "Presentation templates",
+          "feature5": "Brand book + workshop"
+        }
       },
       "deliverables": {
         "1": { "title": "Logo design", "desc": "Unique logo with variations." },

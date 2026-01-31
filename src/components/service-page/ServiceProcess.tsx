@@ -32,7 +32,7 @@ const ServiceProcess = memo(({ serviceKey }: ServiceProcessProps) => {
   ];
 
   return (
-    <section className="relative py-16 lg:py-24 bg-background overflow-hidden">
+    <section id="section-howItWorks" className="relative py-16 lg:py-24 bg-background overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-primary/[0.02] via-transparent to-primary/[0.02] pointer-events-none" />
       
       <div className="container mx-auto px-4 relative z-10">
