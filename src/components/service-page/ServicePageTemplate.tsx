@@ -7,7 +7,7 @@ import ServiceWhySection from './ServiceWhySection';
 import ServiceProcess from './ServiceProcess';
 import ServiceApproach from './ServiceApproach';
 import ServicePackages from './ServicePackages';
-import ServicePriceCalculator from './ServicePriceCalculator';
+import { ConsultationQuoteBuilder } from './quote-builder';
 import ServiceFAQ from './ServiceFAQ';
 import ServiceFinalCTA from './ServiceFinalCTA';
 
@@ -27,7 +27,7 @@ interface ServicePageTemplateProps {
  * 4. How It Works (3-step process)
  * 5. Our Approach (3 cards)
  * 6. Packages & Pricing (Starter, Growth, Pro)
- * 7. Custom Plan Calculator
+ * 7. Consultation Quote Builder (replaces simple calculator)
  * 8. FAQ (6 questions)
  * 9. Final CTA
  */
@@ -55,11 +55,11 @@ const ServicePageTemplate = memo(({ serviceKey, videoUrl, posterImage }: Service
         {/* Section: Our Approach */}
         <ServiceApproach serviceKey={serviceKey} />
         
-        {/* Section: Packages & Pricing */}
+        {/* Section: Packages Overview */}
         <ServicePackages serviceKey={serviceKey} />
         
-        {/* Section: Custom Plan Calculator */}
-        <ServicePriceCalculator serviceKey={serviceKey} />
+        {/* Section: Consultation Quote Builder (with Estimate ID + promo) */}
+        <ConsultationQuoteBuilder serviceKey={serviceKey} />
         
         {/* Section: FAQ */}
         <ServiceFAQ serviceKey={serviceKey} />
