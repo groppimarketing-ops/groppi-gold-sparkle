@@ -12,6 +12,9 @@ import ServiceCard, { ServiceData } from '@/components/services/ServiceCard';
 import GoalBasedEntry from '@/components/services/GoalBasedEntry';
 import ServiceDetailModal from '@/components/services/ServiceDetailModal';
 import HomeServiceMap from '@/components/home/HomeServiceMap';
+import LaunchDiscountBanner from '@/components/service-page/LaunchDiscountBanner';
+import ContentCalculator from '@/components/service-page/ContentCalculator';
+import PricingFAQ from '@/components/service-page/PricingFAQ';
 
 const Services = () => {
   const { t, i18n } = useTranslation(); // rebuilt
@@ -278,6 +281,9 @@ const Services = () => {
         <div className="neural-lines opacity-30" />
         
         <div className="container mx-auto px-4 relative z-10">
+          {/* Launch Discount Banner */}
+          <LaunchDiscountBanner />
+          
           <SectionHeader
             subtitle={t('services.subtitle')}
             title={t('services.title')}
@@ -498,6 +504,12 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      {/* Content Calculator Section */}
+      <ContentCalculator />
+
+      {/* Pricing FAQ Section */}
+      <PricingFAQ />
 
       {/* CTA Section */}
       <section className="py-20">

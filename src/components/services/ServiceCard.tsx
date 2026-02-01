@@ -2,6 +2,7 @@ import { forwardRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, Calendar, CreditCard, MessageSquare, LucideIcon, Check, Users, User, Video, Briefcase, Zap, Crown, Calculator } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -47,12 +48,28 @@ interface ServiceCardProps {
   isHighlighted?: boolean;
 }
 
+// Service IDs that have dedicated detail pages
+const SERVICES_WITH_PAGES = [
+  'social-media',
+  'ads-management',
+  'content-production',
+  'seo',
+  'business-website',
+  'one-page-website',
+  'ecommerce-website',
+  'branding',
+];
+
 const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, index, isFeatured = false, isHighlighted = false }, ref) => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
 
+  // Determine if this service has a dedicated page
+  const hasDetailPage = SERVICES_WITH_PAGES.includes(service.id);
+  
   // Determine if this service has a calculator
   const hasCalculator = service.id === 'social-media' || service.id === 'ads-management';
 
@@ -130,7 +147,13 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
   };
 
   const handleViewDetails = () => {
-    setIsModalOpen(true);
+    if (hasDetailPage) {
+      // Navigate to the dedicated service detail page
+      navigate(`/services/${service.id}`);
+    } else {
+      // Fallback to modal for services without dedicated pages
+      setIsModalOpen(true);
+    }
   };
 
   const handleWatchVideo = (e: React.MouseEvent) => {
@@ -140,7 +163,11 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
 
   const handleVideoModalContinue = () => {
     setIsVideoModalOpen(false);
-    setIsModalOpen(true);
+    if (hasDetailPage) {
+      navigate(`/services/${service.id}`);
+    } else {
+      setIsModalOpen(true);
+    }
   };
 
   // Get simple explanation line for the service
