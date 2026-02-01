@@ -99,11 +99,11 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
   };
 
   const getPriceDisplay = () => {
-    const pricingLabel = service.pricingType === 'monthly' 
-      ? t('services.perMonth')
-      : '';
-
-    if (service.pricingType === 'custom') {
+    // PRICING LOCK: Only show single prices (no ranges)
+    // If no priceMin provided, show "Offerte op maat"
+    
+    // No price provided - show custom quote
+    if (!service.priceMin) {
       return (
         <div className="text-center">
           <span className="text-lg font-bold text-primary">{t('services.requestQuote')}</span>
@@ -111,36 +111,23 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
       );
     }
     
-    if (service.priceMin && service.priceMax) {
-      return (
-        <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
-          <span className="text-xs text-muted-foreground">{t('services.startingFrom')}</span>
-          <span className="text-2xl font-bold text-primary">
-            €{service.priceMin.toLocaleString()}
-          </span>
-          {pricingLabel && (
-            <span className="text-xs text-muted-foreground">{pricingLabel}</span>
-          )}
-        </div>
-      );
-    }
-    
-    if (service.priceMin) {
-      return (
-        <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
-          <span className="text-xs text-muted-foreground">{t('services.startingFrom')}</span>
-          <span className="text-2xl font-bold text-primary">
-            €{service.priceMin.toLocaleString()}
-          </span>
-          {pricingLabel && (
-            <span className="text-xs text-muted-foreground">{pricingLabel}</span>
-          )}
-        </div>
-      );
-    }
-    
+    // Has price - show "Vanaf €X" (single price, no range)
+    const pricingLabel = service.pricingType === 'monthly' 
+      ? t('services.perMonth')
+      : service.pricingType === 'one_time'
+        ? t('services.oneTimeLabel')
+        : '';
+
     return (
-      <span className="text-lg font-bold text-primary">{t('services.requestQuote')}</span>
+      <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
+        <span className="text-xs text-muted-foreground">{t('services.startingFrom')}</span>
+        <span className="text-2xl font-bold text-primary">
+          €{service.priceMin.toLocaleString()}
+        </span>
+        {pricingLabel && (
+          <span className="text-xs text-muted-foreground">{pricingLabel}</span>
+        )}
+      </div>
     );
   };
 

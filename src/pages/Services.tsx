@@ -18,8 +18,10 @@ const Services = () => {
   const featuredServiceId = 'social-media';
 
   // Clean service list - only 6 core services with canonical slugs
+  // PRICING LOCK: Only content-production has fixed prices (€25–€250)
+  // All other services show "Offerte op maat" (no numeric prices)
   const services: ServiceData[] = [
-    // Social Media Management
+    // Social Media Management - NO PRICE (custom quote)
     {
       id: 'social-media',
       icon: Share2,
@@ -33,12 +35,11 @@ const Services = () => {
       ],
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'monthly',
-      priceMin: 400,
-      priceMax: 3000,
+      // No priceMin/priceMax - shows "Offerte op maat"
       targetAudience: ['business', 'creator'],
       videoUrl: '/videos/portfolio/lebanon-promo-1.mp4',
     },
-    // Ads Management
+    // Ads Management - NO PRICE (custom quote)
     {
       id: 'ads-management',
       icon: Megaphone,
@@ -52,12 +53,11 @@ const Services = () => {
       ],
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'monthly',
-      priceMin: 500,
-      priceMax: 5000,
+      // No priceMin/priceMax - shows "Offerte op maat"
       targetAudience: ['business'],
       videoUrl: '/videos/portfolio/lebanon-promo-2.mp4',
     },
-    // SEO
+    // SEO - NO PRICE (custom quote)
     {
       id: 'seo',
       icon: Search,
@@ -71,11 +71,10 @@ const Services = () => {
       ],
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'monthly',
-      priceMin: 300,
-      priceMax: 2000,
+      // No priceMin/priceMax - shows "Offerte op maat"
       targetAudience: ['business'],
     },
-    // Business Website
+    // Business Website - NO PRICE (custom quote)
     {
       id: 'business-website',
       icon: Globe,
@@ -90,11 +89,10 @@ const Services = () => {
       ],
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'one_time',
-      priceMin: 1500,
-      priceMax: 8000,
+      // No priceMin/priceMax - shows "Offerte op maat"
       targetAudience: ['business'],
     },
-    // E-commerce / Webshop
+    // E-commerce / Webshop - NO PRICE (custom quote)
     {
       id: 'ecommerce-website',
       icon: ShoppingCart,
@@ -109,11 +107,10 @@ const Services = () => {
       ],
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'one_time',
-      priceMin: 3000,
-      priceMax: 25000,
+      // No priceMin/priceMax - shows "Offerte op maat"
       targetAudience: ['business'],
     },
-    // Content Production (Visual Content & Video)
+    // Content Production - FIXED PRICES: €25 (poster AI), €99 (article), €150 (reel AI), €250 (video/shoot)
     {
       id: 'content-production',
       icon: Camera,
@@ -127,8 +124,9 @@ const Services = () => {
         'services.items.contentProduction.features.4',
       ],
       gradient: 'from-primary/5 to-primary/15',
-      pricingType: 'custom',
-      priceMin: 25,
+      pricingType: 'one_time',
+      priceMin: 25, // Lowest price: AI-generated poster
+      // No priceMax - only show "Vanaf €25"
       targetAudience: ['business', 'creator'],
       videoUrl: '/videos/portfolio/il-fuoco-promo.mp4',
     },
