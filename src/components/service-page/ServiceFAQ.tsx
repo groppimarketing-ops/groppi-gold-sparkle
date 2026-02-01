@@ -15,7 +15,7 @@ interface ServiceFAQProps {
 const ServiceFAQ = memo(({ serviceKey }: ServiceFAQProps) => {
   const { t } = useTranslation();
 
-  // 6 FAQ items with specific service-related questions
+  // 10 FAQ items covering all key questions
   const faqs = [
     { questionKey: 'servicePage.faq.q1', answerKey: 'servicePage.faq.a1' },
     { questionKey: 'servicePage.faq.q2', answerKey: 'servicePage.faq.a2' },
@@ -23,10 +23,14 @@ const ServiceFAQ = memo(({ serviceKey }: ServiceFAQProps) => {
     { questionKey: 'servicePage.faq.q4', answerKey: 'servicePage.faq.a4' },
     { questionKey: 'servicePage.faq.q5', answerKey: 'servicePage.faq.a5' },
     { questionKey: 'servicePage.faq.q6', answerKey: 'servicePage.faq.a6' },
+    { questionKey: 'servicePage.faq.q7', answerKey: 'servicePage.faq.a7' },
+    { questionKey: 'servicePage.faq.q8', answerKey: 'servicePage.faq.a8' },
+    { questionKey: 'servicePage.faq.q9', answerKey: 'servicePage.faq.a9' },
+    { questionKey: 'servicePage.faq.q10', answerKey: 'servicePage.faq.a10' },
   ];
 
   return (
-    <section id="section-faq" className="relative py-16 lg:py-24 bg-background">
+    <section id="section-faq" className="relative py-16 lg:py-24 bg-background scroll-mt-20">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-transparent pointer-events-none" />
       
       <div className="container mx-auto px-4 relative z-10">
@@ -72,7 +76,7 @@ const ServiceFAQ = memo(({ serviceKey }: ServiceFAQProps) => {
                       {t(faq.questionKey)}
                     </span>
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
+                  <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                     {t(faq.answerKey)}
                   </AccordionContent>
                 </AccordionItem>

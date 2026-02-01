@@ -63,8 +63,8 @@
   },
   "launchDiscount": {
     "badge": "LIMITED DEAL",
-    "headline": "Start nu met 30% lanceringskorting.",
-    "subheadline": "Alleen voor nieuwe klanten — geldig gedurende 10 dagen. Geen kleine lettertjes, gewoon sneller groeien.",
+    "headline": "Start nu met 20% lanceringskorting.",
+    "subheadline": "Alleen voor nieuwe klanten — geldig gedurende 10 dagen. Korting geldt enkel op eenmalige kosten, niet op abonnementen.",
     "codeLabel": "Jouw kortingscode",
     "codeCopied": "Code gekopieerd!",
     "copyFailed": "Kopiëren mislukt",
@@ -1141,7 +1141,9 @@
     "cta": {
       "title": "Klaar om uw digitale aanwezigheid te versterken?",
       "description": "Neem vandaag nog contact met ons op voor een vrijblijvend gesprek over hoe we u kunnen helpen uw bedrijfsdoelen te bereiken.",
-      "button": "Vraag een vrijblijvende offerte aan"
+      "button": "Vraag een vrijblijvende offerte aan",
+      "whatsapp": "Chat via WhatsApp",
+      "contact": "Vraag offerte aan"
     }
   },
   "blog": {
@@ -1751,25 +1753,41 @@
         "emailAutomation": "E-mail automatisatie",
         "analyticsSetup": "Analytics setup",
         "photoshoot": "Fotoshoot",
-        "branding": "Branding pakket"
+        "branding": "Branding pakket",
+        "posterAI": "Poster (AI-gegenereerd)",
+        "posterClientFootage": "Poster (klantmateriaal, wij editen)",
+        "posterOnLocation": "Poster (opname op locatie)",
+        "reelAI": "Reel/korte video (AI-gegenereerd)",
+        "reelClientFootage": "Reel/korte video (klantmateriaal)",
+        "reelOnLocation": "Reel/korte video (opname op locatie)",
+        "video1Min": "Video (1 minuut, standaard)",
+        "article600Words": "Artikel (600 woorden)"
       },
       "whatsappTemplate": "Hallo! Mijn berekening voor {{service}}:\n\n• Bedrijfstype: {{businessType}}\n• Doel: {{goal}}\n• Pakket: {{package}}\n• Advertentiebudget: {{adBudget}}\n• Extra opties: {{addons}}\n\n💰 Geschatte prijs: {{monthlyRange}} / maand\n📋 Setup: {{setup}}\n\nKan je me een offerte op maat sturen?"
     },
     "faq": {
       "label": "Veelgestelde vragen",
       "title": "FAQ",
-      "q1": "Is dit een contract per maand?",
-      "a1": "Ja, je betaalt maandelijks. Geen jaarcontract verplicht.",
-      "q2": "Kan ik stoppen wanneer ik wil?",
-      "a2": "Ja, met 30 dagen opzegtermijn. Geen verborgen clausules.",
-      "q3": "Werken jullie met vaste prijzen?",
-      "a3": "We werken met prijsranges. Na de intake krijg je een exacte offerte.",
-      "q4": "Wat als ik nog geen content heb?",
-      "a4": "Geen probleem. We produceren content voor je of begeleiden je team.",
-      "q5": "Hoe snel zie ik resultaat?",
-      "a5": "Eerste resultaten binnen 2-4 weken. Significante groei na 2-3 maanden.",
-      "q6": "Wat als ik een klein budget heb?",
-      "a6": "We hebben Starter-pakketten voor kleine budgetten. Vraag advies aan."
+      "q1": "Wat is inbegrepen en wat niet?",
+      "a1": "Elk pakket heeft duidelijk gedefinieerde deliverables. Content, strategie en rapportage zijn inbegrepen. Advertentiebudget betaal je rechtstreeks aan de platformen (Meta, Google). Zie het prijsoverzicht voor details.",
+      "q2": "Hoe lang duurt het om te starten?",
+      "a2": "Na goedkeuring van je offerte starten we binnen 5-7 werkdagen. Een korte intake van 30 min is voldoende om alles door te spreken.",
+      "q3": "Gebruiken jullie AI of echte opnames?",
+      "a3": "Beide! We bieden AI-gegenereerde content (sneller en goedkoper) én professionele opnames op locatie. Je kiest wat past bij je budget en doelen.",
+      "q4": "Wat hebben jullie van mij nodig?",
+      "a4": "Toegang tot je social accounts, merkrichtlijnen (indien beschikbaar) en een korte intake. Wij doen de rest.",
+      "q5": "Geldt de korting ook voor maandelijkse abonnementen?",
+      "a5": "Nee. De 20% korting geldt alleen voor eenmalige fees (setup, productie). Maandelijkse abonnementen hebben geen korting.",
+      "q6": "Wat met advertentiebudget?",
+      "a6": "Je advertentiebudget betaal je rechtstreeks aan Meta/Google. Onze management fee is apart en staat los van je advertentie-uitgaven.",
+      "q7": "Kan ik maandelijks opzeggen?",
+      "a7": "Ja, met 30 dagen opzegtermijn. Geen verborgen clausules of jaarcontracten verplicht.",
+      "q8": "Wie is eigenaar van de content?",
+      "a8": "Jij bent eigenaar van alle geproduceerde content. Na volledige betaling draag je alle rechten over.",
+      "q9": "Hoe werkt de prijscalculator?",
+      "a9": "De calculator geeft een indicatieve schatting op basis van je keuzes. Na een korte intake krijg je een exacte offerte op maat.",
+      "q10": "Werken jullie ook internationaal?",
+      "a10": "Ja, we werken met klanten in België, Nederland, Duitsland en het Midden-Oosten. Onze diensten zijn meertalig beschikbaar."
     },
     "finalCTA": {
       "title": "Klaar om te groeien met duidelijkheid?",

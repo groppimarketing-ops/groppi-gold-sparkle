@@ -33,6 +33,6 @@ export type TierKey = 'starter' | 'growth' | 'pro';
 
 export const DISCOUNT_DEADLINE_KEY = 'groppi_discount_deadline';
 export const ESTIMATE_PREFIX = 'groppi_estimate_';
-export const DISCOUNT_PERCENTAGE = 30;
+export const DISCOUNT_PERCENTAGE = 20; // 20% discount on one-time fees only
 export const ESTIMATE_VALIDITY_HOURS = 24;
 export const PROMO_DURATION_DAYS = 10;

@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 
 const STORAGE_KEY = 'groppi_discount_deadline';
 const DISCOUNT_DAYS = 10;
-const DISCOUNT_CODE = 'GROPPIGOLD30';
+const DISCOUNT_CODE = 'GROPPIGOLD20';
 
 interface TimeLeft {
   days: number;

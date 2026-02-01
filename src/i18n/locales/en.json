@@ -63,8 +63,8 @@
   },
   "launchDiscount": {
     "badge": "LIMITED DEAL",
-    "headline": "Start now with 30% launch discount.",
-    "subheadline": "Only for new clients — valid for 10 days. No fine print, just faster growth.",
+    "headline": "Start now with 20% launch discount.",
+    "subheadline": "Only for new clients — valid for 10 days. Discount applies to one-time fees only, not subscriptions.",
     "codeLabel": "Your discount code",
     "codeCopied": "Code copied!",
     "copyFailed": "Copy failed",
@@ -1141,7 +1141,9 @@
     "cta": {
       "title": "Ready to Strengthen Your Digital Presence?",
       "description": "Contact us today for a no-obligation conversation about how we can help you achieve your business goals.",
-      "button": "Request a Free Quote"
+      "button": "Request a Free Quote",
+      "whatsapp": "Chat via WhatsApp",
+      "contact": "Request a quote"
     }
   },
   "blog": {
@@ -1751,25 +1753,41 @@
         "emailAutomation": "Email automation",
         "analyticsSetup": "Analytics setup",
         "photoshoot": "Photoshoot",
-        "branding": "Branding package"
+        "branding": "Branding package",
+        "posterAI": "Poster (AI-generated)",
+        "posterClientFootage": "Poster (client footage, we edit)",
+        "posterOnLocation": "Poster (on-location shoot)",
+        "reelAI": "Reel/short video (AI-generated)",
+        "reelClientFootage": "Reel/short video (client footage)",
+        "reelOnLocation": "Reel/short video (on-location)",
+        "video1Min": "Video (1 minute, standard)",
+        "article600Words": "Article (600 words)"
       },
       "whatsappTemplate": "Hello! My calculation for {{service}}:\n\n• Business type: {{businessType}}\n• Goal: {{goal}}\n• Package: {{package}}\n• Ad budget: {{adBudget}}\n• Extra options: {{addons}}\n\n💰 Estimated price: {{monthlyRange}} / month\n📋 Setup: {{setup}}\n\nCan you send me a custom quote?"
     },
     "faq": {
       "label": "Frequently asked questions",
       "title": "FAQ",
-      "q1": "Is this a monthly contract?",
-      "a1": "Yes, you pay monthly. No annual contract required.",
-      "q2": "Can I cancel whenever I want?",
-      "a2": "Yes, with 30 days notice. No hidden clauses.",
-      "q3": "Do you work with fixed prices?",
-      "a3": "We work with price ranges. After the intake you'll get an exact quote.",
-      "q4": "What if I don't have content yet?",
-      "a4": "No problem. We produce content for you or guide your team.",
-      "q5": "How fast will I see results?",
-      "a5": "First results within 2-4 weeks. Significant growth after 2-3 months.",
-      "q6": "What if I have a small budget?",
-      "a6": "We have Starter packages for small budgets. Ask for advice."
+      "q1": "What's included and what's not?",
+      "a1": "Each package has clearly defined deliverables. Content, strategy and reporting are included. Ad budget is paid directly to platforms (Meta, Google). See the pricing overview for details.",
+      "q2": "How long does it take to start?",
+      "a2": "After quote approval, we start within 5-7 business days. A short 30-minute intake is enough to discuss everything.",
+      "q3": "Do you use AI or real photography?",
+      "a3": "Both! We offer AI-generated content (faster and cheaper) and professional on-location shoots. You choose what fits your budget and goals.",
+      "q4": "What do you need from me?",
+      "a4": "Access to your social accounts, brand guidelines (if available) and a short intake. We do the rest.",
+      "q5": "Does the discount apply to monthly subscriptions?",
+      "a5": "No. The 20% discount only applies to one-time fees (setup, production). Monthly subscriptions have no discount.",
+      "q6": "What about ad budget?",
+      "a6": "Your ad budget is paid directly to Meta/Google. Our management fee is separate and independent of your ad spend.",
+      "q7": "Can I cancel monthly?",
+      "a7": "Yes, with 30 days notice. No hidden clauses or annual contracts required.",
+      "q8": "Who owns the content?",
+      "a8": "You own all produced content. After full payment, all rights are transferred to you.",
+      "q9": "How does the price calculator work?",
+      "a9": "The calculator gives an indicative estimate based on your choices. After a short intake, you'll get an exact custom quote.",
+      "q10": "Do you work internationally?",
+      "a10": "Yes, we work with clients in Belgium, Netherlands, Germany and the Middle East. Our services are available in multiple languages."
     },
     "finalCTA": {
       "title": "Ready to grow with clarity?",
