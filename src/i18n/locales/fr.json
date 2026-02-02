@@ -62,7 +62,8 @@
     "cta": {
       "whatsapp": "Recevoir mon code sur WhatsApp",
       "claimWhatsApp": "Recevoir mon code sur WhatsApp",
-      "planCall": "Planifier un appel"
+      "planCall": "Planifier un appel",
+      "planCallHelper": "Choisissez un créneau qui vous convient. Appel découverte gratuit (30 min)."
     },
     "step1": "Choisissez le type de paiement",
     "step2": "Sélectionnez vos livrables",
@@ -438,6 +439,7 @@
     "followUs": "Suivez-nous",
     "quickLinks": "Liens rapides",
     "contact": "Coordonnées",
+    "planCall": "Planifier un appel (30 min)",
     "newsletter": {
       "title": "Newsletter",
       "description": "Restez informé de nos derniers insights et conseils.",

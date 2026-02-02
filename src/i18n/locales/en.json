@@ -63,7 +63,8 @@
     "cta": {
       "whatsapp": "Claim your code via WhatsApp",
       "claimWhatsApp": "Claim your code via WhatsApp",
-      "planCall": "Plan a call"
+      "planCall": "Book a call",
+      "planCallHelper": "Pick a time that works. Free intro call (30 min)."
     },
     "step1": "Choose payment type",
     "step2": "Select your deliverables",
@@ -1365,6 +1366,7 @@
     "followUs": "Follow Us",
     "quickLinks": "Quick Links",
     "contact": "Contact Info",
+    "planCall": "Book a call (30 min)",
     "newsletter": {
       "title": "Newsletter",
       "description": "Stay updated with our latest insights and tips.",
@@ -1747,7 +1749,8 @@
   "servicePage": {
     "cta": {
       "requestQuote": "Request a quote",
-      "whatsapp": "Chat via WhatsApp"
+      "whatsapp": "Chat via WhatsApp",
+      "planCall": "Book a call"
     },
     "trustNote": "Transparent pricing. No hidden costs.",
     "videoPlaceholder": "Video coming soon",

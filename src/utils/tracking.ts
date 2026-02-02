@@ -11,6 +11,7 @@ type TrackingEvent =
   | 'facebook_click'
   | 'tiktok_click'
   | 'linkedin_click'
+  | 'calendly_click'
   | 'planbuilder_social_channels'
   | 'planbuilder_social_frequency'
   | 'planbuilder_social_ads_budget'
@@ -92,6 +93,7 @@ export const socialLinks = {
   linkedin: 'https://www.linkedin.com/in/groppi-marketing-bureau/',
   email: 'mailto:info@groppi.be',
   phone: 'tel:+32494311119',
+  calendly: 'https://calendly.com/groppimarketing/30min',
 } as const;
 
 // Contact info

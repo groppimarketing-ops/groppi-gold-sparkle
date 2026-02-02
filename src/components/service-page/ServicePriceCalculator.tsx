@@ -1,7 +1,7 @@
 import { memo, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calculator, MessageCircle, CreditCard, RefreshCw, Info, Sparkles } from 'lucide-react';
+import { Calculator, MessageCircle, CreditCard, RefreshCw, Info, Sparkles, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -11,6 +11,9 @@ import {
   DISCOUNT_CONFIG,
 } from '@/config/pricingConfig';
 import DiscountCountdownCard from './DiscountCountdownCard';
+import { trackEvent, socialLinks } from '@/utils/tracking';
+
+const CALENDLY_URL = socialLinks.calendly;
 
 interface ServicePriceCalculatorProps {
   serviceKey: string;
@@ -432,10 +435,19 @@ Kan je dit bevestigen?`;
                           className="w-full glass-button"
                           asChild
                         >
-                          <a href="https://calendly.com/groppi" target="_blank" rel="noopener noreferrer">
+                          <a 
+                            href={CALENDLY_URL} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            onClick={() => trackEvent({ event: 'calendly_click', location: 'services_calculator' })}
+                          >
+                            <Calendar className="w-4 h-4 mr-2" />
                             {t('calculator.cta.planCall')}
                           </a>
                         </Button>
+                        <p className="text-xs text-muted-foreground text-center">
+                          {t('calculator.cta.planCallHelper')}
+                        </p>
                       </div>
 
                       {/* Discount Countdown Card */}
