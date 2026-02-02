@@ -283,10 +283,10 @@ const Header = () => {
                         rel="noopener noreferrer"
                         aria-label={`Open ${social.label}`}
                         onClick={() => trackEvent({ event: social.event, location: 'header' })}
-                        whileHover={{ y: -2 }}
+                        whileHover={{ y: -2, scale: 1.06 }}
                         whileTap={{ scale: 0.95 }}
                         transition={{ duration: 0.18 }}
-                        className={`flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded ${social.hoverGlow}`}
+                        className={`social-icon-glow flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded ${social.hoverGlow}`}
                         style={{ color: social.color }}
                       >
                         <social.icon className="h-[18px] w-[18px]" />
@@ -316,10 +316,10 @@ const Header = () => {
                     rel="noopener noreferrer"
                     aria-label={`Open ${social.label}`}
                     onClick={() => trackEvent({ event: social.event, location: 'header' })}
-                    whileHover={{ y: -2 }}
+                    whileHover={{ y: -2, scale: 1.06 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ duration: 0.18 }}
-                    className={`flex items-center justify-center transition-all duration-200 rounded ${social.hoverGlow}`}
+                    className={`social-icon-glow flex items-center justify-center transition-all duration-200 rounded ${social.hoverGlow}`}
                     style={{ color: social.color }}
                   >
                     <social.icon className="h-4 w-4" />
@@ -445,7 +445,7 @@ const Header = () => {
                         rel="noopener noreferrer"
                         aria-label={`Open ${social.label}`}
                         onClick={() => trackEvent({ event: social.event, location: 'header_mobile' })}
-                        className="transition-transform hover:scale-110"
+                        className="social-icon-glow transition-transform hover:scale-110"
                         style={{ color: social.color }}
                       >
                         <social.icon className="h-5 w-5" />
