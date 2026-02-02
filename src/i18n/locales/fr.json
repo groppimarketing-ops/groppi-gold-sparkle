@@ -8,6 +8,136 @@
     "contact": "Contact",
     "franchise": "Partenariat"
   },
+  "pricing": {
+    "from": "À partir de",
+    "customQuote": "Devis sur mesure",
+    "perMonth": "/ mois",
+    "oneTime": "paiement unique",
+    "vatExcluded": "hors TVA",
+    "vatExcludedNote": "Tous les prix sont hors TVA. La TVA sera ajoutée à la facture.",
+    "vatDisclaimer": {
+      "title": "Informations tarifaires",
+      "line1": "Tous les prix sont hors TVA (21%).",
+      "line2": "La remise s'applique uniquement aux projets ponctuels.",
+      "line3": "Les abonnements mensuels sont exclus des remises."
+    }
+  },
+  "services": {
+    "sectionTitle": "Nos services",
+    "sectionSubtitle": "Regardez d'abord la vidéo pour comprendre chaque service, puis consultez les détails.",
+    "card": {
+      "requestQuote": "Demander un devis",
+      "viewDetails": "Voir les détails",
+      "watchHowItWorks": "Voir comment ça marche (60 sec)",
+      "buildYourPlan": "Créer votre formule"
+    },
+    "badges": {
+      "monthly": "Mensuel",
+      "oneTime": "Paiement unique",
+      "custom": "Sur mesure",
+      "mostChosen": "Le plus choisi"
+    }
+  },
+  "calculator": {
+    "title": "Calculez votre prix en 60 sec",
+    "paymentTypeTitle": "Choisissez votre mode de paiement",
+    "payment": {
+      "oneTime": "Projet (paiement unique)",
+      "oneTimeDesc": "Payez par article. Remise possible.",
+      "monthly": "Abonnement mensuel",
+      "monthlyDesc": "Montant mensuel fixe. Pas de remise applicable."
+    },
+    "discountBadge": "Remise de lancement 20%",
+    "discountNote": "La remise s'applique uniquement aux frais uniques, pas aux abonnements mensuels.",
+    "vatNote": "Tous les prix sont hors TVA",
+    "estimatedMonthlyFee": "Frais mensuels estimés",
+    "setupFee": "Frais de mise en place",
+    "totalFirstMonth": "Total du premier mois",
+    "subtotal": "Sous-total",
+    "total": "Total",
+    "basePrice": "Prix de base",
+    "addons": "Options",
+    "configurePackage": "Configurez votre forfait",
+    "extraOptions": "Options supplémentaires",
+    "cta": {
+      "whatsapp": "Recevoir mon code sur WhatsApp",
+      "planCall": "Planifier un appel"
+    },
+    "step1": "Choisissez le type de paiement",
+    "step2": "Sélectionnez vos livrables",
+    "noDiscountMonthly": "La remise de lancement de 20% ne s'applique pas aux abonnements mensuels.",
+    "referenceCode": "Code de référence"
+  },
+  "servicePage": {
+    "contentCalculator": {
+      "label": "Calculateur de contenu",
+      "title": "Calculez le prix de votre contenu",
+      "subtitle": "Prix fixes. Pas de surprises.",
+      "step1": "Choisissez le type de paiement",
+      "step2": "Sélectionnez vos livrables",
+      "oneTime": "Projet (paiement unique)",
+      "oneTimeDesc": "Payez par article. Remise possible.",
+      "monthly": "Abonnement mensuel",
+      "monthlyDesc": "Montant mensuel fixe. Pas de remise applicable.",
+      "noDiscountMonthly": "La remise de lancement de 20% ne s'applique pas aux abonnements mensuels.",
+      "posters": "Affiches (IA)",
+      "reels": "Reels",
+      "videos": "Vidéos (1 minute)",
+      "articles": "Articles (600 mots)",
+      "quantity": "Quantité",
+      "perItem": "par article",
+      "fixed": "fixe",
+      "reelTypes": {
+        "ai": "Généré par IA",
+        "clientFootage": "Footage client (nous éditons)",
+        "onSite": "Nous filmons sur place"
+      },
+      "vatNote": "Tous les prix sont hors TVA. La TVA sera ajoutée à la facture.",
+      "quoteCode": "Votre code de devis"
+    },
+    "calculator": {
+      "label": "Calculateur de prix",
+      "title": "Calculez votre prix",
+      "step1": "Choisissez le type de paiement",
+      "oneTimeProject": "Projet (paiement unique)",
+      "oneTimeDesc": "Setup + premier mois. Remise possible.",
+      "monthlySubscription": "Abonnement mensuel",
+      "monthlyDesc": "En continu. Pas de remise applicable.",
+      "noDiscountMonthly": "La remise de lancement de 20% ne s'applique pas aux abonnements mensuels.",
+      "configureLabel": "Configurez votre forfait",
+      "addonsLabel": "Options supplémentaires"
+    },
+    "pricingFAQ": {
+      "label": "Questions fréquentes",
+      "title": "FAQ sur les prix",
+      "questions": {
+        "discount": {
+          "q": "La remise s'applique-t-elle aux abonnements mensuels ?",
+          "a": "Non. La remise de lancement de 20% s'applique uniquement aux projets ponctuels comme les affiches, reels, vidéos et articles. Les services mensuels sont exclus."
+        },
+        "validity": {
+          "q": "Combien de temps la remise est-elle valable ?",
+          "a": "10 jours à partir de votre première visite. Après cela, la remise expire automatiquement."
+        },
+        "reelPrice": {
+          "q": "Comment fonctionne le prix des Reels ?",
+          "a": "Vous avez 3 options : généré par IA (€150), nous éditons votre footage (€200), ou nous filmons sur place chez vous (€250). Le prix dépend du travail effectué."
+        },
+        "videoLength": {
+          "q": "Quelle est la durée d'une vidéo/reel ?",
+          "a": "La norme est 1 minute par vidéo. Pour des vidéos plus longues, nous demandons un devis personnalisé."
+        },
+        "articleLength": {
+          "q": "Quelle est la longueur d'un article ?",
+          "a": "600 mots est la norme. Le prix est fixe : €99 par article. Pour des articles plus longs ou plus courts, nous pouvons discuter d'un prix personnalisé."
+        },
+        "payment": {
+          "q": "Puis-je payer en ligne ?",
+          "a": "Non, nous n'acceptons pas les paiements en ligne sur le site. Après votre calcul, envoyez votre code via WhatsApp ou planifiez un appel. Nous confirmerons dans les 24 heures avec un devis définitif."
+        }
+      }
+    }
+  },
   "hero": {
     "title": "GROPPI – Expertise humaine, renforcée par une technologie intelligente",
     "subtitle": "Votre partenaire digital stratégique depuis 2016",

@@ -23,6 +23,122 @@
       "line3": "Monthly subscriptions are excluded from discounts."
     }
   },
+  "services": {
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "Watch the video first to understand how each service works, then continue to the details.",
+    "card": {
+      "requestQuote": "Request a quote",
+      "viewDetails": "View details",
+      "watchHowItWorks": "Watch how it works (60 sec)",
+      "buildYourPlan": "Build your plan"
+    },
+    "badges": {
+      "monthly": "Monthly",
+      "oneTime": "One-time",
+      "custom": "Custom",
+      "mostChosen": "Most chosen"
+    }
+  },
+  "calculator": {
+    "title": "Calculate your price in 60 sec",
+    "paymentTypeTitle": "Choose payment type",
+    "payment": {
+      "oneTime": "One-time project",
+      "oneTimeDesc": "Pay per item. Discount possible.",
+      "monthly": "Monthly subscription",
+      "monthlyDesc": "Fixed monthly fee. No discount applies."
+    },
+    "discountBadge": "20% launch discount",
+    "discountNote": "Discount applies only to one-time setup, not monthly subscriptions.",
+    "vatNote": "All prices excl. VAT",
+    "estimatedMonthlyFee": "Estimated monthly service fee",
+    "setupFee": "Setup fee",
+    "totalFirstMonth": "Total first month",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "basePrice": "Base price",
+    "addons": "Add-ons",
+    "configurePackage": "Configure your package",
+    "extraOptions": "Extra options",
+    "cta": {
+      "whatsapp": "Claim your code via WhatsApp",
+      "planCall": "Plan a call"
+    },
+    "step1": "Choose payment type",
+    "step2": "Select your deliverables",
+    "noDiscountMonthly": "The 20% launch discount does not apply to monthly subscriptions.",
+    "referenceCode": "Reference code"
+  },
+  "servicePage": {
+    "contentCalculator": {
+      "label": "Content Calculator",
+      "title": "Calculate your content price",
+      "subtitle": "Fixed prices. No surprises.",
+      "step1": "Choose payment type",
+      "step2": "Select your deliverables",
+      "oneTime": "One-time project",
+      "oneTimeDesc": "Pay per item. Discount possible.",
+      "monthly": "Monthly subscription",
+      "monthlyDesc": "Fixed monthly fee. No discount applies.",
+      "noDiscountMonthly": "The 20% launch discount does not apply to monthly subscriptions.",
+      "posters": "Posters (AI)",
+      "reels": "Reels",
+      "videos": "Videos (1 minute)",
+      "articles": "Articles (600 words)",
+      "quantity": "Quantity",
+      "perItem": "per item",
+      "fixed": "fixed",
+      "reelTypes": {
+        "ai": "AI generated",
+        "clientFootage": "Client footage (we edit)",
+        "onSite": "We film on-site"
+      },
+      "vatNote": "All prices excl. VAT. VAT will be added on the invoice.",
+      "quoteCode": "Your quote code"
+    },
+    "calculator": {
+      "label": "Price Calculator",
+      "title": "Calculate your price",
+      "step1": "Choose payment type",
+      "oneTimeProject": "One-time project",
+      "oneTimeDesc": "Setup + first month. Discount possible.",
+      "monthlySubscription": "Monthly subscription",
+      "monthlyDesc": "Ongoing. No discount applies.",
+      "noDiscountMonthly": "The 20% launch discount does not apply to monthly subscriptions.",
+      "configureLabel": "Configure your package",
+      "addonsLabel": "Extra options"
+    },
+    "pricingFAQ": {
+      "label": "Frequently asked questions",
+      "title": "Pricing FAQ",
+      "questions": {
+        "discount": {
+          "q": "Does the discount apply to monthly subscriptions?",
+          "a": "No. The 20% launch discount only applies to one-time projects such as posters, reels, videos, and articles. Monthly services are excluded."
+        },
+        "validity": {
+          "q": "How long is the discount valid?",
+          "a": "10 days from your first visit. After that, the discount expires automatically."
+        },
+        "reelPrice": {
+          "q": "How does pricing for Reels work?",
+          "a": "You have 3 options: AI generated (€150), we edit your footage (€200), or we film on-site at your location (€250). The price depends on how much work we do."
+        },
+        "videoLength": {
+          "q": "How long is a video/reel?",
+          "a": "Standard is 1 minute per video. For longer videos, we request a custom quote."
+        },
+        "articleLength": {
+          "q": "How long is an article?",
+          "a": "600 words is the standard. The price is fixed: €99 per article. For longer or shorter articles, we can discuss a custom price."
+        },
+        "payment": {
+          "q": "Can I pay online?",
+          "a": "No, we don't accept online payments on the website. After your calculation, send your code via WhatsApp or schedule a call. We'll confirm within 24 hours with a final quote."
+        }
+      }
+    }
+  },
   "common": {
     "loading": "Loading...",
     "error": "Something went wrong",

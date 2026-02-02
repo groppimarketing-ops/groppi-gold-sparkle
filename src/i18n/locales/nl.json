@@ -23,6 +23,122 @@
       "line3": "Maandelijkse abonnementen zijn uitgesloten van korting."
     }
   },
+  "services": {
+    "sectionTitle": "Onze diensten",
+    "sectionSubtitle": "Bekijk eerst de video om te begrijpen hoe elke dienst werkt, en ga daarna naar de details.",
+    "card": {
+      "requestQuote": "Offerte aanvragen",
+      "viewDetails": "Bekijk details",
+      "watchHowItWorks": "Bekijk hoe het werkt (60 sec)",
+      "buildYourPlan": "Stel je plan samen"
+    },
+    "badges": {
+      "monthly": "Maandelijks",
+      "oneTime": "Eenmalig",
+      "custom": "Op maat",
+      "mostChosen": "Meest gekozen"
+    }
+  },
+  "calculator": {
+    "title": "Bereken je prijs in 60 sec",
+    "paymentTypeTitle": "Kies je betaaltype",
+    "payment": {
+      "oneTime": "Eenmalig project",
+      "oneTimeDesc": "Betaal per item. Korting mogelijk.",
+      "monthly": "Maandelijks abonnement",
+      "monthlyDesc": "Vast maandbedrag. Geen korting van toepassing."
+    },
+    "discountBadge": "20% launchkorting",
+    "discountNote": "Korting geldt enkel op eenmalige setup, niet op maandelijkse abonnementen.",
+    "vatNote": "Alle prijzen zijn exclusief BTW",
+    "estimatedMonthlyFee": "Geschatte maandelijkse servicekost",
+    "setupFee": "Setup kost",
+    "totalFirstMonth": "Totaal eerste maand",
+    "subtotal": "Subtotaal",
+    "total": "Totaal",
+    "basePrice": "Basisprijs",
+    "addons": "Add-ons",
+    "configurePackage": "Configureer je pakket",
+    "extraOptions": "Extra opties",
+    "cta": {
+      "whatsapp": "Claim je code via WhatsApp",
+      "planCall": "Plan een call"
+    },
+    "step1": "Kies je betaaltype",
+    "step2": "Kies je deliverables",
+    "noDiscountMonthly": "De 20% launchkorting is niet van toepassing op maandelijkse abonnementen.",
+    "referenceCode": "Referentiecode"
+  },
+  "servicePage": {
+    "contentCalculator": {
+      "label": "Content Calculator",
+      "title": "Bereken je contentprijs",
+      "subtitle": "Vaste prijzen. Geen verrassingen.",
+      "step1": "Kies je betaaltype",
+      "step2": "Kies je deliverables",
+      "oneTime": "Eenmalig project",
+      "oneTimeDesc": "Betaal per item. Korting mogelijk.",
+      "monthly": "Maandelijks abonnement",
+      "monthlyDesc": "Vast maandbedrag. Geen korting van toepassing.",
+      "noDiscountMonthly": "De 20% launchkorting is niet van toepassing op maandelijkse abonnementen.",
+      "posters": "Posters (AI)",
+      "reels": "Reels",
+      "videos": "Video's (1 minuut)",
+      "articles": "Artikels (600 woorden)",
+      "quantity": "Aantal",
+      "perItem": "per stuk",
+      "fixed": "vast",
+      "reelTypes": {
+        "ai": "AI volledig",
+        "clientFootage": "Client footage (wij editen)",
+        "onSite": "Wij filmen on-site"
+      },
+      "vatNote": "Alle prijzen excl. BTW. BTW wordt toegevoegd op de factuur.",
+      "quoteCode": "Je offertenummer"
+    },
+    "calculator": {
+      "label": "Prijscalculator",
+      "title": "Bereken je prijs",
+      "step1": "Kies je betaaltype",
+      "oneTimeProject": "Eenmalig project",
+      "oneTimeDesc": "Setup + eerste maand. Korting mogelijk.",
+      "monthlySubscription": "Maandelijks abonnement",
+      "monthlyDesc": "Doorlopend. Geen korting van toepassing.",
+      "noDiscountMonthly": "De 20% launchkorting is niet van toepassing op maandelijkse abonnementen.",
+      "configureLabel": "Configureer je pakket",
+      "addonsLabel": "Extra opties"
+    },
+    "pricingFAQ": {
+      "label": "Veelgestelde vragen",
+      "title": "FAQ over prijzen",
+      "questions": {
+        "discount": {
+          "q": "Geldt de korting op maandelijkse abonnementen?",
+          "a": "Nee. De 20% launchkorting geldt enkel voor eenmalige projecten zoals posters, reels, video's en artikels. Maandelijkse diensten zijn uitgesloten."
+        },
+        "validity": {
+          "q": "Hoe lang is de korting geldig?",
+          "a": "10 dagen vanaf je eerste bezoek. Daarna vervalt de korting automatisch."
+        },
+        "reelPrice": {
+          "q": "Hoe werkt de prijs voor Reels?",
+          "a": "Je hebt 3 opties: AI volledig (€150), wij editen jouw footage (€200), of wij filmen on-site bij jou (€250). De prijs hangt af van hoeveel werk wij doen."
+        },
+        "videoLength": {
+          "q": "Hoe lang is een video/reel?",
+          "a": "Standaard rekenen we met 1 minuut per video. Voor langere video's vragen we een offerte op maat."
+        },
+        "articleLength": {
+          "q": "Hoe lang is een artikel?",
+          "a": "600 woorden is de standaard. De prijs is vast: €99 per artikel. Voor langere of kortere artikels kunnen we een aangepaste prijs bespreken."
+        },
+        "payment": {
+          "q": "Kan ik online betalen?",
+          "a": "Nee, wij accepteren geen online betalingen via de website. Na je berekening stuur je je code via WhatsApp of plan je een call. We bevestigen binnen 24 uur met een definitieve offerte."
+        }
+      }
+    }
+  },
   "common": {
     "loading": "Laden...",
     "error": "Er is iets misgegaan",

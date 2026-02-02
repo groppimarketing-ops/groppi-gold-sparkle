@@ -1,12 +1,10 @@
 import { memo, useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Sparkles, Clock, Copy, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { DISCOUNT_CONFIG, getDiscountInfo } from '@/config/pricingConfig';
 
-// Discount settings
-const DISCOUNT_PERCENTAGE = 20;
-const DISCOUNT_DAYS = 10;
-const STORAGE_KEY = 'groppi_launch_discount_start';
 const DISCOUNT_CODE = 'GROPPIGOLD20';
 
 interface LaunchDiscountBannerProps {
@@ -14,29 +12,15 @@ interface LaunchDiscountBannerProps {
 }
 
 const LaunchDiscountBanner = memo(({ compact = false }: LaunchDiscountBannerProps) => {
+  const { t } = useTranslation();
   const [discountDaysLeft, setDiscountDaysLeft] = useState(0);
   const [discountActive, setDiscountActive] = useState(false);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    // Initialize or retrieve discount start date
-    let startDate = localStorage.getItem(STORAGE_KEY);
-    if (!startDate) {
-      startDate = new Date().toISOString();
-      localStorage.setItem(STORAGE_KEY, startDate);
-    }
-    
-    const start = new Date(startDate);
-    const now = new Date();
-    const diffDays = Math.floor((now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
-    const remaining = DISCOUNT_DAYS - diffDays;
-    
-    if (remaining > 0) {
-      setDiscountDaysLeft(remaining);
-      setDiscountActive(true);
-    } else {
-      setDiscountActive(false);
-    }
+    const info = getDiscountInfo();
+    setDiscountActive(info.active);
+    setDiscountDaysLeft(info.daysLeft);
   }, []);
 
   const handleCopyCode = () => {
@@ -56,7 +40,7 @@ const LaunchDiscountBanner = memo(({ compact = false }: LaunchDiscountBannerProp
       >
         <Sparkles className="w-3 h-3 text-primary" />
         <span className="text-xs font-medium text-primary">
-          -{DISCOUNT_PERCENTAGE}% • Nog {discountDaysLeft}d
+          -{DISCOUNT_CONFIG.percentage}% • {discountDaysLeft}d
         </span>
       </motion.div>
     );
@@ -76,10 +60,10 @@ const LaunchDiscountBanner = memo(({ compact = false }: LaunchDiscountBannerProp
             </div>
             <div>
               <p className="text-lg font-bold text-primary">
-                {DISCOUNT_PERCENTAGE}% Launchkorting
+                {t('calculator.discountBadge')}
               </p>
               <p className="text-sm text-muted-foreground">
-                Geldt enkel voor eenmalige projecten (geen abonnementen)
+                {t('calculator.discountNote')}
               </p>
             </div>
           </div>
@@ -89,7 +73,7 @@ const LaunchDiscountBanner = memo(({ compact = false }: LaunchDiscountBannerProp
             <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30">
               <Clock className="w-4 h-4 text-primary" />
               <span className="font-bold text-primary">
-                Nog {discountDaysLeft} {discountDaysLeft === 1 ? 'dag' : 'dagen'}
+                {discountDaysLeft} {discountDaysLeft === 1 ? 'dag' : 'dagen'}
               </span>
             </div>
 
@@ -111,7 +95,7 @@ const LaunchDiscountBanner = memo(({ compact = false }: LaunchDiscountBannerProp
         </div>
         
         <p className="text-xs text-muted-foreground mt-4 text-center">
-          *Kortingen gelden enkel voor eenmalige projecten. Maandelijkse abonnementen zijn uitgesloten.
+          *{t('pricing.vatDisclaimer.line2')} {t('pricing.vatDisclaimer.line3')}
         </p>
       </div>
     </motion.div>

@@ -6,13 +6,6 @@ import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import {
   WEBSITE_PRICING,
   SUBSCRIPTION_PRICING,
   DISCOUNT_CONFIG,
@@ -83,11 +76,11 @@ const getServicePricing = (serviceKey: string) => {
 
 // Add-on options
 const ADD_ONS = {
-  extraPages: { price: 150, label: 'Extra pagina (+€150)' },
-  seoSetup: { price: 200, label: 'SEO basis setup (+€200)' },
-  contentWriting: { price: 250, label: 'Content schrijven (+€250)' },
-  socialIntegration: { price: 100, label: 'Social media integratie (+€100)' },
-  analyticsSetup: { price: 150, label: 'Analytics dashboard (+€150)' },
+  extraPages: { price: 150, labelKey: 'Extra pagina (+€150)' },
+  seoSetup: { price: 200, labelKey: 'SEO basis setup (+€200)' },
+  contentWriting: { price: 250, labelKey: 'Content schrijven (+€250)' },
+  socialIntegration: { price: 100, labelKey: 'Social media integratie (+€100)' },
+  analyticsSetup: { price: 150, labelKey: 'Analytics dashboard (+€150)' },
 };
 
 const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps) => {
@@ -169,21 +162,23 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
     const serviceName = t(`servicePage.${serviceKey}.title`, serviceKey);
     const selectedAddonsList = Object.entries(selectedAddons)
       .filter(([, enabled]) => enabled)
-      .map(([key]) => ADD_ONS[key as keyof typeof ADD_ONS]?.label || key)
+      .map(([key]) => ADD_ONS[key as keyof typeof ADD_ONS]?.labelKey || key)
       .join(', ');
 
-    const paymentLabel = paymentType === 'one_time' ? 'Eenmalig project' : 'Maandelijks abonnement';
+    const paymentLabel = paymentType === 'one_time' 
+      ? t('calculator.payment.oneTime') 
+      : t('calculator.payment.monthly');
 
     const message = `Hallo! Hier is mijn berekening:
 
-📋 Referentiecode: ${quoteCode}
+📋 ${t('calculator.referenceCode')}: ${quoteCode}
 🎯 Dienst: ${serviceName}
 💳 Type: ${paymentLabel}
 ${selectedAddonsList ? `➕ Add-ons: ${selectedAddonsList}` : ''}
 
-💰 Basisprijs: €${pricing.basePrice}${pricing.isMonthly ? '/maand' : ''}
-${pricing.setupFee > 0 ? `🚀 Setup: €${pricing.setupFee}\n` : ''}${pricing.addonsTotal > 0 ? `➕ Add-ons: €${pricing.addonsTotal}\n` : ''}${pricing.discountAmount > 0 ? `🎉 Launchkorting (-${DISCOUNT_CONFIG.percentage}%): -€${pricing.discountAmount}\n` : ''}
-✅ Totaal: €${pricing.total}${pricing.isMonthly ? '/maand' : ''} (excl. BTW)
+💰 ${t('calculator.basePrice')}: €${pricing.basePrice}${pricing.isMonthly ? t('pricing.perMonth') : ''}
+${pricing.setupFee > 0 ? `🚀 ${t('calculator.setupFee')}: €${pricing.setupFee}\n` : ''}${pricing.addonsTotal > 0 ? `➕ ${t('calculator.addons')}: €${pricing.addonsTotal}\n` : ''}${pricing.discountAmount > 0 ? `🎉 ${t('calculator.discountBadge')}: -€${pricing.discountAmount}\n` : ''}
+✅ ${t('calculator.total')}: €${pricing.total}${pricing.isMonthly ? t('pricing.perMonth') : ''} (${t('pricing.vatExcluded')})
 
 Kan je dit bevestigen?`;
 
@@ -211,7 +206,7 @@ Kan je dit bevestigen?`;
             >
               <Calculator className="w-5 h-5" />
               <span className="text-xs font-semibold tracking-[0.2em] uppercase">
-                {t('servicePage.calculator.label', 'Prijscalculator')}
+                {t('servicePage.calculator.label')}
               </span>
             </motion.div>
             
@@ -222,7 +217,7 @@ Kan je dit bevestigen?`;
               transition={{ delay: 0.1 }}
               className="text-3xl md:text-4xl font-bold gold-gradient-text"
             >
-              {t('servicePage.calculator.title', 'Bereken je prijs')}
+              {t('servicePage.calculator.title')}
             </motion.h2>
           </div>
 
@@ -240,7 +235,7 @@ Kan je dit bevestigen?`;
                 <div className="flex items-center gap-2 mb-4">
                   <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm font-bold">1</span>
                   <Label className="text-lg font-semibold text-foreground">
-                    {t('servicePage.calculator.step1', 'Kies je betaaltype')}
+                    {t('calculator.step1')}
                   </Label>
                 </div>
                 
@@ -256,16 +251,16 @@ Kan je dit bevestigen?`;
                     <div className="flex items-center gap-3 mb-2">
                       <CreditCard className={`w-5 h-5 ${paymentType === 'one_time' ? 'text-primary' : 'text-muted-foreground'}`} />
                       <span className={`font-semibold ${paymentType === 'one_time' ? 'text-primary' : 'text-foreground'}`}>
-                        {t('servicePage.calculator.oneTimeProject', 'Eenmalig project')}
+                        {t('calculator.payment.oneTime')}
                       </span>
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      {t('servicePage.calculator.oneTimeDesc', 'Setup + eerste maand. Korting mogelijk.')}
+                      {t('calculator.payment.oneTimeDesc')}
                     </p>
                     {discountActive && (
                       <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary/20 text-primary text-xs font-medium">
                         <Sparkles className="w-3 h-3" />
-                        -{DISCOUNT_CONFIG.percentage}% korting
+                        {t('calculator.discountBadge')}
                       </div>
                     )}
                   </button>
@@ -281,11 +276,11 @@ Kan je dit bevestigen?`;
                     <div className="flex items-center gap-3 mb-2">
                       <RefreshCw className={`w-5 h-5 ${paymentType === 'monthly' ? 'text-primary' : 'text-muted-foreground'}`} />
                       <span className={`font-semibold ${paymentType === 'monthly' ? 'text-primary' : 'text-foreground'}`}>
-                        {t('servicePage.calculator.monthlySubscription', 'Maandelijks abonnement')}
+                        {t('calculator.payment.monthly')}
                       </span>
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      {t('servicePage.calculator.monthlyDesc', 'Doorlopend. Geen korting van toepassing.')}
+                      {t('calculator.payment.monthlyDesc')}
                     </p>
                   </button>
                 </div>
@@ -300,7 +295,7 @@ Kan je dit bevestigen?`;
                     <div className="flex items-start gap-2 text-sm text-muted-foreground">
                       <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
                       <span>
-                        {t('servicePage.calculator.noDiscountMonthly', 'De 20% launchkorting is niet van toepassing op maandelijkse abonnementen.')}
+                        {t('calculator.noDiscountMonthly')}
                       </span>
                     </div>
                   </motion.div>
@@ -321,7 +316,7 @@ Kan je dit bevestigen?`;
                       {showPaymentTypeStep ? '2' : '1'}
                     </span>
                     <Label className="text-lg font-semibold text-foreground">
-                      {t('servicePage.calculator.configureLabel', 'Configureer je pakket')}
+                      {t('calculator.configurePackage')}
                     </Label>
                   </div>
 
@@ -331,15 +326,15 @@ Kan je dit bevestigen?`;
                       {/* Base Price Display */}
                       <div className="p-4 rounded-xl bg-primary/10 border border-primary/20">
                         <div className="flex justify-between items-center">
-                          <span className="text-foreground font-medium">Basisprijs</span>
+                          <span className="text-foreground font-medium">{t('calculator.basePrice')}</span>
                           <span className="text-2xl font-bold text-primary">
                             €{pricing.basePrice.toLocaleString('nl-BE')}
-                            {pricing.isMonthly && <span className="text-sm font-normal">/maand</span>}
+                            {pricing.isMonthly && <span className="text-sm font-normal">{t('pricing.perMonth')}</span>}
                           </span>
                         </div>
                         {pricing.setupFee > 0 && (
                           <div className="flex justify-between items-center mt-2 text-sm text-muted-foreground">
-                            <span>+ Setup fee</span>
+                            <span>+ {t('calculator.setupFee')}</span>
                             <span>€{pricing.setupFee}</span>
                           </div>
                         )}
@@ -348,7 +343,7 @@ Kan je dit bevestigen?`;
                       {/* Add-ons */}
                       <div className="space-y-3">
                         <Label className="text-foreground font-medium">
-                          {t('servicePage.calculator.addonsLabel', 'Extra opties')}
+                          {t('calculator.extraOptions')}
                         </Label>
                         {Object.entries(ADD_ONS).map(([key, addon]) => (
                           <div 
@@ -362,7 +357,7 @@ Kan je dit bevestigen?`;
                                 onCheckedChange={() => handleAddonToggle(key)}
                               />
                               <label htmlFor={key} className="text-sm text-foreground cursor-pointer">
-                                {addon.label}
+                                {addon.labelKey}
                               </label>
                             </div>
                           </div>
@@ -376,18 +371,18 @@ Kan je dit bevestigen?`;
                       <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
                         <div className="space-y-2 text-sm">
                           <div className="flex justify-between text-muted-foreground">
-                            <span>Basisprijs</span>
+                            <span>{t('calculator.basePrice')}</span>
                             <span>€{pricing.basePrice}</span>
                           </div>
                           {pricing.setupFee > 0 && (
                             <div className="flex justify-between text-muted-foreground">
-                              <span>Setup fee</span>
+                              <span>{t('calculator.setupFee')}</span>
                               <span>€{pricing.setupFee}</span>
                             </div>
                           )}
                           {pricing.addonsTotal > 0 && (
                             <div className="flex justify-between text-muted-foreground">
-                              <span>Add-ons</span>
+                              <span>{t('calculator.addons')}</span>
                               <span>€{pricing.addonsTotal}</span>
                             </div>
                           )}
@@ -395,7 +390,7 @@ Kan je dit bevestigen?`;
 
                         <div className="border-t border-primary/20 pt-3 mt-3">
                           <div className="flex justify-between items-center mb-2">
-                            <span className="text-muted-foreground">Subtotaal</span>
+                            <span className="text-muted-foreground">{t('calculator.subtotal')}</span>
                             <span className={`font-semibold ${pricing.discountEligible ? 'line-through text-muted-foreground' : 'text-foreground'}`}>
                               €{pricing.subtotal}
                             </span>
@@ -405,21 +400,21 @@ Kan je dit bevestigen?`;
                             <div className="flex justify-between items-center mb-2 text-primary">
                               <span className="flex items-center gap-1">
                                 <Sparkles className="w-4 h-4" />
-                                Launchkorting (-{DISCOUNT_CONFIG.percentage}%)
+                                {t('calculator.discountBadge')}
                               </span>
                               <span className="font-semibold">-€{pricing.discountAmount}</span>
                             </div>
                           )}
                           
                           <div className="flex justify-between items-center pt-2 border-t border-primary/10">
-                            <span className="font-semibold text-foreground">Totaal</span>
+                            <span className="font-semibold text-foreground">{t('calculator.total')}</span>
                             <span className="text-2xl font-bold text-primary">
                               €{pricing.total}
-                              {pricing.isMonthly && <span className="text-sm font-normal">/maand</span>}
+                              {pricing.isMonthly && <span className="text-sm font-normal">{t('pricing.perMonth')}</span>}
                             </span>
                           </div>
                           <p className="text-xs text-muted-foreground mt-1">
-                            {t('pricing.vatExcludedNote', 'Alle prijzen excl. BTW.')}
+                            {t('pricing.vatExcludedNote')}
                           </p>
                         </div>
                       </div>
@@ -427,7 +422,7 @@ Kan je dit bevestigen?`;
                       {/* Quote Code */}
                       <div className="p-4 rounded-xl bg-muted/30 border border-muted">
                         <div className="flex items-center justify-between mb-2">
-                          <span className="text-sm text-muted-foreground">Referentiecode</span>
+                          <span className="text-sm text-muted-foreground">{t('calculator.referenceCode')}</span>
                           <Button
                             variant="ghost"
                             size="sm"
@@ -454,13 +449,19 @@ Kan je dit bevestigen?`;
                         >
                           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                             <MessageCircle className="w-5 h-5 mr-2" />
-                            {t('servicePage.calculator.claimWhatsApp', 'Claim via WhatsApp')}
+                            {t('calculator.cta.whatsapp')}
                           </a>
                         </Button>
                         
-                        <p className="text-xs text-center text-muted-foreground">
-                          {t('servicePage.calculator.confirmNote', 'Stuur je code door. Wij bevestigen binnen 24u.')}
-                        </p>
+                        <Button
+                          variant="outline"
+                          className="w-full glass-button"
+                          asChild
+                        >
+                          <a href="https://calendly.com/groppi" target="_blank" rel="noopener noreferrer">
+                            {t('calculator.cta.planCall')}
+                          </a>
+                        </Button>
                       </div>
                     </div>
                   </div>
@@ -474,12 +475,12 @@ Kan je dit bevestigen?`;
                 <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-foreground mb-1">
-                    {t('pricing.vatDisclaimer.title', 'Prijsinformatie')}
+                    {t('pricing.vatDisclaimer.title')}
                   </p>
                   <ul className="space-y-1 text-xs">
-                    <li>• {t('pricing.vatDisclaimer.line1', 'Alle prijzen zijn exclusief BTW (21%).')}</li>
-                    <li>• {t('pricing.vatDisclaimer.line2', 'Korting geldt enkel voor eenmalige projecten.')}</li>
-                    <li>• {t('pricing.vatDisclaimer.line3', 'Maandelijkse abonnementen zijn uitgesloten van korting.')}</li>
+                    <li>• {t('pricing.vatDisclaimer.line1')}</li>
+                    <li>• {t('pricing.vatDisclaimer.line2')}</li>
+                    <li>• {t('pricing.vatDisclaimer.line3')}</li>
                   </ul>
                 </div>
               </div>
