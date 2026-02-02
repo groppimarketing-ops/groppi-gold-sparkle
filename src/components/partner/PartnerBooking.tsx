@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { Calendar, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import GlassCard from '@/components/ui/GlassCard';
+import { trackEvent, socialLinks } from '@/utils/tracking';
+
+const CALENDLY_URL = socialLinks.calendly;
 
 const PartnerBooking = () => {
   const { t } = useTranslation();
@@ -45,7 +48,10 @@ const PartnerBooking = () => {
           <Button 
             size="lg" 
             className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_8px_25px_hsl(43_100%_50%/0.25)] hover:translate-y-[-2px] transition-all duration-300"
-            onClick={() => window.open('https://calendly.com', '_blank')}
+            onClick={() => {
+              trackEvent({ event: 'calendly_click', location: 'partner_booking' });
+              window.open(CALENDLY_URL, '_blank');
+            }}
           >
             {t('partner.booking.cta')}
             <ArrowRight className="ml-2 h-5 w-5" />

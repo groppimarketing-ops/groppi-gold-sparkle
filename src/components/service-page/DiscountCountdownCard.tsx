@@ -5,7 +5,9 @@ import { Sparkles, Clock, Copy, Check, MessageCircle, Calendar, AlertTriangle, G
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { DISCOUNT_CONFIG } from '@/config/pricingConfig';
+import { trackEvent, socialLinks } from '@/utils/tracking';
 
+const CALENDLY_URL = socialLinks.calendly;
 // LocalStorage keys
 const LS_STARTED = 'gro_discount_startedAt';
 const LS_EXPIRES = 'gro_discount_expiresAt';
@@ -192,7 +194,12 @@ const DiscountCountdownCard = memo(({
               </a>
             </Button>
             <Button asChild variant="outline">
-              <a href="https://calendly.com/groppi" target="_blank" rel="noopener noreferrer">
+              <a 
+                href={CALENDLY_URL} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => trackEvent({ event: 'calendly_click', location: 'discount_card' })}
+              >
                 <Calendar className="w-4 h-4 mr-2" />
                 {t('calculator.cta.planCall')}
               </a>
@@ -283,12 +290,22 @@ const DiscountCountdownCard = memo(({
               </a>
             </Button>
             <Button asChild variant="outline" className="flex-1 border-primary/30 hover:bg-primary/10">
-              <a href="https://calendly.com/groppi" target="_blank" rel="noopener noreferrer">
+              <a 
+                href={CALENDLY_URL} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => trackEvent({ event: 'calendly_click', location: 'discount_card' })}
+              >
                 <Calendar className="w-4 h-4 mr-2" />
                 {t('calculator.cta.planCall')}
               </a>
             </Button>
           </div>
+          
+          {/* Helper text */}
+          <p className="text-xs text-muted-foreground text-center mt-3">
+            {t('calculator.cta.planCallHelper')}
+          </p>
 
           {/* VAT Note */}
           <p className="text-xs text-muted-foreground text-center mt-4">

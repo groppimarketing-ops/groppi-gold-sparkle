@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, Send, MessageCircle, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import groppiLogo from '@/assets/groppi-logo.png';
 import { trackEvent, socialLinks as socialUrls, contactInfo } from '@/utils/tracking';
@@ -126,6 +126,21 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
                   className="pt-1 hover:text-primary transition-colors"
                 >
                   {t('social.whatsappChat')}
+                </a>
+              </li>
+              {/* Plan a Call */}
+              <li className="flex items-start gap-3 text-sm text-muted-foreground group">
+                <div className="w-8 h-8 rounded-lg glass-card flex items-center justify-center shrink-0 group-hover:gold-glow transition-all bg-primary/10">
+                  <Calendar className="h-4 w-4 text-primary" />
+                </div>
+                <a 
+                  href={socialUrls.calendly}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackEvent({ event: 'calendly_click', location: 'footer' })}
+                  className="pt-1 hover:text-primary transition-colors"
+                >
+                  {t('footer.planCall')}
                 </a>
               </li>
               {/* Address */}

@@ -1,9 +1,12 @@
 import { memo, useRef, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Check, MessageCircle, ArrowRight } from 'lucide-react';
+import { Check, MessageCircle, ArrowRight, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { trackEvent, socialLinks } from '@/utils/tracking';
+
+const CALENDLY_URL = socialLinks.calendly;
 
 interface ServicePageHeroProps {
   serviceKey: string;
@@ -112,9 +115,14 @@ const ServicePageHero = memo(({ serviceKey, videoUrl, posterImage }: ServicePage
                 size="lg"
                 className="glass-button border-primary/30 hover:border-primary/50 group"
               >
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-4 h-4 mr-2" />
-                  {t('servicePage.cta.whatsapp')}
+                <a 
+                  href={CALENDLY_URL} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={() => trackEvent({ event: 'calendly_click', location: 'services_hero' })}
+                >
+                  <Calendar className="w-4 h-4 mr-2" />
+                  {t('servicePage.cta.planCall')}
                 </a>
               </Button>
             </div>

@@ -63,7 +63,8 @@
     "cta": {
       "whatsapp": "Claim je code via WhatsApp",
       "claimWhatsApp": "Claim je code via WhatsApp",
-      "planCall": "Plan een call"
+      "planCall": "Plan een call",
+      "planCallHelper": "Kies een tijdslot dat past. Gratis kennismaking (30 min)."
     },
     "step1": "Kies je betaaltype",
     "step2": "Kies je deliverables",
@@ -1365,6 +1366,7 @@
     "followUs": "Volg ons",
     "quickLinks": "Snelle links",
     "contact": "Contactgegevens",
+    "planCall": "Plan een call (30 min)",
     "newsletter": {
       "title": "Nieuwsbrief",
       "description": "Blijf op de hoogte van onze laatste inzichten en tips.",
@@ -1747,7 +1749,8 @@
   "servicePage": {
     "cta": {
       "requestQuote": "Vraag een offerte aan",
-      "whatsapp": "Chat via WhatsApp"
+      "whatsapp": "Chat via WhatsApp",
+      "planCall": "Plan een call"
     },
     "trustNote": "Transparante prijzen. Geen verborgen kosten.",
     "videoPlaceholder": "Video binnenkort beschikbaar",
