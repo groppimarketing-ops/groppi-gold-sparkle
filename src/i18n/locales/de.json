@@ -348,5 +348,78 @@
     "password": "Passwort",
     "loginTitle": "Admin-Anmeldung",
     "loginButton": "Anmelden"
+  },
+  "servicePage": {
+    "contentCalculator": {
+      "label": "Content Calculator",
+      "title": "Berechnen Sie Ihren Preis in 60 Sek.",
+      "subtitle": "Feste Preise. Keine Überraschungen.",
+      "step1": "Wählen Sie Ihre Zahlungsart",
+      "step2": "Wählen Sie Ihre Inhalte",
+      "oneTime": "Einmaliges Projekt",
+      "oneTimeDesc": "Bezahlen Sie pro Artikel. Rabatt möglich.",
+      "monthly": "Monatliches Abonnement",
+      "monthlyDesc": "Feste Monatsgebühr. Kein Rabatt.",
+      "noDiscountMonthly": "Der 20% Einführungsrabatt gilt nicht für monatliche Abonnements.",
+      "posters": "Poster (AI)",
+      "reels": "Reels",
+      "videos": "Videos (1 Minute)",
+      "articles": "Artikel (600 Wörter)",
+      "quantity": "Menge",
+      "perItem": "pro Stück",
+      "fixed": "fest",
+      "reelTypes": {
+        "ai": "KI-generiert",
+        "clientFootage": "Kundenaufnahmen (wir bearbeiten)",
+        "onSite": "Wir filmen vor Ort"
+      },
+      "vatNote": "Alle Preise exkl. MwSt. MwSt. wird auf der Rechnung hinzugefügt.",
+      "quoteCode": "Ihr Angebotsnummer"
+    }
+  },
+  "calculator": {
+    "title": "Berechnen Sie Ihren Preis in 60 Sek.",
+    "paymentTypeTitle": "Wählen Sie Ihre Zahlungsart",
+    "payment": {
+      "oneTime": "Einmaliges Projekt",
+      "oneTimeDesc": "Bezahlen Sie pro Artikel. Rabatt möglich.",
+      "monthly": "Monatliches Abonnement",
+      "monthlyDesc": "Feste Monatsgebühr. Kein Rabatt."
+    },
+    "discountBadge": "20% Einführungsrabatt",
+    "discountNote": "Rabatt gilt nur für einmalige Setup-Gebühren, nicht für monatliche Abonnements.",
+    "vatNote": "Alle Preise exkl. MwSt.",
+    "estimatedMonthlyFee": "Geschätzte monatliche Servicegebühr",
+    "setupFee": "Einrichtungsgebühr",
+    "totalFirstMonth": "Gesamt erster Monat",
+    "subtotal": "Zwischensumme",
+    "total": "Gesamt",
+    "basePrice": "Grundpreis",
+    "addons": "Add-ons",
+    "configurePackage": "Konfigurieren Sie Ihr Paket",
+    "extraOptions": "Zusätzliche Optionen",
+    "cta": {
+      "whatsapp": "Code per WhatsApp anfordern",
+      "claimWhatsApp": "Code per WhatsApp anfordern",
+      "planCall": "Termin vereinbaren",
+      "planCallHelper": "Wählen Sie einen passenden Zeitpunkt. Kostenloses Kennenlerngespräch (30 Min.)."
+    },
+    "step1": "Wählen Sie Ihre Zahlungsart",
+    "step2": "Wählen Sie Ihre Inhalte",
+    "noDiscountMonthly": "Der 20% Einführungsrabatt gilt nicht für monatliche Abonnements.",
+    "noDiscountMonthlyTitle": "Kein Rabatt verfügbar",
+    "referenceCode": "Referenzcode",
+    "launchDiscount": "Einführungsrabatt",
+    "offerEndsIn": "Angebot endet in",
+    "discountExpired": "Rabatt abgelaufen",
+    "expiredMessage": "Kein Problem — senden Sie uns Ihre Berechnung per WhatsApp oder vereinbaren Sie einen Termin für ein individuelles Angebot."
+  },
+  "pricing": {
+    "from": "Ab",
+    "customQuote": "Individuelles Angebot",
+    "perMonth": "/ Monat",
+    "oneTime": "einmalig",
+    "vatExcluded": "exkl. MwSt.",
+    "vatExcludedNote": "Alle Preise exkl. MwSt. MwSt. wird auf der Rechnung hinzugefügt."
   }
 }

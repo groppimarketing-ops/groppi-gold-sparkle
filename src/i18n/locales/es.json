@@ -322,5 +322,78 @@
     "password": "Contraseña",
     "loginTitle": "Acceso admin",
     "loginButton": "Iniciar sesión"
+  },
+  "servicePage": {
+    "contentCalculator": {
+      "label": "Calculadora de contenido",
+      "title": "Calcula tu precio en 60 seg.",
+      "subtitle": "Precios fijos. Sin sorpresas.",
+      "step1": "Elige tu tipo de pago",
+      "step2": "Selecciona tus contenidos",
+      "oneTime": "Proyecto único",
+      "oneTimeDesc": "Paga por artículo. Descuento posible.",
+      "monthly": "Suscripción mensual",
+      "monthlyDesc": "Tarifa mensual fija. Sin descuento.",
+      "noDiscountMonthly": "El descuento de lanzamiento del 20% no aplica a suscripciones mensuales.",
+      "posters": "Pósters (IA)",
+      "reels": "Reels",
+      "videos": "Videos (1 minuto)",
+      "articles": "Artículos (600 palabras)",
+      "quantity": "Cantidad",
+      "perItem": "por unidad",
+      "fixed": "fijo",
+      "reelTypes": {
+        "ai": "Generado por IA",
+        "clientFootage": "Material del cliente (nosotros editamos)",
+        "onSite": "Grabamos en sitio"
+      },
+      "vatNote": "Todos los precios excl. IVA. El IVA se añadirá en la factura.",
+      "quoteCode": "Tu número de presupuesto"
+    }
+  },
+  "calculator": {
+    "title": "Calcula tu precio en 60 seg.",
+    "paymentTypeTitle": "Elige tu tipo de pago",
+    "payment": {
+      "oneTime": "Proyecto único",
+      "oneTimeDesc": "Paga por artículo. Descuento posible.",
+      "monthly": "Suscripción mensual",
+      "monthlyDesc": "Tarifa mensual fija. Sin descuento."
+    },
+    "discountBadge": "20% descuento de lanzamiento",
+    "discountNote": "El descuento solo aplica a tarifas únicas, no a suscripciones mensuales.",
+    "vatNote": "Todos los precios excl. IVA",
+    "estimatedMonthlyFee": "Tarifa mensual estimada",
+    "setupFee": "Tarifa de configuración",
+    "totalFirstMonth": "Total primer mes",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "basePrice": "Precio base",
+    "addons": "Add-ons",
+    "configurePackage": "Configura tu paquete",
+    "extraOptions": "Opciones adicionales",
+    "cta": {
+      "whatsapp": "Reclama tu código por WhatsApp",
+      "claimWhatsApp": "Reclama tu código por WhatsApp",
+      "planCall": "Agendar llamada",
+      "planCallHelper": "Elige un horario que te convenga. Llamada de intro gratis (30 min)."
+    },
+    "step1": "Elige tu tipo de pago",
+    "step2": "Selecciona tus contenidos",
+    "noDiscountMonthly": "El descuento de lanzamiento del 20% no aplica a suscripciones mensuales.",
+    "noDiscountMonthlyTitle": "Sin descuento disponible",
+    "referenceCode": "Código de referencia",
+    "launchDiscount": "descuento de lanzamiento",
+    "offerEndsIn": "La oferta termina en",
+    "discountExpired": "Descuento expirado",
+    "expiredMessage": "Sin problema — envíanos tu cálculo por WhatsApp o agenda una llamada para una oferta personalizada."
+  },
+  "pricing": {
+    "from": "Desde",
+    "customQuote": "Presupuesto personalizado",
+    "perMonth": "/ mes",
+    "oneTime": "único",
+    "vatExcluded": "excl. IVA",
+    "vatExcludedNote": "Todos los precios excl. IVA. El IVA se añadirá en la factura."
   }
 }

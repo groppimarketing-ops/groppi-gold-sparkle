@@ -322,5 +322,78 @@
     "password": "Şifre",
     "loginTitle": "Yönetici Girişi",
     "loginButton": "Giriş Yap"
+  },
+  "servicePage": {
+    "contentCalculator": {
+      "label": "İçerik Hesaplayıcı",
+      "title": "Fiyatınızı 60 saniyede hesaplayın",
+      "subtitle": "Sabit fiyatlar. Sürpriz yok.",
+      "step1": "Ödeme türünü seçin",
+      "step2": "İçeriğinizi seçin",
+      "oneTime": "Tek seferlik proje",
+      "oneTimeDesc": "Parça başı ödeme. İndirim mümkün.",
+      "monthly": "Aylık abonelik",
+      "monthlyDesc": "Sabit aylık ücret. İndirim yok.",
+      "noDiscountMonthly": "%20 lansman indirimi aylık aboneliklere uygulanmaz.",
+      "posters": "Posterler (AI)",
+      "reels": "Reels",
+      "videos": "Videolar (1 dakika)",
+      "articles": "Makaleler (600 kelime)",
+      "quantity": "Adet",
+      "perItem": "adet başına",
+      "fixed": "sabit",
+      "reelTypes": {
+        "ai": "AI ile oluşturulmuş",
+        "clientFootage": "Müşteri çekimi (biz düzenliyoruz)",
+        "onSite": "Yerinde çekiyoruz"
+      },
+      "vatNote": "Tüm fiyatlar KDV hariç. KDV faturada eklenecektir.",
+      "quoteCode": "Teklif numaranız"
+    }
+  },
+  "calculator": {
+    "title": "Fiyatınızı 60 saniyede hesaplayın",
+    "paymentTypeTitle": "Ödeme türünü seçin",
+    "payment": {
+      "oneTime": "Tek seferlik proje",
+      "oneTimeDesc": "Parça başı ödeme. İndirim mümkün.",
+      "monthly": "Aylık abonelik",
+      "monthlyDesc": "Sabit aylık ücret. İndirim yok."
+    },
+    "discountBadge": "%20 lansman indirimi",
+    "discountNote": "İndirim sadece tek seferlik ücretlere uygulanır, aylık aboneliklere değil.",
+    "vatNote": "Tüm fiyatlar KDV hariç",
+    "estimatedMonthlyFee": "Tahmini aylık ücret",
+    "setupFee": "Kurulum ücreti",
+    "totalFirstMonth": "İlk ay toplamı",
+    "subtotal": "Ara toplam",
+    "total": "Toplam",
+    "basePrice": "Temel fiyat",
+    "addons": "Ek seçenekler",
+    "configurePackage": "Paketinizi yapılandırın",
+    "extraOptions": "Ekstra seçenekler",
+    "cta": {
+      "whatsapp": "Kodunuzu WhatsApp ile alın",
+      "claimWhatsApp": "Kodunuzu WhatsApp ile alın",
+      "planCall": "Görüşme planlayın",
+      "planCallHelper": "Size uygun bir zaman seçin. Ücretsiz tanışma görüşmesi (30 dk)."
+    },
+    "step1": "Ödeme türünü seçin",
+    "step2": "İçeriğinizi seçin",
+    "noDiscountMonthly": "%20 lansman indirimi aylık aboneliklere uygulanmaz.",
+    "noDiscountMonthlyTitle": "İndirim mevcut değil",
+    "referenceCode": "Referans kodu",
+    "launchDiscount": "lansman indirimi",
+    "offerEndsIn": "Teklif bitiyor",
+    "discountExpired": "İndirim sona erdi",
+    "expiredMessage": "Sorun değil — hesaplamanızı WhatsApp üzerinden gönderin veya kişisel bir teklif için görüşme planlayın."
+  },
+  "pricing": {
+    "from": "Başlangıç",
+    "customQuote": "Özel teklif",
+    "perMonth": "/ ay",
+    "oneTime": "tek seferlik",
+    "vatExcluded": "KDV hariç",
+    "vatExcludedNote": "Tüm fiyatlar KDV hariç. KDV faturada eklenecektir."
   }
 }

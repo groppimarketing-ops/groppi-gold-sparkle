@@ -322,5 +322,78 @@
     "password": "密码",
     "loginTitle": "管理员登录",
     "loginButton": "登录"
+  },
+  "servicePage": {
+    "contentCalculator": {
+      "label": "内容计算器",
+      "title": "60秒计算您的价格",
+      "subtitle": "固定价格，无隐藏费用。",
+      "step1": "选择付款类型",
+      "step2": "选择您的内容",
+      "oneTime": "一次性项目",
+      "oneTimeDesc": "按件付费。可享折扣。",
+      "monthly": "月度订阅",
+      "monthlyDesc": "固定月费。无折扣。",
+      "noDiscountMonthly": "20%发布折扣不适用于月度订阅。",
+      "posters": "海报 (AI)",
+      "reels": "Reels短视频",
+      "videos": "视频 (1分钟)",
+      "articles": "文章 (600字)",
+      "quantity": "数量",
+      "perItem": "每件",
+      "fixed": "固定",
+      "reelTypes": {
+        "ai": "AI生成",
+        "clientFootage": "客户素材（我们编辑）",
+        "onSite": "现场拍摄"
+      },
+      "vatNote": "所有价格不含增值税。增值税将在发票中添加。",
+      "quoteCode": "您的报价编号"
+    }
+  },
+  "calculator": {
+    "title": "60秒计算您的价格",
+    "paymentTypeTitle": "选择付款类型",
+    "payment": {
+      "oneTime": "一次性项目",
+      "oneTimeDesc": "按件付费。可享折扣。",
+      "monthly": "月度订阅",
+      "monthlyDesc": "固定月费。无折扣。"
+    },
+    "discountBadge": "20%发布折扣",
+    "discountNote": "折扣仅适用于一次性费用，不适用于月度订阅。",
+    "vatNote": "所有价格不含增值税",
+    "estimatedMonthlyFee": "预估月费",
+    "setupFee": "设置费",
+    "totalFirstMonth": "首月合计",
+    "subtotal": "小计",
+    "total": "合计",
+    "basePrice": "基础价格",
+    "addons": "附加服务",
+    "configurePackage": "配置您的套餐",
+    "extraOptions": "额外选项",
+    "cta": {
+      "whatsapp": "通过WhatsApp获取优惠码",
+      "claimWhatsApp": "通过WhatsApp获取优惠码",
+      "planCall": "预约通话",
+      "planCallHelper": "选择适合您的时间。免费咨询电话（30分钟）。"
+    },
+    "step1": "选择付款类型",
+    "step2": "选择您的内容",
+    "noDiscountMonthly": "20%发布折扣不适用于月度订阅。",
+    "noDiscountMonthlyTitle": "无可用折扣",
+    "referenceCode": "参考代码",
+    "launchDiscount": "发布折扣",
+    "offerEndsIn": "优惠截止于",
+    "discountExpired": "折扣已过期",
+    "expiredMessage": "没问题 — 通过WhatsApp发送您的计算结果或预约通话获取个性化报价。"
+  },
+  "pricing": {
+    "from": "起价",
+    "customQuote": "定制报价",
+    "perMonth": "/ 月",
+    "oneTime": "一次性",
+    "vatExcluded": "不含增值税",
+    "vatExcludedNote": "所有价格不含增值税。增值税将在发票中添加。"
   }
 }
