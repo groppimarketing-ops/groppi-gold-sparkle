@@ -11,6 +11,9 @@ type TrackingEvent =
   | 'facebook_click'
   | 'tiktok_click'
   | 'linkedin_click'
+  | 'twitter_click'
+  | 'youtube_click'
+  | 'pinterest_click'
   | 'calendly_click'
   | 'planbuilder_social_channels'
   | 'planbuilder_social_frequency'
@@ -88,9 +91,12 @@ export const trackEvent = ({ event, location = 'unknown', label }: TrackingParam
 export const socialLinks = {
   whatsapp: 'https://wa.me/32494311119',
   instagram: 'https://www.instagram.com/groppimarketingbureau/',
-  facebook: 'https://www.facebook.com/profile.php?id=61585133877289',
+  facebook: 'https://www.facebook.com/profile.php?id=61582782063217',
   tiktok: 'https://www.tiktok.com/@groppimarketingbureau?lang=nl-NL',
   linkedin: 'https://www.linkedin.com/in/groppi-marketing-bureau/',
+  twitter: 'https://x.com/Groppimarketing',
+  youtube: 'https://www.youtube.com/@GroppiMarketing',
+  pinterest: 'https://nl.pinterest.com/GroppiMarketingBureau/',
   email: 'mailto:info@groppi.be',
   phone: 'tel:+32494311119',
   calendly: 'https://calendly.com/groppimarketing/30min',
