@@ -72,7 +72,8 @@
     "referenceCode": "Referentiecode",
     "launchDiscount": "launchkorting",
     "offerEndsIn": "Aanbieding eindigt over",
-    "discountExpired": "Korting is verlopen"
+    "discountExpired": "Korting is verlopen",
+    "expiredMessage": "Geen probleem — stuur ons je berekening via WhatsApp of plan een call voor een persoonlijke offerte."
   },
   "servicePage": {
     "contentCalculator": {

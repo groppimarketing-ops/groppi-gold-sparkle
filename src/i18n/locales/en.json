@@ -72,7 +72,8 @@
     "referenceCode": "Reference code",
     "launchDiscount": "launch discount",
     "offerEndsIn": "Offer ends in",
-    "discountExpired": "Discount expired"
+    "discountExpired": "Discount expired",
+    "expiredMessage": "No problem — send us your calculation via WhatsApp or schedule a call for a custom offer."
   },
   "servicePage": {
     "contentCalculator": {

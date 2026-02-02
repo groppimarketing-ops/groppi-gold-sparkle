@@ -180,7 +180,7 @@ const DiscountCountdownCard = memo(({
           </div>
           
           <p className="mt-3 text-sm text-muted-foreground">
-            {t('calculator.expiredMessage', 'Geen probleem — stuur ons je berekening via WhatsApp of plan een call.')}
+            {t('calculator.expiredMessage')}
           </p>
           
           {/* CTAs without discount messaging */}
