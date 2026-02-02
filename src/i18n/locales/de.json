@@ -353,7 +353,7 @@
     "contentCalculator": {
       "label": "Content Calculator",
       "title": "Berechnen Sie Ihren Preis in 60 Sek.",
-      "subtitle": "Feste Preise. Keine Überraschungen.",
+      "subtitle": "Wählen Sie, was Sie brauchen, und erhalten Sie sofort eine Schätzung.",
       "step1": "Wählen Sie Ihre Zahlungsart",
       "step2": "Wählen Sie Ihre Inhalte",
       "oneTime": "Einmaliges Projekt",
@@ -361,10 +361,10 @@
       "monthly": "Monatliches Abonnement",
       "monthlyDesc": "Feste Monatsgebühr. Kein Rabatt.",
       "noDiscountMonthly": "Der 20% Einführungsrabatt gilt nicht für monatliche Abonnements.",
-      "posters": "Poster (AI)",
+      "posters": "Poster",
       "reels": "Reels",
-      "videos": "Videos (1 Minute)",
-      "articles": "Artikel (600 Wörter)",
+      "videos": "Videos",
+      "articles": "Artikel",
       "quantity": "Menge",
       "perItem": "pro Stück",
       "fixed": "fest",
@@ -375,6 +375,36 @@
       },
       "vatNote": "Alle Preise exkl. MwSt. MwSt. wird auf der Rechnung hinzugefügt.",
       "quoteCode": "Ihr Angebotsnummer"
+    },
+    "pricingFAQ": {
+      "label": "Häufige Fragen",
+      "title": "FAQ zu Preisen",
+      "questions": {
+        "discount": {
+          "q": "Gilt der Rabatt für monatliche Abonnements?",
+          "a": "Nein. Der 20% Einführungsrabatt gilt nur für einmalige Projekte wie Poster, Reels, Videos und Artikel. Monatliche Services sind ausgeschlossen."
+        },
+        "validity": {
+          "q": "Wie lange ist der Rabatt gültig?",
+          "a": "10 Tage ab Ihrem ersten Besuch. Danach läuft der Rabatt automatisch ab."
+        },
+        "reelPrice": {
+          "q": "Wie funktioniert die Preisgestaltung für Reels?",
+          "a": "Sie haben 3 Optionen: KI-generiert (€150), wir schneiden Ihr Material (€200) oder wir filmen vor Ort (€250). Der Preis hängt vom Aufwand ab."
+        },
+        "videoLength": {
+          "q": "Wie lang ist ein Video/Reel?",
+          "a": "Standard sind 1 Minute pro Video. Für längere Videos erstellen wir ein individuelles Angebot."
+        },
+        "articleLength": {
+          "q": "Wie lang ist ein Artikel?",
+          "a": "Standard sind 600 Wörter. Der Preis ist fix: €99 pro Artikel. Für längere oder kürzere Artikel besprechen wir einen individuellen Preis."
+        },
+        "payment": {
+          "q": "Kann ich online bezahlen?",
+          "a": "Nein, wir akzeptieren keine Online-Zahlungen auf der Website. Senden Sie uns nach der Berechnung Ihren Code per WhatsApp oder buchen Sie einen Call. Wir bestätigen innerhalb von 24 Stunden mit einem finalen Angebot."
+        }
+      }
     }
   },
   "calculator": {

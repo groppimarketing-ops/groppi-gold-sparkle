@@ -327,7 +327,7 @@
     "contentCalculator": {
       "label": "Kalkulator treści",
       "title": "Oblicz swoją cenę w 60 sek.",
-      "subtitle": "Stałe ceny. Bez niespodzianek.",
+      "subtitle": "Wybierz, czego potrzebujesz i otrzymaj natychmiastową wycenę.",
       "step1": "Wybierz typ płatności",
       "step2": "Wybierz swoje treści",
       "oneTime": "Projekt jednorazowy",
@@ -335,10 +335,10 @@
       "monthly": "Subskrypcja miesięczna",
       "monthlyDesc": "Stała opłata miesięczna. Bez rabatu.",
       "noDiscountMonthly": "Rabat startowy 20% nie dotyczy subskrypcji miesięcznych.",
-      "posters": "Plakaty (AI)",
+      "posters": "Plakaty",
       "reels": "Reels",
-      "videos": "Filmy (1 minuta)",
-      "articles": "Artykuły (600 słów)",
+      "videos": "Wideo",
+      "articles": "Artykuły",
       "quantity": "Ilość",
       "perItem": "za sztukę",
       "fixed": "stały",
@@ -349,6 +349,36 @@
       },
       "vatNote": "Wszystkie ceny bez VAT. VAT zostanie doliczony na fakturze.",
       "quoteCode": "Twój numer wyceny"
+    },
+    "pricingFAQ": {
+      "label": "Najczęściej zadawane pytania",
+      "title": "FAQ o cenach",
+      "questions": {
+        "discount": {
+          "q": "Czy zniżka dotyczy subskrypcji miesięcznych?",
+          "a": "Nie. Zniżka startowa 20% dotyczy wyłącznie projektów jednorazowych, takich jak plakaty, reels, wideo i artykuły. Usługi miesięczne są wykluczone."
+        },
+        "validity": {
+          "q": "Jak długo obowiązuje zniżka?",
+          "a": "10 dni od pierwszej wizyty. Po tym czasie zniżka wygasa automatycznie."
+        },
+        "reelPrice": {
+          "q": "Jak działa wycena Reels?",
+          "a": "Masz 3 opcje: generowane przez AI (€150), montujemy Twoje materiały (€200) lub filmujemy na miejscu (€250). Cena zależy od zakresu pracy."
+        },
+        "videoLength": {
+          "q": "Jak długa jest rolka/wideo?",
+          "a": "Standard to 1 minuta na wideo. Dla dłuższych materiałów przygotowujemy wycenę indywidualną."
+        },
+        "articleLength": {
+          "q": "Jak długi jest artykuł?",
+          "a": "Standard to 600 słów. Cena jest stała: €99 za artykuł. Dla dłuższych lub krótszych artykułów możemy ustalić cenę indywidualną."
+        },
+        "payment": {
+          "q": "Czy mogę zapłacić online?",
+          "a": "Nie, nie akceptujemy płatności online na stronie. Po kalkulacji wyślij swój kod przez WhatsApp lub umów rozmowę. Potwierdzimy w ciągu 24 godzin z finalną wyceną."
+        }
+      }
     }
   },
   "calculator": {

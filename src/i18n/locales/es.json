@@ -327,7 +327,7 @@
     "contentCalculator": {
       "label": "Calculadora de contenido",
       "title": "Calcula tu precio en 60 seg.",
-      "subtitle": "Precios fijos. Sin sorpresas.",
+      "subtitle": "Elige lo que necesitas y obtén una estimación al instante.",
       "step1": "Elige tu tipo de pago",
       "step2": "Selecciona tus contenidos",
       "oneTime": "Proyecto único",
@@ -335,10 +335,10 @@
       "monthly": "Suscripción mensual",
       "monthlyDesc": "Tarifa mensual fija. Sin descuento.",
       "noDiscountMonthly": "El descuento de lanzamiento del 20% no aplica a suscripciones mensuales.",
-      "posters": "Pósters (IA)",
+      "posters": "Pósters",
       "reels": "Reels",
-      "videos": "Videos (1 minuto)",
-      "articles": "Artículos (600 palabras)",
+      "videos": "Videos",
+      "articles": "Artículos",
       "quantity": "Cantidad",
       "perItem": "por unidad",
       "fixed": "fijo",
@@ -349,6 +349,36 @@
       },
       "vatNote": "Todos los precios excl. IVA. El IVA se añadirá en la factura.",
       "quoteCode": "Tu número de presupuesto"
+    },
+    "pricingFAQ": {
+      "label": "Preguntas frecuentes",
+      "title": "FAQ de precios",
+      "questions": {
+        "discount": {
+          "q": "¿El descuento aplica a suscripciones mensuales?",
+          "a": "No. El descuento de lanzamiento del 20% solo aplica a proyectos puntuales como pósters, reels, videos y artículos. Los servicios mensuales están excluidos."
+        },
+        "validity": {
+          "q": "¿Cuánto tiempo es válido el descuento?",
+          "a": "10 días desde tu primera visita. Después, el descuento expira automáticamente."
+        },
+        "reelPrice": {
+          "q": "¿Cómo funciona el precio de los Reels?",
+          "a": "Tienes 3 opciones: generado por IA (€150), editamos tu material (€200) o grabamos en tu ubicación (€250). El precio depende del trabajo requerido."
+        },
+        "videoLength": {
+          "q": "¿Cuánto dura un video/reel?",
+          "a": "El estándar es 1 minuto por video. Para videos más largos, solicitamos un presupuesto personalizado."
+        },
+        "articleLength": {
+          "q": "¿Qué longitud tiene un artículo?",
+          "a": "El estándar es 600 palabras. El precio es fijo: €99 por artículo. Para artículos más largos o más cortos, podemos acordar un precio personalizado."
+        },
+        "payment": {
+          "q": "¿Puedo pagar online?",
+          "a": "No, no aceptamos pagos online en el sitio. Después de tu cálculo, envíanos tu código por WhatsApp o agenda una llamada. Confirmaremos en 24 horas con un presupuesto final."
+        }
+      }
     }
   },
   "calculator": {

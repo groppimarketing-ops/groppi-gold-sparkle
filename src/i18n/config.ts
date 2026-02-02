@@ -64,6 +64,43 @@ const resources = {
 };
 
 /**
+ * Release-safety: Never render raw i18n keys in UI.
+ *
+ * If a key is missing in the active language, we fall back to English.
+ * If it's missing in English too, we return a humanized fallback string.
+ */
+const EN_FALLBACKS: Record<string, string> = {
+  // Content Calculator
+  'servicePage.contentCalculator.title': 'Calculate your price in 60 sec',
+  'servicePage.contentCalculator.subtitle': 'Choose what you need and get an instant estimate.',
+  'servicePage.contentCalculator.step1': 'Choose payment type',
+  'servicePage.contentCalculator.oneTime': 'One-time project',
+  'servicePage.contentCalculator.monthly': 'Monthly subscription',
+  'servicePage.contentCalculator.step2': 'Select your deliverables',
+  'servicePage.contentCalculator.posters': 'Posters',
+  'servicePage.contentCalculator.reels': 'Reels',
+  'servicePage.contentCalculator.videos': 'Videos',
+  'servicePage.contentCalculator.articles': 'Articles',
+  'calculator.subtotal': 'Subtotal',
+  'calculator.discountBadge': 'Discount',
+  'calculator.total': 'Total',
+  'pricing.vatExcludedNote': 'All prices excl. VAT. VAT will be added on the invoice.',
+
+  // Pricing FAQ
+  'servicePage.pricingFAQ.label': 'Frequently asked questions',
+  'servicePage.pricingFAQ.title': 'Pricing FAQ',
+};
+
+function humanizeFallback(key: string): string {
+  const last = key.split('.').pop() || key;
+  const spaced = last
+    .replace(/_/g, ' ')
+    .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
+    .trim();
+  return spaced ? spaced.charAt(0).toUpperCase() + spaced.slice(1) : 'Text';
+}
+
+/**
  * Get language direction for a given locale
  */
 export function getLanguageDirection(code: string): 'ltr' | 'rtl' {
@@ -110,6 +147,16 @@ i18n
     },
     returnEmptyString: false,
     returnNull: false,
+    // Critical: never show raw keys; fall back to EN (or a humanized string)
+    parseMissingKeyHandler: (key) => {
+      const enValue = i18n.getResource('en', 'translation', key);
+      if (typeof enValue === 'string' && enValue.trim().length > 0) return enValue;
+
+      const mapped = EN_FALLBACKS[key];
+      if (mapped) return mapped;
+
+      return humanizeFallback(key);
+    },
     // Dev-only: log missing keys
     saveMissing: import.meta.env.DEV,
     missingKeyHandler: (lngs, ns, key, fallbackValue) => {

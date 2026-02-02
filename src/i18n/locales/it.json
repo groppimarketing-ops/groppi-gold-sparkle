@@ -327,7 +327,7 @@
     "contentCalculator": {
       "label": "Calcolatore contenuti",
       "title": "Calcola il tuo prezzo in 60 sec.",
-      "subtitle": "Prezzi fissi. Nessuna sorpresa.",
+      "subtitle": "Scegli ciò di cui hai bisogno e ottieni una stima immediata.",
       "step1": "Scegli il tipo di pagamento",
       "step2": "Seleziona i tuoi contenuti",
       "oneTime": "Progetto una tantum",
@@ -335,10 +335,10 @@
       "monthly": "Abbonamento mensile",
       "monthlyDesc": "Tariffa mensile fissa. Nessuno sconto.",
       "noDiscountMonthly": "Lo sconto lancio del 20% non si applica agli abbonamenti mensili.",
-      "posters": "Poster (IA)",
+      "posters": "Poster",
       "reels": "Reels",
-      "videos": "Video (1 minuto)",
-      "articles": "Articoli (600 parole)",
+      "videos": "Video",
+      "articles": "Articoli",
       "quantity": "Quantità",
       "perItem": "per pezzo",
       "fixed": "fisso",
@@ -349,6 +349,36 @@
       },
       "vatNote": "Tutti i prezzi escl. IVA. L'IVA sarà aggiunta in fattura.",
       "quoteCode": "Il tuo numero preventivo"
+    },
+    "pricingFAQ": {
+      "label": "Domande frequenti",
+      "title": "FAQ sui prezzi",
+      "questions": {
+        "discount": {
+          "q": "Lo sconto si applica agli abbonamenti mensili?",
+          "a": "No. Lo sconto lancio del 20% si applica solo ai progetti una tantum come poster, reels, video e articoli. I servizi mensili sono esclusi."
+        },
+        "validity": {
+          "q": "Per quanto tempo è valido lo sconto?",
+          "a": "10 giorni dalla tua prima visita. Dopo di che, lo sconto scade automaticamente."
+        },
+        "reelPrice": {
+          "q": "Come funziona il prezzo dei Reels?",
+          "a": "Hai 3 opzioni: generato da IA (€150), montiamo il tuo materiale (€200) oppure filmiamo in loco (€250). Il prezzo dipende dal lavoro richiesto."
+        },
+        "videoLength": {
+          "q": "Quanto dura un video/reel?",
+          "a": "Lo standard è 1 minuto per video. Per video più lunghi, richiediamo un preventivo personalizzato."
+        },
+        "articleLength": {
+          "q": "Quanto è lungo un articolo?",
+          "a": "Lo standard è 600 parole. Il prezzo è fisso: €99 per articolo. Per articoli più lunghi o più corti, possiamo concordare un prezzo personalizzato."
+        },
+        "payment": {
+          "q": "Posso pagare online?",
+          "a": "No, non accettiamo pagamenti online sul sito. Dopo il calcolo, invia il tuo codice via WhatsApp o prenota una chiamata. Confermeremo entro 24 ore con un preventivo finale."
+        }
+      }
     }
   },
   "calculator": {

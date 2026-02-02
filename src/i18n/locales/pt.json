@@ -327,7 +327,7 @@
     "contentCalculator": {
       "label": "Calculadora de conteúdo",
       "title": "Calcule o seu preço em 60 seg.",
-      "subtitle": "Preços fixos. Sem surpresas.",
+      "subtitle": "Escolha o que precisa e obtenha uma estimativa imediata.",
       "step1": "Escolha o tipo de pagamento",
       "step2": "Selecione os seus conteúdos",
       "oneTime": "Projeto único",
@@ -335,10 +335,10 @@
       "monthly": "Assinatura mensal",
       "monthlyDesc": "Tarifa mensal fixa. Sem desconto.",
       "noDiscountMonthly": "O desconto de lançamento de 20% não se aplica a assinaturas mensais.",
-      "posters": "Posters (IA)",
+      "posters": "Posters",
       "reels": "Reels",
-      "videos": "Vídeos (1 minuto)",
-      "articles": "Artigos (600 palavras)",
+      "videos": "Vídeos",
+      "articles": "Artigos",
       "quantity": "Quantidade",
       "perItem": "por unidade",
       "fixed": "fixo",
@@ -349,6 +349,36 @@
       },
       "vatNote": "Todos os preços excl. IVA. O IVA será adicionado na fatura.",
       "quoteCode": "O seu número de orçamento"
+    },
+    "pricingFAQ": {
+      "label": "Perguntas frequentes",
+      "title": "FAQ de preços",
+      "questions": {
+        "discount": {
+          "q": "O desconto aplica-se a assinaturas mensais?",
+          "a": "Não. O desconto de lançamento de 20% aplica-se apenas a projetos pontuais como posters, reels, vídeos e artigos. Serviços mensais estão excluídos."
+        },
+        "validity": {
+          "q": "Por quanto tempo o desconto é válido?",
+          "a": "10 dias a partir da sua primeira visita. Depois disso, o desconto expira automaticamente."
+        },
+        "reelPrice": {
+          "q": "Como funciona o preço dos Reels?",
+          "a": "Você tem 3 opções: gerado por IA (€150), editamos o seu material (€200) ou filmamos no local (€250). O preço depende do trabalho necessário."
+        },
+        "videoLength": {
+          "q": "Qual é a duração de um vídeo/reel?",
+          "a": "O padrão é 1 minuto por vídeo. Para vídeos mais longos, pedimos um orçamento personalizado."
+        },
+        "articleLength": {
+          "q": "Qual é o tamanho de um artigo?",
+          "a": "O padrão é 600 palavras. O preço é fixo: €99 por artigo. Para artigos mais longos ou mais curtos, podemos discutir um preço personalizado."
+        },
+        "payment": {
+          "q": "Posso pagar online?",
+          "a": "Não, não aceitamos pagamentos online no site. Depois do cálculo, envie o seu código via WhatsApp ou agende uma chamada. Confirmaremos em 24 horas com um orçamento final."
+        }
+      }
     }
   },
   "calculator": {
