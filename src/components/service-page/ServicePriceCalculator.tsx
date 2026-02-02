@@ -1,7 +1,7 @@
-import { memo, useState, useMemo, useEffect } from 'react';
+import { memo, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calculator, MessageCircle, CreditCard, RefreshCw, Info, Sparkles, Copy, Check } from 'lucide-react';
+import { Calculator, MessageCircle, CreditCard, RefreshCw, Info, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -10,7 +10,6 @@ import {
   SUBSCRIPTION_PRICING,
   DISCOUNT_CONFIG,
 } from '@/config/pricingConfig';
-import useDiscountTimer from '@/hooks/useDiscountTimer';
 import DiscountCountdownCard from './DiscountCountdownCard';
 
 interface ServicePriceCalculatorProps {
@@ -18,6 +17,18 @@ interface ServicePriceCalculatorProps {
 }
 
 type PaymentType = 'one_time' | 'monthly';
+
+// Check if discount is active from localStorage
+function isDiscountActiveFromStorage(): boolean {
+  const expiresAt = localStorage.getItem('gro_discount_expiresAt');
+  if (!expiresAt) return false;
+  return Date.now() < Number(expiresAt);
+}
+
+// Get discount code from localStorage
+function getDiscountCode(): string {
+  return localStorage.getItem('gro_discount_code') || 'N/A';
+}
 
 // Service-specific pricing configurations
 const getServicePricing = (serviceKey: string) => {
@@ -85,7 +96,6 @@ const ADD_ONS = {
 
 const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps) => {
   const { t } = useTranslation();
-  const [copied, setCopied] = useState(false);
 
   const servicePricing = getServicePricing(serviceKey);
 
@@ -103,24 +113,6 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
     analyticsSetup: false,
   });
 
-  // Persistent discount timer
-  const {
-    isUnlocked,
-    isExpired,
-    discountCode,
-    timeRemaining,
-    percentage,
-    isDiscountActive,
-    unlockDiscount,
-  } = useDiscountTimer();
-
-  // Unlock discount when conditions are met
-  useEffect(() => {
-    if (paymentType === 'one_time') {
-      unlockDiscount();
-    }
-  }, [paymentType, unlockDiscount]);
-
   // Calculate pricing
   const pricing = useMemo(() => {
     let addonsTotal = 0;
@@ -134,8 +126,11 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
     const setupFee = servicePricing.setupFee;
     const subtotal = basePrice + addonsTotal + setupFee;
 
+    // Check if discount is active (from localStorage)
+    const isDiscountActive = paymentType === 'one_time' && isDiscountActiveFromStorage();
+    
     // Discount ONLY applies to one-time payments
-    const discountEligible = paymentType === 'one_time' && isDiscountActive;
+    const discountEligible = isDiscountActive;
     const discountAmount = discountEligible 
       ? Math.round(subtotal * (DISCOUNT_CONFIG.percentage / 100))
       : 0;
@@ -152,18 +147,10 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
       total,
       isMonthly: servicePricing.hasMonthly && paymentType === 'monthly',
     };
-  }, [selectedAddons, isDiscountActive, paymentType, servicePricing]);
+  }, [selectedAddons, paymentType, servicePricing]);
 
   const handleAddonToggle = (key: string) => {
     setSelectedAddons(prev => ({ ...prev, [key]: !prev[key] }));
-  };
-
-  const handleCopyCode = () => {
-    if (discountCode) {
-      navigator.clipboard.writeText(discountCode);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
   };
 
   // WhatsApp message
@@ -180,7 +167,7 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
 
     const message = `Hallo! Hier is mijn berekening:
 
-📋 ${t('calculator.referenceCode')}: ${discountCode || 'N/A'}
+📋 ${t('calculator.referenceCode')}: ${getDiscountCode()}
 🎯 Dienst: ${serviceName}
 💳 Type: ${paymentLabel}
 ${selectedAddonsList ? `➕ Add-ons: ${selectedAddonsList}` : ''}
@@ -266,7 +253,7 @@ Kan je dit bevestigen?`;
                     <p className="text-sm text-muted-foreground">
                       {t('calculator.payment.oneTimeDesc')}
                     </p>
-                    {isDiscountActive && (
+                    {isDiscountActiveFromStorage() && (
                       <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary/20 text-primary text-xs font-medium">
                         <Sparkles className="w-3 h-3" />
                         {t('calculator.discountBadge')}
@@ -295,7 +282,7 @@ Kan je dit bevestigen?`;
                 </div>
                 
                 {/* Discount notice for monthly */}
-                {paymentType === 'monthly' && isDiscountActive && (
+                {paymentType === 'monthly' && isDiscountActiveFromStorage() && (
                   <motion.div
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: 'auto' }}
@@ -453,12 +440,8 @@ Kan je dit bevestigen?`;
 
                       {/* Discount Countdown Card */}
                       <DiscountCountdownCard
-                        isUnlocked={isUnlocked}
-                        isExpired={isExpired}
-                        discountCode={discountCode}
-                        timeRemaining={timeRemaining}
-                        percentage={percentage}
-                        paymentType={paymentType}
+                        isOneTime={paymentType === 'one_time'}
+                        hasCalculatedPrice={true}
                       />
                     </div>
                   </div>

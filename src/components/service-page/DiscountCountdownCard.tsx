@@ -1,46 +1,132 @@
-import { memo } from 'react';
+import { memo, useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles, Clock, Copy, Check, MessageCircle, Calendar, AlertTriangle } from 'lucide-react';
+import { Sparkles, Clock, Copy, Check, MessageCircle, Calendar, AlertTriangle, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { useState } from 'react';
+import { DISCOUNT_CONFIG } from '@/config/pricingConfig';
+
+// LocalStorage keys
+const LS_STARTED = 'gro_discount_startedAt';
+const LS_EXPIRES = 'gro_discount_expiresAt';
+const LS_CODE = 'gro_discount_code';
+const TEN_DAYS_MS = DISCOUNT_CONFIG.validDays * 24 * 60 * 60 * 1000;
+
+// Generate unique discount code
+function generateCode(): string {
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  let s = '';
+  for (let i = 0; i < 4; i++) s += chars[Math.floor(Math.random() * chars.length)];
+  return `GRO-${s}`;
+}
 
 interface DiscountCountdownCardProps {
-  isUnlocked: boolean;
-  isExpired: boolean;
-  discountCode: string | null;
-  timeRemaining: {
-    days: number;
-    hours: number;
-    minutes: number;
-    seconds: number;
-  } | null;
-  percentage: number;
-  paymentType: 'one_time' | 'monthly' | null;
+  /** true when user selects One-time project */
+  isOneTime: boolean;
+  /** true when calculator has produced a price */
+  hasCalculatedPrice: boolean;
 }
 
 const DiscountCountdownCard = memo(({
-  isUnlocked,
-  isExpired,
-  discountCode,
-  timeRemaining,
-  percentage,
-  paymentType,
+  isOneTime,
+  hasCalculatedPrice,
 }: DiscountCountdownCardProps) => {
   const { t } = useTranslation();
+  
+  // State
+  const [now, setNow] = useState(Date.now());
+  const [startedAt, setStartedAt] = useState<number | null>(null);
+  const [expiresAt, setExpiresAt] = useState<number | null>(null);
+  const [code, setCode] = useState('');
   const [copied, setCopied] = useState(false);
 
-  const handleCopyCode = () => {
-    if (discountCode) {
-      navigator.clipboard.writeText(discountCode);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+  // Unlock condition: one-time payment + has calculated price
+  const canUnlock = isOneTime && hasCalculatedPrice;
+
+  // Tick every second
+  useEffect(() => {
+    const interval = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Initialize from localStorage
+  useEffect(() => {
+    const s = localStorage.getItem(LS_STARTED);
+    const e = localStorage.getItem(LS_EXPIRES);
+    const c = localStorage.getItem(LS_CODE);
+    
+    if (s && e) {
+      setStartedAt(Number(s));
+      setExpiresAt(Number(e));
     }
+    if (c) setCode(c);
+  }, []);
+
+  // Unlock once when conditions are met
+  useEffect(() => {
+    if (!canUnlock) return;
+
+    // If already exists, don't reset
+    const existingStarted = localStorage.getItem(LS_STARTED);
+    const existingExpires = localStorage.getItem(LS_EXPIRES);
+    const existingCode = localStorage.getItem(LS_CODE);
+
+    if (existingStarted && existingExpires && existingCode) {
+      setStartedAt(Number(existingStarted));
+      setExpiresAt(Number(existingExpires));
+      setCode(existingCode);
+      return;
+    }
+
+    // First time unlock - create new timer
+    const s = Date.now();
+    const e = s + TEN_DAYS_MS;
+    const c = generateCode();
+    
+    localStorage.setItem(LS_STARTED, String(s));
+    localStorage.setItem(LS_EXPIRES, String(e));
+    localStorage.setItem(LS_CODE, c);
+    
+    setStartedAt(s);
+    setExpiresAt(e);
+    setCode(c);
+  }, [canUnlock]);
+
+  // Calculate remaining time
+  const remainingMs = useMemo(() => {
+    if (!expiresAt) return 0;
+    return Math.max(0, expiresAt - now);
+  }, [expiresAt, now]);
+
+  const timeRemaining = useMemo(() => {
+    const totalSec = Math.floor(remainingMs / 1000);
+    const days = Math.floor(totalSec / (24 * 3600));
+    const hours = Math.floor((totalSec % (24 * 3600)) / 3600);
+    const minutes = Math.floor((totalSec % 3600) / 60);
+    const seconds = totalSec % 60;
+    return { days, hours, minutes, seconds };
+  }, [remainingMs]);
+
+  const isExpired = expiresAt ? remainingMs <= 0 : false;
+  const isUnlocked = Boolean(startedAt && expiresAt && code);
+
+  // Copy code handler
+  const handleCopyCode = async () => {
+    try {
+      await navigator.clipboard.writeText(code);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch {}
   };
 
-  // Show message for monthly payment type
-  if (paymentType === 'monthly') {
+  // WhatsApp URL with pre-filled message
+  const whatsappMessage = encodeURIComponent(
+    `Hallo! Ik heb mijn prijs berekend en wil mijn 20% kortingscode claimen: ${code}`
+  );
+  const whatsappUrl = `https://wa.me/32470123456?text=${whatsappMessage}`;
+
+  // Show "no discount" message for monthly payment type
+  if (!isOneTime && hasCalculatedPrice) {
     return (
       <AnimatePresence>
         <motion.div
@@ -51,7 +137,7 @@ const DiscountCountdownCard = memo(({
         >
           <div className="p-4 rounded-xl bg-muted/50 border border-muted">
             <div className="flex items-start gap-3">
-              <AlertTriangle className="w-5 h-5 text-muted-foreground mt-0.5" />
+              <AlertTriangle className="w-5 h-5 text-muted-foreground mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-foreground">
                   {t('calculator.noDiscountMonthlyTitle')}
@@ -67,10 +153,8 @@ const DiscountCountdownCard = memo(({
     );
   }
 
-  // Don't show if not unlocked yet
-  if (!isUnlocked || !discountCode) {
-    return null;
-  }
+  // Don't show card if not unlocked yet
+  if (!canUnlock || !isUnlocked) return null;
 
   // Expired state
   if (isExpired) {
@@ -80,40 +164,34 @@ const DiscountCountdownCard = memo(({
         animate={{ opacity: 1, y: 0 }}
         className="mt-6"
       >
-        <div className="p-5 rounded-xl bg-muted/30 border border-muted">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-full bg-muted">
-                <Clock className="w-5 h-5 text-muted-foreground" />
+        <div className="rounded-2xl border border-destructive/30 bg-destructive/5 p-6">
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <div className="text-xs tracking-widest text-muted-foreground uppercase">
+                {t('calculator.discountExpired')}
               </div>
-              <div>
-                <p className="font-medium text-muted-foreground">
-                  {t('calculator.discountExpired')}
-                </p>
-                <p className="text-sm text-muted-foreground line-through">
-                  {discountCode}
-                </p>
-              </div>
+              <h3 className="mt-1 text-lg font-semibold text-muted-foreground line-through">
+                {code}
+              </h3>
+            </div>
+            <div className="rounded-full border border-destructive/40 px-3 py-1 text-xs text-destructive">
+              EXPIRED
             </div>
           </div>
           
-          {/* Still show CTAs but without discount messaging */}
-          <div className="flex flex-col sm:flex-row gap-3 mt-4 pt-4 border-t border-muted">
-            <Button
-              asChild
-              variant="outline"
-              className="flex-1"
-            >
-              <a href="https://wa.me/32470123456">
+          <p className="mt-3 text-sm text-muted-foreground">
+            {t('calculator.expiredMessage', 'Geen probleem — stuur ons je berekening via WhatsApp of plan een call.')}
+          </p>
+          
+          {/* CTAs without discount messaging */}
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Button asChild variant="default">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 {t('calculator.cta.whatsapp')}
               </a>
             </Button>
-            <Button
-              asChild
-              variant="outline"
-              className="flex-1"
-            >
+            <Button asChild variant="outline">
               <a href="https://calendly.com/groppi" target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-4 h-4 mr-2" />
                 {t('calculator.cta.planCall')}
@@ -135,83 +213,76 @@ const DiscountCountdownCard = memo(({
         transition={{ type: 'spring', stiffness: 200, damping: 20 }}
         className="mt-6"
       >
-        <div className="p-5 rounded-xl border-2 border-primary/40 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent">
-          {/* Header with LIVE badge */}
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-full bg-primary/20">
-                <Sparkles className="w-5 h-5 text-primary" />
+        <div className="rounded-2xl border-2 border-primary/40 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent p-6">
+          {/* Header */}
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <div className="text-xs tracking-widest text-primary/80 uppercase">
+                LIMITED DEAL
               </div>
-              <div>
-                <div className="flex items-center gap-2">
-                  <h4 className="font-bold text-primary">
-                    {percentage}% {t('calculator.launchDiscount')}
-                  </h4>
-                  <Badge className="bg-red-500/90 text-white text-[10px] px-1.5 py-0 animate-pulse">
-                    LIVE
-                  </Badge>
-                </div>
-                <p className="text-xs text-muted-foreground">
-                  {t('calculator.discountNote')}
-                </p>
-              </div>
+              <h3 className="mt-1 text-xl font-semibold text-primary flex items-center gap-2">
+                <Gift className="w-5 h-5" />
+                {DISCOUNT_CONFIG.percentage}% {t('calculator.launchDiscount')} unlocked
+              </h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                {t('calculator.discountNote')} {t('pricing.vatExcludedNote')}
+              </p>
             </div>
+            <Badge className="bg-red-500/90 text-white text-[10px] px-2 py-0.5 animate-pulse">
+              LIVE
+            </Badge>
           </div>
 
           {/* Countdown Timer */}
-          {timeRemaining && (
-            <div className="flex items-center justify-center gap-1 sm:gap-3 mb-4">
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Clock className="w-4 h-4" />
-                <span>{t('calculator.offerEndsIn')}:</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <TimeUnit value={timeRemaining.days} label="d" />
-                <span className="text-primary font-bold">:</span>
-                <TimeUnit value={timeRemaining.hours} label="h" />
-                <span className="text-primary font-bold">:</span>
-                <TimeUnit value={timeRemaining.minutes} label="m" />
-                <span className="text-primary font-bold">:</span>
-                <TimeUnit value={timeRemaining.seconds} label="s" />
-              </div>
+          <div className="mt-4 rounded-xl bg-background/50 border border-primary/20 p-4">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+              <Clock className="w-4 h-4" />
+              <span>{t('calculator.offerEndsIn')}</span>
             </div>
-          )}
+            <div className="flex items-center gap-1">
+              <TimeUnit value={timeRemaining.days} label="d" />
+              <span className="text-primary font-bold text-lg">:</span>
+              <TimeUnit value={timeRemaining.hours} label="h" />
+              <span className="text-primary font-bold text-lg">:</span>
+              <TimeUnit value={timeRemaining.minutes} label="m" />
+              <span className="text-primary font-bold text-lg">:</span>
+              <TimeUnit value={timeRemaining.seconds} label="s" />
+            </div>
+          </div>
 
           {/* Discount Code */}
-          <div className="flex items-center justify-between p-3 rounded-lg bg-background/50 border border-primary/20 mb-4">
-            <code className="font-mono font-bold text-primary text-lg">
-              {discountCode}
-            </code>
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <div className="flex-1 min-w-[200px] rounded-xl bg-background/50 border border-primary/20 px-4 py-3">
+              <div className="text-xs text-muted-foreground">Your code</div>
+              <div className="mt-1 font-mono text-lg font-bold text-primary">{code}</div>
+            </div>
             <Button
-              variant="ghost"
-              size="sm"
               onClick={handleCopyCode}
-              className="text-primary hover:bg-primary/10"
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
             >
               {copied ? (
-                <Check className="w-4 h-4" />
+                <>
+                  <Check className="w-4 h-4 mr-2" />
+                  Copied
+                </>
               ) : (
-                <Copy className="w-4 h-4" />
+                <>
+                  <Copy className="w-4 h-4 mr-2" />
+                  Copy code
+                </>
               )}
             </Button>
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-3">
-            <Button
-              asChild
-              className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90"
-            >
-              <a href="https://wa.me/32470123456">
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Button asChild className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 {t('calculator.cta.claimWhatsApp')}
               </a>
             </Button>
-            <Button
-              asChild
-              variant="outline"
-              className="flex-1 border-primary/30 hover:bg-primary/10"
-            >
+            <Button asChild variant="outline" className="flex-1 border-primary/30 hover:bg-primary/10">
               <a href="https://calendly.com/groppi" target="_blank" rel="noopener noreferrer">
                 <Calendar className="w-4 h-4 mr-2" />
                 {t('calculator.cta.planCall')}
@@ -221,7 +292,7 @@ const DiscountCountdownCard = memo(({
 
           {/* VAT Note */}
           <p className="text-xs text-muted-foreground text-center mt-4">
-            *{t('pricing.vatDisclaimer.line2')}
+            *{t('pricing.vatDisclaimer.line2')} {t('pricing.vatDisclaimer.line3')}
           </p>
         </div>
       </motion.div>
@@ -232,7 +303,7 @@ const DiscountCountdownCard = memo(({
 // Time unit display component
 const TimeUnit = memo(({ value, label }: { value: number; label: string }) => (
   <div className="flex items-baseline">
-    <span className="font-mono font-bold text-primary text-lg sm:text-xl tabular-nums">
+    <span className="font-mono font-bold text-primary text-xl tabular-nums min-w-[2ch] text-center">
       {String(value).padStart(2, '0')}
     </span>
     <span className="text-xs text-muted-foreground ml-0.5">{label}</span>
