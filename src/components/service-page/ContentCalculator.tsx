@@ -425,10 +425,11 @@ Kan je dit bevestigen?`;
                         </p>
                       </div>
 
-                      {/* Discount Countdown Card */}
+                      {/* Discount Countdown Card - only shows after one-time payment + items selected */}
                       <DiscountCountdownCard
                         isOneTime={paymentType === 'one_time'}
                         hasCalculatedPrice={pricing.hasItems}
+                        triggerOnPageView={true}
                       />
                     </div>
                   </div>

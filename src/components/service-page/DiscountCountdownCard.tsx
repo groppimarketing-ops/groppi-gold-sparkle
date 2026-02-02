@@ -25,13 +25,16 @@ function generateCode(): string {
 interface DiscountCountdownCardProps {
   /** true when user selects One-time project */
   isOneTime: boolean;
-  /** true when calculator has produced a price */
+  /** true when calculator has produced a price (items selected) */
   hasCalculatedPrice: boolean;
+  /** Optional: trigger unlock when entering service detail page */
+  triggerOnPageView?: boolean;
 }
 
 const DiscountCountdownCard = memo(({
   isOneTime,
   hasCalculatedPrice,
+  triggerOnPageView = false,
 }: DiscountCountdownCardProps) => {
   const { t } = useTranslation();
   
@@ -42,8 +45,13 @@ const DiscountCountdownCard = memo(({
   const [code, setCode] = useState('');
   const [copied, setCopied] = useState(false);
 
-  // Unlock condition: one-time payment + has calculated price
-  const canUnlock = isOneTime && hasCalculatedPrice;
+  // Unlock condition: 
+  // - Must be one-time payment type AND have calculated price, OR
+  // - Page view triggered (entering service detail page) - but only initializes, doesn't show yet
+  const canUnlock = (isOneTime && hasCalculatedPrice) || triggerOnPageView;
+  
+  // Only SHOW the card if one-time + has price (intent shown)
+  const showCard = isOneTime && hasCalculatedPrice;
 
   // Tick every second
   useEffect(() => {
@@ -155,8 +163,9 @@ const DiscountCountdownCard = memo(({
     );
   }
 
-  // Don't show card if not unlocked yet
-  if (!canUnlock || !isUnlocked) return null;
+  // Don't show card if conditions not met
+  // Show "no discount" message for monthly, or hide if not unlocked/shown
+  if (!showCard || !isUnlocked) return null;
 
   // Expired state
   if (isExpired) {

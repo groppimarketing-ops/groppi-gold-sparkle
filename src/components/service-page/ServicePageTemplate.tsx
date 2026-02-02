@@ -7,7 +7,7 @@ import ServiceProcess from './ServiceProcess';
 import ServicePriceCalculator from './ServicePriceCalculator';
 import ServiceFAQ from './ServiceFAQ';
 import ServiceFinalCTA from './ServiceFinalCTA';
-import LaunchDiscountBanner from './LaunchDiscountBanner';
+// Note: LaunchDiscountBanner removed - discount now integrated into calculators
 import ContentCalculator from './ContentCalculator';
 import PricingFAQ from './PricingFAQ';
 
@@ -36,10 +36,7 @@ const ServicePageTemplate = memo(({ serviceKey, videoUrl, posterImage }: Service
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        {/* Launch Discount Banner at top */}
-        <div className="container mx-auto px-4 pt-24">
-          <LaunchDiscountBanner />
-        </div>
+        {/* Note: Discount banner removed from top - now shown UNDER calculator after user shows intent */}
         
         <ServicePageHero 
           serviceKey={serviceKey} 
@@ -49,7 +46,7 @@ const ServicePageTemplate = memo(({ serviceKey, videoUrl, posterImage }: Service
         <ServiceDeliverables serviceKey={serviceKey} />
         <ServiceProcess serviceKey={serviceKey} />
         
-        {/* Show appropriate calculator based on service type */}
+        {/* Calculator with integrated discount module (shown after intent) */}
         {isContentProduction ? (
           <>
             <ContentCalculator />

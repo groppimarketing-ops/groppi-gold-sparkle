@@ -12,7 +12,7 @@ import ServiceCard, { ServiceData } from '@/components/services/ServiceCard';
 import GoalBasedEntry from '@/components/services/GoalBasedEntry';
 import ServiceDetailModal from '@/components/services/ServiceDetailModal';
 import HomeServiceMap from '@/components/home/HomeServiceMap';
-import LaunchDiscountBanner from '@/components/service-page/LaunchDiscountBanner';
+// Note: LaunchDiscountBanner removed from Services page - discount only shown on service detail pages after intent
 import ContentCalculator from '@/components/service-page/ContentCalculator';
 import PricingFAQ from '@/components/service-page/PricingFAQ';
 
@@ -281,8 +281,7 @@ const Services = () => {
         <div className="neural-lines opacity-30" />
         
         <div className="container mx-auto px-4 relative z-10">
-          {/* Launch Discount Banner */}
-          <LaunchDiscountBanner />
+          {/* Note: Discount banner removed - only shown on service detail pages after user shows intent */}
           
           <SectionHeader
             subtitle={t('services.subtitle')}
