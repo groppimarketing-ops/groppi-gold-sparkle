@@ -166,6 +166,7 @@
       "buildPlan": "Build plan",
       "seePricing": "See pricing",
       "customQuote": "Custom quote",
+      "from": "From",
       "perMonth": "/ month",
       "oneTime": "one-time",
       "items": {

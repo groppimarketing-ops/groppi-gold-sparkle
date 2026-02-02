@@ -14,8 +14,10 @@ export interface HomeServiceData {
   icon: typeof Camera;
   titleKey: string;
   descKey: string;
-  priceMin: number;
+  priceDisplay: 'custom' | 'from' | 'range'; // How to show price on card
+  priceMin?: number;
   priceMax?: number;
+  priceUnit?: string; // e.g., '/item', '/month'
   pricingType: 'monthly' | 'one_time' | 'custom';
   deliverables: string[];
   videoUrl?: string;
@@ -41,21 +43,23 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
       icon: Camera,
       titleKey: 'home.servicesGrid.items.contentProduction.title',
       descKey: 'home.servicesGrid.items.contentProduction.desc',
-      priceMin: 500,
-      pricingType: 'custom',
+      priceDisplay: 'from',
+      priceMin: 25,
+      priceUnit: '/item',
+      pricingType: 'one_time',
       deliverables: [
         'home.servicesGrid.items.contentProduction.deliverables.0',
         'home.servicesGrid.items.contentProduction.deliverables.1',
         'home.servicesGrid.items.contentProduction.deliverables.2',
       ],
+      hasCalculator: true,
     },
     {
       id: 'business-website',
       icon: Globe,
       titleKey: 'home.servicesGrid.items.businessWebsite.title',
       descKey: 'home.servicesGrid.items.businessWebsite.desc',
-      priceMin: 1500,
-      priceMax: 8000,
+      priceDisplay: 'custom',
       pricingType: 'one_time',
       deliverables: [
         'home.servicesGrid.items.businessWebsite.deliverables.0',
@@ -68,8 +72,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
       icon: ShoppingCart,
       titleKey: 'home.servicesGrid.items.ecommerce.title',
       descKey: 'home.servicesGrid.items.ecommerce.desc',
-      priceMin: 3000,
-      priceMax: 25000,
+      priceDisplay: 'custom',
       pricingType: 'one_time',
       deliverables: [
         'home.servicesGrid.items.ecommerce.deliverables.0',
@@ -82,8 +85,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
       icon: Megaphone,
       titleKey: 'home.servicesGrid.items.ads.title',
       descKey: 'home.servicesGrid.items.ads.desc',
-      priceMin: 500,
-      priceMax: 5000,
+      priceDisplay: 'custom',
       pricingType: 'monthly',
       deliverables: [
         'home.servicesGrid.items.ads.deliverables.0',
@@ -97,8 +99,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
       icon: Search,
       titleKey: 'home.servicesGrid.items.seo.title',
       descKey: 'home.servicesGrid.items.seo.desc',
-      priceMin: 300,
-      priceMax: 2000,
+      priceDisplay: 'custom',
       pricingType: 'monthly',
       deliverables: [
         'home.servicesGrid.items.seo.deliverables.0',
@@ -111,8 +112,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
       icon: Share2,
       titleKey: 'home.servicesGrid.items.social.title',
       descKey: 'home.servicesGrid.items.social.desc',
-      priceMin: 400,
-      priceMax: 3000,
+      priceDisplay: 'custom',
       pricingType: 'monthly',
       deliverables: [
         'home.servicesGrid.items.social.deliverables.0',
@@ -130,16 +130,21 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
   };
 
   const getPriceDisplay = (service: HomeServiceData) => {
-    if (service.pricingType === 'custom') {
+    if (service.priceDisplay === 'custom') {
       return t('home.servicesGrid.customQuote');
     }
-    if (service.priceMin && service.priceMax) {
+    if (service.priceDisplay === 'from' && service.priceMin) {
+      return `${t('home.servicesGrid.from')} €${service.priceMin}`;
+    }
+    if (service.priceDisplay === 'range' && service.priceMin && service.priceMax) {
       return `€${service.priceMin.toLocaleString()} - €${service.priceMax.toLocaleString()}`;
     }
-    return `€${service.priceMin.toLocaleString()}+`;
+    return t('home.servicesGrid.customQuote');
   };
 
   const getPricingSuffix = (service: HomeServiceData) => {
+    if (service.priceDisplay === 'custom') return '';
+    if (service.priceUnit) return service.priceUnit;
     if (service.pricingType === 'monthly') return t('home.servicesGrid.perMonth');
     if (service.pricingType === 'one_time') return t('home.servicesGrid.oneTime');
     return '';
