@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import type { HomeServiceData } from './HomeServicesGrid';
 import { socialLinks, trackEvent } from '@/utils/tracking';
+import { getPriceDisplayString, getPriceSuffix } from '@/config/pricingConfig';
 
 interface HomeServiceModalProps {
   isOpen: boolean;
@@ -49,20 +50,16 @@ const HomeServiceModal = ({ isOpen, onClose, service, initialTab = 'overview' }:
     window.open(socialLinks.whatsapp, '_blank');
   };
 
-  const getPriceDisplay = () => {
-    if (service.pricingType === 'custom') return t('home.servicesGrid.customQuote');
-    if (service.priceMin && service.priceMax) {
-      return `€${service.priceMin.toLocaleString()} - €${service.priceMax.toLocaleString()}`;
-    }
-    return `€${service.priceMin.toLocaleString()}+`;
-  };
+  // Use centralized pricing config
+  const priceDisplay = getPriceDisplayString(service.pricingConfig, t);
+  const priceSuffix = getPriceSuffix(service.pricingConfig, t);
 
   const tabs = [
     { id: 'overview', icon: Info, label: t('home.serviceModal.tabs.overview') },
     { id: 'deliverables', icon: Package, label: t('home.serviceModal.tabs.deliverables') },
     { id: 'pricing', icon: DollarSign, label: t('home.serviceModal.tabs.pricing') },
     { id: 'video', icon: Video, label: t('home.serviceModal.tabs.video') },
-    ...(service.hasCalculator ? [{ id: 'calculator', icon: Calculator, label: t('home.serviceModal.tabs.calculator') }] : []),
+    ...(service.pricingConfig.hasCalculator ? [{ id: 'calculator', icon: Calculator, label: t('home.serviceModal.tabs.calculator') }] : []),
   ];
 
   return (
@@ -146,10 +143,11 @@ const HomeServiceModal = ({ isOpen, onClose, service, initialTab = 'overview' }:
                     </div>
                     <div className="p-6 rounded-xl bg-primary/5 border border-primary/10">
                       <h3 className="font-bold text-lg mb-4">{t('home.serviceModal.overview.priceRange')}</h3>
-                      <div className="text-3xl font-bold text-primary mb-2">{getPriceDisplay()}</div>
-                      {service.pricingType === 'monthly' && (
-                        <p className="text-sm text-muted-foreground">{t('home.servicesGrid.perMonth')}</p>
+                      <div className="text-3xl font-bold text-primary mb-2">{priceDisplay}</div>
+                      {priceSuffix && (
+                        <p className="text-sm text-muted-foreground">{priceSuffix}</p>
                       )}
+                      <p className="text-xs text-muted-foreground mt-2">{t('pricing.vatExcluded')}</p>
                     </div>
                   </div>
                 </TabsContent>
@@ -180,10 +178,11 @@ const HomeServiceModal = ({ isOpen, onClose, service, initialTab = 'overview' }:
                   <h3 className="font-bold text-lg">{t('home.serviceModal.pricing.title')}</h3>
                   <div className="p-6 rounded-xl bg-primary/5 border border-primary/10">
                     <div className="text-center mb-6">
-                      <div className="text-4xl font-bold text-primary mb-2">{getPriceDisplay()}</div>
-                      {service.pricingType === 'monthly' && (
-                        <p className="text-muted-foreground">{t('home.servicesGrid.perMonth')}</p>
+                      <div className="text-4xl font-bold text-primary mb-2">{priceDisplay}</div>
+                      {priceSuffix && (
+                        <p className="text-muted-foreground">{priceSuffix}</p>
                       )}
+                      <p className="text-xs text-muted-foreground mt-2">{t('pricing.vatExcluded')}</p>
                     </div>
                     <p className="text-muted-foreground text-center">
                       {t('home.serviceModal.pricing.note')}
@@ -236,14 +235,14 @@ const HomeServiceModal = ({ isOpen, onClose, service, initialTab = 'overview' }:
                 </TabsContent>
 
                 {/* Calculator Tab */}
-                {service.hasCalculator && (
+                {service.pricingConfig.hasCalculator && (
                   <TabsContent value="calculator" className="mt-0 space-y-6">
                     <div className="text-center p-8 rounded-xl bg-primary/5 border border-primary/10">
                       <Calculator className="w-12 h-12 text-primary mx-auto mb-4" />
                       <h3 className="font-bold text-xl mb-2">{t('home.serviceModal.calculator.title')}</h3>
                       <p className="text-muted-foreground mb-6">{t('home.serviceModal.calculator.desc')}</p>
                       <Button asChild className="luxury-button">
-                        <Link to={`/services?service=${service.id}`}>
+                        <Link to={`/services/${service.id}`}>
                           {t('home.serviceModal.calculator.cta')}
                           <ArrowRight className={`w-4 h-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
                         </Link>

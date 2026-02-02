@@ -12,34 +12,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-
-// FIXED PRICING (VAT excluded)
-const FIXED_PRICES = {
-  poster: {
-    ai: 25,
-  },
-  reel: {
-    ai: 150,
-    clientFootage: 200,
-    onSite: 250,
-  },
-  video: 250, // 1 minute
-  article: 99, // 600 words, fixed price
-};
-
-// Discount settings
-const DISCOUNT_PERCENTAGE = 20;
-const DISCOUNT_DAYS = 10;
-const STORAGE_KEY = 'groppi_launch_discount_start';
-
-const generateQuoteCode = (): string => {
-  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-  let code = 'GRO-';
-  for (let i = 0; i < 4; i++) {
-    code += chars.charAt(Math.floor(Math.random() * chars.length));
-  }
-  return code;
-};
+import {
+  CONTENT_PRICING,
+  DISCOUNT_CONFIG,
+  getDiscountInfo,
+  calculateDiscount,
+  generateQuoteCode,
+} from '@/config/pricingConfig';
 
 type PaymentType = 'one_time' | 'monthly';
 
@@ -63,39 +42,26 @@ const ContentCalculator = memo(() => {
   const [discountActive, setDiscountActive] = useState(false);
 
   useEffect(() => {
-    let startDate = localStorage.getItem(STORAGE_KEY);
-    if (!startDate) {
-      startDate = new Date().toISOString();
-      localStorage.setItem(STORAGE_KEY, startDate);
-    }
-    
-    const start = new Date(startDate);
-    const now = new Date();
-    const diffDays = Math.floor((now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
-    const remaining = DISCOUNT_DAYS - diffDays;
-    
-    if (remaining > 0) {
-      setDiscountDaysLeft(remaining);
-      setDiscountActive(true);
-    } else {
-      setDiscountActive(false);
-    }
+    const info = getDiscountInfo();
+    setDiscountActive(info.active);
+    setDiscountDaysLeft(info.daysLeft);
   }, []);
 
-  // Calculate pricing
+  // Calculate pricing using centralized config
   const pricing = useMemo(() => {
-    const posterTotal = posterQty * FIXED_PRICES.poster.ai;
-    const reelTotal = reelQty * FIXED_PRICES.reel[reelType];
-    const videoTotal = videoQty * FIXED_PRICES.video;
-    const articleTotal = articleQty * FIXED_PRICES.article;
+    const posterTotal = posterQty * CONTENT_PRICING.poster.ai;
+    const reelTotal = reelQty * CONTENT_PRICING.reel[reelType];
+    const videoTotal = videoQty * CONTENT_PRICING.video;
+    const articleTotal = articleQty * CONTENT_PRICING.article;
 
     const subtotal = posterTotal + reelTotal + videoTotal + articleTotal;
     
-    // Discount ONLY applies to one-time payments AND within 10-day window
-    const discountEligible = paymentType === 'one_time' && discountActive && subtotal > 0;
-    const discountAmount = discountEligible 
-      ? Math.round(subtotal * (DISCOUNT_PERCENTAGE / 100))
-      : 0;
+    // Use centralized discount calculation
+    const { discountAmount, discountEligible } = calculateDiscount(
+      subtotal,
+      paymentType || 'one_time',
+      discountActive
+    );
     
     const total = subtotal - discountAmount;
 
@@ -106,7 +72,7 @@ const ContentCalculator = memo(() => {
       articleTotal,
       subtotal,
       discountAmount,
-      discountEligible,
+      discountEligible: discountEligible && paymentType === 'one_time',
       total,
       hasItems: subtotal > 0,
     };
@@ -139,7 +105,7 @@ const ContentCalculator = memo(() => {
 ${items.join('\n')}
 
 💰 Subtotaal: €${pricing.subtotal} (excl. BTW)
-${pricing.discountAmount > 0 ? `🎉 Launchkorting (-20%): -€${pricing.discountAmount}\n` : ''}✅ Totaal: €${pricing.total} (excl. BTW)
+${pricing.discountAmount > 0 ? `🎉 Launchkorting (-${DISCOUNT_CONFIG.percentage}%): -€${pricing.discountAmount}\n` : ''}✅ Totaal: €${pricing.total} (excl. BTW)
 
 Kan je dit bevestigen?`;
 
@@ -220,7 +186,7 @@ Kan je dit bevestigen?`;
                   {discountActive && (
                     <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary/20 text-primary text-xs font-medium">
                       <Sparkles className="w-3 h-3" />
-                      -20% korting
+                      -{DISCOUNT_CONFIG.percentage}% korting
                     </div>
                   )}
                 </button>
@@ -285,7 +251,7 @@ Kan je dit bevestigen?`;
                         <Label className="text-foreground font-medium flex items-center gap-2">
                           <Image className="w-4 h-4 text-primary" />
                           {t('servicePage.contentCalculator.posters', 'Posters (AI)')}
-                          <span className="text-primary font-bold ml-auto">€{FIXED_PRICES.poster.ai}/stuk</span>
+                          <span className="text-primary font-bold ml-auto">€{CONTENT_PRICING.poster.ai}/stuk</span>
                         </Label>
                         <Input
                           type="number"
@@ -309,13 +275,13 @@ Kan je dit bevestigen?`;
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="ai">
-                              AI volledig — €{FIXED_PRICES.reel.ai}/stuk
+                              AI volledig — €{CONTENT_PRICING.reel.ai}/stuk
                             </SelectItem>
                             <SelectItem value="clientFootage">
-                              Client footage (wij editen) — €{FIXED_PRICES.reel.clientFootage}/stuk
+                              Client footage (wij editen) — €{CONTENT_PRICING.reel.clientFootage}/stuk
                             </SelectItem>
                             <SelectItem value="onSite">
-                              Wij filmen on-site — €{FIXED_PRICES.reel.onSite}/stuk
+                              Wij filmen on-site — €{CONTENT_PRICING.reel.onSite}/stuk
                             </SelectItem>
                           </SelectContent>
                         </Select>
@@ -335,7 +301,7 @@ Kan je dit bevestigen?`;
                         <Label className="text-foreground font-medium flex items-center gap-2">
                           <Video className="w-4 h-4 text-primary" />
                           {t('servicePage.contentCalculator.videos', "Video's (1 minuut)")}
-                          <span className="text-primary font-bold ml-auto">€{FIXED_PRICES.video}/stuk</span>
+                          <span className="text-primary font-bold ml-auto">€{CONTENT_PRICING.video}/stuk</span>
                         </Label>
                         <Input
                           type="number"
@@ -352,7 +318,7 @@ Kan je dit bevestigen?`;
                         <Label className="text-foreground font-medium flex items-center gap-2">
                           <FileText className="w-4 h-4 text-primary" />
                           {t('servicePage.contentCalculator.articles', 'Artikels (600 woorden)')}
-                          <span className="text-primary font-bold ml-auto">€{FIXED_PRICES.article} vast</span>
+                          <span className="text-primary font-bold ml-auto">€{CONTENT_PRICING.article} vast</span>
                         </Label>
                         <Input
                           type="number"
@@ -399,163 +365,108 @@ Kan je dit bevestigen?`;
 
                       {/* Subtotal */}
                       <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
-                        <p className="text-sm text-muted-foreground mb-1">
-                          {t('servicePage.contentCalculator.subtotal', 'Subtotaal')} <span className="text-xs">(excl. BTW)</span>
-                        </p>
-                        <p className="text-2xl font-bold text-foreground">
-                          €{pricing.subtotal}
-                        </p>
-                      </div>
-
-                      {/* Discount */}
-                      {pricing.discountEligible && pricing.discountAmount > 0 && (
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.95 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          className="p-4 rounded-xl bg-primary/10 border border-primary/30"
-                        >
-                          <div className="flex items-center gap-2 mb-1">
-                            <Sparkles className="w-4 h-4 text-primary" />
-                            <p className="text-sm text-primary font-medium">
-                              {t('servicePage.contentCalculator.launchDiscount', 'Launchkorting')} (-20%)
-                            </p>
+                        <div className="flex justify-between items-center mb-2">
+                          <span className="text-muted-foreground">Subtotaal</span>
+                          <span className={`font-semibold ${pricing.discountEligible ? 'line-through text-muted-foreground' : 'text-foreground'}`}>
+                            €{pricing.subtotal}
+                          </span>
+                        </div>
+                        
+                        {pricing.discountEligible && (
+                          <div className="flex justify-between items-center mb-2 text-primary">
+                            <span className="flex items-center gap-1">
+                              <Sparkles className="w-4 h-4" />
+                              Launchkorting (-{DISCOUNT_CONFIG.percentage}%)
+                            </span>
+                            <span className="font-semibold">-€{pricing.discountAmount}</span>
                           </div>
-                          <p className="text-xl font-bold text-primary">
-                            -€{pricing.discountAmount}
+                        )}
+                        
+                        <div className="border-t border-primary/20 pt-2 mt-2">
+                          <div className="flex justify-between items-center">
+                            <span className="font-semibold text-foreground">Totaal</span>
+                            <span className="text-2xl font-bold text-primary">€{pricing.total}</span>
+                          </div>
+                          <p className="text-xs text-muted-foreground mt-1">
+                            {t('pricing.vatExcludedNote', 'Alle prijzen excl. BTW. BTW wordt toegevoegd op de factuur.')}
                           </p>
-                        </motion.div>
-                      )}
-
-                      {/* Total */}
-                      <div className="p-4 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/30">
-                        <p className="text-sm text-muted-foreground mb-1">
-                          {t('servicePage.contentCalculator.total', 'Totaal')} <span className="text-xs">(excl. BTW)</span>
-                        </p>
-                        <p className="text-3xl font-bold gold-gradient-text">
-                          €{pricing.total}
-                        </p>
-                      </div>
-
-                      {/* VAT Note */}
-                      <div className="p-3 rounded-lg bg-muted/30 border border-muted">
-                        <p className="text-xs text-muted-foreground">
-                          {t('servicePage.contentCalculator.vatNote', 'Alle prijzen zijn exclusief BTW. BTW wordt toegevoegd op de definitieve factuur.')}
-                        </p>
+                        </div>
                       </div>
 
                       {/* Quote Code */}
-                      {pricing.hasItems && (
-                        <div className="p-4 rounded-xl bg-background border border-primary/20">
-                          <p className="text-xs text-muted-foreground mb-2">
-                            {t('servicePage.contentCalculator.yourCode', 'Jouw referentiecode')}
-                          </p>
-                          <div className="flex items-center gap-3">
-                            <code className="text-lg font-mono font-bold text-primary">{quoteCode}</code>
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={handleCopyCode}
-                              className="h-8 w-8 p-0"
-                            >
-                              {copied ? (
-                                <Check className="w-4 h-4 text-primary" />
-                              ) : (
-                                <Copy className="w-4 h-4 text-muted-foreground" />
-                              )}
-                            </Button>
-                          </div>
+                      <div className="p-4 rounded-xl bg-muted/30 border border-muted">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-sm text-muted-foreground">
+                            {t('servicePage.contentCalculator.referenceCode', 'Referentiecode')}
+                          </span>
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={handleCopyCode}
+                            className="h-8 px-2"
+                          >
+                            {copied ? (
+                              <Check className="w-4 h-4 text-primary" />
+                            ) : (
+                              <Copy className="w-4 h-4" />
+                            )}
+                          </Button>
+                        </div>
+                        <div className="font-mono text-xl font-bold text-primary">
+                          {quoteCode}
+                        </div>
+                      </div>
+
+                      {/* Discount Timer */}
+                      {discountActive && paymentType === 'one_time' && (
+                        <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/10 border border-primary/20">
+                          <Clock className="w-4 h-4 text-primary" />
+                          <span className="text-sm text-primary font-medium">
+                            {t('servicePage.contentCalculator.discountTimer', 'Nog {{days}} dagen geldig', { days: discountDaysLeft })}
+                          </span>
                         </div>
                       )}
-
-                      {/* Disclaimer */}
-                      <p className="text-xs text-muted-foreground">
-                        {t('servicePage.contentCalculator.disclaimer', 'Indicatieve prijs. Definitieve bevestiging via WhatsApp of call.')}
-                      </p>
 
                       {/* CTA Buttons */}
-                      {pricing.hasItems && (
-                        <div className="space-y-3 pt-4">
-                          <Button
-                            asChild
-                            className="w-full luxury-button group"
-                            size="lg"
-                          >
-                            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                              <MessageCircle className="w-4 h-4 mr-2" />
-                              {t('servicePage.contentCalculator.claimWhatsapp', 'Claim je code via WhatsApp')}
-                            </a>
-                          </Button>
-                          
-                          <Button
-                            variant="outline"
-                            size="lg"
-                            className="w-full glass-button border-primary/30"
-                            asChild
-                          >
-                            <a href="https://calendly.com/groppi" target="_blank" rel="noopener noreferrer">
-                              {t('servicePage.contentCalculator.planCall', 'Plan een call')}
-                            </a>
-                          </Button>
-
-                          <p className="text-xs text-muted-foreground text-center">
-                            {t('servicePage.contentCalculator.confirmNote', 'Stuur je code + keuze door. We bevestigen binnen 24u.')}
-                          </p>
-                        </div>
-                      )}
+                      <div className="space-y-3">
+                        <Button
+                          asChild
+                          className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                          disabled={!pricing.hasItems}
+                        >
+                          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                            <MessageCircle className="w-5 h-5 mr-2" />
+                            {t('servicePage.contentCalculator.claimWhatsApp', 'Claim je code via WhatsApp')}
+                          </a>
+                        </Button>
+                        
+                        <p className="text-xs text-center text-muted-foreground">
+                          {t('servicePage.contentCalculator.confirmNote', 'Stuur je code + keuze door. Wij bevestigen binnen 24u.')}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </motion.div>
               )}
             </AnimatePresence>
 
-            {/* Empty state - show when no payment type selected */}
-            {!paymentType && (
-              <div className="text-center py-8 text-muted-foreground">
-                <p>{t('servicePage.contentCalculator.selectPaymentFirst', 'Selecteer eerst je betaaltype hierboven om verder te gaan.')}</p>
-              </div>
-            )}
-          </motion.div>
-
-          {/* Launch Discount Section */}
-          {discountActive && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mt-8"
-            >
-              <div className="glass-card p-6 border-primary/30 bg-gradient-to-br from-primary/10 to-primary/5">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 rounded-full bg-primary/20">
-                      <Sparkles className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-primary">
-                        {t('servicePage.contentCalculator.discountTitle', 'Start nu met 20% launchkorting')}
-                      </h3>
-                      <p className="text-sm text-muted-foreground">
-                        {t('servicePage.contentCalculator.discountSubtitle', 'Geldig voor 10 dagen — enkel op eenmalige projecten.')}
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-4">
-                    <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30">
-                      <Clock className="w-4 h-4 text-primary" />
-                      <span className="font-bold text-primary">
-                        {t('servicePage.contentCalculator.daysLeft', 'Nog {{days}} dagen', { days: discountDaysLeft })}
-                      </span>
-                    </div>
-                  </div>
+            {/* VAT Disclaimer */}
+            <div className="mt-8 p-4 rounded-lg bg-muted/30 border border-muted">
+              <div className="flex items-start gap-2 text-sm text-muted-foreground">
+                <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-foreground mb-1">
+                    {t('pricing.vatDisclaimer.title', 'Prijsinformatie')}
+                  </p>
+                  <ul className="space-y-1 text-xs">
+                    <li>• {t('pricing.vatDisclaimer.line1', 'Alle prijzen zijn exclusief BTW (21%).')}</li>
+                    <li>• {t('pricing.vatDisclaimer.line2', 'Korting geldt enkel voor eenmalige projecten.')}</li>
+                    <li>• {t('pricing.vatDisclaimer.line3', 'Maandelijkse abonnementen zijn uitgesloten van korting.')}</li>
+                  </ul>
                 </div>
-                
-                <p className="text-xs text-muted-foreground mt-4 text-center">
-                  *{t('servicePage.contentCalculator.discountDisclaimer', 'Kortingen gelden enkel voor eenmalige projecten. Maandelijkse abonnementen zijn uitgesloten.')}
-                </p>
               </div>
-            </motion.div>
-          )}
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

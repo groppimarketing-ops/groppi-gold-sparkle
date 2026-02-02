@@ -1,7 +1,7 @@
 import { memo, useState, useMemo, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calculator, Send, MessageCircle, CreditCard, RefreshCw, Info, Clock, Sparkles, Copy, Check } from 'lucide-react';
+import { Calculator, MessageCircle, CreditCard, RefreshCw, Info, Sparkles, Copy, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -12,53 +12,82 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import {
+  WEBSITE_PRICING,
+  SUBSCRIPTION_PRICING,
+  DISCOUNT_CONFIG,
+  getDiscountInfo,
+  generateQuoteCode,
+} from '@/config/pricingConfig';
 
 interface ServicePriceCalculatorProps {
   serviceKey: string;
 }
 
-// Pricing constants (VAT excluded)
-const PRICING = {
-  base: {
-    starter: { min: 350, max: 450 },
-    growth: { min: 550, max: 750 },
-    pro: { min: 950, max: 1350 },
-  },
-  setup: {
-    starter: 150,
-    growth: 250,
-    pro: 450,
-  },
-  addons: {
-    extraContent4: 120,
-    extraContent12: 280,
-    extraVideo2: 180,
-    extraVideo6: 450,
-    extraLandingPage: 350,
-    extraTracking: 200,
-  },
-  adBudgetModifier: {
-    '300': 0,
-    '500': 50,
-    '1000': 100,
-    '3000': 200,
-  },
-};
-
-// Discount settings
-const DISCOUNT_PERCENTAGE = 20;
-const DISCOUNT_DAYS = 10;
-const STORAGE_KEY = 'groppi_launch_discount_start';
-
 type PaymentType = 'one_time' | 'monthly';
 
-const generateQuoteCode = (): string => {
-  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-  let code = 'GRO-';
-  for (let i = 0; i < 4; i++) {
-    code += chars.charAt(Math.floor(Math.random() * chars.length));
+// Service-specific pricing configurations
+const getServicePricing = (serviceKey: string) => {
+  switch (serviceKey) {
+    case 'businessWebsite':
+      return {
+        type: 'one_time' as const,
+        basePrice: WEBSITE_PRICING.business.oneTime,
+        setupFee: 0,
+        hasMonthly: false,
+      };
+    case 'onePageWebsite':
+      return {
+        type: 'one_time' as const,
+        basePrice: WEBSITE_PRICING.onePage.oneTime,
+        setupFee: 0,
+        hasMonthly: false,
+      };
+    case 'ecommerce':
+      return {
+        type: 'one_time' as const,
+        basePrice: WEBSITE_PRICING.ecommerce.oneTime,
+        setupFee: 0,
+        hasMonthly: false,
+      };
+    case 'socialMedia':
+      return {
+        type: 'monthly' as const,
+        basePrice: SUBSCRIPTION_PRICING.socialMedia.baseMonthly,
+        setupFee: SUBSCRIPTION_PRICING.socialMedia.setupFee,
+        hasMonthly: true,
+      };
+    case 'adsManagement':
+      return {
+        type: 'monthly' as const,
+        basePrice: SUBSCRIPTION_PRICING.adsManagement.baseMonthly,
+        setupFee: SUBSCRIPTION_PRICING.adsManagement.setupFee,
+        hasMonthly: true,
+      };
+    case 'seo':
+      return {
+        type: 'monthly' as const,
+        basePrice: SUBSCRIPTION_PRICING.seo.baseMonthly,
+        setupFee: SUBSCRIPTION_PRICING.seo.setupFee,
+        hasMonthly: true,
+      };
+    default:
+      return {
+        type: 'one_time' as const,
+        basePrice: 0,
+        setupFee: 0,
+        hasMonthly: false,
+      };
   }
-  return code;
+};
+
+// Add-on options
+const ADD_ONS = {
+  extraPages: { price: 150, label: 'Extra pagina (+€150)' },
+  seoSetup: { price: 200, label: 'SEO basis setup (+€200)' },
+  contentWriting: { price: 250, label: 'Content schrijven (+€250)' },
+  socialIntegration: { price: 100, label: 'Social media integratie (+€100)' },
+  analyticsSetup: { price: 150, label: 'Analytics dashboard (+€150)' },
 };
 
 const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps) => {
@@ -66,21 +95,20 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
   const [copied, setCopied] = useState(false);
   const [quoteCode] = useState(() => generateQuoteCode());
 
-  // Step 1: Payment type
-  const [paymentType, setPaymentType] = useState<PaymentType | null>(null);
+  const servicePricing = getServicePricing(serviceKey);
 
-  // Form state
-  const [businessType, setBusinessType] = useState<string>('');
-  const [goal, setGoal] = useState<string>('');
-  const [packageLevel, setPackageLevel] = useState<'starter' | 'growth' | 'pro'>('growth');
-  const [adBudget, setAdBudget] = useState<string>('500');
-  const [addons, setAddons] = useState<Record<string, boolean>>({
-    extraContent4: false,
-    extraContent12: false,
-    extraVideo2: false,
-    extraVideo6: false,
-    extraLandingPage: false,
-    extraTracking: false,
+  // Step 1: Payment type
+  const [paymentType, setPaymentType] = useState<PaymentType | null>(
+    servicePricing.hasMonthly ? null : 'one_time'
+  );
+
+  // Add-ons state
+  const [selectedAddons, setSelectedAddons] = useState<Record<string, boolean>>({
+    extraPages: false,
+    seoSetup: false,
+    contentWriting: false,
+    socialIntegration: false,
+    analyticsSetup: false,
   });
 
   // Discount countdown
@@ -88,63 +116,46 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
   const [discountActive, setDiscountActive] = useState(false);
 
   useEffect(() => {
-    let startDate = localStorage.getItem(STORAGE_KEY);
-    if (!startDate) {
-      startDate = new Date().toISOString();
-      localStorage.setItem(STORAGE_KEY, startDate);
-    }
-    
-    const start = new Date(startDate);
-    const now = new Date();
-    const diffDays = Math.floor((now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
-    const remaining = DISCOUNT_DAYS - diffDays;
-    
-    if (remaining > 0) {
-      setDiscountDaysLeft(remaining);
-      setDiscountActive(true);
-    } else {
-      setDiscountActive(false);
-    }
+    const info = getDiscountInfo();
+    setDiscountActive(info.active);
+    setDiscountDaysLeft(info.daysLeft);
   }, []);
 
   // Calculate pricing
   const pricing = useMemo(() => {
-    const base = PRICING.base[packageLevel];
-    const setup = PRICING.setup[packageLevel];
-    const adModifier = PRICING.adBudgetModifier[adBudget as keyof typeof PRICING.adBudgetModifier] || 0;
-
     let addonsTotal = 0;
-    Object.entries(addons).forEach(([key, enabled]) => {
-      if (enabled) {
-        addonsTotal += PRICING.addons[key as keyof typeof PRICING.addons] || 0;
+    Object.entries(selectedAddons).forEach(([key, enabled]) => {
+      if (enabled && ADD_ONS[key as keyof typeof ADD_ONS]) {
+        addonsTotal += ADD_ONS[key as keyof typeof ADD_ONS].price;
       }
     });
 
-    const monthlyMin = base.min + adModifier + addonsTotal;
-    const monthlyMax = base.max + adModifier + addonsTotal;
-    
-    // Discount ONLY applies to one-time setup fees, NOT monthly subscriptions
+    const basePrice = servicePricing.basePrice;
+    const setupFee = servicePricing.setupFee;
+    const subtotal = basePrice + addonsTotal + setupFee;
+
+    // Discount ONLY applies to one-time payments
     const discountEligible = paymentType === 'one_time' && discountActive;
-    const setupDiscountAmount = discountEligible ? Math.round(setup * (DISCOUNT_PERCENTAGE / 100)) : 0;
-    const discountedSetup = setup - setupDiscountAmount;
+    const discountAmount = discountEligible 
+      ? Math.round(subtotal * (DISCOUNT_CONFIG.percentage / 100))
+      : 0;
     
-    const firstMonthMin = monthlyMin + discountedSetup;
-    const firstMonthMax = monthlyMax + discountedSetup;
+    const total = subtotal - discountAmount;
 
     return {
-      monthlyMin,
-      monthlyMax,
-      setup,
-      discountedSetup,
-      setupDiscountAmount,
+      basePrice,
+      setupFee,
+      addonsTotal,
+      subtotal,
+      discountAmount,
       discountEligible,
-      firstMonthMin,
-      firstMonthMax,
+      total,
+      isMonthly: servicePricing.hasMonthly && paymentType === 'monthly',
     };
-  }, [packageLevel, adBudget, addons, discountActive, paymentType]);
+  }, [selectedAddons, discountActive, paymentType, servicePricing]);
 
   const handleAddonToggle = (key: string) => {
-    setAddons(prev => ({ ...prev, [key]: !prev[key] }));
+    setSelectedAddons(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
   const handleCopyCode = () => {
@@ -153,12 +164,12 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
     setTimeout(() => setCopied(false), 2000);
   };
 
-  // WhatsApp message with calculation
+  // WhatsApp message
   const generateWhatsAppMessage = () => {
-    const serviceName = t(`servicePage.${serviceKey}.title`);
-    const selectedAddons = Object.entries(addons)
+    const serviceName = t(`servicePage.${serviceKey}.title`, serviceKey);
+    const selectedAddonsList = Object.entries(selectedAddons)
       .filter(([, enabled]) => enabled)
-      .map(([key]) => t(`servicePage.calculator.addons.${key}`))
+      .map(([key]) => ADD_ONS[key as keyof typeof ADD_ONS]?.label || key)
       .join(', ');
 
     const paymentLabel = paymentType === 'one_time' ? 'Eenmalig project' : 'Maandelijks abonnement';
@@ -168,14 +179,11 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
 📋 Referentiecode: ${quoteCode}
 🎯 Dienst: ${serviceName}
 💳 Type: ${paymentLabel}
-🏢 Bedrijfstype: ${t(`servicePage.calculator.businessTypes.${businessType || 'other'}`)}
-📈 Doel: ${t(`servicePage.calculator.goals.${goal || 'visibility'}`)}
-📦 Pakket: ${t(`servicePage.calculator.packages.${packageLevel}`)}
-💰 Advertentiebudget: €${adBudget}/maand
-${selectedAddons ? `➕ Add-ons: ${selectedAddons}` : ''}
+${selectedAddonsList ? `➕ Add-ons: ${selectedAddonsList}` : ''}
 
-💵 Maandelijks: €${pricing.monthlyMin}–€${pricing.monthlyMax} (excl. BTW)
-🚀 Setup: €${pricing.discountedSetup} (excl. BTW)${pricing.setupDiscountAmount > 0 ? ` (korting: -€${pricing.setupDiscountAmount})` : ''}
+💰 Basisprijs: €${pricing.basePrice}${pricing.isMonthly ? '/maand' : ''}
+${pricing.setupFee > 0 ? `🚀 Setup: €${pricing.setupFee}\n` : ''}${pricing.addonsTotal > 0 ? `➕ Add-ons: €${pricing.addonsTotal}\n` : ''}${pricing.discountAmount > 0 ? `🎉 Launchkorting (-${DISCOUNT_CONFIG.percentage}%): -€${pricing.discountAmount}\n` : ''}
+✅ Totaal: €${pricing.total}${pricing.isMonthly ? '/maand' : ''} (excl. BTW)
 
 Kan je dit bevestigen?`;
 
@@ -183,6 +191,9 @@ Kan je dit bevestigen?`;
   };
 
   const whatsappUrl = `https://wa.me/32470123456?text=${generateWhatsAppMessage()}`;
+
+  // For one-time only services, skip step 1
+  const showPaymentTypeStep = servicePricing.hasMonthly;
 
   return (
     <section className="relative py-16 lg:py-24 bg-background">
@@ -200,7 +211,7 @@ Kan je dit bevestigen?`;
             >
               <Calculator className="w-5 h-5" />
               <span className="text-xs font-semibold tracking-[0.2em] uppercase">
-                {t('servicePage.calculator.label')}
+                {t('servicePage.calculator.label', 'Prijscalculator')}
               </span>
             </motion.div>
             
@@ -211,7 +222,7 @@ Kan je dit bevestigen?`;
               transition={{ delay: 0.1 }}
               className="text-3xl md:text-4xl font-bold gold-gradient-text"
             >
-              {t('servicePage.calculator.title')}
+              {t('servicePage.calculator.title', 'Bereken je prijs')}
             </motion.h2>
           </div>
 
@@ -223,309 +234,232 @@ Kan je dit bevestigen?`;
             transition={{ delay: 0.2 }}
             className="glass-card p-6 lg:p-8 border-primary/20"
           >
-            {/* STEP 1: Payment Type Selection */}
-            <div className="mb-8">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm font-bold">1</span>
-                <Label className="text-lg font-semibold text-foreground">
-                  {t('servicePage.calculator.step1', 'Kies je betaaltype')}
-                </Label>
-              </div>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <button
-                  onClick={() => setPaymentType('one_time')}
-                  className={`p-4 rounded-xl border-2 text-left transition-all ${
-                    paymentType === 'one_time'
-                      ? 'border-primary bg-primary/10'
-                      : 'border-primary/20 hover:border-primary/40'
-                  }`}
-                >
-                  <div className="flex items-center gap-3 mb-2">
-                    <CreditCard className={`w-5 h-5 ${paymentType === 'one_time' ? 'text-primary' : 'text-muted-foreground'}`} />
-                    <span className={`font-semibold ${paymentType === 'one_time' ? 'text-primary' : 'text-foreground'}`}>
-                      {t('servicePage.calculator.oneTimeProject', 'Eenmalig project')}
-                    </span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    {t('servicePage.calculator.oneTimeDesc', 'Setup + eerste maand. Korting op setup mogelijk.')}
-                  </p>
-                  {discountActive && (
-                    <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary/20 text-primary text-xs font-medium">
-                      <Sparkles className="w-3 h-3" />
-                      -20% op setup
-                    </div>
-                  )}
-                </button>
+            {/* STEP 1: Payment Type Selection (only for services with monthly option) */}
+            {showPaymentTypeStep && (
+              <div className="mb-8">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm font-bold">1</span>
+                  <Label className="text-lg font-semibold text-foreground">
+                    {t('servicePage.calculator.step1', 'Kies je betaaltype')}
+                  </Label>
+                </div>
                 
-                <button
-                  onClick={() => setPaymentType('monthly')}
-                  className={`p-4 rounded-xl border-2 text-left transition-all ${
-                    paymentType === 'monthly'
-                      ? 'border-primary bg-primary/10'
-                      : 'border-primary/20 hover:border-primary/40'
-                  }`}
-                >
-                  <div className="flex items-center gap-3 mb-2">
-                    <RefreshCw className={`w-5 h-5 ${paymentType === 'monthly' ? 'text-primary' : 'text-muted-foreground'}`} />
-                    <span className={`font-semibold ${paymentType === 'monthly' ? 'text-primary' : 'text-foreground'}`}>
-                      {t('servicePage.calculator.monthlySubscription', 'Maandelijks abonnement')}
-                    </span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    {t('servicePage.calculator.monthlyDesc', 'Doorlopend. Geen korting van toepassing.')}
-                  </p>
-                </button>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <button
+                    onClick={() => setPaymentType('one_time')}
+                    className={`p-4 rounded-xl border-2 text-left transition-all ${
+                      paymentType === 'one_time'
+                        ? 'border-primary bg-primary/10'
+                        : 'border-primary/20 hover:border-primary/40'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3 mb-2">
+                      <CreditCard className={`w-5 h-5 ${paymentType === 'one_time' ? 'text-primary' : 'text-muted-foreground'}`} />
+                      <span className={`font-semibold ${paymentType === 'one_time' ? 'text-primary' : 'text-foreground'}`}>
+                        {t('servicePage.calculator.oneTimeProject', 'Eenmalig project')}
+                      </span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      {t('servicePage.calculator.oneTimeDesc', 'Setup + eerste maand. Korting mogelijk.')}
+                    </p>
+                    {discountActive && (
+                      <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary/20 text-primary text-xs font-medium">
+                        <Sparkles className="w-3 h-3" />
+                        -{DISCOUNT_CONFIG.percentage}% korting
+                      </div>
+                    )}
+                  </button>
+                  
+                  <button
+                    onClick={() => setPaymentType('monthly')}
+                    className={`p-4 rounded-xl border-2 text-left transition-all ${
+                      paymentType === 'monthly'
+                        ? 'border-primary bg-primary/10'
+                        : 'border-primary/20 hover:border-primary/40'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3 mb-2">
+                      <RefreshCw className={`w-5 h-5 ${paymentType === 'monthly' ? 'text-primary' : 'text-muted-foreground'}`} />
+                      <span className={`font-semibold ${paymentType === 'monthly' ? 'text-primary' : 'text-foreground'}`}>
+                        {t('servicePage.calculator.monthlySubscription', 'Maandelijks abonnement')}
+                      </span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      {t('servicePage.calculator.monthlyDesc', 'Doorlopend. Geen korting van toepassing.')}
+                    </p>
+                  </button>
+                </div>
+                
+                {/* Discount notice for monthly */}
+                {paymentType === 'monthly' && discountActive && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    className="mt-4 p-3 rounded-lg bg-muted/50 border border-muted"
+                  >
+                    <div className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                      <span>
+                        {t('servicePage.calculator.noDiscountMonthly', 'De 20% launchkorting is niet van toepassing op maandelijkse abonnementen.')}
+                      </span>
+                    </div>
+                  </motion.div>
+                )}
               </div>
-              
-              {/* Discount notice for monthly */}
-              {paymentType === 'monthly' && discountActive && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  className="mt-4 p-3 rounded-lg bg-muted/50 border border-muted"
-                >
-                  <div className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                    <span>
-                      {t('servicePage.calculator.noDiscountMonthly', 'De 20% launchkorting is niet van toepassing op maandelijkse abonnementen.')}
-                    </span>
-                  </div>
-                </motion.div>
-              )}
-            </div>
+            )}
 
-            {/* STEP 2: Configure - Only show after payment type selected */}
+            {/* STEP 2 (or STEP 1 for one-time services): Configure */}
             <AnimatePresence>
-              {paymentType && (
+              {(paymentType || !showPaymentTypeStep) && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                 >
                   <div className="flex items-center gap-2 mb-4">
-                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm font-bold">2</span>
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm font-bold">
+                      {showPaymentTypeStep ? '2' : '1'}
+                    </span>
                     <Label className="text-lg font-semibold text-foreground">
-                      {t('servicePage.calculator.step2Config', 'Configureer je pakket')}
+                      {t('servicePage.calculator.configureLabel', 'Configureer je pakket')}
                     </Label>
                   </div>
 
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {/* LEFT: Inputs */}
+                    {/* LEFT: Base Price & Add-ons */}
                     <div className="space-y-6">
-                      {/* Business Type */}
-                      <div className="space-y-2">
-                        <Label className="text-foreground font-medium">
-                          {t('servicePage.calculator.businessTypeLabel')}
-                        </Label>
-                        <Select value={businessType} onValueChange={setBusinessType}>
-                          <SelectTrigger className="glass-card border-primary/20 hover:border-primary/40">
-                            <SelectValue placeholder={t('servicePage.calculator.selectPlaceholder')} />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="restaurant">{t('servicePage.calculator.businessTypes.restaurant')}</SelectItem>
-                            <SelectItem value="retail">{t('servicePage.calculator.businessTypes.retail')}</SelectItem>
-                            <SelectItem value="construction">{t('servicePage.calculator.businessTypes.construction')}</SelectItem>
-                            <SelectItem value="beauty">{t('servicePage.calculator.businessTypes.beauty')}</SelectItem>
-                            <SelectItem value="ecommerce">{t('servicePage.calculator.businessTypes.ecommerce')}</SelectItem>
-                            <SelectItem value="other">{t('servicePage.calculator.businessTypes.other')}</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-
-                      {/* Goal */}
-                      <div className="space-y-2">
-                        <Label className="text-foreground font-medium">
-                          {t('servicePage.calculator.goalLabel')}
-                        </Label>
-                        <Select value={goal} onValueChange={setGoal}>
-                          <SelectTrigger className="glass-card border-primary/20 hover:border-primary/40">
-                            <SelectValue placeholder={t('servicePage.calculator.selectPlaceholder')} />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="visibility">{t('servicePage.calculator.goals.visibility')}</SelectItem>
-                            <SelectItem value="leads">{t('servicePage.calculator.goals.leads')}</SelectItem>
-                            <SelectItem value="sales">{t('servicePage.calculator.goals.sales')}</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-
-                      {/* Package Level */}
-                      <div className="space-y-3">
-                        <Label className="text-foreground font-medium">
-                          {t('servicePage.calculator.packageLabel')}
-                        </Label>
-                        <div className="grid grid-cols-3 gap-3">
-                          {(['starter', 'growth', 'pro'] as const).map((pkg) => (
-                            <button
-                              key={pkg}
-                              onClick={() => setPackageLevel(pkg)}
-                              className={`p-3 rounded-lg border text-center transition-all ${
-                                packageLevel === pkg
-                                  ? 'border-primary bg-primary/10 text-primary'
-                                  : 'border-primary/20 hover:border-primary/40 text-muted-foreground hover:text-foreground'
-                              }`}
-                            >
-                              <span className="text-sm font-medium">
-                                {t(`servicePage.calculator.packages.${pkg}`)}
-                              </span>
-                            </button>
-                          ))}
+                      {/* Base Price Display */}
+                      <div className="p-4 rounded-xl bg-primary/10 border border-primary/20">
+                        <div className="flex justify-between items-center">
+                          <span className="text-foreground font-medium">Basisprijs</span>
+                          <span className="text-2xl font-bold text-primary">
+                            €{pricing.basePrice.toLocaleString('nl-BE')}
+                            {pricing.isMonthly && <span className="text-sm font-normal">/maand</span>}
+                          </span>
                         </div>
-                      </div>
-
-                      {/* Ad Budget */}
-                      <div className="space-y-2">
-                        <Label className="text-foreground font-medium">
-                          {t('servicePage.calculator.adBudgetLabel')}
-                        </Label>
-                        <Select value={adBudget} onValueChange={setAdBudget}>
-                          <SelectTrigger className="glass-card border-primary/20 hover:border-primary/40">
-                            <SelectValue />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="300">€300 / {t('servicePage.calculator.month')}</SelectItem>
-                            <SelectItem value="500">€500 / {t('servicePage.calculator.month')}</SelectItem>
-                            <SelectItem value="1000">€1.000 / {t('servicePage.calculator.month')}</SelectItem>
-                            <SelectItem value="3000">€3.000 / {t('servicePage.calculator.month')}</SelectItem>
-                          </SelectContent>
-                        </Select>
+                        {pricing.setupFee > 0 && (
+                          <div className="flex justify-between items-center mt-2 text-sm text-muted-foreground">
+                            <span>+ Setup fee</span>
+                            <span>€{pricing.setupFee}</span>
+                          </div>
+                        )}
                       </div>
 
                       {/* Add-ons */}
                       <div className="space-y-3">
                         <Label className="text-foreground font-medium">
-                          {t('servicePage.calculator.addonsLabel')}
+                          {t('servicePage.calculator.addonsLabel', 'Extra opties')}
                         </Label>
-                        <div className="space-y-2">
-                          {Object.keys(PRICING.addons).map((key) => (
-                            <div key={key} className="flex items-center justify-between p-3 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors">
-                              <div className="flex items-center gap-3">
-                                <Checkbox
-                                  id={key}
-                                  checked={addons[key]}
-                                  onCheckedChange={() => handleAddonToggle(key)}
-                                  className="border-primary/40 data-[state=checked]:bg-primary data-[state=checked]:border-primary"
-                                />
-                                <label htmlFor={key} className="text-sm text-foreground cursor-pointer">
-                                  {t(`servicePage.calculator.addons.${key}`)}
-                                </label>
-                              </div>
-                              <span className="text-sm text-primary font-medium">
-                                +€{PRICING.addons[key as keyof typeof PRICING.addons]}
-                              </span>
+                        {Object.entries(ADD_ONS).map(([key, addon]) => (
+                          <div 
+                            key={key} 
+                            className="flex items-center justify-between p-3 rounded-lg bg-primary/5 hover:bg-primary/10 transition-colors"
+                          >
+                            <div className="flex items-center gap-3">
+                              <Checkbox
+                                id={key}
+                                checked={selectedAddons[key]}
+                                onCheckedChange={() => handleAddonToggle(key)}
+                              />
+                              <label htmlFor={key} className="text-sm text-foreground cursor-pointer">
+                                {addon.label}
+                              </label>
                             </div>
-                          ))}
-                        </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
 
-                    {/* RIGHT: Output */}
+                    {/* RIGHT: Summary */}
                     <div className="space-y-6 lg:pl-8 lg:border-l lg:border-primary/20">
+                      {/* Price Breakdown */}
+                      <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
+                        <div className="space-y-2 text-sm">
+                          <div className="flex justify-between text-muted-foreground">
+                            <span>Basisprijs</span>
+                            <span>€{pricing.basePrice}</span>
+                          </div>
+                          {pricing.setupFee > 0 && (
+                            <div className="flex justify-between text-muted-foreground">
+                              <span>Setup fee</span>
+                              <span>€{pricing.setupFee}</span>
+                            </div>
+                          )}
+                          {pricing.addonsTotal > 0 && (
+                            <div className="flex justify-between text-muted-foreground">
+                              <span>Add-ons</span>
+                              <span>€{pricing.addonsTotal}</span>
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="border-t border-primary/20 pt-3 mt-3">
+                          <div className="flex justify-between items-center mb-2">
+                            <span className="text-muted-foreground">Subtotaal</span>
+                            <span className={`font-semibold ${pricing.discountEligible ? 'line-through text-muted-foreground' : 'text-foreground'}`}>
+                              €{pricing.subtotal}
+                            </span>
+                          </div>
+                          
+                          {pricing.discountEligible && (
+                            <div className="flex justify-between items-center mb-2 text-primary">
+                              <span className="flex items-center gap-1">
+                                <Sparkles className="w-4 h-4" />
+                                Launchkorting (-{DISCOUNT_CONFIG.percentage}%)
+                              </span>
+                              <span className="font-semibold">-€{pricing.discountAmount}</span>
+                            </div>
+                          )}
+                          
+                          <div className="flex justify-between items-center pt-2 border-t border-primary/10">
+                            <span className="font-semibold text-foreground">Totaal</span>
+                            <span className="text-2xl font-bold text-primary">
+                              €{pricing.total}
+                              {pricing.isMonthly && <span className="text-sm font-normal">/maand</span>}
+                            </span>
+                          </div>
+                          <p className="text-xs text-muted-foreground mt-1">
+                            {t('pricing.vatExcludedNote', 'Alle prijzen excl. BTW.')}
+                          </p>
+                        </div>
+                      </div>
+
                       {/* Quote Code */}
-                      <div className="p-4 rounded-xl bg-background border border-primary/20">
-                        <p className="text-xs text-muted-foreground mb-2">
-                          {t('servicePage.calculator.yourCode', 'Jouw referentiecode')}
-                        </p>
-                        <div className="flex items-center gap-3">
-                          <code className="text-lg font-mono font-bold text-primary">{quoteCode}</code>
+                      <div className="p-4 rounded-xl bg-muted/30 border border-muted">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-sm text-muted-foreground">Referentiecode</span>
                           <Button
                             variant="ghost"
                             size="sm"
                             onClick={handleCopyCode}
-                            className="h-8 w-8 p-0"
+                            className="h-8 px-2"
                           >
                             {copied ? (
                               <Check className="w-4 h-4 text-primary" />
                             ) : (
-                              <Copy className="w-4 h-4 text-muted-foreground" />
+                              <Copy className="w-4 h-4" />
                             )}
                           </Button>
                         </div>
-                      </div>
-
-                      {/* Monthly Service Fee */}
-                      <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
-                        <p className="text-sm text-muted-foreground mb-1">
-                          {t('servicePage.calculator.monthlyFee')} <span className="text-xs">(excl. BTW)</span>
-                        </p>
-                        <p className="text-3xl font-bold text-primary">
-                          €{pricing.monthlyMin}–€{pricing.monthlyMax}
-                          <span className="text-lg font-normal text-muted-foreground ml-1">
-                            / {t('servicePage.calculator.month')}
-                          </span>
-                        </p>
-                      </div>
-
-                      {/* Setup Fee */}
-                      <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
-                        <p className="text-sm text-muted-foreground mb-1">
-                          {t('servicePage.calculator.setupFee')} <span className="text-xs">(excl. BTW)</span>
-                        </p>
-                        <div className="flex items-baseline gap-2">
-                          <p className="text-2xl font-bold text-foreground">
-                            €{pricing.discountedSetup}
-                          </p>
-                          {pricing.setupDiscountAmount > 0 && (
-                            <>
-                              <span className="text-sm text-muted-foreground line-through">€{pricing.setup}</span>
-                              <span className="text-sm text-primary font-medium">(-20%)</span>
-                            </>
-                          )}
+                        <div className="font-mono text-xl font-bold text-primary">
+                          {quoteCode}
                         </div>
-                        <span className="text-sm text-muted-foreground">
-                          ({t('servicePage.calculator.oneTime')})
-                        </span>
                       </div>
-
-                      {/* First Month Total */}
-                      <div className="p-4 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/30">
-                        <p className="text-sm text-muted-foreground mb-1">
-                          {t('servicePage.calculator.firstMonthTotal')} <span className="text-xs">(excl. BTW)</span>
-                        </p>
-                        <p className="text-3xl font-bold gold-gradient-text">
-                          €{pricing.firstMonthMin}–€{pricing.firstMonthMax}
-                        </p>
-                      </div>
-
-                      {/* VAT Note */}
-                      <div className="p-3 rounded-lg bg-muted/30 border border-muted">
-                        <p className="text-xs text-muted-foreground">
-                          {t('servicePage.calculator.vatNote', 'Alle prijzen zijn exclusief BTW. BTW wordt toegevoegd op de definitieve factuur.')}
-                        </p>
-                      </div>
-
-                      {/* Disclaimer */}
-                      <p className="text-xs text-muted-foreground">
-                        {t('servicePage.calculator.disclaimer')}
-                      </p>
 
                       {/* CTA Buttons */}
-                      <div className="space-y-3 pt-4">
+                      <div className="space-y-3">
                         <Button
                           asChild
-                          className="w-full luxury-button group"
-                          size="lg"
+                          className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
                         >
                           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                            <MessageCircle className="w-4 h-4 mr-2" />
-                            {t('servicePage.calculator.claimWhatsapp', 'Claim je code via WhatsApp')}
+                            <MessageCircle className="w-5 h-5 mr-2" />
+                            {t('servicePage.calculator.claimWhatsApp', 'Claim via WhatsApp')}
                           </a>
                         </Button>
                         
-                        <Button
-                          variant="outline"
-                          size="lg"
-                          className="w-full glass-button border-primary/30"
-                          asChild
-                        >
-                          <a href="https://calendly.com/groppi" target="_blank" rel="noopener noreferrer">
-                            {t('servicePage.calculator.planCall', 'Plan een call')}
-                          </a>
-                        </Button>
-
-                        <p className="text-xs text-muted-foreground text-center">
-                          {t('servicePage.calculator.confirmNote', 'Stuur je code + keuze door. We bevestigen binnen 24u.')}
+                        <p className="text-xs text-center text-muted-foreground">
+                          {t('servicePage.calculator.confirmNote', 'Stuur je code door. Wij bevestigen binnen 24u.')}
                         </p>
                       </div>
                     </div>
@@ -534,52 +468,23 @@ Kan je dit bevestigen?`;
               )}
             </AnimatePresence>
 
-            {/* Empty state */}
-            {!paymentType && (
-              <div className="text-center py-8 text-muted-foreground">
-                <p>{t('servicePage.calculator.selectPaymentFirst', 'Selecteer eerst je betaaltype hierboven om verder te gaan.')}</p>
-              </div>
-            )}
-          </motion.div>
-
-          {/* Launch Discount Section */}
-          {discountActive && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mt-8"
-            >
-              <div className="glass-card p-6 border-primary/30 bg-gradient-to-br from-primary/10 to-primary/5">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 rounded-full bg-primary/20">
-                      <Sparkles className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-primary">
-                        {t('servicePage.calculator.discountTitle', 'Start nu met 20% launchkorting')}
-                      </h3>
-                      <p className="text-sm text-muted-foreground">
-                        {t('servicePage.calculator.discountSubtitle', 'Geldig voor 10 dagen — enkel op eenmalige projecten.')}
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30">
-                    <Clock className="w-4 h-4 text-primary" />
-                    <span className="font-bold text-primary">
-                      Nog {discountDaysLeft} {discountDaysLeft === 1 ? 'dag' : 'dagen'}
-                    </span>
-                  </div>
+            {/* VAT Disclaimer */}
+            <div className="mt-8 p-4 rounded-lg bg-muted/30 border border-muted">
+              <div className="flex items-start gap-2 text-sm text-muted-foreground">
+                <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-foreground mb-1">
+                    {t('pricing.vatDisclaimer.title', 'Prijsinformatie')}
+                  </p>
+                  <ul className="space-y-1 text-xs">
+                    <li>• {t('pricing.vatDisclaimer.line1', 'Alle prijzen zijn exclusief BTW (21%).')}</li>
+                    <li>• {t('pricing.vatDisclaimer.line2', 'Korting geldt enkel voor eenmalige projecten.')}</li>
+                    <li>• {t('pricing.vatDisclaimer.line3', 'Maandelijkse abonnementen zijn uitgesloten van korting.')}</li>
+                  </ul>
                 </div>
-                
-                <p className="text-xs text-muted-foreground mt-4 text-center">
-                  *{t('servicePage.calculator.discountDisclaimer', 'Kortingen gelden enkel voor eenmalige projecten (setup). Maandelijkse abonnementen zijn uitgesloten.')}
-                </p>
               </div>
-            </motion.div>
-          )}
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -9,6 +9,20 @@
     "partnership": "Samenwerking",
     "franchise": "Samenwerking"
   },
+  "pricing": {
+    "from": "Vanaf",
+    "customQuote": "Offerte op maat",
+    "perMonth": "/ maand",
+    "oneTime": "eenmalig",
+    "vatExcluded": "excl. BTW",
+    "vatExcludedNote": "Alle prijzen excl. BTW. BTW wordt toegevoegd op de factuur.",
+    "vatDisclaimer": {
+      "title": "Prijsinformatie",
+      "line1": "Alle prijzen zijn exclusief BTW (21%).",
+      "line2": "Korting geldt enkel voor eenmalige projecten.",
+      "line3": "Maandelijkse abonnementen zijn uitgesloten van korting."
+    }
+  },
   "common": {
     "loading": "Laden...",
     "error": "Er is iets misgegaan",
@@ -169,6 +183,7 @@
       "from": "Vanaf",
       "perMonth": "/ maand",
       "oneTime": "eenmalig",
+      "vatExcluded": "excl. BTW",
       "items": {
         "contentProduction": {
           "title": "Contentproductie",

@@ -9,6 +9,20 @@
     "partnership": "Partnership",
     "franchise": "Partnership"
   },
+  "pricing": {
+    "from": "From",
+    "customQuote": "Custom quote",
+    "perMonth": "/ month",
+    "oneTime": "one-time",
+    "vatExcluded": "excl. VAT",
+    "vatExcludedNote": "All prices excl. VAT. VAT will be added on the invoice.",
+    "vatDisclaimer": {
+      "title": "Pricing information",
+      "line1": "All prices exclude VAT (21%).",
+      "line2": "Discount applies only to one-time projects.",
+      "line3": "Monthly subscriptions are excluded from discounts."
+    }
+  },
   "common": {
     "loading": "Loading...",
     "error": "Something went wrong",
@@ -169,6 +183,7 @@
       "from": "From",
       "perMonth": "/ month",
       "oneTime": "one-time",
+      "vatExcluded": "excl. VAT",
       "items": {
         "contentProduction": {
           "title": "Content Production",

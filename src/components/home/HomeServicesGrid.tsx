@@ -1,6 +1,6 @@
 import { forwardRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Star, RefreshCw, FileText, Award, Play, ArrowRight, Calculator } from 'lucide-react';
+import { Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Award, Play, ArrowRight, Calculator } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import SectionHeader from '@/components/ui/SectionHeader';
@@ -8,20 +8,22 @@ import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import HomeServiceModal from './HomeServiceModal';
+import {
+  SERVICE_PRICING_CONFIG,
+  getPriceDisplayString,
+  getPriceSuffix,
+  type ServicePricingConfig,
+} from '@/config/pricingConfig';
 
 export interface HomeServiceData {
   id: string;
   icon: typeof Camera;
   titleKey: string;
   descKey: string;
-  priceDisplay: 'custom' | 'from' | 'range'; // How to show price on card
-  priceMin?: number;
-  priceMax?: number;
-  priceUnit?: string; // e.g., '/item', '/month'
-  pricingType: 'monthly' | 'one_time' | 'custom';
   deliverables: string[];
   videoUrl?: string;
-  hasCalculator?: boolean;
+  // Pricing from central config
+  pricingConfig: ServicePricingConfig;
 }
 
 interface HomeServicesGridProps {
@@ -43,24 +45,19 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
       icon: Camera,
       titleKey: 'home.servicesGrid.items.contentProduction.title',
       descKey: 'home.servicesGrid.items.contentProduction.desc',
-      priceDisplay: 'from',
-      priceMin: 25,
-      priceUnit: '/item',
-      pricingType: 'one_time',
+      pricingConfig: SERVICE_PRICING_CONFIG['content-production'],
       deliverables: [
         'home.servicesGrid.items.contentProduction.deliverables.0',
         'home.servicesGrid.items.contentProduction.deliverables.1',
         'home.servicesGrid.items.contentProduction.deliverables.2',
       ],
-      hasCalculator: true,
     },
     {
       id: 'business-website',
       icon: Globe,
       titleKey: 'home.servicesGrid.items.businessWebsite.title',
       descKey: 'home.servicesGrid.items.businessWebsite.desc',
-      priceDisplay: 'custom',
-      pricingType: 'one_time',
+      pricingConfig: SERVICE_PRICING_CONFIG['business-website'],
       deliverables: [
         'home.servicesGrid.items.businessWebsite.deliverables.0',
         'home.servicesGrid.items.businessWebsite.deliverables.1',
@@ -72,8 +69,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
       icon: ShoppingCart,
       titleKey: 'home.servicesGrid.items.ecommerce.title',
       descKey: 'home.servicesGrid.items.ecommerce.desc',
-      priceDisplay: 'custom',
-      pricingType: 'one_time',
+      pricingConfig: SERVICE_PRICING_CONFIG['ecommerce-website'],
       deliverables: [
         'home.servicesGrid.items.ecommerce.deliverables.0',
         'home.servicesGrid.items.ecommerce.deliverables.1',
@@ -85,22 +81,19 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
       icon: Megaphone,
       titleKey: 'home.servicesGrid.items.ads.title',
       descKey: 'home.servicesGrid.items.ads.desc',
-      priceDisplay: 'custom',
-      pricingType: 'monthly',
+      pricingConfig: SERVICE_PRICING_CONFIG['ads-management'],
       deliverables: [
         'home.servicesGrid.items.ads.deliverables.0',
         'home.servicesGrid.items.ads.deliverables.1',
         'home.servicesGrid.items.ads.deliverables.2',
       ],
-      hasCalculator: true,
     },
     {
       id: 'seo',
       icon: Search,
       titleKey: 'home.servicesGrid.items.seo.title',
       descKey: 'home.servicesGrid.items.seo.desc',
-      priceDisplay: 'custom',
-      pricingType: 'monthly',
+      pricingConfig: SERVICE_PRICING_CONFIG['seo'],
       deliverables: [
         'home.servicesGrid.items.seo.deliverables.0',
         'home.servicesGrid.items.seo.deliverables.1',
@@ -112,14 +105,12 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
       icon: Share2,
       titleKey: 'home.servicesGrid.items.social.title',
       descKey: 'home.servicesGrid.items.social.desc',
-      priceDisplay: 'custom',
-      pricingType: 'monthly',
+      pricingConfig: SERVICE_PRICING_CONFIG['social-media'],
       deliverables: [
         'home.servicesGrid.items.social.deliverables.0',
         'home.servicesGrid.items.social.deliverables.1',
         'home.servicesGrid.items.social.deliverables.2',
       ],
-      hasCalculator: true,
     },
   ];
 
@@ -127,27 +118,6 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
     setSelectedService(service);
     setActiveTab(tab);
     setIsModalOpen(true);
-  };
-
-  const getPriceDisplay = (service: HomeServiceData) => {
-    if (service.priceDisplay === 'custom') {
-      return t('home.servicesGrid.customQuote');
-    }
-    if (service.priceDisplay === 'from' && service.priceMin) {
-      return `${t('home.servicesGrid.from')} €${service.priceMin}`;
-    }
-    if (service.priceDisplay === 'range' && service.priceMin && service.priceMax) {
-      return `€${service.priceMin.toLocaleString()} - €${service.priceMax.toLocaleString()}`;
-    }
-    return t('home.servicesGrid.customQuote');
-  };
-
-  const getPricingSuffix = (service: HomeServiceData) => {
-    if (service.priceDisplay === 'custom') return '';
-    if (service.priceUnit) return service.priceUnit;
-    if (service.pricingType === 'monthly') return t('home.servicesGrid.perMonth');
-    if (service.pricingType === 'one_time') return t('home.servicesGrid.oneTime');
-    return '';
   };
 
   return (
@@ -167,131 +137,139 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
 
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            {services.map((service, index) => (
-              <GlassCard
-                key={service.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`group relative p-6 flex flex-col h-full transition-all duration-500 hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] hover:-translate-y-1 cursor-pointer ${
-                  highlightedServices.includes(service.id) ? 'ring-2 ring-primary/60 shadow-[0_0_50px_hsl(var(--gold)/0.25)]' : ''
-                } ${service.id === featuredServiceId ? 'ring-1 ring-primary/40' : ''}`}
-              >
-                {/* Featured Badge */}
-                {service.id === featuredServiceId && (
-                  <motion.div
-                    className="absolute -top-3 left-1/2 -translate-x-1/2 z-10"
-                    animate={{
-                      boxShadow: [
-                        '0 0 10px hsl(43 100% 50% / 0.3)',
-                        '0 0 20px hsl(43 100% 50% / 0.5)',
-                        '0 0 10px hsl(43 100% 50% / 0.3)',
-                      ],
-                    }}
-                    transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-                    style={{ borderRadius: '9999px' }}
-                  >
-                    <Badge className="bg-primary/90 text-primary-foreground gap-1.5 px-3 py-1">
-                      <Award className="w-3.5 h-3.5" />
-                      {t('home.servicesGrid.featured')}
-                    </Badge>
-                  </motion.div>
-                )}
-
-                {/* Hover glow - gold only */}
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/0 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <motion.div
-                  className="absolute inset-0 rounded-xl pointer-events-none"
-                  whileHover={{
-                    boxShadow: '0 0 30px hsl(43 100% 50% / 0.15)',
-                  }}
-                />
-
-                {/* Icon */}
-                <motion.div
-                  className="relative w-14 h-14 rounded-xl glass-card flex items-center justify-center mb-4 border border-primary/20"
-                  whileHover={{ rotate: 5, scale: 1.1 }}
+            {services.map((service, index) => {
+              const priceDisplay = getPriceDisplayString(service.pricingConfig, t);
+              const priceSuffix = getPriceSuffix(service.pricingConfig, t);
+              
+              return (
+                <GlassCard
+                  key={service.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className={`group relative p-6 flex flex-col h-full transition-all duration-500 hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] hover:-translate-y-1 cursor-pointer ${
+                    highlightedServices.includes(service.id) ? 'ring-2 ring-primary/60 shadow-[0_0_50px_hsl(var(--gold)/0.25)]' : ''
+                  } ${service.id === featuredServiceId ? 'ring-1 ring-primary/40' : ''}`}
                 >
-                  <service.icon className="w-7 h-7 text-primary" />
-                </motion.div>
-
-                {/* Title */}
-                <h3 className="relative text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                  {t(service.titleKey)}
-                </h3>
-
-                {/* Description */}
-                <p className="relative text-muted-foreground text-sm mb-4 flex-grow">
-                  {t(service.descKey)}
-                </p>
-
-                {/* Price */}
-                <div className="relative mb-4 p-3 rounded-lg bg-primary/5 border border-primary/10">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-2xl font-bold text-primary">{getPriceDisplay(service)}</span>
-                    {getPricingSuffix(service) && (
-                      <span className="text-xs text-muted-foreground">{getPricingSuffix(service)}</span>
-                    )}
-                  </div>
-                </div>
-
-                {/* Deliverables Preview */}
-                <div className="relative mb-6 space-y-2">
-                  {service.deliverables.slice(0, 3).map((deliverable, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                      <span>{t(deliverable)}</span>
-                    </div>
-                  ))}
-                </div>
-
-                {/* CTA Buttons */}
-                <div className="relative space-y-3 mt-auto">
-                  <Button
-                    className="w-full glass-button hover:border-primary/60 hover:shadow-[0_0_25px_hsl(var(--gold)/0.25)] transition-all duration-300"
-                    variant="outline"
-                    onClick={() => handleOpenModal(service, 'overview')}
-                  >
-                    {t('home.servicesGrid.viewDetails')}
-                    <ArrowRight className={`w-4 h-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
-                  </Button>
-                  
-                  <div className="grid grid-cols-2 gap-2">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="glass-button text-xs hover:border-primary/60 hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
-                      onClick={() => handleOpenModal(service, 'video')}
+                  {/* Featured Badge */}
+                  {service.id === featuredServiceId && (
+                    <motion.div
+                      className="absolute -top-3 left-1/2 -translate-x-1/2 z-10"
+                      animate={{
+                        boxShadow: [
+                          '0 0 10px hsl(43 100% 50% / 0.3)',
+                          '0 0 20px hsl(43 100% 50% / 0.5)',
+                          '0 0 10px hsl(43 100% 50% / 0.3)',
+                        ],
+                      }}
+                      transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                      style={{ borderRadius: '9999px' }}
                     >
-                      <Play className="w-3 h-3 fill-current" />
-                      <span className={isRTL ? 'mr-1' : 'ml-1'}>{t('home.servicesGrid.watchVideo')}</span>
+                      <Badge className="bg-primary/90 text-primary-foreground gap-1.5 px-3 py-1">
+                        <Award className="w-3.5 h-3.5" />
+                        {t('home.servicesGrid.featured')}
+                      </Badge>
+                    </motion.div>
+                  )}
+
+                  {/* Hover glow - gold only */}
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/0 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <motion.div
+                    className="absolute inset-0 rounded-xl pointer-events-none"
+                    whileHover={{
+                      boxShadow: '0 0 30px hsl(43 100% 50% / 0.15)',
+                    }}
+                  />
+
+                  {/* Icon */}
+                  <motion.div
+                    className="relative w-14 h-14 rounded-xl glass-card flex items-center justify-center mb-4 border border-primary/20"
+                    whileHover={{ rotate: 5, scale: 1.1 }}
+                  >
+                    <service.icon className="w-7 h-7 text-primary" />
+                  </motion.div>
+
+                  {/* Title */}
+                  <h3 className="relative text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                    {t(service.titleKey)}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="relative text-muted-foreground text-sm mb-4 flex-grow">
+                    {t(service.descKey)}
+                  </p>
+
+                  {/* Price - from centralized config */}
+                  <div className="relative mb-4 p-3 rounded-lg bg-primary/5 border border-primary/10">
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-2xl font-bold text-primary">{priceDisplay}</span>
+                      {priceSuffix && (
+                        <span className="text-xs text-muted-foreground">{priceSuffix}</span>
+                      )}
+                    </div>
+                    <span className="text-[10px] text-muted-foreground">
+                      {t('pricing.vatExcluded')}
+                    </span>
+                  </div>
+
+                  {/* Deliverables Preview */}
+                  <div className="relative mb-6 space-y-2">
+                    {service.deliverables.slice(0, 3).map((deliverable, idx) => (
+                      <div key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                        <span>{t(deliverable)}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* CTA Buttons */}
+                  <div className="relative space-y-3 mt-auto">
+                    <Button
+                      className="w-full glass-button hover:border-primary/60 hover:shadow-[0_0_25px_hsl(var(--gold)/0.25)] transition-all duration-300"
+                      variant="outline"
+                      onClick={() => handleOpenModal(service, 'overview')}
+                    >
+                      {t('home.servicesGrid.viewDetails')}
+                      <ArrowRight className={`w-4 h-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
                     </Button>
                     
-                    {service.hasCalculator ? (
+                    <div className="grid grid-cols-2 gap-2">
                       <Button
                         variant="outline"
                         size="sm"
                         className="glass-button text-xs hover:border-primary/60 hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
-                        onClick={() => handleOpenModal(service, 'calculator')}
+                        onClick={() => handleOpenModal(service, 'video')}
                       >
-                        <Calculator className="w-3 h-3" />
-                        <span className={isRTL ? 'mr-1' : 'ml-1'}>{t('home.servicesGrid.buildPlan')}</span>
+                        <Play className="w-3 h-3 fill-current" />
+                        <span className={isRTL ? 'mr-1' : 'ml-1'}>{t('home.servicesGrid.watchVideo')}</span>
                       </Button>
-                    ) : (
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="glass-button text-xs hover:border-primary/60 hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
-                        onClick={() => handleOpenModal(service, 'pricing')}
-                      >
-                        {t('home.servicesGrid.seePricing')}
-                      </Button>
-                    )}
+                      
+                      {service.pricingConfig.hasCalculator ? (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="glass-button text-xs hover:border-primary/60 hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
+                          onClick={() => handleOpenModal(service, 'calculator')}
+                        >
+                          <Calculator className="w-3 h-3" />
+                          <span className={isRTL ? 'mr-1' : 'ml-1'}>{t('home.servicesGrid.buildPlan')}</span>
+                        </Button>
+                      ) : (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="glass-button text-xs hover:border-primary/60 hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
+                          onClick={() => handleOpenModal(service, 'pricing')}
+                        >
+                          {t('home.servicesGrid.seePricing')}
+                        </Button>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </GlassCard>
-            ))}
+                </GlassCard>
+              );
+            })}
           </div>
 
           {/* View all services CTA */}
