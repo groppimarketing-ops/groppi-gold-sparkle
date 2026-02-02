@@ -131,11 +131,18 @@ const mobileHiddenIconsData = socialIconsData.filter(s =>
   !['Instagram', 'Facebook', 'TikTok', 'LinkedIn'].includes(s.label)
 );
 
-// Language options derived from i18n config (all languages)
+// Language options with country codes derived from i18n config
+const countryCodeMap: Record<string, string> = {
+  nl: 'BE', en: 'GB', fr: 'FR', de: 'DE', ar: 'AE', es: 'ES',
+  it: 'IT', pt: 'PT', pl: 'PL', ru: 'RU', tr: 'TR', bn: 'BD',
+  hi: 'IN', ur: 'PK', zh: 'CN'
+};
+
 const languageOptions = languages.map(lang => ({
   code: lang.code as LanguageCode,
   flag: lang.flag,
-  label: lang.code.toUpperCase(),
+  countryCode: countryCodeMap[lang.code] || lang.code.toUpperCase(),
+  langCode: lang.code.toUpperCase(),
   name: lang.name,
 }));
 
@@ -229,7 +236,8 @@ const Header = () => {
                     className="hidden sm:flex items-center gap-1.5 px-2 py-1 text-xs font-medium text-foreground/80 hover:text-foreground hover:bg-white/5"
                   >
                     <span className="text-sm">{currentLang.flag}</span>
-                    <span>{currentLang.code.toUpperCase()}</span>
+                    <span>{countryCodeMap[currentLang.code] || currentLang.code.toUpperCase()}</span>
+                    <span className="opacity-60">{currentLang.code.toUpperCase()}</span>
                     <ChevronDown className="h-3 w-3 opacity-60" />
                   </Button>
                 </DropdownMenuTrigger>
@@ -421,7 +429,7 @@ const Header = () => {
                           }`}
                         >
                           <span>{lang.flag}</span>
-                          <span>{lang.label}</span>
+                          <span>{lang.countryCode} {lang.langCode}</span>
                         </button>
                       );
                     })}
