@@ -244,8 +244,15 @@ const Header = () => {
                 })}
               </div>
 
-              {/* Social Icons - Desktop (all icons) */}
-              <div className="hidden lg:flex items-center gap-3">
+              {/* Social Icons - Desktop (all icons) - Glassy Pill */}
+              <div 
+                className="hidden lg:flex items-center gap-3 px-3 py-2 rounded-full backdrop-blur-[10px] shadow-sm"
+                style={{
+                  background: 'rgba(255, 255, 255, 0.04)',
+                  border: '1px solid rgba(255, 200, 60, 0.18)',
+                  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
+                }}
+              >
                 {socialIconsData.map((social) => (
                   <Tooltip key={social.label}>
                     <TooltipTrigger asChild>
@@ -271,8 +278,15 @@ const Header = () => {
                 ))}
               </div>
 
-              {/* Social Icons - Tablet (4 priority icons + dropdown) */}
-              <div className="hidden md:flex lg:hidden items-center gap-2">
+              {/* Social Icons - Tablet (4 priority icons + dropdown) - Glassy Pill */}
+              <div 
+                className="hidden md:flex lg:hidden items-center gap-2.5 px-2.5 py-1.5 rounded-full backdrop-blur-[10px] shadow-sm"
+                style={{
+                  background: 'rgba(255, 255, 255, 0.04)',
+                  border: '1px solid rgba(255, 200, 60, 0.18)',
+                  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
+                }}
+              >
                 {mobileIconsData.map((social) => (
                   <motion.a
                     key={social.label}
@@ -293,11 +307,14 @@ const Header = () => {
                 {mobileHiddenIconsData.length > 0 && (
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
-                      <Button variant="ghost" size="sm" className="!p-1.5 h-auto text-muted-foreground hover:text-foreground">
-                        <ChevronDown className="h-4 w-4" />
+                      <Button variant="ghost" size="sm" className="!p-1 h-auto text-muted-foreground hover:text-primary">
+                        <ChevronDown className="h-3.5 w-3.5" />
                       </Button>
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent align={isRtl ? 'start' : 'end'} className="glass-card border-primary/20">
+                    <DropdownMenuContent 
+                      align={isRtl ? 'start' : 'end'} 
+                      className="z-50 bg-background/95 backdrop-blur-md border-primary/20 shadow-lg"
+                    >
                       {mobileHiddenIconsData.map((social) => (
                         <DropdownMenuItem key={social.label} asChild>
                           <a
