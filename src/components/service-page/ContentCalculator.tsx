@@ -1,7 +1,7 @@
 import { memo, useState, useMemo, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calculator, MessageCircle, Copy, Check, Clock, Sparkles, Image, Video, Film, FileText, CreditCard, RefreshCw, Info } from 'lucide-react';
+import { Calculator, MessageCircle, Copy, Check, Sparkles, Image, Video, Film, FileText, CreditCard, RefreshCw, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
@@ -15,17 +15,15 @@ import {
 import {
   CONTENT_PRICING,
   DISCOUNT_CONFIG,
-  getDiscountInfo,
-  calculateDiscount,
-  generateQuoteCode,
 } from '@/config/pricingConfig';
+import useDiscountTimer from '@/hooks/useDiscountTimer';
+import DiscountCountdownCard from './DiscountCountdownCard';
 
 type PaymentType = 'one_time' | 'monthly';
 
 const ContentCalculator = memo(() => {
   const { t } = useTranslation();
   const [copied, setCopied] = useState(false);
-  const [quoteCode] = useState(() => generateQuoteCode());
   
   // Step 1: Payment type
   const [paymentType, setPaymentType] = useState<PaymentType | null>(null);
@@ -37,15 +35,16 @@ const ContentCalculator = memo(() => {
   const [videoQty, setVideoQty] = useState(0);
   const [articleQty, setArticleQty] = useState(0);
 
-  // Discount countdown
-  const [discountDaysLeft, setDiscountDaysLeft] = useState(0);
-  const [discountActive, setDiscountActive] = useState(false);
-
-  useEffect(() => {
-    const info = getDiscountInfo();
-    setDiscountActive(info.active);
-    setDiscountDaysLeft(info.daysLeft);
-  }, []);
+  // Persistent discount timer
+  const {
+    isUnlocked,
+    isExpired,
+    discountCode,
+    timeRemaining,
+    percentage,
+    isDiscountActive,
+    unlockDiscount,
+  } = useDiscountTimer();
 
   // Calculate pricing using centralized config
   const pricing = useMemo(() => {
@@ -55,13 +54,13 @@ const ContentCalculator = memo(() => {
     const articleTotal = articleQty * CONTENT_PRICING.article;
 
     const subtotal = posterTotal + reelTotal + videoTotal + articleTotal;
+    const hasItems = subtotal > 0;
     
-    // Use centralized discount calculation
-    const { discountAmount, discountEligible } = calculateDiscount(
-      subtotal,
-      paymentType || 'one_time',
-      discountActive
-    );
+    // Discount ONLY applies to one-time payments when active
+    const discountEligible = paymentType === 'one_time' && isDiscountActive && hasItems;
+    const discountAmount = discountEligible 
+      ? Math.round(subtotal * (DISCOUNT_CONFIG.percentage / 100))
+      : 0;
     
     const total = subtotal - discountAmount;
 
@@ -72,16 +71,25 @@ const ContentCalculator = memo(() => {
       articleTotal,
       subtotal,
       discountAmount,
-      discountEligible: discountEligible && paymentType === 'one_time',
+      discountEligible,
       total,
-      hasItems: subtotal > 0,
+      hasItems,
     };
-  }, [posterQty, reelQty, reelType, videoQty, articleQty, discountActive, paymentType]);
+  }, [posterQty, reelQty, reelType, videoQty, articleQty, isDiscountActive, paymentType]);
+
+  // Unlock discount when conditions are met: has items + one_time payment
+  useEffect(() => {
+    if (pricing.hasItems && paymentType === 'one_time') {
+      unlockDiscount();
+    }
+  }, [pricing.hasItems, paymentType, unlockDiscount]);
 
   const handleCopyCode = () => {
-    navigator.clipboard.writeText(quoteCode);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    if (discountCode) {
+      navigator.clipboard.writeText(discountCode);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
   };
 
   // Generate WhatsApp message
@@ -101,7 +109,7 @@ const ContentCalculator = memo(() => {
     
     const message = `Hallo! Hier is mijn berekening:
 
-📋 ${t('calculator.referenceCode')}: ${quoteCode}
+📋 ${t('calculator.referenceCode')}: ${discountCode || 'N/A'}
 💳 Type: ${paymentLabel}
 
 ${items.join('\n')}
@@ -185,7 +193,7 @@ Kan je dit bevestigen?`;
                   <p className="text-sm text-muted-foreground">
                     {t('calculator.payment.oneTimeDesc')}
                   </p>
-                  {discountActive && (
+                  {isDiscountActive && (
                     <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary/20 text-primary text-xs font-medium">
                       <Sparkles className="w-3 h-3" />
                       {t('calculator.discountBadge')}
@@ -214,7 +222,7 @@ Kan je dit bevestigen?`;
               </div>
               
               {/* Discount notice for monthly */}
-              {paymentType === 'monthly' && discountActive && (
+              {paymentType === 'monthly' && isDiscountActive && (
                 <motion.div
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: 'auto' }}
@@ -395,28 +403,6 @@ Kan je dit bevestigen?`;
                         </div>
                       </div>
 
-                      {/* Quote Code */}
-                      <div className="p-4 rounded-xl bg-muted/30 border border-primary/10">
-                        <div className="flex items-center justify-between mb-2">
-                          <span className="text-sm text-muted-foreground">{t('servicePage.contentCalculator.quoteCode')}</span>
-                          <button
-                            onClick={handleCopyCode}
-                            className="flex items-center gap-1 text-primary hover:text-primary/80 transition-colors"
-                          >
-                            {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                          </button>
-                        </div>
-                        <div className="font-mono text-lg font-bold text-foreground">{quoteCode}</div>
-                      </div>
-
-                      {/* Discount Countdown */}
-                      {discountActive && paymentType === 'one_time' && (
-                        <div className="flex items-center gap-2 text-sm text-primary">
-                          <Clock className="w-4 h-4" />
-                          <span>{t('calculator.discountBadge')} — {discountDaysLeft} {discountDaysLeft === 1 ? 'dag' : 'dagen'}</span>
-                        </div>
-                      )}
-
                       {/* CTA Buttons */}
                       <div className="space-y-3">
                         <Button
@@ -439,6 +425,16 @@ Kan je dit bevestigen?`;
                           </a>
                         </Button>
                       </div>
+
+                      {/* Discount Countdown Card */}
+                      <DiscountCountdownCard
+                        isUnlocked={isUnlocked}
+                        isExpired={isExpired}
+                        discountCode={discountCode}
+                        timeRemaining={timeRemaining}
+                        percentage={percentage}
+                        paymentType={paymentType}
+                      />
                     </div>
                   </div>
                 </motion.div>

@@ -1,11 +1,10 @@
-import { memo, useState, useEffect } from 'react';
+import { memo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Sparkles, Clock, Copy, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { DISCOUNT_CONFIG, getDiscountInfo } from '@/config/pricingConfig';
-
-const DISCOUNT_CODE = 'GROPPIGOLD20';
+import { Badge } from '@/components/ui/badge';
+import useDiscountTimer from '@/hooks/useDiscountTimer';
 
 interface LaunchDiscountBannerProps {
   compact?: boolean;
@@ -13,23 +12,26 @@ interface LaunchDiscountBannerProps {
 
 const LaunchDiscountBanner = memo(({ compact = false }: LaunchDiscountBannerProps) => {
   const { t } = useTranslation();
-  const [discountDaysLeft, setDiscountDaysLeft] = useState(0);
-  const [discountActive, setDiscountActive] = useState(false);
   const [copied, setCopied] = useState(false);
-
-  useEffect(() => {
-    const info = getDiscountInfo();
-    setDiscountActive(info.active);
-    setDiscountDaysLeft(info.daysLeft);
-  }, []);
+  
+  const {
+    isUnlocked,
+    isExpired,
+    discountCode,
+    timeRemaining,
+    percentage,
+  } = useDiscountTimer();
 
   const handleCopyCode = () => {
-    navigator.clipboard.writeText(DISCOUNT_CODE);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    if (discountCode) {
+      navigator.clipboard.writeText(discountCode);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
   };
 
-  if (!discountActive) return null;
+  // Don't show if not unlocked or expired
+  if (!isUnlocked || isExpired || !discountCode) return null;
 
   if (compact) {
     return (
@@ -40,7 +42,7 @@ const LaunchDiscountBanner = memo(({ compact = false }: LaunchDiscountBannerProp
       >
         <Sparkles className="w-3 h-3 text-primary" />
         <span className="text-xs font-medium text-primary">
-          -{DISCOUNT_CONFIG.percentage}% • {discountDaysLeft}d
+          -{percentage}% • {timeRemaining?.days}d {timeRemaining?.hours}h
         </span>
       </motion.div>
     );
@@ -59,9 +61,14 @@ const LaunchDiscountBanner = memo(({ compact = false }: LaunchDiscountBannerProp
               <Sparkles className="w-6 h-6 text-primary" />
             </div>
             <div>
-              <p className="text-lg font-bold text-primary">
-                {t('calculator.discountBadge')}
-              </p>
+              <div className="flex items-center gap-2">
+                <p className="text-lg font-bold text-primary">
+                  {t('calculator.discountBadge')}
+                </p>
+                <Badge className="bg-red-500/90 text-white text-[10px] px-1.5 py-0 animate-pulse">
+                  LIVE
+                </Badge>
+              </div>
               <p className="text-sm text-muted-foreground">
                 {t('calculator.discountNote')}
               </p>
@@ -70,12 +77,14 @@ const LaunchDiscountBanner = memo(({ compact = false }: LaunchDiscountBannerProp
           
           <div className="flex flex-col sm:flex-row items-center gap-4">
             {/* Countdown */}
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30">
-              <Clock className="w-4 h-4 text-primary" />
-              <span className="font-bold text-primary">
-                {discountDaysLeft} {discountDaysLeft === 1 ? 'dag' : 'dagen'}
-              </span>
-            </div>
+            {timeRemaining && (
+              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30">
+                <Clock className="w-4 h-4 text-primary" />
+                <span className="font-mono font-bold text-primary">
+                  {timeRemaining.days}d {String(timeRemaining.hours).padStart(2, '0')}h {String(timeRemaining.minutes).padStart(2, '0')}m {String(timeRemaining.seconds).padStart(2, '0')}s
+                </span>
+              </div>
+            )}
 
             {/* Code */}
             <Button
@@ -84,7 +93,7 @@ const LaunchDiscountBanner = memo(({ compact = false }: LaunchDiscountBannerProp
               onClick={handleCopyCode}
               className="glass-button border-primary/30 gap-2"
             >
-              <code className="font-mono font-bold text-primary">{DISCOUNT_CODE}</code>
+              <code className="font-mono font-bold text-primary">{discountCode}</code>
               {copied ? (
                 <Check className="w-4 h-4 text-primary" />
               ) : (
