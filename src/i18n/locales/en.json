@@ -62,12 +62,17 @@
     "extraOptions": "Extra options",
     "cta": {
       "whatsapp": "Claim your code via WhatsApp",
+      "claimWhatsApp": "Claim your code via WhatsApp",
       "planCall": "Plan a call"
     },
     "step1": "Choose payment type",
     "step2": "Select your deliverables",
     "noDiscountMonthly": "The 20% launch discount does not apply to monthly subscriptions.",
-    "referenceCode": "Reference code"
+    "noDiscountMonthlyTitle": "No discount available",
+    "referenceCode": "Reference code",
+    "launchDiscount": "launch discount",
+    "offerEndsIn": "Offer ends in",
+    "discountExpired": "Discount expired"
   },
   "servicePage": {
     "contentCalculator": {

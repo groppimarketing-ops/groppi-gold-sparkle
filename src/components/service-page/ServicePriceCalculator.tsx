@@ -9,9 +9,9 @@ import {
   WEBSITE_PRICING,
   SUBSCRIPTION_PRICING,
   DISCOUNT_CONFIG,
-  getDiscountInfo,
-  generateQuoteCode,
 } from '@/config/pricingConfig';
+import useDiscountTimer from '@/hooks/useDiscountTimer';
+import DiscountCountdownCard from './DiscountCountdownCard';
 
 interface ServicePriceCalculatorProps {
   serviceKey: string;
@@ -86,7 +86,6 @@ const ADD_ONS = {
 const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps) => {
   const { t } = useTranslation();
   const [copied, setCopied] = useState(false);
-  const [quoteCode] = useState(() => generateQuoteCode());
 
   const servicePricing = getServicePricing(serviceKey);
 
@@ -104,15 +103,23 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
     analyticsSetup: false,
   });
 
-  // Discount countdown
-  const [discountDaysLeft, setDiscountDaysLeft] = useState(0);
-  const [discountActive, setDiscountActive] = useState(false);
+  // Persistent discount timer
+  const {
+    isUnlocked,
+    isExpired,
+    discountCode,
+    timeRemaining,
+    percentage,
+    isDiscountActive,
+    unlockDiscount,
+  } = useDiscountTimer();
 
+  // Unlock discount when conditions are met
   useEffect(() => {
-    const info = getDiscountInfo();
-    setDiscountActive(info.active);
-    setDiscountDaysLeft(info.daysLeft);
-  }, []);
+    if (paymentType === 'one_time') {
+      unlockDiscount();
+    }
+  }, [paymentType, unlockDiscount]);
 
   // Calculate pricing
   const pricing = useMemo(() => {
@@ -128,7 +135,7 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
     const subtotal = basePrice + addonsTotal + setupFee;
 
     // Discount ONLY applies to one-time payments
-    const discountEligible = paymentType === 'one_time' && discountActive;
+    const discountEligible = paymentType === 'one_time' && isDiscountActive;
     const discountAmount = discountEligible 
       ? Math.round(subtotal * (DISCOUNT_CONFIG.percentage / 100))
       : 0;
@@ -145,16 +152,18 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
       total,
       isMonthly: servicePricing.hasMonthly && paymentType === 'monthly',
     };
-  }, [selectedAddons, discountActive, paymentType, servicePricing]);
+  }, [selectedAddons, isDiscountActive, paymentType, servicePricing]);
 
   const handleAddonToggle = (key: string) => {
     setSelectedAddons(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
   const handleCopyCode = () => {
-    navigator.clipboard.writeText(quoteCode);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    if (discountCode) {
+      navigator.clipboard.writeText(discountCode);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
   };
 
   // WhatsApp message
@@ -171,7 +180,7 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
 
     const message = `Hallo! Hier is mijn berekening:
 
-📋 ${t('calculator.referenceCode')}: ${quoteCode}
+📋 ${t('calculator.referenceCode')}: ${discountCode || 'N/A'}
 🎯 Dienst: ${serviceName}
 💳 Type: ${paymentLabel}
 ${selectedAddonsList ? `➕ Add-ons: ${selectedAddonsList}` : ''}
@@ -257,7 +266,7 @@ Kan je dit bevestigen?`;
                     <p className="text-sm text-muted-foreground">
                       {t('calculator.payment.oneTimeDesc')}
                     </p>
-                    {discountActive && (
+                    {isDiscountActive && (
                       <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary/20 text-primary text-xs font-medium">
                         <Sparkles className="w-3 h-3" />
                         {t('calculator.discountBadge')}
@@ -286,7 +295,7 @@ Kan je dit bevestigen?`;
                 </div>
                 
                 {/* Discount notice for monthly */}
-                {paymentType === 'monthly' && discountActive && (
+                {paymentType === 'monthly' && isDiscountActive && (
                   <motion.div
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: 'auto' }}
@@ -419,28 +428,6 @@ Kan je dit bevestigen?`;
                         </div>
                       </div>
 
-                      {/* Quote Code */}
-                      <div className="p-4 rounded-xl bg-muted/30 border border-muted">
-                        <div className="flex items-center justify-between mb-2">
-                          <span className="text-sm text-muted-foreground">{t('calculator.referenceCode')}</span>
-                          <Button
-                            variant="ghost"
-                            size="sm"
-                            onClick={handleCopyCode}
-                            className="h-8 px-2"
-                          >
-                            {copied ? (
-                              <Check className="w-4 h-4 text-primary" />
-                            ) : (
-                              <Copy className="w-4 h-4" />
-                            )}
-                          </Button>
-                        </div>
-                        <div className="font-mono text-xl font-bold text-primary">
-                          {quoteCode}
-                        </div>
-                      </div>
-
                       {/* CTA Buttons */}
                       <div className="space-y-3">
                         <Button
@@ -463,6 +450,16 @@ Kan je dit bevestigen?`;
                           </a>
                         </Button>
                       </div>
+
+                      {/* Discount Countdown Card */}
+                      <DiscountCountdownCard
+                        isUnlocked={isUnlocked}
+                        isExpired={isExpired}
+                        discountCode={discountCode}
+                        timeRemaining={timeRemaining}
+                        percentage={percentage}
+                        paymentType={paymentType}
+                      />
                     </div>
                   </div>
                 </motion.div>

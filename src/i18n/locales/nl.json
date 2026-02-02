@@ -62,12 +62,17 @@
     "extraOptions": "Extra opties",
     "cta": {
       "whatsapp": "Claim je code via WhatsApp",
+      "claimWhatsApp": "Claim je code via WhatsApp",
       "planCall": "Plan een call"
     },
     "step1": "Kies je betaaltype",
     "step2": "Kies je deliverables",
     "noDiscountMonthly": "De 20% launchkorting is niet van toepassing op maandelijkse abonnementen.",
-    "referenceCode": "Referentiecode"
+    "noDiscountMonthlyTitle": "Geen korting beschikbaar",
+    "referenceCode": "Referentiecode",
+    "launchDiscount": "launchkorting",
+    "offerEndsIn": "Aanbieding eindigt over",
+    "discountExpired": "Korting is verlopen"
   },
   "servicePage": {
     "contentCalculator": {

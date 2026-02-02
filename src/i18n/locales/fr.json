@@ -61,12 +61,17 @@
     "extraOptions": "Options supplémentaires",
     "cta": {
       "whatsapp": "Recevoir mon code sur WhatsApp",
+      "claimWhatsApp": "Recevoir mon code sur WhatsApp",
       "planCall": "Planifier un appel"
     },
     "step1": "Choisissez le type de paiement",
     "step2": "Sélectionnez vos livrables",
     "noDiscountMonthly": "La remise de lancement de 20% ne s'applique pas aux abonnements mensuels.",
-    "referenceCode": "Code de référence"
+    "noDiscountMonthlyTitle": "Pas de remise disponible",
+    "referenceCode": "Code de référence",
+    "launchDiscount": "remise de lancement",
+    "offerEndsIn": "L'offre expire dans",
+    "discountExpired": "Remise expirée"
   },
   "servicePage": {
     "contentCalculator": {
