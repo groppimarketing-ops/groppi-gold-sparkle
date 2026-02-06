@@ -816,12 +816,16 @@
         "description": "Het team groeide naar 5 specialisten met expertise in verschillende domeinen."
       },
       "2020": {
-        "title": "Europese groei",
-        "description": "Succesvolle samenwerkingen met klanten in Nederland, Duitsland en Frankrijk."
+        "title": "Groei in België",
+        "description": "We versterkten onze lokale aanwezigheid en bouwden langdurige partnerships met Belgische bedrijven."
       },
       "2023": {
-        "title": "Europese groei",
-        "description": "Succesvolle uitbreiding in heel Europa met meer klanten in Nederland, Duitsland en de bredere regio."
+        "title": "Uitbreiding Doorheen Europa",
+        "description": "We schaalden onze projecten op doorheen Europa met klanten in Nederland, Duitsland, Frankrijk en daarbuiten."
+      },
+      "2026": {
+        "title": "Toekomstplan: Midden-Oosten",
+        "description": "In 2026 willen we uitbreiden naar het Midden-Oosten — onze systeemgerichte groei-aanpak naar nieuwe markten brengen."
       }
     },
     "valuesSection": {

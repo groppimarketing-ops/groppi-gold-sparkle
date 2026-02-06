@@ -208,12 +208,16 @@
         "description": "L'équipe s'est agrandie à 5 spécialistes avec des expertises dans différents domaines."
       },
       "2020": {
-        "title": "Croissance européenne",
-        "description": "Collaborations réussies avec des clients aux Pays-Bas, en Allemagne et en France."
+        "title": "Croissance en Belgique",
+        "description": "Nous avons renforcé notre présence locale et construit des partenariats durables avec des entreprises belges."
       },
       "2023": {
-        "title": "Croissance européenne",
-        "description": "Expansion réussie en Europe avec plus de clients aux Pays-Bas, en Allemagne et dans toute la région."
+        "title": "Expansion à travers l'Europe",
+        "description": "Nous avons développé nos projets à travers l'Europe avec des clients aux Pays-Bas, en Allemagne, en France et au-delà."
+      },
+      "2026": {
+        "title": "Plan futur : Expansion au Moyen-Orient",
+        "description": "En 2026, nous visons à nous étendre au Moyen-Orient — apportant notre approche de croissance systémique à de nouveaux marchés."
       }
     },
     "whoWeAre": {

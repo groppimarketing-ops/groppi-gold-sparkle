@@ -41,12 +41,16 @@
         "description": "Zespół urósł do 5 specjalistów z ekspertyzą w różnych dziedzinach."
       },
       "2020": {
-        "title": "Ekspansja europejska",
-        "description": "Udane współprace z klientami w Holandii, Niemczech i Francji."
+        "title": "Wzrost w Belgii",
+        "description": "Wzmocniliśmy naszą lokalną obecność i zbudowaliśmy długoterminowe partnerstwa z belgijskimi firmami."
       },
       "2023": {
-        "title": "Bliski Wschód",
-        "description": "Ekspansja na rynek arabski poprzez lokalne partnerstwa."
+        "title": "Ekspansja w Europie",
+        "description": "Rozwinęliśmy nasze projekty w całej Europie z klientami w Holandii, Niemczech, Francji i dalej."
+      },
+      "2026": {
+        "title": "Plan na przyszłość: Ekspansja na Bliski Wschód",
+        "description": "W 2026 roku planujemy ekspansję na Bliski Wschód — przenosząc nasze systemowe podejście do wzrostu na nowe rynki."
       }
     }
   },
