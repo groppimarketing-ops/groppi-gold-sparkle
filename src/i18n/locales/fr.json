@@ -185,7 +185,7 @@
   "about": {
     "title": "À propos de GROPPI",
     "subtitle": "Notre histoire",
-    "description": "GROPPI a débuté en Belgique en 2016 et a grandi grâce à des années d'expérience pratique, de partenariats solides et de résultats prouvés. Aujourd'hui, nous collaborons avec des clients en Europe et au Moyen-Orient, combinant stratégie, créativité et technologie pour une croissance digitale durable.",
+    "description": "GROPPI a débuté en Belgique en 2016 et a grandi grâce à des années d'expérience pratique, de partenariats solides et de résultats prouvés. Aujourd'hui, nous collaborons avec des clients en Belgique et dans toute l'Europe, combinant stratégie, créativité et technologie pour une croissance digitale durable. Une expansion vers le Moyen-Orient est prévue pour 2026.",
     "mission": "Notre mission",
     "missionText": "Aider les entreprises à croître grâce à des solutions digitales stratégiques basées sur l'expertise humaine, soutenues par une technologie intelligente.",
     "vision": "Notre vision",
@@ -212,8 +212,34 @@
         "description": "Collaborations réussies avec des clients aux Pays-Bas, en Allemagne et en France."
       },
       "2023": {
-        "title": "Moyen-Orient",
-        "description": "Expansion vers le marché arabe grâce à des partenariats locaux."
+        "title": "Croissance européenne",
+        "description": "Expansion réussie en Europe avec plus de clients aux Pays-Bas, en Allemagne et dans toute la région."
+      }
+    },
+    "whoWeAre": {
+      "subtitle": "Qui sommes-nous",
+      "title": "Fondé sur l'expérience et la confiance",
+      "points": {
+        "founded": {
+          "title": "Fondé en 2016",
+          "text": "Plus de 8 ans d'expérience en marketing digital"
+        },
+        "location": {
+          "title": "Basé en Belgique",
+          "text": "Siège en Belgique, service local"
+        },
+        "reach": {
+          "title": "Belgique & Europe",
+          "text": "Basés en Belgique et actifs auprès de clients dans toute l'Europe. Une expansion vers le Moyen-Orient est prévue pour 2026."
+        },
+        "team": {
+          "title": "9+ professionnels",
+          "text": "Équipe multidisciplinaire d'experts"
+        },
+        "partnerships": {
+          "title": "Relations durables",
+          "text": "Nous construisons des partenariats à long terme"
+        }
       }
     }
   },

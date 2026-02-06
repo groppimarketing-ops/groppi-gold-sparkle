@@ -740,7 +740,7 @@
   "about": {
     "title": "About GROPPI",
     "subtitle": "Our Story",
-    "description": "GROPPI started in Belgium in 2016 and grew through years of hands-on experience, strong partnerships, and proven results. Today, we collaborate with clients across Europe and the Middle East, combining strategy, creativity, and technology to achieve sustainable digital growth.",
+    "description": "GROPPI started in Belgium in 2016 and grew through years of hands-on experience, strong partnerships, and proven results. Today, we collaborate with clients across Belgium and Europe, combining strategy, creativity, and technology to achieve sustainable digital growth. Expansion to the Middle East is planned for 2026.",
     "mission": "Our Mission",
     "missionText": "Helping businesses grow through strategic digital solutions based on human expertise, supported by smart technology.",
     "vision": "Our Vision",
@@ -765,8 +765,8 @@
           "text": "Headquarters in Belgium, local service"
         },
         "reach": {
-          "title": "Europe & Middle East",
-          "text": "Active in multiple countries and markets"
+          "title": "Belgium & Europe",
+          "text": "Headquartered in Belgium and actively serving clients across Europe. Expansion to the Middle East is planned for 2026."
         },
         "team": {
           "title": "9+ professionals",
@@ -820,8 +820,8 @@
         "description": "Successful collaborations with clients in the Netherlands, Germany, and France."
       },
       "2023": {
-        "title": "Middle East",
-        "description": "Expansion to the Arab market through local partnerships."
+        "title": "European Growth",
+        "description": "Successful expansion across Europe with more clients in the Netherlands, Germany, and the wider region."
       }
     },
     "valuesSection": {

@@ -44,7 +44,7 @@
   "about": {
     "title": "Über GROPPI",
     "subtitle": "Unsere Geschichte",
-    "description": "GROPPI begann 2016 in Belgien und wuchs durch Jahre praktischer Erfahrung, starker Partnerschaften und bewährter Ergebnisse. Heute arbeiten wir mit Kunden in Europa und dem Nahen Osten zusammen und verbinden Strategie, Kreativität und Technologie für nachhaltiges digitales Wachstum.",
+    "description": "GROPPI begann 2016 in Belgien und wuchs durch Jahre praktischer Erfahrung, starker Partnerschaften und bewährter Ergebnisse. Heute arbeiten wir mit Kunden in Belgien und ganz Europa zusammen und verbinden Strategie, Kreativität und Technologie für nachhaltiges digitales Wachstum. Eine Expansion in den Nahen Osten ist für 2026 geplant.",
     "mission": "Unsere Mission",
     "missionText": "Unternehmen beim Wachstum durch strategische digitale Lösungen zu helfen, die auf menschlicher Expertise basieren und durch intelligente Technologie unterstützt werden.",
     "vision": "Unsere Vision",
@@ -71,8 +71,34 @@
         "description": "Erfolgreiche Zusammenarbeit mit Kunden in den Niederlanden, Deutschland und Frankreich."
       },
       "2023": {
-        "title": "Naher Osten",
-        "description": "Expansion in den arabischen Markt durch lokale Partnerschaften."
+        "title": "Europäisches Wachstum",
+        "description": "Erfolgreiche Expansion in ganz Europa mit mehr Kunden in den Niederlanden, Deutschland und der gesamten Region."
+      }
+    },
+    "whoWeAre": {
+      "subtitle": "Wer wir sind",
+      "title": "Auf Erfahrung und Vertrauen aufgebaut",
+      "points": {
+        "founded": {
+          "title": "Gegründet 2016",
+          "text": "Über 8 Jahre Erfahrung im digitalen Marketing"
+        },
+        "location": {
+          "title": "Sitz in Belgien",
+          "text": "Hauptsitz in Belgien, lokaler Service"
+        },
+        "reach": {
+          "title": "Belgien & Europa",
+          "text": "Mit Sitz in Belgien und aktiv für Kunden in ganz Europa. Eine Expansion in den Nahen Osten ist für 2026 geplant."
+        },
+        "team": {
+          "title": "9+ Fachleute",
+          "text": "Multidisziplinäres Expertenteam"
+        },
+        "partnerships": {
+          "title": "Langfristige Beziehungen",
+          "text": "Wir bauen dauerhafte Partnerschaften auf"
+        }
       }
     }
   },

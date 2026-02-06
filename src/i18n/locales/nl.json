@@ -740,7 +740,7 @@
   "about": {
     "title": "Over GROPPI",
     "subtitle": "Ons verhaal",
-    "description": "GROPPI begon in België in 2016 en groeide door jaren van praktijkervaring, sterke partnerships en bewezen resultaten. Vandaag werken wij samen met klanten in Europa en het Midden-Oosten en combineren wij strategie, creativiteit en technologie om duurzame digitale groei te realiseren.",
+    "description": "GROPPI begon in België in 2016 en groeide door jaren van praktijkervaring, sterke partnerships en bewezen resultaten. Vandaag werken wij samen met klanten in België en heel Europa en combineren wij strategie, creativiteit en technologie om duurzame digitale groei te realiseren. Uitbreiding naar het Midden-Oosten staat gepland voor 2026.",
     "mission": "Onze missie",
     "missionText": "Bedrijven helpen groeien door strategische digitale oplossingen die zijn gebaseerd op menselijke expertise, ondersteund door slimme technologie.",
     "vision": "Onze visie",
@@ -765,8 +765,8 @@
           "text": "Hoofdkantoor in België, lokale service"
         },
         "reach": {
-          "title": "Europa & Midden-Oosten",
-          "text": "Actief in meerdere landen en markten"
+          "title": "België & Europa",
+          "text": "Gevestigd in België en actief voor klanten in heel Europa. Uitbreiding naar het Midden-Oosten staat gepland voor 2026."
         },
         "team": {
           "title": "9+ professionals",
@@ -820,8 +820,8 @@
         "description": "Succesvolle samenwerkingen met klanten in Nederland, Duitsland en Frankrijk."
       },
       "2023": {
-        "title": "Midden-Oosten",
-        "description": "Uitbreiding naar de Arabische markt met lokale partnerships."
+        "title": "Europese groei",
+        "description": "Succesvolle uitbreiding in heel Europa met meer klanten in Nederland, Duitsland en de bredere regio."
       }
     },
     "valuesSection": {
