@@ -24,8 +24,14 @@ import ilFuocoInstagram from '@/assets/portfolio/il-fuoco/instagram.png';
 
 // LEBANON RESTAURANT assets
 import lebanonCover from '@/assets/portfolio/lebanon-restaurant/cover.jpg';
-import lebanonBurger from '@/assets/portfolio/lebanon-restaurant/burger-special.jpg';
-import lebanonMezze from '@/assets/portfolio/lebanon-restaurant/mezze-menu.jpg';
+import lebanonTaouk from '@/assets/portfolio/lebanon-restaurant/taouk.jpg';
+import lebanonBurger from '@/assets/portfolio/lebanon-restaurant/burger.jpg';
+import lebanonMezzePromo from '@/assets/portfolio/lebanon-restaurant/mezze-promo.jpg';
+import lebanonReview from '@/assets/portfolio/lebanon-restaurant/review.jpg';
+import lebanonCollage from '@/assets/portfolio/lebanon-restaurant/collage.jpg';
+import lebanonKofta from '@/assets/portfolio/lebanon-restaurant/kofta.png';
+import lebanonSambousek from '@/assets/portfolio/lebanon-restaurant/sambousek.png';
+import lebanonTaboule from '@/assets/portfolio/lebanon-restaurant/taboule.png';
 
 // KMA WANDPANELEN assets
 import kma1 from '@/assets/portfolio/kma/kma-1.jpg';
@@ -94,16 +100,16 @@ export const portfolioItems: PortfolioItem[] = [
       alt: 'Lebanon Restaurant - Authentieke Libanese keuken',
     },
     galleryMedia: [
-      { id: 'gallery-10-1', type: 'image', url: lebanonCover, alt: 'Lebanon Restaurant - Hummus review post' },
-      { id: 'gallery-10-2', type: 'video', url: '/videos/portfolio/lebanon-promo-1.mp4', posterUrl: lebanonCover, alt: 'Lebanon Restaurant - Promo video', aspectRatio: '9:16' },
-      { id: 'gallery-10-3', type: 'video', url: '/videos/portfolio/lebanon-promo-2.mp4', posterUrl: lebanonMezze, alt: 'Lebanon Restaurant - Brand video', aspectRatio: '9:16' },
-      { id: 'gallery-10-4', type: 'image', url: lebanonBurger, alt: 'Lebanon Restaurant - Burger special' },
-      { id: 'gallery-10-5', type: 'image', url: lebanonMezze, alt: 'Lebanon Restaurant - Mezze plateau menu' },
-      { id: 'gallery-10-6', type: 'video', url: '/videos/portfolio/lebanon-social-1.mp4', posterUrl: lebanonBurger, alt: 'Lebanon Restaurant - Social content 1', aspectRatio: '9:16' },
-      { id: 'gallery-10-7', type: 'video', url: '/videos/portfolio/lebanon-social-2.mp4', posterUrl: lebanonMezze, alt: 'Lebanon Restaurant - Social content 2', aspectRatio: '9:16' },
-      { id: 'gallery-10-8', type: 'video', url: '/videos/portfolio/lebanon-social-3.mp4', posterUrl: lebanonCover, alt: 'Lebanon Restaurant - Social content 3', aspectRatio: '9:16' },
-      { id: 'gallery-10-9', type: 'video', url: '/videos/portfolio/lebanon-social-4.mp4', posterUrl: lebanonBurger, alt: 'Lebanon Restaurant - Social content 4', aspectRatio: '9:16' },
-      { id: 'gallery-10-10', type: 'video', url: '/videos/portfolio/lebanon-social-5.mp4', posterUrl: lebanonMezze, alt: 'Lebanon Restaurant - Social content 5', aspectRatio: '9:16' },
+      { id: 'gallery-10-1', type: 'image', url: lebanonCover, alt: 'Lebanon Restaurant - Hummus - Le Classique Indémodable' },
+      { id: 'gallery-10-2', type: 'image', url: lebanonTaouk, alt: 'Lebanon Restaurant - Grand Opening Taouk' },
+      { id: 'gallery-10-3', type: 'image', url: lebanonBurger, alt: 'Lebanon Restaurant - Burger Special' },
+      { id: 'gallery-10-4', type: 'image', url: lebanonMezzePromo, alt: 'Lebanon Restaurant - Plateau Mezze Complet' },
+      { id: 'gallery-10-5', type: 'image', url: lebanonReview, alt: 'Lebanon Restaurant - Critique Culinaire' },
+      { id: 'gallery-10-6', type: 'image', url: lebanonCollage, alt: 'Lebanon Restaurant - Venez nous rendre visite' },
+      { id: 'gallery-10-7', type: 'image', url: lebanonKofta, alt: 'Lebanon Restaurant - Kofta Dawood Basha' },
+      { id: 'gallery-10-8', type: 'image', url: lebanonSambousek, alt: 'Lebanon Restaurant - Sambousek' },
+      { id: 'gallery-10-9', type: 'image', url: lebanonTaboule, alt: 'Lebanon Restaurant - Taboulé' },
+      { id: 'gallery-10-10', type: 'video', url: '/videos/portfolio/lebanon-promo-1.mp4', posterUrl: lebanonCover, alt: 'Lebanon Restaurant - Promo video', aspectRatio: '9:16' },
     ],
     shortResultLine: '+120% social media bereik',
     popupContent: {
