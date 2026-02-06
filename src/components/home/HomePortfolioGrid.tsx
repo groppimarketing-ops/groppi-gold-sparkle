@@ -66,7 +66,7 @@ const HomePortfolioGrid = memo(() => {
               size="lg"
               className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 hover:shadow-[0_8px_35px_hsl(var(--gold)/0.4)] hover:translate-y-[-3px] transition-all duration-300 text-lg px-12 py-7 rounded-xl"
             >
-              <Link to="/portfolio">
+              <Link to="/gallery">
                 {t('home.portfolio.viewAll', 'Bekijk volledig portfolio')}
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
