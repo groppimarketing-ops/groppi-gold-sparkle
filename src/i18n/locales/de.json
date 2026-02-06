@@ -67,12 +67,16 @@
         "description": "Das Team wuchs auf 5 Spezialisten mit Expertise in verschiedenen Bereichen."
       },
       "2020": {
-        "title": "Europäisches Wachstum",
-        "description": "Erfolgreiche Zusammenarbeit mit Kunden in den Niederlanden, Deutschland und Frankreich."
+        "title": "Wachstum in Belgien",
+        "description": "Wir haben unsere lokale Präsenz gestärkt und langfristige Partnerschaften mit belgischen Unternehmen aufgebaut."
       },
       "2023": {
-        "title": "Europäisches Wachstum",
-        "description": "Erfolgreiche Expansion in ganz Europa mit mehr Kunden in den Niederlanden, Deutschland und der gesamten Region."
+        "title": "Expansion in Europa",
+        "description": "Wir haben unsere Projekte in ganz Europa mit Kunden in den Niederlanden, Deutschland, Frankreich und darüber hinaus skaliert."
+      },
+      "2026": {
+        "title": "Zukunftsplan: Expansion in den Nahen Osten",
+        "description": "2026 planen wir die Expansion in den Nahen Osten — um unseren systemgesteuerten Wachstumsansatz in neue Märkte zu bringen."
       }
     },
     "whoWeAre": {

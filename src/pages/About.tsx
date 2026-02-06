@@ -48,6 +48,7 @@ const About = () => {
     { year: '2018', key: '2018' },
     { year: '2020', key: '2020' },
     { year: '2023', key: '2023' },
+    { year: '2026', key: '2026' },
   ];
 
   return (

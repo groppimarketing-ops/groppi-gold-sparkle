@@ -41,12 +41,16 @@
         "description": "A equipa cresceu para 5 especialistas com experiência em diversas áreas."
       },
       "2020": {
-        "title": "Crescimento europeu",
-        "description": "Colaborações bem-sucedidas com clientes nos Países Baixos, Alemanha e França."
+        "title": "Crescimento na Bélgica",
+        "description": "Fortalecemos a nossa presença local e construímos parcerias duradouras com empresas belgas."
       },
       "2023": {
-        "title": "Médio Oriente",
-        "description": "Expansão para o mercado árabe através de parcerias locais."
+        "title": "Expansão pela Europa",
+        "description": "Escalámos os nossos projetos por toda a Europa com clientes nos Países Baixos, Alemanha, França e além."
+      },
+      "2026": {
+        "title": "Plano futuro: Expansão para o Médio Oriente",
+        "description": "Em 2026, planeamos expandir para o Médio Oriente — levando a nossa abordagem de crescimento sistemático a novos mercados."
       }
     }
   },
