@@ -1297,6 +1297,9 @@
       "resultPlural": "projects found",
       "noResults": "No projects found with these filters."
     },
+    "nda": {
+      "disclaimer": "Some projects are protected by non-disclosure agreements (NDA) and cannot be shown publicly."
+    },
     "viewCase": "View case",
     "filters": {
       "all": "All",

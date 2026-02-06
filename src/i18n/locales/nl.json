@@ -1297,6 +1297,9 @@
       "resultPlural": "projecten gevonden",
       "noResults": "Geen projecten gevonden met deze filters."
     },
+    "nda": {
+      "disclaimer": "Sommige projecten zijn beschermd door geheimhoudingsovereenkomsten (NDA) en kunnen niet openbaar worden getoond."
+    },
     "viewCase": "Bekijk case",
     "filters": {
       "all": "Alle",

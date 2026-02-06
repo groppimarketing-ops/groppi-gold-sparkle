@@ -532,5 +532,10 @@
         "content": "<h2>Der Vertrauensfaktor</h2><p>Bevor sie einen Kauf tätigen oder einen Service beauftragen, tun die meisten Menschen dasselbe: Sie lesen Bewertungen.</p><h2>Die Psychologie der Bewertungen</h2><p>Menschen vertrauen anderen Kunden mehr als Unternehmen.</p><h2>Bewertungen und Sichtbarkeit</h2><p>Bewertungen beeinflussen nicht nur Entscheidungen. Sie beeinflussen die Sichtbarkeit.</p>"
       }
     }
+  },
+  "portfolio": {
+    "nda": {
+      "disclaimer": "Einige Projekte sind durch Geheimhaltungsvereinbarungen (NDA) geschützt und können nicht öffentlich gezeigt werden."
+    }
   }
 }
