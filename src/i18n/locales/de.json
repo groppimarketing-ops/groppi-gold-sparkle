@@ -477,5 +477,56 @@
     "oneTime": "einmalig",
     "vatExcluded": "exkl. MwSt.",
     "vatExcludedNote": "Alle Preise exkl. MwSt. MwSt. wird auf der Rechnung hinzugefügt."
+  },
+  "blog": {
+    "title": "Einblicke & Strategien",
+    "subtitle": "Praktische Einblicke in digitales Wachstum, Marketing und Online-Performance.",
+    "badge": "Blog",
+    "metaTitle": "Blog - Einblicke ins digitale Marketing",
+    "metaDescription": "Praktische Einblicke in digitales Wachstum, Marketingstrategien und Online-Performance für Unternehmen in Belgien und Europa.",
+    "featured": "Empfohlen",
+    "readArticle": "Artikel lesen",
+    "minRead": "Min. Lesezeit",
+    "backToArticles": "Zurück zu Artikeln",
+    "shareArticle": "Artikel teilen",
+    "contactUs": "Kontaktieren Sie uns",
+    "relatedArticles": "Verwandte Artikel",
+    "articles": {
+      "websiteSalesTool": {
+        "title": "Warum Ihre Website 2025 Ihr stärkstes Verkaufswerkzeug ist",
+        "excerpt": "Ihre Website ist mehr als eine digitale Broschüre. In 2025 ist sie Ihr wichtigstes Verkaufsasset. Hier erfahren Sie warum.",
+        "metaTitle": "Warum Ihre Website 2025 Ihr stärkstes Verkaufswerkzeug ist",
+        "metaDescription": "Entdecken Sie, warum Ihre Website das wichtigste Verkaufswerkzeug für Ihr Unternehmen in 2025 ist.",
+        "content": "<h2>Ihre Website ist nicht mehr optional</h2><p>In 2025 ist Ihre Website nicht nur ein Ort, an dem Menschen von Ihrem Unternehmen erfahren. Sie ist Ihr wichtigstes Verkaufswerkzeug.</p><h2>Erste Eindrücke entstehen online</h2><p>Studien zeigen, dass Menschen sich innerhalb von 0,05 Sekunden eine Meinung über eine Website bilden.</p><h2>Struktur schafft Conversions</h2><p>Eine schöne Website reicht nicht. Sie muss Besucher zu einer bestimmten Aktion führen.</p>"
+      },
+      "socialMediaManagement": {
+        "title": "Social Media Management: Was Unternehmen wirklich brauchen",
+        "excerpt": "Bei Social Media geht es nicht um Follower. Es geht um Strategie, Konsistenz und echtes Engagement.",
+        "metaTitle": "Social Media Management: Was Unternehmen wirklich brauchen",
+        "metaDescription": "Erfahren Sie, was Unternehmen wirklich von Social Media Management brauchen.",
+        "content": "<h2>Jenseits von Followern und Likes</h2><p>Viele Unternehmen sind besessen von Followerzahlen und Likes. Aber diese Vanity-Metriken führen selten zu echten Geschäftsergebnissen.</p><h2>Strategie vor dem Posten</h2><p>Der größte Fehler, den Unternehmen machen, ist das Posten ohne Plan.</p><h2>Konsistenz schlägt Trends</h2><p>Was funktioniert, ist Konsistenz: regelmäßiges Posten, ein einheitlicher visueller Stil und Mehrwert bei jedem Post.</p>"
+      },
+      "seoExplained": {
+        "title": "SEO einfach erklärt: Wie Kunden Sie online finden",
+        "excerpt": "SEO ist keine Magie oder Manipulation. Es geht darum, Ihr Unternehmen leicht auffindbar zu machen.",
+        "metaTitle": "SEO einfach erklärt: Wie Kunden Sie online finden",
+        "metaDescription": "Eine einfache Erklärung von SEO für Unternehmer. Erfahren Sie, wie lokales SEO in Belgien und Europa funktioniert.",
+        "content": "<h2>Was ist SEO wirklich?</h2><p>Suchmaschinenoptimierung klingt technisch, aber das Konzept ist einfach. Wenn jemand nach einer Dienstleistung sucht, die Sie anbieten, bestimmt SEO, ob er Sie oder Ihren Konkurrenten findet.</p><h2>Die drei Säulen</h2><p>SEO ruht auf drei Säulen: Technisches SEO, Content und Autorität.</p><h2>Lokales SEO für Belgien und Europa</h2><p>Für die meisten lokalen Unternehmen liegt die echte Chance im lokalen SEO.</p>"
+      },
+      "paidAdvertising": {
+        "title": "Bezahlte Werbung ohne Verschwendung: Wie smarte Kampagnen aufgebaut werden",
+        "excerpt": "Bezahlte Werbung bedeutet nicht, Posts zu boosten und auf das Beste zu hoffen. Es geht um Systeme, die vorhersehbare Ergebnisse liefern.",
+        "metaTitle": "Bezahlte Werbung ohne Verschwendung: Smarte Kampagnen aufbauen",
+        "metaDescription": "Lernen Sie, wie Sie bezahlte Werbekampagnen aufbauen, die Ergebnisse liefern.",
+        "content": "<h2>Das Problem mit den meisten Anzeigen</h2><p>Viele Unternehmen versuchen bezahlte Werbung, sehen schlechte Ergebnisse und schließen daraus, dass es nicht funktioniert. Aber das Problem ist selten die Plattform.</p><h2>Werbung ist ein System</h2><p>Effektive bezahlte Werbung geht nicht um einzelne Anzeigen. Es geht darum, ein System aufzubauen.</p><h2>Budgetkontrolle</h2><p>Das Schöne an digitaler Werbung ist die Kontrolle. Sie können klein anfangen, testen und skalieren, was funktioniert.</p>"
+      },
+      "onlineReputation": {
+        "title": "Online-Reputation: Warum Bewertungen wichtiger sind als Sie denken",
+        "excerpt": "Ihre Online-Reputation beeinflusst Kaufentscheidungen mehr als die meiste Werbung.",
+        "metaTitle": "Online-Reputation: Warum Bewertungen wichtiger sind als Sie denken",
+        "metaDescription": "Entdecken Sie, warum Online-Bewertungen für den Geschäftserfolg entscheidend sind.",
+        "content": "<h2>Der Vertrauensfaktor</h2><p>Bevor sie einen Kauf tätigen oder einen Service beauftragen, tun die meisten Menschen dasselbe: Sie lesen Bewertungen.</p><h2>Die Psychologie der Bewertungen</h2><p>Menschen vertrauen anderen Kunden mehr als Unternehmen.</p><h2>Bewertungen und Sichtbarkeit</h2><p>Bewertungen beeinflussen nicht nur Entscheidungen. Sie beeinflussen die Sichtbarkeit.</p>"
+      }
+    }
   }
 }

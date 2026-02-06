@@ -425,5 +425,26 @@
     "oneTime": "jednorazowo",
     "vatExcluded": "bez VAT",
     "vatExcludedNote": "Wszystkie ceny bez VAT. VAT zostanie doliczony na fakturze."
+  },
+  "blog": {
+    "title": "Wiedza i Strategie",
+    "subtitle": "Praktyczne wskazówki dotyczące rozwoju cyfrowego, marketingu i wydajności online.",
+    "badge": "Blog",
+    "metaTitle": "Blog - Wiedza o marketingu cyfrowym",
+    "metaDescription": "Praktyczne wskazówki dotyczące rozwoju cyfrowego i strategii marketingowych dla firm.",
+    "featured": "Wyróżnione",
+    "readArticle": "Czytaj artykuł",
+    "minRead": "min czytania",
+    "backToArticles": "Powrót do artykułów",
+    "shareArticle": "Udostępnij artykuł",
+    "contactUs": "Skontaktuj się",
+    "relatedArticles": "Powiązane Artykuły",
+    "articles": {
+      "websiteSalesTool": { "title": "Dlaczego Twoja strona jest najsilniejszym narzędziem sprzedaży w 2025", "excerpt": "Twoja strona to więcej niż cyfrowa broszura. W 2025 to Twój najważniejszy atut sprzedażowy.", "metaTitle": "Dlaczego Twoja strona jest najsilniejszym narzędziem sprzedaży w 2025", "metaDescription": "Odkryj, dlaczego Twoja strona jest najważniejszym narzędziem sprzedaży.", "content": "<h2>Twoja strona nie jest już opcjonalna</h2><p>W 2025 Twoja strona jest najważniejszym narzędziem sprzedaży.</p>" },
+      "socialMediaManagement": { "title": "Zarządzanie mediami społecznościowymi: Czego firmy naprawdę potrzebują", "excerpt": "Media społecznościowe nie dotyczą obserwujących. Chodzi o strategię i prawdziwe zaangażowanie.", "metaTitle": "Zarządzanie mediami społecznościowymi", "metaDescription": "Dowiedz się, czego firmy naprawdę potrzebują od zarządzania mediami społecznościowymi.", "content": "<h2>Poza obserwującymi i polubieniami</h2><p>Wiele firm jest zależnych od liczby obserwujących.</p>" },
+      "seoExplained": { "title": "SEO wyjaśnione prosto: Jak klienci znajdują Cię online", "excerpt": "SEO to nie magia ani manipulacja. Chodzi o ułatwienie znalezienia Twojej firmy.", "metaTitle": "SEO wyjaśnione prosto", "metaDescription": "Proste wyjaśnienie SEO dla właścicieli firm.", "content": "<h2>Czym naprawdę jest SEO?</h2><p>Optymalizacja dla wyszukiwarek brzmi technicznie, ale koncepcja jest prosta.</p>" },
+      "paidAdvertising": { "title": "Płatna reklama bez marnowania: Jak budować inteligentne kampanie", "excerpt": "Płatna reklama to nie promowanie postów. Chodzi o budowanie systemów.", "metaTitle": "Płatna reklama bez marnowania", "metaDescription": "Naucz się budować kampanie reklamowe, które przynoszą wyniki.", "content": "<h2>Problem z większością reklam</h2><p>Wiele firm próbuje płatnej reklamy i widzi słabe wyniki.</p>" },
+      "onlineReputation": { "title": "Reputacja online: Dlaczego opinie są ważniejsze niż myślisz", "excerpt": "Twoja reputacja online wpływa na decyzje zakupowe bardziej niż większość marketingu.", "metaTitle": "Reputacja online: Dlaczego opinie są ważne", "metaDescription": "Odkryj, dlaczego opinie online są kluczowe dla sukcesu firmy.", "content": "<h2>Czynnik zaufania</h2><p>Przed dokonaniem zakupu większość ludzi czyta opinie.</p>" }
+    }
   }
 }

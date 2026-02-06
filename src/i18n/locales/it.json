@@ -425,5 +425,26 @@
     "oneTime": "una tantum",
     "vatExcluded": "escl. IVA",
     "vatExcludedNote": "Tutti i prezzi escl. IVA. L'IVA sarà aggiunta in fattura."
+  },
+  "blog": {
+    "title": "Approfondimenti e Strategie",
+    "subtitle": "Consigli pratici sulla crescita digitale, marketing e performance online.",
+    "badge": "Blog",
+    "metaTitle": "Blog - Approfondimenti Marketing Digitale",
+    "metaDescription": "Consigli pratici sulla crescita digitale e strategie di marketing per le aziende.",
+    "featured": "In evidenza",
+    "readArticle": "Leggi articolo",
+    "minRead": "min di lettura",
+    "backToArticles": "Torna agli articoli",
+    "shareArticle": "Condividi articolo",
+    "contactUs": "Contattaci",
+    "relatedArticles": "Articoli Correlati",
+    "articles": {
+      "websiteSalesTool": { "title": "Perché il tuo sito web è il tuo strumento di vendita più potente nel 2025", "excerpt": "Il tuo sito web è più di una brochure digitale. Nel 2025, è il tuo asset di vendita più importante.", "metaTitle": "Perché il tuo sito web è il tuo strumento di vendita più potente nel 2025", "metaDescription": "Scopri perché il tuo sito web è lo strumento di vendita più importante.", "content": "<h2>Il tuo sito web non è più opzionale</h2><p>Nel 2025, il tuo sito web è il tuo strumento di vendita più importante.</p>" },
+      "socialMediaManagement": { "title": "Gestione dei social media: Cosa serve davvero alle aziende", "excerpt": "I social media non riguardano i follower. Riguardano strategia e engagement reale.", "metaTitle": "Gestione dei social media: Cosa serve davvero alle aziende", "metaDescription": "Scopri cosa serve davvero alle aziende dalla gestione dei social media.", "content": "<h2>Oltre follower e like</h2><p>Molte aziende sono ossessionate dal numero di follower.</p>" },
+      "seoExplained": { "title": "SEO spiegato semplicemente: Come i clienti ti trovano online", "excerpt": "La SEO non è magia né manipolazione. Si tratta di rendere la tua azienda facile da trovare.", "metaTitle": "SEO spiegato semplicemente", "metaDescription": "Una spiegazione semplice della SEO per imprenditori.", "content": "<h2>Cos'è veramente la SEO?</h2><p>L'ottimizzazione per i motori di ricerca sembra tecnica, ma il concetto è semplice.</p>" },
+      "paidAdvertising": { "title": "Pubblicità a pagamento senza sprechi: Come costruire campagne intelligenti", "excerpt": "La pubblicità a pagamento non significa sponsorizzare post sperando nel meglio.", "metaTitle": "Pubblicità a pagamento senza sprechi", "metaDescription": "Impara a costruire campagne pubblicitarie che portano risultati.", "content": "<h2>Il problema con la maggior parte della pubblicità</h2><p>Molte aziende provano la pubblicità a pagamento e vedono scarsi risultati.</p>" },
+      "onlineReputation": { "title": "Reputazione online: Perché le recensioni contano più di quanto pensi", "excerpt": "La tua reputazione online influenza le decisioni di acquisto più della maggior parte del marketing.", "metaTitle": "Reputazione online: Perché le recensioni contano", "metaDescription": "Scopri perché le recensioni online sono cruciali per il successo aziendale.", "content": "<h2>Il fattore fiducia</h2><p>Prima di fare un acquisto, la maggior parte delle persone legge le recensioni.</p>" }
+    }
   }
 }
