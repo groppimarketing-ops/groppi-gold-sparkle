@@ -450,5 +450,10 @@
       "paidAdvertising": { "title": "Pubblicità a pagamento senza sprechi: Come costruire campagne intelligenti", "excerpt": "La pubblicità a pagamento non significa sponsorizzare post sperando nel meglio.", "metaTitle": "Pubblicità a pagamento senza sprechi", "metaDescription": "Impara a costruire campagne pubblicitarie che portano risultati.", "content": "<h2>Il problema con la maggior parte della pubblicità</h2><p>Molte aziende provano la pubblicità a pagamento e vedono scarsi risultati.</p>" },
       "onlineReputation": { "title": "Reputazione online: Perché le recensioni contano più di quanto pensi", "excerpt": "La tua reputazione online influenza le decisioni di acquisto più della maggior parte del marketing.", "metaTitle": "Reputazione online: Perché le recensioni contano", "metaDescription": "Scopri perché le recensioni online sono cruciali per il successo aziendale.", "content": "<h2>Il fattore fiducia</h2><p>Prima di fare un acquisto, la maggior parte delle persone legge le recensioni.</p>" }
     }
+  },
+  "portfolio": {
+    "nda": {
+      "disclaimer": "Alcuni progetti sono protetti da accordi di riservatezza (NDA) e non possono essere mostrati pubblicamente."
+    }
   }
 }

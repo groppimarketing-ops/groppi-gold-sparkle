@@ -450,5 +450,10 @@
       "paidAdvertising": { "title": "Publicidad pagada sin desperdicio: Cómo se construyen campañas inteligentes", "excerpt": "La publicidad pagada no se trata de impulsar publicaciones. Se trata de construir sistemas.", "metaTitle": "Publicidad pagada sin desperdicio", "metaDescription": "Aprenda a construir campañas publicitarias que entreguen resultados.", "content": "<h2>El problema con la mayoría de la publicidad</h2><p>Muchas empresas prueban la publicidad pagada y ven malos resultados.</p>" },
       "onlineReputation": { "title": "Reputación en línea: Por qué las reseñas importan más de lo que piensa", "excerpt": "Su reputación en línea influye en las decisiones de compra más que la mayoría del marketing.", "metaTitle": "Reputación en línea: Por qué las reseñas importan", "metaDescription": "Descubra por qué las reseñas en línea son cruciales para el éxito empresarial.", "content": "<h2>El factor confianza</h2><p>Antes de hacer una compra, la mayoría de las personas leen reseñas.</p>" }
     }
+  },
+  "portfolio": {
+    "nda": {
+      "disclaimer": "Algunos proyectos están protegidos por acuerdos de confidencialidad (NDA) y no pueden mostrarse públicamente."
+    }
   }
 }

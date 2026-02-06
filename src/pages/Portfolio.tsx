@@ -1,14 +1,32 @@
 import { useState, useMemo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, X } from 'lucide-react';
+import { Search, X, Lock } from 'lucide-react';
 import PageLayout from '@/components/layout/PageLayout';
 import SectionHeader from '@/components/ui/SectionHeader';
 import PortfolioCard from '@/components/portfolio/PortfolioCard';
 import CaseStudyModal from '@/components/portfolio/CaseStudyModal';
-import { filterPortfolio, portfolioItems } from '@/data/portfolioItems';
+import { portfolioItems } from '@/data/portfolioItems';
 import type { PortfolioItem } from '@/types/portfolio';
 import { Input } from '@/components/ui/input';
+
+// NDA Disclaimer Component - Premium gold styling
+const NDADisclaimer = ({ className = '' }: { className?: string }) => {
+  const { t } = useTranslation();
+  
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      className={`flex items-center justify-center gap-2 text-primary/80 ${className}`}
+    >
+      <Lock className="w-3.5 h-3.5 flex-shrink-0" />
+      <span className="text-sm font-medium" style={{ color: 'hsl(43 76% 52% / 0.85)' }}>
+        {t('portfolio.nda.disclaimer')}
+      </span>
+    </motion.div>
+  );
+};
 
 const Portfolio = () => {
   const { t } = useTranslation();
@@ -23,7 +41,12 @@ const Portfolio = () => {
   // Filtered portfolio items - show all by default
   const filteredItems = useMemo(() => {
     if (!searchQuery.trim()) return portfolioItems;
-    return filterPortfolio('all', 'all', searchQuery);
+    const query = searchQuery.toLowerCase();
+    return portfolioItems.filter(item => 
+      item.clientName.toLowerCase().includes(query) ||
+      item.industry.toLowerCase().includes(query) ||
+      item.services.some(s => s.toLowerCase().includes(query))
+    );
   }, [searchQuery]);
 
   const handleCardClick = useCallback((item: PortfolioItem) => {
@@ -52,6 +75,9 @@ const Portfolio = () => {
             centered
             showSparkle
           />
+
+          {/* NDA Disclaimer - Under header */}
+          <NDADisclaimer className="mt-6" />
 
           {/* Optional Search - Minimal style */}
           <motion.div
@@ -120,6 +146,16 @@ const Portfolio = () => {
               </motion.div>
             )}
           </AnimatePresence>
+
+          {/* NDA Disclaimer - Bottom of grid */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="mt-16 pt-8 border-t border-primary/10"
+          >
+            <NDADisclaimer />
+          </motion.div>
         </div>
       </section>
 

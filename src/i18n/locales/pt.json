@@ -450,5 +450,10 @@
       "paidAdvertising": { "title": "Publicidade paga sem desperdício: Como construir campanhas inteligentes", "excerpt": "Publicidade paga não é sobre impulsionar posts. É sobre construir sistemas.", "metaTitle": "Publicidade paga sem desperdício", "metaDescription": "Aprenda a construir campanhas publicitárias que entregam resultados.", "content": "<h2>O problema com a maioria da publicidade</h2><p>Muitas empresas tentam publicidade paga e veem maus resultados.</p>" },
       "onlineReputation": { "title": "Reputação online: Porque as avaliações importam mais do que pensa", "excerpt": "A sua reputação online influencia decisões de compra mais do que a maioria do marketing.", "metaTitle": "Reputação online: Porque as avaliações importam", "metaDescription": "Descubra porque as avaliações online são cruciais para o sucesso empresarial.", "content": "<h2>O fator confiança</h2><p>Antes de fazer uma compra, a maioria das pessoas lê avaliações.</p>" }
     }
+  },
+  "portfolio": {
+    "nda": {
+      "disclaimer": "Alguns projetos estão protegidos por acordos de confidencialidade (NDA) e não podem ser mostrados publicamente."
+    }
   }
 }
