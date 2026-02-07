@@ -18,9 +18,7 @@
     "vatExcludedNote": "Alle prijzen excl. BTW. BTW wordt toegevoegd op de factuur.",
     "vatDisclaimer": {
       "title": "Prijsinformatie",
-      "line1": "Alle prijzen zijn exclusief BTW (21%).",
-      "line2": "Korting geldt enkel voor eenmalige projecten.",
-      "line3": "Maandelijkse abonnementen zijn uitgesloten van korting."
+      "line1": "Alle prijzen zijn exclusief BTW (21%)."
     }
   },
   "services": {
@@ -44,12 +42,12 @@
     "paymentTypeTitle": "Kies je betaaltype",
     "payment": {
       "oneTime": "Eenmalig project",
-      "oneTimeDesc": "Betaal per item. Korting mogelijk.",
+      "oneTimeDesc": "Betaal per item.",
+      "oneTimeDescSimple": "Betaal per item.",
       "monthly": "Maandelijks abonnement",
-      "monthlyDesc": "Vast maandbedrag. Geen korting van toepassing."
+      "monthlyDesc": "Vast maandbedrag.",
+      "monthlyDescSimple": "Vast maandbedrag."
     },
-    "discountBadge": "20% launchkorting",
-    "discountNote": "Korting geldt enkel op eenmalige setup, niet op maandelijkse abonnementen.",
     "vatNote": "Alle prijzen zijn exclusief BTW",
     "estimatedMonthlyFee": "Geschatte maandelijkse servicekost",
     "setupFee": "Setup kost",
@@ -61,20 +59,13 @@
     "configurePackage": "Configureer je pakket",
     "extraOptions": "Extra opties",
     "cta": {
-      "whatsapp": "Claim je code via WhatsApp",
-      "claimWhatsApp": "Claim je code via WhatsApp",
+      "whatsapp": "Chat via WhatsApp",
+      "requestQuote": "Vraag een offerte aan",
       "planCall": "Plan een call",
       "planCallHelper": "Kies een tijdslot dat past. Gratis kennismaking (30 min)."
     },
     "step1": "Kies je betaaltype",
-    "step2": "Kies je deliverables",
-    "noDiscountMonthly": "De 20% launchkorting is niet van toepassing op maandelijkse abonnementen.",
-    "noDiscountMonthlyTitle": "Geen korting beschikbaar",
-    "referenceCode": "Referentiecode",
-    "launchDiscount": "launchkorting",
-    "offerEndsIn": "Aanbieding eindigt over",
-    "discountExpired": "Korting is verlopen",
-    "expiredMessage": "Geen probleem — stuur ons je berekening via WhatsApp of plan een call voor een persoonlijke offerte."
+    "step2": "Kies je deliverables"
   },
   "servicePage": {
     "contentCalculator": {
@@ -84,10 +75,9 @@
       "step1": "Kies je betaaltype",
       "step2": "Kies je deliverables",
       "oneTime": "Eenmalig project",
-      "oneTimeDesc": "Betaal per item. Korting mogelijk.",
+      "oneTimeDesc": "Betaal per item.",
       "monthly": "Maandelijks abonnement",
-      "monthlyDesc": "Vast maandbedrag. Geen korting van toepassing.",
-      "noDiscountMonthly": "De 20% launchkorting is niet van toepassing op maandelijkse abonnementen.",
+      "monthlyDesc": "Vast maandbedrag.",
       "posters": "Posters",
       "reels": "Reels",
       "videos": "Video's",
@@ -108,10 +98,9 @@
       "title": "Bereken je prijs",
       "step1": "Kies je betaaltype",
       "oneTimeProject": "Eenmalig project",
-      "oneTimeDesc": "Setup + eerste maand. Korting mogelijk.",
+      "oneTimeDesc": "Setup + eerste maand.",
       "monthlySubscription": "Maandelijks abonnement",
-      "monthlyDesc": "Doorlopend. Geen korting van toepassing.",
-      "noDiscountMonthly": "De 20% launchkorting is niet van toepassing op maandelijkse abonnementen.",
+      "monthlyDesc": "Doorlopend.",
       "configureLabel": "Configureer je pakket",
       "addonsLabel": "Extra opties"
     },
@@ -119,14 +108,6 @@
       "label": "Veelgestelde vragen",
       "title": "FAQ over prijzen",
       "questions": {
-        "discount": {
-          "q": "Geldt de korting op maandelijkse abonnementen?",
-          "a": "Nee. De 20% launchkorting geldt enkel voor eenmalige projecten zoals posters, reels, video's en artikels. Maandelijkse diensten zijn uitgesloten."
-        },
-        "validity": {
-          "q": "Hoe lang is de korting geldig?",
-          "a": "10 dagen vanaf je eerste bezoek. Daarna vervalt de korting automatisch."
-        },
         "reelPrice": {
           "q": "Hoe werkt de prijs voor Reels?",
           "a": "Je hebt 3 opties: AI volledig (€150), wij editen jouw footage (€200), of wij filmen on-site bij jou (€250). De prijs hangt af van hoeveel werk wij doen."
@@ -141,7 +122,7 @@
         },
         "payment": {
           "q": "Kan ik online betalen?",
-          "a": "Nee, wij accepteren geen online betalingen via de website. Na je berekening stuur je je code via WhatsApp of plan je een call. We bevestigen binnen 24 uur met een definitieve offerte."
+          "a": "Nee, wij accepteren geen online betalingen via de website. Na je berekening stuur je je aanvraag via WhatsApp of plan je een call. We bevestigen binnen 24 uur met een definitieve offerte."
         }
       }
     }

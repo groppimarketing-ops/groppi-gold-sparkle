@@ -17,9 +17,7 @@
     "vatExcludedNote": "Tous les prix sont hors TVA. La TVA sera ajoutée à la facture.",
     "vatDisclaimer": {
       "title": "Informations tarifaires",
-      "line1": "Tous les prix sont hors TVA (21%).",
-      "line2": "La remise s'applique uniquement aux projets ponctuels.",
-      "line3": "Les abonnements mensuels sont exclus des remises."
+      "line1": "Tous les prix sont hors TVA (21%)."
     }
   },
   "services": {
@@ -43,12 +41,12 @@
     "paymentTypeTitle": "Choisissez votre mode de paiement",
     "payment": {
       "oneTime": "Projet (paiement unique)",
-      "oneTimeDesc": "Payez par article. Remise possible.",
+      "oneTimeDesc": "Payez par article.",
+      "oneTimeDescSimple": "Payez par article.",
       "monthly": "Abonnement mensuel",
-      "monthlyDesc": "Montant mensuel fixe. Pas de remise applicable."
+      "monthlyDesc": "Montant mensuel fixe.",
+      "monthlyDescSimple": "Montant mensuel fixe."
     },
-    "discountBadge": "Remise de lancement 20%",
-    "discountNote": "La remise s'applique uniquement aux frais uniques, pas aux abonnements mensuels.",
     "vatNote": "Tous les prix sont hors TVA",
     "estimatedMonthlyFee": "Frais mensuels estimés",
     "setupFee": "Frais de mise en place",
@@ -60,20 +58,13 @@
     "configurePackage": "Configurez votre forfait",
     "extraOptions": "Options supplémentaires",
     "cta": {
-      "whatsapp": "Recevoir mon code sur WhatsApp",
-      "claimWhatsApp": "Recevoir mon code sur WhatsApp",
+      "whatsapp": "Chat via WhatsApp",
+      "requestQuote": "Demander un devis",
       "planCall": "Planifier un appel",
       "planCallHelper": "Choisissez un créneau qui vous convient. Appel découverte gratuit (30 min)."
     },
     "step1": "Choisissez le type de paiement",
-    "step2": "Sélectionnez vos livrables",
-    "noDiscountMonthly": "La remise de lancement de 20% ne s'applique pas aux abonnements mensuels.",
-    "noDiscountMonthlyTitle": "Pas de remise disponible",
-    "referenceCode": "Code de référence",
-    "launchDiscount": "remise de lancement",
-    "offerEndsIn": "L'offre expire dans",
-    "discountExpired": "Remise expirée",
-    "expiredMessage": "Pas de souci — envoyez-nous votre calcul via WhatsApp ou planifiez un appel pour une offre personnalisée."
+    "step2": "Sélectionnez vos livrables"
   },
   "servicePage": {
     "contentCalculator": {
@@ -83,10 +74,9 @@
       "step1": "Choisissez le type de paiement",
       "step2": "Sélectionnez vos livrables",
       "oneTime": "Projet (paiement unique)",
-      "oneTimeDesc": "Payez par article. Remise possible.",
+      "oneTimeDesc": "Payez par article.",
       "monthly": "Abonnement mensuel",
-      "monthlyDesc": "Montant mensuel fixe. Pas de remise applicable.",
-      "noDiscountMonthly": "La remise de lancement de 20% ne s'applique pas aux abonnements mensuels.",
+      "monthlyDesc": "Montant mensuel fixe.",
       "posters": "Affiches",
       "reels": "Reels",
       "videos": "Vidéos",
@@ -107,10 +97,9 @@
       "title": "Calculez votre prix",
       "step1": "Choisissez le type de paiement",
       "oneTimeProject": "Projet (paiement unique)",
-      "oneTimeDesc": "Setup + premier mois. Remise possible.",
+      "oneTimeDesc": "Setup + premier mois.",
       "monthlySubscription": "Abonnement mensuel",
-      "monthlyDesc": "En continu. Pas de remise applicable.",
-      "noDiscountMonthly": "La remise de lancement de 20% ne s'applique pas aux abonnements mensuels.",
+      "monthlyDesc": "En continu.",
       "configureLabel": "Configurez votre forfait",
       "addonsLabel": "Options supplémentaires"
     },
@@ -118,14 +107,6 @@
       "label": "Questions fréquentes",
       "title": "FAQ sur les prix",
       "questions": {
-        "discount": {
-          "q": "La remise s'applique-t-elle aux abonnements mensuels ?",
-          "a": "Non. La remise de lancement de 20% s'applique uniquement aux projets ponctuels comme les affiches, reels, vidéos et articles. Les services mensuels sont exclus."
-        },
-        "validity": {
-          "q": "Combien de temps la remise est-elle valable ?",
-          "a": "10 jours à partir de votre première visite. Après cela, la remise expire automatiquement."
-        },
         "reelPrice": {
           "q": "Comment fonctionne le prix des Reels ?",
           "a": "Vous avez 3 options : généré par IA (€150), nous éditons votre footage (€200), ou nous filmons sur place chez vous (€250). Le prix dépend du travail effectué."
@@ -140,7 +121,7 @@
         },
         "payment": {
           "q": "Puis-je payer en ligne ?",
-          "a": "Non, nous n'acceptons pas les paiements en ligne sur le site. Après votre calcul, envoyez votre code via WhatsApp ou planifiez un appel. Nous confirmerons dans les 24 heures avec un devis définitif."
+          "a": "Non, nous n'acceptons pas les paiements en ligne sur le site. Après votre calcul, envoyez votre demande via WhatsApp ou planifiez un appel. Nous confirmerons dans les 24 heures avec un devis définitif."
         }
       }
     }

@@ -6,14 +6,7 @@
  * DO NOT hardcode prices anywhere else.
  */
 
-// Discount configuration
-export const DISCOUNT_CONFIG = {
-  percentage: 20,
-  validDays: 10,
-  storageKey: 'groppi_launch_discount_start',
-  /** Discount applies ONLY to one-time payments, never monthly subscriptions */
-  appliesTo: 'one_time' as const,
-} as const;
+// NOTE: Discount feature has been removed from the site
 
 // Content Production - Add-on pricing (one-time per item)
 export const CONTENT_PRICING = {
@@ -173,48 +166,3 @@ export function getPriceSuffix(
   return '';
 }
 
-// Discount helper utilities
-export function getDiscountInfo(): { active: boolean; daysLeft: number } {
-  if (typeof window === 'undefined') {
-    return { active: false, daysLeft: 0 };
-  }
-  
-  let startDate = localStorage.getItem(DISCOUNT_CONFIG.storageKey);
-  if (!startDate) {
-    startDate = new Date().toISOString();
-    localStorage.setItem(DISCOUNT_CONFIG.storageKey, startDate);
-  }
-  
-  const start = new Date(startDate);
-  const now = new Date();
-  const diffDays = Math.floor((now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
-  const remaining = DISCOUNT_CONFIG.validDays - diffDays;
-  
-  return {
-    active: remaining > 0,
-    daysLeft: Math.max(0, remaining),
-  };
-}
-
-export function calculateDiscount(
-  subtotal: number,
-  paymentType: 'one_time' | 'monthly',
-  discountActive: boolean
-): { discountAmount: number; discountEligible: boolean } {
-  const discountEligible = paymentType === 'one_time' && discountActive && subtotal > 0;
-  const discountAmount = discountEligible 
-    ? Math.round(subtotal * (DISCOUNT_CONFIG.percentage / 100))
-    : 0;
-  
-  return { discountAmount, discountEligible };
-}
-
-// Quote code generator
-export function generateQuoteCode(): string {
-  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
-  let code = 'GRO-';
-  for (let i = 0; i < 4; i++) {
-    code += chars.charAt(Math.floor(Math.random() * chars.length));
-  }
-  return code;
-}

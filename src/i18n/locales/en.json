@@ -18,9 +18,7 @@
     "vatExcludedNote": "All prices excl. VAT. VAT will be added on the invoice.",
     "vatDisclaimer": {
       "title": "Pricing information",
-      "line1": "All prices exclude VAT (21%).",
-      "line2": "Discount applies only to one-time projects.",
-      "line3": "Monthly subscriptions are excluded from discounts."
+      "line1": "All prices exclude VAT (21%)."
     }
   },
   "services": {
@@ -44,12 +42,12 @@
     "paymentTypeTitle": "Choose payment type",
     "payment": {
       "oneTime": "One-time project",
-      "oneTimeDesc": "Pay per item. Discount possible.",
+      "oneTimeDesc": "Pay per item.",
+      "oneTimeDescSimple": "Pay per item.",
       "monthly": "Monthly subscription",
-      "monthlyDesc": "Fixed monthly fee. No discount applies."
+      "monthlyDesc": "Fixed monthly fee.",
+      "monthlyDescSimple": "Fixed monthly fee."
     },
-    "discountBadge": "20% launch discount",
-    "discountNote": "Discount applies only to one-time setup, not monthly subscriptions.",
     "vatNote": "All prices excl. VAT",
     "estimatedMonthlyFee": "Estimated monthly service fee",
     "setupFee": "Setup fee",
@@ -61,20 +59,13 @@
     "configurePackage": "Configure your package",
     "extraOptions": "Extra options",
     "cta": {
-      "whatsapp": "Claim your code via WhatsApp",
-      "claimWhatsApp": "Claim your code via WhatsApp",
+      "whatsapp": "Chat via WhatsApp",
+      "requestQuote": "Request a quote",
       "planCall": "Book a call",
       "planCallHelper": "Pick a time that works. Free intro call (30 min)."
     },
     "step1": "Choose payment type",
-    "step2": "Select your deliverables",
-    "noDiscountMonthly": "The 20% launch discount does not apply to monthly subscriptions.",
-    "noDiscountMonthlyTitle": "No discount available",
-    "referenceCode": "Reference code",
-    "launchDiscount": "launch discount",
-    "offerEndsIn": "Offer ends in",
-    "discountExpired": "Discount expired",
-    "expiredMessage": "No problem — send us your calculation via WhatsApp or schedule a call for a custom offer."
+    "step2": "Select your deliverables"
   },
   "servicePage": {
     "contentCalculator": {
@@ -84,10 +75,9 @@
       "step1": "Choose payment type",
       "step2": "Select your deliverables",
       "oneTime": "One-time project",
-      "oneTimeDesc": "Pay per item. Discount possible.",
+      "oneTimeDesc": "Pay per item.",
       "monthly": "Monthly subscription",
-      "monthlyDesc": "Fixed monthly fee. No discount applies.",
-      "noDiscountMonthly": "The 20% launch discount does not apply to monthly subscriptions.",
+      "monthlyDesc": "Fixed monthly fee.",
       "posters": "Posters",
       "reels": "Reels",
       "videos": "Videos",
@@ -108,10 +98,9 @@
       "title": "Calculate your price",
       "step1": "Choose payment type",
       "oneTimeProject": "One-time project",
-      "oneTimeDesc": "Setup + first month. Discount possible.",
+      "oneTimeDesc": "Setup + first month.",
       "monthlySubscription": "Monthly subscription",
-      "monthlyDesc": "Ongoing. No discount applies.",
-      "noDiscountMonthly": "The 20% launch discount does not apply to monthly subscriptions.",
+      "monthlyDesc": "Ongoing.",
       "configureLabel": "Configure your package",
       "addonsLabel": "Extra options"
     },
@@ -119,14 +108,6 @@
       "label": "Frequently asked questions",
       "title": "Pricing FAQ",
       "questions": {
-        "discount": {
-          "q": "Does the discount apply to monthly subscriptions?",
-          "a": "No. The 20% launch discount only applies to one-time projects such as posters, reels, videos, and articles. Monthly services are excluded."
-        },
-        "validity": {
-          "q": "How long is the discount valid?",
-          "a": "10 days from your first visit. After that, the discount expires automatically."
-        },
         "reelPrice": {
           "q": "How does pricing for Reels work?",
           "a": "You have 3 options: AI generated (€150), we edit your footage (€200), or we film on-site at your location (€250). The price depends on how much work we do."
@@ -141,7 +122,7 @@
         },
         "payment": {
           "q": "Can I pay online?",
-          "a": "No, we don't accept online payments on the website. After your calculation, send your code via WhatsApp or schedule a call. We'll confirm within 24 hours with a final quote."
+          "a": "No, we don't accept online payments on the website. After your calculation, send your request via WhatsApp or schedule a call. We'll confirm within 24 hours with a final quote."
         }
       }
     }
