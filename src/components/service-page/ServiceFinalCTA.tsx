@@ -1,9 +1,10 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ArrowRight, MessageCircle } from 'lucide-react';
+import { ArrowRight, MessageCircle, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { socialLinks, trackEvent } from '@/utils/tracking';
 
 interface ServiceFinalCTAProps {
   serviceKey: string;
@@ -16,7 +17,7 @@ const ServiceFinalCTA = memo(({ serviceKey }: ServiceFinalCTAProps) => {
   const whatsappMessage = encodeURIComponent(
     t('servicePage.whatsapp.template', { service: serviceName })
   );
-  const whatsappUrl = `https://wa.me/32470123456?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/32494311119?text=${whatsappMessage}`;
 
   return (
     <section className="relative py-20 lg:py-28 bg-background overflow-hidden">
@@ -58,12 +59,36 @@ const ServiceFinalCTA = memo(({ serviceKey }: ServiceFinalCTAProps) => {
               size="lg"
               className="glass-button min-w-[220px] border-primary/30 hover:border-primary/50"
             >
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+              <a 
+                href={whatsappUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => trackEvent({ event: 'whatsapp_click', location: `service_${serviceKey}_cta` })}
+              >
                 <MessageCircle className="w-4 h-4 mr-2" />
                 {t('servicePage.finalCTA.secondaryCTA')}
               </a>
             </Button>
           </div>
+
+          {/* Calendly link */}
+          <div className="mt-6">
+            <a
+              href={socialLinks.calendly}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackEvent({ event: 'calendly_click', location: `service_${serviceKey}_cta` })}
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Calendar className="w-4 h-4" />
+              {t('calculator.cta.planCall')}
+            </a>
+          </div>
+
+          {/* Trust microcopy */}
+          <p className="text-xs text-muted-foreground mt-4">
+            {t('servicePage.finalCTA.trustNote', 'Vrijblijvend gesprek · Definitieve offerte na intake · Prijzen excl. BTW')}
+          </p>
         </motion.div>
       </div>
     </section>

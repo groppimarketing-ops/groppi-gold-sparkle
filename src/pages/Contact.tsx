@@ -12,6 +12,8 @@ import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { trackEvent, socialLinks as socialUrls, contactInfo } from '@/utils/tracking';
 import SocialIconsPill from '@/components/shared/SocialIconsPill';
+import PageSEO from '@/components/seo/PageSEO';
+import { BreadcrumbSchema } from '@/components/seo/StructuredData';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters').max(100),
@@ -148,6 +150,12 @@ const Contact = () => {
 
   return (
     <PageLayout>
+      <PageSEO
+        title={t('contact.title', 'Contact')}
+        description={t('contact.description', 'Neem contact op met GROPPI. Bel, mail of chat via WhatsApp. Wij helpen je graag verder.')}
+        path="/contact"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.contact', 'Contact'), path: '/contact' }]} />
       {/* Hero Section */}
       <section className="relative py-24 md:py-36 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />

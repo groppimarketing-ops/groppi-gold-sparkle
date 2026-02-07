@@ -2,11 +2,12 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, ArrowLeft, User, Share2 } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
 import PageLayout from '@/components/layout/PageLayout';
 import { Button } from '@/components/ui/button';
 import { getArticleBySlug, blogArticles } from '@/data/blogArticles';
 import GlassCard from '@/components/ui/GlassCard';
+import PageSEO from '@/components/seo/PageSEO';
+import { BreadcrumbSchema } from '@/components/seo/StructuredData';
 
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -31,15 +32,19 @@ const BlogArticle = () => {
 
   return (
     <PageLayout>
-      <Helmet>
-        <title>{metaTitle} | GROPPI</title>
-        <meta name="description" content={metaDescription} />
-        <meta property="og:title" content={metaTitle} />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:image" content={article.image} />
-        <meta property="og:type" content="article" />
-        <link rel="canonical" href={`https://groppi.be/blog/${article.slug}`} />
-      </Helmet>
+      <PageSEO
+        title={metaTitle}
+        description={metaDescription}
+        path={`/blog/${article.slug}`}
+        ogImage={article.image}
+        type="article"
+        articlePublishedTime={article.date}
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', path: '/' },
+        { name: t('nav.blog', 'Blog'), path: '/blog' },
+        { name: title, path: `/blog/${article.slug}` },
+      ]} />
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden">

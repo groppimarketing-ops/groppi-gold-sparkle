@@ -84,7 +84,7 @@ Kan je dit bevestigen?`;
     return encodeURIComponent(message);
   };
 
-  const whatsappUrl = `https://wa.me/32470123456?text=${generateWhatsAppMessage()}`;
+  const whatsappUrl = `https://wa.me/32494311119?text=${generateWhatsAppMessage()}`;
 
   return (
     <section className="relative py-16 lg:py-24 bg-background">

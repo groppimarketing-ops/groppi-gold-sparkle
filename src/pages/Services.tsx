@@ -12,9 +12,10 @@ import ServiceCard, { ServiceData } from '@/components/services/ServiceCard';
 import GoalBasedEntry from '@/components/services/GoalBasedEntry';
 import ServiceDetailModal from '@/components/services/ServiceDetailModal';
 import HomeServiceMap from '@/components/home/HomeServiceMap';
-// Note: LaunchDiscountBanner removed from Services page - discount only shown on service detail pages after intent
 import ContentCalculator from '@/components/service-page/ContentCalculator';
 import PricingFAQ from '@/components/service-page/PricingFAQ';
+import PageSEO from '@/components/seo/PageSEO';
+import { BreadcrumbSchema } from '@/components/seo/StructuredData';
 
 const Services = () => {
   const { t, i18n } = useTranslation(); // rebuilt
@@ -274,6 +275,12 @@ const Services = () => {
 
   return (
     <PageLayout>
+      <PageSEO
+        title={t('services.title', 'Diensten')}
+        description={t('services.description', 'Ontdek onze diensten: social media management, SEO, advertenties, webdesign, contentcreatie en meer.')}
+        path="/services"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.services', 'Diensten'), path: '/services' }]} />
       {/* Hero Section */}
       <section className="relative py-24 md:py-32 overflow-hidden">
         {/* Background Effects */}

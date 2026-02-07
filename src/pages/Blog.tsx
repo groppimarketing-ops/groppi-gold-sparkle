@@ -2,11 +2,12 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Calendar, ArrowRight, Clock, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import PageLayout from '@/components/layout/PageLayout';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { blogArticles } from '@/data/blogArticles';
+import PageSEO from '@/components/seo/PageSEO';
+import { BreadcrumbSchema } from '@/components/seo/StructuredData';
 
 const Blog = () => {
   const { t, i18n } = useTranslation();
@@ -17,10 +18,12 @@ const Blog = () => {
 
   return (
     <PageLayout>
-      <Helmet>
-        <title>{t('blog.metaTitle')} | GROPPI</title>
-        <meta name="description" content={t('blog.metaDescription')} />
-      </Helmet>
+      <PageSEO
+        title={t('blog.title', 'Blog')}
+        description={t('blog.subtitle', 'Tips en inzichten over digital marketing, SEO, social media en meer.')}
+        path="/blog"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.blog', 'Blog'), path: '/blog' }]} />
 
       {/* Hero Section */}
       <section className="relative py-24 md:py-32 overflow-hidden">

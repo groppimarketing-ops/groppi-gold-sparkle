@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import PageLayout from '@/components/layout/PageLayout';
 import { motion } from 'framer-motion';
 import { FileText, Scale, AlertTriangle, CreditCard, Ban, RefreshCw, Gavel, Mail } from 'lucide-react';
+import PageSEO from '@/components/seo/PageSEO';
 
 const Terms = () => {
   const { t } = useTranslation();
@@ -52,10 +52,11 @@ const Terms = () => {
 
   return (
     <PageLayout>
-      <Helmet>
-        <title>{t('terms.meta.title')} | GROPPI</title>
-        <meta name="description" content={t('terms.meta.description')} />
-      </Helmet>
+      <PageSEO
+        title={t('terms.meta.title', 'Algemene Voorwaarden')}
+        description={t('terms.meta.description', 'De algemene voorwaarden van GROPPI Marketing Bureau.')}
+        path="/terms"
+      />
 
       <div className="container mx-auto px-4 py-16">
         {/* Hero Section */}

@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import PageLayout from '@/components/layout/PageLayout';
 import { motion } from 'framer-motion';
 import { Shield, Lock, Eye, UserCheck, Database, Mail, Globe, Clock } from 'lucide-react';
+import PageSEO from '@/components/seo/PageSEO';
 
 const Privacy = () => {
   const { t } = useTranslation();
@@ -47,10 +47,11 @@ const Privacy = () => {
 
   return (
     <PageLayout>
-      <Helmet>
-        <title>{t('privacy.meta.title')} | GROPPI</title>
-        <meta name="description" content={t('privacy.meta.description')} />
-      </Helmet>
+      <PageSEO
+        title={t('privacy.meta.title', 'Privacybeleid')}
+        description={t('privacy.meta.description', 'Het privacybeleid van GROPPI Marketing Bureau.')}
+        path="/privacy"
+      />
 
       <div className="container mx-auto px-4 py-16">
         {/* Hero Section */}

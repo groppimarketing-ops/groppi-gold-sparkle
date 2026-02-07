@@ -8,6 +8,8 @@ import PortfolioCard from '@/components/portfolio/PortfolioCard';
 import CaseStudyModal from '@/components/portfolio/CaseStudyModal';
 import { portfolioItems } from '@/data/portfolioItems';
 import type { PortfolioItem } from '@/types/portfolio';
+import PageSEO from '@/components/seo/PageSEO';
+import { BreadcrumbSchema } from '@/components/seo/StructuredData';
 
 // NDA Disclaimer component - premium gold styling
 const NdaDisclaimer = memo(() => {
@@ -45,6 +47,12 @@ const Gallery = () => {
 
   return (
     <PageLayout>
+      <PageSEO
+        title={t('gallery.title', 'Portfolio')}
+        description={t('gallery.description', 'Ontdek onze projecten. Van social media campagnes tot websites — bekijk het werk van GROPPI.')}
+        path="/gallery"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.gallery', 'Portfolio'), path: '/gallery' }]} />
       {/* Hero Section */}
       <section className="relative py-24 md:py-36 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />

@@ -1,4 +1,5 @@
 import { memo } from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ServicePageHero from './ServicePageHero';
@@ -7,9 +8,10 @@ import ServiceProcess from './ServiceProcess';
 import ServicePriceCalculator from './ServicePriceCalculator';
 import ServiceFAQ from './ServiceFAQ';
 import ServiceFinalCTA from './ServiceFinalCTA';
-// Note: LaunchDiscountBanner removed - discount now integrated into calculators
 import ContentCalculator from './ContentCalculator';
 import PricingFAQ from './PricingFAQ';
+import PageSEO from '@/components/seo/PageSEO';
+import { BreadcrumbSchema, ServiceSchema } from '@/components/seo/StructuredData';
 
 interface ServicePageTemplateProps {
   serviceKey: string;
@@ -29,15 +31,29 @@ interface ServicePageTemplateProps {
  * 6. Final CTA
  */
 const ServicePageTemplate = memo(({ serviceKey, videoUrl, posterImage }: ServicePageTemplateProps) => {
-  // Show Content Calculator for content production service
+  const { t } = useTranslation();
   const isContentProduction = serviceKey === 'contentProduction';
+  
+  // Convert camelCase key to slug for URL (e.g., 'socialMedia' -> 'social-media')
+  const slug = serviceKey.replace(/([A-Z])/g, '-$1').toLowerCase();
+  const serviceTitle = t(`servicePage.${serviceKey}.title`, serviceKey);
+  const serviceDescription = t(`servicePage.${serviceKey}.subtitle`, '');
   
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title={serviceTitle}
+        description={serviceDescription || `${serviceTitle} — Professionele dienst door GROPPI Marketing Bureau.`}
+        path={`/services/${slug}`}
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', path: '/' },
+        { name: t('nav.services', 'Diensten'), path: '/services' },
+        { name: serviceTitle, path: `/services/${slug}` },
+      ]} />
+      <ServiceSchema name={serviceTitle} description={serviceDescription} />
       <Header />
       <main>
-        {/* Note: Discount banner removed from top - now shown UNDER calculator after user shows intent */}
-        
         <ServicePageHero 
           serviceKey={serviceKey} 
           videoUrl={videoUrl}

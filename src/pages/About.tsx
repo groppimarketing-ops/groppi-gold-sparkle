@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import PageSEO from '@/components/seo/PageSEO';
+import { BreadcrumbSchema } from '@/components/seo/StructuredData';
 import { 
   Target, 
   Eye, 
@@ -53,6 +55,12 @@ const About = () => {
 
   return (
     <PageLayout>
+      <PageSEO
+        title={t('about.hero.title', 'Over GROPPI')}
+        description={t('about.hero.text', 'Leer ons team kennen. GROPPI is een digital marketing bureau in Merksplas, België, dat bedrijven helpt groeien.')}
+        path="/about"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.about', 'Over ons'), path: '/about' }]} />
       {/* Hero Section - Story Intro */}
       <section className="relative py-24 md:py-36 overflow-hidden">
         {/* Animated background */}

@@ -16,9 +16,11 @@ import HomeFinalCTA from '@/components/home/HomeFinalCTA';
 import HomeAfterHeroWrapper from '@/components/home/HomeAfterHeroWrapper';
 import DynamicSection from '@/components/sections/DynamicSection';
 import usePageContent from '@/hooks/usePageContent';
+import PageSEO from '@/components/seo/PageSEO';
+import { OrganizationSchema } from '@/components/seo/StructuredData';
 
 const Index = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const servicesGridRef = useRef<HTMLElement>(null);
   const [highlightedServices, setHighlightedServices] = useState<string[]>([]);
 
@@ -35,62 +37,35 @@ const Index = () => {
     
     setHighlightedServices(goalToServicesMap[goal]);
     
-    // Scroll to services grid
     setTimeout(() => {
       servicesGridRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 100);
     
-    // Clear highlights after a few seconds
     setTimeout(() => {
       setHighlightedServices([]);
     }, 5000);
   };
 
-  // Only use dynamic content if we have meaningful sections
   const validSectionTypes = ['hero', 'features', 'stats', 'content', 'cta'];
   const hasDynamicContent = sections.length > 0 && 
     sections.some(s => validSectionTypes.includes(s.section_type));
 
-  // Render default static content when no dynamic sections exist
-  // HOMEPAGE FLOW: Hero → Social Proof → Portfolio → Case Studies → Trust → CTA
   const renderStaticContent = () => (
     <>
-      {/* Hero with Video Background */}
       <HeroSection />
-
-      {/* All sections after Hero wrapped with continuous gold animated background */}
       <HomeAfterHeroWrapper>
-        {/* Post-Hero Trust Line - Immediate positioning */}
         <PostHeroTrust />
-
-        {/* Social Proof - Trusted across Belgium & Europe (RIGHT AFTER HERO) */}
         <HomeTrustedBelgium />
-
-        {/* Trust Sectors - Premium credibility section */}
         <HomeTrustSectors />
-
-        {/* Portfolio Highlights - 8 clickable cards */}
         <HomePortfolioGrid />
-
-        {/* Case Studies - Proof-based (3 cards) */}
         <HomeCaseStudies />
-
-        {/* Client Logo Marquee + Testimonials */}
         <HomeClientLogoMarquee />
-
-        {/* Quick Choice - For non-expert visitors (optional - links to services) */}
         <HomeQuickChoice onGoalSelect={handleGoalSelect} />
-
-        {/* Services Grid - Minimal on homepage, link to /services */}
         <HomeServicesGrid 
           ref={servicesGridRef}
           highlightedServices={highlightedServices}
         />
-
-        {/* Trust Section - 10+ years credibility */}
         <HomeTrustSection />
-
-        {/* Final CTA */}
         <HomeFinalCTA />
       </HomeAfterHeroWrapper>
     </>
@@ -98,10 +73,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Digital Marketing Bureau België"
+        description={t('home.heroNew.subtitle', 'GROPPI is een full-service digital marketing bureau in België. Social media management, SEO, advertenties, webdesign en contentcreatie.')}
+        path="/"
+      />
+      <OrganizationSchema />
       <Header />
       <main>
         {hasDynamicContent ? (
-          // Render dynamic sections from database
           sections.map((section) => (
             <DynamicSection
               key={section.id}
@@ -111,7 +91,6 @@ const Index = () => {
             />
           ))
         ) : (
-          // Fallback to static content
           renderStaticContent()
         )}
       </main>
