@@ -10,6 +10,7 @@ import {
   ArrowRight, Calculator
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import WaveAnimation from '@/components/effects/WaveAnimation';
 
 interface ServiceItem {
   labelKey: string;
@@ -65,9 +66,10 @@ const HomeServiceMap = memo(() => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative py-20 lg:py-28 bg-background">
-      {/* Subtle gold gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.02] via-transparent to-primary/[0.02] pointer-events-none" />
+    <section className="relative py-20 lg:py-28 bg-background overflow-hidden">
+      {/* Gold glow background — matches other page sections */}
+      <WaveAnimation />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] via-transparent to-primary/[0.03] pointer-events-none" />
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
@@ -118,20 +120,18 @@ const HomeServiceMap = memo(() => {
                 {t(column.titleKey)}
               </h3>
               
-              {/* Service Items */}
+              {/* Service Items — informational, not clickable */}
               <div className="space-y-1">
-                {column.services.map((service, serviceIndex) => (
-                  <Link
+                {column.services.map((service) => (
+                  <div
                     key={service.labelKey}
-                    to={service.href}
-                    className="group flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-primary/10 hover:shadow-[0_0_20px_hsl(var(--primary)/0.15)] cursor-pointer"
+                    className="flex items-center gap-3 p-3 rounded-lg"
                   >
-                    <service.icon className="w-5 h-5 text-primary/70 group-hover:text-primary transition-colors flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                    <service.icon className="w-5 h-5 text-primary/70 flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">
                       {t(service.labelKey)}
                     </span>
-                    <ArrowRight className="w-4 h-4 text-primary/0 group-hover:text-primary/70 ml-auto transition-all duration-300 -translate-x-2 group-hover:translate-x-0" />
-                  </Link>
+                  </div>
                 ))}
               </div>
             </motion.div>
