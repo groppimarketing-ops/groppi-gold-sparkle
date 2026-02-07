@@ -6,7 +6,7 @@
     "blog": "Blog",
     "gallery": "Portfólio",
     "contact": "Contacto",
-    "franchise": "Parceria"
+    "franchise": "Franquia"
   },
   "hero": {
     "title": "GROPPI – Experiência humana, potenciada por tecnologia inteligente",
@@ -243,11 +243,11 @@
     "emailLabel": "Email"
   },
   "franchise": {
-    "title": "Parceria",
-    "subtitle": "Torne-se parceiro",
+    "title": "Franquia",
+    "subtitle": "Torne-se um franqueado",
     "description": "Está interessado em fazer parceria com a GROPPI? Descubra as oportunidades de crescer juntos.",
     "benefits": {
-      "title": "Benefícios da parceria",
+      "title": "Benefícios da franquia",
       "items": {
         "0": "Acesso a processos e metodologias comprovadas",
         "1": "Apoio da nossa equipa experiente",

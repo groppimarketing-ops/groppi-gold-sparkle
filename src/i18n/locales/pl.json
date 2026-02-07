@@ -6,7 +6,7 @@
     "blog": "Blog",
     "gallery": "Portfolio",
     "contact": "Kontakt",
-    "franchise": "Partnerstwo"
+    "franchise": "Franczyza"
   },
   "hero": {
     "title": "GROPPI – Ludzka ekspertyza, wspierana przez inteligentną technologię",
@@ -243,11 +243,11 @@
     "emailLabel": "E-mail"
   },
   "franchise": {
-    "title": "Partnerstwo",
-    "subtitle": "Zostań partnerem",
+    "title": "Franczyza",
+    "subtitle": "Zostań franczyzobiorcą",
     "description": "Zainteresowany partnerstwem z GROPPI? Odkryj możliwości wspólnego rozwoju.",
     "benefits": {
-      "title": "Korzyści z partnerstwa",
+      "title": "Korzyści z franczyzy",
       "items": {
         "0": "Dostęp do sprawdzonych procesów i metodologii",
         "1": "Wsparcie naszego doświadczonego zespołu",

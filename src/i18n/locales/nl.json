@@ -6,8 +6,8 @@
     "blog": "Blog",
     "gallery": "Portfolio",
     "contact": "Contact",
-    "partnership": "Samenwerking",
-    "franchise": "Samenwerking"
+    "partnership": "Franchise",
+    "franchise": "Franchise"
   },
   "pricing": {
     "from": "Vanaf",
@@ -1323,11 +1323,11 @@
     "mobile": "Mobiel"
   },
   "franchise": {
-    "title": "Samenwerking",
-    "subtitle": "Word partner",
+    "title": "Franchise",
+    "subtitle": "Word franchisenemer",
     "description": "Bent u geïnteresseerd in een samenwerking met GROPPI? Ontdek de mogelijkheden om samen te groeien.",
     "benefits": {
-      "title": "Voordelen van samenwerking",
+      "title": "Franchise voordelen",
       "items": {
         "0": "Toegang tot bewezen processen en methodologieën",
         "1": "Ondersteuning van ons ervaren team",

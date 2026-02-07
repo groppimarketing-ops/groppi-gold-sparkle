@@ -6,7 +6,7 @@
     "blog": "Blog",
     "gallery": "Portfolio",
     "contact": "Contact",
-    "franchise": "Partenariat"
+    "franchise": "Franchise"
   },
   "pricing": {
     "from": "À partir de",
@@ -419,11 +419,11 @@
     "mobile": "Mobile"
   },
   "franchise": {
-    "title": "Partenariat",
-    "subtitle": "Devenir partenaire",
+    "title": "Franchise",
+    "subtitle": "Devenir franchisé",
     "description": "Vous êtes intéressé par un partenariat avec GROPPI ? Découvrez les opportunités de croître ensemble.",
     "benefits": {
-      "title": "Avantages du partenariat",
+      "title": "Avantages de la franchise",
       "items": {
         "0": "Accès à des processus et méthodologies éprouvés",
         "1": "Soutien de notre équipe expérimentée",

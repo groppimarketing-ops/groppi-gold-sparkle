@@ -6,7 +6,7 @@
     "blog": "Blog",
     "gallery": "Portfolio",
     "contact": "Kontakt",
-    "franchise": "Partnerschaft"
+    "franchise": "Franchise"
   },
   "hero": {
     "title": "GROPPI – Menschliche Expertise, unterstützt durch intelligente Technologie",
@@ -297,11 +297,11 @@
     "mobile": "Mobil"
   },
   "franchise": {
-    "title": "Partnerschaft",
-    "subtitle": "Partner werden",
+    "title": "Franchise",
+    "subtitle": "Franchise-Nehmer werden",
     "description": "Interessieren Sie sich für eine Partnerschaft mit GROPPI? Entdecken Sie die Möglichkeiten, gemeinsam zu wachsen.",
     "benefits": {
-      "title": "Partnerschaftsvorteile",
+      "title": "Franchise-Vorteile",
       "items": {
         "0": "Zugang zu bewährten Prozessen und Methoden",
         "1": "Unterstützung durch unser erfahrenes Team",

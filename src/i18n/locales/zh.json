@@ -6,7 +6,7 @@
     "blog": "博客",
     "gallery": "作品集",
     "contact": "联系我们",
-    "franchise": "合作伙伴"
+    "franchise": "特许经营"
   },
   "hero": {
     "title": "GROPPI – 人类专业知识，智能技术赋能",
@@ -239,11 +239,11 @@
     "emailLabel": "邮箱"
   },
   "franchise": {
-    "title": "合作伙伴",
-    "subtitle": "成为合作伙伴",
+    "title": "特许经营",
+    "subtitle": "成为特许经营商",
     "description": "有兴趣与GROPPI合作？发现共同成长的机会。",
     "benefits": {
-      "title": "合作伙伴优势",
+      "title": "特许经营优势",
       "items": {
         "0": "获取经过验证的流程和方法论",
         "1": "我们经验丰富的团队提供支持",

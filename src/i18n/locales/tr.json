@@ -6,7 +6,7 @@
     "blog": "Blog",
     "gallery": "Portföy",
     "contact": "İletişim",
-    "franchise": "Ortaklık"
+    "franchise": "Franchise"
   },
   "hero": {
     "title": "GROPPI – İnsan Uzmanlığı, Akıllı Teknoloji ile Güçlendirilmiş",
@@ -239,11 +239,11 @@
     "emailLabel": "E-posta"
   },
   "franchise": {
-    "title": "Ortaklık",
-    "subtitle": "Ortak Olun",
+    "title": "Franchise",
+    "subtitle": "Franchise Sahibi Olun",
     "description": "GROPPI ile ortaklık kurmakla ilgileniyor musunuz? Birlikte büyüme fırsatlarını keşfedin.",
     "benefits": {
-      "title": "Ortaklık Avantajları",
+      "title": "Franchise Avantajları",
       "items": {
         "0": "Kanıtlanmış süreç ve metodolojilere erişim",
         "1": "Deneyimli ekibimizden destek",

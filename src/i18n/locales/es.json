@@ -6,7 +6,7 @@
     "blog": "Blog",
     "gallery": "Portfolio",
     "contact": "Contacto",
-    "franchise": "Asociación"
+    "franchise": "Franquicia"
   },
   "hero": {
     "title": "GROPPI – Experiencia humana, potenciada por tecnología inteligente",
@@ -243,11 +243,11 @@
     "emailLabel": "Email"
   },
   "franchise": {
-    "title": "Asociación",
-    "subtitle": "Conviértete en socio",
+    "title": "Franquicia",
+    "subtitle": "Conviértete en franquiciado",
     "description": "¿Estás interesado en asociarte con GROPPI? Descubre las oportunidades de crecer juntos.",
     "benefits": {
-      "title": "Beneficios de la asociación",
+      "title": "Beneficios de la franquicia",
       "items": {
         "0": "Acceso a procesos y metodologías probadas",
         "1": "Apoyo de nuestro equipo experimentado",

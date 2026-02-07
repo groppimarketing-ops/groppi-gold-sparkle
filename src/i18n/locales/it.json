@@ -6,7 +6,7 @@
     "blog": "Blog",
     "gallery": "Portfolio",
     "contact": "Contatti",
-    "franchise": "Partnership"
+    "franchise": "Franchising"
   },
   "hero": {
     "title": "GROPPI – Competenza umana, potenziata da tecnologia intelligente",
@@ -243,11 +243,11 @@
     "emailLabel": "Email"
   },
   "franchise": {
-    "title": "Partnership",
-    "subtitle": "Diventa partner",
+    "title": "Franchising",
+    "subtitle": "Diventa affiliato",
     "description": "Sei interessato a una partnership con GROPPI? Scopri le opportunità per crescere insieme.",
     "benefits": {
-      "title": "Vantaggi della partnership",
+      "title": "Vantaggi del franchising",
       "items": {
         "0": "Accesso a processi e metodologie consolidate",
         "1": "Supporto dal nostro team esperto",
