@@ -6,7 +6,43 @@
     "blog": "Blog",
     "gallery": "Portfolio",
     "contact": "Kontakt",
-    "franchise": "Franchise"
+    "franchise": "Franchise",
+    "careers": "Karriere"
+  },
+  "careers": {
+    "meta": { "title": "Karriere", "description": "Werden Sie Teil des GROPPI-Teams und helfen Sie belgischen und europäischen Unternehmen, mit messbaren Ergebnissen zu wachsen." },
+    "hero": { "title": "Karriere bei GROPPI", "subtitle": "Werden Sie Teil eines Teams, das messbares Wachstum für Unternehmen in Belgien und Europa aufbaut.", "viewRoles": "Offene Stellen ansehen", "sendCv": "Lebenslauf senden" },
+    "types": { "fullTime": "Vollzeit", "partTime": "Teilzeit", "freelance": "Freiberuflich" },
+    "locations": { "belgium": "Belgien", "remote": "Remote", "hybrid": "Hybrid" },
+    "roles": {
+      "title": "Offene Stellen", "subtitle": "Entdecken Sie Ihren nächsten Karriereschritt bei einer schnell wachsenden Digitalagentur.",
+      "responsibilitiesLabel": "Aufgaben", "requirementsLabel": "Anforderungen", "applyNow": "Jetzt bewerben",
+      "performanceMarketer": { "title": "Performance Marketer (Meta/Google)", "responsibilities": "Verwaltung und Optimierung von bezahlten Kampagnen auf Meta und Google. Daten analysieren und Ergebnisse berichten.", "requirements": "2+ Jahre Erfahrung mit bezahlter Werbung. Kenntnisse in Meta Ads Manager und Google Ads. Datengetriebene Denkweise." },
+      "seoSpecialist": { "title": "SEO-Spezialist", "responsibilities": "SEO-Strategien entwickeln und umsetzen. Technische Audits durchführen und Inhalte optimieren.", "requirements": "2+ Jahre SEO-Erfahrung. Kenntnisse in technischem SEO, Keyword-Recherche und Content-Optimierung." },
+      "webDesigner": { "title": "Web Designer (UI/UX)", "responsibilities": "Moderne, conversion-optimierte Websites gestalten. Wireframes und Prototypen erstellen.", "requirements": "Portfolio mit Webdesign-Projekten. Kenntnisse in Figma oder ähnlichen Tools. Verständnis von UX-Prinzipien." },
+      "contentCreator": { "title": "Content Creator (Video/KI)", "responsibilities": "Videoinhalte für Social Media produzieren. Mit KI-Tools für Content-Erstellung arbeiten.", "requirements": "Erfahrung in Videobearbeitung. Kenntnisse über Social-Media-Trends. Kreativität und Liebe zum Detail." },
+      "salesBd": { "title": "Vertrieb / Business Development", "responsibilities": "Potenzielle Kunden identifizieren und ansprechen. Beziehungen aufbauen und Geschäfte abschließen.", "requirements": "B2B-Vertriebserfahrung. Ausgezeichnete Kommunikationsfähigkeiten. Ergebnisorientiert und proaktiv." }
+    },
+    "form": {
+      "title": "Jetzt bewerben", "subtitle": "Füllen Sie das Formular aus und laden Sie Ihren Lebenslauf hoch. Wir melden uns bald bei Ihnen.",
+      "fullName": "Vollständiger Name", "fullNamePlaceholder": "Max Mustermann", "email": "E-Mail-Adresse", "emailPlaceholder": "max@beispiel.de",
+      "phone": "Telefonnummer", "phonePlaceholder": "+49 123 456 789", "role": "Position", "rolePlaceholder": "Position auswählen",
+      "otherRole": "Andere / Initiativbewerbung", "linkedin": "LinkedIn / Portfolio URL", "linkedinPlaceholder": "https://linkedin.com/in/ihr-profil",
+      "message": "Kurze Nachricht", "messagePlaceholder": "Erzählen Sie uns, warum Sie interessiert sind (optional)",
+      "cv": "Lebenslauf hochladen", "cvPlaceholder": "Klicken Sie, um Ihren Lebenslauf hochzuladen (PDF, DOC, DOCX)", "cvHint": "Max 10MB. Unterstützte Formate: PDF, DOC, DOCX",
+      "cvRequired": "Lebenslauf ist erforderlich", "invalidFileType": "Ungültiger Dateityp. Bitte laden Sie ein PDF, DOC oder DOCX hoch.", "fileTooLarge": "Datei ist zu groß. Maximal 10MB erlaubt.",
+      "consent": "Ich stimme zu, bezüglich meiner Bewerbung kontaktiert zu werden.", "submit": "Bewerbung absenden", "submitting": "Wird gesendet...", "uploading": "Lebenslauf wird hochgeladen...",
+      "successTitle": "Bewerbung erhalten!", "successMessage": "Vielen Dank für Ihr Interesse. Wir melden uns so schnell wie möglich bei Ihnen.", "submitAnother": "Weitere Bewerbung einreichen",
+      "errorTitle": "Etwas ist schief gelaufen", "errorMessage": "Wir konnten Ihre Bewerbung nicht verarbeiten. Bitte versuchen Sie es erneut.",
+      "privacyNote": "Ihre Daten werden nur für die Rekrutierung verwendet. Lebensläufe werden vertraulich behandelt.", "contactLink": "Kontaktieren Sie uns"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "spontaneous": { "q": "Akzeptieren Sie Initiativbewerbungen?", "a": "Ja! Auch ohne passende Stelle freuen wir uns über Ihren Lebenslauf. Wählen Sie 'Andere / Initiativbewerbung' im Formular." },
+      "remote": { "q": "Remote oder vor Ort?", "a": "Die meisten Positionen sind hybrid (Kombination aus Homeoffice und Büro). Einige Rollen sind vollständig remote möglich. Dies wird bei jeder Stelle angegeben." },
+      "response": { "q": "Wie schnell antworten Sie?", "a": "Wir bemühen uns, innerhalb von 5 Werktagen zu antworten. Bei vielen Bewerbungen kann es länger dauern, aber wir melden uns immer zurück." },
+      "cv": { "q": "Was sollte ich in meinen Lebenslauf aufnehmen?", "a": "Konzentrieren Sie sich auf relevante Erfahrungen und Ergebnisse. Zeigen Sie Projekte oder ein Portfolio, wenn möglich. Halten Sie es prägnant (max. 2 Seiten)." }
+    }
   },
   "hero": {
     "title": "GROPPI – Menschliche Expertise, unterstützt durch intelligente Technologie",

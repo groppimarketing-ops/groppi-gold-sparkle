@@ -7,7 +7,115 @@
     "gallery": "Portfolio",
     "contact": "Contact",
     "partnership": "Franchise",
-    "franchise": "Franchise"
+    "franchise": "Franchise",
+    "careers": "Careers"
+  },
+  "careers": {
+    "meta": {
+      "title": "Careers",
+      "description": "Join the GROPPI team and help Belgian and European businesses grow with measurable results."
+    },
+    "hero": {
+      "title": "Careers at GROPPI",
+      "subtitle": "Join a team building measurable growth for businesses in Belgium & Europe.",
+      "viewRoles": "View open roles",
+      "sendCv": "Send your CV"
+    },
+    "types": {
+      "fullTime": "Full-time",
+      "partTime": "Part-time",
+      "freelance": "Freelance"
+    },
+    "locations": {
+      "belgium": "Belgium",
+      "remote": "Remote",
+      "hybrid": "Hybrid"
+    },
+    "roles": {
+      "title": "Open positions",
+      "subtitle": "Discover your next career move at a fast-growing digital agency.",
+      "responsibilitiesLabel": "Responsibilities",
+      "requirementsLabel": "Requirements",
+      "applyNow": "Apply now",
+      "performanceMarketer": {
+        "title": "Performance Marketer (Meta/Google)",
+        "responsibilities": "Manage and optimize paid campaigns on Meta and Google. Analyze data and report results.",
+        "requirements": "2+ years experience with paid advertising. Knowledge of Meta Ads Manager and Google Ads. Data-driven mindset."
+      },
+      "seoSpecialist": {
+        "title": "SEO Specialist",
+        "responsibilities": "Develop and implement SEO strategies. Conduct technical audits and optimize content.",
+        "requirements": "2+ years SEO experience. Knowledge of technical SEO, keyword research and content optimization."
+      },
+      "webDesigner": {
+        "title": "Web Designer (UI/UX)",
+        "responsibilities": "Design modern, conversion-optimized websites. Create wireframes and prototypes.",
+        "requirements": "Portfolio with web design projects. Proficiency in Figma or similar tools. Understanding of UX principles."
+      },
+      "contentCreator": {
+        "title": "Content Creator (Video/AI)",
+        "responsibilities": "Produce video content for social media. Work with AI tools for content creation.",
+        "requirements": "Video editing experience. Knowledge of social media trends. Creativity and attention to detail."
+      },
+      "salesBd": {
+        "title": "Sales / Business Development",
+        "responsibilities": "Identify and approach potential clients. Build relationships and close deals.",
+        "requirements": "B2B sales experience. Excellent communication skills. Results-oriented and proactive."
+      }
+    },
+    "form": {
+      "title": "Apply now",
+      "subtitle": "Fill in the form and upload your CV. We'll get back to you soon.",
+      "fullName": "Full name",
+      "fullNamePlaceholder": "John Smith",
+      "email": "Email address",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone number",
+      "phonePlaceholder": "+32 400 00 00 00",
+      "role": "Position",
+      "rolePlaceholder": "Select a position",
+      "otherRole": "Other / Spontaneous application",
+      "linkedin": "LinkedIn / Portfolio URL",
+      "linkedinPlaceholder": "https://linkedin.com/in/your-profile",
+      "message": "Short message",
+      "messagePlaceholder": "Tell us why you're interested (optional)",
+      "cv": "Upload CV",
+      "cvPlaceholder": "Click to upload your CV (PDF, DOC, DOCX)",
+      "cvHint": "Max 10MB. Supported formats: PDF, DOC, DOCX",
+      "cvRequired": "CV is required",
+      "invalidFileType": "Invalid file type. Please upload a PDF, DOC or DOCX.",
+      "fileTooLarge": "File is too large. Maximum 10MB allowed.",
+      "consent": "I agree to be contacted about my application.",
+      "submit": "Submit application",
+      "submitting": "Submitting...",
+      "uploading": "Uploading CV...",
+      "successTitle": "Application received!",
+      "successMessage": "Thank you for your interest. We'll get back to you as soon as possible.",
+      "submitAnother": "Submit another application",
+      "errorTitle": "Something went wrong",
+      "errorMessage": "We couldn't process your application. Please try again.",
+      "privacyNote": "Your data is used only for recruitment. CVs are handled confidentially.",
+      "contactLink": "Contact us"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "spontaneous": {
+        "q": "Do you accept spontaneous applications?",
+        "a": "Yes! Even if there's no matching vacancy, we're happy to receive your CV. Select 'Other / Spontaneous application' in the form."
+      },
+      "remote": {
+        "q": "Remote or on-site?",
+        "a": "Most positions are hybrid (combination of home and office). Some roles are fully remote. This is specified for each vacancy."
+      },
+      "response": {
+        "q": "How fast do you reply?",
+        "a": "We aim to respond within 5 business days. With many applications, this may take longer, but we always follow up."
+      },
+      "cv": {
+        "q": "What should I include in my CV?",
+        "a": "Focus on relevant experience and results. Show projects or portfolio where possible. Keep it concise (max 2 pages)."
+      }
+    }
   },
   "pricing": {
     "from": "From",

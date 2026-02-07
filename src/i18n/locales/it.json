@@ -6,7 +6,43 @@
     "blog": "Blog",
     "gallery": "Portfolio",
     "contact": "Contatti",
-    "franchise": "Franchising"
+    "franchise": "Franchising",
+    "careers": "Lavora con noi"
+  },
+  "careers": {
+    "meta": { "title": "Lavora con noi", "description": "Unisciti al team GROPPI e aiuta le aziende belghe ed europee a crescere con risultati misurabili." },
+    "hero": { "title": "Carriere in GROPPI", "subtitle": "Unisciti a un team che costruisce crescita misurabile per le aziende in Belgio ed Europa.", "viewRoles": "Vedi posizioni aperte", "sendCv": "Invia il tuo CV" },
+    "types": { "fullTime": "Full-time", "partTime": "Part-time", "freelance": "Freelance" },
+    "locations": { "belgium": "Belgio", "remote": "Remoto", "hybrid": "Ibrido" },
+    "roles": {
+      "title": "Posizioni aperte", "subtitle": "Scopri il tuo prossimo passo di carriera in un'agenzia digitale in rapida crescita.",
+      "responsibilitiesLabel": "Responsabilità", "requirementsLabel": "Requisiti", "applyNow": "Candidati ora",
+      "performanceMarketer": { "title": "Performance Marketer (Meta/Google)", "responsibilities": "Gestire e ottimizzare campagne a pagamento su Meta e Google. Analizzare dati e riportare risultati.", "requirements": "2+ anni di esperienza nella pubblicità a pagamento. Conoscenza di Meta Ads Manager e Google Ads. Mentalità data-driven." },
+      "seoSpecialist": { "title": "Specialista SEO", "responsibilities": "Sviluppare e implementare strategie SEO. Condurre audit tecnici e ottimizzare contenuti.", "requirements": "2+ anni di esperienza SEO. Conoscenza di SEO tecnico, ricerca keyword e ottimizzazione contenuti." },
+      "webDesigner": { "title": "Web Designer (UI/UX)", "responsibilities": "Progettare siti web moderni e ottimizzati per la conversione. Creare wireframe e prototipi.", "requirements": "Portfolio con progetti di web design. Competenza in Figma o strumenti simili. Comprensione dei principi UX." },
+      "contentCreator": { "title": "Content Creator (Video/AI)", "responsibilities": "Produrre contenuti video per social media. Lavorare con strumenti AI per la creazione di contenuti.", "requirements": "Esperienza nel video editing. Conoscenza delle tendenze social media. Creatività e attenzione ai dettagli." },
+      "salesBd": { "title": "Vendite / Business Development", "responsibilities": "Identificare e approcciare potenziali clienti. Costruire relazioni e chiudere accordi.", "requirements": "Esperienza nelle vendite B2B. Eccellenti capacità comunicative. Orientato ai risultati e proattivo." }
+    },
+    "form": {
+      "title": "Candidati ora", "subtitle": "Compila il modulo e carica il tuo CV. Ti ricontatteremo presto.",
+      "fullName": "Nome completo", "fullNamePlaceholder": "Mario Rossi", "email": "Indirizzo email", "emailPlaceholder": "mario@esempio.it",
+      "phone": "Numero di telefono", "phonePlaceholder": "+39 333 000 0000", "role": "Posizione", "rolePlaceholder": "Seleziona una posizione",
+      "otherRole": "Altro / Candidatura spontanea", "linkedin": "LinkedIn / URL Portfolio", "linkedinPlaceholder": "https://linkedin.com/in/tuo-profilo",
+      "message": "Breve messaggio", "messagePlaceholder": "Raccontaci perché sei interessato (opzionale)",
+      "cv": "Carica CV", "cvPlaceholder": "Clicca per caricare il tuo CV (PDF, DOC, DOCX)", "cvHint": "Max 10MB. Formati supportati: PDF, DOC, DOCX",
+      "cvRequired": "Il CV è obbligatorio", "invalidFileType": "Tipo di file non valido. Carica un PDF, DOC o DOCX.", "fileTooLarge": "File troppo grande. Massimo 10MB consentito.",
+      "consent": "Accetto di essere contattato riguardo alla mia candidatura.", "submit": "Invia candidatura", "submitting": "Invio in corso...", "uploading": "Caricamento CV...",
+      "successTitle": "Candidatura ricevuta!", "successMessage": "Grazie per il tuo interesse. Ti ricontatteremo il prima possibile.", "submitAnother": "Invia un'altra candidatura",
+      "errorTitle": "Qualcosa è andato storto", "errorMessage": "Non siamo riusciti a elaborare la tua candidatura. Riprova.",
+      "privacyNote": "I tuoi dati sono utilizzati solo per il reclutamento. I CV sono trattati in modo confidenziale.", "contactLink": "Contattaci"
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "spontaneous": { "q": "Accettate candidature spontanee?", "a": "Sì! Anche senza una posizione corrispondente, siamo felici di ricevere il tuo CV. Seleziona 'Altro / Candidatura spontanea' nel modulo." },
+      "remote": { "q": "Remoto o in sede?", "a": "La maggior parte delle posizioni sono ibride (combinazione casa e ufficio). Alcuni ruoli sono completamente remoti. Questo è specificato per ogni posizione." },
+      "response": { "q": "Quanto velocemente rispondete?", "a": "Puntiamo a rispondere entro 5 giorni lavorativi. Con molte candidature, potrebbe richiedere più tempo, ma rispondiamo sempre." },
+      "cv": { "q": "Cosa dovrei includere nel mio CV?", "a": "Concentrati sull'esperienza rilevante e sui risultati. Mostra progetti o portfolio se possibile. Mantienilo conciso (max 2 pagine)." }
+    }
   },
   "hero": {
     "title": "GROPPI – Competenza umana, potenziata da tecnologia intelligente",

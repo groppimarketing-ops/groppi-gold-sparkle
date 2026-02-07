@@ -169,6 +169,7 @@ const Header = () => {
     { path: '/blog', label: t('nav.blog') },
     { path: '/gallery', label: t('nav.gallery') },
     { path: '/franchise', label: t('nav.partnership') },
+    { path: '/careers', label: t('nav.careers') },
     { path: '/contact', label: t('nav.contact') },
   ];
 

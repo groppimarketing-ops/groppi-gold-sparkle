@@ -179,6 +179,45 @@ export type Database = {
         }
         Relationships: []
       }
+      job_applications: {
+        Row: {
+          consent: boolean
+          created_at: string
+          cv_url: string
+          email: string
+          full_name: string
+          id: string
+          linkedin_url: string | null
+          message: string | null
+          phone: string | null
+          role: string
+        }
+        Insert: {
+          consent?: boolean
+          created_at?: string
+          cv_url: string
+          email: string
+          full_name: string
+          id?: string
+          linkedin_url?: string | null
+          message?: string | null
+          phone?: string | null
+          role: string
+        }
+        Update: {
+          consent?: boolean
+          created_at?: string
+          cv_url?: string
+          email?: string
+          full_name?: string
+          id?: string
+          linkedin_url?: string | null
+          message?: string | null
+          phone?: string | null
+          role?: string
+        }
+        Relationships: []
+      }
       media: {
         Row: {
           created_at: string
