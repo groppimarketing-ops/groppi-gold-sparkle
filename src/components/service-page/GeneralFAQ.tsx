@@ -9,20 +9,17 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-const PricingFAQ = memo(() => {
+const GeneralFAQ = memo(() => {
   const { t } = useTranslation();
 
   const faqKeys = [
-    'fixedOrFlexible',
-    'startingFrom',
-    'monthlyOrOneTime',
-    'vatIncluded',
-    'discounts',
-    'calculator',
-    'invoice',
-    'priceChange',
-    'reelPrice',
-    'payment',
+    'whoFor',
+    'smallOrLarge',
+    'onlyBelgium',
+    'howToStart',
+    'howLongResults',
+    'longTermContracts',
+    'combineServices',
   ];
 
   return (
@@ -41,7 +38,7 @@ const PricingFAQ = memo(() => {
             >
               <HelpCircle className="w-5 h-5" />
               <span className="text-xs font-semibold tracking-[0.2em] uppercase">
-                {t('servicePage.pricingFAQ.label')}
+                {t('servicePage.generalFAQ.label')}
               </span>
             </motion.div>
             
@@ -52,7 +49,7 @@ const PricingFAQ = memo(() => {
               transition={{ delay: 0.1 }}
               className="text-3xl md:text-4xl font-bold gold-gradient-text"
             >
-              {t('servicePage.pricingFAQ.title')}
+              {t('servicePage.generalFAQ.title')}
             </motion.h2>
           </div>
 
@@ -67,16 +64,16 @@ const PricingFAQ = memo(() => {
               {faqKeys.map((key, index) => (
                 <AccordionItem
                   key={key}
-                  value={`faq-${index}`}
+                  value={`general-faq-${index}`}
                   className="glass-card border-primary/20 px-6 rounded-xl !overflow-visible data-[state=open]:border-primary/40 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-5">
                     <span className="text-foreground font-medium pr-4">
-                      {t(`servicePage.pricingFAQ.questions.${key}.q`)}
+                      {t(`servicePage.generalFAQ.questions.${key}.q`)}
                     </span>
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pb-5">
-                    {t(`servicePage.pricingFAQ.questions.${key}.a`)}
+                    {t(`servicePage.generalFAQ.questions.${key}.a`)}
                   </AccordionContent>
                 </AccordionItem>
               ))}
@@ -88,6 +85,6 @@ const PricingFAQ = memo(() => {
   );
 });
 
-PricingFAQ.displayName = 'PricingFAQ';
+GeneralFAQ.displayName = 'GeneralFAQ';
 
-export default PricingFAQ;
+export default GeneralFAQ;

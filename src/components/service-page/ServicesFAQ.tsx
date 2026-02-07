@@ -9,20 +9,19 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-const PricingFAQ = memo(() => {
+const ServicesFAQ = memo(() => {
   const { t } = useTranslation();
 
   const faqKeys = [
-    'fixedOrFlexible',
-    'startingFrom',
-    'monthlyOrOneTime',
-    'vatIncluded',
-    'discounts',
-    'calculator',
-    'invoice',
-    'priceChange',
-    'reelPrice',
-    'payment',
+    'onePageVsBusiness',
+    'seoOneTimeOrOngoing',
+    'adBudgetManagement',
+    'contentOrManagement',
+    'withoutWebsite',
+    'videoInSocial',
+    'ecommerceVsBusiness',
+    'reputationHowItWorks',
+    'dataSyncExplained',
   ];
 
   return (
@@ -41,7 +40,7 @@ const PricingFAQ = memo(() => {
             >
               <HelpCircle className="w-5 h-5" />
               <span className="text-xs font-semibold tracking-[0.2em] uppercase">
-                {t('servicePage.pricingFAQ.label')}
+                {t('servicePage.servicesFAQ.label')}
               </span>
             </motion.div>
             
@@ -52,7 +51,7 @@ const PricingFAQ = memo(() => {
               transition={{ delay: 0.1 }}
               className="text-3xl md:text-4xl font-bold gold-gradient-text"
             >
-              {t('servicePage.pricingFAQ.title')}
+              {t('servicePage.servicesFAQ.title')}
             </motion.h2>
           </div>
 
@@ -67,16 +66,16 @@ const PricingFAQ = memo(() => {
               {faqKeys.map((key, index) => (
                 <AccordionItem
                   key={key}
-                  value={`faq-${index}`}
+                  value={`services-faq-${index}`}
                   className="glass-card border-primary/20 px-6 rounded-xl !overflow-visible data-[state=open]:border-primary/40 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-5">
                     <span className="text-foreground font-medium pr-4">
-                      {t(`servicePage.pricingFAQ.questions.${key}.q`)}
+                      {t(`servicePage.servicesFAQ.questions.${key}.q`)}
                     </span>
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pb-5">
-                    {t(`servicePage.pricingFAQ.questions.${key}.a`)}
+                    {t(`servicePage.servicesFAQ.questions.${key}.a`)}
                   </AccordionContent>
                 </AccordionItem>
               ))}
@@ -88,6 +87,6 @@ const PricingFAQ = memo(() => {
   );
 });
 
-PricingFAQ.displayName = 'PricingFAQ';
+ServicesFAQ.displayName = 'ServicesFAQ';
 
-export default PricingFAQ;
+export default ServicesFAQ;

@@ -214,23 +214,123 @@
     },
     "pricingFAQ": {
       "label": "Frequently asked questions",
-      "title": "Pricing FAQ",
+      "title": "Pricing & Process FAQ",
       "questions": {
+        "fixedOrFlexible": {
+          "q": "Are your prices fixed or flexible?",
+          "a": "Some services have fixed prices (e.g. posters, articles). Others use 'starting from' pricing depending on scope. You always receive an exact quote after the intake."
+        },
+        "startingFrom": {
+          "q": "What does 'Starting from' mean?",
+          "a": "It's the minimum starting price for that service. The final price depends on your specific needs and scope. After a short conversation, you'll get an exact quote."
+        },
+        "monthlyOrOneTime": {
+          "q": "Are prices monthly or one-time?",
+          "a": "It depends on the service. Websites and content production are one-time. SEO, ad management and social media management are monthly services."
+        },
+        "vatIncluded": {
+          "q": "Is VAT included?",
+          "a": "No. All prices on our website are excluding VAT (21%). VAT is listed separately on the invoice."
+        },
+        "discounts": {
+          "q": "Do you offer discounts?",
+          "a": "No, we don't offer public discounts or promo codes. Our prices are transparent and fair from the start."
+        },
+        "calculator": {
+          "q": "How does the price calculator work?",
+          "a": "The calculator gives an indicative estimate based on your choices. It's not a final quote. After sending via WhatsApp or scheduling a call, you'll receive a custom quote."
+        },
+        "invoice": {
+          "q": "When do I receive an invoice?",
+          "a": "You receive an invoice after approval of the quote. For monthly services, you're invoiced monthly. For one-time projects, upon delivery."
+        },
+        "priceChange": {
+          "q": "Can pricing change after starting?",
+          "a": "No. The quoted price is final. Only if you request additional scope (extra work) will a new quote be prepared, always in consultation."
+        },
         "reelPrice": {
           "q": "How does pricing for Reels work?",
           "a": "You have 3 options: AI generated (€150), we edit your footage (€200), or we film on-site at your location (€250). The price depends on how much work we do."
         },
-        "videoLength": {
-          "q": "How long is a video/reel?",
-          "a": "Standard is 1 minute per video. For longer videos, we request a custom quote."
-        },
-        "articleLength": {
-          "q": "How long is an article?",
-          "a": "600 words is the standard. The price is fixed: €99 per article. For longer or shorter articles, we can discuss a custom price."
-        },
         "payment": {
           "q": "Can I pay online?",
           "a": "No, we don't accept online payments on the website. After your calculation, send your request via WhatsApp or schedule a call. We'll confirm within 24 hours with a final quote."
+        }
+      }
+    },
+    "generalFAQ": {
+      "label": "Frequently asked questions",
+      "title": "General Questions",
+      "questions": {
+        "whoFor": {
+          "q": "Who are your services for?",
+          "a": "Our services are for freelancers, SMEs and growing businesses that want to attract more customers online. From startups to established companies."
+        },
+        "smallOrLarge": {
+          "q": "Do you work with small businesses or only large companies?",
+          "a": "Both. We have packages for small budgets (Starter) and comprehensive solutions for larger businesses. Every client gets the same professional approach."
+        },
+        "onlyBelgium": {
+          "q": "Do you work only in Belgium?",
+          "a": "Our headquarters are in Belgium and we serve clients across Europe. In 2026, we plan to expand to the Middle East."
+        },
+        "howToStart": {
+          "q": "How do we start working together?",
+          "a": "Send us a message via the contact form, WhatsApp, or schedule a free introductory call. After a short intake, we prepare a plan and quote."
+        },
+        "howLongResults": {
+          "q": "How long does it take to see results?",
+          "a": "It depends on the service. Ads deliver results within days. SEO takes 3-6 months. Websites are delivered within 2-6 weeks."
+        },
+        "longTermContracts": {
+          "q": "Do you offer long-term contracts?",
+          "a": "No. Monthly services are cancelable month-to-month with 30 days notice. One-time projects are invoiced per project."
+        },
+        "combineServices": {
+          "q": "Can I combine multiple services?",
+          "a": "Absolutely. Many clients combine a website with SEO and social media management, for example. We create a package that fits your goals."
+        }
+      }
+    },
+    "servicesFAQ": {
+      "label": "Service questions",
+      "title": "Services FAQ",
+      "questions": {
+        "onePageVsBusiness": {
+          "q": "What's the difference between a one-page website and a business website?",
+          "a": "A one-page website is a single page with all info (ideal for starters or campaigns, from €500). A business website has multiple pages, more functionality and is suited for businesses ready to grow seriously (from €1,500)."
+        },
+        "seoOneTimeOrOngoing": {
+          "q": "Is SEO a one-time service or ongoing?",
+          "a": "SEO is an ongoing service. A one-time audit helps, but lasting results require monthly optimization, content creation and link building."
+        },
+        "adBudgetManagement": {
+          "q": "Do you manage ad budgets or only campaigns?",
+          "a": "We manage the campaigns and optimize the budget. The ad budget itself is paid separately to the platform (Meta, Google). We advise on the optimal budget."
+        },
+        "contentOrManagement": {
+          "q": "Do you create content or only manage social media?",
+          "a": "Both. Social media management includes strategy, planning and community management. Content (posts, reels, videos) can be ordered separately or as part of the package."
+        },
+        "withoutWebsite": {
+          "q": "Can I use your services without a website?",
+          "a": "Yes, for services like social media management, ads and content production you don't necessarily need a website. For SEO, a website is obviously required."
+        },
+        "videoInSocial": {
+          "q": "Is video content included in social media management?",
+          "a": "Basic visuals are included. Professional videos and reels are quoted separately via our content production service, but can be combined."
+        },
+        "ecommerceVsBusiness": {
+          "q": "What's the difference between a webshop and a business website?",
+          "a": "A business website informs and generates leads. A webshop (e-commerce) includes a shopping experience with product pages, cart and online payments (from €3,000)."
+        },
+        "reputationHowItWorks": {
+          "q": "How does reputation management work exactly?",
+          "a": "We monitor your online reviews, respond professionally to feedback and help you collect more positive reviews. This improves your visibility and customer trust."
+        },
+        "dataSyncExplained": {
+          "q": "What does data & tracking setup involve?",
+          "a": "We install and configure tracking tools (Google Analytics, Meta Pixel, conversion tracking) so you know exactly which marketing efforts deliver results."
         }
       }
     }

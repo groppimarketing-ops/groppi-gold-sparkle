@@ -214,23 +214,123 @@
     },
     "pricingFAQ": {
       "label": "Veelgestelde vragen",
-      "title": "FAQ over prijzen",
+      "title": "FAQ over prijzen & proces",
       "questions": {
+        "fixedOrFlexible": {
+          "q": "Zijn jullie prijzen vast of flexibel?",
+          "a": "Sommige diensten hebben vaste prijzen (bv. posters, artikels). Andere diensten werken met 'vanaf'-prijzen, afhankelijk van de scope. Je krijgt altijd een exacte offerte na de intake."
+        },
+        "startingFrom": {
+          "q": "Wat betekent 'Vanaf'?",
+          "a": "Het is de minimale startprijs voor die dienst. De definitieve prijs hangt af van je specifieke wensen en scope. Na een kort gesprek krijg je een exacte offerte."
+        },
+        "monthlyOrOneTime": {
+          "q": "Zijn de prijzen maandelijks of eenmalig?",
+          "a": "Dat hangt af van de dienst. Websites en contentproductie zijn eenmalig. SEO, advertentiebeheer en social media management zijn maandelijkse diensten."
+        },
+        "vatIncluded": {
+          "q": "Is BTW inbegrepen?",
+          "a": "Nee. Alle prijzen op onze website zijn exclusief BTW (21%). BTW wordt apart vermeld op de factuur."
+        },
+        "discounts": {
+          "q": "Bieden jullie kortingen aan?",
+          "a": "Nee, we bieden geen publieke kortingen of promocodes aan. Onze prijzen zijn transparant en eerlijk vanaf het begin."
+        },
+        "calculator": {
+          "q": "Hoe werkt de prijscalculator?",
+          "a": "De calculator geeft een indicatieve schatting op basis van je keuzes. Het is geen definitieve offerte. Na het versturen via WhatsApp of een call ontvang je een offerte op maat."
+        },
+        "invoice": {
+          "q": "Wanneer ontvang ik een factuur?",
+          "a": "Je ontvangt een factuur na goedkeuring van de offerte. Voor maandelijkse diensten ontvang je maandelijks een factuur. Voor eenmalige projecten bij oplevering."
+        },
+        "priceChange": {
+          "q": "Kan de prijs veranderen na de start?",
+          "a": "Nee. De geoffreerde prijs is definitief. Alleen bij uitbreiding van de scope (extra werk) wordt een nieuwe offerte opgesteld, altijd in overleg."
+        },
         "reelPrice": {
           "q": "Hoe werkt de prijs voor Reels?",
           "a": "Je hebt 3 opties: AI volledig (€150), wij editen jouw footage (€200), of wij filmen on-site bij jou (€250). De prijs hangt af van hoeveel werk wij doen."
         },
-        "videoLength": {
-          "q": "Hoe lang is een video/reel?",
-          "a": "Standaard rekenen we met 1 minuut per video. Voor langere video's vragen we een offerte op maat."
-        },
-        "articleLength": {
-          "q": "Hoe lang is een artikel?",
-          "a": "600 woorden is de standaard. De prijs is vast: €99 per artikel. Voor langere of kortere artikels kunnen we een aangepaste prijs bespreken."
-        },
         "payment": {
           "q": "Kan ik online betalen?",
           "a": "Nee, wij accepteren geen online betalingen via de website. Na je berekening stuur je je aanvraag via WhatsApp of plan je een call. We bevestigen binnen 24 uur met een definitieve offerte."
+        }
+      }
+    },
+    "generalFAQ": {
+      "label": "Veelgestelde vragen",
+      "title": "Algemene vragen",
+      "questions": {
+        "whoFor": {
+          "q": "Voor wie zijn jullie diensten?",
+          "a": "Onze diensten zijn er voor zelfstandigen, KMO's en groeiende bedrijven die online meer klanten willen aantrekken. Van starters tot gevestigde bedrijven."
+        },
+        "smallOrLarge": {
+          "q": "Werken jullie met kleine bedrijven of alleen grote ondernemingen?",
+          "a": "Beide. Wij hebben pakketten voor kleine budgetten (Starter) en uitgebreide oplossingen voor grotere bedrijven. Elke klant krijgt dezelfde professionele aanpak."
+        },
+        "onlyBelgium": {
+          "q": "Werken jullie alleen in België?",
+          "a": "Ons hoofdkantoor is in België en we bedienen klanten in heel Europa. In 2026 plannen we uitbreiding naar het Midden-Oosten."
+        },
+        "howToStart": {
+          "q": "Hoe starten we een samenwerking?",
+          "a": "Stuur ons een bericht via het contactformulier, WhatsApp, of plan een gratis kennismakingsgesprek. Na een korte intake stellen we een plan en offerte op."
+        },
+        "howLongResults": {
+          "q": "Hoe lang duurt het voor ik resultaten zie?",
+          "a": "Dat hangt af van de dienst. Advertenties leveren resultaat binnen dagen. SEO heeft 3-6 maanden nodig. Websites worden binnen 2-6 weken opgeleverd."
+        },
+        "longTermContracts": {
+          "q": "Bieden jullie langetermijncontracten aan?",
+          "a": "Nee. Maandelijkse diensten zijn maand-per-maand opzegbaar met 30 dagen opzegtermijn. Eenmalige projecten worden per project afgerekend."
+        },
+        "combineServices": {
+          "q": "Kan ik meerdere diensten combineren?",
+          "a": "Absoluut. Veel klanten combineren bijvoorbeeld een website met SEO en social media management. We stellen een pakket samen dat past bij jouw doelen."
+        }
+      }
+    },
+    "servicesFAQ": {
+      "label": "Veelgestelde vragen over diensten",
+      "title": "FAQ over onze diensten",
+      "questions": {
+        "onePageVsBusiness": {
+          "q": "Wat is het verschil tussen een one-page website en een business website?",
+          "a": "Een one-page website is één pagina met alle info (ideaal voor starters of campagnes, vanaf €500). Een business website heeft meerdere pagina's, meer functionaliteit en is geschikt voor bedrijven die serieus willen groeien (vanaf €1.500)."
+        },
+        "seoOneTimeOrOngoing": {
+          "q": "Is SEO een eenmalige dienst of doorlopend?",
+          "a": "SEO is een doorlopende dienst. Een eenmalige audit helpt, maar blijvende resultaten vereisen maandelijkse optimalisatie, contentcreatie en linkbuilding."
+        },
+        "adBudgetManagement": {
+          "q": "Beheren jullie het advertentiebudget of alleen de campagnes?",
+          "a": "Wij beheren de campagnes en optimaliseren het budget. Het advertentiebudget zelf wordt apart betaald aan het platform (Meta, Google). Wij adviseren over het optimale budget."
+        },
+        "contentOrManagement": {
+          "q": "Creëren jullie content of beheren jullie alleen social media?",
+          "a": "Beide. Social media management omvat strategie, planning en community management. Content (posts, reels, video's) kan apart of als onderdeel van het pakket worden besteld."
+        },
+        "withoutWebsite": {
+          "q": "Kan ik jullie diensten gebruiken zonder website?",
+          "a": "Ja, voor diensten als social media management, advertenties en contentproductie heb je niet per se een website nodig. Voor SEO is een website uiteraard wel vereist."
+        },
+        "videoInSocial": {
+          "q": "Is videocontent inbegrepen bij social media management?",
+          "a": "Basisvisuals zijn inbegrepen. Professionele video's en reels worden apart geoffreerd via onze contentproductie-dienst, maar kunnen gecombineerd worden."
+        },
+        "ecommerceVsBusiness": {
+          "q": "Wat is het verschil tussen een webshop en een business website?",
+          "a": "Een business website informeert en genereert leads. Een webshop (e-commerce) bevat een winkelervaring met productpagina's, winkelwagen en online betalingen (vanaf €3.000)."
+        },
+        "reputationHowItWorks": {
+          "q": "Hoe werkt reputatiebeheer precies?",
+          "a": "Wij monitoren je online reviews, reageren professioneel op feedback en helpen je meer positieve reviews te verzamelen. Dit verbetert je zichtbaarheid en klantvertrouwen."
+        },
+        "dataSyncExplained": {
+          "q": "Wat houdt data & tracking setup in?",
+          "a": "Wij installeren en configureren tracking tools (Google Analytics, Meta Pixel, conversietracking) zodat je precies weet welke marketing inspanningen resultaat opleveren."
         }
       }
     }

@@ -14,6 +14,8 @@ import ServiceDetailModal from '@/components/services/ServiceDetailModal';
 import HomeServiceMap from '@/components/home/HomeServiceMap';
 import ContentCalculator from '@/components/service-page/ContentCalculator';
 import PricingFAQ from '@/components/service-page/PricingFAQ';
+import GeneralFAQ from '@/components/service-page/GeneralFAQ';
+import ServicesFAQ from '@/components/service-page/ServicesFAQ';
 import PageSEO from '@/components/seo/PageSEO';
 import { BreadcrumbSchema } from '@/components/seo/StructuredData';
 
@@ -506,6 +508,12 @@ const Services = () => {
 
       {/* Content Calculator Section */}
       <ContentCalculator />
+
+      {/* General FAQ Section */}
+      <GeneralFAQ />
+
+      {/* Services FAQ Section */}
+      <ServicesFAQ />
 
       {/* Pricing FAQ Section */}
       <PricingFAQ />
