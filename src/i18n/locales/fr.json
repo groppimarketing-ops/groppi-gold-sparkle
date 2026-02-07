@@ -414,7 +414,9 @@
     "error": "Une erreur s'est produite. Veuillez réessayer ou nous appeler.",
     "address": "Adresse",
     "phoneLabel": "Téléphone",
-    "emailLabel": "E-mail"
+    "emailLabel": "E-mail",
+    "landline": "Téléphone fixe",
+    "mobile": "Mobile"
   },
   "franchise": {
     "title": "Partenariat",

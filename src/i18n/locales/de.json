@@ -292,7 +292,9 @@
     "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder rufen Sie uns an.",
     "address": "Adresse",
     "phoneLabel": "Telefon",
-    "emailLabel": "E-Mail"
+    "emailLabel": "E-Mail",
+    "landline": "Festnetz",
+    "mobile": "Mobil"
   },
   "franchise": {
     "title": "Partnerschaft",
