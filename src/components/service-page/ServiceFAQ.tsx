@@ -64,7 +64,7 @@ const ServiceFAQ = memo(({ serviceKey }: ServiceFAQProps) => {
                 <AccordionItem
                   key={index}
                   value={`faq-${index}`}
-                  className="glass-card border-primary/20 px-6 rounded-xl overflow-hidden data-[state=open]:border-primary/40 transition-colors"
+                  className="glass-card border-primary/20 px-6 rounded-xl !overflow-visible data-[state=open]:border-primary/40 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-5">
                     <span className="text-foreground font-medium pr-4">

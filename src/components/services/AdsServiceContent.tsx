@@ -209,7 +209,7 @@ const AdsServiceContent = () => {
 
         <Accordion type="single" collapsible className="w-full">
           {faqItems.map((item, idx) => (
-            <AccordionItem key={idx} value={`faq-${idx}`} className="border-primary/10">
+            <AccordionItem key={idx} value={`faq-${idx}`} className="border-primary/10 !overflow-visible">
               <AccordionTrigger className="text-sm hover:text-primary hover:no-underline">
                 {t(item.q)}
               </AccordionTrigger>

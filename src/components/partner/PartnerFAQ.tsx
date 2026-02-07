@@ -33,7 +33,7 @@ const PartnerFAQ = () => {
               <AccordionItem 
                 key={key} 
                 value={key}
-                className="glass-card border border-primary/20 rounded-xl px-6 data-[state=open]:border-primary/40 transition-colors"
+                className="glass-card border border-primary/20 rounded-xl px-6 !overflow-visible data-[state=open]:border-primary/40 transition-colors"
               >
                 <AccordionTrigger className="text-left hover:no-underline py-5">
                   <span 
