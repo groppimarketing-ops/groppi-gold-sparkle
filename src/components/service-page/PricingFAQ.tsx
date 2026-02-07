@@ -12,7 +12,7 @@ import {
 const PricingFAQ = memo(() => {
   const { t } = useTranslation();
 
-  const faqKeys = ['discount', 'validity', 'reelPrice', 'videoLength', 'articleLength', 'payment'];
+  const faqKeys = ['validity', 'reelPrice', 'videoLength', 'articleLength', 'payment'];
 
   return (
     <section className="relative py-16 lg:py-24 bg-background">

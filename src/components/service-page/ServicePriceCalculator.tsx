@@ -157,7 +157,7 @@ Kan je dit bevestigen?`;
     return encodeURIComponent(message);
   };
 
-  const whatsappUrl = `https://wa.me/32470123456?text=${generateWhatsAppMessage()}`;
+  const whatsappUrl = `https://wa.me/32494311119?text=${generateWhatsAppMessage()}`;
 
   // For one-time only services, skip step 1
   const showPaymentTypeStep = servicePricing.hasMonthly;
