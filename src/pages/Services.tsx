@@ -67,8 +67,8 @@ const Services = () => {
         'services.items.contentProduction.features.4',
       ],
       gradient: 'from-primary/5 to-primary/15',
-      pricingType: 'custom',
-      priceMin: 500,
+      pricingType: 'one_time',
+      priceMin: 45,
       targetAudience: ['business', 'creator'],
       packages: [
         {
@@ -118,7 +118,6 @@ const Services = () => {
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'one_time',
       priceMin: 500,
-      priceMax: 1500,
       targetAudience: ['individual', 'business'],
       packageTier: 'starter',
     },
@@ -138,7 +137,6 @@ const Services = () => {
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'one_time',
       priceMin: 1500,
-      priceMax: 8000,
       targetAudience: ['business'],
       packageTier: 'growth',
     },
@@ -158,7 +156,6 @@ const Services = () => {
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'one_time',
       priceMin: 3000,
-      priceMax: 25000,
       targetAudience: ['business'],
       packageTier: 'pro',
     },
@@ -177,7 +174,6 @@ const Services = () => {
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'monthly',
       priceMin: 500,
-      priceMax: 5000,
       targetAudience: ['business'],
     },
     // SEO
@@ -195,7 +191,6 @@ const Services = () => {
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'monthly',
       priceMin: 300,
-      priceMax: 2000,
       targetAudience: ['business'],
     },
     // Social Media Management
@@ -213,7 +208,6 @@ const Services = () => {
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'monthly',
       priceMin: 400,
-      priceMax: 3000,
       targetAudience: ['business', 'creator'],
     },
     // Reputation Management
@@ -231,7 +225,6 @@ const Services = () => {
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'monthly',
       priceMin: 200,
-      priceMax: 1000,
       targetAudience: ['business'],
     },
     // Data Sync

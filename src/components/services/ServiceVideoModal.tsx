@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import type { ServiceData } from './ServiceCard';
+import { SERVICE_PRICING_CONFIG, getPriceDisplayString, getPriceSuffix } from '@/config/pricingConfig';
 
 interface ServiceVideoModalProps {
   isOpen: boolean;
@@ -88,21 +89,12 @@ const ServiceVideoModal = ({
     }
   }, [isOpen, service.videoUrl, isYouTube, isVimeo]);
 
-  const getPriceDisplay = () => {
-    if (service.pricingType === 'custom') {
-      return t('services.requestQuote');
-    }
-    
-    if (service.priceMin && service.priceMax) {
-      return `€${service.priceMin.toLocaleString()} - €${service.priceMax.toLocaleString()}`;
-    }
-    
-    if (service.priceMin) {
-      return `€${service.priceMin.toLocaleString()}+`;
-    }
-    
-    return t('services.requestQuote');
-  };
+  // Use centralized pricing config for consistent display
+  const pricingConfig = SERVICE_PRICING_CONFIG[service.id];
+  const priceDisplay = pricingConfig
+    ? getPriceDisplayString(pricingConfig, t)
+    : (service.priceMin ? `€${service.priceMin.toLocaleString()}` : t('services.requestQuote'));
+  const priceSuffix = pricingConfig ? getPriceSuffix(pricingConfig, t) : '';
 
   const backdropVariants = {
     hidden: { opacity: 0 },
@@ -310,12 +302,13 @@ const ServiceVideoModal = ({
               {/* Pricing Section */}
               <div className="mb-8 p-4 rounded-xl bg-primary/10 border border-primary/20">
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">{t('services.startingFrom')}</span>
-                  <span className="text-2xl font-bold text-primary">{getPriceDisplay()}</span>
+                  <span className="text-muted-foreground">{pricingConfig?.priceDisplay === 'fixed' ? t('services.modal.indicativePrice') : t('services.startingFrom')}</span>
+                  <span className="text-2xl font-bold text-primary">{priceDisplay}</span>
                 </div>
-                {service.pricingType === 'monthly' && (
-                  <p className="text-xs text-muted-foreground mt-1 text-right">{t('services.perMonth')}</p>
+                {priceSuffix && (
+                  <p className="text-xs text-muted-foreground mt-1 text-right">{priceSuffix}</p>
                 )}
+                <p className="text-[10px] text-muted-foreground mt-1 text-right">{t('pricing.vatExcluded')}</p>
               </div>
 
               {/* CTA Buttons */}

@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import ServiceDetailModal from './ServiceDetailModal';
 import ServiceVideoModal from './ServiceVideoModal';
+import { SERVICE_PRICING_CONFIG, getPriceDisplayString, getPriceSuffix } from '@/config/pricingConfig';
 
 export interface ServicePackage {
   id: 'starter' | 'growth' | 'pro';
@@ -101,10 +102,22 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
   };
 
   const getPriceDisplay = () => {
-    const pricingLabel = service.pricingType === 'monthly' 
-      ? t('services.perMonth')
-      : '';
-
+    // Use centralized pricing config
+    const config = SERVICE_PRICING_CONFIG[service.id];
+    
+    if (config) {
+      const priceStr = getPriceDisplayString(config, t);
+      const suffix = getPriceSuffix(config, t);
+      
+      return (
+        <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
+          <span className="text-2xl font-bold text-primary">{priceStr}</span>
+          {suffix && <span className="text-xs text-muted-foreground">{suffix}</span>}
+        </div>
+      );
+    }
+    
+    // Fallback for services not in centralized config
     if (service.pricingType === 'custom') {
       return (
         <div className="text-center">
@@ -113,30 +126,13 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
       );
     }
     
-    if (service.priceMin && service.priceMax) {
-      return (
-        <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
-          <span className="text-xs text-muted-foreground">{t('services.startingFrom')}</span>
-          <span className="text-2xl font-bold text-primary">
-            €{service.priceMin.toLocaleString()}
-          </span>
-          {pricingLabel && (
-            <span className="text-xs text-muted-foreground">{pricingLabel}</span>
-          )}
-        </div>
-      );
-    }
-    
     if (service.priceMin) {
+      const pricingLabel = service.pricingType === 'monthly' ? t('services.perMonth') : '';
       return (
         <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
           <span className="text-xs text-muted-foreground">{t('services.startingFrom')}</span>
-          <span className="text-2xl font-bold text-primary">
-            €{service.priceMin.toLocaleString()}
-          </span>
-          {pricingLabel && (
-            <span className="text-xs text-muted-foreground">{pricingLabel}</span>
-          )}
+          <span className="text-2xl font-bold text-primary">€{service.priceMin.toLocaleString()}</span>
+          {pricingLabel && <span className="text-xs text-muted-foreground">{pricingLabel}</span>}
         </div>
       );
     }
@@ -224,6 +220,7 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
         {/* Price Display - Now more prominent */}
         <div className="relative mb-6 p-3 rounded-lg bg-primary/5 border border-primary/10">
           {getPriceDisplay()}
+          <span className="text-[10px] text-muted-foreground">{t('pricing.vatExcluded')}</span>
         </div>
         
         {/* CTA Buttons - VIDEO FIRST */}

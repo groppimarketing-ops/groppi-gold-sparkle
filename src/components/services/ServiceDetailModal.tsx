@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import type { ServiceData } from './ServiceCard';
 import AdsServiceContent from './AdsServiceContent';
 import PlanBuilderSocial from './PlanBuilderSocial';
+import { SERVICE_PRICING_CONFIG, getPriceDisplayString, getPriceSuffix } from '@/config/pricingConfig';
 
 interface ServiceDetailModalProps {
   isOpen: boolean;
@@ -275,23 +276,27 @@ const ServiceDetailModal = ({
                       {t('services.modal.pricingLogic')}
                     </h3>
 
-                    {/* Price Display */}
+                    {/* Price Display - from centralized config */}
                     <div className="mb-6 p-4 rounded-lg bg-primary/10 border border-primary/20">
                       <div className="flex items-center justify-between">
                         <span className="text-muted-foreground">{t('services.modal.indicativePrice')}</span>
                         <span className="text-2xl font-bold text-primary">
-                          {service.priceMin && service.priceMax
-                            ? `€${service.priceMin.toLocaleString()} - €${service.priceMax.toLocaleString()}`
-                            : service.priceMin
-                            ? `${t('services.startingFrom')} €${service.priceMin.toLocaleString()}`
-                            : t('services.customQuote')
-                          }
+                          {(() => {
+                            const config = SERVICE_PRICING_CONFIG[service.id];
+                            return config
+                              ? getPriceDisplayString(config, t)
+                              : (service.priceMin ? `€${service.priceMin.toLocaleString()}` : t('services.customQuote'));
+                          })()}
                         </span>
                       </div>
-                      <p className="text-xs text-muted-foreground mt-2">
-                        {service.pricingType === 'monthly' ? t('services.perMonth') : 
-                         service.pricingType === 'one_time' ? t('services.oneTimePayment') : ''}
-                      </p>
+                      {(() => {
+                        const config = SERVICE_PRICING_CONFIG[service.id];
+                        const suffix = config ? getPriceSuffix(config, t) : '';
+                        return suffix ? (
+                          <p className="text-xs text-muted-foreground mt-1 text-right">{suffix}</p>
+                        ) : null;
+                      })()}
+                      <p className="text-[10px] text-muted-foreground mt-1 text-right">{t('pricing.vatExcluded')}</p>
                     </div>
 
                     {/* Pricing Factors */}
