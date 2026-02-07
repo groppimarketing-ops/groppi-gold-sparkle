@@ -316,7 +316,12 @@
       "title": "Newsletter",
       "description": "Mantente al día con nuestros últimos insights y consejos.",
       "placeholder": "Tu correo electrónico",
-      "button": "Suscribirse"
+      "button": "Suscribirse",
+      "subscribed": "¡Estás suscrito! Gracias.",
+      "successTitle": "¡Suscrito!",
+      "successMessage": "Te has suscrito exitosamente a nuestro newsletter.",
+      "errorTitle": "Error de suscripción",
+      "errorMessage": "Algo salió mal. Por favor, inténtalo más tarde."
     }
   },
   "common": {

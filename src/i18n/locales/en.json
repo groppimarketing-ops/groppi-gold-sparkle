@@ -1469,7 +1469,12 @@
       "title": "Newsletter",
       "description": "Stay updated with our latest insights and tips.",
       "placeholder": "Your email address",
-      "button": "Subscribe"
+      "button": "Subscribe",
+      "subscribed": "You're subscribed! Thank you.",
+      "successTitle": "Subscribed!",
+      "successMessage": "You've been successfully subscribed to our newsletter.",
+      "errorTitle": "Subscription failed",
+      "errorMessage": "Something went wrong. Please try again later."
     }
   },
   "common": {

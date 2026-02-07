@@ -316,7 +316,12 @@
       "title": "Newsletter",
       "description": "Resta aggiornato sui nostri ultimi insights e consigli.",
       "placeholder": "Il tuo indirizzo email",
-      "button": "Iscriviti"
+      "button": "Iscriviti",
+      "subscribed": "Sei iscritto! Grazie.",
+      "successTitle": "Iscritto!",
+      "successMessage": "Ti sei iscritto con successo alla nostra newsletter.",
+      "errorTitle": "Iscrizione fallita",
+      "errorMessage": "Qualcosa è andato storto. Riprova più tardi."
     }
   },
   "common": {

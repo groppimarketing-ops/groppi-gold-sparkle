@@ -493,7 +493,12 @@
       "title": "Newsletter",
       "description": "Restez informé de nos derniers insights et conseils.",
       "placeholder": "Votre adresse e-mail",
-      "button": "S'abonner"
+      "button": "S'abonner",
+      "subscribed": "Vous êtes inscrit ! Merci.",
+      "successTitle": "Inscrit !",
+      "successMessage": "Vous êtes inscrit avec succès à notre newsletter.",
+      "errorTitle": "Échec de l'inscription",
+      "errorMessage": "Une erreur s'est produite. Veuillez réessayer plus tard."
     }
   },
   "common": {

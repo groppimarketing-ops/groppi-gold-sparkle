@@ -312,7 +312,12 @@
       "title": "Bülten",
       "description": "En son ipuçları ve önerilerimizden haberdar olun.",
       "placeholder": "E-posta adresiniz",
-      "button": "Abone Ol"
+      "button": "Abone Ol",
+      "subscribed": "Abone oldunuz! Teşekkürler.",
+      "successTitle": "Abone olundu!",
+      "successMessage": "Bültenimize başarıyla abone oldunuz.",
+      "errorTitle": "Abonelik başarısız",
+      "errorMessage": "Bir şeyler yanlış gitti. Lütfen daha sonra tekrar deneyin."
     }
   },
   "common": {

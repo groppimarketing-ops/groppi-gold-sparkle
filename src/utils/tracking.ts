@@ -20,7 +20,8 @@ type TrackingEvent =
   | 'planbuilder_social_ads_budget'
   | 'planbuilder_social_addons'
   | 'planbuilder_social_cta_custom_offer'
-  | 'planbuilder_social_cta_save_plan';
+  | 'planbuilder_social_cta_save_plan'
+  | 'newsletter_subscribe';
 
 interface TrackingParams {
   event: TrackingEvent;
