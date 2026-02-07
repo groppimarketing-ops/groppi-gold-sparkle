@@ -63,7 +63,7 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
             transition={{ delay: 0.1 }}
           >
             <h3 className="font-bold text-lg mb-6 gold-gradient-text">
-              Quick Links
+              {t('footer.quickLinks')}
             </h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (

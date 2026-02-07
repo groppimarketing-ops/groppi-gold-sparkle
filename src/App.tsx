@@ -29,6 +29,8 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Franchise = lazy(() => import("./pages/Franchise"));
 const CaseStudy = lazy(() => import("./pages/CaseStudy"));
 const Careers = lazy(() => import("./pages/Careers"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const Terms = lazy(() => import("./pages/Terms"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Admin pages
@@ -96,6 +98,8 @@ const App = () => (
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/franchise" element={<Franchise />} />
                   <Route path="/careers" element={<Careers />} />
+                  <Route path="/privacy" element={<Privacy />} />
+                  <Route path="/terms" element={<Terms />} />
                   <Route path="/portfolio/:slug" element={<CaseStudy />} />
                   
                   {/* Admin Routes */}

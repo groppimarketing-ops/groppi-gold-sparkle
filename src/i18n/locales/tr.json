@@ -431,5 +431,92 @@
     "oneTime": "tek seferlik",
     "vatExcluded": "KDV hariç",
     "vatExcludedNote": "Tüm fiyatlar KDV hariç. KDV faturada eklenecektir."
+  },
+  "privacy": {
+    "meta": {
+      "title": "Gizlilik Politikası",
+      "description": "GROPPI'nin kişisel verilerinizi GDPR uyumlu olarak nasıl koruduğunu ve işlediğini öğrenin."
+    },
+    "title": "Gizlilik Politikası",
+    "subtitle": "Gizliliğiniz bizim için önemlidir. Bu politika verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.",
+    "lastUpdated": "Son güncelleme",
+    "footerNote": "Bu gizlilik politikası hakkında sorularınız mı var? info@groppi.be adresinden bize ulaşın",
+    "sections": {
+      "dataCollection": {
+        "title": "Veri Toplama",
+        "content": "Bize gönüllü olarak sağladığınız kişisel verileri topluyoruz:\n\n• İletişim formunu doldurduğunuzda ad ve iletişim bilgileri\n• Bülten abonelikleri için e-posta adresi\n• İş ilanları için CV ve başvuru verileri\n• Ticari sorular için iş bilgileri\n\nAyrıca analitik amaçlar için IP adresi, tarayıcı türü ve ziyaret edilen sayfalar gibi belirli teknik verileri otomatik olarak topluyoruz."
+      },
+      "dataUsage": {
+        "title": "Veri Kullanımı",
+        "content": "Verilerinizi şunlar için kullanıyoruz:\n\n• Sorularınıza ve taleplerinize yanıt vermek\n• Bülten göndermek (yalnızca onayınızla)\n• Web sitemizi ve hizmetlerimizi geliştirmek\n• Yasal yükümlülükleri yerine getirmek\n• Hizmetlerimiz hakkında ilgili bilgiler göndermek"
+      },
+      "dataSecurity": {
+        "title": "Veri Güvenliği",
+        "content": "Verilerinizin güvenliğini ciddiye alıyoruz. Kullanıyoruz:\n\n• Tüm veri transferleri için SSL şifreleme\n• Güvenli sunucular ve veritabanları\n• Kişisel verilere sınırlı erişim\n• Düzenli güvenlik denetimleri\n\nÇabalarımıza rağmen, internet üzerinden hiçbir aktarım yöntemi %100 güvenli olamaz."
+      },
+      "yourRights": {
+        "title": "Haklarınız",
+        "content": "GDPR kapsamında aşağıdaki haklara sahipsiniz:\n\n• Verilerinize erişim hakkı\n• Yanlış verileri düzeltme hakkı\n• Verilerinizi silme hakkı\n• İşlemeyi kısıtlama hakkı\n• Veri taşınabilirliği hakkı\n• İşlemeye itiraz hakkı\n\nBu hakları kullanmak için bizimle iletişime geçin."
+      },
+      "cookies": {
+        "title": "Çerezler",
+        "content": "Web sitemiz deneyiminizi geliştirmek için çerezler kullanır:\n\n• Site işlevselliği için temel çerezler\n• Ziyaretçilerin sitemizi nasıl kullandığını anlamak için analitik çerezler\n• Hedefli reklamlar için pazarlama çerezleri (yalnızca onay ile)\n\nTarayıcı ayarlarınız üzerinden çerezleri yönetebilirsiniz."
+      },
+      "retention": {
+        "title": "Veri Saklama",
+        "content": "Verilerinizi yalnızca gerekli olduğu sürece saklıyoruz:\n\n• İletişim verileri: Son iletişimden 2 yıl sonra\n• Başvuru verileri: Prosedür tamamlandıktan 1 yıl sonra\n• Bülten aboneleri: Abonelik iptaline kadar\n• Analitik veriler: 26 ay\n\nBu sürenin ardından veriler güvenli bir şekilde silinir."
+      },
+      "contact": {
+        "title": "İletişim",
+        "content": "Gizliliğiniz hakkında sorularınız veya haklarınızı kullanmak için:\n\nGROPPI\nE-posta: info@groppi.be\nTelefon: +32 456 19 87 21\n\nAyrıca Veri Koruma Kurumu'na şikayette bulunma hakkınız var."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Hizmet Şartları",
+      "description": "GROPPI hizmetlerini ve web sitesini kullanım şartlarını ve koşullarını okuyun."
+    },
+    "title": "Hizmet Şartları",
+    "subtitle": "Bu şartlar web sitemizi ve hizmetlerimizi kullanımınızı düzenler. Hizmetlerimizi kullanarak bu şartları kabul etmiş olursunuz.",
+    "lastUpdated": "Son güncelleme",
+    "footerNote": "Bu şartlar hakkında sorularınız mı var? info@groppi.be adresinden bize ulaşın",
+    "sections": {
+      "acceptance": {
+        "title": "Şartların Kabulü",
+        "content": "GROPPI web sitesine ve hizmetlerine erişerek veya kullanarak bu Hizmet Şartlarını kabul etmiş olursunuz.\n\nBu şartların herhangi bir kısmını kabul etmiyorsanız, hizmetlerimizi kullanamazsınız.\n\nBu şartları herhangi bir zamanda değiştirme hakkımızı saklı tutarız."
+      },
+      "services": {
+        "title": "Hizmetlerimiz",
+        "content": "GROPPI, aşağıdakiler dahil dijital pazarlama hizmetleri sunar:\n\n• Web tasarımı ve geliştirme\n• Arama motoru optimizasyonu (SEO)\n• Sosyal medya pazarlaması\n• Ücretli reklamcılık\n• İçerik oluşturma\n• Marka kimliği ve markalaşma\n\nBelirli hizmetler ve teslimatlar bireysel anlaşmalarda tanımlanır."
+      },
+      "payment": {
+        "title": "Ödeme ve Faturalandırma",
+        "content": "• Tüm fiyatlar aksi belirtilmedikçe KDV hariçtir\n• Ödemeler fatura tarihinden itibaren 14 gün içinde yapılmalıdır\n• Projeler için %50 depozito istenebilir\n• Geç ödemeler idari ücretlere tabi olabilir\n• Ödenmemiş tutarlar için hizmetleri askıya alma hakkımızı saklı tutarız"
+      },
+      "liability": {
+        "title": "Sorumluluk",
+        "content": "• GROPPI dolaylı veya sonuç olarak ortaya çıkan zararlardan sorumlu değildir\n• Sorumluluğumuz belirli hizmet için ödenen tutarla sınırlıdır\n• Pazarlama kampanyalarından belirli sonuçları garanti etmiyoruz\n• Müşteriler sağlanan bilgilerin doğruluğundan sorumludur\n• Üçüncü taraf platformlar tarafından yapılan değişikliklerden sorumlu değiliz"
+      },
+      "termination": {
+        "title": "Fesih",
+        "content": "• Her iki taraf da 30 gün yazılı bildirimle anlaşmayı feshedebilir\n• Ciddi ihlal durumunda derhal fesih gerçekleşebilir\n• Fesih üzerine tüm ödenmemiş tutarlar derhal muaccel olur\n• Fesihten sonra materyallerin makul transferini kolaylaştıracağız"
+      },
+      "modifications": {
+        "title": "Değişiklikler",
+        "content": "Bu şartları herhangi bir zamanda değiştirme hakkımızı saklı tutarız.\n\nÖnemli değişiklikler için uygunsa sizi e-posta ile bilgilendireceğiz.\n\nDeğişikliklerden sonra hizmetlerimizi kullanmaya devam etmeniz yeni şartları kabul ettiğiniz anlamına gelir."
+      },
+      "governing": {
+        "title": "Geçerli Hukuk",
+        "content": "Bu şartlar Belçika hukukuna tabidir.\n\nAnlaşmazlıklar Belçika'nın yetkili mahkemelerine sunulacaktır.\n\nBu şartların herhangi bir hükmü geçersiz veya uygulanamaz bulunursa, kalan hükümler tam olarak yürürlükte kalacaktır."
+      },
+      "contact": {
+        "title": "İletişim",
+        "content": "Bu şartlar hakkında sorularınız için:\n\nGROPPI\nE-posta: info@groppi.be\nTelefon: +32 456 19 87 21\n\nTüm sorulara 48 saat içinde yanıt vermeyi hedefliyoruz."
+      }
+    }
+  },
+  "footer": {
+    "quickLinks": "Hızlı Bağlantılar"
   }
 }

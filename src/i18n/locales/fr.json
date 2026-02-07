@@ -595,5 +595,92 @@
     "nda": {
       "disclaimer": "Certains projets sont protégés par des accords de confidentialité (NDA) et ne peuvent pas être montrés publiquement."
     }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Politique de confidentialité",
+      "description": "Découvrez comment GROPPI protège et traite vos données personnelles conformément au RGPD."
+    },
+    "title": "Politique de confidentialité",
+    "subtitle": "Votre vie privée est importante pour nous. Cette politique explique comment nous collectons, utilisons et protégeons vos données.",
+    "lastUpdated": "Dernière mise à jour",
+    "footerNote": "Des questions sur cette politique de confidentialité ? Contactez-nous à info@groppi.be",
+    "sections": {
+      "dataCollection": {
+        "title": "Collecte de données",
+        "content": "Nous collectons les données personnelles que vous nous fournissez volontairement, telles que :\n\n• Nom et coordonnées lorsque vous remplissez notre formulaire de contact\n• Adresse e-mail pour les inscriptions à la newsletter\n• CV et données de candidature pour les offres d'emploi\n• Informations commerciales pour les demandes professionnelles\n\nNous collectons également automatiquement certaines données techniques telles que l'adresse IP, le type de navigateur et les pages visitées à des fins analytiques."
+      },
+      "dataUsage": {
+        "title": "Utilisation des données",
+        "content": "Nous utilisons vos données pour :\n\n• Répondre à vos questions et demandes\n• Envoyer des newsletters (uniquement avec votre consentement)\n• Améliorer notre site web et nos services\n• Remplir nos obligations légales\n• Envoyer des informations pertinentes sur nos services"
+      },
+      "dataSecurity": {
+        "title": "Sécurité des données",
+        "content": "Nous prenons la sécurité de vos données au sérieux. Nous utilisons :\n\n• Cryptage SSL pour tout transfert de données\n• Serveurs et bases de données sécurisés\n• Accès limité aux données personnelles\n• Audits de sécurité réguliers\n\nMalgré nos efforts, aucune méthode de transmission sur Internet ne peut être 100% sécurisée."
+      },
+      "yourRights": {
+        "title": "Vos droits",
+        "content": "En vertu du RGPD, vous avez les droits suivants :\n\n• Droit d'accès à vos données\n• Droit de rectification des données inexactes\n• Droit à l'effacement de vos données\n• Droit à la limitation du traitement\n• Droit à la portabilité des données\n• Droit d'opposition au traitement\n\nContactez-nous pour exercer ces droits."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Notre site web utilise des cookies pour améliorer votre expérience :\n\n• Cookies essentiels pour la fonctionnalité du site\n• Cookies analytiques pour comprendre comment les visiteurs utilisent notre site\n• Cookies marketing pour la publicité ciblée (uniquement avec consentement)\n\nVous pouvez gérer les cookies via les paramètres de votre navigateur."
+      },
+      "retention": {
+        "title": "Conservation des données",
+        "content": "Nous conservons vos données uniquement le temps nécessaire :\n\n• Données de contact : 2 ans après le dernier contact\n• Données de candidature : 1 an après la fin de la procédure\n• Abonnés newsletter : jusqu'à désinscription\n• Données analytiques : 26 mois\n\nAprès cette période, les données sont supprimées de manière sécurisée."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "Pour toute question sur votre vie privée ou pour exercer vos droits :\n\nGROPPI\nE-mail : info@groppi.be\nTéléphone : +32 456 19 87 21\n\nVous avez également le droit de déposer une plainte auprès de l'Autorité de protection des données."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Conditions générales",
+      "description": "Lisez les conditions générales d'utilisation des services et du site web GROPPI."
+    },
+    "title": "Conditions générales",
+    "subtitle": "Ces conditions régissent votre utilisation de notre site web et de nos services. En utilisant nos services, vous acceptez ces conditions.",
+    "lastUpdated": "Dernière mise à jour",
+    "footerNote": "Des questions sur ces conditions ? Contactez-nous à info@groppi.be",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptation des conditions",
+        "content": "En accédant ou en utilisant le site web et les services GROPPI, vous acceptez ces Conditions générales.\n\nSi vous n'acceptez pas une partie de ces conditions, vous ne pouvez pas utiliser nos services.\n\nNous nous réservons le droit de modifier ces conditions à tout moment."
+      },
+      "services": {
+        "title": "Nos services",
+        "content": "GROPPI fournit des services de marketing digital, notamment :\n\n• Conception et développement web\n• Optimisation pour les moteurs de recherche (SEO)\n• Marketing sur les réseaux sociaux\n• Publicité payante\n• Création de contenu\n• Identité de marque et branding\n\nLes services spécifiques et les livrables sont définis dans des accords individuels."
+      },
+      "payment": {
+        "title": "Paiement et facturation",
+        "content": "• Tous les prix sont hors TVA sauf indication contraire\n• Les paiements sont dus dans les 14 jours suivant la date de facturation\n• Un acompte de 50% peut être demandé pour les projets\n• Les retards de paiement peuvent entraîner des frais administratifs\n• Nous nous réservons le droit de suspendre les services en cas de paiements impayés"
+      },
+      "liability": {
+        "title": "Responsabilité",
+        "content": "• GROPPI n'est pas responsable des dommages indirects ou consécutifs\n• Notre responsabilité est limitée au montant payé pour le service spécifique\n• Nous ne garantissons pas de résultats spécifiques des campagnes marketing\n• Les clients sont responsables de l'exactitude des informations fournies\n• Nous ne sommes pas responsables des modifications apportées par des plateformes tierces"
+      },
+      "termination": {
+        "title": "Résiliation",
+        "content": "• Chaque partie peut résilier l'accord avec un préavis écrit de 30 jours\n• Une résiliation immédiate peut avoir lieu en cas de violation grave\n• À la résiliation, tous les montants impayés deviennent immédiatement exigibles\n• Nous faciliterons le transfert raisonnable des matériaux après résiliation"
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "Nous nous réservons le droit de modifier ces conditions à tout moment.\n\nPour les modifications importantes, nous vous informerons par e-mail si applicable.\n\nL'utilisation continue de nos services après modifications constitue une acceptation des nouvelles conditions."
+      },
+      "governing": {
+        "title": "Droit applicable",
+        "content": "Ces conditions sont régies par le droit belge.\n\nLes litiges seront soumis aux tribunaux compétents de Belgique.\n\nSi une disposition de ces conditions est jugée invalide ou inapplicable, les dispositions restantes resteront en vigueur."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "Pour toute question sur ces conditions :\n\nGROPPI\nE-mail : info@groppi.be\nTéléphone : +32 456 19 87 21\n\nNous nous efforçons de répondre à toutes les demandes dans les 48 heures."
+      }
+    }
+  },
+  "footer": {
+    "quickLinks": "Liens rapides"
   }
 }

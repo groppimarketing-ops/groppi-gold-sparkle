@@ -491,5 +491,92 @@
     "nda": {
       "disclaimer": "Niektóre projekty są chronione umowami o zachowaniu poufności (NDA) i nie mogą być publicznie prezentowane."
     }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Polityka Prywatności",
+      "description": "Dowiedz się, jak GROPPI chroni i przetwarza Twoje dane osobowe zgodnie z RODO."
+    },
+    "title": "Polityka Prywatności",
+    "subtitle": "Twoja prywatność jest dla nas ważna. Ta polityka wyjaśnia, jak zbieramy, wykorzystujemy i chronimy Twoje dane.",
+    "lastUpdated": "Ostatnia aktualizacja",
+    "footerNote": "Masz pytania dotyczące tej polityki prywatności? Skontaktuj się z nami pod adresem info@groppi.be",
+    "sections": {
+      "dataCollection": {
+        "title": "Zbieranie danych",
+        "content": "Zbieramy dane osobowe, które dobrowolnie nam przekazujesz, takie jak:\n\n• Imię i dane kontaktowe przy wypełnianiu formularza kontaktowego\n• Adres e-mail przy zapisie do newslettera\n• CV i dane aplikacyjne dla ofert pracy\n• Informacje biznesowe dla zapytań handlowych\n\nZbieramy również automatycznie pewne dane techniczne, takie jak adres IP, typ przeglądarki i odwiedzane strony w celach analitycznych."
+      },
+      "dataUsage": {
+        "title": "Wykorzystanie danych",
+        "content": "Wykorzystujemy Twoje dane do:\n\n• Odpowiadania na Twoje pytania i prośby\n• Wysyłania newsletterów (tylko za Twoją zgodą)\n• Ulepszania naszej strony i usług\n• Wypełniania obowiązków prawnych\n• Wysyłania istotnych informacji o naszych usługach"
+      },
+      "dataSecurity": {
+        "title": "Bezpieczeństwo danych",
+        "content": "Poważnie traktujemy bezpieczeństwo Twoich danych. Stosujemy:\n\n• Szyfrowanie SSL dla wszystkich przesyłanych danych\n• Bezpieczne serwery i bazy danych\n• Ograniczony dostęp do danych osobowych\n• Regularne audyty bezpieczeństwa\n\nPomimo naszych starań, żadna metoda transmisji przez Internet nie może być w 100% bezpieczna."
+      },
+      "yourRights": {
+        "title": "Twoje prawa",
+        "content": "Na mocy RODO masz następujące prawa:\n\n• Prawo dostępu do swoich danych\n• Prawo do poprawiania nieprawidłowych danych\n• Prawo do usunięcia swoich danych\n• Prawo do ograniczenia przetwarzania\n• Prawo do przenoszenia danych\n• Prawo do sprzeciwu wobec przetwarzania\n\nSkontaktuj się z nami, aby skorzystać z tych praw."
+      },
+      "cookies": {
+        "title": "Pliki cookie",
+        "content": "Nasza strona używa plików cookie, aby poprawić Twoje doświadczenia:\n\n• Niezbędne pliki cookie dla funkcjonalności strony\n• Analityczne pliki cookie, aby zrozumieć, jak odwiedzający korzystają z naszej strony\n• Marketingowe pliki cookie dla ukierunkowanych reklam (tylko za zgodą)\n\nMożesz zarządzać plikami cookie poprzez ustawienia przeglądarki."
+      },
+      "retention": {
+        "title": "Przechowywanie danych",
+        "content": "Przechowujemy Twoje dane tylko tak długo, jak to konieczne:\n\n• Dane kontaktowe: 2 lata od ostatniego kontaktu\n• Dane aplikacyjne: 1 rok po zakończeniu procedury\n• Subskrybenci newslettera: do rezygnacji\n• Dane analityczne: 26 miesięcy\n\nPo tym okresie dane są bezpiecznie usuwane."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": "W przypadku pytań dotyczących prywatności lub wykonania swoich praw:\n\nGROPPI\nE-mail: info@groppi.be\nTelefon: +32 456 19 87 21\n\nMasz również prawo złożyć skargę do Urzędu Ochrony Danych Osobowych."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Warunki Świadczenia Usług",
+      "description": "Przeczytaj warunki korzystania z usług i strony internetowej GROPPI."
+    },
+    "title": "Warunki Świadczenia Usług",
+    "subtitle": "Te warunki regulują korzystanie z naszej strony i usług. Korzystając z naszych usług, akceptujesz te warunki.",
+    "lastUpdated": "Ostatnia aktualizacja",
+    "footerNote": "Masz pytania dotyczące tych warunków? Skontaktuj się z nami pod adresem info@groppi.be",
+    "sections": {
+      "acceptance": {
+        "title": "Akceptacja warunków",
+        "content": "Uzyskując dostęp lub korzystając ze strony i usług GROPPI, akceptujesz te Warunki Świadczenia Usług.\n\nJeśli nie zgadzasz się z jakąkolwiek częścią tych warunków, nie możesz korzystać z naszych usług.\n\nZastrzegamy sobie prawo do modyfikacji tych warunków w dowolnym momencie."
+      },
+      "services": {
+        "title": "Nasze usługi",
+        "content": "GROPPI świadczy usługi marketingu cyfrowego, w tym:\n\n• Projektowanie i rozwój stron internetowych\n• Optymalizację pod kątem wyszukiwarek (SEO)\n• Marketing w mediach społecznościowych\n• Płatne reklamy\n• Tworzenie treści\n• Identyfikację marki i branding\n\nKonkretne usługi i produkty są określone w indywidualnych umowach."
+      },
+      "payment": {
+        "title": "Płatności i fakturowanie",
+        "content": "• Wszystkie ceny są bez VAT, chyba że zaznaczono inaczej\n• Płatności są należne w ciągu 14 dni od daty faktury\n• Dla projektów może być wymagana zaliczka 50%\n• Opóźnione płatności mogą skutkować opłatami administracyjnymi\n• Zastrzegamy sobie prawo do zawieszenia usług w przypadku zaległych płatności"
+      },
+      "liability": {
+        "title": "Odpowiedzialność",
+        "content": "• GROPPI nie ponosi odpowiedzialności za szkody pośrednie lub wynikowe\n• Nasza odpowiedzialność jest ograniczona do kwoty zapłaconej za konkretną usługę\n• Nie gwarantujemy konkretnych wyników kampanii marketingowych\n• Klienci są odpowiedzialni za dokładność dostarczonych informacji\n• Nie ponosimy odpowiedzialności za zmiany dokonane przez platformy stron trzecich"
+      },
+      "termination": {
+        "title": "Rozwiązanie umowy",
+        "content": "• Każda ze stron może rozwiązać umowę z 30-dniowym pisemnym wypowiedzeniem\n• Natychmiastowe rozwiązanie może nastąpić w przypadku poważnego naruszenia\n• Po rozwiązaniu wszystkie zaległe kwoty stają się natychmiast wymagalne\n• Ułatwimy rozsądne przekazanie materiałów po rozwiązaniu"
+      },
+      "modifications": {
+        "title": "Modyfikacje",
+        "content": "Zastrzegamy sobie prawo do modyfikacji tych warunków w dowolnym momencie.\n\nW przypadku istotnych zmian powiadomimy Cię e-mailem, jeśli to możliwe.\n\nDalsze korzystanie z naszych usług po modyfikacjach stanowi akceptację nowych warunków."
+      },
+      "governing": {
+        "title": "Prawo właściwe",
+        "content": "Te warunki podlegają prawu belgijskiemu.\n\nSpory będą rozstrzygane przez właściwe sądy w Belgii.\n\nJeśli jakiekolwiek postanowienie tych warunków zostanie uznane za nieważne lub niewykonalne, pozostałe postanowienia pozostają w pełnej mocy."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": "W przypadku pytań dotyczących tych warunków:\n\nGROPPI\nE-mail: info@groppi.be\nTelefon: +32 456 19 87 21\n\nStaramy się odpowiadać na wszystkie zapytania w ciągu 48 godzin."
+      }
+    }
+  },
+  "footer": {
+    "quickLinks": "Szybkie linki"
   }
 }

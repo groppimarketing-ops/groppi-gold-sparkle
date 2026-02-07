@@ -2158,5 +2158,92 @@
         "content": "<h2>The Trust Factor</h2><p>Before making a purchase or hiring a service, most people do the same thing: they read reviews. According to research, over 90% of consumers read online reviews before visiting a business.</p><p>Reviews are word-of-mouth at scale. They build or destroy trust before you ever speak to a potential customer.</p><h2>The Psychology of Reviews</h2><p>People trust other customers more than they trust businesses. This is not new. We have always asked friends and family for recommendations. The internet just made it possible to hear from thousands of strangers.</p><p>A business with dozens of positive reviews feels safe. A business with no reviews or negative reviews feels risky. This perception directly impacts buying decisions.</p><h3>The Numbers That Matter</h3><p>Research shows that:</p><ul><li>Businesses with 4+ star ratings get significantly more clicks</li><li>The first 10 reviews have the biggest impact on perception</li><li>A mix of ratings (not just perfect scores) appears more authentic</li><li>Recent reviews matter more than old ones</li></ul><h2>Reviews and Visibility</h2><p>Reviews do not just influence decisions. They influence visibility. Google uses reviews as a ranking factor for local search results. More positive reviews can literally push you higher in search results.</p><p>This creates a virtuous cycle: better reviews lead to more visibility, which leads to more customers, which leads to more reviews.</p><h2>Managing Your Reputation</h2><p>Reputation management is not about manipulating reviews. It is about earning good reviews and handling negative ones professionally.</p><h3>Earning Positive Reviews</h3><p>The foundation is simple: deliver excellent service. Beyond that:</p><ul><li>Ask satisfied customers to leave reviews</li><li>Make the process easy by providing direct links</li><li>Follow up after positive experiences</li><li>Thank customers who take the time to review</li></ul><h3>Handling Negative Reviews</h3><p>Negative reviews are inevitable. How you handle them matters more than the review itself.</p><ul><li>Respond promptly and professionally</li><li>Acknowledge the concern without being defensive</li><li>Offer to resolve the issue offline</li><li>Follow through on any promises made</li></ul><p>A professional response to a negative review can actually improve your reputation. It shows potential customers that you care and take responsibility.</p><h2>Monitoring Your Reputation</h2><p>You cannot manage what you do not monitor. Set up alerts to know when someone mentions your business. Regularly check review platforms relevant to your industry.</p><p>Key platforms to monitor include:</p><ul><li>Google Business Profile</li><li>Industry-specific review sites</li><li>Social media mentions</li><li>Your own website reviews</li></ul><h2>The Long-Term View</h2><p>Building a strong online reputation takes time. There are no shortcuts. Focus on delivering exceptional service, consistently asking for feedback, and responding professionally to all reviews.</p><p>Over time, your reputation becomes a competitive advantage that is difficult for competitors to replicate. It is one of the few assets that grows more valuable the longer you nurture it.</p>"
       }
     }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "Learn how GROPPI protects and processes your personal data in compliance with GDPR."
+    },
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy matters to us. This policy explains how we collect, use, and protect your data.",
+    "lastUpdated": "Last updated",
+    "footerNote": "Have questions about this privacy policy? Feel free to contact us at info@groppi.be",
+    "sections": {
+      "dataCollection": {
+        "title": "Data Collection",
+        "content": "We collect personal data that you voluntarily provide to us, such as:\n\n• Name and contact details when you fill out our contact form\n• Email address for newsletter subscriptions\n• CV and application data for job openings\n• Business information for commercial inquiries\n\nWe also automatically collect certain technical data such as IP address, browser type, and pages visited for analytical purposes."
+      },
+      "dataUsage": {
+        "title": "Data Usage",
+        "content": "We use your data to:\n\n• Respond to your questions and requests\n• Send newsletters (only with your consent)\n• Improve our website and services\n• Fulfill legal obligations\n• Send relevant information about our services"
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We take the security of your data seriously. We use:\n\n• SSL encryption for all data transfer\n• Secure servers and databases\n• Limited access to personal data\n• Regular security audits\n\nDespite our efforts, no method of transmission over the internet can be 100% secure."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "content": "Under GDPR, you have the following rights:\n\n• Right to access your data\n• Right to correct inaccurate data\n• Right to delete your data\n• Right to restrict processing\n• Right to data portability\n• Right to object to processing\n\nContact us to exercise these rights."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Our website uses cookies to enhance your experience:\n\n• Essential cookies for website functionality\n• Analytical cookies to understand how visitors use our site\n• Marketing cookies for targeted advertising (only with consent)\n\nYou can manage cookies through your browser settings."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "content": "We retain your data only as long as necessary:\n\n• Contact data: 2 years after last contact\n• Application data: 1 year after procedure completion\n• Newsletter subscribers: until unsubscription\n• Analytical data: 26 months\n\nAfter this period, data is securely deleted."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about your privacy or to exercise your rights:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nYou also have the right to file a complaint with the Belgian Data Protection Authority."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Service",
+      "description": "Read the terms and conditions for using GROPPI services and website."
+    },
+    "title": "Terms of Service",
+    "subtitle": "These terms govern your use of our website and services. By using our services, you agree to these terms.",
+    "lastUpdated": "Last updated",
+    "footerNote": "Have questions about these terms? Contact us at info@groppi.be",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using the GROPPI website and services, you agree to these Terms of Service.\n\nIf you do not agree to any part of these terms, you may not use our services.\n\nWe reserve the right to modify these terms at any time."
+      },
+      "services": {
+        "title": "Our Services",
+        "content": "GROPPI provides digital marketing services, including:\n\n• Web design and development\n• Search engine optimization (SEO)\n• Social media marketing\n• Paid advertising\n• Content creation\n• Brand identity and branding\n\nSpecific services and deliverables are defined in individual agreements."
+      },
+      "payment": {
+        "title": "Payment and Billing",
+        "content": "• All prices are exclusive of VAT unless otherwise stated\n• Payments are due within 14 days of invoice date\n• A 50% deposit may be required for projects\n• Late payments may incur administrative fees\n• We reserve the right to suspend services for outstanding payments"
+      },
+      "liability": {
+        "title": "Liability",
+        "content": "• GROPPI is not liable for indirect or consequential damages\n• Our liability is limited to the amount paid for the specific service\n• We do not guarantee specific results from marketing campaigns\n• Clients are responsible for the accuracy of information provided\n• We are not liable for changes made by third-party platforms"
+      },
+      "termination": {
+        "title": "Termination",
+        "content": "• Either party may terminate the agreement with 30 days written notice\n• Immediate termination may occur in case of serious breach\n• Upon termination, all outstanding amounts become immediately due\n• We will facilitate reasonable transfer of materials after termination"
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "We reserve the right to modify these terms at any time.\n\nFor significant changes, we will notify you by email if applicable.\n\nContinued use of our services after modifications constitutes acceptance of the new terms."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These terms are governed by Belgian law.\n\nDisputes will be submitted to the competent courts of Belgium.\n\nIf any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about these terms:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nWe aim to respond to all inquiries within 48 hours."
+      }
+    }
+  },
+  "footer": {
+    "quickLinks": "Quick Links"
   }
 }

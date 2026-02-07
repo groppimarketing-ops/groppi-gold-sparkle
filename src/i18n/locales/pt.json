@@ -491,5 +491,92 @@
     "nda": {
       "disclaimer": "Alguns projetos estão protegidos por acordos de confidencialidade (NDA) e não podem ser mostrados publicamente."
     }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Política de Privacidade",
+      "description": "Saiba como a GROPPI protege e processa os seus dados pessoais em conformidade com o RGPD."
+    },
+    "title": "Política de Privacidade",
+    "subtitle": "A sua privacidade é importante para nós. Esta política explica como recolhemos, utilizamos e protegemos os seus dados.",
+    "lastUpdated": "Última atualização",
+    "footerNote": "Tem perguntas sobre esta política de privacidade? Contacte-nos em info@groppi.be",
+    "sections": {
+      "dataCollection": {
+        "title": "Recolha de dados",
+        "content": "Recolhemos dados pessoais que nos fornece voluntariamente, tais como:\n\n• Nome e dados de contacto quando preenche o nosso formulário de contacto\n• Endereço de email para subscrições de newsletter\n• CV e dados de candidatura para ofertas de emprego\n• Informações comerciais para consultas empresariais\n\nTambém recolhemos automaticamente certos dados técnicos como endereço IP, tipo de navegador e páginas visitadas para fins analíticos."
+      },
+      "dataUsage": {
+        "title": "Utilização de dados",
+        "content": "Utilizamos os seus dados para:\n\n• Responder às suas perguntas e pedidos\n• Enviar newsletters (apenas com o seu consentimento)\n• Melhorar o nosso website e serviços\n• Cumprir obrigações legais\n• Enviar informações relevantes sobre os nossos serviços"
+      },
+      "dataSecurity": {
+        "title": "Segurança de dados",
+        "content": "Levamos a segurança dos seus dados a sério. Utilizamos:\n\n• Encriptação SSL para toda a transferência de dados\n• Servidores e bases de dados seguros\n• Acesso limitado a dados pessoais\n• Auditorias de segurança regulares\n\nApesar dos nossos esforços, nenhum método de transmissão pela Internet pode ser 100% seguro."
+      },
+      "yourRights": {
+        "title": "Os seus direitos",
+        "content": "Ao abrigo do RGPD, tem os seguintes direitos:\n\n• Direito de acesso aos seus dados\n• Direito de retificação de dados inexatos\n• Direito ao apagamento dos seus dados\n• Direito à limitação do tratamento\n• Direito à portabilidade dos dados\n• Direito de oposição ao tratamento\n\nContacte-nos para exercer estes direitos."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "O nosso website utiliza cookies para melhorar a sua experiência:\n\n• Cookies essenciais para a funcionalidade do site\n• Cookies analíticos para compreender como os visitantes usam o nosso site\n• Cookies de marketing para publicidade direcionada (apenas com consentimento)\n\nPode gerir os cookies através das definições do seu navegador."
+      },
+      "retention": {
+        "title": "Retenção de dados",
+        "content": "Retemos os seus dados apenas pelo tempo necessário:\n\n• Dados de contacto: 2 anos após o último contacto\n• Dados de candidatura: 1 ano após a conclusão do procedimento\n• Subscritores da newsletter: até ao cancelamento\n• Dados analíticos: 26 meses\n\nApós este período, os dados são eliminados de forma segura."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Para questões sobre a sua privacidade ou para exercer os seus direitos:\n\nGROPPI\nEmail: info@groppi.be\nTelefone: +32 456 19 87 21\n\nTambém tem o direito de apresentar uma queixa à Autoridade de Proteção de Dados."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Termos de Serviço",
+      "description": "Leia os termos e condições para utilização dos serviços e website da GROPPI."
+    },
+    "title": "Termos de Serviço",
+    "subtitle": "Estes termos regem a sua utilização do nosso website e serviços. Ao utilizar os nossos serviços, concorda com estes termos.",
+    "lastUpdated": "Última atualização",
+    "footerNote": "Tem perguntas sobre estes termos? Contacte-nos em info@groppi.be",
+    "sections": {
+      "acceptance": {
+        "title": "Aceitação dos termos",
+        "content": "Ao aceder ou utilizar o website e serviços da GROPPI, concorda com estes Termos de Serviço.\n\nSe não concordar com qualquer parte destes termos, não pode utilizar os nossos serviços.\n\nReservamo-nos o direito de modificar estes termos a qualquer momento."
+      },
+      "services": {
+        "title": "Os nossos serviços",
+        "content": "A GROPPI fornece serviços de marketing digital, incluindo:\n\n• Design e desenvolvimento web\n• Otimização para motores de busca (SEO)\n• Marketing nas redes sociais\n• Publicidade paga\n• Criação de conteúdo\n• Identidade de marca e branding\n\nServiços específicos e entregáveis são definidos em acordos individuais."
+      },
+      "payment": {
+        "title": "Pagamento e faturação",
+        "content": "• Todos os preços são sem IVA, salvo indicação em contrário\n• Os pagamentos vencem no prazo de 14 dias após a data da fatura\n• Pode ser exigido um depósito de 50% para projetos\n• Pagamentos tardios podem incorrer em taxas administrativas\n• Reservamo-nos o direito de suspender serviços por pagamentos em atraso"
+      },
+      "liability": {
+        "title": "Responsabilidade",
+        "content": "• A GROPPI não é responsável por danos indiretos ou consequenciais\n• A nossa responsabilidade está limitada ao montante pago pelo serviço específico\n• Não garantimos resultados específicos de campanhas de marketing\n• Os clientes são responsáveis pela exatidão das informações fornecidas\n• Não somos responsáveis por alterações feitas por plataformas de terceiros"
+      },
+      "termination": {
+        "title": "Rescisão",
+        "content": "• Qualquer das partes pode rescindir o acordo com 30 dias de aviso por escrito\n• A rescisão imediata pode ocorrer em caso de violação grave\n• Após a rescisão, todos os montantes em dívida vencem imediatamente\n• Facilitaremos a transferência razoável de materiais após a rescisão"
+      },
+      "modifications": {
+        "title": "Modificações",
+        "content": "Reservamo-nos o direito de modificar estes termos a qualquer momento.\n\nPara alterações significativas, notificá-lo-emos por email, se aplicável.\n\nO uso continuado dos nossos serviços após modificações constitui aceitação dos novos termos."
+      },
+      "governing": {
+        "title": "Lei aplicável",
+        "content": "Estes termos são regidos pela lei belga.\n\nLitígios serão submetidos aos tribunais competentes da Bélgica.\n\nSe qualquer disposição destes termos for considerada inválida ou inexequível, as disposições restantes permanecerão em pleno vigor."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Para questões sobre estes termos:\n\nGROPPI\nEmail: info@groppi.be\nTelefone: +32 456 19 87 21\n\nProcuramos responder a todas as consultas no prazo de 48 horas."
+      }
+    }
+  },
+  "footer": {
+    "quickLinks": "Links rápidos"
   }
 }
