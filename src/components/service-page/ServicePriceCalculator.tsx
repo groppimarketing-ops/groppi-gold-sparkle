@@ -1,16 +1,14 @@
 import { memo, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calculator, MessageCircle, CreditCard, RefreshCw, Info, Sparkles, Calendar } from 'lucide-react';
+import { Calculator, MessageCircle, CreditCard, RefreshCw, Info, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
 import {
   WEBSITE_PRICING,
   SUBSCRIPTION_PRICING,
-  DISCOUNT_CONFIG,
 } from '@/config/pricingConfig';
-import DiscountCountdownCard from './DiscountCountdownCard';
 import { trackEvent, socialLinks } from '@/utils/tracking';
 
 const CALENDLY_URL = socialLinks.calendly;
@@ -20,18 +18,6 @@ interface ServicePriceCalculatorProps {
 }
 
 type PaymentType = 'one_time' | 'monthly';
-
-// Check if discount is active from localStorage
-function isDiscountActiveFromStorage(): boolean {
-  const expiresAt = localStorage.getItem('gro_discount_expiresAt');
-  if (!expiresAt) return false;
-  return Date.now() < Number(expiresAt);
-}
-
-// Get discount code from localStorage
-function getDiscountCode(): string {
-  return localStorage.getItem('gro_discount_code') || 'N/A';
-}
 
 // Service-specific pricing configurations
 const getServicePricing = (serviceKey: string) => {
@@ -128,25 +114,13 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
     const basePrice = servicePricing.basePrice;
     const setupFee = servicePricing.setupFee;
     const subtotal = basePrice + addonsTotal + setupFee;
-
-    // Check if discount is active (from localStorage)
-    const isDiscountActive = paymentType === 'one_time' && isDiscountActiveFromStorage();
-    
-    // Discount ONLY applies to one-time payments
-    const discountEligible = isDiscountActive;
-    const discountAmount = discountEligible 
-      ? Math.round(subtotal * (DISCOUNT_CONFIG.percentage / 100))
-      : 0;
-    
-    const total = subtotal - discountAmount;
+    const total = subtotal;
 
     return {
       basePrice,
       setupFee,
       addonsTotal,
       subtotal,
-      discountAmount,
-      discountEligible,
       total,
       isMonthly: servicePricing.hasMonthly && paymentType === 'monthly',
     };
@@ -168,15 +142,14 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
       ? t('calculator.payment.oneTime') 
       : t('calculator.payment.monthly');
 
-    const message = `Hallo! Hier is mijn berekening:
+    const message = `Hallo! Ik wil graag een offerte aanvragen:
 
-📋 ${t('calculator.referenceCode')}: ${getDiscountCode()}
 🎯 Dienst: ${serviceName}
 💳 Type: ${paymentLabel}
 ${selectedAddonsList ? `➕ Add-ons: ${selectedAddonsList}` : ''}
 
 💰 ${t('calculator.basePrice')}: €${pricing.basePrice}${pricing.isMonthly ? t('pricing.perMonth') : ''}
-${pricing.setupFee > 0 ? `🚀 ${t('calculator.setupFee')}: €${pricing.setupFee}\n` : ''}${pricing.addonsTotal > 0 ? `➕ ${t('calculator.addons')}: €${pricing.addonsTotal}\n` : ''}${pricing.discountAmount > 0 ? `🎉 ${t('calculator.discountBadge')}: -€${pricing.discountAmount}\n` : ''}
+${pricing.setupFee > 0 ? `🚀 ${t('calculator.setupFee')}: €${pricing.setupFee}\n` : ''}${pricing.addonsTotal > 0 ? `➕ ${t('calculator.addons')}: €${pricing.addonsTotal}\n` : ''}
 ✅ ${t('calculator.total')}: €${pricing.total}${pricing.isMonthly ? t('pricing.perMonth') : ''} (${t('pricing.vatExcluded')})
 
 Kan je dit bevestigen?`;
@@ -254,14 +227,8 @@ Kan je dit bevestigen?`;
                       </span>
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      {t('calculator.payment.oneTimeDesc')}
+                      {t('calculator.payment.oneTimeDescSimple', 'Betaal per item.')}
                     </p>
-                    {isDiscountActiveFromStorage() && (
-                      <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary/20 text-primary text-xs font-medium">
-                        <Sparkles className="w-3 h-3" />
-                        {t('calculator.discountBadge')}
-                      </div>
-                    )}
                   </button>
                   
                   <button
@@ -279,26 +246,10 @@ Kan je dit bevestigen?`;
                       </span>
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      {t('calculator.payment.monthlyDesc')}
+                      {t('calculator.payment.monthlyDescSimple', 'Vast maandbedrag.')}
                     </p>
                   </button>
                 </div>
-                
-                {/* Discount notice for monthly */}
-                {paymentType === 'monthly' && isDiscountActiveFromStorage() && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    className="mt-4 p-3 rounded-lg bg-muted/50 border border-muted"
-                  >
-                    <div className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                      <span>
-                        {t('calculator.noDiscountMonthly')}
-                      </span>
-                    </div>
-                  </motion.div>
-                )}
               </div>
             )}
 
@@ -388,24 +339,7 @@ Kan je dit bevestigen?`;
                         </div>
 
                         <div className="border-t border-primary/20 pt-3 mt-3">
-                          <div className="flex justify-between items-center mb-2">
-                            <span className="text-muted-foreground">{t('calculator.subtotal')}</span>
-                            <span className={`font-semibold ${pricing.discountEligible ? 'line-through text-muted-foreground' : 'text-foreground'}`}>
-                              €{pricing.subtotal}
-                            </span>
-                          </div>
-                          
-                          {pricing.discountEligible && (
-                            <div className="flex justify-between items-center mb-2 text-primary">
-                              <span className="flex items-center gap-1">
-                                <Sparkles className="w-4 h-4" />
-                                {t('calculator.discountBadge')}
-                              </span>
-                              <span className="font-semibold">-€{pricing.discountAmount}</span>
-                            </div>
-                          )}
-                          
-                          <div className="flex justify-between items-center pt-2 border-t border-primary/10">
+                          <div className="flex justify-between items-center pt-2">
                             <span className="font-semibold text-foreground">{t('calculator.total')}</span>
                             <span className="text-2xl font-bold text-primary">
                               €{pricing.total}
@@ -426,7 +360,7 @@ Kan je dit bevestigen?`;
                         >
                           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                             <MessageCircle className="w-5 h-5 mr-2" />
-                            {t('calculator.cta.whatsapp')}
+                            {t('calculator.cta.requestQuote', 'Vraag een offerte aan')}
                           </a>
                         </Button>
                         
@@ -449,13 +383,6 @@ Kan je dit bevestigen?`;
                           {t('calculator.cta.planCallHelper')}
                         </p>
                       </div>
-
-                      {/* Discount Countdown Card - only shows after one-time payment + price configured */}
-                      <DiscountCountdownCard
-                        isOneTime={paymentType === 'one_time'}
-                        hasCalculatedPrice={true}
-                        triggerOnPageView={true}
-                      />
                     </div>
                   </div>
                 </motion.div>
@@ -472,8 +399,6 @@ Kan je dit bevestigen?`;
                   </p>
                   <ul className="space-y-1 text-xs">
                     <li>• {t('pricing.vatDisclaimer.line1')}</li>
-                    <li>• {t('pricing.vatDisclaimer.line2')}</li>
-                    <li>• {t('pricing.vatDisclaimer.line3')}</li>
                   </ul>
                 </div>
               </div>

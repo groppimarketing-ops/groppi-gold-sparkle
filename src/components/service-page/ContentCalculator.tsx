@@ -1,7 +1,7 @@
 import { memo, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calculator, MessageCircle, Sparkles, Image, Video, Film, FileText, CreditCard, RefreshCw, Info, Calendar } from 'lucide-react';
+import { Calculator, MessageCircle, Image, Video, Film, FileText, CreditCard, RefreshCw, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
@@ -12,23 +12,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import {
-  CONTENT_PRICING,
-  DISCOUNT_CONFIG,
-} from '@/config/pricingConfig';
-import DiscountCountdownCard from './DiscountCountdownCard';
+import { CONTENT_PRICING } from '@/config/pricingConfig';
 import { trackEvent, socialLinks } from '@/utils/tracking';
 
 const CALENDLY_URL = socialLinks.calendly;
 
 type PaymentType = 'one_time' | 'monthly';
-
-// Check if discount is active from localStorage
-function isDiscountActiveFromStorage(): boolean {
-  const expiresAt = localStorage.getItem('gro_discount_expiresAt');
-  if (!expiresAt) return false;
-  return Date.now() < Number(expiresAt);
-}
 
 const ContentCalculator = memo(() => {
   const { t } = useTranslation();
@@ -53,16 +42,7 @@ const ContentCalculator = memo(() => {
     const subtotal = posterTotal + reelTotal + videoTotal + articleTotal;
     const hasItems = subtotal > 0;
     
-    // Check if discount is active (from localStorage)
-    const isDiscountActive = paymentType === 'one_time' && hasItems && isDiscountActiveFromStorage();
-    
-    // Discount ONLY applies to one-time payments when active
-    const discountEligible = isDiscountActive;
-    const discountAmount = discountEligible 
-      ? Math.round(subtotal * (DISCOUNT_CONFIG.percentage / 100))
-      : 0;
-    
-    const total = subtotal - discountAmount;
+    const total = subtotal;
 
     return {
       posterTotal,
@@ -70,17 +50,10 @@ const ContentCalculator = memo(() => {
       videoTotal,
       articleTotal,
       subtotal,
-      discountAmount,
-      discountEligible,
       total,
       hasItems,
     };
-  }, [posterQty, reelQty, reelType, videoQty, articleQty, paymentType]);
-
-  // Get discount code from localStorage for WhatsApp message
-  const getDiscountCode = (): string => {
-    return localStorage.getItem('gro_discount_code') || 'N/A';
-  };
+  }, [posterQty, reelQty, reelType, videoQty, articleQty]);
 
   // Generate WhatsApp message
   const generateWhatsAppMessage = () => {
@@ -97,15 +70,14 @@ const ContentCalculator = memo(() => {
       ? t('calculator.payment.oneTime') 
       : t('calculator.payment.monthly');
     
-    const message = `Hallo! Hier is mijn berekening:
+    const message = `Hallo! Ik wil graag een offerte aanvragen:
 
-📋 ${t('calculator.referenceCode')}: ${getDiscountCode()}
 💳 Type: ${paymentLabel}
 
 ${items.join('\n')}
 
 💰 ${t('calculator.subtotal')}: €${pricing.subtotal} (${t('pricing.vatExcluded')})
-${pricing.discountAmount > 0 ? `🎉 ${t('calculator.discountBadge')}: -€${pricing.discountAmount}\n` : ''}✅ ${t('calculator.total')}: €${pricing.total} (${t('pricing.vatExcluded')})
+✅ ${t('calculator.total')}: €${pricing.total} (${t('pricing.vatExcluded')})
 
 Kan je dit bevestigen?`;
 
@@ -181,14 +153,8 @@ Kan je dit bevestigen?`;
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    {t('calculator.payment.oneTimeDesc')}
+                    {t('calculator.payment.oneTimeDescSimple', 'Betaal per item.')}
                   </p>
-                  {isDiscountActiveFromStorage() && (
-                    <div className="mt-2 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary/20 text-primary text-xs font-medium">
-                      <Sparkles className="w-3 h-3" />
-                      {t('calculator.discountBadge')}
-                    </div>
-                  )}
                 </button>
                 
                 <button
@@ -206,26 +172,10 @@ Kan je dit bevestigen?`;
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    {t('calculator.payment.monthlyDesc')}
+                    {t('calculator.payment.monthlyDescSimple', 'Vast maandbedrag.')}
                   </p>
                 </button>
               </div>
-              
-              {/* Discount notice for monthly */}
-              {paymentType === 'monthly' && isDiscountActiveFromStorage() && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  className="mt-4 p-3 rounded-lg bg-muted/50 border border-muted"
-                >
-                  <div className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                    <span>
-                      {t('calculator.noDiscountMonthly')}
-                    </span>
-                  </div>
-                </motion.div>
-              )}
             </div>
 
             {/* STEP 2: Select Deliverables - Only show after payment type selected */}
@@ -363,34 +313,15 @@ Kan je dit bevestigen?`;
                         </div>
                       )}
 
-                      {/* Subtotal */}
+                      {/* Total */}
                       <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
-                        <div className="flex justify-between items-center mb-2">
-                          <span className="text-muted-foreground">{t('calculator.subtotal')}</span>
-                          <span className={`font-semibold ${pricing.discountEligible ? 'line-through text-muted-foreground' : 'text-foreground'}`}>
-                            €{pricing.subtotal}
-                          </span>
+                        <div className="flex justify-between items-center">
+                          <span className="font-semibold text-foreground">{t('calculator.total')}</span>
+                          <span className="text-2xl font-bold text-primary">€{pricing.total}</span>
                         </div>
-                        
-                        {pricing.discountEligible && (
-                          <div className="flex justify-between items-center mb-2 text-primary">
-                            <span className="flex items-center gap-1">
-                              <Sparkles className="w-4 h-4" />
-                              {t('calculator.discountBadge')}
-                            </span>
-                            <span className="font-semibold">-€{pricing.discountAmount}</span>
-                          </div>
-                        )}
-                        
-                        <div className="border-t border-primary/20 pt-2 mt-2">
-                          <div className="flex justify-between items-center">
-                            <span className="font-semibold text-foreground">{t('calculator.total')}</span>
-                            <span className="text-2xl font-bold text-primary">€{pricing.total}</span>
-                          </div>
-                          <p className="text-xs text-muted-foreground mt-1">
-                            {t('pricing.vatExcludedNote')}
-                          </p>
-                        </div>
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {t('pricing.vatExcludedNote')}
+                        </p>
                       </div>
 
                       {/* CTA Buttons */}
@@ -402,7 +333,7 @@ Kan je dit bevestigen?`;
                         >
                           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                             <MessageCircle className="w-4 h-4 mr-2" />
-                            {t('calculator.cta.whatsapp')}
+                            {t('calculator.cta.requestQuote', 'Vraag een offerte aan')}
                           </a>
                         </Button>
                         <Button
@@ -424,13 +355,6 @@ Kan je dit bevestigen?`;
                           {t('calculator.cta.planCallHelper')}
                         </p>
                       </div>
-
-                      {/* Discount Countdown Card - only shows after one-time payment + items selected */}
-                      <DiscountCountdownCard
-                        isOneTime={paymentType === 'one_time'}
-                        hasCalculatedPrice={pricing.hasItems}
-                        triggerOnPageView={true}
-                      />
                     </div>
                   </div>
                 </motion.div>
