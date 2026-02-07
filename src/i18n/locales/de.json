@@ -370,7 +370,12 @@
       "title": "Newsletter",
       "description": "Bleiben Sie über unsere neuesten Einblicke und Tipps informiert.",
       "placeholder": "Ihre E-Mail-Adresse",
-      "button": "Abonnieren"
+      "button": "Abonnieren",
+      "subscribed": "Sie sind angemeldet! Vielen Dank.",
+      "successTitle": "Angemeldet!",
+      "successMessage": "Sie haben sich erfolgreich für unseren Newsletter angemeldet.",
+      "errorTitle": "Anmeldung fehlgeschlagen",
+      "errorMessage": "Etwas ist schiefgegangen. Bitte versuchen Sie es später erneut."
     }
   },
   "common": {

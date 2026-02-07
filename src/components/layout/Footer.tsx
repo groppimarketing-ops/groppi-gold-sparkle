@@ -1,15 +1,55 @@
-import { forwardRef } from 'react';
+import { forwardRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, MessageCircle, Calendar, Smartphone } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageCircle, Calendar, Smartphone, Loader2, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import groppiLogo from '@/assets/groppi-logo.png';
 import { trackEvent, socialLinks as socialUrls, contactInfo } from '@/utils/tracking';
 import SocialIconsPill from '@/components/shared/SocialIconsPill';
+import { supabase } from '@/integrations/supabase/client';
+import { toast } from '@/hooks/use-toast';
 
 const Footer = forwardRef<HTMLElement>((_, ref) => {
   const { t } = useTranslation();
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubscribed, setIsSubscribed] = useState(false);
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newsletterEmail.trim() || isSubmitting) return;
+
+    setIsSubmitting(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('submit-newsletter', {
+        body: { email: newsletterEmail.trim() },
+      });
+
+      if (error) throw error;
+
+      if (data?.success) {
+        setIsSubscribed(true);
+        setNewsletterEmail('');
+        toast({
+          title: t('footer.newsletter.successTitle'),
+          description: t('footer.newsletter.successMessage'),
+        });
+        trackEvent({ event: 'newsletter_subscribe', location: 'footer' });
+      } else {
+        throw new Error(data?.error || 'Subscription failed');
+      }
+    } catch (err: any) {
+      const message = err?.message || t('footer.newsletter.errorMessage');
+      toast({
+        title: t('footer.newsletter.errorTitle'),
+        description: message,
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const quickLinks = [
     { path: '/about', label: t('nav.about') },
@@ -183,16 +223,27 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
             <p className="text-muted-foreground text-sm mb-4">
               {t('footer.newsletter.description')}
             </p>
-            <div className="flex gap-2">
-              <input
-                type="email"
-                placeholder={t('footer.newsletter.placeholder')}
-                className="flex-1 px-4 py-3 glass-card !rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 bg-transparent"
-              />
-              <Button className="luxury-button !rounded-xl !px-4">
-                <Send className="h-4 w-4" />
-              </Button>
-            </div>
+            {isSubscribed ? (
+              <div className="flex items-center gap-2 text-sm text-primary">
+                <CheckCircle className="h-5 w-5" />
+                <span>{t('footer.newsletter.subscribed')}</span>
+              </div>
+            ) : (
+              <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
+                <input
+                  type="email"
+                  value={newsletterEmail}
+                  onChange={(e) => setNewsletterEmail(e.target.value)}
+                  placeholder={t('footer.newsletter.placeholder')}
+                  required
+                  disabled={isSubmitting}
+                  className="flex-1 px-4 py-3 glass-card !rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 bg-transparent disabled:opacity-50"
+                />
+                <Button type="submit" disabled={isSubmitting} className="luxury-button !rounded-xl !px-4">
+                  {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
+                </Button>
+              </form>
+            )}
           </motion.div>
         </div>
 

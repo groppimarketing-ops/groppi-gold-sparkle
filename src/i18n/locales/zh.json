@@ -312,7 +312,12 @@
       "title": "订阅通讯",
       "description": "获取我们最新的洞察和技巧。",
       "placeholder": "您的电子邮箱",
-      "button": "订阅"
+      "button": "订阅",
+      "subscribed": "已订阅！谢谢。",
+      "successTitle": "已订阅！",
+      "successMessage": "您已成功订阅我们的通讯。",
+      "errorTitle": "订阅失败",
+      "errorMessage": "出了点问题。请稍后再试。"
     }
   },
   "common": {

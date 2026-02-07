@@ -316,7 +316,12 @@
       "title": "Newsletter",
       "description": "Bądź na bieżąco z naszymi najnowszymi wskazówkami i poradami.",
       "placeholder": "Twój adres e-mail",
-      "button": "Subskrybuj"
+      "button": "Subskrybuj",
+      "subscribed": "Jesteś zapisany! Dziękujemy.",
+      "successTitle": "Zapisano!",
+      "successMessage": "Pomyślnie zapisałeś się do naszego newslettera.",
+      "errorTitle": "Subskrypcja nie powiodła się",
+      "errorMessage": "Coś poszło nie tak. Spróbuj ponownie później."
     }
   },
   "common": {
