@@ -82,7 +82,6 @@ const EN_FALLBACKS: Record<string, string> = {
   'servicePage.contentCalculator.videos': 'Videos',
   'servicePage.contentCalculator.articles': 'Articles',
   'calculator.subtotal': 'Subtotal',
-  'calculator.discountBadge': 'Discount',
   'calculator.total': 'Total',
   'pricing.vatExcludedNote': 'All prices excl. VAT. VAT will be added on the invoice.',
 

@@ -6,8 +6,6 @@
  * DO NOT hardcode prices anywhere else.
  */
 
-// NOTE: Discount feature has been removed from the site
-
 // Content Production - Add-on pricing (one-time per item)
 export const CONTENT_PRICING = {
   poster: {
