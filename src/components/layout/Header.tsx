@@ -162,7 +162,7 @@ const Header = () => {
     { path: '/services', label: t('nav.services') },
     { path: '/blog', label: t('nav.blog') },
     { path: '/gallery', label: t('nav.gallery') },
-    { path: '/franchise', label: t('nav.partnership') },
+    { path: '/franchise', label: t('nav.franchise') },
     { path: '/careers', label: t('nav.careers') },
     { path: '/contact', label: t('nav.contact') },
   ];
@@ -423,7 +423,7 @@ const Header = () => {
                           }`}
                         >
                           <span className="text-sm leading-none">{lang.flag}</span>
-                          <span>{lang.shortCode}</span>
+                          <span>{lang.name}</span>
                         </button>
                       );
                     })}

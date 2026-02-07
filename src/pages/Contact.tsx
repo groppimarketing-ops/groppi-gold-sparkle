@@ -320,7 +320,7 @@ const Contact = () => {
               <GlassCard className="p-6 border border-primary/20">
                 <h4 className="font-semibold gold-gradient-text text-lg mb-4">{t('social.followUs')}</h4>
                 <SocialIconsPill 
-                  location="footer" 
+                  location="header" 
                   iconSize="h-5 w-5"
                   showTooltips={true}
                 />

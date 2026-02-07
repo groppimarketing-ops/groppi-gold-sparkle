@@ -30,7 +30,7 @@ export const languages = [
   { code: 'en', name: 'English', dir: 'ltr' as const, flag: '🇬🇧' },
   { code: 'fr', name: 'Français', dir: 'ltr' as const, flag: '🇫🇷' },
   { code: 'de', name: 'Deutsch', dir: 'ltr' as const, flag: '🇩🇪' },
-  { code: 'ar', name: 'العربية', dir: 'rtl' as const, flag: '🇸🇦' },
+  { code: 'ar', name: 'العربية', dir: 'rtl' as const, flag: '🇦🇪' },
   { code: 'es', name: 'Español', dir: 'ltr' as const, flag: '🇪🇸' },
   { code: 'it', name: 'Italiano', dir: 'ltr' as const, flag: '🇮🇹' },
   { code: 'pt', name: 'Português', dir: 'ltr' as const, flag: '🇵🇹' },

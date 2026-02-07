@@ -107,7 +107,7 @@ export const socialLinks = {
 // Contact info
 export const contactInfo = {
   phone: '+32 494 31 11 19',
-  landline: '+32 14 63 50 05',
+  landline: '+32 14/ 63.50.05',
   email: 'info@groppi.be',
   address: 'Het Steeke 5A, 2330 Merksplas, Belgium',
 } as const;
