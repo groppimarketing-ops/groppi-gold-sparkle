@@ -4,7 +4,7 @@ import { memo } from 'react';
 import { MapPin } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
-// Country data with client counts and sectors
+// Country data with unique client counts and sectors per country
 const countryData = [
   {
     key: 'belgium',
@@ -21,25 +21,25 @@ const countryData = [
   {
     key: 'germany',
     flag: '🇩🇪',
-    clientCount: '10+',
+    clientCount: '15+',
     sectors: ['sme', 'realEstate', 'localServices'],
   },
   {
     key: 'france',
     flag: '🇫🇷',
-    clientCount: '10+',
+    clientCount: '12+',
     sectors: ['beauty', 'ecommerce', 'restaurants'],
   },
   {
     key: 'luxembourg',
     flag: '🇱🇺',
-    clientCount: '10+',
+    clientCount: '8+',
     sectors: ['realEstate', 'medical', 'sme'],
   },
   {
     key: 'uk',
     flag: '🇬🇧',
-    clientCount: '10+',
+    clientCount: '18+',
     sectors: ['ecommerce', 'sme', 'localServices'],
   },
   {
