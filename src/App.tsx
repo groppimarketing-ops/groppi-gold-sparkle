@@ -28,6 +28,7 @@ const Portfolio = lazy(() => import("./pages/Portfolio"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Franchise = lazy(() => import("./pages/Franchise"));
 const CaseStudy = lazy(() => import("./pages/CaseStudy"));
+const Careers = lazy(() => import("./pages/Careers"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Admin pages
@@ -94,6 +95,7 @@ const App = () => (
                   <Route path="/portfolio" element={<Portfolio />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/franchise" element={<Franchise />} />
+                  <Route path="/careers" element={<Careers />} />
                   <Route path="/portfolio/:slug" element={<CaseStudy />} />
                   
                   {/* Admin Routes */}

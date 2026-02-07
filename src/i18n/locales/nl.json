@@ -7,7 +7,115 @@
     "gallery": "Portfolio",
     "contact": "Contact",
     "partnership": "Franchise",
-    "franchise": "Franchise"
+    "franchise": "Franchise",
+    "careers": "Vacatures"
+  },
+  "careers": {
+    "meta": {
+      "title": "Vacatures",
+      "description": "Word lid van het GROPPI-team en help Belgische en Europese bedrijven groeien met meetbare resultaten."
+    },
+    "hero": {
+      "title": "Carrière bij GROPPI",
+      "subtitle": "Word lid van een team dat meetbare groei bouwt voor bedrijven in België en Europa.",
+      "viewRoles": "Bekijk openstaande functies",
+      "sendCv": "Stuur je CV"
+    },
+    "types": {
+      "fullTime": "Voltijds",
+      "partTime": "Deeltijds",
+      "freelance": "Freelance"
+    },
+    "locations": {
+      "belgium": "België",
+      "remote": "Remote",
+      "hybrid": "Hybride"
+    },
+    "roles": {
+      "title": "Openstaande functies",
+      "subtitle": "Ontdek je volgende carrièrestap bij een snelgroeiend digitaal bureau.",
+      "responsibilitiesLabel": "Verantwoordelijkheden",
+      "requirementsLabel": "Vereisten",
+      "applyNow": "Solliciteer nu",
+      "performanceMarketer": {
+        "title": "Performance Marketer (Meta/Google)",
+        "responsibilities": "Beheer en optimaliseer betaalde campagnes op Meta en Google. Analyseer data en rapporteer resultaten.",
+        "requirements": "2+ jaar ervaring met paid advertising. Kennis van Meta Ads Manager en Google Ads. Data-gedreven mindset."
+      },
+      "seoSpecialist": {
+        "title": "SEO Specialist",
+        "responsibilities": "Ontwikkel en implementeer SEO-strategieën. Voer technische audits uit en optimaliseer content.",
+        "requirements": "2+ jaar SEO-ervaring. Kennis van technische SEO, keyword research en content optimalisatie."
+      },
+      "webDesigner": {
+        "title": "Web Designer (UI/UX)",
+        "responsibilities": "Ontwerp moderne, conversie-geoptimaliseerde websites. Creëer wireframes en prototypes.",
+        "requirements": "Portfolio met webdesign projecten. Vaardigheid in Figma of vergelijkbare tools. Begrip van UX-principes."
+      },
+      "contentCreator": {
+        "title": "Content Creator (Video/AI)",
+        "responsibilities": "Produceer video content voor social media. Werk met AI-tools voor content creatie.",
+        "requirements": "Ervaring met videobewerking. Kennis van social media trends. Creativiteit en oog voor detail."
+      },
+      "salesBd": {
+        "title": "Sales / Business Development",
+        "responsibilities": "Identificeer en benader potentiële klanten. Bouw relaties op en sluit deals.",
+        "requirements": "Ervaring in B2B sales. Uitstekende communicatievaardigheden. Resultaatgericht en proactief."
+      }
+    },
+    "form": {
+      "title": "Solliciteer nu",
+      "subtitle": "Vul het formulier in en upload je CV. We nemen snel contact op.",
+      "fullName": "Volledige naam",
+      "fullNamePlaceholder": "Jan Janssens",
+      "email": "E-mailadres",
+      "emailPlaceholder": "jan@voorbeeld.be",
+      "phone": "Telefoonnummer",
+      "phonePlaceholder": "+32 400 00 00 00",
+      "role": "Functie",
+      "rolePlaceholder": "Selecteer een functie",
+      "otherRole": "Andere / Spontane sollicitatie",
+      "linkedin": "LinkedIn / Portfolio URL",
+      "linkedinPlaceholder": "https://linkedin.com/in/jouw-profiel",
+      "message": "Korte boodschap",
+      "messagePlaceholder": "Vertel ons waarom je geïnteresseerd bent (optioneel)",
+      "cv": "CV uploaden",
+      "cvPlaceholder": "Klik om je CV te uploaden (PDF, DOC, DOCX)",
+      "cvHint": "Max 10MB. Ondersteunde formaten: PDF, DOC, DOCX",
+      "cvRequired": "CV is verplicht",
+      "invalidFileType": "Ongeldig bestandstype. Upload een PDF, DOC of DOCX.",
+      "fileTooLarge": "Bestand is te groot. Maximaal 10MB toegestaan.",
+      "consent": "Ik ga akkoord om gecontacteerd te worden over mijn sollicitatie.",
+      "submit": "Sollicitatie versturen",
+      "submitting": "Versturen...",
+      "uploading": "CV uploaden...",
+      "successTitle": "Sollicitatie ontvangen!",
+      "successMessage": "Bedankt voor je interesse. We nemen zo snel mogelijk contact met je op.",
+      "submitAnother": "Nog een sollicitatie versturen",
+      "errorTitle": "Er ging iets mis",
+      "errorMessage": "We konden je sollicitatie niet verwerken. Probeer het opnieuw.",
+      "privacyNote": "Je gegevens worden alleen gebruikt voor werving. CV's worden vertrouwelijk behandeld.",
+      "contactLink": "Contacteer ons"
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "spontaneous": {
+        "q": "Accepteren jullie spontane sollicitaties?",
+        "a": "Ja! Zelfs als er geen passende vacature is, sturen we je CV graag door. Selecteer 'Andere / Spontane sollicitatie' in het formulier."
+      },
+      "remote": {
+        "q": "Remote of op kantoor?",
+        "a": "De meeste functies zijn hybride (combinatie van thuis en kantoor). Sommige rollen zijn volledig remote mogelijk. Dit staat vermeld bij elke vacature."
+      },
+      "response": {
+        "q": "Hoe snel krijg ik antwoord?",
+        "a": "We proberen binnen 5 werkdagen te reageren. Bij veel sollicitaties kan dit langer duren, maar we laten altijd iets weten."
+      },
+      "cv": {
+        "q": "Wat moet ik in mijn CV zetten?",
+        "a": "Focus op relevante ervaring en resultaten. Toon projecten of portfolio waar mogelijk. Houd het beknopt (max 2 pagina's)."
+      }
+    }
   },
   "pricing": {
     "from": "Vanaf",

@@ -6,7 +6,43 @@
     "blog": "博客",
     "gallery": "作品集",
     "contact": "联系我们",
-    "franchise": "特许经营"
+    "franchise": "特许经营",
+    "careers": "招聘"
+  },
+  "careers": {
+    "meta": { "title": "招聘", "description": "加入GROPPI团队，帮助比利时和欧洲企业实现可衡量的增长。" },
+    "hero": { "title": "GROPPI招聘", "subtitle": "加入一个为比利时和欧洲企业构建可衡量增长的团队。", "viewRoles": "查看空缺职位", "sendCv": "发送简历" },
+    "types": { "fullTime": "全职", "partTime": "兼职", "freelance": "自由职业" },
+    "locations": { "belgium": "比利时", "remote": "远程", "hybrid": "混合" },
+    "roles": {
+      "title": "空缺职位", "subtitle": "在快速发展的数字机构发现您的下一个职业机会。",
+      "responsibilitiesLabel": "职责", "requirementsLabel": "要求", "applyNow": "立即申请",
+      "performanceMarketer": { "title": "效果营销专员 (Meta/Google)", "responsibilities": "管理和优化Meta和Google的付费广告活动。分析数据并报告结果。", "requirements": "2年以上付费广告经验。熟悉Meta Ads Manager和Google Ads。数据驱动思维。" },
+      "seoSpecialist": { "title": "SEO专员", "responsibilities": "制定并实施SEO策略。进行技术审计并优化内容。", "requirements": "2年以上SEO经验。熟悉技术SEO、关键词研究和内容优化。" },
+      "webDesigner": { "title": "网页设计师 (UI/UX)", "responsibilities": "设计现代化、转化优化的网站。创建线框图和原型。", "requirements": "拥有网页设计项目作品集。精通Figma或类似工具。理解UX原则。" },
+      "contentCreator": { "title": "内容创作者 (视频/AI)", "responsibilities": "为社交媒体制作视频内容。使用AI工具进行内容创作。", "requirements": "视频编辑经验。了解社交媒体趋势。具有创造力和注重细节。" },
+      "salesBd": { "title": "销售 / 业务拓展", "responsibilities": "识别并接触潜在客户。建立关系并达成交易。", "requirements": "B2B销售经验。出色的沟通能力。结果导向且积极主动。" }
+    },
+    "form": {
+      "title": "立即申请", "subtitle": "填写表单并上传简历。我们将尽快与您联系。",
+      "fullName": "姓名", "fullNamePlaceholder": "张三", "email": "电子邮箱", "emailPlaceholder": "zhangsan@example.com",
+      "phone": "电话", "phonePlaceholder": "+86 138 0000 0000", "role": "职位", "rolePlaceholder": "选择职位",
+      "otherRole": "其他 / 自荐申请", "linkedin": "LinkedIn / 作品集链接", "linkedinPlaceholder": "https://linkedin.com/in/your-profile",
+      "message": "简短留言", "messagePlaceholder": "告诉我们您为何感兴趣（可选）",
+      "cv": "上传简历", "cvPlaceholder": "点击上传简历 (PDF, DOC, DOCX)", "cvHint": "最大10MB。支持格式：PDF, DOC, DOCX",
+      "cvRequired": "简历为必填项", "invalidFileType": "文件类型无效。请上传PDF、DOC或DOCX。", "fileTooLarge": "文件过大。最大允许10MB。",
+      "consent": "我同意就我的申请进行联系。", "submit": "提交申请", "submitting": "提交中...", "uploading": "上传简历中...",
+      "successTitle": "申请已收到！", "successMessage": "感谢您的关注。我们将尽快与您联系。", "submitAnother": "提交另一份申请",
+      "errorTitle": "出现错误", "errorMessage": "我们无法处理您的申请。请重试。",
+      "privacyNote": "您的数据仅用于招聘。简历将保密处理。", "contactLink": "联系我们"
+    },
+    "faq": {
+      "title": "常见问题",
+      "spontaneous": { "q": "你们接受自荐申请吗？", "a": "是的！即使没有匹配的职位，我们也很乐意收到您的简历。在表单中选择「其他 / 自荐申请」。" },
+      "remote": { "q": "远程还是现场？", "a": "大多数职位是混合的（居家和办公室结合）。部分职位完全远程。每个职位都有说明。" },
+      "response": { "q": "你们多快回复？", "a": "我们力争在5个工作日内回复。申请较多时可能需要更长时间，但我们一定会回复。" },
+      "cv": { "q": "简历应包含什么内容？", "a": "重点展示相关经验和成果。如有可能，展示项目或作品集。保持简洁（最多2页）。" }
+    }
   },
   "hero": {
     "title": "GROPPI – 人类专业知识，智能技术赋能",

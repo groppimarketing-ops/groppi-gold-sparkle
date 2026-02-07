@@ -6,7 +6,43 @@
     "blog": "Blog",
     "gallery": "Portföy",
     "contact": "İletişim",
-    "franchise": "Franchise"
+    "franchise": "Franchise",
+    "careers": "Kariyer"
+  },
+  "careers": {
+    "meta": { "title": "Kariyer", "description": "GROPPI ekibine katılın ve Belçika ile Avrupa işletmelerinin ölçülebilir sonuçlarla büyümesine yardımcı olun." },
+    "hero": { "title": "GROPPI'de Kariyer", "subtitle": "Belçika ve Avrupa'daki işletmeler için ölçülebilir büyüme inşa eden bir ekibe katılın.", "viewRoles": "Açık pozisyonları görüntüle", "sendCv": "CV'nizi gönderin" },
+    "types": { "fullTime": "Tam zamanlı", "partTime": "Yarı zamanlı", "freelance": "Freelance" },
+    "locations": { "belgium": "Belçika", "remote": "Uzaktan", "hybrid": "Hibrit" },
+    "roles": {
+      "title": "Açık pozisyonlar", "subtitle": "Hızla büyüyen bir dijital ajanstta kariyer yolculuğunuzun bir sonraki adımını keşfedin.",
+      "responsibilitiesLabel": "Sorumluluklar", "requirementsLabel": "Gereksinimler", "applyNow": "Şimdi başvur",
+      "performanceMarketer": { "title": "Performance Marketer (Meta/Google)", "responsibilities": "Meta ve Google'da ücretli kampanyaları yönetin ve optimize edin. Verileri analiz edin ve sonuçları raporlayın.", "requirements": "2+ yıl ücretli reklam deneyimi. Meta Ads Manager ve Google Ads bilgisi. Veri odaklı düşünce yapısı." },
+      "seoSpecialist": { "title": "SEO Uzmanı", "responsibilities": "SEO stratejileri geliştirin ve uygulayın. Teknik denetimler yapın ve içeriği optimize edin.", "requirements": "2+ yıl SEO deneyimi. Teknik SEO, anahtar kelime araştırması ve içerik optimizasyonu bilgisi." },
+      "webDesigner": { "title": "Web Tasarımcısı (UI/UX)", "responsibilities": "Modern, dönüşüm odaklı web siteleri tasarlayın. Wireframe ve prototipler oluşturun.", "requirements": "Web tasarım projelerinden oluşan portföy. Figma veya benzeri araçlarda yetkinlik. UX prensiplerini anlama." },
+      "contentCreator": { "title": "İçerik Üreticisi (Video/AI)", "responsibilities": "Sosyal medya için video içerik üretin. İçerik oluşturma için AI araçlarıyla çalışın.", "requirements": "Video düzenleme deneyimi. Sosyal medya trendleri bilgisi. Yaratıcılık ve detaya dikkat." },
+      "salesBd": { "title": "Satış / İş Geliştirme", "responsibilities": "Potansiyel müşterileri belirleyin ve yaklaşın. İlişkiler kurun ve anlaşmalar kapatın.", "requirements": "B2B satış deneyimi. Mükemmel iletişim becerileri. Sonuç odaklı ve proaktif." }
+    },
+    "form": {
+      "title": "Şimdi başvur", "subtitle": "Formu doldurun ve CV'nizi yükleyin. Size kısa sürede döneceğiz.",
+      "fullName": "Tam ad", "fullNamePlaceholder": "Ahmet Yılmaz", "email": "E-posta adresi", "emailPlaceholder": "ahmet@ornek.com",
+      "phone": "Telefon numarası", "phonePlaceholder": "+90 500 000 0000", "role": "Pozisyon", "rolePlaceholder": "Bir pozisyon seçin",
+      "otherRole": "Diğer / Açık başvuru", "linkedin": "LinkedIn / Portföy URL", "linkedinPlaceholder": "https://linkedin.com/in/profiliniz",
+      "message": "Kısa mesaj", "messagePlaceholder": "Neden ilgilendiğinizi bize anlatın (isteğe bağlı)",
+      "cv": "CV yükle", "cvPlaceholder": "CV'nizi yüklemek için tıklayın (PDF, DOC, DOCX)", "cvHint": "Maks 10MB. Desteklenen formatlar: PDF, DOC, DOCX",
+      "cvRequired": "CV gereklidir", "invalidFileType": "Geçersiz dosya türü. Lütfen PDF, DOC veya DOCX yükleyin.", "fileTooLarge": "Dosya çok büyük. Maksimum 10MB izin verilir.",
+      "consent": "Başvurumla ilgili iletişime geçilmesini kabul ediyorum.", "submit": "Başvuruyu gönder", "submitting": "Gönderiliyor...", "uploading": "CV yükleniyor...",
+      "successTitle": "Başvuru alındı!", "successMessage": "İlginiz için teşekkürler. En kısa sürede size döneceğiz.", "submitAnother": "Başka bir başvuru gönder",
+      "errorTitle": "Bir şeyler yanlış gitti", "errorMessage": "Başvurunuzu işleyemedik. Lütfen tekrar deneyin.",
+      "privacyNote": "Verileriniz yalnızca işe alım için kullanılır. CV'ler gizli tutulur.", "contactLink": "Bizimle iletişime geçin"
+    },
+    "faq": {
+      "title": "Sıkça sorulan sorular",
+      "spontaneous": { "q": "Açık başvuruları kabul ediyor musunuz?", "a": "Evet! Uygun bir pozisyon olmasa bile CV'nizi almaktan mutluluk duyarız. Formda 'Diğer / Açık başvuru'yu seçin." },
+      "remote": { "q": "Uzaktan mı yoksa ofiste mi?", "a": "Çoğu pozisyon hibrit (ev ve ofis kombinasyonu). Bazı roller tamamen uzaktan. Bu her pozisyon için belirtilir." },
+      "response": { "q": "Ne kadar hızlı yanıt veriyorsunuz?", "a": "5 iş günü içinde yanıt vermeyi hedefliyoruz. Çok sayıda başvuru olduğunda daha uzun sürebilir, ancak her zaman geri dönüş yaparız." },
+      "cv": { "q": "CV'me ne eklemeliyim?", "a": "İlgili deneyim ve sonuçlara odaklanın. Mümkünse projeler veya portföy gösterin. Kısa tutun (maks 2 sayfa)." }
+    }
   },
   "hero": {
     "title": "GROPPI – İnsan Uzmanlığı, Akıllı Teknoloji ile Güçlendirilmiş",

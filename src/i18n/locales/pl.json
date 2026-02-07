@@ -6,7 +6,43 @@
     "blog": "Blog",
     "gallery": "Portfolio",
     "contact": "Kontakt",
-    "franchise": "Franczyza"
+    "franchise": "Franczyza",
+    "careers": "Kariera"
+  },
+  "careers": {
+    "meta": { "title": "Kariera", "description": "Dołącz do zespołu GROPPI i pomóż belgijskim i europejskim firmom rozwijać się z mierzalnymi wynikami." },
+    "hero": { "title": "Kariera w GROPPI", "subtitle": "Dołącz do zespołu budującego mierzalny wzrost dla firm w Belgii i Europie.", "viewRoles": "Zobacz otwarte stanowiska", "sendCv": "Wyślij swoje CV" },
+    "types": { "fullTime": "Pełny etat", "partTime": "Część etatu", "freelance": "Freelancer" },
+    "locations": { "belgium": "Belgia", "remote": "Zdalnie", "hybrid": "Hybrydowo" },
+    "roles": {
+      "title": "Otwarte stanowiska", "subtitle": "Odkryj swój następny krok kariery w szybko rozwijającej się agencji cyfrowej.",
+      "responsibilitiesLabel": "Obowiązki", "requirementsLabel": "Wymagania", "applyNow": "Aplikuj teraz",
+      "performanceMarketer": { "title": "Performance Marketer (Meta/Google)", "responsibilities": "Zarządzanie i optymalizacja płatnych kampanii na Meta i Google. Analiza danych i raportowanie wyników.", "requirements": "2+ lata doświadczenia w reklamie płatnej. Znajomość Meta Ads Manager i Google Ads. Myślenie oparte na danych." },
+      "seoSpecialist": { "title": "Specjalista SEO", "responsibilities": "Opracowywanie i wdrażanie strategii SEO. Przeprowadzanie audytów technicznych i optymalizacja treści.", "requirements": "2+ lata doświadczenia SEO. Znajomość technicznego SEO, badania słów kluczowych i optymalizacji treści." },
+      "webDesigner": { "title": "Web Designer (UI/UX)", "responsibilities": "Projektowanie nowoczesnych stron zoptymalizowanych pod konwersję. Tworzenie wireframe'ów i prototypów.", "requirements": "Portfolio z projektami web design. Biegłość w Figma lub podobnych narzędziach. Zrozumienie zasad UX." },
+      "contentCreator": { "title": "Twórca treści (Wideo/AI)", "responsibilities": "Produkcja treści wideo dla mediów społecznościowych. Praca z narzędziami AI do tworzenia treści.", "requirements": "Doświadczenie w edycji wideo. Znajomość trendów w mediach społecznościowych. Kreatywność i dbałość o szczegóły." },
+      "salesBd": { "title": "Sprzedaż / Business Development", "responsibilities": "Identyfikacja i pozyskiwanie potencjalnych klientów. Budowanie relacji i zamykanie transakcji.", "requirements": "Doświadczenie w sprzedaży B2B. Doskonałe umiejętności komunikacyjne. Zorientowanie na wyniki i proaktywność." }
+    },
+    "form": {
+      "title": "Aplikuj teraz", "subtitle": "Wypełnij formularz i prześlij swoje CV. Skontaktujemy się wkrótce.",
+      "fullName": "Pełne imię i nazwisko", "fullNamePlaceholder": "Jan Kowalski", "email": "Adres e-mail", "emailPlaceholder": "jan@przyklad.pl",
+      "phone": "Numer telefonu", "phonePlaceholder": "+48 500 000 000", "role": "Stanowisko", "rolePlaceholder": "Wybierz stanowisko",
+      "otherRole": "Inne / Spontaniczna aplikacja", "linkedin": "LinkedIn / URL Portfolio", "linkedinPlaceholder": "https://linkedin.com/in/twoj-profil",
+      "message": "Krótka wiadomość", "messagePlaceholder": "Powiedz nam, dlaczego jesteś zainteresowany (opcjonalnie)",
+      "cv": "Prześlij CV", "cvPlaceholder": "Kliknij, aby przesłać swoje CV (PDF, DOC, DOCX)", "cvHint": "Maks. 10MB. Obsługiwane formaty: PDF, DOC, DOCX",
+      "cvRequired": "CV jest wymagane", "invalidFileType": "Nieprawidłowy typ pliku. Prześlij PDF, DOC lub DOCX.", "fileTooLarge": "Plik jest za duży. Maksymalnie 10MB dozwolone.",
+      "consent": "Zgadzam się na kontakt w sprawie mojej aplikacji.", "submit": "Wyślij aplikację", "submitting": "Wysyłanie...", "uploading": "Przesyłanie CV...",
+      "successTitle": "Aplikacja otrzymana!", "successMessage": "Dziękujemy za zainteresowanie. Skontaktujemy się tak szybko, jak to możliwe.", "submitAnother": "Wyślij kolejną aplikację",
+      "errorTitle": "Coś poszło nie tak", "errorMessage": "Nie mogliśmy przetworzyć Twojej aplikacji. Spróbuj ponownie.",
+      "privacyNote": "Twoje dane są używane tylko do rekrutacji. CV są traktowane poufnie.", "contactLink": "Skontaktuj się z nami"
+    },
+    "faq": {
+      "title": "Często zadawane pytania",
+      "spontaneous": { "q": "Czy przyjmujecie spontaniczne aplikacje?", "a": "Tak! Nawet bez pasującego stanowiska, chętnie przyjmiemy Twoje CV. Wybierz 'Inne / Spontaniczna aplikacja' w formularzu." },
+      "remote": { "q": "Zdalnie czy na miejscu?", "a": "Większość stanowisk jest hybrydowa (kombinacja domu i biura). Niektóre role są w pełni zdalne. Jest to określone dla każdej oferty." },
+      "response": { "q": "Jak szybko odpowiadacie?", "a": "Staramy się odpowiedzieć w ciągu 5 dni roboczych. Przy wielu aplikacjach może to potrwać dłużej, ale zawsze odpisujemy." },
+      "cv": { "q": "Co powinienem umieścić w CV?", "a": "Skup się na odpowiednim doświadczeniu i wynikach. Pokaż projekty lub portfolio, jeśli to możliwe. Bądź zwięzły (maks. 2 strony)." }
+    }
   },
   "hero": {
     "title": "GROPPI – Ludzka ekspertyza, wspierana przez inteligentną technologię",
