@@ -89,7 +89,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: '10',
-    clientName: 'Lebanon Restaurant',
+    clientName: 'Restaurant Le Banon',
     slug: 'lebanon-restaurant',
     industry: 'restaurant',
     services: ['branding', 'social', 'content'],
