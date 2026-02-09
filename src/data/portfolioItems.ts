@@ -49,7 +49,7 @@ import mangiareCover from '@/assets/portfolio/mangiare3840/cover.jpg';
 export const portfolioItems: PortfolioItem[] = [
   {
     id: '12',
-    clientName: 'Mangiare 3840',
+    clientName: 'Mangiare Borgloon',
     slug: 'mangiare-3840',
     industry: 'restaurant',
     services: ['website', 'branding', 'content'],
