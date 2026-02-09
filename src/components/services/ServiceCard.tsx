@@ -61,6 +61,8 @@ const SERVICES_WITH_PAGES = [
   'ecommerce-website',
   'branding',
   'mobile-app-development',
+  'reputation',
+  'data-sync',
 ];
 
 const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, index, isFeatured = false, isHighlighted = false }, ref) => {

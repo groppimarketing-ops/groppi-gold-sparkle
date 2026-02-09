@@ -34,6 +34,12 @@ const SERVICE_CONFIG: Record<string, { videoUrl?: string; posterImage?: string }
   'mobile-app-development': {
     posterImage: '/images/hero-poster.png',
   },
+  'reputation': {
+    posterImage: '/images/hero-poster.png',
+  },
+  'data-sync': {
+    posterImage: '/images/hero-poster.png',
+  },
 };
 
 // Valid service slugs
@@ -47,6 +53,8 @@ const VALID_SERVICES = [
   'ecommerce-website',
   'branding',
   'mobile-app-development',
+  'reputation',
+  'data-sync',
 ];
 
 const ServiceDetail = () => {
