@@ -65,8 +65,11 @@ import pummaroInterior from '@/assets/portfolio/pummaro/interior.jpg';
 
 // AUGUSTO TORINO assets
 import augustoCover from '@/assets/portfolio/augusto-torino/cover.jpg';
-import augustoFood from '@/assets/portfolio/augusto-torino/food.jpg';
+import augustoExterior from '@/assets/portfolio/augusto-torino/exterior.jpg';
 import augustoInterior from '@/assets/portfolio/augusto-torino/interior.jpg';
+import augustoAmbiance from '@/assets/portfolio/augusto-torino/ambiance.jpg';
+import augustoDoor from '@/assets/portfolio/augusto-torino/door.jpg';
+import augustoBar from '@/assets/portfolio/augusto-torino/bar.jpg';
 
 export const portfolioItems: PortfolioItem[] = [
   {
@@ -82,9 +85,11 @@ export const portfolioItems: PortfolioItem[] = [
       alt: 'Augusto Torino - Elegant Italian restaurant in Turin',
     },
     galleryMedia: [
-      { id: 'gallery-17-1', type: 'image', url: augustoCover, alt: 'Augusto Torino - Restaurant presentation' },
-      { id: 'gallery-17-2', type: 'image', url: augustoFood, alt: 'Augusto Torino - Food presentation' },
-      { id: 'gallery-17-3', type: 'image', url: augustoInterior, alt: 'Augusto Torino - Interior atmosphere' },
+      { id: 'gallery-17-1', type: 'image', url: augustoExterior, alt: 'Augusto Torino - Restaurant exterior at night' },
+      { id: 'gallery-17-2', type: 'image', url: augustoInterior, alt: 'Augusto Torino - Dining room interior' },
+      { id: 'gallery-17-3', type: 'image', url: augustoAmbiance, alt: 'Augusto Torino - Warm ambiance detail' },
+      { id: 'gallery-17-4', type: 'image', url: augustoDoor, alt: 'Augusto Torino - Signature blue door' },
+      { id: 'gallery-17-5', type: 'image', url: augustoBar, alt: 'Augusto Torino - Bar and draft beer setup' },
     ],
     shortResultLine: 'Elegant restaurant website with strong visual identity and refined food presentation.',
     popupContent: {
