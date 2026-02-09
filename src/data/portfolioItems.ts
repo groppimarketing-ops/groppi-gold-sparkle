@@ -105,7 +105,7 @@ import pilotscareerDashboard from '@/assets/portfolio/pilotscareer/dashboard.web
 import pilotscareerBrand from '@/assets/portfolio/pilotscareer/brand-mood.webp';
 
 // AI DEALS assets
-import aidealsHero from '@/assets/portfolio/aideals/hero.webp';
+import aidealsCover from '@/assets/portfolio/aideals/cover.jpg';
 import aidealsDesktop from '@/assets/portfolio/aideals/desktop-mockup.webp';
 import aidealsMobile from '@/assets/portfolio/aideals/mobile-mockup.webp';
 import aidealsAcademy from '@/assets/portfolio/aideals/academy.webp';
@@ -853,15 +853,15 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: '20',
-    clientName: 'AI Deals',
-    slug: 'ai-deals',
+    clientName: 'Ai Learn Academy',
+    slug: 'ai-learn-academy',
     industry: 'startup',
     services: ['website', 'ecommerce', 'content'],
     coverMedia: {
       id: 'cover-20',
       type: 'image',
-      url: aidealsHero,
-      alt: 'AI Deals premium AI platform',
+      url: aidealsCover,
+      alt: 'Ai Learn Academy premium AI platform',
     },
     galleryMedia: [
       { id: 'gallery-20-1', type: 'image', url: aidealsDesktop, alt: 'AI Deals desktop website mockup' },
