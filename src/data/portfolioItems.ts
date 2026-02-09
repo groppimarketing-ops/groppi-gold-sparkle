@@ -52,7 +52,7 @@ import sanremoCover from '@/assets/portfolio/sanremo/cover.jpg';
 export const portfolioItems: PortfolioItem[] = [
   {
     id: '13',
-    clientName: 'Sanremo Pizzeria Restaurant',
+    clientName: 'Pizzeria San Remo',
     slug: 'sanremo-pizzeria',
     industry: 'restaurant',
     services: ['social', 'content', 'branding'],
