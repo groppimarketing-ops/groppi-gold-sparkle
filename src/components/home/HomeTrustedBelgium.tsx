@@ -55,6 +55,12 @@ const countryData = [
     sectors: ['restaurants', 'beauty', 'retail'],
   },
   {
+    key: 'spain',
+    flag: '🇪🇸',
+    clientCount: '8+',
+    sectors: ['restaurants', 'realEstate', 'ecommerce'],
+  },
+  {
     key: 'usa',
     flag: '🇺🇸',
     clientCount: '7+',
