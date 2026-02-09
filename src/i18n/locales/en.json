@@ -566,7 +566,8 @@
         "france": "France",
         "luxembourg": "Luxembourg",
         "uk": "United Kingdom",
-        "switzerland": "Switzerland"
+        "switzerland": "Switzerland",
+        "usa": "United States"
       },
       "sectors": {
         "restaurants": "Restaurants & hospitality",
@@ -577,7 +578,9 @@
         "realEstate": "Real estate",
         "localServices": "Local services",
         "sme": "SMEs & startups",
-        "medical": "Medical / clinics"
+        "medical": "Medical / clinics",
+        "startups": "SaaS & startups",
+        "professionalServices": "Professional services"
       }
     },
     "portfolio": {

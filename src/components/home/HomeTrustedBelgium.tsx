@@ -48,6 +48,12 @@ const countryData = [
     clientCount: '10+',
     sectors: ['medical', 'realEstate', 'beauty'],
   },
+  {
+    key: 'usa',
+    flag: '🇺🇸',
+    clientCount: '7+',
+    sectors: ['ecommerce', 'startups', 'professionalServices', 'localServices'],
+  },
 ];
 
 const HomeTrustedBelgium = memo(() => {

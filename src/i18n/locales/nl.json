@@ -566,7 +566,8 @@
         "france": "Frankrijk",
         "luxembourg": "Luxemburg",
         "uk": "Verenigd Koninkrijk",
-        "switzerland": "Zwitserland"
+        "switzerland": "Zwitserland",
+        "usa": "Verenigde Staten"
       },
       "sectors": {
         "restaurants": "Restaurants & horeca",
@@ -577,7 +578,9 @@
         "realEstate": "Vastgoed",
         "localServices": "Lokale diensten",
         "sme": "KMO's & starters",
-        "medical": "Medisch / klinieken"
+        "medical": "Medisch / klinieken",
+        "startups": "SaaS & startups",
+        "professionalServices": "Professionele diensten"
       }
     },
     "portfolio": {
