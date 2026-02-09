@@ -60,6 +60,7 @@ const SERVICES_WITH_PAGES = [
   'one-page-website',
   'ecommerce-website',
   'branding',
+  'mobile-app-development',
 ];
 
 const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, index, isFeatured = false, isHighlighted = false }, ref) => {
@@ -119,6 +120,12 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
         <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
           <span className="text-2xl font-bold text-primary">{priceStr}</span>
           {suffix && <span className="text-xs text-muted-foreground">{suffix}</span>}
+          {/* Secondary price line for dual-pricing services */}
+          {config.secondaryPriceMin && (
+            <span className="text-xs text-muted-foreground mt-1">
+              + {t('services.maintenanceFrom')} €{config.secondaryPriceMin.toLocaleString('nl-BE')}{config.secondaryPriceUnit || ''}
+            </span>
+          )}
         </div>
       );
     }

@@ -1,6 +1,6 @@
 import { forwardRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Award, Play, ArrowRight, Calculator } from 'lucide-react';
+import { Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Award, Play, ArrowRight, Calculator, Smartphone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import SectionHeader from '@/components/ui/SectionHeader';
@@ -110,6 +110,18 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
         'home.servicesGrid.items.social.deliverables.0',
         'home.servicesGrid.items.social.deliverables.1',
         'home.servicesGrid.items.social.deliverables.2',
+      ],
+    },
+    {
+      id: 'mobile-app-development',
+      icon: Smartphone,
+      titleKey: 'home.servicesGrid.items.mobileApp.title',
+      descKey: 'home.servicesGrid.items.mobileApp.desc',
+      pricingConfig: SERVICE_PRICING_CONFIG['mobile-app-development'],
+      deliverables: [
+        'home.servicesGrid.items.mobileApp.deliverables.0',
+        'home.servicesGrid.items.mobileApp.deliverables.1',
+        'home.servicesGrid.items.mobileApp.deliverables.2',
       ],
     },
   ];

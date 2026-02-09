@@ -11,6 +11,7 @@ export const SERVICE_VIDEO_BY_SLUG: Record<string, string> = {
   'ecommerce-website': '1jJgIkhbQT69N1iXKEjLiz-eZp8CVemio',
   'one-page-website': '1ndZjHgg2usSrSXbuW-r4hA1NqbuirXvw',
   'social-media': '1Nhf9_ZjyDWE2kxlBfGnAu0UCmrCb6j_l',
+  'mobile-app-development': '', // Video coming soon
 };
 
 export function buildDrivePreviewUrl(fileId: string): string {
@@ -22,5 +23,6 @@ export function buildDriveViewUrl(fileId: string): string {
 }
 
 export function getVideoIdBySlug(slug: string): string | undefined {
-  return SERVICE_VIDEO_BY_SLUG[slug];
+  const id = SERVICE_VIDEO_BY_SLUG[slug];
+  return id || undefined; // Return undefined for empty strings too
 }

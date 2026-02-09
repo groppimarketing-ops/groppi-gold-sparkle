@@ -36,6 +36,12 @@ export const WEBSITE_PRICING = {
   },
 } as const;
 
+// Mobile App Development - Dual pricing (one-time + monthly maintenance)
+export const MOBILE_APP_PRICING = {
+  oneTime: 4000,       // Project build fee
+  monthlyMaintenance: 250, // Monthly maintenance subscription
+} as const;
+
 // Monthly subscription services
 export const SUBSCRIPTION_PRICING = {
   socialMedia: {
@@ -69,6 +75,10 @@ export interface ServicePricingConfig {
   priceUnit?: string; // e.g., '/item', '/maand'
   pricingType: PricingType;
   hasCalculator: boolean;
+  /** For dual-pricing services (one-time + monthly maintenance) */
+  secondaryPriceMin?: number;
+  secondaryPriceUnit?: string;
+  secondaryPricingType?: PricingType;
 }
 
 export const SERVICE_PRICING_CONFIG: Record<string, ServicePricingConfig> = {
@@ -132,6 +142,16 @@ export const SERVICE_PRICING_CONFIG: Record<string, ServicePricingConfig> = {
     priceUnit: '/maand',
     pricingType: 'monthly',
     hasCalculator: false,
+  },
+  'mobile-app-development': {
+    id: 'mobile-app-development',
+    priceDisplay: 'from',
+    priceMin: MOBILE_APP_PRICING.oneTime, // €4,000 one-time
+    pricingType: 'one_time',
+    hasCalculator: false,
+    secondaryPriceMin: MOBILE_APP_PRICING.monthlyMaintenance, // €250/month
+    secondaryPriceUnit: '/maand',
+    secondaryPricingType: 'monthly',
   },
 } as const;
 

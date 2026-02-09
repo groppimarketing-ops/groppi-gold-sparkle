@@ -390,6 +390,15 @@
             "1": "Community management",
             "2": "Maandelijkse analyse"
           }
+        },
+        "mobileApp": {
+          "title": "Mobile App Development",
+          "desc": "Lanceer een eigen app voor iOS & Android.",
+          "deliverables": {
+            "0": "UX/UI design + development",
+            "1": "Backend & integraties",
+            "2": "App Store launch support"
+          }
         }
       }
     },
@@ -906,6 +915,7 @@
     "perMonth": "/ maand",
     "oneTimePayment": "eenmalige betaling",
     "requestQuote": "Offerte aanvragen",
+    "maintenanceFrom": "onderhoud vanaf",
     "getQuote": "Vraag een offerte aan",
     "keyInclusions": "Wat inbegrepen is",
     "videoPlaceholder": "Bekijk korte uitlegvideo",
@@ -973,6 +983,11 @@
           "when": "Voor bedrijven die online willen verkopen met een professionele webshop.",
           "problem": "Lost het probleem op van gemiste verkoopkansen online.",
           "result": "Een geoptimaliseerde webshop die bezoekers omzet in klanten."
+        },
+        "mobile_app_development": {
+          "when": "Voor bedrijven die een eigen mobiele app willen lanceren.",
+          "problem": "Lost het probleem op van afwezigheid in de app stores.",
+          "result": "Een professionele iOS & Android app die klanten direct bereikt."
         }
       }
     },
@@ -985,7 +1000,8 @@
       "seo": "Groei organisch en word gevonden door je doelgroep.",
       "social_media": "Voor bedrijven die consistente resultaten willen zonder alles zelf te beheren.",
       "reputation": "Bescherm en versterk je online reputatie.",
-      "data_sync": "Houd al je bedrijfsdata gesynchroniseerd en up-to-date."
+      "data_sync": "Houd al je bedrijfsdata gesynchroniseerd en up-to-date.",
+      "mobile_app_development": "Lanceer een eigen app voor iOS & Android, gebouwd voor groei."
     },
     "guidedEntry": {
       "title": "Niet zeker waar te beginnen?",
@@ -1203,6 +1219,16 @@
           "1": "Realtime updates",
           "2": "Voorraadbeheer",
           "3": "API-integraties"
+        }
+      },
+      "mobileApp": {
+        "title": "Mobile App Development",
+        "description": "Lanceer een snelle iOS & Android app met een native feel — gebouwd voor groei.",
+        "features": {
+          "0": "iOS & Android (native feel)",
+          "1": "Schone UX + snelle performance",
+          "2": "App Store & Play Store launch",
+          "3": "Backend & API-integraties"
         }
       }
     },
@@ -2050,6 +2076,28 @@
         "1": { "title": "Analyse", "desc": "We leren je merk en doelgroep kennen." },
         "2": { "title": "Uitvoering", "desc": "Concepten, feedback en finalisatie." },
         "3": { "title": "Groei & optimalisatie", "desc": "Doorontwikkeling waar nodig." }
+      }
+    },
+    "mobileAppDevelopment": {
+      "title": "Mobile App Development",
+      "subtitle": "Bouw een premium app — houd het veilig en up-to-date elke maand.",
+      "benefits": {
+        "1": "iOS & Android (native feel)",
+        "2": "Schone UX + snelle performance",
+        "3": "Launch-ready tracking + store assets"
+      },
+      "deliverables": {
+        "1": { "title": "Strategie & feature planning", "desc": "Samen bepalen wat je app moet doen." },
+        "2": { "title": "UI/UX design", "desc": "Intuïtief ontwerp dat gebruikers begrijpen." },
+        "3": { "title": "Development (iOS/Android)", "desc": "Cross-platform of native ontwikkeling." },
+        "4": { "title": "Backend & integraties", "desc": "Betalingen, API's, CRM koppelingen." },
+        "5": { "title": "QA testing & optimalisatie", "desc": "Grondig testen op alle apparaten." },
+        "6": { "title": "App Store / Google Play launch", "desc": "Volledige begeleiding bij publicatie." }
+      },
+      "process": {
+        "1": { "title": "Analyse", "desc": "We bespreken features, doelgroep en technische vereisten." },
+        "2": { "title": "Uitvoering", "desc": "Design, development en testen in sprints." },
+        "3": { "title": "Launch & onderhoud", "desc": "Publicatie + optioneel maandelijks onderhoud." }
       }
     },
     "contentCalculator": {

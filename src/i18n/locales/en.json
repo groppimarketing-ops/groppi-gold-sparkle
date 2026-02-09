@@ -390,6 +390,15 @@
             "1": "Community management",
             "2": "Monthly analysis"
           }
+        },
+        "mobileApp": {
+          "title": "Mobile App Development",
+          "desc": "Launch your own app for iOS & Android.",
+          "deliverables": {
+            "0": "UX/UI design + development",
+            "1": "Backend & integrations",
+            "2": "App Store launch support"
+          }
         }
       }
     },
@@ -906,6 +915,7 @@
     "perMonth": "/ month",
     "oneTimePayment": "one-time payment",
     "requestQuote": "Request Quote",
+    "maintenanceFrom": "maintenance from",
     "getQuote": "Get a Quote",
     "keyInclusions": "What's included",
     "videoPlaceholder": "Watch short explainer video",
@@ -973,6 +983,11 @@
           "when": "For businesses that want to sell online with a professional webshop.",
           "problem": "Solves the problem of missed sales opportunities online.",
           "result": "An optimized webshop that converts visitors into customers."
+        },
+        "mobile_app_development": {
+          "when": "For businesses that want to launch their own mobile app.",
+          "problem": "Solves the problem of absence in the app stores.",
+          "result": "A professional iOS & Android app that reaches customers directly."
         }
       }
     },
@@ -985,7 +1000,8 @@
       "seo": "Grow organically and be found by your target audience.",
       "social_media": "For businesses that want consistent results without managing everything themselves.",
       "reputation": "Protect and strengthen your online reputation.",
-      "data_sync": "Keep all your business data synchronized and up-to-date."
+      "data_sync": "Keep all your business data synchronized and up-to-date.",
+      "mobile_app_development": "Launch your own iOS & Android app with a native feel — built for growth."
     },
     "guidedEntry": {
       "title": "Not sure where to start?",
@@ -1203,6 +1219,16 @@
           "1": "Real-time updates",
           "2": "Inventory management",
           "3": "API integrations"
+        }
+      },
+      "mobileApp": {
+        "title": "Mobile App Development",
+        "description": "Launch a fast iOS & Android app with a native feel — built for growth.",
+        "features": {
+          "0": "iOS & Android (native feel)",
+          "1": "Clean UX + fast performance",
+          "2": "App Store & Play Store launch",
+          "3": "Backend & API integrations"
         }
       }
     },
@@ -2050,6 +2076,28 @@
         "1": { "title": "Analysis", "desc": "We get to know your brand and audience." },
         "2": { "title": "Execution", "desc": "Concepts, feedback and finalization." },
         "3": { "title": "Growth & optimization", "desc": "Further development where needed." }
+      }
+    },
+    "mobileAppDevelopment": {
+      "title": "Mobile App Development",
+      "subtitle": "Build a premium app once — keep it secure and updated every month.",
+      "benefits": {
+        "1": "iOS & Android (native feel)",
+        "2": "Clean UX + fast performance",
+        "3": "Launch-ready tracking + store assets"
+      },
+      "deliverables": {
+        "1": { "title": "Strategy & feature planning", "desc": "Together we define what your app needs." },
+        "2": { "title": "UI/UX design", "desc": "Intuitive design that users understand." },
+        "3": { "title": "Development (iOS/Android)", "desc": "Cross-platform or native development." },
+        "4": { "title": "Backend & integrations", "desc": "Payments, APIs, CRM connections." },
+        "5": { "title": "QA testing & optimization", "desc": "Thorough testing on all devices." },
+        "6": { "title": "App Store / Google Play launch", "desc": "Full guidance through publication." }
+      },
+      "process": {
+        "1": { "title": "Analysis", "desc": "We discuss features, audience and technical requirements." },
+        "2": { "title": "Execution", "desc": "Design, development and testing in sprints." },
+        "3": { "title": "Launch & maintenance", "desc": "Publication + optional monthly maintenance." }
       }
     },
     "contentCalculator": {

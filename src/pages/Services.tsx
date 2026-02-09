@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Star, RefreshCw, Brain, Rocket, Filter, FileText, Award } from 'lucide-react';
+import { ArrowRight, Sparkles, Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Star, RefreshCw, Brain, Rocket, Filter, FileText, Award, Smartphone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState, useRef } from 'react';
 import PageLayout from '@/components/layout/PageLayout';
@@ -243,6 +243,23 @@ const Services = () => {
       ],
       gradient: 'from-primary/5 to-primary/15',
       pricingType: 'custom',
+      targetAudience: ['business'],
+    },
+    // Mobile App Development
+    {
+      id: 'mobile-app-development',
+      icon: Smartphone,
+      titleKey: 'services.items.mobileApp.title',
+      descriptionKey: 'services.items.mobileApp.description',
+      features: [
+        'services.items.mobileApp.features.0',
+        'services.items.mobileApp.features.1',
+        'services.items.mobileApp.features.2',
+        'services.items.mobileApp.features.3',
+      ],
+      gradient: 'from-primary/5 to-primary/15',
+      pricingType: 'one_time',
+      priceMin: 4000,
       targetAudience: ['business'],
     },
   ];
