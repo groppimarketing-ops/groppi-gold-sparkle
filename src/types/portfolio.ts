@@ -55,6 +55,51 @@ export interface PortfolioItem {
   createdAt: Date;
 }
 
+// ===== SECTOR SYSTEM =====
+export type Sector =
+  | 'restaurants-hospitality'
+  | 'retail-ecommerce'
+  | 'platforms-booking'
+  | 'corporate-services'
+  | 'education-academy';
+
+export const sectorLabels: Record<Sector, { nl: string; en: string }> = {
+  'restaurants-hospitality': { nl: 'Restaurants & Hospitality', en: 'Restaurants & Hospitality' },
+  'retail-ecommerce': { nl: 'Retail & E-commerce', en: 'Retail & E-commerce' },
+  'platforms-booking': { nl: 'Platforms & Booking', en: 'Platforms & Booking' },
+  'corporate-services': { nl: 'Corporate & Services', en: 'Corporate & Services' },
+  'education-academy': { nl: 'Educatie & Academy', en: 'Education & Academy' },
+};
+
+// Order for display
+export const sectorOrder: Sector[] = [
+  'restaurants-hospitality',
+  'retail-ecommerce',
+  'platforms-booking',
+  'corporate-services',
+  'education-academy',
+];
+
+// Map industry → sector
+const industryToSectorMap: Record<Industry, Sector> = {
+  restaurant: 'restaurants-hospitality',
+  hospitality: 'restaurants-hospitality',
+  retail: 'retail-ecommerce',
+  ecommerce: 'retail-ecommerce',
+  startup: 'platforms-booking',
+  b2b: 'corporate-services',
+  construction: 'corporate-services',
+  services: 'corporate-services',
+  interior: 'corporate-services',
+  beauty: 'corporate-services',
+  renovation: 'corporate-services',
+  'real-estate': 'corporate-services',
+};
+
+export const getSector = (industry: Industry): Sector => {
+  return industryToSectorMap[industry] || 'corporate-services';
+};
+
 // Industry labels for filtering UI
 export const industryLabels: Record<Industry, { nl: string; en: string }> = {
   restaurant: { nl: 'Restaurants & Horeca', en: 'Restaurants & Hospitality' },

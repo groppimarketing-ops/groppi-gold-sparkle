@@ -8,6 +8,7 @@ import PortfolioCard from '@/components/portfolio/PortfolioCard';
 import CaseStudyModal from '@/components/portfolio/CaseStudyModal';
 import { allPortfolioItems } from '@/data/portfolioItems';
 import type { PortfolioItem } from '@/types/portfolio';
+import { getSector, sectorLabels, sectorOrder, type Sector } from '@/types/portfolio';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import PageSEO from '@/components/seo/PageSEO';
@@ -36,26 +37,113 @@ const NDADisclaimer = memo(({ className = '' }: { className?: string }) => {
 
 NDADisclaimer.displayName = 'NDADisclaimer';
 
-const Gallery = () => {
+// Sector filter pills
+const SectorFilters = memo(({
+  activeSector,
+  onSectorChange,
+  sectorCounts,
+  lang,
+}: {
+  activeSector: Sector | null;
+  onSectorChange: (sector: Sector | null) => void;
+  sectorCounts: Record<Sector, number>;
+  lang: 'nl' | 'en';
+}) => {
   const { t } = useTranslation();
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.1 }}
+      className="flex flex-wrap justify-center gap-2 mt-8"
+    >
+      {/* All button */}
+      <button
+        onClick={() => onSectorChange(null)}
+        className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-300 ${
+          activeSector === null
+            ? 'bg-primary/20 border-primary/60 text-primary shadow-[0_0_15px_hsl(var(--gold)/0.2)]'
+            : 'border-border/50 text-muted-foreground hover:border-primary/40 hover:text-primary/80'
+        }`}
+      >
+        {t('portfolio.filters.all', 'Alles')}
+      </button>
+
+      {sectorOrder.map((sector) => {
+        const count = sectorCounts[sector] || 0;
+        if (count === 0) return null;
+
+        return (
+          <button
+            key={sector}
+            onClick={() => onSectorChange(activeSector === sector ? null : sector)}
+            className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-300 ${
+              activeSector === sector
+                ? 'bg-primary/20 border-primary/60 text-primary shadow-[0_0_15px_hsl(var(--gold)/0.2)]'
+                : 'border-border/50 text-muted-foreground hover:border-primary/40 hover:text-primary/80'
+            }`}
+          >
+            {sectorLabels[sector][lang]}
+            <span className="ml-1.5 text-xs opacity-60">({count})</span>
+          </button>
+        );
+      })}
+    </motion.div>
+  );
+});
+
+SectorFilters.displayName = 'SectorFilters';
+
+const Gallery = () => {
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language.startsWith('nl') ? 'nl' : 'en';
   
   const [searchQuery, setSearchQuery] = useState('');
+  const [activeSector, setActiveSector] = useState<Sector | null>(null);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   
   // Modal state
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Filtered portfolio items
+  // Sector counts (from full list, before search)
+  const sectorCounts = useMemo(() => {
+    const counts = {} as Record<Sector, number>;
+    for (const s of sectorOrder) counts[s] = 0;
+    for (const item of allPortfolioItems) {
+      const sector = getSector(item.industry);
+      counts[sector] = (counts[sector] || 0) + 1;
+    }
+    return counts;
+  }, []);
+
+  // Filtered & sorted portfolio items
   const filteredItems = useMemo(() => {
-    if (!searchQuery.trim()) return allPortfolioItems;
-    const query = searchQuery.toLowerCase();
-    return allPortfolioItems.filter(item => 
-      item.clientName.toLowerCase().includes(query) ||
-      item.industry.toLowerCase().includes(query) ||
-      item.services.some(s => s.toLowerCase().includes(query))
-    );
-  }, [searchQuery]);
+    let items = allPortfolioItems;
+
+    // Sector filter
+    if (activeSector) {
+      items = items.filter(item => getSector(item.industry) === activeSector);
+    }
+
+    // Search filter
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      items = items.filter(item => 
+        item.clientName.toLowerCase().includes(query) ||
+        item.industry.toLowerCase().includes(query) ||
+        item.services.some(s => s.toLowerCase().includes(query))
+      );
+    }
+
+    // Sort: featured first, then by date descending
+    return [...items].sort((a, b) => {
+      if (a.featured && !b.featured) return -1;
+      if (!a.featured && b.featured) return 1;
+      return b.createdAt.getTime() - a.createdAt.getTime();
+    });
+  }, [searchQuery, activeSector]);
 
   // Visible subset
   const visibleItems = useMemo(() => filteredItems.slice(0, visibleCount), [filteredItems, visibleCount]);
@@ -75,9 +163,19 @@ const Gallery = () => {
     setTimeout(() => setSelectedItem(null), 300);
   }, []);
 
-  // Reset visible count on search change
   const handleSearchChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
+    setVisibleCount(ITEMS_PER_PAGE);
+  }, []);
+
+  const handleSectorChange = useCallback((sector: Sector | null) => {
+    setActiveSector(sector);
+    setVisibleCount(ITEMS_PER_PAGE);
+  }, []);
+
+  const handleClearAll = useCallback(() => {
+    setSearchQuery('');
+    setActiveSector(null);
     setVisibleCount(ITEMS_PER_PAGE);
   }, []);
 
@@ -106,11 +204,19 @@ const Gallery = () => {
           {/* NDA Disclaimer */}
           <NDADisclaimer className="mt-6" />
 
+          {/* Sector Filter Pills */}
+          <SectorFilters
+            activeSector={activeSector}
+            onSectorChange={handleSectorChange}
+            sectorCounts={sectorCounts}
+            lang={lang}
+          />
+
           {/* Search */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="max-w-md mx-auto mt-8 mb-4"
+            className="max-w-md mx-auto mt-6 mb-4"
           >
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
@@ -133,7 +239,7 @@ const Gallery = () => {
           </motion.div>
 
           {/* Results count */}
-          {searchQuery && (
+          {(searchQuery || activeSector) && (
             <p className="text-center text-muted-foreground text-sm mb-8">
               {filteredItems.length} {filteredItems.length === 1 
                 ? t('portfolio.page.resultSingle', 'project gevonden') 
@@ -165,7 +271,7 @@ const Gallery = () => {
                   {t('portfolio.page.noResults', 'Geen projecten gevonden met deze filters.')}
                 </p>
                 <button
-                  onClick={() => { setSearchQuery(''); setVisibleCount(ITEMS_PER_PAGE); }}
+                  onClick={handleClearAll}
                   className="mt-4 text-primary hover:text-primary/80 underline underline-offset-4"
                 >
                   {t('portfolio.filters.clearAll', 'Wis alle filters')}
