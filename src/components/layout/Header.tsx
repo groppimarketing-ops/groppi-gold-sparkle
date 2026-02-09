@@ -212,7 +212,7 @@ const Header = () => {
                   {location.pathname === item.path && (
                     <motion.div
                       layoutId="activeNav"
-                      className="absolute inset-0 glass-card -z-10"
+                      className="absolute inset-0 glass-card border border-primary/40 shadow-[0_0_15px_hsl(43_76%_52%/0.25)] -z-10"
                       transition={{ type: 'spring', duration: 0.5 }}
                     />
                   )}
