@@ -903,7 +903,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: '20',
     clientName: 'Ai Learn Academy',
     slug: 'ai-learn-academy',
-    industry: 'startup',
+    industry: 'education',
     services: ['website', 'ecommerce', 'content'],
     coverMedia: {
       id: 'cover-20',
@@ -1164,7 +1164,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: '26',
     clientName: 'Guest Reservations',
     slug: 'guest-reservations',
-    industry: 'startup',
+    industry: 'hospitality',
     services: ['website', 'ecommerce', 'content'],
     coverMedia: {
       id: 'cover-26',
@@ -1206,7 +1206,7 @@ export const portfolioItems: PortfolioItem[] = [
     id: '27',
     clientName: 'Eurostars Hotels',
     slug: 'eurostars-hotels',
-    industry: 'startup',
+    industry: 'hospitality',
     services: ['website', 'ecommerce', 'content'],
     coverMedia: {
       id: 'cover-27',

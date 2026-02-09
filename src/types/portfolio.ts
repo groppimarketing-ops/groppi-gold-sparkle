@@ -12,7 +12,9 @@ export type Industry =
   | 'services'
   | 'startup'
   | 'hospitality'
-  | 'b2b';
+  | 'b2b'
+  | 'medical'
+  | 'education';
 
 export type ServiceTag = 
   | 'website'
@@ -57,47 +59,64 @@ export interface PortfolioItem {
 
 // ===== SECTOR SYSTEM =====
 export type Sector =
-  | 'restaurants-hospitality'
-  | 'retail-ecommerce'
-  | 'platforms-booking'
-  | 'corporate-services'
-  | 'education-academy';
+  | 'restaurants-hotels'
+  | 'interior-architecture'
+  | 'retail-local-shops'
+  | 'ecommerce'
+  | 'real-estate'
+  | 'beauty-care'
+  | 'local-services'
+  | 'smes-startups'
+  | 'medical-clinics'
+  | 'educational-academies';
 
 export const sectorLabels: Record<Sector, { nl: string; en: string }> = {
-  'restaurants-hospitality': { nl: 'Restaurants & Hospitality', en: 'Restaurants & Hospitality' },
-  'retail-ecommerce': { nl: 'Retail & E-commerce', en: 'Retail & E-commerce' },
-  'platforms-booking': { nl: 'Platforms & Booking', en: 'Platforms & Booking' },
-  'corporate-services': { nl: 'Corporate & Services', en: 'Corporate & Services' },
-  'education-academy': { nl: 'Educatie & Academy', en: 'Education & Academy' },
+  'restaurants-hotels': { nl: "Restaurant's & Hotel's", en: "Restaurant's & Hotel's" },
+  'interior-architecture': { nl: 'Interieur & Architectuur', en: 'Interior & Architecture' },
+  'retail-local-shops': { nl: 'Retail & lokale winkels', en: 'Retail & local shops' },
+  'ecommerce': { nl: 'E-commerce', en: 'E-commerce' },
+  'real-estate': { nl: 'Vastgoed', en: 'Real estate' },
+  'beauty-care': { nl: 'Beauty & Care', en: 'Beauty & Care' },
+  'local-services': { nl: 'Lokale diensten', en: 'Local services' },
+  'smes-startups': { nl: "KMO's & startups", en: 'SMEs & startups' },
+  'medical-clinics': { nl: 'Medische klinieken', en: 'Medical clinics' },
+  'educational-academies': { nl: 'Educatieve academies', en: 'Educational academies' },
 };
 
 // Order for display
 export const sectorOrder: Sector[] = [
-  'restaurants-hospitality',
-  'retail-ecommerce',
-  'platforms-booking',
-  'corporate-services',
-  'education-academy',
+  'restaurants-hotels',
+  'interior-architecture',
+  'retail-local-shops',
+  'ecommerce',
+  'real-estate',
+  'beauty-care',
+  'local-services',
+  'smes-startups',
+  'medical-clinics',
+  'educational-academies',
 ];
 
 // Map industry → sector
 const industryToSectorMap: Record<Industry, Sector> = {
-  restaurant: 'restaurants-hospitality',
-  hospitality: 'restaurants-hospitality',
-  retail: 'retail-ecommerce',
-  ecommerce: 'retail-ecommerce',
-  startup: 'platforms-booking',
-  b2b: 'corporate-services',
-  construction: 'corporate-services',
-  services: 'corporate-services',
-  interior: 'corporate-services',
-  beauty: 'corporate-services',
-  renovation: 'corporate-services',
-  'real-estate': 'corporate-services',
+  restaurant: 'restaurants-hotels',
+  hospitality: 'restaurants-hotels',
+  retail: 'retail-local-shops',
+  ecommerce: 'ecommerce',
+  'real-estate': 'real-estate',
+  beauty: 'beauty-care',
+  interior: 'interior-architecture',
+  construction: 'interior-architecture',
+  renovation: 'interior-architecture',
+  services: 'local-services',
+  startup: 'smes-startups',
+  b2b: 'smes-startups',
+  medical: 'medical-clinics',
+  education: 'educational-academies',
 };
 
 export const getSector = (industry: Industry): Sector => {
-  return industryToSectorMap[industry] || 'corporate-services';
+  return industryToSectorMap[industry] || 'local-services';
 };
 
 // Industry labels for filtering UI
@@ -114,6 +133,8 @@ export const industryLabels: Record<Industry, { nl: string; en: string }> = {
   startup: { nl: 'Startups & Tech', en: 'Startups & Tech' },
   hospitality: { nl: 'Hospitality', en: 'Hospitality' },
   b2b: { nl: 'B2B', en: 'B2B' },
+  medical: { nl: 'Medisch', en: 'Medical' },
+  education: { nl: 'Educatie', en: 'Education' },
 };
 
 // Service tag labels
