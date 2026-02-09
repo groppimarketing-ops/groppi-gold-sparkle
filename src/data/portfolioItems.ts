@@ -63,7 +63,51 @@ import pummaroCover from '@/assets/portfolio/pummaro/cover.jpg';
 import pummaroFood from '@/assets/portfolio/pummaro/food.jpg';
 import pummaroInterior from '@/assets/portfolio/pummaro/interior.jpg';
 
+// AUGUSTO TORINO assets
+import augustoCover from '@/assets/portfolio/augusto-torino/cover.jpg';
+import augustoFood from '@/assets/portfolio/augusto-torino/food.jpg';
+import augustoInterior from '@/assets/portfolio/augusto-torino/interior.jpg';
+
 export const portfolioItems: PortfolioItem[] = [
+  {
+    id: '17',
+    clientName: 'Augusto Torino',
+    slug: 'augusto-torino',
+    industry: 'restaurant',
+    services: ['website', 'branding', 'content'],
+    coverMedia: {
+      id: 'cover-17',
+      type: 'image',
+      url: augustoCover,
+      alt: 'Augusto Torino - Elegant Italian restaurant in Turin',
+    },
+    galleryMedia: [
+      { id: 'gallery-17-1', type: 'image', url: augustoCover, alt: 'Augusto Torino - Restaurant presentation' },
+      { id: 'gallery-17-2', type: 'image', url: augustoFood, alt: 'Augusto Torino - Food presentation' },
+      { id: 'gallery-17-3', type: 'image', url: augustoInterior, alt: 'Augusto Torino - Interior atmosphere' },
+    ],
+    shortResultLine: 'Elegant restaurant website with strong visual identity and refined food presentation.',
+    popupContent: {
+      challenge: 'Ristorante Pizzeria Augusto in Torino needed a polished digital presence to reflect their refined Italian cuisine and welcoming atmosphere, attracting both locals and visitors.',
+      approachPoints: [
+        'Website structure & optimization',
+        'Visual hierarchy & food-focused layout',
+        'Performance and mobile usability',
+        'Event and reservation integration',
+      ],
+      resultPoints: [
+        'Premium restaurant branding online',
+        'Clear customer journey from menu to booking',
+        'Strong visual storytelling across all pages',
+        'Improved online visibility and local SEO',
+      ],
+      resultDisclaimer: 'Project actief beheerd door GROPPI.',
+      deliverables: ['website-design', 'website-dev', 'content-calendar', 'photo-shoot'],
+    },
+    externalUrl: 'https://augustotorino.com/',
+    featured: true,
+    createdAt: new Date('2025-02-09'),
+  },
   {
     id: '16',
     clientName: 'Pizzeria Pummarò',
