@@ -11,7 +11,7 @@ export const SERVICE_VIDEO_BY_SLUG: Record<string, string> = {
   'ecommerce-website': '1jJgIkhbQT69N1iXKEjLiz-eZp8CVemio',
   'one-page-website': '1ndZjHgg2usSrSXbuW-r4hA1NqbuirXvw',
   'social-media': '1Nhf9_ZjyDWE2kxlBfGnAu0UCmrCb6j_l',
-  'mobile-app-development': '', // Video coming soon
+  'mobile-app-development': '10hluiBfJuByaxHcwZQbMgS4uXMxp_cty',
 };
 
 export function buildDrivePreviewUrl(fileId: string): string {
