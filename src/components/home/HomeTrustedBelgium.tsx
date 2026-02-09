@@ -57,7 +57,7 @@ const countryData = [
   {
     key: 'spain',
     flag: '🇪🇸',
-    clientCount: '8+',
+    clientCount: '45+',
     sectors: ['restaurants', 'realEstate', 'ecommerce'],
   },
   {
