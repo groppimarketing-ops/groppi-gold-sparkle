@@ -85,7 +85,62 @@ import cosePazziSocial from '@/assets/portfolio/cose-pazzi/social-mockup.webp';
 import cosePazziBrand from '@/assets/portfolio/cose-pazzi/brand-mood.webp';
 import cosePazziLogo from '@/assets/portfolio/cose-pazzi/logo.png';
 
+// CASTELLO VICCHIOMAGGIO assets
+import vicchiomaggioHero from '@/assets/portfolio/vicchiomaggio/hero.webp';
+import vicchiomaggioDesktop from '@/assets/portfolio/vicchiomaggio/desktop-mockup.webp';
+import vicchiomaggioMobile from '@/assets/portfolio/vicchiomaggio/mobile-mockup.webp';
+import vicchiomaggioWine from '@/assets/portfolio/vicchiomaggio/wine-cellar.webp';
+import vicchiommaggioDining from '@/assets/portfolio/vicchiomaggio/dining.webp';
+import vicchiomaggioLandscape from '@/assets/portfolio/vicchiomaggio/landscape.webp';
+import vicchiommaggioBrand from '@/assets/portfolio/vicchiomaggio/brand-mood.webp';
+import vicchiomaggioDigital from '@/assets/portfolio/vicchiomaggio/digital-presence.webp';
+
 export const portfolioItems: PortfolioItem[] = [
+  {
+    id: '19',
+    clientName: 'Castello Vicchiomaggio',
+    slug: 'castello-vicchiomaggio',
+    industry: 'hospitality',
+    services: ['website', 'branding', 'content'],
+    coverMedia: {
+      id: 'cover-19',
+      type: 'image',
+      url: vicchiomaggioHero,
+      alt: 'Castello Vicchiomaggio - Tuscan winery estate at golden hour',
+    },
+    galleryMedia: [
+      { id: 'gallery-19-1', type: 'image', url: vicchiomaggioDesktop, alt: 'Vicchiomaggio - Website desktop mockup' },
+      { id: 'gallery-19-2', type: 'image', url: vicchiomaggioMobile, alt: 'Vicchiomaggio - Mobile booking experience', aspectRatio: '9:16' },
+      { id: 'gallery-19-3', type: 'image', url: vicchiomaggioWine, alt: 'Vicchiomaggio - Wine cellar experience' },
+      { id: 'gallery-19-4', type: 'image', url: vicchiommaggioDining, alt: 'Vicchiomaggio - Terrace dining with Tuscan views' },
+      { id: 'gallery-19-5', type: 'image', url: vicchiomaggioLandscape, alt: 'Vicchiomaggio - Chianti vineyard landscape' },
+      { id: 'gallery-19-6', type: 'image', url: vicchiommaggioBrand, alt: 'Vicchiomaggio - Brand mood and textures', aspectRatio: '4:5' },
+      { id: 'gallery-19-7', type: 'image', url: vicchiomaggioDigital, alt: 'Vicchiomaggio - Multi-device digital presence' },
+    ],
+    shortResultLine: 'Digital presentation and visual direction for a historic Tuscan winery and hospitality estate.',
+    popupContent: {
+      challenge: 'Castello Vicchiomaggio, a historic winery and hospitality estate in the Chianti region of Tuscany, needed a refined digital presence to match the prestige of their centuries-old heritage and attract international guests.',
+      approachPoints: [
+        'Premium website design with luxury hospitality focus',
+        'Visual content direction capturing estate atmosphere',
+        'Mobile-first booking experience optimization',
+        'Digital brand identity aligned with historic heritage',
+        'Multi-device responsive presentation',
+      ],
+      resultPoints: [
+        'Elevated digital presence reflecting estate prestige',
+        'Immersive visual storytelling across all touchpoints',
+        'Streamlined guest booking experience',
+        'Consistent brand presentation across devices',
+        'Enhanced international visibility and appeal',
+      ],
+      resultDisclaimer: 'Visuals recreated for portfolio presentation purposes.',
+      deliverables: ['website-design', 'website-dev', 'content-calendar', 'photo-shoot', 'social-content'],
+    },
+    externalUrl: 'https://www.vicchiomaggio.it/',
+    featured: true,
+    createdAt: new Date('2025-03-15'),
+  },
   {
     id: '18',
     clientName: 'Pizzeria Cose Pazzi Torino',
