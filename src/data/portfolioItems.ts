@@ -96,6 +96,16 @@ import vicchiommaggioBrand from '@/assets/portfolio/vicchiomaggio/brand-mood.web
 import vicchiomaggioDigital from '@/assets/portfolio/vicchiomaggio/digital-presence.webp';
 import vicchiomaggioLogo from '@/assets/portfolio/vicchiomaggio/logo.png';
 
+// AI DEALS assets
+import aidealsHero from '@/assets/portfolio/aideals/hero.webp';
+import aidealsDesktop from '@/assets/portfolio/aideals/desktop-mockup.webp';
+import aidealsMobile from '@/assets/portfolio/aideals/mobile-mockup.webp';
+import aidealsAcademy from '@/assets/portfolio/aideals/academy.webp';
+import aidealsDashboard from '@/assets/portfolio/aideals/dashboard.webp';
+import aidealsBrand from '@/assets/portfolio/aideals/brand-mood.webp';
+import aidealsMultiDevice from '@/assets/portfolio/aideals/multi-device.webp';
+import aidealsMarketplace from '@/assets/portfolio/aideals/marketplace.webp';
+
 export const portfolioItems: PortfolioItem[] = [
   {
     id: '19',
@@ -832,6 +842,53 @@ export const portfolioItems: PortfolioItem[] = [
     },
     featured: false,
     createdAt: new Date('2024-04-05'),
+  },
+  {
+    id: '20',
+    clientName: 'AI Deals',
+    slug: 'ai-deals',
+    industry: 'startup',
+    services: ['website', 'ecommerce', 'content'],
+    coverMedia: {
+      id: 'cover-20',
+      type: 'image',
+      url: aidealsHero,
+      alt: 'AI Deals premium AI platform',
+    },
+    galleryMedia: [
+      { id: 'gallery-20-1', type: 'image', url: aidealsDesktop, alt: 'AI Deals desktop website mockup' },
+      { id: 'gallery-20-2', type: 'image', url: aidealsMobile, alt: 'AI Deals mobile interface', aspectRatio: '9:16' },
+      { id: 'gallery-20-3', type: 'image', url: aidealsMarketplace, alt: 'AI tools marketplace grid' },
+      { id: 'gallery-20-4', type: 'image', url: aidealsAcademy, alt: 'AI Academy educational platform' },
+      { id: 'gallery-20-5', type: 'image', url: aidealsDashboard, alt: 'AI tools analytics dashboard' },
+      { id: 'gallery-20-6', type: 'image', url: aidealsBrand, alt: 'AI Deals brand mood – neural network' },
+      { id: 'gallery-20-7', type: 'image', url: aidealsMultiDevice, alt: 'AI Deals multi-device presentation' },
+    ],
+    shortResultLine: 'Live platform – ongoing',
+    popupContent: {
+      challenge: 'AI Deals needed a premium platform that simplifies access to leading AI tools through a subscription model, combined with an educational academy for creators and professionals. The challenge was building a scalable, conversion-focused experience from scratch.',
+      approachPoints: [
+        'Full platform design & UX/UI development with premium dark theme',
+        'Subscription-based access management system',
+        'AI tools marketplace structure with categorization',
+        'AI Academy & educational content architecture',
+        'Scalable platform infrastructure for growth',
+        'Ongoing technical management and optimization',
+      ],
+      resultPoints: [
+        'Custom AI tools marketplace launched',
+        'Subscription & access management system live',
+        'Premium dark UI with conversion-focused UX',
+        'Educational AI Academy structure deployed',
+        'Scalable architecture supporting continuous growth',
+        'Platform actively managed & optimized by Groppi',
+      ],
+      resultDisclaimer: 'This is a live and ongoing project. Platform design & management by Groppi.',
+      deliverables: ['website-design', 'website-dev', 'copywriting', 'seo-optimization'],
+    },
+    externalUrl: 'https://aideals.be/',
+    featured: true,
+    createdAt: new Date('2025-06-01'),
   },
 ];
 
