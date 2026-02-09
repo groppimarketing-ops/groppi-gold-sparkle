@@ -49,6 +49,12 @@ const countryData = [
     sectors: ['medical', 'realEstate', 'beauty'],
   },
   {
+    key: 'italy',
+    flag: '🇮🇹',
+    clientCount: '5+',
+    sectors: ['restaurants', 'beauty', 'retail'],
+  },
+  {
     key: 'usa',
     flag: '🇺🇸',
     clientCount: '7+',
