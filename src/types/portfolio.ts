@@ -49,6 +49,7 @@ export interface PortfolioItem {
     resultDisclaimer?: string; // Optional disclaimer for indicative metrics
     deliverables: string[]; // Chips list of what was delivered
   };
+  clientLogo?: string; // Optional client logo image
   externalUrl?: string; // Link to live project website
   featured?: boolean;
   createdAt: Date;

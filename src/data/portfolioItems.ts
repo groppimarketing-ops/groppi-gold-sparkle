@@ -45,6 +45,7 @@ import kmaShowroom from '@/assets/portfolio/kma/kma-showroom.jpg';
 
 // MANGIARE 3840 assets
 import mangiareCover from '@/assets/portfolio/mangiare3840/cover.jpg';
+import mangiareLogo from '@/assets/portfolio/mangiare3840/logo.jpeg';
 
 // SANREMO PIZZERIA assets
 import sanremoCover from '@/assets/portfolio/sanremo/cover.jpg';
@@ -133,6 +134,7 @@ export const portfolioItems: PortfolioItem[] = [
     slug: 'mangiare-3840',
     industry: 'restaurant',
     services: ['website', 'branding', 'content'],
+    clientLogo: mangiareLogo,
     coverMedia: {
       id: 'cover-12',
       type: 'image',
