@@ -46,7 +46,47 @@ import kmaShowroom from '@/assets/portfolio/kma/kma-showroom.jpg';
 // MANGIARE 3840 assets
 import mangiareCover from '@/assets/portfolio/mangiare3840/cover.jpg';
 
+// SANREMO PIZZERIA assets
+import sanremoCover from '@/assets/portfolio/sanremo/cover.jpg';
+
 export const portfolioItems: PortfolioItem[] = [
+  {
+    id: '13',
+    clientName: 'Sanremo Pizzeria Restaurant',
+    slug: 'sanremo-pizzeria',
+    industry: 'restaurant',
+    services: ['social', 'content', 'branding'],
+    coverMedia: {
+      id: 'cover-13',
+      type: 'image',
+      url: sanremoCover,
+      alt: 'Sanremo Pizzeria Restaurant - Social media & visual content',
+    },
+    galleryMedia: [
+      { id: 'gallery-13-1', type: 'image', url: sanremoCover, alt: 'Sanremo Pizzeria Restaurant - Premium restaurant visual' },
+    ],
+    shortResultLine: 'Strong social media presence and visual content for a local restaurant.',
+    popupContent: {
+      challenge: 'Sanremo Pizzeria Restaurant had een trouwe lokale klantenkring, maar miste een professionele digitale aanwezigheid om nieuwe klanten aan te trekken en de sfeer van het restaurant online over te brengen.',
+      approachPoints: [
+        'Facebook pagina management en optimalisatie',
+        'Professionele visuele content creatie',
+        'Social media strategie en consistente posting',
+        'Digitale aanwezigheid opbouw en onderhoud',
+      ],
+      resultPoints: [
+        'Professionele en consistente online aanwezigheid',
+        'Visueel sterke social media content',
+        'Betere vindbaarheid en zichtbaarheid online',
+        'Doorlopend beheer en optimalisatie',
+      ],
+      resultDisclaimer: 'Project actief beheerd door GROPPI.',
+      deliverables: ['social-content', 'content-calendar', 'photo-shoot', 'instagram-strategy'],
+    },
+    externalUrl: 'https://www.facebook.com/pizzeriarestaurantsanremo',
+    featured: true,
+    createdAt: new Date('2025-02-05'),
+  },
   {
     id: '12',
     clientName: 'Mangiare Borgloon',
