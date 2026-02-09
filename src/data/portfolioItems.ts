@@ -94,6 +94,7 @@ import vicchiommaggioDining from '@/assets/portfolio/vicchiomaggio/dining.webp';
 import vicchiomaggioLandscape from '@/assets/portfolio/vicchiomaggio/landscape.webp';
 import vicchiommaggioBrand from '@/assets/portfolio/vicchiomaggio/brand-mood.webp';
 import vicchiomaggioDigital from '@/assets/portfolio/vicchiomaggio/digital-presence.webp';
+import vicchiomaggioLogo from '@/assets/portfolio/vicchiomaggio/logo.png';
 
 export const portfolioItems: PortfolioItem[] = [
   {
@@ -137,6 +138,7 @@ export const portfolioItems: PortfolioItem[] = [
       resultDisclaimer: 'Visuals recreated for portfolio presentation purposes.',
       deliverables: ['website-design', 'website-dev', 'content-calendar', 'photo-shoot', 'social-content'],
     },
+    clientLogo: vicchiomaggioLogo,
     externalUrl: 'https://www.vicchiomaggio.it/',
     featured: true,
     createdAt: new Date('2025-03-15'),
