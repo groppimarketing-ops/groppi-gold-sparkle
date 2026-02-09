@@ -120,6 +120,15 @@ import arteInterior from '@/assets/portfolio/arte-y-cocina/interior.webp';
 import arteSocial from '@/assets/portfolio/arte-y-cocina/social-mockup.webp';
 import arteBrand from '@/assets/portfolio/arte-y-cocina/brand-mood.webp';
 
+// VERONA LOS BOLICHES assets
+import veronaFood from '@/assets/portfolio/verona/food-hero.webp';
+import veronaDesktop from '@/assets/portfolio/verona/desktop-mockup.webp';
+import veronaMobile from '@/assets/portfolio/verona/mobile-mockup.webp';
+import veronaInterior from '@/assets/portfolio/verona/interior.webp';
+import veronaSocial from '@/assets/portfolio/verona/social-mockup.webp';
+import veronaBrand from '@/assets/portfolio/verona/brand-mood.webp';
+
+// AI DEALS assets
 import aidealsCover from '@/assets/portfolio/aideals/cover.jpg';
 import aidealsDesktop from '@/assets/portfolio/aideals/desktop-mockup.webp';
 import aidealsMobile from '@/assets/portfolio/aideals/mobile-mockup.webp';
@@ -1042,6 +1051,48 @@ export const portfolioItems: PortfolioItem[] = [
     externalUrl: 'https://www.arteycocinarestaurant.com',
     featured: true,
     createdAt: new Date('2025-06-10'),
+  },
+  {
+    id: '24',
+    clientName: 'Verona Los Boliches',
+    slug: 'verona-los-boliches',
+    industry: 'restaurant',
+    services: ['website', 'content', 'social'],
+    coverMedia: {
+      id: 'cover-24',
+      type: 'image',
+      url: veronaFood,
+      alt: 'Verona Los Boliches - Fusion restaurant in Spain',
+    },
+    galleryMedia: [
+      { id: 'gallery-24-1', type: 'image', url: veronaDesktop, alt: 'Verona Los Boliches - Desktop website mockup' },
+      { id: 'gallery-24-2', type: 'image', url: veronaMobile, alt: 'Verona Los Boliches - Mobile website mockup', aspectRatio: '9:16' as const },
+      { id: 'gallery-24-3', type: 'image', url: veronaFood, alt: 'Verona Los Boliches - Fusion cuisine' },
+      { id: 'gallery-24-4', type: 'image', url: veronaInterior, alt: 'Verona Los Boliches - Restaurant interior' },
+      { id: 'gallery-24-5', type: 'image', url: veronaSocial, alt: 'Verona Los Boliches - Social media content' },
+      { id: 'gallery-24-6', type: 'image', url: veronaBrand, alt: 'Verona Los Boliches - Brand mood board' },
+    ],
+    shortResultLine: 'Complete online presence for a vibrant fusion restaurant.',
+    popupContent: {
+      challenge: 'Verona Los Boliches, een uniek Italiaans-Indiaas-Mexicaans fusionrestaurant in Spanje, had behoefte aan een professionele digitale aanwezigheid die de multiculturele keuken en levendige sfeer van de Costa del Sol weerspiegelt.',
+      approachPoints: [
+        'Op maat gemaakte website met visuele identiteit',
+        'Professionele food- en sfeercontentcreatie',
+        'Opbouw van online aanwezigheid en vindbaarheid',
+        'Visuele content gericht op de diverse keukenstijlen',
+      ],
+      resultPoints: [
+        'Professionele website die de fusionkeuken sterk presenteert',
+        'Verbeterde online zichtbaarheid voor toeristen en locals',
+        'Sterke visuele content over alle digitale kanalen',
+        'Doorlopend digitaal beheer en optimalisatie',
+      ],
+      resultDisclaimer: 'Project actief beheerd door GROPPI.',
+      deliverables: ['website-design', 'website-dev', 'content-calendar', 'social-content'],
+    },
+    externalUrl: 'https://www.restauranteveronalosboliches.com',
+    featured: true,
+    createdAt: new Date('2025-06-15'),
   },
 ];
 
