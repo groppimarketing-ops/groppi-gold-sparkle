@@ -96,6 +96,14 @@ import vicchiommaggioBrand from '@/assets/portfolio/vicchiomaggio/brand-mood.web
 import vicchiomaggioDigital from '@/assets/portfolio/vicchiomaggio/digital-presence.webp';
 import vicchiomaggioLogo from '@/assets/portfolio/vicchiomaggio/logo.png';
 
+// PILOTSCAREER assets
+import pilotscareerHero from '@/assets/portfolio/pilotscareer/hero.webp';
+import pilotscareerDesktop from '@/assets/portfolio/pilotscareer/desktop-mockup.webp';
+import pilotscareerMobile from '@/assets/portfolio/pilotscareer/mobile-mockup.webp';
+import pilotscareerCockpit from '@/assets/portfolio/pilotscareer/cockpit.webp';
+import pilotscareerDashboard from '@/assets/portfolio/pilotscareer/dashboard.webp';
+import pilotscareerBrand from '@/assets/portfolio/pilotscareer/brand-mood.webp';
+
 // AI DEALS assets
 import aidealsHero from '@/assets/portfolio/aideals/hero.webp';
 import aidealsDesktop from '@/assets/portfolio/aideals/desktop-mockup.webp';
@@ -889,6 +897,51 @@ export const portfolioItems: PortfolioItem[] = [
     externalUrl: 'https://aideals.be/',
     featured: true,
     createdAt: new Date('2025-06-01'),
+  },
+  {
+    id: '21',
+    clientName: 'PilotsCareer',
+    slug: 'pilotscareer',
+    industry: 'startup',
+    services: ['website', 'branding', 'content'],
+    coverMedia: {
+      id: 'cover-21',
+      type: 'image',
+      url: pilotscareerHero,
+      alt: 'PilotsCareer – Aviation recruitment platform',
+    },
+    galleryMedia: [
+      { id: 'gallery-21-1', type: 'image', url: pilotscareerDesktop, alt: 'PilotsCareer – Desktop website mockup' },
+      { id: 'gallery-21-2', type: 'image', url: pilotscareerMobile, alt: 'PilotsCareer – Mobile pilot profile', aspectRatio: '9:16' },
+      { id: 'gallery-21-3', type: 'image', url: pilotscareerCockpit, alt: 'PilotsCareer – Professional pilot in cockpit' },
+      { id: 'gallery-21-4', type: 'image', url: pilotscareerDashboard, alt: 'PilotsCareer – Recruitment analytics dashboard' },
+      { id: 'gallery-21-5', type: 'image', url: pilotscareerBrand, alt: 'PilotsCareer – Brand mood and platform pages' },
+    ],
+    shortResultLine: 'International aviation recruitment platform – live',
+    popupContent: {
+      challenge: 'PilotsCareer needed a professional, scalable recruitment platform connecting airline pilots with global career opportunities. The platform required advanced filtering, pilot profiles, and a modern UI that reflects the professionalism of the aviation industry.',
+      approachPoints: [
+        'Full platform design & development from scratch',
+        'Premium dark UI with aviation-inspired aesthetics',
+        'Advanced job search and filtering system',
+        'Pilot profile and application management',
+        'Responsive design for desktop and mobile',
+        'Ongoing platform optimization and feature development',
+      ],
+      resultPoints: [
+        'Professional aviation recruitment platform launched',
+        'Scalable architecture supporting international growth',
+        'Clean, intuitive UX for pilots and recruiters',
+        'Advanced search and filtering capabilities',
+        'Mobile-optimized pilot profile experience',
+        'Platform actively managed & developed by Groppi',
+      ],
+      resultDisclaimer: 'This is a live and ongoing project. Platform design & management by Groppi.',
+      deliverables: ['website-design', 'website-dev', 'copywriting', 'seo-optimization'],
+    },
+    externalUrl: 'https://pilotscareer.com/',
+    featured: true,
+    createdAt: new Date('2025-05-15'),
   },
 ];
 
