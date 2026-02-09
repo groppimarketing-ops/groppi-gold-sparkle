@@ -1,24 +1,26 @@
-import { memo, useRef, useEffect, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Check, MessageCircle, ArrowRight, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { trackEvent, socialLinks } from '@/utils/tracking';
+import { getVideoIdBySlug, buildDrivePreviewUrl } from '@/data/serviceVideos';
 
 const CALENDLY_URL = socialLinks.calendly;
 
 interface ServicePageHeroProps {
   serviceKey: string;
-  videoUrl?: string;
   posterImage?: string;
 }
 
-const ServicePageHero = memo(({ serviceKey, videoUrl, posterImage }: ServicePageHeroProps) => {
+const ServicePageHero = memo(({ serviceKey, posterImage }: ServicePageHeroProps) => {
   const { t } = useTranslation();
-  const videoRef = useRef<HTMLVideoElement>(null);
   const [isMobile, setIsMobile] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
+
+  // Derive slug from serviceKey (e.g., 'contentProduction' -> 'content-production')
+  const slug = serviceKey.replace(/([A-Z])/g, '-$1').toLowerCase();
+  const gdriveId = getVideoIdBySlug(slug);
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -26,24 +28,6 @@ const ServicePageHero = memo(({ serviceKey, videoUrl, posterImage }: ServicePage
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
-
-  useEffect(() => {
-    if (videoRef.current && !isMobile && videoUrl) {
-      videoRef.current.play().catch(() => {});
-      setIsPlaying(true);
-    }
-  }, [isMobile, videoUrl]);
-
-  const handleVideoClick = () => {
-    if (videoRef.current && isMobile) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
 
   const benefits = [
     t(`servicePage.${serviceKey}.benefits.1`),
@@ -140,19 +124,16 @@ const ServicePageHero = memo(({ serviceKey, videoUrl, posterImage }: ServicePage
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative aspect-video rounded-2xl overflow-hidden glass-card"
           >
-            {videoUrl ? (
-              <video
-                ref={videoRef}
-                className="w-full h-full object-cover cursor-pointer"
-                poster={posterImage}
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                onClick={handleVideoClick}
-              >
-                <source src={videoUrl} type="video/mp4" />
-              </video>
+            {gdriveId ? (
+              <iframe
+                src={buildDrivePreviewUrl(gdriveId)}
+                className="w-full h-full"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                loading="lazy"
+                title={t(`servicePage.${serviceKey}.title`)}
+                style={{ border: 'none' }}
+              />
             ) : posterImage ? (
               <img
                 src={posterImage}
@@ -167,15 +148,6 @@ const ServicePageHero = memo(({ serviceKey, videoUrl, posterImage }: ServicePage
                     <span className="text-3xl text-primary">▶</span>
                   </div>
                   <p className="text-muted-foreground">{t('servicePage.videoPlaceholder')}</p>
-                </div>
-              </div>
-            )}
-            
-            {/* Play indicator for mobile */}
-            {isMobile && videoUrl && !isPlaying && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                <div className="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center">
-                  <span className="text-2xl text-primary-foreground ml-1">▶</span>
                 </div>
               </div>
             )}

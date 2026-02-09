@@ -62,7 +62,6 @@ const ServiceDetail = () => {
   return (
     <ServicePageTemplate
       serviceKey={serviceKey}
-      videoUrl={config.videoUrl}
       posterImage={config.posterImage}
     />
   );
