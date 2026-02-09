@@ -1,46 +1,64 @@
-import { memo } from 'react';
+import { memo, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Badge } from '@/components/ui/badge';
 import type { PortfolioItem } from '@/types/portfolio';
 import { serviceTagLabels } from '@/types/portfolio';
+
 interface PortfolioCardProps {
   item: PortfolioItem;
   onClick: () => void;
   index?: number;
 }
+
 const PortfolioCard = memo(({
   item,
   onClick,
   index = 0
 }: PortfolioCardProps) => {
-  const {
-    t,
-    i18n
-  } = useTranslation();
+  const { t, i18n } = useTranslation();
   const lang = i18n.language.startsWith('nl') ? 'nl' : 'en';
-  return <motion.article initial={{
-    opacity: 0,
-    y: 30
-  }} whileInView={{
-    opacity: 1,
-    y: 0
-  }} viewport={{
-    once: true
-  }} transition={{
-    delay: index * 0.08,
-    duration: 0.4,
-    ease: [0.25, 0.1, 0.25, 1]
-  }}>
-      <button onClick={onClick} className="group block w-full text-left glass-card p-0 overflow-hidden rounded-xl border border-border/50 hover:border-primary/60 hover:shadow-[0_0_40px_hsl(var(--gold)/0.22)] hover:-translate-y-2 transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background" aria-label={`${item.clientName} - ${t('portfolio.viewCase', 'Bekijk case')}`}>
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = useCallback(() => {
+    setImageLoaded(true);
+  }, []);
+
+  return (
+    <motion.article
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.08, duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+    >
+      <button
+        onClick={onClick}
+        className="group block w-full text-left glass-card p-0 overflow-hidden rounded-xl border border-border/50 hover:border-primary/60 hover:shadow-[0_0_40px_hsl(var(--gold)/0.22)] hover:-translate-y-2 transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        aria-label={`${item.clientName} - ${t('portfolio.viewCase', 'Bekijk case')}`}
+      >
         {/* Thumbnail */}
         <div className="aspect-[4/3] relative overflow-hidden">
-          <img src={item.coverMedia.url} alt={item.coverMedia.alt || item.clientName} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" width={400} height={300} />
-          
+          {/* Skeleton shimmer placeholder */}
+          {!imageLoaded && (
+            <div className="absolute inset-0 bg-card animate-pulse">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent skeleton-shimmer" />
+            </div>
+          )}
+
+          <img
+            src={item.coverMedia.url}
+            alt={item.coverMedia.alt || item.clientName}
+            className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-110 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+            loading="lazy"
+            width={400}
+            height={300}
+            onLoad={handleImageLoad}
+          />
+
           {/* Dark gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-          
+
           {/* Hover overlay with gold tint */}
           <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500" />
 
@@ -66,9 +84,11 @@ const PortfolioCard = memo(({
 
           {/* Tags */}
           <div className="flex flex-wrap gap-1.5 mb-3">
-            {item.services.map(service => <Badge key={service} variant="outline" className="text-[10px] px-2 py-0.5 border-primary/30 text-primary/80 group-hover:border-primary/50">
+            {item.services.map(service => (
+              <Badge key={service} variant="outline" className="text-[10px] px-2 py-0.5 border-primary/30 text-primary/80 group-hover:border-primary/50">
                 {serviceTagLabels[service][lang]}
-              </Badge>)}
+              </Badge>
+            ))}
           </div>
 
           {/* Result metric */}
@@ -77,7 +97,9 @@ const PortfolioCard = memo(({
           </p>
         </div>
       </button>
-    </motion.article>;
+    </motion.article>
+  );
 });
+
 PortfolioCard.displayName = 'PortfolioCard';
 export default PortfolioCard;
