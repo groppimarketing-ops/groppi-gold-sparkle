@@ -60,8 +60,9 @@ import fratelliRoselliIngredienti from '@/assets/portfolio/fratelli-roselli/ingr
 
 // PUMMARO PIZZERIA assets
 import pummaroCover from '@/assets/portfolio/pummaro/cover.jpg';
-import pummaroFood from '@/assets/portfolio/pummaro/food.jpg';
-import pummaroInterior from '@/assets/portfolio/pummaro/interior.jpg';
+import pummaroFarinata from '@/assets/portfolio/pummaro/farinata.jpg';
+import pummaroPizzaBox from '@/assets/portfolio/pummaro/pizza-box.jpg';
+import pummaroBurger from '@/assets/portfolio/pummaro/burger.jpg';
 
 // AUGUSTO TORINO assets
 import augustoCover from '@/assets/portfolio/augusto-torino/cover.jpg';
@@ -126,9 +127,9 @@ export const portfolioItems: PortfolioItem[] = [
       alt: 'Pizzeria Pummarò - Authentic Italian pizzeria in Torino',
     },
     galleryMedia: [
-      { id: 'gallery-16-1', type: 'image', url: pummaroCover, alt: 'Pummarò - Restaurant presentation' },
-      { id: 'gallery-16-2', type: 'image', url: pummaroFood, alt: 'Pummarò - Food presentation' },
-      { id: 'gallery-16-3', type: 'image', url: pummaroInterior, alt: 'Pummarò - Interior atmosphere' },
+      { id: 'gallery-16-1', type: 'image', url: pummaroPizzaBox, alt: 'Pummarò - Pizza in branded box' },
+      { id: 'gallery-16-2', type: 'image', url: pummaroFarinata, alt: 'Pummarò - Traditional farinata' },
+      { id: 'gallery-16-3', type: 'image', url: pummaroBurger, alt: 'Pummarò - Gourmet burger' },
     ],
     shortResultLine: 'Modern restaurant website with strong food presentation and clear customer flow.',
     popupContent: {
