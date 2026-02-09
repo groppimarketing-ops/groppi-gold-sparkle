@@ -204,15 +204,15 @@ const Header = () => {
                   to={item.path}
                   className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${
                     location.pathname === item.path 
-                      ? 'text-primary' 
-                      : 'text-foreground/70 hover:text-foreground'
+                      ? 'text-primary drop-shadow-[0_0_8px_hsl(43_76%_52%/0.6)]' 
+                      : 'text-foreground/70 hover:text-foreground hover:text-primary/90 hover:drop-shadow-[0_0_6px_hsl(43_76%_52%/0.3)]'
                   }`}
                 >
                   {item.label}
                   {location.pathname === item.path && (
                     <motion.div
                       layoutId="activeNav"
-                      className="absolute inset-0 glass-card -z-10"
+                      className="absolute inset-0 glass-card border border-primary/40 shadow-[0_0_15px_hsl(43_76%_52%/0.25)] -z-10"
                       transition={{ type: 'spring', duration: 0.5 }}
                     />
                   )}
@@ -393,7 +393,7 @@ const Header = () => {
                         onClick={() => setIsMenuOpen(false)}
                         className={`block px-4 py-3 rounded-lg transition-all ${
                           location.pathname === item.path 
-                            ? 'bg-primary/20 text-primary' 
+                            ? 'bg-primary/25 text-primary shadow-[0_0_12px_hsl(43_76%_52%/0.25)] drop-shadow-[0_0_6px_hsl(43_76%_52%/0.4)]' 
                             : 'hover:bg-primary/10'
                         }`}
                       >
