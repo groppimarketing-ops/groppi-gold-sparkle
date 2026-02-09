@@ -10,7 +10,9 @@ import {
   Sparkles, 
   Wrench, 
   Rocket,
-  Check
+  Check,
+  Stethoscope,
+  GraduationCap,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -24,6 +26,8 @@ const sectorIcons = {
   health: Sparkles,
   services: Wrench,
   sme: Rocket,
+  medical: Stethoscope,
+  education: GraduationCap,
 };
 
 const HomeTrustSectors = memo(() => {
@@ -38,11 +42,13 @@ const HomeTrustSectors = memo(() => {
     { key: 'health', icon: sectorIcons.health },
     { key: 'services', icon: sectorIcons.services },
     { key: 'sme', icon: sectorIcons.sme },
+    { key: 'medical', icon: sectorIcons.medical },
+    { key: 'education', icon: sectorIcons.education },
   ];
 
   const stats = [
     { value: '10+', labelKey: 'home.trustSectors.stats.experience' },
-    { value: 'BE + EU', labelKey: 'home.trustSectors.stats.focus' },
+    { value: 'BE + EU + 🌍', labelKey: 'home.trustSectors.stats.focus' },
     { value: 'System-driven', labelKey: 'home.trustSectors.stats.system' },
     { value: 'Premium', labelKey: 'home.trustSectors.stats.premium' },
   ];

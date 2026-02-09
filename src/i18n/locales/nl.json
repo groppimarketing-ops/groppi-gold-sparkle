@@ -499,8 +499,8 @@
     },
     "trustSectors": {
       "eyebrow": "Onze sectoren",
-      "headline": "Vertrouwd door groeiende bedrijven in België & Europa",
-      "subheadline": "We werken met ambitieuze teams die helderheid, structuur en meetbare groei willen — zonder marketing-ruis.",
+      "headline": "Vertrouwd door groeiende bedrijven — wereldwijd",
+      "subheadline": "Gevestigd in België. Actief in heel Europa. Klanten over de hele wereld.",
       "proofPoints": {
         "experience": "10+ jaar ervaring",
         "pricing": "Transparante prijzen & duidelijke deliverables",
@@ -541,11 +541,19 @@
         "sme": {
           "title": "SME's & startups",
           "subtitle": "Structuur voor groei zonder chaos."
+        },
+        "medical": {
+          "title": "Medische klinieken",
+          "subtitle": "Vertrouwen, zichtbaarheid en patiëntenaangroei."
+        },
+        "education": {
+          "title": "Educatieve academies",
+          "subtitle": "Zichtbaarheid, geloofwaardigheid en consistente inschrijvingen."
         }
       },
       "stats": {
         "experience": "jaar ervaring",
-        "focus": "focus op België & Europa",
+        "focus": "BE + EU + Wereldwijd",
         "system": "geen chaos, wél structuur",
         "premium": "branding + performance"
       },

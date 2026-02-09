@@ -499,8 +499,8 @@
     },
     "trustSectors": {
       "eyebrow": "Our sectors",
-      "headline": "Trusted by growing businesses in Belgium & Europe",
-      "subheadline": "We work with ambitious teams that want clarity, structure and measurable growth — without the marketing noise.",
+      "headline": "Trusted by growing businesses — worldwide",
+      "subheadline": "Based in Belgium. Active across Europe. Serving clients worldwide.",
       "proofPoints": {
         "experience": "10+ years of experience",
         "pricing": "Transparent pricing & clear deliverables",
@@ -541,11 +541,19 @@
         "sme": {
           "title": "SMEs & startups",
           "subtitle": "Structure for growth without chaos."
+        },
+        "medical": {
+          "title": "Medical clinics",
+          "subtitle": "Trust, visibility and patient acquisition."
+        },
+        "education": {
+          "title": "Educational academies",
+          "subtitle": "Visibility, credibility and consistent enrollments."
         }
       },
       "stats": {
         "experience": "years experience",
-        "focus": "Belgium & Europe focus",
+        "focus": "BE + EU + Worldwide",
         "system": "structure over chaos",
         "premium": "branding + performance"
       },
