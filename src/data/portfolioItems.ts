@@ -83,6 +83,7 @@ import cosePazziInterior from '@/assets/portfolio/cose-pazzi/interior.webp';
 import cosePazziMobile from '@/assets/portfolio/cose-pazzi/website-mobile.webp';
 import cosePazziSocial from '@/assets/portfolio/cose-pazzi/social-mockup.webp';
 import cosePazziBrand from '@/assets/portfolio/cose-pazzi/brand-mood.webp';
+import cosePazziLogo from '@/assets/portfolio/cose-pazzi/logo.png';
 
 export const portfolioItems: PortfolioItem[] = [
   {
@@ -122,6 +123,7 @@ export const portfolioItems: PortfolioItem[] = [
       resultDisclaimer: 'Visuals are illustrative and created for presentation purposes.',
       deliverables: ['website-design', 'website-dev', 'content-calendar', 'social-content'],
     },
+    clientLogo: cosePazziLogo,
     externalUrl: 'https://www.pizzeriacosepazztorino.it/',
     featured: true,
     createdAt: new Date('2025-02-10'),
