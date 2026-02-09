@@ -128,6 +128,14 @@ import veronaInterior from '@/assets/portfolio/verona/interior.webp';
 import veronaSocial from '@/assets/portfolio/verona/social-mockup.webp';
 import veronaBrand from '@/assets/portfolio/verona/brand-mood.webp';
 
+// HAPPY FLAVORS assets
+import happyFlavorsFood from '@/assets/portfolio/happy-flavors/food-hero.webp';
+import happyFlavorsDesktop from '@/assets/portfolio/happy-flavors/desktop-mockup.webp';
+import happyFlavorsMobile from '@/assets/portfolio/happy-flavors/mobile-mockup.webp';
+import happyFlavorsInterior from '@/assets/portfolio/happy-flavors/interior.webp';
+import happyFlavorsSocial from '@/assets/portfolio/happy-flavors/social-mockup.webp';
+import happyFlavorsBrand from '@/assets/portfolio/happy-flavors/brand-mood.webp';
+
 // AI DEALS assets
 import aidealsCover from '@/assets/portfolio/aideals/cover.jpg';
 import aidealsDesktop from '@/assets/portfolio/aideals/desktop-mockup.webp';
@@ -1093,6 +1101,48 @@ export const portfolioItems: PortfolioItem[] = [
     externalUrl: 'https://www.restauranteveronalosboliches.com',
     featured: true,
     createdAt: new Date('2025-06-15'),
+  },
+  {
+    id: '25',
+    clientName: 'Happy Flavors Indian Restaurant',
+    slug: 'happy-flavors',
+    industry: 'restaurant',
+    services: ['website', 'content', 'social'],
+    coverMedia: {
+      id: 'cover-25',
+      type: 'image',
+      url: happyFlavorsFood,
+      alt: 'Happy Flavors Indian Restaurant in Spain',
+    },
+    galleryMedia: [
+      { id: 'gallery-25-1', type: 'image', url: happyFlavorsDesktop, alt: 'Happy Flavors - Desktop website mockup' },
+      { id: 'gallery-25-2', type: 'image', url: happyFlavorsMobile, alt: 'Happy Flavors - Mobile website mockup', aspectRatio: '9:16' as const },
+      { id: 'gallery-25-3', type: 'image', url: happyFlavorsFood, alt: 'Happy Flavors - Indian cuisine' },
+      { id: 'gallery-25-4', type: 'image', url: happyFlavorsInterior, alt: 'Happy Flavors - Restaurant interior' },
+      { id: 'gallery-25-5', type: 'image', url: happyFlavorsSocial, alt: 'Happy Flavors - Social media content' },
+      { id: 'gallery-25-6', type: 'image', url: happyFlavorsBrand, alt: 'Happy Flavors - Brand mood board' },
+    ],
+    shortResultLine: 'Professional digital presence for authentic Indian cuisine in Spain.',
+    popupContent: {
+      challenge: 'Happy Flavors Indian Restaurant wilde een professionele online aanwezigheid opbouwen die de authentieke Indiase keuken en warme gastvrijheid weerspiegelt en zowel lokale gasten als toeristen aanspreekt.',
+      approachPoints: [
+        'Op maat gemaakte website met warme visuele identiteit',
+        'Professionele food- en sfeercontentcreatie',
+        'Opbouw van digitale aanwezigheid en vindbaarheid',
+        'Visuele content die de rijke Indiase keuken in beeld brengt',
+      ],
+      resultPoints: [
+        'Professionele website die de authentieke Indiase keuken presenteert',
+        'Sterke visuele content over alle digitale kanalen',
+        'Verbeterde online zichtbaarheid voor toeristen en locals',
+        'Doorlopend digitaal beheer en optimalisatie',
+      ],
+      resultDisclaimer: 'Project actief beheerd door GROPPI.',
+      deliverables: ['website-design', 'website-dev', 'content-calendar', 'social-content'],
+    },
+    externalUrl: 'https://www.happyflavorsindianrestaurant.com',
+    featured: true,
+    createdAt: new Date('2025-06-20'),
   },
 ];
 
