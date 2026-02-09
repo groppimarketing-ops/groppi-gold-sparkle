@@ -6,7 +6,7 @@ import PageLayout from '@/components/layout/PageLayout';
 import SectionHeader from '@/components/ui/SectionHeader';
 import PortfolioCard from '@/components/portfolio/PortfolioCard';
 import CaseStudyModal from '@/components/portfolio/CaseStudyModal';
-import { portfolioItems } from '@/data/portfolioItems';
+import { allPortfolioItems } from '@/data/portfolioItems';
 import type { PortfolioItem } from '@/types/portfolio';
 import { Input } from '@/components/ui/input';
 
@@ -40,9 +40,9 @@ const Portfolio = () => {
 
   // Filtered portfolio items - show all by default
   const filteredItems = useMemo(() => {
-    if (!searchQuery.trim()) return portfolioItems;
+    if (!searchQuery.trim()) return allPortfolioItems;
     const query = searchQuery.toLowerCase();
-    return portfolioItems.filter(item => 
+    return allPortfolioItems.filter(item => 
       item.clientName.toLowerCase().includes(query) ||
       item.industry.toLowerCase().includes(query) ||
       item.services.some(s => s.toLowerCase().includes(query))

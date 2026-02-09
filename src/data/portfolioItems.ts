@@ -460,6 +460,15 @@ export const portfolioItems: PortfolioItem[] = [
   },
 ];
 
+// Import NDA items
+import { ndaPortfolioItems } from './ndaPortfolioItems';
+
+// All portfolio items (real + NDA)
+export const allPortfolioItems: PortfolioItem[] = [
+  ...portfolioItems,
+  ...ndaPortfolioItems,
+];
+
 // Helper: Get latest N portfolio items (sorted by createdAt descending)
 export const getLatestPortfolioItems = (count: number = 8): PortfolioItem[] => {
   return [...portfolioItems]
@@ -474,20 +483,20 @@ export const getFeaturedPortfolioItems = (): PortfolioItem[] => {
 
 // Helper: Filter portfolio items by industry
 export const filterByIndustry = (industry: string): PortfolioItem[] => {
-  if (industry === 'all') return portfolioItems;
-  return portfolioItems.filter(item => item.industry === industry);
+  if (industry === 'all') return allPortfolioItems;
+  return allPortfolioItems.filter(item => item.industry === industry);
 };
 
 // Helper: Filter portfolio items by service tag
 export const filterByService = (service: string): PortfolioItem[] => {
-  if (service === 'all') return portfolioItems;
-  return portfolioItems.filter(item => item.services.includes(service as any));
+  if (service === 'all') return allPortfolioItems;
+  return allPortfolioItems.filter(item => item.services.includes(service as any));
 };
 
 // Helper: Search portfolio items by client name
 export const searchPortfolio = (query: string): PortfolioItem[] => {
   const lowerQuery = query.toLowerCase();
-  return portfolioItems.filter(item => 
+  return allPortfolioItems.filter(item => 
     item.clientName.toLowerCase().includes(lowerQuery)
   );
 };
@@ -498,7 +507,7 @@ export const filterPortfolio = (
   service: string = 'all',
   searchQuery: string = ''
 ): PortfolioItem[] => {
-  let results = [...portfolioItems];
+  let results = [...allPortfolioItems];
   
   if (industry !== 'all') {
     results = results.filter(item => item.industry === industry);
