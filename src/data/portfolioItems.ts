@@ -104,6 +104,14 @@ import pilotscareerCockpit from '@/assets/portfolio/pilotscareer/cockpit.webp';
 import pilotscareerDashboard from '@/assets/portfolio/pilotscareer/dashboard.webp';
 import pilotscareerBrand from '@/assets/portfolio/pilotscareer/brand-mood.webp';
 
+// CASA MAVI assets
+import casaMaviDesktop from '@/assets/portfolio/casa-mavi/desktop-mockup.webp';
+import casaMaviInterior from '@/assets/portfolio/casa-mavi/interior.webp';
+import casaMaviFood from '@/assets/portfolio/casa-mavi/food-hero.webp';
+import casaMaviMobile from '@/assets/portfolio/casa-mavi/mobile-mockup.webp';
+import casaMaviSocial from '@/assets/portfolio/casa-mavi/social-mockup.webp';
+import casaMaviBrand from '@/assets/portfolio/casa-mavi/brand-mood.webp';
+
 // AI DEALS assets
 import aidealsCover from '@/assets/portfolio/aideals/cover.jpg';
 import aidealsDesktop from '@/assets/portfolio/aideals/desktop-mockup.webp';
@@ -942,6 +950,49 @@ export const portfolioItems: PortfolioItem[] = [
     externalUrl: 'https://pilotscareer.com/',
     featured: true,
     createdAt: new Date('2025-05-15'),
+  },
+  {
+    id: '22',
+    clientName: 'Casa Mavi',
+    slug: 'casa-mavi',
+    industry: 'restaurant',
+    services: ['website', 'content', 'social'],
+    coverMedia: {
+      id: 'cover-22',
+      type: 'image',
+      url: casaMaviFood,
+      alt: 'Casa Mavi - Italian Neapolitan restaurant in Fuengirola',
+    },
+    galleryMedia: [
+      { id: 'gallery-22-1', type: 'image', url: casaMaviDesktop, alt: 'Casa Mavi - Desktop website mockup' },
+      { id: 'gallery-22-2', type: 'image', url: casaMaviMobile, alt: 'Casa Mavi - Mobile website mockup', aspectRatio: '9:16' as const },
+      { id: 'gallery-22-3', type: 'image', url: casaMaviFood, alt: 'Casa Mavi - Neapolitan pizza hero' },
+      { id: 'gallery-22-4', type: 'image', url: casaMaviInterior, alt: 'Casa Mavi - Restaurant interior' },
+      { id: 'gallery-22-5', type: 'image', url: casaMaviSocial, alt: 'Casa Mavi - Social media content' },
+      { id: 'gallery-22-6', type: 'image', url: casaMaviBrand, alt: 'Casa Mavi - Brand mood board' },
+    ],
+    shortResultLine: 'Complete digital presence for a Mediterranean gem in Spain.',
+    popupContent: {
+      challenge: 'Casa Mavi, een Italiaans-Napolitaans restaurant in Fuengirola (Spanje), wilde een professionele digitale aanwezigheid opbouwen om zowel lokale gasten als toeristen aan te trekken langs de Costa del Sol.',
+      approachPoints: [
+        'Op maat gemaakte website met online reserveringssysteem',
+        'Digitale menukaart en visuele content creatie',
+        'Opbouw van professionele digitale aanwezigheid',
+        'Social media strategie gericht op lokaal en toeristisch publiek',
+      ],
+      resultPoints: [
+        'Professionele website met geïntegreerd reserveringssysteem',
+        'Sterke visuele identiteit die de mediterrane sfeer weerspiegelt',
+        'Verbeterde online vindbaarheid voor toeristen en locals',
+        'Doorlopend digitaal beheer en optimalisatie',
+      ],
+      resultDisclaimer: 'Project actief beheerd door GROPPI.',
+      
+      deliverables: ['website-design', 'website-dev', 'content-calendar', 'photo-shoot'],
+    },
+    externalUrl: 'https://www.casamavi.es',
+    featured: true,
+    createdAt: new Date('2025-06-01'),
   },
 ];
 
