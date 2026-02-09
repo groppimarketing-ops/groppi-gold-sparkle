@@ -463,6 +463,11 @@
     100% { background-position: -200% 0; }
   }
 
+  .skeleton-shimmer {
+    background-size: 200% 100%;
+    animation: shimmer 1.8s ease-in-out infinite;
+  }
+
   @keyframes gradientShift {
     0%, 100% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
