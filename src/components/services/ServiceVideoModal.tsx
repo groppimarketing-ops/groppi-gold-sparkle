@@ -16,6 +16,7 @@ const SERVICE_GDRIVE_VIDEOS: Record<string, string> = {
   'ads-management': '1QWhhP5W5gG2kdagjARdFcssNZK9LMWMX',
   'ecommerce-website': '1jJgIkhbQT69N1iXKEjLiz-eZp8CVemio',
   'one-page-website': '1ndZjHgg2usSrSXbuW-r4hA1NqbuirXvw',
+  'social-media': '1Nhf9_ZjyDWE2kxlBfGnAu0UCmrCb6j_l',
 };
 
 interface ServiceVideoModalProps {
