@@ -49,7 +49,47 @@ import mangiareCover from '@/assets/portfolio/mangiare3840/cover.jpg';
 // SANREMO PIZZERIA assets
 import sanremoCover from '@/assets/portfolio/sanremo/cover.jpg';
 
+// BOOTHUIS TURNHOUT assets
+import boothuisCover from '@/assets/portfolio/boothuis/cover.jpg';
+
 export const portfolioItems: PortfolioItem[] = [
+  {
+    id: '14',
+    clientName: 'Boothuis Turnhout',
+    slug: 'boothuis-turnhout',
+    industry: 'restaurant',
+    services: ['website', 'content', 'branding'],
+    coverMedia: {
+      id: 'cover-14',
+      type: 'image',
+      url: boothuisCover,
+      alt: 'Boothuis Turnhout - Restaurant website & visual content',
+    },
+    galleryMedia: [
+      { id: 'gallery-14-1', type: 'image', url: boothuisCover, alt: 'Boothuis Turnhout - Website presentation' },
+    ],
+    shortResultLine: 'Clean restaurant website and visual presentation for a local hospitality business.',
+    popupContent: {
+      challenge: 'Boothuis Turnhout had nood aan een professionele digitale aanwezigheid die de sfeer en kwaliteit van het restaurant online weerspiegelde.',
+      approachPoints: [
+        'Website management en doorlopende optimalisatie',
+        'Visuele content en professionele presentatie',
+        'Digitale aanwezigheid opbouw en onderhoud',
+        'Consistente merkbeleving over alle online kanalen',
+      ],
+      resultPoints: [
+        'Professionele en overzichtelijke website',
+        'Sterke visuele presentatie van het restaurant',
+        'Verbeterde online vindbaarheid',
+        'Doorlopend beheer en optimalisatie',
+      ],
+      resultDisclaimer: 'Project actief beheerd door GROPPI.',
+      deliverables: ['website-design', 'website-dev', 'content-calendar', 'photo-shoot'],
+    },
+    externalUrl: 'https://boothuisturnhout.be/',
+    featured: true,
+    createdAt: new Date('2025-02-07'),
+  },
   {
     id: '13',
     clientName: 'Pizzeria San Remo',
