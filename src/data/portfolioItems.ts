@@ -112,7 +112,14 @@ import casaMaviMobile from '@/assets/portfolio/casa-mavi/mobile-mockup.webp';
 import casaMaviSocial from '@/assets/portfolio/casa-mavi/social-mockup.webp';
 import casaMaviBrand from '@/assets/portfolio/casa-mavi/brand-mood.webp';
 
-// AI DEALS assets
+// ARTE Y COCINA assets
+import arteFood from '@/assets/portfolio/arte-y-cocina/food-hero.webp';
+import arteDesktop from '@/assets/portfolio/arte-y-cocina/desktop-mockup.webp';
+import arteMobile from '@/assets/portfolio/arte-y-cocina/mobile-mockup.webp';
+import arteInterior from '@/assets/portfolio/arte-y-cocina/interior.webp';
+import arteSocial from '@/assets/portfolio/arte-y-cocina/social-mockup.webp';
+import arteBrand from '@/assets/portfolio/arte-y-cocina/brand-mood.webp';
+
 import aidealsCover from '@/assets/portfolio/aideals/cover.jpg';
 import aidealsDesktop from '@/assets/portfolio/aideals/desktop-mockup.webp';
 import aidealsMobile from '@/assets/portfolio/aideals/mobile-mockup.webp';
@@ -993,6 +1000,48 @@ export const portfolioItems: PortfolioItem[] = [
     externalUrl: 'https://www.casamavi.es',
     featured: true,
     createdAt: new Date('2025-06-01'),
+  },
+  {
+    id: '23',
+    clientName: 'ArTe y CoCiNa',
+    slug: 'arte-y-cocina',
+    industry: 'restaurant',
+    services: ['website', 'branding', 'content'],
+    coverMedia: {
+      id: 'cover-23',
+      type: 'image',
+      url: arteFood,
+      alt: 'ArTe y CoCiNa - Artistic fine-dining restaurant in Spain',
+    },
+    galleryMedia: [
+      { id: 'gallery-23-1', type: 'image', url: arteDesktop, alt: 'ArTe y CoCiNa - Desktop website mockup' },
+      { id: 'gallery-23-2', type: 'image', url: arteMobile, alt: 'ArTe y CoCiNa - Mobile website mockup', aspectRatio: '9:16' as const },
+      { id: 'gallery-23-3', type: 'image', url: arteFood, alt: 'ArTe y CoCiNa - Fine dining dish' },
+      { id: 'gallery-23-4', type: 'image', url: arteInterior, alt: 'ArTe y CoCiNa - Restaurant interior' },
+      { id: 'gallery-23-5', type: 'image', url: arteSocial, alt: 'ArTe y CoCiNa - Social media content' },
+      { id: 'gallery-23-6', type: 'image', url: arteBrand, alt: 'ArTe y CoCiNa - Brand mood board' },
+    ],
+    shortResultLine: 'Premium digital identity for an artistic fine-dining experience.',
+    popupContent: {
+      challenge: 'ArTe y CoCiNa, een artistiek fine-dining restaurant in Spanje, wilde een digitale aanwezigheid die de unieke fusie van kunst en gastronomie weerspiegelt en een internationaal publiek aanspreekt.',
+      approachPoints: [
+        'Op maat gemaakte website met luxueuze visuele identiteit',
+        'Professionele food- en interieur-contentcreatie',
+        'Opbouw van sterke digitale aanwezigheid',
+        'Visuele branding die kunst en culinaire excellentie combineert',
+      ],
+      resultPoints: [
+        'Elegante website die de fine-dining ervaring online weerspiegelt',
+        'Sterke visuele identiteit met artistieke uitstraling',
+        'Verbeterde online vindbaarheid en merkbeleving',
+        'Doorlopend digitaal beheer en optimalisatie',
+      ],
+      resultDisclaimer: 'Project actief beheerd door GROPPI.',
+      deliverables: ['website-design', 'website-dev', 'brand-identity', 'content-calendar'],
+    },
+    externalUrl: 'https://www.arteycocinarestaurant.com',
+    featured: true,
+    createdAt: new Date('2025-06-10'),
   },
 ];
 
