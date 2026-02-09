@@ -53,7 +53,51 @@ import sanremoCover from '@/assets/portfolio/sanremo/cover.jpg';
 // BOOTHUIS TURNHOUT assets
 import boothuisCover from '@/assets/portfolio/boothuis/cover.jpg';
 
+// FRATELLI ROSELLI assets
+import fratelliRoselliPizza from '@/assets/portfolio/fratelli-roselli/pizza-hero.jpg';
+import fratelliRoselliLogo from '@/assets/portfolio/fratelli-roselli/logo.png';
+import fratelliRoselliIngredienti from '@/assets/portfolio/fratelli-roselli/ingredienti.jpg';
+
 export const portfolioItems: PortfolioItem[] = [
+  {
+    id: '15',
+    clientName: 'Pizzeria Fratelli Roselli',
+    slug: 'fratelli-roselli',
+    industry: 'restaurant',
+    services: ['website', 'branding', 'content'],
+    clientLogo: fratelliRoselliLogo,
+    coverMedia: {
+      id: 'cover-15',
+      type: 'image',
+      url: fratelliRoselliPizza,
+      alt: 'Pizzeria Fratelli Roselli - Authentic Italian pizza in Turin',
+    },
+    galleryMedia: [
+      { id: 'gallery-15-1', type: 'image', url: fratelliRoselliPizza, alt: 'Fratelli Roselli - Pizza presentation' },
+      { id: 'gallery-15-2', type: 'image', url: fratelliRoselliIngredienti, alt: 'Fratelli Roselli - Premium ingredients' },
+    ],
+    shortResultLine: 'Authentic Italian restaurant website with strong food presentation and local branding.',
+    popupContent: {
+      challenge: 'Pizzeria Fratelli Roselli in Turin had a loyal local following for over 20 years, but needed a professional digital presence to showcase their commitment to quality ingredients and authentic pizza-making.',
+      approachPoints: [
+        'Website structure & optimization',
+        'Visual presentation & content layout',
+        'Performance & usability improvements',
+        'Online reservation system integration',
+      ],
+      resultPoints: [
+        'Professional and clear website reflecting brand quality',
+        'Strong food visibility with premium ingredient focus',
+        'Clear customer journey from menu to reservation',
+        'Improved local restaurant branding online',
+      ],
+      resultDisclaimer: 'Project actief beheerd door GROPPI.',
+      deliverables: ['website-design', 'website-dev', 'content-calendar', 'photo-shoot'],
+    },
+    externalUrl: 'https://www.pizzeriafratelliroselli.it/',
+    featured: true,
+    createdAt: new Date('2025-02-09'),
+  },
   {
     id: '14',
     clientName: 'Restaurant Boothuis',
