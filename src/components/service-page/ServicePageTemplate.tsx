@@ -15,7 +15,6 @@ import { BreadcrumbSchema, ServiceSchema } from '@/components/seo/StructuredData
 
 interface ServicePageTemplateProps {
   serviceKey: string;
-  videoUrl?: string;
   posterImage?: string;
 }
 
@@ -30,7 +29,7 @@ interface ServicePageTemplateProps {
  * 5. FAQ (6 questions)
  * 6. Final CTA
  */
-const ServicePageTemplate = memo(({ serviceKey, videoUrl, posterImage }: ServicePageTemplateProps) => {
+const ServicePageTemplate = memo(({ serviceKey, posterImage }: ServicePageTemplateProps) => {
   const { t } = useTranslation();
   const isContentProduction = serviceKey === 'contentProduction';
   
@@ -56,7 +55,6 @@ const ServicePageTemplate = memo(({ serviceKey, videoUrl, posterImage }: Service
       <main>
         <ServicePageHero 
           serviceKey={serviceKey} 
-          videoUrl={videoUrl}
           posterImage={posterImage}
         />
         <ServiceDeliverables serviceKey={serviceKey} />

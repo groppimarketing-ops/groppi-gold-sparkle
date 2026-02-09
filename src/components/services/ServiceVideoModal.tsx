@@ -6,18 +6,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import type { ServiceData } from './ServiceCard';
 import { SERVICE_PRICING_CONFIG, getPriceDisplayString, getPriceSuffix } from '@/config/pricingConfig';
-
-// Hard-mapped Google Drive video IDs per service slug
-const SERVICE_GDRIVE_VIDEOS: Record<string, string> = {
-  'content-production': '11TCn7_cr1UDvJbkx2X56uWUAFI_jB_Wb',
-  'business-website': '11p_gT9XF6BIb-cGPiOByzO4yvUPzf0cS',
-  'reputation': '15w6eWE3mjjXaeF-__3pIN6Bnh8GYfQA3',
-  'seo': '1Ow1Gd4kxTyCbfxqcXjSk3q4-tT7xtI5F',
-  'ads-management': '1QWhhP5W5gG2kdagjARdFcssNZK9LMWMX',
-  'ecommerce-website': '1jJgIkhbQT69N1iXKEjLiz-eZp8CVemio',
-  'one-page-website': '1ndZjHgg2usSrSXbuW-r4hA1NqbuirXvw',
-  'social-media': '1Nhf9_ZjyDWE2kxlBfGnAu0UCmrCb6j_l',
-};
+import { getVideoIdBySlug, buildDrivePreviewUrl } from '@/data/serviceVideos';
 
 interface ServiceVideoModalProps {
   isOpen: boolean;
@@ -36,7 +25,7 @@ const ServiceVideoModal = ({
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
 
   // Resolve the Google Drive embed URL for this service (lazy: only built when modal opens)
-  const gdriveId = SERVICE_GDRIVE_VIDEOS[service.id];
+  const gdriveId = getVideoIdBySlug(service.id);
   const hasVideo = !!gdriveId;
 
   // Disable body scroll when modal is open
@@ -137,7 +126,7 @@ const ServiceVideoModal = ({
             >
               {hasVideo && isOpen ? (
                 <iframe
-                  src={`https://drive.google.com/file/d/${gdriveId}/preview`}
+                  src={buildDrivePreviewUrl(gdriveId)}
                   className="w-full h-full"
                   allow="autoplay; encrypted-media"
                   allowFullScreen
