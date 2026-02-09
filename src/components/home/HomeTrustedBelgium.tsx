@@ -51,7 +51,7 @@ const countryData = [
   {
     key: 'italy',
     flag: '🇮🇹',
-    clientCount: '5+',
+    clientCount: '25+',
     sectors: ['restaurants', 'beauty', 'retail'],
   },
   {
