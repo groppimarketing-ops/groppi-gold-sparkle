@@ -54,6 +54,7 @@ import sanremoCover from '@/assets/portfolio/sanremo/cover.jpg';
 import boothuisCover from '@/assets/portfolio/boothuis/cover.jpg';
 
 // FRATELLI ROSELLI assets
+import fratelliRoselliCover from '@/assets/portfolio/fratelli-roselli/cover.jpg';
 import fratelliRoselliPizza from '@/assets/portfolio/fratelli-roselli/pizza-hero.jpg';
 import fratelliRoselliLogo from '@/assets/portfolio/fratelli-roselli/logo.png';
 import fratelliRoselliIngredienti from '@/assets/portfolio/fratelli-roselli/ingredienti.jpg';
@@ -163,8 +164,8 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-15',
       type: 'image',
-      url: fratelliRoselliPizza,
-      alt: 'Pizzeria Fratelli Roselli - Authentic Italian pizza in Turin',
+      url: fratelliRoselliCover,
+      alt: 'Pizzeria Fratelli Roselli - Logo',
     },
     galleryMedia: [
       { id: 'gallery-15-1', type: 'image', url: fratelliRoselliPizza, alt: 'Fratelli Roselli - Pizza presentation' },
