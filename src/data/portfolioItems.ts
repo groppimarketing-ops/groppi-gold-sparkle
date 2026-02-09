@@ -58,7 +58,51 @@ import fratelliRoselliPizza from '@/assets/portfolio/fratelli-roselli/pizza-hero
 import fratelliRoselliLogo from '@/assets/portfolio/fratelli-roselli/logo.png';
 import fratelliRoselliIngredienti from '@/assets/portfolio/fratelli-roselli/ingredienti.jpg';
 
+// PUMMARO PIZZERIA assets
+import pummaroCover from '@/assets/portfolio/pummaro/cover.jpg';
+import pummaroFood from '@/assets/portfolio/pummaro/food.jpg';
+import pummaroInterior from '@/assets/portfolio/pummaro/interior.jpg';
+
 export const portfolioItems: PortfolioItem[] = [
+  {
+    id: '16',
+    clientName: 'Pizzeria Pummarò',
+    slug: 'pummaro-torino',
+    industry: 'restaurant',
+    services: ['website', 'branding', 'content'],
+    coverMedia: {
+      id: 'cover-16',
+      type: 'image',
+      url: pummaroCover,
+      alt: 'Pizzeria Pummarò - Authentic Italian pizzeria in Torino',
+    },
+    galleryMedia: [
+      { id: 'gallery-16-1', type: 'image', url: pummaroCover, alt: 'Pummarò - Restaurant presentation' },
+      { id: 'gallery-16-2', type: 'image', url: pummaroFood, alt: 'Pummarò - Food presentation' },
+      { id: 'gallery-16-3', type: 'image', url: pummaroInterior, alt: 'Pummarò - Interior atmosphere' },
+    ],
+    shortResultLine: 'Modern restaurant website with strong food presentation and clear customer flow.',
+    popupContent: {
+      challenge: 'Pizzeria Pummarò in Torino needed a professional digital presence that reflected their commitment to authentic Italian cuisine using premium ingredients from small Italian producers.',
+      approachPoints: [
+        'Website structure & optimization',
+        'Visual hierarchy & food presentation',
+        'Mobile usability improvements',
+        'Online reservation and delivery integration',
+      ],
+      resultPoints: [
+        'Conversion-friendly layout with clear navigation',
+        'Strong local restaurant branding online',
+        'Professional food visibility and ingredient storytelling',
+        'Seamless customer journey from menu to reservation',
+      ],
+      resultDisclaimer: 'Project actief beheerd door GROPPI.',
+      deliverables: ['website-design', 'website-dev', 'content-calendar', 'photo-shoot'],
+    },
+    externalUrl: 'https://pizzeriapummaro.com/',
+    featured: true,
+    createdAt: new Date('2025-02-09'),
+  },
   {
     id: '15',
     clientName: 'Pizzeria Fratelli Roselli',
