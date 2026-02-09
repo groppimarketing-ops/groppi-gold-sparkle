@@ -12,6 +12,7 @@ export const SERVICE_VIDEO_BY_SLUG: Record<string, string> = {
   'one-page-website': '1ndZjHgg2usSrSXbuW-r4hA1NqbuirXvw',
   'social-media': '1Nhf9_ZjyDWE2kxlBfGnAu0UCmrCb6j_l',
   'mobile-app-development': '10hluiBfJuByaxHcwZQbMgS4uXMxp_cty',
+  'data-sync': '1d_3vQbZlcg1LwHcpRR2Awb1HruGuw20O',
 };
 
 export function buildDrivePreviewUrl(fileId: string): string {
