@@ -136,6 +136,14 @@ import happyFlavorsInterior from '@/assets/portfolio/happy-flavors/interior.webp
 import happyFlavorsSocial from '@/assets/portfolio/happy-flavors/social-mockup.webp';
 import happyFlavorsBrand from '@/assets/portfolio/happy-flavors/brand-mood.webp';
 
+// GUEST RESERVATIONS assets
+import guestResHero from '@/assets/portfolio/guest-reservations/hero.webp';
+import guestResDesktop from '@/assets/portfolio/guest-reservations/desktop-mockup.webp';
+import guestResMobile from '@/assets/portfolio/guest-reservations/mobile-mockup.webp';
+import guestResDashboard from '@/assets/portfolio/guest-reservations/dashboard.webp';
+import guestResMulti from '@/assets/portfolio/guest-reservations/multi-device.webp';
+import guestResBrand from '@/assets/portfolio/guest-reservations/brand-mood.webp';
+
 // AI DEALS assets
 import aidealsCover from '@/assets/portfolio/aideals/cover.jpg';
 import aidealsDesktop from '@/assets/portfolio/aideals/desktop-mockup.webp';
@@ -1143,6 +1151,48 @@ export const portfolioItems: PortfolioItem[] = [
     externalUrl: 'https://www.happyflavorsindianrestaurant.com',
     featured: true,
     createdAt: new Date('2025-06-20'),
+  },
+  {
+    id: '26',
+    clientName: 'Guest Reservations',
+    slug: 'guest-reservations',
+    industry: 'startup',
+    services: ['website', 'ecommerce', 'content'],
+    coverMedia: {
+      id: 'cover-26',
+      type: 'image',
+      url: guestResHero,
+      alt: 'Guest Reservations - Global travel & hotel booking platform',
+    },
+    galleryMedia: [
+      { id: 'gallery-26-1', type: 'image', url: guestResDesktop, alt: 'Guest Reservations - Desktop platform' },
+      { id: 'gallery-26-2', type: 'image', url: guestResMobile, alt: 'Guest Reservations - Mobile booking', aspectRatio: '9:16' as const },
+      { id: 'gallery-26-3', type: 'image', url: guestResDashboard, alt: 'Guest Reservations - Analytics dashboard' },
+      { id: 'gallery-26-4', type: 'image', url: guestResMulti, alt: 'Guest Reservations - Multi-device experience' },
+      { id: 'gallery-26-5', type: 'image', url: guestResBrand, alt: 'Guest Reservations - Brand & digital presence' },
+      { id: 'gallery-26-6', type: 'image', url: guestResHero, alt: 'Guest Reservations - Platform overview' },
+    ],
+    shortResultLine: 'Ongoing platform management for a global hotel booking service.',
+    popupContent: {
+      challenge: 'Guest Reservations, een internationaal hotel- en reisboekingsplatform, had behoefte aan doorlopend platformbeheer, website-optimalisatie en technische ondersteuning om hun wereldwijde groei te ondersteunen.',
+      approachPoints: [
+        'Doorlopend platformbeheer en technische ondersteuning',
+        'Website-optimalisatie voor betere prestaties en conversie',
+        'Monitoring en proactief onderhoud van het boekingsplatform',
+        'Strategische ondersteuning voor schaalbare groei',
+      ],
+      resultPoints: [
+        'Verbeterde platformprestaties en gebruikservaring',
+        'Hogere conversieratio op het boekingsplatform',
+        'Stabiel en betrouwbaar platform voor wereldwijde gebruikers',
+        'Doorlopende technische ondersteuning en optimalisatie',
+      ],
+      resultDisclaimer: 'Doorlopend project actief beheerd door GROPPI.',
+      deliverables: ['website-dev', 'seo-optimization', 'copywriting', 'website-design'],
+    },
+    externalUrl: 'https://www.guestreservations.com/',
+    featured: true,
+    createdAt: new Date('2025-07-01'),
   },
 ];
 
