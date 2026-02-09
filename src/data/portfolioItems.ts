@@ -95,8 +95,8 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-18',
       type: 'image',
-      url: cosePazziLogo,
-      alt: 'Pizzeria Cose Pazzi Torino - Logo',
+      url: cosePazziFoodHero,
+      alt: 'Pizzeria Cose Pazzi Torino - Premium pizza presentation',
     },
     galleryMedia: [
       { id: 'gallery-18-1', type: 'image', url: cosePazziMobile, alt: 'Cose Pazzi - Mobile menu experience', aspectRatio: '9:16' },
