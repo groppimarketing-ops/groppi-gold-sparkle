@@ -71,6 +71,11 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
   // Determine if this service has a dedicated page
   const hasDetailPage = SERVICES_WITH_PAGES.includes(service.id);
   
+  // DEBUG: log service.id for video mapping verification
+  if (import.meta.env.DEV) {
+    console.log(`[ServiceCard] service.id = "${service.id}"`);
+  }
+
   // Determine if this service has a calculator
   const hasCalculator = service.id === 'social-media' || service.id === 'ads-management';
 

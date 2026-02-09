@@ -22,6 +22,11 @@ const ServicePageHero = memo(({ serviceKey, posterImage }: ServicePageHeroProps)
   const slug = serviceKey.replace(/([A-Z])/g, '-$1').toLowerCase();
   const gdriveId = getVideoIdBySlug(slug);
 
+  // DEBUG: log slug for video mapping verification
+  if (import.meta.env.DEV) {
+    console.log(`[ServicePageHero] serviceKey="${serviceKey}" → slug="${slug}" → gdriveId="${gdriveId || 'NONE'}"`);
+  }
+
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
