@@ -62,6 +62,12 @@
       "ctaPrimary": "Services & Preise ansehen",
       "ctaSecondary": "Individuelles Angebot anfordern"
     },
+    "whoWeAre": {
+      "headline": "Wer wir sind. Und warum wir anders arbeiten.",
+      "subtext": "Seit 2016 helfen wir Unternehmen zu wachsen\nmit Struktur, Kontrolle und intelligenten Systemen —\nnicht mit leerem Marketing-Gerede.",
+      "cta": "Unsere Dienstleistungen entdecken",
+      "videoAlt": "Sehen Sie unser Einführungsvideo"
+    },
     "trustBar": {
       "item1": {
         "title": "Transparente Preise",

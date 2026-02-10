@@ -184,6 +184,12 @@
       "title": "Costruito per la crescita in Belgio ed Europa",
       "subtitle": "Niente rumore. Niente promesse vuote. Solo un sistema che genera lead e fatturato."
     },
+    "whoWeAre": {
+      "headline": "Chi siamo. E perché lavoriamo diversamente.",
+      "subtext": "Dal 2016 aiutiamo le aziende a crescere\ncon struttura, controllo e sistemi intelligenti —\nnon con chiacchiere di marketing.",
+      "cta": "Scopri i nostri servizi",
+      "videoAlt": "Guarda il nostro video introduttivo"
+    },
     "serviceMap": {
       "label": "Cosa facciamo",
       "title": "I nostri servizi in sintesi",
