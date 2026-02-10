@@ -1226,7 +1226,7 @@
       },
       "dataSync": {
         "title": "Data synchronisatie",
-        "description": "Houd uw bedrijfsgegevens gesynchroniseerd over alle platforms. Voorraad, prijzen en productinformatiebeheer.",
+        "description": "Houd je bedrijfsgegevens gesynchroniseerd over alle platformen. Voorraad, prijzen en productinformatiebeheer.",
         "features": {
           "0": "Multi-platform synchronisatie",
           "1": "Realtime updates",
