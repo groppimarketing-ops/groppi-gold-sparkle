@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import MediaCarousel from './MediaCarousel';
 import type { PortfolioItem } from '@/types/portfolio';
 import { industryLabels, serviceTagLabels, deliverableLabels } from '@/types/portfolio';
+import { getTranslatedPortfolio } from '@/utils/portfolioTranslation';
 
 interface CaseStudyModalProps {
   item: PortfolioItem | null;
