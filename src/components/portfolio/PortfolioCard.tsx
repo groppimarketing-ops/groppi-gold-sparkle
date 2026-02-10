@@ -20,6 +20,7 @@ const PortfolioCard = memo(({
 }: PortfolioCardProps) => {
   const { t, i18n } = useTranslation();
   const lang = i18n.language.startsWith('nl') ? 'nl' : 'en';
+  const translated = getTranslatedPortfolio(t, item);
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const handleImageLoad = useCallback(() => {
