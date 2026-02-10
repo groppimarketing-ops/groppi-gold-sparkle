@@ -68,7 +68,6 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
 
   // Determine if this service has a dedicated page
