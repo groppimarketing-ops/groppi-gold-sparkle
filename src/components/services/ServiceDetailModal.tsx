@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Play, Clock, ArrowRight, Check, Package, CreditCard, Info, Megaphone, Calculator } from 'lucide-react';
+import { X, Play, Clock, ArrowRight, Check, Package, CreditCard, Info, Megaphone, Calculator, Maximize, Minimize } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -9,6 +9,7 @@ import type { ServiceData } from './ServiceCard';
 import AdsServiceContent from './AdsServiceContent';
 import PlanBuilderSocial from './PlanBuilderSocial';
 import { SERVICE_PRICING_CONFIG, getPriceDisplayString, getPriceSuffix } from '@/config/pricingConfig';
+import { getVideoIdBySlug, buildDrivePreviewUrl } from '@/data/serviceVideos';
 
 interface ServiceDetailModalProps {
   isOpen: boolean;
@@ -22,73 +23,33 @@ const ServiceDetailModal = ({
   service,
 }: ServiceDetailModalProps) => {
   const { t, i18n } = useTranslation();
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [videoLoaded, setVideoLoaded] = useState(false);
-  const [isYouTube, setIsYouTube] = useState(false);
-  const [isVimeo, setIsVimeo] = useState(false);
-  const [embedUrl, setEmbedUrl] = useState('');
+  const videoContainerRef = useRef<HTMLDivElement>(null);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
 
-  // Detect video type and prepare embed URL
-  useEffect(() => {
-    if (!service.videoUrl) return;
+  // Centralized video mapping
+  const gdriveId = getVideoIdBySlug(service.id);
+  
 
-    if (service.videoUrl.includes('youtube.com') || service.videoUrl.includes('youtu.be')) {
-      setIsYouTube(true);
-      setIsVimeo(false);
-      const videoId = service.videoUrl.includes('youtu.be')
-        ? service.videoUrl.split('/').pop()
-        : new URLSearchParams(new URL(service.videoUrl).search).get('v');
-      setEmbedUrl(`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`);
-    } else if (service.videoUrl.includes('vimeo.com')) {
-      setIsVimeo(true);
-      setIsYouTube(false);
-      const videoId = service.videoUrl.split('/').pop();
-      setEmbedUrl(`https://player.vimeo.com/video/${videoId}?autoplay=1`);
+  // Fullscreen handler
+  const handleFullscreen = () => {
+    const el = videoContainerRef.current;
+    if (!el) return;
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
     } else {
-      setIsYouTube(false);
-      setIsVimeo(false);
-      setEmbedUrl('');
+      el.requestFullscreen();
     }
-  }, [service.videoUrl]);
+  };
 
-  // Disable body scroll when modal is open
+  // Track fullscreen state
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-      setVideoLoaded(false);
-    }
+    const onFsChange = () => setIsFullscreen(!!document.fullscreenElement);
+    document.addEventListener('fullscreenchange', onFsChange);
+    return () => document.removeEventListener('fullscreenchange', onFsChange);
+  }, []);
 
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isOpen]);
-
-  // Handle ESC key
-  useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
-    };
-
-    if (isOpen) {
-      window.addEventListener('keydown', handleEsc);
-    }
-
-    return () => {
-      window.removeEventListener('keydown', handleEsc);
-    };
-  }, [isOpen, onClose]);
-
-  // Load video only when modal opens
-  useEffect(() => {
-    if (isOpen && service.videoUrl && !isYouTube && !isVimeo) {
-      setVideoLoaded(true);
-    }
-  }, [isOpen, service.videoUrl, isYouTube, isVimeo]);
+  // (video type detection removed — now uses centralized mapping)
 
   const backdropVariants = {
     hidden: { opacity: 0 },
@@ -337,38 +298,31 @@ const ServiceDetailModal = ({
                       {t('services.modal.explainerVideo')}
                     </h3>
 
-                    {/* Video Section */}
-                    <div className="relative aspect-video bg-black/50 rounded-xl overflow-hidden mb-4">
-                      {service.videoUrl ? (
+                    {/* Video Section — centralized mapping */}
+                    <div ref={videoContainerRef} className="relative aspect-video bg-black/50 rounded-xl overflow-hidden mb-4">
+                      {gdriveId ? (
                         <>
-                          {(isYouTube || isVimeo) ? (
-                            <iframe
-                              src={embedUrl}
-                              className="w-full h-full"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowFullScreen
-                              title={t(service.titleKey)}
-                            />
-                          ) : videoLoaded ? (
-                            <video
-                              ref={videoRef}
-                              src={service.videoUrl}
-                              controls
-                              autoPlay
-                              className="w-full h-full object-cover"
-                              preload="none"
-                            />
-                          ) : (
-                            <div className="absolute inset-0 flex items-center justify-center">
-                              <motion.div
-                                animate={{ scale: [1, 1.1, 1] }}
-                                transition={{ repeat: Infinity, duration: 1.5 }}
-                                className="w-16 h-16 rounded-full glass-card flex items-center justify-center"
-                              >
-                                <Play className="w-8 h-8 text-primary fill-primary" />
-                              </motion.div>
-                            </div>
-                          )}
+                          <iframe
+                            src={buildDrivePreviewUrl(gdriveId)}
+                            className="w-full h-full"
+                            allow="autoplay; encrypted-media"
+                            allowFullScreen
+                            loading="lazy"
+                            title={t(service.titleKey)}
+                            style={{ border: 'none' }}
+                          />
+                          {/* Fullscreen button */}
+                          <button
+                            onClick={handleFullscreen}
+                            className="absolute bottom-3 right-3 flex items-center justify-center w-9 h-9 rounded-full bg-black/60 backdrop-blur-sm text-white/80 hover:text-primary hover:bg-black/80 transition-all duration-200"
+                            aria-label="Fullscreen"
+                          >
+                            {isFullscreen ? (
+                              <Minimize className="w-4 h-4" />
+                            ) : (
+                              <Maximize className="w-4 h-4" />
+                            )}
+                          </button>
                         </>
                       ) : (
                         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
