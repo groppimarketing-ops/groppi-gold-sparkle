@@ -1,8 +1,8 @@
-import { memo, useEffect, useState } from 'react';
+import { memo, useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Check, MessageCircle, ArrowRight, Calendar } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { trackEvent, socialLinks } from '@/utils/tracking';
 import { getVideoIdBySlug, buildDrivePreviewUrl } from '@/data/serviceVideos';
@@ -17,15 +17,25 @@ interface ServicePageHeroProps {
 const ServicePageHero = memo(({ serviceKey, posterImage }: ServicePageHeroProps) => {
   const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
+  const location = useLocation();
+  const videoSectionRef = useRef<HTMLDivElement>(null);
+  const [showVideoGlow, setShowVideoGlow] = useState(false);
 
   // Derive slug from serviceKey (e.g., 'contentProduction' -> 'content-production')
   const slug = serviceKey.replace(/([A-Z])/g, '-$1').toLowerCase();
   const gdriveId = getVideoIdBySlug(slug);
 
-  // DEBUG: log slug for video mapping verification
-  if (import.meta.env.DEV) {
-    console.log(`[ServicePageHero] serviceKey="${serviceKey}" → slug="${slug}" → gdriveId="${gdriveId || 'NONE'}"`);
-  }
+  // Handle #video hash: scroll to video section + gold glow
+  useEffect(() => {
+    if (location.hash === '#video' && videoSectionRef.current) {
+      // Small delay to ensure layout is ready
+      setTimeout(() => {
+        videoSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setShowVideoGlow(true);
+        setTimeout(() => setShowVideoGlow(false), 1500);
+      }, 300);
+    }
+  }, [location.hash]);
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -124,10 +134,18 @@ const ServicePageHero = memo(({ serviceKey, posterImage }: ServicePageHeroProps)
 
           {/* RIGHT COLUMN - Video */}
           <motion.div
+            ref={videoSectionRef}
+            id="video"
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative aspect-video rounded-2xl overflow-hidden glass-card"
+            className={`relative aspect-video rounded-2xl overflow-hidden glass-card transition-shadow duration-500 ${
+              showVideoGlow ? 'shadow-[0_0_40px_hsl(var(--primary)/0.5),0_0_80px_hsl(var(--primary)/0.2)]' : ''
+            }`}
+            style={{
+              outline: showVideoGlow ? '2px solid hsl(var(--primary) / 0.6)' : 'none',
+              outlineOffset: '2px',
+            }}
           >
             {gdriveId ? (
               <iframe

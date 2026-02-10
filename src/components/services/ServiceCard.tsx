@@ -7,7 +7,6 @@ import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import ServiceDetailModal from './ServiceDetailModal';
-import ServiceVideoModal from './ServiceVideoModal';
 import ServiceVideoPreview from './ServiceVideoPreview';
 import { SERVICE_PRICING_CONFIG, getPriceDisplayString, getPriceSuffix } from '@/config/pricingConfig';
 
@@ -69,7 +68,6 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
 
   // Determine if this service has a dedicated page
@@ -169,16 +167,7 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
 
   const handleWatchVideo = (e?: React.MouseEvent) => {
     e?.stopPropagation();
-    setIsVideoModalOpen(true);
-  };
-
-  const handleVideoModalContinue = () => {
-    setIsVideoModalOpen(false);
-    if (hasDetailPage) {
-      navigate(`/services/${service.id}`);
-    } else {
-      setIsModalOpen(true);
-    }
+    navigate(`/services/${service.id}#video`);
   };
 
   // Get simple explanation line for the service
@@ -301,14 +290,6 @@ const ServiceCard = forwardRef<HTMLDivElement, ServiceCardProps>(({ service, ind
           )}
         </div>
       </GlassCard>
-
-      {/* Video Modal - Primary explanation layer */}
-      <ServiceVideoModal
-        isOpen={isVideoModalOpen}
-        onClose={() => setIsVideoModalOpen(false)}
-        onContinueToDetails={handleVideoModalContinue}
-        service={service}
-      />
 
       {/* Detail Modal */}
       <ServiceDetailModal

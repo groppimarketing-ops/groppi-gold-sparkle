@@ -1,12 +1,13 @@
 import { useState, useRef, useEffect, useCallback, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { getVideoIdBySlug, buildDrivePreviewUrl } from '@/data/serviceVideos';
 
 interface ServiceVideoPreviewProps {
   serviceId: string;
-  /** Open the full video modal */
-  onClickPlay: () => void;
+  /** Open the full video modal — now unused, kept for backward compat */
+  onClickPlay?: () => void;
 }
 
 /**
@@ -21,6 +22,7 @@ interface ServiceVideoPreviewProps {
  */
 const ServiceVideoPreview = memo(({ serviceId, onClickPlay }: ServiceVideoPreviewProps) => {
   const gdriveId = getVideoIdBySlug(serviceId);
+  const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
 
   const [isNearViewport, setIsNearViewport] = useState(false);
@@ -77,13 +79,13 @@ const ServiceVideoPreview = memo(({ serviceId, onClickPlay }: ServiceVideoPrevie
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      onClick={onClickPlay}
+      onClick={() => navigate(`/services/${serviceId}#video`)}
       role="button"
       tabIndex={0}
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          onClickPlay();
+          navigate(`/services/${serviceId}#video`);
         }
       }}
       aria-label="Watch video preview"

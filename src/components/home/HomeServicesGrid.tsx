@@ -251,10 +251,12 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                         variant="outline"
                         size="sm"
                         className="glass-button text-xs hover:border-primary/60 hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
-                        onClick={() => handleOpenModal(service, 'video')}
+                        asChild
                       >
-                        <Play className="w-3 h-3 fill-current" />
-                        <span className={isRTL ? 'mr-1' : 'ml-1'}>{t('home.servicesGrid.watchVideo')}</span>
+                        <Link to={`/services/${service.id}#video`}>
+                          <Play className="w-3 h-3 fill-current" />
+                          <span className={isRTL ? 'mr-1' : 'ml-1'}>{t('home.servicesGrid.watchVideo')}</span>
+                        </Link>
                       </Button>
                       
                       {service.pricingConfig.hasCalculator ? (
