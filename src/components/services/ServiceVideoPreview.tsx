@@ -77,9 +77,7 @@ const ServiceVideoPreview = memo(({ serviceId, onClickPlay }: ServiceVideoPrevie
           ? '0 0 24px hsl(var(--primary) / 0.25)'
           : '0 0 0px transparent',
       }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onClick={onClickPlay}
+      onClick={() => navigate(`/services/${serviceId}#video`)}
       role="button"
       tabIndex={0}
       onKeyDown={(e) => {

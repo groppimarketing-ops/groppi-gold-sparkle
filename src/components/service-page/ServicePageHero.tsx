@@ -134,10 +134,18 @@ const ServicePageHero = memo(({ serviceKey, posterImage }: ServicePageHeroProps)
 
           {/* RIGHT COLUMN - Video */}
           <motion.div
+            ref={videoSectionRef}
+            id="video"
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative aspect-video rounded-2xl overflow-hidden glass-card"
+            className={`relative aspect-video rounded-2xl overflow-hidden glass-card transition-shadow duration-500 ${
+              showVideoGlow ? 'shadow-[0_0_40px_hsl(var(--primary)/0.5),0_0_80px_hsl(var(--primary)/0.2)]' : ''
+            }`}
+            style={{
+              outline: showVideoGlow ? '2px solid hsl(var(--primary) / 0.6)' : 'none',
+              outlineOffset: '2px',
+            }}
           >
             {gdriveId ? (
               <iframe
