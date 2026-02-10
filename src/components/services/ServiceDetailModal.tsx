@@ -298,38 +298,31 @@ const ServiceDetailModal = ({
                       {t('services.modal.explainerVideo')}
                     </h3>
 
-                    {/* Video Section */}
-                    <div className="relative aspect-video bg-black/50 rounded-xl overflow-hidden mb-4">
-                      {service.videoUrl ? (
+                    {/* Video Section — centralized mapping */}
+                    <div ref={videoContainerRef} className="relative aspect-video bg-black/50 rounded-xl overflow-hidden mb-4">
+                      {gdriveId ? (
                         <>
-                          {(isYouTube || isVimeo) ? (
-                            <iframe
-                              src={embedUrl}
-                              className="w-full h-full"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowFullScreen
-                              title={t(service.titleKey)}
-                            />
-                          ) : videoLoaded ? (
-                            <video
-                              ref={videoRef}
-                              src={service.videoUrl}
-                              controls
-                              autoPlay
-                              className="w-full h-full object-cover"
-                              preload="none"
-                            />
-                          ) : (
-                            <div className="absolute inset-0 flex items-center justify-center">
-                              <motion.div
-                                animate={{ scale: [1, 1.1, 1] }}
-                                transition={{ repeat: Infinity, duration: 1.5 }}
-                                className="w-16 h-16 rounded-full glass-card flex items-center justify-center"
-                              >
-                                <Play className="w-8 h-8 text-primary fill-primary" />
-                              </motion.div>
-                            </div>
-                          )}
+                          <iframe
+                            src={buildDrivePreviewUrl(gdriveId)}
+                            className="w-full h-full"
+                            allow="autoplay; encrypted-media"
+                            allowFullScreen
+                            loading="lazy"
+                            title={t(service.titleKey)}
+                            style={{ border: 'none' }}
+                          />
+                          {/* Fullscreen button */}
+                          <button
+                            onClick={handleFullscreen}
+                            className="absolute bottom-3 right-3 flex items-center justify-center w-9 h-9 rounded-full bg-black/60 backdrop-blur-sm text-white/80 hover:text-primary hover:bg-black/80 transition-all duration-200"
+                            aria-label="Fullscreen"
+                          >
+                            {isFullscreen ? (
+                              <Minimize className="w-4 h-4" />
+                            ) : (
+                              <Maximize className="w-4 h-4" />
+                            )}
+                          </button>
                         </>
                       ) : (
                         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
