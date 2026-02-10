@@ -1752,7 +1752,8 @@
     "phoneLabel": "Phone",
     "emailLabel": "Email",
     "landline": "Landline",
-    "mobile": "Mobile"
+    "mobile": "Mobile",
+    "rateLimited": "Too many requests. Please try again later."
   },
   "franchise": {
     "title": "Franchise",

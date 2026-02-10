@@ -16,11 +16,11 @@ import PageSEO from '@/components/seo/PageSEO';
 import { BreadcrumbSchema } from '@/components/seo/StructuredData';
 
 const contactSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters').max(100),
-  email: z.string().email('Please enter a valid email'),
+  name: z.string().min(2).max(100),
+  email: z.string().email(),
   phone: z.string().optional(),
-  subject: z.string().min(2, 'Subject must be at least 2 characters').max(200),
-  message: z.string().min(10, 'Message must be at least 10 characters').max(1000),
+  subject: z.string().min(2).max(200),
+  message: z.string().min(10).max(1000),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
@@ -65,9 +65,9 @@ const Contact = () => {
 
       if (!response.ok) {
         if (response.status === 429) {
-          throw new Error('Too many requests. Please try again later.');
+          throw new Error(t('contact.rateLimited', 'Te veel aanvragen. Probeer later opnieuw.'));
         }
-        throw new Error(result.error || 'Failed to send message');
+        throw new Error(result.error || t('forms.submitError'));
       }
 
       toast({
@@ -205,7 +205,7 @@ const Contact = () => {
                       className="w-full px-4 py-3 glass-card !rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 bg-transparent placeholder:text-muted-foreground"
                     />
                     {errors.name && (
-                      <p className="text-destructive text-sm">{errors.name.message}</p>
+                      <p className="text-destructive text-sm">{t('validation.required')}</p>
                     )}
                   </div>
                   <div className="space-y-2">
@@ -217,7 +217,7 @@ const Contact = () => {
                       className="w-full px-4 py-3 glass-card !rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 bg-transparent placeholder:text-muted-foreground"
                     />
                     {errors.email && (
-                      <p className="text-destructive text-sm">{errors.email.message}</p>
+                      <p className="text-destructive text-sm">{t('validation.email')}</p>
                     )}
                   </div>
                 </div>
@@ -239,7 +239,7 @@ const Contact = () => {
                       className="w-full px-4 py-3 glass-card !rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 bg-transparent placeholder:text-muted-foreground"
                     />
                     {errors.subject && (
-                      <p className="text-destructive text-sm">{errors.subject.message}</p>
+                      <p className="text-destructive text-sm">{t('validation.required')}</p>
                     )}
                   </div>
                 </div>
@@ -253,7 +253,7 @@ const Contact = () => {
                     className="w-full px-4 py-3 glass-card !rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 bg-transparent placeholder:text-muted-foreground resize-none"
                   />
                   {errors.message && (
-                    <p className="text-destructive text-sm">{errors.message.message}</p>
+                    <p className="text-destructive text-sm">{t('validation.required')}</p>
                   )}
                 </div>
 
