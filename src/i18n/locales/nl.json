@@ -505,7 +505,7 @@
       "proofPoints": {
         "experience": "10+ jaar ervaring",
         "pricing": "Transparante prijzen & duidelijke deliverables",
-        "system": "System-driven aanpak (niet alleen design)",
+        "system": "Systeemgestuurde aanpak (niet alleen design)",
         "leads": "Focus op kwalitatieve leads"
       },
       "note": "*Omwille van NDA's tonen we niet alle bedrijfsnamen publiek.",
@@ -877,7 +877,7 @@
         "description": "We versterkten onze lokale aanwezigheid en bouwden langdurige partnerships met Belgische bedrijven."
       },
       "2023": {
-        "title": "Uitbreiding Doorheen Europa",
+        "title": "Uitbreiding doorheen Europa",
         "description": "We schaalden onze projecten op doorheen Europa met klanten in Nederland, Duitsland, Frankrijk en daarbuiten."
       },
       "2026": {
@@ -975,7 +975,7 @@
       "sales": {
         "title": "Meer verkoop",
         "description": "Zet verkeer om in echte omzet.",
-        "cta": "Bouw mijn setup"
+        "cta": "Bouw mijn opzet"
       }
     },
     "card": {
@@ -1971,7 +1971,7 @@
       "title": "Dit is géén job. Dit is een partnernetwerk.",
       "subtitle": "Voor bureaus en specialisten die willen groeien onder een sterk merk — met duidelijke afspraken, heldere delivery en échte support.",
       "bullet1": "Geen praatjes. Wel structuur.",
-      "bullet2": "Transparant delivery-systeem.",
+      "bullet2": "Transparant opleveringssysteem.",
       "bullet3": "Premium merk & positionering.",
       "ctaPrimary": "Plan een kennismaking",
       "ctaSecondary": "Bekijk hoe het werkt",
@@ -1988,7 +1988,7 @@
     "clarity": {
       "subtitle": "Wat dit programma is",
       "title": "Dit is géén job. Dit is een partnernetwerk.",
-      "body": "Dit programma is bedoeld voor bureaus en specialisten die willen groeien onder een sterk merk. Geen tewerkstelling. Geen recruitment. En ook geen 'praatjes' zonder systeem. Wel: een licentie-gedreven partnerschap met duidelijke kwaliteitsstandaarden.",
+      "body": "Dit programma is bedoeld voor bureaus en specialisten die willen groeien onder een sterk merk. Geen tewerkstelling. Geen aanwerving. En ook geen 'praatjes' zonder systeem. Wel: een licentie-gedreven partnerschap met duidelijke kwaliteitsstandaarden.",
       "cards": {
         "brand": {
           "title": "Merk & positionering",
@@ -1998,9 +1998,9 @@
           }
         },
         "delivery": {
-          "title": "Delivery-systeem",
+          "title": "Opleveringssysteem",
           "bullets": {
-            "0": "Heldere diensten & pricing-logica",
+            "0": "Heldere diensten & prijslogica",
             "1": "Tools & frameworks die werken in de praktijk"
           }
         },
@@ -2033,11 +2033,11 @@
       "title": "Wat jij krijgt als partner",
       "cards": {
         "credibility": {
-          "title": "Instant geloofwaardigheid",
+          "title": "Directe geloofwaardigheid",
           "body": "Meer dan 10 jaar ervaring vertaald naar sterke positionering en duidelijke service-logica."
         },
         "salesReady": {
-          "title": "Sales-klare structuur",
+          "title": "Verkoopklare structuur",
           "body": "Diensten, pricing en calculators die beslissingen versnellen en frictie verlagen."
         },
         "portfolio": {
@@ -2046,7 +2046,7 @@
         },
         "longterm": {
           "title": "Langetermijnsamenwerking",
-          "body": "Projecten, upsells en duurzame relaties — gebouwd op vertrouwen en delivery."
+          "body": "Projecten, uitbreidingen en duurzame relaties — gebouwd op vertrouwen en oplevering."
         }
       },
       "highlight": "Je koopt geen logo. Je krijgt een bewezen systeem."
@@ -2060,12 +2060,12 @@
           "desc": "Laat je gegevens achter en vertel kort over je regio en team."
         },
         "step2": {
-          "title": "Korte fit-call",
-          "desc": "We checken match, kwaliteit en verwachtingen (15–20 min)."
+          "title": "Kort oriënterend gesprek",
+          "desc": "We bekijken of er een match is qua kwaliteit en verwachtingen (15–20 min)."
         },
         "step3": {
           "title": "Start met het GROPPI-systeem",
-          "desc": "Je krijgt onboarding, richtlijnen en start-assets om te leveren."
+          "desc": "Je krijgt een inwerktraject, richtlijnen en startmateriaal om te leveren."
         }
       }
     },
@@ -2079,7 +2079,7 @@
         },
         "bureau": {
           "question": "Moet ik al een bureau hebben?",
-          "answer": "Bij voorkeur wel. Sterke specialisten met delivery-capaciteit komen ook in aanmerking."
+          "answer": "Bij voorkeur wel. Sterke specialisten met oplevercapaciteit komen ook in aanmerking."
         },
         "exclusivity": {
           "question": "Krijg ik exclusiviteit?",
@@ -2403,7 +2403,7 @@
       "deliverables": {
         "1": { "title": "Shop design", "desc": "Conversiegerichte productpagina's." },
         "2": { "title": "Development", "desc": "Robuust e-commerce platform." },
-        "3": { "title": "Payment integratie", "desc": "Alle gangbare betaalmethodes." },
+        "3": { "title": "Betalingsintegratie", "desc": "Alle gangbare betaalmethodes." },
         "4": { "title": "Voorraadbeheer", "desc": "Eenvoudig producten beheren." },
         "5": { "title": "Marketing tools", "desc": "Kortingscodes, upsells, etc." },
         "6": { "title": "Training & support", "desc": "Je leert alles zelf beheren." }
@@ -2442,7 +2442,7 @@
       "benefits": {
         "1": "iOS & Android (native feel)",
         "2": "Schone UX + snelle performance",
-        "3": "Launch-ready tracking + store assets"
+        "3": "Tracking & App Store-materiaal klaar voor lancering"
       },
       "deliverables": {
         "1": { "title": "Strategie & feature planning", "desc": "Samen bepalen wat je app moet doen." },
