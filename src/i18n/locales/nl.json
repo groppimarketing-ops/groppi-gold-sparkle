@@ -1998,9 +1998,9 @@
           }
         },
         "delivery": {
-          "title": "Delivery-systeem",
+          "title": "Opleveringssysteem",
           "bullets": {
-            "0": "Heldere diensten & pricing-logica",
+            "0": "Heldere diensten & prijslogica",
             "1": "Tools & frameworks die werken in de praktijk"
           }
         },
