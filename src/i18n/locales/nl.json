@@ -1751,7 +1751,8 @@
     "phoneLabel": "Telefoon",
     "emailLabel": "E-mail",
     "landline": "Vaste lijn",
-    "mobile": "Mobiel"
+    "mobile": "Mobiel",
+    "rateLimited": "Te veel aanvragen. Probeer het later opnieuw."
   },
   "franchise": {
     "title": "Franchise",
