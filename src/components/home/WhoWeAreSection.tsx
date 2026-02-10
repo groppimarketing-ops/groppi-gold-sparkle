@@ -3,9 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, useReducedMotion } from 'framer-motion';
 import { Play, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 /**
  * Google Drive file ID for the brand / intro video.
@@ -104,43 +102,50 @@ const WhoWeAreSection = memo(() => {
       </section>
 
       {/* ── Fullscreen Video Modal ── */}
-      <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-        <DialogContent
-          className="fixed inset-0 max-w-none w-screen h-screen p-0 m-0 bg-black/95 border-none rounded-none flex items-center justify-center z-[100] [&>button]:hidden"
-          onPointerDownOutside={() => setModalOpen(false)}
-          onEscapeKeyDown={() => setModalOpen(false)}
+      {modalOpen && (
+        <div
+          className="fixed inset-0 z-[100] grid place-items-center p-4 md:p-6"
+          style={{ background: 'rgba(0,0,0,0.95)' }}
+          onClick={(e) => { if (e.target === e.currentTarget) setModalOpen(false); }}
+          onKeyDown={(e) => { if (e.key === 'Escape') setModalOpen(false); }}
+          role="dialog"
+          aria-modal="true"
+          aria-label={t('home.whoWeAre.videoAlt')}
+          tabIndex={-1}
+          ref={(el) => el?.focus()}
         >
-          <VisuallyHidden>
-            <DialogTitle>{t('home.whoWeAre.videoAlt')}</DialogTitle>
-          </VisuallyHidden>
-
-          {/* Close button – gold, icon-only, top-right */}
-          <button
-            type="button"
-            onClick={() => setModalOpen(false)}
-            className="absolute top-4 right-4 z-50 w-10 h-10 rounded-full flex items-center justify-center bg-background/30 backdrop-blur-sm border border-primary/40 text-primary hover:bg-background/50 hover:border-primary/70 transition-all duration-200"
-            style={{ boxShadow: '0 0 12px hsl(var(--primary) / 0.3)' }}
-            aria-label="Close"
-          >
-            <X className="w-5 h-5" />
-          </button>
-
-          {/* Video container – centered, aspect-ratio locked, gold glow */}
+          {/* Video container – centered, responsive */}
           <div
-            className="relative w-[95vw] max-w-6xl aspect-video rounded-lg overflow-hidden border border-primary/25"
-            style={{ boxShadow: '0 0 40px hsl(var(--primary) / 0.2), 0 0 80px hsl(var(--primary) / 0.08)' }}
+            className="relative w-full rounded-lg overflow-hidden border border-primary/25"
+            style={{
+              maxWidth: 'min(92vw, 1100px)',
+              maxHeight: '88vh',
+              aspectRatio: '16 / 9',
+              boxShadow: '0 0 40px hsl(var(--primary) / 0.2), 0 0 80px hsl(var(--primary) / 0.08)',
+            }}
           >
+            {/* Close button – inside container, top-right */}
+            <button
+              type="button"
+              onClick={() => setModalOpen(false)}
+              className="absolute top-3 right-3 z-50 w-10 h-10 rounded-full flex items-center justify-center bg-background/30 backdrop-blur-sm border border-primary/40 text-primary hover:bg-background/50 hover:border-primary/70 transition-all duration-200"
+              style={{ boxShadow: '0 0 12px hsl(var(--primary) / 0.3)' }}
+              aria-label={t('common.close', 'Close')}
+            >
+              <X className="w-5 h-5" />
+            </button>
+
             <iframe
-              src={modalOpen ? buildDrivePreview(BRAND_VIDEO_DRIVE_ID) : undefined}
+              src={buildDrivePreview(BRAND_VIDEO_DRIVE_ID)}
               className="w-full h-full bg-black"
               allow="autoplay; encrypted-media; fullscreen"
               allowFullScreen
               title={t('home.whoWeAre.videoAlt')}
-              style={{ border: 'none' }}
+              style={{ border: 'none', objectFit: 'contain' }}
             />
           </div>
-        </DialogContent>
-      </Dialog>
+        </div>
+      )}
     </>
   );
 });
