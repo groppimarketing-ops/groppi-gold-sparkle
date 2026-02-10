@@ -105,14 +105,34 @@ const WhoWeAreSection = memo(() => {
 
       {/* ── Fullscreen Video Modal ── */}
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
-        <DialogContent className="max-w-5xl w-[95vw] p-0 bg-black border-primary/20 overflow-hidden">
+        <DialogContent
+          className="fixed inset-0 max-w-none w-screen h-screen p-0 m-0 bg-black/95 border-none rounded-none flex items-center justify-center z-[100] [&>button]:hidden"
+          onPointerDownOutside={() => setModalOpen(false)}
+          onEscapeKeyDown={() => setModalOpen(false)}
+        >
           <VisuallyHidden>
             <DialogTitle>{t('home.whoWeAre.videoAlt')}</DialogTitle>
           </VisuallyHidden>
-          <div className="relative w-full aspect-video">
+
+          {/* Close button – gold, icon-only, top-right */}
+          <button
+            type="button"
+            onClick={() => setModalOpen(false)}
+            className="absolute top-4 right-4 z-50 w-10 h-10 rounded-full flex items-center justify-center bg-background/30 backdrop-blur-sm border border-primary/40 text-primary hover:bg-background/50 hover:border-primary/70 transition-all duration-200"
+            style={{ boxShadow: '0 0 12px hsl(var(--primary) / 0.3)' }}
+            aria-label="Close"
+          >
+            <X className="w-5 h-5" />
+          </button>
+
+          {/* Video container – centered, aspect-ratio locked, gold glow */}
+          <div
+            className="relative w-[95vw] max-w-6xl aspect-video rounded-lg overflow-hidden border border-primary/25"
+            style={{ boxShadow: '0 0 40px hsl(var(--primary) / 0.2), 0 0 80px hsl(var(--primary) / 0.08)' }}
+          >
             <iframe
               src={modalOpen ? buildDrivePreview(BRAND_VIDEO_DRIVE_ID) : undefined}
-              className="w-full h-full"
+              className="w-full h-full bg-black"
               allow="autoplay; encrypted-media; fullscreen"
               allowFullScreen
               title={t('home.whoWeAre.videoAlt')}
