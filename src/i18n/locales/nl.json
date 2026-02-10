@@ -1770,9 +1770,9 @@
     "newsletter": {
       "title": "Nieuwsbrief",
       "description": "Blijf op de hoogte van onze laatste inzichten en tips.",
-      "placeholder": "Uw e-mailadres",
+      "placeholder": "Je e-mailadres",
       "button": "Inschrijven",
-      "subscribed": "U bent ingeschreven! Bedankt.",
+      "subscribed": "Je bent ingeschreven! Bedankt.",
       "successTitle": "Ingeschreven!",
       "successMessage": "U bent succesvol ingeschreven voor onze nieuwsbrief.",
       "errorTitle": "Inschrijving mislukt",
