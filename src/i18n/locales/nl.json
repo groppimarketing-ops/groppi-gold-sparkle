@@ -1893,10 +1893,10 @@
         "unit": "foto"
       },
       "googleReviews": {
-        "label": "Google Review Management"
+        "label": "Google Review beheer"
       },
       "contentWriting": {
-        "label": "Content writing",
+        "label": "Copywriting",
         "unit": "uur"
       },
       "emailMarketing": {
@@ -1906,7 +1906,7 @@
         "label": "Social media posts (10-pack)"
       },
       "analyticsDashboard": {
-        "label": "Advanced Analytics Dashboard"
+        "label": "Geavanceerd analyse-dashboard"
       }
     },
     "summary": {
