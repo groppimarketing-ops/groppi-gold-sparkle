@@ -29,7 +29,7 @@ const ServiceDetailModal = ({
 
   // Centralized video mapping
   const gdriveId = getVideoIdBySlug(service.id);
-  const hasVideo = !!gdriveId;
+  
 
   // Fullscreen handler
   const handleFullscreen = () => {
