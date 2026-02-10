@@ -60,17 +60,86 @@
   "services": {
     "sectionTitle": "Os Nossos Serviços",
     "sectionSubtitle": "Veja primeiro o vídeo para entender como cada serviço funciona e depois continue para os detalhes.",
+    "gridTitle": "Todos os serviços",
+    "gridSubtitle": "Veja primeiro o vídeo para entender como cada serviço funciona e depois continue para os detalhes.",
     "card": {
       "requestQuote": "Pedir orçamento",
       "viewDetails": "Ver detalhes",
       "watchHowItWorks": "Veja como funciona (60 seg)",
-      "buildYourPlan": "Construa o seu plano"
+      "buildYourPlan": "Construa o seu plano",
+      "watchVideo": "Veja como funciona (60 seg)",
+      "buildPlan": "Construa o seu plano",
+      "calculatorHint": "Obtenha um preço indicativo imediato"
     },
     "badges": {
       "monthly": "Mensal",
       "oneTime": "Único",
       "custom": "Personalizado",
       "mostChosen": "Mais escolhido"
+    },
+    "goalEntry": {
+      "badge": "Comece aqui",
+      "title": "O que quer alcançar?",
+      "subtitle": "Escolha o seu objetivo. Nós mostramos o serviço certo.",
+      "browseHint": "Ou deslize para baixo para ver todos os serviços",
+      "visibility": {
+        "title": "Mais visibilidade",
+        "description": "Construa uma presença online forte e consistente.",
+        "cta": "Veja como funciona"
+      },
+      "leads": {
+        "title": "Mais leads",
+        "description": "Atraia pessoas prontas para entrar em contacto.",
+        "cta": "Ver serviços recomendados"
+      },
+      "sales": {
+        "title": "Mais vendas",
+        "description": "Converta tráfego em receita real.",
+        "cta": "Construa a minha configuração"
+      }
+    },
+    "videoModal": {
+      "continueToDetails": "Continuar para detalhes",
+      "comingSoon": "O vídeo será carregado em breve",
+      "duration": "60 seg",
+      "qualityNote": "A qualidade depende da fonte",
+      "defaultBullets": {
+        "when": "Quando este serviço é adequado para si",
+        "problem": "Que problema resolve",
+        "result": "Que resultado pode esperar"
+      },
+      "bullets": {
+        "social_media": {
+          "when": "Para empresas que querem resultados consistentes sem gerir tudo sozinhas.",
+          "problem": "Resolve o problema de publicações inconsistentes e baixo engagement.",
+          "result": "Uma comunidade crescente e envolvida que fortalece a sua marca."
+        },
+        "content_production": {
+          "when": "Para marcas que querem destacar-se visualmente e precisam de conteúdo profissional.",
+          "problem": "Resolve o problema de conteúdo amador que não converte.",
+          "result": "Vídeos e fotos de alta qualidade que elevam a sua marca."
+        },
+        "ads_management": {
+          "when": "Para empresas que querem usar o orçamento publicitário de forma eficaz.",
+          "problem": "Resolve o problema de orçamento desperdiçado e mau ROI.",
+          "result": "Campanhas baseadas em dados que geram resultados mensuráveis."
+        },
+        "seo": {
+          "when": "Para empresas que querem ser encontradas organicamente.",
+          "problem": "Resolve o problema de invisibilidade nos motores de busca.",
+          "result": "Crescimento orgânico sustentável e mais tráfego qualificado."
+        },
+        "ecommerce_website": {
+          "when": "Para empresas que querem vender online com uma loja profissional.",
+          "problem": "Resolve o problema de oportunidades de venda perdidas online.",
+          "result": "Uma loja online otimizada que converte visitantes em clientes."
+        },
+        "mobile_app_development": {
+          "when": "Para empresas que querem lançar a sua própria app móvel.",
+          "problem": "Resolve o problema de ausência nas app stores.",
+          "result": "Uma app profissional para iOS e Android que alcança clientes diretamente."
+        }
+      }
     }
   },
   "calculator": {
@@ -702,6 +771,7 @@
     "followUs": "Siga-nos",
     "quickLinks": "Links rápidos",
     "contact": "Informação de contacto",
+    "planCall": "Agendar chamada (30 min)",
     "newsletter": { "title": "Newsletter", "description": "Mantenha-se atualizado com os nossos últimos insights e dicas.", "placeholder": "O seu endereço de email", "button": "Subscrever", "subscribed": "Está subscrito! Obrigado.", "successTitle": "Subscrito!", "successMessage": "Subscreveu com sucesso a nossa newsletter.", "errorTitle": "Falha na subscrição", "errorMessage": "Algo correu mal. Por favor, tente novamente mais tarde." }
   },
   "stats": {
