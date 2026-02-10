@@ -2,6 +2,7 @@ import { useState, useRef, useEffect, useCallback, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { getVideoIdBySlug, buildDrivePreviewUrl } from '@/data/serviceVideos';
 
 interface ServiceVideoPreviewProps {
