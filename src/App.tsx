@@ -118,6 +118,7 @@ const App = () => (
                 </Routes>
               </Suspense>
               <FloatingWhatsAppHandler />
+              <CookieConsent />
             </RTLHandler>
           </BrowserRouter>
         </TooltipProvider>
