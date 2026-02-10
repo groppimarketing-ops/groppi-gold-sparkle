@@ -230,19 +230,19 @@
   },
   "home": {
     "heroNew": {
-      "badge": "Structuur. Content. Groei.",
-      "headline": "We bouwen je digitale fundament — en schalen je groei.",
-      "subtitle": "We helpen Belgische bedrijven groeien met een duidelijke aanpak: strategie, branding en performance — zonder verspilde budgetten of vage beloftes.",
-      "proof1": "Duidelijke service-structuur",
-      "proof2": "Transparante prijzen & deliverables",
-      "proof3": "Meer leads, minder verspilde tijd",
+      "badge": "Strategie. Uitvoering. Resultaat.",
+      "headline": "Meer klanten, meer omzet — met een plan dat werkt.",
+      "subtitle": "Wij helpen Belgische bedrijven groeien met heldere strategie, sterke content en meetbare campagnes. Geen loze beloftes, alleen werk dat resultaat oplevert.",
+      "proof1": "Vaste aanpak, geen giswerk",
+      "proof2": "Eerlijke prijzen, duidelijke deliverables",
+      "proof3": "Meer klanten, minder verspild budget",
       "ctaPrimary": "Bekijk diensten & prijzen",
-      "ctaSecondary": "Vraag een offerte aan",
+      "ctaSecondary": "Vraag een voorstel aan",
       "scrollHint": "Scroll"
     },
     "postHeroTrust": {
-      "title": "Gebouwd voor groei in België & Europa",
-      "subtitle": "Geen ruis. Geen loze beloftes. Alleen een systeem dat leads en omzet oplevert."
+      "title": "Gebouwd voor bedrijven die willen groeien",
+      "subtitle": "Geen marketingruis. Geen vage plannen. Wij leveren structuur, content en campagnes die klanten opleveren."
     },
     "serviceMap": {
       "label": "Wat we doen",
