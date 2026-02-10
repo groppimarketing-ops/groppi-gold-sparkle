@@ -222,10 +222,10 @@
   },
   "hero": {
     "title": "GROPPI Gold Standard",
-    "subtitle": "Excellence in Every Detail",
-    "description": "Premium services since 2016.",
-    "cta": "Book a Free Consultation",
-    "ctaSecondary": "View Our Services"
+    "subtitle": "Excellentie in elk detail",
+    "description": "Premium diensten sinds 2016.",
+    "cta": "Plan een gratis gesprek",
+    "ctaSecondary": "Bekijk onze diensten"
   },
   "home": {
     "heroNew": {
@@ -708,13 +708,13 @@
     "whatWeDo": {
       "subtitle": "Wat wij doen",
       "title": "Onze diensten",
-      "description": "Duidelijke, resultaatgerichte diensten zonder hype. Elk project wordt afgestemd op uw specifieke doelen.",
+      "description": "Duidelijke, resultaatgerichte diensten zonder hype. Elk project wordt afgestemd op jouw specifieke doelen.",
       "cta": "Bekijk alle diensten"
     },
     "services": {
       "content": {
         "title": "Contentproductie & Creators",
-        "desc": "Professionele video's, foto's en visuele content voor uw merk."
+        "desc": "Professionele video's, foto's en visuele content voor je merk."
       },
       "websites": {
         "title": "Websiteontwikkeling",
@@ -774,7 +774,7 @@
     "featured": {
       "subtitle": "Pakketten",
       "title": "Flexibele opties voor elk budget",
-      "description": "Kies het pakket dat past bij uw behoeften, of vraag een oplossing op maat.",
+      "description": "Kies het pakket dat past bij jouw behoeften, of vraag een oplossing op maat.",
       "starter": "Perfect voor starters en kleine projecten",
       "growth": "Ideaal voor groeiende bedrijven",
       "pro": "Volledige ondersteuning voor ambitieuze merken",
@@ -782,8 +782,8 @@
       "cta": "Bekijk alle pakketten"
     },
     "cta": {
-      "title": "Klaar om uw digitale groei serieus aan te pakken?",
-      "description": "Laten we samen bespreken hoe we uw bedrijf kunnen helpen groeien met een strategie die werkt.",
+      "title": "Klaar om je digitale groei serieus aan te pakken?",
+      "description": "Laten we samen bespreken hoe we jouw bedrijf kunnen helpen groeien met een strategie die werkt.",
       "contact": "Neem contact op",
       "whatsapp": "Chat via WhatsApp"
     }
@@ -906,8 +906,8 @@
       }
     },
     "cta": {
-      "title": "Wilt u samenwerken met een team dat meedenkt en vooruitkijkt?",
-      "text": "Laten we samen ontdekken hoe we uw digitale aanwezigheid kunnen versterken.",
+      "title": "Wil je samenwerken met een team dat meedenkt en vooruitkijkt?",
+      "text": "Laten we samen ontdekken hoe we je digitale aanwezigheid kunnen versterken.",
       "bookConsultation": "Plan een gratis gesprek",
       "contactUs": "Neem contact op"
     }
@@ -932,7 +932,7 @@
     "getQuote": "Vraag een offerte aan",
     "keyInclusions": "Wat inbegrepen is",
     "videoPlaceholder": "Bekijk korte uitlegvideo",
-    "noResults": "Geen diensten voldoen aan uw filtercriteria.",
+    "noResults": "Geen diensten voldoen aan je filtercriteria.",
     "featuredBadge": "Meest gekozen",
     "gridTitle": "Alle diensten",
     "gridSubtitle": "Bekijk eerst de video om te begrijpen hoe elke dienst werkt, daarna kan je verder gaan naar de details.",
@@ -1084,21 +1084,21 @@
       "close": "Sluiten",
       "videoDuration": "⏱ Videoduur: 60 seconden",
       "cta": "Vraag een offerte op maat aan",
-      "description": "De uiteindelijke prijs hangt af van uw specifieke behoeften en projectomvang.",
+      "description": "De uiteindelijke prijs hangt af van je specifieke behoeften en projectomvang.",
       "noVideo": "Video binnenkort beschikbaar",
-      "whatYouGet": "Wat u krijgt",
+      "whatYouGet": "Wat je krijgt",
       "pricingLogic": "Hoe prijzen werken",
       "explainerVideo": "Uitlegvideo",
       "indicativePrice": "Indicatieve prijs",
       "pricingFactors": "Waar hangt de prijs van af?",
-      "pricingNote": "De uiteindelijke prijs wordt bepaald op basis van uw specifieke wensen en projectomvang. Neem contact op voor een vrijblijvend gesprek en een gepersonaliseerde offerte.",
+      "pricingNote": "De uiteindelijke prijs wordt bepaald op basis van je specifieke wensen en projectomvang. Neem contact op voor een vrijblijvend gesprek en een gepersonaliseerde offerte.",
       "availablePackages": "Beschikbare pakketten",
       "packagesNote": "Pakketten kunnen worden aangepast op basis van het aantal en type content.",
-      "videoSummary": "Bekijk hoe deze dienst uw bedrijf kan transformeren en ontdek wat we voor u kunnen betekenen.",
+      "videoSummary": "Bekijk hoe deze dienst jouw bedrijf kan transformeren en ontdek wat we voor je kunnen betekenen.",
       "factors": {
         "quantity": {
           "title": "Hoeveelheid content",
-          "description": "Meer content betekent een hogere prijs, maar ook meer waarde voor uw investering."
+          "description": "Meer content betekent een hogere prijs, maar ook meer waarde voor je investering."
         },
         "complexity": {
           "title": "Complexiteit & bewerking",
@@ -1123,7 +1123,7 @@
     "items": {
       "contentProduction": {
         "title": "Visuele content & Video",
-        "description": "Professionele video's, foto's en visuele content voor uw merk. Van korte social media clips tot uitgebreide productievideo's.",
+        "description": "Professionele video's, foto's en visuele content voor je merk. Van korte social media clips tot uitgebreide productievideo's.",
         "features": {
           "0": "Korte video's (30-60 sec) voor social media",
           "1": "Lange video's voor website & YouTube",
@@ -1164,7 +1164,7 @@
       },
       "businessWebsite": {
         "title": "Bedrijfswebsite",
-        "description": "Complete bedrijfswebsite met meerdere pagina's, CMS en alle functionaliteiten die u nodig heeft.",
+        "description": "Complete bedrijfswebsite met meerdere pagina's, CMS en alle functionaliteiten die je nodig hebt.",
         "features": {
           "0": "5-15 pagina's naar keuze",
           "1": "Contentbeheersysteem (CMS)",
@@ -1186,7 +1186,7 @@
       },
       "ads": {
         "title": "Advertentiebeheer",
-        "description": "Strategische advertentiecampagnes via Google, Meta en andere platforms. Data-gedreven optimalisatie voor maximale ROI.",
+        "description": "Strategische advertentiecampagnes via Google, Meta en andere platformen. Data-gedreven optimalisatie voor maximale ROI.",
         "features": {
           "0": "Google Ads beheer",
           "1": "Meta advertenties (Facebook/Instagram)",
@@ -1196,7 +1196,7 @@
       },
       "seo": {
         "title": "Zoekmachineoptimalisatie",
-        "description": "Verbeter uw organische zichtbaarheid en scoor hoger in zoekmachines. Technische SEO, contentstrategie en linkbuilding.",
+        "description": "Verbeter je organische zichtbaarheid en scoor hoger in zoekmachines. Technische SEO, contentstrategie en linkbuilding.",
         "features": {
           "0": "Technische SEO-audit",
           "1": "Zoekwoordonderzoek",
@@ -1206,7 +1206,7 @@
       },
       "social": {
         "title": "Social media beheer",
-        "description": "Volledig beheer van uw social media aanwezigheid. Contentcreatie, planning, engagement en groeistrategieën.",
+        "description": "Volledig beheer van je social media aanwezigheid. Contentcreatie, planning, engagement en groeistrategieën.",
         "features": {
           "0": "Contentkalender & planning",
           "1": "Community management",
@@ -1216,7 +1216,7 @@
       },
       "reputation": {
         "title": "Reputatie & Reviewbeheer",
-        "description": "Bouw en bescherm uw online reputatie. Reviewbeheer, responsstrategieën en merkmonitoring.",
+        "description": "Bouw en bescherm je online reputatie. Reviewbeheer, responsstrategieën en merkmonitoring.",
         "features": {
           "0": "Review monitoring",
           "1": "Responsbeheer",
@@ -1226,7 +1226,7 @@
       },
       "dataSync": {
         "title": "Data synchronisatie",
-        "description": "Houd uw bedrijfsgegevens gesynchroniseerd over alle platforms. Voorraad, prijzen en productinformatiebeheer.",
+        "description": "Houd je bedrijfsgegevens gesynchroniseerd over alle platformen. Voorraad, prijzen en productinformatiebeheer.",
         "features": {
           "0": "Multi-platform synchronisatie",
           "1": "Realtime updates",
@@ -1251,8 +1251,8 @@
       },
       "recommendedBudget": "Aanbevolen budget",
       "qualification": {
-        "headline": "Start met uw doel",
-        "description": "Advertentiesucces begint met een duidelijk doel. Verschillende doelen vereisen verschillende budgetniveaus voor betekenisvolle resultaten.",
+        "headline": "Start met je doel",
+        "description": "Advertentiesucces begint met een duidelijk doel. Verschillende doelen vereisen verschillende budgetniveaus voor zinvolle resultaten.",
         "note": "Budgetten onder deze niveaus kunnen dataverzameling en resultaatnauwkeurigheid beperken."
       },
       "goals": {
@@ -1271,9 +1271,9 @@
       },
       "transparency": {
         "headline": "Volledige budgetcontrole",
-        "subheadline": "U bepaalt het budget. Wij maximaliseren de prestaties.",
-        "description": "Onze beheerskosten dekken strategie, setup, optimalisatie en rapportage. Advertentiebudgetten worden rechtstreeks aan platforms zoals Google of Meta betaald, wat u volledige transparantie en controle geeft.",
-        "shortNote": "Advertentie-uitgaven worden rechtstreeks aan advertentieplatforms betaald."
+        "subheadline": "Jij bepaalt het budget. Wij maximaliseren de prestaties.",
+        "description": "Onze beheerskosten dekken strategie, setup, optimalisatie en rapportage. Advertentiebudgetten worden rechtstreeks aan platformen zoals Google of Meta betaald, wat je volledige transparantie en controle geeft.",
+        "shortNote": "Advertentie-uitgaven worden rechtstreeks aan advertentieplatformen betaald."
       },
       "salesFlow": {
         "title": "Ons samenwerkingsproces",
@@ -1285,21 +1285,21 @@
           "4": "Dataverzameling en optimalisatie",
           "5": "Prestatierapportage en opschaling"
         },
-        "closingStatement": "Wij begeleiden de strategie. U controleert het budget. Resultaten komen voort uit de afstemming tussen beide."
+        "closingStatement": "Wij begeleiden de strategie. Jij controleert het budget. Resultaten komen voort uit de afstemming tussen beide."
       },
       "faq": {
         "title": "Veelgestelde vragen over advertenties",
         "budgetIncluded": {
           "question": "Is het advertentiebudget inbegrepen in de beheerprijs?",
-          "answer": "Nee. Beheerskosten dekken strategie, setup, optimalisatie en rapportage. Advertentie-uitgaven worden rechtstreeks aan advertentieplatforms betaald."
+          "answer": "Nee. Beheerskosten dekken strategie, setup, optimalisatie en rapportage. Advertentie-uitgaven worden rechtstreeks aan advertentieplatformen betaald."
         },
         "smallBudget": {
           "question": "Kan ik advertenties draaien met een zeer klein budget?",
-          "answer": "Ja, maar zeer lage budgetten genereren mogelijk niet genoeg data voor betekenisvolle of meetbare resultaten."
+          "answer": "Ja, maar zeer lage budgetten genereren mogelijk niet genoeg data voor zinvolle of meetbare resultaten."
         },
         "whoDecides": {
           "question": "Wie bepaalt het advertentiebudget?",
-          "answer": "Wij adviseren een budget op basis van uw doel en markt. U keurt het definitieve budget goed en behoudt de controle."
+          "answer": "Wij adviseren een budget op basis van je doel en markt. Jij keurt het definitieve budget goed en behoudt de controle."
         },
         "lowerBudget": {
           "question": "Wat gebeurt er als ik een lager budget kies dan aanbevolen?",
@@ -1319,11 +1319,11 @@
       "steps": {
         "0": {
           "title": "Kennismaking",
-          "description": "We beginnen met een gratis gesprek om uw bedrijf, doelen en uitdagingen te begrijpen."
+          "description": "We beginnen met een gratis gesprek om je bedrijf, doelen en uitdagingen te begrijpen."
         },
         "1": {
           "title": "Voorstel op maat",
-          "description": "Op basis van uw behoeften maken we een gedetailleerd voorstel met transparante prijzen en planning."
+          "description": "Op basis van je behoeften maken we een gedetailleerd voorstel met transparante prijzen en planning."
         },
         "2": {
           "title": "Uitvoering & Optimalisatie",
@@ -1332,8 +1332,8 @@
       }
     },
     "cta": {
-      "title": "Klaar om uw digitale aanwezigheid te versterken?",
-      "description": "Neem vandaag nog contact met ons op voor een vrijblijvend gesprek over hoe we u kunnen helpen uw bedrijfsdoelen te bereiken.",
+      "title": "Klaar om je digitale aanwezigheid te versterken?",
+      "description": "Neem vandaag nog contact met ons op voor een vrijblijvend gesprek over hoe we je kunnen helpen je bedrijfsdoelen te bereiken.",
       "button": "Vraag een vrijblijvende offerte aan"
     }
   },
@@ -1710,21 +1710,21 @@
   "contact": {
     "title": "Contact opnemen",
     "subtitle": "Laten we praten",
-    "intro": "Heeft u een project in gedachten of wilt u uw digitale aanwezigheid versterken? Neem contact met ons op voor een vrijblijvend gesprek.",
+    "intro": "Heb je een project in gedachten of wil je je digitale aanwezigheid versterken? Neem contact met ons op voor een vrijblijvend gesprek.",
     "mobileLabel": "Mobiel",
     "officeLabel": "Kantoor",
     "hoursLabel": "Openingstijden",
     "hoursValue": "Ma - Vr: 9:00 - 18:00",
-    "description": "We horen graag van u. Vul het formulier in en we nemen zo snel mogelijk contact met u op.",
+    "description": "We horen graag van je. Vul het formulier in en we nemen zo snel mogelijk contact met je op.",
     "name": "Naam",
     "email": "E-mailadres",
     "phone": "Telefoonnummer",
     "company": "Bedrijf",
     "subject": "Onderwerp",
-    "message": "Uw bericht",
+    "message": "Je bericht",
     "send": "Verzenden",
     "sending": "Verzenden...",
-    "success": "Bericht succesvol verzonden! We nemen zo snel mogelijk contact met u op.",
+    "success": "Bericht succesvol verzonden! We nemen zo snel mogelijk contact met je op.",
     "error": "Er ging iets mis. Probeer het opnieuw of neem telefonisch contact op.",
     "address": "Adres",
     "phoneLabel": "Telefoon",
@@ -1735,7 +1735,7 @@
   "franchise": {
     "title": "Franchise",
     "subtitle": "Word franchisenemer",
-    "description": "Bent u geïnteresseerd in een samenwerking met GROPPI? Ontdek de mogelijkheden om samen te groeien.",
+    "description": "Ben je geïnteresseerd in een samenwerking met GROPPI? Ontdek de mogelijkheden om samen te groeien.",
     "benefits": {
       "title": "Franchise voordelen",
       "items": {
@@ -1770,11 +1770,11 @@
     "newsletter": {
       "title": "Nieuwsbrief",
       "description": "Blijf op de hoogte van onze laatste inzichten en tips.",
-      "placeholder": "Uw e-mailadres",
+      "placeholder": "Je e-mailadres",
       "button": "Inschrijven",
-      "subscribed": "U bent ingeschreven! Bedankt.",
+      "subscribed": "Je bent ingeschreven! Bedankt.",
       "successTitle": "Ingeschreven!",
-      "successMessage": "U bent succesvol ingeschreven voor onze nieuwsbrief.",
+      "successMessage": "Je bent succesvol ingeschreven voor onze nieuwsbrief.",
       "errorTitle": "Inschrijving mislukt",
       "errorMessage": "Er ging iets mis. Probeer het later opnieuw."
     }
@@ -2682,40 +2682,40 @@
   "privacy": {
     "meta": {
       "title": "Privacybeleid",
-      "description": "Lees hoe GROPPI uw persoonlijke gegevens beschermt en verwerkt in overeenstemming met de GDPR."
+      "description": "Lees hoe GROPPI je persoonlijke gegevens beschermt en verwerkt in overeenstemming met de GDPR."
     },
     "title": "Privacybeleid",
-    "subtitle": "Uw privacy is belangrijk voor ons. Dit beleid legt uit hoe wij uw gegevens verzamelen, gebruiken en beschermen.",
+    "subtitle": "Je privacy is belangrijk voor ons. Dit beleid legt uit hoe wij je gegevens verzamelen, gebruiken en beschermen.",
     "lastUpdated": "Laatst bijgewerkt",
-    "footerNote": "Heeft u vragen over dit privacybeleid? Neem gerust contact met ons op via info@groppi.be",
+    "footerNote": "Heb je vragen over dit privacybeleid? Neem gerust contact met ons op via info@groppi.be",
     "sections": {
       "dataCollection": {
         "title": "Gegevensverzameling",
-        "content": "Wij verzamelen persoonlijke gegevens die u vrijwillig aan ons verstrekt, zoals:\n\n• Naam en contactgegevens wanneer u ons contactformulier invult\n• E-mailadres voor nieuwsbriefinschrijvingen\n• CV en sollicitatiegegevens voor vacatures\n• Bedrijfsinformatie voor zakelijke aanvragen\n\nWij verzamelen ook automatisch bepaalde technische gegevens zoals IP-adres, browsertype en bezochte pagina's voor analytische doeleinden."
+        "content": "Wij verzamelen persoonlijke gegevens die je vrijwillig aan ons verstrekt, zoals:\n\n• Naam en contactgegevens wanneer je ons contactformulier invult\n• E-mailadres voor nieuwsbriefinschrijvingen\n• CV en sollicitatiegegevens voor vacatures\n• Bedrijfsinformatie voor zakelijke aanvragen\n\nWij verzamelen ook automatisch bepaalde technische gegevens zoals IP-adres, browsertype en bezochte pagina's voor analytische doeleinden."
       },
       "dataUsage": {
         "title": "Gebruik van gegevens",
-        "content": "Wij gebruiken uw gegevens voor:\n\n• Het beantwoorden van uw vragen en verzoeken\n• Het versturen van nieuwsbrieven (alleen met uw toestemming)\n• Het verbeteren van onze website en diensten\n• Het uitvoeren van wettelijke verplichtingen\n• Het versturen van relevante informatie over onze diensten"
+        "content": "Wij gebruiken je gegevens voor:\n\n• Het beantwoorden van je vragen en verzoeken\n• Het versturen van nieuwsbrieven (alleen met je toestemming)\n• Het verbeteren van onze website en diensten\n• Het uitvoeren van wettelijke verplichtingen\n• Het versturen van relevante informatie over onze diensten"
       },
       "dataSecurity": {
         "title": "Gegevensbeveiliging",
-        "content": "Wij nemen de beveiliging van uw gegevens serieus. Wij gebruiken:\n\n• SSL-encryptie voor alle gegevensoverdracht\n• Beveiligde servers en databases\n• Beperkte toegang tot persoonlijke gegevens\n• Regelmatige beveiligingsaudits\n\nOndanks onze inspanningen kan geen enkele methode van overdracht via internet 100% veilig zijn."
+        "content": "Wij nemen de beveiliging van je gegevens serieus. Wij gebruiken:\n\n• SSL-encryptie voor alle gegevensoverdracht\n• Beveiligde servers en databases\n• Beperkte toegang tot persoonlijke gegevens\n• Regelmatige beveiligingsaudits\n\nOndanks onze inspanningen kan geen enkele methode van overdracht via internet 100% veilig zijn."
       },
       "yourRights": {
-        "title": "Uw rechten",
-        "content": "Onder de GDPR heeft u de volgende rechten:\n\n• Recht op inzage in uw gegevens\n• Recht op correctie van onjuiste gegevens\n• Recht op verwijdering van uw gegevens\n• Recht op beperking van verwerking\n• Recht op gegevensoverdraagbaarheid\n• Recht om bezwaar te maken tegen verwerking\n\nNeem contact met ons op om deze rechten uit te oefenen."
+        "title": "Je rechten",
+        "content": "Onder de GDPR heb je de volgende rechten:\n\n• Recht op inzage in je gegevens\n• Recht op correctie van onjuiste gegevens\n• Recht op verwijdering van je gegevens\n• Recht op beperking van verwerking\n• Recht op gegevensoverdraagbaarheid\n• Recht om bezwaar te maken tegen verwerking\n\nNeem contact met ons op om deze rechten uit te oefenen."
       },
       "cookies": {
         "title": "Cookies",
-        "content": "Onze website gebruikt cookies om uw ervaring te verbeteren:\n\n• Essentiële cookies voor website-functionaliteit\n• Analytische cookies om te begrijpen hoe bezoekers onze site gebruiken\n• Marketingcookies voor gerichte advertenties (alleen met toestemming)\n\nU kunt cookies beheren via uw browserinstellingen."
+        "content": "Onze website gebruikt cookies om je ervaring te verbeteren:\n\n• Essentiële cookies voor website-functionaliteit\n• Analytische cookies om te begrijpen hoe bezoekers onze site gebruiken\n• Marketingcookies voor gerichte advertenties (alleen met toestemming)\n\nJe kunt cookies beheren via je browserinstellingen."
       },
       "retention": {
         "title": "Bewaartermijn",
-        "content": "Wij bewaren uw gegevens alleen zo lang als nodig is:\n\n• Contactgegevens: 2 jaar na laatste contact\n• Sollicitatiegegevens: 1 jaar na afronding procedure\n• Nieuwsbrief abonnees: tot uitschrijving\n• Analytische gegevens: 26 maanden\n\nNa deze periode worden gegevens veilig verwijderd."
+        "content": "Wij bewaren je gegevens alleen zo lang als nodig is:\n\n• Contactgegevens: 2 jaar na laatste contact\n• Sollicitatiegegevens: 1 jaar na afronding procedure\n• Nieuwsbrief abonnees: tot uitschrijving\n• Analytische gegevens: 26 maanden\n\nNa deze periode worden gegevens veilig verwijderd."
       },
       "contact": {
         "title": "Contact",
-        "content": "Voor vragen over uw privacy of om uw rechten uit te oefenen:\n\nGROPPI\nE-mail: info@groppi.be\nTelefoon: +32 456 19 87 21\n\nU heeft ook het recht om een klacht in te dienen bij de Belgische Gegevensbeschermingsautoriteit."
+        "content": "Voor vragen over je privacy of om je rechten uit te oefenen:\n\nGROPPI\nE-mail: info@groppi.be\nTelefoon: +32 456 19 87 21\n\nJe hebt ook het recht om een klacht in te dienen bij de Belgische Gegevensbeschermingsautoriteit."
       }
     }
   },
@@ -2725,13 +2725,13 @@
       "description": "Lees de algemene voorwaarden voor het gebruik van GROPPI diensten en website."
     },
     "title": "Algemene Voorwaarden",
-    "subtitle": "Deze voorwaarden regelen uw gebruik van onze website en diensten. Door onze diensten te gebruiken, gaat u akkoord met deze voorwaarden.",
+    "subtitle": "Deze voorwaarden regelen je gebruik van onze website en diensten. Door onze diensten te gebruiken, ga je akkoord met deze voorwaarden.",
     "lastUpdated": "Laatst bijgewerkt",
-    "footerNote": "Heeft u vragen over deze voorwaarden? Neem contact met ons op via info@groppi.be",
+    "footerNote": "Heb je vragen over deze voorwaarden? Neem contact met ons op via info@groppi.be",
     "sections": {
       "acceptance": {
         "title": "Aanvaarding van voorwaarden",
-        "content": "Door toegang te krijgen tot of gebruik te maken van de GROPPI website en diensten, gaat u akkoord met deze Algemene Voorwaarden.\n\nAls u niet akkoord gaat met een deel van deze voorwaarden, mag u onze diensten niet gebruiken.\n\nWij behouden ons het recht voor om deze voorwaarden te allen tijde te wijzigen."
+        "content": "Door toegang te krijgen tot of gebruik te maken van de GROPPI website en diensten, ga je akkoord met deze Algemene Voorwaarden.\n\nAls je niet akkoord gaat met een deel van deze voorwaarden, mag je onze diensten niet gebruiken.\n\nWij behouden ons het recht voor om deze voorwaarden te allen tijde te wijzigen."
       },
       "services": {
         "title": "Onze diensten",
@@ -2751,7 +2751,7 @@
       },
       "modifications": {
         "title": "Wijzigingen",
-        "content": "Wij behouden ons het recht voor om deze voorwaarden te allen tijde te wijzigen.\n\nBij significante wijzigingen zullen wij u per e-mail informeren indien van toepassing.\n\nVoortgezet gebruik van onze diensten na wijzigingen houdt aanvaarding van de nieuwe voorwaarden in."
+        "content": "Wij behouden ons het recht voor om deze voorwaarden te allen tijde te wijzigen.\n\nBij significante wijzigingen zullen wij je per e-mail informeren indien van toepassing.\n\nVoortgezet gebruik van onze diensten na wijzigingen houdt aanvaarding van de nieuwe voorwaarden in."
       },
       "governing": {
         "title": "Toepasselijk recht",
