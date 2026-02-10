@@ -651,58 +651,58 @@
     },
     "caseStudies": {
       "subtitle": "Bewezen resultaten",
-      "title": "Resultaten die spreken",
+      "title": "Dit bereikten we voor andere bedrijven",
       "challengeLabel": "Uitdaging",
       "solutionLabel": "Onze aanpak",
-      "cta": "Vraag een voorstel op maat",
+      "cta": "Wil je vergelijkbare resultaten? Neem contact op",
       "industries": {
         "restaurant": "Restaurant",
         "ecommerce": "E-commerce",
         "construction": "Bouw"
       },
       "case1": {
-        "challenge": "Lage online zichtbaarheid en weinig reserveringen.",
-        "solution": "Nieuwe website + Google Ads + social media strategie.",
+        "challenge": "Weinig online zichtbaarheid en nauwelijks reserveringen via digitale kanalen.",
+        "solution": "Nieuwe website + Google Ads + social media strategie opgezet.",
         "metric": "+180% reserveringen in 6 maanden"
       },
       "case2": {
-        "challenge": "Hoge advertentiekosten met lage conversie.",
-        "solution": "Campagne-optimalisatie + retargeting + UX verbeteringen.",
+        "challenge": "Te hoge advertentiekosten bij te lage conversie.",
+        "solution": "Campagne-audit + retargeting + UX-verbeteringen doorgevoerd.",
         "metric": "+340% ROAS binnen 90 dagen"
       },
       "case3": {
-        "challenge": "Geen online aanwezigheid, alleen mond-tot-mondreclame.",
-        "solution": "Professionele website + lokale SEO + Google My Business.",
+        "challenge": "Geen online aanwezigheid — alleen mond-tot-mondreclame.",
+        "solution": "Website + lokale SEO + Google Mijn Bedrijf opgezet.",
         "metric": "#1 lokale ranking + 45 leads/maand"
       }
     },
     "trustSection": {
-      "subtitle": "10+ jaar ervaring",
-      "title": "Vertrouwen gebouwd op feiten.",
+      "subtitle": "Waarom bedrijven ons vertrouwen",
+      "title": "10+ jaar ervaring. Feiten, geen beloftes.",
       "items": {
         "founded": {
           "title": "Opgericht in 2016",
-          "desc": "Meer dan 8 jaar ervaring in digitale marketing"
+          "desc": "Al meer dan 8 jaar actief in digitale marketing"
         },
         "team": {
-          "title": "9+ Professionals",
-          "desc": "Een multidisciplinair team van experts"
+          "title": "9+ professionals",
+          "desc": "Een team met expertise in strategie, design en performance"
         },
         "reach": {
           "title": "België & Europa",
-          "desc": "Focus op lokale en Europese markten"
+          "desc": "Lokale kennis, internationale ervaring"
         },
         "partnerships": {
           "title": "Langetermijnrelaties",
-          "desc": "Wij bouwen duurzame partnerships"
+          "desc": "De meeste klanten werken al jaren met ons samen"
         }
       }
     },
     "finalCTA": {
-      "title": "Klaar om te groeien met duidelijkheid?",
-      "description": "Laten we samen bespreken hoe we je bedrijf kunnen helpen groeien met een strategie die werkt.",
-      "ctaPrimary": "Vraag een voorstel op maat",
-      "ctaWhatsApp": "WhatsApp ons"
+      "title": "Wil je weten hoe we jouw bedrijf kunnen laten groeien?",
+      "description": "Plan een kort gesprek of stuur je vraag. Wij komen terug met een concreet voorstel — vrijblijvend.",
+      "ctaPrimary": "Vraag een voorstel aan",
+      "ctaWhatsApp": "Stuur een bericht via WhatsApp"
     },
     "hero": {
       "badge": "Belgisch bureau sinds 2016",
