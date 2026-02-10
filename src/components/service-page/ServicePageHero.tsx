@@ -17,15 +17,25 @@ interface ServicePageHeroProps {
 const ServicePageHero = memo(({ serviceKey, posterImage }: ServicePageHeroProps) => {
   const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
+  const location = useLocation();
+  const videoSectionRef = useRef<HTMLDivElement>(null);
+  const [showVideoGlow, setShowVideoGlow] = useState(false);
 
   // Derive slug from serviceKey (e.g., 'contentProduction' -> 'content-production')
   const slug = serviceKey.replace(/([A-Z])/g, '-$1').toLowerCase();
   const gdriveId = getVideoIdBySlug(slug);
 
-  // DEBUG: log slug for video mapping verification
-  if (import.meta.env.DEV) {
-    console.log(`[ServicePageHero] serviceKey="${serviceKey}" → slug="${slug}" → gdriveId="${gdriveId || 'NONE'}"`);
-  }
+  // Handle #video hash: scroll to video section + gold glow
+  useEffect(() => {
+    if (location.hash === '#video' && videoSectionRef.current) {
+      // Small delay to ensure layout is ready
+      setTimeout(() => {
+        videoSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setShowVideoGlow(true);
+        setTimeout(() => setShowVideoGlow(false), 1500);
+      }, 300);
+    }
+  }, [location.hash]);
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
