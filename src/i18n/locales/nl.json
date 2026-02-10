@@ -2682,12 +2682,12 @@
   "privacy": {
     "meta": {
       "title": "Privacybeleid",
-      "description": "Lees hoe GROPPI uw persoonlijke gegevens beschermt en verwerkt in overeenstemming met de GDPR."
+      "description": "Lees hoe GROPPI je persoonlijke gegevens beschermt en verwerkt in overeenstemming met de GDPR."
     },
     "title": "Privacybeleid",
-    "subtitle": "Uw privacy is belangrijk voor ons. Dit beleid legt uit hoe wij uw gegevens verzamelen, gebruiken en beschermen.",
+    "subtitle": "Je privacy is belangrijk voor ons. Dit beleid legt uit hoe wij je gegevens verzamelen, gebruiken en beschermen.",
     "lastUpdated": "Laatst bijgewerkt",
-    "footerNote": "Heeft u vragen over dit privacybeleid? Neem gerust contact met ons op via info@groppi.be",
+    "footerNote": "Heb je vragen over dit privacybeleid? Neem gerust contact met ons op via info@groppi.be",
     "sections": {
       "dataCollection": {
         "title": "Gegevensverzameling",
