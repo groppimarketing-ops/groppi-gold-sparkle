@@ -129,12 +129,12 @@
       "line1": "Alle prijzen zijn exclusief BTW (21%)."
     }
   },
-  "services": {
+  "servicesHome": {
     "sectionTitle": "Onze diensten",
     "sectionSubtitle": "Bekijk eerst de video om te begrijpen hoe elke dienst werkt, en ga daarna naar de details.",
     "card": {
       "requestQuote": "Offerte aanvragen",
-      "viewDetails": "Bekijk details",
+      "viewDetails": "Meer info",
       "watchHowItWorks": "Bekijk hoe het werkt (60 sec)",
       "buildYourPlan": "Stel je plan samen"
     },
