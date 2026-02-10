@@ -217,7 +217,7 @@ const Contact = () => {
                       className="w-full px-4 py-3 glass-card !rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 bg-transparent placeholder:text-muted-foreground"
                     />
                     {errors.email && (
-                      <p className="text-destructive text-sm">{errors.email.message}</p>
+                      <p className="text-destructive text-sm">{t('validation.email')}</p>
                     )}
                   </div>
                 </div>
