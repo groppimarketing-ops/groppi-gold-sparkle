@@ -56,7 +56,7 @@ const HomeTestimonials = memo(forwardRef<HTMLElement>((_, ref) => {
         >
           {TESTIMONIALS.map((testimonial) => (
             <motion.div key={testimonial.key} variants={item}>
-              <GlassCard hover3D glowOnHover className="h-full flex flex-col gap-4" variants={item as any}>
+              <GlassCard hover3D glowOnHover className="h-full flex flex-col gap-4">
                 {/* Header: Avatar + Name + Google badge */}
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-3">
