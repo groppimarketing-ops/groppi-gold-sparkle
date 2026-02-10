@@ -22,6 +22,7 @@ interface ServiceVideoPreviewProps {
  */
 const ServiceVideoPreview = memo(({ serviceId, onClickPlay }: ServiceVideoPreviewProps) => {
   const gdriveId = getVideoIdBySlug(serviceId);
+  const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
 
   const [isNearViewport, setIsNearViewport] = useState(false);
