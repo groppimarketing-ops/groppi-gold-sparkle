@@ -124,7 +124,7 @@ const CaseStudyModal = memo(({ item, isOpen, onClose }: CaseStudyModalProps) => 
                 </h2>
                 
                 <p className="text-primary font-semibold text-xl">
-                  {item.shortResultLine}
+                  {translated.shortResultLine}
                 </p>
               </div>
 
