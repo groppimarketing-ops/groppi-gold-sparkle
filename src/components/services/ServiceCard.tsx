@@ -7,7 +7,6 @@ import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import ServiceDetailModal from './ServiceDetailModal';
-import ServiceVideoModal from './ServiceVideoModal';
 import ServiceVideoPreview from './ServiceVideoPreview';
 import { SERVICE_PRICING_CONFIG, getPriceDisplayString, getPriceSuffix } from '@/config/pricingConfig';
 
