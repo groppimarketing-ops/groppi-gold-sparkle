@@ -35,7 +35,7 @@ const StarRating = ({ count }: { count: number }) => (
 
 const HomeTestimonials = memo(forwardRef<HTMLElement>((_, ref) => {
   const { t } = useTranslation();
-  const { container, item } = useRevealAnimation();
+  const { container, item } = useRevealAnimation() as any;
 
   return (
     <section ref={ref} className="py-20 md:py-28 relative" dir="ltr">
