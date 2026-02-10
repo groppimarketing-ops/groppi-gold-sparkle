@@ -2691,7 +2691,7 @@
     "sections": {
       "dataCollection": {
         "title": "Gegevensverzameling",
-        "content": "Wij verzamelen persoonlijke gegevens die u vrijwillig aan ons verstrekt, zoals:\n\n• Naam en contactgegevens wanneer u ons contactformulier invult\n• E-mailadres voor nieuwsbriefinschrijvingen\n• CV en sollicitatiegegevens voor vacatures\n• Bedrijfsinformatie voor zakelijke aanvragen\n\nWij verzamelen ook automatisch bepaalde technische gegevens zoals IP-adres, browsertype en bezochte pagina's voor analytische doeleinden."
+        "content": "Wij verzamelen persoonlijke gegevens die je vrijwillig aan ons verstrekt, zoals:\n\n• Naam en contactgegevens wanneer je ons contactformulier invult\n• E-mailadres voor nieuwsbriefinschrijvingen\n• CV en sollicitatiegegevens voor vacatures\n• Bedrijfsinformatie voor zakelijke aanvragen\n\nWij verzamelen ook automatisch bepaalde technische gegevens zoals IP-adres, browsertype en bezochte pagina's voor analytische doeleinden."
       },
       "dataUsage": {
         "title": "Gebruik van gegevens",
