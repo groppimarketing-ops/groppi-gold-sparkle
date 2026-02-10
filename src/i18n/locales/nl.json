@@ -224,25 +224,25 @@
   "hero": {
     "title": "GROPPI Gold Standard",
     "subtitle": "Excellentie in elk detail",
-    "description": "Premium diensten sinds 2016.",
-    "cta": "Plan een gratis gesprek",
+    "description": "Premium digitale diensten sinds 2016.",
+    "cta": "Plan een gratis kennismaking",
     "ctaSecondary": "Bekijk onze diensten"
   },
   "home": {
     "heroNew": {
-      "badge": "Structuur. Content. Groei.",
-      "headline": "We bouwen je digitale fundament — en schalen je groei.",
-      "subtitle": "We helpen Belgische bedrijven groeien met een duidelijke aanpak: strategie, branding en performance — zonder verspilde budgetten of vage beloftes.",
-      "proof1": "Duidelijke service-structuur",
-      "proof2": "Transparante prijzen & deliverables",
-      "proof3": "Meer leads, minder verspilde tijd",
+      "badge": "Strategie. Uitvoering. Resultaat.",
+      "headline": "Meer klanten, meer omzet — met een plan dat werkt.",
+      "subtitle": "Wij helpen Belgische bedrijven groeien met heldere strategie, sterke content en meetbare campagnes. Geen loze beloftes, alleen werk dat resultaat oplevert.",
+      "proof1": "Vaste aanpak, geen giswerk",
+      "proof2": "Eerlijke prijzen, duidelijke deliverables",
+      "proof3": "Meer klanten, minder verspild budget",
       "ctaPrimary": "Bekijk diensten & prijzen",
-      "ctaSecondary": "Vraag een offerte aan",
+      "ctaSecondary": "Vraag een voorstel aan",
       "scrollHint": "Scroll"
     },
     "postHeroTrust": {
-      "title": "Gebouwd voor groei in België & Europa",
-      "subtitle": "Geen ruis. Geen loze beloftes. Alleen een systeem dat leads en omzet oplevert."
+      "title": "Gebouwd voor bedrijven die willen groeien",
+      "subtitle": "Geen marketingruis. Geen vage plannen. Wij leveren structuur, content en campagnes die klanten opleveren."
     },
     "serviceMap": {
       "label": "Wat we doen",
@@ -293,45 +293,45 @@
     },
     "trustBar": {
       "item1": {
-        "title": "Transparante prijzen",
-        "text": "Je weet waar je aan toe bent."
+        "title": "Duidelijke prijzen",
+        "text": "Geen verborgen kosten, geen verrassingen."
       },
       "item2": {
-        "title": "Snelle communicatie",
-        "text": "Antwoord binnen 24u."
+        "title": "Snelle opvolging",
+        "text": "Altijd antwoord binnen 24 uur."
       },
       "item3": {
-        "title": "Resultaatgericht",
-        "text": "Geen hype, alleen groei."
+        "title": "Gericht op resultaat",
+        "text": "We meten alles en sturen bij waar nodig."
       }
     },
     "quickChoice": {
       "badge": "Start hier",
-      "title": "Niet zeker wat je nodig hebt?",
-      "subtitle": "Kies je doel. Wij tonen de juiste diensten.",
+      "title": "Weet je nog niet precies wat je nodig hebt?",
+      "subtitle": "Kies je belangrijkste doel — wij tonen meteen welke diensten daarbij passen.",
       "cta": "Toon aanbevolen diensten",
       "visibility": {
         "title": "Meer zichtbaarheid",
-        "desc": "Bouw een sterke online aanwezigheid op met consistente content en social media."
+        "desc": "Zorg dat klanten je vinden via social media, content en een sterke online aanwezigheid."
       },
       "leads": {
         "title": "Meer leads",
-        "desc": "Trek gekwalificeerde bezoekers aan met advertenties en zoekmachine-optimalisatie."
+        "desc": "Trek serieuze geïnteresseerden aan via advertenties, SEO en slimme funnels."
       },
       "sales": {
         "title": "Meer verkoop",
-        "desc": "Zet bezoekers om in klanten met een professionele webshop en gerichte campagnes."
+        "desc": "Verkoop online met een sterke webshop, gerichte ads en conversiegerichte content."
       }
     },
     "servicesGrid": {
       "subtitle": "Onze diensten",
-      "title": "Onze diensten",
-      "description": "Kies een dienst. Bekijk meteen wat je krijgt, hoe de prijs werkt en bekijk een korte video.",
+      "title": "Wat kunnen we voor je doen?",
+      "description": "Elke dienst staat helder uitgelegd: wat je krijgt, wat het kost en hoe het werkt. Geen gedoe.",
       "featured": "Meest gekozen",
-      "viewDetails": "Bekijk details",
+      "viewDetails": "Meer info",
       "watchVideo": "Video",
-      "buildPlan": "Stel plan samen",
-      "seePricing": "Zie prijs",
+      "buildPlan": "Stel je plan samen",
+      "seePricing": "Bekijk prijs",
       "customQuote": "Offerte op maat",
       "from": "Vanaf",
       "perMonth": "/ maand",
@@ -340,7 +340,7 @@
       "items": {
         "contentProduction": {
           "title": "Contentproductie",
-          "desc": "Professionele video's en foto's die je merk versterken.",
+          "desc": "Video's, foto's en visuals die je merk laten opvallen — op elk platform.",
           "deliverables": {
             "0": "Video productie (kort of lang formaat)",
             "1": "Professionele fotografie",
@@ -348,8 +348,8 @@
           }
         },
         "businessWebsite": {
-          "title": "Business Website",
-          "desc": "Een professionele website die vertrouwen opbouwt.",
+          "title": "Bedrijfswebsite",
+          "desc": "Een website die vertrouwen wekt en bezoekers omzet in klanten.",
           "deliverables": {
             "0": "Responsive design voor alle apparaten",
             "1": "SEO-geoptimaliseerde structuur",
@@ -358,7 +358,7 @@
         },
         "ecommerce": {
           "title": "Webshop",
-          "desc": "Online verkopen met een geoptimaliseerde e-commerce oplossing.",
+          "desc": "Verkoop online met een webshop die werkt — van product tot betaling.",
           "deliverables": {
             "0": "Volledige webshop setup",
             "1": "Betalings- en verzendintegratie",
@@ -366,8 +366,8 @@
           }
         },
         "ads": {
-          "title": "Advertentie Beheer",
-          "desc": "Data-gedreven campagnes die resultaat opleveren.",
+          "title": "Advertentiebeheer",
+          "desc": "Slimme campagnes op Google en Meta die leads en verkoop opleveren.",
           "deliverables": {
             "0": "Campagne strategie & setup",
             "1": "Targeting & optimalisatie",
@@ -376,7 +376,7 @@
         },
         "seo": {
           "title": "SEO",
-          "desc": "Groei organisch met zoekmachine-optimalisatie.",
+          "desc": "Word gevonden door klanten die actief naar jouw dienst zoeken.",
           "deliverables": {
             "0": "Technische SEO audit",
             "1": "Keyword strategie",
@@ -385,7 +385,7 @@
         },
         "social": {
           "title": "Social Media Beheer",
-          "desc": "Consistente aanwezigheid op alle sociale kanalen.",
+          "desc": "Professionele aanwezigheid op social media — zonder dat jij er tijd aan verliest.",
           "deliverables": {
             "0": "Content planning & creatie",
             "1": "Community management",
@@ -394,7 +394,7 @@
         },
         "mobileApp": {
           "title": "Mobiele App Ontwikkeling",
-          "desc": "Lanceer een eigen app voor iOS & Android.",
+          "desc": "Een eigen app voor iOS & Android — gebouwd op maat van jouw bedrijf.",
           "deliverables": {
             "0": "UX/UI design + development",
             "1": "Backend & integraties",
@@ -492,9 +492,9 @@
         }
       },
       "cta": {
-        "title": "Klaar om te groeien met helderheid?",
-        "subtitle": "Plan een korte call of stuur ons je situatie. We geven je meteen een duidelijk plan — zonder gedoe.",
-        "primaryButton": "Vraag een offerte aan →",
+        "title": "Wil je weten wat wij voor jouw zaak kunnen doen?",
+        "subtitle": "Plan een kort gesprek of stuur je situatie. Wij komen terug met een concreet plan — geen verplichtingen.",
+        "primaryButton": "Vraag een voorstel aan →",
         "secondaryButton": "Chat via WhatsApp"
       }
     },
@@ -651,58 +651,58 @@
     },
     "caseStudies": {
       "subtitle": "Bewezen resultaten",
-      "title": "Resultaten die spreken",
+      "title": "Dit bereikten we voor andere bedrijven",
       "challengeLabel": "Uitdaging",
       "solutionLabel": "Onze aanpak",
-      "cta": "Vraag een voorstel op maat",
+      "cta": "Wil je vergelijkbare resultaten? Neem contact op",
       "industries": {
         "restaurant": "Restaurant",
         "ecommerce": "E-commerce",
         "construction": "Bouw"
       },
       "case1": {
-        "challenge": "Lage online zichtbaarheid en weinig reserveringen.",
-        "solution": "Nieuwe website + Google Ads + social media strategie.",
+        "challenge": "Weinig online zichtbaarheid en nauwelijks reserveringen via digitale kanalen.",
+        "solution": "Nieuwe website + Google Ads + social media strategie opgezet.",
         "metric": "+180% reserveringen in 6 maanden"
       },
       "case2": {
-        "challenge": "Hoge advertentiekosten met lage conversie.",
-        "solution": "Campagne-optimalisatie + retargeting + UX verbeteringen.",
+        "challenge": "Te hoge advertentiekosten bij te lage conversie.",
+        "solution": "Campagne-audit + retargeting + UX-verbeteringen doorgevoerd.",
         "metric": "+340% ROAS binnen 90 dagen"
       },
       "case3": {
-        "challenge": "Geen online aanwezigheid, alleen mond-tot-mondreclame.",
-        "solution": "Professionele website + lokale SEO + Google My Business.",
+        "challenge": "Geen online aanwezigheid — alleen mond-tot-mondreclame.",
+        "solution": "Website + lokale SEO + Google Mijn Bedrijf opgezet.",
         "metric": "#1 lokale ranking + 45 leads/maand"
       }
     },
     "trustSection": {
-      "subtitle": "10+ jaar ervaring",
-      "title": "Vertrouwen gebouwd op feiten.",
+      "subtitle": "Waarom bedrijven ons vertrouwen",
+      "title": "10+ jaar ervaring. Feiten, geen beloftes.",
       "items": {
         "founded": {
           "title": "Opgericht in 2016",
-          "desc": "Meer dan 8 jaar ervaring in digitale marketing"
+          "desc": "Al meer dan 8 jaar actief in digitale marketing"
         },
         "team": {
-          "title": "9+ Professionals",
-          "desc": "Een multidisciplinair team van experts"
+          "title": "9+ professionals",
+          "desc": "Een team met expertise in strategie, design en performance"
         },
         "reach": {
           "title": "België & Europa",
-          "desc": "Focus op lokale en Europese markten"
+          "desc": "Lokale kennis, internationale ervaring"
         },
         "partnerships": {
           "title": "Langetermijnrelaties",
-          "desc": "Wij bouwen duurzame partnerships"
+          "desc": "De meeste klanten werken al jaren met ons samen"
         }
       }
     },
     "finalCTA": {
-      "title": "Klaar om te groeien met duidelijkheid?",
-      "description": "Laten we samen bespreken hoe we je bedrijf kunnen helpen groeien met een strategie die werkt.",
-      "ctaPrimary": "Vraag een voorstel op maat",
-      "ctaWhatsApp": "WhatsApp ons"
+      "title": "Wil je weten hoe we jouw bedrijf kunnen laten groeien?",
+      "description": "Plan een kort gesprek of stuur je vraag. Wij komen terug met een concreet voorstel — vrijblijvend.",
+      "ctaPrimary": "Vraag een voorstel aan",
+      "ctaWhatsApp": "Stuur een bericht via WhatsApp"
     },
     "hero": {
       "badge": "Belgisch bureau sinds 2016",
@@ -788,8 +788,8 @@
       "cta": "Bekijk alle pakketten"
     },
     "cta": {
-      "title": "Klaar om je digitale groei serieus aan te pakken?",
-      "description": "Laten we samen bespreken hoe we jouw bedrijf kunnen helpen groeien met een strategie die werkt.",
+      "title": "Klaar om concreet aan de slag te gaan?",
+      "description": "Vertel ons je situatie. Wij komen terug met een plan dat past bij jouw bedrijf — zonder verplichtingen.",
       "contact": "Neem contact op",
       "whatsapp": "Chat via WhatsApp"
     }
@@ -797,17 +797,17 @@
   "about": {
     "title": "Over GROPPI",
     "subtitle": "Ons verhaal",
-    "description": "GROPPI begon in België in 2016 en groeide door jaren van praktijkervaring, sterke partnerships en bewezen resultaten. Vandaag werken wij samen met klanten in België en heel Europa en combineren wij strategie, creativiteit en technologie om duurzame digitale groei te realiseren. Uitbreiding naar het Midden-Oosten staat gepland voor 2026.",
+    "description": "GROPPI begon in 2016 in België en groeide door jarenlange praktijkervaring en sterke klantrelaties. Vandaag werken we samen met bedrijven in België en Europa — met een aanpak die draait om strategie, kwaliteit en meetbaar resultaat.",
     "mission": "Onze missie",
-    "missionText": "Bedrijven helpen groeien door strategische digitale oplossingen die zijn gebaseerd op menselijke expertise, ondersteund door slimme technologie.",
+    "missionText": "Bedrijven helpen groeien met digitale oplossingen die écht werken — gebouwd op ervaring, niet op trends.",
     "vision": "Onze visie",
-    "visionText": "Een betrouwbare partner zijn voor bedrijven die duurzame digitale groei nastreven, met een team dat écht begrijpt wat werkt.",
+    "visionText": "Een betrouwbare partner zijn voor bedrijven die serieus willen groeien online, met een team dat levert wat het belooft.",
     "values": "Onze waarden",
-    "valuesText": "Betrouwbaarheid, vakmanschap, transparantie en langetermijnrelaties.",
+    "valuesText": "Eerlijkheid, vakmanschap, duidelijke communicatie en relaties voor de lange termijn.",
     "hero": {
       "badge": "Sinds 2016",
-      "title": "Onze reis begon in België in 2016",
-      "text": "GROPPI begon in België in 2016 met één duidelijke visie: bedrijven helpen om een sterke en eerlijke digitale aanwezigheid op te bouwen. Geen trends om trends, maar oplossingen die echt werken."
+      "title": "Al sinds 2016 helpen we bedrijven groeien",
+      "text": "GROPPI werd opgericht in België met één doel: bedrijven helpen om online meer klanten te bereiken. Geen hypes, geen vage plannen — alleen werk dat resultaat oplevert."
     },
     "whoWeAre": {
       "subtitle": "Wie wij zijn",
@@ -1338,9 +1338,9 @@
       }
     },
     "cta": {
-      "title": "Klaar om je digitale aanwezigheid te versterken?",
-      "description": "Neem vandaag nog contact met ons op voor een vrijblijvend gesprek over hoe we je kunnen helpen je bedrijfsdoelen te bereiken.",
-      "button": "Vraag een vrijblijvende offerte aan"
+      "title": "Klaar om online meer klanten te bereiken?",
+      "description": "Vertel ons je situatie. Wij stellen een plan samen dat werkt voor jouw zaak — vrijblijvend en zonder verplichtingen.",
+      "button": "Vraag een vrijblijvend voorstel aan"
     }
   },
   "blog": {
@@ -2084,15 +2084,15 @@
       }
     },
     "apply": {
-      "title": "Klaar om GROPPI-partner te worden?",
-      "subtitle": "Bekijk of jouw regio nog beschikbaar is.",
+      "title": "Wil je GROPPI-partner worden?",
+      "subtitle": "Check of jouw regio nog beschikbaar is.",
       "ctaPrimary": "Word partner",
-      "ctaSecondary": "Plan een gesprek"
+      "ctaSecondary": "Plan een kennismaking"
     },
     "booking": {
       "title": "Plan een korte kennismaking",
-      "subtitle": "15–20 minuten. We checken match en volgende stappen.",
-      "cta": "Plan call"
+      "subtitle": "15–20 minuten. We bekijken samen of het past en wat de volgende stappen zijn.",
+      "cta": "Plan gesprek"
     }
   },
   "caseStudy": {
@@ -2239,10 +2239,10 @@
       "a6": "We hebben Starter-pakketten voor kleine budgetten. Vraag advies aan."
     },
     "finalCTA": {
-      "title": "Klaar om te groeien met duidelijkheid?",
-      "subtitle": "Geen loze beloftes. Alleen concrete stappen naar meer klanten.",
-      "primaryCTA": "Vraag een offerte op maat",
-      "secondaryCTA": "Chat via WhatsApp"
+      "title": "Klaar om meer klanten aan te trekken?",
+      "subtitle": "Geen vage beloftes. Wij leveren een concreet plan met duidelijke stappen.",
+      "primaryCTA": "Vraag een voorstel aan",
+      "secondaryCTA": "Stuur een bericht via WhatsApp"
     },
     "socialMedia": {
       "title": "Social Media Management",
