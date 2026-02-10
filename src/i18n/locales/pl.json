@@ -812,5 +812,13 @@
   },
   "servicePage": {
     "defaultDescription": "{{service}} — Profesjonalna usługa GROPPI Marketing Bureau."
+  },
+  "home": {
+    "whoWeAre": {
+      "headline": "Kim jesteśmy. I dlaczego pracujemy inaczej.",
+      "subtext": "Od 2016 roku pomagamy firmom rosnąć\nze strukturą, kontrolą i inteligentnymi systemami —\na nie pustymi obietnicami marketingowymi.",
+      "cta": "Poznaj nasze usługi",
+      "videoAlt": "Obejrzyj nasz film wprowadzający"
+    }
   }
 }

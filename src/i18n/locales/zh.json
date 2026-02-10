@@ -641,5 +641,13 @@
   },
   "servicePage": {
     "defaultDescription": "{{service}} — GROPPI Marketing Bureau 的专业服务。"
+  },
+  "home": {
+    "whoWeAre": {
+      "headline": "我们是谁。以及为什么我们的工作方式不同。",
+      "subtext": "自2016年以来，我们帮助企业成长\n通过结构、控制和智能系统 —\n而不是空洞的营销话术。",
+      "cta": "了解我们的服务",
+      "videoAlt": "观看我们的介绍视频"
+    }
   }
 }

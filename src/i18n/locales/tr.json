@@ -885,5 +885,13 @@
   },
   "servicePage": {
     "defaultDescription": "{{service}} — GROPPI Marketing Bureau'dan profesyonel hizmet."
+  },
+  "home": {
+    "whoWeAre": {
+      "headline": "Biz kimiz. Ve neden farklı çalışıyoruz.",
+      "subtext": "2016'dan beri işletmelerin büyümesine yardımcı oluyoruz\nyapı, kontrol ve akıllı sistemlerle —\nboş pazarlama vaatleriyle değil.",
+      "cta": "Hizmetlerimizi keşfedin",
+      "videoAlt": "Tanıtım videomuzu izleyin"
+    }
   }
 }

@@ -4,6 +4,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/home/HeroSection';
 import PostHeroTrust from '@/components/home/PostHeroTrust';
+import WhoWeAreSection from '@/components/home/WhoWeAreSection';
 import HomeTrustedBelgium from '@/components/home/HomeTrustedBelgium';
 import HomeTrustSectors from '@/components/home/HomeTrustSectors';
 import HomeQuickChoice from '@/components/home/HomeQuickChoice';
@@ -53,6 +54,7 @@ const Index = () => {
   const renderStaticContent = () => (
     <>
       <HeroSection />
+      <WhoWeAreSection />
       <HomeAfterHeroWrapper>
         <PostHeroTrust />
         <HomeTrustedBelgium />
