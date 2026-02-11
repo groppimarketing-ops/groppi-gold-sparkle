@@ -207,6 +207,170 @@
       "description": "Kısa bir görüşme planlayın veya sorunuzu gönderin. Size somut bir teklifle dönüyoruz — bağlayıcı değil.",
       "ctaPrimary": "Teklif isteyin",
       "ctaWhatsApp": "WhatsApp ile mesaj gönderin"
+    },
+    "serviceMap": {
+      "label": "Ne yapıyoruz",
+      "title": "Hizmetlerimiz bir bakışta",
+      "subtitle": "Net hizmetler. Şeffaf fiyatlar. Pazarlama gürültüsü yok.",
+      "columns": {
+        "online": {
+          "title": "İşletmenizi çevrimiçi yapın",
+          "services": {
+            "businessWebsite": "Kurumsal web sitesi",
+            "onePage": "One-page web sitesi",
+            "webshop": "E-ticaret sitesi",
+            "visualContent": "Görsel içerik ve video"
+          }
+        },
+        "findable": {
+          "title": "İşletmenizi bulunur kılın",
+          "services": {
+            "seo": "SEO (yerel ve teknik SEO)",
+            "googleBusiness": "Google İşletme optimizasyonu",
+            "sea": "Arama motoru reklamları (SEA)",
+            "dataTracking": "Veri ve izleme kurulumu"
+          }
+        },
+        "standout": {
+          "title": "İşletmenizi öne çıkarın",
+          "services": {
+            "branding": "Marka kimliği ve görsel kimlik",
+            "socialContent": "Sosyal medya içeriği",
+            "videoAds": "Video reklamlar",
+            "creativeCampaigns": "Yaratıcı kampanyalar"
+          }
+        },
+        "attract": {
+          "title": "Müşteri çekin",
+          "services": {
+            "adManagement": "Reklam yönetimi",
+            "socialManagement": "Sosyal medya yönetimi",
+            "leadGen": "Lead oluşturma hunileri",
+            "conversionOptimization": "Dönüşüm optimizasyonu"
+          }
+        }
+      },
+      "cta": {
+        "viewServices": "Hizmetleri ve fiyatları gör",
+        "calculatePrice": "Fiyatınızı 60 saniyede hesaplayın"
+      }
+    },
+    "clientLogoMarquee": {
+      "eyebrow": "MÜŞTERİLERİMİZ",
+      "subtitle": "Yapı, kalite ve ölçülebilir büyüme isteyen hırslı işletmelerle çalışıyoruz — pazarlama gürültüsü olmadan.",
+      "title": "Belçika ve Avrupa'daki ekiplerin güveni",
+      "ndaNote": "NDA'lar nedeniyle tüm marka adlarını kamuya gösteremiyoruz. Bazı referanslar anonimleştirilmiş olarak gösterilmektedir.",
+      "marqueeLabel": "Bizimle büyüyen ekipler",
+      "benefits": {
+        "benefit1": "Net hizmet yapısı",
+        "benefit2": "Şeffaf fiyat mantığı",
+        "benefit3": "Kalite ve sürdürülebilir büyüme odağı"
+      },
+      "clients": {
+        "restaurant": "Anvers Restoran Grubu",
+        "interior": "İç Mimarlık ve Renovasyon Ekibi",
+        "retail": "Yerel Perakende Zinciri",
+        "ecommerce": "E-ticaret Markası (BE)",
+        "beauty": "Belçika Güzellik Kliniği",
+        "realEstate": "Emlak Ofisi (BE)",
+        "construction": "Brüksel İnşaat Stüdyosu",
+        "startup": "Teknoloji Startup'ı (AB)",
+        "logistics": "Lojistik Firması (BE)",
+        "professional": "Profesyonel Hizmet Bürosu",
+        "hospitality": "Konaklama Ekibi",
+        "b2b": "B2B Platform (AB)"
+      },
+      "testimonials": {
+        "testimonial1": {
+          "quote": "Sonunda yapı getiren bir ekip. Net anlaşmalar, hızlı hareket ve en önemlisi: kalite.",
+          "role": "İşletme Sahibi, Anvers"
+        },
+        "testimonial2": {
+          "quote": "Yaklaşım ve fiyatlandırmada şeffaf. Boş vaatler yok — sadece sonuç üreten çalışma.",
+          "role": "Pazarlama Müdürü, Brüksel"
+        },
+        "testimonial3": {
+          "quote": "Profesyonel, hızlı ve premium sonuçlar. Belçika pazarında deneyimli olduklarını hissediyorsunuz.",
+          "role": "Sahip, Flaman KOBİ"
+        }
+      },
+      "cta": {
+        "title": "İşletmeniz için neler yapabileceğimizi öğrenmek ister misiniz?",
+        "subtitle": "Kısa bir görüşme planlayın veya durumunuzu gönderin. Somut bir planla dönüyoruz — bağlayıcı değil.",
+        "primaryButton": "Teklif isteyin →",
+        "secondaryButton": "WhatsApp ile mesaj gönderin"
+      }
+    },
+    "trustSectors": {
+      "eyebrow": "Sektörlerimiz",
+      "headline": "Dünya çapında büyüyen işletmelerin güveni",
+      "subheadline": "Belçika merkezli. Tüm Avrupa'da aktif. Dünya genelinde müşteriler.",
+      "proofPoints": {
+        "experience": "10+ yıl deneyim",
+        "pricing": "Şeffaf fiyatlar ve net çıktılar",
+        "system": "Sistem odaklı yaklaşım (sadece tasarım değil)",
+        "leads": "Kaliteli lead odağı"
+      },
+      "note": "*NDA'lar nedeniyle tüm şirket adlarını kamuya gösteremiyoruz.",
+      "cta": "Hizmetleri ve fiyatları gör",
+      "sectors": {
+        "restaurant": { "title": "Restoranlar ve Oteller", "subtitle": "Daha fazla rezervasyon, daha fazla görünürlük." },
+        "interior": { "title": "İç Mimarlık ve Mimari", "subtitle": "Yüksek niyetli müşteriler için leadler." },
+        "retail": { "title": "Perakende ve yerel mağazalar", "subtitle": "Satan çevrimiçi varlık." },
+        "ecommerce": { "title": "E-ticaret", "subtitle": "Dönüşüm, içerik ve performans." },
+        "realEstate": { "title": "Gayrimenkul", "subtitle": "Premium markalaşma + lead akışı." },
+        "health": { "title": "Güzellik ve Bakım", "subtitle": "Daha fazla randevu, daha güçlü marka değeri." },
+        "services": { "title": "Yerel hizmetler", "subtitle": "Google'dan müşteriye — daha hızlı." },
+        "sme": { "title": "KOBİ'ler ve startup'lar", "subtitle": "Kaos olmadan büyüme için yapı." },
+        "medical": { "title": "Tıp klinikleri", "subtitle": "Güven, görünürlük ve hasta artışı." },
+        "education": { "title": "Eğitim akademileri", "subtitle": "Görünürlük, güvenilirlik ve tutarlı kayıtlar." }
+      },
+      "stats": {
+        "experience": "yıl deneyim",
+        "focus": "BE + AB + Dünya",
+        "system": "kaos yok, yapı var",
+        "premium": "markalaşma + performans"
+      },
+      "statsValues": {
+        "focus": "BE + AB + Dünya",
+        "system": "Sistem odaklı",
+        "premium": "Premium"
+      },
+      "microNote": "*Sonuçlar sektör ve bütçeye göre değişir. Ölçeklenebilir sistemler kuruyoruz."
+    },
+    "trustedBelgium": {
+      "eyebrow": "GÜVEN",
+      "title": "Belçika ve Avrupa'daki büyüyen işletmelerin güveni",
+      "subtitle": "7 ülkede aktifiz, ölçülebilir büyüme ve net sonuçlara odaklıyız.",
+      "europeCredibility": "Belçika ve Avrupa'daki hırslı ekipler için aktif.",
+      "disclaimer": "Bazı müşteri adları NDA (gizlilik sözleşmeleri) nedeniyle kamuya paylaşılmamaktadır.",
+      "activeClients": "aktif müşteri",
+      "sectorsWeServe": "Hizmet verdiğimiz sektörler",
+      "countries": {
+        "belgium": "Belçika",
+        "netherlands": "Hollanda",
+        "germany": "Almanya",
+        "france": "Fransa",
+        "luxembourg": "Lüksemburg",
+        "uk": "Birleşik Krallık",
+        "switzerland": "İsviçre",
+        "italy": "İtalya",
+        "spain": "İspanya",
+        "usa": "Amerika Birleşik Devletleri"
+      },
+      "sectors": {
+        "restaurants": "Restoranlar ve konaklama",
+        "retail": "Perakende ve yerel mağazalar",
+        "interior": "İç mimarlık ve renovasyon",
+        "beauty": "Güzellik ve wellness",
+        "ecommerce": "E-ticaret",
+        "realEstate": "Gayrimenkul",
+        "localServices": "Yerel hizmetler",
+        "sme": "KOBİ'ler ve yeni girişimler",
+        "medical": "Tıp / klinikler",
+        "startups": "SaaS ve startup'lar",
+        "professionalServices": "Profesyonel hizmetler"
+      }
     }
   },
   "hero": {
@@ -226,6 +390,34 @@
     "visionText": "Sürdürülebilir dijital büyüme arayan işletmeler için neyin işe yaradığını gerçekten anlayan bir ekiple güvenilir bir ortak olmak.",
     "values": "Değerlerimiz",
     "valuesText": "Güvenilirlik, ustalık, şeffaflık ve uzun vadeli ilişkiler.",
+    "hero": {
+      "badge": "2016'dan beri",
+      "title": "2016'dan beri işletmelerin büyümesine yardımcı oluyoruz",
+      "text": "GROPPI, Belçika'da tek bir hedefle kuruldu: işletmelerin çevrimiçi daha fazla müşteriye ulaşmasına yardımcı olmak. Trend takibi yok, belirsiz planlar yok — sadece sonuç üreten çalışma."
+    },
+    "whoWeAre": {
+      "subtitle": "Biz kimiz",
+      "title": "Deneyim ve güven üzerine kurulmuş",
+      "points": {
+        "founded": { "title": "2016'da kuruldu", "text": "Dijital pazarlamada 8+ yıl deneyim" },
+        "location": { "title": "Belçika merkezli", "text": "Belçika'da merkez, yerel hizmet" },
+        "reach": { "title": "Belçika ve Avrupa", "text": "Belçika merkezli, tüm Avrupa'daki müşteriler için aktif. 2026'da Orta Doğu'ya genişleme planlanıyor." },
+        "team": { "title": "9+ profesyonel", "text": "Multidisipliner uzman ekibi" },
+        "partnerships": { "title": "Uzun vadeli ilişkiler", "text": "Kalıcı ortaklıklar kuruyoruz" }
+      }
+    },
+    "approach": {
+      "badge": "Yaklaşımımız",
+      "title": "İnsan uzmanlığı, teknoloji desteğiyle",
+      "text": "GROPPI'de insan uzmanlığına inanıyoruz. Teknoloji ve yapay zeka çalışmamızı destekler, ancak strateji, yaratıcılık ve kararlar her zaman insanlar tarafından alınır.",
+      "tags": { "strategy": "Strateji", "creativity": "Yaratıcılık", "technology": "Teknoloji" },
+      "humanExpertise": { "title": "İnsan karar verimi", "text": "Deneyimli profesyoneller tüm stratejik ve yaratıcı kararları alır." },
+      "aiSupport": { "title": "Hızlandırıcı olarak yapay zeka", "text": "Akıllı teknoloji süreçleri hızlandırır, ancak insan içgörüsünün yerini asla almaz." }
+    },
+    "growth": {
+      "subtitle": "Büyümemiz",
+      "title": "Belçika'dan dünyaya"
+    },
     "stats": {
       "years": "Yıllık Deneyim",
       "clients": "Mutlu Müşteri",
@@ -233,22 +425,28 @@
       "team": "Profesyonel"
     },
     "timeline": {
-      "2016": {
-        "title": "Belçika'da Kuruluş",
-        "description": "GROPPI, net bir vizyonla kuruldu: kişisel yaklaşımla dijital pazarlama."
-      },
-      "2018": {
-        "title": "Ekip Genişlemesi",
-        "description": "Ekip, farklı alanlarda uzmanlığa sahip 5 uzmana ulaştı."
-      },
-      "2020": {
-        "title": "Avrupa Büyümesi",
-        "description": "Hollanda, Almanya ve Fransa'daki müşterilerle başarılı işbirlikleri."
-      },
-      "2023": {
-        "title": "Orta Doğu",
-        "description": "Yerel ortaklıklarla Arap pazarına genişleme."
+      "2016": { "title": "Belçika'da Kuruluş", "description": "GROPPI, net bir vizyonla kuruldu: kişisel yaklaşımla dijital pazarlama." },
+      "2018": { "title": "Ekip Genişlemesi", "description": "Ekip, farklı alanlarda uzmanlığa sahip 5 uzmana ulaştı." },
+      "2020": { "title": "Avrupa Büyümesi", "description": "Belçika'daki yerel varlığımızı güçlendirdik ve Belçikalı işletmelerle uzun vadeli ortaklıklar kurduk." },
+      "2023": { "title": "Avrupa Genişlemesi", "description": "Hollanda, Almanya, Fransa ve ötesindeki müşterilerle projelerimizi genişlettik." },
+      "2025": { "title": "Uluslararası Büyüme", "description": "Partner ağımız ve uluslararası müşteri portföyümüz büyümeye devam ediyor." }
+    },
+    "valuesSection": {
+      "subtitle": "Değerlerimiz",
+      "title": "Bizi yönlendiren ilkeler",
+      "items": {
+        "transparency": { "title": "Şeffaflık", "text": "Dürüst iletişim ve net beklentiler" },
+        "quality": { "title": "Kalite öncelikli", "text": "Hacim değil, derinlik tercih ediyoruz" },
+        "relationships": { "title": "Uzun vadeli ilişkiler", "text": "Kalıcı ortaklıklar kuruyoruz" },
+        "results": { "title": "Gerçek sonuçlar", "text": "Ölçülebilir etki, boş vaatler değil" },
+        "humanFirst": { "title": "İnsan önce", "text": "İnsanların hizmetinde teknoloji" }
       }
+    },
+    "cta": {
+      "title": "İleriye bakan ve birlikte düşünen bir ekiple çalışmak ister misiniz?",
+      "text": "Dijital varlığınızı nasıl güçlendirebileceğimizi birlikte keşfedelim.",
+      "bookConsultation": "Ücretsiz görüşme planlayın",
+      "contactUs": "Bize ulaşın"
     }
   },
   "ai": {
@@ -398,9 +596,20 @@
     }
   },
   "blog": {
-    "title": "İpuçları ve Öneriler",
-    "subtitle": "Güncel Kalın",
+    "title": "İpuçları ve Stratejiler",
+    "subtitle": "Dijital büyüme, pazarlama ve çevrimiçi performans hakkında pratik bilgiler.",
+    "badge": "Blog",
+    "metaTitle": "Blog | Belgika İşletmeleri İçin Dijital Pazarlama İpuçları",
+    "metaDescription": "Belçika'daki KOBİ'ler için pratik pazarlama ipuçları: web sitesi optimizasyonu, SEO, sosyal medya ve reklamlar.",
+    "featured": "Öne çıkan",
+    "readArticle": "Makaleyi oku",
     "readMore": "Devamını Oku",
+    "minRead": "dk okuma",
+    "backToArticles": "Makalelere dön",
+    "shareArticle": "Bu makaleyi paylaş",
+    "contactUs": "Bize ulaşın",
+    "relatedArticles": "İlgili Makaleler",
+    "relatedServices": "İlgili hizmetler",
     "publishedOn": "Yayınlanma tarihi",
     "by": "yazar"
   },
@@ -489,21 +698,37 @@
     "loading": "Yükleniyor...",
     "error": "Bir hata oluştu",
     "retry": "Tekrar Dene",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "edit": "Düzenle",
     "back": "Geri",
     "next": "İleri",
     "previous": "Önceki",
     "close": "Kapat",
+    "submit": "Gönder",
+    "continue": "Devam",
     "search": "Ara",
     "noResults": "Sonuç bulunamadı",
+    "viewMore": "Daha fazla gör",
+    "viewAll": "Tümünü Gör",
     "learnMore": "Daha Fazla Bilgi",
     "getStarted": "Başlayın",
-    "viewAll": "Tümünü Gör"
+    "contactUs": "Bize ulaşın",
+    "scheduleCall": "Görüşme planlayın",
+    "requestQuote": "Teklif isteyin",
+    "required": "Zorunlu",
+    "optional": "İsteğe bağlı",
+    "brandName": "GROPPI",
+    "fullscreen": "Tam ekran"
   },
   "validation": {
     "required": "Bu alan zorunludur",
     "email": "Geçerli bir e-posta adresi girin",
-    "minLength": "En az {{count}} karakter gerekli",
-    "maxLength": "En fazla {{count}} karakter izin verilir"
+    "phone": "Geçerli bir telefon numarası girin",
+    "minLength": "En az {{min}} karakter gerekli",
+    "maxLength": "En fazla {{max}} karakter izin verilir",
+    "invalidUrl": "Geçerli bir URL girin"
   },
   "stats": {
     "years": "Yıllık Deneyim",
@@ -879,8 +1104,54 @@
       }
     }
   },
+  "servicesHome": {
+    "sectionTitle": "Hizmetlerimiz",
+    "sectionSubtitle": "Her hizmetin nasıl çalıştığını anlamak için önce videoyu izleyin, sonra detaylara geçin.",
+    "card": {
+      "requestQuote": "Teklif isteyin",
+      "viewDetails": "Daha fazla bilgi",
+      "watchHowItWorks": "Nasıl çalıştığını izleyin (60 sn)",
+      "buildYourPlan": "Planınızı oluşturun"
+    },
+    "badges": {
+      "monthly": "Aylık",
+      "oneTime": "Tek seferlik",
+      "custom": "Özel",
+      "mostChosen": "En çok tercih edilen"
+    }
+  },
+  "forms": {
+    "name": "Ad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "company": "Şirket",
+    "message": "Mesaj",
+    "subject": "Konu",
+    "website": "Web sitesi",
+    "budget": "Bütçe",
+    "submitSuccess": "Teşekkürler! En kısa sürede sizinle iletişime geçeceğiz.",
+    "submitError": "Bir şeyler yanlış gitti. Lütfen tekrar deneyin."
+  },
   "footer": {
-    "quickLinks": "Hızlı Bağlantılar"
+    "rights": "Tüm hakları saklıdır.",
+    "description": "2016'dan beri dijital çözümler. Belçika merkezli.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "followUs": "Bizi Takip Edin",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contact": "İletişim Bilgileri",
+    "planCall": "Görüşme planlayın",
+    "newsletter": {
+      "title": "Bülten",
+      "description": "En son ipuçları ve önerilerimizden haberdar olun.",
+      "placeholder": "E-posta adresiniz",
+      "button": "Abone Ol",
+      "subscribed": "Abone oldunuz! Teşekkürler.",
+      "successTitle": "Abone olundu!",
+      "successMessage": "Bültenimize başarıyla abone oldunuz.",
+      "errorTitle": "Abonelik başarısız",
+      "errorMessage": "Bir şeyler yanlış gitti. Lütfen daha sonra tekrar deneyin."
+    }
   },
   "portfolio": {
     "page": {
@@ -1241,15 +1512,322 @@
     "accept": "Kabul Et",
     "reject": "Reddet"
   },
-  "servicePage": {
-    "defaultDescription": "{{service}} — GROPPI Marketing Bureau'dan profesyonel hizmet."
-  },
-  "home": {
-    "whoWeAre": {
-      "headline": "Biz kimiz. Ve neden farklı çalışıyoruz.",
-      "subtext": "2016'dan beri işletmelerin büyümesine yardımcı oluyoruz\nyapı, kontrol ve akıllı sistemlerle —\nboş pazarlama vaatleriyle değil.",
-      "cta": "Hizmetlerimizi keşfedin",
-      "videoAlt": "Tanıtım videomuzu izleyin"
+  "planBuilder": {
+    "title": "Sosyal medya planınızı oluşturun",
+    "subtitle": "Kanalları, sıklığı ve ek seçenekleri belirleyin. Hemen gösterge fiyat alın.",
+    "steps": {
+      "channels": "Kanallar",
+      "frequency": "Sıklık",
+      "ads": "Reklamlar",
+      "addons": "Ek seçenekler",
+      "summary": "Özet"
+    },
+    "channelsTitle": "Hangi kanallarda yayın yapmak istiyorsunuz?",
+    "channelsSubtitle": "En az 1 kanal seçin. İlk kanal fiyata dahildir.",
+    "frequencyTitle": "Ne sıklıkta içerik yayınlanacak?",
+    "frequencySubtitle": "Hedeflerinize ve bütçenize uygun bir sıklık seçin.",
+    "adsTitle": "Ücretli reklam bütçesi istiyor musunuz?",
+    "adsSubtitle": "Reklam bütçesi doğrudan platforma (Meta/Google) ödenir.",
+    "addonsTitle": "Ekstra seçenekler",
+    "addonsSubtitle": "Planınıza ek hizmetler ekleyin.",
+    "channels": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "googleBusiness": "Google İşletme",
+      "pinterest": "Pinterest",
+      "xTwitter": "X (Twitter)"
+    },
+    "frequency": {
+      "2month": "Ayda 2 paylaşım",
+      "1week": "Haftada 1 paylaşım",
+      "2week": "Haftada 2 paylaşım",
+      "3week": "Haftada 3 paylaşım",
+      "4week": "Haftada 4 paylaşım",
+      "5week": "Haftada 5 paylaşım"
+    },
+    "adsBudget": {
+      "none": "Ücretli kampanya yok",
+      "100": "€100 / ay",
+      "250": "€250 / ay",
+      "500": "€500 / ay",
+      "1000": "€1000 / ay"
+    },
+    "addons": {
+      "productPhotos": {
+        "label": "Ekstra ürün fotoğrafları",
+        "unit": "fotoğraf"
+      },
+      "googleReviews": {
+        "label": "Google Yorum yönetimi"
+      },
+      "contentWriting": {
+        "label": "Metin yazarlığı",
+        "unit": "saat"
+      },
+      "emailMarketing": {
+        "label": "E-posta pazarlama kampanyaları"
+      },
+      "postsPack": {
+        "label": "Sosyal medya paylaşımları (10'lu paket)"
+      },
+      "analyticsDashboard": {
+        "label": "Gelişmiş analiz panosu"
+      }
+    },
+    "summary": {
+      "title": "Özet",
+      "managementFee": "Tahmini yönetim ücreti",
+      "channels": "Kanallar",
+      "frequency": "Paylaşım sıklığı",
+      "addons": "Ek seçenekler",
+      "adsBudget": "Reklam bütçesi (doğrudan ödenen)",
+      "total": "Aylık toplam",
+      "included": "dahil"
+    },
+    "cta": {
+      "primary": "Kişisel teklif isteyin",
+      "secondary": "Planı kaydet"
+    },
+    "faq": {
+      "title": "Sıkça sorulan sorular",
+      "adjustLater": {
+        "question": "Planımı sonra değiştirebilir miyim?",
+        "answer": "Evet. İstediğiniz zaman ayarlayabilirsiniz. Hedeflerinize ve gelişmenize göre her şeyi uyarlıyoruz."
+      },
+      "setupCost": {
+        "question": "Başlangıç ücreti var mı?",
+        "answer": "Başlangıç, yönetim ücretine dahildir. Ekstra masraflar yalnızca ek kapsam veya özel kurulumda ortaya çıkar."
+      },
+      "adBudgetIncluded": {
+        "question": "Reklam bütçesi dahil mi?",
+        "answer": "Hayır. Reklam bütçesini doğrudan Meta/Google'a ödersiniz. Bizim ücretimiz yönetim ve optimizasyon içindir."
+      }
     }
+  },
+  "partner": {
+    "badge": "BU PROGRAM NEDİR",
+    "seo": {
+      "title": "GROPPI ile Ortak Olun | Partner Ağı",
+      "description": "GROPPI ortağı olun: marka, sistem ve destekle lisans odaklı bir ortaklık. İş değil, işe alım değil. Bölge başına sınırlı kontenjan."
+    },
+    "hero": {
+      "title": "Bu bir iş ilanı değil. Bu bir partner ağı.",
+      "subtitle": "Güçlü bir marka altında büyümek isteyen ajanslar ve uzmanlar için — net anlaşmalar, şeffaf teslimat ve gerçek destek.",
+      "bullet1": "Boş vaatler yok. Yapı var.",
+      "bullet2": "Şeffaf teslimat sistemi.",
+      "bullet3": "Premium marka ve konumlandırma.",
+      "ctaPrimary": "Tanışma görüşmesi planlayın",
+      "ctaSecondary": "Nasıl çalıştığını görün",
+      "microcopy": "Bölge başına sınırlı sayıda partner."
+    },
+    "marquee": {
+      "item1": "10+ yıl deneyim",
+      "item2": "Belçika ve Avrupa",
+      "item3": "Şeffaf fiyatlar",
+      "item4": "Ölçeklenebilir sistemler",
+      "item5": "Premium teslimat",
+      "item6": "Kazan-kazan ortaklar"
+    },
+    "clarity": {
+      "subtitle": "Bu program nedir",
+      "title": "Bu bir iş değil. Bu bir partner ağı.",
+      "body": "Bu program, güçlü bir marka altında büyümek isteyen ajanslar ve uzmanlar içindir. İstihdam yok. İşe alım yok. Ve sistemi olmayan 'boş vaatler' yok. Bunun yerine: net kalite standartlarıyla lisans odaklı bir ortaklık.",
+      "cards": {
+        "brand": {
+          "title": "Marka ve konumlandırma",
+          "bullets": {
+            "0": "GROPPI markasını kullanın",
+            "1": "İlk günden premium görünüm"
+          }
+        },
+        "delivery": {
+          "title": "Teslimat sistemi",
+          "bullets": {
+            "0": "Net hizmetler ve fiyat mantığı",
+            "1": "Pratikte çalışan araçlar ve çerçeveler"
+          }
+        },
+        "growth": {
+          "title": "Büyüme ve destek",
+          "bullets": {
+            "0": "Stratejik rehberlik",
+            "1": "Kaos olmadan ölçeklenebilir"
+          }
+        }
+      }
+    },
+    "forWho": {
+      "subtitle": "Kimler için",
+      "title": "Büyümek isteyen partnerler için",
+      "description": "Kalite sunabilen ve yerel ölçekte büyümek isteyen insanlarla çalışıyoruz.",
+      "items": {
+        "bureauOwners": "Pazarlama ajansı sahipleri",
+        "growthMarketeers": "Freelance büyüme pazarlamacıları",
+        "webStudios": "Web ve geliştirme stüdyoları",
+        "contentTeams": "İçerik ve video ekipleri",
+        "adsSpecialists": "Reklam uzmanları",
+        "seoSpecialists": "SEO uzmanları",
+        "socialAgencies": "Sosyal medya ajansları"
+      },
+      "note": "Seçim kalite ve zihniyete göre yapılır."
+    },
+    "value": {
+      "subtitle": "Ne alırsınız",
+      "title": "Partner olarak ne alırsınız",
+      "cards": {
+        "credibility": {
+          "title": "Anında güvenilirlik",
+          "body": "10 yılı aşkın deneyim, güçlü konumlandırma ve net hizmet mantığına dönüştürülmüştür."
+        },
+        "salesReady": {
+          "title": "Satışa hazır yapı",
+          "body": "Kararları hızlandıran ve sürtünmeyi azaltan hizmetler, fiyatlandırma ve hesaplayıcılar."
+        },
+        "portfolio": {
+          "title": "Portföy desteği",
+          "body": "Premium kalmak için vaka çalışması formatları, şablonlar ve kalite yönergeleri."
+        },
+        "longterm": {
+          "title": "Uzun vadeli işbirliği",
+          "body": "Projeler, genişlemeler ve kalıcı ilişkiler — güven ve teslimat üzerine kurulmuş."
+        }
+      },
+      "highlight": "Bir logo satın almıyorsunuz. Kanıtlanmış bir sistem alıyorsunuz."
+    },
+    "howItWorks": {
+      "subtitle": "Nasıl çalışır",
+      "title": "Nasıl çalışır",
+      "steps": {
+        "step1": {
+          "title": "Kayıt olun",
+          "desc": "Bilgilerinizi bırakın ve bölgeniz ile ekibiniz hakkında kısaca bilgi verin."
+        },
+        "step2": {
+          "title": "Kısa tanışma görüşmesi",
+          "desc": "Kalite ve beklentiler açısından uyum olup olmadığını kontrol ediyoruz (15-20 dk)."
+        },
+        "step3": {
+          "title": "GROPPI sistemiyle başlayın",
+          "desc": "Oryantasyon, yönergeler ve teslimat için başlangıç materyalleri alırsınız."
+        }
+      }
+    },
+    "faq": {
+      "subtitle": "Sorular",
+      "title": "SSS",
+      "items": {
+        "isJob": {
+          "question": "Bu bir iş mi?",
+          "answer": "Hayır. Bu bir ortaklıktır, istihdam değil."
+        },
+        "bureau": {
+          "question": "Zaten bir ajansom olması gerekiyor mu?",
+          "answer": "Tercihen evet. Teslimat kapasitesine sahip güçlü uzmanlar da değerlendirilebilir."
+        },
+        "exclusivity": {
+          "question": "Münhasırlık alıyor muyum?",
+          "answer": "Evet. Bölge/pazar başına sınırlı sayıda partner."
+        },
+        "leads": {
+          "question": "Lead sağlıyor musunuz?",
+          "answer": "Konumlandırma ve büyüme sistemlerini destekliyoruz. Sonuçlar bölge ve uygulamaya bağlıdır."
+        },
+        "team": {
+          "question": "Kendi ekibimle çalışabilir miyim?",
+          "answer": "Evet, kalite standartlarına uyulduğu sürece."
+        },
+        "howToApply": {
+          "question": "Partner nasıl olabilirim?",
+          "answer": "Partner formu aracılığıyla. 24 saat içinde sizinle iletişime geçiyoruz."
+        }
+      }
+    },
+    "apply": {
+      "title": "GROPPI ortağı olmak ister misiniz?",
+      "subtitle": "Bölgenizin hâlâ müsait olup olmadığını kontrol edin.",
+      "ctaPrimary": "Partner olun",
+      "ctaSecondary": "Tanışma görüşmesi planlayın"
+    },
+    "booking": {
+      "title": "Kısa bir tanışma görüşmesi planlayın",
+      "subtitle": "15-20 dakika. Birlikte uygun olup olmadığını ve sonraki adımları konuşuyoruz.",
+      "cta": "Görüşme planlayın"
+    }
+  },
+  "caseStudy": {
+    "backToPortfolio": "Portföye dön",
+    "challengeLabel": "Zorluk",
+    "approachLabel": "Yaklaşım",
+    "resultsLabel": "Sonuç",
+    "servicesUsed": "Kullanılan hizmetler",
+    "ctaQuote": "Teklif isteyin",
+    "ctaServices": "Hizmetleri ve fiyatları gör",
+    "prevCase": "Önceki proje",
+    "nextCase": "Sonraki proje",
+    "allCases": "Tüm projeler",
+    "cases": {
+      "restaurant-branding": {
+        "title": "Restoran Markalaştırma ve Web Sitesi",
+        "challenge": "Düşük çevrimiçi görünürlük ve dijital kanallardan neredeyse hiç rezervasyon yok.",
+        "approach": "Yeni marka kimliği + modern web sitesi + Google Ads kampanyası.",
+        "result": "+%180 çevrimiçi rezervasyon"
+      },
+      "mode-webshop": {
+        "title": "Moda Web Mağazası Lansmanı",
+        "challenge": "Çevrimiçi varlığı veya müşteri tabanı olmayan yeni marka.",
+        "approach": "Eksiksiz web mağazası + sosyal medya stratejisi + influencer pazarlama.",
+        "result": "İlk 3 ayda €85K ciro"
+      },
+      "b2b-platform": {
+        "title": "B2B Lead Oluşturma Platformu",
+        "challenge": "B2B hizmetler için yetersiz nitelikli lead.",
+        "approach": "Lead oluşturma web sitesi + LinkedIn Ads + içerik pazarlama.",
+        "result": "+%320 nitelikli lead"
+      },
+      "bouwbedrijf-website": {
+        "title": "İnşaat Firması Web Sitesi ve SEO",
+        "challenge": "İyi itibara rağmen Google'da bulunamıyor.",
+        "approach": "SEO optimize web sitesi + yerel SEO + Google İşletmem.",
+        "result": "Google'da yerel #1 sıralama"
+      },
+      "influencer-campagne": {
+        "title": "Influencer Pazarlama Kampanyası",
+        "challenge": "Genç hedef kitlede marka bilinirliğini artırma.",
+        "approach": "Influencer seçimi + içerik stratejisi + sosyal medya güçlendirme.",
+        "result": "2,4 milyon erişim"
+      },
+      "tech-startup-branding": {
+        "title": "Teknoloji Startup Markalaştırma",
+        "challenge": "Görsel kimliği veya marka konumlandırması olmayan startup.",
+        "approach": "Marka stratejisi + logo tasarımı + web sitesi + sunum tasarımı.",
+        "result": "Kapsamlı marka kimliği lansmanı"
+      },
+      "e-commerce-groei": {
+        "title": "E-ticaret Büyüme Stratejisi",
+        "challenge": "Düşük ROAS ve yüksek reklam maliyetleri.",
+        "approach": "Kampanya denetimi + A/B testi + yeniden hedefleme optimizasyonu.",
+        "result": "+%240 ROAS iyileştirmesi"
+      },
+      "content-strategie": {
+        "title": "İçerik Üretim Stratejisi",
+        "challenge": "Tutarsız içerik ve düşük etkileşim.",
+        "approach": "İçerik takvimi + video üretimi + sosyal medya yönetimi.",
+        "result": "Ayda 50+ video"
+      }
+    }
+  },
+  "social": {
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn",
+    "tiktok": "TikTok",
+    "youtube": "YouTube",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "calendly": "Görüşme planlayın"
   }
 }
