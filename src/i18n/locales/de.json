@@ -68,19 +68,151 @@
       "cta": "Unsere Dienstleistungen entdecken",
       "videoAlt": "Sehen Sie unser Einführungsvideo"
     },
+    "postHeroTrust": {
+      "title": "Gebaut für Unternehmen, die wachsen wollen",
+      "subtitle": "Kein Marketinglärm. Keine vagen Pläne. Wir liefern Struktur, Inhalte und Kampagnen, die Kunden bringen."
+    },
     "trustBar": {
-      "item1": {
-        "title": "Transparente Preise",
-        "text": "Sie wissen genau, was Sie erwartet."
-      },
-      "item2": {
-        "title": "Schnelle Kommunikation",
-        "text": "Antwort innerhalb von 24 Stunden."
-      },
-      "item3": {
-        "title": "Ergebnisorientiert",
-        "text": "Kein Hype, nur Wachstum."
+      "item1": { "title": "Transparente Preise", "text": "Sie wissen genau, was Sie erwartet." },
+      "item2": { "title": "Schnelle Kommunikation", "text": "Antwort innerhalb von 24 Stunden." },
+      "item3": { "title": "Ergebnisorientiert", "text": "Kein Hype, nur Wachstum." }
+    },
+    "quickChoice": {
+      "badge": "Starten Sie hier",
+      "title": "Wissen Sie noch nicht genau, was Sie brauchen?",
+      "subtitle": "Wählen Sie Ihr wichtigstes Ziel — wir zeigen Ihnen die passenden Dienstleistungen.",
+      "cta": "Empfohlene Services anzeigen",
+      "visibility": { "title": "Mehr Sichtbarkeit", "desc": "Sorgen Sie dafür, dass Kunden Sie über Social Media, Content und eine starke Online-Präsenz finden." },
+      "leads": { "title": "Mehr Leads", "desc": "Gewinnen Sie ernsthafte Interessenten über Werbung, SEO und intelligente Funnels." },
+      "sales": { "title": "Mehr Umsatz", "desc": "Verkaufen Sie online mit einem starken Webshop, gezielten Anzeigen und conversion-orientiertem Content." }
+    },
+    "servicesGrid": {
+      "subtitle": "Unsere Dienstleistungen",
+      "title": "Was können wir für Sie tun?",
+      "description": "Jede Dienstleistung ist klar erklärt: was Sie bekommen, was es kostet und wie es funktioniert. Ohne Komplikationen.",
+      "featured": "Am häufigsten gewählt",
+      "viewDetails": "Mehr Info",
+      "watchVideo": "Video",
+      "buildPlan": "Plan erstellen",
+      "seePricing": "Preis ansehen",
+      "customQuote": "Individuelles Angebot",
+      "from": "Ab",
+      "perMonth": "/ Monat",
+      "oneTime": "einmalig",
+      "vatExcluded": "zzgl. MwSt.",
+      "items": {
+        "contentProduction": {
+          "title": "Content-Produktion",
+          "desc": "Videos, Fotos und Visuals, die Ihre Marke hervorheben — auf jeder Plattform.",
+          "deliverables": { "0": "Videoproduktion (kurz oder lang)", "1": "Professionelle Fotografie", "2": "Post-Produktion & Bearbeitung" }
+        },
+        "businessWebsite": {
+          "title": "Unternehmenswebsite",
+          "desc": "Eine Website, die Vertrauen schafft und Besucher in Kunden verwandelt.",
+          "deliverables": { "0": "Responsive Design für alle Geräte", "1": "SEO-optimierte Struktur", "2": "Content-Management-System" }
+        },
+        "ecommerce": {
+          "title": "Webshop",
+          "desc": "Verkaufen Sie online mit einem Webshop, der funktioniert — vom Produkt bis zur Zahlung.",
+          "deliverables": { "0": "Vollständige Webshop-Einrichtung", "1": "Zahlungs- und Versandintegration", "2": "Produktmanagement" }
+        },
+        "ads": {
+          "title": "Anzeigenverwaltung",
+          "desc": "Intelligente Kampagnen auf Google und Meta, die Leads und Umsatz generieren.",
+          "deliverables": { "0": "Kampagnenstrategie & Setup", "1": "Targeting & Optimierung", "2": "Monatliches Reporting" }
+        },
+        "seo": {
+          "title": "SEO",
+          "desc": "Werden Sie von Kunden gefunden, die aktiv nach Ihrer Dienstleistung suchen.",
+          "deliverables": { "0": "Technisches SEO-Audit", "1": "Keyword-Strategie", "2": "Monatliche Content-Optimierung" }
+        },
+        "social": {
+          "title": "Social Media Management",
+          "desc": "Professionelle Präsenz in sozialen Medien — ohne Zeitverlust für Sie.",
+          "deliverables": { "0": "Content-Planung & -Erstellung", "1": "Community Management", "2": "Monatliche Analyse" }
+        },
+        "mobileApp": {
+          "title": "Mobile App-Entwicklung",
+          "desc": "Ihre eigene App für iOS & Android — maßgeschneidert für Ihr Unternehmen.",
+          "deliverables": { "0": "UX/UI-Design + Entwicklung", "1": "Backend & Integrationen", "2": "App Store Launch-Support" }
+        }
       }
+    },
+    "serviceModal": {
+      "tabs": { "overview": "Übersicht", "deliverables": "Was Sie bekommen", "pricing": "Preis & Logik", "video": "Video", "calculator": "Plan Builder" },
+      "overview": {
+        "about": "Über diesen Service",
+        "priceRange": "Preisindikation",
+        "content_production": "Professionelle Content-Produktion stärkt Ihre Marke mit hochwertigen Videos und Fotos.",
+        "business_website": "Eine professionelle Website ist die Basis Ihrer Online-Präsenz. Wir bauen Websites, die nicht nur schön sind, sondern auch konvertieren.",
+        "ecommerce_website": "Starten Sie den Online-Verkauf mit einem voll optimierten Webshop.",
+        "ads_management": "Maximieren Sie Ihr Werbebudget mit datengesteuerten Kampagnen auf Google, Facebook, Instagram und mehr.",
+        "seo": "Wachsen Sie nachhaltig mit organischem Traffic durch optimierten Content und technische SEO-Verbesserungen.",
+        "social_media": "Bauen Sie eine engagierte Community mit konsistentem, qualitativem Content auf allen Social-Media-Kanälen auf."
+      },
+      "deliverables": { "title": "Was Sie bekommen" },
+      "pricing": {
+        "title": "Wie funktioniert der Preis?",
+        "note": "Der endgültige Preis hängt von Ihren spezifischen Anforderungen und dem Projektumfang ab.",
+        "factors": "Preisfaktoren:",
+        "factor1": "Umfang und Komplexität des Projekts",
+        "factor2": "Anzahl der enthaltenen Assets oder Stunden",
+        "factor3": "Spezifische Anpassungen und Extras"
+      },
+      "video": { "comingSoon": "Video kommt bald", "uploadNote": "Admin kann hier ein mp4-Video hochladen" },
+      "calculator": { "title": "Plan Builder", "desc": "Stellen Sie Ihren eigenen Plan zusammen und erhalten Sie sofort einen Richtpreis.", "cta": "Vollständigen Rechner öffnen" },
+      "cta": { "quote": "Individuelles Angebot anfordern", "whatsapp": "WhatsApp senden" }
+    },
+    "clientMarquee": {
+      "subtitle": "Vertrauen von Unternehmen",
+      "title": "Vertraut von Unternehmen in Belgien & Europa",
+      "ndaNote": "*Einige Projekte unterliegen einem NDA und können nicht öffentlich gezeigt werden.*",
+      "logoPlaceholder": "LOGO"
+    },
+    "portfolio": {
+      "subtitle": "Unsere Arbeit",
+      "title": "Portfolio-Highlights",
+      "thumbnailPlaceholder": "Projektbild",
+      "viewCase": "Projekt ansehen",
+      "viewAll": "Vollständiges Portfolio ansehen",
+      "tags": { "website": "Website", "branding": "Branding", "ads": "Anzeigen", "social": "Social", "ecommerce": "E-Commerce", "seo": "SEO", "content": "Content" },
+      "projects": {
+        "restaurant-branding": { "title": "Restaurant Branding", "metric": "+180% Reservierungen" },
+        "mode-webshop": { "title": "Mode Webshop", "metric": "€85K Umsatz in 3 Monaten" },
+        "b2b-platform": { "title": "B2B-Plattform", "metric": "+320% Leads" },
+        "bouwbedrijf-website": { "title": "Bauunternehmen Website", "metric": "#1 Google lokal" },
+        "influencer-campagne": { "title": "Influencer-Kampagne", "metric": "2,4M Reichweite" },
+        "tech-startup-branding": { "title": "Tech Startup Branding", "metric": "Komplette Markenidentität" },
+        "e-commerce-groei": { "title": "E-Commerce Wachstum", "metric": "+240% ROAS" },
+        "content-strategie": { "title": "Content-Strategie", "metric": "50+ Videos/Monat" }
+      }
+    },
+    "caseStudies": {
+      "subtitle": "Bewiesene Ergebnisse",
+      "title": "Das haben wir für andere Unternehmen erreicht",
+      "challengeLabel": "Herausforderung",
+      "solutionLabel": "Unser Ansatz",
+      "cta": "Möchten Sie ähnliche Ergebnisse? Kontaktieren Sie uns",
+      "industries": { "restaurant": "Restaurant", "ecommerce": "E-Commerce", "construction": "Bau" },
+      "case1": { "challenge": "Geringe Online-Sichtbarkeit und kaum Reservierungen über digitale Kanäle.", "solution": "Neue Website + Google Ads + Social-Media-Strategie eingerichtet.", "metric": "+180% Reservierungen in 6 Monaten" },
+      "case2": { "challenge": "Zu hohe Werbekosten bei zu geringer Conversion.", "solution": "Kampagnen-Audit + Retargeting + UX-Verbesserungen durchgeführt.", "metric": "+340% ROAS innerhalb von 90 Tagen" },
+      "case3": { "challenge": "Keine Online-Präsenz — nur Mundpropaganda.", "solution": "Website + lokale SEO + Google My Business eingerichtet.", "metric": "#1 lokales Ranking + 45 Leads/Monat" }
+    },
+    "trustSection": {
+      "subtitle": "Warum Unternehmen uns vertrauen",
+      "title": "10+ Jahre Erfahrung. Fakten, keine Versprechen.",
+      "items": {
+        "founded": { "title": "Gegründet 2016", "desc": "Über 8 Jahre aktiv im digitalen Marketing" },
+        "team": { "title": "9+ Fachleute", "desc": "Ein Team mit Expertise in Strategie, Design und Performance" },
+        "reach": { "title": "Belgien & Europa", "desc": "Lokales Wissen, internationale Erfahrung" },
+        "partnerships": { "title": "Langfristige Beziehungen", "desc": "Die meisten Kunden arbeiten seit Jahren mit uns zusammen" }
+      }
+    },
+    "finalCTA": {
+      "title": "Möchten Sie wissen, wie wir Ihr Unternehmen wachsen lassen können?",
+      "description": "Planen Sie ein kurzes Gespräch oder senden Sie Ihre Frage. Wir antworten mit einem konkreten Vorschlag — unverbindlich.",
+      "ctaPrimary": "Angebot anfordern",
+      "ctaWhatsApp": "Nachricht per WhatsApp senden"
     }
   },
   "about": {

@@ -44,6 +44,171 @@
       "cv": { "q": "CV'me ne eklemeliyim?", "a": "İlgili deneyim ve sonuçlara odaklanın. Mümkünse projeler veya portföy gösterin. Kısa tutun (maks 2 sayfa)." }
     }
   },
+  "home": {
+    "heroNew": {
+      "badge": "Yapı. İçerik. Büyüme.",
+      "headline": "Daha fazla müşteri, daha fazla gelir — işe yarayan bir planla.",
+      "subtitle": "Belçikalı işletmelerin net strateji, güçlü içerik ve ölçülebilir kampanyalarla büyümesine yardımcı oluyoruz. Boş vaatler yok, sadece sonuç üreten çalışma.",
+      "proof1": "Net yaklaşım, tahmin yok",
+      "proof2": "Şeffaf fiyatlar, net çıktılar",
+      "proof3": "Daha fazla müşteri, daha az israf",
+      "ctaPrimary": "Hizmetleri ve fiyatları gör",
+      "ctaSecondary": "Teklif iste",
+      "scrollHint": "Kaydır"
+    },
+    "postHeroTrust": {
+      "title": "Büyümek isteyen işletmeler için tasarlandı",
+      "subtitle": "Pazarlama gürültüsü yok. Belirsiz planlar yok. Müşteri ve gelir getiren yapı, içerik ve kampanyalar sunuyoruz."
+    },
+    "whoWeAre": {
+      "headline": "Biz kimiz. Ve neden farklı çalışıyoruz.",
+      "subtext": "2016'dan beri işletmelerin büyümesine yardımcı oluyoruz\nyapı, kontrol ve akıllı sistemlerle —\nboş pazarlama konuşmalarıyla değil.",
+      "cta": "Hizmetlerimizi keşfedin",
+      "videoAlt": "Tanıtım videomuzu izleyin"
+    },
+    "trustBar": {
+      "item1": { "title": "Şeffaf fiyatlar", "text": "Gizli masraf yok, sürpriz yok." },
+      "item2": { "title": "Hızlı iletişim", "text": "24 saat içinde yanıt." },
+      "item3": { "title": "Sonuç odaklı", "text": "Her şeyi ölçüyor, gerektiğinde yönlendiriyoruz." }
+    },
+    "quickChoice": {
+      "badge": "Buradan başlayın",
+      "title": "Tam olarak neye ihtiyacınız olduğunu bilmiyor musunuz?",
+      "subtitle": "En önemli hedefinizi seçin — size uygun hizmetleri hemen gösterelim.",
+      "cta": "Önerilen hizmetleri göster",
+      "visibility": { "title": "Daha fazla görünürlük", "desc": "Sosyal medya, içerik ve güçlü bir online varlıkla müşterilerin sizi bulmasını sağlayın." },
+      "leads": { "title": "Daha fazla potansiyel müşteri", "desc": "Reklamlar, SEO ve akıllı funnellarla ciddi ilgilileri çekin." },
+      "sales": { "title": "Daha fazla satış", "desc": "Güçlü bir e-ticaret sitesi, hedefli reklamlar ve dönüşüm odaklı içerikle online satış yapın." }
+    },
+    "servicesGrid": {
+      "subtitle": "Hizmetlerimiz",
+      "title": "Sizin için ne yapabiliriz?",
+      "description": "Her hizmet açıkça anlatılır: ne alırsınız, ne kadar ve nasıl çalışır. Karmaşa yok.",
+      "featured": "En çok tercih edilen",
+      "viewDetails": "Detaylar",
+      "watchVideo": "Video",
+      "buildPlan": "Planını oluştur",
+      "seePricing": "Fiyatı gör",
+      "customQuote": "Özel teklif",
+      "from": "Başlangıç",
+      "perMonth": "/ ay",
+      "oneTime": "tek seferlik",
+      "vatExcluded": "KDV hariç",
+      "items": {
+        "contentProduction": {
+          "title": "İçerik Üretimi",
+          "desc": "Markanızı öne çıkaran videolar, fotoğraflar ve görseller — her platformda.",
+          "deliverables": { "0": "Video üretimi (kısa veya uzun format)", "1": "Profesyonel fotoğrafçılık", "2": "Post-prodüksiyon ve kurgu" }
+        },
+        "businessWebsite": {
+          "title": "Kurumsal Web Sitesi",
+          "desc": "Güven oluşturan ve ziyaretçileri müşteriye dönüştüren bir web sitesi.",
+          "deliverables": { "0": "Tüm cihazlar için responsive tasarım", "1": "SEO uyumlu yapı", "2": "İçerik yönetim sistemi" }
+        },
+        "ecommerce": {
+          "title": "E-ticaret Sitesi",
+          "desc": "Üründen ödemeye kadar çalışan bir e-ticaret sitesiyle online satış yapın.",
+          "deliverables": { "0": "Tam e-ticaret kurulumu", "1": "Ödeme ve kargo entegrasyonu", "2": "Ürün yönetimi" }
+        },
+        "ads": {
+          "title": "Reklam Yönetimi",
+          "desc": "Google ve Meta'da lead ve satış getiren akıllı kampanyalar.",
+          "deliverables": { "0": "Kampanya stratejisi ve kurulum", "1": "Hedefleme ve optimizasyon", "2": "Aylık raporlama" }
+        },
+        "seo": {
+          "title": "SEO",
+          "desc": "Hizmetinizi aktif olarak arayan müşteriler tarafından bulunun.",
+          "deliverables": { "0": "Teknik SEO denetimi", "1": "Anahtar kelime stratejisi", "2": "Aylık içerik optimizasyonu" }
+        },
+        "social": {
+          "title": "Sosyal Medya Yönetimi",
+          "desc": "Zaman kaybetmeden profesyonel sosyal medya varlığı.",
+          "deliverables": { "0": "İçerik planlama ve oluşturma", "1": "Topluluk yönetimi", "2": "Aylık analiz" }
+        },
+        "mobileApp": {
+          "title": "Mobil Uygulama Geliştirme",
+          "desc": "İşletmenize özel iOS ve Android uygulaması.",
+          "deliverables": { "0": "UX/UI tasarım + geliştirme", "1": "Backend ve entegrasyonlar", "2": "App Store lansman desteği" }
+        }
+      }
+    },
+    "serviceModal": {
+      "tabs": { "overview": "Genel Bakış", "deliverables": "Ne alırsınız", "pricing": "Fiyat mantığı", "video": "Video", "calculator": "Plan Oluşturucu" },
+      "overview": {
+        "about": "Bu hizmet hakkında",
+        "priceRange": "Fiyat göstergesi",
+        "content_production": "Profesyonel içerik üretimi, mesajınızı net ileten ve hedef kitlenize ulaşan kaliteli video ve fotoğraflarla markanızı güçlendirir.",
+        "business_website": "Profesyonel bir web sitesi, online varlığınızın temelidir. Sadece güzel değil, aynı zamanda dönüştüren siteler inşa ediyoruz.",
+        "ecommerce_website": "İhtiyacınız olan tüm işlevlere sahip, tam optimize edilmiş bir e-ticaret sitesiyle online satışa başlayın.",
+        "ads_management": "Google, Facebook, Instagram ve daha fazlasında veri odaklı kampanyalarla reklam bütçenizi maksimize edin.",
+        "seo": "Optimize edilmiş içerik ve teknik SEO iyileştirmeleriyle organik trafikle sürdürülebilir büyüyün.",
+        "social_media": "Tüm sosyal medya kanallarınızda tutarlı, kaliteli içerikle etkileşimli bir topluluk oluşturun."
+      },
+      "deliverables": { "title": "Ne alırsınız" },
+      "pricing": {
+        "title": "Fiyatlandırma nasıl çalışır?",
+        "note": "Nihai fiyat, özel ihtiyaçlarınıza ve proje kapsamına bağlıdır.",
+        "factors": "Fiyat faktörleri:",
+        "factor1": "Projenin kapsamı ve karmaşıklığı",
+        "factor2": "Dahil edilen varlık veya saat sayısı",
+        "factor3": "Özel uyarlamalar ve ekstralar"
+      },
+      "video": { "comingSoon": "Video yakında", "uploadNote": "Admin buraya mp4 video yükleyebilir" },
+      "calculator": { "title": "Plan Oluşturucu", "desc": "Kendi planınızı oluşturun ve hemen gösterge fiyat alın.", "cta": "Tam hesaplayıcıyı aç" },
+      "cta": { "quote": "Özel teklif isteyin", "whatsapp": "WhatsApp ile yazın" }
+    },
+    "clientMarquee": {
+      "subtitle": "İşletmelerin güveni",
+      "title": "Belçika ve Avrupa'daki işletmelerin güveni",
+      "ndaNote": "*Bazı projeler NDA kapsamındadır ve kamuya gösterilemez.*",
+      "logoPlaceholder": "LOGO"
+    },
+    "portfolio": {
+      "subtitle": "Çalışmalarımız",
+      "title": "Portfolio öne çıkanlar",
+      "thumbnailPlaceholder": "Proje görseli",
+      "viewCase": "Projeyi gör",
+      "viewAll": "Tüm portfolyoyu gör",
+      "tags": { "website": "Web Sitesi", "branding": "Marka", "ads": "Reklamlar", "social": "Sosyal", "ecommerce": "E-ticaret", "seo": "SEO", "content": "İçerik" },
+      "projects": {
+        "restaurant-branding": { "title": "Restoran Markalaştırma", "metric": "+%180 rezervasyon" },
+        "mode-webshop": { "title": "Moda E-ticaret", "metric": "3 ayda €85K ciro" },
+        "b2b-platform": { "title": "B2B Platform", "metric": "+%320 lead" },
+        "bouwbedrijf-website": { "title": "İnşaat Firması Web Sitesi", "metric": "#1 Google yerel" },
+        "influencer-campagne": { "title": "Influencer Kampanyası", "metric": "2.4M erişim" },
+        "tech-startup-branding": { "title": "Teknoloji Startup Markalaştırma", "metric": "Tam marka kimliği" },
+        "e-commerce-groei": { "title": "E-ticaret Büyüme", "metric": "+%240 ROAS" },
+        "content-strategie": { "title": "İçerik Stratejisi", "metric": "Ayda 50+ video" }
+      }
+    },
+    "caseStudies": {
+      "subtitle": "Kanıtlanmış sonuçlar",
+      "title": "Diğer işletmeler için elde ettiklerimiz",
+      "challengeLabel": "Zorluk",
+      "solutionLabel": "Yaklaşımımız",
+      "cta": "Benzer sonuçlar ister misiniz? İletişime geçin",
+      "industries": { "restaurant": "Restoran", "ecommerce": "E-ticaret", "construction": "İnşaat" },
+      "case1": { "challenge": "Düşük online görünürlük ve dijital kanallardan neredeyse hiç rezervasyon yok.", "solution": "Yeni web sitesi + Google Ads + sosyal medya stratejisi kuruldu.", "metric": "6 ayda +%180 rezervasyon" },
+      "case2": { "challenge": "Düşük dönüşümle birlikte yüksek reklam maliyetleri.", "solution": "Kampanya denetimi + yeniden hedefleme + UX iyileştirmeleri yapıldı.", "metric": "90 günde +%340 ROAS" },
+      "case3": { "challenge": "Online varlık yok — sadece ağızdan ağıza.", "solution": "Web sitesi + yerel SEO + Google İşletmem kuruldu.", "metric": "#1 yerel sıralama + ayda 45 lead" }
+    },
+    "trustSection": {
+      "subtitle": "İşletmeler neden bize güveniyor",
+      "title": "10+ yıl deneyim. Vaatler değil, gerçekler.",
+      "items": {
+        "founded": { "title": "2016'da kuruldu", "desc": "Dijital pazarlamada 8+ yıl deneyim" },
+        "team": { "title": "9+ profesyonel", "desc": "Strateji, tasarım ve performans konularında uzman ekip" },
+        "reach": { "title": "Belçika ve Avrupa", "desc": "Yerel bilgi, uluslararası deneyim" },
+        "partnerships": { "title": "Uzun vadeli ilişkiler", "desc": "Müşterilerimizin çoğu yıllardır bizimle çalışıyor" }
+      }
+    },
+    "finalCTA": {
+      "title": "İşletmenizi nasıl büyütebileceğimizi öğrenmek ister misiniz?",
+      "description": "Kısa bir görüşme planlayın veya sorunuzu gönderin. Size somut bir teklifle dönüyoruz — bağlayıcı değil.",
+      "ctaPrimary": "Teklif isteyin",
+      "ctaWhatsApp": "WhatsApp ile mesaj gönderin"
+    }
+  },
   "hero": {
     "title": "GROPPI – İnsan Uzmanlığı, Akıllı Teknoloji ile Güçlendirilmiş",
     "subtitle": "2016'dan Beri Stratejik Dijital Ortağınız",

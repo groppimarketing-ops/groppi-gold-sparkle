@@ -44,6 +44,171 @@
       "cv": { "q": "¿Qué debo incluir en mi CV?", "a": "Enfócate en experiencia relevante y resultados. Muestra proyectos o portfolio si es posible. Mantenlo conciso (máx 2 páginas)." }
     }
   },
+  "home": {
+    "heroNew": {
+      "badge": "Estrategia. Ejecución. Resultados.",
+      "headline": "Más clientes, más ingresos — con un plan que funciona.",
+      "subtitle": "Ayudamos a empresas belgas a crecer con estrategia clara, contenido fuerte y campañas medibles. Sin promesas vacías, solo trabajo que genera resultados.",
+      "proof1": "Enfoque claro, sin improvisación",
+      "proof2": "Precios honestos, entregables claros",
+      "proof3": "Más clientes, menos presupuesto desperdiciado",
+      "ctaPrimary": "Ver servicios y precios",
+      "ctaSecondary": "Solicitar presupuesto",
+      "scrollHint": "Desplazar"
+    },
+    "postHeroTrust": {
+      "title": "Diseñado para empresas que quieren crecer",
+      "subtitle": "Sin ruido de marketing. Sin planes vagos. Entregamos estructura, contenido y campañas que generan clientes."
+    },
+    "whoWeAre": {
+      "headline": "Quiénes somos. Y por qué trabajamos diferente.",
+      "subtext": "Desde 2016 ayudamos a empresas a crecer\ncon estructura, control y sistemas inteligentes —\nno con charla de marketing vacía.",
+      "cta": "Ver nuestros servicios",
+      "videoAlt": "Ver nuestro video de introducción"
+    },
+    "trustBar": {
+      "item1": { "title": "Precios transparentes", "text": "Sin costos ocultos, sin sorpresas." },
+      "item2": { "title": "Comunicación rápida", "text": "Siempre respuesta en 24 horas." },
+      "item3": { "title": "Orientado a resultados", "text": "Medimos todo y ajustamos donde es necesario." }
+    },
+    "quickChoice": {
+      "badge": "Empieza aquí",
+      "title": "¿No sabes exactamente qué necesitas?",
+      "subtitle": "Elige tu objetivo más importante — te mostramos los servicios adecuados.",
+      "cta": "Mostrar servicios recomendados",
+      "visibility": { "title": "Más visibilidad", "desc": "Haz que tus clientes te encuentren a través de redes sociales, contenido y una fuerte presencia online." },
+      "leads": { "title": "Más leads", "desc": "Atrae interesados serios con publicidad, SEO y funnels inteligentes." },
+      "sales": { "title": "Más ventas", "desc": "Vende online con una tienda fuerte, anuncios dirigidos y contenido orientado a la conversión." }
+    },
+    "servicesGrid": {
+      "subtitle": "Nuestros servicios",
+      "title": "¿Qué podemos hacer por ti?",
+      "description": "Cada servicio está explicado claramente: qué obtienes, cuánto cuesta y cómo funciona. Sin complicaciones.",
+      "featured": "Más elegido",
+      "viewDetails": "Más info",
+      "watchVideo": "Video",
+      "buildPlan": "Crea tu plan",
+      "seePricing": "Ver precio",
+      "customQuote": "Presupuesto personalizado",
+      "from": "Desde",
+      "perMonth": "/ mes",
+      "oneTime": "pago único",
+      "vatExcluded": "sin IVA",
+      "items": {
+        "contentProduction": {
+          "title": "Producción de contenido",
+          "desc": "Videos, fotos y visuales que hacen destacar tu marca — en cada plataforma.",
+          "deliverables": { "0": "Producción de video (formato corto o largo)", "1": "Fotografía profesional", "2": "Post-producción y edición" }
+        },
+        "businessWebsite": {
+          "title": "Sitio web empresarial",
+          "desc": "Un sitio web que genera confianza y convierte visitantes en clientes.",
+          "deliverables": { "0": "Diseño responsive para todos los dispositivos", "1": "Estructura optimizada para SEO", "2": "Sistema de gestión de contenidos" }
+        },
+        "ecommerce": {
+          "title": "Tienda online",
+          "desc": "Vende online con una tienda que funciona — del producto al pago.",
+          "deliverables": { "0": "Configuración completa de tienda", "1": "Integración de pago y envío", "2": "Gestión de productos" }
+        },
+        "ads": {
+          "title": "Gestión de publicidad",
+          "desc": "Campañas inteligentes en Google y Meta que generan leads y ventas.",
+          "deliverables": { "0": "Estrategia de campaña y configuración", "1": "Segmentación y optimización", "2": "Informes mensuales" }
+        },
+        "seo": {
+          "title": "SEO",
+          "desc": "Sé encontrado por clientes que buscan activamente tu servicio.",
+          "deliverables": { "0": "Auditoría SEO técnica", "1": "Estrategia de palabras clave", "2": "Optimización mensual de contenido" }
+        },
+        "social": {
+          "title": "Gestión de redes sociales",
+          "desc": "Presencia profesional en redes sociales — sin que pierdas tiempo.",
+          "deliverables": { "0": "Planificación y creación de contenido", "1": "Gestión de comunidad", "2": "Análisis mensual" }
+        },
+        "mobileApp": {
+          "title": "Desarrollo de app móvil",
+          "desc": "Tu propia app para iOS y Android — hecha a medida para tu negocio.",
+          "deliverables": { "0": "Diseño UX/UI + desarrollo", "1": "Backend e integraciones", "2": "Soporte de lanzamiento en App Store" }
+        }
+      }
+    },
+    "serviceModal": {
+      "tabs": { "overview": "Resumen", "deliverables": "Qué obtienes", "pricing": "Precio y lógica", "video": "Video", "calculator": "Constructor de plan" },
+      "overview": {
+        "about": "Sobre este servicio",
+        "priceRange": "Indicación de precio",
+        "content_production": "La producción de contenido profesional fortalece tu marca con videos y fotos de calidad que transmiten tu mensaje y atraen a tu público objetivo.",
+        "business_website": "Un sitio web profesional es la base de tu presencia online. Construimos sitios que no solo son bonitos, sino que también convierten.",
+        "ecommerce_website": "Empieza a vender online con una tienda completamente optimizada con todas las funcionalidades que necesitas.",
+        "ads_management": "Maximiza tu presupuesto publicitario con campañas basadas en datos en Google, Facebook, Instagram y más.",
+        "seo": "Crece de forma sostenible con tráfico orgánico a través de contenido optimizado y mejoras técnicas de SEO.",
+        "social_media": "Construye una comunidad comprometida con contenido consistente y de calidad en todos tus canales sociales."
+      },
+      "deliverables": { "title": "Qué obtienes" },
+      "pricing": {
+        "title": "¿Cómo funciona el precio?",
+        "note": "El precio final depende de tus necesidades específicas y el alcance del proyecto.",
+        "factors": "Factores de precio:",
+        "factor1": "Alcance y complejidad del proyecto",
+        "factor2": "Número de activos u horas incluidas",
+        "factor3": "Personalizaciones y extras específicos"
+      },
+      "video": { "comingSoon": "Video próximamente", "uploadNote": "El admin puede subir un video mp4 aquí" },
+      "calculator": { "title": "Constructor de plan", "desc": "Crea tu propio plan y obtén un precio indicativo al instante.", "cta": "Abrir calculadora completa" },
+      "cta": { "quote": "Solicitar presupuesto personalizado", "whatsapp": "Escríbenos por WhatsApp" }
+    },
+    "clientMarquee": {
+      "subtitle": "Confianza de las empresas",
+      "title": "Confianza de empresas en Bélgica y Europa",
+      "ndaNote": "*Algunos proyectos están bajo NDA y no pueden mostrarse públicamente.*",
+      "logoPlaceholder": "LOGO"
+    },
+    "portfolio": {
+      "subtitle": "Nuestro trabajo",
+      "title": "Destacados del portfolio",
+      "thumbnailPlaceholder": "Imagen del proyecto",
+      "viewCase": "Ver caso",
+      "viewAll": "Ver portfolio completo",
+      "tags": { "website": "Web", "branding": "Branding", "ads": "Anuncios", "social": "Social", "ecommerce": "E-commerce", "seo": "SEO", "content": "Contenido" },
+      "projects": {
+        "restaurant-branding": { "title": "Branding de restaurante", "metric": "+180% reservas" },
+        "mode-webshop": { "title": "Tienda de moda", "metric": "€85K en 3 meses" },
+        "b2b-platform": { "title": "Plataforma B2B", "metric": "+320% leads" },
+        "bouwbedrijf-website": { "title": "Web de constructora", "metric": "#1 Google local" },
+        "influencer-campagne": { "title": "Campaña de influencers", "metric": "2.4M alcance" },
+        "tech-startup-branding": { "title": "Branding de startup tech", "metric": "Identidad de marca completa" },
+        "e-commerce-groei": { "title": "Crecimiento e-commerce", "metric": "+240% ROAS" },
+        "content-strategie": { "title": "Estrategia de contenido", "metric": "50+ videos/mes" }
+      }
+    },
+    "caseStudies": {
+      "subtitle": "Resultados probados",
+      "title": "Lo que logramos para otras empresas",
+      "challengeLabel": "Desafío",
+      "solutionLabel": "Nuestro enfoque",
+      "cta": "¿Quieres resultados similares? Contáctanos",
+      "industries": { "restaurant": "Restaurante", "ecommerce": "E-commerce", "construction": "Construcción" },
+      "case1": { "challenge": "Poca visibilidad online y casi ninguna reserva por canales digitales.", "solution": "Nuevo sitio web + Google Ads + estrategia de redes sociales.", "metric": "+180% reservas en 6 meses" },
+      "case2": { "challenge": "Costos publicitarios altos con baja conversión.", "solution": "Auditoría de campaña + retargeting + mejoras UX.", "metric": "+340% ROAS en 90 días" },
+      "case3": { "challenge": "Sin presencia online — solo boca a boca.", "solution": "Sitio web + SEO local + Google Mi Negocio.", "metric": "#1 ranking local + 45 leads/mes" }
+    },
+    "trustSection": {
+      "subtitle": "Por qué las empresas confían en nosotros",
+      "title": "10+ años de experiencia. Hechos, no promesas.",
+      "items": {
+        "founded": { "title": "Fundada en 2016", "desc": "Más de 8 años activos en marketing digital" },
+        "team": { "title": "9+ profesionales", "desc": "Un equipo con experiencia en estrategia, diseño y rendimiento" },
+        "reach": { "title": "Bélgica y Europa", "desc": "Conocimiento local, experiencia internacional" },
+        "partnerships": { "title": "Relaciones a largo plazo", "desc": "La mayoría de nuestros clientes llevan años trabajando con nosotros" }
+      }
+    },
+    "finalCTA": {
+      "title": "¿Quieres saber cómo podemos hacer crecer tu negocio?",
+      "description": "Agenda una llamada breve o envía tu consulta. Te respondemos con una propuesta concreta — sin compromiso.",
+      "ctaPrimary": "Solicitar propuesta",
+      "ctaWhatsApp": "Enviar mensaje por WhatsApp"
+    }
+  },
   "hero": {
     "title": "GROPPI – Experiencia humana, potenciada por tecnología inteligente",
     "subtitle": "Tu socio digital estratégico desde 2016",
