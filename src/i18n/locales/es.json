@@ -7,6 +7,7 @@
     "gallery": "Portfolio",
     "contact": "Contacto",
     "franchise": "Franquicia",
+    "partnership": "Franquicia",
     "careers": "Empleo"
   },
   "careers": {
@@ -44,6 +45,119 @@
       "cv": { "q": "¿Qué debo incluir en mi CV?", "a": "Enfócate en experiencia relevante y resultados. Muestra proyectos o portfolio si es posible. Mantenlo conciso (máx 2 páginas)." }
     }
   },
+  "pricing": {
+    "from": "Desde",
+    "customQuote": "Presupuesto personalizado",
+    "perMonth": "/ mes",
+    "oneTime": "único",
+    "vatExcluded": "sin IVA",
+    "vatExcludedNote": "Todos los precios sin IVA. El IVA se añadirá en la factura.",
+    "vatDisclaimer": {
+      "title": "Información de precios",
+      "line1": "Todos los precios son sin IVA (21%)."
+    }
+  },
+  "servicesHome": {
+    "sectionTitle": "Nuestros servicios",
+    "sectionSubtitle": "Mira primero el video para entender cómo funciona cada servicio, luego ve a los detalles.",
+    "card": {
+      "requestQuote": "Solicitar presupuesto",
+      "viewDetails": "Más info",
+      "watchHowItWorks": "Mira cómo funciona (60 seg)",
+      "buildYourPlan": "Crea tu plan"
+    },
+    "badges": {
+      "monthly": "Mensual",
+      "oneTime": "Único",
+      "custom": "A medida",
+      "mostChosen": "Más elegido"
+    }
+  },
+  "calculator": {
+    "title": "Calcula tu precio en 60 seg.",
+    "paymentTypeTitle": "Elige tu tipo de pago",
+    "payment": {
+      "oneTime": "Proyecto único",
+      "oneTimeDesc": "Paga por artículo.",
+      "oneTimeDescSimple": "Paga por artículo.",
+      "monthly": "Suscripción mensual",
+      "monthlyDesc": "Tarifa mensual fija.",
+      "monthlyDescSimple": "Tarifa mensual fija."
+    },
+    "vatNote": "Todos los precios sin IVA",
+    "estimatedMonthlyFee": "Tarifa mensual estimada",
+    "setupFee": "Tarifa de configuración",
+    "totalFirstMonth": "Total primer mes",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "basePrice": "Precio base",
+    "addons": "Add-ons",
+    "configurePackage": "Configura tu paquete",
+    "extraOptions": "Opciones adicionales",
+    "cta": {
+      "whatsapp": "Chat por WhatsApp",
+      "requestQuote": "Solicitar presupuesto",
+      "planCall": "Agendar llamada",
+      "planCallHelper": "Elige un horario que te convenga. Llamada de intro gratis (30 min)."
+    },
+    "step1": "Elige tu tipo de pago",
+    "step2": "Selecciona tus contenidos"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "retry": "Reintentar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "submit": "Enviar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "back": "Atrás",
+    "continue": "Continuar",
+    "viewMore": "Ver más",
+    "viewAll": "Ver todo",
+    "learnMore": "Saber más",
+    "getStarted": "Empezar",
+    "contactUs": "Contáctanos",
+    "scheduleCall": "Agendar llamada",
+    "requestQuote": "Solicitar presupuesto",
+    "required": "Obligatorio",
+    "optional": "Opcional",
+    "brandName": "GROPPI",
+    "fullscreen": "Pantalla completa",
+    "search": "Buscar",
+    "noResults": "No se encontraron resultados"
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "email": "Por favor, introduce un correo electrónico válido",
+    "phone": "Por favor, introduce un número de teléfono válido",
+    "minLength": "Mínimo {{min}} caracteres requeridos",
+    "maxLength": "Máximo {{max}} caracteres permitidos",
+    "invalidUrl": "Por favor, introduce una URL válida"
+  },
+  "forms": {
+    "name": "Nombre",
+    "email": "Email",
+    "phone": "Teléfono",
+    "company": "Empresa",
+    "message": "Mensaje",
+    "subject": "Asunto",
+    "website": "Sitio web",
+    "budget": "Presupuesto",
+    "submitSuccess": "¡Gracias! Te contactaremos pronto.",
+    "submitError": "Algo salió mal. Por favor, inténtalo de nuevo."
+  },
+  "hero": {
+    "title": "GROPPI – Experiencia humana, potenciada por tecnología inteligente",
+    "subtitle": "Tu socio digital estratégico desde 2016",
+    "description": "GROPPI fue fundada en Bélgica en 2016 y se basa en experiencia real, visión estratégica y asociaciones duraderas.",
+    "cta": "Reservar consulta gratuita",
+    "ctaSecondary": "Ver nuestro trabajo"
+  },
   "home": {
     "heroNew": {
       "badge": "Estrategia. Ejecución. Resultados.",
@@ -65,6 +179,53 @@
       "subtext": "Desde 2016 ayudamos a empresas a crecer\ncon estructura, control y sistemas inteligentes —\nno con charla de marketing vacía.",
       "cta": "Ver nuestros servicios",
       "videoAlt": "Ver nuestro video de introducción"
+    },
+    "serviceMap": {
+      "label": "Qué hacemos",
+      "title": "Nuestros servicios de un vistazo",
+      "subtitle": "Servicios claros. Precios transparentes. Sin ruido de marketing.",
+      "columns": {
+        "online": {
+          "title": "Pon tu negocio online",
+          "services": {
+            "businessWebsite": "Sitio web empresarial",
+            "onePage": "Sitio web de una página",
+            "webshop": "Tienda online",
+            "visualContent": "Contenido visual y video"
+          }
+        },
+        "findable": {
+          "title": "Haz tu negocio visible",
+          "services": {
+            "seo": "SEO (local y técnico)",
+            "googleBusiness": "Optimización Google Business",
+            "sea": "Anuncios en buscadores (SEA)",
+            "dataTracking": "Configuración de datos y tracking"
+          }
+        },
+        "standout": {
+          "title": "Destaca tu negocio",
+          "services": {
+            "branding": "Branding e identidad visual",
+            "socialContent": "Contenido para redes sociales",
+            "videoAds": "Anuncios en video",
+            "creativeCampaigns": "Campañas creativas"
+          }
+        },
+        "attract": {
+          "title": "Atrae clientes",
+          "services": {
+            "adManagement": "Gestión publicitaria",
+            "socialManagement": "Gestión de redes sociales",
+            "leadGen": "Embudos de generación de leads",
+            "conversionOptimization": "Optimización de conversiones"
+          }
+        }
+      },
+      "cta": {
+        "viewServices": "Ver servicios y precios",
+        "calculatePrice": "Calcula tu precio en 60 seg"
+      }
     },
     "trustBar": {
       "item1": { "title": "Precios transparentes", "text": "Sin costos ocultos, sin sorpresas." },
@@ -137,12 +298,12 @@
       "overview": {
         "about": "Sobre este servicio",
         "priceRange": "Indicación de precio",
-        "content_production": "La producción de contenido profesional fortalece tu marca con videos y fotos de calidad que transmiten tu mensaje y atraen a tu público objetivo.",
-        "business_website": "Un sitio web profesional es la base de tu presencia online. Construimos sitios que no solo son bonitos, sino que también convierten.",
-        "ecommerce_website": "Empieza a vender online con una tienda completamente optimizada con todas las funcionalidades que necesitas.",
-        "ads_management": "Maximiza tu presupuesto publicitario con campañas basadas en datos en Google, Facebook, Instagram y más.",
-        "seo": "Crece de forma sostenible con tráfico orgánico a través de contenido optimizado y mejoras técnicas de SEO.",
-        "social_media": "Construye una comunidad comprometida con contenido consistente y de calidad en todos tus canales sociales."
+        "content_production": "La producción de contenido profesional fortalece tu marca con videos y fotos de calidad.",
+        "business_website": "Un sitio web profesional es la base de tu presencia online. Construimos sitios que convierten.",
+        "ecommerce_website": "Empieza a vender online con una tienda completamente optimizada.",
+        "ads_management": "Maximiza tu presupuesto publicitario con campañas basadas en datos.",
+        "seo": "Crece de forma sostenible con tráfico orgánico a través de contenido optimizado.",
+        "social_media": "Construye una comunidad comprometida con contenido consistente y de calidad."
       },
       "deliverables": { "title": "Qué obtienes" },
       "pricing": {
@@ -162,6 +323,123 @@
       "title": "Confianza de empresas en Bélgica y Europa",
       "ndaNote": "*Algunos proyectos están bajo NDA y no pueden mostrarse públicamente.*",
       "logoPlaceholder": "LOGO"
+    },
+    "clientLogoMarquee": {
+      "eyebrow": "NUESTROS CLIENTES",
+      "subtitle": "Trabajamos con empresas ambiciosas que quieren estructura, calidad y crecimiento medible — sin ruido de marketing.",
+      "title": "Confianza de equipos en Bélgica y Europa",
+      "ndaNote": "Debido a NDA, no podemos mostrar todos los nombres de marca públicamente. Algunas referencias se muestran de forma anónima.",
+      "marqueeLabel": "Equipos que crecen con nosotros",
+      "benefits": {
+        "benefit1": "Estructura de servicio clara",
+        "benefit2": "Lógica de precios transparente",
+        "benefit3": "Enfoque en calidad y crecimiento sostenible"
+      },
+      "clients": {
+        "restaurant": "Grupo de Restaurantes de Amberes",
+        "interior": "Equipo de Interiorismo y Renovación",
+        "retail": "Cadena de Retail Local",
+        "ecommerce": "Marca E-commerce (BE)",
+        "beauty": "Clínica de Belleza Bélgica",
+        "realEstate": "Agencia Inmobiliaria (BE)",
+        "construction": "Estudio de Construcción Bruselas",
+        "startup": "Startup Tecnológica (EU)",
+        "logistics": "Empresa de Logística (BE)",
+        "professional": "Agencia de Servicios Profesionales",
+        "hospitality": "Equipo de Hostelería",
+        "b2b": "Plataforma B2B (EU)"
+      },
+      "testimonials": {
+        "testimonial1": {
+          "quote": "Por fin un equipo que aporta estructura. Acuerdos claros, rapidez y sobre todo: calidad.",
+          "role": "Director, Amberes"
+        },
+        "testimonial2": {
+          "quote": "Transparentes en enfoque y precios. Sin promesas vacías — solo trabajo que da resultados.",
+          "role": "Director de Marketing, Bruselas"
+        },
+        "testimonial3": {
+          "quote": "Profesional, rápido y acabado premium. Se nota que tienen experiencia en el mercado belga.",
+          "role": "Propietario, PYME flamenca"
+        }
+      },
+      "cta": {
+        "title": "¿Quieres saber qué podemos hacer por tu negocio?",
+        "subtitle": "Agenda una breve llamada o envía tu situación. Respondemos con un plan concreto — sin compromiso.",
+        "primaryButton": "Solicitar propuesta →",
+        "secondaryButton": "Chat por WhatsApp"
+      }
+    },
+    "trustSectors": {
+      "eyebrow": "Nuestros sectores",
+      "headline": "Confianza de empresas en crecimiento — a nivel mundial",
+      "subheadline": "Con sede en Bélgica. Activos en toda Europa. Clientes en todo el mundo.",
+      "proofPoints": {
+        "experience": "10+ años de experiencia",
+        "pricing": "Precios transparentes y entregables claros",
+        "system": "Enfoque basado en sistemas (no solo diseño)",
+        "leads": "Enfoque en leads cualificados"
+      },
+      "note": "*Por NDA, no mostramos todos los nombres de empresa públicamente.",
+      "cta": "Ver servicios y precios",
+      "sectors": {
+        "restaurant": { "title": "Restaurantes y Hoteles", "subtitle": "Más reservas, más visibilidad." },
+        "interior": { "title": "Interiorismo y Arquitectura", "subtitle": "Leads para clientes con alta intención." },
+        "retail": { "title": "Retail y tiendas locales", "subtitle": "Presencia online que vende." },
+        "ecommerce": { "title": "E-commerce", "subtitle": "Conversión, contenido y rendimiento." },
+        "realEstate": { "title": "Inmobiliaria", "subtitle": "Branding premium + flujo de leads." },
+        "health": { "title": "Belleza y Bienestar", "subtitle": "Más reservas, mayor valor de marca." },
+        "services": { "title": "Servicios locales", "subtitle": "De Google a cliente — más rápido." },
+        "sme": { "title": "PYMES y startups", "subtitle": "Estructura para crecer sin caos." },
+        "medical": { "title": "Clínicas médicas", "subtitle": "Confianza, visibilidad y crecimiento de pacientes." },
+        "education": { "title": "Academias educativas", "subtitle": "Visibilidad, credibilidad e inscripciones constantes." }
+      },
+      "stats": {
+        "experience": "años de experiencia",
+        "focus": "BE + EU + Mundial",
+        "system": "sin caos, sí estructura",
+        "premium": "branding + rendimiento"
+      },
+      "statsValues": {
+        "focus": "BE + EU + Mundial",
+        "system": "Basado en sistemas",
+        "premium": "Premium"
+      },
+      "microNote": "*Los resultados varían por sector y presupuesto. Construimos sistemas escalables."
+    },
+    "trustedBelgium": {
+      "eyebrow": "CONFIANZA",
+      "title": "Confianza de empresas en crecimiento en Bélgica y Europa",
+      "subtitle": "Estamos activos en 7 países con enfoque en crecimiento medible y resultados claros.",
+      "europeCredibility": "Activos para equipos ambiciosos en Bélgica y Europa.",
+      "disclaimer": "Algunos nombres de clientes no se comparten públicamente debido a NDA.",
+      "activeClients": "clientes activos",
+      "sectorsWeServe": "Sectores que atendemos",
+      "countries": {
+        "belgium": "Bélgica",
+        "netherlands": "Países Bajos",
+        "germany": "Alemania",
+        "france": "Francia",
+        "luxembourg": "Luxemburgo",
+        "uk": "Reino Unido",
+        "switzerland": "Suiza",
+        "italy": "Italia",
+        "spain": "España",
+        "usa": "Estados Unidos"
+      },
+      "sectors": {
+        "restaurants": "Restaurantes y hostelería",
+        "retail": "Retail y tiendas locales",
+        "interior": "Interiorismo y renovación",
+        "beauty": "Belleza y bienestar",
+        "ecommerce": "E-commerce",
+        "realEstate": "Inmobiliaria",
+        "localServices": "Servicios locales",
+        "sme": "PYMES y starters",
+        "medical": "Médico / clínicas",
+        "startups": "SaaS y startups",
+        "professionalServices": "Servicios profesionales"
+      }
     },
     "portfolio": {
       "subtitle": "Nuestro trabajo",
@@ -207,25 +485,101 @@
       "description": "Agenda una llamada breve o envía tu consulta. Te respondemos con una propuesta concreta — sin compromiso.",
       "ctaPrimary": "Solicitar propuesta",
       "ctaWhatsApp": "Enviar mensaje por WhatsApp"
+    },
+    "hero": {
+      "badge": "Agencia belga desde 2016",
+      "title": "Crecimiento digital construido sobre experiencia real",
+      "description": "GROPPI es una agencia digital belga, fundada en 2016. Con un equipo de más de 9 profesionales, ayudamos a empresas y creadores en Europa y Oriente Medio a construir una fuerte presencia digital.",
+      "cta": "Agendar llamada gratuita",
+      "ctaSecondary": "Ver nuestros servicios"
+    },
+    "whatWeDo": {
+      "subtitle": "Qué hacemos",
+      "title": "Nuestros servicios",
+      "description": "Servicios claros y orientados a resultados sin hype. Cada proyecto se adapta a tus objetivos específicos.",
+      "cta": "Ver todos los servicios"
+    },
+    "services": {
+      "content": { "title": "Producción de contenido y Creators", "desc": "Videos, fotos y contenido visual profesional para tu marca." },
+      "websites": { "title": "Desarrollo web", "desc": "Desde one-pagers hasta tiendas completas, construidos para conversión." },
+      "marketing": { "title": "Marketing digital", "desc": "Gestión publicitaria, SEO y gestión de redes sociales." },
+      "branding": { "title": "Branding y Diseño", "desc": "Identidad visual y estrategia de marca que perdura." }
+    },
+    "whyGroppi": {
+      "subtitle": "Por qué GROPPI",
+      "title": "Confianza construida sobre hechos",
+      "description": "Sin afirmaciones exageradas, solo resultados honestos y experiencia probada."
+    },
+    "trust": {
+      "founded": { "title": "Fundada en 2016", "desc": "Más de 8 años de experiencia en marketing digital" },
+      "team": { "title": "9+ Profesionales", "desc": "Un equipo multidisciplinario de expertos" },
+      "reach": { "title": "Europa y Oriente Medio", "desc": "Colaboraciones y partnerships internacionales" },
+      "partnerships": { "title": "Relaciones a largo plazo", "desc": "Construimos partnerships duraderos" }
+    },
+    "approach": {
+      "badge": "Nuestro enfoque",
+      "title": "Experiencia humana, respaldada por tecnología inteligente",
+      "text": "En GROPPI combinamos experiencia humana con tecnología inteligente para lograr resultados digitales sostenibles.",
+      "cta": "Más sobre nosotros",
+      "tags": { "humanExpertise": "Experiencia humana", "smartTechnology": "Tecnología inteligente", "sustainableResults": "Resultados sostenibles" },
+      "human": { "title": "Personas primero", "desc": "Estrategia y creatividad por profesionales experimentados" },
+      "ai": { "title": "IA como herramienta", "desc": "Tecnología como apoyo, no como reemplazo" }
+    },
+    "featured": {
+      "subtitle": "Paquetes",
+      "title": "Opciones flexibles para cada presupuesto",
+      "description": "Elige el paquete que se adapte a tus necesidades, o solicita una solución a medida.",
+      "starter": "Perfecto para emprendedores y proyectos pequeños",
+      "growth": "Ideal para empresas en crecimiento",
+      "pro": "Soporte completo para marcas ambiciosas",
+      "popular": "Popular",
+      "cta": "Ver todos los paquetes"
+    },
+    "cta": {
+      "title": "¿Listo para empezar?",
+      "description": "Cuéntanos tu situación. Respondemos con un plan que se adapta a tu negocio — sin compromiso.",
+      "contact": "Contáctanos",
+      "whatsapp": "Chat por WhatsApp"
     }
-  },
-  "hero": {
-    "title": "GROPPI – Experiencia humana, potenciada por tecnología inteligente",
-    "subtitle": "Tu socio digital estratégico desde 2016",
-    "description": "GROPPI fue fundada en Bélgica en 2016 y se basa en experiencia real, visión estratégica y asociaciones duraderas. Con un equipo multidisciplinario de más de 9 profesionales, apoyamos a empresas en Bélgica, Europa y Oriente Medio con soluciones digitales a medida. Utilizamos la IA como un acelerador inteligente, nunca como reemplazo de la creatividad humana o la toma de decisiones.",
-    "cta": "Reservar consulta gratuita",
-    "ctaSecondary": "Ver nuestro trabajo"
   },
   "about": {
     "title": "Sobre GROPPI",
     "subtitle": "Nuestra historia",
-    "description": "GROPPI comenzó en Bélgica en 2016 y creció a través de años de experiencia práctica, asociaciones sólidas y resultados probados. Hoy, colaboramos con clientes en Europa y Oriente Medio, combinando estrategia, creatividad y tecnología para lograr un crecimiento digital sostenible.",
+    "description": "GROPPI comenzó en Bélgica en 2016 y creció a través de años de experiencia práctica y relaciones sólidas con clientes.",
     "mission": "Nuestra misión",
-    "missionText": "Ayudar a las empresas a crecer a través de soluciones digitales estratégicas basadas en la experiencia humana, respaldadas por tecnología inteligente.",
+    "missionText": "Ayudar a las empresas a crecer con soluciones digitales que realmente funcionan — construidas sobre experiencia, no sobre tendencias.",
     "vision": "Nuestra visión",
-    "visionText": "Ser un socio de confianza para empresas que buscan un crecimiento digital sostenible, con un equipo que realmente entiende lo que funciona.",
+    "visionText": "Ser un socio de confianza para empresas que quieren crecer online seriamente, con un equipo que cumple lo que promete.",
     "values": "Nuestros valores",
-    "valuesText": "Fiabilidad, artesanía, transparencia y relaciones a largo plazo.",
+    "valuesText": "Honestidad, artesanía, comunicación clara y relaciones a largo plazo.",
+    "hero": {
+      "badge": "Desde 2016",
+      "title": "Desde 2016 ayudamos a empresas a crecer",
+      "text": "GROPPI fue fundada en Bélgica con un objetivo: ayudar a las empresas a alcanzar más clientes online. Sin hypes, sin planes vagos — solo trabajo que genera resultados."
+    },
+    "whoWeAre": {
+      "subtitle": "Quiénes somos",
+      "title": "Construido sobre experiencia y confianza",
+      "points": {
+        "founded": { "title": "Fundada en 2016", "text": "Más de 8 años de experiencia en marketing digital" },
+        "location": { "title": "Con sede en Bélgica", "text": "Oficina central en Bélgica, servicio local" },
+        "reach": { "title": "Bélgica y Europa", "text": "Con sede en Bélgica y activos para clientes en toda Europa. Expansión a Oriente Medio prevista para 2026." },
+        "team": { "title": "9+ profesionales", "text": "Equipo multidisciplinario de expertos" },
+        "partnerships": { "title": "Relaciones a largo plazo", "text": "Construimos partnerships duraderos" }
+      }
+    },
+    "approach": {
+      "badge": "Nuestro enfoque",
+      "title": "Experiencia humana, respaldada por tecnología",
+      "text": "En GROPPI creemos en la experiencia humana. La tecnología y la IA apoyan nuestro trabajo, pero las decisiones estratégicas y creativas siempre las toman personas.",
+      "tags": { "strategy": "Estrategia", "creativity": "Creatividad", "technology": "Tecnología" },
+      "humanExpertise": { "title": "Decisiones humanas", "text": "Profesionales experimentados toman todas las decisiones estratégicas y creativas." },
+      "aiSupport": { "title": "IA como acelerador", "text": "La tecnología inteligente acelera procesos, pero nunca reemplaza la visión humana." }
+    },
+    "growth": {
+      "subtitle": "Nuestro crecimiento",
+      "title": "De Bélgica al mundo"
+    },
     "stats": {
       "years": "Años de experiencia",
       "clients": "Clientes satisfechos",
@@ -233,26 +587,28 @@
       "team": "Profesionales"
     },
     "timeline": {
-      "2016": {
-        "title": "Fundación en Bélgica",
-        "description": "GROPPI fue fundada con una visión clara: marketing digital con un enfoque personal."
-      },
-      "2018": {
-        "title": "Expansión del equipo",
-        "description": "El equipo creció a 5 especialistas con experiencia en diversos campos."
-      },
-      "2020": {
-        "title": "Crecimiento en Bélgica",
-        "description": "Fortalecimos nuestra presencia local y construimos asociaciones duraderas con empresas belgas."
-      },
-      "2023": {
-        "title": "Expansión por Europa",
-        "description": "Escalamos nuestros proyectos por toda Europa con clientes en Países Bajos, Alemania, Francia y más."
-      },
-      "2026": {
-        "title": "Plan futuro: Expansión a Oriente Medio",
-        "description": "En 2026, planeamos expandirnos a Oriente Medio — llevando nuestro enfoque de crecimiento sistemático a nuevos mercados."
+      "2016": { "title": "Fundación en Bélgica", "description": "GROPPI fue fundada con una visión clara: marketing digital con un enfoque personal." },
+      "2018": { "title": "Expansión del equipo", "description": "El equipo creció a 5 especialistas con experiencia en diversos campos." },
+      "2020": { "title": "Crecimiento en Bélgica", "description": "Fortalecimos nuestra presencia local y construimos asociaciones duraderas." },
+      "2023": { "title": "Expansión por Europa", "description": "Escalamos nuestros proyectos por toda Europa con clientes en Países Bajos, Alemania, Francia y más." },
+      "2026": { "title": "Plan futuro: Oriente Medio", "description": "En 2026, planeamos expandirnos a Oriente Medio — llevando nuestro enfoque de crecimiento sistemático a nuevos mercados." }
+    },
+    "valuesSection": {
+      "subtitle": "Lo que representamos",
+      "title": "Nuestros valores fundamentales",
+      "items": {
+        "transparency": { "title": "Transparencia", "text": "Comunicación honesta y expectativas claras" },
+        "quality": { "title": "Calidad sobre cantidad", "text": "Elegimos profundidad, no volumen" },
+        "relationships": { "title": "Relaciones a largo plazo", "text": "Construimos partnerships que perduran" },
+        "results": { "title": "Resultados reales", "text": "Impacto medible, sin promesas vacías" },
+        "humanFirst": { "title": "Personas primero", "text": "Tecnología al servicio de las personas" }
       }
+    },
+    "cta": {
+      "title": "¿Quieres colaborar con un equipo que piensa contigo y mira hacia adelante?",
+      "text": "Descubramos juntos cómo podemos fortalecer tu presencia digital.",
+      "bookConsultation": "Agendar llamada gratuita",
+      "contactUs": "Contáctanos"
     }
   },
   "ai": {
@@ -263,25 +619,142 @@
   "services": {
     "title": "Nuestros servicios",
     "subtitle": "Lo que ofrecemos",
-    "description": "No trabajamos con paquetes fijos. Cada servicio se adapta a los objetivos del cliente y es ejecutado por un equipo especializado, respaldado por tecnología inteligente donde aporta valor.",
+    "description": "No trabajamos con paquetes fijos. Cada servicio se adapta a los objetivos del cliente.",
+    "card": {
+      "requestQuote": "Solicitar presupuesto",
+      "viewDetails": "Más info",
+      "watchHowItWorks": "Mira cómo funciona (60 seg)",
+      "buildYourPlan": "Crea tu plan",
+      "watchVideo": "Ver video",
+      "buildPlan": "Crear plan",
+      "calculatorHint": "Calcula tu precio en 60 seg"
+    },
+    "badges": {
+      "monthly": "Mensual",
+      "oneTime": "Único",
+      "custom": "A medida",
+      "mostChosen": "Más elegido"
+    },
     "monthly": "Mensual",
     "oneTime": "Único",
-    "customQuote": "Personalizado",
+    "customQuote": "A medida",
     "startingFrom": "Desde",
     "perMonth": "/ mes",
     "oneTimePayment": "pago único",
     "requestQuote": "Solicitar presupuesto",
+    "maintenanceFrom": "mantenimiento desde",
     "getQuote": "Obtener presupuesto",
     "keyInclusions": "Qué incluye",
     "videoPlaceholder": "Ver video explicativo",
     "noResults": "Ningún servicio coincide con tus criterios de filtro.",
+    "featuredBadge": "Más elegido",
+    "gridTitle": "Todos los servicios",
+    "gridSubtitle": "Mira primero el video para entender cómo funciona cada servicio, luego ve a los detalles.",
+    "goalEntry": {
+      "badge": "Empieza aquí",
+      "title": "¿Qué quieres lograr?",
+      "subtitle": "Elige tu objetivo. Te mostramos el servicio adecuado.",
+      "browseHint": "O desplázate hacia abajo para ver todos los servicios",
+      "visibility": { "title": "Más visibilidad", "description": "Construye una presencia online fuerte y consistente.", "cta": "Ver cómo funciona" },
+      "leads": { "title": "Más leads", "description": "Atrae personas listas para contactar.", "cta": "Ver servicios recomendados" },
+      "sales": { "title": "Más ventas", "description": "Convierte tráfico en facturación real.", "cta": "Construir mi configuración" }
+    },
+    "videoModal": {
+      "continueToDetails": "Continuar a detalles",
+      "comingSoon": "Video próximamente",
+      "duration": "60 seg",
+      "defaultBullets": {
+        "when": "Cuándo este servicio es adecuado para ti",
+        "problem": "Qué problema resuelve",
+        "result": "Qué resultado puedes esperar"
+      },
+      "bullets": {
+        "social_media": { "when": "Para empresas que quieren resultados consistentes sin gestionarlo todo.", "problem": "Resuelve el problema de publicaciones inconsistentes y bajo engagement.", "result": "Una comunidad creciente y comprometida que fortalece tu marca." },
+        "content_production": { "when": "Para marcas que quieren destacar visualmente con contenido profesional.", "problem": "Resuelve el problema de contenido amateur que no convierte.", "result": "Videos y fotos de alta calidad que elevan tu marca." },
+        "ads_management": { "when": "Para empresas que quieren usar su presupuesto publicitario eficazmente.", "problem": "Resuelve el problema de presupuesto desperdiciado y mal ROI.", "result": "Campañas basadas en datos que generan resultados medibles." },
+        "seo": { "when": "Para empresas que quieren ser encontradas orgánicamente.", "problem": "Resuelve el problema de invisibilidad en buscadores.", "result": "Crecimiento orgánico sostenible y más tráfico cualificado." },
+        "ecommerce_website": { "when": "Para empresas que quieren vender online con una tienda profesional.", "problem": "Resuelve el problema de oportunidades de venta perdidas online.", "result": "Una tienda optimizada que convierte visitantes en clientes." },
+        "mobile_app_development": { "when": "Para empresas que quieren lanzar su propia app móvil.", "problem": "Resuelve el problema de ausencia en las tiendas de apps.", "result": "Una app profesional para iOS y Android que alcanza clientes directamente." }
+      }
+    },
+    "simpleExplanation": {
+      "content_production": "Para empresas que necesitan contenido profesional que destaque.",
+      "one_page_website": "Ideal para un inicio online rápido y profesional.",
+      "business_website": "La base para una presencia online seria.",
+      "ecommerce_website": "Listo para vender online con una tienda completa.",
+      "ads_management": "Haz que tu presupuesto publicitario trabaje con campañas basadas en datos.",
+      "seo": "Crece orgánicamente y sé encontrado por tu público objetivo.",
+      "social_media": "Para empresas que quieren resultados consistentes sin gestionarlo todo.",
+      "reputation": "Protege y fortalece tu reputación online.",
+      "data_sync": "Mantén todos tus datos empresariales sincronizados y actualizados.",
+      "mobile_app_development": "Lanza tu propia app para iOS y Android, construida para crecer."
+    },
+    "guidedEntry": {
+      "title": "¿No sabes por dónde empezar?",
+      "subtitle": "Cuéntanos tu objetivo, te ayudamos a elegir.",
+      "ctaPrimary": "Ayúdame a elegir",
+      "ctaSecondary": "Quiero ver todo por mi cuenta"
+    },
+    "wizard": {
+      "goal": {
+        "title": "¿Cuál es tu objetivo?",
+        "subtitle": "Elige el objetivo que mejor se adapte a ti.",
+        "options": { "visibility": "Más visibilidad", "leads": "Más leads", "sales": "Más ventas" }
+      },
+      "size": {
+        "title": "¿Cuál es el tamaño de tu empresa?",
+        "subtitle": "Esto nos ayuda a recomendar el nivel adecuado.",
+        "options": { "starter": "Emprendedor", "growing": "Empresa en crecimiento", "established": "Empresa establecida" }
+      },
+      "team": {
+        "title": "¿Ya tienes un equipo de marketing?",
+        "subtitle": "Esto determina cuánto soporte necesitas.",
+        "options": { "yes": "Sí, tenemos un equipo", "no": "No, lo hacemos todo nosotros mismos" }
+      },
+      "result": {
+        "title": "Nuestra recomendación",
+        "subtitle": "Basándonos en tus respuestas, recomendamos:",
+        "recommendation": "Servicio recomendado",
+        "cta": "Ver servicio recomendado"
+      }
+    },
+    "microGuidance": {
+      "content_production": "Ideal si necesitas contenido que destaque.",
+      "one_page_website": "Perfecto para un inicio online rápido.",
+      "business_website": "La base para una presencia profesional.",
+      "ecommerce_website": "Listo para vender online.",
+      "ads_management": "Haz que tu presupuesto trabaje con campañas basadas en datos.",
+      "seo": "Crece orgánica y sosteniblemente.",
+      "social_media": "Construye una comunidad comprometida.",
+      "reputation": "Protege y fortalece tu reputación online.",
+      "data_sync": "Mantén todos tus datos sincronizados."
+    },
+    "audience": { "business": "Empresas", "individual": "Particulares", "creator": "Creadores" },
+    "packages": { "starter": "Starter", "growth": "Growth", "pro": "Pro" },
+    "calculatorHelperText": "Usa esta herramienta para obtener un precio indicativo basado en tus necesidades.",
     "modal": {
+      "viewDetails": "Ver detalles",
       "watchVideo": "Ver video",
       "close": "Cerrar",
       "videoDuration": "⏱ Duración del video: 60 segundos",
-      "cta": "Solicitar oferta personalizada",
-      "description": "El precio final depende de tus necesidades específicas y el alcance del proyecto. Contáctanos para una conversación sin compromiso y un presupuesto personalizado.",
-      "noVideo": "Video próximamente"
+      "cta": "Solicitar presupuesto personalizado",
+      "description": "El precio final depende de tus necesidades específicas y alcance del proyecto.",
+      "noVideo": "Video próximamente",
+      "whatYouGet": "Qué obtienes",
+      "pricingLogic": "Cómo funcionan los precios",
+      "explainerVideo": "Video explicativo",
+      "indicativePrice": "Precio indicativo",
+      "pricingFactors": "¿De qué depende el precio?",
+      "pricingNote": "El precio final se determina según tus necesidades específicas y alcance del proyecto.",
+      "availablePackages": "Paquetes disponibles",
+      "packagesNote": "Los paquetes se pueden adaptar según la cantidad y tipo de contenido.",
+      "videoSummary": "Descubre cómo este servicio puede transformar tu negocio.",
+      "factors": {
+        "quantity": { "title": "Cantidad de contenido", "description": "Más contenido significa un precio mayor, pero también más valor." },
+        "complexity": { "title": "Complejidad y edición", "description": "Edición de video, animaciones y efectos especiales influyen en el precio." },
+        "onsite": { "title": "Grabación en ubicación", "description": "Grabación en ubicación requiere costes adicionales." },
+        "customization": { "title": "Personalización y estrategia", "description": "Estrategias personalizadas y conceptos creativos siempre están incluidos." }
+      }
     },
     "filters": {
       "all": "Todos los servicios",
@@ -290,90 +763,104 @@
       "custom": "Proyectos personalizados"
     },
     "items": {
-      "aiContent": {
-        "title": "Contenido visual y Branding",
-        "description": "Contenido visual profesional e identidad de marca, respaldado por herramientas modernas. Desde diseño de logotipos hasta campañas visuales completas.",
-        "features": {
-          "0": "Assets visuales profesionales",
-          "1": "Diseño de identidad de marca",
-          "2": "Paquetes de contenido para redes sociales",
-          "3": "Fotografía de producto y edición"
+      "contentProduction": {
+        "title": "Contenido visual y Video",
+        "description": "Videos, fotos y contenido visual profesional para tu marca.",
+        "features": { "0": "Videos cortos (30-60 seg) para redes sociales", "1": "Videos largos para web y YouTube", "2": "Fotografía de producto profesional", "3": "Visuales y gráficos para redes sociales", "4": "Calendario de contenido de marca" },
+        "packages": {
+          "starter": { "0": "2-4 videos cortos al mes", "1": "8 publicaciones para redes sociales", "2": "Planificación de contenido básica", "3": "Enfoque en 1 plataforma" },
+          "growth": { "0": "4-8 cortos + 1-2 videos largos", "1": "16 publicaciones para redes sociales", "2": "Artículos (por número de palabras)", "3": "Optimización multiplataforma" },
+          "pro": { "0": "Producción de video ilimitada", "1": "Calendario de contenido completo", "2": "Estrategia de marca avanzada", "3": "Campañas multiplataforma" }
         }
       },
-      "webDev": {
-        "title": "Diseño y desarrollo web",
-        "description": "Sitios web personalizados y responsivos que convierten visitantes en clientes. Diseños modernos con rendimiento óptimo.",
-        "features": {
-          "0": "Diseño responsivo personalizado",
-          "1": "Estructura optimizada para SEO",
-          "2": "Tiempos de carga rápidos",
-          "3": "Sistema de gestión de contenidos"
-        }
+      "onePage": {
+        "title": "Sitio web de una página",
+        "description": "Una landing page elegante y rápida perfecta para freelancers, startups o campañas específicas.",
+        "features": { "0": "1 página larga con secciones de scroll", "1": "Diseño responsive (móvil/tablet/escritorio)", "2": "Integración de formulario de contacto", "3": "Optimización SEO básica" }
+      },
+      "businessWebsite": {
+        "title": "Sitio web empresarial",
+        "description": "Sitio web empresarial completo con múltiples páginas, CMS y todas las funcionalidades que necesitas.",
+        "features": { "0": "5-15 páginas a elegir", "1": "Sistema de gestión de contenidos (CMS)", "2": "Funcionalidad de blog", "3": "Optimización SEO avanzada", "4": "Integración de analíticas" }
       },
       "ecommerce": {
-        "title": "Soluciones e-commerce",
-        "description": "Configuración completa de tienda online con integración de pagos, gestión de inventario y optimización de conversiones.",
-        "features": {
-          "0": "Configuración completa de tienda",
-          "1": "Integración de pasarela de pago",
-          "2": "Sistema de gestión de productos",
-          "3": "Optimización de conversiones"
-        }
+        "title": "Tienda online e-commerce",
+        "description": "Tienda online completa con gestión de productos, pagos y control de inventario. Lista para vender.",
+        "features": { "0": "Productos ilimitados", "1": "Integración de pasarela de pago", "2": "Sistema de gestión de inventario", "3": "Cuentas de cliente y pedidos", "4": "Optimización de conversiones" }
       },
       "ads": {
         "title": "Gestión publicitaria",
-        "description": "Campañas publicitarias estratégicas a través de Google, Meta y otras plataformas. Optimización basada en datos para máximo ROI.",
-        "features": {
-          "0": "Gestión de Google Ads",
-          "1": "Publicidad en Meta",
-          "2": "Análisis de campañas",
-          "3": "Pruebas A/B y optimización"
-        }
+        "description": "Campañas publicitarias estratégicas a través de Google, Meta y otras plataformas.",
+        "features": { "0": "Gestión de Google Ads", "1": "Publicidad en Meta (Facebook/Instagram)", "2": "Análisis de campañas e informes", "3": "Pruebas A/B y optimización" }
       },
       "seo": {
         "title": "Optimización para motores de búsqueda",
-        "description": "Mejora tu visibilidad orgánica y posiciónate más alto en los motores de búsqueda. SEO técnico, estrategia de contenidos y link building.",
-        "features": {
-          "0": "Auditoría SEO técnica",
-          "1": "Investigación de palabras clave",
-          "2": "Optimización de contenido",
-          "3": "Estrategia de link building"
-        }
+        "description": "Mejora tu visibilidad orgánica y posiciónate más alto en buscadores.",
+        "features": { "0": "Auditoría SEO técnica", "1": "Investigación de palabras clave", "2": "Optimización de contenido", "3": "Estrategia de link building" }
       },
       "social": {
         "title": "Gestión de redes sociales",
-        "description": "Gestión completa de tu presencia en redes sociales. Creación de contenido, programación, engagement y estrategias de crecimiento.",
-        "features": {
-          "0": "Calendario y programación de contenido",
-          "1": "Gestión de comunidad",
-          "2": "Engagement y crecimiento",
-          "3": "Informes mensuales"
-        }
+        "description": "Gestión completa de tu presencia en redes sociales.",
+        "features": { "0": "Calendario y programación de contenido", "1": "Gestión de comunidad", "2": "Engagement y crecimiento", "3": "Informes mensuales" }
       },
       "reputation": {
         "title": "Gestión de reputación y reseñas",
-        "description": "Construye y protege tu reputación online. Gestión de reseñas, estrategias de respuesta y monitoreo de marca.",
-        "features": {
-          "0": "Monitoreo de reseñas",
-          "1": "Gestión de respuestas",
-          "2": "Recuperación de reputación",
-          "3": "Análisis de sentimiento de marca"
-        }
+        "description": "Construye y protege tu reputación online.",
+        "features": { "0": "Monitoreo de reseñas", "1": "Gestión de respuestas", "2": "Recuperación de reputación", "3": "Análisis de sentimiento de marca" }
       },
       "dataSync": {
         "title": "Sincronización de datos",
-        "description": "Mantén tus datos de negocio sincronizados en todas las plataformas. Gestión de inventario, precios e información de productos.",
-        "features": {
-          "0": "Sincronización multiplataforma",
-          "1": "Actualizaciones en tiempo real",
-          "2": "Gestión de inventario",
-          "3": "Integraciones API"
-        }
+        "description": "Mantén tus datos de negocio sincronizados en todas las plataformas.",
+        "features": { "0": "Sincronización multiplataforma", "1": "Actualizaciones en tiempo real", "2": "Gestión de inventario", "3": "Integraciones API" }
+      },
+      "mobileApp": {
+        "title": "Desarrollo de app móvil",
+        "description": "Lanza una app rápida para iOS y Android con sensación nativa — construida para crecer.",
+        "features": { "0": "iOS y Android (sensación nativa)", "1": "UX limpia + rendimiento rápido", "2": "Lanzamiento en App Store y Play Store", "3": "Backend e integraciones API" }
+      }
+    },
+    "ads": {
+      "tab": { "framework": "Asesoría de presupuesto" },
+      "recommendedBudget": "Presupuesto recomendado",
+      "qualification": {
+        "headline": "Comienza con tu objetivo",
+        "description": "El éxito publicitario comienza con un objetivo claro. Diferentes objetivos requieren diferentes niveles de presupuesto.",
+        "note": "Presupuestos por debajo de estos niveles pueden limitar la recopilación de datos y la precisión de resultados."
+      },
+      "goals": {
+        "leadGeneration": { "title": "Generación de leads", "description": "Datos suficientes para optimizar campañas y generar leads cualificados." },
+        "ecommerce": { "title": "Ventas e-commerce", "description": "Garantiza tráfico estable, pruebas de conversión y escalado de rendimiento." },
+        "brandAwareness": { "title": "Reconocimiento de marca", "description": "Ofrece alcance y frecuencia efectivos para visibilidad." }
+      },
+      "transparency": {
+        "headline": "Control total del presupuesto",
+        "subheadline": "Tú decides el presupuesto. Nosotros maximizamos el rendimiento.",
+        "description": "Nuestros costes de gestión cubren estrategia, configuración, optimización e informes. Los presupuestos publicitarios se pagan directamente a plataformas como Google o Meta.",
+        "shortNote": "El gasto publicitario se paga directamente a las plataformas."
+      },
+      "salesFlow": {
+        "title": "Nuestro proceso de colaboración",
+        "steps": {
+          "0": "El cliente define su objetivo publicitario",
+          "1": "GROPPI recomienda un rango de presupuesto adecuado",
+          "2": "El cliente aprueba el presupuesto",
+          "3": "Configuración y lanzamiento de campaña",
+          "4": "Recopilación de datos y optimización",
+          "5": "Informes de rendimiento y escalado"
+        },
+        "closingStatement": "Nosotros guiamos la estrategia. Tú controlas el presupuesto. Los resultados vienen de la alineación entre ambos."
+      },
+      "faq": {
+        "title": "Preguntas frecuentes sobre publicidad",
+        "budgetIncluded": { "question": "¿El presupuesto publicitario está incluido en el precio de gestión?", "answer": "No. Los costes de gestión cubren estrategia, configuración, optimización e informes. El gasto publicitario se paga directamente a las plataformas." },
+        "smallBudget": { "question": "¿Puedo hacer publicidad con un presupuesto muy pequeño?", "answer": "Sí, pero presupuestos muy bajos pueden no generar suficientes datos para resultados medibles." },
+        "whoDecides": { "question": "¿Quién decide el presupuesto publicitario?", "answer": "Nosotros recomendamos un presupuesto basado en tu objetivo y mercado. Tú apruebas el presupuesto final y mantienes el control." },
+        "lowerBudget": { "question": "¿Qué pasa si elijo un presupuesto menor al recomendado?", "answer": "Las campañas se gestionan profesionalmente, pero el rendimiento puede ser limitado por datos insuficientes." }
       }
     },
     "ai": {
       "title": "Respaldado por tecnología inteligente",
-      "description": "Aprovechamos la tecnología moderna para trabajar más eficientemente y entregar mejores resultados. La estrategia y las decisiones creativas siempre permanecen en manos de nuestro equipo experimentado.",
+      "description": "Aprovechamos la tecnología moderna para trabajar más eficientemente y entregar mejores resultados.",
       "cta": "Contactar",
       "learnMore": "Saber más"
     },
@@ -381,43 +868,315 @@
       "subtitle": "Cómo trabajamos",
       "title": "Nuestro proceso",
       "steps": {
-        "0": {
-          "title": "Introducción",
-          "description": "Comenzamos con una conversación gratuita para entender tu negocio, objetivos y desafíos."
-        },
-        "1": {
-          "title": "Propuesta personalizada",
-          "description": "Basándonos en tus necesidades, creamos una propuesta detallada con precios transparentes y cronograma."
-        },
-        "2": {
-          "title": "Ejecución y optimización",
-          "description": "Implementamos la solución y optimizamos continuamente basándonos en resultados y feedback."
-        }
+        "0": { "title": "Introducción", "description": "Comenzamos con una conversación gratuita para entender tu negocio, objetivos y desafíos." },
+        "1": { "title": "Propuesta personalizada", "description": "Basándonos en tus necesidades, creamos una propuesta detallada con precios transparentes." },
+        "2": { "title": "Ejecución y optimización", "description": "Implementamos la solución y optimizamos continuamente basándonos en resultados." }
       }
     },
     "cta": {
       "title": "¿Listo para fortalecer tu presencia digital?",
-      "description": "Contáctanos hoy para una conversación sin compromiso sobre cómo podemos ayudarte a alcanzar tus objetivos de negocio.",
+      "description": "Contáctanos hoy para una conversación sin compromiso sobre cómo podemos ayudarte.",
       "button": "Solicitar presupuesto gratuito"
     }
   },
+  "social": {
+    "whatsapp": "WhatsApp",
+    "whatsappChat": "Chat por WhatsApp",
+    "callUs": "Llámanos",
+    "emailUs": "Envíanos un email",
+    "followUs": "Síguenos en redes sociales",
+    "actions": {
+      "chat": "Iniciar conversación por WhatsApp",
+      "call": "Llamar al +32 494 31 11 19",
+      "email": "Email info@groppi.be"
+    },
+    "followInstagram": "Síguenos en Instagram",
+    "followFacebook": "Síguenos en Facebook",
+    "followTiktok": "Síguenos en TikTok",
+    "followLinkedin": "Síguenos en LinkedIn"
+  },
+  "planBuilder": {
+    "tab": "Crear plan",
+    "title": "Constructor de plan",
+    "subtitle": "Crea tu plan de redes sociales y obtén un precio indicativo al instante.",
+    "disclaimer": "Este es un precio indicativo. El precio final depende del alcance, complejidad de marca y necesidades de contenido.",
+    "vatNote": "sin IVA",
+    "adsBudgetDisclaimer": "El presupuesto publicitario se paga directamente a Meta/Google y no está incluido en el coste de gestión.",
+    "adsBudgetNote": "El presupuesto publicitario se paga directamente a Meta/Google.",
+    "pauseNote": "Puedes pausar o cancelar cuando quieras.",
+    "included": "Incluido",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "quantity": "Cantidad",
+    "viewSummary": "Ver resumen",
+    "validation": { "minChannel": "Elige al menos 1 canal." },
+    "steps": {
+      "channels": "Elige tus canales",
+      "frequency": "Frecuencia de publicación",
+      "campaigns": "Campañas pagadas",
+      "addons": "Add-ons opcionales"
+    },
+    "channels": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "googleBusiness": "Google Business",
+      "pinterest": "Pinterest",
+      "xTwitter": "X (Twitter)"
+    },
+    "frequency": {
+      "2month": "2 publicaciones al mes",
+      "1week": "1 publicación por semana",
+      "2week": "2 publicaciones por semana",
+      "3week": "3 publicaciones por semana",
+      "4week": "4 publicaciones por semana",
+      "5week": "5 publicaciones por semana"
+    },
+    "adsBudget": {
+      "none": "Sin campañas pagadas",
+      "100": "€100 / mes",
+      "250": "€250 / mes",
+      "500": "€500 / mes",
+      "1000": "€1000 / mes"
+    },
+    "addons": {
+      "productPhotos": { "label": "Fotos de producto extra", "unit": "foto" },
+      "googleReviews": { "label": "Gestión de reseñas Google" },
+      "contentWriting": { "label": "Copywriting", "unit": "hora" },
+      "emailMarketing": { "label": "Campañas de email marketing" },
+      "postsPack": { "label": "Publicaciones redes sociales (pack de 10)" },
+      "analyticsDashboard": { "label": "Dashboard de análisis avanzado" }
+    },
+    "summary": {
+      "title": "Resumen",
+      "managementFee": "Coste de gestión estimado",
+      "channels": "Canales",
+      "frequency": "Frecuencia de publicación",
+      "addons": "Add-ons",
+      "adsBudget": "Presupuesto publicitario (pago directo)",
+      "total": "Total por mes",
+      "included": "incluido"
+    },
+    "cta": {
+      "primary": "Solicitar propuesta personalizada",
+      "secondary": "Guardar plan"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "adjustLater": { "question": "¿Puedo ajustar mi plan después?", "answer": "Sí. Puedes ajustar en cualquier momento. Alineamos todo con tus objetivos y evolución." },
+      "setupCost": { "question": "¿Hay un coste de inicio?", "answer": "El inicio está incluido en el coste de gestión. Extras solo surgen con alcance adicional o configuración excepcional." },
+      "adBudgetIncluded": { "question": "¿El presupuesto publicitario está incluido?", "answer": "No. El presupuesto publicitario lo pagas directamente a Meta/Google. Nuestro coste es por gestión y optimización." }
+    }
+  },
+  "partner": {
+    "badge": "QUÉ ES ESTE PROGRAMA",
+    "seo": {
+      "title": "Ser partner de GROPPI | Red de Partners",
+      "description": "Conviértete en partner de GROPPI: un partnership basado en licencia con marca, sistema y soporte."
+    },
+    "hero": {
+      "title": "Esto NO es un empleo. Es una red de partners.",
+      "subtitle": "Para agencias y especialistas que quieren crecer bajo una marca fuerte — con acuerdos claros, entrega transparente y soporte real.",
+      "bullet1": "Sin palabrería. Sí estructura.",
+      "bullet2": "Sistema de entrega transparente.",
+      "bullet3": "Marca premium y posicionamiento.",
+      "ctaPrimary": "Agendar una presentación",
+      "ctaSecondary": "Ver cómo funciona",
+      "microcopy": "Número limitado de partners por región."
+    },
+    "marquee": {
+      "item1": "10+ años de experiencia",
+      "item2": "Bélgica y Europa",
+      "item3": "Precios transparentes",
+      "item4": "Sistemas que escalan",
+      "item5": "Entrega premium",
+      "item6": "Partners win-win"
+    },
+    "clarity": {
+      "subtitle": "Qué es este programa",
+      "title": "Esto NO es un empleo. Es una red de partners.",
+      "body": "Este programa es para agencias y especialistas que quieren crecer bajo una marca fuerte. Sin empleo. Sin reclutamiento. Sino: un partnership basado en licencia con estándares de calidad claros.",
+      "cards": {
+        "brand": { "title": "Marca y posicionamiento", "bullets": { "0": "Usa la marca GROPPI", "1": "Imagen premium desde el día uno" } },
+        "delivery": { "title": "Sistema de entrega", "bullets": { "0": "Servicios claros y lógica de precios", "1": "Herramientas y frameworks que funcionan en la práctica" } },
+        "growth": { "title": "Crecimiento y soporte", "bullets": { "0": "Acompañamiento estratégico", "1": "Escalable sin caos" } }
+      }
+    },
+    "forWho": {
+      "subtitle": "Para quién",
+      "title": "Para partners que quieren crecer",
+      "description": "Trabajamos con personas que pueden entregar calidad y quieren escalar localmente.",
+      "items": {
+        "bureauOwners": "Propietarios de agencias de marketing",
+        "growthMarketeers": "Growth marketers freelance",
+        "webStudios": "Estudios web y de desarrollo",
+        "contentTeams": "Equipos de contenido y video",
+        "adsSpecialists": "Especialistas en publicidad",
+        "seoSpecialists": "Especialistas SEO",
+        "socialAgencies": "Agencias de redes sociales"
+      },
+      "note": "La selección se basa en calidad y mentalidad."
+    },
+    "value": {
+      "subtitle": "Qué obtienes",
+      "title": "Qué obtienes como partner",
+      "cards": {
+        "credibility": { "title": "Credibilidad inmediata", "body": "Más de 10 años de experiencia traducidos en fuerte posicionamiento y lógica de servicio clara." },
+        "salesReady": { "title": "Estructura lista para vender", "body": "Servicios, precios y calculadoras que aceleran decisiones y reducen fricción." },
+        "portfolio": { "title": "Soporte de portfolio", "body": "Formatos de caso de estudio, plantillas y directrices de calidad para mantener el nivel premium." },
+        "longterm": { "title": "Colaboración a largo plazo", "body": "Proyectos, expansiones y relaciones duraderas — construidas sobre confianza y entrega." }
+      },
+      "highlight": "No compras un logo. Obtienes un sistema probado."
+    },
+    "howItWorks": {
+      "subtitle": "Cómo funciona",
+      "title": "Así funciona",
+      "steps": {
+        "step1": { "title": "Inscripción", "desc": "Deja tus datos y cuéntanos brevemente sobre tu región y equipo." },
+        "step2": { "title": "Breve llamada de orientación", "desc": "Evaluamos si hay match en calidad y expectativas (15-20 min)." },
+        "step3": { "title": "Empieza con el sistema GROPPI", "desc": "Recibes un proceso de incorporación, directrices y material inicial para entregar." }
+      }
+    },
+    "faq": {
+      "subtitle": "Preguntas",
+      "title": "FAQ",
+      "items": {
+        "isJob": { "question": "¿Es esto un empleo?", "answer": "No. Esto es un partnership, no un empleo." },
+        "bureau": { "question": "¿Necesito tener ya una agencia?", "answer": "Preferiblemente sí. Especialistas fuertes con capacidad de entrega también califican." },
+        "exclusivity": { "question": "¿Tengo exclusividad?", "answer": "Sí. Número limitado de partners por región/mercado." },
+        "leads": { "question": "¿Proporcionan leads?", "answer": "Apoyamos posicionamiento y sistemas de crecimiento. Los resultados dependen de la región y ejecución." },
+        "team": { "question": "¿Puedo trabajar con mi propio equipo?", "answer": "Sí, siempre que se sigan los estándares de calidad." },
+        "howToApply": { "question": "¿Cómo puedo ser partner?", "answer": "A través del formulario de partner. Te contactamos en 24 horas." }
+      }
+    },
+    "apply": {
+      "title": "¿Quieres ser partner de GROPPI?",
+      "subtitle": "Comprueba si tu región aún está disponible.",
+      "ctaPrimary": "Ser partner",
+      "ctaSecondary": "Agendar presentación"
+    },
+    "booking": {
+      "title": "Agenda una breve presentación",
+      "subtitle": "15-20 minutos. Evaluamos juntos si encaja y cuáles son los próximos pasos.",
+      "cta": "Agendar llamada"
+    }
+  },
+  "caseStudy": {
+    "backToPortfolio": "Volver al portfolio",
+    "challengeLabel": "Desafío",
+    "approachLabel": "Enfoque",
+    "resultsLabel": "Resultado",
+    "servicesUsed": "Servicios utilizados",
+    "ctaQuote": "Solicitar presupuesto",
+    "ctaServices": "Ver servicios y precios",
+    "prevCase": "Caso anterior",
+    "nextCase": "Siguiente caso",
+    "allCases": "Todos los casos",
+    "cases": {
+      "restaurant-branding": { "title": "Branding y Web de Restaurante", "challenge": "Baja visibilidad online y pocas reservas por canales digitales.", "approach": "Nueva identidad de marca + sitio web moderno + campaña Google Ads.", "result": "+180% reservas online" },
+      "mode-webshop": { "title": "Lanzamiento de Tienda de Moda", "challenge": "Marca nueva sin presencia online ni base de clientes.", "approach": "Tienda completa + estrategia de redes sociales + marketing de influencers.", "result": "€85K facturación en primeros 3 meses" },
+      "b2b-platform": { "title": "Plataforma de Generación de Leads B2B", "challenge": "Muy pocos leads cualificados para servicios B2B.", "approach": "Web de generación de leads + LinkedIn Ads + content marketing.", "result": "+320% leads cualificados" },
+      "bouwbedrijf-website": { "title": "Web y SEO de Constructora", "challenge": "Imposible de encontrar en Google a pesar de buena reputación offline.", "approach": "Web optimizada para SEO + SEO local + Google My Business.", "result": "#1 ranking en Google local" },
+      "influencer-campagne": { "title": "Campaña de Marketing de Influencers", "challenge": "Aumentar reconocimiento de marca en público joven.", "approach": "Selección de influencers + estrategia de contenido + amplificación en redes sociales.", "result": "2.4 millones de alcance" },
+      "tech-startup-branding": { "title": "Branding Completo de Startup Tech", "challenge": "Startup sin identidad visual ni posición de marca.", "approach": "Estrategia de marca + diseño de logo + web + pitch deck.", "result": "Identidad de marca completa lanzada" },
+      "e-commerce-groei": { "title": "Estrategia de Crecimiento E-commerce", "challenge": "Bajo ROAS y altos costos publicitarios.", "approach": "Auditoría de campañas + A/B testing + optimización de retargeting.", "result": "+240% mejora de ROAS" },
+      "content-strategie": { "title": "Estrategia de Producción de Contenido", "challenge": "Contenido inconsistente y falta de engagement.", "approach": "Calendario de contenido + producción de video + gestión de redes sociales.", "result": "50+ videos por mes" }
+    }
+  },
   "blog": {
-    "title": "Insights y consejos",
-    "subtitle": "Mantente informado",
+    "title": "Perspectivas y Estrategias",
+    "subtitle": "Consejos prácticos sobre crecimiento digital, marketing y rendimiento online.",
+    "badge": "Blog",
+    "metaTitle": "Blog - Perspectivas de Marketing Digital",
+    "metaDescription": "Consejos prácticos sobre crecimiento digital y estrategias de marketing para empresas.",
+    "featured": "Destacado",
     "readMore": "Leer más",
+    "readArticle": "Leer artículo",
+    "minRead": "min de lectura",
     "publishedOn": "Publicado el",
-    "by": "por"
+    "by": "por",
+    "backToArticles": "Volver a artículos",
+    "shareArticle": "Compartir artículo",
+    "contactUs": "Contáctenos",
+    "relatedArticles": "Artículos Relacionados",
+    "relatedServices": "Servicios relacionados",
+    "articles": {
+      "websiteSalesTool": { "title": "Por qué su sitio web es su herramienta de ventas más fuerte en 2025", "excerpt": "Su sitio web es más que un folleto digital. En 2025, es su activo de ventas más importante.", "metaTitle": "Por qué su sitio web es su herramienta de ventas más fuerte en 2025", "metaDescription": "Descubra por qué su sitio web es la herramienta de ventas más importante.", "content": "<h2>Su sitio web ya no es opcional</h2><p>En 2025, su sitio web es su herramienta de ventas más importante.</p>" },
+      "socialMediaManagement": { "title": "Gestión de redes sociales: Lo que las empresas realmente necesitan", "excerpt": "Las redes sociales no se tratan de seguidores. Se trata de estrategia y engagement real.", "metaTitle": "Gestión de redes sociales: Lo que las empresas realmente necesitan", "metaDescription": "Aprenda lo que las empresas realmente necesitan de la gestión de redes sociales.", "content": "<h2>Más allá de seguidores y likes</h2><p>Muchas empresas están obsesionadas con el número de seguidores.</p>" },
+      "seoExplained": { "title": "SEO explicado simplemente: Cómo los clientes lo encuentran en línea", "excerpt": "SEO no es magia ni manipulación. Se trata de hacer que su negocio sea fácil de encontrar.", "metaTitle": "SEO explicado simplemente", "metaDescription": "Una explicación simple de SEO para propietarios de negocios.", "content": "<h2>¿Qué es realmente el SEO?</h2><p>La optimización de motores de búsqueda suena técnica, pero el concepto es simple.</p>" },
+      "paidAdvertising": { "title": "Publicidad pagada sin desperdicio: Cómo se construyen campañas inteligentes", "excerpt": "La publicidad pagada no se trata de impulsar publicaciones. Se trata de construir sistemas.", "metaTitle": "Publicidad pagada sin desperdicio", "metaDescription": "Aprenda a construir campañas publicitarias que entreguen resultados.", "content": "<h2>El problema con la mayoría de la publicidad</h2><p>Muchas empresas prueban la publicidad pagada y ven malos resultados.</p>" },
+      "onlineReputation": { "title": "Reputación en línea: Por qué las reseñas importan más de lo que piensa", "excerpt": "Su reputación en línea influye en las decisiones de compra más que la mayoría del marketing.", "metaTitle": "Reputación en línea: Por qué las reseñas importan", "metaDescription": "Descubra por qué las reseñas en línea son cruciales para el éxito empresarial.", "content": "<h2>El factor confianza</h2><p>Antes de hacer una compra, la mayoría de las personas leen reseñas.</p>" }
+    }
   },
   "gallery": {
     "title": "Nuestro trabajo",
     "subtitle": "Portfolio",
     "description": "Descubre una selección de proyectos que hemos realizado para nuestros clientes.",
-    "filters": {
-      "all": "Todo",
-      "web": "Sitios web",
-      "branding": "Branding",
-      "social": "Redes sociales",
-      "ecommerce": "E-commerce"
+    "filters": { "all": "Todo", "web": "Sitios web", "branding": "Branding", "social": "Redes sociales", "ecommerce": "E-commerce" }
+  },
+  "portfolio": {
+    "page": {
+      "subtitle": "Nuestro trabajo",
+      "title": "Portfolio",
+      "description": "Descubre nuestros proyectos y los resultados que logramos para nuestros clientes.",
+      "resultSingle": "proyecto encontrado",
+      "resultPlural": "proyectos encontrados",
+      "noResults": "No se encontraron proyectos con estos filtros."
+    },
+    "nda": { "disclaimer": "Algunos proyectos están protegidos por acuerdos de confidencialidad (NDA) y no pueden mostrarse públicamente." },
+    "viewCase": "Ver caso",
+    "filters": { "all": "Todos", "searchPlaceholder": "Buscar por nombre de cliente...", "industryLabel": "Filtrar por sector", "serviceLabel": "Filtrar por servicio", "clearAll": "Borrar todos los filtros" },
+    "modal": { "challenge": "Desafío", "approach": "Nuestro enfoque", "results": "Resultado", "ctaPrimary": "Solicitar presupuesto", "ctaWhatsApp": "Chat por WhatsApp" },
+    "items": {
+      "castello-vicchiomaggio": { "shortResult": "Presentación digital y dirección visual para una histórica bodega toscana.", "challenge": "Castello Vicchiomaggio necesitaba una presencia digital refinada acorde al prestigio de su herencia centenaria.", "approach": { "0": "Diseño web premium enfocado en hospitalidad de lujo", "1": "Dirección de contenido visual capturando la atmósfera de la finca", "2": "Optimización de reservas mobile-first", "3": "Identidad de marca digital alineada con el patrimonio histórico", "4": "Presentación responsive multi-dispositivo" }, "results": { "0": "Presencia digital elevada reflejando el prestigio de la finca", "1": "Storytelling visual inmersivo en todos los puntos de contacto", "2": "Experiencia de reserva optimizada para huéspedes", "3": "Presentación de marca consistente en todos los dispositivos", "4": "Visibilidad y atractivo internacional mejorados" }, "disclaimer": "Visuales recreados para fines de presentación de portfolio." },
+      "cose-pazzi-torino": { "shortResult": "Web de pizzería italiana auténtica con fuertes visuales gastronómicos.", "challenge": "Pizzeria Cose Pazzi en Turín necesitaba una presencia digital que reflejara su cocina italiana auténtica.", "approach": { "0": "Estructura web y optimización", "1": "Presentación visual y jerarquía gastronómica", "2": "Mejoras de usabilidad mobile-first", "3": "Identidad de marca italiana local y storytelling" }, "results": { "0": "Branding de restaurante premium online", "1": "Fuerte visibilidad gastronómica", "2": "Recorrido del cliente claro y simple", "3": "Visibilidad online y SEO local mejorados" }, "disclaimer": "Los visuales son ilustrativos y creados para presentación." },
+      "augusto-torino": { "shortResult": "Web de restaurante elegante con fuerte identidad visual.", "challenge": "Ristorante Pizzeria Augusto necesitaba una presencia digital que reflejara su cocina italiana refinada.", "approach": { "0": "Estructura web y optimización", "1": "Jerarquía visual y diseño gastronómico", "2": "Rendimiento y usabilidad móvil", "3": "Integración de eventos y reservas" }, "results": { "0": "Branding de restaurante premium online", "1": "Recorrido claro del cliente del menú a la reserva", "2": "Fuerte storytelling visual", "3": "Visibilidad online y SEO local mejorados" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
+      "pummaro-torino": { "shortResult": "Web de restaurante moderna con fuerte presentación gastronómica.", "challenge": "Pizzeria Pummarò necesitaba una presencia digital profesional.", "approach": { "0": "Estructura web y optimización", "1": "Jerarquía visual y presentación gastronómica", "2": "Mejoras de usabilidad móvil", "3": "Integración de reservas y delivery online" }, "results": { "0": "Layout orientado a conversión con navegación clara", "1": "Fuerte branding de restaurante local online", "2": "Visibilidad gastronómica profesional", "3": "Recorrido fluido del cliente" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
+      "fratelli-roselli": { "shortResult": "Web de restaurante italiano auténtico con fuerte presentación gastronómica.", "challenge": "Pizzeria Fratelli Roselli necesitaba una presencia digital profesional.", "approach": { "0": "Estructura web y optimización", "1": "Presentación visual y diseño de contenido", "2": "Mejoras de rendimiento y usabilidad", "3": "Integración de sistema de reservas online" }, "results": { "0": "Web profesional que refleja la calidad de la marca", "1": "Fuerte visibilidad gastronómica con enfoque en ingredientes premium", "2": "Recorrido claro del cliente", "3": "Branding de restaurante local mejorado online" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
+      "boothuis-turnhout": { "shortResult": "Web de restaurante limpia y presentación visual profesional.", "challenge": "Restaurant Boothuis Turnhout necesitaba una presencia digital profesional.", "approach": { "0": "Gestión web y optimización continua", "1": "Contenido visual y presentación profesional", "2": "Construcción de presencia digital", "3": "Experiencia de marca consistente" }, "results": { "0": "Web profesional y clara", "1": "Fuerte presentación visual del restaurante", "2": "Visibilidad online mejorada", "3": "Gestión y optimización continuas" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
+      "sanremo-pizzeria": { "shortResult": "Fuerte presencia en redes sociales y contenido visual.", "challenge": "Sanremo Pizzeria carecía de una presencia digital profesional.", "approach": { "0": "Gestión de página Facebook", "1": "Creación de contenido visual profesional", "2": "Estrategia de redes sociales", "3": "Construcción de presencia digital" }, "results": { "0": "Presencia online profesional y consistente", "1": "Contenido de redes visualmente fuerte", "2": "Mejor visibilidad online", "3": "Gestión y optimización continuas" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
+      "mangiare-3840": { "shortResult": "Web de restaurante moderna con fuerte identidad visual.", "challenge": "Mangiare 3840 carecía de una presencia online profesional.", "approach": { "0": "Web personalizada con diseño premium oscuro", "1": "Contenido visual y branding acorde al restaurante", "2": "Soporte digital continuo", "3": "Menú y sistema de reservas integrados" }, "results": { "0": "Presencia online profesional", "1": "Experiencia de usuario mejorada", "2": "Fuerte identidad visual en todos los canales", "3": "Gestión continua" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
+      "kma-wandpanelen": { "shortResult": "+85% visitantes al showroom", "challenge": "KMA Wandpanelen carecía de visibilidad online.", "approach": { "0": "Fotografía de producto profesional", "1": "Estrategia de contenido social", "2": "Comparación visual: WPC vs. madera tradicional", "3": "Enfoque en USPs" }, "results": { "0": "+85% más visitantes al showroom", "1": "Fuerte interés online vía social", "2": "Más consultas de constructores de interiores", "3": "Posicionamiento claro como alternativa premium" }, "disclaimer": "Resultado indicativo." },
+      "lebanon-restaurant": { "shortResult": "+120% alcance en redes sociales", "challenge": "Restaurante libanés con presencia online limitada.", "approach": { "0": "Estrategia completa de redes sociales", "1": "Fotografía gastronómica profesional", "2": "Videos promocionales y Reels", "3": "Planificación de contenido semanal", "4": "Contenido de reseñas y testimonios" }, "results": { "0": "+120% alcance en redes sociales", "1": "Aumento de nuevos clientes vía Instagram", "2": "Mayor tasa de engagement", "3": "Mayor reconocimiento de marca en Bruselas", "4": "Más reservas vía DMs" }, "disclaimer": "Resultado indicativo." },
+      "il-fuoco-pizza": { "shortResult": "+65% reservas online", "challenge": "Pizzería con presencia online anticuada.", "approach": { "0": "Identidad visual renovada", "1": "Fotografía gastronómica profesional", "2": "Sistema de menú digital con QR", "3": "Contenido de redes sociales", "4": "Estrategia de reseñas" }, "results": { "0": "+65% más reservas online", "1": "Fuerte reconocimiento de marca", "2": "Mayor valor medio de pedido", "3": "Más visitantes recurrentes", "4": "Reseñas online mejoradas" }, "disclaimer": "Resultado indicativo." },
+      "restaurant-branding": { "shortResult": "+180% reservas", "challenge": "Restaurante premium con poca visibilidad online.", "approach": { "0": "Rebranding completo", "1": "Nueva web con sistema de reservas", "2": "Sesión fotográfica profesional", "3": "Campaña Google Ads" }, "results": { "0": "+180% reservas en 6 meses", "1": "Mayor gasto medio", "2": "Mejores reseñas online", "3": "Top 3 Google local" } },
+      "mode-webshop": { "shortResult": "85K€ en 3 meses", "challenge": "Tienda de moda online incipiente.", "approach": { "0": "Configuración Shopify", "1": "Fotografía de producto", "2": "Campañas Meta Ads con retargeting", "3": "Landing pages de conversión" }, "results": { "0": "85K€ en primeros 3 meses", "1": "ROAS de 4,2", "2": "Base de clientes estable", "3": "Expansión exitosa a Países Bajos" } },
+      "b2b-platform": { "shortResult": "+320% leads", "challenge": "SaaS B2B con bajo ratio de leads.", "approach": { "0": "Landing pages por persona", "1": "Lead magnets", "2": "Estrategia SEO long-tail", "3": "A/B testing de CTAs" }, "results": { "0": "+320% leads en 4 meses", "1": "Menor coste por lead", "2": "Embudo de ventas más corto", "3": "Mejor calidad de leads" } },
+      "bouwbedrijf-website": { "shortResult": "#1 Google local", "challenge": "Empresa familiar sin web.", "approach": { "0": "Web con portfolio", "1": "Google My Business", "2": "SEO local", "3": "Fotografía de proyectos" }, "results": { "0": "#1 Google local", "1": "45+ leads/mes", "2": "Mayor valor de proyecto", "3": "Mejor posicionamiento" } },
+      "influencer-campagne": { "shortResult": "2,4M alcance", "challenge": "Marca de belleza nueva.", "approach": { "0": "Estrategia de influencers", "1": "12 creadores belgas", "2": "Campaña UGC", "3": "Contenido de marca y sorteos" }, "results": { "0": "2,4M alcance orgánico", "1": "Alto engagement", "2": "Fuerte reconocimiento de marca", "3": "Lanzamiento exitoso" } },
+      "tech-startup-branding": { "shortResult": "Identidad de marca completa", "challenge": "Startup pre-seed sin branding.", "approach": { "0": "Identidad de marca", "1": "Diseño de logo", "2": "Pitch deck para inversores", "3": "Web para inversores" }, "results": { "0": "Ronda seed cerrada en 3 meses", "1": "Imagen profesional", "2": "Marca consistente", "3": "Base para branding escalable" } },
+      "e-commerce-groei": { "shortResult": "+240% ROAS", "challenge": "Tienda online con ROAS negativo.", "approach": { "0": "Auditoría de campañas", "1": "Nueva segmentación", "2": "A/B testing de creativos", "3": "Embudos de retargeting" }, "results": { "0": "+240% ROAS en 90 días", "1": "Publicidad rentable", "2": "Menor coste de adquisición", "3": "Estructura de campaña escalable" } },
+      "content-strategie": { "shortResult": "50+ videos/mes", "challenge": "Cadena de fitness sin capacidad interna.", "approach": { "0": "Retainer de contenido full-service", "1": "Planificación y producción", "2": "Video y foto para todas las ubicaciones", "3": "Estrategia de publicación consistente" }, "results": { "0": "50+ videos/mes", "1": "Marca consistente", "2": "Mayor engagement de miembros", "3": "Más inscripciones vía social" } },
+      "ai-learn-academy": { "shortResult": "Plataforma en vivo – en curso", "challenge": "AI Deals necesitaba una plataforma premium.", "approach": { "0": "Diseño de plataforma UX/UI premium", "1": "Sistema de gestión de acceso por suscripción", "2": "Marketplace de herramientas IA", "3": "Arquitectura de AI Academy", "4": "Infraestructura escalable", "5": "Gestión técnica continua" }, "results": { "0": "Marketplace de IA lanzado", "1": "Sistema de suscripción en vivo", "2": "UI oscura premium", "3": "AI Academy desplegada", "4": "Arquitectura escalable", "5": "Plataforma gestionada por Groppi" }, "disclaimer": "Proyecto en vivo y en curso." },
+      "pilotscareer": { "shortResult": "Plataforma de reclutamiento en aviación – en vivo", "challenge": "PilotsCareer necesitaba una plataforma profesional y escalable.", "approach": { "0": "Diseño y desarrollo completo", "1": "UI premium con estética de aviación", "2": "Sistema de búsqueda y filtrado", "3": "Gestión de perfiles", "4": "Diseño responsive", "5": "Optimización continua" }, "results": { "0": "Plataforma lanzada", "1": "Arquitectura escalable", "2": "UX intuitiva", "3": "Búsqueda avanzada", "4": "Experiencia móvil optimizada", "5": "Gestionada por Groppi" }, "disclaimer": "Proyecto en vivo y en curso." },
+      "casa-mavi": { "shortResult": "Presencia digital completa en España.", "challenge": "Casa Mavi quería una presencia digital profesional.", "approach": { "0": "Web con sistema de reservas", "1": "Menú digital y contenido visual", "2": "Presencia digital profesional", "3": "Estrategia de redes sociales" }, "results": { "0": "Web profesional con reservas", "1": "Fuerte identidad visual mediterránea", "2": "Visibilidad mejorada", "3": "Gestión continua" }, "disclaimer": "Proyecto gestionado por GROPPI." },
+      "arte-y-cocina": { "shortResult": "Identidad digital premium para fine-dining.", "challenge": "ArTe y CoCiNa quería una presencia digital que reflejara arte y gastronomía.", "approach": { "0": "Web con identidad visual lujosa", "1": "Contenido gastronómico profesional", "2": "Presencia digital fuerte", "3": "Branding visual artístico" }, "results": { "0": "Web elegante fine-dining", "1": "Identidad visual con toque artístico", "2": "Visibilidad y experiencia de marca mejoradas", "3": "Gestión continua" }, "disclaimer": "Proyecto gestionado por GROPPI." },
+      "verona-los-boliches": { "shortResult": "Presencia online para restaurante fusión.", "challenge": "Verona Los Boliches necesitaba una presencia digital profesional.", "approach": { "0": "Web con identidad visual", "1": "Contenido gastronómico profesional", "2": "Visibilidad online", "3": "Contenido visual multicultural" }, "results": { "0": "Web profesional de cocina fusión", "1": "Visibilidad mejorada", "2": "Fuerte contenido visual", "3": "Gestión continua" }, "disclaimer": "Proyecto gestionado por GROPPI." },
+      "happy-flavors": { "shortResult": "Presencia digital para cocina india.", "challenge": "Happy Flavors quería una presencia online profesional.", "approach": { "0": "Web con identidad visual cálida", "1": "Contenido gastronómico profesional", "2": "Presencia digital y visibilidad", "3": "Contenido visual de cocina india" }, "results": { "0": "Web profesional de cocina india", "1": "Fuerte contenido visual", "2": "Visibilidad mejorada", "3": "Gestión continua" }, "disclaimer": "Proyecto gestionado por GROPPI." },
+      "guest-reservations": { "shortResult": "Gestión de plataforma de reservas global.", "challenge": "Guest Reservations necesitaba gestión continua.", "approach": { "0": "Gestión de plataforma", "1": "Optimización web", "2": "Monitoreo proactivo", "3": "Soporte estratégico" }, "results": { "0": "Rendimiento mejorado", "1": "Mayor conversión", "2": "Plataforma estable", "3": "Soporte técnico continuo" }, "disclaimer": "Proyecto en curso gestionado por GROPPI." },
+      "eurostars-hotels": { "shortResult": "Soporte digital para grupo hotelero europeo.", "challenge": "Eurostars Hotels necesitaba soporte digital continuo.", "approach": { "0": "Soporte de plataforma digital", "1": "Gestión web y optimización", "2": "Optimización de rendimiento", "3": "Soporte estratégico" }, "results": { "0": "Rendimiento web optimizado", "1": "Mayor conversión", "2": "Plataforma estable", "3": "Gestión técnica continua" }, "disclaimer": "Proyecto en curso gestionado por GROPPI." },
+      "nda-project-001": { "shortResult": "+42% reservas online", "challenge": "Web anticuada con mala experiencia móvil.", "approach": { "0": "Rediseño web responsive", "1": "Sistema de reservas online", "2": "SEO local" }, "results": { "0": "+42% reservas online", "1": "Carga más rápida (< 2s)" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-002": { "shortResult": "+70% reservas de mesa", "challenge": "Bistro sin visibilidad online.", "approach": { "0": "Instagram Reels", "1": "Videografía gastronómica", "2": "Campañas de menú de temporada" }, "results": { "0": "+70% reservas vía social", "1": "Reel viral (50K+ vistas)" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-003": { "shortResult": "+55% seguidores Instagram", "challenge": "Salón de belleza sin visibilidad entre público joven.", "approach": { "0": "Estrategia de contenido Instagram", "1": "Serie antes/después", "2": "Micro-partnerships" }, "results": { "0": "+55% seguidores", "1": "Mayor tasa de reservas vía DM" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-004": { "shortResult": "+50% reservas", "challenge": "Spa sin diferenciación en mercado competitivo.", "approach": { "0": "Identidad de marca de lujo", "1": "Web para reservas", "2": "Lenguaje visual atmosférico" }, "results": { "0": "+50% reservas en 6 meses", "1": "Posicionamiento premium" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-005": { "shortResult": "+38% solicitudes", "challenge": "Empresa familiar con marca anticuada.", "approach": { "0": "Identidad de marca renovada", "1": "Fotografía profesional", "2": "Nueva web con portfolio" }, "results": { "0": "+38% solicitudes", "1": "Mayor reconocimiento de marca" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-006": { "shortResult": "+85% leads", "challenge": "Instalador solar con mala generación de leads.", "approach": { "0": "Embudos de generación de leads", "1": "Google Ads", "2": "Calculadora en la web" }, "results": { "0": "+85% leads/mes", "1": "Coste por lead reducido a la mitad" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-007": { "shortResult": "62K€ en T1", "challenge": "Nueva tienda online sin base de clientes.", "approach": { "0": "Shopify", "1": "Meta Ads", "2": "Retargeting" }, "results": { "0": "62K€ en primer trimestre", "1": "ROAS de 3,8" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-008": { "shortResult": "+130% ventas online", "challenge": "Joyero que quería vender online.", "approach": { "0": "WooCommerce", "1": "Fotografía de producto", "2": "Instagram Shopping" }, "results": { "0": "+130% ventas en 4 meses", "1": "Fuerte comunidad Instagram" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-009": { "shortResult": "#2 Google", "challenge": "Clínica médica invisible en búsquedas.", "approach": { "0": "Auditoría SEO técnica", "1": "Contenido médico", "2": "Google My Business" }, "results": { "0": "#2 Google para palabras clave principales", "1": "+60% tráfico orgánico" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-010": { "shortResult": "+35% nuevos pacientes", "challenge": "Clínica dental en región competitiva.", "approach": { "0": "SEO local", "1": "Google Ads", "2": "Gestión de reseñas" }, "results": { "0": "+35% nuevos pacientes/mes", "1": "#1 Google Maps local" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-011": { "shortResult": "Ronda seed cerrada", "challenge": "Startup que necesitaba apariencia profesional.", "approach": { "0": "Logo e identidad", "1": "Pitch deck", "2": "Landing page" }, "results": { "0": "Ronda seed exitosa", "1": "Presentación profesional" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-012": { "shortResult": "500+ registros en 30 días", "challenge": "SaaS B2B listo para lanzamiento.", "approach": { "0": "Landing page", "1": "LinkedIn Ads", "2": "Content marketing" }, "results": { "0": "500+ registros en primer mes", "1": "Fuertes señales de product-market fit" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-013": { "shortResult": "+75% leads cualificados", "challenge": "Inmobiliaria sin leads online.", "approach": { "0": "Campañas de generación de leads", "1": "Landing pages por proyecto", "2": "Integración CRM" }, "results": { "0": "+75% leads cualificados", "1": "Menor coste por lead" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-014": { "shortResult": "Precio de venta superior", "challenge": "Inmueble premium sin presentación visual.", "approach": { "0": "Web inmobiliaria de alta gama", "1": "Fotografía con dron", "2": "Tours virtuales" }, "results": { "0": "Precio de venta superior", "1": "Ciclo de venta más rápido" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-015": { "shortResult": "+32% solicitudes de proyecto", "challenge": "Diseñador de interiores sin portfolio profesional.", "approach": { "0": "Web portfolio", "1": "Fotografía profesional", "2": "Estrategia de blog" }, "results": { "0": "+32% solicitudes", "1": "Mayor valor de proyecto" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-016": { "shortResult": "+55% visitas showroom", "challenge": "Tienda de cocinas con visitantes en descenso.", "approach": { "0": "Google Ads local", "1": "Contenido inspiracional", "2": "Tour virtual showroom" }, "results": { "0": "+55% visitas showroom", "1": "Mayor conversión" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-017": { "shortResult": "40+ videos/mes", "challenge": "Estudio fitness sin capacidad interna.", "approach": { "0": "Retainer de contenido", "1": "Producción de video", "2": "Planificación redes sociales" }, "results": { "0": "40+ videos/mes", "1": "Mayor engagement" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-018": { "shortResult": "+45% miembros", "challenge": "Nuevo box CrossFit.", "approach": { "0": "Identidad de marca", "1": "Contenido de comunidad", "2": "Campaña de lanzamiento" }, "results": { "0": "+45% miembros en T1", "1": "Comunidad fuerte" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-019": { "shortResult": "+28% visitas showroom", "challenge": "Concesionario perdiendo cuota de mercado.", "approach": { "0": "Web con inventario", "1": "Google Ads", "2": "Remarketing" }, "results": { "0": "+28% visitas showroom", "1": "Menores costes" }, "disclaimer": "Resultado indicativo." },
+      "nda-project-020": { "shortResult": "+45% contactos", "challenge": "Bufete de abogados con web anticuada.", "approach": { "0": "Rediseño web", "1": "Content marketing", "2": "SEO local" }, "results": { "0": "+45% contactos", "1": "Top 5 Google local" }, "disclaimer": "Resultado indicativo." }
     }
   },
   "contact": {
@@ -441,7 +1200,10 @@
     "error": "Algo salió mal. Por favor, inténtalo de nuevo o llámanos.",
     "address": "Dirección",
     "phoneLabel": "Teléfono",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "landline": "Fijo",
+    "mobile": "Móvil",
+    "rateLimited": "Demasiadas solicitudes. Por favor, inténtalo más tarde."
   },
   "franchise": {
     "title": "Franquicia",
@@ -449,21 +1211,11 @@
     "description": "¿Estás interesado en asociarte con GROPPI? Descubre las oportunidades de crecer juntos.",
     "benefits": {
       "title": "Beneficios de la franquicia",
-      "items": {
-        "0": "Acceso a procesos y metodologías probadas",
-        "1": "Apoyo de nuestro equipo experimentado",
-        "2": "Esfuerzos de marketing conjuntos",
-        "3": "Intercambio de conocimientos y formación"
-      }
+      "items": { "0": "Acceso a procesos y metodologías probadas", "1": "Apoyo de nuestro equipo experimentado", "2": "Esfuerzos de marketing conjuntos", "3": "Intercambio de conocimientos y formación" }
     },
     "requirements": {
       "title": "Lo que buscamos",
-      "items": {
-        "0": "Experiencia en marketing digital o campo relacionado",
-        "1": "Mentalidad emprendedora y de crecimiento",
-        "2": "Compromiso con la calidad y satisfacción del cliente",
-        "3": "Disposición para colaboración a largo plazo"
-      }
+      "items": { "0": "Experiencia en marketing digital o campo relacionado", "1": "Mentalidad emprendedora y de crecimiento", "2": "Compromiso con la calidad y satisfacción del cliente", "3": "Disposición para colaboración a largo plazo" }
     },
     "cta": "Contáctanos para más información",
     "apply": "Aplicar ahora",
@@ -477,6 +1229,7 @@
     "followUs": "Síguenos",
     "quickLinks": "Enlaces rápidos",
     "contact": "Información de contacto",
+    "planCall": "Agendar llamada (30 min)",
     "newsletter": {
       "title": "Newsletter",
       "description": "Mantente al día con nuestros últimos insights y consejos.",
@@ -488,26 +1241,6 @@
       "errorTitle": "Error de suscripción",
       "errorMessage": "Algo salió mal. Por favor, inténtalo más tarde."
     }
-  },
-  "common": {
-    "loading": "Cargando...",
-    "error": "Ha ocurrido un error",
-    "retry": "Reintentar",
-    "back": "Atrás",
-    "next": "Siguiente",
-    "previous": "Anterior",
-    "close": "Cerrar",
-    "search": "Buscar",
-    "noResults": "No se encontraron resultados",
-    "learnMore": "Saber más",
-    "getStarted": "Empezar",
-    "viewAll": "Ver todo"
-  },
-  "validation": {
-    "required": "Este campo es obligatorio",
-    "email": "Por favor, introduce un correo electrónico válido",
-    "minLength": "Mínimo {{count}} caracteres requeridos",
-    "maxLength": "Máximo {{count}} caracteres permitidos"
   },
   "stats": {
     "years": "Años de experiencia",
@@ -534,6 +1267,275 @@
     "loginButton": "Iniciar sesión"
   },
   "servicePage": {
+    "defaultDescription": "{{service}} — Servicio profesional de GROPPI Marketing Bureau.",
+    "cta": {
+      "requestQuote": "Solicitar presupuesto",
+      "whatsapp": "Chat por WhatsApp",
+      "planCall": "Agendar llamada"
+    },
+    "trustNote": "Precios transparentes. Sin costos ocultos.",
+    "videoPlaceholder": "Video próximamente",
+    "whatsapp": { "template": "¡Hola! Me gustaría más información sobre {{service}}. ¿Pueden ayudarme?" },
+    "deliverables": { "label": "Qué obtienes", "title": "¿Qué incluye?" },
+    "process": { "label": "Cómo funciona", "title": "Nuestro proceso" },
+    "calculator": {
+      "label": "Calculadora de precios",
+      "title": "Calcula tu precio en 60 seg",
+      "businessTypeLabel": "Tipo de empresa",
+      "goalLabel": "Tu objetivo",
+      "packageLabel": "Paquete",
+      "adBudgetLabel": "Presupuesto publicitario",
+      "addonsLabel": "Opciones adicionales",
+      "selectPlaceholder": "Seleccionar...",
+      "month": "mes",
+      "monthlyFee": "Tarifa mensual estimada",
+      "setupFee": "Tarifa de configuración",
+      "oneTime": "único",
+      "firstMonthTotal": "Total primer mes",
+      "disclaimer": "Precio indicativo. Presupuesto definitivo tras breve intake.",
+      "sendCalculation": "Envíame este cálculo",
+      "sendWhatsapp": "Enviar por WhatsApp",
+      "noAddons": "Sin opciones adicionales",
+      "businessTypes": {
+        "restaurant": "Restaurante / hostelería",
+        "retail": "Retail y tiendas locales",
+        "construction": "Construcción y renovación",
+        "beauty": "Belleza y bienestar",
+        "ecommerce": "E-commerce",
+        "other": "Otro"
+      },
+      "goals": { "visibility": "Más visibilidad", "leads": "Más leads", "sales": "Más ventas" },
+      "packages": { "starter": "Starter", "growth": "Growth", "pro": "Pro" },
+      "addons": {
+        "extraContent4": "Contenido extra (4 posts/mes)",
+        "extraContent12": "Contenido extra (12 posts/mes)",
+        "extraVideo2": "Video ads extra (2/mes)",
+        "extraVideo6": "Video ads extra (6/mes)",
+        "extraLandingPage": "Landing page extra",
+        "extraTracking": "Configuración de tracking extra"
+      },
+      "whatsappTemplate": "¡Hola! Mi cálculo para {{service}}:\n\n• Tipo de empresa: {{businessType}}\n• Objetivo: {{goal}}\n• Paquete: {{package}}\n• Presupuesto publicitario: {{adBudget}}\n• Opciones extra: {{addons}}\n\n💰 Precio estimado: {{monthlyRange}} / mes\n📋 Configuración: {{setup}}\n\n¿Pueden enviarme un presupuesto personalizado?"
+    },
+    "faq": {
+      "label": "Preguntas frecuentes",
+      "title": "FAQ",
+      "q1": "¿Es un contrato mensual?",
+      "a1": "Sí, pagas mensualmente. No se requiere contrato anual.",
+      "q2": "¿Puedo cancelar cuando quiera?",
+      "a2": "Sí, con 30 días de preaviso. Sin cláusulas ocultas.",
+      "q3": "¿Trabajan con precios fijos?",
+      "a3": "Trabajamos con rangos de precios. Tras la intake recibes un presupuesto exacto.",
+      "q4": "¿Qué pasa si no tengo contenido?",
+      "a4": "No hay problema. Producimos contenido para ti o guiamos a tu equipo.",
+      "q5": "¿Qué tan rápido veo resultados?",
+      "a5": "Primeros resultados en 2-4 semanas. Crecimiento significativo en 2-3 meses.",
+      "q6": "¿Qué pasa si tengo un presupuesto pequeño?",
+      "a6": "Tenemos paquetes Starter para presupuestos pequeños. Pide asesoramiento."
+    },
+    "finalCTA": {
+      "title": "¿Listo para atraer más clientes?",
+      "subtitle": "Sin promesas vagas. Entregamos un plan concreto con pasos claros.",
+      "primaryCTA": "Solicitar propuesta",
+      "secondaryCTA": "Enviar mensaje por WhatsApp"
+    },
+    "socialMedia": {
+      "title": "Gestión de Redes Sociales",
+      "subtitle": "Contenido consistente que hace crecer tu marca en cada plataforma.",
+      "benefits": { "1": "Contenido profesional en todos tus canales", "2": "Más engagement y alcance", "3": "Ahorro de tiempo para tu equipo" },
+      "deliverables": {
+        "1": { "title": "Estrategia y planificación", "desc": "Calendario de contenido adaptado a tus objetivos." },
+        "2": { "title": "Creación de contenido", "desc": "Posts, stories y reels que conectan." },
+        "3": { "title": "Gestión de comunidad", "desc": "Respuesta activa a comentarios y DMs." },
+        "4": { "title": "Gestión publicitaria", "desc": "Anuncios dirigidos para máximo alcance." },
+        "5": { "title": "Informes mensuales", "desc": "Cifras y insights claros." },
+        "6": { "title": "Soporte dedicado", "desc": "Siempre disponible para preguntas." }
+      },
+      "process": {
+        "1": { "title": "Análisis", "desc": "Analizamos tu presencia actual y competencia." },
+        "2": { "title": "Ejecución", "desc": "Creamos y publicamos contenido según planificación." },
+        "3": { "title": "Crecimiento y optimización", "desc": "Mejora continua basada en datos." }
+      }
+    },
+    "adsManagement": {
+      "title": "Gestión Publicitaria",
+      "subtitle": "Anuncios dirigidos que generan leads y ventas.",
+      "benefits": { "1": "Mayor ROI en gasto publicitario", "2": "Campañas dirigidas para tu público", "3": "Informes transparentes cada mes" },
+      "deliverables": {
+        "1": { "title": "Estrategia de campaña", "desc": "Enfoque por plataforma orientado a objetivos." },
+        "2": { "title": "Creación de anuncios", "desc": "Visuales y copy que convierten." },
+        "3": { "title": "A/B testing", "desc": "Pruebas continuas para mejores resultados." },
+        "4": { "title": "Optimización de presupuesto", "desc": "Máximo resultado de tu presupuesto." },
+        "5": { "title": "Tracking de conversiones", "desc": "Visibilidad completa de tu ROI." },
+        "6": { "title": "Actualizaciones semanales", "desc": "Siempre sabes qué está pasando." }
+      },
+      "process": {
+        "1": { "title": "Análisis", "desc": "Investigamos tu mercado y competencia." },
+        "2": { "title": "Ejecución", "desc": "Lanzamos y gestionamos tus campañas." },
+        "3": { "title": "Crecimiento y optimización", "desc": "Mejora continua para más conversiones." }
+      }
+    },
+    "contentProduction": {
+      "title": "Producción de Contenido",
+      "subtitle": "Videos y visuales que dan vida a tu marca.",
+      "benefits": { "1": "Videos y fotos profesionales", "2": "Contenido adaptado a cada plataforma", "3": "Entrega rápida y revisiones" },
+      "deliverables": {
+        "1": { "title": "Concepto y planificación", "desc": "Ideas creativas alineadas con tu marca." },
+        "2": { "title": "Producción de video", "desc": "Del guión al montaje final." },
+        "3": { "title": "Fotografía", "desc": "Fotos de producto y estilo de vida." },
+        "4": { "title": "Edición y postproducción", "desc": "Acabado profesional." },
+        "5": { "title": "Optimización por plataforma", "desc": "Formatos para cada canal." },
+        "6": { "title": "Biblioteca de contenido", "desc": "Todos los assets organizados." }
+      },
+      "process": {
+        "1": { "title": "Análisis", "desc": "Determinamos qué necesita tu marca." },
+        "2": { "title": "Ejecución", "desc": "Producción en ubicación o en estudio." },
+        "3": { "title": "Crecimiento y optimización", "desc": "Procesamos feedback y mejoramos." }
+      }
+    },
+    "seo": {
+      "title": "SEO",
+      "subtitle": "Más arriba en Google para más tráfico orgánico.",
+      "benefits": { "1": "Mejor visibilidad en buscadores", "2": "Más tráfico cualificado a tu sitio", "3": "Crecimiento a largo plazo sin costes publicitarios" },
+      "deliverables": {
+        "1": { "title": "Auditoría técnica", "desc": "Revisamos velocidad, estructura e indexación." },
+        "2": { "title": "Investigación de palabras clave", "desc": "Las palabras clave correctas para tu mercado." },
+        "3": { "title": "Optimización on-page", "desc": "Títulos, metas y contenido mejorados." },
+        "4": { "title": "Estrategia de contenido", "desc": "Artículos y páginas enfocados en SEO." },
+        "5": { "title": "Link building", "desc": "Backlinks de calidad para autoridad." },
+        "6": { "title": "Informes mensuales", "desc": "Rankings y cifras de tráfico." }
+      },
+      "process": {
+        "1": { "title": "Análisis", "desc": "Auditoría técnica y de contenido de tu sitio." },
+        "2": { "title": "Ejecución", "desc": "Implementación de optimizaciones y contenido." },
+        "3": { "title": "Crecimiento y optimización", "desc": "Mejora continua de rankings." }
+      }
+    },
+    "businessWebsite": {
+      "title": "Sitio Web Empresarial",
+      "subtitle": "Un sitio web profesional que convence a los clientes.",
+      "benefits": { "1": "Diseño moderno que genera confianza", "2": "Optimizado para conversiones", "3": "Mobile-friendly y rápido" },
+      "deliverables": {
+        "1": { "title": "Diseño y UX", "desc": "Diseño personalizado acorde a tu marca." },
+        "2": { "title": "Desarrollo", "desc": "Técnicamente sólido y escalable." },
+        "3": { "title": "Integración de contenido", "desc": "Textos y visuales procesados profesionalmente." },
+        "4": { "title": "SEO base", "desc": "SEO técnico incluido." },
+        "5": { "title": "Formación CMS", "desc": "Aprende a gestionar el contenido tú mismo." },
+        "6": { "title": "Opción de mantenimiento", "desc": "Actualizaciones y soporte mensuales." }
+      },
+      "process": {
+        "1": { "title": "Análisis", "desc": "Discutimos tus deseos y objetivos." },
+        "2": { "title": "Ejecución", "desc": "Diseño, desarrollo y lanzamiento." },
+        "3": { "title": "Crecimiento y optimización", "desc": "Actualizaciones y mejoras tras el lanzamiento." }
+      }
+    },
+    "onePageWebsite": {
+      "title": "Sitio Web de Una Página",
+      "subtitle": "Una landing page potente para impacto rápido.",
+      "benefits": { "1": "Online rápidamente con tu mensaje", "2": "Perfecto para lanzamiento o campañas", "3": "Asequible y efectivo" },
+      "deliverables": {
+        "1": { "title": "Diseño", "desc": "Diseño atractivo y on-brand." },
+        "2": { "title": "Desarrollo", "desc": "Página rápida y responsive." },
+        "3": { "title": "Integración de formulario", "desc": "Funcionalidad de captura de leads." },
+        "4": { "title": "Optimizado para móvil", "desc": "Perfecto en cualquier dispositivo." },
+        "5": { "title": "Configuración de analytics", "desc": "Tracking desde el día uno." },
+        "6": { "title": "Entrega rápida", "desc": "En vivo en 1-2 semanas." }
+      },
+      "process": {
+        "1": { "title": "Análisis", "desc": "Briefing y definición de objetivos." },
+        "2": { "title": "Ejecución", "desc": "Diseño y desarrollo en un sprint." },
+        "3": { "title": "Crecimiento y optimización", "desc": "A/B testing y mejoras." }
+      }
+    },
+    "ecommerceWebsite": {
+      "title": "Sitio Web E-commerce",
+      "subtitle": "Una tienda online que vende mientras duermes.",
+      "benefits": { "1": "Experiencia de compra fácil de usar", "2": "Pagos seguros integrados", "3": "Escalable para crecer" },
+      "deliverables": {
+        "1": { "title": "Diseño de tienda", "desc": "Páginas de producto orientadas a conversión." },
+        "2": { "title": "Desarrollo", "desc": "Plataforma e-commerce robusta." },
+        "3": { "title": "Integración de pagos", "desc": "Todos los métodos de pago comunes." },
+        "4": { "title": "Gestión de inventario", "desc": "Gestión de productos fácil." },
+        "5": { "title": "Herramientas de marketing", "desc": "Códigos de descuento, upsells, etc." },
+        "6": { "title": "Formación y soporte", "desc": "Aprende a gestionarlo tú mismo." }
+      },
+      "process": {
+        "1": { "title": "Análisis", "desc": "Discutimos catálogo de productos y objetivos." },
+        "2": { "title": "Ejecución", "desc": "Diseño, desarrollo y carga de productos." },
+        "3": { "title": "Crecimiento y optimización", "desc": "Optimización de conversiones tras el lanzamiento." }
+      }
+    },
+    "branding": {
+      "title": "Branding",
+      "subtitle": "Una identidad visual que perdura.",
+      "benefits": { "1": "Reconocible y profesional", "2": "Consistencia en todos los canales", "3": "Diferenciación de la competencia" },
+      "deliverables": {
+        "1": { "title": "Diseño de logo", "desc": "Logo único con variaciones." },
+        "2": { "title": "Paleta de colores", "desc": "Elecciones de color estratégicas." },
+        "3": { "title": "Tipografía", "desc": "Tipografías que encajan con tu marca." },
+        "4": { "title": "Brand guidelines", "desc": "Manual para uso consistente." },
+        "5": { "title": "Plantillas", "desc": "Plantillas para redes sociales e impresión." },
+        "6": { "title": "Brand assets", "desc": "Todos los archivos en alta calidad." }
+      },
+      "process": {
+        "1": { "title": "Análisis", "desc": "Conocemos tu marca y público objetivo." },
+        "2": { "title": "Ejecución", "desc": "Conceptos, feedback y finalización." },
+        "3": { "title": "Crecimiento y optimización", "desc": "Evolución donde sea necesario." }
+      }
+    },
+    "mobileAppDevelopment": {
+      "title": "Desarrollo de App Móvil",
+      "subtitle": "Construye una app premium — mantenla segura y actualizada cada mes.",
+      "benefits": { "1": "iOS y Android (sensación nativa)", "2": "UX limpia + rendimiento rápido", "3": "Tracking y materiales de App Store listos para lanzamiento" },
+      "deliverables": {
+        "1": { "title": "Estrategia y planificación de funciones", "desc": "Juntos definimos qué debe hacer tu app." },
+        "2": { "title": "Diseño UI/UX", "desc": "Diseño intuitivo que los usuarios comprenden." },
+        "3": { "title": "Desarrollo (iOS/Android)", "desc": "Desarrollo cross-platform o nativo." },
+        "4": { "title": "Backend e integraciones", "desc": "Pagos, APIs, conexiones CRM." },
+        "5": { "title": "QA testing y optimización", "desc": "Pruebas exhaustivas en todos los dispositivos." },
+        "6": { "title": "Lanzamiento App Store / Google Play", "desc": "Acompañamiento completo en la publicación." }
+      },
+      "process": {
+        "1": { "title": "Análisis", "desc": "Discutimos funciones, público objetivo y requisitos técnicos." },
+        "2": { "title": "Ejecución", "desc": "Diseño, desarrollo y pruebas en sprints." },
+        "3": { "title": "Lanzamiento y mantenimiento", "desc": "Publicación + mantenimiento mensual opcional." }
+      }
+    },
+    "reputation": {
+      "title": "Gestión de Reputación y Reseñas",
+      "subtitle": "Protege y fortalece tu reputación online con gestión proactiva de reseñas.",
+      "benefits": { "1": "Monitorea todas las reseñas en un solo lugar", "2": "Estrategias de respuesta profesional", "3": "Construye confianza y credibilidad online" },
+      "deliverables": {
+        "1": { "title": "Monitoreo de reseñas", "desc": "Seguimiento en Google, Facebook, Yelp y más." },
+        "2": { "title": "Gestión de respuestas", "desc": "Respuestas profesionales a reseñas positivas y negativas." },
+        "3": { "title": "Estrategia de reputación", "desc": "Plan proactivo para mejorar tu imagen online." },
+        "4": { "title": "Generación de reseñas", "desc": "Anima a clientes satisfechos a dejar reseñas." },
+        "5": { "title": "Monitoreo de marca", "desc": "Seguimiento de menciones de tu marca online." },
+        "6": { "title": "Informes mensuales", "desc": "Resumen de puntuación de reputación y tendencias." }
+      },
+      "process": {
+        "1": { "title": "Análisis", "desc": "Auditamos tu reputación online actual." },
+        "2": { "title": "Ejecución", "desc": "Gestión activa y respuesta a todas las reseñas." },
+        "3": { "title": "Crecimiento y optimización", "desc": "Mejora continua de tu puntuación de reputación." }
+      }
+    },
+    "dataSync": {
+      "title": "Sincronización de Datos",
+      "subtitle": "Mantén todos tus datos empresariales sincronizados y actualizados en todas las plataformas.",
+      "benefits": { "1": "Elimina errores de entrada manual", "2": "Sincronización en tiempo real entre sistemas", "3": "Ahorra horas de trabajo administrativo" },
+      "deliverables": {
+        "1": { "title": "Auditoría de sistemas", "desc": "Mapeamos todas tus fuentes de datos y plataformas." },
+        "2": { "title": "Configuración de integraciones", "desc": "Conectamos tu CRM, POS, web y más." },
+        "3": { "title": "Workflows automatizados", "desc": "Los datos fluyen automáticamente entre sistemas." },
+        "4": { "title": "Gestión de errores", "desc": "Resolución inteligente de conflictos y notificaciones." },
+        "5": { "title": "Dashboard y monitoreo", "desc": "Vista en tiempo real del estado de sincronización." },
+        "6": { "title": "Soporte continuo", "desc": "Mantenimiento y actualizaciones a medida que crecen tus sistemas." }
+      },
+      "process": {
+        "1": { "title": "Análisis", "desc": "Mapeamos tu panorama de datos actual y puntos de dolor." },
+        "2": { "title": "Ejecución", "desc": "Construimos y probamos todas las integraciones." },
+        "3": { "title": "Crecimiento y optimización", "desc": "Monitoreamos, optimizamos y ampliamos conexiones." }
+      }
+    },
     "contentCalculator": {
       "label": "Calculadora de contenido",
       "title": "Calcula tu precio en 60 seg.",
@@ -541,10 +1543,9 @@
       "step1": "Elige tu tipo de pago",
       "step2": "Selecciona tus contenidos",
       "oneTime": "Proyecto único",
-      "oneTimeDesc": "Paga por artículo. Descuento posible.",
+      "oneTimeDesc": "Paga por artículo.",
       "monthly": "Suscripción mensual",
-      "monthlyDesc": "Tarifa mensual fija. Sin descuento.",
-      "noDiscountMonthly": "El descuento de lanzamiento del 20% no aplica a suscripciones mensuales.",
+      "monthlyDesc": "Tarifa mensual fija.",
       "posters": "Pósters",
       "reels": "Reels",
       "videos": "Videos",
@@ -557,272 +1558,93 @@
         "clientFootage": "Material del cliente (nosotros editamos)",
         "onSite": "Grabamos en sitio"
       },
-      "vatNote": "Todos los precios excl. IVA. El IVA se añadirá en la factura.",
-      "quoteCode": "Tu número de presupuesto"
+      "vatNote": "Todos los precios sin IVA. El IVA se añadirá en la factura.",
+      "quoteCode": "Tu número de presupuesto",
+      "noDiscountMonthly": "El descuento de lanzamiento del 20% no aplica a suscripciones mensuales."
     },
     "pricingFAQ": {
       "label": "Preguntas frecuentes",
-      "title": "FAQ de precios",
+      "title": "FAQ de precios y proceso",
       "questions": {
-        "discount": {
-          "q": "¿El descuento aplica a suscripciones mensuales?",
-          "a": "No. El descuento de lanzamiento del 20% solo aplica a proyectos puntuales como pósters, reels, videos y artículos. Los servicios mensuales están excluidos."
-        },
-        "validity": {
-          "q": "¿Cuánto tiempo es válido el descuento?",
-          "a": "10 días desde tu primera visita. Después, el descuento expira automáticamente."
-        },
-        "reelPrice": {
-          "q": "¿Cómo funciona el precio de los Reels?",
-          "a": "Tienes 3 opciones: generado por IA (€150), editamos tu material (€200) o grabamos en tu ubicación (€250). El precio depende del trabajo requerido."
-        },
-        "videoLength": {
-          "q": "¿Cuánto dura un video/reel?",
-          "a": "El estándar es 1 minuto por video. Para videos más largos, solicitamos un presupuesto personalizado."
-        },
-        "articleLength": {
-          "q": "¿Qué longitud tiene un artículo?",
-          "a": "El estándar es 600 palabras. El precio es fijo: €99 por artículo. Para artículos más largos o más cortos, podemos acordar un precio personalizado."
-        },
-        "payment": {
-          "q": "¿Puedo pagar online?",
-          "a": "No, no aceptamos pagos online en el sitio. Después de tu cálculo, envíanos tu código por WhatsApp o agenda una llamada. Confirmaremos en 24 horas con un presupuesto final."
-        }
+        "fixedOrFlexible": { "q": "¿Sus precios son fijos o flexibles?", "a": "Algunos servicios tienen precios fijos (ej. pósters, artículos). Otros trabajan con precios 'desde', según el alcance. Siempre recibes un presupuesto exacto tras la intake." },
+        "startingFrom": { "q": "¿Qué significa 'Desde'?", "a": "Es el precio mínimo inicial para ese servicio. El precio definitivo depende de tus deseos y alcance específicos." },
+        "monthlyOrOneTime": { "q": "¿Los precios son mensuales o únicos?", "a": "Depende del servicio. Webs y producción de contenido son únicos. SEO, gestión publicitaria y gestión de redes sociales son servicios mensuales." },
+        "vatIncluded": { "q": "¿El IVA está incluido?", "a": "No. Todos los precios en nuestra web son sin IVA (21%). El IVA se indica por separado en la factura." },
+        "discounts": { "q": "¿Ofrecen descuentos?", "a": "No, no ofrecemos descuentos públicos ni códigos promocionales. Nuestros precios son transparentes y justos desde el principio." },
+        "calculator": { "q": "¿Cómo funciona la calculadora de precios?", "a": "La calculadora da una estimación indicativa basada en tus elecciones. No es un presupuesto definitivo." },
+        "invoice": { "q": "¿Cuándo recibo una factura?", "a": "Recibes una factura tras la aprobación del presupuesto. Para servicios mensuales recibes una factura mensual." },
+        "priceChange": { "q": "¿Puede cambiar el precio después de empezar?", "a": "No. El precio presupuestado es definitivo. Solo con ampliación de alcance se elabora un nuevo presupuesto." },
+        "reelPrice": { "q": "¿Cómo funciona el precio de los Reels?", "a": "Tienes 3 opciones: IA (€150), editamos tu material (€200), o grabamos en tu ubicación (€250)." },
+        "payment": { "q": "¿Puedo pagar online?", "a": "No, no aceptamos pagos online en el sitio. Tras tu cálculo, envíalo por WhatsApp o agenda una llamada." }
       }
-    }
-  },
-  "calculator": {
-    "title": "Calcula tu precio en 60 seg.",
-    "paymentTypeTitle": "Elige tu tipo de pago",
-    "payment": {
-      "oneTime": "Proyecto único",
-      "oneTimeDesc": "Paga por artículo. Descuento posible.",
-      "monthly": "Suscripción mensual",
-      "monthlyDesc": "Tarifa mensual fija. Sin descuento."
     },
-    "discountBadge": "20% descuento de lanzamiento",
-    "discountNote": "El descuento solo aplica a tarifas únicas, no a suscripciones mensuales.",
-    "vatNote": "Todos los precios excl. IVA",
-    "estimatedMonthlyFee": "Tarifa mensual estimada",
-    "setupFee": "Tarifa de configuración",
-    "totalFirstMonth": "Total primer mes",
-    "subtotal": "Subtotal",
-    "total": "Total",
-    "basePrice": "Precio base",
-    "addons": "Add-ons",
-    "configurePackage": "Configura tu paquete",
-    "extraOptions": "Opciones adicionales",
-    "cta": {
-      "whatsapp": "Reclama tu código por WhatsApp",
-      "claimWhatsApp": "Reclama tu código por WhatsApp",
-      "planCall": "Agendar llamada",
-      "planCallHelper": "Elige un horario que te convenga. Llamada de intro gratis (30 min)."
+    "generalFAQ": {
+      "label": "Preguntas frecuentes",
+      "title": "Preguntas generales",
+      "questions": {
+        "whoFor": { "q": "¿Para quién son sus servicios?", "a": "Nuestros servicios son para autónomos, PYMES y empresas en crecimiento que quieren atraer más clientes online." },
+        "smallOrLarge": { "q": "¿Trabajan con empresas pequeñas o solo grandes?", "a": "Ambos. Tenemos paquetes para presupuestos pequeños (Starter) y soluciones extensas para empresas mayores." },
+        "onlyBelgium": { "q": "¿Trabajan solo en Bélgica?", "a": "Nuestra sede está en Bélgica y atendemos clientes en toda Europa. En 2026 planeamos expansión a Oriente Medio." },
+        "howToStart": { "q": "¿Cómo empezamos una colaboración?", "a": "Envíanos un mensaje, escríbenos por WhatsApp o agenda una llamada gratuita." },
+        "howLongResults": { "q": "¿Cuánto tiempo hasta ver resultados?", "a": "Depende del servicio. Publicidad da resultados en días. SEO necesita 3-6 meses. Webs se entregan en 2-6 semanas." },
+        "longTermContracts": { "q": "¿Ofrecen contratos a largo plazo?", "a": "No. Los servicios mensuales son cancelables mes a mes con 30 días de preaviso." },
+        "combineServices": { "q": "¿Puedo combinar varios servicios?", "a": "Por supuesto. Muchos clientes combinan web con SEO y gestión de redes sociales." }
+      }
     },
-    "step1": "Elige tu tipo de pago",
-    "step2": "Selecciona tus contenidos",
-    "noDiscountMonthly": "El descuento de lanzamiento del 20% no aplica a suscripciones mensuales.",
-    "noDiscountMonthlyTitle": "Sin descuento disponible",
-    "referenceCode": "Código de referencia",
-    "launchDiscount": "descuento de lanzamiento",
-    "offerEndsIn": "La oferta termina en",
-    "discountExpired": "Descuento expirado",
-    "expiredMessage": "Sin problema — envíanos tu cálculo por WhatsApp o agenda una llamada para una oferta personalizada."
-  },
-  "pricing": {
-    "from": "Desde",
-    "customQuote": "Presupuesto personalizado",
-    "perMonth": "/ mes",
-    "oneTime": "único",
-    "vatExcluded": "excl. IVA",
-    "vatExcludedNote": "Todos los precios excl. IVA. El IVA se añadirá en la factura."
-  },
-  "blog": {
-    "title": "Perspectivas y Estrategias",
-    "subtitle": "Consejos prácticos sobre crecimiento digital, marketing y rendimiento en línea.",
-    "badge": "Blog",
-    "metaTitle": "Blog - Perspectivas de Marketing Digital",
-    "metaDescription": "Consejos prácticos sobre crecimiento digital y estrategias de marketing para empresas.",
-    "featured": "Destacado",
-    "readArticle": "Leer artículo",
-    "minRead": "min de lectura",
-    "backToArticles": "Volver a artículos",
-    "shareArticle": "Compartir artículo",
-    "contactUs": "Contáctenos",
-    "relatedArticles": "Artículos Relacionados",
-    "articles": {
-      "websiteSalesTool": { "title": "Por qué su sitio web es su herramienta de ventas más fuerte en 2025", "excerpt": "Su sitio web es más que un folleto digital. En 2025, es su activo de ventas más importante.", "metaTitle": "Por qué su sitio web es su herramienta de ventas más fuerte en 2025", "metaDescription": "Descubra por qué su sitio web es la herramienta de ventas más importante.", "content": "<h2>Su sitio web ya no es opcional</h2><p>En 2025, su sitio web es su herramienta de ventas más importante.</p>" },
-      "socialMediaManagement": { "title": "Gestión de redes sociales: Lo que las empresas realmente necesitan", "excerpt": "Las redes sociales no se tratan de seguidores. Se trata de estrategia y engagement real.", "metaTitle": "Gestión de redes sociales: Lo que las empresas realmente necesitan", "metaDescription": "Aprenda lo que las empresas realmente necesitan de la gestión de redes sociales.", "content": "<h2>Más allá de seguidores y likes</h2><p>Muchas empresas están obsesionadas con el número de seguidores.</p>" },
-      "seoExplained": { "title": "SEO explicado simplemente: Cómo los clientes lo encuentran en línea", "excerpt": "SEO no es magia ni manipulación. Se trata de hacer que su negocio sea fácil de encontrar.", "metaTitle": "SEO explicado simplemente", "metaDescription": "Una explicación simple de SEO para propietarios de negocios.", "content": "<h2>¿Qué es realmente el SEO?</h2><p>La optimización de motores de búsqueda suena técnica, pero el concepto es simple.</p>" },
-      "paidAdvertising": { "title": "Publicidad pagada sin desperdicio: Cómo se construyen campañas inteligentes", "excerpt": "La publicidad pagada no se trata de impulsar publicaciones. Se trata de construir sistemas.", "metaTitle": "Publicidad pagada sin desperdicio", "metaDescription": "Aprenda a construir campañas publicitarias que entreguen resultados.", "content": "<h2>El problema con la mayoría de la publicidad</h2><p>Muchas empresas prueban la publicidad pagada y ven malos resultados.</p>" },
-      "onlineReputation": { "title": "Reputación en línea: Por qué las reseñas importan más de lo que piensa", "excerpt": "Su reputación en línea influye en las decisiones de compra más que la mayoría del marketing.", "metaTitle": "Reputación en línea: Por qué las reseñas importan", "metaDescription": "Descubra por qué las reseñas en línea son cruciales para el éxito empresarial.", "content": "<h2>El factor confianza</h2><p>Antes de hacer una compra, la mayoría de las personas leen reseñas.</p>" }
-    }
-  },
-  "portfolio": {
-    "nda": {
-      "disclaimer": "Algunos proyectos están protegidos por acuerdos de confidencialidad (NDA) y no pueden mostrarse públicamente."
-    },
-    "viewCase": "Ver caso",
-    "filters": { "all": "Todos", "searchPlaceholder": "Buscar por nombre de cliente...", "industryLabel": "Filtrar por sector", "serviceLabel": "Filtrar por servicio", "clearAll": "Borrar todos los filtros" },
-    "modal": { "challenge": "Desafío", "approach": "Nuestro enfoque", "results": "Resultado", "ctaPrimary": "Solicitar presupuesto", "ctaWhatsApp": "Chat vía WhatsApp" },
-    "items": {
-      "castello-vicchiomaggio": {
-        "shortResult": "Presentación digital y dirección visual para una histórica bodega toscana.",
-        "challenge": "Castello Vicchiomaggio, una histórica bodega y establecimiento de hospitalidad en la región de Chianti en la Toscana, necesitaba una presencia digital refinada acorde al prestigio de su herencia centenaria para atraer huéspedes internacionales.",
-        "approach": { "0": "Diseño web premium enfocado en hospitalidad de lujo", "1": "Dirección de contenido visual capturando la atmósfera de la finca", "2": "Optimización de experiencia de reserva mobile-first", "3": "Identidad de marca digital alineada con el patrimonio histórico", "4": "Presentación responsive multi-dispositivo" },
-        "results": { "0": "Presencia digital elevada reflejando el prestigio de la finca", "1": "Storytelling visual inmersivo en todos los puntos de contacto", "2": "Experiencia de reserva optimizada para huéspedes", "3": "Presentación de marca consistente en todos los dispositivos", "4": "Visibilidad y atractivo internacional mejorados" },
-        "disclaimer": "Visuales recreados para fines de presentación de portfolio."
-      },
-      "cose-pazzi-torino": { "shortResult": "Web de pizzería italiana auténtica con fuertes visuales gastronómicos y carácter de marca local.", "challenge": "Pizzeria Cose Pazzi en Turín necesitaba una presencia digital cuidada que reflejara su cocina italiana auténtica y el carácter vibrante de su barrio.", "approach": { "0": "Estructura web & optimización", "1": "Presentación visual & jerarquía gastronómica", "2": "Mejoras de usabilidad mobile-first", "3": "Identidad de marca italiana local y storytelling" }, "results": { "0": "Branding de restaurante premium online", "1": "Fuerte visibilidad gastronómica y atractivo apetitoso", "2": "Recorrido del cliente claro y simple", "3": "Visibilidad online y SEO local mejorados" }, "disclaimer": "Los visuales son ilustrativos y creados para fines de presentación." },
-      "augusto-torino": { "shortResult": "Web de restaurante elegante con fuerte identidad visual y presentación gastronómica refinada.", "challenge": "Ristorante Pizzeria Augusto en Turín necesitaba una presencia digital cuidada que reflejara su refinada cocina italiana y su atmósfera acogedora.", "approach": { "0": "Estructura web & optimización", "1": "Jerarquía visual & diseño gastronómico", "2": "Rendimiento y usabilidad móvil", "3": "Integración de eventos y reservas" }, "results": { "0": "Branding de restaurante premium online", "1": "Recorrido claro del cliente del menú a la reserva", "2": "Fuerte storytelling visual en todas las páginas", "3": "Visibilidad online y SEO local mejorados" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
-      "pummaro-torino": { "shortResult": "Web de restaurante moderna con fuerte presentación gastronómica y flujo de cliente claro.", "challenge": "Pizzeria Pummarò en Turín necesitaba una presencia digital profesional que reflejara su compromiso con la cocina italiana auténtica usando ingredientes premium de pequeños productores italianos.", "approach": { "0": "Estructura web & optimización", "1": "Jerarquía visual & presentación gastronómica", "2": "Mejoras de usabilidad móvil", "3": "Integración de reservas online y delivery" }, "results": { "0": "Layout orientado a conversión con navegación clara", "1": "Fuerte branding de restaurante local online", "2": "Visibilidad gastronómica profesional y storytelling de ingredientes", "3": "Recorrido fluido del cliente del menú a la reserva" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
-      "fratelli-roselli": { "shortResult": "Web de restaurante italiano auténtico con fuerte presentación gastronómica y branding local.", "challenge": "Pizzeria Fratelli Roselli en Turín tenía una clientela local fiel desde hacía más de 20 años, pero necesitaba una presencia digital profesional para mostrar su compromiso con ingredientes de calidad y la elaboración auténtica de pizzas.", "approach": { "0": "Estructura web & optimización", "1": "Presentación visual & diseño de contenido", "2": "Mejoras de rendimiento & usabilidad", "3": "Integración de sistema de reservas online" }, "results": { "0": "Web profesional y clara que refleja la calidad de la marca", "1": "Fuerte visibilidad gastronómica con enfoque en ingredientes premium", "2": "Recorrido claro del cliente del menú a la reserva", "3": "Branding de restaurante local mejorado online" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
-      "boothuis-turnhout": { "shortResult": "Web de restaurante limpia y presentación visual para un negocio de hostelería local.", "challenge": "Restaurant Boothuis Turnhout necesitaba una presencia digital profesional que reflejara la atmósfera y calidad del restaurante online.", "approach": { "0": "Gestión web y optimización continua", "1": "Contenido visual y presentación profesional", "2": "Construcción y mantenimiento de presencia digital", "3": "Experiencia de marca consistente en todos los canales online" }, "results": { "0": "Web profesional y clara", "1": "Fuerte presentación visual del restaurante", "2": "Visibilidad online mejorada", "3": "Gestión y optimización continuas" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
-      "sanremo-pizzeria": { "shortResult": "Fuerte presencia en redes sociales y contenido visual para un restaurante local.", "challenge": "Sanremo Pizzeria Restaurant tenía una clientela local fiel, pero carecía de una presencia digital profesional para atraer nuevos clientes y transmitir la atmósfera del restaurante online.", "approach": { "0": "Gestión y optimización de página Facebook", "1": "Creación de contenido visual profesional", "2": "Estrategia de redes sociales y publicación consistente", "3": "Construcción y mantenimiento de presencia digital" }, "results": { "0": "Presencia online profesional y consistente", "1": "Contenido de redes sociales visualmente fuerte", "2": "Mejor visibilidad y encontrabilidad online", "3": "Gestión y optimización continuas" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
-      "mangiare-3840": { "shortResult": "Web de restaurante moderna con fuerte identidad visual.", "challenge": "Mangiare 3840 tenía una sólida reputación local pero carecía de una presencia online profesional que reflejara la atmósfera y calidad del restaurante.", "approach": { "0": "Web totalmente personalizada con diseño premium oscuro", "1": "Contenido visual y branding acorde a la atmósfera del restaurante", "2": "Soporte digital continuo y optimización", "3": "Menú y sistema de reservas integrados" }, "results": { "0": "Presencia online profesional que refuerza la experiencia de marca", "1": "Experiencia de usuario mejorada para visitantes", "2": "Fuerte identidad visual en todos los canales digitales", "3": "Gestión y optimización continuas" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
-      "kma-wandpanelen": { "shortResult": "+85% visitantes al showroom", "challenge": "KMA Wandpanelen en Amberes tenía una línea de productos premium de alternativas a madera y mármol, pero carecía de visibilidad online. Las fortalezas (resistente a la humedad, a los arañazos, fácil mantenimiento) no se comunicaban claramente.", "approach": { "0": "Fotografía de producto profesional de todas las variantes", "1": "Estrategia de contenido social para Instagram y Facebook", "2": "Comparación visual: WPC vs. madera tradicional", "3": "Enfoque en USPs: fácil mantenimiento y duradero" }, "results": { "0": "+85% más visitantes al showroom", "1": "Fuerte interés en producto online vía social", "2": "Más consultas específicas de constructores de interiores", "3": "Posicionamiento claro como alternativa premium" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "lebanon-restaurant": { "shortResult": "+120% alcance en redes sociales", "challenge": "Restaurante libanés en Bruselas con platos auténticos, pero presencia online limitada. La atmósfera cálida y la cocina tradicional no se mostraban en redes sociales.", "approach": { "0": "Estrategia completa de redes sociales para Instagram y Facebook", "1": "Fotografía gastronómica profesional y estilismo", "2": "Vídeos promocionales cortos y Reels para engagement", "3": "Planificación de contenido semanal con publicación consistente", "4": "Contenido de reseñas y testimonios para prueba social" }, "results": { "0": "+120% alcance en redes sociales", "1": "Aumento notable de nuevos clientes vía Instagram", "2": "Mayor tasa de engagement en publicaciones", "3": "Mayor reconocimiento de marca en la región de Bruselas", "4": "Más reservas de mesa vía DMs" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "il-fuoco-pizza": { "shortResult": "+65% reservas online", "challenge": "Pizzería italiana auténtica con enfoque artesanal, pero presencia online anticuada. La atmósfera hogareña y la calidad de la pizza no se reflejaban en su imagen digital.", "approach": { "0": "Identidad visual completa renovada", "1": "Fotografía gastronómica y de ambiente profesional", "2": "Sistema de menú digital con integración QR", "3": "Contenido de redes sociales para Instagram & Facebook", "4": "Estrategia de reseñas y testimonios" }, "results": { "0": "+65% más reservas online", "1": "Fuerte reconocimiento de marca en la región", "2": "Mayor valor medio de pedido", "3": "Más visitantes recurrentes gracias al contenido de fidelización", "4": "Reseñas y valoraciones online mejoradas" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "restaurant-branding": { "shortResult": "+180% reservas", "challenge": "Restaurante premium con poca visibilidad online. El branding anticuado no coincidía con la oferta exclusiva y no se alcanzaba al público objetivo.", "approach": { "0": "Rebranding completo con look and feel de lujo", "1": "Nueva web con sistema de reservas", "2": "Sesión fotográfica profesional de interior y platos", "3": "Campaña Google Ads dirigida a búsquedas locales" }, "results": { "0": "+180% reservas en 6 meses", "1": "Mayor gasto medio por mesa", "2": "Mejores reseñas y valoraciones online", "3": "Top 3 Google para términos de búsqueda locales" } },
-      "mode-webshop": { "shortResult": "85K€ facturación en 3 meses", "challenge": "Tienda de moda online incipiente sin presencia digital. Presupuesto de marketing limitado pero gran ambición de crecer rápidamente en el mercado belga.", "approach": { "0": "Configuración de tienda Shopify", "1": "Fotografía de producto profesional", "2": "Campañas Meta Ads con retargeting", "3": "Landing pages orientadas a conversión" }, "results": { "0": "85K€ facturación en los primeros 3 meses", "1": "ROAS de 4,2 en publicidad", "2": "Base de clientes recurrentes estable", "3": "Expansión exitosa a los Países Bajos" } },
-      "b2b-platform": { "shortResult": "+320% leads", "challenge": "SaaS B2B complejo con embudo de ventas largo. Demasiados pocos leads cualificados y la web convertía mal. El posicionamiento competitivo era más fuerte.", "approach": { "0": "Landing pages optimizadas por persona", "1": "Lead magnets (whitepapers, casos de estudio)", "2": "Estrategia SEO para palabras clave long-tail", "3": "A/B testing de formularios y CTAs" }, "results": { "0": "+320% leads cualificados en 4 meses", "1": "Menor coste por lead", "2": "Duración del embudo de ventas reducida", "3": "Mejor calidad de leads (ratio SQL)" } },
-      "bouwbedrijf-website": { "shortResult": "#1 Google local", "challenge": "Empresa familiar de construcción que vivía puramente del boca a boca. Sin web, sin presencia online. La generación joven quería modernizar.", "approach": { "0": "Web profesional con portfolio de proyectos", "1": "Optimización Google My Business", "2": "Estrategia SEO local", "3": "Fotografía de proyectos y casos de estudio" }, "results": { "0": "#1 en Google para búsquedas locales", "1": "45+ leads al mes vía web", "2": "Mayor valor medio de proyecto", "3": "Mejor posicionamiento vs. competidores" } },
-      "influencer-campagne": { "shortResult": "2,4M de alcance", "challenge": "Nueva marca de belleza sin reconocimiento. Público objetivo 18-35 difícil de alcanzar vía canales tradicionales.", "approach": { "0": "Estrategia de partnership con influencers", "1": "12 creadores belgas activados", "2": "Campaña UGC en Instagram y TikTok", "3": "Contenido de marca y sorteos" }, "results": { "0": "2,4 millones de alcance orgánico en 2 meses", "1": "Alto engagement en contenido UGC", "2": "Fuerte reconocimiento de marca en el público objetivo", "3": "Lanzamiento de producto exitoso" } },
-      "tech-startup-branding": { "shortResult": "Identidad de marca completa", "challenge": "Startup pre-seed que necesitaba un aspecto profesional para reuniones con inversores. El branding DIY actual no era convincente.", "approach": { "0": "Desarrollo completo de identidad de marca", "1": "Diseño de logo y lenguaje visual", "2": "Diseño de pitch deck para inversores", "3": "Web lista para inversores" }, "results": { "0": "Ronda seed exitosa cerrada en 3 meses", "1": "Imagen profesional ante inversores", "2": "Imagen de marca consistente en todos los puntos de contacto", "3": "Base sentada para branding escalable" } },
-      "e-commerce-groei": { "shortResult": "+240% ROAS", "challenge": "Tienda online de interiorismo existente operando a pérdida en publicidad. ROAS por debajo de 1,0 sin estrategia clara. El presupuesto se desperdiciaba.", "approach": { "0": "Auditoría completa de campañas existentes", "1": "Nueva segmentación de audiencia", "2": "A/B testing de creativos", "3": "Embudos de retargeting configurados" }, "results": { "0": "+240% mejora de ROAS en 90 días", "1": "Gasto publicitario rentable", "2": "Menor coste por adquisición", "3": "Estructura de campaña escalable" } },
-      "content-strategie": { "shortResult": "50+ vídeos/mes", "challenge": "Cadena de fitness que quería producir contenido consistente pero sin tiempo ni experiencia interna. Las redes sociales estaban descuidadas.", "approach": { "0": "Retainer de contenido full-service configurado", "1": "Planificación, producción y publicación", "2": "Contenido de vídeo y foto para todas las ubicaciones", "3": "Estrategia de publicación consistente" }, "results": { "0": "50+ vídeos de calidad al mes", "1": "Experiencia de marca consistente en todos los canales", "2": "Mayor engagement de los miembros", "3": "Más inscripciones vía redes sociales" } },
-      "ai-learn-academy": { "shortResult": "Plataforma en vivo – en curso", "challenge": "AI Deals necesitaba una plataforma premium que simplificara el acceso a herramientas IA líderes mediante un modelo de suscripción, combinada con una academia educativa para creadores y profesionales.", "approach": { "0": "Diseño completo de plataforma & desarrollo UX/UI con tema oscuro premium", "1": "Sistema de gestión de acceso por suscripción", "2": "Estructura de marketplace de herramientas IA con categorización", "3": "Arquitectura de AI Academy & contenido educativo", "4": "Infraestructura de plataforma escalable para crecimiento", "5": "Gestión técnica continua y optimización" }, "results": { "0": "Marketplace personalizado de herramientas IA lanzado", "1": "Sistema de suscripción y gestión de acceso en vivo", "2": "UI oscura premium con UX orientada a conversión", "3": "Estructura educativa AI Academy desplegada", "4": "Arquitectura escalable que soporta crecimiento continuo", "5": "Plataforma gestionada activamente & optimizada por Groppi" }, "disclaimer": "Proyecto en vivo y en curso. Diseño & gestión de plataforma por Groppi." },
-      "pilotscareer": { "shortResult": "Plataforma internacional de reclutamiento en aviación – en vivo", "challenge": "PilotsCareer necesitaba una plataforma de reclutamiento profesional y escalable que conectara pilotos de aerolíneas con oportunidades de carrera globales.", "approach": { "0": "Diseño y desarrollo completo de plataforma desde cero", "1": "UI oscura premium con estética inspirada en la aviación", "2": "Sistema avanzado de búsqueda y filtrado de ofertas", "3": "Gestión de perfiles de pilotos y solicitudes", "4": "Diseño responsive para escritorio y móvil", "5": "Optimización continua de plataforma y desarrollo de funcionalidades" }, "results": { "0": "Plataforma profesional de reclutamiento en aviación lanzada", "1": "Arquitectura escalable que soporta crecimiento internacional", "2": "UX limpia e intuitiva para pilotos y reclutadores", "3": "Capacidades avanzadas de búsqueda y filtrado", "4": "Experiencia de perfil de piloto optimizada para móvil", "5": "Plataforma gestionada activamente & desarrollada por Groppi" }, "disclaimer": "Proyecto en vivo y en curso. Diseño & gestión de plataforma por Groppi." },
-      "casa-mavi": { "shortResult": "Presencia digital completa para una joya mediterránea en España.", "challenge": "Casa Mavi, un restaurante italo-napolitano en Fuengirola (España), quería construir una presencia digital profesional para atraer tanto a huéspedes locales como a turistas de la Costa del Sol.", "approach": { "0": "Web a medida con sistema de reservas online", "1": "Menú digital y creación de contenido visual", "2": "Construcción de presencia digital profesional", "3": "Estrategia de redes sociales dirigida a audiencias locales y turísticas" }, "results": { "0": "Web profesional con sistema de reservas integrado", "1": "Fuerte identidad visual reflejando la atmósfera mediterránea", "2": "Visibilidad online mejorada para turistas y locales", "3": "Gestión digital continua y optimización" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
-      "arte-y-cocina": { "shortResult": "Identidad digital premium para una experiencia de fine-dining artística.", "challenge": "ArTe y CoCiNa, un restaurante de fine-dining artístico en España, quería una presencia digital que reflejara la fusión única de arte y gastronomía y atrajera a un público internacional.", "approach": { "0": "Web a medida con identidad visual lujosa", "1": "Creación de contenido gastronómico e interior profesional", "2": "Construcción de una fuerte presencia digital", "3": "Branding visual combinando arte y excelencia culinaria" }, "results": { "0": "Web elegante que refleja la experiencia fine-dining online", "1": "Fuerte identidad visual con toque artístico", "2": "Visibilidad online y experiencia de marca mejoradas", "3": "Gestión digital continua y optimización" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
-      "verona-los-boliches": { "shortResult": "Presencia online completa para un vibrante restaurante fusión.", "challenge": "Verona Los Boliches, un restaurante de fusión italiano-indio-mexicano único en España, necesitaba una presencia digital profesional que reflejara la cocina multicultural y la atmósfera vibrante de la Costa del Sol.", "approach": { "0": "Web a medida con identidad visual", "1": "Creación de contenido gastronómico y de ambiente profesional", "2": "Construcción de presencia y visibilidad online", "3": "Contenido visual dirigido a diversos estilos culinarios" }, "results": { "0": "Web profesional que presenta fuertemente la cocina fusión", "1": "Visibilidad online mejorada para turistas y locales", "2": "Fuerte contenido visual en todos los canales digitales", "3": "Gestión digital continua y optimización" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
-      "happy-flavors": { "shortResult": "Presencia digital profesional para cocina india auténtica en España.", "challenge": "Happy Flavors Indian Restaurant quería construir una presencia online profesional que reflejara la cocina india auténtica y la hospitalidad cálida, atrayendo tanto a huéspedes locales como a turistas.", "approach": { "0": "Web a medida con identidad visual cálida", "1": "Creación de contenido gastronómico y de ambiente profesional", "2": "Construcción de presencia digital y visibilidad", "3": "Contenido visual mostrando la rica cocina india" }, "results": { "0": "Web profesional presentando cocina india auténtica", "1": "Fuerte contenido visual en todos los canales digitales", "2": "Visibilidad online mejorada para turistas y locales", "3": "Gestión digital continua y optimización" }, "disclaimer": "Proyecto gestionado activamente por GROPPI." },
-      "guest-reservations": { "shortResult": "Gestión continua de plataforma para un servicio de reservas hoteleras global.", "challenge": "Guest Reservations, una plataforma internacional de reservas de hotel y viajes, necesitaba gestión continua de plataforma, optimización web y soporte técnico para sostener su crecimiento mundial.", "approach": { "0": "Gestión continua de plataforma y soporte técnico", "1": "Optimización web para mejor rendimiento y conversión", "2": "Monitoreo y mantenimiento proactivo de la plataforma de reservas", "3": "Soporte estratégico para crecimiento escalable" }, "results": { "0": "Rendimiento de plataforma y experiencia de usuario mejorados", "1": "Mayor tasa de conversión en la plataforma de reservas", "2": "Plataforma estable y fiable para usuarios globales", "3": "Soporte técnico continuo y optimización" }, "disclaimer": "Proyecto en curso gestionado activamente por GROPPI." },
-      "eurostars-hotels": { "shortResult": "Soporte de plataforma digital & optimización de rendimiento para un grupo hotelero europeo.", "challenge": "Eurostars Hotels, un grupo hotelero europeo con una plataforma de reservas extensa, necesitaba soporte digital continuo, gestión web y optimización de rendimiento para fortalecer su presencia online.", "approach": { "0": "Soporte continuo de plataforma digital y gestión técnica", "1": "Gestión web y optimización de plataforma de reservas", "2": "Optimización de rendimiento para tiempos de carga más rápidos y mejor conversión", "3": "Soporte estratégico para crecimiento europeo" }, "results": { "0": "Rendimiento web y experiencia de usuario optimizados", "1": "Tasa de conversión mejorada en la plataforma de reservas", "2": "Plataforma digital estable y fiable para huéspedes europeos", "3": "Gestión técnica continua y optimización proactiva" }, "disclaimer": "Proyecto en curso gestionado activamente por GROPPI." },
-      "nda-project-001": { "shortResult": "+42% reservas online", "challenge": "Web anticuada con mala experiencia móvil que llevaba a reservas perdidas.", "approach": { "0": "Rediseño web responsive", "1": "Sistema de reservas online", "2": "Optimización SEO local" }, "results": { "0": "+42% reservas online", "1": "Tiempo de carga más rápido (< 2s)" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-002": { "shortResult": "+70% reservas de mesa", "challenge": "Bistro céntrico sin visibilidad online entre turistas y locales.", "approach": { "0": "Estrategia Instagram Reels", "1": "Videografía gastronómica", "2": "Campañas de menú de temporada" }, "results": { "0": "+70% reservas de mesa vía social", "1": "Reel viral (50K+ vistas)" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-003": { "shortResult": "+55% seguidores Instagram", "challenge": "Salón de belleza sin visibilidad online entre público joven.", "approach": { "0": "Estrategia de contenido Instagram", "1": "Serie visual antes/después", "2": "Micro-partnerships con influencers" }, "results": { "0": "+55% seguidores Instagram", "1": "Mayor tasa de reservas vía DM" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-004": { "shortResult": "+50% reservas", "challenge": "Nuevo spa sin diferenciación en un mercado wellness competitivo.", "approach": { "0": "Desarrollo de identidad de marca de lujo", "1": "Web optimizada para reservas", "2": "Lenguaje visual atmosférico" }, "results": { "0": "+50% reservas en los primeros 6 meses", "1": "Posicionamiento premium logrado" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-005": { "shortResult": "+38% solicitudes de presupuesto", "challenge": "Empresa familiar con fuerte reputación pero identidad de marca anticuada.", "approach": { "0": "Identidad de marca completamente renovada", "1": "Fotografía de proyectos profesional", "2": "Nueva web con portfolio" }, "results": { "0": "+38% solicitudes de presupuesto", "1": "Mayor reconocimiento de marca" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-006": { "shortResult": "+85% leads", "challenge": "Instalador de paneles solares en mercado creciente con mala generación de leads.", "approach": { "0": "Embudos de generación de leads", "1": "Campañas Google Ads", "2": "Herramienta calculadora en la web" }, "results": { "0": "+85% leads al mes", "1": "Coste por lead reducido a la mitad" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-007": { "shortResult": "62K€ facturación en T1", "challenge": "Nueva tienda online sin base de clientes ni reconocimiento de marca.", "approach": { "0": "Configuración de tienda Shopify", "1": "Campañas Meta Ads", "2": "Embudos de retargeting" }, "results": { "0": "62K€ facturación en el primer trimestre", "1": "ROAS de 3,8" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-008": { "shortResult": "+130% ventas online", "challenge": "Joyero que quería iniciar ventas online junto a la tienda física.", "approach": { "0": "Configuración de tienda WooCommerce", "1": "Fotografía de producto", "2": "Integración Instagram Shopping" }, "results": { "0": "+130% ventas online en 4 meses", "1": "Fuerte comunidad Instagram" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-009": { "shortResult": "#2 posición Google", "challenge": "Clínica médica invisible en resultados de búsqueda pese a fuerte reputación.", "approach": { "0": "Auditoría SEO técnica y correcciones", "1": "Estrategia de contenido médico", "2": "Optimización Google My Business" }, "results": { "0": "#2 posición Google para palabras clave principales", "1": "+60% tráfico orgánico" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-010": { "shortResult": "+35% nuevos pacientes", "challenge": "Clínica dental en región competitiva con números de nuevos pacientes en descenso.", "approach": { "0": "Estrategia SEO local", "1": "Campañas Google Ads", "2": "Gestión de reseñas" }, "results": { "0": "+35% nuevos pacientes al mes", "1": "#1 Google Maps local" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-011": { "shortResult": "Ronda seed cerrada", "challenge": "Startup pre-seed que necesitaba apariencia profesional para inversores.", "approach": { "0": "Logo e identidad visual", "1": "Diseño de pitch deck", "2": "Desarrollo de landing page" }, "results": { "0": "Ronda seed exitosa", "1": "Presentación profesional para inversores" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-012": { "shortResult": "500+ registros en 30 días", "challenge": "Producto SaaS B2B listo para lanzamiento pero sin infraestructura de marketing.", "approach": { "0": "Landing page de alta conversión", "1": "Campaña LinkedIn Ads", "2": "Estrategia de content marketing" }, "results": { "0": "500+ registros en el primer mes", "1": "Fuertes señales de product-market fit" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-013": { "shortResult": "+75% leads cualificados", "challenge": "Inmobiliaria dependiente de canales tradicionales, sin leads online.", "approach": { "0": "Campañas de generación de leads", "1": "Landing pages por proyecto", "2": "Integración CRM" }, "results": { "0": "+75% leads cualificados", "1": "Menor coste por lead" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-014": { "shortResult": "Precio de venta superior logrado", "challenge": "Inmueble premium sin presentación visual que irradiara lujo.", "approach": { "0": "Web inmobiliaria de alta gama", "1": "Fotografía con dron e interiorismo", "2": "Integración de tours virtuales" }, "results": { "0": "Precio de venta superior logrado", "1": "Ciclo de venta más rápido" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-015": { "shortResult": "+32% solicitudes de proyecto", "challenge": "Diseñador de interiores que mostraba trabajo vía redes sociales pero sin portfolio profesional.", "approach": { "0": "Web portfolio con galería", "1": "Fotografía de proyectos profesional", "2": "Estrategia de blog" }, "results": { "0": "+32% solicitudes de proyecto", "1": "Mayor valor medio de proyecto" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-016": { "shortResult": "+55% visitas al showroom", "challenge": "Tienda de cocinas con visitantes en descenso pese a oferta premium.", "approach": { "0": "Google Ads con enfoque local", "1": "Contenido de inspiración en social", "2": "Tour virtual del showroom" }, "results": { "0": "+55% visitas al showroom", "1": "Mayor conversión de visita a venta" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-017": { "shortResult": "40+ vídeos/mes", "challenge": "Estudio de fitness que quería contenido consistente pero sin capacidad interna.", "approach": { "0": "Retainer de contenido full-service", "1": "Producción de vídeo en ubicación", "2": "Planificación de redes sociales" }, "results": { "0": "40+ vídeos de calidad al mes", "1": "Mayor engagement de miembros" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-018": { "shortResult": "+45% miembros", "challenge": "Nuevo box de CrossFit que necesitaba diferenciarse de competidores establecidos.", "approach": { "0": "Identidad de marca poderosa", "1": "Contenido orientado a comunidad", "2": "Campaña de lanzamiento" }, "results": { "0": "+45% miembros en el primer trimestre", "1": "Comunidad fuerte construida" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-019": { "shortResult": "+28% visitas al showroom", "challenge": "Concesionario de coches perdiendo cuota de mercado frente a distribuidores más grandes con presencia online más fuerte.", "approach": { "0": "Nueva web con sistema de inventario", "1": "Campañas Google Ads", "2": "Estrategia de remarketing" }, "results": { "0": "+28% visitas al showroom", "1": "Menores costes de adquisición" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." },
-      "nda-project-020": { "shortResult": "+45% solicitudes de contacto", "challenge": "Bufete de abogados con web anticuada y visibilidad online mínima.", "approach": { "0": "Rediseño web profesional", "1": "Estrategia de content marketing", "2": "SEO local" }, "results": { "0": "+45% solicitudes de contacto", "1": "Top 5 Google local" }, "disclaimer": "Resultado indicativo, dependiente del período y presupuesto." }
+    "servicesFAQ": {
+      "label": "Preguntas frecuentes sobre servicios",
+      "title": "FAQ sobre nuestros servicios",
+      "questions": {
+        "onePageVsBusiness": { "q": "¿Cuál es la diferencia entre una web de una página y una web empresarial?", "a": "Una web de una página es una sola página con toda la info (ideal para starters, desde €500). Una web empresarial tiene múltiples páginas y más funcionalidad (desde €1.500)." },
+        "seoOneTimeOrOngoing": { "q": "¿El SEO es un servicio único o continuo?", "a": "SEO es un servicio continuo. Una auditoría única ayuda, pero resultados duraderos requieren optimización mensual." },
+        "adBudgetManagement": { "q": "¿Gestionan el presupuesto publicitario o solo las campañas?", "a": "Gestionamos las campañas y optimizamos el presupuesto. El presupuesto publicitario se paga aparte a la plataforma." },
+        "contentOrManagement": { "q": "¿Crean contenido o solo gestionan redes sociales?", "a": "Ambos. La gestión incluye estrategia y planificación. El contenido (posts, reels, videos) se puede pedir aparte o como parte del paquete." },
+        "withoutWebsite": { "q": "¿Puedo usar sus servicios sin web?", "a": "Sí, para gestión de redes sociales, publicidad y producción de contenido no necesitas web. Para SEO sí es necesario." },
+        "videoInSocial": { "q": "¿El contenido de video está incluido en la gestión de redes?", "a": "Los visuales básicos están incluidos. Videos profesionales y reels se presupuestan aparte vía producción de contenido, pero se pueden combinar." },
+        "ecommerceVsBusiness": { "q": "¿Cuál es la diferencia entre una tienda online y una web empresarial?", "a": "Una web empresarial informa y genera leads. Una tienda online incluye experiencia de compra con productos, carrito y pagos online (desde €3.000)." },
+        "reputationHowItWorks": { "q": "¿Cómo funciona exactamente la gestión de reputación?", "a": "Monitoreamos tus reseñas, respondemos profesionalmente y te ayudamos a recoger más reseñas positivas." },
+        "dataSyncExplained": { "q": "¿Qué implica la configuración de datos y tracking?", "a": "Instalamos y configuramos herramientas de tracking (Google Analytics, Meta Pixel) para que sepas exactamente qué esfuerzos de marketing dan resultados." }
+      }
     }
   },
   "privacy": {
-    "meta": {
-      "title": "Política de Privacidad",
-      "description": "Descubra cómo GROPPI protege y procesa sus datos personales de acuerdo con el RGPD."
-    },
+    "meta": { "title": "Política de Privacidad", "description": "Descubra cómo GROPPI protege y procesa sus datos personales de acuerdo con el RGPD." },
     "title": "Política de Privacidad",
-    "subtitle": "Su privacidad es importante para nosotros. Esta política explica cómo recopilamos, usamos y protegemos sus datos.",
+    "subtitle": "Su privacidad es importante para nosotros.",
     "lastUpdated": "Última actualización",
     "footerNote": "¿Tiene preguntas sobre esta política de privacidad? Contáctenos en info@groppi.be",
     "sections": {
-      "dataCollection": {
-        "title": "Recopilación de datos",
-        "content": "Recopilamos datos personales que usted nos proporciona voluntariamente, como:\n\n• Nombre y datos de contacto cuando completa nuestro formulario de contacto\n• Dirección de correo electrónico para suscripciones al boletín\n• CV y datos de solicitud para ofertas de empleo\n• Información comercial para consultas empresariales\n\nTambién recopilamos automáticamente ciertos datos técnicos como dirección IP, tipo de navegador y páginas visitadas con fines analíticos."
-      },
-      "dataUsage": {
-        "title": "Uso de datos",
-        "content": "Utilizamos sus datos para:\n\n• Responder a sus preguntas y solicitudes\n• Enviar boletines (solo con su consentimiento)\n• Mejorar nuestro sitio web y servicios\n• Cumplir con obligaciones legales\n• Enviar información relevante sobre nuestros servicios"
-      },
-      "dataSecurity": {
-        "title": "Seguridad de datos",
-        "content": "Nos tomamos en serio la seguridad de sus datos. Utilizamos:\n\n• Cifrado SSL para toda la transferencia de datos\n• Servidores y bases de datos seguros\n• Acceso limitado a datos personales\n• Auditorías de seguridad regulares\n\nA pesar de nuestros esfuerzos, ningún método de transmisión por Internet puede ser 100% seguro."
-      },
-      "yourRights": {
-        "title": "Sus derechos",
-        "content": "Bajo el RGPD, usted tiene los siguientes derechos:\n\n• Derecho de acceso a sus datos\n• Derecho a rectificar datos inexactos\n• Derecho a eliminar sus datos\n• Derecho a restringir el procesamiento\n• Derecho a la portabilidad de datos\n• Derecho a oponerse al procesamiento\n\nContáctenos para ejercer estos derechos."
-      },
-      "cookies": {
-        "title": "Cookies",
-        "content": "Nuestro sitio web utiliza cookies para mejorar su experiencia:\n\n• Cookies esenciales para la funcionalidad del sitio\n• Cookies analíticas para entender cómo los visitantes usan nuestro sitio\n• Cookies de marketing para publicidad dirigida (solo con consentimiento)\n\nPuede gestionar las cookies a través de la configuración de su navegador."
-      },
-      "retention": {
-        "title": "Retención de datos",
-        "content": "Conservamos sus datos solo el tiempo necesario:\n\n• Datos de contacto: 2 años después del último contacto\n• Datos de solicitud: 1 año después de completar el procedimiento\n• Suscriptores del boletín: hasta la cancelación\n• Datos analíticos: 26 meses\n\nDespués de este período, los datos se eliminan de forma segura."
-      },
-      "contact": {
-        "title": "Contacto",
-        "content": "Para preguntas sobre su privacidad o para ejercer sus derechos:\n\nGROPPI\nCorreo electrónico: info@groppi.be\nTeléfono: +32 456 19 87 21\n\nTambién tiene derecho a presentar una queja ante la Autoridad de Protección de Datos."
-      }
+      "dataCollection": { "title": "Recopilación de datos", "content": "Recopilamos datos personales que usted nos proporciona voluntariamente." },
+      "dataUsage": { "title": "Uso de datos", "content": "Utilizamos sus datos para responder a sus preguntas y mejorar nuestros servicios." },
+      "dataSecurity": { "title": "Seguridad de datos", "content": "Nos tomamos en serio la seguridad de sus datos. Utilizamos cifrado SSL." },
+      "yourRights": { "title": "Sus derechos", "content": "Bajo el RGPD, usted tiene derecho de acceso, rectificación y eliminación de sus datos." },
+      "cookies": { "title": "Cookies", "content": "Nuestro sitio web utiliza cookies esenciales y analíticas." },
+      "retention": { "title": "Retención de datos", "content": "Conservamos sus datos solo el tiempo necesario." },
+      "contact": { "title": "Contacto", "content": "Para preguntas sobre su privacidad: info@groppi.be" }
     }
   },
   "terms": {
-    "meta": {
-      "title": "Términos de Servicio",
-      "description": "Lea los términos y condiciones para el uso de los servicios y el sitio web de GROPPI."
-    },
+    "meta": { "title": "Términos de Servicio", "description": "Lea los términos y condiciones de GROPPI." },
     "title": "Términos de Servicio",
-    "subtitle": "Estos términos rigen su uso de nuestro sitio web y servicios. Al usar nuestros servicios, acepta estos términos.",
+    "subtitle": "Estos términos rigen su uso de nuestro sitio web y servicios.",
     "lastUpdated": "Última actualización",
-    "footerNote": "¿Tiene preguntas sobre estos términos? Contáctenos en info@groppi.be",
+    "footerNote": "¿Tiene preguntas? Contáctenos en info@groppi.be",
     "sections": {
-      "acceptance": {
-        "title": "Aceptación de términos",
-        "content": "Al acceder o utilizar el sitio web y los servicios de GROPPI, acepta estos Términos de Servicio.\n\nSi no está de acuerdo con alguna parte de estos términos, no puede usar nuestros servicios.\n\nNos reservamos el derecho de modificar estos términos en cualquier momento."
-      },
-      "services": {
-        "title": "Nuestros servicios",
-        "content": "GROPPI proporciona servicios de marketing digital, incluyendo:\n\n• Diseño y desarrollo web\n• Optimización para motores de búsqueda (SEO)\n• Marketing en redes sociales\n• Publicidad pagada\n• Creación de contenido\n• Identidad de marca y branding\n\nLos servicios específicos y entregables se definen en acuerdos individuales."
-      },
-      "payment": {
-        "title": "Pago y facturación",
-        "content": "• Todos los precios no incluyen IVA salvo indicación contraria\n• Los pagos vencen dentro de 14 días desde la fecha de factura\n• Se puede requerir un depósito del 50% para proyectos\n• Los pagos tardíos pueden incurrir en cargos administrativos\n• Nos reservamos el derecho de suspender servicios por pagos pendientes"
-      },
-      "liability": {
-        "title": "Responsabilidad",
-        "content": "• GROPPI no es responsable de daños indirectos o consecuentes\n• Nuestra responsabilidad se limita al monto pagado por el servicio específico\n• No garantizamos resultados específicos de campañas de marketing\n• Los clientes son responsables de la exactitud de la información proporcionada\n• No somos responsables de cambios realizados por plataformas de terceros"
-      },
-      "termination": {
-        "title": "Terminación",
-        "content": "• Cualquiera de las partes puede terminar el acuerdo con 30 días de aviso por escrito\n• La terminación inmediata puede ocurrir en caso de incumplimiento grave\n• Al terminar, todos los montos pendientes vencen inmediatamente\n• Facilitaremos la transferencia razonable de materiales después de la terminación"
-      },
-      "modifications": {
-        "title": "Modificaciones",
-        "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento.\n\nPara cambios significativos, le notificaremos por correo electrónico si corresponde.\n\nEl uso continuado de nuestros servicios después de modificaciones constituye aceptación de los nuevos términos."
-      },
-      "governing": {
-        "title": "Ley aplicable",
-        "content": "Estos términos se rigen por la ley belga.\n\nLas disputas se someterán a los tribunales competentes de Bélgica.\n\nSi alguna disposición de estos términos se considera inválida o inaplicable, las disposiciones restantes permanecerán en pleno vigor."
-      },
-      "contact": {
-        "title": "Contacto",
-        "content": "Para preguntas sobre estos términos:\n\nGROPPI\nCorreo electrónico: info@groppi.be\nTeléfono: +32 456 19 87 21\n\nNos esforzamos por responder a todas las consultas dentro de 48 horas."
-      }
+      "acceptance": { "title": "Aceptación de términos", "content": "Al acceder o utilizar los servicios de GROPPI, acepta estos Términos de Servicio." },
+      "services": { "title": "Nuestros servicios", "content": "GROPPI proporciona servicios de marketing digital." },
+      "payment": { "title": "Pago y facturación", "content": "Todos los precios no incluyen IVA salvo indicación contraria." },
+      "liability": { "title": "Responsabilidad", "content": "GROPPI no es responsable de daños indirectos o consecuentes." },
+      "termination": { "title": "Terminación", "content": "Cualquiera de las partes puede terminar el acuerdo con 30 días de aviso." },
+      "modifications": { "title": "Modificaciones", "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento." },
+      "governing": { "title": "Ley aplicable", "content": "Estos términos se rigen por la ley belga." },
+      "contact": { "title": "Contacto", "content": "Para preguntas: info@groppi.be" }
     }
-  },
-  "footer": {
-    "quickLinks": "Enlaces rápidos"
   },
   "cookies": {
     "title": "Usamos cookies",
-    "description": "Este sitio utiliza cookies para mejorar tu experiencia y medir nuestro rendimiento. Al hacer clic en \"Aceptar\", aceptas nuestra política de cookies.",
+    "description": "Este sitio utiliza cookies para mejorar tu experiencia y medir nuestro rendimiento.",
     "learnMore": "Más información",
     "accept": "Aceptar",
     "reject": "Rechazar"
-  },
-  "servicePage": {
-    "defaultDescription": "{{service}} — Servicio profesional de GROPPI Marketing Bureau."
-  },
-  "home": {
-    "whoWeAre": {
-      "headline": "Quiénes somos. Y por qué trabajamos diferente.",
-      "subtext": "Desde 2016 ayudamos a empresas a crecer\ncon estructura, control y sistemas inteligentes —\nno con palabrería de marketing.",
-      "cta": "Descubre nuestros servicios",
-      "videoAlt": "Mira nuestro vídeo de introducción"
-    }
   }
 }
