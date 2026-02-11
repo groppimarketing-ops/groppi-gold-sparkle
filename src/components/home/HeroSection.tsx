@@ -154,29 +154,26 @@ const HeroSection = memo(() => {
         </div>
       )}
 
-      {/* Brand Video - Full Bleed */}
-      <div
-        className="relative z-10 w-full px-0 mb-8 animate-border-pulse"
-        style={{
-          borderTop: '2px solid hsl(43 76% 52% / 0.5)',
-          borderBottom: '2px solid hsl(43 76% 52% / 0.5)',
-          boxShadow: '0 0 40px hsl(43 76% 52% / 0.3), inset 0 0 20px hsl(43 76% 52% / 0.1)',
-        }}
-      >
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full object-cover"
-        >
-          <source src="/videos/hero-logo.mp4" type="video/mp4" />
-        </video>
-      </div>
-
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pb-16 md:pb-20">
+      <div className="relative z-10 container mx-auto px-6 py-16 md:py-20">
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
+          {/* Brand Video - Full Width */}
+          <div
+            className="mb-8 w-full rounded-2xl border-2 border-primary/50 p-1.5 backdrop-blur-sm animate-border-pulse"
+            style={{
+              boxShadow: '0 0 40px hsl(43 76% 52% / 0.3), inset 0 0 20px hsl(43 76% 52% / 0.1)',
+            }}
+          >
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full object-cover rounded-xl"
+            >
+              <source src="/videos/hero-logo.mp4" type="video/mp4" />
+            </video>
+          </div>
 
           {/* Social Icons - Gold */}
           <div className="flex items-center gap-5 mb-10">
