@@ -6,1054 +6,1213 @@
     "blog": "Blog",
     "gallery": "Portfolio",
     "contact": "Kontakt",
-    "franchise": "Franczyza",
     "partnership": "Franczyza",
+    "franchise": "Franczyza",
     "careers": "Kariera"
   },
   "careers": {
-    "meta": { "title": "Kariera", "description": "Dołącz do zespołu GROPPI i pomóż belgijskim i europejskim firmom rozwijać się z mierzalnymi wynikami." },
-    "hero": { "title": "Kariera w GROPPI", "subtitle": "Dołącz do zespołu budującego mierzalny wzrost dla firm w Belgii i Europie.", "viewRoles": "Zobacz otwarte stanowiska", "sendCv": "Wyślij swoje CV" },
-    "types": { "fullTime": "Pełny etat", "partTime": "Część etatu", "freelance": "Freelancer" },
-    "locations": { "belgium": "Belgia", "remote": "Zdalnie", "hybrid": "Hybrydowo" },
+    "meta": {
+      "title": "Kariera",
+      "description": "Dołącz do zespołu GROPPI i pomóż belgijskim i europejskim firmom rozwijać się z mierzalnymi wynikami."
+    },
+    "hero": {
+      "title": "Kariera w GROPPI",
+      "subtitle": "Dołącz do zespołu budującego mierzalny wzrost dla firm w Belgii i Europie.",
+      "viewRoles": "Zobacz otwarte stanowiska",
+      "sendCv": "Wyślij swoje CV"
+    },
+    "types": {
+      "fullTime": "Pełny etat",
+      "partTime": "Część etatu",
+      "freelance": "Freelancer"
+    },
+    "locations": {
+      "belgium": "Belgia",
+      "remote": "Zdalnie",
+      "hybrid": "Hybrydowo"
+    },
     "roles": {
-      "title": "Otwarte stanowiska", "subtitle": "Odkryj swój następny krok kariery w szybko rozwijającej się agencji cyfrowej.",
-      "responsibilitiesLabel": "Obowiązki", "requirementsLabel": "Wymagania", "applyNow": "Aplikuj teraz",
-      "performanceMarketer": { "title": "Performance Marketer (Meta/Google)", "responsibilities": "Zarządzanie i optymalizacja płatnych kampanii na Meta i Google. Analiza danych i raportowanie wyników.", "requirements": "2+ lata doświadczenia w reklamie płatnej. Znajomość Meta Ads Manager i Google Ads. Myślenie oparte na danych." },
-      "seoSpecialist": { "title": "Specjalista SEO", "responsibilities": "Opracowywanie i wdrażanie strategii SEO. Przeprowadzanie audytów technicznych i optymalizacja treści.", "requirements": "2+ lata doświadczenia SEO. Znajomość technicznego SEO, badania słów kluczowych i optymalizacji treści." },
-      "webDesigner": { "title": "Web Designer (UI/UX)", "responsibilities": "Projektowanie nowoczesnych stron zoptymalizowanych pod konwersję. Tworzenie wireframe'ów i prototypów.", "requirements": "Portfolio z projektami web design. Biegłość w Figma lub podobnych narzędziach. Zrozumienie zasad UX." },
-      "contentCreator": { "title": "Twórca treści (Wideo/AI)", "responsibilities": "Produkcja treści wideo dla mediów społecznościowych. Praca z narzędziami AI do tworzenia treści.", "requirements": "Doświadczenie w edycji wideo. Znajomość trendów w mediach społecznościowych. Kreatywność i dbałość o szczegóły." },
-      "salesBd": { "title": "Sprzedaż / Business Development", "responsibilities": "Identyfikacja i pozyskiwanie potencjalnych klientów. Budowanie relacji i zamykanie transakcji.", "requirements": "Doświadczenie w sprzedaży B2B. Doskonałe umiejętności komunikacyjne. Zorientowanie na wyniki i proaktywność." }
+      "title": "Otwarte stanowiska",
+      "subtitle": "Odkryj swój następny krok kariery w szybko rozwijającej się agencji cyfrowej.",
+      "responsibilitiesLabel": "Obowiązki",
+      "requirementsLabel": "Wymagania",
+      "applyNow": "Aplikuj teraz",
+      "performanceMarketer": {
+        "title": "Performance Marketer (Meta/Google)",
+        "responsibilities": "Zarządzanie i optymalizacja płatnych kampanii na Meta i Google. Analiza danych i raportowanie wyników.",
+        "requirements": "2+ lata doświadczenia w reklamie płatnej. Znajomość Meta Ads Manager i Google Ads. Myślenie oparte na danych."
+      },
+      "seoSpecialist": {
+        "title": "Specjalista SEO",
+        "responsibilities": "Opracowywanie i wdrażanie strategii SEO. Przeprowadzanie audytów technicznych i optymalizacja treści.",
+        "requirements": "2+ lata doświadczenia SEO. Znajomość technicznego SEO, badania słów kluczowych i optymalizacji treści."
+      },
+      "webDesigner": {
+        "title": "Web Designer (UI/UX)",
+        "responsibilities": "Projektowanie nowoczesnych stron zoptymalizowanych pod konwersję. Tworzenie wireframe'ów i prototypów.",
+        "requirements": "Portfolio z projektami web design. Biegłość w Figma lub podobnych narzędziach. Zrozumienie zasad UX."
+      },
+      "contentCreator": {
+        "title": "Twórca treści (Wideo/AI)",
+        "responsibilities": "Produkcja treści wideo dla mediów społecznościowych. Praca z narzędziami AI do tworzenia treści.",
+        "requirements": "Doświadczenie w edycji wideo. Znajomość trendów w mediach społecznościowych. Kreatywność i dbałość o szczegóły."
+      },
+      "salesBd": {
+        "title": "Sprzedaż / Business Development",
+        "responsibilities": "Identyfikacja i pozyskiwanie potencjalnych klientów. Budowanie relacji i zamykanie transakcji.",
+        "requirements": "Doświadczenie w sprzedaży B2B. Doskonałe umiejętności komunikacyjne. Zorientowanie na wyniki i proaktywność."
+      }
     },
     "form": {
-      "title": "Aplikuj teraz", "subtitle": "Wypełnij formularz i prześlij swoje CV. Skontaktujemy się wkrótce.",
-      "fullName": "Pełne imię i nazwisko", "fullNamePlaceholder": "Jan Kowalski", "email": "Adres e-mail", "emailPlaceholder": "jan@przyklad.pl",
-      "phone": "Numer telefonu", "phonePlaceholder": "+48 500 000 000", "role": "Stanowisko", "rolePlaceholder": "Wybierz stanowisko",
-      "otherRole": "Inne / Spontaniczna aplikacja", "linkedin": "LinkedIn / URL Portfolio", "linkedinPlaceholder": "https://linkedin.com/in/twoj-profil",
-      "message": "Krótka wiadomość", "messagePlaceholder": "Powiedz nam, dlaczego jesteś zainteresowany (opcjonalnie)",
-      "cv": "Prześlij CV", "cvPlaceholder": "Kliknij, aby przesłać swoje CV (PDF, DOC, DOCX)", "cvHint": "Maks. 10MB. Obsługiwane formaty: PDF, DOC, DOCX",
-      "cvRequired": "CV jest wymagane", "invalidFileType": "Nieprawidłowy typ pliku. Prześlij PDF, DOC lub DOCX.", "fileTooLarge": "Plik jest za duży. Maksymalnie 10MB dozwolone.",
-      "consent": "Zgadzam się na kontakt w sprawie mojej aplikacji.", "submit": "Wyślij aplikację", "submitting": "Wysyłanie...", "uploading": "Przesyłanie CV...",
-      "successTitle": "Aplikacja otrzymana!", "successMessage": "Dziękujemy za zainteresowanie. Skontaktujemy się tak szybko, jak to możliwe.", "submitAnother": "Wyślij kolejną aplikację",
-      "errorTitle": "Coś poszło nie tak", "errorMessage": "Nie mogliśmy przetworzyć Twojej aplikacji. Spróbuj ponownie.",
-      "privacyNote": "Twoje dane są używane tylko do rekrutacji. CV są traktowane poufnie.", "contactLink": "Skontaktuj się z nami"
+      "title": "Aplikuj teraz",
+      "subtitle": "Wypełnij formularz i prześlij swoje CV. Skontaktujemy się wkrótce.",
+      "fullName": "Pełne imię i nazwisko",
+      "fullNamePlaceholder": "Jan Kowalski",
+      "email": "Adres e-mail",
+      "emailPlaceholder": "jan@przyklad.pl",
+      "phone": "Numer telefonu",
+      "phonePlaceholder": "+48 500 000 000",
+      "role": "Stanowisko",
+      "rolePlaceholder": "Wybierz stanowisko",
+      "otherRole": "Inne / Spontaniczna aplikacja",
+      "linkedin": "LinkedIn / URL Portfolio",
+      "linkedinPlaceholder": "https://linkedin.com/in/twoj-profil",
+      "message": "Krótka wiadomość",
+      "messagePlaceholder": "Powiedz nam, dlaczego jesteś zainteresowany (opcjonalnie)",
+      "cv": "Prześlij CV",
+      "cvPlaceholder": "Kliknij, aby przesłać swoje CV (PDF, DOC, DOCX)",
+      "cvHint": "Maks. 10MB. Obsługiwane formaty: PDF, DOC, DOCX",
+      "cvRequired": "CV jest wymagane",
+      "invalidFileType": "Nieprawidłowy typ pliku. Prześlij PDF, DOC lub DOCX.",
+      "fileTooLarge": "Plik jest za duży. Maksymalnie 10MB dozwolone.",
+      "consent": "Zgadzam się na kontakt w sprawie mojej aplikacji.",
+      "submit": "Wyślij aplikację",
+      "submitting": "Wysyłanie...",
+      "uploading": "Przesyłanie CV...",
+      "successTitle": "Aplikacja otrzymana!",
+      "successMessage": "Dziękujemy za zainteresowanie. Skontaktujemy się tak szybko, jak to możliwe.",
+      "submitAnother": "Wyślij kolejną aplikację",
+      "errorTitle": "Coś poszło nie tak",
+      "errorMessage": "Nie mogliśmy przetworzyć Twojej aplikacji. Spróbuj ponownie.",
+      "privacyNote": "Twoje dane są używane tylko do rekrutacji. CV są traktowane poufnie.",
+      "contactLink": "Skontaktuj się z nami"
     },
     "faq": {
       "title": "Często zadawane pytania",
-      "spontaneous": { "q": "Czy przyjmujecie spontaniczne aplikacje?", "a": "Tak! Nawet bez pasującego stanowiska, chętnie przyjmiemy Twoje CV. Wybierz 'Inne / Spontaniczna aplikacja' w formularzu." },
-      "remote": { "q": "Zdalnie czy na miejscu?", "a": "Większość stanowisk jest hybrydowa (kombinacja domu i biura). Niektóre role są w pełni zdalne. Jest to określone dla każdej oferty." },
-      "response": { "q": "Jak szybko odpowiadacie?", "a": "Staramy się odpowiedzieć w ciągu 5 dni roboczych. Przy wielu aplikacjach może to potrwać dłużej, ale zawsze odpisujemy." },
-      "cv": { "q": "Co powinienem umieścić w CV?", "a": "Skup się na odpowiednim doświadczeniu i wynikach. Pokaż projekty lub portfolio, jeśli to możliwe. Bądź zwięzły (maks. 2 strony)." }
-    }
-  },
-  "hero": {
-    "title": "GROPPI – Ludzka ekspertyza, wspierana przez inteligentną technologię",
-    "subtitle": "Twój strategiczny partner cyfrowy od 2016",
-    "description": "GROPPI została założona w Belgii w 2016 roku i opiera się na prawdziwym doświadczeniu, strategicznej wizji i trwałych partnerstwach. Z multidyscyplinarnym zespołem ponad 9 profesjonalistów wspieramy firmy w Belgii, Europie i na Bliskim Wschodzie, oferując dostosowane rozwiązania cyfrowe. Wykorzystujemy AI jako inteligentny akcelerator, nigdy jako zamiennik ludzkiej kreatywności czy podejmowania decyzji.",
-    "cta": "Umów bezpłatną konsultację",
-    "ctaSecondary": "Zobacz nasze prace"
-  },
-  "home": {
-    "heroNew": { "badge": "Struktura. Treści. Wzrost.", "headline": "Budujemy Twoją cyfrową bazę — i skalujemy Twój wzrost.", "subtitle": "Pomagamy firmom rosnąć dzięki jasnej strategii, brandingowi i wydajności — bez marnowania budżetów i pustych obietnic.", "proof1": "Jasna struktura usług", "proof2": "Transparentne ceny i jasne efekty", "proof3": "Więcej leadów, mniej straconego czasu", "ctaPrimary": "Zobacz usługi i ceny", "ctaSecondary": "Poproś o wycenę", "scrollHint": "Przewiń" },
-    "postHeroTrust": { "title": "Zbudowane dla wzrostu w Belgii i Europie", "subtitle": "Bez szumu. Bez pustych obietnic. Tylko system generujący leady i przychody." },
-    "whoWeAre": { "headline": "Kim jesteśmy. I dlaczego pracujemy inaczej.", "subtext": "Od 2016 roku pomagamy firmom rosnąć\ndzięki strukturze, kontroli i inteligentnym systemom —\nnie pustym marketingowym frazom.", "cta": "Zobacz nasze usługi", "videoAlt": "Obejrzyj nasz film wprowadzający" },
-    "trustBar": { "item1": { "title": "Transparentne ceny", "text": "Wiesz dokładnie czego oczekiwać." }, "item2": { "title": "Szybka komunikacja", "text": "Odpowiedź w 24 godziny." }, "item3": { "title": "Zorientowani na wyniki", "text": "Bez szumu, tylko wzrost." } },
-    "quickChoice": { "badge": "Zacznij tutaj", "title": "Nie wiesz czego potrzebujesz?", "subtitle": "Wybierz swój cel. Pokażemy odpowiednie usługi.", "cta": "Pokaż zalecane usługi", "visibility": { "title": "Większa widoczność", "desc": "Zbuduj silną obecność online dzięki konsekwentnym treściom i mediom społecznościowym." }, "leads": { "title": "Więcej leadów", "desc": "Przyciągnij kwalifikowanych odwiedzających dzięki reklamom i SEO." }, "sales": { "title": "Więcej sprzedaży", "desc": "Zamień odwiedzających w klientów dzięki profesjonalnemu sklepowi i ukierunkowanym kampaniom." } },
-    "servicesGrid": { "subtitle": "Nasze usługi", "title": "Nasze usługi", "description": "Wybierz usługę. Od razu zobacz co otrzymasz, jak działa cena i obejrzyj krótki film.", "featured": "Najczęściej wybierane", "viewDetails": "Szczegóły", "watchVideo": "Film", "buildPlan": "Zbuduj plan", "seePricing": "Zobacz cenę", "customQuote": "Wycena indywidualna", "from": "Od", "perMonth": "/ miesiąc", "oneTime": "jednorazowo", "vatExcluded": "bez VAT", "items": { "contentProduction": { "title": "Produkcja treści", "desc": "Profesjonalne filmy i zdjęcia wzmacniające Twoją markę.", "deliverables": { "0": "Produkcja wideo", "1": "Profesjonalna fotografia", "2": "Postprodukcja i edycja" } }, "businessWebsite": { "title": "Strona firmowa", "desc": "Profesjonalna strona budująca zaufanie.", "deliverables": { "0": "Responsywny design", "1": "Struktura SEO", "2": "System CMS" } }, "ecommerce": { "title": "Sklep internetowy", "desc": "Sprzedawaj online z zoptymalizowanym e-sklepem.", "deliverables": { "0": "Kompletna konfiguracja sklepu", "1": "Integracja płatności i wysyłek", "2": "Zarządzanie produktami" } }, "ads": { "title": "Zarządzanie reklamami", "desc": "Kampanie oparte na danych, które generują wyniki.", "deliverables": { "0": "Strategia i konfiguracja kampanii", "1": "Targetowanie i optymalizacja", "2": "Raportowanie miesięczne" } }, "seo": { "title": "SEO", "desc": "Rośnij organicznie dzięki optymalizacji wyszukiwarek.", "deliverables": { "0": "Audyt techniczny SEO", "1": "Strategia słów kluczowych", "2": "Miesięczna optymalizacja treści" } }, "social": { "title": "Zarządzanie social media", "desc": "Konsekwentna obecność na wszystkich kanałach.", "deliverables": { "0": "Planowanie i tworzenie treści", "1": "Zarządzanie społecznością", "2": "Analiza miesięczna" } }, "mobileApp": { "title": "Rozwój aplikacji mobilnych", "desc": "Własna aplikacja na iOS i Android.", "deliverables": { "0": "Projektowanie UX/UI + rozwój", "1": "Backend i integracje", "2": "Wsparcie przy publikacji w sklepie" } } } },
-    "serviceModal": { "tabs": { "overview": "Przegląd", "deliverables": "Co otrzymasz", "pricing": "Cena", "video": "Film", "calculator": "Kalkulator" }, "overview": { "about": "O tej usłudze", "priceRange": "Orientacyjna cena" }, "deliverables": { "title": "Co otrzymasz" }, "pricing": { "title": "Jak działa cena?", "note": "Ostateczna cena zależy od Twoich potrzeb i zakresu projektu.", "factors": "Czynniki cenowe:", "factor1": "Zakres i złożoność projektu", "factor2": "Ilość zasobów lub godzin", "factor3": "Konkretne dostosowania i dodatki" }, "video": { "comingSoon": "Film wkrótce", "uploadNote": "Admin może tu dodać film mp4" }, "calculator": { "title": "Kalkulator", "desc": "Zbuduj swój plan i uzyskaj natychmiastową wycenę.", "cta": "Otwórz pełny kalkulator" }, "cta": { "quote": "Poproś o wycenę", "whatsapp": "Napisz na WhatsApp" } },
-    "serviceMap": { "label": "Co robimy", "title": "Nasze usługi w skrócie", "subtitle": "Jasne usługi. Transparentne ceny. Bez marketingowego szumu.", "columns": { "online": { "title": "Postaw firmę online", "services": { "businessWebsite": "Strona firmowa", "onePage": "Strona jednostronicowa", "webshop": "Sklep internetowy", "visualContent": "Treści wizualne i wideo" } }, "findable": { "title": "Bądź łatwiej znajdowany", "services": { "seo": "SEO (lokalne i techniczne)", "googleBusiness": "Optymalizacja Google Business", "sea": "Reklamy w wyszukiwarkach (SEA)", "dataTracking": "Konfiguracja danych i śledzenia" } }, "standout": { "title": "Wyróżnij się", "services": { "branding": "Branding i identyfikacja wizualna", "socialContent": "Treści social media", "videoAds": "Reklamy wideo", "creativeCampaigns": "Kampanie kreatywne" } }, "attract": { "title": "Przyciągnij klientów", "services": { "adManagement": "Zarządzanie reklamami", "socialManagement": "Zarządzanie social media", "leadGen": "Lejki generowania leadów", "conversionOptimization": "Optymalizacja konwersji" } } }, "cta": { "viewServices": "Zobacz usługi i ceny", "calculatePrice": "Oblicz cenę w 60 sek" } },
-    "clientMarquee": { "subtitle": "Zaufane przez firmy", "title": "Zaufane przez firmy w Belgii i Europie", "ndaNote": "*Niektóre projekty objęte NDA i nie mogą być publicznie prezentowane.*", "logoPlaceholder": "LOGO" },
-    "portfolio": { "subtitle": "Nasze prace", "title": "Wybrane projekty", "viewAll": "Zobacz pełne portfolio" },
-    "caseStudies": { "subtitle": "Udowodnione wyniki", "title": "Co osiągnęliśmy dla innych firm", "challengeLabel": "Wyzwanie", "solutionLabel": "Nasze podejście", "cta": "Chcesz podobnych wyników? Skontaktuj się", "industries": { "restaurant": "Restauracja", "ecommerce": "E-commerce", "construction": "Budownictwo" }, "case1": { "challenge": "Słaba widoczność online i niewiele rezerwacji z kanałów cyfrowych.", "solution": "Nowa strona + Google Ads + strategia social media.", "metric": "+180% rezerwacji w 6 miesięcy" }, "case2": { "challenge": "Zbyt wysokie koszty reklam przy niskiej konwersji.", "solution": "Audyt kampanii + retargeting + usprawnienia UX.", "metric": "+340% ROAS w 90 dni" }, "case3": { "challenge": "Brak obecności online — tylko marketing szeptany.", "solution": "Strona + lokalne SEO + Google Moja Firma.", "metric": "#1 lokalna pozycja + 45 leadów/miesiąc" } },
-    "trustSection": { "subtitle": "Dlaczego firmy nam ufają", "title": "10+ lat doświadczenia. Fakty, nie obietnice.", "items": { "founded": { "title": "Założona w 2016", "desc": "Ponad 8 lat w marketingu cyfrowym" }, "team": { "title": "9+ profesjonalistów", "desc": "Zespół z ekspertyzą w strategii, designie i performance" }, "reach": { "title": "Belgia i Europa", "desc": "Lokalna wiedza, międzynarodowe doświadczenie" }, "partnerships": { "title": "Długoterminowe relacje", "desc": "Większość klientów współpracuje z nami od lat" } } },
-    "finalCTA": { "title": "Chcesz wiedzieć, jak możemy rozwinąć Twoją firmę?", "description": "Umów krótką rozmowę lub wyślij pytanie. Wrócimy z konkretną propozycją — bez zobowiązań.", "ctaPrimary": "Poproś o propozycję", "ctaWhatsApp": "Napisz na WhatsApp" },
-    "hero": { "badge": "Belgijskie biuro od 2016", "title": "Cyfrowy wzrost oparty na prawdziwym doświadczeniu", "description": "GROPPI to belgijskie biuro cyfrowe, założone w 2016. Z zespołem ponad 9 profesjonalistów pomagamy firmom w Europie i na Bliskim Wschodzie budować silną obecność cyfrową.", "cta": "Umów bezpłatną rozmowę", "ctaSecondary": "Zobacz nasze usługi" },
-    "whatWeDo": { "subtitle": "Co robimy", "title": "Nasze usługi", "description": "Jasne, zorientowane na wyniki usługi. Każdy projekt dostosowany do Twoich celów.", "cta": "Zobacz wszystkie usługi" },
-    "services": { "content": { "title": "Produkcja treści", "desc": "Profesjonalne filmy, zdjęcia i treści wizualne." }, "websites": { "title": "Tworzenie stron", "desc": "Od landing page po pełne sklepy internetowe." }, "marketing": { "title": "Marketing cyfrowy", "desc": "Zarządzanie reklamami, SEO i social media." }, "branding": { "title": "Branding i design", "desc": "Identyfikacja wizualna i strategia marki." } },
-    "whyGroppi": { "subtitle": "Dlaczego GROPPI", "title": "Zaufanie oparte na faktach", "description": "Żadnych przesadzonych twierdzeń, tylko uczciwe wyniki." },
-    "trust": { "founded": { "title": "Założona w 2016", "desc": "Ponad 8 lat w marketingu cyfrowym" }, "team": { "title": "9+ profesjonalistów", "desc": "Multidyscyplinarny zespół ekspertów" }, "reach": { "title": "Europa i Bliski Wschód", "desc": "Międzynarodowe współprace" }, "partnerships": { "title": "Długoterminowe relacje", "desc": "Budujemy trwałe partnerstwa" } },
-    "approach": { "badge": "Nasze podejście", "title": "Ludzka ekspertyza, wspierana przez inteligentną technologię", "text": "W GROPPI łączymy ludzką ekspertyzę z inteligentną technologią, aby osiągać trwałe cyfrowe wyniki.", "cta": "Więcej o nas", "tags": { "humanExpertise": "Ludzka ekspertyza", "smartTechnology": "Inteligentna technologia", "sustainableResults": "Trwałe wyniki" }, "human": { "title": "Człowiek na pierwszym miejscu", "desc": "Strategia i kreatywność od doświadczonych profesjonalistów" }, "ai": { "title": "AI jako narzędzie", "desc": "Technologia wspiera, nie zastępuje" } },
-    "featured": { "subtitle": "Pakiety", "title": "Elastyczne opcje na każdy budżet", "description": "Wybierz pakiet odpowiedni dla Twoich potrzeb.", "starter": "Dla początkujących", "growth": "Dla rosnących firm", "pro": "Pełne wsparcie dla ambitnych marek", "popular": "Popularne", "cta": "Zobacz wszystkie pakiety" },
-    "cta": { "title": "Gotowy na konkretne działanie?", "description": "Opowiedz nam o swojej sytuacji. Wrócimy z planem — bez zobowiązań.", "contact": "Skontaktuj się", "whatsapp": "Chat na WhatsApp" },
-    "clientLogoMarquee": {
-      "eyebrow": "NASI KLIENCI",
-      "subtitle": "Współpracujemy z ambitnymi zespołami, które pragną struktury, jakości i mierzalnego wzrostu.",
-      "title": "Zaufanie zespołów w Belgii i Europie",
-      "ndaNote": "Ze względu na umowy NDA nie możemy ujawnić wszystkich nazw naszych klientów.",
-      "marqueeLabel": "Zespoły rozwijające się z nami",
-      "benefits": {
-        "benefit1": "Przejrzysta struktura usług",
-        "benefit2": "Transparentna logika cenowa",
-        "benefit3": "Jakość i zrównoważony wzrost"
+      "spontaneous": {
+        "q": "Czy przyjmujecie spontaniczne aplikacje?",
+        "a": "Tak! Nawet bez pasującego stanowiska, chętnie przyjmiemy Twoje CV. Wybierz 'Inne / Spontaniczna aplikacja' w formularzu."
       },
-      "clients": {
-        "restaurant": "Grupa Restauracyjna Antwerpia",
-        "interior": "Zespół Projektowania Wnętrz",
-        "retail": "Lokalna Sieć Detaliczna",
-        "ecommerce": "Marka E-commerce (BE)",
-        "beauty": "Klinika Urody Belgia",
-        "realEstate": "Agencja Nieruchomości",
-        "construction": "Studio Budowlane Bruksela",
-        "startup": "Tech Startup (UE)",
-        "logistics": "Firma Logistyczna (BE)",
-        "professional": "Firma Usług Profesjonalnych",
-        "hospitality": "Grupa Hotelarska",
-        "b2b": "Platforma B2B (UE)"
+      "remote": {
+        "q": "Zdalnie czy na miejscu?",
+        "a": "Większość stanowisk jest hybrydowa (kombinacja domu i biura). Niektóre role są w pełni zdalne. Jest to określone dla każdej oferty."
       },
-      "testimonials": {
-        "testimonial1": { "quote": "Wreszcie zespół, który wprowadza strukturę. Jasne ustalenia, szybkie działania i przede wszystkim: jakość.", "role": "Właściciel, Antwerpia" },
-        "testimonial2": { "quote": "Przejrzyste podejście i ceny. Bez pustych obietnic — tylko praca, która przynosi rezultaty.", "role": "Marketing Manager, Bruksela" },
-        "testimonial3": { "quote": "Profesjonalnie, szybko i najwyższej jakości. Dokładnie to, czego potrzebowaliśmy.", "role": "Właściciel, Belgijskie MŚP" }
+      "response": {
+        "q": "Jak szybko odpowiadacie?",
+        "a": "Staramy się odpowiedzieć w ciągu 5 dni roboczych. Przy wielu aplikacjach może to potrwać dłużej, ale zawsze odpisujemy."
       },
-      "cta": {
-        "title": "Chcesz wiedzieć, co możemy zrobić dla Twojej firmy?",
-        "subtitle": "Umów szybką rozmowę lub opisz swoją sytuację.",
-        "primaryButton": "Poproś o wycenę →",
-        "secondaryButton": "Czat na WhatsApp"
-      }
-    },
-    "trustSectors": {
-      "eyebrow": "Nasze sektory",
-      "headline": "Zaufanie rosnących firm — na całym świecie",
-      "subheadline": "Siedziba w Belgii. Aktywni w Europie.",
-      "proofPoints": { "experience": "10+ lat doświadczenia", "pricing": "Przejrzyste ceny", "system": "Podejście systemowe", "leads": "Skupienie na leadach" },
-      "note": "*Ze względu na NDA nie pokazujemy wszystkich nazw.*",
-      "cta": "Zobacz usługi i ceny",
-      "sectors": {
-        "restaurant": { "title": "Restauracje i hotele", "subtitle": "Więcej rezerwacji." },
-        "interior": { "title": "Wnętrza i architektura", "subtitle": "Wysokiej jakości leady." },
-        "retail": { "title": "Handel detaliczny", "subtitle": "Obecność online." },
-        "ecommerce": { "title": "E-commerce", "subtitle": "Konwersja i wydajność." },
-        "realEstate": { "title": "Nieruchomości", "subtitle": "Branding premium." },
-        "health": { "title": "Uroda i zdrowie", "subtitle": "Więcej wizyt." },
-        "services": { "title": "Usługi lokalne", "subtitle": "Od Google do klienta." },
-        "sme": { "title": "MŚP i startupy", "subtitle": "Struktura wzrostu." },
-        "medical": { "title": "Kliniki medyczne", "subtitle": "Zaufanie i pacjenci." },
-        "education": { "title": "Edukacja", "subtitle": "Widoczność i zapisy." }
-      },
-      "stats": { "experience": "lat doświadczenia", "focus": "BE + UE + Świat", "system": "struktura", "premium": "branding + wydajność" },
-      "statsValues": { "focus": "BE + UE + Świat", "system": "Systemowe", "premium": "Premium" },
-      "microNote": "*Wyniki różnią się w zależności od branży i budżetu.*"
-    },
-    "trustedBelgium": {
-      "eyebrow": "ZAUFANIE",
-      "title": "Zaufanie firm w Belgii i Europie",
-      "subtitle": "Aktywni w 7 krajach, skupieni na wzroście.",
-      "europeCredibility": "Obsługujemy ambitne zespoły w całej Europie.",
-      "disclaimer": "Niektóre nazwy klientów nie są ujawniane ze względu na NDA.",
-      "activeClients": "aktywnych klientów",
-      "sectorsWeServe": "Obsługiwane sektory",
-      "countries": {
-        "belgium": "Belgia", "netherlands": "Holandia", "germany": "Niemcy", "france": "Francja",
-        "luxembourg": "Luksemburg", "uk": "Wielka Brytania", "switzerland": "Szwajcaria",
-        "italy": "Włochy", "spain": "Hiszpania", "usa": "Stany Zjednoczone"
-      },
-      "sectors": {
-        "restaurants": "Restauracje i hotelarstwo", "retail": "Handel detaliczny", "interior": "Wnętrza i renowacje",
-        "beauty": "Uroda i wellness", "ecommerce": "E-commerce", "realEstate": "Nieruchomości",
-        "localServices": "Usługi lokalne", "sme": "MŚP i startupy", "medical": "Medycyna / kliniki",
-        "startups": "SaaS i startupy", "professionalServices": "Usługi profesjonalne"
+      "cv": {
+        "q": "Co powinienem umieścić w CV?",
+        "a": "Skup się na odpowiednim doświadczeniu i wynikach. Pokaż projekty lub portfolio, jeśli to możliwe. Bądź zwięzły (maks. 2 strony)."
       }
     }
   },
-  "about": {
-    "title": "O GROPPI",
-    "subtitle": "Nasza historia",
-    "description": "GROPPI rozpoczęła działalność w Belgii w 2016 roku i rozwijała się przez lata praktycznego doświadczenia, silnych partnerstw i udowodnionych rezultatów. Dziś współpracujemy z klientami w Europie i na Bliskim Wschodzie, łącząc strategię, kreatywność i technologię, aby osiągnąć zrównoważony rozwój cyfrowy.",
-    "mission": "Nasza misja",
-    "missionText": "Pomaganie firmom w rozwoju poprzez strategiczne rozwiązania cyfrowe oparte na ludzkiej ekspertyzie, wspierane przez inteligentną technologię.",
-    "vision": "Nasza wizja",
-    "visionText": "Być zaufanym partnerem dla firm dążących do zrównoważonego rozwoju cyfrowego, z zespołem, który naprawdę rozumie, co działa.",
-    "values": "Nasze wartości",
-    "valuesText": "Niezawodność, rzemiosło, przejrzystość i długoterminowe relacje.",
-    "stats": {
-      "years": "Lat doświadczenia",
-      "clients": "Zadowolonych klientów",
-      "projects": "Zrealizowanych projektów",
-      "team": "Profesjonalistów"
-    },
-    "timeline": {
-      "2016": { "title": "Założenie w Belgii", "description": "GROPPI została założona z jasną wizją: marketing cyfrowy z osobistym podejściem." },
-      "2018": { "title": "Rozszerzenie zespołu", "description": "Zespół urósł do 5 specjalistów z ekspertyzą w różnych dziedzinach." },
-      "2020": { "title": "Wzrost w Belgii", "description": "Wzmocniliśmy naszą lokalną obecność i zbudowaliśmy długoterminowe partnerstwa z belgijskimi firmami." },
-      "2023": { "title": "Ekspansja w Europie", "description": "Rozwinęliśmy nasze projekty w całej Europie z klientami w Holandii, Niemczech, Francji i dalej." },
-      "2026": { "title": "Plan na przyszłość: Ekspansja na Bliski Wschód", "description": "W 2026 roku planujemy ekspansję na Bliski Wschód — przenosząc nasze systemowe podejście do wzrostu na nowe rynki." }
-    },
-    "valuesSection": {
-      "subtitle": "W co wierzymy", "title": "Nasze kluczowe wartości",
-      "items": {
-        "transparency": { "title": "Przejrzystość", "text": "Uczciwa komunikacja o cenach i wynikach." },
-        "quality": { "title": "Jakość", "text": "Stawiamy na głębię i rzemiosło, nie na szybkie rozwiązania." },
-        "relationships": { "title": "Relacje", "text": "Budujemy długoterminowe partnerstwa, nie jednorazowe transakcje." },
-        "results": { "title": "Wyniki", "text": "Skupiamy się na mierzalnym wpływie na Twój biznes." },
-        "humanFirst": { "title": "Człowiek na pierwszym miejscu", "text": "Technologia służy ludziom, nie odwrotnie." }
-      }
-    },
-    "cta": {
-      "title": "Chcesz pracować z zespołem, który myśli razem z Tobą?",
-      "text": "Odkryjmy, jak możemy wzmocnić Twoją obecność cyfrową.",
-      "bookConsultation": "Umów bezpłatną rozmowę",
-      "contactUs": "Skontaktuj się z nami"
-    }
-  },
-  "ai": {
-    "title": "AI jako siła wspierająca",
-    "description": "W GROPPI wykorzystujemy sztuczną inteligencję do przyspieszania procesów, analizy danych i optymalizacji wydajności. Jednak wizja, strategia i decyzje kreatywne zawsze pozostają w rękach doświadczonych profesjonalistów.",
-    "subtitle": "Technologia w służbie człowieka"
-  },
-  "services": {
-    "title": "Nasze usługi",
-    "subtitle": "Co oferujemy",
-    "description": "Nie oferujemy sztywnych pakietów. Każda usługa jest dostosowana do Twoich celów, wykonywana przez profesjonalny zespół i wspierana przez inteligentną technologię tam, gdzie ma to sens.",
-    "monthly": "Miesięcznie",
-    "oneTime": "Jednorazowo",
+  "pricing": {
+    "from": "Od",
     "customQuote": "Wycena indywidualna",
-    "startingFrom": "Od",
     "perMonth": "/ miesiąc",
-    "oneTimePayment": "płatność jednorazowa",
-    "requestQuote": "Poproś o wycenę",
-    "getQuote": "Uzyskaj wycenę",
-    "keyInclusions": "Kluczowe elementy",
-    "videoPlaceholder": "Obejrzyj krótki film objaśniający",
-    "noResults": "Brak usług pasujących do Twoich filtrów.",
+    "oneTime": "jednorazowo",
+    "vatExcluded": "bez VAT",
+    "vatExcludedNote": "Wszystkie ceny bez VAT. VAT zostanie dodany na fakturze.",
+    "vatDisclaimer": {
+      "title": "Informacje o cenach",
+      "line1": "Wszystkie ceny są bez VAT (23%)."
+    }
+  },
+  "servicesHome": {
+    "sectionTitle": "Nasze usługi",
+    "sectionSubtitle": "Najpierw obejrzyj film, aby zrozumieć jak funkcjonuje każda usługa, potem przejdź do szczegółów.",
     "card": {
       "requestQuote": "Poproś o wycenę",
-      "viewDetails": "Zobacz szczegóły",
-      "watchHowItWorks": "Zobacz jak to działa (60 sek)",
-      "buildYourPlan": "Zbuduj swój plan",
-      "watchVideo": "Obejrzyj wideo (60 sek)",
-      "buildPlan": "Zbuduj plan",
-      "calculatorHint": "Uzyskaj natychmiastową orientacyjną cenę"
+      "viewDetails": "Więcej info",
+      "watchHowItWorks": "Obejrzyj jak to działa (60 sek)",
+      "buildYourPlan": "Zbuduj swój plan"
     },
     "badges": {
       "monthly": "Miesięcznie",
       "oneTime": "Jednorazowo",
-      "custom": "Indywidualnie",
+      "custom": "Na zamówienie",
       "mostChosen": "Najczęściej wybierane"
+    }
+  },
+  "calculator": {
+    "title": "Oblicz swoją cenę w 60 sek",
+    "paymentTypeTitle": "Wybierz typ płatności",
+    "payment": {
+      "oneTime": "Projekt jednorazowy",
+      "oneTimeDesc": "Zapłać za pozycję.",
+      "oneTimeDescSimple": "Zapłać za pozycję.",
+      "monthly": "Subskrypcja miesięczna",
+      "monthlyDesc": "Stała kwota miesięczna.",
+      "monthlyDescSimple": "Stała kwota miesięczna."
     },
-    "modal": {
-      "watchVideo": "Obejrzyj wideo",
-      "close": "Zamknij",
-      "videoDuration": "⏱ Czas trwania: 60 sekund",
-      "cta": "Poproś o indywidualną wycenę",
-      "description": "Ostateczna cena zależy od Twoich konkretnych potrzeb i zakresu projektu. Skontaktuj się z nami na niezobowiązującą rozmowę.",
-      "noVideo": "Wideo wkrótce dostępne"
+    "vatNote": "Wszystkie ceny bez VAT",
+    "estimatedMonthlyFee": "Szacunkowa mesięczna opłata serwisowa",
+    "setupFee": "Opłata konfiguracji",
+    "totalFirstMonth": "Razem pierwszy miesiąc",
+    "subtotal": "Razem",
+    "total": "Suma",
+    "basePrice": "Cena podstawowa",
+    "addons": "Dodatki",
+    "configurePackage": "Skonfiguruj swój pakiet",
+    "extraOptions": "Opcje dodatkowe",
+    "cta": {
+      "whatsapp": "Czat na WhatsApp",
+      "requestQuote": "Poproś o wycenę",
+      "planCall": "Zaplanuj rozmowę",
+      "planCallHelper": "Wybierz slot, który pasuje. Bezpłatna konsultacja (30 min)."
     },
-    "filters": {
-      "all": "Wszystkie usługi",
-      "monthly": "Abonamenty miesięczne",
-      "oneTime": "Projekty jednorazowe",
-      "custom": "Projekty indywidualne"
+    "step1": "Wybierz typ płatności",
+    "step2": "Wybierz swoje deliverables"
+  },
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Coś poszło nie tak",
+    "retry": "Spróbuj ponownie",
+    "cancel": "Anuluj",
+    "save": "Zapisz",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "close": "Zamknij",
+    "submit": "Wyślij",
+    "next": "Dalej",
+    "previous": "Wstecz",
+    "back": "Cofnij",
+    "continue": "Kontynuuj",
+    "viewMore": "Pokaż więcej",
+    "viewAll": "Pokaż wszystko",
+    "learnMore": "Dowiedz się więcej",
+    "getStarted": "Zacznij",
+    "contactUs": "Skontaktuj się z nami",
+    "scheduleCall": "Zaplanuj rozmowę",
+    "requestQuote": "Poproś o wycenę",
+    "required": "Wymagane",
+    "optional": "Opcjonalnie",
+    "brandName": "GROPPI",
+    "fullscreen": "Pełny ekran",
+    "search": "Szukaj",
+    "noResults": "Nie znaleziono wyników"
+  },
+  "validation": {
+    "required": "To pole jest wymagane",
+    "email": "Wprowadź prawidłowy adres e-mail",
+    "phone": "Wprowadź prawidłowy numer telefonu",
+    "minLength": "Wymagane co najmniej {{min}} znaków",
+    "maxLength": "Maksymalnie {{max}} znaków",
+    "invalidUrl": "Wprowadź prawidłowy adres URL"
+  },
+  "forms": {
+    "name": "Imię",
+    "email": "Email",
+    "phone": "Telefon",
+    "company": "Firma",
+    "message": "Wiadomość",
+    "subject": "Temat",
+    "website": "Strona internetowa",
+    "budget": "Budżet",
+    "submitSuccess": "Dziękuję! Skontaktujemy się wkrótce.",
+    "submitError": "Coś poszło nie tak. Spróbuj ponownie."
+  },
+  "hero": {
+    "title": "Złoty Standard GROPPI",
+    "subtitle": "Doskonałość w każdym szczególe",
+    "description": "Usługi cyfrowe premium od 2016.",
+    "cta": "Zaplanuj bezpłatną konsultację",
+    "ctaSecondary": "Zobacz nasze usługi"
+  },
+  "home": {
+    "heroNew": {
+      "badge": "Strategia. Wykonanie. Rezultaty.",
+      "headline": "Więcej klientów, więcej przychodu — z planem, który działa.",
+      "subtitle": "Pomagamy belgijskim firmom rosnąć dzięki jasnej strategii, silnej treści i mierzalnym kampaniom. Bez pustych obietnic, tylko praca która daje wyniki.",
+      "proof1": "Spójne podejście, bez zgadywania",
+      "proof2": "Uczciwe ceny, jasne rezultaty",
+      "proof3": "Więcej klientów, mniej marnotrawionego budżetu",
+      "ctaPrimary": "Zobacz usługi i ceny",
+      "ctaSecondary": "Poproś o propozycję",
+      "scrollHint": "Przewiń"
     },
-    "goalEntry": {
+    "postHeroTrust": {
+      "title": "Zbudowane dla firm które chcą rosnąć",
+      "subtitle": "Bez marketingowego szumu. Bez niejasnych planów. Dostarczamy strukturę, treść i kampanie które generują klientów."
+    },
+    "whoWeAre": {
+      "headline": "Kim jesteśmy. I dlaczego pracujemy inaczej.",
+      "subtext": "Od 2016 roku pomagamy firmom rosnąć\ndzięki strukturze, kontroli i inteligentnym systemom —\nnie pustym frazom marketingowym.",
+      "cta": "Zobacz nasze usługi",
+      "videoAlt": "Obejrzyj nasz film wprowadzający"
+    },
+    "serviceMap": {
+      "label": "Co robimy",
+      "title": "Nasze usługi w jednym spojrzeniu",
+      "subtitle": "Jasne usługi. Przejrzyste ceny. Bez szumu marketingowego.",
+      "columns": {
+        "online": {
+          "title": "Postaw firmę online",
+          "services": {
+            "businessWebsite": "Strona firmowa",
+            "onePage": "Strona jednostronicowa",
+            "webshop": "Sklep internetowy",
+            "visualContent": "Treści wizualne i wideo"
+          }
+        },
+        "findable": {
+          "title": "Bądź łatwiej znajdujemy",
+          "services": {
+            "seo": "SEO (lokalne i techniczne)",
+            "googleBusiness": "Optymalizacja Google Business",
+            "sea": "Reklamy w wyszukiwarkach (SEA)",
+            "dataTracking": "Konfiguracja danych i śledzenia"
+          }
+        },
+        "standout": {
+          "title": "Wyróżnij swoją firmę",
+          "services": {
+            "branding": "Branding i identyfikacja wizualna",
+            "socialContent": "Treści mediów społecznościowych",
+            "videoAds": "Reklamy wideo",
+            "creativeCampaigns": "Kreatywne kampanie"
+          }
+        },
+        "attract": {
+          "title": "Przyciągnij klientów",
+          "services": {
+            "adManagement": "Zarządzanie reklamami",
+            "socialManagement": "Zarządzanie mediami społecznościowymi",
+            "leadGen": "Lejki generowania leadów",
+            "conversionOptimization": "Optymalizacja konwersji"
+          }
+        }
+      },
+      "cta": {
+        "viewServices": "Zobacz usługi i ceny",
+        "calculatePrice": "Oblicz cenę w 60 sek"
+      }
+    },
+    "trustBar": {
+      "item1": {
+        "title": "Jasne ceny",
+        "text": "Brak ukrytych kosztów, brak niespodzianek."
+      },
+      "item2": {
+        "title": "Szybka komunikacja",
+        "text": "Zawsze odpowiedź w ciągu 24 godzin."
+      },
+      "item3": {
+        "title": "Zorientowanie na wyniki",
+        "text": "Mierzymy wszystko i dostosowujemy gdzie trzeba."
+      }
+    },
+    "quickChoice": {
       "badge": "Zacznij tutaj",
-      "title": "Co chcesz osiągnąć?",
-      "subtitle": "Wybierz swój główny cel, a my pokażemy Ci odpowiednie usługi.",
-      "browseHint": "Lub przeglądaj wszystkie usługi poniżej",
+      "title": "Nie wiesz dokładnie czego potrzebujesz?",
+      "subtitle": "Wybierz swój główny cel — pokażemy od razu pasujące usługi.",
+      "cta": "Pokaż zalecane usługi",
       "visibility": {
         "title": "Większa widoczność",
-        "description": "Zbuduj silną, profesjonalną obecność online.",
-        "cta": "Zobacz jak to działa"
+        "desc": "Upewnij się że klienci cię znajdują poprzez media społecznościowe, treść i silną obecność online."
       },
       "leads": {
         "title": "Więcej leadów",
-        "description": "Przyciągnij nowych, zainteresowanych kontaktów.",
-        "cta": "Zobacz rekomendacje"
+        "desc": "Przyciągnij poważnie zainteresowanych poprzez reklamy, SEO i inteligentne lejki."
       },
       "sales": {
         "title": "Więcej sprzedaży",
-        "description": "Konwertuj ruch na płacących klientów.",
-        "cta": "Zacznij sprzedawać"
+        "desc": "Sprzedawaj online dzięki silnemu sklepowi, ukierunkowanym ogłoszeniom i treści nastawionej na konwersję."
       }
     },
-    "simpleExplanation": {
-      "content_production": "Profesjonalne filmy i zdjęcia, które wzmacniają Twój wizerunek.",
-      "one_page_website": "Szybki start z jedną, skuteczną stroną wizytówką.",
-      "business_website": "Kompletna, profesjonalna strona budująca zaufanie.",
-      "ecommerce_website": "Zacznij sprzedawać online z w pełni funkcjonalnym sklepem.",
-      "ads_management": "Docieraj do klientów tam, gdzie spędzają czas.",
-      "seo": "Bądź widoczny w Google, gdy klienci Cię szukają.",
-      "social_media": "Buduj społeczność i regularnie angażuj odbiorców.",
-      "reputation": "Dbaj o dobre opinie i chroń wizerunek marki.",
-      "data_sync": "Upewnij się, że Twoje dane są spójne wszędzie.",
-      "mobile_app_development": "Stwórz własną aplikację mobilną dla klientów."
-    },
-    "microGuidance": {
-      "content_production": "Dla firm, które chcą wyróżnić się wizualnie.",
-      "one_page_website": "Idealne na szybki start lub kampanię.",
-      "business_website": "Standard dla każdej profesjonalnej firmy.",
-      "ecommerce_website": "Dla tych, którzy chcą sprzedawać produkty online.",
-      "ads_management": "Najszybszy sposób na ruch i wyniki.",
-      "seo": "Dla długoterminowego, darmowego ruchu z Google.",
-      "social_media": "Dla budowania relacji z klientami.",
-      "reputation": "Kluczowe dla lokalnych biznesów i usług.",
-      "data_sync": "Ważne dla firm z wieloma lokalizacjami."
-    },
-    "items": {
-      "aiContent": {
-        "title": "Treści Wizualne i Branding",
-        "description": "Profesjonalne treści wizualne i identyfikacja marki wspierana nowoczesnymi narzędziami. Od projektu logo po pełne kampanie wizualne.",
-        "features": {
-          "0": "Profesjonalne zasoby wizualne",
-          "1": "Projektowanie identyfikacji wizualnej",
-          "2": "Pakiety treści do mediów społecznościowych",
-          "3": "Fotografia produktowa i edycja"
-        }
-      },
-      "webDev": {
-        "title": "Projektowanie i Tworzenie Stron WWW",
-        "description": "Indywidualne, responsywne strony internetowe, które zamieniają odwiedzających w klientów. Nowoczesny design z optymalną wydajnością.",
-        "features": {
-          "0": "Indywidualny projekt responsywny",
-          "1": "Struktura zoptymalizowana pod SEO",
-          "2": "Szybki czas ładowania",
-          "3": "System zarządzania treścią (CMS)"
-        }
-      },
-      "ecommerce": {
-        "title": "Rozwiązania E-commerce",
-        "description": "Kompletna konfiguracja sklepu internetowego z integracją płatności, zarządzaniem zapasami i optymalizacją konwersji.",
-        "features": {
-          "0": "Pełna konfiguracja sklepu internetowego",
-          "1": "Integracja bramek płatności",
-          "2": "System zarządzania produktami",
-          "3": "Optymalizacja procesu zakupowego"
-        }
-      },
-      "ads": {
-        "title": "Zarządzanie Reklamami",
-        "description": "Strategiczne kampanie reklamowe w Google, Meta i innych platformach. Optymalizacja oparta na danych dla maksymalnego zwrotu z inwestycji (ROI).",
-        "features": {
-          "0": "Zarządzanie Google Ads",
-          "1": "Kampanie reklamowe Meta",
-          "2": "Analityka kampanii",
-          "3": "Testy A/B i optymalizacja"
-        }
-      },
-      "seo": {
-        "title": "Pozycjonowanie (SEO)",
-        "description": "Kompleksowa optymalizacja pod kątem wyszukiwarek, aby poprawić Twoją widoczność organiczną i przyciągnąć więcej kwalifikowanego ruchu.",
-        "features": {
-          "0": "Audyt techniczny SEO",
-          "1": "Badanie i strategia słów kluczowych",
-          "2": "Optymalizacja treści",
-          "3": "Budowanie profilu linków"
-        }
-      },
-      "social": {
-        "title": "Zarządzanie Mediami Społecznościowymi",
-        "description": "Pełna obsługa Twoich profili w mediach społecznościowych. Od tworzenia treści po zarządzanie społecznością i raportowanie wzrostu.",
-        "features": {
-          "0": "Strategia mediów społecznościowych",
-          "1": "Tworzenie i planowanie treści",
-          "2": "Zarządzanie społecznością",
-          "3": "Raportowanie wyników"
-        }
-      }
-    },
-    "videoModal": {
-      "continueToDetails": "Przejdź do szczegółów",
-      "comingSoon": "Wideo wkrótce",
-      "duration": "60 sek.",
-      "qualityNote": "Jakość źródłowa",
-      "defaultBullets": {
-        "when": "Kiedy to pasuje",
-        "problem": "Jaki problem to rozwiązuje",
-        "result": "Oczekiwany wynik"
-      },
-      "bullets": {
-        "social_media": {
-          "when": "Dla firm chcących budować lojalną społeczność.",
-          "problem": "Brak czasu na regularne publikowanie.",
-          "result": "Rosnąca, zaangażowana społeczność."
+    "servicesGrid": {
+      "subtitle": "Nasze usługi",
+      "title": "Co możemy dla ciebie zrobić?",
+      "description": "Każda usługa jest jasno wyjaśniona: co dostajesz, ile kosztuje i jak to działa. Bez zamieszania.",
+      "featured": "Najczęściej wybierane",
+      "viewDetails": "Więcej info",
+      "watchVideo": "Wideo",
+      "buildPlan": "Zbuduj swój plan",
+      "seePricing": "Zobacz cenę",
+      "customQuote": "Wycena na zamówienie",
+      "from": "Od",
+      "perMonth": "/ miesiąc",
+      "oneTime": "jednorazowo",
+      "vatExcluded": "bez VAT",
+      "items": {
+        "contentProduction": {
+          "title": "Produkcja treści",
+          "desc": "Filmy, zdjęcia i materiały wizualne które wyróżniają Twoją markę — na każdej platformie.",
+          "deliverables": {
+            "0": "Produkcja wideo (krótki lub długi format)",
+            "1": "Profesjonalna fotografia",
+            "2": "Postprodukcja i edycja"
+          }
         },
-        "content_production": {
-          "when": "Dla firm, które chcą się wyróżnić wizualnie.",
-          "problem": "Amatorskie zdjęcia i wideo odstraszają klientów.",
-          "result": "Profesjonalny wizerunek budujący zaufanie."
+        "businessWebsite": {
+          "title": "Strona firmowa",
+          "desc": "Strona która buduje zaufanie i zamienia odwiedzających w klientów.",
+          "deliverables": {
+            "0": "Responsywny design dla wszystkich urządzeń",
+            "1": "Struktura zoptymalizowana dla SEO",
+            "2": "System zarządzania treścią"
+          }
         },
-        "ads_management": {
-          "when": "Dla firm potrzebujących szybkich efektów sprzedażowych.",
-          "problem": "Budżet reklamowy nie przynosi zwrotu.",
-          "result": "Skalowalny dopływ nowych klientów."
+        "ecommerce": {
+          "title": "Sklep internetowy",
+          "desc": "Sprzedawaj online dzięki działającemu sklepowi — od produktu do płatności.",
+          "deliverables": {
+            "0": "Pełna konfiguracja sklepu online",
+            "1": "Integracja płatności i wysyłki",
+            "2": "Zarządzanie produktami"
+          }
+        },
+        "ads": {
+          "title": "Zarządzanie reklamami",
+          "desc": "Inteligentne kampanie na Google i Meta które generują leady i sprzedaż.",
+          "deliverables": {
+            "0": "Strategia i konfiguracja kampanii",
+            "1": "Targetowanie i optymalizacja",
+            "2": "Raportowanie miesięczne"
+          }
         },
         "seo": {
-          "when": "Dla firm myślących długoterminowo.",
-          "problem": "Strona jest niewidoczna w Google.",
-          "result": "Darmowy, stały ruch z wyszukiwarki."
+          "title": "SEO",
+          "desc": "Bądź znaleziony przez klientów którzy aktywnie szukają Twoich usług.",
+          "deliverables": {
+            "0": "Audyt techniczny SEO",
+            "1": "Strategia słów kluczowych",
+            "2": "Miesięczna optymalizacja treści"
+          }
         },
-        "ecommerce_website": {
-          "when": "Dla firm chcących sprzedawać produkty online.",
-          "problem": "Brak kanału sprzedaży online lub słaba konwersja.",
-          "result": "Funkcjonalny, sprzedający sklep 24/7."
+        "social": {
+          "title": "Zarządzanie mediami społecznościowymi",
+          "desc": "Profesjonalna obecność na mediach społecznościowych — bez utraty czasu.",
+          "deliverables": {
+            "0": "Planowanie i tworzenie treści",
+            "1": "Zarządzanie społecznością",
+            "2": "Analiza miesięczna"
+          }
         },
-        "mobile_app_development": {
-          "when": "Dla firm chcących być zawsze w kieszeni klienta.",
-          "problem": "Brak bezpośredniego kanału komunikacji.",
-          "result": "Lojalność klientów i łatwy dostęp."
+        "mobileApp": {
+          "title": "Rozwój aplikacji mobilnych",
+          "desc": "Własna aplikacja na iOS i Android — zbudowana na miarę Twojej firmy.",
+          "deliverables": {
+            "0": "Projektowanie i rozwój UX/UI",
+            "1": "Backend i integracje",
+            "2": "Wsparcie przy publikacji w sklepie"
+          }
         }
       }
     },
-    "wizard": {
-      "goal": {
-        "title": "Jaki jest Twój główny cel?",
-        "subtitle": "Wybierz to, na czym najbardziej Ci zależy.",
-        "options": {
-          "visibility": "Większa widoczność marki",
-          "leads": "Więcej zapytań (leadów)",
-          "sales": "Bezpośrednia sprzedaż online"
-        }
+    "serviceModal": {
+      "tabs": {
+        "overview": "Przegląd",
+        "deliverables": "Co dostajesz",
+        "pricing": "Cena i logika",
+        "video": "Wideo",
+        "calculator": "Konstruktor planu"
       },
-      "size": {
-        "title": "Jaki jest etap Twojej firmy?",
-        "subtitle": "Pomoże nam to dobrać odpowiedni poziom usług.",
-        "options": {
-          "starter": "Startuję / Mała firma",
-          "growing": "Rozwijam się",
-          "established": "Ustabilizowana pozycja"
-        }
+      "overview": {
+        "about": "O tej usłudze",
+        "priceRange": "Wskazanie ceny",
+        "content_production": "Profesjonalna produkcja treści wzmacnia Twoją markę poprzez wysokiej jakości filmy i zdjęcia które jasno komunikują Twoją wiadomość i przyciągają Twoją publiczność.",
+        "business_website": "Profesjonalna strona internetowa jest podstawą Twojej obecności online. Budujemy strony które nie tylko wyglądają dobrze, ale także się konwertują.",
+        "ecommerce_website": "Zacznij sprzedawać online dzięki w pełni zoptymalizowanemu sklepowi ze wszystkimi potrzebnymi funkcjami.",
+        "ads_management": "Zmaksymalizuj swój budżet reklamowy dzięki kampaniom opartym na danych na Google, Facebook, Instagram i więcej.",
+        "seo": "Rośnij zrównoważenie dzięki organicznym odwiedzającym poprzez zoptymalizowaną treść i ulepszenia techniczne SEO.",
+        "social_media": "Zbuduj zaangażowaną społeczność dzięki konsekwentnej, wysokiej jakości treści na wszystkich kanałach mediów społecznościowych."
       },
-      "team": {
-        "title": "Czy masz zespół marketingowy?",
-        "subtitle": "Określi to, jakiego wsparcia potrzebujesz.",
-        "options": {
-          "yes": "Tak, mam zespół/osobę",
-          "no": "Nie, robię to sam/szukam wsparcia"
-        }
+      "deliverables": {
+        "title": "Co dostajesz"
       },
-      "result": {
-        "title": "Nasza rekomendacja",
-        "subtitle": "Na podstawie Twoich odpowiedzi, to będzie najlepszy start:",
-        "recommendation": "Rekomendowana usługa",
-        "cta": "Zobacz szczegóły usługi"
+      "pricing": {
+        "title": "Jak działa cena?",
+        "note": "Ostateczna cena zależy od Twoich konkretnych potrzeb i zakresu projektu.",
+        "factors": "Czynniki cenowe:",
+        "factor1": "Zakres i złożoność projektu",
+        "factor2": "Liczba zasobów lub godzin włączonych",
+        "factor3": "Konkretne dostosowania i dodatki"
+      },
+      "video": {
+        "comingSoon": "Film wkrótce",
+        "uploadNote": "Admin może tu przesłać wideo mp4"
       }
+    },
+    "caseStudies": {
+      "title": "Przypadki użytkownika",
+      "subtitle": "Firmy które rosły z nami",
+      "badge": "Przypadki użytkownika",
+      "description": "Od małych startupów do utrzymanych firm, oto jak pomagaliśmy.",
+      "viewCase": "Pokaż przypadek",
+      "industry": "Branża",
+      "challenge": "Wyzwanie",
+      "solution": "Rozwiązanie",
+      "results": "Wyniki",
+      "readMore": "Czytaj więcej"
+    },
+    "clientMarquee": {
+      "title": "Pracujemy z wiodącymi firmami",
+      "description": "Od agencji po restauracje, pomagamy firmom rosnąć."
+    },
+    "clientLogo": {
+      "title": "Zaufane firmy",
+      "description": "Firmy które ufają nam swoją obecność online"
+    },
+    "finalCTA": {
+      "badge": "Zacznij dzisiaj",
+      "headline": "Gotowy do wzrostu?",
+      "subtitle": "Porozmawiajmy o Twojej firmie — bez zobowiązań.",
+      "cta": "Zaplanuj konsultację",
+      "ctaSecondary": "Zobacz ceny"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "O nas",
+      "description": "GROPPI to agencja cyfrowa która pomaga belgijskim firmom rosnąć dzięki jasnej strategii, silnej treści i mierzalnym kampaniom."
+    },
+    "hero": {
+      "title": "My jesteśmy GROPPI",
+      "subtitle": "Agencja cyfrowa która pomaga belgijskim firmom rosnąć od 2016."
+    },
+    "intro": {
+      "headline": "Wierzymy że każdy biznes zasługuje na jasną strategię",
+      "text": "Bez szumu marketingowego, bez pustych obietnic — tylko inteligentna praca która daje wyniki."
+    },
+    "mission": {
+      "headline": "Nasza misja",
+      "text": "Pomaganie belgijskim firmom rosnąć dzięki jasnej strategii, silnej treści i mierzalnym kampaniom."
+    },
+    "values": {
+      "headline": "Nasze wartości",
+      "items": {
+        "clarity": {
+          "title": "Jasność",
+          "text": "Bez żargonu. Bez niepotrzebnej złożoności. Tylko jasne wyjaśnienia."
+        },
+        "results": {
+          "title": "Wyniki",
+          "text": "Mierzymy wszystko. Każde euro musi dać zwrot."
+        },
+        "partnership": {
+          "title": "Partnerstwo",
+          "text": "Twój sukces to nasz sukces. Pracujemy z tobą, nie dla ciebie."
+        }
+      }
+    },
+    "team": {
+      "headline": "Nasz zespół",
+      "description": "Strategie, projektanci i specjaliści marketingu połączeni aby pomóc ci rosnąć.",
+      "members": {}
+    }
+  },
+  "portfolio": {
+    "meta": {
+      "title": "Portfolio",
+      "description": "Pokaż projekty nad którymi pracowaliśmy — od projektowania stron po kampanie reklamowe."
+    },
+    "hero": {
+      "title": "Nasza praca",
+      "subtitle": "Projekty które demonstrują naszą ekspertyzę"
+    },
+    "filters": {
+      "all": "Wszystko",
+      "website": "Strony internetowe",
+      "branding": "Branding",
+      "advertising": "Reklama",
+      "contentProduction": "Produkcja treści",
+      "ecommerce": "E-commerce"
+    },
+    "items": {
+      "caseStudy": "Przypadek użytkownika",
+      "viewProject": "Pokaż projekt",
+      "industryLabel": "Branża",
+      "servicesLabel": "Usługi"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog",
+      "description": "Artykuły o marketingu, projektowaniu stron i strategii cyfrowej."
+    },
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Porady i strategie aby rozwijać Twoją firmę online"
+    },
+    "featured": "Wyróżnione",
+    "readTime": "min czytania",
+    "publishedOn": "Opublikowane",
+    "author": "Przez",
+    "relatedArticles": "Powiązane artykuły",
+    "allArticles": "Pokaż wszystkie artykuły",
+    "noPosts": "Brak postów",
+    "backToArticles": "Wróć do artykułów",
+    "shareArticle": "Podziel się artykułem",
+    "nextArticle": "Następny artykuł",
+    "previousArticle": "Poprzedni artykuł"
+  },
+  "contact": {
+    "meta": {
+      "title": "Kontakt",
+      "description": "Skontaktuj się z GROPPI aby porozmawiać o Twoim projekcie."
+    },
+    "hero": {
+      "title": "Porozmawiajmy",
+      "subtitle": "Chętnie słyszymy o Twoim projekcie"
+    },
+    "form": {
+      "title": "Wyślij nam wiadomość",
+      "subtitle": "Odpowiemy tak szybko jak to możliwe",
+      "namePlaceholder": "Twoje imię",
+      "emailPlaceholder": "twoj@email.com",
+      "companyPlaceholder": "Twoja firma",
+      "subjectPlaceholder": "Temat",
+      "messagePlaceholder": "Twoja wiadomość...",
+      "submit": "Wyślij wiadomość",
+      "sending": "Wysyłanie...",
+      "successMessage": "Dziękuję! Otrzymaliśmy Twoją wiadomość. Skontaktujemy się wkrótce.",
+      "errorMessage": "Był błąd przy wysyłaniu wiadomości. Spróbuj ponownie."
+    },
+    "info": {
+      "title": "Inne sposoby żeby się z nami skontaktować",
+      "email": "Email",
+      "phone": "Telefon",
+      "location": "Lokalizacja"
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Usługi",
+      "description": "Odkryj wszystkie usługi cyfrowe które oferujemy."
+    },
+    "hero": {
+      "title": "Nasze usługi",
+      "subtitle": "Od strategii do wykonania"
+    },
+    "startingFrom": "Od",
+    "perMonth": "/ miesiąc",
+    "serviceDetail": {
+      "overview": "Przegląd",
+      "deliverables": "Deliverables",
+      "pricing": "Ceny",
+      "faq": "Często zadawane pytania",
+      "cta": "Poproś o wycenę"
+    },
+    "ads": {
+      "goals": {
+        "leadGeneration": {
+          "title": "Generowanie leadów",
+          "description": "Przyciągnij kwalifikowanych leadów poprzez strategiczne, ukierunkowane ogłoszenia."
+        },
+        "ecommerce": {
+          "title": "E-commerce",
+          "description": "Zwiększ bezpośrednią sprzedaż dzięki zoptymalizowanym kampaniom e-commerce."
+        },
+        "brandAwareness": {
+          "title": "Świadomość marki",
+          "description": "Zwiększ widoczność marki wśród docelowej publiczności."
+        }
+      },
+      "qualification": {
+        "headline": "Czy reklama jest dla ciebie?",
+        "description": "Nie wszystkie biznesusy są gotowe na płatną reklamę. Najpierw musimy wiedzieć Twoje cele i budżet.",
+        "note": "Reklama jest najskuteczniejsza gdy masz działającą stronę, jasną ofertę i realistyczny budżet."
+      },
+      "transparency": {
+        "headline": "Przejrzystość budżetu",
+        "subheadline": "To co wchodzi w cenę",
+        "description": "Nasza cena obejmuje konfigurację, optymalizację i raportowanie miesięczne. Budżet reklamowy jest oddzielny i trafia bezpośrednio do Meta/Google.",
+        "shortNote": "Koszty reklam = pieniądze bezpośrednio do Meta/Google, nie do nas."
+      },
+      "salesFlow": {
+        "title": "Jak to działa",
+        "steps": {
+          "0": "Ewaluacja celów i budżetu",
+          "1": "Konfiguracja konta reklamowego i piksela śledzenia",
+          "2": "Projektowanie i pisanie ogłoszeń",
+          "3": "Uruchomienie kampanii i optymalizacja początkowa",
+          "4": "Monitorowanie i cotygodniowe dostosowania",
+          "5": "Raportowanie miesięczne z wynikami i zaleceniami"
+        },
+        "closingStatement": "Reklama która działa wymaga jasnej strategii, właściwych publiczności i stałej optymalizacji."
+      },
+      "faq": {
+        "title": "Często zadawane pytania",
+        "budgetIncluded": {
+          "question": "Czy budżet reklamowy jest wliczony?",
+          "answer": "Nie. Nasza cena jest za zarządzanie. Budżet trafia bezpośrednio do Meta/Google."
+        },
+        "smallBudget": {
+          "question": "Czy mogą pracować z małymi budżetami?",
+          "answer": "Tak, ale jest minimalna rekomendacja €200-300/miesiąc aby uzyskać znaczące dane."
+        },
+        "whoDecides": {
+          "question": "Kto decyduje o strategii ogłoszeń?",
+          "answer": "Decydujemy razem. Ty definiujesz cele i budżet, my projektujemy strategię."
+        },
+        "lowerBudget": {
+          "question": "Co mogę zrobić jeśli mój budżet jest mniejszy?",
+          "answer": "Rozważ rozpoczęcie z SEO lub innymi strategiami niskiego kosztu. Reklama działa lepiej z odpowiednim budżetem."
+        }
+      },
+      "recommendedBudget": "Rekomendowany budżet"
     }
   },
   "servicePage": {
-    "defaultDescription": "{{service}} — profesjonalna usługa od GROPPI. Dowiedz się więcej o korzyściach i cenach.",
-    "cta": {
-      "requestQuote": "Poproś o wycenę",
-      "whatsapp": "Napisz na WhatsApp",
-      "planCall": "Umów rozmowę"
-    },
-    "trustNote": "Przejrzyste ceny. Jasne warunki.",
-    "videoPlaceholder": "Wideo wkrótce dostępne",
-    "whatsapp": {
-      "template": "Cześć! Chciałbym dowiedzieć się więcej o usłudze {{service}}."
-    },
-    "deliverables": {
-      "label": "Co otrzymujesz",
-      "title": "W cenie usługi"
-    },
-    "process": {
-      "label": "Jak pracujemy",
-      "title": "Nasz proces"
-    },
-    "calculator": {
-      "label": "Kalkulator",
-      "title": "Oblicz cenę w 60s",
-      "businessTypeLabel": "Typ firmy",
-      "goalLabel": "Twój cel",
-      "packageLabel": "Wybierz pakiet",
-      "adBudgetLabel": "Miesięczny budżet reklamowy",
-      "addonsLabel": "Dodatki",
-      "selectPlaceholder": "Wybierz...",
-      "month": "miesiąc",
-      "monthlyFee": "Szacunkowa opłata miesięczna",
-      "setupFee": "Opłata początkowa",
-      "oneTime": "jednorazowo",
-      "firstMonthTotal": "Razem pierwszy miesiąc",
-      "disclaimer": "Ceny są orientacyjne i netto.",
-      "sendCalculation": "Wyślij kalkulację",
-      "sendWhatsapp": "Wyślij przez WhatsApp",
-      "noAddons": "Bez dodatków",
-      "businessTypes": {
-        "restaurant": "Restauracja / Hotel",
-        "retail": "Handel detaliczny",
-        "construction": "Budownictwo / Renowacje",
-        "beauty": "Uroda / Wellness",
-        "ecommerce": "E-commerce",
-        "other": "Inne"
-      },
-      "goals": {
-        "visibility": "Większa widoczność",
-        "leads": "Więcej leadów",
-        "sales": "Więcej sprzedaży"
-      },
-      "packages": {
-        "starter": "Starter",
-        "growth": "Growth",
-        "pro": "Pro"
-      },
-      "addons": {
-        "extraContent4": "Dodatkowe 4 posty",
-        "extraContent12": "Dodatkowe 12 postów",
-        "extraVideo2": "Dodatkowe 2 wideo",
-        "extraVideo6": "Dodatkowe 6 wideo",
-        "extraLandingPage": "Dodatkowy Landing Page",
-        "extraTracking": "Zaawansowane śledzenie"
-      },
-      "whatsappTemplate": "Cześć! Moja kalkulacja dla {{service}}:\n\n• Typ: {{businessType}}\n• Cel: {{goal}}\n• Pakiet: {{package}}\n• Ads: {{adBudget}}\n• Dodatki: {{addons}}\n\n💰 Szacunek: {{monthlyRange}} / mies.\n📋 Setup: {{setup}}\n\nChciałbym omówić szczegóły."
-    },
-    "faq": {
-      "label": "FAQ",
-      "title": "Częste pytania",
-      "q1": "Czy umowa jest wiążąca?",
-      "a1": "Nasze umowy są miesięczne z 30-dniowym okresem wypowiedzenia. Stawiamy na wyniki, nie na długie kontrakty.",
-      "q2": "Czy mogę zmienić pakiet?",
-      "a2": "Tak, możesz zmienić pakiet w dowolnym momencie ze skutkiem od kolejnego miesiąca.",
-      "q3": "Czy ceny są ostateczne?",
-      "a3": "Kalkulator podaje ceny szacunkowe. Ostateczna oferta może się różnić w zależności od specyficznych wymagań.",
-      "q4": "Co jeśli nie mam materiałów?",
-      "a4": "Możemy zająć się produkcją treści wideo i foto dla Ciebie w ramach dodatkowej usługi.",
-      "q5": "Jak szybko zobaczę wyniki?",
-      "a5": "Zazwyczaj pierwsze wyniki widać w ciągu 2-4 tygodni od uruchomienia kampanii.",
-      "q6": "Czy to działa dla małych firm?",
-      "a6": "Tak, mamy pakiety Starter specjalnie dla mniejszych budżetów."
-    },
-    "finalCTA": {
-      "title": "Gotowy na wzrost?",
-      "subtitle": "Zamieńmy ten plan w rzeczywistość.",
-      "primaryCTA": "Poproś o dokładną wycenę",
-      "secondaryCTA": "Napisz na WhatsApp"
-    },
-    "socialMedia": {
-      "title": "Zarządzanie Social Media",
-      "subtitle": "Buduj społeczność i sprzedawaj.",
-      "benefits": {
-        "1": "Profesjonalny wizerunek marki",
-        "2": "Stały kontakt z klientami",
-        "3": "Oszczędność Twojego czasu"
-      },
-      "deliverables": {
-        "1": { "title": "Strategia", "desc": "Plan komunikacji dopasowany do celów." },
-        "2": { "title": "Tworzenie treści", "desc": "Posty, grafiki i wideo." },
-        "3": { "title": "Publikacja", "desc": "Regularne postowanie." },
-        "4": { "title": "Moderacja", "desc": "Odpowiadanie na komentarze." },
-        "5": { "title": "Raportowanie", "desc": "Miesięczne podsumowanie wyników." },
-        "6": { "title": "Opiekun", "desc": "Dedykowana osoba do kontaktu." }
-      },
-      "process": {
-        "1": { "title": "Analiza", "desc": "Poznajemy Twoją markę i grupę docelową." },
-        "2": { "title": "Planowanie", "desc": "Tworzymy kalendarz publikacji." },
-        "3": { "title": "Realizacja", "desc": "Tworzymy i publikujemy treści." }
-      }
-    },
-    "adsManagement": {
-      "title": "Zarządzanie Reklamami",
-      "subtitle": "Skuteczne kampanie płatne.",
-      "benefits": {
-        "1": "Szybki ruch na stronę",
-        "2": "Precyzyjne targetowanie",
-        "3": "Mierzalny zwrot z inwestycji"
-      },
-      "deliverables": {
-        "1": { "title": "Strategia", "desc": "Dobór kanałów i budżetu." },
-        "2": { "title": "Kreacja", "desc": "Teksty i grafiki reklamowe." },
-        "3": { "title": "Konfiguracja", "desc": "Techniczne ustawienie kampanii." },
-        "4": { "title": "Optymalizacja", "desc": "Ciągłe poprawianie wyników." },
-        "5": { "title": "Raport", "desc": "Przejrzyste wyniki co miesiąc." },
-        "6": { "title": "Konsultacje", "desc": "Omówienie wyników i planów." }
-      },
-      "process": {
-        "1": { "title": "Audit", "desc": "Sprawdzamy obecne działania lub potencjał." },
-        "2": { "title": "Setup", "desc": "Konfigurujemy konta i śledzenie." },
-        "3": { "title": "Skalowanie", "desc": "Zwiększamy budżet tam, gdzie działa." }
-      }
-    },
+    "defaultDescription": "Odkryj jak {{service}} może pomóc Twojemu biznesowi rosnąć.",
     "contentProduction": {
-      "title": "Produkcja Treści",
-      "subtitle": "Wideo i foto, które sprzedaje.",
-      "benefits": {
-        "1": "Wyróżnienie na tle konkurencji",
-        "2": "Większe zaangażowanie",
-        "3": "Profesjonalny wizerunek"
+      "title": "Produkcja treści",
+      "subtitle": "Profesjonalne filmy, zdjęcia i materiały wizualne które wyróżniają Twoją markę",
+      "hero": {
+        "headline": "Treść która wyróżnia",
+        "description": "Od filmów promocyjnych po profesjonalne sesje fotograficzne, tworzymy treść wizualną którą Twoja marka potrzebuje aby połączyć się z publiczością."
       },
       "deliverables": {
-        "1": { "title": "Scenariusz", "desc": "Pomysł i plan nagrań." },
-        "2": { "title": "Nagranie", "desc": "Profesjonalny sprzęt i operator." },
-        "3": { "title": "Montaż", "desc": "Edycja, koloryzacja, dźwięk." },
-        "4": { "title": "Foto", "desc": "Sesja zdjęciowa." },
-        "5": { "title": "Formaty", "desc": "Dopasowanie do social media." },
-        "6": { "title": "Archiwum", "desc": "Dostęp do materiałów." }
+        "title": "Co obejmuje",
+        "items": {
+          "0": "Profesjonalna produkcja wideo",
+          "1": "Sesje fotograficzne",
+          "2": "Edycja i postprodukcja",
+          "3": "Optymalizacja do wielu platform",
+          "4": "Wizualne opowiadanie historii",
+          "5": "Animacje i grafika"
+        }
       },
       "process": {
-        "1": { "title": "Koncepcja", "desc": "Ustalamy styl i przekaz." },
-        "2": { "title": "Produkcja", "desc": "Dzień zdjęciowy." },
-        "3": { "title": "Postprodukcja", "desc": "Obróbka materiału." }
-      }
-    },
-    "seo": {
-      "title": "Pozycjonowanie SEO",
-      "subtitle": "Daj się znaleźć w Google.",
-      "benefits": {
-        "1": "Darmowy ruch z wyszukiwarki",
-        "2": "Budowanie autorytetu",
-        "3": "Długoterminowe efekty"
-      },
-      "deliverables": {
-        "1": { "title": "Audyt", "desc": "Analiza techniczna strony." },
-        "2": { "title": "Słowa kluczowe", "desc": "Dobór fraz do pozycjonowania." },
-        "3": { "title": "Optymalizacja", "desc": "Poprawa treści i kodu." },
-        "4": { "title": "Link building", "desc": "Pozyskiwanie linków." },
-        "5": { "title": "Content", "desc": "Tworzenie tekstów SEO." },
-        "6": { "title": "Monitoring", "desc": "Śledzenie pozycji." }
-      },
-      "process": {
-        "1": { "title": "Analiza", "desc": "Sprawdzamy stan obecny." },
-        "2": { "title": "Strategia", "desc": "Planujemy działania." },
-        "3": { "title": "Wdrożenie", "desc": "Systematyczna praca." }
+        "title": "Jak to działa",
+        "steps": {
+          "0": "Konsultujemy się o Twojej marce i celach",
+          "1": "Planujemy koncepty i storyboardy",
+          "2": "Realizujemy produkcję",
+          "3": "Edytujemy i optymalizujemy",
+          "4": "Dostarczamy gotową treść"
+        }
       }
     },
     "businessWebsite": {
-      "title": "Strona Biznesowa",
-      "subtitle": "Twoja wizytówka w sieci.",
-      "benefits": {
-        "1": "Wiarygodność w oczach klientów",
-        "2": "Dostępność 24/7",
-        "3": "Możliwość pozyskiwania leadów"
+      "title": "Strona firmowa",
+      "subtitle": "Strona która buduje zaufanie i zamienia odwiedzających w klientów",
+      "hero": {
+        "headline": "Twoja obecność online zaczyna się tutaj",
+        "description": "Profesjonalna strona która reprezentuje Twoją markę, przyciąga klientów i zamienia odwiedzających w sprzedaż."
       },
       "deliverables": {
-        "1": { "title": "Projekt", "desc": "Indywidualny design." },
-        "2": { "title": "Wdrożenie", "desc": "Kodowanie i konfiguracja." },
-        "3": { "title": "RWD", "desc": "Wersja na telefon i tablet." },
-        "4": { "title": "SEO", "desc": "Podstawowa optymalizacja." },
-        "5": { "title": "CMS", "desc": "Panel do edycji treści." },
-        "6": { "title": "Szkolenie", "desc": "Nauka obsługi strony." }
+        "title": "Co obejmuje",
+        "items": {
+          "0": "Responsywny design",
+          "1": "Optymalizacja SEO",
+          "2": "Szybka prędkość ładowania",
+          "3": "System zarządzania treścią",
+          "4": "Formularze kontaktowe",
+          "5": "Integracja analityki"
+        }
       },
       "process": {
-        "1": { "title": "Makieta", "desc": "Układ strony." },
-        "2": { "title": "Design", "desc": "Projekt graficzny." },
-        "3": { "title": "Kodowanie", "desc": "Programowanie funkcjonalności." }
+        "title": "Jak to działa",
+        "steps": {
+          "0": "Odkrywamy Twoją markę i cele",
+          "1": "Projektujemy wireframy i prototypy",
+          "2": "Rozwijamy Twoją stronę",
+          "3": "Optymalizujemy i testujemy",
+          "4": "Dostarczamy i szkolimy"
+        }
       }
     },
-    "onePageWebsite": {
-      "title": "Strona One-Page",
-      "subtitle": "Szybko i konkretnie.",
-      "benefits": {
-        "1": "Szybki czas realizacji",
-        "2": "Niższy koszt",
-        "3": "Idealna pod kampanie reklamowe"
+    "ecommerce": {
+      "title": "Sklep online (E-commerce)",
+      "subtitle": "Sprzedawaj online dzięki działającemu sklepowi",
+      "hero": {
+        "headline": "Zacznij sprzedawać online łatwo",
+        "description": "Budujemy kompletne sklepy online które integrują płatności, wysyłkę i inwentarz — gotowe do sprzedaży."
       },
       "deliverables": {
-        "1": { "title": "Sekcje", "desc": "Wszystko na jednej długiej stronie." },
-        "2": { "title": "Menu", "desc": "Nawigacja kotwicowa." },
-        "3": { "title": "Kontakt", "desc": "Formularz i dane." },
-        "4": { "title": "Responsywność", "desc": "Działa na każdym urządzeniu." },
-        "5": { "title": "Szybkość", "desc": "Błyskawiczne ładowanie." },
-        "6": { "title": "Hosting", "desc": "Pomoc w uruchomieniu." }
+        "title": "Co obejmuje",
+        "items": {
+          "0": "Konfiguracja platformy e-commerce",
+          "1": "Integracja płatności",
+          "2": "Zarządzanie inwentarzem",
+          "3": "Zarządzanie zamówieniami i wysyłką",
+          "4": "Analiza sprzedaży",
+          "5": "Optymalizacja konwersji"
+        }
       },
       "process": {
-        "1": { "title": "Brief", "desc": "Zbieramy informacje." },
-        "2": { "title": "Projekt", "desc": "Tworzymy wygląd." },
-        "3": { "title": "Start", "desc": "Publikacja w sieci." }
+        "title": "Jak to działa",
+        "steps": {
+          "0": "Analizujemy Twoje produkty i rynek",
+          "1": "Konfigurujemy platformę",
+          "2": "Integrujemy płatności i logistykę",
+          "3": "Optymalizujemy pod sprzedaż",
+          "4": "Uruchamiamy i monitorujemy"
+        }
       }
     },
-    "ecommerceWebsite": {
-      "title": "Sklep Internetowy",
-      "subtitle": "Sprzedawaj online skutecznie.",
-      "benefits": {
-        "1": "Nowy kanał sprzedaży",
-        "2": "Automatyzacja zamówień",
-        "3": "Nieograniczony zasięg"
+    "seo": {
+      "title": "SEO",
+      "subtitle": "Bądź znaleziony przez klientów którzy aktywnie szukają Twoich usług",
+      "hero": {
+        "headline": "Rośnij dzięki organicznym wyszukiwaniom",
+        "description": "Pozycjonuj się w Google dla słów kluczowych które mają znaczenie. SEO to zrównoważony i niedrogies wzrost."
       },
       "deliverables": {
-        "1": { "title": "Sklep", "desc": "Pełna platforma sprzedażowa." },
-        "2": { "title": "Płatności", "desc": "Szybkie przelewy i karty." },
-        "3": { "title": "Wysyłki", "desc": "Integracja z kurierami." },
-        "4": { "title": "Produkty", "desc": "Import lub dodanie bazy." },
-        "5": { "title": "Regulaminy", "desc": "Wsparcie prawne (opcja)." },
-        "6": { "title": "Panel", "desc": "Łatwe zarządzanie." }
+        "title": "Co obejmuje",
+        "items": {
+          "0": "Audyt techniczny SEO",
+          "1": "Badanie słów kluczowych",
+          "2": "Optymalizacja treści",
+          "3": "Budowanie linków",
+          "4": "Monitorowanie rankingów",
+          "5": "Raportowanie miesięczne"
+        }
       },
       "process": {
-        "1": { "title": "Plan", "desc": "Struktura sklepu." },
-        "2": { "title": "Budowa", "desc": "Konfiguracja funkcji." },
-        "3": { "title": "Testy", "desc": "Sprawdzenie zakupów." }
+        "title": "Jak to działa",
+        "steps": {
+          "0": "Auditujemy Twoją stronę",
+          "1": "Badamy słowa kluczowe",
+          "2": "Optymalizujemy treść",
+          "3": "Budujemy strategiczne linki",
+          "4": "Monitorujemy i poprawiamy"
+        }
+      }
+    },
+    "socialMedia": {
+      "title": "Zarządzanie mediami społecznościowymi",
+      "subtitle": "Profesjonalna obecność na mediach społecznościowych bez utraty czasu",
+      "hero": {
+        "headline": "Media społecznościowe które działają",
+        "description": "Konsekwentna treść, zaangażowana społeczność i mierzalne wyniki na Instagramie, Facebooku, LinkedInie i więcej."
+      },
+      "deliverables": {
+        "title": "Co obejmuje",
+        "items": {
+          "0": "Strategia treści",
+          "1": "Tworzenie treści",
+          "2": "Publikowanie i planowanie",
+          "3": "Zarządzanie społecznością",
+          "4": "Analiza i raporty",
+          "5": "Optymalizacja profilu"
+        }
+      },
+      "process": {
+        "title": "Jak to działa",
+        "steps": {
+          "0": "Definiujemy Twoją strategię mediów społecznościowych",
+          "1": "Tworzymy kalendarz treści",
+          "2": "Produkujemy treść wizualną i tekstową",
+          "3": "Publikujemy i zarządzamy komentarzami",
+          "4": "Analizujemy wyniki i dostosowujemy"
+        }
+      }
+    },
+    "advertising": {
+      "title": "Zarządzanie reklamami",
+      "subtitle": "Inteligentne kampanie na Google i Meta które generują leady i sprzedaż",
+      "hero": {
+        "headline": "Reklama która działa",
+        "description": "Strategiczne kampanie na Google Ads i Meta Ads które docierają do kwalifikowanych klientów i generują mierzalne wyniki."
+      },
+      "deliverables": {
+        "title": "Co obejmuje",
+        "items": {
+          "0": "Strategia kampanii",
+          "1": "Konfiguracja konta",
+          "2": "Projektowanie i redakcja ogłoszeń",
+          "3": "Targeting i segmentacja",
+          "4": "Ciągła optymalizacja",
+          "5": "Raportowanie miesięczne"
+        }
+      },
+      "process": {
+        "title": "Jak to działa",
+        "steps": {
+          "0": "Oceniamy cele i budżet",
+          "1": "Konfigurujemy konta reklamowe",
+          "2": "Projektujemy efektywne ogłoszenia",
+          "3": "Uruchamiamy i optymalizujemy",
+          "4": "Raportujemy wyniki miesięcznie"
+        }
       }
     },
     "branding": {
-      "title": "Branding",
-      "subtitle": "Wyróżnij swoją markę.",
-      "benefits": {
-        "1": "Rozpoznawalność na rynku",
-        "2": "Spójny przekaz",
-        "3": "Większe zaufanie"
+      "title": "Branding i identyfikacja wizualna",
+      "subtitle": "Spójna identyfikacja wizualna która komunikuje Twoją markę",
+      "hero": {
+        "headline": "Twoja marka zasługuje być pamiętana",
+        "description": "Od logo do przewodnika marki, tworzymy identifikacje wizualne które wyróżniają i prawidłowo komunikują."
       },
       "deliverables": {
-        "1": { "title": "Logo", "desc": "Znak firmowy." },
-        "2": { "title": "Kolory", "desc": "Paleta barw marki." },
-        "3": { "title": "Typografia", "desc": "Dobór fontów." },
-        "4": { "title": "Brand Book", "desc": "Księga znaku." },
-        "5": { "title": "Wizytówki", "desc": "Projekt materiałów." },
-        "6": { "title": "Social", "desc": "Szablony postów." }
+        "title": "Co obejmuje",
+        "items": {
+          "0": "Projektowanie logo",
+          "1": "Przewodnik marki",
+          "2": "Identyfikacja wizualna",
+          "3": "Kolory i typografia",
+          "4": "Szablony materiałów",
+          "5": "Wariacje do różnych mediów"
+        }
       },
       "process": {
-        "1": { "title": "Badania", "desc": "Analiza konkurencji." },
-        "2": { "title": "Kreacja", "desc": "Projekty graficzne." },
-        "3": { "title": "Wdrożenie", "desc": "Przekazanie plików." }
+        "title": "Jak to działa",
+        "steps": {
+          "0": "Badamy Twoją markę i konkurencję",
+          "1": "Badamy koncepty",
+          "2": "Projektujemy identyfikację wizualną",
+          "3": "Tworzymy przewodnik marki",
+          "4": "Dostarczamy wszystkie pliki"
+        }
       }
     },
-    "mobileAppDevelopment": {
-      "title": "Aplikacje Mobilne",
-      "subtitle": "Bądź w kieszeni klienta.",
-      "benefits": {
-        "1": "Stały kontakt (powiadomienia)",
-        "2": "Wygoda dla użytkownika",
-        "3": "Lojalizacja klientów"
+    "mobileApp": {
+      "title": "Rozwój aplikacji mobilnych",
+      "subtitle": "Natywne aplikacje na iOS i Android",
+      "hero": {
+        "headline": "Twoja własna aplikacja",
+        "description": "Spersonalizowane aplikacje na iOS i Android które oferują premium doświadczenie użytkownika i idealną integrację z Twoim biznesem."
       },
       "deliverables": {
-        "1": { "title": "UX/UI", "desc": "Projekt interfejsu." },
-        "2": { "title": "iOS", "desc": "Aplikacja na iPhone." },
-        "3": { "title": "Android", "desc": "Aplikacja na Androida." },
-        "4": { "title": "Backend", "desc": "Serwer i baza danych." },
-        "5": { "title": "Panel", "desc": "Zarządzanie aplikacją." },
-        "6": { "title": "Sklepy", "desc": "Publikacja w App Store/Play." }
+        "title": "Co obejmuje",
+        "items": {
+          "0": "Projektowanie UX/UI",
+          "1": "Natywny rozwój",
+          "2": "Backend i API",
+          "3": "Integracja usług",
+          "4": "Testowanie i QA",
+          "5": "Publikowanie w App Store"
+        }
       },
       "process": {
-        "1": { "title": "Warsztaty", "desc": "Definicja funkcji." },
-        "2": { "title": "Dev", "desc": "Programowanie." },
-        "3": { "title": "Launch", "desc": "Premiera." }
-      }
-    },
-    "reputation": {
-      "title": "Zarządzanie Reputacją",
-      "subtitle": "Dbaj o opinie.",
-      "benefits": {
-        "1": "Większe zaufanie",
-        "2": "Lepsze pozycje w Google",
-        "3": "Kontrola wizerunku"
-      },
-      "deliverables": {
-        "1": { "title": "Monitoring", "desc": "Śledzenie wzmianek." },
-        "2": { "title": "Opinie", "desc": "Odpowiadanie na recenzje." },
-        "3": { "title": "Pozyskiwanie", "desc": "System zbierania opinii." },
-        "4": { "title": "Kryzysy", "desc": "Reagowanie na negatywy." },
-        "5": { "title": "Raport", "desc": "Analiza sentymentu." },
-        "6": { "title": "Doradztwo", "desc": "Jak dbać o klienta." }
-      },
-      "process": {
-        "1": { "title": "Audyt", "desc": "Stan obecny." },
-        "2": { "title": "Działanie", "desc": "Aktywne zarządzanie." },
-        "3": { "title": "Wzrost", "desc": "Poprawa oceny." }
-      }
-    },
-    "dataSync": {
-      "title": "Synchronizacja Danych",
-      "subtitle": "Porządek w informacjach.",
-      "benefits": {
-        "1": "Aktualne dane wszędzie",
-        "2": "Oszczędność czasu",
-        "3": "Mniej błędów"
-      },
-      "deliverables": {
-        "1": { "title": "Analiza", "desc": "Gdzie są Twoje dane." },
-        "2": { "title": "Integracja", "desc": "Połączenie systemów." },
-        "3": { "title": "Automatyzacja", "desc": "Samoczynne aktualizacje." },
-        "4": { "title": "Wizytówki", "desc": "Google, Apple, FB." },
-        "5": { "title": "Korekta", "desc": "Naprawa błędów." },
-        "6": { "title": "Ochrona", "desc": "Blokada zmian osób trzecich." }
-      },
-      "process": {
-        "1": { "title": "Skan", "desc": "Wykrycie niespójności." },
-        "2": { "title": "Naprawa", "desc": "Ujednolicenie danych." },
-        "3": { "title": "Sync", "desc": "Blokada i utrzymanie." }
-      }
-    },
-    "contentCalculator": {
-      "label": "Kalkulator Treści",
-      "title": "Wycena Contentu",
-      "subtitle": "Oszacuj koszt produkcji wideo i foto.",
-      "step1": "Typ współpracy",
-      "step2": "Wybierz elementy",
-      "oneTime": "Projekt jednorazowy",
-      "oneTimeDesc": "Płacisz za konkretne materiały.",
-      "monthly": "Abonament miesięczny",
-      "monthlyDesc": "Stała dostawa treści co miesiąc.",
-      "posters": "Plakaty / Grafiki",
-      "reels": "Reels / TikTok (pionowe)",
-      "videos": "Wideo poziome (YouTube/WWW)",
-      "articles": "Artykuły / Teksty",
-      "quantity": "Ilość",
-      "perItem": "/szt.",
-      "fixed": "stała",
-      "reelTypes": {
-        "ai": "Generowane przez AI",
-        "clientFootage": "Montaż z materiałów klienta",
-        "onSite": "Z nagraniem u klienta"
-      },
-      "vatNote": "Ceny netto (+VAT)",
-      "quoteCode": "Twój kod wyceny"
-    },
-    "pricingFAQ": {
-      "label": "Cennik FAQ",
-      "title": "Pytania o ceny",
-      "questions": {
-        "fixedOrFlexible": { "q": "Czy ceny są sztywne?", "a": "Nie, to szacunki. Każdy projekt wyceniamy indywidualnie po rozmowie." },
-        "startingFrom": { "q": "Co oznacza 'od'?", "a": "To cena minimalna za podstawowy zakres usługi." },
-        "monthlyOrOneTime": { "q": "Abonament czy jednorazowo?", "a": "Zależy od usługi. Strony to zwykle jednorazowo, social media - abonament." },
-        "vatIncluded": { "q": "Czy ceny zawierają VAT?", "a": "Nie, podane ceny są kwotami netto." },
-        "discounts": { "q": "Czy są rabaty?", "a": "Przy dłuższej współpracy lub łączeniu usług oferujemy korzystniejsze warunki." },
-        "calculator": { "q": "Jak dokładny jest kalkulator?", "a": "Daje rząd wielkości. Dokładną ofertę przygotujemy po poznaniu szczegółów." },
-        "invoice": { "q": "Czy wystawiacie fakturę?", "a": "Tak, oczywiście. Faktura VAT." },
-        "priceChange": { "q": "Czy cena może wzrosnąć?", "a": "Tylko jeśli zmienimy zakres prac, zawsze za Twoją zgodą." },
-        "reelPrice": { "q": "Od czego zależy cena wideo?", "a": "Od tego czy nagrywamy u Ciebie, czy montujemy z gotowych materiałów." },
-        "payment": { "q": "Jakie są formy płatności?", "a": "Przelew bankowy na podstawie faktury." }
+        "title": "Jak to działa",
+        "steps": {
+          "0": "Definiujemy wymagania i funkcjonalności",
+          "1": "Projektujemy doświadczenie użytkownika",
+          "2": "Rozwijamy aplikację",
+          "3": "Dokładnie testujemy",
+          "4": "Publikujemy w App Stores"
+        }
       }
     },
     "generalFAQ": {
-      "label": "Ogólne FAQ",
-      "title": "Ogólne pytania",
+      "label": "Pytania",
+      "title": "Często zadawane pytania",
       "questions": {
-        "whoFor": { "q": "Dla kogo pracujecie?", "a": "Dla MŚP, startupów i firm usługowych szukających wzrostu." },
-        "smallOrLarge": { "q": "Czy moja firma nie jest za mała?", "a": "Nie, mamy rozwiązania skalowalne, startujące od małych budżetów." },
-        "onlyBelgium": { "q": "Czy działacie tylko w Belgii?", "a": "Siedzibę mamy w Belgii, ale obsługujemy klientów z całej Europy." },
-        "howToStart": { "q": "Jak zacząć?", "a": "Umów bezpłatną konsultację lub napisz do nas." },
-        "howLongResults": { "q": "Kiedy będą efekty?", "a": "Zależy od usługi. Ads - natychmiast, SEO - kilka miesięcy." },
-        "longTermContracts": { "q": "Czy wiążecie długimi umowami?", "a": "Nie, preferujemy elastyczność i utrzymanie klienta wynikami." },
-        "combineServices": { "q": "Czy mogę łączyć usługi?", "a": "Tak, to daje najlepsze efekty i często lepszą cenę." }
+        "whoFor": {
+          "q": "Dla kogo jest ta usługa?",
+          "a": "Ta usługa jest idealna dla firm które chcą [główna korzyść]. Niezależnie czy jesteś mały czy duży, możemy dostosować do Twoich potrzeb."
+        },
+        "smallOrLarge": {
+          "q": "Czy działa dla małych biznesów?",
+          "a": "Absolutnie. Skalujemy nasze usługi dla firm wszystkich rozmiarów. Zaczynamy prosto i rosniesz z nami."
+        },
+        "onlyBelgium": {
+          "q": "Czy pracują tylko z belgijskimi firmami?",
+          "a": "Głównie pracujemy z belgijskimi firmami, ale pomagamy też biznesusom w Europie. Skontaktuj się aby zobaczyć czy to dobra opcja."
+        },
+        "howToStart": {
+          "q": "Jak zaczynamy?",
+          "a": "Zaplanuj bezpłatną konsultację. Rozmawiamy o Twoich celach, budżecie i planie działania. Bez zobowiązań."
+        },
+        "howLongResults": {
+          "q": "Ile czasu na rezultaty?",
+          "a": "Zależy od usługi. SEO trwa 3-6 miesięcy. Reklama może działać w tygodniach. Będziemy szczery o oczekiwaniach."
+        },
+        "longTermContracts": {
+          "q": "Czy wymagają długoterminowych umów?",
+          "a": "Zależy od usługi. Niektóre to projekty jednorazowe, inne są miesięczne. Rozmawiamy o najlepszej opcji dla ciebie."
+        },
+        "combineServices": {
+          "q": "Czy mogę łączyć usługi?",
+          "a": "Oczywiście. W rzeczywistości wiele firm widzi lepsze wyniki łącząc usługi komplementarne."
+        }
+      }
+    },
+    "pricingFAQ": {
+      "title": "Pytania o ceny",
+      "items": {
+        "0": {
+          "q": "Jak obliczana jest cena?",
+          "a": "Cena opiera się na typie pakietu, opcjach wliczonych i złożoności. Użyj kalkulatora dla szybkiej oceny."
+        },
+        "1": {
+          "q": "Czy mogę spersonalizować pakiet?",
+          "a": "Tak. Zaczynamy z pakietem bazowym i dodajemy lub usuwamy elementy według Twoich potrzeb."
+        },
+        "2": {
+          "q": "Czy są ukryte koszty?",
+          "a": "Nie. Cena którą widzisz to którą płacisz. Obejmuje wszystko wymienione. Nic więcej."
+        },
+        "3": {
+          "q": "Co jeśli chcę zmienić mój plan?",
+          "a": "Możesz zmienić w dowolnym momencie. Jeśli to usługa miesięczna, dostosowujemy w następnym cyklu fakturowania."
+        }
       }
     },
     "servicesFAQ": {
-      "label": "Usługi FAQ",
-      "title": "Pytania o usługi",
-      "questions": {
-        "onePageVsBusiness": { "q": "Czym różni się One-Page od Strony Biznesowej?", "a": "One-Page to jedna długa strona (wizytówka). Biznesowa ma podstrony (O nas, Oferta, Kontakt itp.)." },
-        "seoOneTimeOrOngoing": { "q": "Czy SEO jest jednorazowe?", "a": "Techniczne tak, ale pozycjonowanie to proces ciągły." },
-        "adBudgetManagement": { "q": "Czy budżet reklamowy jest w cenie obsługi?", "a": "Nie, budżet reklamowy płacisz bezpośrednio platformom (Google, Meta)." },
-        "contentOrManagement": { "q": "Sam content czy zarządzanie?", "a": "Możemy tylko dostarczyć materiały lub w pełni prowadzić Twój profil." },
-        "withoutWebsite": { "q": "Czy mogę działać bez strony www?", "a": "Tak, np. tylko na social media, ale strona zwiększa wiarygodność." },
-        "videoInSocial": { "q": "Czy wideo jest w pakiecie social?", "a": "Tak, Reels/TikToki są częścią naszych pakietów contentowych." },
-        "ecommerceVsBusiness": { "q": "Sklep czy strona?", "a": "Jeśli chcesz sprzedawać i przyjmować płatności online - wybierz Sklep." },
-        "reputationHowItWorks": { "q": "Jak działa zarządzanie reputacją?", "a": "Monitorujemy sieć i reagujemy na opinie w Twoim imieniu." },
-        "dataSyncExplained": { "q": "Po co mi synchronizacja danych?", "a": "Aby klient zawsze trafiał pod dobry adres i widział aktualne godziny otwarcia." }
-      }
-    }
-  },
-  "planBuilder": {
-    "title": "Kreator Planu Social Media",
-    "subtitle": "Zbuduj własny pakiet.",
-    "steps": {
-      "channels": "Kanały",
-      "frequency": "Częstotliwość",
-      "ads": "Reklamy",
-      "addons": "Dodatki"
-    },
-    "channels": {
-      "title": "Gdzie chcesz być obecny?",
-      "subtitle": "Wybierz platformy.",
-      "options": {
-        "instagram": "Instagram",
-        "facebook": "Facebook",
-        "linkedin": "LinkedIn",
-        "tiktok": "TikTok",
-        "youtube": "YouTube"
-      }
-    },
-    "frequency": {
-      "title": "Ile postów tygodniowo?",
-      "subtitle": "Określ intensywność.",
-      "options": {
-        "2perWeek": "2 posty / tydzień",
-        "3perWeek": "3 posty / tydzień",
-        "daily": "Codziennie",
-        "custom": "Inna ilość"
-      }
-    },
-    "ads": {
-      "title": "Czy chcesz włączyć reklamy?",
-      "subtitle": "Zwiększ zasięg płatną promocją.",
-      "options": {
-        "noAds": "Bez reklam (tylko organicznie)",
-        "starterAds": "Starter (mały budżet)",
-        "growthAds": "Growth (średni budżet)",
-        "proAds": "Pro (duży budżet)"
-      }
-    },
-    "addons": {
-      "title": "Potrzebujesz czegoś ekstra?",
-      "subtitle": "Wybierz dodatkowe usługi.",
-      "options": {
-        "contentCreation": "Sesja foto/wideo u klienta",
-        "communityManagement": "Odpisywanie na komentarze",
-        "monthlyReporting": "Zaawansowane raportowanie",
-        "influencerCollab": "Współpraca z influencerami"
-      }
-    },
-    "summary": {
-      "title": "Twój Plan",
-      "channels": "Wybrane kanały",
-      "frequency": "Częstotliwość postów",
-      "ads": "Obsługa reklam",
-      "addons": "Dodatki",
-      "managementFee": "Opłata za obsługę",
-      "adBudget": "Zalecany budżet reklamowy",
-      "total": "Szacunkowy koszt miesięczny",
-      "disclaimer": "Ceny netto. Budżet reklamowy płatny osobno.",
-      "ctaWhatsapp": "Wyślij plan na WhatsApp",
-      "ctaCall": "Omów ten plan"
-    },
-    "faq": {
-      "title": "FAQ Kreatora",
-      "questions": {
-        "0": { "q": "Czy to wiążąca oferta?", "a": "Nie, to wstępna kalkulacja do rozmowy." },
-        "1": { "q": "Czy mogę zmienić plan później?", "a": "Tak, jesteśmy elastyczni." },
-        "2": { "q": "Kiedy startujemy?", "a": "Po akceptacji warunków i przekazaniu dostępów." }
+      "title": "Więcej pytań",
+      "items": {
+        "0": {
+          "q": "Jaka jest różnica między Twoimi pakietami?",
+          "a": "Pakiet podstawowy obejmuje essencje. Wyższe pakiety dodają więcej funkcjonalności, godzin lub przeglądów."
+        },
+        "1": {
+          "q": "Co obejmuje wsparcie?",
+          "a": "Wsparcie email jest wliczone. Priorytetowe i dedykowane wsparcie są dostępne w wyższych pakietach."
+        },
+        "2": {
+          "q": "Czy mogę anulować jeśli nie jestem zadowolony?",
+          "a": "Chcemy żebyś był zadowolony. W usługach miesięcznych możesz anulować z powiadomieniem. W projektach dyskutujemy terminy."
+        }
       }
     }
   },
   "partner": {
-    "hero": {
-      "headline": "Partner GROPPI",
-      "subheadline": "Otwórz własną agencję cyfrową z naszym wsparciem.",
-      "cta": "Zostań Partnerem"
+    "meta": {
+      "title": "Franczyza",
+      "description": "Dołącz do GROPPI jako partner franczyzowy. Rośnij swoją firmę dzięki naszej platformie i marce."
     },
-    "marquee": { "label": "Sieć GROPPI" },
+    "hero": {
+      "badge": "Bądź swoim szefem",
+      "title": "Rośnij z GROPPI",
+      "subtitle": "Dołącz jako partner franczyzowy i zbuduj swoją agencję cyfrową dzięki naszej marce i wsparciu.",
+      "description": "Pomagamy belgijskim firmom rosnąć od 2016. Teraz to Twoja okazja by być częścią — jako franczyzobiorca."
+    },
     "clarity": {
-      "headline": "Jasny model współpracy",
-      "text": "Ty budujesz relacje z klientami, my dostarczamy zaplecze technologiczne i wykonawcze."
+      "badge": "Dlaczego się przystąpić?",
+      "title": "Co dostajesz",
+      "items": {
+        "0": {
+          "title": "Ustanowiona marka",
+          "description": "Lata reputacji, sprawdzone procesy i zaufanie klientów."
+        },
+        "1": {
+          "title": "Szkolenie i wsparcie",
+          "description": "Pełne szkolenie w usługach, procesach sprzedaży i operacjach."
+        },
+        "2": {
+          "title": "Narzędzia i systemy",
+          "description": "Dostęp do szablonów, narzędzi i gotowych systemów operacyjnych."
+        },
+        "3": {
+          "title": "Sieć partnerów",
+          "description": "Współpraca z innymi franczyzobiorcami, podziel się najlepszymi praktykami i rośnij razem."
+        }
+      }
     },
     "forWho": {
-      "headline": "Dla kogo?",
+      "badge": "Czy to dla ciebie?",
+      "title": "Kogo szukamy?",
+      "subtitle": "Szukamy przedsiębiorców z pasją do rezultatów",
       "items": {
-        "0": { "title": "Freelancerzy", "text": "Chcący skalować biznes bez zatrudniania." },
-        "1": { "title": "Agencje", "text": "Szukające partnera do realizacji usług." },
-        "2": { "title": "Handlowcy", "text": "Ze świetnymi kontaktami, szukający produktu." }
+        "0": {
+          "title": "Ambitni przedsiębiorcy",
+          "description": "Którzy chcą budować coś własnego ale z poparciem ustanowionej marki."
+        },
+        "1": {
+          "title": "Eksperci w marketingu lub sprzedaży",
+          "description": "Z doświadczeniem w usługach cyfrowych lub zdolnością do szybkiego uczenia się."
+        },
+        "2": {
+          "title": "Zorientowani na wyniki",
+          "description": "Którzy rozumieją że sukces zależy od wykonania, nie obietnic."
+        },
+        "3": {
+          "title": "Dostępny kapitał początkowy",
+          "description": "Inwestycja aby uruchomić, operacje i pierwsze miesiące."
+        }
+      }
+    },
+    "steps": {
+      "badge": "Jak to działa",
+      "title": "Proces",
+      "items": {
+        "0": {
+          "title": "Konsultacja początkowa",
+          "description": "Rozmawiamy o Twojej wizji, doświadczeniu i celach."
+        },
+        "1": {
+          "title": "Przegląd aplikacji",
+          "description": "Oceniamy czy jest dobry fit."
+        },
+        "2": {
+          "title": "Umowa franczyzowa",
+          "description": "Definiujemy terminy, inwestycję i strukturę dochodów."
+        },
+        "3": {
+          "title": "Intensywne szkolenie",
+          "description": "Trenuj siebie i swój zespół w procesach i usługach."
+        },
+        "4": {
+          "title": "Uruchomienie",
+          "description": "Zacznij sprzedawać pod marką GROPPI z naszym wsparciem."
+        },
+        "5": {
+          "title": "Ciągły wzrost",
+          "description": "Wsparcie, aktualizacje i nowe możliwości serwisowe."
+        }
       }
     },
     "value": {
-      "headline": "Co zyskujesz?",
+      "badge": "Dlaczego GROPPI",
+      "title": "Sprawdzony wzrost",
+      "description": "To nie startup. Jesteśmy ustanowioną agencją z zadowolonymi klientami, sprawdzonymi procesami i spójnymi dochodami.",
       "items": {
-        "0": { "title": "Gotowe procesy", "text": "Sprawdzone know-how." },
-        "1": { "title": "Marka", "text": "Działaj pod szyldem GROPPI lub własnym." },
-        "2": { "title": "Wsparcie", "text": "Pomoc techniczna i merytoryczna." },
-        "3": { "title": "Zysk", "text": "Atrakcyjny model prowizyjny." }
-      }
-    },
-    "howItWorks": {
-      "headline": "Jak to działa?",
-      "steps": {
-        "0": { "title": "Zgłoszenie", "text": "Wypełnij formularz." },
-        "1": { "title": "Rozmowa", "text": "Poznajmy się." },
-        "2": { "title": "Umowa", "text": "Jasne warunki." },
-        "3": { "title": "Start", "text": "Szkolenie i działanie." }
+        "0": {
+          "number": "500+",
+          "label": "Aktywnych klientów",
+          "description": "Od startupów do utrzymanych firm"
+        },
+        "1": {
+          "number": "8+",
+          "label": "Lat na rynku",
+          "description": "Od 2016, budowanie reputacji"
+        },
+        "2": {
+          "number": "15+",
+          "label": "Usług cyfrowych",
+          "description": "Od stron po pełną reklamę"
+        }
       }
     },
     "faq": {
-      "headline": "Pytania Partnerów",
-      "questions": {
-        "investment": { "question": "Czy wymagany jest wkład własny?", "answer": "Nie pobieramy opłat wstępnych." },
-        "exclusivity": { "question": "Czy mam wyłączność terytorialną?", "answer": "Do ustalenia w zależności od regionu." },
-        "support": { "question": "Na jakie wsparcie mogę liczyć?", "answer": "Materiały sprzedażowe, szkolenia, realizacja usług." },
-        "howToApply": { "question": "Jak aplikować?", "answer": "Użyj przycisku poniżej." }
+      "title": "Często zadawane pytania",
+      "items": {
+        "0": {
+          "q": "Jaka jest wymagana inwestycja?",
+          "a": "Zależy od modelu. Skontaktuj się aby uzyskać szczegóły o inwestycji początkowej i royalty."
+        },
+        "1": {
+          "q": "Czy mogę operować zdalnie?",
+          "a": "Tak. Wielu naszych franczyzobiorców operuje zdalnie lub hybrydowo. Elastyczność jest ważna."
+        },
+        "2": {
+          "q": "Czy dostaję pomoc w znalezieniu klientów?",
+          "a": "Tak. Dostarczamy narzędzia marketingowe, szablony sprzedaży i strategię prospecting."
+        },
+        "3": {
+          "q": "Ile mogę zarobić?",
+          "a": "Zależy od liczby klientów i usług które sprzedajesz. Dostarczamy realistyczne projekcje podczas konsultacji."
+        },
+        "4": {
+          "q": "Czy mam kontrolę nad cenami?",
+          "a": "Zachowujemy wytyczne cenowe, ale masz elastyczność aby dostosować do Twojego lokalnego rynku."
+        }
       }
-    },
-    "apply": {
-      "title": "Gotowy na współpracę?",
-      "subtitle": "Sprawdź, czy pasujemy do siebie.",
-      "ctaPrimary": "Aplikuj teraz",
-      "ctaSecondary": "Umów rozmowę"
     },
     "booking": {
-      "title": "Krótka rozmowa",
-      "subtitle": "15-20 min, by omówić szczegóły.",
-      "cta": "Wybierz termin"
+      "title": "Zainteresowany?",
+      "description": "Zaplanuj konsultację. Porozmawiajmy o Twojej okazji.",
+      "cta": "Zaplanuj konsultację",
+      "note": "Konsultacja bez zobowiązań. Odpowiemy w ciągu 24 godzin."
+    },
+    "marquee": {
+      "text": "Rośnij z GROPPI — Ustanowiona marka — Pełne wsparcie — Sprawdzona okazja —"
     }
   },
-  "caseStudy": {
-    "backToPortfolio": "Wróć do portfolio",
-    "challengeLabel": "Wyzwanie",
-    "approachLabel": "Podejście",
-    "resultsLabel": "Wyniki",
-    "servicesUsed": "Wykorzystane usługi",
-    "ctaQuote": "Poproś o podobny projekt",
-    "ctaServices": "Zobacz te usługi",
-    "prevCase": "Poprzedni projekt",
-    "nextCase": "Następny projekt",
-    "allCases": "Wszystkie projekty",
-    "cases": {
-      "restaurant-branding": {
-        "title": "Branding Restauracji",
-        "challenge": "Lokal był nowy i nieznany w okolicy.",
-        "approach": "Stworzyliśmy spójny wizerunek, stronę i kampanię lokalną.",
-        "result": "Pełne rezerwacje w pierwszy weekend."
+  "privacy": {
+    "meta": {
+      "title": "Polityka prywatności",
+      "description": "Jak chronimy Twoją prywatność i co robimy z Twoją informacją."
+    },
+    "title": "Polityka prywatności",
+    "lastUpdated": "Ostatnia aktualizacja: ",
+    "intro": "GROPPI zobowiązuje się chronić Twoją prywatność. Ta polityka wyjaśnia jak zbieramy, używamy i chronimy Twoją informację osobistą.",
+    "sections": {
+      "0": {
+        "title": "1. Jakie informacje zbieramy",
+        "content": "Zbieramy informację którą dobrowolnie dostarczasz (imię, email, telefon) gdy się z nami kontaktujesz lub requestujesz nasze usługi."
       },
-      "mode-webshop": {
-        "title": "Sklep Modowy",
-        "challenge": "Klient sprzedawał tylko stacjonarnie.",
-        "approach": "Wdrożenie Shopify i kampanie na Instagramie.",
-        "result": "85 tys. EUR przychodu online w 3 miesiące."
+      "1": {
+        "title": "2. Jak używamy Twoją informację",
+        "content": "Używamy Twoją informację aby odpowiedzieć na zapytania, dostarczyć usługi i ulepszać naszą platformę."
       },
-      "b2b-platform": {
-        "title": "Platforma B2B",
-        "challenge": "Skomplikowany proces zamówień.",
-        "approach": "Automatyzacja i nowy panel klienta.",
-        "result": "320% więcej zapytań ofertowych."
+      "2": {
+        "title": "3. Ochrona danych",
+        "content": "Implementujemy techniczne i administracyjne środki bezpieczeństwa aby chronić Twoją informację osobistą."
       },
-      "bouwbedrijf-website": {
-        "title": "Firma Budowlana",
-        "challenge": "Brak widoczności w Google.",
-        "approach": "Nowa strona i SEO lokalne.",
-        "result": "#1 pozycja na kluczowe frazy w mieście."
-      },
-      "influencer-campagne": {
-        "title": "Kampania Influencer",
-        "challenge": "Wprowadzenie nowego produktu.",
-        "approach": "Współpraca z 10 mikro-influencerami.",
-        "result": "Zasięg 2,4 mln unikalnych użytkowników."
-      },
-      "tech-startup-branding": {
-        "title": "Tech Startup",
-        "challenge": "Potrzeba profesjonalnego wizerunku dla inwestorów.",
-        "approach": "Rebranding i Pitch Deck.",
-        "result": "Udane zamknięcie rundy finansowania."
-      },
-      "e-commerce-groei": {
-        "title": "Skalowanie E-commerce",
-        "challenge": "Zatrzymanie wzrostu sprzedaży.",
-        "approach": "Optymalizacja konwersji i email marketing.",
-        "result": "Wzrost ROAS o 240%."
-      },
-      "content-strategie": {
-        "title": "Strategia Content",
-        "challenge": "Chaotyczna komunikacja.",
-        "approach": "Plan wydawniczy i produkcja wideo.",
-        "result": "50+ publikacji miesięcznie, wzrost zaangażowania."
+      "3": {
+        "title": "4. Twoje prawa",
+        "content": "Masz prawo dostępu, korygowania lub usuwania Twoją informację osobistą w dowolnym momencie."
       }
     }
   },
-  "social": {
-    "whatsapp": "WhatsApp",
-    "call": "Zadzwoń",
-    "email": "E-mail",
-    "followInstagram": "Obserwuj na Instagramie",
-    "followFacebook": "Polub na Facebooku",
-    "followLinkedin": "Obserwuj na LinkedIn"
-  },
-  "footer": {
-    "rights": "Wszelkie prawa zastrzeżone.",
-    "description": "Rozwiązania cyfrowe od 2016 roku. Siedziba w Belgii.",
-    "privacy": "Polityka prywatności",
-    "terms": "Regulamin",
-    "followUs": "Śledź nas",
-    "quickLinks": "Szybkie linki",
-    "contact": "Dane kontaktowe",
-    "planCall": "Zaplanuj rozmowę (30 min)",
-    "newsletter": {
-      "title": "Newsletter",
-      "description": "Bądź na bieżąco z naszymi najnowszymi spostrzeżeniami i wskazówkami.",
-      "placeholder": "Twój adres e-mail",
-      "button": "Subskrybuj",
-      "subscribed": "Jesteś zapisany! Dziękujemy.",
-      "successTitle": "Zapisano!",
-      "successMessage": "Pomyślnie zapisano do newslettera.",
-      "errorTitle": "Błąd subskrypcji",
-      "errorMessage": "Coś poszło nie tak. Spróbuj ponownie później."
+  "terms": {
+    "meta": {
+      "title": "Warunki usługi",
+      "description": "Warunki i postanowienia używania usług GROPPI."
+    },
+    "title": "Warunki usługi",
+    "lastUpdated": "Ostatnia aktualizacja: ",
+    "intro": "Używając GROPPI, akceptujesz te warunki usługi.",
+    "sections": {
+      "0": {
+        "title": "1. Usługi",
+        "content": "GROPPI dostarcza usługi cyfrowe obejmując projektowanie stron, marketing i reklamę."
+      },
+      "1": {
+        "title": "2. Płatności i fakturowanie",
+        "content": "Usługi są fakturowane wg umowy. Płatność jest należna w określonych warunkach."
+      },
+      "2": {
+        "title": "3. Anulowanie",
+        "content": "Możesz anulować usługi miesięczne z powiadomieniem wcześniejszym. Opłaty bezpowrotne są określone w umowie."
+      },
+      "3": {
+        "title": "4. Ograniczenie odpowiedzialności",
+        "content": "GROPPI nie jest odpowiedzialny za pośrednie lub następcze uszkodzenia z użycia naszych usług."
+      }
     }
   },
   "cookies": {
-    "title": "Używamy plików cookie",
-    "description": "Ta strona używa plików cookie, aby poprawić Twoje doświadczenie i mierzyć nasze wyniki. Klikając Akceptuj, zgadzasz się z naszą polityką cookie.",
+    "title": "Używamy cookies",
+    "description": "Ta strona używa cookies aby ulepszać Twoje doświadczenie i mierzyć naszą wydajność.",
     "learnMore": "Dowiedz się więcej",
-    "accept": "Akceptuj",
+    "accept": "Zaakceptuj",
     "reject": "Odrzuć"
+  },
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "company": "Firma",
+    "quickLinks": "Szybkie linki",
+    "services": "Usługi",
+    "resources": "Zasoby",
+    "about": "O nas",
+    "blog": "Blog",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt",
+    "partner": "Franczyza",
+    "careers": "Kariera",
+    "privacy": "Prywatność",
+    "terms": "Warunki",
+    "newsletter": {
+      "title": "Newsletter",
+      "subtitle": "Tygodniowe porady o marketingu cyfrowym",
+      "inputPlaceholder": "Twój email",
+      "subscribe": "Subskrybuj",
+      "successMessage": "Dziękuję za subskrypcję!",
+      "errorMessage": "Coś poszło nie tak. Spróbuj ponownie."
+    }
+  },
+  "plan": {
+    "builder": {
+      "title": "Zbuduj swój plan",
+      "selectServices": "Wybierz usługi",
+      "selectFrequency": "Wybierz częstotliwość",
+      "estimatedPrice": "Szacunkowa cena",
+      "perMonth": "/ miesiąc",
+      "customize": "Spersonalizuj"
+    }
   }
 }
