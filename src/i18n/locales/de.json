@@ -419,23 +419,405 @@
       }
     }
   },
+  "planBuilder": {
+    "tab": "Plan zusammenstellen",
+    "title": "Planbauer",
+    "subtitle": "Stellen Sie Ihren Social-Media-Plan zusammen und erhalten Sie sofort einen Richtpreis.",
+    "disclaimer": "Dies ist ein Richtpreis. Der endgültige Preis hängt von Umfang, Markenkomplexität und Contentbedarf ab.",
+    "vatNote": "zzgl. MwSt.",
+    "adsBudgetDisclaimer": "Werbebudget wird direkt an Meta/Google gezahlt und ist nicht in den Verwaltungskosten enthalten.",
+    "adsBudgetNote": "Werbebudget wird direkt an Meta/Google gezahlt.",
+    "pauseNote": "Sie können jederzeit pausieren oder stoppen.",
+    "included": "Inbegriffen",
+    "next": "Weiter",
+    "back": "Zurück",
+    "quantity": "Anzahl",
+    "viewSummary": "Zusammenfassung anzeigen",
+    "validation": {
+      "minChannel": "Wählen Sie mindestens 1 Kanal."
+    },
+    "steps": {
+      "channels": "Wählen Sie Ihre Kanäle",
+      "frequency": "Posting-Frequenz",
+      "campaigns": "Bezahlte Kampagnen",
+      "addons": "Optionale Add-ons"
+    },
+    "channels": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "googleBusiness": "Google Business",
+      "pinterest": "Pinterest",
+      "xTwitter": "X (Twitter)"
+    },
+    "frequency": {
+      "2month": "2 Posts pro Monat",
+      "1week": "1 Post pro Woche",
+      "2week": "2 Posts pro Woche",
+      "3week": "3 Posts pro Woche",
+      "4week": "4 Posts pro Woche",
+      "5week": "5 Posts pro Woche"
+    },
+    "adsBudget": {
+      "none": "Keine bezahlten Kampagnen",
+      "100": "€100 / Monat",
+      "250": "€250 / Monat",
+      "500": "€500 / Monat",
+      "1000": "€1000 / Monat"
+    },
+    "addons": {
+      "productPhotos": {
+        "label": "Extra Produktfotos",
+        "unit": "Foto"
+      },
+      "googleReviews": {
+        "label": "Google Review Management"
+      },
+      "contentWriting": {
+        "label": "Copywriting",
+        "unit": "Stunde"
+      },
+      "emailMarketing": {
+        "label": "E-Mail-Marketing-Kampagnen"
+      },
+      "postsPack": {
+        "label": "Social Media Posts (10er-Pack)"
+      },
+      "analyticsDashboard": {
+        "label": "Erweitertes Analyse-Dashboard"
+      }
+    },
+    "summary": {
+      "title": "Zusammenfassung",
+      "managementFee": "Geschätzte Verwaltungskosten",
+      "channels": "Kanäle",
+      "frequency": "Posting-Frequenz",
+      "addons": "Add-ons",
+      "adsBudget": "Werbebudget (direkt gezahlt)",
+      "total": "Gesamt pro Monat",
+      "included": "inbegriffen"
+    },
+    "cta": {
+      "primary": "Individuelles Angebot anfordern",
+      "secondary": "Plan speichern"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "adjustLater": {
+        "question": "Kann ich meinen Plan später anpassen?",
+        "answer": "Ja. Sie können jederzeit anpassen. Wir stimmen alles auf Ihre Ziele ab."
+      },
+      "setupCost": {
+        "question": "Gibt es eine Einrichtungsgebühr?",
+        "answer": "Die Einrichtung ist in den Verwaltungskosten enthalten. Extras entstehen nur bei zusätzlichem Umfang."
+      },
+      "adBudgetIncluded": {
+        "question": "Ist das Werbebudget inbegriffen?",
+        "answer": "Nein. Werbebudget zahlen Sie direkt an Meta/Google. Unsere Kosten sind für Verwaltung und Optimierung."
+      }
+    }
+  },
+  "partner": {
+    "badge": "WAS DIESES PROGRAMM IST",
+    "seo": {
+      "title": "Partner mit GROPPI | Partnernetzwerk",
+      "description": "Werden Sie GROPPI-Partner: eine lizenzgetriebene Partnerschaft mit Marke, System und Support. Kein Job, kein Recruitment. Begrenzte Plätze pro Region."
+    },
+    "hero": {
+      "title": "Dies ist kein Job. Dies ist ein Partnernetzwerk.",
+      "subtitle": "Für Agenturen und Spezialisten, die unter einer starken Marke wachsen wollen — mit klaren Vereinbarungen, deutlicher Lieferung und echtem Support.",
+      "bullet1": "Keine leeren Worte. Nur Struktur.",
+      "bullet2": "Transparentes Liefersystem.",
+      "bullet3": "Premium Marke & Positionierung.",
+      "ctaPrimary": "Kennenlerngespräch planen",
+      "ctaSecondary": "Erfahren Sie, wie es funktioniert",
+      "microcopy": "Begrenzte Anzahl Partner pro Region."
+    },
+    "marquee": {
+      "item1": "10+ Jahre Erfahrung",
+      "item2": "Belgien & Europa",
+      "item3": "Transparente Preise",
+      "item4": "Systeme, die skalieren",
+      "item5": "Premium Lieferung",
+      "item6": "Win-Win Partner"
+    },
+    "clarity": {
+      "subtitle": "Was dieses Programm ist",
+      "title": "Dies ist kein Job. Dies ist ein Partnernetzwerk.",
+      "body": "Dieses Programm richtet sich an Agenturen und Spezialisten, die unter einer starken Marke wachsen wollen. Keine Anstellung. Kein Recruitment. Und auch keine 'leeren Worte' ohne System. Sondern: eine lizenzgetriebene Partnerschaft mit klaren Qualitätsstandards.",
+      "cards": {
+        "brand": {
+          "title": "Marke & Positionierung",
+          "bullets": {
+            "0": "Nutzen Sie die GROPPI-Marke",
+            "1": "Premium-Ausstrahlung ab Tag eins"
+          }
+        },
+        "delivery": {
+          "title": "Liefersystem",
+          "bullets": {
+            "0": "Klare Services & Preislogik",
+            "1": "Tools & Frameworks, die in der Praxis funktionieren"
+          }
+        },
+        "growth": {
+          "title": "Wachstum & Support",
+          "bullets": {
+            "0": "Strategische Begleitung",
+            "1": "Skalierbar ohne Chaos"
+          }
+        }
+      }
+    },
+    "forWho": {
+      "subtitle": "Für wen",
+      "title": "Für Partner, die wachsen wollen",
+      "description": "Wir arbeiten mit Menschen, die Qualität liefern können und lokal skalieren wollen.",
+      "items": {
+        "bureauOwners": "Marketing-Agentur-Inhaber",
+        "growthMarketeers": "Freelance Growth Marketer",
+        "webStudios": "Web- & Development Studios",
+        "contentTeams": "Content & Video Teams",
+        "adsSpecialists": "Ads-Spezialisten",
+        "seoSpecialists": "SEO-Spezialisten",
+        "socialAgencies": "Social Media Agenturen"
+      },
+      "note": "Auswahl erfolgt nach Qualität und Mindset."
+    },
+    "value": {
+      "subtitle": "Was Sie bekommen",
+      "title": "Was Sie als Partner bekommen",
+      "cards": {
+        "credibility": {
+          "title": "Sofortige Glaubwürdigkeit",
+          "body": "Mehr als 10 Jahre Erfahrung übersetzt in starke Positionierung und klare Service-Logik."
+        },
+        "salesReady": {
+          "title": "Verkaufsfertige Struktur",
+          "body": "Services, Preise und Kalkulatoren, die Entscheidungen beschleunigen und Reibung reduzieren."
+        },
+        "portfolio": {
+          "title": "Portfolio-Unterstützung",
+          "body": "Case-Study-Formate, Templates und Qualitätsrichtlinien für Premium-Niveau."
+        },
+        "longterm": {
+          "title": "Langfristige Zusammenarbeit",
+          "body": "Projekte, Erweiterungen und nachhaltige Beziehungen — aufgebaut auf Vertrauen und Lieferung."
+        }
+      },
+      "highlight": "Sie kaufen kein Logo. Sie bekommen ein bewährtes System."
+    },
+    "howItWorks": {
+      "subtitle": "Wie es funktioniert",
+      "title": "So funktioniert es",
+      "steps": {
+        "step1": {
+          "title": "Anmelden",
+          "desc": "Hinterlassen Sie Ihre Daten und erzählen Sie kurz über Ihre Region und Ihr Team."
+        },
+        "step2": {
+          "title": "Kurzes Orientierungsgespräch",
+          "desc": "Wir prüfen, ob es eine Übereinstimmung gibt in Bezug auf Qualität und Erwartungen (15–20 Min.)."
+        },
+        "step3": {
+          "title": "Starten mit dem GROPPI-System",
+          "desc": "Sie erhalten ein Onboarding, Richtlinien und Startmaterial."
+        }
+      }
+    },
+    "faq": {
+      "subtitle": "Fragen",
+      "title": "FAQ",
+      "items": {
+        "isJob": {
+          "question": "Ist dies ein Job?",
+          "answer": "Nein. Dies ist eine Partnerschaft, keine Anstellung."
+        },
+        "bureau": {
+          "question": "Muss ich bereits eine Agentur haben?",
+          "answer": "Vorzugsweise ja. Starke Spezialisten mit Lieferkapazität kommen ebenfalls in Frage."
+        },
+        "exclusivity": {
+          "question": "Bekomme ich Exklusivität?",
+          "answer": "Ja. Begrenzte Anzahl Partner pro Region/Markt."
+        },
+        "leads": {
+          "question": "Liefern Sie Leads?",
+          "answer": "Wir unterstützen Positionierung und Wachstumssysteme. Ergebnisse hängen von Region und Umsetzung ab."
+        },
+        "team": {
+          "question": "Darf ich mit meinem eigenen Team arbeiten?",
+          "answer": "Ja, solange die Qualitätsstandards eingehalten werden."
+        },
+        "howToApply": {
+          "question": "Wie kann ich Partner werden?",
+          "answer": "Über das Partnerformular. Wir melden uns innerhalb von 24 Stunden."
+        }
+      }
+    },
+    "apply": {
+      "title": "Möchten Sie GROPPI-Partner werden?",
+      "subtitle": "Prüfen Sie, ob Ihre Region noch verfügbar ist.",
+      "ctaPrimary": "Partner werden",
+      "ctaSecondary": "Kennenlerngespräch planen"
+    },
+    "booking": {
+      "title": "Planen Sie ein kurzes Kennenlerngespräch",
+      "subtitle": "15–20 Minuten. Wir prüfen gemeinsam, ob es passt und was die nächsten Schritte sind.",
+      "cta": "Gespräch planen"
+    }
+  },
+  "caseStudy": {
+    "backToPortfolio": "Zurück zum Portfolio",
+    "challengeLabel": "Herausforderung",
+    "approachLabel": "Ansatz",
+    "resultsLabel": "Ergebnis",
+    "servicesUsed": "Genutzte Services",
+    "ctaQuote": "Angebot anfordern",
+    "ctaServices": "Services & Preise ansehen",
+    "prevCase": "Vorheriger Case",
+    "nextCase": "Nächster Case",
+    "allCases": "Alle Cases",
+    "cases": {
+      "restaurant-branding": {
+        "title": "Restaurant Branding & Website",
+        "challenge": "Geringe Online-Sichtbarkeit und wenig Reservierungen über digitale Kanäle.",
+        "approach": "Neue Markenidentität + moderne Website + Google Ads Kampagne.",
+        "result": "+180% Online-Reservierungen"
+      },
+      "mode-webshop": {
+        "title": "Mode Webshop Launch",
+        "challenge": "Neue Marke ohne Online-Präsenz oder Kundenbasis.",
+        "approach": "Kompletter Webshop + Social Media Strategie + Influencer Marketing.",
+        "result": "€85K Umsatz in den ersten 3 Monaten"
+      },
+      "b2b-platform": {
+        "title": "B2B Lead Generation Plattform",
+        "challenge": "Zu wenig qualifizierte Leads für B2B-Dienstleistungen.",
+        "approach": "Lead Generation Website + LinkedIn Ads + Content Marketing.",
+        "result": "+320% qualifizierte Leads"
+      },
+      "bouwbedrijf-website": {
+        "title": "Bauunternehmen Website & SEO",
+        "challenge": "Unsichtbar bei Google trotz guter Offline-Reputation.",
+        "approach": "SEO-optimierte Website + lokale SEO + Google My Business.",
+        "result": "#1 Ranking bei Google lokal"
+      },
+      "influencer-campagne": {
+        "title": "Influencer Marketing Kampagne",
+        "challenge": "Markenbekanntheit bei jüngerer Zielgruppe steigern.",
+        "approach": "Influencer-Auswahl + Content-Strategie + Social Media Amplifikation.",
+        "result": "2,4 Millionen Reichweite"
+      },
+      "tech-startup-branding": {
+        "title": "Tech Startup Complete Branding",
+        "challenge": "Startup ohne visuelle Identität oder Markenposition.",
+        "approach": "Markenstrategie + Logo-Design + Website + Pitch Deck.",
+        "result": "Komplette Markenidentität gelauncht"
+      },
+      "e-commerce-groei": {
+        "title": "E-Commerce Wachstumsstrategie",
+        "challenge": "Niedriger ROAS und hohe Werbekosten.",
+        "approach": "Kampagnen-Audit + A/B Testing + Retargeting-Optimierung.",
+        "result": "+240% ROAS-Verbesserung"
+      },
+      "content-strategie": {
+        "title": "Content Produktionsstrategie",
+        "challenge": "Inkonsistenter Content und mangelndes Engagement.",
+        "approach": "Content-Kalender + Videoproduktion + Social Media Management.",
+        "result": "50+ Videos pro Monat"
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "description": "Lesen Sie die Allgemeinen Geschäftsbedingungen für die Nutzung von GROPPI-Diensten und der Website."
+    },
+    "title": "Allgemeine Geschäftsbedingungen",
+    "subtitle": "Diese Bedingungen regeln Ihre Nutzung unserer Website und Dienste. Durch die Nutzung unserer Dienste stimmen Sie diesen Bedingungen zu.",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "footerNote": "Haben Sie Fragen zu diesen Bedingungen? Kontaktieren Sie uns unter info@groppi.be",
+    "sections": {
+      "acceptance": {
+        "title": "Annahme der Bedingungen",
+        "content": "Durch den Zugriff auf oder die Nutzung der GROPPI-Website und -Dienste stimmen Sie diesen Allgemeinen Geschäftsbedingungen zu.\n\nWenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, dürfen Sie unsere Dienste nicht nutzen.\n\nWir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern."
+      },
+      "services": {
+        "title": "Unsere Dienste",
+        "content": "GROPPI bietet digitale Marketingdienste an, darunter:\n\n• Webdesign und -entwicklung\n• Suchmaschinenoptimierung (SEO)\n• Social Media Marketing\n• Bezahlte Werbung\n• Content-Erstellung\n• Markenidentität und Branding\n\nSpezifische Dienste und Lieferungen werden in individuellen Vereinbarungen festgelegt."
+      },
+      "payment": {
+        "title": "Zahlung und Rechnungsstellung",
+        "content": "• Alle Preise verstehen sich zzgl. MwSt., sofern nicht anders angegeben\n• Zahlungen sind innerhalb von 14 Tagen nach Rechnungsdatum fällig\n• Für Projekte kann eine Anzahlung von 50% verlangt werden\n• Bei verspäteter Zahlung können Verwaltungskosten anfallen\n• Wir behalten uns das Recht vor, Dienste bei ausstehenden Zahlungen auszusetzen"
+      },
+      "liability": {
+        "title": "Haftung",
+        "content": "• GROPPI haftet nicht für indirekte Schäden oder Folgeschäden\n• Unsere Haftung ist auf den für den spezifischen Service gezahlten Betrag begrenzt\n• Wir garantieren keine spezifischen Ergebnisse von Marketingkampagnen\n• Kunden sind für die Richtigkeit der bereitgestellten Informationen verantwortlich\n• Wir haften nicht für Änderungen durch Dritte an Plattformen"
+      },
+      "termination": {
+        "title": "Kündigung",
+        "content": "• Beide Parteien können die Vereinbarung mit 30 Tagen schriftlicher Kündigungsfrist beenden\n• Bei schwerwiegenden Verstößen kann eine sofortige Kündigung erfolgen\n• Bei Kündigung sind alle ausstehenden Beträge sofort fällig\n• Wir werden eine angemessene Übergabe von Materialien nach Kündigung ermöglichen"
+      },
+      "modifications": {
+        "title": "Änderungen",
+        "content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern.\n\nBei wesentlichen Änderungen werden wir Sie gegebenenfalls per E-Mail informieren.\n\nDie fortgesetzte Nutzung unserer Dienste nach Änderungen gilt als Annahme der neuen Bedingungen."
+      },
+      "governing": {
+        "title": "Anwendbares Recht",
+        "content": "Diese Bedingungen unterliegen dem belgischen Recht.\n\nStreitigkeiten werden den zuständigen Gerichten Belgiens vorgelegt.\n\nWenn eine Bestimmung dieser Bedingungen für ungültig erklärt wird, bleiben die übrigen Bestimmungen in vollem Umfang wirksam."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": "Für Fragen zu diesen Bedingungen:\n\nGROPPI\nE-Mail: info@groppi.be\nTelefon: +32 456 19 87 21\n\nWir bemühen uns, alle Anfragen innerhalb von 48 Stunden zu beantworten."
+      }
+    }
+  },
   "privacy": {
     "meta": { "title": "Datenschutzrichtlinie", "description": "Lesen Sie, wie GROPPI Ihre persönlichen Daten gemäß der DSGVO schützt und verarbeitet." },
     "title": "Datenschutzrichtlinie",
     "subtitle": "Ihre Privatsphäre ist uns wichtig. Diese Richtlinie erklärt, wie wir Ihre Daten erheben, verwenden und schützen.",
     "lastUpdated": "Zuletzt aktualisiert",
-    "footerNote": "Haben Sie Fragen zu dieser Datenschutzrichtlinie? Kontaktieren Sie uns gerne unter info@groppi.be",
+    "footerNote": "Haben Sie Fragen zu dieser Datenschutzrichtlinie? Kontaktieren Sie uns unter info@groppi.be",
     "sections": {
-      "dataCollection": { "title": "Datenerhebung", "content": "Wir erheben persönliche Daten nur, wenn Sie diese freiwillig über unsere Kontaktformulare, Newsletter-Anmeldungen oder Bewerbungsformulare bereitstellen. Dies umfasst: Name, E-Mail-Adresse, Telefonnummer und Nachrichteninhalt." },
-      "dataUsage": { "title": "Datenverwendung", "content": "Ihre Daten werden ausschließlich verwendet für: Beantwortung Ihrer Anfragen, Versand von Newsletter-Updates (nur mit Ihrer Zustimmung), Verarbeitung von Bewerbungen und Verbesserung unserer Website und Services." },
-      "dataProtection": { "title": "Datenschutz", "content": "Wir ergreifen angemessene technische und organisatorische Maßnahmen zum Schutz Ihrer persönlichen Daten gegen unbefugten Zugriff, Änderung oder Zerstörung." },
-      "cookies": { "title": "Cookies", "content": "Unsere Website verwendet Cookies, um die Funktionalität und Benutzererfahrung zu verbessern. Sie können Cookies über Ihre Browsereinstellungen verwalten." },
-      "thirdParties": { "title": "Drittanbieter", "content": "Wir geben Ihre persönlichen Daten nicht an Dritte weiter, es sei denn, dies ist für die Erbringung unserer Services erforderlich oder gesetzlich vorgeschrieben." },
-      "rights": { "title": "Ihre Rechte", "content": "Sie haben das Recht: auf Ihre persönlichen Daten zuzugreifen, die Korrektur ungenauer Daten zu verlangen, die Löschung Ihrer Daten zu verlangen und der Datenverarbeitung zu widersprechen." },
-      "contact": { "title": "Kontakt", "content": "Für Fragen zu dieser Datenschutzrichtlinie oder zur Ausübung Ihrer Rechte kontaktieren Sie uns bitte unter info@groppi.be." }
+      "dataCollection": {
+        "title": "Datenerhebung",
+        "content": "Wir erheben persönliche Daten, die Sie uns freiwillig zur Verfügung stellen, wie z.B.:\n\n• Name und Kontaktdaten über unsere Kontaktformulare\n• E-Mail-Adresse für Newsletter-Anmeldungen\n• Lebenslauf und Bewerbungsunterlagen\n• Unternehmensinformationen für geschäftliche Anfragen\n\nWir erheben auch automatisch bestimmte technische Daten wie IP-Adresse, Browsertyp und besuchte Seiten für analytische Zwecke."
+      },
+      "dataUsage": {
+        "title": "Datenverwendung",
+        "content": "Wir verwenden Ihre Daten für:\n\n• Die Beantwortung Ihrer Anfragen und Wünsche\n• Den Versand von Newslettern (nur mit Ihrer Zustimmung)\n• Die Verbesserung unserer Website und Dienste\n• Die Erfüllung gesetzlicher Pflichten\n• Den Versand relevanter Informationen über unsere Dienste"
+      },
+      "dataSecurity": {
+        "title": "Datensicherheit",
+        "content": "Wir nehmen die Sicherheit Ihrer Daten ernst. Wir verwenden:\n\n• SSL-Verschlüsselung für alle Datenübertragungen\n• Gesicherte Server und Datenbanken\n• Eingeschränkten Zugang zu persönlichen Daten\n• Regelmäßige Sicherheitsaudits\n\nTrotz unserer Bemühungen kann keine Übertragungsmethode über das Internet 100% sicher sein."
+      },
+      "yourRights": {
+        "title": "Ihre Rechte",
+        "content": "Unter der DSGVO haben Sie folgende Rechte:\n\n• Recht auf Auskunft über Ihre Daten\n• Recht auf Berichtigung unrichtiger Daten\n• Recht auf Löschung Ihrer Daten\n• Recht auf Einschränkung der Verarbeitung\n• Recht auf Datenübertragbarkeit\n• Recht auf Widerspruch gegen die Verarbeitung\n\nKontaktieren Sie uns, um diese Rechte auszuüben."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Unsere Website verwendet Cookies zur Verbesserung Ihrer Erfahrung:\n\n• Essentielle Cookies für die Website-Funktionalität\n• Analytische Cookies, um zu verstehen, wie Besucher unsere Seite nutzen\n• Marketing-Cookies für gezielte Werbung (nur mit Zustimmung)\n\nSie können Cookies über Ihre Browsereinstellungen verwalten."
+      },
+      "retention": {
+        "title": "Aufbewahrungsfrist",
+        "content": "Wir bewahren Ihre Daten nur so lange auf, wie es notwendig ist:\n\n• Kontaktdaten: 2 Jahre nach letztem Kontakt\n• Bewerbungsunterlagen: 1 Jahr nach Abschluss des Verfahrens\n• Newsletter-Abonnenten: bis zur Abmeldung\n• Analytische Daten: 26 Monate\n\nNach dieser Frist werden die Daten sicher gelöscht."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": "Für Fragen zum Datenschutz oder zur Ausübung Ihrer Rechte:\n\nGROPPI\nE-Mail: info@groppi.be\nTelefon: +32 456 19 87 21\n\nSie haben auch das Recht, eine Beschwerde bei der belgischen Datenschutzbehörde einzureichen."
+      }
     }
   },
+  "_footer_merged": true,
   "cookies": {
-    "banner": { "title": "Cookie-Einstellungen", "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Sie können Ihre Einstellungen verwalten.", "accept": "Alle akzeptieren", "reject": "Ablehnen", "manage": "Einstellungen verwalten" }
+    "title": "Wir verwenden Cookies",
+    "description": "Diese Website verwendet Cookies, um Ihre Erfahrung zu verbessern und unsere Leistung zu messen. Durch Klick auf \"Akzeptieren\" stimmen Sie unserer Cookie-Richtlinie zu.",
+    "learnMore": "Mehr erfahren",
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen"
   }
 }
