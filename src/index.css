@@ -540,6 +540,29 @@
     animation: float3d 6s ease-in-out infinite;
   }
 
+  /* ===== GOLD STANDARD HERO KEYFRAMES ===== */
+  @keyframes floatGold {
+    0%   { transform: translate(0,0) rotate(0deg) scale(1); opacity: 0.4; }
+    25%  { transform: translate(30px,-40px) rotate(15deg) scale(1.2); opacity: 0.8; }
+    50%  { transform: translate(-25px,20px) rotate(-10deg) scale(0.9); opacity: 0.6; }
+    75%  { transform: translate(20px,30px) rotate(20deg) scale(1.1); opacity: 0.7; }
+    100% { transform: translate(0,0) rotate(0deg) scale(1); opacity: 0.4; }
+  }
+
+  @keyframes riseGold {
+    0%   { transform: translateY(0) scale(1); opacity: 0.8; }
+    100% { transform: translateY(-700px) scale(1.8); opacity: 0; }
+  }
+
+  @keyframes barBreath {
+    0%   { box-shadow: 0 0 15px hsl(43 76% 52%); opacity: 0.8; }
+    100% { box-shadow: 0 0 45px hsl(45 100% 60%); opacity: 1; }
+  }
+
+  .animate-float-gold { animation: floatGold 20s infinite ease-in-out; }
+  .animate-rise-gold  { animation: riseGold 8s infinite ease-out; }
+  .animate-bar-breath { animation: barBreath 2.5s infinite alternate; }
+
   /* ===== GLOBAL GOLD HOVER - All cards ===== */
   .hover-gold-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;

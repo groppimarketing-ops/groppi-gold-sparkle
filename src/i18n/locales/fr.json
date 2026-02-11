@@ -184,7 +184,13 @@
       "proof3": "Plus de leads, moins de temps perdu",
       "ctaPrimary": "Voir les services et prix",
       "ctaSecondary": "Demander un devis",
-      "scrollHint": "Défiler"
+      "scrollHint": "Défiler",
+      "logoAlt": "GROPPI Gold Standard",
+      "chartLeads": "LEADS",
+      "chartSales": "VENTES",
+      "chartRoi": "ROI",
+      "tagline": "CROISSANCE · CONTENU · ROI",
+      "beyondStandard": "✦ BEYOND STANDARD ✦"
     },
     "postHeroTrust": {
       "title": "Conçu pour la croissance en Belgique & Europe",

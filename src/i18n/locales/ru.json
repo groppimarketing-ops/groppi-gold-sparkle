@@ -166,7 +166,13 @@
       "proof3": "Больше клиентов, меньше потраченного бюджета",
       "ctaPrimary": "Смотреть услуги и цены",
       "ctaSecondary": "Запросить предложение",
-      "scrollHint": "Прокрутите"
+      "scrollHint": "Прокрутите",
+      "logoAlt": "GROPPI Gold Standard",
+      "chartLeads": "ЛИДЫ",
+      "chartSales": "ПРОДАЖИ",
+      "chartRoi": "ROI",
+      "tagline": "РОСТ · КОНТЕНТ · ROI",
+      "beyondStandard": "✦ BEYOND STANDARD ✦"
     },
     "postHeroTrust": {
       "title": "Построено для компаний, которые хотят расти",
