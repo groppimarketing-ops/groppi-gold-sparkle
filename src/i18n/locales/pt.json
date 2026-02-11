@@ -145,7 +145,13 @@
       "proof3": "Mais clientes, menos orçamento desperdiçado",
       "ctaPrimary": "Ver serviços & preços",
       "ctaSecondary": "Pedir orçamento",
-      "scrollHint": "Scroll"
+      "scrollHint": "Scroll",
+      "logoAlt": "GROPPI Gold Standard",
+      "chartLeads": "LEADS",
+      "chartSales": "VENDAS",
+      "chartRoi": "ROI",
+      "tagline": "CRESCIMENTO · CONTEÚDO · ROI",
+      "beyondStandard": "✦ BEYOND STANDARD ✦"
     },
     "postHeroTrust": {
       "title": "Construído para empresas que querem crescer",

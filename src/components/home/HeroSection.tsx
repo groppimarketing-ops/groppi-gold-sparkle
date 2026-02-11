@@ -1,9 +1,45 @@
 import { useTranslation } from 'react-i18next';
-import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowRight, Check, ChevronDown } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useReducedMotion } from 'framer-motion';
+import { ChevronDown, TrendingUp, BarChart3, Rocket, Crown, Gem, Target, Star, Zap, Award, Globe, Sparkles, ChartLine, DollarSign, Users, Eye } from 'lucide-react';
 import { useState, useRef, useEffect, memo } from 'react';
 import { Link } from 'react-router-dom';
+
+const FLOATING_ICONS = [
+  { Icon: TrendingUp, top: '15%', left: '8%', delay: '0s', size: 'text-3xl' },
+  { Icon: BarChart3, top: '70%', left: '85%', delay: '3s', size: 'text-4xl' },
+  { Icon: Rocket, top: '45%', left: '20%', delay: '1.5s', size: 'text-2xl' },
+  { Icon: Crown, top: '80%', left: '15%', delay: '5s', size: 'text-xl' },
+  { Icon: Gem, top: '25%', left: '75%', delay: '2s', size: 'text-4xl' },
+  { Icon: Target, top: '55%', left: '45%', delay: '4s', size: 'text-3xl' },
+  { Icon: Star, top: '10%', left: '60%', delay: '1s', size: 'text-3xl' },
+  { Icon: Zap, top: '65%', left: '30%', delay: '6s', size: 'text-2xl' },
+  { Icon: Award, top: '35%', left: '88%', delay: '2.5s', size: 'text-3xl' },
+  { Icon: Globe, top: '90%', left: '50%', delay: '7s', size: 'text-2xl' },
+  { Icon: Sparkles, top: '50%', left: '12%', delay: '8s', size: 'text-4xl' },
+  { Icon: ChartLine, top: '20%', left: '40%', delay: '2.2s', size: 'text-3xl' },
+  { Icon: DollarSign, top: '75%', left: '70%', delay: '9s', size: 'text-3xl' },
+  { Icon: Users, top: '40%', left: '95%', delay: '5.5s', size: 'text-2xl' },
+  { Icon: Eye, top: '85%', left: '5%', delay: '3.8s', size: 'text-3xl' },
+];
+
+const PARTICLES = [
+  { left: '10%', delay: '0s', size: 10 },
+  { left: '30%', delay: '1.2s', size: 7 },
+  { left: '50%', delay: '2.5s', size: 12 },
+  { left: '70%', delay: '0.8s', size: 8 },
+  { left: '90%', delay: '3.3s', size: 6 },
+  { left: '20%', delay: '4s', size: 9 },
+  { left: '40%', delay: '1.8s', size: 11 },
+  { left: '60%', delay: '5s', size: 7 },
+  { left: '80%', delay: '2.2s', size: 10 },
+  { left: '95%', delay: '6s', size: 8 },
+];
+
+const CHART_BARS = [
+  { heightClass: 'h-20', labelKey: 'chartLeads' },
+  { heightClass: 'h-28', labelKey: 'chartSales' },
+  { heightClass: 'h-36', labelKey: 'chartRoi' },
+];
 
 const HeroSection = memo(() => {
   const { t, i18n } = useTranslation();
@@ -17,40 +53,23 @@ const HeroSection = memo(() => {
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
-      video.addEventListener('canplay', () => setVideoLoaded(true));
-      video.addEventListener('error', () => setVideoError(true));
+      const onCanPlay = () => setVideoLoaded(true);
+      const onError = () => setVideoError(true);
+      video.addEventListener('canplay', onCanPlay);
+      video.addEventListener('error', onError);
+      return () => {
+        video.removeEventListener('canplay', onCanPlay);
+        video.removeEventListener('error', onError);
+      };
     }
-    return () => {
-      if (video) {
-        video.removeEventListener('canplay', () => setVideoLoaded(true));
-        video.removeEventListener('error', () => setVideoError(true));
-      }
-    };
   }, []);
 
   const scrollToServices = () => {
-    const servicesSection = document.getElementById('services-section');
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById('services-section')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const proofPoints = [
-    t('home.heroNew.proof1'),
-    t('home.heroNew.proof2'),
-    t('home.heroNew.proof3'),
-  ];
-
-  // Animation variants respecting reduced motion
-  const fadeUp = prefersReducedMotion 
-    ? { opacity: 0 } 
-    : { opacity: 0, y: 20 };
-  const fadeUpVisible = prefersReducedMotion 
-    ? { opacity: 1 } 
-    : { opacity: 1, y: 0 };
-
   return (
-    <section 
+    <section
       className="relative flex items-center justify-center overflow-hidden"
       style={{ minHeight: 'min(80vh, 750px)' }}
       dir={isRtl ? 'rtl' : 'ltr'}
@@ -65,7 +84,6 @@ const HeroSection = memo(() => {
             videoLoaded && !videoError ? 'opacity-0' : 'opacity-100'
           }`}
         />
-        
         {!videoError && (
           <video
             ref={videoRef}
@@ -83,151 +101,128 @@ const HeroSection = memo(() => {
         )}
       </div>
 
-      {/* Strong Premium Overlay - Darker for better text readability */}
-      <div 
+      {/* Dark Overlay */}
+      <div
         className="absolute inset-0 z-[1]"
         style={{
-          background: `
-            linear-gradient(180deg, 
-              rgba(0,0,0,0.95) 0%, 
-              rgba(0,0,0,0.85) 25%,
-              rgba(0,0,0,0.80) 50%,
-              rgba(0,0,0,0.85) 75%,
-              rgba(0,0,0,0.95) 100%
-            )
-          `
+          background: `linear-gradient(180deg, 
+            rgba(0,0,0,0.95) 0%, 
+            rgba(0,0,0,0.85) 25%,
+            rgba(0,0,0,0.80) 50%,
+            rgba(0,0,0,0.85) 75%,
+            rgba(0,0,0,0.95) 100%
+          )`,
         }}
       />
 
-      {/* Subtle Gold Particles */}
-      <div className="absolute inset-0 z-[2] overflow-hidden pointer-events-none">
-        {[...Array(8)].map((_, i) => (
-          <motion.div
+      {/* Floating Gold Icons */}
+      <div className="absolute inset-0 z-[2] pointer-events-none">
+        {FLOATING_ICONS.map(({ Icon, top, left, delay, size }, i) => (
+          <Icon
             key={i}
-            className="absolute w-1 h-1 rounded-full bg-primary/30"
+            className={`absolute text-primary ${size} drop-shadow-[0_0_15px_hsl(43_76%_52%)] ${
+              prefersReducedMotion ? 'opacity-40' : 'animate-float-gold'
+            }`}
             style={{
-              left: `${15 + Math.random() * 70}%`,
-              top: `${20 + Math.random() * 60}%`,
-            }}
-            animate={{
-              y: [0, -60],
-              opacity: [0, 0.5, 0],
-            }}
-            transition={{
-              duration: 5 + Math.random() * 3,
-              repeat: Infinity,
-              delay: Math.random() * 4,
-              ease: 'easeOut',
+              top,
+              left,
+              animationDelay: prefersReducedMotion ? undefined : delay,
+              opacity: prefersReducedMotion ? 0.4 : undefined,
             }}
           />
         ))}
       </div>
 
+      {/* Rising Gold Particles */}
+      {!prefersReducedMotion && (
+        <div className="absolute inset-0 z-[3] pointer-events-none">
+          {PARTICLES.map((p, i) => (
+            <div
+              key={i}
+              className="absolute bottom-0 rounded-full bg-primary animate-rise-gold"
+              style={{
+                left: p.left,
+                width: p.size,
+                height: p.size,
+                animationDelay: p.delay,
+                boxShadow: '0 0 20px hsl(43 76% 52%), 0 0 40px hsl(43 76% 52% / 0.8)',
+              }}
+            />
+          ))}
+        </div>
+      )}
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-16 md:py-20">
-        <div className="max-w-3xl mx-auto text-center">
-          
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-background/5 backdrop-blur-sm mb-8"
-          >
-            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-            <span className="text-xs text-primary font-medium tracking-wider uppercase">
-              {t('home.heroNew.badge')}
-            </span>
-          </motion.div>
+        <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
+          {/* Crown Logo */}
+          <Crown
+            className={`w-16 h-16 text-primary mb-6 drop-shadow-[0_0_30px_hsl(43_76%_52%)] ${
+              prefersReducedMotion ? '' : 'animate-shimmer'
+            }`}
+            style={{
+              filter: prefersReducedMotion ? undefined : 'drop-shadow(0 0 30px hsl(43 76% 52%))',
+            }}
+          />
 
           {/* Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight gold-gradient-text"
-          >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase tracking-[8px] mb-4 gold-gradient-text gold-text-glow">
             {t('home.heroNew.headline')}
-          </motion.h1>
-          
-          {/* Subheadline */}
-          <motion.p
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.35 }}
-            className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
-          >
-            {t('home.heroNew.subtitle')}
-          </motion.p>
+          </h1>
 
-          {/* Benefit Bullets - Clean Row */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 mb-12"
-          >
-            {proofPoints.map((point, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-2.5"
-              >
-                <div className="w-4 h-4 rounded-full bg-primary/15 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-2.5 h-2.5 text-primary" />
-                </div>
-                <span className="text-sm text-foreground/85">{point}</span>
+          {/* Tagline Pill */}
+          <div className="inline-block border-t border-b border-primary px-8 py-3 mb-10 backdrop-blur-sm bg-background/20">
+            <span className="text-sm sm:text-base md:text-lg text-foreground/90 uppercase tracking-[12px]">
+              {t('home.heroNew.tagline')}
+            </span>
+          </div>
+
+          {/* Chart Bars */}
+          <div className="flex justify-center items-end gap-8 mb-10">
+            {CHART_BARS.map(({ heightClass, labelKey }, i) => (
+              <div key={i} className="flex flex-col items-center">
+                <div
+                  className={`w-11 ${heightClass} rounded-t-2xl rounded-b-lg ${
+                    prefersReducedMotion ? 'opacity-90' : 'animate-bar-breath'
+                  }`}
+                  style={{
+                    background: 'linear-gradient(to top, hsl(43 76% 52%), hsl(45 100% 60%))',
+                    boxShadow: '0 0 30px hsl(43 76% 52%)',
+                  }}
+                />
+                <span className="text-primary text-xs mt-3 tracking-[2px] uppercase font-medium">
+                  {t(`home.heroNew.${labelKey}`)}
+                </span>
               </div>
             ))}
-          </motion.div>
-          
-          {/* CTA Buttons - Centered */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.65 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          </div>
+
+          {/* CTA Button */}
+          <Link
+            to="/services"
+            className="inline-block px-14 py-5 bg-primary text-primary-foreground text-sm font-bold uppercase tracking-[4px] rounded-full border border-primary transition-all duration-300 hover:bg-transparent hover:text-primary hover:shadow-[0_0_60px_hsl(43_76%_52%)] hover:scale-105 mt-2"
+            style={{ boxShadow: '0 0 30px hsl(43 76% 52% / 0.5)' }}
           >
-            <Button
-              asChild
-              size="lg"
-              className="bg-primary text-primary-foreground font-semibold px-10 py-6 text-base rounded-xl transition-all duration-300 hover:bg-primary/90 hover:translate-y-[-2px] hover:shadow-[0_8px_30px_hsl(var(--gold)/0.35)]"
-            >
-              <Link to="/services">
-                {t('home.heroNew.ctaPrimary')}
-                <ArrowRight className={`h-5 w-5 ${isRtl ? 'mr-2 rotate-180' : 'ml-2'}`} />
-              </Link>
-            </Button>
-            
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-primary/50 text-primary font-semibold px-10 py-6 text-base rounded-xl transition-all duration-300 hover:bg-primary/10 hover:border-primary hover:translate-y-[-2px] hover:shadow-[0_8px_25px_hsl(var(--gold)/0.15)]"
-            >
-              <Link to="/contact">
-                {t('home.heroNew.ctaSecondary')}
-              </Link>
-            </Button>
-          </motion.div>
+            {t('home.heroNew.ctaPrimary')}
+          </Link>
+
+          {/* Beyond Standard Footer */}
+          <div className="mt-12 w-full border-t border-primary/30 pt-8">
+            <span className="text-primary/80 text-xs tracking-[6px] uppercase">
+              {t('home.heroNew.beyondStandard')}
+            </span>
+          </div>
         </div>
       </div>
-      
+
       {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+      <button
+        onClick={scrollToServices}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-muted-foreground/60 hover:text-primary transition-colors cursor-pointer animate-bounce"
+        aria-label={t('home.heroNew.scrollHint')}
       >
-        <motion.button
-          onClick={scrollToServices}
-          className="flex flex-col items-center gap-1 text-muted-foreground/60 hover:text-primary transition-colors cursor-pointer"
-          animate={{ y: [0, 6, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-        >
-          <ChevronDown className="w-5 h-5" />
-        </motion.button>
-      </motion.div>
+        <ChevronDown className="w-5 h-5" />
+      </button>
     </section>
   );
 });

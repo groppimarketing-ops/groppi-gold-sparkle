@@ -238,7 +238,13 @@
       "proof3": "More leads, less wasted time",
       "ctaPrimary": "View services & pricing",
       "ctaSecondary": "Request a quote",
-      "scrollHint": "Scroll"
+      "scrollHint": "Scroll",
+      "logoAlt": "GROPPI Gold Standard",
+      "chartLeads": "LEADS",
+      "chartSales": "SALES",
+      "chartRoi": "ROI",
+      "tagline": "GROWTH · CONTENT · ROI",
+      "beyondStandard": "✦ BEYOND STANDARD ✦"
     },
     "postHeroTrust": {
       "title": "Built for growth in Belgium & Europe",
