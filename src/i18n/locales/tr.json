@@ -1800,15 +1800,636 @@
       }
     }
   },
+  "servicePage": {
+    "defaultDescription": "{{service}} — GROPPI Marketing Bureau'dan profesyonel hizmet.",
+    "socialMedia": {
+      "title": "Sosyal Medya Yönetimi",
+      "subtitle": "Düzenli içerik ve profesyonel yönetim gerçek bir topluluk oluşturur.",
+      "benefits": {
+        "1": "Stratejik ve planlı içerik",
+        "2": "Aktif topluluk yönetimi ve hızlı yanıt",
+        "3": "Aylık açık raporlar"
+      },
+      "deliverables": {
+        "1": { "title": "Strateji ve planlama", "desc": "İçeriği hedeflerinize göre planlıyoruz." },
+        "2": { "title": "İçerik oluşturma", "desc": "Profesyonel fotoğraflar, metinler ve videolar." },
+        "3": { "title": "Topluluk yönetimi", "desc": "Günlük yorumlar ve mesajlara yanıt." },
+        "4": { "title": "Aylık raporlar", "desc": "Performans, takipçi büyümesi ve katılım." },
+        "5": { "title": "Profil optimizasyonu", "desc": "Bio, fotoğraflar ve linkler iyileştirilir." },
+        "6": { "title": "Hashtag stratejisi", "desc": "Etkili hashtag seçimi." }
+      },
+      "process": {
+        "1": { "title": "Analiz", "desc": "Markanızı ve hedef kitlenizi anlarız." },
+        "2": { "title": "Uygulama", "desc": "Aylık plan, içerik oluşturma ve günlük yönetim." },
+        "3": { "title": "Büyüme ve iyileştirme", "desc": "Sonuçları ölçüyor ve stratejiyi geliştiriyoruz." }
+      }
+    },
+    "adsManagement": {
+      "title": "Reklam Yönetimi",
+      "subtitle": "Google ve Meta'da hedefli kampanyalar ölçülebilir sonuçlar elde eder.",
+      "benefits": {
+        "1": "Doğru müşterilere tam hedefleme",
+        "2": "Maliyetleri azaltmak için sürekli iyileştirme",
+        "3": "Sonuçlarda tam şeffaflık"
+      },
+      "deliverables": {
+        "1": { "title": "Strateji ve kurulum", "desc": "Hedefleri analiz eder ve kampanyalar kurarız." },
+        "2": { "title": "Hedefleme ve optimizasyon", "desc": "Tam hedefleme ve sürekli iyileştirme." },
+        "3": { "title": "Reklam oluşturma", "desc": "Çekici metinler, görseller ve videolar." },
+        "4": { "title": "Günlük izleme", "desc": "Kampanya performansı günlük izlenir." },
+        "5": { "title": "A/B Testing", "desc": "En iyi versiyonları test edin ve hedefleyin." },
+        "6": { "title": "Aylık raporlar", "desc": "Sonuç ve yatırım konusunda tam şeffaflık." }
+      },
+      "process": {
+        "1": { "title": "Analiz", "desc": "Hedeflerinizi, bütçenizi ve kitlenizi anlıyoruz." },
+        "2": { "title": "Uygulama", "desc": "Kampanyaları kurar, başlatır ve iyileştiririz." },
+        "3": { "title": "Büyüme", "desc": "Sürekli iyileştirme ve getiri artışı." }
+      }
+    },
+    "contentProduction": {
+      "title": "İçerik Üretimi",
+      "subtitle": "Profesyonel içerik — videolar, fotoğraflar ve görseller izlenim bırakan.",
+      "benefits": {
+        "1": "Profesyonel ve çekici içerik",
+        "2": "Markanızla uyumlu",
+        "3": "Dönüşüm ve paylaşım için tasarlanmış"
+      },
+      "deliverables": {
+        "1": { "title": "Video üretimi", "desc": "Profesyonel kısa veya uzun formatlı videolar." },
+        "2": { "title": "Profesyonel fotoğrafçılık", "desc": "Markanız için yüksek kaliteli fotoğraflar." },
+        "3": { "title": "Düzenleme ve işleme", "desc": "Fotoğraf ve videoların profesyonel işlenmesi." },
+        "4": { "title": "Grafik tasarım", "desc": "Dikkat çeken görseller." },
+        "5": { "title": "Metin yazarlığı", "desc": "Markanızla uyumlu metinler." },
+        "6": { "title": "Animasyon", "desc": "Hareketler ve görsel efektler." }
+      },
+      "process": {
+        "1": { "title": "Planlama", "desc": "İçeriği hedeflerinize göre planlıyoruz." },
+        "2": { "title": "Uygulama", "desc": "Çekim, düzenleme ve profesyonel üretim." },
+        "3": { "title": "Teslimat", "desc": "Tüm platform formatlarında teslim edin." }
+      }
+    },
+    "seo": {
+      "title": "Arama Motoru Optimizasyonu (SEO)",
+      "subtitle": "Müşterileriniz Google'da arama yaptığında kendinizi görünür kılın.",
+      "benefits": {
+        "1": "Google'da daha iyi görünürlük",
+        "2": "Düzenli ve nitelikli ziyaretçiler",
+        "3": "Uzun vadeli sürdürülebilir büyüme"
+      },
+      "deliverables": {
+        "1": { "title": "Teknik denetim", "desc": "Sitenizin teknik kapsamlı kontrolü." },
+        "2": { "title": "Anahtar kelime stratejisi", "desc": "En iyi anahtar kelimeleri araştırıyoruz." },
+        "3": { "title": "İçerik optimizasyonu", "desc": "Mevcut sayfalarınızı iyileştiriyoruz." },
+        "4": { "title": "Link oluşturma", "desc": "Güvenilir sitelerden link elde edin." },
+        "5": { "title": "Teknik iyileştirmeler", "desc": "Optimal hız ve site yapısı." },
+        "6": { "title": "Aylık raporlar", "desc": "İlerleme ve sıralama izlemesi." }
+      },
+      "process": {
+        "1": { "title": "Analiz", "desc": "Mevcut sitenizi ve rekabeti değerlendiririz." },
+        "2": { "title": "Uygulama", "desc": "Kapsamlı SEO stratejisini uygularız." },
+        "3": { "title": "Büyüme", "desc": "Sürekli iyileştirme ve daha iyi görünürlük." }
+      }
+    },
+    "businessWebsite": {
+      "title": "İşletme Web Sitesi",
+      "subtitle": "Güven uyandıran ve ziyaretçileri müşteriye dönüştüren bir site.",
+      "benefits": {
+        "1": "Profesyonel ve modern tasarım",
+        "2": "Dönüşüm ve arama için optimize edilmiş",
+        "3": "Yönetmesi kolay"
+      },
+      "deliverables": {
+        "1": { "title": "Duyarlı tasarım", "desc": "Tüm cihazlarda mükemmel şekilde çalışır." },
+        "2": { "title": "Arama motoru optimizasyonu", "desc": "Google'da görünüm için yapılı." },
+        "3": { "title": "İçerik yönetim sistemi", "desc": "Kod bilgisi olmadan tam kontrol." },
+        "4": { "title": "Formlar ve entegrasyonlar", "desc": "İletişim formları ve önemli entegrasyonlar." },
+        "5": { "title": "Güvenlik ve yedekler", "desc": "Site veri koruması ve güvenliği." },
+        "6": { "title": "Eğitim ve destek", "desc": "Sitenizi yönetmek için tam eğitim." }
+      },
+      "process": {
+        "1": { "title": "Analiz", "desc": "İşinizi ve hedef kitlenizi anlıyoruz." },
+        "2": { "title": "Uygulama", "desc": "Tasarım, geliştirme ve site başlatma." },
+        "3": { "title": "Büyüme", "desc": "Sürekli iyileştirme ve sonuç sağlama." }
+      }
+    },
+    "onePageWebsite": {
+      "title": "Tek Sayfalı Web Sitesi",
+      "subtitle": "Hızlı ve basit — projeler ve kampanyalar için ideal.",
+      "benefits": {
+        "1": "Hızlı geliştirme ve başlatma",
+        "2": "Düşük maliyet ve etkili",
+        "3": "Ziyaretçiler için basit ve açık"
+      },
+      "deliverables": {
+        "1": { "title": "Tek sayfa tasarım", "desc": "Güzel bir sayfada tüm bilgi." },
+        "2": { "title": "Tam duyarlılık", "desc": "Telefon ve bilgisayarda çalışır." },
+        "3": { "title": "İletişim formu", "desc": "Ziyaretçilerden mesaj alın." },
+        "4": { "title": "Arama motoru optimizasyonu", "desc": "Google'da görünüm için optimize edilmiş." },
+        "5": { "title": "Barındırma ve domain", "desc": "Bir yıllık barındırma ve domain ücretsiz." },
+        "6": { "title": "İlk destek", "desc": "30 gün destek." }
+      },
+      "process": {
+        "1": { "title": "Planlama", "desc": "Bilgi ve tasarımı planlıyoruz." },
+        "2": { "title": "Geliştirme", "desc": "Hızlı ve basit geliştirme." },
+        "3": { "title": "Başlatma", "desc": "Başlatma ve alan adı kurulumu." }
+      }
+    },
+    "ecommerceWebsite": {
+      "title": "E-ticaret Web Sitesi",
+      "subtitle": "Uyurken satış yapan bir mağaza.",
+      "benefits": {
+        "1": "Kullanıcı dostu alışveriş deneyimi",
+        "2": "Güvenli ve entegre ödeme",
+        "3": "Büyüme için ölçeklenebilir"
+      },
+      "deliverables": {
+        "1": { "title": "Mağaza tasarımı", "desc": "Satış odaklı ürün sayfaları." },
+        "2": { "title": "Geliştirme", "desc": "Güçlü ve güvenilir e-ticaret platformu." },
+        "3": { "title": "Ödeme entegrasyonu", "desc": "Tüm yaygın ödeme yöntemleri." },
+        "4": { "title": "Stok yönetimi", "desc": "Ürünleri kolay yönetin." },
+        "5": { "title": "Pazarlama araçları", "desc": "İndirim kodları, promosyonlar, vb." },
+        "6": { "title": "Eğitim ve destek", "desc": "Mağazanızı yönetmek için tam eğitim." }
+      },
+      "process": {
+        "1": { "title": "Analiz", "desc": "Ürün kataloğu ve hedefleri tartışıyoruz." },
+        "2": { "title": "Uygulama", "desc": "Tasarım, geliştirme ve ürün yükleme." },
+        "3": { "title": "Büyüme ve iyileştirme", "desc": "Başlatma sonrası dönüşüm iyileştirmesi." }
+      }
+    },
+    "branding": {
+      "title": "Marka Oluşturma",
+      "subtitle": "İzlenim bırakan ve sizi rakiplerden ayıran görsel kimlik.",
+      "benefits": {
+        "1": "Tanınır ve profesyonel",
+        "2": "Tüm kanallarda tutarlılık",
+        "3": "Rakiplerden farklı"
+      },
+      "deliverables": {
+        "1": { "title": "Logo tasarımı", "desc": "Çeşitleriyle eşsiz bir logo." },
+        "2": { "title": "Renk paleti", "desc": "Stratejik renk seçimleri." },
+        "3": { "title": "Tipografi", "desc": "Markanıza uyan fontlar." },
+        "4": { "title": "Marka rehberi", "desc": "Tutarlı kullanım el kitabı." },
+        "5": { "title": "Şablonlar", "desc": "Sosyal medya ve basılı şablonlar." },
+        "6": { "title": "Marka varlıkları", "desc": "Tüm dosyalar yüksek kalitede." }
+      },
+      "process": {
+        "1": { "title": "Analiz", "desc": "Markanızı ve hedef kitlenizi öğreniyoruz." },
+        "2": { "title": "Uygulama", "desc": "Konseptler, geri bildirim ve sonlandırma." },
+        "3": { "title": "Büyüme ve iyileştirme", "desc": "Gerektiğinde devam geliştirme." }
+      }
+    },
+    "mobileAppDevelopment": {
+      "title": "Mobil Uygulama Geliştirme",
+      "subtitle": "Premium uygulama — aylık güncelleme ile güvenli ve hızlı.",
+      "benefits": {
+        "1": "iOS ve Android (doğal his)",
+        "2": "Temiz UX ve hızlı performans",
+        "3": "App Store materyalleri hazır"
+      },
+      "deliverables": {
+        "1": { "title": "Strateji ve özellik planlama", "desc": "Birlikte uygulamanın ne yapması gerektiğine karar veririz." },
+        "2": { "title": "UI/UX tasarımı", "desc": "Kullanıcıların anladığı sezgisel tasarım." },
+        "3": { "title": "Geliştirme (iOS/Android)", "desc": "Platform ötesi veya yerel geliştirme." },
+        "4": { "title": "Backend ve entegrasyonlar", "desc": "Ödemeler, API'ler, CRM bağlantıları." },
+        "5": { "title": "QA testi ve optimizasyon", "desc": "Tüm cihazlarda kapsamlı test." },
+        "6": { "title": "App Store / Google Play başlatma", "desc": "Yayınlamada tam rehberlik." }
+      },
+      "process": {
+        "1": { "title": "Analiz", "desc": "Özellikleri, hedef kitleyi ve teknik gereksinimleri tartışıyoruz." },
+        "2": { "title": "Uygulama", "desc": "Tasarım, geliştirme ve sprintlerde test." },
+        "3": { "title": "Başlatma ve bakım", "desc": "Yayınlama + isteğe bağlı aylık bakım." }
+      }
+    },
+    "reputation": {
+      "title": "İtibar ve İnceleme Yönetimi",
+      "subtitle": "Çevrimiçi itibarınızı proaktif inceleme yönetimiyle koruyun ve güçlendirin.",
+      "benefits": {
+        "1": "Tüm incelemeler tek yerde izlenir",
+        "2": "Profesyonel yanıt stratejileri",
+        "3": "Çevrimiçi güven ve inanılırlık oluşturun"
+      },
+      "deliverables": {
+        "1": { "title": "İnceleme izleme", "desc": "Google, Facebook, Yelp ve daha fazlasında incelemeler izleyin." },
+        "2": { "title": "Yanıt yönetimi", "desc": "Olumlu ve olumsuz incelemeler için profesyonel yanıtlar." },
+        "3": { "title": "İtibar stratejisi", "desc": "Çevrimiçi imajınızı geliştirmek için proaktif plan." },
+        "4": { "title": "İnceleme oluşturma", "desc": "Memnun müşterileri inceleme yazmaları için teşvik edin." },
+        "5": { "title": "Marka izleme", "desc": "Markanızdan çevrimiçi bahsedilmeleri izleyin." },
+        "6": { "title": "Aylık raporlama", "desc": "İtibar puanı ve trendlerin özeti." }
+      },
+      "process": {
+        "1": { "title": "Analiz", "desc": "Mevcut çevrimiçi itibarınızı ve inceleme durumunu denetliyoruz." },
+        "2": { "title": "Uygulama", "desc": "Tüm incelemeler üzerinde aktif yönetim ve yanıt." },
+        "3": { "title": "Büyüme ve iyileştirme", "desc": "İtibar puanında sürekli iyileştirme." }
+      }
+    },
+    "dataSync": {
+      "title": "Veri Senkronizasyonu",
+      "subtitle": "İş verilerinizi tüm platformlarda senkronize ve güncel tutun.",
+      "benefits": {
+        "1": "El ile giriş hatalarını ortadan kaldırın",
+        "2": "Tüm sistemler arasında gerçek zamanlı senkronizasyon",
+        "3": "Saatlerce idari işi kaydedin"
+      },
+      "deliverables": {
+        "1": { "title": "Sistem denetimi", "desc": "Tüm veri kaynakları ve platformları harita." },
+        "2": { "title": "Entegrasyon kurulumu", "desc": "CRM, POS, web sitesi ve daha fazlasını bağlayın." },
+        "3": { "title": "Otomatik iş akışları", "desc": "Veriler sistemler arasında otomatik akışı." },
+        "4": { "title": "Hata işleme", "desc": "Akıllı çatışma çözümü ve bildirimler." },
+        "5": { "title": "Pano ve izleme", "desc": "Tüm senkronizasyon durumunun gerçek zamanlı görünümü." },
+        "6": { "title": "Devam eden destek", "desc": "Sistemleriniz büyüdükçe bakım ve güncellemeler." }
+      },
+      "process": {
+        "1": { "title": "Analiz", "desc": "Mevcut veri ortamınız ve sorunlu noktaları harita." },
+        "2": { "title": "Uygulama", "desc": "Tüm entegrasyonlar ve otomasyonları kurun ve test edin." },
+        "3": { "title": "Büyüme ve iyileştirme", "desc": "İzle, optimize et ve entegrasyonları genişlet." }
+      }
+    },
+    "calculator": {
+      "label": "İçerik Hesap Makinesi",
+      "title": "Fiyatınızı 60 saniyede hesapla",
+      "subtitle": "İhtiyacınız olanı seçin ve anında bir tahmin alın.",
+      "step1": "Ödeme türünü seçin",
+      "step2": "Teslimlerinizi seçin",
+      "oneTime": "Tek seferlik proje",
+      "oneTimeDesc": "Her madde için ödeme yapın.",
+      "monthly": "Aylık abonelik",
+      "monthlyDesc": "Sabit aylık ücret.",
+      "posters": "Posterler",
+      "reels": "Röleleri",
+      "videos": "Videolar",
+      "articles": "Makaleler",
+      "quantity": "Miktar",
+      "perItem": "madde başına",
+      "fixed": "sabit",
+      "reelTypes": {
+        "ai": "AI tamamı",
+        "clientFootage": "İstemci görüntüsü (biz düzenleriz)",
+        "onSite": "Biz yerde çekeriz"
+      },
+      "vatNote": "Tüm fiyatlar KDV hariç. KDV faturaya eklenecektir.",
+      "quoteCode": "Teklif numaranız"
+    },
+    "pricingFAQ": {
+      "label": "Sıkça sorulan sorular",
+      "title": "Fiyat ve süreç hakkında SSS",
+      "questions": {
+        "fixedOrFlexible": {
+          "q": "Fiyatlarınız sabit mi yoksa esnek mi?",
+          "a": "Bazı hizmetlerin sabit fiyatları vardır (örneğin posterler, makaleler). Diğer hizmetler kapsama bağlı olarak 'başlangıç' fiyatları ile çalışır. İntaktan sonra her zaman tam bir teklif alırsınız."
+        },
+        "startingFrom": {
+          "q": "'Başlangıç' ne anlama gelir?",
+          "a": "Bu hizmet için minimum başlangıç fiyatıdır. Son fiyat belirli ihtiyaçlarınız ve kapsamınıza bağlıdır. Kısa bir görüşmeden sonra tam bir teklif alırsınız."
+        },
+        "monthlyOrOneTime": {
+          "q": "Fiyatlar aylık mı yoksa tek seferlik mi?",
+          "a": "Hizmete bağlıdır. Web siteleri ve içerik tek seferliktir. SEO, reklam yönetimi ve sosyal medya yönetimi aylık hizmetlerdir."
+        },
+        "vatIncluded": {
+          "q": "KDV dahil mi?",
+          "a": "Hayır. Web sitemizi tüm fiyatlar KDV hariçtir (%18). KDV faturada ayrı belirtilir."
+        },
+        "discounts": {
+          "q": "İndirim sunuyor musunuz?",
+          "a": "Hayır, halka açık indirim veya promosyon kodu sunmuyoruz. Fiyatlarımız başından itibaren şeffaf ve adildir."
+        },
+        "calculator": {
+          "q": "Fiyat hesap makinesi nasıl çalışır?",
+          "a": "Hesap makinesi seçimlerinize göre göstergebilir bir tahmin verir. Nihai bir teklif değildir. WhatsApp aracılığıyla gönderdikten veya bir arama yaptıktan sonra özel bir teklif alırsınız."
+        },
+        "invoice": {
+          "q": "Fatura ne zaman alırım?",
+          "a": "Teklif onaylandıktan sonra fatura alırsınız. Aylık hizmetler için aylık fatura alırsınız. Tek seferlik projeler için teslimat sırasında."
+        },
+        "priceChange": {
+          "q": "Başladıktan sonra fiyat değişebilir mi?",
+          "a": "Hayır. Sunulan fiyat nihai fiyattır. Yalnızca kapsam genişlemesi (ekstra iş) yeni bir teklif oluşturulur, her zaman danışıldıktan sonra."
+        },
+        "reelPrice": {
+          "q": "Rölelerin fiyatı nasıl çalışır?",
+          "a": "3 seçeneğiniz vardır: AI tamamı (150 €), biz videonuzu düzenleriz (200 €) veya biz yerde çekeriz (250 €). Fiyat yaptığımız iş miktarına bağlıdır."
+        },
+        "payment": {
+          "q": "Online ödeme yapabilir miyim?",
+          "a": "Hayır, web sitesinde çevrimiçi ödeme kabul etmiyoruz. Hesabınızdan sonra WhatsApp aracılığıyla veya bir çağrı planlayın isteğinizi gönderin. 24 saat içinde nihai bir teklifle onaylıyoruz."
+        }
+      }
+    },
+    "generalFAQ": {
+      "label": "Sıkça sorulan sorular",
+      "title": "Genel sorular",
+      "questions": {
+        "whoFor": {
+          "q": "Hizmetleriniz kimin içindir?",
+          "a": "Hizmetlerimiz serbest çalışanlar, KOBİ'ler ve çevrimiçi olarak daha fazla müşteri çekmek isteyen büyüyen işletmeler içindir. Başlayanlardan yerleşik işletmelere."
+        },
+        "smallOrLarge": {
+          "q": "Küçük işletmelerle mi yoksa sadece büyük işletmelerle mi çalışıyorsunuz?",
+          "a": "Her ikisi de. Küçük bütçeler (Başlangıç) ve daha büyük işletmeler için kapsamlı çözümler için paketlerimiz vardır. Her müşteri aynı profesyonel yaklaşımı alır."
+        },
+        "onlyBelgium": {
+          "q": "Yalnızca Belçika'da mı çalışıyorsunuz?",
+          "a": "Merkez ofisimiz Belçika'da ve tüm Avrupa'da müşterilere hizmet veririz. 2026'da Ortadoğu'ya genişlemeyi planlıyoruz."
+        },
+        "howToStart": {
+          "q": "İş birliğine nasıl başlarız?",
+          "a": "İletişim formunuz aracılığıyla bize mesaj gönderin, WhatsApp gönderin veya ücretsiz bir tanışma toplantısı planlayın. Kısa bir intaktan sonra bir plan ve teklif hazırlarız."
+        },
+        "howLongResults": {
+          "q": "Sonuç görene kadar ne kadar zaman alır?",
+          "a": "Hizmete bağlıdır. Reklamlar günler içinde sonuç verir. SEO 3-6 ay gerektirir. Web siteler 2-6 haftada teslim edilir."
+        },
+        "longTermContracts": {
+          "q": "Uzun vadeli sözleşmeler sunuyor musunuz?",
+          "a": "Hayır. Aylık hizmetler 30 günlük iptal notu ile aydan aya iptal edilebilir. Tek seferlik projeler proje başına faturalandırılır."
+        },
+        "combineServices": {
+          "q": "Birden fazla hizmeti birleştirebilir miyim?",
+          "a": "Kesinlikle. Pek çok müşteri örneğin bir web sitesini SEO ve sosyal medya yönetimiyle birleştiriyor. Hedeflerinize uyan bir paket oluştururuz."
+        }
+      }
+    },
+    "servicesFAQ": {
+      "label": "Hizmetler hakkında SSS",
+      "title": "Hizmetlerimiz hakkında SSS",
+      "questions": {
+        "onePageVsBusiness": {
+          "q": "Tek sayfa web sitesi ile işletme web sitesi arasındaki fark nedir?",
+          "a": "Tek sayfa web sitesi tüm bilgileri içeren bir sayfadır (başlayanlar veya kampanyalar için ideal, 500 €'dan başlayarak). İşletme web sitesi çoklu sayfalar ve daha fazla işlevsellik içerir ve ciddi büyüme isteyen işletmeler için uygundur (1500 €'dan başlayarak)."
+        },
+        "seoOneTimeOrOngoing": {
+          "q": "SEO tek seferlik bir hizmet mi yoksa devam eden mi?",
+          "a": "SEO devam eden bir hizmettir. Tek seferlik denetim yardımcı olur, ancak kalıcı sonuçlar aylık optimizasyon, içerik oluşturma ve link oluşturma gerektirir."
+        },
+        "adBudgetManagement": {
+          "q": "Reklam bütçesini yönetiyor musunuz yoksa sadece kampanyaları mı?",
+          "a": "Kampanyaları yönetiriz ve bütçeyi optimize ederiz. Reklam bütçesinin kendisi platform (Meta, Google) için ayrı olarak ödenir. Optimal bütçe konusunda tavsiye veririz."
+        },
+        "contentOrManagement": {
+          "q": "İçerik oluşturuyor musunuz yoksa sosyal medyayı sadece mı yönetiyor musunuz?",
+          "a": "Her ikisi. Sosyal medya yönetimi strateji, planlama ve topluluk yönetimini içerir. İçerik (gönderiler, röleleri, videolar) ayrı olarak veya paketin bir parçası olarak sipariş edilebilir."
+        },
+        "withoutWebsite": {
+          "q": "Web sitesi olmadan hizmetlerinizi kullanabilir miyim?",
+          "a": "Evet, sosyal medya yönetimi, reklamlar ve içerik üretimi gibi hizmetler için zorunlu bir web sitesine ihtiyaç yoktur. SEO için bir web sitesi elbette gereklidir."
+        },
+        "videoInSocial": {
+          "q": "Video içerik sosyal medya yönetimine dahil mi?",
+          "a": "Temel görseller dahildir. Profesyonel videolar ve röleleri içerik üretim hizmetimiz aracılığıyla ayrı olarak sunulur, ancak birleştirilebilir."
+        },
+        "ecommerceVsBusiness": {
+          "q": "Çevrimiçi mağaza ile işletme web sitesi arasındaki fark nedir?",
+          "a": "İşletme web sitesi bilgilendirir ve müşteri adayları oluşturur. Çevrimiçi mağaza (e-ticaret) ürün sayfaları, alışveriş sepeti ve çevrimiçi ödeme ile alışveriş deneyimi içerir (3000 €'dan başlayarak)."
+        },
+        "reputationHowItWorks": {
+          "q": "İtibar yönetimi tam olarak nasıl çalışır?",
+          "a": "Çevrimiçi incelemelerinizi izliyor, geri bildirimlere profesyonelce yanıt veriyor ve daha pozitif incelemeler toplamak için yardımcı oluyoruz. Bu görünürlüğü ve müşteri güvenini artırır."
+        },
+        "dataSyncExplained": {
+          "q": "Veri ve izleme kurulumu neler içerir?",
+          "a": "İzleme araçları (Google Analytics, Meta Pixel, dönüşüm izlemesi) kurar ve yapılandırırız, böylece hangi pazarlama çabalarının sonuç verdiğini tam olarak bilirsiniz."
+        }
+      }
+    }
+  },
+  "partner": {
+    "meta": {
+      "title": "GROPPI Franchise",
+      "description": "GROPPI ile ortaklık. Şeffaf ve kolay ortaklık bir dijital ajansakla."
+    },
+    "hero": {
+      "badge": "Franchise",
+      "title": "GROPPI ile Çalışın",
+      "subtitle": "Dijital ajansakla şeffaf ve kolay ortaklık.",
+      "description": "Kendi ajanssınızı başlatmak için büyük yatırım yapmadan yan tarafımızda nasıl büyüyebileceğinizi keşfedin."
+    },
+    "clarity": {
+      "title": "Neden Biz Farklıyız",
+      "items": [
+        "Gizli veya belirsiz ücret ve taahhüt yok",
+        "Ekip ve strateji ile tam destek",
+        "Adil ve şeffaf fiyatlar",
+        "Tamamen hazır platform ve araçlar",
+        "Sürekli eğitim ve geliştirme",
+        "GROPPI ile gerçek büyüme"
+      ]
+    },
+    "forWho": {
+      "title": "Bu Kişiler İçin:",
+      "items": [
+        "Büyük başlangıç yatırımı olmadan dijital hizmetler şirketi kurmak isteyenler",
+        "Dijital pazarlama, tasarım veya geliştirme konusunda deneyimi olan",
+        "Kısa vadeli proje değil, uzun vadeli ortaklık arayan",
+        "Deneyimli bir ekipten tam destek isteyen"
+      ]
+    },
+    "value": {
+      "title": "Ne Alırsınız",
+      "items": [
+        "Tamamen satış platformu ve kendi markanızda satış yapma yeteneği",
+        "Sürekli teknik destek ve eğitim",
+        "Rekabetçi ortak fiyatları",
+        "Küresel ortaklarımız ağına erişim",
+        "Kendini kanıtlamış ve kendi kendini büyüten sistem"
+      ]
+    },
+    "steps": {
+      "title": "Nasıl Çalışır",
+      "subtitle": "Basit şeffaf süreç",
+      "step1": {
+        "title": "Başvuru Gönder",
+        "desc": "CV'nizi ve deneyiminizi gönderin. Kim olduğunuzu bilmek istiyoruz."
+      },
+      "step2": {
+        "title": "İlk Sohbet",
+        "desc": "Hedefleriniz ve olası ortaklık hakkında konuşuyoruz."
+      },
+      "step3": {
+        "title": "Eğitim ve Kurulum",
+        "desc": "Her şeyi ayarlamanıza yardımcı oluyoruz. Nasıl çalıştığını açıklıyoruz."
+      },
+      "step4": {
+        "title": "Birlikte Büyü",
+        "desc": "Satış ve büyümeye başlayın, bizden tam destek alıyor."
+      }
+    },
+    "faq": {
+      "title": "Sıkça sorulan sorular",
+      "subtitle": "Ortaklık hakkında bilmeniz gereken her şey",
+      "items": {
+        "isJob": {
+          "question": "Bu bir iş mi?",
+          "answer": "Hayır, bu bir ortaklıktır. Bağımsız yüklenici veya GROPPI'li şirket olarak çalışıyorsunuz. Tam özgürlüğe ancak tam destekle sahipsiniz."
+        },
+        "bureau": {
+          "question": "Kendi Ajanstır İhtiyaçım Var Mı?",
+          "answer": "Hayır. Kendi markanız veya adınız altında çalışabilirsiniz. Arka planda sizi destekliyoruz."
+        },
+        "exclusivity": {
+          "question": "GROPPI'ye Münhasır Mıyım?",
+          "answer": "Hayır. Diğer müşterilerle çalışabilir ve bölge dışı projeler yapabilirsiniz. Esnelik konusunda iyiyiz."
+        },
+        "leads": {
+          "question": "Müşteri Adayı Sağlıyor Musunuz?",
+          "answer": "Evet! Fazla müşterilerimizi ve bize uygun olmayan projeleri paylaşıyoruz. Buna ek olarak tam pazarlama araçları alırsınız."
+        },
+        "team": {
+          "question": "Kendi Ekibimle Çalışabilir Miyim?",
+          "answer": "Evet, kalite standartlarına uyulduğu sürece. Kendi takımınızı oluşturabilirsiniz."
+        },
+        "howToApply": {
+          "question": "Nasıl Başvurarım?",
+          "answer": "'Franchise başvurusu' formu aracılığıyla bize ulaşın veya doğrudan arayın. Profilinizi değerlendireceğiz ve 5 iş günü içinde cevap vereceğiz."
+        }
+      }
+    },
+    "apply": {
+      "title": "Başlamaya Hazır Mısınız?",
+      "subtitle": "Şimdi ortaklık başvurusu gönderin"
+    },
+    "booking": {
+      "title": "Bir Görüşme Planlayın",
+      "subtitle": "Sizin için uygun olan zamanı seçin"
+    },
+    "marquee": {
+      "item1": "Şeffaf ve açık ortaklık",
+      "item2": "Ekipten tam destek",
+      "item3": "Ortaklar için adil fiyatlar",
+      "item4": "Hazır platform ve araçlar",
+      "item5": "Müşteri adayları ve fırsatlar",
+      "item6": "GROPPI ile gerçek büyüme"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "GROPPI Hakkında",
+      "description": "GROPPI'yi keşfedin: Belçikalı dijital ajans stratejisi, marka oluşturma ve performans ile işletmelerin büyümesine yardımcı olmak."
+    },
+    "hero": {
+      "title": "Biz Kimiz",
+      "subtitle": "Gerçek büyümeye uzmanlaşan Belçikalı dijital ajans.",
+      "description": "2016'dan beri Belçika ve Avrupa'daki işletmelerin strateji, güçlü marka ve etkili kampanyalarla büyümesine yardımcı oluyoruz."
+    },
+    "whoWeAre": {
+      "title": "Gerçekten Kim Olduğumuz",
+      "subtitle": "Farklı disiplinlerden tutkulu profesyonellerin küçük bir ekibi",
+      "description": "9+ uzman: stratejistler, tasarımcılar, geliştiriciler ve daha fazlası. Birlikte gerçek dijital çözümler inşa ediyoruz.",
+      "cta": "Takımı Tanı"
+    },
+    "approach": {
+      "badge": "Yaklaşımımız",
+      "title": "Neden Farklı Çalışıyoruz",
+      "subtitle": "Boş konuşma yok. Yanlış vaatler yok. Sadece ölçülebilir iş.",
+      "principles": [
+        "Strateji ilk: İşe başlamadan önce temeli inşa ediyoruz",
+        "Tam şeffaflık: Her zaman ne harcadığımızı ve nasıl harcadığımızı bilin",
+        "Sonuçlara odaklı: Her şeyi ölçüyor ve sürekli geliştiriyoruz",
+        "Uzun vadeli ortaklık: Proje değil, ilişkiler inşa ediyoruz"
+      ]
+    },
+    "valuesSection": {
+      "title": "Değerlerimiz",
+      "values": [
+        {
+          "title": "Netlik",
+          "description": "Belirsiz kodlar yok. Her adımda net ve şeffaf iletişim."
+        },
+        {
+          "title": "Kalite",
+          "description": "Projeleri tamamlamak için yolcu değiliz. Sonuç elde etmek için yolcu."
+        },
+        {
+          "title": "İnovasyon",
+          "description": "Trendleri takip etmiyoruz. İhtiyaçlarınıza uyan çözümler inşa ediyoruz."
+        },
+        {
+          "title": "Sorumluluk",
+          "description": "Tam sahiplik alıyoruz. Sonuçlardan sorumlu."
+        }
+      ]
+    },
+    "cta": {
+      "title": "İşinizi Büyütmeye Hazır Mısınız?",
+      "subtitle": "Sizi nasıl yardımcı olabileceğimizi birlikte tartışalım.",
+      "button": "Ücretsiz Danışmanlık Rezerv Edin"
+    }
+  },
+  "planBuilder": {
+    "title": "Sosyal Medya Plan Oluşturucu",
+    "subtitle": "İhtiyaçlarınıza göre sosyal medya planı oluşturun",
+    "channels": {
+      "label": "Kanalları seçin",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "pinterest": "Pinterest",
+      "twitter": "Twitter/X"
+    },
+    "frequency": {
+      "label": "Sıklığı seçin",
+      "daily": "Günlük",
+      "3times": "Haftada 3 kez",
+      "weekly": "Haftalık",
+      "biweekly": "İki haftada bir",
+      "monthly": "Aylık"
+    },
+    "addons": {
+      "label": "Eklenti (isteğe bağlı)",
+      "stories": "Stories ve Röleleri",
+      "video": "Profesyonel video içerik",
+      "design": "Özel tasarım",
+      "analytics": "Ayrıntılı raporlar"
+    },
+    "summary": {
+      "title": "Plan Özeti",
+      "estimatedPrice": "Tahmini fiyat",
+      "channels": "Kanallar",
+      "frequency": "Sıklık",
+      "cta": "Fiyat teklifi isteyin"
+    },
+    "faq": {
+      "title": "Plan Hakkında Sorular",
+      "q1": "Daha sonra kanalları değiştirebilir miyim?",
+      "a1": "Kesinlikle! Planınız esnektir. Her zaman kanalları ekleyebilir veya silebilirsiniz.",
+      "q2": "Video içerik neler içerir?",
+      "a2": "Profesyonel videolar, röleleri ve hikayeler planınıza göre.",
+      "q3": "Aylık rapor ne kadar ayrıntılı?",
+      "a3": "Her gönderinin performansı, takipçi büyümesi, etkileşim oranı ve öneriler."
+    }
+  },
   "social": {
-    "whatsapp": "WhatsApp",
-    "instagram": "Instagram",
-    "facebook": "Facebook",
-    "linkedin": "LinkedIn",
-    "tiktok": "TikTok",
-    "youtube": "YouTube",
-    "email": "E-posta",
-    "phone": "Telefon",
-    "calendly": "Görüşme planlayın"
+    "whatsappChat": "WhatsApp Sohbeti",
+    "callUs": "Bizi Ara",
+    "emailUs": "Bize E-posta Gönder",
+    "followUs": "Bizi Takip Edin"
+  },
+  "caseStudy": {
+    "label": "Vaka Çalışması",
+    "challenge": "Zorluk",
+    "solution": "Çözüm",
+    "results": "Sonuçlar",
+    "metric": "Ölçüm",
+    "viewMore": "Daha Fazla Gör",
+    "relatedServices": "İlgili Hizmetler"
+  },
+  "footer": {
+    "description": "Belçikalı dijital ajans 2016'dan beri gerçek büyüme ve ölçülebilir sonuçlara uzmanlaşmıştır.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "planCall": "Görüşme Planlayın",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Hizmet Şartları",
+    "rights": "Tüm hakları saklıdır.",
+    "newsletter": {
+      "title": "Haber Bülteni",
+      "description": "Dijital pazarlama ipuçları ve püf noktaları haftada bir alın.",
+      "placeholder": "E-posta adresinizi girin",
+      "successTitle": "Abone Oldu!",
+      "successMessage": "Teşekkürler. İlk mesaj yakında sizinize gelecek.",
+      "errorTitle": "Bir şeyler yanlış gitti",
+      "errorMessage": "Lütfen tekrar deneyin.",
+      "subscribed": "Zaten abone olundu"
+    }
   }
 }
