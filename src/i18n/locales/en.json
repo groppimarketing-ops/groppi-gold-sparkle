@@ -2794,9 +2794,7 @@
       }
     }
   },
-  "footer": {
-    "quickLinks": "Quick Links"
-  },
+  "_footer_merged": true,
   "cookies": {
     "title": "We use cookies",
     "description": "This website uses cookies to improve your experience and measure our performance. By clicking \"Accept\", you agree to our cookie policy.",

@@ -177,23 +177,25 @@
     }
   },
   "footer": {
-    "aboutUs": "关于我们",
-    "services": "服务",
-    "portfolio": "作品集",
-    "blog": "博客",
-    "contact": "联系我们",
-    "franchise": "特许经营",
-    "careers": "招聘",
-    "privacy": "隐私",
-    "terms": "条款",
-    "newsletter": "新闻通讯",
-    "subscribeNewsletter": "订阅",
-    "planCall": "日程安排电话",
+    "rights": "版权所有。",
+    "description": "自2016年以来的数字解决方案。总部位于比利时。",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
     "followUs": "关注我们",
-    "copyRight": "版权所有",
-    "madBy": "由...制作",
-    "subscribeEmail": "输入您的电子邮件",
-    "subscribeCta": "订阅"
+    "quickLinks": "快速链接",
+    "contact": "联系信息",
+    "planCall": "安排通话（30分钟）",
+    "newsletter": {
+      "title": "新闻通讯",
+      "description": "了解我们最新的见解和建议。",
+      "placeholder": "您的电子邮件地址",
+      "button": "订阅",
+      "subscribed": "您已订阅！谢谢。",
+      "successTitle": "订阅成功！",
+      "successMessage": "您已成功订阅我们的新闻通讯。",
+      "errorTitle": "订阅失败",
+      "errorMessage": "出了点问题。请稍后再试。"
+    }
   },
   "forms": {
     "name": "名字",

@@ -2679,17 +2679,5 @@
       }
     }
   },
-  "footer": {
-    "quickLinks": "Liens rapides"
-  },
-  "cookies": {
-    "title": "Nous utilisons des cookies",
-    "description": "Ce site utilise des cookies pour améliorer votre expérience et mesurer nos performances. En cliquant sur « Accepter », vous acceptez notre politique de cookies.",
-    "learnMore": "En savoir plus",
-    "accept": "Accepter",
-    "reject": "Refuser"
-  },
-  "servicePage": {
-    "defaultDescription": "{{service}} — Service professionnel par GROPPI Marketing Bureau."
-  }
+  "_footer_merged": true
 }

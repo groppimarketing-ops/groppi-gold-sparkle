@@ -674,26 +674,7 @@
     "apply": "Şimdi Başvur",
     "call": "Bizi Arayın"
   },
-  "footer": {
-    "rights": "Tüm hakları saklıdır.",
-    "description": "2016'dan beri dijital çözümler. Belçika merkezli.",
-    "privacy": "Gizlilik Politikası",
-    "terms": "Kullanım Koşulları",
-    "followUs": "Bizi Takip Edin",
-    "quickLinks": "Hızlı Bağlantılar",
-    "contact": "İletişim Bilgileri",
-    "newsletter": {
-      "title": "Bülten",
-      "description": "En son ipuçları ve önerilerimizden haberdar olun.",
-      "placeholder": "E-posta adresiniz",
-      "button": "Abone Ol",
-      "subscribed": "Abone oldunuz! Teşekkürler.",
-      "successTitle": "Abone olundu!",
-      "successMessage": "Bültenimize başarıyla abone oldunuz.",
-      "errorTitle": "Abonelik başarısız",
-      "errorMessage": "Bir şeyler yanlış gitti. Lütfen daha sonra tekrar deneyin."
-    }
-  },
+  "_footer_first_removed": true,
   "common": {
     "loading": "Yükleniyor...",
     "error": "Bir hata oluştu",

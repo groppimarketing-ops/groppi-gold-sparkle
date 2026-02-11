@@ -1027,5 +1027,33 @@
     "followInstagram": "Obserwuj na Instagramie",
     "followFacebook": "Polub na Facebooku",
     "followLinkedin": "Obserwuj na LinkedIn"
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "description": "Rozwiązania cyfrowe od 2016 roku. Siedziba w Belgii.",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin",
+    "followUs": "Śledź nas",
+    "quickLinks": "Szybkie linki",
+    "contact": "Dane kontaktowe",
+    "planCall": "Zaplanuj rozmowę (30 min)",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Bądź na bieżąco z naszymi najnowszymi spostrzeżeniami i wskazówkami.",
+      "placeholder": "Twój adres e-mail",
+      "button": "Subskrybuj",
+      "subscribed": "Jesteś zapisany! Dziękujemy.",
+      "successTitle": "Zapisano!",
+      "successMessage": "Pomyślnie zapisano do newslettera.",
+      "errorTitle": "Błąd subskrypcji",
+      "errorMessage": "Coś poszło nie tak. Spróbuj ponownie później."
+    }
+  },
+  "cookies": {
+    "title": "Używamy plików cookie",
+    "description": "Ta strona używa plików cookie, aby poprawić Twoje doświadczenie i mierzyć nasze wyniki. Klikając Akceptuj, zgadzasz się z naszą polityką cookie.",
+    "learnMore": "Dowiedz się więcej",
+    "accept": "Akceptuj",
+    "reject": "Odrzuć"
   }
 }
