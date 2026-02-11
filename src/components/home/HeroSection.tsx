@@ -159,16 +159,17 @@ const HeroSection = memo(() => {
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
           {/* 3D Brand Video */}
           <div
-            className={`mb-8 ${prefersReducedMotion ? '' : 'animate-spin-3d'}`}
-            style={{ perspective: '800px' }}
+            className="mb-8 rounded-2xl border-2 border-primary/50 p-1.5 backdrop-blur-sm"
+            style={{
+              boxShadow: '0 0 40px hsl(43 76% 52% / 0.3), inset 0 0 20px hsl(43 76% 52% / 0.1)',
+            }}
           >
             <video
               autoPlay
               muted
               loop
               playsInline
-              className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 object-contain drop-shadow-[0_0_50px_hsl(43_76%_52%)] rounded-2xl"
-              style={{ filter: 'drop-shadow(0 0 40px hsl(43 76% 52%))' }}
+              className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 object-contain rounded-xl"
             >
               <source src="/videos/hero-logo.mp4" type="video/mp4" />
             </video>
