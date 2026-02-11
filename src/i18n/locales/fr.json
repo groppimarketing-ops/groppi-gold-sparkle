@@ -46,17 +46,17 @@
     }
   },
   "pricing": {
-    "from": "À partir de",
-    "customQuote": "Devis sur mesure",
-    "perMonth": "/ mois",
-    "oneTime": "paiement unique",
-    "vatExcluded": "hors TVA",
-    "vatExcludedNote": "Tous les prix sont hors TVA. La TVA sera ajoutée à la facture.",
-    "vatDisclaimer": {
-      "title": "Informations tarifaires",
-      "line1": "Tous les prix sont hors TVA (21%)."
-    }
-  },
+     "from": "À partir de",
+     "customQuote": "Devis sur mesure",
+     "perMonth": "/ mois",
+     "oneTime": "paiement unique",
+     "vatExcluded": "hors TVA",
+     "vatExcludedNote": "Tous les prix sont hors TVA. La TVA sera ajoutée à la facture.",
+     "vatDisclaimer": {
+       "title": "Informations tarifaires",
+       "line1": "Tous les prix sont hors TVA (21%)."
+     }
+   },
   "services": {
     "sectionTitle": "Nos services",
     "sectionSubtitle": "Regardez d'abord la vidéo pour comprendre chaque service, puis consultez les détails.",
@@ -104,32 +104,49 @@
     "step2": "Sélectionnez vos livrables"
   },
   "common": {
-    "loading": "Chargement...",
-    "error": "Une erreur s'est produite",
-    "retry": "Réessayer",
-    "cancel": "Annuler",
-    "save": "Enregistrer",
-    "delete": "Supprimer",
-    "edit": "Modifier",
-    "close": "Fermer",
-    "submit": "Envoyer",
-    "next": "Suivant",
-    "previous": "Précédent",
-    "back": "Retour",
-    "continue": "Continuer",
-    "viewMore": "Voir plus",
-    "viewAll": "Voir tout",
-    "learnMore": "En savoir plus",
-    "getStarted": "Commencer",
-    "contactUs": "Contactez-nous",
-    "scheduleCall": "Planifier un appel",
-    "requestQuote": "Demander un devis",
-    "required": "Obligatoire",
-    "optional": "Facultatif",
-    "search": "Rechercher",
-    "noResults": "Aucun résultat trouvé",
-    "brandName": "GROPPI"
-  },
+     "loading": "Chargement...",
+     "error": "Une erreur s'est produite",
+     "retry": "Réessayer",
+     "cancel": "Annuler",
+     "save": "Enregistrer",
+     "delete": "Supprimer",
+     "edit": "Modifier",
+     "close": "Fermer",
+     "submit": "Envoyer",
+     "next": "Suivant",
+     "previous": "Précédent",
+     "back": "Retour",
+     "continue": "Continuer",
+     "viewMore": "Voir plus",
+     "viewAll": "Voir tout",
+     "learnMore": "En savoir plus",
+     "getStarted": "Commencer",
+     "contactUs": "Contactez-nous",
+     "scheduleCall": "Planifier un appel",
+     "requestQuote": "Demander un devis",
+     "required": "Obligatoire",
+     "optional": "Facultatif",
+     "search": "Rechercher",
+     "noResults": "Aucun résultat trouvé",
+     "brandName": "GROPPI",
+     "fullscreen": "Plein écran"
+   },
+   "servicesHome": {
+     "sectionTitle": "Nos services",
+     "sectionSubtitle": "Regardez d'abord la vidéo pour comprendre chaque service, puis consultez les détails.",
+     "card": {
+       "requestQuote": "Demander un devis",
+       "viewDetails": "Voir les détails",
+       "watchHowItWorks": "Voir comment ça marche (60 sec)",
+       "buildYourPlan": "Créer votre formule"
+     },
+     "badges": {
+       "monthly": "Mensuel",
+       "oneTime": "Paiement unique",
+       "custom": "Sur mesure",
+       "mostChosen": "Le plus choisi"
+     }
+   },
   "validation": {
     "required": "Ce champ est obligatoire",
     "email": "Veuillez entrer une adresse e-mail valide",
@@ -487,13 +504,18 @@
           "subtitle": "Visibilité, crédibilité et inscriptions régulières."
         }
       },
-      "stats": {
-        "experience": "ans d'expérience",
-        "focus": "BE + UE + Mondial",
-        "system": "structure plutôt que chaos",
-        "premium": "branding + performance"
-      },
-      "microNote": "*Les résultats varient selon le secteur et le budget. Nous construisons des systèmes évolutifs."
+       "stats": {
+         "experience": "ans d'expérience",
+         "focus": "BE + UE + Mondial",
+         "system": "structure plutôt que chaos",
+         "premium": "branding + performance"
+       },
+       "statsValues": {
+         "focus": "BE + UE + Mondial",
+         "system": "Systémique",
+         "premium": "Premium"
+       },
+       "microNote": "*Les résultats varient selon le secteur et le budget. Nous construisons des systèmes évolutifs."
     },
     "trustedBelgium": {
       "eyebrow": "PREUVE SOCIALE",
@@ -2677,7 +2699,14 @@
         "title": "Contact",
         "content": "Pour toute question sur ces conditions :\n\nGROPPI\nE-mail : info@groppi.be\nTéléphone : +32 456 19 87 21\n\nNous nous efforçons de répondre à toutes les demandes dans les 48 heures."
       }
-    }
-  },
-  "_footer_merged": true
+     }
+   },
+   "_footer_merged": true,
+   "cookies": {
+     "title": "Nous utilisons des cookies",
+     "description": "Ce site web utilise des cookies pour améliorer votre expérience et mesurer nos performances. En cliquant sur « Accepter », vous acceptez notre politique de cookies.",
+     "learnMore": "En savoir plus",
+     "accept": "Accepter",
+     "reject": "Refuser"
+   }
 }
