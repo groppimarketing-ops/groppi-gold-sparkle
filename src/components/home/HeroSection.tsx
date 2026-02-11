@@ -3,6 +3,7 @@ import { useReducedMotion } from 'framer-motion';
 import { ChevronDown, TrendingUp, BarChart3, Rocket, Crown, Gem, Target, Star, Zap, Award, Globe, Sparkles, ChartLine, DollarSign, Users, Eye } from 'lucide-react';
 import { useState, useRef, useEffect, memo } from 'react';
 import { Link } from 'react-router-dom';
+import groppiGLogo from '@/assets/groppi-g-logo.png';
 
 const FLOATING_ICONS = [
   { Icon: TrendingUp, top: '15%', left: '8%', delay: '0s', size: 'text-3xl' },
@@ -155,20 +156,17 @@ const HeroSection = memo(() => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-16 md:py-20">
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
-          {/* Crown Logo */}
-          <Crown
-            className={`w-16 h-16 text-primary mb-6 drop-shadow-[0_0_30px_hsl(43_76%_52%)] ${
-              prefersReducedMotion ? '' : 'animate-shimmer'
-            }`}
-            style={{
-              filter: prefersReducedMotion ? undefined : 'drop-shadow(0 0 30px hsl(43 76% 52%))',
-            }}
-          />
-
-          {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase tracking-[8px] mb-4 gold-gradient-text gold-text-glow">
-            {t('home.heroNew.headline')}
-          </h1>
+          {/* 3D Spinning G Logo */}
+          <div
+            className={`mb-8 ${prefersReducedMotion ? '' : 'animate-spin-3d'}`}
+            style={{ perspective: '800px' }}
+          >
+            <img
+              src={groppiGLogo}
+              alt={t('home.heroNew.logoAlt')}
+              className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 object-contain drop-shadow-[0_0_40px_hsl(43_76%_52%)]"
+            />
+          </div>
 
           {/* Tagline Pill */}
           <div className="inline-block border-t border-b border-primary px-8 py-3 mb-10 backdrop-blur-sm bg-background/20">
