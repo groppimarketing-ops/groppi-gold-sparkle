@@ -2,65 +2,41 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// Import all language files
-import ar from './locales/ar.json';
+// Import language files — only 7 supported languages
+import nl from './locales/nl.json';
 import en from './locales/en.json';
 import fr from './locales/fr.json';
-import de from './locales/de.json';
-import es from './locales/es.json';
-import it from './locales/it.json';
-import pt from './locales/pt.json';
-import nl from './locales/nl.json';
-import pl from './locales/pl.json';
-import ru from './locales/ru.json';
 import tr from './locales/tr.json';
-import bn from './locales/bn.json';
-import hi from './locales/hi.json';
-import ur from './locales/ur.json';
-import zh from './locales/zh.json';
+import it from './locales/it.json';
+import es from './locales/es.json';
+import ar from './locales/ar.json';
 
 // Brand name constant - use this everywhere
 export const BRAND_NAME = 'GROPPI';
 
 // RTL languages
-export const RTL_LANGUAGES = ['ar', 'ur'] as const;
+export const RTL_LANGUAGES = ['ar'] as const;
 
 export const languages = [
   { code: 'nl', name: 'Nederlands (BE)', dir: 'ltr' as const, flag: '🇧🇪' },
   { code: 'en', name: 'English', dir: 'ltr' as const, flag: '🇬🇧' },
   { code: 'fr', name: 'Français', dir: 'ltr' as const, flag: '🇫🇷' },
-  { code: 'de', name: 'Deutsch', dir: 'ltr' as const, flag: '🇩🇪' },
-  { code: 'ar', name: 'العربية', dir: 'rtl' as const, flag: '🇦🇪' },
-  { code: 'es', name: 'Español', dir: 'ltr' as const, flag: '🇪🇸' },
-  { code: 'it', name: 'Italiano', dir: 'ltr' as const, flag: '🇮🇹' },
-  { code: 'pt', name: 'Português', dir: 'ltr' as const, flag: '🇵🇹' },
-  { code: 'pl', name: 'Polski', dir: 'ltr' as const, flag: '🇵🇱' },
-  { code: 'ru', name: 'Русский', dir: 'ltr' as const, flag: '🇷🇺' },
   { code: 'tr', name: 'Türkçe', dir: 'ltr' as const, flag: '🇹🇷' },
-  { code: 'bn', name: 'বাংলা', dir: 'ltr' as const, flag: '🇧🇩' },
-  { code: 'hi', name: 'हिन्दी', dir: 'ltr' as const, flag: '🇮🇳' },
-  { code: 'ur', name: 'اردو', dir: 'rtl' as const, flag: '🇵🇰' },
-  { code: 'zh', name: '中文', dir: 'ltr' as const, flag: '🇨🇳' },
+  { code: 'it', name: 'Italiano', dir: 'ltr' as const, flag: '🇮🇹' },
+  { code: 'es', name: 'Español', dir: 'ltr' as const, flag: '🇪🇸' },
+  { code: 'ar', name: 'العربية', dir: 'rtl' as const, flag: '🇦🇪' },
 ] as const;
 
 export type LanguageCode = typeof languages[number]['code'];
 
 const resources = {
-  ar: { translation: ar },
+  nl: { translation: nl },
   en: { translation: en },
   fr: { translation: fr },
-  de: { translation: de },
-  es: { translation: es },
-  it: { translation: it },
-  pt: { translation: pt },
-  nl: { translation: nl },
-  pl: { translation: pl },
-  ru: { translation: ru },
   tr: { translation: tr },
-  bn: { translation: bn },
-  hi: { translation: hi },
-  ur: { translation: ur },
-  zh: { translation: zh },
+  it: { translation: it },
+  es: { translation: es },
+  ar: { translation: ar },
 };
 
 /**
@@ -135,7 +111,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: ['nl', 'en'],
+    fallbackLng: ['nl'],
     interpolation: {
       escapeValue: false,
     },

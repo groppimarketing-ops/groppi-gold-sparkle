@@ -8,7 +8,8 @@
     "contact": "Contact",
     "partnership": "Franchise",
     "franchise": "Franchise",
-    "careers": "Carrières"
+    "careers": "Carrières",
+    "language": "Langue"
   },
   "careers": {
     "meta": { "title": "Carrières", "description": "Rejoignez l'équipe GROPPI et aidez les entreprises belges et européennes à croître avec des résultats mesurables." },
@@ -158,6 +159,9 @@
     "ctaSecondary": "Voir nos services"
   },
   "home": {
+    "seo": {
+      "title": "Agence de Marketing Digital Belgique"
+    },
     "heroNew": {
       "badge": "Structure. Contenu. Croissance.",
       "headline": "Nous construisons votre base digitale — et accélérons votre croissance.",

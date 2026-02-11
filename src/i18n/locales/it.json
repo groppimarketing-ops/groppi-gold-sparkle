@@ -8,7 +8,8 @@
     "contact": "Contatti",
     "partnership": "Franchising",
     "franchise": "Franchising",
-    "careers": "Lavora con noi"
+    "careers": "Lavora con noi",
+    "language": "Lingua"
   },
   "careers": {
     "meta": { "title": "Lavora con noi", "description": "Unisciti al team GROPPI e aiuta le aziende belghe ed europee a crescere con risultati misurabili." },
@@ -169,6 +170,9 @@
     "ctaSecondary": "Vedi i nostri servizi"
   },
   "home": {
+    "seo": {
+      "title": "Agenzia di Marketing Digitale Belgio"
+    },
     "heroNew": {
       "badge": "Struttura. Contenuti. Crescita.",
       "headline": "Costruiamo le tue fondamenta digitali — e acceleriamo la tua crescita.",

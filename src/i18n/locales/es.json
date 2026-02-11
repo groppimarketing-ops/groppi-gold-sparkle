@@ -7,7 +7,8 @@
     "gallery": "Portfolio",
     "contact": "Contacto",
     "franchise": "Franquicia",
-    "careers": "Empleo"
+    "careers": "Empleo",
+    "language": "Idioma"
   },
   "careers": {
     "meta": { "title": "Empleo", "description": "Únete al equipo GROPPI y ayuda a las empresas belgas y europeas a crecer con resultados medibles." },
@@ -653,6 +654,9 @@
     "defaultDescription": "{{service}} — Servicio profesional de GROPPI Marketing Bureau."
   },
   "home": {
+    "seo": {
+      "title": "Agencia de Marketing Digital Bélgica"
+    },
     "whoWeAre": {
       "headline": "Quiénes somos. Y por qué trabajamos diferente.",
       "subtext": "Desde 2016 ayudamos a empresas a crecer\ncon estructura, control y sistemas inteligentes —\nno con palabrería de marketing.",

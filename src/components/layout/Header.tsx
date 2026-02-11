@@ -404,7 +404,7 @@ const Header = () => {
                   
                   {/* Mobile Language Switcher - All languages */}
                   <div className="flex flex-wrap items-center gap-2 px-4 py-3 border-t border-white/10 mt-2">
-                    <span className="text-xs text-muted-foreground mr-2 w-full mb-2">Language:</span>
+                    <span className="text-xs text-muted-foreground mr-2 w-full mb-2">{t('nav.language', 'Taal')}:</span>
                     {languageOptions.map((lang) => {
                       const isActive = i18n.language === lang.code || 
                         (lang.code === 'nl' && i18n.language.startsWith('nl'));

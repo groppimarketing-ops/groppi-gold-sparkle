@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { languages } from '@/i18n/config';
 
 // RTL languages that need special handling
-const RTL_LANGUAGES = ['ar', 'ur', 'he', 'fa'] as const;
+const RTL_LANGUAGES = ['ar'] as const;
 
 // Forbidden characters in Flemish (nl-BE) content - Arabic punctuation/numerals
 const FORBIDDEN_NL_CHARS = ['،', '؟', '؛', 'ـ', '٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];

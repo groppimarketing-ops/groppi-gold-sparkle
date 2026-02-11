@@ -8,7 +8,8 @@
     "contact": "Contact",
     "partnership": "Franchise",
     "franchise": "Franchise",
-    "careers": "Vacatures"
+    "careers": "Vacatures",
+    "language": "Taal"
   },
   "careers": {
     "meta": {
@@ -229,6 +230,9 @@
     "ctaSecondary": "Bekijk onze diensten"
   },
   "home": {
+    "seo": {
+      "title": "Digital Marketing Bureau België"
+    },
     "heroNew": {
       "badge": "Strategie. Uitvoering. Resultaat.",
       "headline": "Meer klanten, meer omzet — met een plan dat werkt.",

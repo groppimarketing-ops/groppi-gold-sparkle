@@ -7,7 +7,8 @@
     "gallery": "Portföy",
     "contact": "İletişim",
     "franchise": "Franchise",
-    "careers": "Kariyer"
+    "careers": "Kariyer",
+    "language": "Dil"
   },
   "careers": {
     "meta": { "title": "Kariyer", "description": "GROPPI ekibine katılın ve Belçika ile Avrupa işletmelerinin ölçülebilir sonuçlarla büyümesine yardımcı olun." },
@@ -887,6 +888,9 @@
     "defaultDescription": "{{service}} — GROPPI Marketing Bureau'dan profesyonel hizmet."
   },
   "home": {
+    "seo": {
+      "title": "Belçika Dijital Pazarlama Ajansı"
+    },
     "whoWeAre": {
       "headline": "Biz kimiz. Ve neden farklı çalışıyoruz.",
       "subtext": "2016'dan beri işletmelerin büyümesine yardımcı oluyoruz\nyapı, kontrol ve akıllı sistemlerle —\nboş pazarlama vaatleriyle değil.",
