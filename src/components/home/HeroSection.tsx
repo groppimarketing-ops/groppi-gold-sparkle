@@ -4,6 +4,7 @@ import { ChevronDown, TrendingUp, BarChart3, Rocket, Crown, Gem, Target, Star, Z
 import { useState, useRef, useEffect, memo } from 'react';
 import { Link } from 'react-router-dom';
 import groppiGLogo from '@/assets/groppi-g-logo.png';
+import { socialIconsData } from '@/components/shared/SocialIconsPill';
 
 const FLOATING_ICONS = [
   { Icon: TrendingUp, top: '15%', left: '8%', delay: '0s', size: 'text-3xl' },
@@ -168,11 +169,20 @@ const HeroSection = memo(() => {
             />
           </div>
 
-          {/* Tagline Pill */}
-          <div className="inline-block border-t border-b border-primary px-8 py-3 mb-10 backdrop-blur-sm bg-background/20">
-            <span className="text-sm sm:text-base md:text-lg text-foreground/90 uppercase tracking-[12px]">
-              {t('home.heroNew.tagline')}
-            </span>
+          {/* Social Icons - Gold */}
+          <div className="flex items-center gap-5 mb-10">
+            {socialIconsData.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.ariaLabel}
+                className="flex items-center justify-center w-12 h-12 rounded-full border border-primary/40 bg-background/30 backdrop-blur-sm text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-[0_0_25px_hsl(43_76%_52%)]"
+              >
+                <social.icon className="h-5 w-5" />
+              </a>
+            ))}
           </div>
 
           {/* Chart Bars */}
