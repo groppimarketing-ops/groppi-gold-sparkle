@@ -1,99 +1,129 @@
 
 
-# Complete i18n Translations: Remaining 9 Languages
+# Redesign Hero Section -- "Gold Standard" Spectacle
 
-## Current Status
+## Overview
 
-| Language | File | Lines | Coverage | Missing |
-|----------|------|-------|----------|---------|
-| Spanish | es.json | 828 | ~30% | ~2000 lines |
-| German | de.json | 1025 | ~37% | ~1800 lines |
-| Polish | pl.json | 847 | ~30% | ~2000 lines |
-| Russian | ru.json | 680 | ~24% | ~2100 lines |
-| Bengali | bn.json | 594 | ~21% | ~2200 lines |
-| Hindi | hi.json | 593 | ~21% | ~2200 lines |
-| Urdu | ur.json | 677 | ~24% | ~2100 lines |
-| Chinese | zh.json | 676 | ~24% | ~2100 lines |
-| Portuguese | pt.json | 1164 | ~41% | ~1650 lines |
+Replace the current `HeroSection` component with a visually stunning "Gold Standard" hero inspired by the provided HTML mockup. The new hero keeps the existing video background but adds floating gold icons, rising gold particles, animated gold chart bars (LEADS / SALES / ROI), and a refined content hierarchy -- all fully integrated with i18n, RTL, reduced motion, and the existing design system.
 
-**Already completed:** nl.json (100%), en.json (100%), fr.json (100%), it.json (100%), ar.json (100%), tr.json (100%)
+---
 
-## What's Missing (Common Across All 9 Files)
+## What Changes
 
-The service cards on /services and service detail pages are the most visible problem. Here are ALL missing sections:
+### 1. Update `HeroSection.tsx` (full rewrite)
 
-### Service Page Keys (why cards don't translate)
-- `services.card.watchVideo`, `buildPlan`, `calculatorHint`
-- `services.badges.monthly`, `oneTime`, `custom`, `mostChosen`
-- `services.goalEntry.*` -- goal-based entry cards
-- `services.wizard.*` -- guided wizard steps
-- `services.simpleExplanation.*` -- one-line explanations per service
-- `services.guidedEntry.*` -- guided entry section
-- `services.microGuidance.*` -- micro guidance tooltips
-- `services.videoModal.*` -- video modal with bullets per service
-- `services.ads.*` -- full ads budget framework (goals, transparency, salesFlow, faq)
-- `services.items.onePage`, `mobileApp` and deep `packages` sub-keys
+The new component preserves all existing functionality (video background, poster fallback, i18n, RTL, reduced motion, scroll indicator) and adds:
 
-### Service Detail Pages (11 full pages)
-- `servicePage.socialMedia.*`
-- `servicePage.adsManagement.*`
-- `servicePage.contentProduction.*`
-- `servicePage.seo.*`
-- `servicePage.businessWebsite.*`
-- `servicePage.onePageWebsite.*`
-- `servicePage.ecommerceWebsite.*`
-- `servicePage.branding.*`
-- `servicePage.mobileAppDevelopment.*`
-- `servicePage.reputation.*`
-- `servicePage.dataSync.*`
-- `servicePage.calculator.*` (businessTypes, goals, packages, addons, whatsappTemplate)
-- `servicePage.faq.*`, `servicePage.finalCTA.*`, `servicePage.pricingFAQ.*`, `servicePage.generalFAQ.*`, `servicePage.servicesFAQ.*`
+- **Floating Gold Icons** -- 15 absolutely positioned Lucide icons (TrendingUp, BarChart3, Rocket, Crown, Gem, Target, Star, Zap, Award, Globe, Sparkles, ChartLine, DollarSign, Users, Eye) with a slow `floatGold` keyframe animation. Each icon is gold-colored with drop-shadow glow, pointer-events none.
 
-### Other Major Sections
-- `home.serviceMap.*` -- 4-column service overview
-- `home.clientLogoMarquee.*` -- client logos + testimonials
-- `home.trustSectors.*` -- sector trust section with 10 sectors
-- `home.trustedBelgium.*` -- trusted Belgium section with countries
-- `planBuilder.*` -- full social media plan builder (channels, frequency, addons, summary, FAQ)
-- `partner.*` -- full partner/franchise page (hero, clarity, forWho, value, howItWorks, FAQ, apply, booking)
-- `caseStudy.*` -- labels + 8 case study translations
-- `social.*` -- WhatsApp, call, email, follow links
-- `about` deep keys -- hero, whoWeAre, approach, valuesSection, cta
-- `footer.planCall`, `footer.newsletter` expansion
-- `forms.*` -- form labels
-- `common` expansion (cancel, save, delete, etc.)
-- `validation.phone`, `validation.invalidUrl`
+- **Rising Gold Particles** -- 10 small gold circles that rise from the bottom with fade-out, using a CSS `riseGold` keyframe. Replaces the current Framer Motion particle dots.
 
-## Implementation Plan
+- **Content hierarchy** (centered):
+  1. Gold logo icon (Crown with shimmer animation)
+  2. "GOLD STANDARD" headline (existing `gold-gradient-text`)
+  3. "GROWTH . CONTENT . ROI" subtitle in a bordered pill
+  4. Animated gold chart bars (3 bars: LEADS, SALES, ROI) with breathing glow
+  5. Primary CTA button ("ENTER" / i18n `ctaPrimary`) -- gold pill style
+  6. Footer micro-text ("BEYOND STANDARD")
 
-Due to the massive scope (~18,000 lines total), this will be done in batches of 1-2 languages per message:
+- **Scroll indicator** stays as-is (ChevronDown at bottom).
 
-### Batch 3: Spanish (es.json)
-Add all missing sections listed above. Spanish already has partial `about`, `services.items`, `blog`, `portfolio.items`, `contact`, `footer`, `calculator` -- needs all `servicePage.*`, `planBuilder`, `partner`, `caseStudy`, `social`, `home.serviceMap`, `home.trustSectors`, `home.trustedBelgium`, `home.clientLogoMarquee`, and deep `services` keys.
+### 2. Add CSS keyframes to `index.css`
 
-### Batch 4: German (de.json)
-Same scope. German has partial coverage similar to Spanish.
+Add three new keyframes under the existing `@layer utilities` block:
 
-### Batch 5: Polish (pl.json)
-Same scope.
+```css
+@keyframes floatGold {
+  0%   { transform: translate(0,0) rotate(0deg) scale(1); opacity:0.4; }
+  25%  { transform: translate(30px,-40px) rotate(15deg) scale(1.2); opacity:0.8; }
+  50%  { transform: translate(-25px,20px) rotate(-10deg) scale(0.9); opacity:0.6; }
+  75%  { transform: translate(20px,30px) rotate(20deg) scale(1.1); opacity:0.7; }
+  100% { transform: translate(0,0) rotate(0deg) scale(1); opacity:0.4; }
+}
 
-### Batch 6: Russian (ru.json)
-Same scope.
+@keyframes riseGold {
+  0%   { transform: translateY(0) scale(1); opacity:0.8; }
+  100% { transform: translateY(-700px) scale(1.8); opacity:0; }
+}
 
-### Batch 7: Bengali (bn.json) + Hindi (hi.json)
-These are the smallest files. Will need nearly all sections added.
+@keyframes barBreath {
+  0%   { box-shadow: 0 0 15px #D4AF37; opacity:0.8; }
+  100% { box-shadow: 0 0 45px #FFD700; opacity:1; }
+}
+```
 
-### Batch 8: Urdu (ur.json) + Chinese (zh.json)
-Same scope. Urdu is RTL like Arabic.
+Plus utility classes:
 
-### Batch 9: Portuguese (pt.json)
-Portuguese is the most complete of the remaining files at 41%. Still needs servicePage, planBuilder, partner, caseStudy, home.serviceMap, home.trustSectors, etc.
+```css
+.animate-float-gold { animation: floatGold 20s infinite ease-in-out; }
+.animate-rise-gold  { animation: riseGold 8s infinite ease-out; }
+.animate-bar-breath { animation: barBreath 2.5s infinite alternate; }
+```
 
-## Technical Notes
+### 3. Add i18n keys (all locale files)
 
-- No code changes needed -- all components already use `t()` correctly
-- The service cards use keys like `services.simpleExplanation.social_media`, `services.card.watchVideo`, `services.badges.monthly` -- these are missing in all 9 files
-- Service detail pages use `servicePage.socialMedia.title`, `servicePage.socialMedia.benefits.1`, etc. -- completely missing
-- The fallback to Dutch/English is why untranslated text appears
-- Each file will be rewritten with full parity to nl.json's 2806 lines
+Add the following keys under `home.heroNew` in every locale file. The content uses existing keys where possible:
+
+```json
+"heroNew": {
+  ...existing keys stay...
+  "logoAlt": "GROPPI Gold Standard",
+  "chartLeads": "LEADS",
+  "chartSales": "SALES",
+  "chartRoi": "ROI",
+  "tagline": "GROWTH · CONTENT · ROI",
+  "beyondStandard": "✦ BEYOND STANDARD ✦"
+}
+```
+
+These 5 new keys will be added to all 15 locale files (nl, en, fr, de, es, it, pt, pl, tr, ru, zh, ar, ur, bn, hi).
+
+---
+
+## What Stays the Same
+
+- Video background + poster fallback
+- Dark multi-stop overlay for text readability
+- RTL support (dir attribute, icon mirroring)
+- Reduced motion respect (skip animations)
+- Scroll-to-services indicator
+- Header/Footer remain untouched (social icons + language switcher live in Header, not Hero)
+
+---
+
+## Technical Details
+
+### Component structure (pseudo-JSX)
+
+```text
+section (relative, min-height 80vh)
+  |-- Video BG layer (z-0)         [existing]
+  |-- Dark overlay (z-1)           [existing]
+  |-- Floating gold icons (z-2)    [NEW - 15 Lucide icons, absolute, pointer-events-none]
+  |-- Rising gold particles (z-3)  [NEW - 10 divs, bottom-up animation]
+  |-- Content (z-10)               [UPDATED layout]
+  |   |-- Crown icon (shimmer)
+  |   |-- H1 "GOLD STANDARD"
+  |   |-- Subtitle pill "GROWTH . CONTENT . ROI"
+  |   |-- Chart bars (3 animated bars)
+  |   |-- CTA button (gold pill)
+  |   |-- Micro footer text
+  |-- Scroll indicator (z-10)      [existing]
+```
+
+### Reduced motion handling
+
+When `prefers-reduced-motion` is active:
+- Floating icons render statically (no animation)
+- Particles hidden entirely
+- Chart bars show without breathing animation
+- Crown icon without shimmer
+
+### Files modified
+
+| File | Change |
+|------|--------|
+| `src/components/home/HeroSection.tsx` | Full rewrite with new visual layout |
+| `src/index.css` | Add 3 keyframes + 3 utility classes |
+| `src/i18n/locales/*.json` (x15) | Add 5 new `home.heroNew.*` keys each |
 
