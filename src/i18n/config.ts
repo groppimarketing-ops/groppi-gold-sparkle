@@ -136,6 +136,7 @@ i18n
   .init({
     resources,
     fallbackLng: ['nl', 'en'],
+    load: 'languageOnly',
     interpolation: {
       escapeValue: false,
     },
@@ -143,6 +144,13 @@ i18n
       order: ['localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage'],
       lookupLocalStorage: 'i18nextLng',
+      convertDetectedLanguage: (lng: string) => {
+        // Strip regional codes: en-US → en, nl-BE → nl
+        const base = lng.split('-')[0].toLowerCase();
+        // Check if the base code matches any supported language
+        const supported = ['ar','en','fr','de','es','it','pt','nl','pl','ru','tr','bn','hi','ur','zh'];
+        return supported.includes(base) ? base : 'nl';
+      },
     },
     returnEmptyString: false,
     returnNull: false,

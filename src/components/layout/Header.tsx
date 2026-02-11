@@ -145,7 +145,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  const currentLang = languages.find(l => l.code === i18n.language) || languages[0];
+  const currentLang = languages.find(l => l.code === i18n.language || i18n.language.startsWith(l.code)) || languages[0];
   const isRtl = currentLang.dir === 'rtl';
 
   useEffect(() => {
