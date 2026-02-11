@@ -157,16 +157,21 @@ const HeroSection = memo(() => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-16 md:py-20">
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
-          {/* 3D Spinning G Logo */}
+          {/* 3D Brand Video */}
           <div
             className={`mb-8 ${prefersReducedMotion ? '' : 'animate-spin-3d'}`}
             style={{ perspective: '800px' }}
           >
-            <img
-              src={groppiGLogo}
-              alt={t('home.heroNew.logoAlt')}
-              className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 object-contain drop-shadow-[0_0_40px_hsl(43_76%_52%)]"
-            />
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 object-contain drop-shadow-[0_0_50px_hsl(43_76%_52%)] rounded-2xl"
+              style={{ filter: 'drop-shadow(0 0 40px hsl(43 76% 52%))' }}
+            >
+              <source src="/videos/hero-logo.mp4" type="video/mp4" />
+            </video>
           </div>
 
           {/* Social Icons - Gold */}
