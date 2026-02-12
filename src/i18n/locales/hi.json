@@ -1842,12 +1842,52 @@
       }
     }
   },
+  "contact": {
+    "title": "संपर्क करें",
+    "subtitle": "बात करें",
+    "intro": "क्या आपके मन में कोई प्रोजेक्ट है या आप अपनी डिजिटल उपस्थिति मजबूत करना चाहते हैं? बिना किसी बाध्यता के बातचीत के लिए हमसे संपर्क करें।",
+    "mobileLabel": "मोबाइल",
+    "officeLabel": "कार्यालय",
+    "hoursLabel": "कार्य समय",
+    "hoursValue": "सोम - शुक्र: सुबह 9:00 - शाम 6:00",
+    "description": "हम आपसे सुनना चाहेंगे। फॉर्म भरें और हम जल्द से जल्द आपसे संपर्क करेंगे।",
+    "name": "नाम",
+    "email": "ईमेल पता",
+    "phone": "फ़ोन नंबर",
+    "company": "कंपनी",
+    "subject": "विषय",
+    "message": "आपका संदेश",
+    "send": "भेजें",
+    "sending": "भेजा जा रहा है...",
+    "success": "संदेश सफलतापूर्वक भेजा गया! हम जल्द से जल्द आपसे संपर्क करेंगे।",
+    "error": "कुछ गलत हो गया। कृपया पुनः प्रयास करें या फ़ोन पर संपर्क करें।",
+    "address": "पता",
+    "phoneLabel": "फ़ोन",
+    "emailLabel": "ईमेल",
+    "landline": "लैंडलाइन",
+    "mobile": "मोबाइल",
+    "rateLimited": "बहुत अधिक अनुरोध। कृपया बाद में पुनः प्रयास करें।"
+  },
+  "validation": {
+    "required": "यह फ़ील्ड आवश्यक है",
+    "email": "कृपया एक मान्य ईमेल पता दर्ज करें",
+    "minLength": "न्यूनतम {{count}} अक्षर आवश्यक हैं",
+    "maxLength": "अधिकतम {{count}} अक्षर अनुमत हैं"
+  },
   "social": {
     "whatsapp": "WhatsApp",
-    "call": "कॉल करें",
-    "email": "ईमेल",
+    "whatsappChat": "WhatsApp पर चैट करें",
+    "callUs": "हमें कॉल करें",
+    "emailUs": "ईमेल भेजें",
+    "followUs": "सोशल मीडिया पर हमें फॉलो करें",
+    "actions": {
+      "chat": "WhatsApp पर बातचीत शुरू करें",
+      "call": "कॉल करें +32 494 31 11 19",
+      "email": "ईमेल करें info@groppi.be"
+    },
     "followInstagram": "Instagram पर फॉलो करें",
-    "followFacebook": "Facebook पर लाइक करें",
+    "followFacebook": "Facebook पर फॉलो करें",
+    "followTiktok": "TikTok पर फॉलो करें",
     "followLinkedin": "LinkedIn पर फॉलो करें"
   },
   "footer": {
