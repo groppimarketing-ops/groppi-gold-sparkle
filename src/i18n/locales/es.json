@@ -1537,33 +1537,25 @@
     }
   },
   "contact": {
-    "meta": {
-      "title": "Contacto",
-      "description": "Contacta con GROPPI para hablar sobre tu proyecto."
-    },
-    "hero": {
-      "title": "Hablemos",
-      "subtitle": "Nos encantaría escuchar sobre tu proyecto"
-    },
-    "form": {
-      "title": "Envíanos un mensaje",
-      "subtitle": "Responderemos lo antes posible",
-      "namePlaceholder": "Tu nombre",
-      "emailPlaceholder": "tu@email.com",
-      "companyPlaceholder": "Tu empresa",
-      "subjectPlaceholder": "Asunto",
-      "messagePlaceholder": "Tu mensaje...",
-      "submit": "Enviar mensaje",
-      "sending": "Enviando...",
-      "successMessage": "¡Gracias! Hemos recibido tu mensaje. Te contactaremos pronto.",
-      "errorMessage": "Hubo un error al enviar tu mensaje. Por favor, intenta de nuevo."
-    },
-    "info": {
-      "title": "Otras formas de contactarnos",
-      "email": "Email",
-      "phone": "Teléfono",
-      "location": "Ubicación"
-    },
+    "title": "Contactar",
+    "subtitle": "Hablemos",
+    "intro": "¿Tienes un proyecto en mente o quieres reforzar tu presencia digital? Contáctanos para una conversación sin compromiso.",
+    "mobileLabel": "Móvil",
+    "officeLabel": "Oficina",
+    "hoursLabel": "Horario de atención",
+    "hoursValue": "Lun - Vie: 9:00 - 18:00",
+    "description": "Nos encantaría saber de ti. Rellena el formulario y te responderemos lo antes posible.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "company": "Empresa",
+    "subject": "Asunto",
+    "message": "Tu mensaje",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito! Te responderemos lo antes posible.",
+    "error": "Algo salió mal. Inténtalo de nuevo o llámanos.",
+    "address": "Dirección",
     "phoneLabel": "Teléfono",
     "emailLabel": "Email",
     "landline": "Fijo",
@@ -2162,14 +2154,14 @@
     "planCall": "Agendar llamada",
     "newsletter": {
       "title": "Newsletter",
-      "subtitle": "Consejos semanales sobre marketing digital",
-      "inputPlaceholder": "Tu email",
-      "subscribe": "Suscribirse",
+      "description": "Mantente al día con nuestros últimos consejos e ideas.",
+      "placeholder": "Tu correo electrónico",
+      "button": "Suscribirse",
+      "subscribed": "¡Ya estás suscrito! Gracias.",
       "successTitle": "¡Suscrito!",
-      "successMessage": "¡Gracias por suscribirte!",
-      "errorTitle": "Algo salió mal",
-      "errorMessage": "Algo salió mal. Por favor intenta de nuevo.",
-      "subscribed": "Ya suscrito"
+      "successMessage": "Te has suscrito con éxito a nuestro newsletter.",
+      "errorTitle": "Error de suscripción",
+      "errorMessage": "Algo salió mal. Por favor intenta de nuevo."
     }
   },
   "cookies": {
