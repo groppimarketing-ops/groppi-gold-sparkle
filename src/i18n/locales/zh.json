@@ -315,6 +315,72 @@
         "tech-startup-branding": { "title": "科技初创品牌", "metric": "完整品牌识别" },
         "e-commerce-groei": { "title": "电商增长", "metric": "+240% ROAS" },
         "content-strategie": { "title": "内容策略", "metric": "50+视频/月" }
+      },
+      "page": { "subtitle": "我们的作品", "title": "作品集", "description": "探索我们的项目和为客户取得的成果。", "resultSingle": "个项目", "resultPlural": "个项目", "noResults": "没有符合筛选条件的项目。" },
+      "nda": { "disclaimer": "部分项目受保密协议（NDA）保护，无法公开展示。" },
+      "sectors": {
+        "restaurants-hotels": "餐厅与酒店",
+        "interior-architecture": "室内设计与建筑",
+        "retail-local-shops": "零售与本地商店",
+        "ecommerce": "电子商务",
+        "real-estate": "房地产",
+        "beauty-care": "美容与护理",
+        "local-services": "本地服务",
+        "smes-startups": "中小企业与初创",
+        "medical-clinics": "医疗诊所",
+        "educational-academies": "教育学院"
+      },
+      "loadMore": "加载更多项目",
+      "filters": { "all": "全部", "searchPlaceholder": "按客户名搜索...", "industryLabel": "按行业筛选", "serviceLabel": "按服务筛选", "clearAll": "清除所有筛选" },
+      "modal": { "challenge": "挑战", "approach": "我们的方法", "results": "结果", "ctaPrimary": "请求报价", "ctaWhatsApp": "通过WhatsApp聊天" },
+      "items": {
+        "castello-vicchiomaggio": { "shortResult": "托斯卡纳历史酒庄的数字展示和视觉指导。", "challenge": "Castello Vicchiomaggio，位于托斯卡纳基安蒂地区的历史酒庄和酒店，需要符合其百年传统声望的精致数字存在，以吸引国际宾客。", "approach": { "0": "以奢华酒店为重点的高端网站设计", "1": "捕捉庄园氛围的视觉内容指导", "2": "移动优先预订体验优化", "3": "与历史传承一致的数字品牌身份", "4": "多设备响应式展示" }, "results": { "0": "反映庄园声望的数字存在提升", "1": "所有触点的沉浸式视觉叙事", "2": "简化的宾客预订体验", "3": "所有设备上一致的品牌展示", "4": "国际知名度和吸引力提升" }, "disclaimer": "视觉效果为作品集展示目的重新制作。" },
+        "cose-pazzi-torino": { "shortResult": "具有强烈美食视觉和本地品牌特色的正宗意大利比萨店网站。", "challenge": "都灵的Cose Pazzi比萨店需要一个专业的数字存在，反映其正宗意大利美食和充满活力的社区特色。", "approach": { "0": "网站结构和优化", "1": "视觉展示和美食层级", "2": "移动优先可用性改进", "3": "本地意大利品牌感和叙事" }, "results": { "0": "高端餐厅线上品牌", "1": "强烈的美食可见度和食欲吸引力", "2": "清晰简单的客户旅程", "3": "在线可见度和本地SEO改善" }, "disclaimer": "视觉效果为展示目的制作。" },
+        "augusto-torino": { "shortResult": "具有强烈视觉识别和精致美食展示的优雅餐厅网站。", "challenge": "都灵的Augusto餐厅需要反映其精致意大利美食和温馨氛围的专业数字存在。", "approach": { "0": "网站结构和优化", "1": "视觉层级和美食布局", "2": "性能和移动可用性", "3": "活动和预订集成" }, "results": { "0": "高端餐厅线上品牌", "1": "从菜单到预订的清晰客户旅程", "2": "所有页面的强烈视觉叙事", "3": "在线可见度和本地SEO改善" }, "disclaimer": "由GROPPI主动管理的项目。" },
+        "pummaro-torino": { "shortResult": "具有强烈美食展示和清晰客户流程的现代餐厅网站。", "challenge": "都灵的Pummarò比萨店需要反映其使用意大利小型生产商优质食材制作正宗意大利美食的承诺。", "approach": { "0": "网站结构和优化", "1": "视觉层级和美食展示", "2": "移动可用性改进", "3": "在线预订和外卖集成" }, "results": { "0": "具有清晰导航的转化友好布局", "1": "强烈的本地餐厅线上品牌", "2": "专业的美食可见度和食材叙事", "3": "从菜单到预订的无缝客户旅程" }, "disclaimer": "由GROPPI主动管理的项目。" },
+        "fratelli-roselli": { "shortResult": "具有强烈美食展示和本地品牌的正宗意大利餐厅网站。", "challenge": "都灵的Fratelli Roselli比萨店拥有20多年的忠实本地追随者，但需要专业的数字存在来展示其对优质食材和正宗比萨烘焙的承诺。", "approach": { "0": "网站结构和优化", "1": "视觉展示和内容布局", "2": "性能和可用性改进", "3": "在线预订系统集成" }, "results": { "0": "反映品牌质量的专业清晰网站", "1": "聚焦优质食材的强烈美食可见度", "2": "从菜单到预订的清晰客户旅程", "3": "本地餐厅线上品牌改善" }, "disclaimer": "由GROPPI主动管理的项目。" },
+        "boothuis-turnhout": { "shortResult": "本地餐饮企业的简洁网站和视觉展示。", "challenge": "Boothuis餐厅需要反映餐厅在线氛围和品质的专业数字存在。", "approach": { "0": "网站管理和持续优化", "1": "视觉内容和专业展示", "2": "建设和维护数字存在", "3": "所有在线渠道一致的品牌体验" }, "results": { "0": "专业清晰的网站", "1": "餐厅的强烈视觉展示", "2": "在线可见度改善", "3": "持续管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
+        "sanremo-pizzeria": { "shortResult": "本地餐厅的强大社交媒体存在和视觉内容。", "challenge": "Sanremo比萨餐厅拥有忠实的本地追随者，但缺少吸引新客户和在线传达餐厅氛围的专业数字存在。", "approach": { "0": "Facebook页面管理和优化", "1": "专业视觉内容创作", "2": "社交媒体策略和持续发布", "3": "建设和维护数字存在" }, "results": { "0": "专业一致的在线存在", "1": "视觉强烈的社交媒体内容", "2": "在线可见度和可搜索性改善", "3": "持续管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
+        "mangiare-3840": { "shortResult": "具有强烈视觉识别的现代餐厅网站。", "challenge": "Mangiare 3840拥有强大的本地声誉，但缺少反映餐厅氛围和品质的专业在线存在。", "approach": { "0": "深色高端主题的完全定制设计网站", "1": "匹配餐厅氛围的视觉内容和品牌", "2": "持续的数字支持和优化", "3": "菜单和预订系统集成" }, "results": { "0": "增强品牌体验的专业在线存在", "1": "改善的访客用户体验", "2": "所有数字渠道上的强烈视觉识别", "3": "持续管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
+        "kma-wandpanelen": { "shortResult": "+85%展厅访客", "challenge": "安特卫普的KMA墙板拥有高端木材和大理石替代品产品线，但缺乏在线可见度。其强项（防潮、防刮、易维护）未被有效传达。", "approach": { "0": "所有面板变体的专业产品摄影", "1": "Instagram和Facebook的社交媒体内容策略", "2": "视觉对比：WPC vs. 传统木材", "3": "聚焦USP：易维护和耐久" }, "results": { "0": "+85%展厅访客", "1": "通过社交的强烈在线产品兴趣", "2": "来自室内设计师的更多定向询问", "3": "作为高端替代品的清晰定位" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "lebanon-restaurant": { "shortResult": "+120%社交媒体覆盖", "challenge": "布鲁塞尔的黎巴嫩餐厅拥有正宗菜肴，但在线存在有限。温馨氛围和传统美食未在社交媒体上展示。", "approach": { "0": "Instagram和Facebook的完整社交媒体策略", "1": "专业美食摄影和造型", "2": "用于互动的短促销视频和Reels", "3": "持续发布的每周内容规划", "4": "社会证明的评价和推荐内容" }, "results": { "0": "+120%社交媒体覆盖", "1": "通过Instagram的新客户显著增加", "2": "帖子互动率提高", "3": "布鲁塞尔地区更强的品牌认知", "4": "通过DM的更多餐位预订" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "il-fuoco-pizza": { "shortResult": "+65%在线预订", "challenge": "具有工匠精神的正宗意大利比萨店，但在线存在过时。温馨氛围和比萨质量未反映在其数字外观中。", "approach": { "0": "完整视觉识别重塑", "1": "专业美食和氛围摄影", "2": "带QR集成的数字菜单系统", "3": "Instagram和Facebook的社交媒体内容", "4": "评价和推荐策略" }, "results": { "0": "+65%更多在线预订", "1": "地区内强大的品牌知名度", "2": "更高的平均订单价值", "3": "由于忠诚度内容，更多回头客", "4": "在线评价和评分改善" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "restaurant-branding": { "shortResult": "+180% 预订量", "challenge": "高端餐厅在线可见度低。过时的品牌形象不符合其独家供应，未能触达目标受众。", "approach": { "0": "具有奢华外观和感觉的完全重塑", "1": "带预订系统的新网站", "2": "内部和菜肴的专业拍摄", "3": "针对本地搜索者的Google Ads活动" }, "results": { "0": "6个月内+180%预订量", "1": "每桌更高平均消费", "2": "更好的在线评价和评分", "3": "本地搜索词的Google前3名位置" } },
+        "mode-webshop": { "shortResult": "3个月€85K营收", "challenge": "没有数字存在的起步在线时装店。营销预算有限，但有在比利时市场快速增长的高雄心。", "approach": { "0": "Shopify网店设置和配置", "1": "专业产品摄影", "2": "带再营销的Meta Ads活动", "3": "转化导向的落地页" }, "results": { "0": "前3个月€85K营收", "1": "广告ROAS 4.2", "2": "稳定的回头客群", "3": "成功扩展到荷兰" } },
+        "b2b-platform": { "shortResult": "+320% 线索", "challenge": "具有长销售漏斗的复杂B2B SaaS。合格线索太少且网站转化差。竞争对手定位更强。", "approach": { "0": "按人物角色的优化落地页", "1": "线索磁铁（白皮书、案例研究）", "2": "长尾关键词的SEO策略", "3": "表单和CTA的A/B测试" }, "results": { "0": "4个月内+320%合格线索", "1": "更低单位线索成本", "2": "更短销售漏斗持续时间", "3": "更好线索质量（SQL比率）" } },
+        "bouwbedrijf-website": { "shortResult": "Google本地第一", "challenge": "家族建筑公司纯靠口碑生存。无网站，无在线存在。年轻一代想要现代化。", "approach": { "0": "带项目作品集的专业网站", "1": "Google My Business优化", "2": "本地SEO策略", "3": "项目摄影和案例研究" }, "results": { "0": "本地搜索词Google排名第一", "1": "通过网站每月45+线索", "2": "更高平均项目价值", "3": "相对于竞争对手的更强定位" } },
+        "influencer-campagne": { "shortResult": "240万覆盖", "challenge": "无品牌知名度的新美妆品牌。目标受众18-35岁难以通过传统渠道触达。", "approach": { "0": "网红合作策略", "1": "激活12位比利时创作者", "2": "Instagram和TikTok上的UGC活动", "3": "品牌内容和赠品" }, "results": { "0": "2个月内240万有机覆盖", "1": "UGC内容高互动", "2": "目标受众中的强品牌知名度", "3": "成功产品发布" } },
+        "tech-startup-branding": { "shortResult": "完整品牌识别", "challenge": "种子前初创需要面向投资者会议的专业外观。当前的DIY品牌形象不具说服力。", "approach": { "0": "完整品牌识别开发", "1": "标志和视觉语言设计", "2": "投资者演示文稿设计", "3": "投资者就绪网站" }, "results": { "0": "3个月内成功完成种子轮", "1": "面向投资者的专业形象", "2": "所有触点的一致品牌形象", "3": "为可扩展品牌奠定基础" } },
+        "e-commerce-groei": { "shortResult": "+240% ROAS", "challenge": "现有室内装饰网店广告亏损。ROAS低于1.0且无明确策略。预算被浪费。", "approach": { "0": "现有活动全面审核", "1": "新受众细分", "2": "创意A/B测试", "3": "建立再营销漏斗" }, "results": { "0": "90天内+240% ROAS提升", "1": "盈利的广告支出", "2": "更低获客成本", "3": "可扩展活动结构" } },
+        "content-strategie": { "shortResult": "50+视频/月", "challenge": "健身连锁想要持续生产内容但无内部时间或专业知识。社交媒体被忽视。", "approach": { "0": "建立全服务内容合约", "1": "规划、制作和发布", "2": "所有地点的视频和照片内容", "3": "持续发布策略" }, "results": { "0": "每月50+高质量视频", "1": "所有渠道一致的品牌体验", "2": "更高会员参与度", "3": "通过社交媒体的更多注册" } },
+        "ai-learn-academy": { "shortResult": "实时平台 – 进行中", "challenge": "AI Deals需要一个高端平台，通过订阅模式简化对领先AI工具的访问，并结合面向创作者和专业人士的教育学院。", "approach": { "0": "带高端深色主题的全平台设计与UX/UI开发", "1": "基于订阅的访问管理系统", "2": "带分类的AI工具市场结构", "3": "AI学院与教育内容架构", "4": "支持增长的可扩展平台基础设施", "5": "持续技术管理和优化" }, "results": { "0": "定制AI工具市场发布", "1": "订阅与访问管理系统上线", "2": "带转化导向UX的高端深色UI", "3": "教育AI学院结构部署", "4": "支持持续增长的可扩展架构", "5": "由Groppi主动管理和优化的平台" }, "disclaimer": "这是一个实时和进行中的项目。由Groppi设计和管理的平台。" },
+        "pilotscareer": { "shortResult": "国际航空招聘平台 – 实时", "challenge": "PilotsCareer需要一个专业、可扩展的招聘平台，连接飞行员与全球职业机会。", "approach": { "0": "从零开始的全平台设计与开发", "1": "带航空灵感美学的高端深色UI", "2": "高级职位搜索和筛选系统", "3": "飞行员资料和申请管理", "4": "桌面和移动响应式设计", "5": "持续平台优化和功能开发" }, "results": { "0": "专业航空招聘平台发布", "1": "支持国际增长的可扩展架构", "2": "面向飞行员和招聘者的简洁直观UX", "3": "高级搜索和筛选功能", "4": "移动优化的飞行员资料体验", "5": "由Groppi主动管理和开发的平台" }, "disclaimer": "这是一个实时和进行中的项目。由Groppi设计和管理的平台。" },
+        "casa-mavi": { "shortResult": "西班牙地中海瑰宝的完整数字存在。", "challenge": "Casa Mavi，位于西班牙福恩希罗拉的意大利那不勒斯餐厅，想要建立专业的数字存在，以吸引太阳海岸的本地客人和游客。", "approach": { "0": "带在线预订系统的定制网站", "1": "数字菜单和视觉内容创作", "2": "建立专业数字存在", "3": "针对本地和游客受众的社交媒体策略" }, "results": { "0": "带集成预订系统的专业网站", "1": "反映地中海氛围的强烈视觉识别", "2": "游客和本地人的在线可见度改善", "3": "持续数字管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
+        "arte-y-cocina": { "shortResult": "艺术高级餐饮体验的高端数字身份。", "challenge": "ArTe y CoCiNa，西班牙的一家艺术高级餐厅，想要一个反映艺术与美食独特融合并吸引国际受众的数字存在。", "approach": { "0": "带奢华视觉识别的定制网站", "1": "专业美食和室内内容创作", "2": "建立强大数字存在", "3": "结合艺术与烹饪卓越的视觉品牌" }, "results": { "0": "在线反映高级餐饮体验的优雅网站", "1": "具有艺术气息的强烈视觉识别", "2": "在线可见度和品牌体验改善", "3": "持续数字管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
+        "verona-los-boliches": { "shortResult": "充满活力的融合餐厅的完整在线存在。", "challenge": "Verona Los Boliches，一家独特的意大利-印度-墨西哥融合餐厅，需要反映其多元文化美食和太阳海岸活力氛围的专业数字存在。", "approach": { "0": "带视觉识别的定制网站", "1": "专业美食和氛围内容创作", "2": "在线存在和可见度建设", "3": "面向多种菜系风格的视觉内容" }, "results": { "0": "强烈展示融合美食的专业网站", "1": "面向游客和本地人的在线可见度改善", "2": "所有数字渠道的强烈视觉内容", "3": "持续数字管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
+        "happy-flavors": { "shortResult": "西班牙正宗印度美食的专业数字存在。", "challenge": "Happy Flavors印度餐厅想要建设反映正宗印度美食和温馨款待的专业在线存在，对本地客人和游客都有吸引力。", "approach": { "0": "温馨视觉识别的定制网站", "1": "专业美食和氛围内容创作", "2": "数字存在和可见度建设", "3": "展示丰富印度美食的视觉内容" }, "results": { "0": "展示正宗印度美食的专业网站", "1": "所有数字渠道的强烈视觉内容", "2": "面向游客和本地人的在线可见度改善", "3": "持续数字管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
+        "guest-reservations": { "shortResult": "全球酒店预订服务的持续平台管理。", "challenge": "Guest Reservations，一个国际酒店和旅行预订平台，需要持续的平台管理、网站优化和技术支持以支持其全球增长。", "approach": { "0": "持续平台管理和技术支持", "1": "网站优化以提高性能和转化", "2": "预订平台监测和主动维护", "3": "可扩展增长的战略支持" }, "results": { "0": "平台性能和用户体验改善", "1": "预订平台转化率提高", "2": "面向全球用户的稳定可靠平台", "3": "持续技术支持和优化" }, "disclaimer": "由GROPPI主动管理的持续项目。" },
+        "eurostars-hotels": { "shortResult": "欧洲酒店集团的数字平台支持和性能优化。", "challenge": "Eurostars Hotels，一个拥有广泛预订平台的欧洲酒店集团，需要持续的数字支持、网站管理和性能优化以加强其在线存在。", "approach": { "0": "持续数字平台支持和技术管理", "1": "网站管理和预订平台优化", "2": "更快加载时间和更好转化的性能优化", "3": "欧洲增长的战略支持" }, "results": { "0": "优化的网站性能和用户体验", "1": "预订平台转化率改善", "2": "面向欧洲客人的稳定可靠数字平台", "3": "持续技术管理和主动优化" }, "disclaimer": "由GROPPI主动管理的持续项目。" },
+        "nda-project-001": { "shortResult": "+42%在线预订", "challenge": "移动体验差的过时网站导致错失预订。", "approach": { "0": "响应式网站重设计", "1": "在线预订系统", "2": "本地SEO优化" }, "results": { "0": "+42%在线预订", "1": "更快加载时间（<2秒）" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-002": { "shortResult": "+70%餐位预订", "challenge": "市中心的小酒馆缺乏面向游客和本地人的在线可见度。", "approach": { "0": "Instagram Reels策略", "1": "美食录像", "2": "季节性菜单活动" }, "results": { "0": "通过社交+70%餐位预订", "1": "病毒式Reel（50K+播放）" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-003": { "shortResult": "+55% Instagram粉丝", "challenge": "美容沙龙在年轻目标群体中缺乏在线可见度。", "approach": { "0": "Instagram内容策略", "1": "前后对比视觉系列", "2": "微网红合作" }, "results": { "0": "+55% Instagram粉丝", "1": "通过DM的更高预约率" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-004": { "shortResult": "+50%预约", "challenge": "新水疗中心在竞争激烈的健康市场中缺乏差异化。", "approach": { "0": "奢华品牌识别开发", "1": "预约优化的网站", "2": "氛围视觉语言" }, "results": { "0": "前6个月+50%预约", "1": "达到高端定位" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-005": { "shortResult": "+38%报价请求", "challenge": "拥有强大声誉但品牌识别过时的家族企业。", "approach": { "0": "完整品牌识别重塑", "1": "专业项目摄影", "2": "带作品集的新网站" }, "results": { "0": "+38%报价请求", "1": "更强品牌认知" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-006": { "shortResult": "+85%线索", "challenge": "增长市场中的太阳能板安装商但线索生成能力差。", "approach": { "0": "线索生成漏斗", "1": "Google Ads活动", "2": "网站计算器工具" }, "results": { "0": "每月+85%线索", "1": "单位线索成本减半" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-007": { "shortResult": "Q1 €62K营收", "challenge": "无现有客户群或品牌知名度的新网店。", "approach": { "0": "Shopify网店配置", "1": "Meta Ads活动", "2": "再营销漏斗" }, "results": { "0": "第一季度€62K营收", "1": "ROAS 3.8" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-008": { "shortResult": "+130%在线销售", "challenge": "珠宝商想在实体店之外开始在线销售。", "approach": { "0": "WooCommerce网店设置", "1": "产品摄影", "2": "Instagram购物集成" }, "results": { "0": "4个月内+130%在线销售", "1": "强大的Instagram社区" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-009": { "shortResult": "Google第2位", "challenge": "医疗诊所尽管声誉良好但在搜索结果中不可见。", "approach": { "0": "技术SEO审核和修复", "1": "医疗内容策略", "2": "Google My Business优化" }, "results": { "0": "核心关键词Google第2位", "1": "+60%有机流量" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-010": { "shortResult": "+35%新患者", "challenge": "竞争激烈地区新患者数量下降的牙科诊所。", "approach": { "0": "本地SEO策略", "1": "Google Ads活动", "2": "评价管理" }, "results": { "0": "每月+35%新患者", "1": "Google Maps本地第一" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-011": { "shortResult": "种子轮完成", "challenge": "种子前初创需要面向投资者的专业形象。", "approach": { "0": "标志和视觉识别", "1": "演示文稿设计", "2": "落地页开发" }, "results": { "0": "成功完成种子轮", "1": "专业投资者演示" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-012": { "shortResult": "30天500+注册", "challenge": "B2B SaaS产品准备发布但无营销基础设施。", "approach": { "0": "高转化落地页", "1": "LinkedIn Ads活动", "2": "内容营销策略" }, "results": { "0": "首月500+注册", "1": "强烈的产品市场契合信号" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-013": { "shortResult": "+75%合格线索", "challenge": "房地产事务所依赖传统渠道，缺少在线线索。", "approach": { "0": "线索生成活动", "1": "按项目的落地页", "2": "CRM集成" }, "results": { "0": "+75%合格线索", "1": "单位线索成本更低" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-014": { "shortResult": "实现更高要价", "challenge": "高端房产缺少体现奢华的视觉展示。", "approach": { "0": "高端房产网站", "1": "无人机和室内摄影", "2": "虚拟导览集成" }, "results": { "0": "实现更高要价", "1": "更短销售周期" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-015": { "shortResult": "+32%项目咨询", "challenge": "室内设计师通过社交媒体展示作品但缺少专业作品集。", "approach": { "0": "带画廊的作品集网站", "1": "专业项目摄影", "2": "博客策略" }, "results": { "0": "+32%项目咨询", "1": "更高的平均项目价值" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-016": { "shortResult": "+55%展厅访问", "challenge": "尽管产品优质但厨房展厅访客下降。", "approach": { "0": "本地聚焦的Google Ads", "1": "社交灵感内容", "2": "虚拟展厅导览" }, "results": { "0": "+55%展厅访问", "1": "访问到销售的更高转化" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-017": { "shortResult": "40+视频/月", "challenge": "健身房想要持续内容但无内部能力。", "approach": { "0": "全服务内容合约", "1": "现场视频制作", "2": "社交媒体规划" }, "results": { "0": "每月40+高质量视频", "1": "更高会员参与度" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-018": { "shortResult": "+45%会员", "challenge": "新CrossFit馆需要从成熟竞争对手中脱颖而出。", "approach": { "0": "强力品牌识别", "1": "社区驱动内容", "2": "开业活动" }, "results": { "0": "第一季度+45%会员", "1": "建立强大社区" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-019": { "shortResult": "+28%展厅访问", "challenge": "汽车经销商因更大经销商更强的在线存在而失去市场份额。", "approach": { "0": "带库存系统的新网站", "1": "Google Ads活动", "2": "再营销策略" }, "results": { "0": "+28%展厅访问", "1": "更低获客成本" }, "disclaimer": "指示性结果，取决于时期和预算。" },
+        "nda-project-020": { "shortResult": "+45%联系咨询", "challenge": "律师事务所网站过时且在线可搜索性低。", "approach": { "0": "专业网站重设计", "1": "内容营销策略", "2": "本地SEO" }, "results": { "0": "+45%联系咨询", "1": "Google本地前5" }, "disclaimer": "指示性结果，取决于时期和预算。" }
       }
     },
     "caseStudies": {
@@ -344,7 +410,6 @@
       "ctaPrimary": "请求方案",
       "ctaWhatsApp": "通过WhatsApp发送消息"
     },
-    "hero": { "badge": "比利时机构 自2016年", "title": "基于真实经验的数字增长", "description": "GROPPI是一家比利时数字机构，成立于2016年。凭借9+专业人士的团队，我们帮助欧洲企业和创作者建立强大的数字存在。技术支持我们的工作，但策略和创意始终由人来主导。", "cta": "预约免费咨询", "ctaSecondary": "查看我们的服务" },
     "whatWeDo": { "subtitle": "我们做什么", "title": "我们的服务", "description": "清晰、结果导向的服务。每个项目根据您的目标量身定制。", "cta": "查看所有服务" },
     "services": {
       "content": { "title": "内容制作与创作者", "desc": "为您品牌提供专业视频、照片和视觉内容。" },
@@ -374,864 +439,606 @@
       "starter": "非常适合初创和小项目", "growth": "增长型企业的理想选择", "pro": "雄心品牌的全面支持",
       "popular": "热门", "cta": "查看所有套餐"
     },
-    "cta": { "title": "准备好开始行动了吗？", "description": "告诉我们您的情况。我们将制定适合您企业的计划 — 无义务。", "contact": "联系我们", "whatsapp": "通过WhatsApp聊天" }
-  },
-  "about": {
-    "title": "关于GROPPI",
-    "subtitle": "我们的故事",
-    "description": "GROPPI于2016年在比利时成立，通过多年的实际经验和强大的客户关系而发展。今天，我们与比利时和欧洲的企业合作 — 以策略、质量和可衡量结果为导向。",
-    "mission": "我们的使命",
-    "missionText": "通过真正有效的数字解决方案帮助企业增长 — 基于经验，而非趋势。",
-    "vision": "我们的愿景",
-    "visionText": "成为认真想要在线增长的企业的可靠合作伙伴，拥有一个言出必行的团队。",
-    "values": "我们的价值观",
-    "valuesText": "诚实、工匠精神、清晰沟通和长期关系。",
-    "hero": {
-      "badge": "自2016年",
-      "title": "自2016年以来帮助企业增长",
-      "text": "GROPPI在比利时成立，有一个明确目标：帮助企业在线接触更多客户。没有炒作，没有模糊计划 — 只有产生结果的工作。"
-    },
-    "whoWeAre": {
-      "subtitle": "我们是谁",
-      "title": "建立在经验和信任之上",
-      "points": {
-        "founded": { "title": "2016年成立", "text": "8+年数字营销经验" },
-        "location": { "title": "比利时总部", "text": "总部在比利时，本地服务" },
-        "reach": { "title": "比利时和欧洲", "text": "总部在比利时，服务全欧洲客户。2026年计划扩展至中东。" },
-        "team": { "title": "9+专业人士", "text": "多学科专家团队" },
-        "partnerships": { "title": "长期关系", "text": "我们建立持久的伙伴关系" }
-      }
-    },
-    "approach": {
-      "badge": "我们的方法",
-      "title": "人类专业知识，技术支持",
-      "text": "在GROPPI，我们相信人类专业知识。技术和AI支持我们的工作，但策略、创意和决策始终由人来做出。",
-      "tags": { "strategy": "策略", "creativity": "创意", "technology": "技术" },
-      "humanExpertise": { "title": "人类决策", "text": "经验丰富的专业人士做出所有战略和创意决策。" },
-      "aiSupport": { "title": "AI作为加速器", "text": "智能技术加速流程，但永远不会替代人类洞察。" }
-    },
-    "growth": { "subtitle": "我们的增长", "title": "从比利时到世界" },
-    "stats": { "years": "年经验", "clients": "满意客户", "projects": "完成项目", "team": "专业人士" },
-    "timeline": {
-      "2016": { "title": "在比利时成立", "description": "GROPPI以明确愿景成立：以个性化方法进行数字营销。" },
-      "2018": { "title": "团队扩展", "description": "团队增长到5名各领域专家。" },
-      "2020": { "title": "比利时增长", "description": "加强本地影响力，与比利时企业建立长期伙伴关系。" },
-      "2023": { "title": "扩展至欧洲", "description": "将项目扩展到荷兰、德国、法国等欧洲国家。" },
-      "2026": { "title": "未来计划：中东", "description": "2026年计划扩展至中东 — 将系统驱动的增长方法带到新市场。" }
-    },
-    "valuesSection": {
-      "subtitle": "我们坚持的",
-      "title": "我们的核心价值",
-      "items": {
-        "transparency": { "title": "透明度", "text": "诚实沟通和明确期望" },
-        "quality": { "title": "质量胜于数量", "text": "我们选择深度，而非量" },
-        "relationships": { "title": "长期关系", "text": "我们建立持久的伙伴关系" },
-        "results": { "title": "真实结果", "text": "可衡量的影响，而非空洞承诺" },
-        "humanFirst": { "title": "人为先", "text": "技术为人服务" }
-      }
-    },
-    "cta": {
-      "title": "想与一个有前瞻性的团队合作？",
-      "text": "让我们一起探索如何加强您的数字存在。",
-      "bookConsultation": "预约免费咨询",
-      "contactUs": "联系我们"
-    }
-  },
-  "ai": {
-    "title": "AI作为支持力量",
-    "description": "在GROPPI，我们使用人工智能加速流程、分析数据和优化绩效。然而，愿景、策略和创意决策始终由经验丰富的专业人士掌控。",
-    "subtitle": "技术为人服务"
-  },
-  "services": {
-    "title": "我们的服务",
-    "subtitle": "我们提供什么",
-    "description": "我们不使用固定套餐。每项服务根据客户目标定制，由专业团队执行，在有价值的地方使用智能技术支持。",
-    "card": { "requestQuote": "请求报价", "viewDetails": "更多信息", "watchHowItWorks": "观看运作方式（60秒）", "buildYourPlan": "构建计划", "watchVideo": "观看视频", "buildPlan": "构建计划", "calculatorHint": "60秒计算价格" },
-    "badges": { "monthly": "每月", "oneTime": "一次性", "custom": "定制", "mostChosen": "最受欢迎" },
-    "monthly": "每月",
-    "oneTime": "一次性",
-    "customQuote": "定制",
-    "startingFrom": "起价",
-    "perMonth": "/ 月",
-    "oneTimePayment": "一次性付款",
-    "requestQuote": "请求报价",
-    "maintenanceFrom": "维护起价",
-    "getQuote": "请求报价",
-    "keyInclusions": "包含内容",
-    "videoPlaceholder": "观看简短说明视频",
-    "noResults": "没有符合筛选条件的服务。",
-    "featuredBadge": "最受欢迎",
-    "gridTitle": "所有服务",
-    "gridSubtitle": "先观看视频了解每项服务的运作方式，然后查看详情。",
-    "goalEntry": {
-      "badge": "从这里开始",
-      "title": "您想实现什么？",
-      "subtitle": "选择您的目标。我们展示合适的服务。",
-      "browseHint": "或向下滚动查看所有服务",
-      "visibility": { "title": "更多曝光", "description": "建立强大一致的在线存在。", "cta": "了解运作方式" },
-      "leads": { "title": "更多线索", "description": "吸引准备联系的人。", "cta": "查看推荐服务" },
-      "sales": { "title": "更多销售", "description": "将流量转化为真正的收入。", "cta": "构建我的方案" }
-    },
-    "videoModal": {
-      "continueToDetails": "继续查看详情",
-      "comingSoon": "视频即将上传",
-      "duration": "60秒",
-      "defaultBullets": { "when": "此服务何时适合您", "problem": "解决什么问题", "result": "您可以期待什么结果" },
-      "bullets": {
-        "social_media": { "when": "适合希望获得一致结果而无需自己管理一切的企业。", "problem": "解决发布不一致和低互动的问题。", "result": "一个增长的、活跃的社区，增强您的品牌。" },
-        "content_production": { "when": "适合想要视觉上脱颖而出并需要专业内容的品牌。", "problem": "解决不转化的业余内容问题。", "result": "将您的品牌提升到更高水平的高质量视频和照片。" },
-        "ads_management": { "when": "适合想要有效使用广告预算的企业。", "problem": "解决预算浪费和低投资回报的问题。", "result": "产生可衡量结果的数据驱动活动。" },
-        "seo": { "when": "适合想要被自然找到的企业。", "problem": "解决在搜索引擎中不可见的问题。", "result": "可持续的有机增长和更多合格流量。" },
-        "ecommerce_website": { "when": "适合想要通过专业网店在线销售的企业。", "problem": "解决在线错失销售机会的问题。", "result": "将访客转化为客户的优化网店。" },
-        "mobile_app_development": { "when": "适合想要推出自己移动应用的企业。", "problem": "解决在应用商店缺席的问题。", "result": "直接触达客户的专业iOS和Android应用。" }
-      }
-    },
-    "simpleExplanation": {
-      "content_production": "适合需要脱颖而出的专业内容的企业。",
-      "one_page_website": "快速专业在线启动的理想选择。",
-      "business_website": "严肃在线存在的基础。",
-      "ecommerce_website": "准备通过完整网店在线销售。",
-      "ads_management": "用数据驱动活动让广告预算有效工作。",
-      "seo": "有机增长并被目标受众找到。",
-      "social_media": "适合想要一致结果而无需自己管理一切的企业。",
-      "reputation": "保护和加强您的在线声誉。",
-      "data_sync": "保持所有业务数据同步和最新。",
-      "mobile_app_development": "推出为增长而建的iOS和Android专属应用。"
-    },
-    "guidedEntry": { "title": "不确定从哪里开始？", "subtitle": "告诉我们您的目标，我们帮您选择。", "ctaPrimary": "帮我选择", "ctaSecondary": "我想自己查看" },
-    "wizard": {
-      "goal": { "title": "您的目标是什么？", "subtitle": "选择最适合您的目标。", "options": { "visibility": "更多曝光", "leads": "更多线索", "sales": "更多销售" } },
-      "size": { "title": "您的企业规模？", "subtitle": "帮助我们推荐合适的级别。", "options": { "starter": "初创", "growing": "成长中", "established": "成熟企业" } },
-      "team": { "title": "您有营销团队吗？", "subtitle": "决定您需要多少支持。", "options": { "yes": "是的，我们有团队", "no": "不，我们自己做一切" } },
-      "result": { "title": "我们的建议", "subtitle": "根据您的回答，我们推荐：", "recommendation": "推荐服务", "cta": "查看推荐服务" }
-    },
-    "microGuidance": {
-      "content_production": "适合需要脱颖而出内容的情况。",
-      "one_page_website": "快速在线启动的完美选择。",
-      "business_website": "专业存在的基础。",
-      "ecommerce_website": "准备在线销售。",
-      "ads_management": "用数据驱动活动让预算工作。",
-      "seo": "有机和可持续增长。",
-      "social_media": "建立活跃社区。",
-      "reputation": "保护和加强在线声誉。",
-      "data_sync": "保持所有数据同步。"
-    },
-    "audience": { "business": "企业", "individual": "个人", "creator": "创作者" },
-    "packages": { "starter": "初创", "growth": "增长", "pro": "专业" },
-    "calculatorHelperText": "使用此工具根据您的需求获取参考价格。",
-    "modal": {
-      "viewDetails": "查看详情", "watchVideo": "观看视频", "close": "关闭",
-      "videoDuration": "⏱ 视频时长：60秒", "cta": "请求定制报价",
-      "description": "最终价格取决于您的具体需求和项目规模。",
-      "noVideo": "视频即将可用", "whatYouGet": "您将获得", "pricingLogic": "价格运作方式",
-      "explainerVideo": "说明视频", "indicativePrice": "参考价格",
-      "pricingFactors": "价格取决于什么？",
-      "pricingNote": "最终价格根据您的具体需求和项目规模确定。联系我们进行免费咨询和个性化报价。",
-      "availablePackages": "可用套餐", "packagesNote": "套餐可根据内容数量和类型进行调整。",
-      "videoSummary": "观看此服务如何改变您的企业，发现我们能为您做什么。",
-      "factors": {
-        "quantity": { "title": "内容数量", "description": "更多内容意味着更高价格，但也为您的投资带来更多价值。" },
-        "complexity": { "title": "复杂度和编辑", "description": "视频编辑、动画和特效影响价格。" },
-        "onsite": { "title": "现场拍摄", "description": "现场拍摄需要额外的旅行和专业设备费用。" },
-        "customization": { "title": "定制和策略", "description": "个性化策略和创意概念始终包含在内。" }
-      }
-    },
-    "filters": { "all": "所有服务", "monthly": "月度订阅", "oneTime": "一次性项目", "custom": "定制项目" },
-    "items": {
-      "contentProduction": {
-        "title": "视觉内容与视频",
-        "description": "为您品牌提供专业视频、照片和视觉内容。从社交媒体短片到全面制作视频。",
-        "features": { "0": "社交媒体短视频（30-60秒）", "1": "网站和YouTube长视频", "2": "专业产品摄影", "3": "社交媒体视觉和图形", "4": "品牌内容日历" },
-        "packages": {
-          "starter": { "0": "每月2-4个短视频", "1": "8个社交媒体帖子", "2": "基础内容规划", "3": "1个平台聚焦" },
-          "growth": { "0": "4-8个短视频 + 1-2个长视频", "1": "16个社交媒体帖子", "2": "文章（按字数）", "3": "多平台优化" },
-          "pro": { "0": "无限视频制作", "1": "完整内容日历", "2": "高级品牌策略", "3": "多平台活动" }
+    "cta": { "title": "准备好开始行动了吗？", "description": "告诉我们您的情况。我们将制定适合您企业的计划 — 无义务。", "contact": "联系我们", "whatsapp": "通过WhatsApp聊天" },
+    "about": {
+      "title": "关于GROPPI",
+      "subtitle": "我们的故事",
+      "description": "GROPPI于2016年在比利时成立，通过多年的实际经验和强大的客户关系而发展。今天，我们与比利时和欧洲的企业合作 — 以策略、质量和可衡量结果为导向。",
+      "mission": "我们的使命",
+      "missionText": "通过真正有效的数字解决方案帮助企业增长 — 基于经验，而非趋势。",
+      "vision": "我们的愿景",
+      "visionText": "成为认真想要在线增长的企业的可靠合作伙伴，拥有一个言出必行的团队。",
+      "values": "我们的价值观",
+      "valuesText": "诚实、工匠精神、清晰沟通和长期关系。",
+      "hero": {
+        "badge": "自2016年",
+        "title": "自2016年以来帮助企业增长",
+        "text": "GROPPI在比利时成立，有一个明确目标：帮助企业在线接触更多客户。没有炒作，没有模糊计划 — 只有产生结果的工作。"
+      },
+      "whoWeAre": {
+        "subtitle": "我们是谁",
+        "title": "建立在经验和信任之上",
+        "points": {
+          "founded": { "title": "2016年成立", "text": "8+年数字营销经验" },
+          "location": { "title": "比利时总部", "text": "总部在比利时，本地服务" },
+          "reach": { "title": "比利时和欧洲", "text": "总部在比利时，服务全欧洲客户。2026年计划扩展至中东。" },
+          "team": { "title": "9+专业人士", "text": "多学科专家团队" },
+          "partnerships": { "title": "长期关系", "text": "我们建立持久的伙伴关系" }
         }
       },
-      "onePage": { "title": "单页网站", "description": "时尚快速的落地页，适合自由职业者、初创或特定活动。", "features": { "0": "1个带分区的长滚动页面", "1": "响应式设计（手机/平板/桌面）", "2": "联系表单集成", "3": "基础SEO优化" } },
-      "businessWebsite": { "title": "企业网站", "description": "多页面的完整企业网站，带CMS和所有所需功能。", "features": { "0": "5-15页可选", "1": "内容管理系统（CMS）", "2": "博客功能", "3": "高级SEO优化", "4": "分析集成" } },
-      "ecommerce": { "title": "电子商务网店", "description": "完整的网店，包含产品管理、支付和库存管理。准备销售。", "features": { "0": "无限添加产品", "1": "支付网关集成", "2": "库存管理系统", "3": "客户账户和订单", "4": "转化优化" } },
-      "ads": { "title": "广告管理", "description": "通过Google、Meta等平台的战略广告活动。数据驱动优化以最大化ROI。", "features": { "0": "Google Ads管理", "1": "Meta广告（Facebook/Instagram）", "2": "活动分析和报告", "3": "A/B测试和优化" } },
-      "seo": { "title": "搜索引擎优化", "description": "改善有机可见性并在搜索引擎中获得更高排名。技术SEO、内容策略和链接建设。", "features": { "0": "技术SEO审核", "1": "关键词研究", "2": "内容优化", "3": "链接建设策略" } },
-      "social": { "title": "社交媒体管理", "description": "全面管理您的社交媒体存在。内容创作、规划、互动和增长策略。", "features": { "0": "内容日历和规划", "1": "社区管理", "2": "互动和增长", "3": "月度报告" } },
-      "reputation": { "title": "声誉与评价管理", "description": "建立和保护您的在线声誉。评价管理、回复策略和品牌监测。", "features": { "0": "评价监测", "1": "回复管理", "2": "声誉修复", "3": "品牌情感分析" } },
-      "dataSync": { "title": "数据同步", "description": "保持业务数据在所有平台上同步。库存、价格和产品信息管理。", "features": { "0": "多平台同步", "1": "实时更新", "2": "库存管理", "3": "API集成" } },
-      "mobileApp": { "title": "移动应用开发", "description": "推出快速的iOS和Android应用，具有原生体验 — 为增长而建。", "features": { "0": "iOS和Android（原生体验）", "1": "简洁UX + 快速性能", "2": "App Store和Play Store上架", "3": "后端和API集成" } }
-    },
-    "ads": {
-      "tab": { "framework": "预算建议" },
-      "recommendedBudget": "推荐预算",
-      "qualification": { "headline": "从目标开始", "description": "广告成功始于明确目标。不同目标需要不同的预算水平才能产生有意义的结果。", "note": "低于这些水平的预算可能限制数据收集和结果准确性。" },
-      "goals": {
-        "leadGeneration": { "title": "线索生成", "description": "足够的数据来优化活动并生成合格线索。" },
-        "ecommerce": { "title": "电商销售", "description": "确保稳定流量、转化测试和性能扩展。" },
-        "brandAwareness": { "title": "品牌知名度", "description": "为可见性提供有效的覆盖和频次。" }
+      "approach": {
+        "badge": "我们的方法",
+        "title": "人类专业知识，技术支持",
+        "text": "在GROPPI，我们相信人类专业知识。技术和AI支持我们的工作，但策略、创意和决策始终由人来做出。",
+        "tags": { "strategy": "策略", "creativity": "创意", "technology": "技术" },
+        "humanExpertise": { "title": "人类决策", "text": "经验丰富的专业人士做出所有战略和创意决策。" },
+        "aiSupport": { "title": "AI作为加速器", "text": "智能技术加速流程，但永远不会替代人类洞察。" }
       },
-      "transparency": { "headline": "完全预算控制", "subheadline": "您决定预算。我们最大化性能。", "description": "我们的管理费涵盖策略、设置、优化和报告。广告预算直接支付给Google或Meta等平台，给您完全的透明度和控制权。", "shortNote": "广告支出直接支付给广告平台。" },
-      "salesFlow": {
-        "title": "我们的合作流程",
-        "steps": { "0": "客户定义广告目标", "1": "GROPPI建议合适的预算范围", "2": "客户批准预算", "3": "活动设置和启动", "4": "数据收集和优化", "5": "绩效报告和扩展" },
-        "closingStatement": "我们指导策略。您控制预算。结果来自两者的协调。"
+      "growth": { "subtitle": "我们的增长", "title": "从比利时到世界" },
+      "stats": { "years": "年经验", "clients": "满意客户", "projects": "完成项目", "team": "专业人士" },
+      "timeline": {
+        "2016": { "title": "在比利时成立", "description": "GROPPI以明确愿景成立：以个性化方法进行数字营销。" },
+        "2018": { "title": "团队扩展", "description": "团队增长到5名各领域专家。" },
+        "2020": { "title": "比利时增长", "description": "加强本地影响力，与比利时企业建立长期伙伴关系。" },
+        "2023": { "title": "扩展至欧洲", "description": "将项目扩展到荷兰、德国、法国等欧洲国家。" },
+        "2026": { "title": "未来计划：中东", "description": "2026年计划扩展至中东 — 将系统驱动的增长方法带到新市场。" }
+      },
+      "valuesSection": {
+        "subtitle": "我们坚持的",
+        "title": "我们的核心价值",
+        "items": {
+          "transparency": { "title": "透明度", "text": "诚实沟通和明确期望" },
+          "quality": { "title": "质量胜于数量", "text": "我们选择深度，而非量" },
+          "relationships": { "title": "长期关系", "text": "我们建立持久的伙伴关系" },
+          "results": { "title": "真实结果", "text": "可衡量的影响，而非空洞承诺" },
+          "humanFirst": { "title": "人为先", "text": "技术为人服务" }
+        }
+      },
+      "cta": {
+        "title": "想与一个有前瞻性的团队合作？",
+        "text": "让我们一起探索如何加强您的数字存在。",
+        "bookConsultation": "预约免费咨询",
+        "contactUs": "联系我们"
+      }
+    },
+    "ai": {
+      "title": "AI作为支持力量",
+      "description": "在GROPPI，我们使用人工智能加速流程、分析数据和优化绩效。然而，愿景、策略和创意决策始终由经验丰富的专业人士掌控。",
+      "subtitle": "技术为人服务"
+    },
+    "contact": {
+      "title": "联系我们",
+      "subtitle": "让我们交谈",
+      "intro": "有项目想法或想加强数字存在？联系我们进行免费咨询。",
+      "mobileLabel": "手机",
+      "officeLabel": "办公室",
+      "hoursLabel": "营业时间",
+      "hoursValue": "周一至周五：9:00 - 18:00",
+      "description": "我们很乐意收到您的来信。填写表单，我们将尽快与您联系。",
+      "name": "姓名",
+      "email": "电子邮箱",
+      "phone": "电话号码",
+      "company": "公司",
+      "subject": "主题",
+      "message": "您的消息",
+      "send": "发送",
+      "sending": "发送中...",
+      "success": "消息发送成功！我们将尽快与您联系。",
+      "error": "出了点问题。请重试或致电联系。",
+      "address": "地址",
+      "phoneLabel": "电话",
+      "emailLabel": "电子邮件",
+      "landline": "固定电话",
+      "mobile": "手机",
+      "rateLimited": "请求过多。请稍后再试。",
+      "form": {
+        "name": "您的名字", "namePlaceholder": "张三", "email": "电子邮箱", "emailPlaceholder": "zhangsan@example.com",
+        "phone": "电话号码", "phonePlaceholder": "+86 138 0000 0000", "subject": "主题", "subjectPlaceholder": "您的问题主题",
+        "message": "消息", "messagePlaceholder": "请提供详细信息...", "submit": "发送消息", "submitting": "发送中...",
+        "successTitle": "感谢！", "successMessage": "我们将尽快与您联系。", "errorMessage": "出现问题。请重试。"
+      },
+      "methods": { "email": "直接电子邮件", "phone": "直接电话", "whatsapp": "WhatsApp" }
+    },
+    "franchise": {
+      "title": "特许经营", "subtitle": "成为特许经营者",
+      "description": "有兴趣与GROPPI合作？了解共同成长的可能性。",
+      "benefits": { "title": "特许经营优势", "items": { "0": "获取经过验证的流程和方法", "1": "经验丰富的团队支持", "2": "联合营销努力", "3": "知识共享和培训" } },
+      "requirements": { "title": "我们寻找什么", "items": { "0": "数字营销或相关领域经验", "1": "企业家精神和增长思维", "2": "对质量和客户满意度的承诺", "3": "长期合作意愿" } },
+      "cta": "联系了解更多", "apply": "立即申请", "call": "致电我们"
+    },
+    "footer": {
+      "rights": "版权所有。",
+      "description": "自2016年以来的数字解决方案。总部位于比利时。",
+      "privacy": "隐私政策",
+      "terms": "使用条款",
+      "followUs": "关注我们",
+      "quickLinks": "快速链接",
+      "contact": "联系信息",
+      "planCall": "安排通话（30分钟）",
+      "newsletter": {
+        "title": "新闻通讯",
+        "description": "了解我们最新的见解和建议。",
+        "placeholder": "您的电子邮件地址",
+        "button": "订阅",
+        "subscribed": "您已订阅！谢谢。",
+        "successTitle": "订阅成功！",
+        "successMessage": "您已成功订阅我们的新闻通讯。",
+        "errorTitle": "订阅失败",
+        "errorMessage": "出了点问题。请稍后再试。"
+      }
+    },
+    "stats": {
+      "years": "年经验", "yearsValue": "9+",
+      "clients": "满意客户", "clientsValue": "150+",
+      "projects": "项目", "projectsValue": "500+",
+      "team": "团队成员", "teamValue": "9+"
+    },
+    "admin": {
+      "dashboard": "仪表板", "articles": "文章", "media": "媒体", "services": "服务",
+      "messages": "消息", "settings": "设置", "logout": "退出", "login": "登录",
+      "email": "电子邮件", "password": "密码", "loginTitle": "管理员登录", "loginButton": "登录"
+    },
+    "social": {
+      "whatsapp": "WhatsApp",
+      "whatsappChat": "通过WhatsApp聊天",
+      "callUs": "致电我们",
+      "emailUs": "发送电子邮件",
+      "followUs": "在社交媒体上关注我们",
+      "actions": { "chat": "通过WhatsApp开始对话", "call": "致电 +32 494 31 11 19", "email": "电邮 info@groppi.be" },
+      "followInstagram": "关注Instagram", "followFacebook": "关注Facebook",
+      "followTiktok": "关注TikTok", "followLinkedin": "关注LinkedIn"
+    },
+    "planBuilder": {
+      "tab": "构建计划",
+      "title": "计划构建器",
+      "subtitle": "构建社交媒体计划并立即获取参考价格。",
+      "disclaimer": "这是参考价格。最终价格取决于范围、品牌复杂度和内容需求。",
+      "vatNote": "不含增值税",
+      "adsBudgetDisclaimer": "广告预算直接支付给Meta/Google，不包含在管理费中。",
+      "adsBudgetNote": "广告预算直接支付给Meta/Google。",
+      "pauseNote": "您可以随时暂停或停止。",
+      "included": "包含",
+      "next": "下一步",
+      "back": "返回",
+      "quantity": "数量",
+      "viewSummary": "查看摘要",
+      "validation": { "minChannel": "至少选择1个渠道。" },
+      "steps": { "channels": "选择渠道", "frequency": "发布频率", "campaigns": "付费活动", "addons": "可选附加项" },
+      "channels": { "facebook": "Facebook", "instagram": "Instagram", "linkedin": "LinkedIn", "tiktok": "TikTok", "youtube": "YouTube", "googleBusiness": "Google Business", "pinterest": "Pinterest", "xTwitter": "X (Twitter)" },
+      "frequency": { "2month": "每月2篇", "1week": "每周1篇", "2week": "每周2篇", "3week": "每周3篇", "4week": "每周4篇", "5week": "每周5篇" },
+      "adsBudget": { "none": "无付费活动", "100": "€100 / 月", "250": "€250 / 月", "500": "€500 / 月", "1000": "€1000 / 月" },
+      "addons": {
+        "productPhotos": { "label": "额外产品照片", "unit": "张" },
+        "googleReviews": { "label": "Google评价管理" },
+        "contentWriting": { "label": "文案写作", "unit": "小时" },
+        "emailMarketing": { "label": "电子邮件营销活动" },
+        "postsPack": { "label": "社交媒体帖子（10件装）" },
+        "analyticsDashboard": { "label": "高级分析仪表板" }
+      },
+      "summary": { "title": "摘要", "managementFee": "预估管理费", "channels": "渠道", "frequency": "发布频率", "addons": "附加项", "adsBudget": "广告预算（直接支付）", "total": "每月总计", "included": "包含" },
+      "cta": { "primary": "请求定制方案", "secondary": "保存计划" },
+      "faq": {
+        "title": "常见问题",
+        "adjustLater": { "question": "我可以之后调整计划吗？", "answer": "可以。您可以随时调整。我们会根据您的目标和发展进行协调。" },
+        "setupCost": { "question": "有启动费吗？", "answer": "启动费包含在管理费中。仅在额外范围或特殊设置时产生额外费用。" },
+        "adBudgetIncluded": { "question": "广告预算包含在内吗？", "answer": "不。广告预算直接支付给Meta/Google。我们的费用用于管理和优化。" }
+      }
+    },
+    "partner": {
+      "badge": "这个项目是什么",
+      "seo": { "title": "与GROPPI合作 | 合作伙伴网络", "description": "成为GROPPI合作伙伴：许可驱动的合作关系，包含品牌、系统和支持。不是工作，不是招聘。每个地区名额有限。" },
+      "hero": {
+        "title": "这不是工作。这是合作伙伴网络。",
+        "subtitle": "面向想要在强大品牌下成长的机构和专家 — 有明确协议、清晰交付和真正支持。",
+        "bullet1": "不是空话。是结构。",
+        "bullet2": "透明交付系统。",
+        "bullet3": "高端品牌和定位。",
+        "ctaPrimary": "预约咨询",
+        "ctaSecondary": "了解运作方式",
+        "microcopy": "每个地区合作伙伴数量有限。"
+      },
+      "marquee": { "item1": "10+年经验", "item2": "比利时和欧洲", "item3": "透明价格", "item4": "可扩展系统", "item5": "高端交付", "item6": "双赢合作" },
+      "clarity": {
+        "subtitle": "这个项目是什么",
+        "title": "这不是工作。这是合作伙伴网络。",
+        "body": "该项目面向想要在强大品牌下成长的机构和专家。不是就业。不是招聘。也不是没有系统的空话。而是：具有明确质量标准的许可驱动合作。",
+        "cards": {
+          "brand": { "title": "品牌与定位", "bullets": { "0": "使用GROPPI品牌", "1": "从第一天起的高端形象" } },
+          "delivery": { "title": "交付系统", "bullets": { "0": "清晰的服务和价格逻辑", "1": "实践中有效的工具和框架" } },
+          "growth": { "title": "增长与支持", "bullets": { "0": "战略指导", "1": "无混乱的可扩展增长" } }
+        }
+      },
+      "forWho": {
+        "subtitle": "面向谁",
+        "title": "面向想要成长的合作伙伴",
+        "description": "我们与能提供质量并想要本地扩展的人合作。",
+        "items": {
+          "bureauOwners": "营销机构所有者", "growthMarketeers": "自由增长营销者",
+          "webStudios": "网络与开发工作室", "contentTeams": "内容与视频团队",
+          "adsSpecialists": "广告专家", "seoSpecialists": "SEO专家", "socialAgencies": "社交媒体机构"
+        },
+        "note": "选择基于质量和心态。"
+      },
+      "value": {
+        "subtitle": "您将获得",
+        "title": "作为合作伙伴您将获得什么",
+        "cards": {
+          "credibility": { "title": "即时可信度", "body": "10+年经验转化为强大定位和清晰的服务逻辑。" },
+          "salesReady": { "title": "销售就绪结构", "body": "加速决策和减少摩擦的服务、价格和计算器。" },
+          "portfolio": { "title": "作品集支持", "body": "案例研究格式、模板和质量指南以保持高端。" },
+          "longterm": { "title": "长期合作", "body": "项目、扩展和可持续关系 — 建立在信任和交付之上。" }
+        },
+        "highlight": "您买的不是标志。您获得的是经过验证的系统。"
+      },
+      "howItWorks": {
+        "subtitle": "运作方式",
+        "title": "运作流程",
+        "steps": {
+          "step1": { "title": "注册", "desc": "留下信息并简要介绍您的地区和团队。" },
+          "step2": { "title": "简短导向对话", "desc": "我们看看质量和期望是否匹配（15-20分钟）。" },
+          "step3": { "title": "开始使用GROPPI系统", "desc": "您获得入职培训、指南和启动材料开始交付。" }
+        }
       },
       "faq": {
-        "title": "广告常见问题",
-        "budgetIncluded": { "question": "广告预算包含在管理费中吗？", "answer": "不。管理费涵盖策略、设置、优化和报告。广告支出直接支付给广告平台。" },
-        "smallBudget": { "question": "我可以用很小的预算投放广告吗？", "answer": "可以，但非常低的预算可能无法产生足够的数据来获得有意义或可衡量的结果。" },
-        "whoDecides": { "question": "谁决定广告预算？", "answer": "我们根据您的目标和市场建议预算。您批准最终预算并保持控制权。" },
-        "lowerBudget": { "question": "如果我选择低于推荐的预算会怎样？", "answer": "活动将被专业管理，但由于数据不足，性能和优化可能受限。" }
+        "subtitle": "问题",
+        "title": "常见问题",
+        "items": {
+          "isJob": { "question": "这是一份工作吗？", "answer": "不是。这是合作关系，不是就业。" },
+          "bureau": { "question": "我需要已有机构吗？", "answer": "最好有。有交付能力的强大专家也有资格。" },
+          "exclusivity": { "question": "我能获得排他性吗？", "answer": "是的。每个地区/市场的合作伙伴数量有限。" },
+          "leads": { "question": "你们提供线索吗？", "answer": "我们支持定位和增长系统。结果取决于地区和执行。" },
+          "team": { "question": "我可以用自己的团队吗？", "answer": "可以，只要遵循质量标准。" },
+          "howToApply": { "question": "如何成为合作伙伴？", "answer": "通过合作伙伴表单。我们将在24小时内联系您。" }
+        }
+      },
+      "apply": { "title": "想成为GROPPI合作伙伴？", "subtitle": "检查您的地区是否仍然可用。", "ctaPrimary": "成为合作伙伴", "ctaSecondary": "预约咨询" },
+      "booking": { "title": "预约简短咨询", "subtitle": "15-20分钟。我们一起看看是否合适以及下一步。", "cta": "预约对话" }
+    },
+    "caseStudy": {
+      "backToPortfolio": "返回作品集",
+      "challengeLabel": "挑战",
+      "approachLabel": "方法",
+      "resultsLabel": "结果",
+      "servicesUsed": "使用的服务",
+      "ctaQuote": "请求报价",
+      "ctaServices": "查看服务和价格",
+      "prevCase": "上一个案例",
+      "nextCase": "下一个案例",
+      "allCases": "所有案例",
+      "cases": {
+        "restaurant-branding": { "title": "餐厅品牌与网站", "challenge": "在线可见度低，数字渠道预订少。", "approach": "新品牌识别 + 现代网站 + Google Ads活动。", "result": "+180%在线预订" },
+        "mode-webshop": { "title": "时装网店发布", "challenge": "无在线存在或客户基础的新品牌。", "approach": "完整网店 + 社交媒体策略 + 网红营销。", "result": "前3个月€85K营收" },
+        "b2b-platform": { "title": "B2B线索生成平台", "challenge": "B2B服务的合格线索不足。", "approach": "线索生成网站 + LinkedIn Ads + 内容营销。", "result": "+320%合格线索" },
+        "bouwbedrijf-website": { "title": "建筑公司网站与SEO", "challenge": "尽管线下声誉好但Google上不可见。", "approach": "SEO优化网站 + 本地SEO + Google My Business。", "result": "Google本地排名第一" },
+        "influencer-campagne": { "title": "网红营销活动", "challenge": "提高年轻目标群体的品牌知名度。", "approach": "网红选择 + 内容策略 + 社交媒体放大。", "result": "240万覆盖" },
+        "tech-startup-branding": { "title": "科技初创完整品牌", "challenge": "无视觉识别或品牌定位的初创。", "approach": "品牌策略 + 标志设计 + 网站 + 演示文稿。", "result": "完整品牌识别发布" },
+        "e-commerce-groei": { "title": "电商增长策略", "challenge": "低ROAS和高广告成本。", "approach": "活动审计 + A/B测试 + 再营销优化。", "result": "+240% ROAS提升" },
+        "content-strategie": { "title": "内容制作策略", "challenge": "内容不一致且缺乏互动。", "approach": "内容日历 + 视频制作 + 社交媒体管理。", "result": "每月50+视频" }
       }
     },
-    "ai": { "title": "智能技术支持", "description": "我们利用现代技术更高效地工作并提供更好的结果。策略和创意决策始终由经验丰富的团队掌控。", "cta": "联系我们", "learnMore": "更多信息" },
-    "process": {
-      "subtitle": "我们如何工作",
-      "title": "我们的流程",
-      "steps": {
-        "0": { "title": "初次见面", "description": "我们从免费咨询开始，了解您的企业、目标和挑战。" },
-        "1": { "title": "定制方案", "description": "根据您的需求制定详细方案，包含透明价格和时间表。" },
-        "2": { "title": "执行与优化", "description": "我们实施解决方案并根据结果和反馈持续优化。" }
+    "servicePage": {
+      "defaultDescription": "{{service}} — GROPPI营销机构的专业服务。",
+      "cta": { "requestQuote": "请求报价", "whatsapp": "通过WhatsApp聊天", "planCall": "预约通话" },
+      "trustNote": "透明价格。无隐藏费用。",
+      "videoPlaceholder": "视频即将可用",
+      "whatsapp": { "template": "您好！我想了解更多关于{{service}}的信息。能帮我吗？" },
+      "deliverables": { "label": "您将获得", "title": "包含什么？" },
+      "process": { "label": "运作方式", "title": "我们的流程" },
+      "calculator": {
+        "label": "价格计算器", "title": "60秒计算价格",
+        "businessTypeLabel": "企业类型", "goalLabel": "您的目标", "packageLabel": "套餐",
+        "adBudgetLabel": "广告预算", "addonsLabel": "额外选项", "selectPlaceholder": "选择...",
+        "month": "月", "monthlyFee": "预估月度服务费", "setupFee": "设置费",
+        "oneTime": "一次性", "firstMonthTotal": "首月总计",
+        "disclaimer": "参考价格。简短咨询后提供最终报价。",
+        "sendCalculation": "发送此计算", "sendWhatsapp": "通过WhatsApp发送", "noAddons": "无额外选项",
+        "businessTypes": { "restaurant": "餐厅/餐饮", "retail": "零售与本地商店", "construction": "建筑与翻新", "beauty": "美容与健康", "ecommerce": "电子商务", "other": "其他" },
+        "goals": { "visibility": "更多曝光", "leads": "更多线索", "sales": "更多销售" },
+        "packages": { "starter": "初创", "growth": "增长", "pro": "专业" },
+        "addons": { "extraContent4": "额外内容（4篇/月）", "extraContent12": "额外内容（12篇/月）", "extraVideo2": "额外视频广告（2个/月）", "extraVideo6": "额外视频广告（6个/月）", "extraLandingPage": "额外落地页", "extraTracking": "额外跟踪设置" },
+        "whatsappTemplate": "您好！我对{{service}}的计算：\n\n• 企业类型：{{businessType}}\n• 目标：{{goal}}\n• 套餐：{{package}}\n• 广告预算：{{adBudget}}\n• 额外选项：{{addons}}\n\n💰 预估价格：{{monthlyRange}} / 月\n📋 设置：{{setup}}\n\n能给我发一份定制报价吗？"
+      },
+      "faq": {
+        "label": "常见问题", "title": "常见问题",
+        "q1": "这是月度合同吗？", "a1": "是的，您按月付款。无需年度合同。",
+        "q2": "我可以随时停止吗？", "a2": "可以，30天通知期。无隐藏条款。",
+        "q3": "你们使用固定价格吗？", "a3": "我们使用价格范围。咨询后您将获得确切报价。",
+        "q4": "如果我还没有内容怎么办？", "a4": "没问题。我们为您制作内容或指导您的团队。",
+        "q5": "多快能看到结果？", "a5": "2-4周内首批结果。2-3个月后显著增长。",
+        "q6": "如果我预算有限怎么办？", "a6": "我们有适合小预算的初创套餐。请咨询建议。"
+      },
+      "finalCTA": {
+        "title": "准备好吸引更多客户？",
+        "subtitle": "没有模糊承诺。我们提供具有明确步骤的具体计划。",
+        "primaryCTA": "请求方案",
+        "secondaryCTA": "通过WhatsApp发送消息"
+      },
+      "socialMedia": {
+        "title": "社交媒体管理", "subtitle": "让您品牌在每个平台上成长的一致内容。",
+        "benefits": { "1": "所有渠道的专业内容", "2": "更多互动和覆盖", "3": "为您团队节省时间" },
+        "deliverables": {
+          "1": { "title": "策略与规划", "desc": "根据您目标定制的内容日历。" },
+          "2": { "title": "内容创作", "desc": "吸引人的帖子、故事和Reels。" },
+          "3": { "title": "社区管理", "desc": "主动回复评论和DM。" },
+          "4": { "title": "广告管理", "desc": "最大覆盖的定向广告。" },
+          "5": { "title": "月度报告", "desc": "清晰的数据和洞察。" },
+          "6": { "title": "专属支持", "desc": "随时可联系解答问题。" }
+        },
+        "process": { "1": { "title": "分析", "desc": "我们分析您当前的存在和竞争。" }, "2": { "title": "执行", "desc": "我们按规划创作和发布内容。" }, "3": { "title": "增长与优化", "desc": "基于数据的持续改进。" } }
+      },
+      "adsManagement": {
+        "title": "广告管理", "subtitle": "产生线索和销售的定向广告。",
+        "benefits": { "1": "广告支出更高ROI", "2": "针对目标受众的定向活动", "3": "每月透明报告" },
+        "deliverables": {
+          "1": { "title": "活动策略", "desc": "每个平台的目标导向方法。" },
+          "2": { "title": "广告创作", "desc": "转化的视觉和文案。" },
+          "3": { "title": "A/B测试", "desc": "持续测试以获得更好结果。" },
+          "4": { "title": "预算优化", "desc": "从预算中获取最大结果。" },
+          "5": { "title": "转化跟踪", "desc": "完整的ROI洞察。" },
+          "6": { "title": "每周更新", "desc": "您始终知道发生了什么。" }
+        },
+        "process": { "1": { "title": "分析", "desc": "我们研究您的市场和竞争。" }, "2": { "title": "执行", "desc": "我们启动和管理您的活动。" }, "3": { "title": "增长与优化", "desc": "持续改进以获得更多转化。" } }
+      },
+      "contentProduction": {
+        "title": "内容制作", "subtitle": "让您品牌栩栩如生的视频和视觉内容。",
+        "benefits": { "1": "专业视频和照片", "2": "适合每个平台的内容", "3": "快速交付和修改" },
+        "deliverables": {
+          "1": { "title": "概念与规划", "desc": "符合品牌的创意想法。" },
+          "2": { "title": "视频制作", "desc": "从脚本到最终剪辑。" },
+          "3": { "title": "摄影", "desc": "产品和生活方式照片。" },
+          "4": { "title": "编辑与后期", "desc": "专业完成。" },
+          "5": { "title": "平台优化", "desc": "每个渠道的格式。" },
+          "6": { "title": "内容库", "desc": "所有资产整理存储。" }
+        },
+        "process": { "1": { "title": "分析", "desc": "我们确定您品牌的需求。" }, "2": { "title": "执行", "desc": "现场或工作室制作。" }, "3": { "title": "增长与优化", "desc": "处理反馈并改进。" } }
+      },
+      "seo": {
+        "title": "SEO", "subtitle": "在Google中排名更高以获得更多有机流量。",
+        "benefits": { "1": "搜索引擎中更好的可搜索性", "2": "更多优质网站流量", "3": "无广告成本的长期增长" },
+        "deliverables": {
+          "1": { "title": "技术审核", "desc": "检查速度、结构和索引。" },
+          "2": { "title": "关键词研究", "desc": "适合您市场的正确关键词。" },
+          "3": { "title": "页面优化", "desc": "改善标题、元数据和内容。" },
+          "4": { "title": "内容策略", "desc": "SEO导向的文章和页面。" },
+          "5": { "title": "链接建设", "desc": "获取权威的优质反向链接。" },
+          "6": { "title": "月度报告", "desc": "排名和流量数据。" }
+        },
+        "process": { "1": { "title": "分析", "desc": "网站的技术和内容审核。" }, "2": { "title": "执行", "desc": "实施优化和内容。" }, "3": { "title": "增长与优化", "desc": "持续改善排名。" } }
+      },
+      "businessWebsite": {
+        "title": "企业网站", "subtitle": "说服客户的专业网站。",
+        "benefits": { "1": "建立信任的现代设计", "2": "为转化优化", "3": "移动友好且快速" },
+        "deliverables": {
+          "1": { "title": "设计与UX", "desc": "匹配品牌的定制设计。" },
+          "2": { "title": "开发", "desc": "技术扎实且可扩展。" },
+          "3": { "title": "内容集成", "desc": "文字和视觉专业整合。" },
+          "4": { "title": "SEO基础", "desc": "包含技术SEO。" },
+          "5": { "title": "CMS培训", "desc": "学习自己调整内容。" },
+          "6": { "title": "维护选项", "desc": "月度更新和支持。" }
+        },
+        "process": { "1": { "title": "分析", "desc": "讨论需求和目标。" }, "2": { "title": "执行", "desc": "设计、开发和上线。" }, "3": { "title": "增长与优化", "desc": "上线后的更新和改进。" } }
+      },
+      "onePageWebsite": {
+        "title": "单页网站", "subtitle": "快速产生影响的强大落地页。",
+        "benefits": { "1": "快速上线您的信息", "2": "非常适合发布或活动", "3": "经济实惠且有效" },
+        "deliverables": {
+          "1": { "title": "设计", "desc": "吸引人且符合品牌的设计。" },
+          "2": { "title": "开发", "desc": "快速响应的页面。" },
+          "3": { "title": "表单集成", "desc": "线索捕获功能。" },
+          "4": { "title": "移动优化", "desc": "在每个设备上完美。" },
+          "5": { "title": "分析设置", "desc": "从第一天开始跟踪。" },
+          "6": { "title": "快速交付", "desc": "1-2周内上线。" }
+        },
+        "process": { "1": { "title": "分析", "desc": "简报和确定目标。" }, "2": { "title": "执行", "desc": "一个冲刺完成设计和开发。" }, "3": { "title": "增长与优化", "desc": "A/B测试和改进。" } }
+      },
+      "ecommerceWebsite": {
+        "title": "电子商务网站", "subtitle": "在您睡觉时也能销售的网店。",
+        "benefits": { "1": "用户友好的购物体验", "2": "集成安全支付", "3": "可扩展增长" },
+        "deliverables": {
+          "1": { "title": "商店设计", "desc": "转化导向的产品页面。" },
+          "2": { "title": "开发", "desc": "强大的电商平台。" },
+          "3": { "title": "支付集成", "desc": "所有常见支付方式。" },
+          "4": { "title": "库存管理", "desc": "简单管理产品。" },
+          "5": { "title": "营销工具", "desc": "优惠券、追加销售等。" },
+          "6": { "title": "培训与支持", "desc": "学习自己管理一切。" }
+        },
+        "process": { "1": { "title": "分析", "desc": "讨论产品目录和目标。" }, "2": { "title": "执行", "desc": "设计、开发和产品上架。" }, "3": { "title": "增长与优化", "desc": "上线后的转化优化。" } }
+      },
+      "branding": {
+        "title": "品牌", "subtitle": "令人难忘的视觉识别。",
+        "benefits": { "1": "可识别且专业", "2": "所有渠道的一致性", "3": "与竞争对手区分" },
+        "deliverables": {
+          "1": { "title": "标志设计", "desc": "独特标志及变体。" },
+          "2": { "title": "调色板", "desc": "战略性颜色选择。" },
+          "3": { "title": "字体", "desc": "匹配品牌的字体。" },
+          "4": { "title": "品牌指南", "desc": "一致使用的手册。" },
+          "5": { "title": "模板", "desc": "社交媒体和印刷模板。" },
+          "6": { "title": "品牌资产", "desc": "所有高质量文件。" }
+        },
+        "process": { "1": { "title": "分析", "desc": "了解您的品牌和目标受众。" }, "2": { "title": "执行", "desc": "概念、反馈和最终确定。" }, "3": { "title": "增长与优化", "desc": "需要时进一步发展。" } }
+      },
+      "mobileAppDevelopment": {
+        "title": "移动应用开发", "subtitle": "构建高端应用 — 每月保持安全和最新。",
+        "benefits": { "1": "iOS和Android（原生体验）", "2": "简洁UX + 快速性能", "3": "跟踪和App Store材料准备就绪" },
+        "deliverables": {
+          "1": { "title": "策略与功能规划", "desc": "共同确定应用功能。" },
+          "2": { "title": "UI/UX设计", "desc": "用户理解的直观设计。" },
+          "3": { "title": "开发（iOS/Android）", "desc": "跨平台或原生开发。" },
+          "4": { "title": "后端与集成", "desc": "支付、API、CRM连接。" },
+          "5": { "title": "QA测试与优化", "desc": "在所有设备上彻底测试。" },
+          "6": { "title": "App Store / Google Play上架", "desc": "发布的完整指导。" }
+        },
+        "process": { "1": { "title": "分析", "desc": "讨论功能、目标受众和技术要求。" }, "2": { "title": "执行", "desc": "迭代式设计、开发和测试。" }, "3": { "title": "上线与维护", "desc": "发布 + 可选月度维护。" } }
+      },
+      "reputation": {
+        "title": "声誉与评价管理", "subtitle": "通过主动评价管理保护和加强在线声誉。",
+        "benefits": { "1": "在一个地方监控所有评价", "2": "专业回复策略", "3": "在线建立信任和可信度" },
+        "deliverables": {
+          "1": { "title": "评价监测", "desc": "跟踪Google、Facebook、Yelp等评价。" },
+          "2": { "title": "回复管理", "desc": "专业回复正面和负面评价。" },
+          "3": { "title": "声誉策略", "desc": "改善在线形象的主动计划。" },
+          "4": { "title": "评价生成", "desc": "鼓励满意客户留下评价。" },
+          "5": { "title": "品牌监测", "desc": "跟踪品牌在线提及。" },
+          "6": { "title": "月度报告", "desc": "声誉评分和趋势概览。" }
+        },
+        "process": { "1": { "title": "分析", "desc": "审核当前在线声誉和评价。" }, "2": { "title": "执行", "desc": "积极管理和回复所有评价。" }, "3": { "title": "增长与优化", "desc": "持续改善声誉评分。" } }
+      },
+      "dataSync": {
+        "title": "数据同步", "subtitle": "保持所有业务数据在所有平台上同步和最新。",
+        "benefits": { "1": "消除手动输入错误", "2": "所有系统实时同步", "3": "节省数小时行政工作" },
+        "deliverables": {
+          "1": { "title": "系统审核", "desc": "映射所有数据源和平台。" },
+          "2": { "title": "集成设置", "desc": "连接CRM、POS、网站等。" },
+          "3": { "title": "自动化工作流", "desc": "数据在系统间自动流动。" },
+          "4": { "title": "错误处理", "desc": "智能冲突解决和通知。" },
+          "5": { "title": "仪表板与监控", "desc": "所有同步状态的实时概览。" },
+          "6": { "title": "持续支持", "desc": "随系统增长的维护和更新。" }
+        },
+        "process": { "1": { "title": "分析", "desc": "映射当前数据环境和痛点。" }, "2": { "title": "执行", "desc": "构建和测试所有集成和自动化。" }, "3": { "title": "增长与优化", "desc": "监控、优化和扩展连接。" } }
+      },
+      "contentCalculator": {
+        "label": "内容计算器", "title": "60秒计算价格", "subtitle": "选择您需要的并立即获取估算。",
+        "step1": "选择付款方式", "step2": "选择交付内容",
+        "oneTime": "一次性项目", "oneTimeDesc": "按项目付费。",
+        "monthly": "月度订阅", "monthlyDesc": "固定月费。",
+        "posters": "海报", "reels": "Reels", "videos": "视频", "articles": "文章",
+        "quantity": "数量", "perItem": "每件", "fixed": "固定",
+        "reelTypes": { "ai": "AI完全生成", "clientFootage": "客户素材（我们编辑）", "onSite": "我们现场拍摄" },
+        "vatNote": "所有价格不含增值税。增值税将在发票上添加。",
+        "quoteCode": "您的报价编号"
+      },
+      "pricingFAQ": {
+        "label": "常见问题", "title": "价格与流程FAQ",
+        "questions": {
+          "fixedOrFlexible": { "q": "你们的价格是固定的还是灵活的？", "a": "某些服务有固定价格（如海报、文章）。其他服务使用'起价'，取决于范围。咨询后您将获得确切报价。" },
+          "startingFrom": { "q": "'起价'是什么意思？", "a": "这是该服务的最低起始价格。最终价格取决于您的具体需求和范围。简短交谈后您将获得确切报价。" },
+          "monthlyOrOneTime": { "q": "价格是月度还是一次性的？", "a": "取决于服务。网站和内容制作是一次性的。SEO、广告管理和社交媒体管理是月度服务。" },
+          "vatIncluded": { "q": "包含增值税吗？", "a": "不。我们网站上所有价格不含增值税（21%）。增值税在发票上单独列出。" },
+          "discounts": { "q": "你们提供折扣吗？", "a": "不，我们不提供公开折扣或促销代码。我们的价格从一开始就是透明和公平的。" },
+          "calculator": { "q": "价格计算器如何运作？", "a": "计算器根据您的选择给出参考估算。这不是最终报价。通过WhatsApp发送或通话后，您将收到定制报价。" },
+          "invoice": { "q": "我何时收到发票？", "a": "报价批准后您将收到发票。月度服务每月收到发票。一次性项目在交付时收到发票。" },
+          "priceChange": { "q": "开始后价格会变吗？", "a": "不会。报价价格是最终的。仅在范围扩展（额外工作）时会制定新报价，始终事先协商。" },
+          "reelPrice": { "q": "Reels的价格如何运作？", "a": "您有3个选项：AI完全生成（€150），我们编辑您的素材（€200），或我们到现场拍摄（€250）。价格取决于我们的工作量。" },
+          "payment": { "q": "我可以在线支付吗？", "a": "不，我们不接受网站在线支付。计算后通过WhatsApp发送请求或预约通话。我们将在24小时内确认最终报价。" }
+        }
+      },
+      "generalFAQ": {
+        "label": "常见问题", "title": "一般问题",
+        "questions": {
+          "whoFor": { "q": "你们的服务面向谁？", "a": "我们的服务面向想要在线吸引更多客户的自由职业者、中小企业和成长型企业。从初创到成熟企业。" },
+          "smallOrLarge": { "q": "你们与小企业还是大企业合作？", "a": "两者都有。我们有适合小预算的初创套餐和大企业的全面解决方案。每个客户都获得同样专业的方法。" },
+          "onlyBelgium": { "q": "你们只在比利时工作吗？", "a": "我们总部在比利时，服务全欧洲客户。2026年计划扩展至中东。" },
+          "howToStart": { "q": "如何开始合作？", "a": "通过联系表单、WhatsApp发送消息或预约免费咨询。简短了解后我们制定计划和报价。" },
+          "howLongResults": { "q": "多久能看到结果？", "a": "取决于服务。广告在几天内产生结果。SEO需要3-6个月。网站在2-6周内交付。" },
+          "longTermContracts": { "q": "你们提供长期合同吗？", "a": "不。月度服务按月可取消，30天通知期。一次性项目按项目结算。" },
+          "combineServices": { "q": "我可以组合多项服务吗？", "a": "当然。许多客户组合网站与SEO和社交媒体管理。我们制定适合您目标的套餐。" }
+        }
+      },
+      "servicesFAQ": {
+        "label": "服务问题", "title": "服务FAQ",
+        "questions": {
+          "onePageVsBusiness": { "q": "单页网站和企业网站有什么区别？", "a": "单页网站是一个带有所有信息的长页面（适合初创或活动，€500起）。企业网站有多个页面、更多功能，适合准备认真增长的企业（€1,500起）。" },
+          "seoOneTimeOrOngoing": { "q": "SEO是一次性服务还是持续的？", "a": "SEO是一项持续服务。一次性审核有帮助，但持久结果需要每月优化、内容创作和链接建设。" },
+          "adBudgetManagement": { "q": "你们管理广告预算还是只管理活动？", "a": "我们管理活动并优化预算。广告预算本身单独支付给平台（Meta, Google）。我们建议最佳预算。" },
+          "contentOrManagement": { "q": "你们制作内容还是只管理社交媒体？", "a": "两者都有。社交媒体管理包括策略、规划和社区管理。内容（帖子、reels、视频）可以单独订购或作为套餐的一部分。" },
+          "withoutWebsite": { "q": "我可以在没有网站的情况下使用你们的服务吗？", "a": "可以，对于像社交媒体管理、广告和内容制作这样的服务，您不一定需要网站。对于SEO，显然需要网站。" },
+          "videoInSocial": { "q": "视频内容包含在社交媒体管理中吗？", "a": "包含基础视觉效果。专业视频和reels通过我们的内容制作服务单独报价，但可以组合。" },
+          "ecommerceVsBusiness": { "q": "网店和企业网站有什么区别？", "a": "企业网站提供信息并生成线索。网店（电子商务）包括带产品页面、购物车和在线支付的购物体验（€3,000起）。" },
+          "reputationHowItWorks": { "q": "声誉管理究竟如何运作？", "a": "我们监控您的在线评价，专业回复反馈并帮助您收集更多正面评价。这提高了您的可见度和客户信任。" },
+          "dataSyncExplained": { "q": "数据和跟踪设置涉及什么？", "a": "我们安装和配置跟踪工具（Google Analytics, Meta Pixel, 转化跟踪），以便您确切知道哪些营销努力带来了结果。" }
+        }
       }
     },
-    "cta": { "title": "准备好在线触达更多客户？", "description": "告诉我们您的情况。我们将制定适合您企业的计划 — 免费且无义务。", "button": "请求免费方案" }
-  },
-  "blog": {
-    "title": "洞察与策略",
-    "subtitle": "关于数字增长、营销和在线绩效的实用洞察。",
-    "badge": "博客",
-    "metaTitle": "博客 | 企业数字营销技巧",
-    "metaDescription": "企业实用营销技巧：网站优化、SEO、社交媒体和广告。阅读我们的免费指南。",
-    "featured": "推荐",
-    "readArticle": "阅读文章",
-    "readMore": "阅读更多",
-    "minRead": "分钟阅读",
-    "publishedOn": "发布于",
-    "by": "作者",
-    "backToArticles": "返回文章",
-    "shareArticle": "分享文章",
-    "contactUs": "联系我们",
-    "relatedArticles": "相关文章",
-    "relatedServices": "相关服务",
-    "articles": {
-      "websiteSalesTool": {
-        "title": "为什么您的网站是2025年最强大的销售工具",
-        "excerpt": "您的网站不仅仅是数字手册。在2025年，它是您最重要的销售工具。了解原因以及您可以做什么。",
-        "metaTitle": "网站作为销售工具 | 企业技巧",
-        "metaDescription": "了解为什么网站是您企业最重要的销售工具。关于速度、结构和转化的实用技巧。",
-        "content": "<h2>您的网站不再是可选的</h2><p>在2025年，您的网站不仅仅是人们了解您企业的地方。它是您最重要的销售工具。在潜在客户拿起电话或发送电子邮件之前，他们已经访问了您的网站。他们已经形成了看法。</p><p>问题很简单：您的网站是帮助您成交还是在让您错失机会？</p>"
-      },
-      "socialMediaManagement": {
-        "title": "社交媒体管理：企业真正需要什么",
-        "excerpt": "社交媒体不是关于粉丝。它是关于策略、一致性和真正的互动。这是真正对企业有效的方法。",
-        "metaTitle": "企业社交媒体管理 | 有效的策略",
-        "metaDescription": "了解企业真正需要的社交媒体管理：策略优先于虚荣指标，一致性优先于趋势。",
-        "content": "<h2>超越粉丝和点赞</h2><p>许多企业痴迷于粉丝数和点赞。但这些虚荣指标很少转化为实际业务成果。</p>"
-      },
-      "seoExplained": {
-        "title": "SEO简单解释：客户如何在网上真正找到您",
-        "excerpt": "SEO不是魔法或操纵。它是关于让您的企业在人们搜索时容易被找到。",
-        "metaTitle": "中小企业SEO解释 | 更好地被发现",
-        "metaDescription": "为企业主简单解释SEO。了解本地SEO的工作原理及为什么它比快速技巧更好。",
-        "content": "<h2>SEO不是魔法</h2><p>SEO代表搜索引擎优化。这意味着您的网站更容易被搜索相关内容的人找到。</p>"
-      },
-      "onlineReputation": {
-        "title": "在线声誉：为什么它决定企业成败",
-        "excerpt": "您的在线声誉就是您的企业。在搜索引擎时代，评价和可见性直接影响信任和销售。",
-        "metaTitle": "在线声誉管理 | 保护您的企业",
-        "metaDescription": "了解为什么在线声誉管理对企业至关重要以及如何保护和加强它。",
-        "content": "<h2>声誉就是一切</h2><p>在人们搜索一切的世界里，您的在线声誉直接影响客户是否信任您。</p>"
-      },
-      "paidAdvertising": {
-        "title": "付费广告：何时以及如何正确投资",
-        "excerpt": "付费广告可以加速增长，但只有在策略正确时才有效。了解何时投资以及如何最大化ROI。",
-        "metaTitle": "付费广告策略 | 最大化ROI",
-        "metaDescription": "了解何时以及如何投资付费广告。实用技巧最大化投资回报。",
-        "content": "<h2>付费广告不是万能的</h2><p>付费广告是强大的工具，但它不是每个企业的灵丹妙药。了解何时投资。</p>"
+    "blog": {
+      "title": "洞察与策略",
+      "subtitle": "关于数字增长、营销和在线绩效的实用洞察。",
+      "badge": "博客",
+      "metaTitle": "博客 | 企业数字营销技巧",
+      "metaDescription": "企业实用营销技巧：网站优化、SEO、社交媒体和广告。阅读我们的免费指南。",
+      "featured": "推荐",
+      "readArticle": "阅读文章",
+      "minRead": "分钟阅读",
+      "backToArticles": "返回文章",
+      "shareArticle": "分享文章",
+      "contactUs": "联系我们",
+      "relatedArticles": "相关文章",
+      "relatedServices": "相关服务",
+      "readMore": "阅读更多",
+      "publishedOn": "发布于",
+      "by": "作者",
+      "articles": {
+        "websiteSalesTool": {
+          "title": "为什么您的网站是2025年最强的销售工具",
+          "excerpt": "您的网站不仅仅是数字宣传册。在2025年，它是您最重要的销售资产。这里是原因以及您可以做什么。",
+          "metaTitle": "作为销售工具的网站 | 企业提示",
+          "metaDescription": "了解为什么您的网站是您企业最重要的销售工具。关于速度、结构和转化的实用建议。",
+          "content": "<h2>您的网站不再是可选项</h2><p>在2025年，您的网站不仅仅是人们了解您业务的地方。它是您最重要的销售工具。在潜在客户拿起电话或发送电子邮件之前，他们已经访问了您的网站。他们已经形成了意见。</p><p>问题很简单：您的网站是帮助您达成交易，还是让您失去机会？</p><h2>第一印象发生在网上</h2><p>研究表明，人们在0.05秒内对网站形成意见。这比眨眼还快。如果您的网站看起来过时、加载缓慢或难以导航，访客就会离开。他们不会回来。</p><p>您的网站是您的第一印象。它需要立即传达信任、专业和清晰。</p><h3>速度很重要</h3><p>加载时间超过3秒的网站会失去超过50%的访客。速度不是奢侈品。它是必需品。移动用户尤其没有耐心。如果您的网站没有针对速度进行优化，您每天都在失去潜在客户。</p><h2>结构创造转化</h2><p>一个漂亮的网站是不够的。它需要引导访客采取特定行动。无论是填写表格、打电话还是下订单，路径都必须清晰。</p><p>良好的结构包括：</p><ul><li>没有困惑的清晰导航</li><li>每个页面上都有突出的号召性用语</li><li>评论、认证和客户标志等信任信号</li><li>易于找到的联系信息</li></ul><h2>企业常犯的错误</h2><p>许多企业将他们的网站视为一次性项目。他们建立它，忘记它，并想知道为什么它不表现。这是最常见的错误：</p><h3>没有明确目标</h3><p>如果您不知道想让访客做什么，他们也不会知道。每个页面都需要一个目的。</p><h3>信息太多</h3><p>访客不会阅读所有内容。他们扫描。保持文本简洁，并使用标题引导视线。</p><h3>忽视移动用户</h3><p>超过60%的流量来自移动设备。如果您的网站不适合移动设备，您就忽视了大多数受众。</p><h2>您今天可以做什么</h2><p>从审核您当前的网站开始。问自己这些问题：</p><ul><li>它在3秒内加载吗？</li><li>导航简单且合乎逻辑吗？</li><li>有明确的号召性用语吗？</li><li>它在移动设备上完美运行吗？</li></ul><p>如果您对其中任何一个回答为否，那么是时候投资您的网站了。不是作为成本，而是作为销售流程的投资。</p><p>您的网站应该全天候为您工作。如果做得好，它将成为您最好的销售人员：始终可用，始终一致，始终专业。</p><p>想知道您的网站表现如何？<a href='/services/business-website'>查看我们的网站服务</a>或<a href='/contact'>请求免费网站审核</a>。</p>"
+        },
+        "socialMediaManagement": {
+          "title": "社交媒体管理：企业真正需要什么",
+          "excerpt": "社交媒体不是关于关注者。它是关于策略、一致性和真正的互动。这里是企业真正有效的方法。",
+          "metaTitle": "企业社交媒体管理 | 有效的策略",
+          "metaDescription": "了解企业真正需要从社交媒体管理中获得什么：策略胜于虚荣指标，一致性胜于趋势。",
+          "content": "<h2>超越关注者和点赞</h2><p>许多企业痴迷于关注者数量和点赞。但这些虚荣指标很少转化为实际的业务结果。拥有500个活跃关注者的企业每次都会胜过拥有50,000个被动关注者的企业。</p><p>社交媒体是一个工具。像任何工具一样，只有在有目的地使用时才有效。</p><h2>发布前先策略</h2><p>企业犯的最大错误是在没有计划的情况下发布。随机时间的随机内容导致随机结果。通常，这意味着根本没有结果。</p><p>社交媒体策略回答这些问题：</p><ul><li>谁是您的目标受众？</li><li>您为他们解决什么问题？</li><li>他们在网上哪里花费时间？</li><li>他们与什么类型的内容互动？</li></ul><p>没有这些问题的答案，您只是在制造噪音。</p><h2>一致性胜过趋势</h2><p>追逐每一个趋势既累人又无效。虽然趋势内容可以暂时提高可见度，但它很少能与受众建立持久的联系。</p><p>有效的是一致性：</p><ul><li>在可预测的时间定期发布</li><li>保持一致的视觉风格</li><li>使用相同的语气</li><li>每篇帖子都提供价值</li></ul><p>您的受众需要知道对您有什么期望。这种可预测性建立了信任。</p><h2>质量胜于数量</h2><p>每周三篇优秀的帖子胜过七篇平庸的帖子。每一条内容都应该服务于一个目的：教育、娱乐、启发或推广。</p><p>如果一篇帖子不符合这些类别之一，它可能不应该发布。</p><h3>80/20法则</h3><p>目标是80%的价值驱动内容和20%的推广内容。没有人想关注一个只谈论自己的企业。先提供价值，销售自然会随之而来。</p><h2>互动是双向的</h2><p>发布内容只是工作的一半。另一半是与受众互动。回复评论，回答问题，参与对话。</p><p>社交媒体是社交的。如果您将其视为广播平台，您就错过了重点。</p><h2>企业真正需要什么</h2><p>有效的社交媒体管理需要：</p><ul><li>与业务目标一致的清晰策略</li><li>一致的高质量内容</li><li>积极的社区互动</li><li>定期分析和优化</li></ul><p>这不是关于在每个平台上。它是关于在对您的受众重要的平台上有效。</p><p>专注于把更少的事情做得更好。您的社交媒体存在应该支持您的业务目标，而不是分散注意力。</p><p>准备好提升您的社交媒体了吗？<a href='/services/social-media-management'>探索我们的社交媒体服务</a>或查看<a href='/gallery'>我们如何为其他企业做到这一点</a>。</p>"
+        },
+        "seoExplained": {
+          "title": "SEO简单解释：客户实际上如何在线找到您",
+          "excerpt": "SEO不是魔法或操纵。它是关于让人们在搜索时容易找到您的企业。这里是它实际上如何运作的。",
+          "metaTitle": "中小企业SEO解释 | 在线被找到",
+          "metaDescription": "为企业主简单解释SEO。了解本地SEO如何运作以及为什么长期策略胜过快速黑客。",
+          "content": "<h2>SEO到底是什么？</h2><p>搜索引擎优化听起来很技术性，但概念很简单。当有人搜索您提供的服务或产品时，SEO决定了他们是找到您还是您的竞争对手。</p><p>每天，潜在客户都在搜索像您这样的企业。如果您的网站没有出现在搜索结果中，您对他们来说就是隐形的。</p><h2>搜索引擎如何思考</h2><p>Google和其他搜索引擎有一个目标：给用户他们问题的最佳可能答案。他们根据相关性、质量和用户体验评估网站。</p><p>SEO是关于让您的网站成为客户所问问题的最佳答案。</p><h3>三大支柱</h3><p>SEO建立在三个支柱上：</p><ul><li><strong>技术SEO：</strong>您的网站需要快速、安全且易于搜索引擎读取。</li><li><strong>内容：</strong>您需要回答受众问题的高质量内容。</li><li><strong>权威性：</strong>其他信誉良好的网站链接到您的网站向搜索引擎发出信任信号。</li></ul><h2>本地SEO</h2><p>对于大多数本地企业来说，本地SEO才是真正的机会所在。当有人搜索附近的服时，Google会优先考虑本地结果。</p><p>本地SEO的关键要素包括：</p><ul><li>完整且优化的Google Business资料</li><li>网络上一致的业务信息</li><li>满意客户的评论</li><li>您网站上的特定位置内容</li></ul><p>如果您在特定区域服务客户，本地SEO应该是您的首要任务。</p><h2>长期价值，而非快速黑客</h2><p>SEO不是关于技巧或操纵。这些策略可能短暂有效，但最终会适得其反。搜索引擎很复杂。它们会惩罚试图玩弄系统的网站。</p><p>可持续的SEO专注于：</p><ul><li>创建真正有用的内容</li><li>建立导致自然链接的真实关系</li><li>持续改善用户体验</li><li>在结果复合时保持耐心</li></ul><h2>您可以期待什么</h2><p>SEO是一项长期投资。大多数企业在持续努力3-6个月后开始看到有意义的结果。但与付费广告不同，结果会随着时间推移而复合。</p><p>一个优化良好的网站会月复一月、年复一年地吸引访客，而无需持续的广告费用。</p><p>开始</h2><p>如果您是SEO新手，从基础开始：</p><ul><li>认领并优化您的Google Business资料</li><li>确保您的网站加载迅速</li><li>创建回答客户问题的内容</li><li>请满意的客户留下评论</li></ul><p>SEO不需要复杂。它需要一致。小的改进随着时间的推移会累积成显著的结果。</p><p>想让您的企业在Google上排名更高？<a href='/services/seo'>探索我们的SEO服务</a>或<a href='/contact'>请求免费SEO扫描</a>。</p>"
+        },
+        "paidAdvertising": {
+          "title": "无浪费的付费广告：如何建立智能活动",
+          "excerpt": "付费广告不是关于推广帖子并希望最好的结果。它是关于建立提供可预测、可衡量结果的系统。",
+          "metaTitle": "无浪费的Google和Meta广告 | 活动提示",
+          "metaDescription": "了解如何建立产生结果的付费广告活动。预算控制、数据和系统胜过猜测。",
+          "content": "<h2>大多数广告的问题</h2><p>许多企业尝试付费广告，看到糟糕的结果，并得出结论它不起作用。但问题很少是平台。问题是方法。</p><p>推广帖子并希望销售不是广告。这是用您的营销预算赌博。</p><h2>广告是一个系统</h2><p>有效的付费广告不是关于单个广告。它是关于建立一个将潜在客户从认知转化为行动的系统。</p><p>一个完整的广告系统包括：</p><ul><li>受众研究和定位</li><li>客户旅程中的多个接触点</li><li>每个阶段的跟踪和测量</li><li>持续测试和优化</li></ul><p>每一块都一起工作。去掉一个，整个系统表现不佳。</p><h2>预算控制</h2><p>数字广告的美妙之处在于控制。与传统广告不同，您可以从小处开始，测试，并扩展有效的。</p><p>智能预算管理意味着：</p><ul><li>以测试预算开始收集数据</li><li>在扩展前分析结果</li><li>快速削减无效的</li><li>再投资于表现好的</li></ul><p>在测试时，您永远不应该花费超过您能承受损失的金额。一旦您有了证明的结果，扩展就变成了低风险。</p><h2>数据驱动决策</h2><p>每个广告决策都应该基于数据，而不是直觉。这需要从第一天开始进行适当的跟踪。</p><p>需要跟踪的关键指标包括：</p><ul><li>每次点击成本和每次结果成本</li><li>每个阶段的转化率</li><li>广告支出回报</li><li>客户获取成本</li></ul><p>没有这些数据，您就是在盲目决策。有了它，您可以持续优化并逐月改善结果。</p><h3>测试思维</h3><p>在测试之前没有人知道什么最有效。即使是经验丰富的广告商也会运行多种变体并让数据决定赢家。</p><p>一次测试一个元素：</p><ul><li>不同的标题</li><li>不同的图片或视频</li><li>不同的受众细分</li><li>不同的优惠</li></ul><p>转化率的小幅提高会累积成结果的显著差异。</p><h2>平台是工具</h2><p>Google Ads、Facebook、Instagram、LinkedIn：每个平台都有优势和劣势。正确的选择取决于您的受众和目标。</p><p>您的潜在客户在哪里花费时间？什么类型的内容与他们产生共鸣？将平台与受众匹配，而不是相反。</p><h2>为长期建立</h2><p>目标不是单个成功的活动。目标是一个可预测、可重复的系统，持续生成线索或销售。</p><p>这需要时间和迭代。但一旦建立，它就成为一个月复一月工作的宝贵商业资产。</p><p>从小处开始，测量一切，并扩展有效的。这就是智能活动建立的方式。</p><p>准备好更有效地花费广告预算了吗？<a href='/services/advertising-management'>查看我们的广告服务</a>或了解<a href='/blog/seo-explained-simply'>SEO和广告如何协同工作</a>。</p>"
+        },
+        "onlineReputation": {
+          "title": "在线声誉：为什么评论比您想象的更重要",
+          "excerpt": "您的在线声誉比大多数营销更能影响购买决策。这里是评论为何重要以及如何有效管理它们。",
+          "metaTitle": "在线声誉与评论管理 | 中小企业指南",
+          "metaDescription": "发现为什么在线评论对企业至关重要，并了解如何有效管理和改善您的声誉。",
+          "content": "<h2>信任因素</h2><p>在购买或雇佣服务之前，大多数人都做同样的事情：阅读评论。根据研究，超过90%的消费者在访问企业之前会阅读在线评论。</p><p>评论是大规模的口碑。它们在您与潜在客户交谈之前建立或破坏信任。</p><h2>评论的心理学</h2><p>人们信任其他客户胜过信任企业。这并不新鲜。我们总是向朋友和家人寻求建议。互联网只是让听取成千上万陌生人的意见成为可能。</p><p>拥有数十条正面评论的企业让人感到安全。没有评论或负面评论的企业让人感到冒险。这种看法直接影响购买决策。</p><h3>重要的数字</h3><p>研究表明：</p><ul><li>拥有4星以上评级的企业获得明显更多的点击</li><li>前10条评论对感知影响最大</li><li>混合评级（不仅仅是满分）显得更真实</li><li>最近的评论比旧评论更重要</li></ul><h2>评论和可见性</h2><p>评论不仅影响决策。它们影响可见性。Google将评论作为本地搜索结果的排名因素。更多正面评论真的可以让您在搜索结果中排名更高。</p><p>这创造了一个良性循环：更好的评论导致更多的可见性，从而导致更多的客户，从而导致更多的评论。</p><h2>管理您的声誉</h2><p>声誉管理不是关于操纵评论。它是关于赢得好评和专业处理负面评论。</p><h3>赢得正面评论</h3><p>基础很简单：提供优质服务。除此之外：</p><ul><li>请满意的客户留下评论</li><li>通过提供直接链接简化流程</li><li>在积极体验后跟进</li><li>感谢花时间评论的客户</li></ul><h3>处理负面评论</h3><p>负面评论是不可避免的。您如何处理它们比评论本身更重要。</p><ul><li>及时专业地回应</li><li>承认关注点而不辩解</li><li>提议线下解决问题</li><li>兑现做出的任何承诺</li></ul><p>对负面评论的专业回应实际上可以改善您的声誉。它向潜在客户表明您关心并承担责任。</p><h2>监控您的声誉</h2><p>您无法管理您不监控的内容。设置提醒以了解何时有人提及您的企业。定期检查与您行业相关的评论平台。</p><p>需要监控的关键平台包括：</p><ul><li>Google Business资料</li><li>行业特定评论网站</li><li>社交媒体提及</li><li>您自己的网站评论</li></ul><h2>长期观点</h2><p>建立强大的在线声誉需要时间。没有捷径。专注于提供卓越的服务，持续寻求反馈，并专业地回应所有评论。</p><p>随着时间的推移，您的声誉成为竞争对手难以复制的竞争优势。它是少数几个随着您培育时间越长越有价值的资产之一。</p><p>想加强您的在线声誉吗？<a href='/services/reputation-management'>查看我们的声誉管理服务</a>或发现<a href='/blog/seo-explained-simply'>SEO和评论如何协同工作</a>以获得更多可见性。</p>"
+        }
       }
+    },
+    "privacy": {
+      "meta": { "title": "隐私政策", "description": "了解GROPPI如何保护和处理您的个人数据。" },
+      "title": "隐私政策", "subtitle": "您的隐私对我们很重要。本政策说明我们如何收集、使用和保护您的数据。",
+      "lastUpdated": "最后更新", "footerNote": "有关于此隐私政策的问题？请通过 info@groppi.be 联系我们",
+      "sections": {
+        "dataCollection": { "title": "数据收集", "content": "我们要么收集您自愿提供给我们的个人数据..." },
+        "dataUsage": { "title": "数据使用", "content": "我们使用您的数据来..." },
+        "dataSecurity": { "title": "数据安全", "content": "我们要认真对待您的数据安全..." },
+        "yourRights": { "title": "您的权利", "content": "根据GDPR，您拥有以下权利..." },
+        "cookies": { "title": "Cookies", "content": "我们的网站使用cookies来增强您的体验..." },
+        "retention": { "title": "数据保留", "content": "我们只在必要时保留您的数据..." },
+        "contact": { "title": "联系", "content": "有关隐私的问题..." }
+      }
+    },
+    "terms": {
+      "meta": { "title": "使用条款", "description": "阅读使用GROPPI服务和网站的条款和条件。" },
+      "title": "使用条款", "subtitle": "这些条款管辖您对我们网站和服务的使用。",
+      "lastUpdated": "最后更新", "footerNote": "有关于这些条款的问题？请通过 info@groppi.be 联系我们",
+      "sections": {
+        "acceptance": { "title": "接受条款", "content": "通过访问或使用GROPPI网站和服务，您同意这些条款..." },
+        "services": { "title": "我们的服务", "content": "GROPPI提供数字营销服务..." },
+        "payment": { "title": "付款和账单", "content": "所有价格不含增值税..." },
+        "liability": { "title": "责任", "content": "GROPPI不对间接损害负责..." },
+        "termination": { "title": "终止", "content": "任何一方均可终止协议..." },
+        "modifications": { "title": "修改", "content": "我们要保留随时修改这些条款的权利..." },
+        "governing": { "title": "管辖法律", "content": "这些条款受比利时法律管辖..." },
+        "contact": { "title": "联系", "content": "有关这些条款的问题..." }
+      }
+    },
+    "_footer_merged": true,
+    "cookies": {
+      "title": "我们使用Cookies",
+      "description": "本网站使用cookies来改善您的体验并衡量我们的表现。点击“接受”即表示您同意我们的cookie政策。",
+      "learnMore": "了解更多",
+      "accept": "接受",
+      "reject": "拒绝"
     }
-  },
-  "gallery": {
-    "title": "我们的作品",
-    "subtitle": "作品集",
-    "description": "探索我们为客户完成的精选项目。",
-    "filters": { "all": "全部", "web": "网站", "branding": "品牌", "social": "社交媒体", "ecommerce": "电子商务" }
-  },
-  "portfolio": {
-    "page": { "subtitle": "我们的作品", "title": "作品集", "description": "探索我们的项目和为客户取得的成果。", "resultSingle": "个项目", "resultPlural": "个项目", "noResults": "没有符合筛选条件的项目。" },
-    "nda": { "disclaimer": "部分项目受保密协议（NDA）保护，无法公开展示。" },
-    "viewCase": "查看案例",
-    "sectors": {
-      "restaurants-hotels": "餐厅与酒店",
-      "interior-architecture": "室内设计与建筑",
-      "retail-local-shops": "零售与本地商店",
-      "ecommerce": "电子商务",
-      "real-estate": "房地产",
-      "beauty-care": "美容与护理",
-      "local-services": "本地服务",
-      "smes-startups": "中小企业与初创",
-      "medical-clinics": "医疗诊所",
-      "educational-academies": "教育学院"
-    },
-    "loadMore": "加载更多项目",
-    "filters": { "all": "全部", "searchPlaceholder": "按客户名搜索...", "industryLabel": "按行业筛选", "serviceLabel": "按服务筛选", "clearAll": "清除所有筛选" },
-    "modal": { "challenge": "挑战", "approach": "我们的方法", "results": "结果", "ctaPrimary": "请求报价", "ctaWhatsApp": "通过WhatsApp聊天" },
-    "items": {
-      "castello-vicchiomaggio": { "shortResult": "托斯卡纳历史酒庄的数字展示和视觉指导。", "challenge": "Castello Vicchiomaggio，位于托斯卡纳基安蒂地区的历史酒庄和酒店，需要符合其百年传统声望的精致数字存在，以吸引国际宾客。", "approach": { "0": "以奢华酒店为重点的高端网站设计", "1": "捕捉庄园氛围的视觉内容指导", "2": "移动优先预订体验优化", "3": "与历史传承一致的数字品牌身份", "4": "多设备响应式展示" }, "results": { "0": "反映庄园声望的数字存在提升", "1": "所有触点的沉浸式视觉叙事", "2": "简化的宾客预订体验", "3": "所有设备上一致的品牌展示", "4": "国际知名度和吸引力提升" }, "disclaimer": "视觉效果为作品集展示目的重新制作。" },
-      "cose-pazzi-torino": { "shortResult": "具有强烈美食视觉和本地品牌特色的正宗意大利比萨店网站。", "challenge": "都灵的Cose Pazzi比萨店需要一个专业的数字存在，反映其正宗意大利美食和充满活力的社区特色。", "approach": { "0": "网站结构和优化", "1": "视觉展示和美食层级", "2": "移动优先可用性改进", "3": "本地意大利品牌感和叙事" }, "results": { "0": "高端餐厅线上品牌", "1": "强烈的美食可见度和食欲吸引力", "2": "清晰简单的客户旅程", "3": "在线可见度和本地SEO改善" }, "disclaimer": "视觉效果为展示目的制作。" },
-      "augusto-torino": { "shortResult": "具有强烈视觉识别和精致美食展示的优雅餐厅网站。", "challenge": "都灵的Augusto餐厅需要反映其精致意大利美食和温馨氛围的专业数字存在。", "approach": { "0": "网站结构和优化", "1": "视觉层级和美食布局", "2": "性能和移动可用性", "3": "活动和预订集成" }, "results": { "0": "高端餐厅线上品牌", "1": "从菜单到预订的清晰客户旅程", "2": "所有页面的强烈视觉叙事", "3": "在线可见度和本地SEO改善" }, "disclaimer": "由GROPPI主动管理的项目。" },
-      "pummaro-torino": { "shortResult": "具有强烈美食展示和清晰客户流程的现代餐厅网站。", "challenge": "都灵的Pummarò比萨店需要反映其使用意大利小型生产商优质食材制作正宗意大利美食的承诺。", "approach": { "0": "网站结构和优化", "1": "视觉层级和美食展示", "2": "移动可用性改进", "3": "在线预订和外卖集成" }, "results": { "0": "具有清晰导航的转化友好布局", "1": "强烈的本地餐厅线上品牌", "2": "专业的美食可见度和食材叙事", "3": "从菜单到预订的无缝客户旅程" }, "disclaimer": "由GROPPI主动管理的项目。" },
-      "fratelli-roselli": { "shortResult": "具有强烈美食展示和本地品牌的正宗意大利餐厅网站。", "challenge": "都灵的Fratelli Roselli比萨店拥有20多年的忠实本地追随者，但需要专业的数字存在来展示其对优质食材和正宗比萨烘焙的承诺。", "approach": { "0": "网站结构和优化", "1": "视觉展示和内容布局", "2": "性能和可用性改进", "3": "在线预订系统集成" }, "results": { "0": "反映品牌质量的专业清晰网站", "1": "聚焦优质食材的强烈美食可见度", "2": "从菜单到预订的清晰客户旅程", "3": "本地餐厅线上品牌改善" }, "disclaimer": "由GROPPI主动管理的项目。" },
-      "boothuis-turnhout": { "shortResult": "本地餐饮企业的简洁网站和视觉展示。", "challenge": "Boothuis餐厅需要反映餐厅在线氛围和品质的专业数字存在。", "approach": { "0": "网站管理和持续优化", "1": "视觉内容和专业展示", "2": "建设和维护数字存在", "3": "所有在线渠道一致的品牌体验" }, "results": { "0": "专业清晰的网站", "1": "餐厅的强烈视觉展示", "2": "在线可见度改善", "3": "持续管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
-      "sanremo-pizzeria": { "shortResult": "本地餐厅的强大社交媒体存在和视觉内容。", "challenge": "Sanremo比萨餐厅拥有忠实的本地追随者，但缺少吸引新客户和在线传达餐厅氛围的专业数字存在。", "approach": { "0": "Facebook页面管理和优化", "1": "专业视觉内容创作", "2": "社交媒体策略和持续发布", "3": "建设和维护数字存在" }, "results": { "0": "专业一致的在线存在", "1": "视觉强烈的社交媒体内容", "2": "在线可见度和可搜索性改善", "3": "持续管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
-      "mangiare-3840": { "shortResult": "具有强烈视觉识别的现代餐厅网站。", "challenge": "Mangiare 3840拥有强大的本地声誉，但缺少反映餐厅氛围和品质的专业在线存在。", "approach": { "0": "深色高端主题的完全定制设计网站", "1": "匹配餐厅氛围的视觉内容和品牌", "2": "持续的数字支持和优化", "3": "菜单和预订系统集成" }, "results": { "0": "增强品牌体验的专业在线存在", "1": "改善的访客用户体验", "2": "所有数字渠道上的强烈视觉识别", "3": "持续管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
-      "kma-wandpanelen": { "shortResult": "+85%展厅访客", "challenge": "安特卫普的KMA墙板拥有高端木材和大理石替代品产品线，但缺乏在线可见度。其强项（防潮、防刮、易维护）未被有效传达。", "approach": { "0": "所有面板变体的专业产品摄影", "1": "Instagram和Facebook的社交媒体内容策略", "2": "视觉对比：WPC vs. 传统木材", "3": "聚焦USP：易维护和耐久" }, "results": { "0": "+85%展厅访客", "1": "通过社交的强烈在线产品兴趣", "2": "来自室内设计师的更多定向询问", "3": "作为高端替代品的清晰定位" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "lebanon-restaurant": { "shortResult": "+120%社交媒体覆盖", "challenge": "布鲁塞尔的黎巴嫩餐厅拥有正宗菜肴，但在线存在有限。温馨的氛围和传统美食未在社交媒体上体现。", "approach": { "0": "Instagram和Facebook的完整社交媒体策略", "1": "专业美食摄影和造型", "2": "用于互动的短促销视频和Reels", "3": "一致的每周内容规划", "4": "评价和推荐内容用于社交证明" }, "results": { "0": "+120%社交媒体覆盖", "1": "通过Instagram明显增加新客户", "2": "帖子互动率提高", "3": "布鲁塞尔地区品牌认知度增强", "4": "通过DM的餐位预订增加" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "il-fuoco-pizza": { "shortResult": "+65%在线预订", "challenge": "具有手工方法的正宗意大利比萨店，但在线存在过时。家庭氛围和比萨品质未在数字形象中体现。", "approach": { "0": "完整视觉识别重塑", "1": "专业美食和氛围摄影", "2": "带QR集成的数字菜单系统", "3": "Instagram和Facebook社交媒体内容", "4": "评价和推荐策略" }, "results": { "0": "+65%在线预订", "1": "区域内强烈品牌知名度", "2": "平均订单价值提高", "3": "通过忠诚内容增加回头客", "4": "在线评价和评分改善" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "restaurant-branding": { "shortResult": "+180%预订量", "challenge": "高端餐厅在线可见度低。过时的品牌不匹配独家产品，无法触达目标受众。", "approach": { "0": "奢华外观的完整品牌重塑", "1": "带预订系统的新网站", "2": "室内和菜品的专业摄影", "3": "针对本地搜索的Google Ads活动" }, "results": { "0": "6个月内预订量+180%", "1": "每桌平均消费提高", "2": "在线评价和评分改善", "3": "本地关键词Google前3位" } },
-      "mode-webshop": { "shortResult": "3个月€85K营收", "challenge": "无数字存在的新在线时装店。有限的营销预算但有在比利时市场快速增长的雄心。", "approach": { "0": "Shopify网店设置和配置", "1": "专业产品摄影", "2": "带再营销的Meta Ads活动", "3": "转化导向的落地页" }, "results": { "0": "前3个月€85K营收", "1": "广告ROAS 4.2", "2": "稳定的回头客群", "3": "成功扩展至荷兰" } },
-      "b2b-platform": { "shortResult": "+320%线索", "challenge": "销售漏斗长的复杂B2B SaaS。合格线索不足，网站转化率低。竞争定位更强。", "approach": { "0": "按用户画像优化的落地页", "1": "引导磁铁（白皮书、案例研究）", "2": "长尾关键词SEO策略", "3": "表单和CTA的A/B测试" }, "results": { "0": "4个月内合格线索+320%", "1": "单位线索成本降低", "2": "销售漏斗周期缩短", "3": "线索质量提升（SQL比率）" } },
-      "bouwbedrijf-website": { "shortResult": "Google本地第一", "challenge": "家族建筑公司仅靠口碑。无网站，无在线存在。年轻一代想要现代化。", "approach": { "0": "带项目作品集的专业网站", "1": "Google My Business优化", "2": "本地SEO策略", "3": "项目摄影和案例研究" }, "results": { "0": "本地关键词Google第一位", "1": "每月45+线索通过网站", "2": "平均项目价值提高", "3": "相比竞争对手更强的定位" } },
-      "influencer-campagne": { "shortResult": "240万覆盖", "challenge": "无品牌知名度的新美容品牌。通过传统渠道难以触达18-35岁目标群体。", "approach": { "0": "网红合作策略", "1": "激活12位比利时创作者", "2": "Instagram和TikTok的UGC活动", "3": "品牌内容和赠品" }, "results": { "0": "2个月240万有机覆盖", "1": "UGC内容高互动", "2": "目标群体强烈品牌知名度", "3": "成功产品发布" } },
-      "tech-startup-branding": { "shortResult": "完整品牌识别", "challenge": "种子前初创需要专业形象用于投资者会议。当前DIY品牌不够有说服力。", "approach": { "0": "完整品牌识别开发", "1": "标志和视觉语言设计", "2": "投资者演示文稿设计", "3": "面向投资者的网站" }, "results": { "0": "3个月内成功完成种子轮", "1": "面向投资者的专业形象", "2": "所有触点一致的品牌表达", "3": "为可扩展品牌奠定基础" } },
-      "e-commerce-groei": { "shortResult": "+240% ROAS", "challenge": "现有室内网店广告亏损。ROAS低于1.0，无明确策略。预算被浪费。", "approach": { "0": "现有活动全面审计", "1": "新目标群体细分", "2": "创意素材A/B测试", "3": "设置再营销漏斗" }, "results": { "0": "90天内ROAS提升+240%", "1": "广告支出盈利", "2": "单位获客成本降低", "3": "可扩展的活动结构" } },
-      "content-strategie": { "shortResult": "50+视频/月", "challenge": "健身连锁想要持续产出内容但内部缺乏时间和专业知识。社交媒体被忽视。", "approach": { "0": "设置全服务内容合约", "1": "规划、制作和发布", "2": "所有门店的视频和照片内容", "3": "一致的发布策略" }, "results": { "0": "每月50+高质量视频", "1": "所有渠道一致的品牌体验", "2": "会员参与度提高", "3": "通过社交媒体注册增加" } },
-      "ai-learn-academy": { "shortResult": "上线平台 — 持续运营", "challenge": "AI Deals需要一个通过订阅模式简化访问领先AI工具的高端平台，结合创作者和专业人士的教育学院。", "approach": { "0": "高端深色主题的完整平台设计和UX/UI开发", "1": "基于订阅的访问管理系统", "2": "带分类的AI工具市场结构", "3": "AI学院和教育内容架构", "4": "可扩展的增长平台基础设施", "5": "持续的技术管理和优化" }, "results": { "0": "自定义AI工具市场上线", "1": "订阅和访问管理系统运行", "2": "具有转化导向UX的高端深色UI", "3": "教育AI学院结构部署", "4": "支持持续增长的可扩展架构", "5": "平台由Groppi主动管理和优化" }, "disclaimer": "这是一个上线且持续运营的项目。平台设计和管理由Groppi完成。" },
-      "pilotscareer": { "shortResult": "国际航空招聘平台 — 上线", "challenge": "PilotsCareer需要一个专业的、可扩展的招聘平台，将飞行员与全球职业机会连接。", "approach": { "0": "从零开始的完整平台设计和开发", "1": "航空灵感美学的高端深色UI", "2": "高级职位搜索和筛选系统", "3": "飞行员档案和申请管理", "4": "桌面和移动响应式设计", "5": "持续平台优化和功能开发" }, "results": { "0": "专业航空招聘平台上线", "1": "支持国际增长的可扩展架构", "2": "飞行员和招聘者的简洁直观UX", "3": "高级搜索和筛选功能", "4": "移动优化的飞行员档案体验", "5": "平台由Groppi主动管理和开发" }, "disclaimer": "这是一个上线且持续运营的项目。平台设计和管理由Groppi完成。" },
-      "casa-mavi": { "shortResult": "西班牙地中海餐厅的完整数字存在。", "challenge": "Casa Mavi，一家位于Fuengirola（西班牙）的意大利-那不勒斯餐厅，想要建立专业的数字存在，以吸引本地客人和太阳海岸的游客。", "approach": { "0": "带在线预订系统的定制网站", "1": "数字菜单和视觉内容创作", "2": "建设专业的数字存在", "3": "面向本地和游客的社交媒体策略" }, "results": { "0": "带集成预订系统的专业网站", "1": "反映地中海氛围的强烈视觉识别", "2": "面向游客和本地人的在线可见度改善", "3": "持续数字管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
-      "arte-y-cocina": { "shortResult": "艺术精致餐饮体验的高端数字身份。", "challenge": "ArTe y CoCiNa，一家位于西班牙的艺术精致餐厅，想要一个反映其独特艺术与美食融合的数字存在，吸引国际受众。", "approach": { "0": "奢华视觉识别的定制网站", "1": "专业美食和室内内容创作", "2": "建设强大的数字存在", "3": "结合艺术和烹饪卓越的视觉品牌" }, "results": { "0": "在线反映精致餐饮体验的优雅网站", "1": "具有艺术风格的强烈视觉识别", "2": "在线可见度和品牌体验改善", "3": "持续数字管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
-      "verona-los-boliches": { "shortResult": "充满活力的融合餐厅的完整在线存在。", "challenge": "Verona Los Boliches，一家独特的意大利-印度-墨西哥融合餐厅，需要反映其多元文化美食和太阳海岸活力氛围的专业数字存在。", "approach": { "0": "带视觉识别的定制网站", "1": "专业美食和氛围内容创作", "2": "在线存在和可见度建设", "3": "面向多种菜系风格的视觉内容" }, "results": { "0": "强烈展示融合美食的专业网站", "1": "面向游客和本地人的在线可见度改善", "2": "所有数字渠道的强烈视觉内容", "3": "持续数字管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
-      "happy-flavors": { "shortResult": "西班牙正宗印度美食的专业数字存在。", "challenge": "Happy Flavors印度餐厅想要建设反映正宗印度美食和温馨款待的专业在线存在，对本地客人和游客都有吸引力。", "approach": { "0": "温馨视觉识别的定制网站", "1": "专业美食和氛围内容创作", "2": "数字存在和可见度建设", "3": "展示丰富印度美食的视觉内容" }, "results": { "0": "展示正宗印度美食的专业网站", "1": "所有数字渠道的强烈视觉内容", "2": "面向游客和本地人的在线可见度改善", "3": "持续数字管理和优化" }, "disclaimer": "由GROPPI主动管理的项目。" },
-      "guest-reservations": { "shortResult": "全球酒店预订服务的持续平台管理。", "challenge": "Guest Reservations，一个国际酒店和旅行预订平台，需要持续的平台管理、网站优化和技术支持以支持其全球增长。", "approach": { "0": "持续平台管理和技术支持", "1": "网站优化以提高性能和转化", "2": "预订平台监测和主动维护", "3": "可扩展增长的战略支持" }, "results": { "0": "平台性能和用户体验改善", "1": "预订平台转化率提高", "2": "面向全球用户的稳定可靠平台", "3": "持续技术支持和优化" }, "disclaimer": "由GROPPI主动管理的持续项目。" },
-      "eurostars-hotels": { "shortResult": "欧洲酒店集团的数字平台支持和性能优化。", "challenge": "Eurostars Hotels，一个拥有广泛预订平台的欧洲酒店集团，需要持续的数字支持、网站管理和性能优化以加强其在线存在。", "approach": { "0": "持续数字平台支持和技术管理", "1": "网站管理和预订平台优化", "2": "更快加载时间和更好转化的性能优化", "3": "欧洲增长的战略支持" }, "results": { "0": "优化的网站性能和用户体验", "1": "预订平台转化率改善", "2": "面向欧洲客人的稳定可靠数字平台", "3": "持续技术管理和主动优化" }, "disclaimer": "由GROPPI主动管理的持续项目。" },
-      "nda-project-001": { "shortResult": "+42%在线预订", "challenge": "移动体验差的过时网站导致错失预订。", "approach": { "0": "响应式网站重设计", "1": "在线预订系统", "2": "本地SEO优化" }, "results": { "0": "+42%在线预订", "1": "更快加载时间（<2秒）" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-002": { "shortResult": "+70%餐位预订", "challenge": "市中心的小酒馆缺乏面向游客和本地人的在线可见度。", "approach": { "0": "Instagram Reels策略", "1": "美食录像", "2": "季节性菜单活动" }, "results": { "0": "通过社交+70%餐位预订", "1": "病毒式Reel（50K+播放）" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-003": { "shortResult": "+55% Instagram粉丝", "challenge": "美容沙龙在年轻目标群体中缺乏在线可见度。", "approach": { "0": "Instagram内容策略", "1": "前后对比视觉系列", "2": "微网红合作" }, "results": { "0": "+55% Instagram粉丝", "1": "通过DM的更高预约率" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-004": { "shortResult": "+50%预约", "challenge": "新水疗中心在竞争激烈的健康市场中缺乏差异化。", "approach": { "0": "奢华品牌识别开发", "1": "预约优化的网站", "2": "氛围视觉语言" }, "results": { "0": "前6个月+50%预约", "1": "达到高端定位" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-005": { "shortResult": "+38%报价请求", "challenge": "拥有强大声誉但品牌识别过时的家族企业。", "approach": { "0": "完整品牌识别重塑", "1": "专业项目摄影", "2": "带作品集的新网站" }, "results": { "0": "+38%报价请求", "1": "更强品牌认知" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-006": { "shortResult": "+85%线索", "challenge": "增长市场中的太阳能板安装商但线索生成能力差。", "approach": { "0": "线索生成漏斗", "1": "Google Ads活动", "2": "网站计算器工具" }, "results": { "0": "每月+85%线索", "1": "单位线索成本减半" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-007": { "shortResult": "Q1 €62K营收", "challenge": "无现有客户群或品牌知名度的新网店。", "approach": { "0": "Shopify网店配置", "1": "Meta Ads活动", "2": "再营销漏斗" }, "results": { "0": "第一季度€62K营收", "1": "ROAS 3.8" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-008": { "shortResult": "+130%在线销售", "challenge": "珠宝商想在实体店之外开始在线销售。", "approach": { "0": "WooCommerce网店设置", "1": "产品摄影", "2": "Instagram购物集成" }, "results": { "0": "4个月内+130%在线销售", "1": "强大的Instagram社区" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-009": { "shortResult": "Google第2位", "challenge": "医疗诊所尽管声誉良好但在搜索结果中不可见。", "approach": { "0": "技术SEO审核和修复", "1": "医疗内容策略", "2": "Google My Business优化" }, "results": { "0": "核心关键词Google第2位", "1": "+60%有机流量" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-010": { "shortResult": "+35%新患者", "challenge": "竞争激烈地区新患者数量下降的牙科诊所。", "approach": { "0": "本地SEO策略", "1": "Google Ads活动", "2": "评价管理" }, "results": { "0": "每月+35%新患者", "1": "Google Maps本地第一" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-011": { "shortResult": "种子轮完成", "challenge": "种子前初创需要面向投资者的专业形象。", "approach": { "0": "标志和视觉识别", "1": "演示文稿设计", "2": "落地页开发" }, "results": { "0": "成功完成种子轮", "1": "专业投资者演示" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-012": { "shortResult": "30天500+注册", "challenge": "B2B SaaS产品准备发布但无营销基础设施。", "approach": { "0": "高转化落地页", "1": "LinkedIn Ads活动", "2": "内容营销策略" }, "results": { "0": "首月500+注册", "1": "强烈的产品市场契合信号" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-013": { "shortResult": "+75%合格线索", "challenge": "房地产事务所依赖传统渠道，缺少在线线索。", "approach": { "0": "线索生成活动", "1": "按项目的落地页", "2": "CRM集成" }, "results": { "0": "+75%合格线索", "1": "单位线索成本更低" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-014": { "shortResult": "实现更高要价", "challenge": "高端房产缺少体现奢华的视觉展示。", "approach": { "0": "高端房产网站", "1": "无人机和室内摄影", "2": "虚拟导览集成" }, "results": { "0": "实现更高要价", "1": "更短销售周期" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-015": { "shortResult": "+32%项目咨询", "challenge": "室内设计师通过社交媒体展示作品但缺少专业作品集。", "approach": { "0": "带画廊的作品集网站", "1": "专业项目摄影", "2": "博客策略" }, "results": { "0": "+32%项目咨询", "1": "更高的平均项目价值" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-016": { "shortResult": "+55%展厅访问", "challenge": "尽管产品优质但厨房展厅访客下降。", "approach": { "0": "本地聚焦的Google Ads", "1": "社交灵感内容", "2": "虚拟展厅导览" }, "results": { "0": "+55%展厅访问", "1": "访问到销售的更高转化" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-017": { "shortResult": "40+视频/月", "challenge": "健身房想要持续内容但无内部能力。", "approach": { "0": "全服务内容合约", "1": "现场视频制作", "2": "社交媒体规划" }, "results": { "0": "每月40+高质量视频", "1": "更高会员参与度" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-018": { "shortResult": "+45%会员", "challenge": "新CrossFit馆需要从成熟竞争对手中脱颖而出。", "approach": { "0": "强力品牌识别", "1": "社区驱动内容", "2": "开业活动" }, "results": { "0": "第一季度+45%会员", "1": "建立强大社区" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-019": { "shortResult": "+28%展厅访问", "challenge": "汽车经销商因更大经销商更强的在线存在而失去市场份额。", "approach": { "0": "带库存系统的新网站", "1": "Google Ads活动", "2": "再营销策略" }, "results": { "0": "+28%展厅访问", "1": "更低获客成本" }, "disclaimer": "指示性结果，取决于时期和预算。" },
-      "nda-project-020": { "shortResult": "+45%联系咨询", "challenge": "律师事务所网站过时且在线可搜索性低。", "approach": { "0": "专业网站重设计", "1": "内容营销策略", "2": "本地SEO" }, "results": { "0": "+45%联系咨询", "1": "Google本地前5" }, "disclaimer": "指示性结果，取决于时期和预算。" }
-    }
-  },
-  "contact": {
-    "title": "联系我们",
-    "subtitle": "让我们交谈",
-    "intro": "有项目想法或想加强数字存在？联系我们进行免费咨询。",
-    "mobileLabel": "手机",
-    "officeLabel": "办公室",
-    "hoursLabel": "营业时间",
-    "hoursValue": "周一至周五：9:00 - 18:00",
-    "description": "我们很乐意收到您的来信。填写表单，我们将尽快与您联系。",
-    "name": "姓名",
-    "email": "电子邮箱",
-    "phone": "电话号码",
-    "company": "公司",
-    "subject": "主题",
-    "message": "您的消息",
-    "send": "发送",
-    "sending": "发送中...",
-    "success": "消息发送成功！我们将尽快与您联系。",
-    "error": "出了点问题。请重试或致电联系。",
-    "address": "地址",
-    "phoneLabel": "电话",
-    "emailLabel": "电子邮件",
-    "landline": "固定电话",
-    "mobile": "手机",
-    "rateLimited": "请求过多。请稍后再试。",
-    "form": {
-      "name": "您的名字", "namePlaceholder": "张三", "email": "电子邮箱", "emailPlaceholder": "zhangsan@example.com",
-      "phone": "电话号码", "phonePlaceholder": "+86 138 0000 0000", "subject": "主题", "subjectPlaceholder": "您的问题主题",
-      "message": "消息", "messagePlaceholder": "请提供详细信息...", "submit": "发送消息", "submitting": "发送中...",
-      "successTitle": "感谢！", "successMessage": "我们将尽快与您联系。", "errorMessage": "出现问题。请重试。"
-    },
-    "methods": { "email": "直接电子邮件", "phone": "直接电话", "whatsapp": "WhatsApp" }
-  },
-  "franchise": {
-    "title": "特许经营", "subtitle": "成为特许经营者",
-    "description": "有兴趣与GROPPI合作？了解共同成长的可能性。",
-    "benefits": { "title": "特许经营优势", "items": { "0": "获取经过验证的流程和方法", "1": "经验丰富的团队支持", "2": "联合营销努力", "3": "知识共享和培训" } },
-    "requirements": { "title": "我们寻找什么", "items": { "0": "数字营销或相关领域经验", "1": "企业家精神和增长思维", "2": "对质量和客户满意度的承诺", "3": "长期合作意愿" } },
-    "cta": "联系了解更多", "apply": "立即申请", "call": "致电我们"
-  },
-  "footer": {
-    "rights": "版权所有。",
-    "description": "自2016年以来的数字解决方案。总部位于比利时。",
-    "privacy": "隐私政策",
-    "terms": "使用条款",
-    "followUs": "关注我们",
-    "quickLinks": "快速链接",
-    "contact": "联系信息",
-    "planCall": "安排通话（30分钟）",
-    "newsletter": {
-      "title": "新闻通讯",
-      "description": "了解我们最新的见解和建议。",
-      "placeholder": "您的电子邮件地址",
-      "button": "订阅",
-      "subscribed": "您已订阅！谢谢。",
-      "successTitle": "订阅成功！",
-      "successMessage": "您已成功订阅我们的新闻通讯。",
-      "errorTitle": "订阅失败",
-      "errorMessage": "出了点问题。请稍后再试。"
-    }
-  },
-  "stats": {
-    "years": "年经验", "yearsValue": "9+",
-    "clients": "满意客户", "clientsValue": "150+",
-    "projects": "项目", "projectsValue": "500+",
-    "team": "团队成员", "teamValue": "9+"
-  },
-  "admin": {
-    "dashboard": "仪表板", "articles": "文章", "media": "媒体", "services": "服务",
-    "messages": "消息", "settings": "设置", "logout": "退出", "login": "登录",
-    "email": "电子邮件", "password": "密码", "loginTitle": "管理员登录", "loginButton": "登录"
-  },
-  "social": {
-    "whatsapp": "WhatsApp",
-    "whatsappChat": "通过WhatsApp聊天",
-    "callUs": "致电我们",
-    "emailUs": "发送电子邮件",
-    "followUs": "在社交媒体上关注我们",
-    "actions": { "chat": "通过WhatsApp开始对话", "call": "致电 +32 494 31 11 19", "email": "电邮 info@groppi.be" },
-    "followInstagram": "关注Instagram", "followFacebook": "关注Facebook",
-    "followTiktok": "关注TikTok", "followLinkedin": "关注LinkedIn"
-  },
-  "planBuilder": {
-    "tab": "构建计划",
-    "title": "计划构建器",
-    "subtitle": "构建社交媒体计划并立即获取参考价格。",
-    "disclaimer": "这是参考价格。最终价格取决于范围、品牌复杂度和内容需求。",
-    "vatNote": "不含增值税",
-    "adsBudgetDisclaimer": "广告预算直接支付给Meta/Google，不包含在管理费中。",
-    "adsBudgetNote": "广告预算直接支付给Meta/Google。",
-    "pauseNote": "您可以随时暂停或停止。",
-    "included": "包含",
-    "next": "下一步",
-    "back": "返回",
-    "quantity": "数量",
-    "viewSummary": "查看摘要",
-    "validation": { "minChannel": "至少选择1个渠道。" },
-    "steps": { "channels": "选择渠道", "frequency": "发布频率", "campaigns": "付费活动", "addons": "可选附加项" },
-    "channels": { "facebook": "Facebook", "instagram": "Instagram", "linkedin": "LinkedIn", "tiktok": "TikTok", "youtube": "YouTube", "googleBusiness": "Google Business", "pinterest": "Pinterest", "xTwitter": "X (Twitter)" },
-    "frequency": { "2month": "每月2篇", "1week": "每周1篇", "2week": "每周2篇", "3week": "每周3篇", "4week": "每周4篇", "5week": "每周5篇" },
-    "adsBudget": { "none": "无付费活动", "100": "€100 / 月", "250": "€250 / 月", "500": "€500 / 月", "1000": "€1000 / 月" },
-    "addons": {
-      "productPhotos": { "label": "额外产品照片", "unit": "张" },
-      "googleReviews": { "label": "Google评价管理" },
-      "contentWriting": { "label": "文案写作", "unit": "小时" },
-      "emailMarketing": { "label": "电子邮件营销活动" },
-      "postsPack": { "label": "社交媒体帖子（10件装）" },
-      "analyticsDashboard": { "label": "高级分析仪表板" }
-    },
-    "summary": { "title": "摘要", "managementFee": "预估管理费", "channels": "渠道", "frequency": "发布频率", "addons": "附加项", "adsBudget": "广告预算（直接支付）", "total": "每月总计", "included": "包含" },
-    "cta": { "primary": "请求定制方案", "secondary": "保存计划" },
-    "faq": {
-      "title": "常见问题",
-      "adjustLater": { "question": "我可以之后调整计划吗？", "answer": "可以。您可以随时调整。我们会根据您的目标和发展进行协调。" },
-      "setupCost": { "question": "有启动费吗？", "answer": "启动费包含在管理费中。仅在额外范围或特殊设置时产生额外费用。" },
-      "adBudgetIncluded": { "question": "广告预算包含在内吗？", "answer": "不。广告预算直接支付给Meta/Google。我们的费用用于管理和优化。" }
-    }
-  },
-  "partner": {
-    "badge": "这个项目是什么",
-    "seo": { "title": "与GROPPI合作 | 合作伙伴网络", "description": "成为GROPPI合作伙伴：许可驱动的合作关系，包含品牌、系统和支持。不是工作，不是招聘。每个地区名额有限。" },
-    "hero": {
-      "title": "这不是工作。这是合作伙伴网络。",
-      "subtitle": "面向想要在强大品牌下成长的机构和专家 — 有明确协议、清晰交付和真正支持。",
-      "bullet1": "不是空话。是结构。",
-      "bullet2": "透明交付系统。",
-      "bullet3": "高端品牌和定位。",
-      "ctaPrimary": "预约咨询",
-      "ctaSecondary": "了解运作方式",
-      "microcopy": "每个地区合作伙伴数量有限。"
-    },
-    "marquee": { "item1": "10+年经验", "item2": "比利时和欧洲", "item3": "透明价格", "item4": "可扩展系统", "item5": "高端交付", "item6": "双赢合作" },
-    "clarity": {
-      "subtitle": "这个项目是什么",
-      "title": "这不是工作。这是合作伙伴网络。",
-      "body": "该项目面向想要在强大品牌下成长的机构和专家。不是就业。不是招聘。也不是没有系统的空话。而是：具有明确质量标准的许可驱动合作。",
-      "cards": {
-        "brand": { "title": "品牌与定位", "bullets": { "0": "使用GROPPI品牌", "1": "从第一天起的高端形象" } },
-        "delivery": { "title": "交付系统", "bullets": { "0": "清晰的服务和价格逻辑", "1": "实践中有效的工具和框架" } },
-        "growth": { "title": "增长与支持", "bullets": { "0": "战略指导", "1": "无混乱的可扩展增长" } }
-      }
-    },
-    "forWho": {
-      "subtitle": "面向谁",
-      "title": "面向想要成长的合作伙伴",
-      "description": "我们与能提供质量并想要本地扩展的人合作。",
-      "items": {
-        "bureauOwners": "营销机构所有者", "growthMarketeers": "自由增长营销者",
-        "webStudios": "网络与开发工作室", "contentTeams": "内容与视频团队",
-        "adsSpecialists": "广告专家", "seoSpecialists": "SEO专家", "socialAgencies": "社交媒体机构"
-      },
-      "note": "选择基于质量和心态。"
-    },
-    "value": {
-      "subtitle": "您将获得",
-      "title": "作为合作伙伴您将获得什么",
-      "cards": {
-        "credibility": { "title": "即时可信度", "body": "10+年经验转化为强大定位和清晰的服务逻辑。" },
-        "salesReady": { "title": "销售就绪结构", "body": "加速决策和减少摩擦的服务、价格和计算器。" },
-        "portfolio": { "title": "作品集支持", "body": "案例研究格式、模板和质量指南以保持高端。" },
-        "longterm": { "title": "长期合作", "body": "项目、扩展和可持续关系 — 建立在信任和交付之上。" }
-      },
-      "highlight": "您买的不是标志。您获得的是经过验证的系统。"
-    },
-    "howItWorks": {
-      "subtitle": "运作方式",
-      "title": "运作流程",
-      "steps": {
-        "step1": { "title": "注册", "desc": "留下信息并简要介绍您的地区和团队。" },
-        "step2": { "title": "简短导向对话", "desc": "我们看看质量和期望是否匹配（15-20分钟）。" },
-        "step3": { "title": "开始使用GROPPI系统", "desc": "您获得入职培训、指南和启动材料开始交付。" }
-      }
-    },
-    "faq": {
-      "subtitle": "问题",
-      "title": "常见问题",
-      "items": {
-        "isJob": { "question": "这是一份工作吗？", "answer": "不是。这是合作关系，不是就业。" },
-        "bureau": { "question": "我需要已有机构吗？", "answer": "最好有。有交付能力的强大专家也有资格。" },
-        "exclusivity": { "question": "我能获得排他性吗？", "answer": "是的。每个地区/市场的合作伙伴数量有限。" },
-        "leads": { "question": "你们提供线索吗？", "answer": "我们支持定位和增长系统。结果取决于地区和执行。" },
-        "team": { "question": "我可以用自己的团队吗？", "answer": "可以，只要遵循质量标准。" },
-        "howToApply": { "question": "如何成为合作伙伴？", "answer": "通过合作伙伴表单。我们将在24小时内联系您。" }
-      }
-    },
-    "apply": { "title": "想成为GROPPI合作伙伴？", "subtitle": "检查您的地区是否仍然可用。", "ctaPrimary": "成为合作伙伴", "ctaSecondary": "预约咨询" },
-    "booking": { "title": "预约简短咨询", "subtitle": "15-20分钟。我们一起看看是否合适以及下一步。", "cta": "预约对话" }
-  },
-  "caseStudy": {
-    "backToPortfolio": "返回作品集",
-    "challengeLabel": "挑战",
-    "approachLabel": "方法",
-    "resultsLabel": "结果",
-    "servicesUsed": "使用的服务",
-    "ctaQuote": "请求报价",
-    "ctaServices": "查看服务和价格",
-    "prevCase": "上一个案例",
-    "nextCase": "下一个案例",
-    "allCases": "所有案例",
-    "cases": {
-      "restaurant-branding": { "title": "餐厅品牌与网站", "challenge": "在线可见度低，数字渠道预订少。", "approach": "新品牌识别 + 现代网站 + Google Ads活动。", "result": "+180%在线预订" },
-      "mode-webshop": { "title": "时装网店发布", "challenge": "无在线存在或客户基础的新品牌。", "approach": "完整网店 + 社交媒体策略 + 网红营销。", "result": "前3个月€85K营收" },
-      "b2b-platform": { "title": "B2B线索生成平台", "challenge": "B2B服务的合格线索不足。", "approach": "线索生成网站 + LinkedIn Ads + 内容营销。", "result": "+320%合格线索" },
-      "bouwbedrijf-website": { "title": "建筑公司网站与SEO", "challenge": "尽管线下声誉好但Google上不可见。", "approach": "SEO优化网站 + 本地SEO + Google My Business。", "result": "Google本地排名第一" },
-      "influencer-campagne": { "title": "网红营销活动", "challenge": "提高年轻目标群体的品牌知名度。", "approach": "网红选择 + 内容策略 + 社交媒体放大。", "result": "240万覆盖" },
-      "tech-startup-branding": { "title": "科技初创完整品牌", "challenge": "无视觉识别或品牌定位的初创。", "approach": "品牌策略 + 标志设计 + 网站 + 演示文稿。", "result": "完整品牌识别发布" },
-      "e-commerce-groei": { "title": "电商增长策略", "challenge": "低ROAS和高广告成本。", "approach": "活动审计 + A/B测试 + 再营销优化。", "result": "+240% ROAS提升" },
-      "content-strategie": { "title": "内容制作策略", "challenge": "内容不一致且缺乏互动。", "approach": "内容日历 + 视频制作 + 社交媒体管理。", "result": "每月50+视频" }
-    }
-  },
-  "servicePage": {
-    "defaultDescription": "{{service}} — GROPPI营销机构的专业服务。",
-    "cta": { "requestQuote": "请求报价", "whatsapp": "通过WhatsApp聊天", "planCall": "预约通话" },
-    "trustNote": "透明价格。无隐藏费用。",
-    "videoPlaceholder": "视频即将可用",
-    "whatsapp": { "template": "您好！我想了解更多关于{{service}}的信息。能帮我吗？" },
-    "deliverables": { "label": "您将获得", "title": "包含什么？" },
-    "process": { "label": "运作方式", "title": "我们的流程" },
-    "calculator": {
-      "label": "价格计算器", "title": "60秒计算价格",
-      "businessTypeLabel": "企业类型", "goalLabel": "您的目标", "packageLabel": "套餐",
-      "adBudgetLabel": "广告预算", "addonsLabel": "额外选项", "selectPlaceholder": "选择...",
-      "month": "月", "monthlyFee": "预估月度服务费", "setupFee": "设置费",
-      "oneTime": "一次性", "firstMonthTotal": "首月总计",
-      "disclaimer": "参考价格。简短咨询后提供最终报价。",
-      "sendCalculation": "发送此计算", "sendWhatsapp": "通过WhatsApp发送", "noAddons": "无额外选项",
-      "businessTypes": { "restaurant": "餐厅/餐饮", "retail": "零售与本地商店", "construction": "建筑与翻新", "beauty": "美容与健康", "ecommerce": "电子商务", "other": "其他" },
-      "goals": { "visibility": "更多曝光", "leads": "更多线索", "sales": "更多销售" },
-      "packages": { "starter": "初创", "growth": "增长", "pro": "专业" },
-      "addons": { "extraContent4": "额外内容（4篇/月）", "extraContent12": "额外内容（12篇/月）", "extraVideo2": "额外视频广告（2个/月）", "extraVideo6": "额外视频广告（6个/月）", "extraLandingPage": "额外落地页", "extraTracking": "额外跟踪设置" },
-      "whatsappTemplate": "您好！我对{{service}}的计算：\n\n• 企业类型：{{businessType}}\n• 目标：{{goal}}\n• 套餐：{{package}}\n• 广告预算：{{adBudget}}\n• 额外选项：{{addons}}\n\n💰 预估价格：{{monthlyRange}} / 月\n📋 设置：{{setup}}\n\n能给我发一份定制报价吗？"
-    },
-    "faq": {
-      "label": "常见问题", "title": "常见问题",
-      "q1": "这是月度合同吗？", "a1": "是的，您按月付款。无需年度合同。",
-      "q2": "我可以随时停止吗？", "a2": "可以，30天通知期。无隐藏条款。",
-      "q3": "你们使用固定价格吗？", "a3": "我们使用价格范围。咨询后您将获得确切报价。",
-      "q4": "如果我还没有内容怎么办？", "a4": "没问题。我们为您制作内容或指导您的团队。",
-      "q5": "多快能看到结果？", "a5": "2-4周内首批结果。2-3个月后显著增长。",
-      "q6": "如果我预算有限怎么办？", "a6": "我们有适合小预算的初创套餐。请咨询建议。"
-    },
-    "finalCTA": {
-      "title": "准备好吸引更多客户？",
-      "subtitle": "没有模糊承诺。我们提供具有明确步骤的具体计划。",
-      "primaryCTA": "请求方案",
-      "secondaryCTA": "通过WhatsApp发送消息"
-    },
-    "socialMedia": {
-      "title": "社交媒体管理", "subtitle": "让您品牌在每个平台上成长的一致内容。",
-      "benefits": { "1": "所有渠道的专业内容", "2": "更多互动和覆盖", "3": "为您团队节省时间" },
-      "deliverables": {
-        "1": { "title": "策略与规划", "desc": "根据您目标定制的内容日历。" },
-        "2": { "title": "内容创作", "desc": "吸引人的帖子、故事和Reels。" },
-        "3": { "title": "社区管理", "desc": "主动回复评论和DM。" },
-        "4": { "title": "广告管理", "desc": "最大覆盖的定向广告。" },
-        "5": { "title": "月度报告", "desc": "清晰的数据和洞察。" },
-        "6": { "title": "专属支持", "desc": "随时可联系解答问题。" }
-      },
-      "process": { "1": { "title": "分析", "desc": "我们分析您当前的存在和竞争。" }, "2": { "title": "执行", "desc": "我们按规划创作和发布内容。" }, "3": { "title": "增长与优化", "desc": "基于数据的持续改进。" } }
-    },
-    "adsManagement": {
-      "title": "广告管理", "subtitle": "产生线索和销售的定向广告。",
-      "benefits": { "1": "广告支出更高ROI", "2": "针对目标受众的定向活动", "3": "每月透明报告" },
-      "deliverables": {
-        "1": { "title": "活动策略", "desc": "每个平台的目标导向方法。" },
-        "2": { "title": "广告创作", "desc": "转化的视觉和文案。" },
-        "3": { "title": "A/B测试", "desc": "持续测试以获得更好结果。" },
-        "4": { "title": "预算优化", "desc": "从预算中获取最大结果。" },
-        "5": { "title": "转化跟踪", "desc": "完整的ROI洞察。" },
-        "6": { "title": "每周更新", "desc": "您始终知道发生了什么。" }
-      },
-      "process": { "1": { "title": "分析", "desc": "我们研究您的市场和竞争。" }, "2": { "title": "执行", "desc": "我们启动和管理您的活动。" }, "3": { "title": "增长与优化", "desc": "持续改进以获得更多转化。" } }
-    },
-    "contentProduction": {
-      "title": "内容制作", "subtitle": "让您品牌栩栩如生的视频和视觉内容。",
-      "benefits": { "1": "专业视频和照片", "2": "适合每个平台的内容", "3": "快速交付和修改" },
-      "deliverables": {
-        "1": { "title": "概念与规划", "desc": "符合品牌的创意想法。" },
-        "2": { "title": "视频制作", "desc": "从脚本到最终剪辑。" },
-        "3": { "title": "摄影", "desc": "产品和生活方式照片。" },
-        "4": { "title": "编辑与后期", "desc": "专业完成。" },
-        "5": { "title": "平台优化", "desc": "每个渠道的格式。" },
-        "6": { "title": "内容库", "desc": "所有资产整理存储。" }
-      },
-      "process": { "1": { "title": "分析", "desc": "我们确定您品牌的需求。" }, "2": { "title": "执行", "desc": "现场或工作室制作。" }, "3": { "title": "增长与优化", "desc": "处理反馈并改进。" } }
-    },
-    "seo": {
-      "title": "SEO", "subtitle": "在Google中排名更高以获得更多有机流量。",
-      "benefits": { "1": "搜索引擎中更好的可搜索性", "2": "更多优质网站流量", "3": "无广告成本的长期增长" },
-      "deliverables": {
-        "1": { "title": "技术审核", "desc": "检查速度、结构和索引。" },
-        "2": { "title": "关键词研究", "desc": "适合您市场的正确关键词。" },
-        "3": { "title": "页面优化", "desc": "改善标题、元数据和内容。" },
-        "4": { "title": "内容策略", "desc": "SEO导向的文章和页面。" },
-        "5": { "title": "链接建设", "desc": "获取权威的优质反向链接。" },
-        "6": { "title": "月度报告", "desc": "排名和流量数据。" }
-      },
-      "process": { "1": { "title": "分析", "desc": "网站的技术和内容审核。" }, "2": { "title": "执行", "desc": "实施优化和内容。" }, "3": { "title": "增长与优化", "desc": "持续改善排名。" } }
-    },
-    "businessWebsite": {
-      "title": "企业网站", "subtitle": "说服客户的专业网站。",
-      "benefits": { "1": "建立信任的现代设计", "2": "为转化优化", "3": "移动友好且快速" },
-      "deliverables": {
-        "1": { "title": "设计与UX", "desc": "匹配品牌的定制设计。" },
-        "2": { "title": "开发", "desc": "技术扎实且可扩展。" },
-        "3": { "title": "内容集成", "desc": "文字和视觉专业整合。" },
-        "4": { "title": "SEO基础", "desc": "包含技术SEO。" },
-        "5": { "title": "CMS培训", "desc": "学习自己调整内容。" },
-        "6": { "title": "维护选项", "desc": "月度更新和支持。" }
-      },
-      "process": { "1": { "title": "分析", "desc": "讨论需求和目标。" }, "2": { "title": "执行", "desc": "设计、开发和上线。" }, "3": { "title": "增长与优化", "desc": "上线后的更新和改进。" } }
-    },
-    "onePageWebsite": {
-      "title": "单页网站", "subtitle": "快速产生影响的强大落地页。",
-      "benefits": { "1": "快速上线您的信息", "2": "非常适合发布或活动", "3": "经济实惠且有效" },
-      "deliverables": {
-        "1": { "title": "设计", "desc": "吸引人且符合品牌的设计。" },
-        "2": { "title": "开发", "desc": "快速响应的页面。" },
-        "3": { "title": "表单集成", "desc": "线索捕获功能。" },
-        "4": { "title": "移动优化", "desc": "在每个设备上完美。" },
-        "5": { "title": "分析设置", "desc": "从第一天开始跟踪。" },
-        "6": { "title": "快速交付", "desc": "1-2周内上线。" }
-      },
-      "process": { "1": { "title": "分析", "desc": "简报和确定目标。" }, "2": { "title": "执行", "desc": "一个冲刺完成设计和开发。" }, "3": { "title": "增长与优化", "desc": "A/B测试和改进。" } }
-    },
-    "ecommerceWebsite": {
-      "title": "电子商务网站", "subtitle": "在您睡觉时也能销售的网店。",
-      "benefits": { "1": "用户友好的购物体验", "2": "集成安全支付", "3": "可扩展增长" },
-      "deliverables": {
-        "1": { "title": "商店设计", "desc": "转化导向的产品页面。" },
-        "2": { "title": "开发", "desc": "强大的电商平台。" },
-        "3": { "title": "支付集成", "desc": "所有常见支付方式。" },
-        "4": { "title": "库存管理", "desc": "简单管理产品。" },
-        "5": { "title": "营销工具", "desc": "优惠券、追加销售等。" },
-        "6": { "title": "培训与支持", "desc": "学习自己管理一切。" }
-      },
-      "process": { "1": { "title": "分析", "desc": "讨论产品目录和目标。" }, "2": { "title": "执行", "desc": "设计、开发和产品上架。" }, "3": { "title": "增长与优化", "desc": "上线后的转化优化。" } }
-    },
-    "branding": {
-      "title": "品牌", "subtitle": "令人难忘的视觉识别。",
-      "benefits": { "1": "可识别且专业", "2": "所有渠道的一致性", "3": "与竞争对手区分" },
-      "deliverables": {
-        "1": { "title": "标志设计", "desc": "独特标志及变体。" },
-        "2": { "title": "调色板", "desc": "战略性颜色选择。" },
-        "3": { "title": "字体", "desc": "匹配品牌的字体。" },
-        "4": { "title": "品牌指南", "desc": "一致使用的手册。" },
-        "5": { "title": "模板", "desc": "社交媒体和印刷模板。" },
-        "6": { "title": "品牌资产", "desc": "所有高质量文件。" }
-      },
-      "process": { "1": { "title": "分析", "desc": "了解您的品牌和目标受众。" }, "2": { "title": "执行", "desc": "概念、反馈和最终确定。" }, "3": { "title": "增长与优化", "desc": "需要时进一步发展。" } }
-    },
-    "mobileAppDevelopment": {
-      "title": "移动应用开发", "subtitle": "构建高端应用 — 每月保持安全和最新。",
-      "benefits": { "1": "iOS和Android（原生体验）", "2": "简洁UX + 快速性能", "3": "跟踪和App Store材料准备就绪" },
-      "deliverables": {
-        "1": { "title": "策略与功能规划", "desc": "共同确定应用功能。" },
-        "2": { "title": "UI/UX设计", "desc": "用户理解的直观设计。" },
-        "3": { "title": "开发（iOS/Android）", "desc": "跨平台或原生开发。" },
-        "4": { "title": "后端与集成", "desc": "支付、API、CRM连接。" },
-        "5": { "title": "QA测试与优化", "desc": "在所有设备上彻底测试。" },
-        "6": { "title": "App Store / Google Play上架", "desc": "发布的完整指导。" }
-      },
-      "process": { "1": { "title": "分析", "desc": "讨论功能、目标受众和技术要求。" }, "2": { "title": "执行", "desc": "迭代式设计、开发和测试。" }, "3": { "title": "上线与维护", "desc": "发布 + 可选月度维护。" } }
-    },
-    "reputation": {
-      "title": "声誉与评价管理", "subtitle": "通过主动评价管理保护和加强在线声誉。",
-      "benefits": { "1": "在一个地方监控所有评价", "2": "专业回复策略", "3": "在线建立信任和可信度" },
-      "deliverables": {
-        "1": { "title": "评价监测", "desc": "跟踪Google、Facebook、Yelp等评价。" },
-        "2": { "title": "回复管理", "desc": "专业回复正面和负面评价。" },
-        "3": { "title": "声誉策略", "desc": "改善在线形象的主动计划。" },
-        "4": { "title": "评价生成", "desc": "鼓励满意客户留下评价。" },
-        "5": { "title": "品牌监测", "desc": "跟踪品牌在线提及。" },
-        "6": { "title": "月度报告", "desc": "声誉评分和趋势概览。" }
-      },
-      "process": { "1": { "title": "分析", "desc": "审核当前在线声誉和评价。" }, "2": { "title": "执行", "desc": "积极管理和回复所有评价。" }, "3": { "title": "增长与优化", "desc": "持续改善声誉评分。" } }
-    },
-    "dataSync": {
-      "title": "数据同步", "subtitle": "保持所有业务数据在所有平台上同步和最新。",
-      "benefits": { "1": "消除手动输入错误", "2": "所有系统实时同步", "3": "节省数小时行政工作" },
-      "deliverables": {
-        "1": { "title": "系统审核", "desc": "映射所有数据源和平台。" },
-        "2": { "title": "集成设置", "desc": "连接CRM、POS、网站等。" },
-        "3": { "title": "自动化工作流", "desc": "数据在系统间自动流动。" },
-        "4": { "title": "错误处理", "desc": "智能冲突解决和通知。" },
-        "5": { "title": "仪表板与监控", "desc": "所有同步状态的实时概览。" },
-        "6": { "title": "持续支持", "desc": "随系统增长的维护和更新。" }
-      },
-      "process": { "1": { "title": "分析", "desc": "映射当前数据环境和痛点。" }, "2": { "title": "执行", "desc": "构建和测试所有集成和自动化。" }, "3": { "title": "增长与优化", "desc": "监控、优化和扩展连接。" } }
-    },
-    "contentCalculator": {
-      "label": "内容计算器", "title": "60秒计算价格", "subtitle": "选择您需要的并立即获取估算。",
-      "step1": "选择付款方式", "step2": "选择交付内容",
-      "oneTime": "一次性项目", "oneTimeDesc": "按项目付费。",
-      "monthly": "月度订阅", "monthlyDesc": "固定月费。",
-      "posters": "海报", "reels": "Reels", "videos": "视频", "articles": "文章",
-      "quantity": "数量", "perItem": "每件", "fixed": "固定",
-      "reelTypes": { "ai": "AI完全生成", "clientFootage": "客户素材（我们编辑）", "onSite": "我们现场拍摄" },
-      "vatNote": "所有价格不含增值税。增值税将在发票上添加。",
-      "quoteCode": "您的报价编号"
-    },
-    "pricingFAQ": {
-      "label": "常见问题", "title": "价格与流程FAQ",
-      "questions": {
-        "fixedOrFlexible": { "q": "你们的价格是固定的还是灵活的？", "a": "某些服务有固定价格（如海报、文章）。其他服务使用'起价'，取决于范围。咨询后您将获得确切报价。" },
-        "startingFrom": { "q": "'起价'是什么意思？", "a": "这是该服务的最低起始价格。最终价格取决于您的具体需求和范围。简短交谈后您将获得确切报价。" },
-        "monthlyOrOneTime": { "q": "价格是月度还是一次性的？", "a": "取决于服务。网站和内容制作是一次性的。SEO、广告管理和社交媒体管理是月度服务。" },
-        "vatIncluded": { "q": "包含增值税吗？", "a": "不。我们网站上所有价格不含增值税（21%）。增值税在发票上单独列出。" },
-        "discounts": { "q": "你们提供折扣吗？", "a": "不，我们不提供公开折扣或促销代码。我们的价格从一开始就是透明和公平的。" },
-        "calculator": { "q": "价格计算器如何运作？", "a": "计算器根据您的选择给出参考估算。这不是最终报价。通过WhatsApp发送或通话后，您将收到定制报价。" },
-        "invoice": { "q": "我何时收到发票？", "a": "报价批准后您将收到发票。月度服务每月收到发票。一次性项目在交付时收到发票。" },
-        "priceChange": { "q": "开始后价格会变吗？", "a": "不会。报价价格是最终的。仅在范围扩展（额外工作）时会制定新报价，始终事先协商。" },
-        "reelPrice": { "q": "Reels的价格如何运作？", "a": "您有3个选项：AI完全生成（€150），我们编辑您的素材（€200），或我们到现场拍摄（€250）。价格取决于我们的工作量。" },
-        "payment": { "q": "我可以在线支付吗？", "a": "不，我们不接受网站在线支付。计算后通过WhatsApp发送请求或预约通话。我们将在24小时内确认最终报价。" }
-      }
-    },
-    "generalFAQ": {
-      "label": "常见问题", "title": "一般问题",
-      "questions": {
-        "whoFor": { "q": "你们的服务面向谁？", "a": "我们的服务面向想要在线吸引更多客户的自由职业者、中小企业和成长型企业。从初创到成熟企业。" },
-        "smallOrLarge": { "q": "你们与小企业还是大企业合作？", "a": "两者都有。我们有适合小预算的初创套餐和大企业的全面解决方案。每个客户都获得同样专业的方法。" },
-        "onlyBelgium": { "q": "你们只在比利时工作吗？", "a": "我们总部在比利时，服务全欧洲客户。2026年计划扩展至中东。" },
-        "howToStart": { "q": "如何开始合作？", "a": "通过联系表单、WhatsApp发送消息或预约免费咨询。简短了解后我们制定计划和报价。" },
-        "howLongResults": { "q": "多久能看到结果？", "a": "取决于服务。广告在几天内产生结果。SEO需要3-6个月。网站在2-6周内交付。" },
-        "longTermContracts": { "q": "你们提供长期合同吗？", "a": "不。月度服务按月可取消，30天通知期。一次性项目按项目结算。" },
-        "combineServices": { "q": "我可以组合多项服务吗？", "a": "当然。许多客户组合网站与SEO和社交媒体管理。我们制定适合您目标的套餐。" }
-      }
-    },
-    "articles": {
-      "websiteSalesTool": {
-        "title": "为什么您的网站是2025年最强的销售工具",
-        "excerpt": "您的网站不仅仅是数字宣传册。在2025年，它是您最重要的销售资产。这里是原因以及您可以做什么。",
-        "metaTitle": "作为销售工具的网站 | 企业提示",
-        "metaDescription": "了解为什么您的网站是您企业最重要的销售工具。关于速度、结构和转化的实用建议。",
-        "content": "<h2>您的网站不再是可选项</h2><p>在2025年，您的网站不仅仅是人们了解您业务的地方。它是您最重要的销售工具。在潜在客户拿起电话或发送电子邮件之前，他们已经访问了您的网站。他们已经形成了意见。</p><p>问题很简单：您的网站是帮助您达成交易，还是让您失去机会？</p><h2>第一印象发生在网上</h2><p>研究表明，人们在0.05秒内对网站形成意见。这比眨眼还快。如果您的网站看起来过时、加载缓慢或难以导航，访客就会离开。他们不会回来。</p><p>您的网站是您的第一印象。它需要立即传达信任、专业和清晰。</p><h3>速度很重要</h3><p>加载时间超过3秒的网站会失去超过50%的访客。速度不是奢侈品。它是必需品。移动用户尤其没有耐心。如果您的网站没有针对速度进行优化，您每天都在失去潜在客户。</p><h2>结构创造转化</h2><p>一个漂亮的网站是不够的。它需要引导访客采取特定行动。无论是填写表格、打电话还是下订单，路径都必须清晰。</p><p>良好的结构包括：</p><ul><li>没有困惑的清晰导航</li><li>每个页面上都有突出的号召性用语</li><li>评论、认证和客户标志等信任信号</li><li>易于找到的联系信息</li></ul><h2>企业常犯的错误</h2><p>许多企业将他们的网站视为一次性项目。他们建立它，忘记它，并想知道为什么它不表现。这是最常见的错误：</p><h3>没有明确目标</h3><p>如果您不知道想让访客做什么，他们也不会知道。每个页面都需要一个目的。</p><h3>信息太多</h3><p>访客不会阅读所有内容。他们扫描。保持文本简洁，并使用标题引导视线。</p><h3>忽视移动用户</h3><p>超过60%的流量来自移动设备。如果您的网站不适合移动设备，您就忽视了大多数受众。</p><h2>您今天可以做什么</h2><p>从审核您当前的网站开始。问自己这些问题：</p><ul><li>它在3秒内加载吗？</li><li>导航简单且合乎逻辑吗？</li><li>有明确的号召性用语吗？</li><li>它在移动设备上完美运行吗？</li></ul><p>如果您对其中任何一个回答为否，那么是时候投资您的网站了。不是作为成本，而是作为销售流程的投资。</p><p>您的网站应该全天候为您工作。如果做得好，它将成为您最好的销售人员：始终可用，始终一致，始终专业。</p><p>想知道您的网站表现如何？<a href='/services/business-website'>查看我们的网站服务</a>或<a href='/contact'>请求免费网站审核</a>。</p>"
-      },
-      "socialMediaManagement": {
-        "title": "社交媒体管理：企业真正需要什么",
-        "excerpt": "社交媒体不是关于关注者。它是关于策略、一致性和真正的互动。这里是企业真正有效的方法。",
-        "metaTitle": "企业社交媒体管理 | 有效的策略",
-        "metaDescription": "了解企业真正需要从社交媒体管理中获得什么：策略胜于虚荣指标，一致性胜于趋势。",
-        "content": "<h2>超越关注者和点赞</h2><p>许多企业痴迷于关注者数量和点赞。但这些虚荣指标很少转化为实际的业务结果。拥有500个活跃关注者的企业每次都会胜过拥有50,000个被动关注者的企业。</p><p>社交媒体是一个工具。像任何工具一样，只有在有目的地使用时才有效。</p><h2>发布前先策略</h2><p>企业犯的最大错误是在没有计划的情况下发布。随机时间的随机内容导致随机结果。通常，这意味着根本没有结果。</p><p>社交媒体策略回答这些问题：</p><ul><li>谁是您的目标受众？</li><li>您为他们解决什么问题？</li><li>他们在网上哪里花费时间？</li><li>他们与什么类型的内容互动？</li></ul><p>没有这些问题的答案，您只是在制造噪音。</p><h2>一致性胜过趋势</h2><p>追逐每一个趋势既累人又无效。虽然趋势内容可以暂时提高可见度，但它很少能与受众建立持久的联系。</p><p>有效的是一致性：</p><ul><li>在可预测的时间定期发布</li><li>保持一致的视觉风格</li><li>使用相同的语气</li><li>每篇帖子都提供价值</li></ul><p>您的受众需要知道对您有什么期望。这种可预测性建立了信任。</p><h2>质量胜于数量</h2><p>每周三篇优秀的帖子胜过七篇平庸的帖子。每一条内容都应该服务于一个目的：教育、娱乐、启发或推广。</p><p>如果一篇帖子不符合这些类别之一，它可能不应该发布。</p><h3>80/20法则</h3><p>目标是80%的价值驱动内容和20%的推广内容。没有人想关注一个只谈论自己的企业。先提供价值，销售自然会随之而来。</p><h2>互动是双向的</h2><p>发布内容只是工作的一半。另一半是与受众互动。回复评论，回答问题，参与对话。</p><p>社交媒体是社交的。如果您将其视为广播平台，您就错过了重点。</p><h2>企业真正需要什么</h2><p>有效的社交媒体管理需要：</p><ul><li>与业务目标一致的清晰策略</li><li>一致的高质量内容</li><li>积极的社区互动</li><li>定期分析和优化</li></ul><p>这不是关于在每个平台上。它是关于在对您的受众重要的平台上有效。</p><p>专注于把更少的事情做得更好。您的社交媒体存在应该支持您的业务目标，而不是分散注意力。</p><p>准备好提升您的社交媒体了吗？<a href='/services/social-media-management'>探索我们的社交媒体服务</a>或查看<a href='/gallery'>我们如何为其他企业做到这一点</a>。</p>"
-      },
-      "seoExplained": {
-        "title": "SEO简单解释：客户实际上如何在线找到您",
-        "excerpt": "SEO不是魔法或操纵。它是关于让人们在搜索时容易找到您的企业。这里是它实际上如何运作的。",
-        "metaTitle": "中小企业SEO解释 | 在线被找到",
-        "metaDescription": "为企业主简单解释SEO。了解本地SEO如何运作以及为什么长期策略胜过快速黑客。",
-        "content": "<h2>SEO到底是什么？</h2><p>搜索引擎优化听起来很技术性，但概念很简单。当有人搜索您提供的服务或产品时，SEO决定了他们是找到您还是您的竞争对手。</p><p>每天，潜在客户都在搜索像您这样的企业。如果您的网站没有出现在搜索结果中，您对他们来说就是隐形的。</p><h2>搜索引擎如何思考</h2><p>Google和其他搜索引擎有一个目标：给用户他们问题的最佳可能答案。他们根据相关性、质量和用户体验评估网站。</p><p>SEO是关于让您的网站成为客户所问问题的最佳答案。</p><h3>三大支柱</h3><p>SEO建立在三个支柱上：</p><ul><li><strong>技术SEO：</strong>您的网站需要快速、安全且易于搜索引擎读取。</li><li><strong>内容：</strong>您需要回答受众问题的高质量内容。</li><li><strong>权威性：</strong>其他信誉良好的网站链接到您的网站向搜索引擎发出信任信号。</li></ul><h2>本地SEO</h2><p>对于大多数本地企业来说，本地SEO才是真正的机会所在。当有人搜索附近的服时，Google会优先考虑本地结果。</p><p>本地SEO的关键要素包括：</p><ul><li>完整且优化的Google Business资料</li><li>网络上一致的业务信息</li><li>满意客户的评论</li><li>您网站上的特定位置内容</li></ul><p>如果您在特定区域服务客户，本地SEO应该是您的首要任务。</p><h2>长期价值，而非快速黑客</h2><p>SEO不是关于技巧或操纵。这些策略可能短暂有效，但最终会适得其反。搜索引擎很复杂。它们会惩罚试图玩弄系统的网站。</p><p>可持续的SEO专注于：</p><ul><li>创建真正有用的内容</li><li>建立导致自然链接的真实关系</li><li>持续改善用户体验</li><li>在结果复合时保持耐心</li></ul><h2>您可以期待什么</h2><p>SEO是一项长期投资。大多数企业在持续努力3-6个月后开始看到有意义的结果。但与付费广告不同，结果会随着时间推移而复合。</p><p>一个优化良好的网站会月复一月、年复一年地吸引访客，而无需持续的广告费用。</p><h2>开始</h2><p>如果您是SEO新手，从基础开始：</p><ul><li>认领并优化您的Google Business资料</li><li>确保您的网站加载迅速</li><li>创建回答客户问题的内容</li><li>请满意的客户留下评论</li></ul><p>SEO不需要复杂。它需要一致。小的改进随着时间的推移会累积成显著的结果。</p><p>想让您的企业在Google上排名更高？<a href='/services/seo'>探索我们的SEO服务</a>或<a href='/contact'>请求免费SEO扫描</a>。</p>"
-      },
-      "paidAdvertising": {
-        "title": "无浪费的付费广告：如何建立智能活动",
-        "excerpt": "付费广告不是关于推广帖子并希望最好的结果。它是关于建立提供可预测、可衡量结果的系统。",
-        "metaTitle": "无浪费的Google和Meta广告 | 活动提示",
-        "metaDescription": "了解如何建立产生结果的付费广告活动。预算控制、数据和系统胜过猜测。",
-        "content": "<h2>大多数广告的问题</h2><p>许多企业尝试付费广告，看到糟糕的结果，并得出结论它不起作用。但问题很少是平台。问题是方法。</p><p>推广帖子并希望销售不是广告。这是用您的营销预算赌博。</p><h2>广告是一个系统</h2><p>有效的付费广告不是关于单个广告。它是关于建立一个将潜在客户从认知转化为行动的系统。</p><p>一个完整的广告系统包括：</p><ul><li>受众研究和定位</li><li>客户旅程中的多个接触点</li><li>每个阶段的跟踪和测量</li><li>持续测试和优化</li></ul><p>每一块都一起工作。去掉一个，整个系统表现不佳。</p><h2>预算控制</h2><p>数字广告的美妙之处在于控制。与传统广告不同，您可以从小处开始，测试，并扩展有效的。</p><p>智能预算管理意味着：</p><ul><li>以测试预算开始收集数据</li><li>在扩展前分析结果</li><li>快速削减无效的</li><li>再投资于表现好的</li></ul><p>在测试时，您永远不应该花费超过您能承受损失的金额。一旦您有了证明的结果，扩展就变成了低风险。</p><h2>数据驱动决策</h2><p>每个广告决策都应该基于数据，而不是直觉。这需要从第一天开始进行适当的跟踪。</p><p>需要跟踪的关键指标包括：</p><ul><li>每次点击成本和每次结果成本</li><li>每个阶段的转化率</li><li>广告支出回报</li><li>客户获取成本</li></ul><p>没有这些数据，您就是在盲目决策。有了它，您可以持续优化并逐月改善结果。</p><h3>测试思维</h3><p>在测试之前没有人知道什么最有效。即使是经验丰富的广告商也会运行多种变体并让数据决定赢家。</p><p>一次测试一个元素：</p><ul><li>不同的标题</li><li>不同的图片或视频</li><li>不同的受众细分</li><li>不同的优惠</li></ul><p>转化率的小幅提高会累积成结果的显著差异。</p><h2>平台是工具</h2><p>Google Ads、Facebook、Instagram、LinkedIn：每个平台都有优势和劣势。正确的选择取决于您的受众和目标。</p><p>您的潜在客户在哪里花费时间？什么类型的内容与他们产生共鸣？将平台与受众匹配，而不是相反。</p><h2>为长期建立</h2><p>目标不是单个成功的活动。目标是一个可预测、可重复的系统，持续生成线索或销售。</p><p>这需要时间和迭代。但一旦建立，它就成为一个月复一月工作的宝贵商业资产。</p><p>从小处开始，测量一切，并扩展有效的。这就是智能活动建立的方式。</p><p>准备好更有效地花费广告预算了吗？<a href='/services/advertising-management'>查看我们的广告服务</a>或了解<a href='/blog/seo-explained-simply'>SEO和广告如何协同工作</a>。</p>"
-      },
-      "onlineReputation": {
-        "title": "在线声誉：为什么评论比您想象的更重要",
-        "excerpt": "您的在线声誉比大多数营销更能影响购买决策。这里是评论为何重要以及如何有效管理它们。",
-        "metaTitle": "在线声誉与评论管理 | 中小企业指南",
-        "metaDescription": "发现为什么在线评论对企业至关重要，并了解如何有效管理和改善您的声誉。",
-        "content": "<h2>信任因素</h2><p>在购买或雇佣服务之前，大多数人做同样的事情：他们阅读评论。根据研究，超过90%的消费者在访问企业之前会阅读在线评论。</p><p>评论是规模化的口碑。它们在您与潜在客户交谈之前就建立或破坏信任。</p><h2>评论心理学</h2><p>人们信任其他客户胜过信任企业。这并不新鲜。我们总是向朋友和家人寻求推荐。互联网只是让听取成千上万陌生人的意见成为可能。</p><p>拥有数十条正面评论的企业感觉安全。没有评论或有负面评论的企业感觉有风险。这种感知直接影响购买决策。</p><h3>重要的数字</h3><p>研究表明：</p><ul><li>4星以上评级的企业获得明显更多的点击</li><li>前10条评论对感知影响最大</li><li>评级混合（不只是完美分数）显得更真实</li><li>近期评论比旧评论更重要</li></ul><h2>评论与可见度</h2><p>评论不仅影响决策。它们影响可见度。Google将评论作为本地搜索结果的排名因素。更多正面评论可以字面上将您推高至搜索结果中。</p><p>这创造了一个良性循环：更好的评论导致更多的可见度，从而带来更多的客户，从而带来更多的评论。</p><h2>管理您的声誉</h2><p>声誉管理不是关于操纵评论。它是关于赢得好评论并专业处理负面评论。</p><h3>赢得正面评论</h3><p>基础很简单：提供优质服务。除此之外：</p><ul><li>请满意的客户留下评论</li><li>通过提供直接链接使过程变得容易</li><li>在积极体验后跟进</li><li>感谢花时间评论的客户</li></ul><h3>处理负面评论</h3><p>负面评论是不可避免的。您如何处理它们比评论本身更重要。</p><ul><li>及时专业地回复</li><li>承认关注点而不辩解</li><li>提议离线解决问题</li><li>跟进任何做出的承诺</li></ul><p>对负面评论的专业回复实际上可以改善您的声誉。它向潜在客户表明您关心并承担责任。</p><h2>监控您的声誉</h2><p>您无法管理您不监控的内容。设置提醒以了解有人何时提及您的业务。定期检查与您行业相关的评论平台。</p><p>监控的关键平台：</p><ul><li>Google Business资料</li><li>行业特定评论网站</li><li>社交媒体提及</li><li>您自己的网站评论</li></ul><h2>长期观点</h2><p>建立强大的在线声誉需要时间。没有捷径。专注于提供卓越的服务，持续寻求反馈，并专业地回复所有评论。</p><p>随着时间的推移，您的声誉成为竞争对手难以复制的竞争优势。它是少数几种您培养时间越长越有价值的资产之一。</p><p>想加强您的在线声誉？<a href='/services/reputation-management'>查看我们的声誉管理服务</a>或发现<a href='/blog/seo-explained-simply'>SEO和评论如何协同工作</a>以获得更多可见度。</p>"
-      }
-    },
-    "servicesFAQ": {
-      "label": "服务常见问题", "title": "服务FAQ",
-      "questions": {
-        "onePageVsBusiness": { "q": "单页网站和企业网站有什么区别？", "a": "单页网站是一页包含所有信息（适合初创或活动，起价€500）。企业网站有多个页面、更多功能，适合想要认真增长的企业（起价€1,500）。" },
-        "seoOneTimeOrOngoing": { "q": "SEO是一次性还是持续的服务？", "a": "SEO是持续服务。一次性审核有帮助，但持久结果需要月度优化、内容创作和链接建设。" },
-        "adBudgetManagement": { "q": "你们管理广告预算还是只管理活动？", "a": "我们管理活动并优化预算。广告预算本身单独支付给平台（Meta、Google）。我们就最佳预算提供建议。" },
-        "contentOrManagement": { "q": "你们创作内容还是只管理社交媒体？", "a": "两者都有。社交媒体管理包括策略、规划和社区管理。内容（帖子、Reels、视频）可单独或作为套餐的一部分订购。" },
-        "withoutWebsite": { "q": "没有网站可以使用你们的服务吗？", "a": "可以，社交媒体管理、广告和内容制作等服务不一定需要网站。SEO当然需要网站。" },
-        "videoInSocial": { "q": "社交媒体管理包含视频内容吗？", "a": "基础视觉内容包含在内。专业视频和Reels通过我们的内容制作服务单独报价，但可以组合。" },
-        "ecommerceVsBusiness": { "q": "网店和企业网站有什么区别？", "a": "企业网站提供信息并生成线索。网店（电商）包含产品页面、购物车和在线支付的购物体验（起价€3,000）。" },
-        "reputationHowItWorks": { "q": "声誉管理具体怎么运作？", "a": "我们监控您的在线评价，专业回复反馈，帮助您收集更多正面评价。这改善您的可见度和客户信任。" },
-        "dataSyncExplained": { "q": "数据与跟踪设置包含什么？", "a": "我们安装和配置跟踪工具（Google Analytics、Meta Pixel、转化跟踪），让您确切知道哪些营销努力产生结果。" }
-      }
-    }
-  },
-  "terms": {
-    "title": "使用条款",
-    "lastUpdated": "最后更新",
-    "sections": {
-      "intro": { "title": "介绍", "content": "使用我们的网站即表示您同意这些条款。" },
-      "services": { "title": "服务", "content": "我们提供数字营销服务。具体条件在报价中确定。" },
-      "payment": { "title": "付款", "content": "除非另有约定，发票在14天内到期。" },
-      "liability": { "title": "责任", "content": "我们对间接损害不承担责任。" },
-      "ip": { "title": "知识产权", "content": "所有交付的作品在完全付款后属于客户。" },
-      "termination": { "title": "终止", "content": "合作可以通过30天书面通知终止。" },
-      "changes": { "title": "变更", "content": "我们保留修改这些条款的权利。变更将在网站上公布。" }
-    }
-  },
-  "privacy": {
-    "title": "隐私政策",
-    "lastUpdated": "最后更新",
-    "sections": {
-      "intro": { "title": "介绍", "content": "我们尊重您的隐私并认真对待数据保护。" },
-      "dataCollection": { "title": "数据收集", "content": "我们通过联系表单和分析收集个人数据。" },
-      "cookies": { "title": "Cookies", "content": "我们使用cookies来改善用户体验。" },
-      "thirdParties": { "title": "第三方", "content": "我们不向第三方出售数据。" },
-      "rights": { "title": "您的权利", "content": "您有权查看、更正或删除您的数据。" },
-      "contact": { "title": "联系", "content": "关于隐私问题：info@groppi.be" }
-    }
-  },
-  "cookies": {
-    "message": "我们使用cookies来改善您的体验。",
-    "accept": "接受",
-    "decline": "拒绝",
-    "learnMore": "了解更多"
   }
-}
