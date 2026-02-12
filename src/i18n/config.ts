@@ -124,27 +124,26 @@ export function applyDocumentDirection(code: string): void {
   }
 }
 
+const SUPPORTED_LNGS = ['ar','bn','en','es','fr','hi','it','nl','pl','pt','ru','tr','zh'];
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: ['nl', 'en'],
+    fallbackLng: 'en',
+    supportedLngs: SUPPORTED_LNGS,
+    nonExplicitSupportedLngs: true,
     load: 'languageOnly',
+    cleanCode: true,
     interpolation: {
       escapeValue: false,
     },
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
+      order: ['querystring', 'localStorage', 'navigator'],
+      lookupQuerystring: 'lng',
       caches: ['localStorage'],
       lookupLocalStorage: 'i18nextLng',
-      convertDetectedLanguage: (lng: string) => {
-        // Strip regional codes: en-US → en, nl-BE → nl
-        const base = lng.split('-')[0].toLowerCase();
-        // Check if the base code matches any supported language
-        const supported = ['ar','en','fr','es','it','pt','nl','pl','ru','tr','bn','hi','zh'];
-        return supported.includes(base) ? base : 'nl';
-      },
     },
     returnEmptyString: false,
     returnNull: false,
