@@ -14,14 +14,14 @@ const ARTICLE_SERVICE_MAP: Record<string, string[]> = {
 
 // Maps service slugs to i18n title keys
 const SERVICE_TITLE_MAP: Record<string, string> = {
-  'business-website': 'servicePages.business-website.hero.title',
-  'one-page-website': 'servicePages.one-page-website.hero.title',
-  'seo': 'servicePages.seo.hero.title',
-  'social-media-management': 'servicePages.social-media-management.hero.title',
-  'visual-content-video': 'servicePages.visual-content-video.hero.title',
-  'advertising-management': 'servicePages.advertising-management.hero.title',
-  'reputation-management': 'servicePages.reputation-management.hero.title',
-  'webshop': 'servicePages.webshop.hero.title',
+  'business-website': 'services.items.businessWebsite.title',
+  'one-page-website': 'services.items.onePage.title',
+  'seo': 'services.items.seo.title',
+  'social-media-management': 'services.items.social.title',
+  'visual-content-video': 'services.items.contentProduction.title',
+  'advertising-management': 'services.items.ads.title',
+  'reputation-management': 'services.items.reputation.title',
+  'webshop': 'services.items.ecommerce.title',
 };
 
 // Fallback short labels per slug
