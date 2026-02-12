@@ -161,15 +161,15 @@ export function getPriceDisplayString(
   t: (key: string) => string
 ): string {
   if (config.priceDisplay === 'custom') {
-    return t('home.servicesGrid.customQuote');
+    return t('pricing.customQuote');
   }
   if (config.priceDisplay === 'from' && config.priceMin) {
-    return `${t('home.servicesGrid.from')} €${config.priceMin.toLocaleString('nl-BE')}`;
+    return `${t('pricing.from')} €${config.priceMin.toLocaleString('nl-BE')}`;
   }
   if (config.priceDisplay === 'fixed' && config.priceMin) {
     return `€${config.priceMin.toLocaleString('nl-BE')}`;
   }
-  return t('home.servicesGrid.customQuote');
+  return t('pricing.customQuote');
 }
 
 // Helper function to get price suffix
@@ -178,9 +178,14 @@ export function getPriceSuffix(
   t: (key: string) => string
 ): string {
   if (config.priceDisplay === 'custom') return '';
-  if (config.priceUnit) return config.priceUnit;
-  if (config.pricingType === 'monthly') return t('home.servicesGrid.perMonth');
-  if (config.pricingType === 'one_time') return t('home.servicesGrid.oneTime');
+  // Use translation keys for price units instead of hardcoded Dutch strings
+  if (config.priceUnit) {
+    if (config.priceUnit === '/maand') return t('pricing.perMonth');
+    if (config.priceUnit === '/item') return '/ item';
+    return config.priceUnit;
+  }
+  if (config.pricingType === 'monthly') return t('pricing.perMonth');
+  if (config.pricingType === 'one_time') return t('pricing.oneTime');
   return '';
 }
 
