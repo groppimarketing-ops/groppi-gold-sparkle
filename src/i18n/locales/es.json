@@ -1288,6 +1288,251 @@
         "challenge": "Cadena de fitness quería producir contenido consistente pero no tenía tiempo ni expertise.",
         "approach": { "0": "Retainer de contenido full-service configurado", "1": "Planificación, producción y publicación", "2": "Contenido de video y foto para todas las ubicaciones", "3": "Estrategia de publicación consistente" },
         "results": { "0": "50+ videos de calidad por mes", "1": "Experiencia de marca consistente en todos los canales", "2": "Mayor engagement de miembros", "3": "Más inscripciones vía redes sociales" }
+      },
+      "cose-pazzi-torino": {
+        "shortResult": "Sitio web auténtico de pizzería italiana con fuertes visuales gastronómicos y carácter de marca local.",
+        "challenge": "Pizzeria Cose Pazzi en Turín necesitaba una presencia digital pulida que reflejara su cocina italiana auténtica y su carácter de barrio vibrante.",
+        "approach": { "0": "Estructura y optimización del sitio web", "1": "Presentación visual y jerarquía enfocada en comida", "2": "Mejoras de usabilidad mobile-first", "3": "Sensación de marca italiana local y storytelling" },
+        "results": { "0": "Branding premium del restaurante online", "1": "Fuerte visibilidad de comida y apetito visual", "2": "Recorrido del cliente claro y simple", "3": "Mejor visibilidad online y SEO local" },
+        "disclaimer": "Los visuales son ilustrativos y creados con fines de presentación."
+      },
+      "augusto-torino": {
+        "shortResult": "Sitio web elegante de restaurante con fuerte identidad visual y presentación refinada de comida.",
+        "challenge": "Ristorante Pizzeria Augusto en Turín necesitaba una presencia digital pulida que reflejara su refinada cocina italiana y ambiente acogedor.",
+        "approach": { "0": "Estructura y optimización del sitio web", "1": "Jerarquía visual y layout enfocado en comida", "2": "Rendimiento y usabilidad móvil", "3": "Integración de eventos y reservas" },
+        "results": { "0": "Branding premium del restaurante online", "1": "Recorrido claro del cliente desde menú hasta reserva", "2": "Fuerte storytelling visual en todas las páginas", "3": "Mejor visibilidad online y SEO local" },
+        "disclaimer": "Proyecto gestionado activamente por GROPPI."
+      },
+      "pummaro-torino": {
+        "shortResult": "Sitio web moderno de restaurante con fuerte presentación de comida y flujo claro del cliente.",
+        "challenge": "Pizzeria Pummarò en Turín necesitaba una presencia digital profesional que reflejara su compromiso con la cocina italiana auténtica usando ingredientes premium.",
+        "approach": { "0": "Estructura y optimización del sitio web", "1": "Jerarquía visual y presentación de comida", "2": "Mejoras de usabilidad móvil", "3": "Integración de reservas online y delivery" },
+        "results": { "0": "Layout enfocado en conversión con navegación clara", "1": "Fuerte branding local del restaurante online", "2": "Visibilidad profesional de comida y storytelling de ingredientes", "3": "Recorrido fluido del cliente desde menú hasta reserva" },
+        "disclaimer": "Proyecto gestionado activamente por GROPPI."
+      },
+      "fratelli-roselli": {
+        "shortResult": "Sitio web auténtico de restaurante italiano con fuerte presentación de comida y branding local.",
+        "challenge": "Pizzeria Fratelli Roselli en Turín tenía seguidores locales fieles durante más de 20 años, pero necesitaba una presencia digital profesional.",
+        "approach": { "0": "Estructura y optimización del sitio web", "1": "Presentación visual y layout de contenido", "2": "Mejoras de rendimiento y usabilidad", "3": "Integración de sistema de reservas online" },
+        "results": { "0": "Sitio web profesional y claro reflejando calidad de marca", "1": "Fuerte visibilidad de comida con enfoque en ingredientes premium", "2": "Recorrido claro del cliente desde menú hasta reserva", "3": "Mejor branding local del restaurante online" },
+        "disclaimer": "Proyecto gestionado activamente por GROPPI."
+      },
+      "boothuis-turnhout": {
+        "shortResult": "Sitio web limpio de restaurante y presentación visual para un negocio de hostelería local.",
+        "challenge": "Restaurant Boothuis Turnhout necesitaba una presencia digital profesional que reflejara la atmósfera y calidad del restaurante online.",
+        "approach": { "0": "Gestión del sitio web y optimización continua", "1": "Contenido visual y presentación profesional", "2": "Construcción y mantenimiento de presencia digital", "3": "Experiencia de marca consistente en todos los canales online" },
+        "results": { "0": "Sitio web profesional y claro", "1": "Fuerte presentación visual del restaurante", "2": "Mejor visibilidad online", "3": "Gestión y optimización continua" },
+        "disclaimer": "Proyecto gestionado activamente por GROPPI."
+      },
+      "sanremo-pizzeria": {
+        "shortResult": "Fuerte presencia en redes sociales y contenido visual para un restaurante local.",
+        "challenge": "Sanremo Pizzeria Restaurant tenía seguidores locales fieles, pero carecía de presencia digital profesional.",
+        "approach": { "0": "Gestión y optimización de página de Facebook", "1": "Creación de contenido visual profesional", "2": "Estrategia de redes sociales y publicación consistente", "3": "Construcción y mantenimiento de presencia digital" },
+        "results": { "0": "Presencia online profesional y consistente", "1": "Contenido visual fuerte en redes sociales", "2": "Mejor visibilidad y encontrabilidad online", "3": "Gestión y optimización continua" },
+        "disclaimer": "Proyecto gestionado activamente por GROPPI."
+      },
+      "mangiare-3840": {
+        "shortResult": "Sitio web moderno de restaurante con fuerte identidad visual.",
+        "challenge": "Mangiare 3840 tenía una fuerte reputación local pero carecía de presencia online profesional.",
+        "approach": { "0": "Sitio web completamente personalizado con diseño premium oscuro", "1": "Contenido visual y branding acorde con la atmósfera del restaurante", "2": "Soporte digital continuo y optimización", "3": "Menú y sistema de reservas integrado" },
+        "results": { "0": "Presencia online profesional fortaleciendo la experiencia de marca", "1": "Mejor experiencia de usuario para visitantes", "2": "Fuerte identidad visual en todos los canales digitales", "3": "Gestión y optimización continua" },
+        "disclaimer": "Proyecto gestionado activamente por GROPPI."
+      },
+      "ai-learn-academy": {
+        "shortResult": "Plataforma en vivo — en curso",
+        "challenge": "AI Deals necesitaba una plataforma premium que simplificara el acceso a herramientas de IA líderes a través de un modelo de suscripción, combinado con una academia educativa.",
+        "approach": { "0": "Diseño completo de plataforma y desarrollo UX/UI con tema oscuro premium", "1": "Sistema de gestión de acceso basado en suscripción", "2": "Estructura de marketplace de herramientas IA con categorización", "3": "Arquitectura de academia IA y contenido educativo", "4": "Infraestructura escalable para crecimiento", "5": "Gestión técnica continua y optimización" },
+        "results": { "0": "Marketplace personalizado de herramientas IA lanzado", "1": "Sistema de suscripción y gestión de acceso en vivo", "2": "UI oscura premium con UX enfocada en conversión", "3": "Estructura de academia IA educativa desplegada", "4": "Arquitectura escalable soportando crecimiento continuo", "5": "Plataforma gestionada y optimizada activamente por Groppi" },
+        "disclaimer": "Este es un proyecto en vivo y en curso. Diseño y gestión de plataforma por Groppi."
+      },
+      "pilotscareer": {
+        "shortResult": "Plataforma internacional de reclutamiento de aviación — en vivo",
+        "challenge": "PilotsCareer necesitaba una plataforma de reclutamiento profesional y escalable conectando pilotos de aerolíneas con oportunidades de carrera globales.",
+        "approach": { "0": "Diseño y desarrollo completo de plataforma desde cero", "1": "UI oscura premium con estética inspirada en aviación", "2": "Sistema avanzado de búsqueda y filtrado de empleos", "3": "Gestión de perfiles de piloto y solicitudes", "4": "Diseño responsive para escritorio y móvil", "5": "Optimización continua y desarrollo de features" },
+        "results": { "0": "Plataforma profesional de reclutamiento de aviación lanzada", "1": "Arquitectura escalable soportando crecimiento internacional", "2": "UX limpia e intuitiva para pilotos y reclutadores", "3": "Capacidades avanzadas de búsqueda y filtrado", "4": "Experiencia de perfil de piloto optimizada para móvil", "5": "Plataforma gestionada y desarrollada activamente por Groppi" },
+        "disclaimer": "Este es un proyecto en vivo y en curso. Diseño y gestión de plataforma por Groppi."
+      },
+      "casa-mavi": {
+        "shortResult": "Presencia digital completa para una joya mediterránea en España.",
+        "challenge": "Casa Mavi, un restaurante italiano-napolitano en Fuengirola (España), quería construir una presencia digital profesional para atraer tanto a locales como a turistas.",
+        "approach": { "0": "Sitio web personalizado con sistema de reservas online", "1": "Menú digital y creación de contenido visual", "2": "Construcción de presencia digital profesional", "3": "Estrategia de redes sociales dirigida a audiencias locales y turísticas" },
+        "results": { "0": "Sitio web profesional con sistema de reservas integrado", "1": "Fuerte identidad visual reflejando la atmósfera mediterránea", "2": "Mejor visibilidad online para turistas y locales", "3": "Gestión digital continua y optimización" },
+        "disclaimer": "Proyecto gestionado activamente por GROPPI."
+      },
+      "arte-y-cocina": {
+        "shortResult": "Identidad digital premium para una experiencia de fine-dining artística.",
+        "challenge": "ArTe y CoCiNa, un restaurante artístico de fine-dining en España, quería una presencia digital que reflejara la fusión única de arte y gastronomía.",
+        "approach": { "0": "Sitio web personalizado con identidad visual lujosa", "1": "Creación de contenido profesional de comida e interior", "2": "Construcción de presencia digital fuerte", "3": "Branding visual combinando arte y excelencia culinaria" },
+        "results": { "0": "Sitio web elegante reflejando la experiencia fine-dining online", "1": "Fuerte identidad visual con toque artístico", "2": "Mejor visibilidad online y experiencia de marca", "3": "Gestión digital continua y optimización" },
+        "disclaimer": "Proyecto gestionado activamente por GROPPI."
+      },
+      "verona-los-boliches": {
+        "shortResult": "Presencia online completa para un vibrante restaurante fusión.",
+        "challenge": "Verona Los Boliches, un restaurante fusión italiano-indio-mexicano en España, necesitaba una presencia digital profesional.",
+        "approach": { "0": "Sitio web personalizado con identidad visual", "1": "Creación de contenido profesional de comida y ambiente", "2": "Construcción de presencia online y visibilidad", "3": "Contenido visual dirigido a estilos de cocina diversos" },
+        "results": { "0": "Sitio web profesional presentando la cocina fusión con fuerza", "1": "Mejor visibilidad online para turistas y locales", "2": "Fuerte contenido visual en todos los canales digitales", "3": "Gestión digital continua y optimización" },
+        "disclaimer": "Proyecto gestionado activamente por GROPPI."
+      },
+      "happy-flavors": {
+        "shortResult": "Presencia digital profesional para auténtica cocina india en España.",
+        "challenge": "Happy Flavors Indian Restaurant quería construir una presencia online profesional reflejando cocina india auténtica y hospitalidad cálida.",
+        "approach": { "0": "Sitio web personalizado con identidad visual cálida", "1": "Creación de contenido profesional de comida y ambiente", "2": "Construcción de presencia digital y visibilidad", "3": "Contenido visual mostrando la rica cocina india" },
+        "results": { "0": "Sitio web profesional presentando cocina india auténtica", "1": "Fuerte contenido visual en todos los canales digitales", "2": "Mejor visibilidad online para turistas y locales", "3": "Gestión digital continua y optimización" },
+        "disclaimer": "Proyecto gestionado activamente por GROPPI."
+      },
+      "guest-reservations": {
+        "shortResult": "Gestión continua de plataforma para un servicio global de reservas hoteleras.",
+        "challenge": "Guest Reservations necesitaba gestión continua de plataforma, optimización web y soporte técnico para sostener su crecimiento mundial.",
+        "approach": { "0": "Gestión continua de plataforma y soporte técnico", "1": "Optimización web para mejor rendimiento y conversión", "2": "Monitoreo y mantenimiento proactivo de la plataforma de reservas", "3": "Soporte estratégico para crecimiento escalable" },
+        "results": { "0": "Mejor rendimiento de plataforma y experiencia de usuario", "1": "Mayor tasa de conversión en la plataforma de reservas", "2": "Plataforma estable y fiable para usuarios globales", "3": "Soporte técnico continuo y optimización" },
+        "disclaimer": "Proyecto en curso gestionado activamente por GROPPI."
+      },
+      "eurostars-hotels": {
+        "shortResult": "Soporte de plataforma digital y optimización de rendimiento para un grupo hotelero europeo.",
+        "challenge": "Eurostars Hotels necesitaba soporte digital continuo, gestión web y optimización de rendimiento para fortalecer su presencia online.",
+        "approach": { "0": "Soporte continuo de plataforma digital y gestión técnica", "1": "Gestión web y optimización de plataforma de reservas", "2": "Optimización de rendimiento para tiempos de carga más rápidos y mejor conversión", "3": "Soporte estratégico para crecimiento europeo" },
+        "results": { "0": "Rendimiento web optimizado y experiencia de usuario", "1": "Mayor tasa de conversión en plataforma de reservas", "2": "Plataforma digital estable y fiable para huéspedes europeos", "3": "Gestión técnica continua y optimización proactiva" },
+        "disclaimer": "Proyecto en curso gestionado activamente por GROPPI."
+      },
+      "nda-project-001": {
+        "shortResult": "+42% reservas online",
+        "challenge": "Sitio web anticuado con mala experiencia móvil generaba reservas perdidas.",
+        "approach": { "0": "Rediseño responsive del sitio web", "1": "Sistema de reservas online", "2": "Optimización SEO local" },
+        "results": { "0": "+42% reservas online", "1": "Tiempo de carga más rápido (< 2s)" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-002": {
+        "shortResult": "+70% reservas de mesa",
+        "challenge": "Bistro en centro de ciudad carecía de visibilidad online con turistas y locales.",
+        "approach": { "0": "Estrategia de Instagram Reels", "1": "Videografía de comida", "2": "Campañas de menú de temporada" },
+        "results": { "0": "+70% reservas de mesa vía social", "1": "Reel viral (50K+ visualizaciones)" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-003": {
+        "shortResult": "+55% seguidores en Instagram",
+        "challenge": "Salón de belleza sin visibilidad online con audiencia joven.",
+        "approach": { "0": "Estrategia de contenido Instagram", "1": "Serie visual antes/después", "2": "Micro-partnerships con influencers" },
+        "results": { "0": "+55% seguidores en Instagram", "1": "Mayor tasa de reservas vía DM" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-004": {
+        "shortResult": "+50% reservas",
+        "challenge": "Nuevo spa sin diferenciación en mercado wellness competitivo.",
+        "approach": { "0": "Desarrollo de identidad de marca de lujo", "1": "Sitio web optimizado para reservas", "2": "Lenguaje visual atmosférico" },
+        "results": { "0": "+50% reservas en primeros 6 meses", "1": "Posicionamiento premium logrado" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-005": {
+        "shortResult": "+38% solicitudes de presupuesto",
+        "challenge": "Empresa familiar con fuerte reputación pero identidad de marca anticuada.",
+        "approach": { "0": "Identidad de marca completamente renovada", "1": "Fotografía profesional de proyectos", "2": "Nuevo sitio web con portfolio" },
+        "results": { "0": "+38% solicitudes de presupuesto", "1": "Mejor reconocimiento de marca" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-006": {
+        "shortResult": "+85% leads",
+        "challenge": "Instalador de paneles solares en mercado creciente con mala generación de leads.",
+        "approach": { "0": "Funnels de generación de leads", "1": "Campañas Google Ads", "2": "Herramienta calculadora en el sitio web" },
+        "results": { "0": "+85% leads por mes", "1": "Costo por lead reducido a la mitad" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-007": {
+        "shortResult": "€62K ingresos en Q1",
+        "challenge": "Tienda online nueva sin base de clientes ni reconocimiento de marca.",
+        "approach": { "0": "Configuración tienda Shopify", "1": "Campañas Meta Ads", "2": "Funnels de retargeting" },
+        "results": { "0": "€62K ingresos en primer trimestre", "1": "ROAS de 3,8" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-008": {
+        "shortResult": "+130% ventas online",
+        "challenge": "Joyería quería iniciar ventas online junto a tienda física.",
+        "approach": { "0": "Configuración tienda WooCommerce", "1": "Fotografía de productos", "2": "Integración Instagram Shopping" },
+        "results": { "0": "+130% ventas online en 4 meses", "1": "Fuerte comunidad en Instagram" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-009": {
+        "shortResult": "#2 posición en Google",
+        "challenge": "Consulta médica invisible en resultados de búsqueda a pesar de fuerte reputación.",
+        "approach": { "0": "Auditoría técnica SEO y correcciones", "1": "Estrategia de contenido médico", "2": "Optimización Google My Business" },
+        "results": { "0": "#2 posición en Google para palabras clave principales", "1": "+60% tráfico orgánico" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-010": {
+        "shortResult": "+35% nuevos pacientes",
+        "challenge": "Clínica dental en región competitiva con números de pacientes nuevos en declive.",
+        "approach": { "0": "Estrategia SEO local", "1": "Campañas Google Ads", "2": "Gestión de reseñas" },
+        "results": { "0": "+35% nuevos pacientes por mes", "1": "#1 Google Maps local" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-011": {
+        "shortResult": "Ronda seed cerrada",
+        "challenge": "Startup pre-seed necesitaba apariencia profesional para inversores.",
+        "approach": { "0": "Logo e identidad visual", "1": "Diseño de pitch deck", "2": "Desarrollo de landing page" },
+        "results": { "0": "Ronda seed exitosa", "1": "Presentación profesional para inversores" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-012": {
+        "shortResult": "500+ registros en 30 días",
+        "challenge": "Producto SaaS B2B listo para lanzamiento pero sin infraestructura de marketing.",
+        "approach": { "0": "Landing page de alta conversión", "1": "Campaña LinkedIn Ads", "2": "Estrategia de content marketing" },
+        "results": { "0": "500+ registros en primer mes", "1": "Fuertes señales de product-market fit" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-013": {
+        "shortResult": "+75% leads cualificados",
+        "challenge": "Inmobiliaria dependiente de canales tradicionales, perdiendo leads online.",
+        "approach": { "0": "Campañas de generación de leads", "1": "Landing pages por proyecto", "2": "Integración CRM" },
+        "results": { "0": "+75% leads cualificados", "1": "Menor costo por lead" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-014": {
+        "shortResult": "Mayor precio de venta logrado",
+        "challenge": "Inmueble premium carecía de presentación visual que irradiara lujo.",
+        "approach": { "0": "Sitio web inmobiliario de alta gama", "1": "Fotografía con dron e interior", "2": "Integración de tours virtuales" },
+        "results": { "0": "Mayor precio de venta logrado", "1": "Ciclo de venta más rápido" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-015": {
+        "shortResult": "+32% solicitudes de proyecto",
+        "challenge": "Diseñador de interiores mostraba trabajo en redes pero sin portfolio profesional.",
+        "approach": { "0": "Sitio web portfolio con galería", "1": "Fotografía profesional de proyectos", "2": "Estrategia de blog" },
+        "results": { "0": "+32% solicitudes de proyecto", "1": "Mayor valor promedio de proyecto" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-016": {
+        "shortResult": "+55% visitas al showroom",
+        "challenge": "Tienda de cocinas con visitas en declive a pesar de oferta premium.",
+        "approach": { "0": "Google Ads con enfoque local", "1": "Contenido de inspiración en social", "2": "Tour virtual del showroom" },
+        "results": { "0": "+55% visitas al showroom", "1": "Mayor conversión de visita a venta" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-017": {
+        "shortResult": "40+ videos/mes",
+        "challenge": "Estudio fitness quería contenido consistente pero sin capacidad interna.",
+        "approach": { "0": "Retainer de contenido full-service", "1": "Producción de video en ubicación", "2": "Planificación de redes sociales" },
+        "results": { "0": "40+ videos de calidad por mes", "1": "Mayor engagement de miembros" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-018": {
+        "shortResult": "+45% miembros",
+        "challenge": "Nuevo box CrossFit necesitaba diferenciarse de competidores establecidos.",
+        "approach": { "0": "Identidad de marca potente", "1": "Contenido impulsado por comunidad", "2": "Campaña de lanzamiento" },
+        "results": { "0": "+45% miembros en primer trimestre", "1": "Comunidad fuerte construida" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-019": {
+        "shortResult": "+28% visitas al showroom",
+        "challenge": "Concesionario de coches perdía cuota de mercado ante distribuidores más grandes con presencia online más fuerte.",
+        "approach": { "0": "Nuevo sitio web con sistema de inventario", "1": "Campañas Google Ads", "2": "Estrategia de remarketing" },
+        "results": { "0": "+28% visitas al showroom", "1": "Menores costos de adquisición" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
+      },
+      "nda-project-020": {
+        "shortResult": "+45% solicitudes de contacto",
+        "challenge": "Bufete de abogados con sitio web anticuado y visibilidad online mínima.",
+        "approach": { "0": "Rediseño profesional del sitio web", "1": "Estrategia de content marketing", "2": "SEO local" },
+        "results": { "0": "+45% solicitudes de contacto", "1": "Top 5 Google local" },
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
       }
     }
   },
@@ -1804,27 +2049,81 @@
     }
   },
   "privacy": {
-    "meta": { "title": "Política de privacidad", "description": "Cómo protegemos tu privacidad y qué hacemos con tu información." },
+    "meta": { "title": "Política de privacidad", "description": "Cómo GROPPI protege y procesa tus datos personales conforme al RGPD." },
     "title": "Política de privacidad",
-    "lastUpdated": "Última actualización: ",
-    "intro": "GROPPI se compromete a proteger tu privacidad. Esta política explica cómo recopilamos, usamos y protegemos tu información personal.",
+    "subtitle": "Tu privacidad nos importa. Esta política explica cómo recopilamos, usamos y protegemos tus datos.",
+    "lastUpdated": "Última actualización",
+    "footerNote": "¿Tienes preguntas sobre esta política de privacidad? Contáctanos en info@groppi.be",
     "sections": {
-      "0": { "title": "1. Información que recopilamos", "content": "Recopilamos información que proporcionas voluntariamente (nombre, email, teléfono) cuando contactas con nosotros o solicitas nuestros servicios." },
-      "1": { "title": "2. Cómo usamos tu información", "content": "Usamos tu información para responder a consultas, proporcionar servicios y mejorar nuestra plataforma." },
-      "2": { "title": "3. Protección de datos", "content": "Implementamos medidas de seguridad técnicas y administrativas para proteger tu información personal." },
-      "3": { "title": "4. Tus derechos", "content": "Tienes derecho a acceder, corregir o eliminar tu información personal en cualquier momento." }
+      "dataCollection": {
+        "title": "Recopilación de datos",
+        "content": "Recopilamos datos personales que proporcionas voluntariamente, como:\n\n• Nombre y datos de contacto cuando completas nuestro formulario de contacto\n• Dirección de email para suscripciones al newsletter\n• CV y datos de candidatura para ofertas de empleo\n• Información empresarial para consultas comerciales\n\nTambién recopilamos automáticamente ciertos datos técnicos como dirección IP, tipo de navegador y páginas visitadas con fines analíticos."
+      },
+      "dataUsage": {
+        "title": "Uso de datos",
+        "content": "Usamos tus datos para:\n\n• Responder a tus preguntas y solicitudes\n• Enviar newsletters (solo con tu consentimiento)\n• Mejorar nuestro sitio web y servicios\n• Cumplir obligaciones legales\n• Enviar información relevante sobre nuestros servicios"
+      },
+      "dataSecurity": {
+        "title": "Seguridad de datos",
+        "content": "Nos tomamos la seguridad de tus datos en serio. Usamos:\n\n• Cifrado SSL para toda la transferencia de datos\n• Servidores y bases de datos seguros\n• Acceso limitado a datos personales\n• Auditorías de seguridad regulares\n\nA pesar de nuestros esfuerzos, ningún método de transmisión por internet puede ser 100% seguro."
+      },
+      "yourRights": {
+        "title": "Tus derechos",
+        "content": "Bajo el RGPD, tienes los siguientes derechos:\n\n• Derecho de acceso a tus datos\n• Derecho de rectificación de datos inexactos\n• Derecho de supresión de tus datos\n• Derecho a limitar el procesamiento\n• Derecho a la portabilidad de datos\n• Derecho de oposición al procesamiento\n\nContáctanos para ejercer estos derechos."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Nuestro sitio web utiliza cookies para mejorar tu experiencia:\n\n• Cookies esenciales para la funcionalidad del sitio web\n• Cookies analíticas para entender cómo los visitantes usan nuestro sitio\n• Cookies de marketing para publicidad dirigida (solo con consentimiento)\n\nPuedes gestionar las cookies a través de la configuración de tu navegador."
+      },
+      "retention": {
+        "title": "Retención de datos",
+        "content": "Conservamos tus datos solo el tiempo necesario:\n\n• Datos de contacto: 2 años después del último contacto\n• Datos de candidatura: 1 año después de completar el proceso\n• Suscriptores del newsletter: hasta la cancelación de suscripción\n• Datos analíticos: 26 meses\n\nDespués de este período, los datos se eliminan de forma segura."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Para preguntas sobre tu privacidad o para ejercer tus derechos:\n\nGROPPI\nEmail: info@groppi.be\nTeléfono: +32 456 19 87 21\n\nTambién tienes derecho a presentar una queja ante la Autoridad de Protección de Datos belga."
+      }
     }
   },
   "terms": {
-    "meta": { "title": "Términos de servicio", "description": "Los términos y condiciones para usar los servicios de GROPPI." },
+    "meta": { "title": "Términos de servicio", "description": "Lee los términos y condiciones para usar los servicios y el sitio web de GROPPI." },
     "title": "Términos de servicio",
-    "lastUpdated": "Última actualización: ",
-    "intro": "Al usar GROPPI, aceptas estos términos de servicio.",
+    "subtitle": "Estos términos rigen tu uso de nuestro sitio web y servicios. Al usar nuestros servicios, aceptas estos términos.",
+    "lastUpdated": "Última actualización",
+    "footerNote": "¿Tienes preguntas sobre estos términos? Contáctanos en info@groppi.be",
     "sections": {
-      "0": { "title": "1. Servicios", "content": "GROPPI proporciona servicios digitales incluyendo diseño web, marketing y publicidad." },
-      "1": { "title": "2. Pagos y facturación", "content": "Los servicios se facturan según el acuerdo. El pago es debido dentro de los términos especificados." },
-      "2": { "title": "3. Cancelación", "content": "Puedes cancelar servicios mensuales con notificación previa. Las tarifas no reembolsables se especifican en el contrato." },
-      "3": { "title": "4. Limitación de responsabilidad", "content": "GROPPI no es responsable por daños indirectos o consecuentes por uso de nuestros servicios." }
+      "acceptance": {
+        "title": "Aceptación de términos",
+        "content": "Al acceder o usar el sitio web y los servicios de GROPPI, aceptas estos Términos de Servicio.\n\nSi no estás de acuerdo con alguna parte de estos términos, no puedes usar nuestros servicios.\n\nNos reservamos el derecho de modificar estos términos en cualquier momento."
+      },
+      "services": {
+        "title": "Nuestros servicios",
+        "content": "GROPPI proporciona servicios de marketing digital, incluyendo:\n\n• Diseño y desarrollo web\n• Optimización para motores de búsqueda (SEO)\n• Marketing en redes sociales\n• Publicidad pagada\n• Creación de contenido\n• Identidad de marca y branding\n\nLos servicios específicos y entregables se definen en acuerdos individuales."
+      },
+      "payment": {
+        "title": "Pagos y facturación",
+        "content": "• Todos los precios son sin IVA salvo indicación contraria\n• Los pagos deben realizarse dentro de los 14 días posteriores a la fecha de factura\n• Puede requerirse un depósito del 50% para proyectos\n• Los pagos tardíos pueden incurrir en gastos administrativos\n• Nos reservamos el derecho de suspender servicios por pagos pendientes"
+      },
+      "liability": {
+        "title": "Responsabilidad",
+        "content": "• GROPPI no es responsable de daños indirectos o consecuentes\n• Nuestra responsabilidad se limita al monto pagado por el servicio específico\n• No garantizamos resultados específicos de campañas de marketing\n• Los clientes son responsables de la exactitud de la información proporcionada\n• No somos responsables de cambios realizados por plataformas de terceros"
+      },
+      "termination": {
+        "title": "Terminación",
+        "content": "• Cualquiera de las partes puede terminar el acuerdo con 30 días de aviso por escrito\n• La terminación inmediata puede ocurrir en caso de incumplimiento grave\n• Al terminar, todos los importes pendientes se vuelven inmediatamente exigibles\n• Facilitaremos la transferencia razonable de materiales después de la terminación"
+      },
+      "modifications": {
+        "title": "Modificaciones",
+        "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento.\n\nPara cambios significativos, te notificaremos por email si aplica.\n\nEl uso continuado de nuestros servicios después de las modificaciones constituye la aceptación de los nuevos términos."
+      },
+      "governing": {
+        "title": "Ley aplicable",
+        "content": "Estos términos se rigen por la ley belga.\n\nLas disputas se someterán a los tribunales competentes de Bélgica.\n\nSi alguna disposición de estos términos resulta inválida o inaplicable, las disposiciones restantes permanecerán en pleno vigor y efecto."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Para preguntas sobre estos términos:\n\nGROPPI\nEmail: info@groppi.be\nTeléfono: +32 456 19 87 21\n\nNos esforzamos por responder a todas las consultas dentro de las 48 horas."
+      }
     }
   },
   "social": {
@@ -1844,6 +2143,10 @@
     "followLinkedin": "Síguenos en LinkedIn"
   },
   "footer": {
+    "rights": "Todos los derechos reservados.",
+    "description": "Soluciones digitales desde 2016. Con sede en Bélgica.",
+    "followUs": "Síguenos",
+    "contact": "Información de contacto",
     "company": "Empresa",
     "quickLinks": "Enlaces rápidos",
     "services": "Servicios",
@@ -1875,6 +2178,30 @@
     "learnMore": "Más información",
     "accept": "Aceptar",
     "reject": "Rechazar"
+  },
+  "stats": {
+    "years": "Años de experiencia",
+    "yearsValue": "9+",
+    "clients": "Clientes satisfechos",
+    "clientsValue": "150+",
+    "projects": "Proyectos",
+    "projectsValue": "500+",
+    "team": "Miembros del equipo",
+    "teamValue": "9+"
+  },
+  "admin": {
+    "dashboard": "Panel",
+    "articles": "Artículos",
+    "media": "Media",
+    "services": "Servicios",
+    "messages": "Mensajes",
+    "settings": "Configuración",
+    "logout": "Cerrar sesión",
+    "login": "Iniciar sesión",
+    "email": "Email",
+    "password": "Contraseña",
+    "loginTitle": "Login de administrador",
+    "loginButton": "Iniciar sesión"
   },
   "_footer_merged": true
 }
