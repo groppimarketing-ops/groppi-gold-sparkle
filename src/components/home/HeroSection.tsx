@@ -56,7 +56,12 @@ const HeroSection = memo(() => {
       </video>
 
       {/* Dark overlay for contrast */}
-      <div className="absolute inset-0 z-[1] bg-background/60" />
+      <div
+        className="absolute inset-0 z-[1]"
+        style={{
+          background: 'linear-gradient(to bottom, hsl(0 0% 0% / 0.45) 0%, hsl(0 0% 0% / 0.65) 50%, hsl(0 0% 0% / 0.85) 100%)',
+        }}
+      />
 
       {/* Scrolling video strip */}
       <div
