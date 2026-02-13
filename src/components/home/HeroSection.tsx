@@ -90,6 +90,11 @@ const HeroSection = memo(() => (
       </div>
     </div>
 
+    {/* 3D Metallic Gold Emoji */}
+    <div className="hero-gold-emoji" aria-hidden="true">
+      <span className="hero-gold-emoji__inner">👑</span>
+    </div>
+
     <HeroSocialIcons />
   </section>
 ));
