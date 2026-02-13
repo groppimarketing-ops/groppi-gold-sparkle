@@ -102,7 +102,14 @@
     "extraOptions": "Opções adicionais",
     "cta": { "whatsapp": "Conversar via WhatsApp", "requestQuote": "Pedir orçamento", "planCall": "Agendar chamada", "planCallHelper": "Escolha um horário conveniente. Chamada introdutória grátis (30 min)." },
     "step1": "Escolha o tipo de pagamento",
-    "step2": "Selecione os seus conteúdos"
+    "step2": "Selecione os seus conteúdos",
+    "addonItems": {
+      "extraPages": "Página extra",
+      "seoSetup": "Configuração SEO básica",
+      "contentWriting": "Redação de conteúdo",
+      "socialIntegration": "Integração de redes sociais",
+      "analyticsSetup": "Painel de analytics"
+    }
   },
   "common": {
     "loading": "A carregar...",

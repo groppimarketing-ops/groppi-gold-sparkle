@@ -173,7 +173,14 @@
       "planCallHelper": "Kies een tijdslot dat past. Gratis kennismaking (30 min)."
     },
     "step1": "Kies je betaaltype",
-    "step2": "Kies je deliverables"
+    "step2": "Kies je deliverables",
+    "addonItems": {
+      "extraPages": "Extra pagina",
+      "seoSetup": "SEO basis setup",
+      "contentWriting": "Content schrijven",
+      "socialIntegration": "Social media integratie",
+      "analyticsSetup": "Analytics dashboard"
+    }
   },
   "common": {
     "loading": "Laden...",

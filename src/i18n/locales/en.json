@@ -173,7 +173,14 @@
       "planCallHelper": "Pick a time that works. Free intro call (30 min)."
     },
     "step1": "Choose payment type",
-    "step2": "Select your deliverables"
+    "step2": "Select your deliverables",
+    "addonItems": {
+      "extraPages": "Extra page",
+      "seoSetup": "SEO basic setup",
+      "contentWriting": "Content writing",
+      "socialIntegration": "Social media integration",
+      "analyticsSetup": "Analytics dashboard"
+    }
   },
   "common": {
     "loading": "Loading...",

@@ -76,11 +76,11 @@ const getServicePricing = (serviceKey: string) => {
 
 // Add-on options
 const ADD_ONS = {
-  extraPages: { price: 150, labelKey: 'Extra pagina (+€150)' },
-  seoSetup: { price: 200, labelKey: 'SEO basis setup (+€200)' },
-  contentWriting: { price: 250, labelKey: 'Content schrijven (+€250)' },
-  socialIntegration: { price: 100, labelKey: 'Social media integratie (+€100)' },
-  analyticsSetup: { price: 150, labelKey: 'Analytics dashboard (+€150)' },
+  extraPages: { price: 150, labelKey: 'calculator.addonItems.extraPages' },
+  seoSetup: { price: 200, labelKey: 'calculator.addonItems.seoSetup' },
+  contentWriting: { price: 250, labelKey: 'calculator.addonItems.contentWriting' },
+  socialIntegration: { price: 100, labelKey: 'calculator.addonItems.socialIntegration' },
+  analyticsSetup: { price: 150, labelKey: 'calculator.addonItems.analyticsSetup' },
 };
 
 const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps) => {
@@ -135,7 +135,7 @@ const ServicePriceCalculator = memo(({ serviceKey }: ServicePriceCalculatorProps
     const serviceName = t(`servicePage.${serviceKey}.title`, serviceKey);
     const selectedAddonsList = Object.entries(selectedAddons)
       .filter(([, enabled]) => enabled)
-      .map(([key]) => ADD_ONS[key as keyof typeof ADD_ONS]?.labelKey || key)
+      .map(([key]) => t(ADD_ONS[key as keyof typeof ADD_ONS]?.labelKey || key))
       .join(', ');
 
     const paymentLabel = paymentType === 'one_time' 
@@ -307,7 +307,7 @@ Kan je dit bevestigen?`;
                                 onCheckedChange={() => handleAddonToggle(key)}
                               />
                               <label htmlFor={key} className="text-sm text-foreground cursor-pointer">
-                                {addon.labelKey}
+                                {t(addon.labelKey)} (+€{addon.price})
                               </label>
                             </div>
                           </div>
