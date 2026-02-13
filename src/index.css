@@ -632,57 +632,57 @@
     animation: goldRipple 0.4s ease-out;
   }
 
-  /* ===== HERO 80vh VIDEO STRIP ===== */
+  /* ===== HERO PRO – CENTERED GRID ===== */
 
-  .groppi-hero80 {
-    height: 80vh;
-    min-height: 560px;
+  .groppi-hero-pro {
     background: hsl(var(--background));
+    padding: clamp(2rem, 5vw, 4rem) 0;
   }
 
-  .groppi-hero-bg {
-    background:
-      radial-gradient(60% 60% at 50% 40%, hsl(var(--gold) / 0.08), hsl(0 0% 0% / 0.92)),
-      linear-gradient(to bottom, hsl(0 0% 0% / 0.65), hsl(0 0% 0% / 0.85));
+  .groppi-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 clamp(1rem, 4vw, 3rem);
+  }
+
+  .groppi-strip-pro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(12px, 1.4vw, 22px);
+    width: 100%;
+    max-width: 1400px;
   }
 
   .groppi-card {
-    width: clamp(260px, 22vw, 420px);
     aspect-ratio: 16/9;
     border-radius: 18px;
     overflow: hidden;
     background: hsl(0 0% 2%);
-    border: 1px solid hsl(var(--gold) / 0.38);
-    box-shadow: 0 18px 55px hsl(0 0% 0% / 0.75);
+    border: 1px solid hsl(var(--gold) / 0.35);
+    box-shadow: 0 20px 60px hsl(0 0% 0% / 0.7);
     transform: translateZ(0);
-    transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+    transition: transform 250ms ease, border-color 250ms ease, box-shadow 250ms ease;
   }
 
   .groppi-card:hover {
-    border-color: hsl(var(--gold) / 0.95);
+    transform: scale(1.05);
+    border-color: hsl(var(--gold));
     box-shadow:
       0 22px 80px hsl(0 0% 0% / 0.85),
-      0 0 0 1px hsl(var(--gold) / 0.55),
-      0 0 44px hsl(var(--gold) / 0.18);
-    transform: scale(1.04);
-  }
-
-  @keyframes groppiDrift {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
-
-  .animate-groppi-drift {
-    animation: groppiDrift 42s linear infinite;
-    will-change: transform;
+      0 0 40px hsl(var(--gold) / 0.3);
   }
 
   @media (max-width: 768px) {
-    .groppi-card {
-      width: clamp(220px, 70vw, 360px);
+    .groppi-strip-pro {
+      grid-template-columns: repeat(2, 1fr);
     }
-    .animate-groppi-drift {
-      animation-duration: 55s;
+  }
+
+  @media (max-width: 480px) {
+    .groppi-strip-pro {
+      grid-template-columns: 1fr;
     }
   }
 
