@@ -34,17 +34,30 @@ const CookieConsent = () => {
   const handleAccept = () => {
     localStorage.setItem(CONSENT_KEY, 'accepted');
     setVisible(false);
-    // Fire dataLayer event for GTM
-    if (typeof window !== 'undefined' && (window as any).dataLayer) {
-      (window as any).dataLayer.push({ event: 'cookie_consent_accepted' });
+    if (typeof window !== 'undefined') {
+      const w = window as any;
+      // Update Google Consent Mode
+      if (typeof w.gtag === 'function') {
+        w.gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+          analytics_storage: 'granted',
+        });
+      }
+      // Fire dataLayer event
+      w.dataLayer = w.dataLayer || [];
+      w.dataLayer.push({ event: 'cookie_consent_accepted' });
     }
   };
 
   const handleReject = () => {
     localStorage.setItem(CONSENT_KEY, 'rejected');
     setVisible(false);
-    if (typeof window !== 'undefined' && (window as any).dataLayer) {
-      (window as any).dataLayer.push({ event: 'cookie_consent_rejected' });
+    if (typeof window !== 'undefined') {
+      const w = window as any;
+      w.dataLayer = w.dataLayer || [];
+      w.dataLayer.push({ event: 'cookie_consent_rejected' });
     }
   };
 
