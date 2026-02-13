@@ -1,13 +1,13 @@
 {
   "nav": {
-    "home": "Home",
+    "home": "Startpagina",
     "about": "Over ons",
     "services": "Diensten",
     "blog": "Blog",
     "gallery": "Portfolio",
-    "contact": "Contact",
-    "partnership": "Franchise",
-    "franchise": "Franchise",
+    "contact": "Contacteer ons",
+    "partnership": "Partnernetwerk",
+    "franchise": "Partnernetwerk",
     "careers": "Vacatures"
   },
   "careers": {
@@ -38,27 +38,27 @@
       "requirementsLabel": "Vereisten",
       "applyNow": "Solliciteer nu",
       "performanceMarketer": {
-        "title": "Performance Marketer (Meta/Google)",
+        "title": "Performance Marketeer (Meta/Google)",
         "responsibilities": "Beheer en optimaliseer betaalde campagnes op Meta en Google. Analyseer data en rapporteer resultaten.",
         "requirements": "2+ jaar ervaring met paid advertising. Kennis van Meta Ads Manager en Google Ads. Data-gedreven mindset."
       },
       "seoSpecialist": {
-        "title": "SEO Specialist",
+        "title": "SEO-specialist",
         "responsibilities": "Ontwikkel en implementeer SEO-strategieën. Voer technische audits uit en optimaliseer content.",
         "requirements": "2+ jaar SEO-ervaring. Kennis van technische SEO, keyword research en content optimalisatie."
       },
       "webDesigner": {
-        "title": "Web Designer (UI/UX)",
+        "title": "Webdesigner (UI/UX)",
         "responsibilities": "Ontwerp moderne, conversie-geoptimaliseerde websites. Creëer wireframes en prototypes.",
         "requirements": "Portfolio met webdesign projecten. Vaardigheid in Figma of vergelijkbare tools. Begrip van UX-principes."
       },
       "contentCreator": {
-        "title": "Content Creator (Video/AI)",
+        "title": "Contentmaker (Video/AI)",
         "responsibilities": "Produceer video content voor social media. Werk met AI-tools voor content creatie.",
         "requirements": "Ervaring met videobewerking. Kennis van social media trends. Creativiteit en oog voor detail."
       },
       "salesBd": {
-        "title": "Sales / Business Development",
+        "title": "Verkoop / Bedrijfsontwikkeling",
         "responsibilities": "Identificeer en benader potentiële klanten. Bouw relaties op en sluit deals.",
         "requirements": "Ervaring in B2B sales. Uitstekende communicatievaardigheden. Resultaatgericht en proactief."
       }
@@ -75,7 +75,7 @@
       "role": "Functie",
       "rolePlaceholder": "Selecteer een functie",
       "otherRole": "Andere / Spontane sollicitatie",
-      "linkedin": "LinkedIn / Portfolio URL",
+      "linkedin": "LinkedIn / Portfolio link",
       "linkedinPlaceholder": "https://linkedin.com/in/jouw-profiel",
       "message": "Korte boodschap",
       "messagePlaceholder": "Vertel ons waarom je geïnteresseerd bent (optioneel)",
@@ -163,11 +163,11 @@
     "subtotal": "Subtotaal",
     "total": "Totaal",
     "basePrice": "Basisprijs",
-    "addons": "Add-ons",
+    "addons": "Extra opties",
     "configurePackage": "Configureer je pakket",
     "extraOptions": "Extra opties",
     "cta": {
-      "whatsapp": "Chat via WhatsApp",
+      "whatsapp": "Stuur een bericht via WhatsApp",
       "requestQuote": "Vraag een offerte aan",
       "planCall": "Plan een call",
       "planCallHelper": "Kies een tijdslot dat past. Gratis kennismaking (30 min)."
@@ -179,7 +179,7 @@
       "seoSetup": "SEO basis setup",
       "contentWriting": "Content schrijven",
       "socialIntegration": "Social media integratie",
-      "analyticsSetup": "Analytics dashboard"
+      "analyticsSetup": "Analysedashboard"
     }
   },
   "common": {
@@ -223,7 +223,7 @@
     "company": "Bedrijf",
     "message": "Bericht",
     "subject": "Onderwerp",
-    "website": "Website",
+    "website": "Websiteadres",
     "budget": "Budget",
     "submitSuccess": "Bedankt! We nemen snel contact op.",
     "submitError": "Er ging iets mis. Probeer het opnieuw."
@@ -245,7 +245,7 @@
       "proof3": "Meer klanten, minder verspild budget",
       "ctaPrimary": "Bekijk diensten & prijzen",
       "ctaSecondary": "Vraag een voorstel aan",
-      "scrollHint": "Scroll",
+      "scrollHint": "Ontdek meer",
       "logoAlt": "GROPPI Gold Standard",
       "chartLeads": "LEADS",
       "chartSales": "SALES",
@@ -271,10 +271,10 @@
         "online": {
           "title": "Zet je zaak online",
           "services": {
-            "businessWebsite": "Business website",
+            "businessWebsite": "Bedrijfswebsite",
             "onePage": "One-page website",
             "webshop": "Webshop",
-            "visualContent": "Visual content & video"
+            "visualContent": "Visuele content & video"
           }
         },
         "findable": {
@@ -283,14 +283,14 @@
             "seo": "SEO (lokale & technische SEO)",
             "googleBusiness": "Google Business optimalisatie",
             "sea": "Zoekmachine advertenties (SEA)",
-            "dataTracking": "Data & tracking setup"
+            "dataTracking": "Data & tracking instelling"
           }
         },
         "standout": {
           "title": "Laat je zaak opvallen",
           "services": {
             "branding": "Branding & visuele identiteit",
-            "socialContent": "Social media content",
+            "socialContent": "Social media-inhoud",
             "videoAds": "Video advertenties",
             "creativeCampaigns": "Creatieve campagnes"
           }
@@ -298,9 +298,9 @@
         "attract": {
           "title": "Trek klanten aan",
           "services": {
-            "adManagement": "Advertising management",
-            "socialManagement": "Social media management",
-            "leadGen": "Lead generation funnels",
+            "adManagement": "Advertentiebeheer",
+            "socialManagement": "Social mediabeheer",
+            "leadGen": "Leadgeneratie-funnels",
             "conversionOptimization": "Conversie-optimalisatie"
           }
         }
@@ -348,7 +348,7 @@
       "description": "Elke dienst staat helder uitgelegd: wat je krijgt, wat het kost en hoe het werkt. Geen gedoe.",
       "featured": "Meest gekozen",
       "viewDetails": "Meer info",
-      "watchVideo": "Video",
+      "watchVideo": "Bekijk video",
       "buildPlan": "Stel je plan samen",
       "seePricing": "Bekijk prijs",
       "customQuote": "Offerte op maat",
@@ -376,12 +376,12 @@
           }
         },
         "ecommerce": {
-          "title": "Webshop",
+          "title": "Webshop (E-commerce)",
           "desc": "Verkoop online met een webshop die werkt — van product tot betaling.",
           "deliverables": {
             "0": "Volledige webshop setup",
             "1": "Betalings- en verzendintegratie",
-            "2": "Product management"
+            "2": "Productbeheer"
           }
         },
         "ads": {
@@ -407,7 +407,7 @@
           "desc": "Professionele aanwezigheid op social media — zonder dat jij er tijd aan verliest.",
           "deliverables": {
             "0": "Content planning & creatie",
-            "1": "Community management",
+            "1": "Communitybeheer",
             "2": "Maandelijkse analyse"
           }
         },
@@ -415,7 +415,7 @@
           "title": "Mobiele App Ontwikkeling",
           "desc": "Een eigen app voor iOS & Android — gebouwd op maat van jouw bedrijf.",
           "deliverables": {
-            "0": "UX/UI design + development",
+            "0": "UX/UI-ontwerp + ontwikkeling",
             "1": "Backend & integraties",
             "2": "App Store lancering support"
           }
@@ -427,7 +427,7 @@
         "overview": "Overzicht",
         "deliverables": "Wat je krijgt",
         "pricing": "Prijs & logica",
-        "video": "Video",
+        "video": "Bekijk video",
         "calculator": "Planbouwer"
       },
       "overview": {
@@ -469,7 +469,7 @@
       "subtitle": "Vertrouwd door bedrijven",
       "title": "Vertrouwd door bedrijven in België & Europa",
       "ndaNote": "*Sommige projecten vallen onder NDA en kunnen niet publiek worden getoond.*",
-      "logoPlaceholder": "LOGO"
+      "logoPlaceholder": "MERK"
     },
     "clientLogoMarquee": {
       "eyebrow": "ONZE KLANTEN",
@@ -490,11 +490,11 @@
         "beauty": "Schoonheidskliniek België",
         "realEstate": "Vastgoedkantoor (BE)",
         "construction": "Brussels Bouwstudio",
-        "startup": "Tech Startup (EU)",
+        "startup": "Technologische startup (EU)",
         "logistics": "Logistiek Bedrijf (BE)",
         "professional": "Professioneel Dienstverleningsbureau",
-        "hospitality": "Hospitality Team",
-        "b2b": "B2B Platform (EU)"
+        "hospitality": "Horecateam",
+        "b2b": "B2B-platform (EU)"
       },
       "testimonials": {
         "testimonial1": {
@@ -514,7 +514,7 @@
         "title": "Wil je weten wat wij voor jouw zaak kunnen doen?",
         "subtitle": "Plan een kort gesprek of stuur je situatie. Wij komen terug met een concreet plan — geen verplichtingen.",
         "primaryButton": "Vraag een voorstel aan →",
-        "secondaryButton": "Chat via WhatsApp"
+        "secondaryButton": "Stuur een bericht via WhatsApp"
       }
     },
     "trustSectors": {
@@ -531,7 +531,7 @@
       "cta": "Bekijk diensten & prijzen",
       "sectors": {
         "restaurant": {
-          "title": "Restaurant's & Hotel's",
+          "title": "Restaurants & Hotels",
           "subtitle": "Meer reservaties, meer zichtbaarheid."
         },
         "interior": {
@@ -548,7 +548,7 @@
         },
         "realEstate": {
           "title": "Vastgoed",
-          "subtitle": "Premium branding + lead flow."
+          "subtitle": "Premium branding + stroom van leads."
         },
         "health": {
           "title": "Beauty & Verzorging",
@@ -575,7 +575,7 @@
         "experience": "jaar ervaring",
         "focus": "BE + EU + Wereldwijd",
         "system": "geen chaos, wél structuur",
-        "premium": "branding + performance"
+        "premium": "branding + prestaties"
       },
       "statsValues": {
         "focus": "BE + EU + Wereldwijd",
@@ -608,34 +608,34 @@
         "restaurants": "Restaurants & horeca",
         "retail": "Retail & lokale winkels",
         "interior": "Interieur & renovatie",
-        "beauty": "Beauty & wellness",
+        "beauty": "Schoonheid & welzijn",
         "ecommerce": "E-commerce",
         "realEstate": "Vastgoed",
         "localServices": "Lokale diensten",
         "sme": "KMO's & starters",
         "medical": "Medisch / klinieken",
-        "startups": "SaaS & startups",
+        "startups": "SaaS & starters",
         "professionalServices": "Professionele diensten"
       }
     },
     "portfolio": {
       "subtitle": "Ons werk",
-      "title": "Portfolio highlights",
+      "title": "Uitgelichte projecten",
       "thumbnailPlaceholder": "Project afbeelding",
       "viewCase": "Bekijk case",
       "viewAll": "Bekijk volledig portfolio",
       "tags": {
-        "website": "Website",
-        "branding": "Branding",
+        "website": "Websites",
+        "branding": "Huisstijl",
         "ads": "Advertenties",
-        "social": "Social",
+        "social": "Social media",
         "ecommerce": "E-commerce",
         "seo": "SEO",
         "content": "Content"
       },
       "projects": {
         "restaurant-branding": {
-          "title": "Restaurant Branding",
+          "title": "Restaurant Huisstijl",
           "metric": "+180% reserveringen"
         },
         "mode-webshop": {
@@ -643,7 +643,7 @@
           "metric": "€85K omzet in 3 maanden"
         },
         "b2b-platform": {
-          "title": "B2B Platform",
+          "title": "B2B-platform",
           "metric": "+320% leads"
         },
         "bouwbedrijf-website": {
@@ -655,7 +655,7 @@
           "metric": "2.4M bereik"
         },
         "tech-startup-branding": {
-          "title": "Tech Startup Branding",
+          "title": "Huisstijl voor tech-startup",
           "metric": "Complete merkidentiteit"
         },
         "e-commerce-groei": {
@@ -675,7 +675,7 @@
       "solutionLabel": "Onze aanpak",
       "cta": "Wil je vergelijkbare resultaten? Neem contact op",
       "industries": {
-        "restaurant": "Restaurant",
+        "restaurant": "Horeca",
         "ecommerce": "E-commerce",
         "construction": "Bouw"
       },
@@ -750,7 +750,7 @@
         "desc": "Advertentiebeheer, SEO en social media management."
       },
       "branding": {
-        "title": "Branding & Design",
+        "title": "Huisstijl & ontwerp",
         "desc": "Visuele identiteit en merkstrategie die blijft hangen."
       }
     },
@@ -803,14 +803,14 @@
       "starter": "Perfect voor starters en kleine projecten",
       "growth": "Ideaal voor groeiende bedrijven",
       "pro": "Volledige ondersteuning voor ambitieuze merken",
-      "popular": "Populair",
+      "popular": "Meest gekozen",
       "cta": "Bekijk alle pakketten"
     },
     "cta": {
       "title": "Klaar om concreet aan de slag te gaan?",
       "description": "Vertel ons je situatie. Wij komen terug met een plan dat past bij jouw bedrijf — zonder verplichtingen.",
       "contact": "Neem contact op",
-      "whatsapp": "Chat via WhatsApp"
+      "whatsapp": "Stuur een bericht via WhatsApp"
     }
   },
   "about": {
@@ -880,7 +880,7 @@
       "years": "Jaar ervaring",
       "clients": "Tevreden klanten",
       "projects": "Afgeronde projecten",
-      "team": "Professionals"
+      "team": "Vakmensen"
     },
     "timeline": {
       "2016": {
@@ -1110,7 +1110,7 @@
     "audience": {
       "business": "Bedrijven",
       "individual": "Particulieren",
-      "creator": "Creators"
+      "creator": "Contentmakers"
     },
     "packages": {
       "starter": "Starter",
@@ -1168,19 +1168,19 @@
           "0": "Korte video's (30-60 sec) voor social media",
           "1": "Lange video's voor website & YouTube",
           "2": "Professionele productfotografie",
-          "3": "Social media visuals & graphics",
+          "3": "Social media-beelden & graphics",
           "4": "Merkgebonden contentkalender"
         },
         "packages": {
           "starter": {
             "0": "2-4 korte video's per maand",
-            "1": "8 social media posts",
+            "1": "8 social media-berichten",
             "2": "Basiscontentplanning",
-            "3": "1 platform focus"
+            "3": "Focus op 1 platform"
           },
           "growth": {
             "0": "4-8 korte + 1-2 lange video's",
-            "1": "16 social media posts",
+            "1": "16 social media-berichten",
             "2": "Artikelen (per woordaantal)",
             "3": "Multi-platform optimalisatie"
           },
@@ -1249,7 +1249,7 @@
         "description": "Volledig beheer van je social media aanwezigheid. Contentcreatie, planning, engagement en groeistrategieën.",
         "features": {
           "0": "Contentkalender & planning",
-          "1": "Community management",
+          "1": "Communitybeheer",
           "2": "Engagement & groei",
           "3": "Maandelijkse rapportage"
         }
@@ -1258,7 +1258,7 @@
         "title": "Reputatie & Reviewbeheer",
         "description": "Bouw en bescherm je online reputatie. Reviewbeheer, responsstrategieën en merkmonitoring.",
         "features": {
-          "0": "Review monitoring",
+          "0": "Reviewmonitoring",
           "1": "Responsbeheer",
           "2": "Reputatieherstel",
           "3": "Merksentiment analyse"
@@ -1278,9 +1278,9 @@
         "title": "Mobiele App Ontwikkeling",
         "description": "Lanceer een snelle iOS & Android app met een native feel — gebouwd voor groei.",
         "features": {
-          "0": "iOS & Android (native feel)",
-          "1": "Schone UX + snelle performance",
-          "2": "App Store & Play Store launch",
+           "0": "iOS & Android (native gevoel)",
+           "1": "Strak UX-ontwerp + snelle prestaties",
+           "2": "App Store & Play Store lancering",
           "3": "Backend & API-integraties"
         }
       }
@@ -1421,7 +1421,7 @@
       "approach": "Onze aanpak",
       "results": "Resultaat",
       "ctaPrimary": "Vraag een offerte aan",
-      "ctaWhatsApp": "Chat via WhatsApp"
+      "ctaWhatsApp": "Stuur een bericht via WhatsApp"
     },
     "items": {
       "castello-vicchiomaggio": {
@@ -1435,14 +1435,14 @@
         "shortResult": "Authentieke Italiaanse pizzeria-website met sterke food-gerichte visuals en lokaal merkkarakter.",
         "challenge": "Pizzeria Cose Pazzi in Turijn had een gepolijste digitale aanwezigheid nodig die hun authentieke Italiaanse keuken en levendig buurtkarakter weerspiegelde, zowel locals als bezoekers aantrekkend.",
         "approach": { "0": "Website structuur & optimalisatie", "1": "Visuele presentatie & food-gerichte hiërarchie", "2": "Mobile-first bruikbaarheidsverbeteringen", "3": "Lokaal Italiaans merkgevoel en storytelling" },
-        "results": { "0": "Premium restaurant branding online", "1": "Sterke food-zichtbaarheid en eetlust-appeal", "2": "Duidelijke en eenvoudige klantreis", "3": "Verbeterde online zichtbaarheid en lokale SEO" },
+        "results": { "0": "Premium restauranthuisstijl online", "1": "Sterke food-zichtbaarheid en eetlust-appeal", "2": "Duidelijke en eenvoudige klantreis", "3": "Verbeterde online zichtbaarheid en lokale SEO" },
         "disclaimer": "Visuals zijn illustratief en gemaakt voor presentatiedoeleinden."
       },
       "augusto-torino": {
         "shortResult": "Elegante restaurantwebsite met sterke visuele identiteit en verfijnde food-presentatie.",
         "challenge": "Ristorante Pizzeria Augusto in Turijn had een gepolijste digitale aanwezigheid nodig die hun verfijnde Italiaanse keuken en gastvrije sfeer weerspiegelde, zowel locals als bezoekers aantrekkend.",
         "approach": { "0": "Website structuur & optimalisatie", "1": "Visuele hiërarchie & food-gerichte layout", "2": "Prestatie en mobiele bruikbaarheid", "3": "Evenement- en reserveringsintegratie" },
-        "results": { "0": "Premium restaurant branding online", "1": "Duidelijke klantreis van menu tot boeking", "2": "Sterke visuele storytelling op alle pagina's", "3": "Verbeterde online zichtbaarheid en lokale SEO" },
+        "results": { "0": "Premium restauranthuisstijl online", "1": "Duidelijke klantreis van menu tot boeking", "2": "Sterke visuele storytelling op alle pagina's", "3": "Verbeterde online zichtbaarheid en lokale SEO" },
         "disclaimer": "Project actief beheerd door GROPPI."
       },
       "pummaro-torino": {
@@ -1608,7 +1608,7 @@
       "nda-project-001": {
         "shortResult": "+42% online reserveringen",
         "challenge": "Verouderde website met slechte mobiele ervaring leidde tot gemiste reserveringen.",
-        "approach": { "0": "Responsive website redesign", "1": "Online reserveringssysteem", "2": "Lokale SEO optimalisatie" },
+        "approach": { "0": "Responsive website herontwerp", "1": "Online reserveringssysteem", "2": "Lokale SEO optimalisatie" },
         "results": { "0": "+42% online reserveringen", "1": "Snellere laadtijd (< 2s)" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
@@ -1616,13 +1616,13 @@
         "shortResult": "+70% tafelreserveringen",
         "challenge": "Bistro in hartje stad miste online zichtbaarheid bij toeristen en locals.",
         "approach": { "0": "Instagram Reels strategie", "1": "Food videografie", "2": "Seizoensmenu campagnes" },
-        "results": { "0": "+70% tafelreserveringen via social", "1": "Viral Reel (50K+ views)" },
+        "results": { "0": "+70% tafelreserveringen via social", "1": "Virale Reel (50K+ views)" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-003": {
         "shortResult": "+55% Instagram volgers",
         "challenge": "Schoonheidssalon miste online zichtbaarheid bij jongere doelgroep.",
-        "approach": { "0": "Instagram contentstrategie", "1": "Before/after visuele reeks", "2": "Influencer micro-partnerships" },
+        "approach": { "0": "Instagram contentstrategie", "1": "Before/after visuele reeks", "2": "Influencer micro-samenwerkingen" },
         "results": { "0": "+55% Instagram volgers", "1": "Hogere booking rate via DM" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
@@ -1643,14 +1643,14 @@
       "nda-project-006": {
         "shortResult": "+85% leads",
         "challenge": "Zonnepanelen installateur in groeiende markt maar slechte lead generatie.",
-        "approach": { "0": "Lead generation funnels", "1": "Google Ads campagnes", "2": "Calculator tool op website" },
+        "approach": { "0": "Leadgeneratie-funnels", "1": "Google Ads campagnes", "2": "Calculator tool op website" },
         "results": { "0": "+85% leads per maand", "1": "Cost per lead gehalveerd" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-007": {
         "shortResult": "€62K omzet in Q1",
         "challenge": "Nieuwe webshop zonder bestaand klantenbestand of merkbekendheid.",
-        "approach": { "0": "Shopify webshop configuratie", "1": "Meta Ads campagnes", "2": "Retargeting funnels" },
+        "approach": { "0": "Shopify webshop configuratie", "1": "Meta Ads campagnes", "2": "Retargeting-funnels" },
         "results": { "0": "€62K omzet in eerste kwartaal", "1": "ROAS van 3,8" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
@@ -1671,35 +1671,35 @@
       "nda-project-010": {
         "shortResult": "+35% nieuwe patiënten",
         "challenge": "Tandartspraktijk in competitieve regio met dalende nieuwe patiëntenaantallen.",
-        "approach": { "0": "Lokale SEO strategie", "1": "Google Ads campagnes", "2": "Review management" },
+        "approach": { "0": "Lokale SEO strategie", "1": "Google Ads campagnes", "2": "Reviewbeheer" },
         "results": { "0": "+35% nieuwe patiënten per maand", "1": "#1 Google Maps lokaal" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-011": {
         "shortResult": "Seed ronde gesloten",
         "challenge": "Pre-seed startup had professionele uitstraling nodig voor investeerders.",
-        "approach": { "0": "Logo en visuele identiteit", "1": "Pitch deck design", "2": "Landing page ontwikkeling" },
+        "approach": { "0": "Logo en visuele identiteit", "1": "Pitchdeck-ontwerp", "2": "Landing page ontwikkeling" },
         "results": { "0": "Succesvolle seed ronde", "1": "Professionele investor presentatie" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-012": {
         "shortResult": "500+ sign-ups in 30 dagen",
         "challenge": "B2B SaaS product klaar voor lancering maar zonder marketing infrastructuur.",
-        "approach": { "0": "High-converting landing page", "1": "LinkedIn Ads campagne", "2": "Content marketing strategie" },
+        "approach": { "0": "Conversiegerichte landingspagina", "1": "LinkedIn Ads campagne", "2": "Content marketing strategie" },
         "results": { "0": "500+ sign-ups in eerste maand", "1": "Sterke product-market fit signalen" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-013": {
         "shortResult": "+75% gekwalificeerde leads",
         "challenge": "Vastgoedkantoor afhankelijk van traditionele kanalen, miste online leads.",
-        "approach": { "0": "Lead generation campagnes", "1": "Landing pages per project", "2": "CRM integratie" },
+        "approach": { "0": "Leadgeneratie campagnes", "1": "Landingspagina's per project", "2": "CRM integratie" },
         "results": { "0": "+75% gekwalificeerde leads", "1": "Lagere cost per lead" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-014": {
         "shortResult": "Hogere vraagprijs gerealiseerd",
         "challenge": "Premium vastgoed miste visuele presentatie die de luxe uitstraalde.",
-        "approach": { "0": "High-end property website", "1": "Drone en interieur fotografie", "2": "Virtual tours integratie" },
+        "approach": { "0": "Luxe vastgoedwebsite", "1": "Drone en interieur fotografie", "2": "Virtual tours integratie" },
         "results": { "0": "Hogere vraagprijs gerealiseerd", "1": "Snellere verkoopcyclus" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
@@ -1713,14 +1713,14 @@
       "nda-project-016": {
         "shortResult": "+55% showroom bezoeken",
         "challenge": "Keukenwinkel had dalende bezoekersaantallen ondanks premium aanbod.",
-        "approach": { "0": "Google Ads met lokale focus", "1": "Inspiratie content op social", "2": "Virtual showroom tour" },
+        "approach": { "0": "Google Ads met lokale focus", "1": "Inspiratie content op social", "2": "Virtuele showroomrondleiding" },
         "results": { "0": "+55% showroom bezoeken", "1": "Hogere conversie van bezoek naar verkoop" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-017": {
         "shortResult": "40+ video's/maand",
         "challenge": "Fitnessstudio wilde consistent content maar had geen interne capaciteit.",
-        "approach": { "0": "Full-service content retainer", "1": "Video productie op locatie", "2": "Social media planning" },
+        "approach": { "0": "Full-service content retainer", "1": "Video productie op locatie", "2": "Social media-planning" },
         "results": { "0": "40+ kwalitatieve video's per maand", "1": "Hogere ledenbetrokkenheid" },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
@@ -1853,7 +1853,7 @@
   "admin": {
     "dashboard": "Dashboard",
     "articles": "Artikelen",
-    "media": "Media",
+    "media": "Mediabestanden",
     "services": "Diensten",
     "messages": "Berichten",
     "settings": "Instellingen",
@@ -1866,7 +1866,7 @@
   },
   "social": {
     "whatsapp": "WhatsApp",
-    "whatsappChat": "Chat via WhatsApp",
+    "whatsappChat": "Stuur een bericht via WhatsApp",
     "callUs": "Bel ons",
     "emailUs": "Stuur een e-mail",
     "followUs": "Volg ons op social media",
@@ -1915,11 +1915,11 @@
     },
     "frequency": {
       "2month": "2 posts per maand",
-      "1week": "1 post per week",
-      "2week": "2 posts per week",
-      "3week": "3 posts per week",
-      "4week": "4 posts per week",
-      "5week": "5 posts per week"
+      "1week": "1 bericht per week",
+      "2week": "2 berichten per week",
+      "3week": "3 berichten per week",
+      "4week": "4 berichten per week",
+      "5week": "5 berichten per week"
     },
     "adsBudget": {
       "none": "Geen betaalde campagnes",
@@ -1944,7 +1944,7 @@
         "label": "E-mail marketingcampagnes"
       },
       "postsPack": {
-        "label": "Social media posts (10-pack)"
+        "label": "Social media-berichten (10 stuks)"
       },
       "analyticsDashboard": {
         "label": "Geavanceerd analyse-dashboard"
@@ -1955,7 +1955,7 @@
       "managementFee": "Geschatte beheerkost",
       "channels": "Kanalen",
       "frequency": "Postfrequentie",
-      "addons": "Add-ons",
+      "addons": "Extra opties",
       "adsBudget": "Advertentiebudget (rechtstreeks betaald)",
       "total": "Totaal per maand",
       "included": "inbegrepen"
@@ -2002,7 +2002,7 @@
       "item3": "Transparante prijzen",
       "item4": "Systemen die schalen",
       "item5": "Premium oplevering",
-      "item6": "Win-win partners"
+      "item6": "Win-win samenwerking"
     },
     "clarity": {
       "subtitle": "Wat dit programma is",
@@ -2040,10 +2040,10 @@
         "bureauOwners": "Marketingbureau-eigenaars",
         "growthMarketeers": "Freelance growth marketeers",
         "webStudios": "Web- & development studios",
-        "contentTeams": "Content & video teams",
+        "contentTeams": "Content- & videoteams",
         "adsSpecialists": "Ads-specialisten",
         "seoSpecialists": "SEO-specialisten",
-        "socialAgencies": "Social media agencies"
+        "socialAgencies": "Social media-bureaus"
       },
       "note": "Selectie gebeurt op kwaliteit en mindset."
     },
@@ -2143,7 +2143,7 @@
     "allCases": "Alle cases",
     "cases": {
       "restaurant-branding": {
-        "title": "Restaurant Branding & Website",
+        "title": "Restaurant Huisstijl & Website",
         "challenge": "Lage online zichtbaarheid en weinig reserveringen via digitale kanalen.",
         "approach": "Nieuwe merkidentiteit + moderne website + Google Ads campagne.",
         "result": "+180% online reserveringen"
@@ -2155,9 +2155,9 @@
         "result": "€85K omzet in eerste 3 maanden"
       },
       "b2b-platform": {
-        "title": "B2B Lead Generation Platform",
+        "title": "B2B Leadgeneratieplatform",
         "challenge": "Te weinig gekwalificeerde leads voor B2B dienstverlening.",
-        "approach": "Lead generation website + LinkedIn Ads + content marketing.",
+        "approach": "Leadgeneratie-website + LinkedIn Ads + contentmarketing.",
         "result": "+320% gekwalificeerde leads"
       },
       "bouwbedrijf-website": {
@@ -2173,7 +2173,7 @@
         "result": "2.4 miljoen bereik"
       },
       "tech-startup-branding": {
-        "title": "Tech Startup Complete Branding",
+        "title": "Volledige huisstijl voor tech-startup",
         "challenge": "Startup zonder visuele identiteit of merkpositie.",
         "approach": "Merkstrategie + logo design + website + pitch deck.",
         "result": "Complete merkidentiteit gelanceerd"
@@ -2196,7 +2196,7 @@
     "defaultDescription": "{{service}} — Professionele dienst door GROPPI Marketing Bureau.",
     "cta": {
       "requestQuote": "Vraag een offerte aan",
-      "whatsapp": "Chat via WhatsApp",
+      "whatsapp": "Stuur een bericht via WhatsApp",
       "planCall": "Plan een call"
     },
     "trustNote": "Transparante prijzen. Geen verborgen kosten.",
@@ -2222,8 +2222,8 @@
       "addonsLabel": "Extra opties",
       "selectPlaceholder": "Selecteer...",
       "month": "maand",
-      "monthlyFee": "Geschatte maandelijkse service fee",
-      "setupFee": "Setup fee",
+      "monthlyFee": "Geschatte maandelijkse servicekost",
+      "setupFee": "Opstartkost",
       "oneTime": "eenmalig",
       "firstMonthTotal": "Totaal eerste maand",
       "disclaimer": "Indicatieve prijs. Definitieve offerte na korte intake.",
@@ -2234,7 +2234,7 @@
         "restaurant": "Restaurant / horeca",
         "retail": "Retail & lokale shops",
         "construction": "Bouw & renovatie",
-        "beauty": "Beauty & wellness",
+        "beauty": "Schoonheid & welzijn",
         "ecommerce": "E-commerce",
         "other": "Andere"
       },
@@ -2253,8 +2253,8 @@
         "extraContent12": "Extra content (12 posts/maand)",
         "extraVideo2": "Extra video ads (2/maand)",
         "extraVideo6": "Extra video ads (6/maand)",
-        "extraLandingPage": "Extra landing page",
-        "extraTracking": "Extra tracking setup"
+        "extraLandingPage": "Extra landingspagina",
+        "extraTracking": "Extra tracking instelling"
       },
       "whatsappTemplate": "Hallo! Mijn berekening voor {{service}}:\n\n• Bedrijfstype: {{businessType}}\n• Doel: {{goal}}\n• Pakket: {{package}}\n• Advertentiebudget: {{adBudget}}\n• Extra opties: {{addons}}\n\n💰 Geschatte prijs: {{monthlyRange}} / maand\n📋 Setup: {{setup}}\n\nKan je me een offerte op maat sturen?"
     },
@@ -2281,7 +2281,7 @@
       "secondaryCTA": "Stuur een bericht via WhatsApp"
     },
     "socialMedia": {
-      "title": "Social Media Management",
+      "title": "Social mediabeheer",
       "subtitle": "Consistente content die je merk laat groeien op elk platform.",
       "benefits": {
         "1": "Professionele content op al je kanalen",
@@ -2291,10 +2291,10 @@
       "deliverables": {
         "1": { "title": "Strategie & planning", "desc": "Content kalender op maat van jouw doelen." },
         "2": { "title": "Content creatie", "desc": "Posts, stories en reels die aanslaan." },
-        "3": { "title": "Community management", "desc": "Actief reageren op comments en DM's." },
+        "3": { "title": "Communitybeheer", "desc": "Actief reageren op comments en DM's." },
         "4": { "title": "Advertentiebeheer", "desc": "Gerichte ads voor maximaal bereik." },
         "5": { "title": "Maandelijkse rapportage", "desc": "Duidelijke cijfers en inzichten." },
-        "6": { "title": "Dedicated support", "desc": "Altijd bereikbaar voor vragen." }
+        "6": { "title": "Persoonlijke begeleiding", "desc": "Altijd bereikbaar voor vragen." }
       },
       "process": {
         "1": { "title": "Analyse", "desc": "We analyseren je huidige aanwezigheid en concurrentie." },
@@ -2313,7 +2313,7 @@
       "deliverables": {
         "1": { "title": "Campagne strategie", "desc": "Doelgerichte aanpak per platform." },
         "2": { "title": "Advertentie creatie", "desc": "Visuals en copy die converteren." },
-        "3": { "title": "A/B testing", "desc": "Continu testen voor betere resultaten." },
+        "3": { "title": "A/B-testen", "desc": "Continu testen voor betere resultaten." },
         "4": { "title": "Budget optimalisatie", "desc": "Maximaal resultaat uit je budget." },
         "5": { "title": "Conversie tracking", "desc": "Volledige inzicht in je ROI." },
         "6": { "title": "Wekelijkse updates", "desc": "Je weet altijd wat er gebeurt." }
@@ -2356,7 +2356,7 @@
       },
       "deliverables": {
         "1": { "title": "Technische audit", "desc": "We checken snelheid, structuur en indexatie." },
-        "2": { "title": "Keyword research", "desc": "De juiste zoekwoorden voor jouw markt." },
+        "2": { "title": "Zoekwoordenonderzoek", "desc": "De juiste zoekwoorden voor jouw markt." },
         "3": { "title": "On-page optimalisatie", "desc": "Titels, meta's en content verbeteren." },
         "4": { "title": "Content strategie", "desc": "SEO-gerichte artikelen en pagina's." },
         "5": { "title": "Linkbuilding", "desc": "Kwalitatieve backlinks voor autoriteit." },
@@ -2377,11 +2377,11 @@
         "3": "Mobiel-vriendelijk en snel"
       },
       "deliverables": {
-        "1": { "title": "Design & UX", "desc": "Custom ontwerp passend bij je merk." },
-        "2": { "title": "Development", "desc": "Technisch solide en schaalbaar." },
+        "1": { "title": "Ontwerp & UX", "desc": "Custom ontwerp passend bij je merk." },
+        "2": { "title": "Ontwikkeling", "desc": "Technisch solide en schaalbaar." },
         "3": { "title": "Content integratie", "desc": "Teksten en visuals professioneel verwerkt." },
         "4": { "title": "SEO basis", "desc": "Technische SEO meegenomen." },
-        "5": { "title": "CMS training", "desc": "Je leert zelf content aanpassen." },
+        "5": { "title": "CMS-opleiding", "desc": "Je leert zelf content aanpassen." },
         "6": { "title": "Onderhoud optie", "desc": "Maandelijkse updates en support." }
       },
       "process": {
@@ -2391,7 +2391,7 @@
       }
     },
     "onePageWebsite": {
-      "title": "One-page Website",
+      "title": "One-page website",
       "subtitle": "Een krachtige landingspagina voor snelle impact.",
       "benefits": {
         "1": "Snel online met je boodschap",
@@ -2399,11 +2399,11 @@
         "3": "Betaalbaar en effectief"
       },
       "deliverables": {
-        "1": { "title": "Design", "desc": "Aantrekkelijk en on-brand ontwerp." },
-        "2": { "title": "Development", "desc": "Snelle en responsive pagina." },
+        "1": { "title": "Ontwerp", "desc": "Aantrekkelijk en on-brand ontwerp." },
+        "2": { "title": "Ontwikkeling", "desc": "Snelle en responsive pagina." },
         "3": { "title": "Formulier integratie", "desc": "Lead capture functionaliteit." },
         "4": { "title": "Mobiel geoptimaliseerd", "desc": "Perfect op elk apparaat." },
-        "5": { "title": "Analytics setup", "desc": "Tracking vanaf dag één." },
+        "5": { "title": "Analyse-instelling", "desc": "Tracking vanaf dag één." },
         "6": { "title": "Snelle levering", "desc": "Live binnen 1-2 weken." }
       },
       "process": {
@@ -2413,7 +2413,7 @@
       }
     },
     "ecommerceWebsite": {
-      "title": "E-commerce Website",
+      "title": "E-commerce webshop",
       "subtitle": "Een webshop die verkoopt terwijl je slaapt.",
       "benefits": {
         "1": "Gebruiksvriendelijke winkelervaring",
@@ -2421,12 +2421,12 @@
         "3": "Schaalbaar voor groei"
       },
       "deliverables": {
-        "1": { "title": "Shop design", "desc": "Conversiegerichte productpagina's." },
-        "2": { "title": "Development", "desc": "Robuust e-commerce platform." },
+        "1": { "title": "Winkelontwerp", "desc": "Conversiegerichte productpagina's." },
+        "2": { "title": "Ontwikkeling", "desc": "Robuust e-commerce platform." },
         "3": { "title": "Betalingsintegratie", "desc": "Alle gangbare betaalmethodes." },
         "4": { "title": "Voorraadbeheer", "desc": "Eenvoudig producten beheren." },
-        "5": { "title": "Marketing tools", "desc": "Kortingscodes, upsells, etc." },
-        "6": { "title": "Training & support", "desc": "Je leert alles zelf beheren." }
+        "5": { "title": "Marketingtools", "desc": "Kortingscodes, upsells, etc." },
+        "6": { "title": "Opleiding & ondersteuning", "desc": "Je leert alles zelf beheren." }
       },
       "process": {
         "1": { "title": "Analyse", "desc": "Productcatalogus en doelen bespreken." },
@@ -2446,9 +2446,9 @@
         "1": { "title": "Logo ontwerp", "desc": "Uniek logo met variaties." },
         "2": { "title": "Kleurenpalet", "desc": "Strategische kleurkeuzes." },
         "3": { "title": "Typografie", "desc": "Lettertypen die passen bij je merk." },
-        "4": { "title": "Brand guidelines", "desc": "Handleiding voor consistent gebruik." },
-        "5": { "title": "Templates", "desc": "Social media en print templates." },
-        "6": { "title": "Brand assets", "desc": "Alle bestanden in hoge kwaliteit." }
+        "4": { "title": "Huisstijlhandleiding", "desc": "Handleiding voor consistent gebruik." },
+        "5": { "title": "Sjablonen", "desc": "Social media en print templates." },
+        "6": { "title": "Merkbestanden", "desc": "Alle bestanden in hoge kwaliteit." }
       },
       "process": {
         "1": { "title": "Analyse", "desc": "We leren je merk en doelgroep kennen." },
@@ -2460,17 +2460,17 @@
       "title": "Mobiele App Ontwikkeling",
       "subtitle": "Bouw een premium app — houd het veilig en up-to-date elke maand.",
       "benefits": {
-        "1": "iOS & Android (native feel)",
-        "2": "Schone UX + snelle performance",
+        "1": "iOS & Android (native gevoel)",
+        "2": "Strak UX-ontwerp + snelle prestaties",
         "3": "Tracking & App Store-materiaal klaar voor lancering"
       },
       "deliverables": {
         "1": { "title": "Strategie & feature planning", "desc": "Samen bepalen wat je app moet doen." },
-        "2": { "title": "UI/UX design", "desc": "Intuïtief ontwerp dat gebruikers begrijpen." },
-        "3": { "title": "Development (iOS/Android)", "desc": "Cross-platform of native ontwikkeling." },
+        "2": { "title": "UI/UX-ontwerp", "desc": "Intuïtief ontwerp dat gebruikers begrijpen." },
+        "3": { "title": "Ontwikkeling (iOS/Android)", "desc": "Cross-platform of native ontwikkeling." },
         "4": { "title": "Backend & integraties", "desc": "Betalingen, API's, CRM koppelingen." },
         "5": { "title": "QA testing & optimalisatie", "desc": "Grondig testen op alle apparaten." },
-        "6": { "title": "App Store / Google Play launch", "desc": "Volledige begeleiding bij publicatie." }
+        "6": { "title": "App Store / Google Play lancering", "desc": "Volledige begeleiding bij publicatie." }
       },
       "process": {
         "1": { "title": "Analyse", "desc": "We bespreken features, doelgroep en technische vereisten." },
@@ -2487,7 +2487,7 @@
         "3": "Bouw vertrouwen en geloofwaardigheid online"
       },
       "deliverables": {
-        "1": { "title": "Review monitoring", "desc": "Volg reviews op Google, Facebook, Yelp en meer." },
+        "1": { "title": "Reviewmonitoring", "desc": "Volg reviews op Google, Facebook, Yelp en meer." },
         "2": { "title": "Reactiebeheer", "desc": "Professionele antwoorden op positieve en negatieve reviews." },
         "3": { "title": "Reputatiestrategie", "desc": "Proactief plan om je online imago te verbeteren." },
         "4": { "title": "Review generatie", "desc": "Moedig tevreden klanten aan om reviews achter te laten." },
@@ -2513,7 +2513,7 @@
         "2": { "title": "Integratie setup", "desc": "Koppel je CRM, POS, website en meer." },
         "3": { "title": "Geautomatiseerde workflows", "desc": "Data stroomt automatisch tussen systemen." },
         "4": { "title": "Foutafhandeling", "desc": "Slimme conflictoplossing en meldingen." },
-        "5": { "title": "Dashboard & monitoring", "desc": "Realtime overzicht van alle synchronisatiestatus." },
+        "5": { "title": "Dashboard & bewaking", "desc": "Realtime overzicht van alle synchronisatiestatus." },
         "6": { "title": "Doorlopende support", "desc": "Onderhoud en updates naarmate je systemen groeien." }
       },
       "process": {
@@ -2532,7 +2532,7 @@
       "oneTimeDesc": "Betaal per item.",
       "monthly": "Maandelijks abonnement",
       "monthlyDesc": "Vast maandbedrag.",
-      "posters": "Posters",
+      "posters": "Affiches",
       "reels": "Reels",
       "videos": "Video's",
       "articles": "Artikels",
@@ -2749,7 +2749,7 @@
         "content": "Onder de GDPR heb je de volgende rechten:\n\n• Recht op inzage in je gegevens\n• Recht op correctie van onjuiste gegevens\n• Recht op verwijdering van je gegevens\n• Recht op beperking van verwerking\n• Recht op gegevensoverdraagbaarheid\n• Recht om bezwaar te maken tegen verwerking\n\nNeem contact met ons op om deze rechten uit te oefenen."
       },
       "cookies": {
-        "title": "Cookies",
+        "title": "Cookiebeleid",
         "content": "Onze website gebruikt cookies om je ervaring te verbeteren:\n\n• Essentiële cookies voor website-functionaliteit\n• Analytische cookies om te begrijpen hoe bezoekers onze site gebruiken\n• Marketingcookies voor gerichte advertenties (alleen met toestemming)\n\nJe kunt cookies beheren via je browserinstellingen."
       },
       "retention": {
@@ -2757,7 +2757,7 @@
         "content": "Wij bewaren je gegevens alleen zo lang als nodig is:\n\n• Contactgegevens: 2 jaar na laatste contact\n• Sollicitatiegegevens: 1 jaar na afronding procedure\n• Nieuwsbrief abonnees: tot uitschrijving\n• Analytische gegevens: 26 maanden\n\nNa deze periode worden gegevens veilig verwijderd."
       },
       "contact": {
-        "title": "Contact",
+        "title": "Contactgegevens",
         "content": "Voor vragen over je privacy of om je rechten uit te oefenen:\n\nGROPPI\nE-mail: info@groppi.be\nTelefoon: +32 456 19 87 21\n\nJe hebt ook het recht om een klacht in te dienen bij de Belgische Gegevensbeschermingsautoriteit."
       }
     }
@@ -2801,7 +2801,7 @@
         "content": "Deze voorwaarden worden beheerst door Belgisch recht.\n\nGeschillen zullen worden voorgelegd aan de bevoegde rechtbanken van België.\n\nAls een bepaling van deze voorwaarden ongeldig of niet-afdwingbaar wordt geacht, blijven de overige bepalingen volledig van kracht."
       },
       "contact": {
-        "title": "Contact",
+        "title": "Contactgegevens",
         "content": "Voor vragen over deze voorwaarden:\n\nGROPPI\nE-mail: info@groppi.be\nTelefoon: +32 456 19 87 21\n\nWij streven ernaar om alle vragen binnen 48 uur te beantwoorden."
       }
     }
