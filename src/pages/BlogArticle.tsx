@@ -1,4 +1,5 @@
 import { useParams, Navigate } from 'react-router-dom';
+import DOMPurify from 'dompurify';
 import LangLink from '@/components/LangLink';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
@@ -149,7 +150,7 @@ const BlogArticle = () => {
                 prose-ul:my-5 prose-ul:space-y-2
                 prose-li:text-muted-foreground
                 prose-a:text-primary prose-a:no-underline hover:prose-a:underline"
-              dangerouslySetInnerHTML={{ __html: content }}
+              dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(content, { ALLOWED_TAGS: ['h1','h2','h3','h4','h5','h6','p','a','ul','ol','li','strong','em','br','img','span','div','blockquote','table','thead','tbody','tr','th','td'], ALLOWED_ATTR: ['href','src','alt','class','target','rel'] }) }}
             />
           </motion.article>
 
