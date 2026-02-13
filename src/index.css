@@ -772,22 +772,21 @@
   .gold-drop {
     position: absolute;
     top: -8%;
-    font-size: clamp(40px, 4vw, 55px);
     line-height: 1;
-    background: linear-gradient(
-      150deg,
-      #FFFDF0 0%, #FFD700 14%, #DAA520 26%,
-      #8B6914 40%, #FFD700 50%, #FFFACD 58%,
-      #DAA520 70%, #6B4F10 82%, #FFD700 94%, #FFF8DC 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter:
-      drop-shadow(0 0 10px hsl(43 76% 52% / 0.35))
-      drop-shadow(0 4px 16px hsl(0 0% 0% / 0.5));
+    color: hsl(43 76% 52%);
     opacity: 0;
     will-change: transform, opacity;
+    filter:
+      drop-shadow(0 0 12px hsl(43 76% 52% / 0.5))
+      drop-shadow(0 4px 16px hsl(0 0% 0% / 0.5));
+  }
+
+  .gold-drop svg {
+    width: clamp(32px, 3.5vw, 48px);
+    height: clamp(32px, 3.5vw, 48px);
+    stroke: url(#gold-grad);
+    stroke-width: 1.8;
+    fill: hsl(43 76% 52% / 0.15);
   }
 
   /* Staggered timings: 8 drops, delays spaced ~1.5-2.5s apart, durations 6-8s.
@@ -832,7 +831,7 @@
 
   @media (max-width: 768px) {
     .groppi-hero-pro { min-height: 520px; }
-    .gold-drop { font-size: clamp(26px, 8vw, 36px); }
+    .gold-drop svg { width: clamp(22px, 7vw, 32px); height: clamp(22px, 7vw, 32px); }
   }
 
   @media (prefers-reduced-motion: reduce) {

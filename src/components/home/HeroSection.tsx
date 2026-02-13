@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { motion } from 'framer-motion';
+import { Sparkles, Star, Zap, Sun } from 'lucide-react';
 import { socialIconsData } from '@/components/shared/SocialIconsPill';
 import { trackEvent } from '@/utils/tracking';
 
@@ -69,6 +70,20 @@ HeroSocialIcons.displayName = 'HeroSocialIcons';
 
 const HeroSection = memo(() => (
   <section className="groppi-hero-pro" aria-label="GROPPI Hero Videos">
+    {/* SVG gradient for metallic gold icons */}
+    <svg width="0" height="0" style={{ position: 'absolute' }}>
+      <defs>
+        <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#FFF8DC" />
+          <stop offset="20%" stopColor="#FFD700" />
+          <stop offset="40%" stopColor="#DAA520" />
+          <stop offset="55%" stopColor="#8B6914" />
+          <stop offset="70%" stopColor="#FFD700" />
+          <stop offset="85%" stopColor="#FFFACD" />
+          <stop offset="100%" stopColor="#DAA520" />
+        </linearGradient>
+      </defs>
+    </svg>
     <video
       autoPlay muted loop playsInline preload="auto"
       className="groppi-bg"
@@ -90,16 +105,16 @@ const HeroSection = memo(() => (
       </div>
     </div>
 
-    {/* Slow-Motion Gold Emoji Rain */}
+    {/* Slow-Motion Gold Flares */}
     <div className="hero-gold-rain" aria-hidden="true">
-      <span className="gold-drop gold-drop--1" style={{ left: '10%' }}>❤️</span>
-      <span className="gold-drop gold-drop--2" style={{ left: '30%' }}>😂</span>
-      <span className="gold-drop gold-drop--3" style={{ left: '55%' }}>👍</span>
-      <span className="gold-drop gold-drop--4" style={{ left: '78%' }}>😍</span>
-      <span className="gold-drop gold-drop--5" style={{ left: '22%' }}>😍</span>
-      <span className="gold-drop gold-drop--6" style={{ left: '48%' }}>❤️</span>
-      <span className="gold-drop gold-drop--7" style={{ left: '68%' }}>😂</span>
-      <span className="gold-drop gold-drop--8" style={{ left: '40%' }}>👍</span>
+      <span className="gold-drop gold-drop--1" style={{ left: '10%' }}><Sparkles /></span>
+      <span className="gold-drop gold-drop--2" style={{ left: '30%' }}><Star /></span>
+      <span className="gold-drop gold-drop--3" style={{ left: '55%' }}><Zap /></span>
+      <span className="gold-drop gold-drop--4" style={{ left: '78%' }}><Sun /></span>
+      <span className="gold-drop gold-drop--5" style={{ left: '22%' }}><Sparkles /></span>
+      <span className="gold-drop gold-drop--6" style={{ left: '48%' }}><Star /></span>
+      <span className="gold-drop gold-drop--7" style={{ left: '68%' }}><Sun /></span>
+      <span className="gold-drop gold-drop--8" style={{ left: '40%' }}><Zap /></span>
     </div>
 
     <HeroSocialIcons />
