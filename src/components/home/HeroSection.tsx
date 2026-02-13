@@ -35,12 +35,15 @@ const HeroSocialIcons = memo(() => {
   const container = {
     hidden: {},
     show: {
-      transition: { staggerChildren: 0.1, delayChildren: 0.8 },
+      transition: { staggerChildren: 0.12, delayChildren: 1.2 },
     },
   };
   const item = {
-    hidden: { opacity: 0, y: 30, scale: 0.6 },
-    show: { opacity: 1, y: 0, scale: 1, transition: { type: 'spring' as const, stiffness: 260, damping: 14 } },
+    hidden: { opacity: 0, y: 40, scale: 0.5, rotateX: 90 },
+    show: {
+      opacity: 1, y: 0, scale: 1, rotateX: 0,
+      transition: { type: 'spring' as const, stiffness: 200, damping: 12 },
+    },
   };
 
   return (
@@ -50,36 +53,43 @@ const HeroSocialIcons = memo(() => {
         background: 'rgba(0, 0, 0, 0.55)',
         border: '1.5px solid hsl(43 76% 52% / 0.45)',
         backdropFilter: 'blur(20px)',
-        boxShadow: '0 8px 32px rgba(0,0,0,0.5), 0 0 24px hsl(43 76% 52% / 0.12)',
+        boxShadow: '0 8px 32px rgba(0,0,0,0.5), 0 0 30px hsl(43 76% 52% / 0.18)',
       }}
-      variants={container}
-      initial="hidden"
-      animate="show"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.4, ease: 'easeOut' }}
     >
-      {socialIconsData.map((social) => (
-        <motion.a
-          key={social.label}
-          href={social.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={social.ariaLabel}
-          onClick={() => trackEvent({ event: social.event, location: 'hero' })}
-          variants={item}
-          whileHover={{ scale: 1.75, y: -8 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ type: 'spring', stiffness: 300, damping: 10 }}
-          className="hero-social-icon relative flex items-center justify-center w-12 h-12 rounded-xl"
-          style={{
-            background: 'hsl(0 0% 4%)',
-            border: '1.5px solid hsl(43 76% 52% / 0.5)',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.4), inset 0 1px 0 hsl(43 76% 52% / 0.1)',
-            transformStyle: 'preserve-3d',
-            perspective: '600px',
-          }}
-        >
-          <span style={{ color: 'hsl(43 76% 52%)' }}><social.icon className="h-5 w-5 relative z-[1]" /></span>
-        </motion.a>
-      ))}
+      <motion.div
+        className="flex items-center gap-16"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
+        {socialIconsData.map((social) => (
+          <motion.a
+            key={social.label}
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={social.ariaLabel}
+            onClick={() => trackEvent({ event: social.event, location: 'hero' })}
+            variants={item}
+            whileHover={{ scale: 1.75, y: -8, rotateY: 15, rotateX: -10 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 10 }}
+            className="hero-social-icon relative flex items-center justify-center w-12 h-12 rounded-xl"
+            style={{
+              background: 'hsl(0 0% 4%)',
+              border: '1.5px solid hsl(43 76% 52% / 0.5)',
+              boxShadow: '0 4px 16px rgba(0,0,0,0.4), 0 0 12px hsl(43 76% 52% / 0.25), inset 0 1px 0 hsl(43 76% 52% / 0.15)',
+              transformStyle: 'preserve-3d',
+              perspective: '600px',
+            }}
+          >
+            <span style={{ color: 'hsl(43 76% 52%)' }}><social.icon className="h-5 w-5 relative z-[1]" /></span>
+          </motion.a>
+        ))}
+      </motion.div>
     </motion.div>
   );
 });
