@@ -90,16 +90,16 @@ const HeroSection = memo(() => (
       </div>
     </div>
 
-    {/* Floating Metallic Gold Emojis */}
-    <div className="hero-emoji-float-layer" aria-hidden="true">
-      <span className="hero-float-emoji hero-float--1" style={{ left: '8%', top: '18%' }}>❤️</span>
-      <span className="hero-float-emoji hero-float--2" style={{ left: '28%', top: '35%' }}>😂</span>
-      <span className="hero-float-emoji hero-float--3" style={{ left: '52%', top: '12%' }}>👍</span>
-      <span className="hero-float-emoji hero-float--4" style={{ left: '75%', top: '40%' }}>😍</span>
-      <span className="hero-float-emoji hero-float--5" style={{ left: '18%', top: '55%' }}>😍</span>
-      <span className="hero-float-emoji hero-float--6" style={{ left: '42%', top: '58%' }}>❤️</span>
-      <span className="hero-float-emoji hero-float--7" style={{ left: '65%', top: '22%' }}>😂</span>
-      <span className="hero-float-emoji hero-float--8" style={{ left: '88%', top: '50%' }}>👍</span>
+    {/* Slow-Motion Gold Emoji Rain */}
+    <div className="hero-gold-rain" aria-hidden="true">
+      <span className="gold-drop gold-drop--1" style={{ left: '10%' }}>❤️</span>
+      <span className="gold-drop gold-drop--2" style={{ left: '30%' }}>😂</span>
+      <span className="gold-drop gold-drop--3" style={{ left: '55%' }}>👍</span>
+      <span className="gold-drop gold-drop--4" style={{ left: '78%' }}>😍</span>
+      <span className="gold-drop gold-drop--5" style={{ left: '22%' }}>😍</span>
+      <span className="gold-drop gold-drop--6" style={{ left: '48%' }}>❤️</span>
+      <span className="gold-drop gold-drop--7" style={{ left: '68%' }}>😂</span>
+      <span className="gold-drop gold-drop--8" style={{ left: '40%' }}>👍</span>
     </div>
 
     <HeroSocialIcons />
