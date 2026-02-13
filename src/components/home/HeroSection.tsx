@@ -32,12 +32,12 @@ const VideoCard = memo(({ id }: { id: string }) => (
 VideoCard.displayName = 'VideoCard';
 
 const HeroSocialIcons = memo(() => (
-  <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex items-center gap-4 px-6 py-3 rounded-full"
+  <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex items-center gap-6 px-8 py-4 rounded-full"
     style={{
-      background: 'rgba(0, 0, 0, 0.5)',
-      border: '1px solid hsl(43 76% 52% / 0.4)',
-      backdropFilter: 'blur(16px)',
-      boxShadow: '0 8px 32px rgba(0,0,0,0.5), 0 0 20px hsl(43 76% 52% / 0.1)',
+      background: 'rgba(0, 0, 0, 0.55)',
+      border: '1.5px solid hsl(43 76% 52% / 0.45)',
+      backdropFilter: 'blur(20px)',
+      boxShadow: '0 8px 32px rgba(0,0,0,0.5), 0 0 24px hsl(43 76% 52% / 0.12)',
     }}
   >
     {socialIconsData.map((social) => (
@@ -48,10 +48,10 @@ const HeroSocialIcons = memo(() => (
         rel="noopener noreferrer"
         aria-label={social.ariaLabel}
         onClick={() => trackEvent({ event: social.event, location: 'hero' })}
-        whileHover={{ scale: 1.25, y: -4 }}
-        whileTap={{ scale: 0.92 }}
-        transition={{ type: 'spring', stiffness: 400, damping: 15 }}
-        className="hero-social-icon relative flex items-center justify-center w-10 h-10 rounded-xl"
+        whileHover={{ scale: 1.5, y: -6 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: 'spring', stiffness: 350, damping: 12 }}
+        className="hero-social-icon relative flex items-center justify-center w-12 h-12 rounded-xl"
         style={{
           background: 'hsl(0 0% 4%)',
           border: '1.5px solid hsl(43 76% 52% / 0.5)',
@@ -60,7 +60,7 @@ const HeroSocialIcons = memo(() => (
           perspective: '600px',
         }}
       >
-        <social.icon className="h-[18px] w-[18px] text-foreground relative z-[1]" />
+        <span style={{ color: 'hsl(43 76% 52%)' }}><social.icon className="h-5 w-5 relative z-[1]" /></span>
       </motion.a>
     ))}
   </div>
