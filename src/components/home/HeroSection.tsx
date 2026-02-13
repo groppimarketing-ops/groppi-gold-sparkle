@@ -90,16 +90,16 @@ const HeroSection = memo(() => (
       </div>
     </div>
 
-    {/* Metallic Gold Emoji Rain */}
-    <div className="hero-emoji-rain" aria-hidden="true">
-      <span className="hero-emoji-drop hero-emoji-drop--a" style={{ left: '12%' }}>❤️</span>
-      <span className="hero-emoji-drop hero-emoji-drop--b" style={{ left: '38%' }}>😂</span>
-      <span className="hero-emoji-drop hero-emoji-drop--c" style={{ left: '62%' }}>👍</span>
-      <span className="hero-emoji-drop hero-emoji-drop--d" style={{ left: '85%' }}>😍</span>
-      <span className="hero-emoji-drop hero-emoji-drop--e" style={{ left: '25%' }}>😍</span>
-      <span className="hero-emoji-drop hero-emoji-drop--f" style={{ left: '50%' }}>❤️</span>
-      <span className="hero-emoji-drop hero-emoji-drop--g" style={{ left: '75%' }}>😂</span>
-      <span className="hero-emoji-drop hero-emoji-drop--h" style={{ left: '42%' }}>👍</span>
+    {/* Floating Metallic Gold Emojis */}
+    <div className="hero-emoji-float-layer" aria-hidden="true">
+      <span className="hero-float-emoji hero-float--1" style={{ left: '8%', top: '18%' }}>❤️</span>
+      <span className="hero-float-emoji hero-float--2" style={{ left: '28%', top: '35%' }}>😂</span>
+      <span className="hero-float-emoji hero-float--3" style={{ left: '52%', top: '12%' }}>👍</span>
+      <span className="hero-float-emoji hero-float--4" style={{ left: '75%', top: '40%' }}>😍</span>
+      <span className="hero-float-emoji hero-float--5" style={{ left: '18%', top: '55%' }}>😍</span>
+      <span className="hero-float-emoji hero-float--6" style={{ left: '42%', top: '58%' }}>❤️</span>
+      <span className="hero-float-emoji hero-float--7" style={{ left: '65%', top: '22%' }}>😂</span>
+      <span className="hero-float-emoji hero-float--8" style={{ left: '88%', top: '50%' }}>👍</span>
     </div>
 
     <HeroSocialIcons />
