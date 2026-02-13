@@ -53,7 +53,7 @@ const PageSEO = ({
         <link
           key={lang.code}
           rel="alternate"
-          hrefLang={lang.code}
+          hrefLang={lang.hreflang}
           href={`${SITE_URL}${getLangPath(path, lang.code)}`}
         />
       ))}

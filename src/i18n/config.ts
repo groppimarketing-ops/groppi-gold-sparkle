@@ -26,21 +26,21 @@ export const BRAND_NAME = 'GROPPI';
 export const RTL_LANGUAGES = ['ar', 'ur'] as const;
 
 export const languages = [
-  { code: 'nl', name: 'Nederlands (BE)', dir: 'ltr' as const, flag: '🇧🇪' },
-  { code: 'en', name: 'English', dir: 'ltr' as const, flag: '🇬🇧' },
-  { code: 'fr', name: 'Français', dir: 'ltr' as const, flag: '🇫🇷' },
-  { code: 'de', name: 'Deutsch', dir: 'ltr' as const, flag: '🇩🇪' },
-  { code: 'ar', name: 'العربية', dir: 'rtl' as const, flag: '🇦🇪' },
-  { code: 'es', name: 'Español', dir: 'ltr' as const, flag: '🇪🇸' },
-  { code: 'it', name: 'Italiano', dir: 'ltr' as const, flag: '🇮🇹' },
-  { code: 'pt', name: 'Português', dir: 'ltr' as const, flag: '🇵🇹' },
-  { code: 'pl', name: 'Polski', dir: 'ltr' as const, flag: '🇵🇱' },
-  { code: 'ru', name: 'Русский', dir: 'ltr' as const, flag: '🇷🇺' },
-  { code: 'tr', name: 'Türkçe', dir: 'ltr' as const, flag: '🇹🇷' },
-  { code: 'bn', name: 'বাংলা', dir: 'ltr' as const, flag: '🇧🇩' },
-  { code: 'hi', name: 'हिन्दी', dir: 'ltr' as const, flag: '🇮🇳' },
-  { code: 'ur', name: 'اردو', dir: 'rtl' as const, flag: '🇵🇰' },
-  { code: 'zh', name: '中文', dir: 'ltr' as const, flag: '🇨🇳' },
+  { code: 'nl', hreflang: 'nl-BE', name: 'Nederlands (BE)', dir: 'ltr' as const, flag: '🇧🇪' },
+  { code: 'en', hreflang: 'en', name: 'English', dir: 'ltr' as const, flag: '🇬🇧' },
+  { code: 'fr', hreflang: 'fr', name: 'Français', dir: 'ltr' as const, flag: '🇫🇷' },
+  { code: 'de', hreflang: 'de', name: 'Deutsch', dir: 'ltr' as const, flag: '🇩🇪' },
+  { code: 'ar', hreflang: 'ar', name: 'العربية', dir: 'rtl' as const, flag: '🇦🇪' },
+  { code: 'es', hreflang: 'es', name: 'Español', dir: 'ltr' as const, flag: '🇪🇸' },
+  { code: 'it', hreflang: 'it', name: 'Italiano', dir: 'ltr' as const, flag: '🇮🇹' },
+  { code: 'pt', hreflang: 'pt', name: 'Português', dir: 'ltr' as const, flag: '🇵🇹' },
+  { code: 'pl', hreflang: 'pl', name: 'Polski', dir: 'ltr' as const, flag: '🇵🇱' },
+  { code: 'ru', hreflang: 'ru', name: 'Русский', dir: 'ltr' as const, flag: '🇷🇺' },
+  { code: 'tr', hreflang: 'tr', name: 'Türkçe', dir: 'ltr' as const, flag: '🇹🇷' },
+  { code: 'bn', hreflang: 'bn', name: 'বাংলা', dir: 'ltr' as const, flag: '🇧🇩' },
+  { code: 'hi', hreflang: 'hi', name: 'हिन्दी', dir: 'ltr' as const, flag: '🇮🇳' },
+  { code: 'ur', hreflang: 'ur', name: 'اردو', dir: 'rtl' as const, flag: '🇵🇰' },
+  { code: 'zh', hreflang: 'zh', name: '中文', dir: 'ltr' as const, flag: '🇨🇳' },
 ] as const;
 
 export type LanguageCode = typeof languages[number]['code'];
