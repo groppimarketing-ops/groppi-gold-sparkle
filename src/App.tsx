@@ -11,6 +11,8 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import ProtectedRoute from "@/components/admin/ProtectedRoute";
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import CookieConsent from "@/components/layout/CookieConsent";
+import LanguageLayout from "@/components/layout/LanguageLayout";
+import { SUPPORTED_LANGS } from "@/utils/languageRouting";
 
 // Import i18n validation in dev mode
 if (import.meta.env.DEV) {
@@ -25,7 +27,6 @@ const ServiceDetail = lazy(() => import("./pages/ServiceDetail"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogArticle = lazy(() => import("./pages/BlogArticle"));
 const Gallery = lazy(() => import("./pages/Gallery"));
-
 const Contact = lazy(() => import("./pages/Contact"));
 const Franchise = lazy(() => import("./pages/Franchise"));
 const CaseStudy = lazy(() => import("./pages/CaseStudy"));
@@ -56,14 +57,12 @@ const PageLoader = () => (
   </div>
 );
 
-// RTL Handler component - uses the improved applyDocumentDirection
+// RTL Handler component
 const RTLHandler = ({ children }: { children: React.ReactNode }) => {
   const { i18n } = useTranslation();
-
   useEffect(() => {
     applyDocumentDirection(i18n.language);
   }, [i18n.language]);
-
   return <>{children}</>;
 };
 
@@ -71,10 +70,30 @@ const RTLHandler = ({ children }: { children: React.ReactNode }) => {
 const FloatingWhatsAppHandler = () => {
   const location = useLocation();
   const isAdminRoute = location.pathname.startsWith('/admin');
-  
   if (isAdminRoute) return null;
   return <FloatingWhatsApp />;
 };
+
+/** Shared public route definitions reused for root (nl) and every language prefix. */
+const publicRoutes = () => [
+  <Route key="home" index element={<Index />} />,
+  <Route key="about" path="about" element={<About />} />,
+  <Route key="services" path="services" element={<Services />} />,
+  <Route key="service-detail" path="services/:slug" element={<ServiceDetail />} />,
+  <Route key="blog" path="blog" element={<Blog />} />,
+  <Route key="blog-article" path="blog/:slug" element={<BlogArticle />} />,
+  <Route key="gallery" path="gallery" element={<Gallery />} />,
+  <Route key="portfolio" path="portfolio" element={<Gallery />} />,
+  <Route key="contact" path="contact" element={<Contact />} />,
+  <Route key="franchise" path="franchise" element={<Franchise />} />,
+  <Route key="careers" path="careers" element={<Careers />} />,
+  <Route key="privacy" path="privacy" element={<Privacy />} />,
+  <Route key="terms" path="terms" element={<Terms />} />,
+  <Route key="case-study" path="portfolio/:slug" element={<CaseStudy />} />,
+];
+
+/** Non-nl language codes that need explicit route prefixes */
+const LANG_PREFIXES = SUPPORTED_LANGS.filter(l => l !== 'nl');
 
 const App = () => (
   <HelmetProvider>
@@ -87,21 +106,18 @@ const App = () => (
             <RTLHandler>
               <Suspense fallback={<PageLoader />}>
                 <Routes>
-                <Route path="/" element={<Index />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/services" element={<Services />} />
-                  <Route path="/services/:slug" element={<ServiceDetail />} />
-                  <Route path="/blog" element={<Blog />} />
-                  <Route path="/blog/:slug" element={<BlogArticle />} />
-                  <Route path="/gallery" element={<Gallery />} />
-                  <Route path="/portfolio" element={<Gallery />} />
-                  <Route path="/contact" element={<Contact />} />
-                  <Route path="/franchise" element={<Franchise />} />
-                  <Route path="/careers" element={<Careers />} />
-                  <Route path="/privacy" element={<Privacy />} />
-                  <Route path="/terms" element={<Terms />} />
-                  <Route path="/portfolio/:slug" element={<CaseStudy />} />
-                  
+                  {/* Default (nl) routes — unprefixed */}
+                  <Route path="/" element={<LanguageLayout />}>
+                    {publicRoutes()}
+                  </Route>
+
+                  {/* Language-prefixed routes (/en, /fr, /de, …) */}
+                  {LANG_PREFIXES.map(lang => (
+                    <Route key={lang} path={`/${lang}`} element={<LanguageLayout />}>
+                      {publicRoutes()}
+                    </Route>
+                  ))}
+
                   {/* Admin Routes */}
                   <Route path="/admin/login" element={<AdminLogin />} />
                   <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
