@@ -632,19 +632,39 @@
     animation: goldRipple 0.4s ease-out;
   }
 
-  /* Hero Social Icons - 3D Gold Hover */
-  .hero-social-icon {
-    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  /* Hero Social Icons - Circular Gold */
+  .groppi-socials {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
   }
 
-  .hero-social-icon:hover {
-    border-color: hsl(43 76% 52%) !important;
-    box-shadow:
-      0 8px 30px rgba(0,0,0,0.5),
-      0 0 40px hsl(43 100% 50% / 0.6),
-      0 0 80px hsl(43 100% 50% / 0.35),
-      0 0 120px hsl(43 100% 50% / 0.15),
-      inset 0 1px 0 hsl(45 100% 70% / 0.4) !important;
+  .groppi-socials a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D4AF37;
+    border: 1px solid rgba(212,175,55,0.5);
+    background: rgba(0,0,0,0.4);
+    transition: .3s ease;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .groppi-socials a:hover {
+    background: #D4AF37;
+    color: #000;
+    box-shadow: 0 0 20px rgba(212,175,55,0.5);
+    transform: scale(1.1);
   }
 
   /* ===== HERO PRO ===== */

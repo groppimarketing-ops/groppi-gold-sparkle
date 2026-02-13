@@ -111,13 +111,7 @@ const HeroSocialIcons = memo(() => {
 
   return (
     <motion.div
-      className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex items-center justify-center gap-16 px-16 py-4 rounded-full"
-      style={{
-        background: 'rgba(0, 0, 0, 0.55)',
-        border: '1.5px solid hsl(43 76% 52% / 0.45)',
-        backdropFilter: 'blur(20px)',
-        boxShadow: '0 8px 32px rgba(0,0,0,0.5), 0 0 24px hsl(43 76% 52% / 0.12)',
-      }}
+      className="groppi-socials"
       variants={container}
       initial="hidden"
       animate="show"
@@ -131,19 +125,8 @@ const HeroSocialIcons = memo(() => {
           aria-label={social.ariaLabel}
           onClick={() => trackEvent({ event: social.event, location: 'hero' })}
           variants={item}
-          whileHover={{ scale: 1.75, y: -8, rotateY: 15, rotateX: -10 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ type: 'spring', stiffness: 300, damping: 10 }}
-          className="hero-social-icon relative flex items-center justify-center w-12 h-12 rounded-xl"
-          style={{
-            background: 'hsl(0 0% 4%)',
-            border: '1.5px solid hsl(43 76% 52% / 0.5)',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.4), inset 0 1px 0 hsl(43 76% 52% / 0.1)',
-            transformStyle: 'preserve-3d',
-            perspective: '600px',
-          }}
         >
-          <span style={{ color: 'hsl(43 76% 52%)' }}><social.icon className="h-5 w-5 relative z-[1]" /></span>
+          <social.icon className="h-[18px] w-[18px]" />
         </motion.a>
       ))}
     </motion.div>
