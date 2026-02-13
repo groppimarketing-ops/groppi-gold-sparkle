@@ -705,7 +705,7 @@
       0 24px 90px hsl(0 0% 0% / 0.88),
       0 0 0 1px hsl(var(--gold) / 0.55),
       0 0 44px hsl(var(--gold) / 0.18);
-    transform: scale(1.04);
+    transform: scale(1.06);
     transition: 220ms ease;
   }
 
