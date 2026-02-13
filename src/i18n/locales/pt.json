@@ -1190,5 +1190,383 @@
     "accept": "Aceitar",
     "reject": "Rejeitar"
   },
-  "_footer_merged": true
+  "_footer_merged": true,
+  "gallery": {
+    "title": "O nosso trabalho",
+    "subtitle": "Portfólio",
+    "description": "Descubra uma seleção de projetos que entregámos aos nossos clientes.",
+    "filters": {
+      "all": "Todos",
+      "web": "Websites",
+      "branding": "Branding",
+      "social": "Redes sociais",
+      "ecommerce": "E-commerce"
+    }
+  },
+  "portfolio": {
+    "page": {
+      "subtitle": "O nosso trabalho",
+      "title": "Portfólio",
+      "description": "Descubra os nossos projetos e os resultados que alcançámos para os nossos clientes.",
+      "resultSingle": "projeto encontrado",
+      "resultPlural": "projetos encontrados",
+      "noResults": "Nenhum projeto encontrado com estes filtros."
+    },
+    "nda": {
+      "disclaimer": "Alguns projetos estão protegidos por acordos de confidencialidade (NDA) e não podem ser mostrados publicamente."
+    },
+    "viewCase": "Ver caso",
+    "filters": {
+      "all": "Todos",
+      "searchPlaceholder": "Pesquisar por nome do cliente...",
+      "industryLabel": "Filtrar por indústria",
+      "serviceLabel": "Filtrar por serviço",
+      "clearAll": "Limpar todos os filtros"
+    },
+    "loadMore": "Carregar mais",
+    "sectors": {
+      "restaurants": "Restaurantes e hotelaria",
+      "retail": "Retalho e lojas locais",
+      "interior": "Interior e renovação",
+      "beauty": "Beleza e bem-estar",
+      "ecommerce": "E-commerce",
+      "realEstate": "Imobiliário",
+      "localServices": "Serviços locais",
+      "sme": "PMEs e startups",
+      "medical": "Médico / clínicas",
+      "startups": "SaaS e startups",
+      "professionalServices": "Serviços profissionais"
+    },
+    "modal": {
+      "challenge": "Desafio",
+      "approach": "A nossa abordagem",
+      "results": "Resultado",
+      "deliverables": "O que entregámos",
+      "ctaPrimary": "Pedir orçamento",
+      "ctaWhatsApp": "Conversar via WhatsApp"
+    },
+    "items": {
+      "castello-vicchiomaggio": {
+        "shortResult": "Apresentação digital e direção visual para uma histórica vinícola e propriedade hoteleira toscana.",
+        "challenge": "Castello Vicchiomaggio, uma histórica vinícola e propriedade hoteleira na região de Chianti, na Toscana, precisava de uma presença digital refinada à altura do prestígio da sua herança secular e para atrair hóspedes internacionais.",
+        "approach": { "0": "Design premium do website com foco em hotelaria de luxo", "1": "Direção de conteúdo visual captando a atmosfera da propriedade", "2": "Otimização da experiência de reserva mobile-first", "3": "Identidade digital de marca alinhada com a herança histórica", "4": "Apresentação responsiva multi-dispositivo" },
+        "results": { "0": "Presença digital elevada refletindo o prestígio da propriedade", "1": "Storytelling visual imersivo em todos os pontos de contacto", "2": "Experiência de reserva simplificada", "3": "Apresentação de marca consistente entre dispositivos", "4": "Visibilidade e apelo internacional reforçados" },
+        "disclaimer": "Visuais recriados para fins de apresentação no portfólio."
+      },
+      "cose-pazzi-torino": {
+        "shortResult": "Website autêntico de pizzaria italiana com visuais focados em comida e carácter de marca local.",
+        "challenge": "A Pizzeria Cose Pazzi em Torino precisava de uma presença digital polida para refletir a sua cozinha italiana autêntica e o carácter vibrante do bairro.",
+        "approach": { "0": "Estrutura e otimização do website", "1": "Apresentação visual e hierarquia focada em comida", "2": "Melhorias de usabilidade mobile-first", "3": "Sensação de marca italiana local e storytelling" },
+        "results": { "0": "Branding premium de restaurante online", "1": "Forte visibilidade da comida e apelo ao apetite", "2": "Jornada do cliente clara e simples", "3": "Melhor visibilidade online e SEO local" },
+        "disclaimer": "Os visuais são ilustrativos e criados para fins de apresentação."
+      },
+      "augusto-torino": {
+        "shortResult": "Website elegante de restaurante com forte identidade visual e apresentação refinada de comida.",
+        "challenge": "O Ristorante Pizzeria Augusto em Torino precisava de uma presença digital polida para refletir a sua cozinha italiana refinada e atmosfera acolhedora.",
+        "approach": { "0": "Estrutura e otimização do website", "1": "Hierarquia visual e layout focado em comida", "2": "Desempenho e usabilidade mobile", "3": "Integração de eventos e reservas" },
+        "results": { "0": "Branding premium de restaurante online", "1": "Jornada clara do cliente do menu à reserva", "2": "Storytelling visual forte em todas as páginas", "3": "Melhor visibilidade online e SEO local" },
+        "disclaimer": "Projeto gerido ativamente pela GROPPI."
+      },
+      "pummaro-torino": {
+        "shortResult": "Website moderno de restaurante com forte apresentação de comida e fluxo claro do cliente.",
+        "challenge": "A Pizzeria Pummarò em Torino precisava de uma presença digital profissional que refletisse o compromisso com a cozinha italiana autêntica usando ingredientes premium de pequenos produtores italianos.",
+        "approach": { "0": "Estrutura e otimização do website", "1": "Hierarquia visual e apresentação de comida", "2": "Melhorias de usabilidade mobile", "3": "Integração de reservas online e entregas" },
+        "results": { "0": "Layout focado em conversão com navegação clara", "1": "Forte branding de restaurante local online", "2": "Visibilidade profissional da comida e storytelling de ingredientes", "3": "Jornada do cliente sem falhas do menu à reserva" },
+        "disclaimer": "Projeto gerido ativamente pela GROPPI."
+      },
+      "fratelli-roselli": {
+        "shortResult": "Website autêntico de restaurante italiano com forte apresentação de comida e branding local.",
+        "challenge": "A Pizzeria Fratelli Roselli em Turim tinha seguidores locais fiéis há mais de 20 anos, mas precisava de uma presença digital profissional para mostrar o compromisso com ingredientes de qualidade e pizzas autênticas.",
+        "approach": { "0": "Estrutura e otimização do website", "1": "Apresentação visual e layout de conteúdo", "2": "Melhorias de desempenho e usabilidade", "3": "Integração de sistema de reservas online" },
+        "results": { "0": "Website profissional e claro refletindo a qualidade da marca", "1": "Forte visibilidade da comida com foco em ingredientes premium", "2": "Jornada clara do cliente do menu à reserva", "3": "Melhor branding de restaurante local online" },
+        "disclaimer": "Projeto gerido ativamente pela GROPPI."
+      },
+      "boothuis-turnhout": {
+        "shortResult": "Website limpo de restaurante e apresentação visual para um negócio de hotelaria local.",
+        "challenge": "O Restaurant Boothuis Turnhout precisava de uma presença digital profissional que refletisse a atmosfera e qualidade do restaurante online.",
+        "approach": { "0": "Gestão e otimização contínua do website", "1": "Conteúdo visual e apresentação profissional", "2": "Construção e manutenção de presença digital", "3": "Experiência de marca consistente em todos os canais online" },
+        "results": { "0": "Website profissional e claro", "1": "Forte apresentação visual do restaurante", "2": "Melhor visibilidade online", "3": "Gestão e otimização contínuas" },
+        "disclaimer": "Projeto gerido ativamente pela GROPPI."
+      },
+      "sanremo-pizzeria": {
+        "shortResult": "Forte presença nas redes sociais e conteúdo visual para um restaurante local.",
+        "challenge": "A Sanremo Pizzeria Restaurant tinha seguidores locais fiéis, mas faltava uma presença digital profissional para atrair novos clientes.",
+        "approach": { "0": "Gestão e otimização da página Facebook", "1": "Criação de conteúdo visual profissional", "2": "Estratégia de redes sociais e publicação consistente", "3": "Construção e manutenção de presença digital" },
+        "results": { "0": "Presença online profissional e consistente", "1": "Conteúdo visual forte nas redes sociais", "2": "Melhor visibilidade e encontrabilidade online", "3": "Gestão e otimização contínuas" },
+        "disclaimer": "Projeto gerido ativamente pela GROPPI."
+      },
+      "mangiare-3840": {
+        "shortResult": "Website moderno de restaurante com forte identidade visual.",
+        "challenge": "O Mangiare 3840 tinha uma forte reputação local mas faltava uma presença online profissional que refletisse a atmosfera e qualidade do restaurante.",
+        "approach": { "0": "Website totalmente personalizado com design premium escuro", "1": "Conteúdo visual e branding combinando com a atmosfera do restaurante", "2": "Suporte digital contínuo e otimização", "3": "Menu e sistema de reservas integrados" },
+        "results": { "0": "Presença online profissional fortalecendo a experiência da marca", "1": "Melhor experiência de utilizador para visitantes", "2": "Forte identidade visual em todos os canais digitais", "3": "Gestão e otimização contínuas" },
+        "disclaimer": "Projeto gerido ativamente pela GROPPI."
+      },
+      "kma-wandpanelen": {
+        "shortResult": "+85% visitantes do showroom",
+        "challenge": "A KMA Wandpanelen em Antuérpia tinha uma linha premium de produtos de alternativas a madeira e mármore, mas faltava visibilidade online.",
+        "approach": { "0": "Fotografia profissional de produto de todas as variantes de painéis", "1": "Estratégia de conteúdo para redes sociais para Instagram e Facebook", "2": "Comparação visual: WPC vs. madeira tradicional", "3": "Foco nos diferenciais: manutenção fácil e durável" },
+        "results": { "0": "+85% mais visitantes no showroom", "1": "Forte interesse online no produto via social", "2": "Mais consultas direcionadas de construtores de interiores", "3": "Posicionamento claro como alternativa premium" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "lebanon-restaurant": {
+        "shortResult": "+120% alcance nas redes sociais",
+        "challenge": "Restaurante libanês em Bruxelas com pratos autênticos, mas presença online limitada.",
+        "approach": { "0": "Estratégia completa de redes sociais para Instagram e Facebook", "1": "Fotografia profissional de comida e styling", "2": "Vídeos promocionais curtos e Reels para engagement", "3": "Planeamento semanal de conteúdo com publicação consistente", "4": "Conteúdo de avaliações e testemunhos para prova social" },
+        "results": { "0": "+120% alcance nas redes sociais", "1": "Aumento notável de novos clientes via Instagram", "2": "Maior taxa de engagement nas publicações", "3": "Reconhecimento de marca mais forte na região de Bruxelas", "4": "Mais reservas de mesa via DMs" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "il-fuoco-pizza": {
+        "shortResult": "+65% reservas online",
+        "challenge": "Pizzaria italiana autêntica com abordagem artesanal, mas presença online desatualizada.",
+        "approach": { "0": "Identidade visual completamente renovada", "1": "Fotografia profissional de comida e ambiente", "2": "Sistema de menu digital com integração QR", "3": "Conteúdo para redes sociais para Instagram e Facebook", "4": "Estratégia de avaliações e testemunhos" },
+        "results": { "0": "+65% mais reservas online", "1": "Forte reconhecimento da marca na região", "2": "Maior valor médio de encomenda", "3": "Mais visitantes recorrentes graças a conteúdo de fidelização", "4": "Melhores avaliações e classificações online" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "restaurant-branding": {
+        "shortResult": "+180% reservas",
+        "challenge": "Restaurante premium com pouca visibilidade online. O branding desatualizado não correspondia à oferta exclusiva.",
+        "approach": { "0": "Rebranding completo com look and feel de luxo", "1": "Novo website com sistema de reservas", "2": "Sessão fotográfica profissional do interior e pratos", "3": "Campanha Google Ads direcionada a pesquisas locais" },
+        "results": { "0": "+180% reservas em 6 meses", "1": "Maior gasto médio por mesa", "2": "Melhores avaliações e classificações online", "3": "Top 3 no Google para termos de pesquisa locais" }
+      },
+      "mode-webshop": {
+        "shortResult": "€85K receita em 3 meses",
+        "challenge": "Loja de moda online a começar sem presença digital. Orçamento de marketing limitado mas grande ambição de crescer rapidamente no mercado belga.",
+        "approach": { "0": "Configuração e setup de loja Shopify", "1": "Fotografia profissional de produto", "2": "Campanhas Meta Ads com retargeting", "3": "Landing pages focadas em conversão" },
+        "results": { "0": "€85K receita nos primeiros 3 meses", "1": "ROAS de 4.2 em publicidade", "2": "Base estável de clientes recorrentes", "3": "Expansão bem-sucedida para os Países Baixos" }
+      },
+      "b2b-platform": {
+        "shortResult": "+320% leads",
+        "challenge": "SaaS B2B complexo com funil de vendas longo. Poucos leads qualificados e o website convertia mal.",
+        "approach": { "0": "Landing pages otimizadas por persona", "1": "Lead magnets (whitepapers, case studies)", "2": "Estratégia SEO para keywords long-tail", "3": "Testes A/B de formulários e CTAs" },
+        "results": { "0": "+320% leads qualificados em 4 meses", "1": "Menor custo por lead", "2": "Duração do funil de vendas mais curta", "3": "Melhor qualidade de leads (rácio SQL)" }
+      },
+      "bouwbedrijf-website": {
+        "shortResult": "#1 Google local",
+        "challenge": "Empresa familiar de construção vivia apenas de boca-a-boca. Sem website, sem presença online.",
+        "approach": { "0": "Website profissional com portfólio de projetos", "1": "Otimização do Google My Business", "2": "Estratégia de SEO local", "3": "Fotografia de projetos e case studies" },
+        "results": { "0": "#1 posição no Google para termos de pesquisa locais", "1": "45+ leads por mês via website", "2": "Maior valor médio de projeto", "3": "Posicionamento mais forte vs. concorrentes" }
+      },
+      "influencer-campagne": {
+        "shortResult": "2.4M alcance",
+        "challenge": "Nova marca de beleza sem reconhecimento de marca. Público-alvo 18-35 difícil de alcançar por canais tradicionais.",
+        "approach": { "0": "Estratégia de parceria com influencers", "1": "12 criadores belgas ativados", "2": "Campanha UGC no Instagram e TikTok", "3": "Conteúdo de marca e giveaways" },
+        "results": { "0": "2.4 milhões de alcance orgânico em 2 meses", "1": "Alto engagement em conteúdo UGC", "2": "Forte reconhecimento de marca com o público-alvo", "3": "Lançamento de produto bem-sucedido" }
+      },
+      "tech-startup-branding": {
+        "shortResult": "Identidade de marca completa",
+        "challenge": "Startup pre-seed precisava de uma imagem profissional para reuniões com investidores.",
+        "approach": { "0": "Desenvolvimento completo de identidade de marca", "1": "Design de logo e linguagem visual", "2": "Design de pitch deck para investidores", "3": "Website pronto para investidores" },
+        "results": { "0": "Ronda seed fechada com sucesso em 3 meses", "1": "Imagem profissional para investidores", "2": "Imagem de marca consistente em todos os pontos de contacto", "3": "Base criada para branding escalável" }
+      },
+      "e-commerce-groei": {
+        "shortResult": "+240% ROAS",
+        "challenge": "Webshop de interior existente a operar com prejuízo em publicidade. ROAS abaixo de 1.0 sem estratégia clara.",
+        "approach": { "0": "Auditoria completa das campanhas existentes", "1": "Nova segmentação de audiências", "2": "Testes A/B de criativos", "3": "Funis de retargeting configurados" },
+        "results": { "0": "+240% melhoria de ROAS em 90 dias", "1": "Gasto publicitário rentável", "2": "Menor custo por aquisição", "3": "Estrutura de campanha escalável" }
+      },
+      "content-strategie": {
+        "shortResult": "50+ vídeos/mês",
+        "challenge": "Cadeia de fitness queria produzir conteúdo consistente mas não tinha tempo nem expertise interna.",
+        "approach": { "0": "Contrato de conteúdo full-service configurado", "1": "Planeamento, produção e publicação", "2": "Conteúdo vídeo e foto para todas as localizações", "3": "Estratégia de publicação consistente" },
+        "results": { "0": "50+ vídeos de qualidade por mês", "1": "Experiência de marca consistente em todos os canais", "2": "Maior engagement de membros", "3": "Mais inscrições via redes sociais" }
+      },
+      "ai-learn-academy": {
+        "shortResult": "Plataforma live – em andamento",
+        "challenge": "AI Deals precisava de uma plataforma premium que simplificasse o acesso a ferramentas de IA líderes através de um modelo de subscrição.",
+        "approach": { "0": "Design completo da plataforma e UX/UI com tema premium escuro", "1": "Sistema de gestão de acesso por subscrição", "2": "Estrutura de marketplace de ferramentas IA com categorização", "3": "Arquitetura de academia e conteúdo educacional IA", "4": "Infraestrutura escalável para crescimento", "5": "Gestão técnica contínua e otimização" },
+        "results": { "0": "Marketplace de ferramentas IA personalizado lançado", "1": "Sistema de subscrição e gestão de acesso ativo", "2": "UI premium escura com UX focada em conversão", "3": "Estrutura de academia IA educacional implementada", "4": "Arquitetura escalável suportando crescimento contínuo", "5": "Plataforma ativamente gerida e otimizada pela Groppi" },
+        "disclaimer": "Este é um projeto ativo e em andamento. Design e gestão da plataforma pela Groppi."
+      },
+      "pilotscareer": {
+        "shortResult": "Plataforma internacional de recrutamento de aviação – live",
+        "challenge": "PilotsCareer precisava de uma plataforma de recrutamento profissional e escalável conectando pilotos de aviação com oportunidades de carreira globais.",
+        "approach": { "0": "Design e desenvolvimento completo da plataforma do zero", "1": "UI premium escura com estética inspirada na aviação", "2": "Sistema avançado de pesquisa e filtragem de vagas", "3": "Gestão de perfil e candidatura de pilotos", "4": "Design responsivo para desktop e mobile", "5": "Otimização contínua da plataforma e desenvolvimento de funcionalidades" },
+        "results": { "0": "Plataforma profissional de recrutamento de aviação lançada", "1": "Arquitetura escalável suportando crescimento internacional", "2": "UX limpa e intuitiva para pilotos e recrutadores", "3": "Capacidades avançadas de pesquisa e filtragem", "4": "Experiência de perfil de piloto otimizada para mobile", "5": "Plataforma ativamente gerida e desenvolvida pela Groppi" },
+        "disclaimer": "Este é um projeto ativo e em andamento. Design e gestão da plataforma pela Groppi."
+      },
+      "casa-mavi": {
+        "shortResult": "Presença digital completa para uma joia mediterrânica em Espanha.",
+        "challenge": "Casa Mavi, um restaurante italiano-napolitano em Fuengirola (Espanha), queria construir uma presença digital profissional para atrair tanto hóspedes locais como turistas ao longo da Costa del Sol.",
+        "approach": { "0": "Website personalizado com sistema de reservas online", "1": "Menu digital e criação de conteúdo visual", "2": "Construção de presença digital profissional", "3": "Estratégia de redes sociais direcionada a audiências locais e turísticas" },
+        "results": { "0": "Website profissional com sistema de reservas integrado", "1": "Forte identidade visual refletindo a atmosfera mediterrânica", "2": "Melhor visibilidade online para turistas e locais", "3": "Gestão e otimização digital contínuas" },
+        "disclaimer": "Projeto gerido ativamente pela GROPPI."
+      },
+      "arte-y-cocina": {
+        "shortResult": "Identidade digital premium para uma experiência de fine dining artística.",
+        "challenge": "ArTe y CoCiNa, um restaurante de fine dining artístico em Espanha, queria uma presença digital que refletisse a fusão única de arte e gastronomia.",
+        "approach": { "0": "Website personalizado com identidade visual luxuosa", "1": "Criação profissional de conteúdo de comida e interior", "2": "Construção de forte presença digital", "3": "Branding visual combinando arte e excelência culinária" },
+        "results": { "0": "Website elegante refletindo a experiência fine dining online", "1": "Forte identidade visual com toque artístico", "2": "Melhor visibilidade online e experiência de marca", "3": "Gestão e otimização digital contínuas" },
+        "disclaimer": "Projeto gerido ativamente pela GROPPI."
+      },
+      "verona-los-boliches": {
+        "shortResult": "Presença online completa para um vibrante restaurante de fusão.",
+        "challenge": "Verona Los Boliches, um restaurante de fusão italiana-indiana-mexicana único em Espanha, precisava de uma presença digital profissional.",
+        "approach": { "0": "Website personalizado com identidade visual", "1": "Criação profissional de conteúdo de comida e ambiente", "2": "Construção de presença e visibilidade online", "3": "Conteúdo visual direcionado a diversos estilos de cozinha" },
+        "results": { "0": "Website profissional apresentando fortemente a cozinha de fusão", "1": "Melhor visibilidade online para turistas e locais", "2": "Forte conteúdo visual em todos os canais digitais", "3": "Gestão e otimização digital contínuas" },
+        "disclaimer": "Projeto gerido ativamente pela GROPPI."
+      },
+      "happy-flavors": {
+        "shortResult": "Presença digital profissional para cozinha indiana autêntica em Espanha.",
+        "challenge": "O Happy Flavors Indian Restaurant queria construir uma presença online profissional refletindo a cozinha indiana autêntica e hospitalidade calorosa.",
+        "approach": { "0": "Website personalizado com identidade visual calorosa", "1": "Criação profissional de conteúdo de comida e ambiente", "2": "Construção de presença e visibilidade digital", "3": "Conteúdo visual mostrando a rica cozinha indiana" },
+        "results": { "0": "Website profissional apresentando cozinha indiana autêntica", "1": "Forte conteúdo visual em todos os canais digitais", "2": "Melhor visibilidade online para turistas e locais", "3": "Gestão e otimização digital contínuas" },
+        "disclaimer": "Projeto gerido ativamente pela GROPPI."
+      },
+      "guest-reservations": {
+        "shortResult": "Gestão contínua de plataforma para um serviço global de reservas de hotel.",
+        "challenge": "Guest Reservations, uma plataforma internacional de reservas de hotel e viagens, precisava de gestão contínua, otimização do website e suporte técnico.",
+        "approach": { "0": "Gestão contínua da plataforma e suporte técnico", "1": "Otimização do website para melhor desempenho e conversão", "2": "Monitorização e manutenção proativa da plataforma de reservas", "3": "Suporte estratégico para crescimento escalável" },
+        "results": { "0": "Desempenho e experiência de utilizador da plataforma melhorados", "1": "Maior taxa de conversão na plataforma de reservas", "2": "Plataforma estável e fiável para utilizadores globais", "3": "Suporte técnico contínuo e otimização" },
+        "disclaimer": "Projeto em andamento gerido ativamente pela GROPPI."
+      },
+      "eurostars-hotels": {
+        "shortResult": "Suporte à plataforma digital e otimização de desempenho para um grupo hoteleiro europeu.",
+        "challenge": "Eurostars Hotels, um grupo hoteleiro europeu, precisava de suporte digital contínuo, gestão do website e otimização de desempenho.",
+        "approach": { "0": "Suporte contínuo à plataforma digital e gestão técnica", "1": "Gestão do website e otimização da plataforma de reservas", "2": "Otimização de desempenho para tempos de carregamento mais rápidos", "3": "Suporte estratégico para crescimento europeu" },
+        "results": { "0": "Desempenho e experiência de utilizador do website otimizados", "1": "Maior taxa de conversão na plataforma de reservas", "2": "Plataforma digital estável e fiável para hóspedes europeus", "3": "Gestão técnica contínua e otimização proativa" },
+        "disclaimer": "Projeto em andamento gerido ativamente pela GROPPI."
+      },
+      "nda-project-001": {
+        "shortResult": "+42% reservas online",
+        "challenge": "Website desatualizado com má experiência mobile levou a reservas perdidas.",
+        "approach": { "0": "Redesign responsivo do website", "1": "Sistema de reservas online", "2": "Otimização SEO local" },
+        "results": { "0": "+42% reservas online", "1": "Tempo de carregamento mais rápido (< 2s)" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-002": {
+        "shortResult": "+70% reservas de mesa",
+        "challenge": "Bistro no centro da cidade sem visibilidade online com turistas e locais.",
+        "approach": { "0": "Estratégia de Instagram Reels", "1": "Videografia de comida", "2": "Campanhas de menu sazonal" },
+        "results": { "0": "+70% reservas de mesa via social", "1": "Reel viral (50K+ visualizações)" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-003": {
+        "shortResult": "+55% seguidores no Instagram",
+        "challenge": "Salão de beleza sem visibilidade online com público-alvo mais jovem.",
+        "approach": { "0": "Estratégia de conteúdo Instagram", "1": "Série visual antes/depois", "2": "Micro-parcerias com influencers" },
+        "results": { "0": "+55% seguidores no Instagram", "1": "Maior taxa de marcações via DM" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-004": {
+        "shortResult": "+50% reservas",
+        "challenge": "Novo spa sem diferenciação num mercado de bem-estar competitivo.",
+        "approach": { "0": "Desenvolvimento de identidade de marca de luxo", "1": "Website otimizado para reservas", "2": "Linguagem visual atmosférica" },
+        "results": { "0": "+50% reservas nos primeiros 6 meses", "1": "Posicionamento premium alcançado" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-005": {
+        "shortResult": "+38% pedidos de orçamento",
+        "challenge": "Empresa familiar com forte reputação mas identidade de marca desatualizada.",
+        "approach": { "0": "Identidade de marca completamente renovada", "1": "Fotografia profissional de projetos", "2": "Novo website com portfólio" },
+        "results": { "0": "+38% pedidos de orçamento", "1": "Maior reconhecimento de marca" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-006": {
+        "shortResult": "+85% leads",
+        "challenge": "Instalador de painéis solares num mercado em crescimento com má geração de leads.",
+        "approach": { "0": "Funis de geração de leads", "1": "Campanhas Google Ads", "2": "Ferramenta de calculadora no website" },
+        "results": { "0": "+85% leads por mês", "1": "Custo por lead reduzido a metade" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-007": {
+        "shortResult": "€62K receita no Q1",
+        "challenge": "Nova webshop sem base de clientes existente ou reconhecimento de marca.",
+        "approach": { "0": "Configuração de webshop Shopify", "1": "Campanhas Meta Ads", "2": "Funis de retargeting" },
+        "results": { "0": "€62K receita no primeiro trimestre", "1": "ROAS de 3.8" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-008": {
+        "shortResult": "+130% vendas online",
+        "challenge": "Joalheiro queria iniciar vendas online junto com a loja física.",
+        "approach": { "0": "Setup de webshop WooCommerce", "1": "Fotografia de produto", "2": "Integração Instagram shopping" },
+        "results": { "0": "+130% vendas online em 4 meses", "1": "Forte comunidade no Instagram" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-009": {
+        "shortResult": "#2 posição no Google",
+        "challenge": "Clínica médica invisível nos resultados de pesquisa apesar de forte reputação.",
+        "approach": { "0": "Auditoria técnica de SEO e correções", "1": "Estratégia de conteúdo médico", "2": "Otimização do Google My Business" },
+        "results": { "0": "#2 posição no Google para keywords principais", "1": "+60% tráfego orgânico" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-010": {
+        "shortResult": "+35% novos pacientes",
+        "challenge": "Clínica dentária em região competitiva com números decrescentes de novos pacientes.",
+        "approach": { "0": "Estratégia de SEO local", "1": "Campanhas Google Ads", "2": "Gestão de avaliações" },
+        "results": { "0": "+35% novos pacientes por mês", "1": "#1 Google Maps local" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-011": {
+        "shortResult": "Ronda seed fechada",
+        "challenge": "Startup pre-seed precisava de aparência profissional para investidores.",
+        "approach": { "0": "Logo e identidade visual", "1": "Design de pitch deck", "2": "Desenvolvimento de landing page" },
+        "results": { "0": "Ronda seed bem-sucedida", "1": "Apresentação profissional para investidores" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-012": {
+        "shortResult": "500+ inscrições em 30 dias",
+        "challenge": "Produto SaaS B2B pronto para lançamento mas sem infraestrutura de marketing.",
+        "approach": { "0": "Landing page de alta conversão", "1": "Campanha LinkedIn Ads", "2": "Estratégia de content marketing" },
+        "results": { "0": "500+ inscrições no primeiro mês", "1": "Fortes sinais de product-market fit" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-013": {
+        "shortResult": "+75% leads qualificados",
+        "challenge": "Agência imobiliária dependente de canais tradicionais, a perder leads online.",
+        "approach": { "0": "Campanhas de geração de leads", "1": "Landing pages por projeto", "2": "Integração CRM" },
+        "results": { "0": "+75% leads qualificados", "1": "Menor custo por lead" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-014": {
+        "shortResult": "Preço de venda mais alto alcançado",
+        "challenge": "Imóvel premium sem apresentação visual que transmitisse luxo.",
+        "approach": { "0": "Website imobiliário de alta gama", "1": "Fotografia drone e interior", "2": "Integração de visitas virtuais" },
+        "results": { "0": "Preço de venda mais alto alcançado", "1": "Ciclo de vendas mais rápido" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-015": {
+        "shortResult": "+32% pedidos de projeto",
+        "challenge": "Designer de interiores mostrava trabalho via redes sociais mas faltava portfólio profissional.",
+        "approach": { "0": "Website portfólio com galeria", "1": "Fotografia profissional de projetos", "2": "Estratégia de blog" },
+        "results": { "0": "+32% pedidos de projeto", "1": "Maior valor médio de projeto" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-016": {
+        "shortResult": "+55% visitas ao showroom",
+        "challenge": "Loja de cozinhas com número decrescente de visitantes apesar da oferta premium.",
+        "approach": { "0": "Google Ads com foco local", "1": "Conteúdo de inspiração nas redes sociais", "2": "Tour virtual do showroom" },
+        "results": { "0": "+55% visitas ao showroom", "1": "Maior conversão de visita para venda" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-017": {
+        "shortResult": "40+ vídeos/mês",
+        "challenge": "Estúdio de fitness queria conteúdo consistente mas não tinha capacidade interna.",
+        "approach": { "0": "Contrato de conteúdo full-service", "1": "Produção de vídeo no local", "2": "Planeamento de redes sociais" },
+        "results": { "0": "40+ vídeos de qualidade por mês", "1": "Maior engagement de membros" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-018": {
+        "shortResult": "+45% membros",
+        "challenge": "Nova box de CrossFit precisava de se diferenciar de concorrentes estabelecidos.",
+        "approach": { "0": "Identidade de marca poderosa", "1": "Conteúdo orientado à comunidade", "2": "Campanha de lançamento" },
+        "results": { "0": "+45% membros no primeiro trimestre", "1": "Comunidade forte construída" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-019": {
+        "shortResult": "+28% visitas ao showroom",
+        "challenge": "Concessionário automóvel a perder quota de mercado para dealers maiores com presença online mais forte.",
+        "approach": { "0": "Novo website com sistema de inventário", "1": "Campanhas Google Ads", "2": "Estratégia de remarketing" },
+        "results": { "0": "+28% visitas ao showroom", "1": "Menores custos de aquisição" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      },
+      "nda-project-020": {
+        "shortResult": "+45% pedidos de contacto",
+        "challenge": "Escritório de advogados com website desatualizado e visibilidade online mínima.",
+        "approach": { "0": "Redesign profissional do website", "1": "Estratégia de content marketing", "2": "SEO local" },
+        "results": { "0": "+45% pedidos de contacto", "1": "Top 5 Google local" },
+        "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      }
+    }
+  }
 }
