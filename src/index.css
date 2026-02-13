@@ -632,6 +632,20 @@
     animation: goldRipple 0.4s ease-out;
   }
 
+  /* Hero Social Icons - 3D Gold Hover */
+  .hero-social-icon {
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .hero-social-icon:hover {
+    border-color: hsl(43 76% 52% / 0.95) !important;
+    box-shadow:
+      0 6px 24px rgba(0,0,0,0.5),
+      0 0 30px hsl(43 100% 50% / 0.45),
+      0 0 60px hsl(43 100% 50% / 0.2),
+      inset 0 1px 0 hsl(45 100% 70% / 0.3) !important;
+  }
+
   /* ===== HERO PRO ===== */
 
   .groppi-hero-pro {
