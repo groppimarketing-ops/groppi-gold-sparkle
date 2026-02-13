@@ -1,0 +1,16 @@
+{
+  "name": "GROPPI - Digital Marketing Bureau",
+  "short_name": "GROPPI",
+  "description": "Full-service digital marketing bureau in België",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

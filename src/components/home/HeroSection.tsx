@@ -25,15 +25,41 @@ const VideoCard = memo(({ id }: { id: string }) => (
       src={vimeoSrc(id)}
       allow="autoplay; fullscreen; picture-in-picture"
       loading="lazy"
-      className="w-full h-full border-0"
+      className="w-full h-full border-0 hidden md:block"
       title="Portfolio video"
     />
+    <div
+      className="w-full h-full md:hidden"
+      style={{
+        background: `linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 4%))`,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <span
+        style={{
+          width: 48,
+          height: 48,
+          borderRadius: '50%',
+          background: 'hsl(43 76% 52% / 0.15)',
+          border: '1.5px solid hsl(43 76% 52% / 0.3)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="hsl(43 76% 52%)" stroke="none">
+          <polygon points="6,3 20,12 6,21" />
+        </svg>
+      </span>
+    </div>
   </div>
 ));
 VideoCard.displayName = 'VideoCard';
 
 const HeroSocialIcons = memo(() => (
-  <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex items-center gap-16 px-16 py-4 rounded-full"
+  <div className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex items-center gap-4 md:gap-16 px-4 md:px-16 py-3 md:py-4 rounded-full"
     style={{
       background: 'rgba(0, 0, 0, 0.55)',
       border: '1.5px solid hsl(43 76% 52% / 0.45)',
@@ -52,7 +78,7 @@ const HeroSocialIcons = memo(() => (
         whileHover={{ scale: 1.75, y: -8 }}
         whileTap={{ scale: 0.9 }}
         transition={{ type: 'spring', stiffness: 300, damping: 10 }}
-        className="hero-social-icon relative flex items-center justify-center w-12 h-12 rounded-xl"
+        className="hero-social-icon relative flex items-center justify-center w-9 h-9 md:w-12 md:h-12 rounded-xl"
         style={{
           background: 'hsl(0 0% 4%)',
           border: '1.5px solid hsl(43 76% 52% / 0.5)',
