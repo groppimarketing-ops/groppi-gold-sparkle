@@ -4,10 +4,10 @@
     "about": "À propos",
     "services": "Services",
     "blog": "Blog",
-    "gallery": "Portfolio",
+    "gallery": "Réalisations",
     "contact": "Contact",
-    "partnership": "Franchise",
-    "franchise": "Franchise",
+    "partnership": "Partenariat",
+    "franchise": "Partenariat",
     "careers": "Carrières"
   },
   "careers": {
@@ -95,7 +95,7 @@
     "configurePackage": "Configurez votre forfait",
     "extraOptions": "Options supplémentaires",
     "cta": {
-      "whatsapp": "Chat via WhatsApp",
+      "whatsapp": "Discuter via WhatsApp",
       "requestQuote": "Demander un devis",
       "planCall": "Planifier un appel",
       "planCallHelper": "Choisissez un créneau qui vous convient. Appel découverte gratuit (30 min)."
@@ -374,7 +374,7 @@
         "deliverables": "Ce que vous obtenez",
         "pricing": "Prix & logique",
         "video": "Vidéo",
-        "calculator": "Plan Builder"
+        "calculator": "Créateur de plan"
       },
       "overview": {
         "about": "À propos de ce service",
@@ -402,7 +402,7 @@
         "uploadNote": "L'admin peut télécharger une vidéo mp4 ici"
       },
       "calculator": {
-        "title": "Plan Builder",
+        "title": "Créateur de plan",
         "desc": "Composez votre propre plan et obtenez un prix indicatif immédiatement.",
         "cta": "Ouvrir le calculateur complet"
       },
@@ -436,7 +436,7 @@
         "beauty": "Clinique Beauté Belgique",
         "realEstate": "Agence Immobilière (BE)",
         "construction": "Studio Construction Bruxelles",
-        "startup": "Startup Tech (UE)",
+        "startup": "Startup technologique (UE)",
         "logistics": "Entreprise Logistique (BE)",
         "professional": "Cabinet de Services Professionnels",
         "hospitality": "Équipe Hôtellerie",
@@ -460,7 +460,7 @@
         "title": "Prêt à grandir avec clarté ?",
         "subtitle": "Planifiez un court appel ou envoyez-nous votre situation. Nous vous donnons un plan clair immédiatement — sans chichis.",
         "primaryButton": "Demander un devis →",
-        "secondaryButton": "Chat via WhatsApp"
+        "secondaryButton": "Discuter via WhatsApp"
       }
     },
     "trustSectors": {
@@ -521,7 +521,7 @@
          "experience": "ans d'expérience",
          "focus": "BE + UE + Mondial",
          "system": "structure plutôt que chaos",
-         "premium": "branding + performance"
+         "premium": "image de marque + performance"
        },
        "statsValues": {
          "focus": "BE + UE + Mondial",
@@ -566,13 +566,13 @@
     },
     "portfolio": {
       "subtitle": "Nos réalisations",
-      "title": "Portfolio highlights",
+      "title": "Nos réalisations phares",
       "thumbnailPlaceholder": "Image du projet",
       "viewCase": "Voir le projet",
       "viewAll": "Voir le portfolio complet",
       "tags": {
         "website": "Site web",
-        "branding": "Branding",
+        "branding": "Image de marque",
         "ads": "Publicités",
         "social": "Social",
         "ecommerce": "E-commerce",
@@ -621,9 +621,9 @@
       "solutionLabel": "Notre approche",
       "cta": "Demander un devis personnalisé",
       "industries": {
-        "restaurant": "Restaurant",
+        "restaurant": "Restauration",
         "ecommerce": "E-commerce",
-        "construction": "Construction"
+        "construction": "Bâtiment"
       },
       "case1": {
         "challenge": "Faible visibilité en ligne et peu de réservations.",
@@ -696,7 +696,7 @@
         "desc": "Gestion publicitaire, SEO et gestion des réseaux sociaux."
       },
       "branding": {
-        "title": "Branding & Design",
+        "title": "Image de marque & Design",
         "desc": "Identité visuelle et stratégie de marque qui marquent les esprits."
       }
     },
@@ -756,7 +756,7 @@
       "title": "Prêt à prendre votre croissance digitale au sérieux ?",
       "description": "Discutons ensemble de la façon dont nous pouvons aider votre entreprise à croître avec une stratégie qui fonctionne.",
       "contact": "Nous contacter",
-      "whatsapp": "Chat via WhatsApp"
+      "whatsapp": "Discuter via WhatsApp"
     }
   },
   "about": {
@@ -1317,12 +1317,12 @@
   },
   "gallery": {
     "title": "Nos réalisations",
-    "subtitle": "Portfolio",
+    "subtitle": "Réalisations",
     "description": "Découvrez une sélection de projets que nous avons réalisés pour nos clients.",
     "filters": {
       "all": "Tout",
       "web": "Sites web",
-      "branding": "Branding",
+      "branding": "Image de marque",
       "social": "Réseaux sociaux",
       "ecommerce": "E-commerce"
     }
@@ -1330,7 +1330,7 @@
   "portfolio": {
     "page": {
       "subtitle": "Nos réalisations",
-      "title": "Portfolio",
+      "title": "Réalisations",
       "description": "Découvrez nos projets et les résultats que nous avons obtenus pour nos clients.",
       "resultSingle": "projet trouvé",
       "resultPlural": "projets trouvés",
@@ -1352,7 +1352,7 @@
       "approach": "Notre approche",
       "results": "Résultat",
       "ctaPrimary": "Demander un devis",
-      "ctaWhatsApp": "Chat via WhatsApp"
+      "ctaWhatsApp": "Discuter via WhatsApp"
     },
     "items": {
       "castello-vicchiomaggio": {
@@ -1704,7 +1704,7 @@
     "mobile": "Mobile"
   },
   "franchise": {
-    "title": "Franchise",
+    "title": "Partenariat",
     "subtitle": "Devenir franchisé",
     "description": "Vous êtes intéressé par un partenariat avec GROPPI ? Découvrez les opportunités de croître ensemble.",
     "benefits": {
@@ -1739,7 +1739,7 @@
     "contact": "Coordonnées",
     "planCall": "Planifier un appel (30 min)",
     "newsletter": {
-      "title": "Newsletter",
+      "title": "Infolettre",
       "description": "Restez informé de nos derniers insights et conseils.",
       "placeholder": "Votre adresse e-mail",
       "button": "S'abonner",
@@ -1776,7 +1776,7 @@
   },
   "social": {
     "whatsapp": "WhatsApp",
-    "whatsappChat": "Chat via WhatsApp",
+    "whatsappChat": "Discuter via WhatsApp",
     "callUs": "Appelez-nous",
     "emailUs": "Envoyez un e-mail",
     "followUs": "Suivez-nous sur les réseaux sociaux",
@@ -1792,7 +1792,7 @@
   },
   "planBuilder": {
     "tab": "Créer votre plan",
-    "title": "Plan Builder",
+    "title": "Créateur de plan",
     "subtitle": "Composez votre plan de réseaux sociaux et obtenez un devis estimatif instantané.",
     "disclaimer": "Ceci est un prix indicatif. Le prix final dépend de l'envergure, de la complexité de la marque et des besoins en contenu.",
     "vatNote": "hors TVA",
@@ -1999,7 +1999,7 @@
       }
     },
     "faq": {
-      "subtitle": "Questions",
+      "subtitle": "Questions fréquentes",
       "title": "FAQ",
       "items": {
         "isJob": {
@@ -2105,7 +2105,7 @@
   "servicePage": {
     "cta": {
       "requestQuote": "Demander un devis",
-      "whatsapp": "Chat via WhatsApp",
+      "whatsapp": "Discuter via WhatsApp",
       "planCall": "Planifier un appel"
     },
     "trustNote": "Prix transparents. Pas de frais cachés.",
@@ -2187,7 +2187,7 @@
       "title": "Prêt à grandir avec clarté ?",
       "subtitle": "Pas de promesses vides. Juste des étapes concrètes vers plus de clients.",
       "primaryCTA": "Demander un devis personnalisé",
-      "secondaryCTA": "Chat via WhatsApp"
+      "secondaryCTA": "Discuter via WhatsApp"
     },
     "socialMedia": {
       "title": "Gestion des réseaux sociaux",
@@ -2242,7 +2242,7 @@
         "3": "Livraison rapide et révisions"
       },
       "deliverables": {
-        "1": { "title": "Concept & planning", "desc": "Idées créatives alignées sur votre marque." },
+        "1": { "title": "Conception & planification", "desc": "Idées créatives alignées sur votre marque." },
         "2": { "title": "Production vidéo", "desc": "Du script au montage final." },
         "3": { "title": "Photographie", "desc": "Photos produit et lifestyle." },
         "4": { "title": "Montage & post-production", "desc": "Finition professionnelle." },
@@ -2286,7 +2286,7 @@
         "3": "Mobile-friendly et rapide"
       },
       "deliverables": {
-        "1": { "title": "Design & UX", "desc": "Design personnalisé correspondant à votre marque." },
+        "1": { "title": "Design & expérience utilisateur", "desc": "Design personnalisé correspondant à votre marque." },
         "2": { "title": "Développement", "desc": "Techniquement solide et évolutif." },
         "3": { "title": "Intégration de contenu", "desc": "Textes et visuels intégrés professionnellement." },
         "4": { "title": "SEO de base", "desc": "SEO technique inclus." },
@@ -2344,7 +2344,7 @@
       }
     },
     "branding": {
-      "title": "Branding",
+      "title": "Image de marque",
       "subtitle": "Une identité visuelle qui marque les esprits.",
       "benefits": {
         "1": "Reconnaissable et professionnel",
@@ -2356,7 +2356,7 @@
         "2": { "title": "Palette de couleurs", "desc": "Choix de couleurs stratégiques." },
         "3": { "title": "Typographie", "desc": "Polices qui correspondent à votre marque." },
         "4": { "title": "Charte graphique", "desc": "Guide d'utilisation cohérente." },
-        "5": { "title": "Templates", "desc": "Templates réseaux sociaux et print." },
+        "5": { "title": "Modèles", "desc": "Templates réseaux sociaux et print." },
         "6": { "title": "Assets de marque", "desc": "Tous les fichiers en haute qualité." }
       },
       "process": {
@@ -2701,7 +2701,7 @@
         "content": "• L'une ou l'autre partie peut résilier l'accord avec un préavis écrit de 30 jours\n• Une résiliation immédiate peut intervenir en cas de manquement grave\n• À la résiliation, tous les montants impayés deviennent immédiatement exigibles\n• Nous faciliterons un transfert raisonnable des matériaux après la résiliation"
       },
       "modifications": {
-        "title": "Modifications",
+        "title": "Modifications des conditions",
         "content": "Nous nous réservons le droit de modifier ces conditions à tout moment.\n\nPour les modifications significatives, nous vous informerons par e-mail si applicable.\n\nL'utilisation continue de nos services après les modifications constitue l'acceptation des nouvelles conditions."
       },
       "governing": {
