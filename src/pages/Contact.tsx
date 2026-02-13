@@ -75,6 +75,16 @@ const Contact = () => {
         description: t('forms.submitSuccess'),
       });
       reset();
+
+      // GTM conversion tracking
+      trackEvent({ event: 'contact_form_submit' as any, location: 'contact_page', label: data.subject });
+      if (typeof window !== 'undefined' && window.dataLayer) {
+        window.dataLayer.push({
+          event: 'generate_lead',
+          currency: 'EUR',
+          value: 1,
+        });
+      }
     } catch (error: any) {
       toast({
         title: t('contact.error'),
