@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": "Home",
+    "home": "Pagina iniziale",
     "about": "Chi siamo",
     "services": "Servizi",
     "blog": "Blog",
@@ -232,7 +232,7 @@
           "services": {
             "branding": "Branding e identità visiva",
             "socialContent": "Contenuti social media",
-            "videoAds": "Video advertising",
+            "videoAds": "Pubblicità video",
             "creativeCampaigns": "Campagne creative"
           }
         },
@@ -362,7 +362,7 @@
       "subtitle": "Fiducia delle aziende",
       "title": "Fiducia delle aziende in Belgio ed Europa",
       "ndaNote": "*Alcuni progetti sono sotto NDA e non possono essere mostrati pubblicamente.*",
-      "logoPlaceholder": "LOGO"
+      "logoPlaceholder": "MARCHIO"
     },
     "clientLogoMarquee": {
       "eyebrow": "I NOSTRI CLIENTI",
@@ -429,7 +429,7 @@
         "experience": "anni di esperienza",
         "focus": "BE + UE + Worldwide",
         "system": "struttura invece di caos",
-        "premium": "branding + performance"
+        "premium": "branding + prestazioni"
       },
       "microNote": "*I risultati variano per settore e budget. Costruiamo sistemi scalabili."
     },
