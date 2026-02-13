@@ -38,7 +38,7 @@
       "requirementsLabel": "Requisitos",
       "applyNow": "Aplicar ahora",
       "performanceMarketer": {
-        "title": "Performance Marketer (Meta/Google)",
+        "title": "Especialista en Marketing de Rendimiento (Meta/Google)",
         "responsibilities": "Gestionar y optimizar campañas pagadas en Meta y Google. Analizar datos e informar resultados.",
         "requirements": "2+ años de experiencia en publicidad pagada. Conocimiento de Meta Ads Manager y Google Ads. Mentalidad basada en datos."
       },
@@ -241,9 +241,9 @@
       "proof3": "Más clientes, menos presupuesto desperdiciado",
       "ctaPrimary": "Ver servicios y precios",
       "ctaSecondary": "Solicitar una propuesta",
-      "scrollHint": "Scroll",
+      "scrollHint": "Desplazar",
       "logoAlt": "GROPPI Gold Standard",
-      "chartLeads": "LEADS",
+      "chartLeads": "CLIENTES POTENCIALES",
       "chartSales": "VENTAS",
       "chartRoi": "ROI",
       "tagline": "CRECIMIENTO · CONTENIDO · ROI",
@@ -501,7 +501,7 @@
       "subtitle": "Confiado por empresas",
       "title": "Confiado por empresas en Bélgica y Europa",
       "ndaNote": "*Algunos proyectos están bajo NDA y no pueden mostrarse públicamente.*",
-      "logoPlaceholder": "LOGO"
+      "logoPlaceholder": "MARCA"
     },
     "clientLogoMarquee": {
       "eyebrow": "NUESTROS CLIENTES",
@@ -522,7 +522,7 @@
         "beauty": "Clínica de Belleza Bélgica",
         "realEstate": "Agencia Inmobiliaria (BE)",
         "construction": "Estudio de Construcción Bruselas",
-        "startup": "Tech Startup (EU)",
+        "startup": "Startup tecnológica (UE)",
         "logistics": "Empresa de Logística (BE)",
         "professional": "Oficina de Servicios Profesionales",
         "hospitality": "Equipo de Hospitalidad",
@@ -612,7 +612,7 @@
       "statsValues": {
         "focus": "BE + EU + Mundial",
         "system": "Basado en sistemas",
-        "premium": "Premium"
+        "premium": "Calidad premium"
       },
       "microNote": "*Los resultados varían por sector y presupuesto. Construimos sistemas escalables."
     },
@@ -765,7 +765,7 @@
       "starter": "Perfecto para principiantes y proyectos pequeños",
       "growth": "Ideal para empresas en crecimiento",
       "pro": "Soporte completo para marcas ambiciosas",
-      "popular": "Popular",
+      "popular": "Más elegido",
       "cta": "Ver todos los paquetes"
     },
     "cta": {
@@ -1263,7 +1263,7 @@
       "b2b-platform": {
         "shortResult": "+320% leads",
         "challenge": "SaaS B2B complejo con funnel de ventas largo.",
-        "approach": { "0": "Landing pages optimizadas por persona", "1": "Lead magnets (whitepapers, case studies)", "2": "Estrategia SEO para long-tail", "3": "A/B testing de formularios y CTAs" },
+        "approach": { "0": "Landing pages optimizadas por persona", "1": "Recursos descargables (informes, casos de éxito)", "2": "Estrategia SEO para long-tail", "3": "A/B testing de formularios y CTAs" },
         "results": { "0": "+320% leads cualificados en 4 meses", "1": "Menor costo por lead", "2": "Menor tiempo de ciclo de ventas", "3": "Mejor calidad de leads (ratio SQL)" }
       },
       "bouwbedrijf-website": {
@@ -1520,9 +1520,9 @@
         "1": { "title": "Diseño de logo", "desc": "Logo único con variaciones." },
         "2": { "title": "Paleta de colores", "desc": "Elecciones de color estratégicas." },
         "3": { "title": "Tipografía", "desc": "Fuentes que se ajustan a tu marca." },
-        "4": { "title": "Brand guidelines", "desc": "Manual para uso consistente." },
+        "4": { "title": "Manual de marca", "desc": "Manual para uso consistente." },
         "5": { "title": "Plantillas", "desc": "Plantillas para redes sociales e impresión." },
-        "6": { "title": "Brand assets", "desc": "Todos los archivos en alta calidad." }
+        "6": { "title": "Recursos de marca", "desc": "Todos los archivos en alta calidad." }
       },
       "process": {
         "1": { "title": "Análisis", "desc": "Conocemos tu marca y audiencia." },
@@ -1594,9 +1594,9 @@
       "oneTimeDesc": "Paga por item.",
       "monthly": "Suscripción mensual",
       "monthlyDesc": "Cantidad mensual fija.",
-      "posters": "Posters",
+      "posters": "Pósteres",
       "reels": "Reels",
-      "videos": "Videos",
+      "videos": "Vídeos",
       "articles": "Artículos",
       "quantity": "Cantidad",
       "perItem": "por unidad",
@@ -1682,7 +1682,7 @@
       "managementFee": "Costo de gestión estimado",
       "channels": "Canales",
       "frequency": "Frecuencia de publicación",
-      "addons": "Add-ons",
+      "addons": "Complementos",
       "adsBudget": "Presupuesto publicitario (pago directo)",
       "total": "Total por mes",
       "included": "incluido"
