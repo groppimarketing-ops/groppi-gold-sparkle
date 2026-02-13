@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Star, Zap, Sun } from 'lucide-react';
+import { Zap, Sun, TrendingUp } from 'lucide-react';
 import { socialIconsData } from '@/components/shared/SocialIconsPill';
 import { trackEvent } from '@/utils/tracking';
 
@@ -94,6 +94,18 @@ const HeroSection = memo(() => (
 
     <div className="groppi-overlay" />
 
+    {/* Atmospheric Gold Elements — behind video cards */}
+    <div className="hero-gold-rain" aria-hidden="true">
+      <span className="gold-drop gold-drop--1" style={{ left: '12%' }}><Zap /></span>
+      <span className="gold-drop gold-drop--2" style={{ left: '32%' }}><Sun /></span>
+      <span className="gold-drop gold-drop--3" style={{ left: '55%' }}><TrendingUp /></span>
+      <span className="gold-drop gold-drop--4" style={{ left: '76%' }}><Zap /></span>
+      <span className="gold-drop gold-drop--5" style={{ left: '24%' }}><TrendingUp /></span>
+      <span className="gold-drop gold-drop--6" style={{ left: '48%' }}><Sun /></span>
+      <span className="gold-drop gold-drop--7 gold-flare" style={{ left: '65%' }} />
+      <span className="gold-drop gold-drop--8 gold-flare" style={{ left: '38%' }} />
+    </div>
+
     <div className="groppi-strip-wrap">
       <div className="groppi-strip-track">
         {VIMEO_IDS.map((id, i) => (
@@ -103,18 +115,6 @@ const HeroSection = memo(() => (
           <VideoCard key={`b-${i}`} id={id} />
         ))}
       </div>
-    </div>
-
-    {/* Slow-Motion Gold Flares */}
-    <div className="hero-gold-rain" aria-hidden="true">
-      <span className="gold-drop gold-drop--1" style={{ left: '10%' }}><Sparkles /></span>
-      <span className="gold-drop gold-drop--2" style={{ left: '30%' }}><Star /></span>
-      <span className="gold-drop gold-drop--3" style={{ left: '55%' }}><Zap /></span>
-      <span className="gold-drop gold-drop--4" style={{ left: '78%' }}><Sun /></span>
-      <span className="gold-drop gold-drop--5" style={{ left: '22%' }}><Sparkles /></span>
-      <span className="gold-drop gold-drop--6" style={{ left: '48%' }}><Star /></span>
-      <span className="gold-drop gold-drop--7" style={{ left: '68%' }}><Sun /></span>
-      <span className="gold-drop gold-drop--8" style={{ left: '40%' }}><Zap /></span>
     </div>
 
     <HeroSocialIcons />

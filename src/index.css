@@ -760,78 +760,94 @@
     100% { opacity: 0; transform: translateX(360%) rotate(8deg); }
   }
 
-  /* === Slow-Motion Gold Emoji Rain === */
+  /* === Atmospheric Gold Elements (behind video cards) === */
   .hero-gold-rain {
     position: absolute;
     inset: 0;
-    z-index: 2;
+    z-index: 1;
     pointer-events: none;
     overflow: hidden;
+    opacity: 0.5;
   }
 
   .gold-drop {
     position: absolute;
-    top: -8%;
+    top: -10%;
     line-height: 1;
     color: hsl(43 76% 52%);
     opacity: 0;
     will-change: transform, opacity;
     filter:
-      drop-shadow(0 0 12px hsl(43 76% 52% / 0.5))
-      drop-shadow(0 4px 16px hsl(0 0% 0% / 0.5));
+      drop-shadow(0 0 16px hsl(43 76% 52% / 0.45))
+      drop-shadow(0 6px 20px hsl(0 0% 0% / 0.4));
   }
 
   .gold-drop svg {
-    width: clamp(32px, 3.5vw, 48px);
-    height: clamp(32px, 3.5vw, 48px);
+    width: clamp(36px, 3.8vw, 52px);
+    height: clamp(36px, 3.8vw, 52px);
     stroke: url(#gold-grad);
-    stroke-width: 1.8;
-    fill: hsl(43 76% 52% / 0.15);
+    stroke-width: 1.6;
+    fill: hsl(43 76% 52% / 0.12);
   }
 
-  /* Staggered timings: 8 drops, delays spaced ~1.5-2.5s apart, durations 6-8s.
-     With these timings ~2-4 are visible at any moment. */
-  .gold-drop--1 { animation: slowDropA 7s   cubic-bezier(0.33,0,0.2,1) 0s    infinite; }
-  .gold-drop--2 { animation: slowDropB 6.5s cubic-bezier(0.33,0,0.2,1) 1.8s  infinite; }
-  .gold-drop--3 { animation: slowDropC 7.5s cubic-bezier(0.33,0,0.2,1) 3.5s  infinite; }
-  .gold-drop--4 { animation: slowDropD 6.8s cubic-bezier(0.33,0,0.2,1) 5.5s  infinite; }
-  .gold-drop--5 { animation: slowDropC 7.2s cubic-bezier(0.33,0,0.2,1) 7.8s  infinite; }
-  .gold-drop--6 { animation: slowDropA 8s   cubic-bezier(0.33,0,0.2,1) 10s   infinite; }
-  .gold-drop--7 { animation: slowDropD 6.6s cubic-bezier(0.33,0,0.2,1) 12.5s infinite; }
-  .gold-drop--8 { animation: slowDropB 7.4s cubic-bezier(0.33,0,0.2,1) 14.5s infinite; }
+  /* Gold lens flare (no icon, pure CSS) */
+  .gold-flare {
+    width: clamp(20px, 2.5vw, 32px);
+    height: clamp(20px, 2.5vw, 32px);
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      hsl(45 100% 90% / 0.9) 0%,
+      hsl(43 76% 52% / 0.6) 30%,
+      hsl(43 76% 52% / 0.15) 60%,
+      transparent 100%
+    );
+    box-shadow: 0 0 20px hsl(43 76% 52% / 0.4), 0 0 40px hsl(43 76% 52% / 0.15);
+  }
+
+  /* Ultra-slow staggered timing: 8-12s fall, 2-3s spacing */
+  .gold-drop--1 { animation: slowDropA 10s  cubic-bezier(0.25,0,0.15,1) 0s    infinite; }
+  .gold-drop--2 { animation: slowDropB 9s   cubic-bezier(0.25,0,0.15,1) 2.5s  infinite; }
+  .gold-drop--3 { animation: slowDropC 11s  cubic-bezier(0.25,0,0.15,1) 5s    infinite; }
+  .gold-drop--4 { animation: slowDropD 8.5s cubic-bezier(0.25,0,0.15,1) 7.5s  infinite; }
+  .gold-drop--5 { animation: slowDropC 10.5s cubic-bezier(0.25,0,0.15,1) 11s  infinite; }
+  .gold-drop--6 { animation: slowDropA 12s  cubic-bezier(0.25,0,0.15,1) 14s   infinite; }
+  .gold-drop--7 { animation: slowDropB 9.5s cubic-bezier(0.25,0,0.15,1) 17s   infinite; }
+  .gold-drop--8 { animation: slowDropD 11s  cubic-bezier(0.25,0,0.15,1) 20s   infinite; }
 
   @keyframes slowDropA {
     0%   { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
-    5%   { opacity: 0.88; }
-    45%  { opacity: 0.75; }
-    70%  { opacity: 0.35; }
-    100% { transform: translateY(85vh) translateX(10px) rotate(12deg); opacity: 0; }
+    4%   { opacity: 0.9; }
+    40%  { opacity: 0.7; }
+    70%  { opacity: 0.3; }
+    100% { transform: translateY(90vh) translateX(8px) rotate(8deg); opacity: 0; }
   }
   @keyframes slowDropB {
     0%   { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
-    6%   { opacity: 0.85; }
-    40%  { opacity: 0.7; }
-    72%  { opacity: 0.3; }
-    100% { transform: translateY(80vh) translateX(-14px) rotate(-10deg); opacity: 0; }
+    5%   { opacity: 0.85; }
+    38%  { opacity: 0.65; }
+    72%  { opacity: 0.25; }
+    100% { transform: translateY(85vh) translateX(-10px) rotate(-7deg); opacity: 0; }
   }
   @keyframes slowDropC {
     0%   { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
-    5%   { opacity: 0.9; }
-    42%  { opacity: 0.72; }
-    68%  { opacity: 0.28; }
-    100% { transform: translateY(82vh) translateX(8px) rotate(15deg); opacity: 0; }
+    4%   { opacity: 0.88; }
+    42%  { opacity: 0.68; }
+    68%  { opacity: 0.22; }
+    100% { transform: translateY(88vh) translateX(6px) rotate(10deg); opacity: 0; }
   }
   @keyframes slowDropD {
     0%   { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
-    7%   { opacity: 0.82; }
-    44%  { opacity: 0.68; }
-    74%  { opacity: 0.25; }
-    100% { transform: translateY(78vh) translateX(-10px) rotate(-14deg); opacity: 0; }
+    5%   { opacity: 0.82; }
+    36%  { opacity: 0.62; }
+    74%  { opacity: 0.2; }
+    100% { transform: translateY(82vh) translateX(-8px) rotate(-9deg); opacity: 0; }
   }
 
   @media (max-width: 768px) {
     .groppi-hero-pro { min-height: 520px; }
-    .gold-drop svg { width: clamp(22px, 7vw, 32px); height: clamp(22px, 7vw, 32px); }
+    .gold-drop svg { width: clamp(24px, 7vw, 34px); height: clamp(24px, 7vw, 34px); }
+    .gold-flare { width: clamp(14px, 4vw, 22px); height: clamp(14px, 4vw, 22px); }
   }
 
   @media (prefers-reduced-motion: reduce) {
