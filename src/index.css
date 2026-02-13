@@ -760,92 +760,71 @@
     100% { opacity: 0; transform: translateX(360%) rotate(8deg); }
   }
 
-  /* === 3D Metallic Gold Emoji === */
-  .hero-gold-emoji {
+  /* === Metallic Gold Emoji Rain === */
+  .hero-emoji-rain {
     position: absolute;
-    right: 6%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 5;
+    inset: 0;
+    z-index: 4;
     pointer-events: none;
-    animation: heroEmojiFloat 7s ease-in-out infinite;
-    filter:
-      drop-shadow(0 0 30px hsl(43 76% 52% / 0.45))
-      drop-shadow(0 12px 40px hsl(0 0% 0% / 0.7));
+    overflow: hidden;
   }
 
-  .hero-gold-emoji__inner {
-    display: block;
-    font-size: clamp(64px, 8vw, 120px);
+  .hero-emoji-drop {
+    position: absolute;
+    top: -10%;
+    font-size: clamp(36px, 5vw, 56px);
     line-height: 1;
-    /* Metallic gold reflective finish */
+    /* Metallic gold overlay */
     background: linear-gradient(
-      160deg,
-      #FFF8DC 0%,
-      #FFD700 18%,
-      #DAA520 32%,
-      #B8860B 45%,
-      #FFD700 55%,
-      #FFFACD 62%,
-      #DAA520 72%,
-      #B8860B 85%,
-      #FFD700 100%
+      155deg,
+      #FFF8DC 0%, #FFD700 20%, #DAA520 38%,
+      #B8860B 50%, #FFD700 60%, #FFFACD 68%,
+      #DAA520 80%, #B8860B 90%, #FFD700 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    position: relative;
-    /* 3D depth */
-    text-shadow: none;
     filter:
-      drop-shadow(0 2px 0 #8B6914)
-      drop-shadow(0 4px 0 #6B4F10)
-      drop-shadow(0 6px 12px rgba(0,0,0,0.5));
+      drop-shadow(0 0 18px hsl(43 76% 52% / 0.5))
+      drop-shadow(0 8px 24px hsl(0 0% 0% / 0.6));
+    animation: emojiRainFall 3.5s ease-in infinite;
+    will-change: transform, opacity;
   }
 
-  /* Cinematic shimmer sweep */
-  .hero-gold-emoji__inner::after {
+  /* Shimmer overlay on each emoji */
+  .hero-emoji-drop::after {
     content: "";
     position: absolute;
-    inset: -20%;
+    inset: -30%;
     background: linear-gradient(
-      105deg,
-      transparent 0%,
-      transparent 35%,
-      hsl(0 0% 100% / 0.35) 45%,
-      hsl(45 100% 85% / 0.25) 50%,
-      hsl(0 0% 100% / 0.35) 55%,
-      transparent 65%,
-      transparent 100%
+      110deg,
+      transparent 30%,
+      hsl(0 0% 100% / 0.4) 48%,
+      hsl(45 100% 85% / 0.3) 52%,
+      transparent 70%
     );
-    animation: heroEmojiShimmer 4s ease-in-out infinite;
-    pointer-events: none;
+    animation: emojiShimmerSweep 3.5s ease-in-out infinite;
     mix-blend-mode: overlay;
+    pointer-events: none;
   }
 
-  @keyframes heroEmojiFloat {
-    0%, 100% { transform: translateY(-50%) translateZ(0); }
-    50% { transform: translateY(calc(-50% - 14px)) translateZ(0); }
+  @keyframes emojiRainFall {
+    0%   { transform: translateY(0) rotate(0deg) scale(1); opacity: 0; }
+    8%   { opacity: 0.9; }
+    75%  { opacity: 0.7; }
+    100% { transform: translateY(110vh) rotate(25deg) scale(0.85); opacity: 0; }
   }
 
-  @keyframes heroEmojiShimmer {
-    0%   { opacity: 0; transform: translateX(-120%); }
-    15%  { opacity: 1; }
-    35%  { opacity: 0; transform: translateX(120%); }
-    100% { opacity: 0; transform: translateX(120%); }
+  @keyframes emojiShimmerSweep {
+    0%, 60% { opacity: 0; transform: translateX(-150%); }
+    70%     { opacity: 1; }
+    85%     { opacity: 0; transform: translateX(150%); }
+    100%    { opacity: 0; transform: translateX(150%); }
   }
 
   @media (max-width: 768px) {
     .groppi-hero-pro { min-height: 520px; }
-    .hero-gold-emoji {
-      right: 4%;
-      font-size: 0.6em;
-    }
-    .hero-gold-emoji__inner {
-      font-size: clamp(40px, 12vw, 56px);
-    }
-    .groppi-strip-track { gap: 14px; animation-duration: 85s; }
-    .groppi-card { width: clamp(220px, 78vw, 360px); }
+    .hero-emoji-drop { font-size: clamp(24px, 8vw, 36px); }
   }
 
   @media (prefers-reduced-motion: reduce) {

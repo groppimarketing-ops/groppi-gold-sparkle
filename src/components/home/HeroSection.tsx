@@ -90,9 +90,12 @@ const HeroSection = memo(() => (
       </div>
     </div>
 
-    {/* 3D Metallic Gold Emoji */}
-    <div className="hero-gold-emoji" aria-hidden="true">
-      <span className="hero-gold-emoji__inner">👑</span>
+    {/* Metallic Gold Emoji Rain */}
+    <div className="hero-emoji-rain" aria-hidden="true">
+      <span className="hero-emoji-drop" style={{ left: '15%', animationDelay: '0s', animationDuration: '3.6s' }}>❤️</span>
+      <span className="hero-emoji-drop" style={{ left: '45%', animationDelay: '1.2s', animationDuration: '3.2s' }}>😂</span>
+      <span className="hero-emoji-drop" style={{ left: '72%', animationDelay: '2.4s', animationDuration: '3.8s' }}>👍</span>
+      <span className="hero-emoji-drop" style={{ left: '30%', animationDelay: '3.5s', animationDuration: '3.4s' }}>😍</span>
     </div>
 
     <HeroSocialIcons />
