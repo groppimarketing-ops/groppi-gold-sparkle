@@ -1,9 +1,6 @@
 import { memo } from 'react';
+import { useReducedMotion } from 'framer-motion';
 
-/**
- * Vimeo video IDs – 9 portfolio showreels.
- * First one autoplays, the rest play on hover / visibility.
- */
 const VIMEO_IDS = [
   '1164723572',
   '1164718752',
@@ -16,13 +13,13 @@ const VIMEO_IDS = [
   '1164718241',
 ];
 
-const vimeoSrc = (id: string, autoplay: boolean) =>
-  `https://player.vimeo.com/video/${id}?background=1&autoplay=${autoplay ? 1 : 0}&loop=1&muted=1&title=0&byline=0&portrait=0&dnt=1`;
+const vimeoSrc = (id: string) =>
+  `https://player.vimeo.com/video/${id}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&dnt=1`;
 
-const VideoCard = memo(({ id, autoplay }: { id: string; autoplay: boolean }) => (
-  <div className="groppi-card">
+const VideoCard = memo(({ id }: { id: string }) => (
+  <div className="groppi-card flex-shrink-0">
     <iframe
-      src={vimeoSrc(id, autoplay)}
+      src={vimeoSrc(id)}
       allow="autoplay; fullscreen; picture-in-picture"
       loading="lazy"
       className="w-full h-full border-0"
@@ -33,12 +30,19 @@ const VideoCard = memo(({ id, autoplay }: { id: string; autoplay: boolean }) => 
 VideoCard.displayName = 'VideoCard';
 
 const HeroSection = memo(() => {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <section className="groppi-hero-pro" aria-label="GROPPI Hero">
       <div className="groppi-center">
-        <div className="groppi-strip-pro">
+        <div
+          className={`groppi-strip-pro ${prefersReducedMotion ? '' : 'animate-drift-pro'}`}
+        >
           {VIMEO_IDS.map((id, i) => (
-            <VideoCard key={id} id={id} autoplay={i === 0} />
+            <VideoCard key={`a-${i}`} id={id} />
+          ))}
+          {VIMEO_IDS.map((id, i) => (
+            <VideoCard key={`b-${i}`} id={id} />
           ))}
         </div>
       </div>
