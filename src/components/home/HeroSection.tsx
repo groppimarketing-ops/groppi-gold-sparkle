@@ -21,20 +21,20 @@ const FallingReactions = memo(() => {
   const [reactions, setReactions] = useState<FallingReaction[]>([]);
 
   const spawnBatch = useCallback(() => {
-    const batch: FallingReaction[] = Array.from({ length: 3 }, () => ({
+    const batch: FallingReaction[] = Array.from({ length: 6 }, () => ({
       id: reactionId++,
       emoji: REACTIONS[Math.floor(Math.random() * REACTIONS.length)],
-      x: 5 + Math.random() * 90,
-      delay: Math.random() * 0.8,
-      duration: 4 + Math.random() * 4,
+      x: 2 + Math.random() * 96,
+      delay: Math.random() * 0.4,
+      duration: 2.5 + Math.random() * 2.5,
       size: 1.2 + Math.random() * 1.4,
     }));
-    setReactions((prev) => [...prev.slice(-30), ...batch]);
+    setReactions((prev) => [...prev.slice(-50), ...batch]);
   }, []);
 
   useEffect(() => {
     spawnBatch();
-    const interval = setInterval(spawnBatch, 2200);
+    const interval = setInterval(spawnBatch, 1200);
     return () => clearInterval(interval);
   }, [spawnBatch]);
 
