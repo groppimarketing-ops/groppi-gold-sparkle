@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { languages, type LanguageCode, applyDocumentDirection } from '@/i18n/config';
 import {
@@ -19,6 +19,7 @@ import {
 } from '@/components/ui/tooltip';
 import groppiLogo from '@/assets/groppi-logo.png';
 import { trackEvent, socialLinks as socialUrls } from '@/utils/tracking';
+import { getCurrentLangFromPath, getBasePath, getLangPath } from '@/utils/languageRouting';
 
 // Brand color social icons
 const XIcon = ({ className }: { className?: string }) => (
@@ -146,8 +147,11 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const currentLang = languages.find(l => l.code === i18n.language || i18n.language.startsWith(l.code)) || languages[0];
   const isRtl = currentLang.dir === 'rtl';
+  const currentUrlLang = getCurrentLangFromPath(location.pathname);
+  const currentBasePath = getBasePath(location.pathname);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -179,6 +183,8 @@ const Header = () => {
   const changeLanguage = (code: LanguageCode) => {
     i18n.changeLanguage(code);
     applyDocumentDirection(code);
+    const basePath = getBasePath(location.pathname);
+    navigate(getLangPath(basePath, code));
   };
 
   return (
@@ -196,7 +202,7 @@ const Header = () => {
         <nav className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center group">
+            <Link to={getLangPath('/', currentUrlLang)} className="flex items-center group">
               <motion.img
                 src={groppiLogo}
                 alt="GROPPI Digital Marketing Bureau"
@@ -211,15 +217,15 @@ const Header = () => {
               {navItems.map((item) => (
                 <Link
                   key={item.path}
-                  to={item.path}
+                  to={getLangPath(item.path, currentUrlLang)}
                   className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${
-                    location.pathname === item.path 
+                    currentBasePath === item.path 
                       ? 'text-primary drop-shadow-[0_0_8px_hsl(43_76%_52%/0.6)]' 
                       : 'text-foreground/70 hover:text-foreground hover:text-primary/90 hover:drop-shadow-[0_0_6px_hsl(43_76%_52%/0.3)]'
                   }`}
                 >
                   {item.label}
-                  {location.pathname === item.path && (
+                  {currentBasePath === item.path && (
                     <motion.div
                       layoutId="activeNav"
                       className="absolute inset-0 glass-card border border-primary/40 shadow-[0_0_15px_hsl(43_76%_52%/0.25)] -z-10"
@@ -366,7 +372,7 @@ const Header = () => {
                 size="sm"
                 className="hidden sm:flex luxury-button text-primary-foreground"
               >
-                <Link to="/contact">{t('nav.contact')}</Link>
+                <Link to={getLangPath('/contact', currentUrlLang)}>{t('nav.contact')}</Link>
               </Button>
 
               {/* Mobile Menu Toggle */}
@@ -399,10 +405,10 @@ const Header = () => {
                       transition={{ delay: index * 0.05 }}
                     >
                       <Link
-                        to={item.path}
+                        to={getLangPath(item.path, currentUrlLang)}
                         onClick={() => setIsMenuOpen(false)}
                         className={`block px-4 py-3 rounded-lg transition-all ${
-                          location.pathname === item.path 
+                          currentBasePath === item.path 
                             ? 'bg-primary/25 text-primary shadow-[0_0_12px_hsl(43_76%_52%/0.25)] drop-shadow-[0_0_6px_hsl(43_76%_52%/0.4)]' 
                             : 'hover:bg-primary/10'
                         }`}
