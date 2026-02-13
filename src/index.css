@@ -760,8 +760,90 @@
     100% { opacity: 0; transform: translateX(360%) rotate(8deg); }
   }
 
+  /* === 3D Metallic Gold Emoji === */
+  .hero-gold-emoji {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    pointer-events: none;
+    animation: heroEmojiFloat 7s ease-in-out infinite;
+    filter:
+      drop-shadow(0 0 30px hsl(43 76% 52% / 0.45))
+      drop-shadow(0 12px 40px hsl(0 0% 0% / 0.7));
+  }
+
+  .hero-gold-emoji__inner {
+    display: block;
+    font-size: clamp(64px, 8vw, 120px);
+    line-height: 1;
+    /* Metallic gold reflective finish */
+    background: linear-gradient(
+      160deg,
+      #FFF8DC 0%,
+      #FFD700 18%,
+      #DAA520 32%,
+      #B8860B 45%,
+      #FFD700 55%,
+      #FFFACD 62%,
+      #DAA520 72%,
+      #B8860B 85%,
+      #FFD700 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    /* 3D depth */
+    text-shadow: none;
+    filter:
+      drop-shadow(0 2px 0 #8B6914)
+      drop-shadow(0 4px 0 #6B4F10)
+      drop-shadow(0 6px 12px rgba(0,0,0,0.5));
+  }
+
+  /* Cinematic shimmer sweep */
+  .hero-gold-emoji__inner::after {
+    content: "";
+    position: absolute;
+    inset: -20%;
+    background: linear-gradient(
+      105deg,
+      transparent 0%,
+      transparent 35%,
+      hsl(0 0% 100% / 0.35) 45%,
+      hsl(45 100% 85% / 0.25) 50%,
+      hsl(0 0% 100% / 0.35) 55%,
+      transparent 65%,
+      transparent 100%
+    );
+    animation: heroEmojiShimmer 4s ease-in-out infinite;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+
+  @keyframes heroEmojiFloat {
+    0%, 100% { transform: translateY(-50%) translateZ(0); }
+    50% { transform: translateY(calc(-50% - 14px)) translateZ(0); }
+  }
+
+  @keyframes heroEmojiShimmer {
+    0%   { opacity: 0; transform: translateX(-120%); }
+    15%  { opacity: 1; }
+    35%  { opacity: 0; transform: translateX(120%); }
+    100% { opacity: 0; transform: translateX(120%); }
+  }
+
   @media (max-width: 768px) {
     .groppi-hero-pro { min-height: 520px; }
+    .hero-gold-emoji {
+      right: 4%;
+      font-size: 0.6em;
+    }
+    .hero-gold-emoji__inner {
+      font-size: clamp(40px, 12vw, 56px);
+    }
     .groppi-strip-track { gap: 14px; animation-duration: 85s; }
     .groppi-card { width: clamp(220px, 78vw, 360px); }
   }
