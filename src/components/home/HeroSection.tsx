@@ -3,32 +3,33 @@ import { useReducedMotion } from 'framer-motion';
 import groppiLogo from '@/assets/groppi-logo.png';
 
 /**
- * Portfolio videos used in the scrolling strip.
- * 8 local MP4s → duplicated for seamless infinite loop.
+ * Vimeo video IDs for the scrolling strip.
+ * 9 videos → duplicated for seamless infinite loop.
  */
-const STRIP_VIDEOS = [
-  '/videos/portfolio/il-fuoco-promo.mp4',
-  '/videos/portfolio/lebanon-promo-1.mp4',
-  '/videos/portfolio/lebanon-promo-2.mp4',
-  '/videos/portfolio/lebanon-social-1.mp4',
-  '/videos/portfolio/lebanon-social-2.mp4',
-  '/videos/portfolio/lebanon-social-3.mp4',
-  '/videos/portfolio/lebanon-social-4.mp4',
-  '/videos/portfolio/lebanon-social-5.mp4',
+const VIMEO_IDS = [
+  '1164723572',
+  '1164718752',
+  '1164721918',
+  '1164718101',
+  '1164721986',
+  '1164718571',
+  '1164718454',
+  '1164718305',
+  '1164718241',
 ];
 
-const VideoCard = memo(({ src }: { src: string }) => (
+const vimeoSrc = (id: string) =>
+  `https://player.vimeo.com/video/${id}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&dnt=1`;
+
+const VideoCard = memo(({ id }: { id: string }) => (
   <div className="groppi-card flex-shrink-0">
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-      className="w-full h-full object-cover"
-    >
-      <source src={src} type="video/mp4" />
-    </video>
+    <iframe
+      src={vimeoSrc(id)}
+      allow="autoplay; fullscreen; picture-in-picture"
+      loading="lazy"
+      className="w-full h-full border-0"
+      title="Portfolio video"
+    />
   </div>
 ));
 VideoCard.displayName = 'VideoCard';
@@ -81,12 +82,12 @@ const HeroSection = memo(() => {
           }}
         >
           {/* Set A */}
-          {STRIP_VIDEOS.map((src, i) => (
-            <VideoCard key={`a-${i}`} src={src} />
+          {VIMEO_IDS.map((id, i) => (
+            <VideoCard key={`a-${i}`} id={id} />
           ))}
           {/* Set B (duplicate for seamless loop) */}
-          {STRIP_VIDEOS.map((src, i) => (
-            <VideoCard key={`b-${i}`} src={src} />
+          {VIMEO_IDS.map((id, i) => (
+            <VideoCard key={`b-${i}`} id={id} />
           ))}
         </div>
       </div>
