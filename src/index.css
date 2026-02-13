@@ -632,37 +632,58 @@
     animation: goldRipple 0.4s ease-out;
   }
 
-  /* ===== HERO PRO – SCROLLING STRIP ===== */
+  /* ===== HERO PRO ===== */
 
   .groppi-hero-pro {
+    position: relative;
     height: 80vh;
     min-height: 520px;
     background: hsl(var(--background));
     display: flex;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
   }
 
-  .groppi-center {
+  .groppi-bg {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
   }
 
-  .groppi-strip-pro {
+  .groppi-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to bottom,
+      hsl(0 0% 0% / 0.5) 0%,
+      hsl(0 0% 0% / 0.65) 50%,
+      hsl(0 0% 0% / 0.85) 100%
+    );
+  }
+
+  .groppi-strip-wrap {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .groppi-strip-track {
     display: flex;
     gap: 24px;
     width: max-content;
-  }
-
-  .animate-drift-pro {
-    animation: driftPro 60s linear infinite;
+    padding: 0 24px;
   }
 
   .groppi-card {
     width: 360px;
+    flex-shrink: 0;
     aspect-ratio: 16/9;
     border-radius: 18px;
     overflow: hidden;
@@ -679,17 +700,9 @@
     box-shadow: 0 0 40px hsl(var(--gold) / 0.35);
   }
 
-  @keyframes driftPro {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
-
   @media (max-width: 768px) {
     .groppi-card {
       width: clamp(220px, 70vw, 340px);
-    }
-    .animate-drift-pro {
-      animation-duration: 75s;
     }
   }
 
