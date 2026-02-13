@@ -4,7 +4,7 @@ import { socialIconsData } from '@/components/shared/SocialIconsPill';
 import { trackEvent } from '@/utils/tracking';
 
 /* ── Gold-themed social reaction emojis ── */
-const REACTIONS = ['👍', '❤️', '😂', '😡', '🔥', '💛', '⭐', '👏', '😍', '💪'];
+const REACTIONS = ['👍', '❤️', '😂', '🔥', '💛', '⭐', '👏', '😍', '💪', '🎯'];
 
 interface FallingReaction {
   id: number;
@@ -55,7 +55,7 @@ const FallingReactions = memo(() => {
             style={{
               left: `${r.x}%`,
               fontSize: `${r.size}rem`,
-              filter: 'saturate(0) brightness(1.8) sepia(1) hue-rotate(10deg)',
+              filter: 'saturate(0) brightness(2.2) sepia(1) hue-rotate(10deg) contrast(1.1)',
               textShadow: '0 0 12px hsl(43 100% 50% / 0.6), 0 0 24px hsl(43 100% 50% / 0.3)',
             }}
           >
