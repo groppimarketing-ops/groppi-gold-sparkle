@@ -32,7 +32,7 @@ const VideoCard = memo(({ id }: { id: string }) => (
 VideoCard.displayName = 'VideoCard';
 
 const HeroSocialIcons = memo(() => (
-  <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex items-center gap-8 px-10 py-4 rounded-full"
+  <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex items-center gap-12 px-14 py-4 rounded-full"
     style={{
       background: 'rgba(0, 0, 0, 0.55)',
       border: '1.5px solid hsl(43 76% 52% / 0.45)',
