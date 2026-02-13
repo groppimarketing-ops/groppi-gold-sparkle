@@ -1,6 +1,5 @@
 import { memo, useRef } from 'react';
 import { useReducedMotion } from 'framer-motion';
-import groppiLogo from '@/assets/groppi-logo.png';
 
 /**
  * Vimeo video IDs for the scrolling strip.
@@ -43,19 +42,21 @@ const HeroSection = memo(() => {
       className="groppi-hero80 relative overflow-hidden"
       aria-label="GROPPI Hero"
     >
-      {/* Subtle luxury background */}
-      <div className="absolute inset-0 z-0 groppi-hero-bg" />
-
-      {/* Logo */}
-      <div className="absolute left-1/2 -translate-x-1/2 z-[5] opacity-95 drop-shadow-[0_0_22px_hsl(43_76%_52%/0.28)]"
-        style={{ top: '16%' }}
+      {/* Background video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        poster="/images/hero-poster.png"
       >
-        <img
-          src={groppiLogo}
-          alt="GROPPI"
-          className="w-[min(520px,70vw)] h-auto"
-        />
-      </div>
+        <source src="/videos/hero-bg.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark overlay for contrast */}
+      <div className="absolute inset-0 z-[1] bg-background/60" />
 
       {/* Scrolling video strip */}
       <div
@@ -71,9 +72,7 @@ const HeroSection = memo(() => {
           className={`flex gap-[22px] w-max ${
             prefersReducedMotion ? '' : 'animate-groppi-drift'
           }`}
-          style={{
-            animationPlayState: 'running',
-          }}
+          style={{ animationPlayState: 'running' }}
           onMouseEnter={(e) => {
             (e.currentTarget as HTMLElement).style.animationPlayState = 'paused';
           }}
@@ -81,11 +80,9 @@ const HeroSection = memo(() => {
             (e.currentTarget as HTMLElement).style.animationPlayState = 'running';
           }}
         >
-          {/* Set A */}
           {VIMEO_IDS.map((id, i) => (
             <VideoCard key={`a-${i}`} id={id} />
           ))}
-          {/* Set B (duplicate for seamless loop) */}
           {VIMEO_IDS.map((id, i) => (
             <VideoCard key={`b-${i}`} id={id} />
           ))}
