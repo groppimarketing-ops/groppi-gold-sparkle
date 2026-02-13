@@ -33,9 +33,10 @@ VideoCard.displayName = 'VideoCard';
 
 const HeroSocialIcons = memo(() => {
   const container = {
-    hidden: {},
+    hidden: { opacity: 0, y: 20 },
     show: {
-      transition: { staggerChildren: 0.1, delayChildren: 0.8 },
+      opacity: 1, y: 0,
+      transition: { duration: 0.5, ease: 'easeOut' as const, staggerChildren: 0.1, delayChildren: 0.4 },
     },
   };
   const item = {
