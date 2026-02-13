@@ -48,7 +48,7 @@ const HeroSocialIcons = memo(() => {
 
   return (
     <motion.div
-      className="absolute bottom-[8%] left-1/2 -translate-x-1/2 z-10 flex items-center gap-16 px-16 py-4 rounded-full"
+      className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-[80%] z-10 flex items-center gap-16 px-16 py-4 rounded-full"
       style={{
         background: 'rgba(0, 0, 0, 0.55)',
         border: '1.5px solid hsl(43 76% 52% / 0.45)',
