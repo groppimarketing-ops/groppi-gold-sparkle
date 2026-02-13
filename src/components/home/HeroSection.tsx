@@ -66,7 +66,7 @@ const HeroSocialIcons = memo(() => {
           aria-label={social.ariaLabel}
           onClick={() => trackEvent({ event: social.event, location: 'hero' })}
           variants={item}
-          whileHover={{ scale: 1.75, y: -8 }}
+          whileHover={{ scale: 1.75, y: -8, rotateY: 15, rotateX: -10 }}
           whileTap={{ scale: 0.9 }}
           transition={{ type: 'spring', stiffness: 300, damping: 10 }}
           className="hero-social-icon relative flex items-center justify-center w-12 h-12 rounded-xl"
