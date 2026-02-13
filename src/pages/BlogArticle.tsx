@@ -1,4 +1,5 @@
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, ArrowLeft, User, Share2 } from 'lucide-react';
@@ -64,10 +65,10 @@ const BlogArticle = () => {
               variant="ghost"
               className="text-muted-foreground hover:text-primary"
             >
-              <Link to="/blog">
+              <LangLink to="/blog">
                 <ArrowLeft className={`h-4 w-4 ${isRtl ? 'ml-2 rotate-180' : 'mr-2'}`} />
                 {t('blog.backToArticles')}
-              </Link>
+              </LangLink>
             </Button>
           </motion.div>
 
@@ -182,7 +183,7 @@ const BlogArticle = () => {
                 </Button>
               </div>
               <Button asChild className="luxury-button">
-                <Link to="/contact">{t('blog.contactUs')}</Link>
+                <LangLink to="/contact">{t('blog.contactUs')}</LangLink>
               </Button>
             </div>
           </motion.div>
@@ -211,7 +212,7 @@ const BlogArticle = () => {
                 transition={{ delay: index * 0.1 }}
                 className="group overflow-hidden !p-0"
               >
-                <Link to={`/blog/${related.slug}`} className="block">
+                <LangLink to={`/blog/${related.slug}`} className="block">
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <img
                       src={related.image}
@@ -230,7 +231,7 @@ const BlogArticle = () => {
                       {t(related.titleKey)}
                     </h3>
                   </div>
-                </Link>
+                </LangLink>
               </GlassCard>
             ))}
           </div>

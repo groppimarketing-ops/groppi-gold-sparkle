@@ -1,4 +1,5 @@
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Check } from 'lucide-react';
@@ -77,13 +78,13 @@ const CaseStudy = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <Link 
+              <LangLink 
                 to="/gallery"
                 className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-4"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 {t('caseStudy.backToPortfolio')}
-              </Link>
+              </LangLink>
               
               <h1 className="text-3xl md:text-5xl font-bold gold-gradient-text mb-4">
                 {t(`caseStudy.cases.${slug}.title`)}
@@ -190,10 +191,10 @@ const CaseStudy = () => {
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90"
               >
-                <Link to="/contact">
+                <LangLink to="/contact">
                   {t('caseStudy.ctaQuote')}
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </LangLink>
               </Button>
               <Button
                 asChild
@@ -201,9 +202,9 @@ const CaseStudy = () => {
                 variant="outline"
                 className="border-primary/40 hover:bg-primary/10"
               >
-                <Link to="/services">
+                <LangLink to="/services">
                   {t('caseStudy.ctaServices')}
-                </Link>
+                </LangLink>
               </Button>
             </motion.div>
           </div>
@@ -213,28 +214,28 @@ const CaseStudy = () => {
         <section className="py-12 border-t border-border/40">
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-center">
-              <Link
+              <LangLink
                 to={`/portfolio/${prevCase.slug}`}
                 className="group flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
               >
                 <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
                 <span className="hidden sm:block">{t('caseStudy.prevCase')}</span>
-              </Link>
+              </LangLink>
               
-              <Link
+              <LangLink
                 to="/gallery"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 {t('caseStudy.allCases')}
-              </Link>
+              </LangLink>
               
-              <Link
+              <LangLink
                 to={`/portfolio/${nextCase.slug}`}
                 className="group flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
               >
                 <span className="hidden sm:block">{t('caseStudy.nextCase')}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </LangLink>
             </div>
           </div>
         </section>

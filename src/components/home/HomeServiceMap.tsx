@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { motion } from 'framer-motion';
 import { 
   Globe, FileText, ShoppingCart, Video,
@@ -151,10 +151,10 @@ const HomeServiceMap = memo(() => {
             size="lg"
             className="luxury-button min-w-[240px] group"
           >
-            <Link to="/services">
+            <LangLink to="/services">
               {t('home.serviceMap.cta.viewServices')}
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </LangLink>
           </Button>
           
           <Button
@@ -163,10 +163,10 @@ const HomeServiceMap = memo(() => {
             size="lg"
             className="glass-button min-w-[240px] group border-primary/30 hover:border-primary/50"
           >
-            <Link to="/services#calculator">
+            <LangLink to="/services#calculator">
               <Calculator className="w-4 h-4 mr-2" />
               {t('home.serviceMap.cta.calculatePrice')}
-            </Link>
+            </LangLink>
           </Button>
         </motion.div>
       </div>

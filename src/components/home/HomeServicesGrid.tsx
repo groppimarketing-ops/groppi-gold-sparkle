@@ -2,7 +2,7 @@ import { forwardRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Award, Play, ArrowRight, Calculator, Smartphone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
@@ -253,10 +253,10 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                         className="glass-button text-xs hover:border-primary/60 hover:shadow-[0_0_18px_hsl(var(--gold)/0.2)] transition-all duration-300"
                         asChild
                       >
-                        <Link to={`/services/${service.id}#video`}>
+                        <LangLink to={`/services/${service.id}#video`}>
                           <Play className="w-3 h-3 fill-current" />
                           <span className={isRTL ? 'mr-1' : 'ml-1'}>{t('home.servicesGrid.watchVideo')}</span>
-                        </Link>
+                        </LangLink>
                       </Button>
                       
                       {service.pricingConfig.hasCalculator ? (
@@ -298,10 +298,10 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
               size="lg"
               className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 hover:shadow-[0_8px_35px_hsl(var(--gold)/0.4)] hover:-translate-y-1 transition-all duration-300 px-10 py-6 rounded-xl text-base"
             >
-              <Link to="/services">
+              <LangLink to="/services">
                 {t('common.viewAll')}
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
+              </LangLink>
             </Button>
           </motion.div>
 

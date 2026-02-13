@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight, MessageCircle, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { Button } from '@/components/ui/button';
 import GlassCard from '@/components/ui/GlassCard';
 import { socialLinks, trackEvent } from '@/utils/tracking';
@@ -61,10 +61,10 @@ const HomeFinalCTA = forwardRef<HTMLElement>((_, ref) => {
                 size="lg" 
                 className="luxury-button hover:shadow-[0_0_40px_hsl(var(--gold)/0.45)] hover:-translate-y-1 transition-all duration-300 px-10 py-6 rounded-xl text-base font-semibold"
               >
-                <Link to="/contact">
+                <LangLink to="/contact">
                   {t('home.finalCTA.ctaPrimary')}
                   <ArrowRight className={`w-5 h-5 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
-                </Link>
+                </LangLink>
               </Button>
               
               <Button 

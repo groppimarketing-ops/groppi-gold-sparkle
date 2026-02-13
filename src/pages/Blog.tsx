@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Calendar, ArrowRight, Clock, Sparkles } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import PageLayout from '@/components/layout/PageLayout';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
@@ -59,7 +59,7 @@ const Blog = () => {
       {/* Featured Post */}
       <section className="py-12">
         <div className="container mx-auto px-4">
-          <Link to={`/blog/${featuredArticle.slug}`} className="block group">
+          <LangLink to={`/blog/${featuredArticle.slug}`} className="block group">
             <GlassCard
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -114,7 +114,7 @@ const Blog = () => {
                 </Button>
               </div>
             </GlassCard>
-          </Link>
+          </LangLink>
         </div>
       </section>
 
@@ -123,7 +123,7 @@ const Blog = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {otherArticles.map((article, index) => (
-              <Link key={article.id} to={`/blog/${article.slug}`} className="block group">
+              <LangLink key={article.id} to={`/blog/${article.slug}`} className="block group">
                 <GlassCard
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -169,7 +169,7 @@ const Blog = () => {
                     </span>
                   </div>
                 </GlassCard>
-              </Link>
+              </LangLink>
             ))}
           </div>
         </div>

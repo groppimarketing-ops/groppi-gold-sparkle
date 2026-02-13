@@ -1,4 +1,5 @@
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import LangLink from '@/components/LangLink';
 import { useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import PageSEO from '@/components/seo/PageSEO';
@@ -27,10 +28,10 @@ const NotFound = () => {
           {t('notFound.message', 'Deze pagina bestaat niet of is verplaatst.')}
         </p>
         <Button asChild className="luxury-button">
-          <Link to="/">
+          <LangLink to="/">
             <ArrowLeft className="w-4 h-4 mr-2" />
             {t('notFound.backHome', 'Terug naar home')}
-          </Link>
+          </LangLink>
         </Button>
       </div>
     </div>

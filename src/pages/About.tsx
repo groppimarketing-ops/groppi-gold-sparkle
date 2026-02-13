@@ -23,7 +23,7 @@ import PageLayout from '@/components/layout/PageLayout';
 import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 
 const About = () => {
   const { t, i18n } = useTranslation();
@@ -462,9 +462,9 @@ const About = () => {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                <Link to="/contact">
+                <LangLink to="/contact">
                   {t('about.cta.bookConsultation')}
-                </Link>
+                </LangLink>
               </Button>
               
               <Button
@@ -473,9 +473,9 @@ const About = () => {
                 size="lg"
                 className="glass-card border-primary/30 hover:bg-primary/10"
               >
-                <Link to="/contact">
+                <LangLink to="/contact">
                   {t('about.cta.contactUs')}
-                </Link>
+                </LangLink>
               </Button>
             </div>
           </GlassCard>

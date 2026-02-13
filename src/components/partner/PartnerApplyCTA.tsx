@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { ArrowRight, Handshake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import GlassCard from '@/components/ui/GlassCard';
@@ -54,10 +54,10 @@ const PartnerApplyCTA = () => {
               size="lg" 
               className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_8px_25px_hsl(43_100%_50%/0.25)] hover:translate-y-[-2px] transition-all duration-300"
             >
-              <Link to="/contact">
+              <LangLink to="/contact">
                 {t('partner.apply.ctaPrimary')}
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </LangLink>
             </Button>
             <Button 
               size="lg" 

@@ -1,6 +1,6 @@
 import { forwardRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, MessageCircle, Calendar, Smartphone, Loader2, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -75,7 +75,7 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <Link to="/" className="inline-block">
+            <LangLink to="/" className="inline-block">
               <motion.img
                 src={groppiLogo}
                 alt="GROPPI Digital Marketing Bureau"
@@ -83,7 +83,7 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               />
-            </Link>
+            </LangLink>
             <p className="text-muted-foreground text-sm leading-relaxed">
               {t('footer.description')}
             </p>
@@ -108,13 +108,13 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.path}>
-                  <Link
+                  <LangLink
                     to={link.path}
                     className="text-muted-foreground hover:text-primary transition-colors text-sm inline-flex items-center gap-2 group"
                   >
                     <span className="w-0 h-px bg-primary group-hover:w-4 transition-all duration-300" />
                     {link.label}
-                  </Link>
+                  </LangLink>
                 </li>
               ))}
             </ul>
@@ -258,12 +258,12 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
             © {new Date().getFullYear()} GROPPI Gold Standard. {t('footer.rights')}
           </p>
           <div className="flex gap-6">
-            <Link to="/privacy" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+            <LangLink to="/privacy" className="text-muted-foreground hover:text-primary text-sm transition-colors">
               {t('footer.privacy')}
-            </Link>
-            <Link to="/terms" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+            </LangLink>
+            <LangLink to="/terms" className="text-muted-foreground hover:text-primary text-sm transition-colors">
               {t('footer.terms')}
-            </Link>
+            </LangLink>
           </div>
         </motion.div>
       </div>

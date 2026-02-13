@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowRight, MessageCircle, Calendar } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { Button } from '@/components/ui/button';
 import { socialLinks, trackEvent } from '@/utils/tracking';
 
@@ -47,10 +47,10 @@ const ServiceFinalCTA = memo(({ serviceKey }: ServiceFinalCTAProps) => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="luxury-button min-w-[220px] group">
-              <Link to="/contact">
+              <LangLink to="/contact">
                 {t('servicePage.finalCTA.primaryCTA')}
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </LangLink>
             </Button>
             
             <Button

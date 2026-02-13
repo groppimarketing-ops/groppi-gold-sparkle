@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { ArrowRight } from 'lucide-react';
 import GlassCard from '@/components/ui/GlassCard';
 
@@ -55,14 +55,14 @@ const RelatedServices = ({ articleSlug }: RelatedServicesProps) => {
         {serviceSlugs.map((slug) => {
           const title = t(SERVICE_TITLE_MAP[slug] || '', SERVICE_FALLBACK[slug] || slug);
           return (
-            <Link key={slug} to={`/services/${slug}`}>
+            <LangLink key={slug} to={`/services/${slug}`}>
               <GlassCard className="!p-4 hover:border-primary/50 transition-colors group">
                 <span className="text-sm font-medium group-hover:text-primary transition-colors flex items-center justify-between">
                   {title}
                   <ArrowRight className="h-3.5 w-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </span>
               </GlassCard>
-            </Link>
+            </LangLink>
           );
         })}
       </div>

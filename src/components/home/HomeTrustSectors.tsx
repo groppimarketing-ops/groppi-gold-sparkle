@@ -15,7 +15,7 @@ import {
   GraduationCap,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 
 const sectorIcons = {
   restaurant: UtensilsCrossed,
@@ -202,9 +202,9 @@ const HomeTrustSectors = memo(() => {
                 asChild
                 className="luxury-button text-primary-foreground px-8 py-6 text-base rounded-xl"
               >
-                <Link to="/services">
+                <LangLink to="/services">
                   {t('home.trustSectors.cta')}
-                </Link>
+                </LangLink>
               </Button>
             </motion.div>
           </motion.div>

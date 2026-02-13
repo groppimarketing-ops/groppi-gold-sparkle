@@ -2,7 +2,8 @@ import { memo, useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Check, MessageCircle, ArrowRight, Calendar } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { Button } from '@/components/ui/button';
 import { trackEvent, socialLinks } from '@/utils/tracking';
 import { getVideoIdBySlug, buildDrivePreviewUrl } from '@/data/serviceVideos';
@@ -102,10 +103,10 @@ const ServicePageHero = memo(({ serviceKey, posterImage }: ServicePageHeroProps)
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Button asChild size="lg" className="luxury-button group">
-                <Link to="/contact">
+                <LangLink to="/contact">
                   {t('servicePage.cta.requestQuote')}
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                </LangLink>
               </Button>
               
               <Button

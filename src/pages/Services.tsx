@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Star, RefreshCw, Brain, Rocket, Filter, FileText, Award, Smartphone } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { useState, useRef } from 'react';
 import PageLayout from '@/components/layout/PageLayout';
 import SectionHeader from '@/components/ui/SectionHeader';
@@ -472,15 +472,15 @@ const Services = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="luxury-button">
-                  <Link to="/contact">
+                  <LangLink to="/contact">
                     {t('services.ai.cta')}
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
+                  </LangLink>
                 </Button>
                 <Button asChild size="lg" className="glass-button">
-                  <Link to="/about">
+                  <LangLink to="/about">
                     {t('services.ai.learnMore')}
-                  </Link>
+                  </LangLink>
                 </Button>
               </div>
             </GlassCard>
@@ -554,15 +554,15 @@ const Services = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="luxury-button">
-                  <Link to="/contact">
+                  <LangLink to="/contact">
                     {t('services.cta.button')}
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
+                  </LangLink>
                 </Button>
                 <Button asChild size="lg" className="glass-button">
-                  <Link to="/franchise">
+                  <LangLink to="/franchise">
                     {t('nav.franchise')}
-                  </Link>
+                  </LangLink>
                 </Button>
               </div>
             </GlassCard>

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Check, Play, Calculator, ArrowRight, Info, Package, DollarSign, Video, MessageCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import type { HomeServiceData } from './HomeServicesGrid';
@@ -242,10 +242,10 @@ const HomeServiceModal = ({ isOpen, onClose, service, initialTab = 'overview' }:
                       <h3 className="font-bold text-xl mb-2">{t('home.serviceModal.calculator.title')}</h3>
                       <p className="text-muted-foreground mb-6">{t('home.serviceModal.calculator.desc')}</p>
                       <Button asChild className="luxury-button">
-                        <Link to={`/services/${service.id}`}>
+                        <LangLink to={`/services/${service.id}`}>
                           {t('home.serviceModal.calculator.cta')}
                           <ArrowRight className={`w-4 h-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
-                        </Link>
+                        </LangLink>
                       </Button>
                     </div>
                   </TabsContent>
@@ -256,10 +256,10 @@ const HomeServiceModal = ({ isOpen, onClose, service, initialTab = 'overview' }:
             {/* Footer CTAs */}
             <div className="p-6 border-t border-primary/10 flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="luxury-button flex-1 hover:shadow-[0_0_20px_hsl(43_100%_50%/0.3)]">
-                <Link to="/contact">
+                <LangLink to="/contact">
                   {t('home.serviceModal.cta.quote')}
                   <ArrowRight className={`w-5 h-5 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
-                </Link>
+                </LangLink>
               </Button>
               <Button
                 size="lg"

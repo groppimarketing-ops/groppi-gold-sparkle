@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Cookie, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 
 const CONSENT_KEY = 'groppi_cookie_consent';
 
@@ -70,9 +70,9 @@ const CookieConsent = () => {
                   </p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
                     {t('cookies.description', 'Deze website gebruikt cookies om je ervaring te verbeteren en om onze prestaties te meten. Door op "Accepteren" te klikken, ga je akkoord met ons cookiebeleid.')}{' '}
-                    <Link to="/privacy" className="text-primary hover:underline">
+                    <LangLink to="/privacy" className="text-primary hover:underline">
                       {t('cookies.learnMore', 'Meer info')}
-                    </Link>
+                    </LangLink>
                   </p>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, TrendingUp, UtensilsCrossed, ShoppingCart, Building2 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import LangLink from '@/components/LangLink';
 import { Button } from '@/components/ui/button';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { Badge } from '@/components/ui/badge';
@@ -64,7 +64,7 @@ const HomeCaseStudies = memo(() => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.15 }}
               >
-                <Link
+                <LangLink
                   to={study.link}
                   className="group block glass-card py-8 px-6 h-full cursor-pointer hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] hover:-translate-y-2 transition-all duration-300"
                 >
@@ -114,7 +114,7 @@ const HomeCaseStudies = memo(() => {
                     {t('home.portfolio.viewCase')}
                     <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </div>
-                </Link>
+                </LangLink>
               </motion.div>
             );
           })}
@@ -132,10 +132,10 @@ const HomeCaseStudies = memo(() => {
             size="lg"
             className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 hover:shadow-[0_8px_35px_hsl(var(--gold)/0.4)] hover:translate-y-[-2px] transition-all duration-300 text-base px-10 py-6 rounded-xl"
           >
-            <Link to="/contact">
+            <LangLink to="/contact">
               {t('home.caseStudies.cta')}
               <ArrowRight className="w-5 h-5 ml-2" />
-            </Link>
+            </LangLink>
           </Button>
         </motion.div>
       </div>
