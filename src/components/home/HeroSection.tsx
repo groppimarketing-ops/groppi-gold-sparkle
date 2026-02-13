@@ -1,7 +1,72 @@
-import { memo } from 'react';
-import { motion } from 'framer-motion';
+import { memo, useEffect, useState, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { socialIconsData } from '@/components/shared/SocialIconsPill';
 import { trackEvent } from '@/utils/tracking';
+
+/* ── Gold-themed social reaction emojis ── */
+const REACTIONS = ['👍', '❤️', '😂', '😡', '🔥', '💛', '⭐', '👏', '😍', '💪'];
+
+interface FallingReaction {
+  id: number;
+  emoji: string;
+  x: number;      // % from left
+  delay: number;   // seconds
+  duration: number; // seconds
+  size: number;     // rem
+}
+
+let reactionId = 0;
+
+const FallingReactions = memo(() => {
+  const [reactions, setReactions] = useState<FallingReaction[]>([]);
+
+  const spawnBatch = useCallback(() => {
+    const batch: FallingReaction[] = Array.from({ length: 3 }, () => ({
+      id: reactionId++,
+      emoji: REACTIONS[Math.floor(Math.random() * REACTIONS.length)],
+      x: 5 + Math.random() * 90,
+      delay: Math.random() * 0.8,
+      duration: 4 + Math.random() * 4,
+      size: 1.2 + Math.random() * 1.4,
+    }));
+    setReactions((prev) => [...prev.slice(-30), ...batch]);
+  }, []);
+
+  useEffect(() => {
+    spawnBatch();
+    const interval = setInterval(spawnBatch, 2200);
+    return () => clearInterval(interval);
+  }, [spawnBatch]);
+
+  return (
+    <div className="absolute inset-0 z-[1] overflow-hidden pointer-events-none">
+      <AnimatePresence>
+        {reactions.map((r) => (
+          <motion.span
+            key={r.id}
+            initial={{ y: '-10%', opacity: 0, scale: 0.5 }}
+            animate={{ y: '110%', opacity: [0, 0.9, 0.9, 0], scale: [0.5, 1, 1, 0.6] }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: r.duration, delay: r.delay, ease: 'linear' }}
+            onAnimationComplete={() =>
+              setReactions((prev) => prev.filter((p) => p.id !== r.id))
+            }
+            className="absolute select-none"
+            style={{
+              left: `${r.x}%`,
+              fontSize: `${r.size}rem`,
+              filter: 'saturate(0) brightness(1.8) sepia(1) hue-rotate(10deg)',
+              textShadow: '0 0 12px hsl(43 100% 50% / 0.6), 0 0 24px hsl(43 100% 50% / 0.3)',
+            }}
+          >
+            {r.emoji}
+          </motion.span>
+        ))}
+      </AnimatePresence>
+    </div>
+  );
+});
+FallingReactions.displayName = 'FallingReactions';
 
 const VIMEO_IDS = [
   '1164723572',
@@ -97,6 +162,7 @@ const HeroSection = memo(() => (
     </video>
 
     <div className="groppi-overlay" />
+    <FallingReactions />
 
     <div className="groppi-strip-wrap">
       <div className="groppi-strip-track">
