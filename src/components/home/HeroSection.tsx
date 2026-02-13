@@ -92,10 +92,14 @@ const HeroSection = memo(() => (
 
     {/* Metallic Gold Emoji Rain */}
     <div className="hero-emoji-rain" aria-hidden="true">
-      <span className="hero-emoji-drop" style={{ left: '15%', animationDelay: '0s', animationDuration: '3.6s' }}>❤️</span>
-      <span className="hero-emoji-drop" style={{ left: '45%', animationDelay: '1.2s', animationDuration: '3.2s' }}>😂</span>
-      <span className="hero-emoji-drop" style={{ left: '72%', animationDelay: '2.4s', animationDuration: '3.8s' }}>👍</span>
-      <span className="hero-emoji-drop" style={{ left: '30%', animationDelay: '3.5s', animationDuration: '3.4s' }}>😍</span>
+      <span className="hero-emoji-drop hero-emoji-drop--a" style={{ left: '12%' }}>❤️</span>
+      <span className="hero-emoji-drop hero-emoji-drop--b" style={{ left: '38%' }}>😂</span>
+      <span className="hero-emoji-drop hero-emoji-drop--c" style={{ left: '62%' }}>👍</span>
+      <span className="hero-emoji-drop hero-emoji-drop--d" style={{ left: '85%' }}>😍</span>
+      <span className="hero-emoji-drop hero-emoji-drop--e" style={{ left: '25%' }}>😍</span>
+      <span className="hero-emoji-drop hero-emoji-drop--f" style={{ left: '50%' }}>❤️</span>
+      <span className="hero-emoji-drop hero-emoji-drop--g" style={{ left: '75%' }}>😂</span>
+      <span className="hero-emoji-drop hero-emoji-drop--h" style={{ left: '42%' }}>👍</span>
     </div>
 
     <HeroSocialIcons />
