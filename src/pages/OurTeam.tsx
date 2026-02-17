@@ -93,18 +93,27 @@ const FounderCard = ({ person, index }: { person: Person; index: number }) => (
     className="group flex-1"
   >
     <div className="glass-card border border-primary/15 hover:border-primary/50 rounded-3xl overflow-hidden transition-all duration-600 hover:shadow-[0_0_50px_hsl(43_100%_50%/0.15)]">
-      {/* Portrait placeholder */}
-      <div className="relative aspect-[3/4] bg-gradient-to-b from-primary/[0.06] to-background flex items-center justify-center overflow-hidden">
-        {person.image ? (
-          <img src={person.image} alt={person.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
-        ) : (
-          <Initials name={person.name} />
-        )}
-        {/* Bottom gradient overlay */}
-        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
+      {/* Portrait area with centered premium avatar */}
+      <div className="relative bg-gradient-to-b from-primary/[0.06] to-background flex items-center justify-center overflow-hidden py-10 md:py-14">
+        <div
+          className="founder-avatar relative flex items-center justify-center overflow-hidden transition-all duration-300"
+          style={{
+            width: 180,
+            height: 180,
+            borderRadius: 24,
+            border: '2.5px solid hsl(43 76% 52% / 0.6)',
+            boxShadow: '0 8px 30px hsl(0 0% 0% / 0.5), 0 0 20px hsl(43 76% 52% / 0.08)',
+          }}
+        >
+          {person.image ? (
+            <img src={person.image} alt={person.name} className="w-full h-full object-cover" loading="lazy" />
+          ) : (
+            <Initials name={person.name} />
+          )}
+        </div>
       </div>
 
-      <div className="p-6 md:p-8 -mt-8 relative z-10">
+      <div className="p-6 md:p-8 relative z-10">
         <h3 className="text-xl md:text-2xl font-bold gold-gradient-text mb-1">{person.name}</h3>
         <p className="text-sm font-medium text-foreground/80 mb-3">{person.role}</p>
         <p className="text-sm text-muted-foreground italic leading-relaxed">{person.tagline}</p>

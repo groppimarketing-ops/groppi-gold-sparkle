@@ -844,6 +844,21 @@
     100% { transform: translateY(82vh) translateX(-8px) rotate(-9deg); opacity: 0; }
   }
 
+  /* Founder avatar hover */
+  .founder-avatar:hover {
+    transform: translateY(-2px);
+    border-color: hsl(43 76% 52% / 0.85) !important;
+    box-shadow: 0 10px 35px hsl(0 0% 0% / 0.5), 0 0 28px hsl(43 76% 52% / 0.15) !important;
+  }
+
+  @media (max-width: 768px) {
+    .founder-avatar {
+      width: 130px !important;
+      height: 130px !important;
+      border-radius: 20px !important;
+    }
+  }
+
   @media (max-width: 768px) {
     /* 1) HERO — reduce height & padding */
     .groppi-hero-pro {
