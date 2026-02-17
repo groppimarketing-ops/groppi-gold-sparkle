@@ -845,9 +845,79 @@
   }
 
   @media (max-width: 768px) {
-    .groppi-hero-pro { min-height: 520px; }
+    /* 1) HERO — reduce height & padding */
+    .groppi-hero-pro {
+      height: 55vh;
+      min-height: 340px;
+    }
+
     .gold-drop svg { width: clamp(24px, 7vw, 34px); height: clamp(24px, 7vw, 34px); }
     .gold-flare { width: clamp(14px, 4vw, 22px); height: clamp(14px, 4vw, 22px); }
+
+    /* 6) ANIMATIONS — reduce / disable heavy effects on mobile */
+    .hero-gold-rain { display: none; }
+    .groppi-strip-track { animation-duration: 120s; }
+    .groppi-strip-wrap::after { display: none; }
+
+    .groppi-strip-track .groppi-card {
+      transform: none !important;
+      filter: none !important;
+      opacity: 1 !important;
+    }
+
+    /* Disable 3D hover on cards */
+    .card-3d:hover {
+      transform: none;
+    }
+
+    /* 2) SECTION SPACING — more breathing room between sections */
+    .section-spacing {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .section-spacing-lg {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    /* 3) SERVICE CARDS — single column, larger tap targets */
+    #services-section .grid {
+      grid-template-columns: 1fr !important;
+      gap: 1.5rem !important;
+    }
+
+    .glass-card {
+      padding: 1.5rem;
+    }
+
+    /* 4) BUTTONS — taller for thumb interaction, rounder */
+    .glass-button,
+    .luxury-button {
+      min-height: 48px;
+      border-radius: 14px;
+      font-size: 0.938rem;
+    }
+
+    button[class*="h-9"],
+    button[class*="h-10"],
+    button[class*="h-11"] {
+      min-height: 46px;
+    }
+
+    /* 5) TYPOGRAPHY — better readability on small screens */
+    p, li, span {
+      line-height: 1.7;
+    }
+
+    .prose-readable,
+    .text-muted-foreground {
+      max-width: 100%;
+    }
+
+    h1 { font-size: clamp(1.75rem, 6vw, 2.25rem); line-height: 1.2; }
+    h2 { font-size: clamp(1.5rem, 5vw, 1.875rem); line-height: 1.25; }
+    h3 { font-size: clamp(1.125rem, 4vw, 1.375rem); line-height: 1.3; }
   }
 
   @media (prefers-reduced-motion: reduce) {
