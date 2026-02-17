@@ -13,6 +13,9 @@ import sophieImg from '@/assets/team/sophie-van-dijk.png';
 import claireImg from '@/assets/team/claire-dumont.png';
 import juliaImg from '@/assets/team/julia-van-aertselaer.png';
 import marcoImg from '@/assets/team/marco-bianchi.png';
+import arjunImg from '@/assets/team/arjun-mehta.png';
+import bilalImg from '@/assets/team/bilal-khan.png';
+import rohanImg from '@/assets/team/rohan-iyer.png';
 
 interface TeamMember {
   name: string;
@@ -53,9 +56,9 @@ const teamGroups: TeamGroup[] = [
     icon: Briefcase,
     members: [
       { name: 'Marco Bianchi', role: 'Content & Media Producer', image: marcoImg },
-      { name: 'Arjun Mehta', role: 'External Frontend Developer' },
-      { name: 'Bilal Khan', role: 'Technical Performance Consultant' },
-      { name: 'Rohan Iyer', role: 'External Backend Developer' },
+      { name: 'Arjun Mehta', role: 'External Frontend Developer', image: arjunImg },
+      { name: 'Bilal Khan', role: 'Technical Performance Consultant', image: bilalImg },
+      { name: 'Rohan Iyer', role: 'External Backend Developer', image: rohanImg },
     ],
   },
 ];
