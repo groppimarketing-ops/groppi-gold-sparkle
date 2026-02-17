@@ -11,7 +11,7 @@ const HERO_CARDS: HeroCard[] = [
   { type: 'vimeo', id: '1164723572' },
   { type: 'webm', src: '/videos/hero/ads-management.webm' },
   { type: 'vimeo', id: '1164718752' },
-  { type: 'webm', src: '/videos/hero/reputation.webm' },
+  { type: 'webm', src: '/videos/hero/business-website.webm' },
   { type: 'vimeo', id: '1164721918' },
   { type: 'webm', src: '/videos/hero/one-page-website.webm' },
   { type: 'vimeo', id: '1164718101' },
