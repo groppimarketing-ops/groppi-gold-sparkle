@@ -24,7 +24,7 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import LangLink from '@/components/LangLink';
-import TeamSection from '@/components/about/TeamSection';
+// TeamSection removed — now on dedicated /team page
 
 const About = () => {
   const { t, i18n } = useTranslation();
@@ -417,8 +417,23 @@ const About = () => {
         </div>
       </section>
 
-      {/* Meet the Team */}
-      <TeamSection />
+      {/* Link to Team page */}
+      <section className="pb-8">
+        <div className="container mx-auto px-4 text-center">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-muted-foreground text-lg"
+          >
+            Meet our team on the{' '}
+            <LangLink to="/team" className="text-primary font-semibold hover:underline underline-offset-4 transition-colors">
+              Our Team page
+            </LangLink>
+            .
+          </motion.p>
+        </div>
+      </section>
 
       {/* Closing CTA */}
       <section className="py-20 relative overflow-hidden">

@@ -22,6 +22,7 @@ if (import.meta.env.DEV) {
 // Lazy load pages for better performance
 const Index = lazy(() => import("./pages/Index"));
 const About = lazy(() => import("./pages/About"));
+const OurTeam = lazy(() => import("./pages/OurTeam"));
 const Services = lazy(() => import("./pages/Services"));
 const ServiceDetail = lazy(() => import("./pages/ServiceDetail"));
 const Blog = lazy(() => import("./pages/Blog"));
@@ -78,6 +79,7 @@ const FloatingWhatsAppHandler = () => {
 const publicRoutes = () => [
   <Route key="home" index element={<Index />} />,
   <Route key="about" path="about" element={<About />} />,
+  <Route key="team" path="team" element={<OurTeam />} />,
   <Route key="services" path="services" element={<Services />} />,
   <Route key="service-detail" path="services/:slug" element={<ServiceDetail />} />,
   <Route key="blog" path="blog" element={<Blog />} />,

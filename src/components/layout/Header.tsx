@@ -172,6 +172,7 @@ const Header = () => {
   const navItems = [
     { path: '/', label: t('nav.home') },
     { path: '/about', label: t('nav.about') },
+    { path: '/team', label: t('nav.team', 'Our Team') },
     { path: '/services', label: t('nav.services') },
     { path: '/blog', label: t('nav.blog') },
     { path: '/gallery', label: t('nav.gallery') },
