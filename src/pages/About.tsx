@@ -426,7 +426,7 @@ const About = () => {
             viewport={{ once: true }}
             className="text-muted-foreground text-lg"
           >
-            Meet our team on the{' '}
+            Meet our leadership and global team on the{' '}
             <LangLink to="/team" className="text-primary font-semibold hover:underline underline-offset-4 transition-colors">
               Our Team page
             </LangLink>
