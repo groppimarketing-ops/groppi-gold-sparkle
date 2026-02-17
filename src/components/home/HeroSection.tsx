@@ -4,56 +4,71 @@ import { Zap, Sun, TrendingUp } from 'lucide-react';
 import { socialIconsData } from '@/components/shared/SocialIconsPill';
 import { trackEvent } from '@/utils/tracking';
 
-const VIMEO_IDS = [
-  '1164723572',
-  '1164718752',
-  '1164721918',
-  '1164718101',
-  '1164721986',
-  '1164718571',
-  '1164718454',
-  '1164718305',
-  '1164718241',
+type HeroCard = { type: 'vimeo'; id: string } | { type: 'webm'; src: string };
+
+const HERO_CARDS: HeroCard[] = [
+  { type: 'webm', src: '/videos/hero/social-media.webm' },
+  { type: 'vimeo', id: '1164723572' },
+  { type: 'webm', src: '/videos/hero/ads-management.webm' },
+  { type: 'vimeo', id: '1164718752' },
+  { type: 'webm', src: '/videos/hero/reputation.webm' },
+  { type: 'vimeo', id: '1164721918' },
+  { type: 'webm', src: '/videos/hero/one-page-website.webm' },
+  { type: 'vimeo', id: '1164718101' },
+  { type: 'webm', src: '/videos/hero/mobile-app.webm' },
 ];
 
 const vimeoSrc = (id: string) =>
   `https://player.vimeo.com/video/${id}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&dnt=1`;
 
-const VideoCard = memo(({ id }: { id: string }) => (
+const VideoCard = memo(({ card }: { card: HeroCard }) => (
   <div className="groppi-card">
-    <iframe
-      src={vimeoSrc(id)}
-      allow="autoplay; fullscreen; picture-in-picture"
-      loading="lazy"
-      className="w-full h-full border-0 hidden md:block"
-      title="Portfolio video"
-    />
-    <div
-      className="w-full h-full md:hidden"
-      style={{
-        background: `linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 4%))`,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
-      <span
-        style={{
-          width: 48,
-          height: 48,
-          borderRadius: '50%',
-          background: 'hsl(43 76% 52% / 0.15)',
-          border: '1.5px solid hsl(43 76% 52% / 0.3)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="hsl(43 76% 52%)" stroke="none">
-          <polygon points="6,3 20,12 6,21" />
-        </svg>
-      </span>
-    </div>
+    {card.type === 'vimeo' ? (
+      <>
+        <iframe
+          src={vimeoSrc(card.id)}
+          allow="autoplay; fullscreen; picture-in-picture"
+          loading="lazy"
+          className="w-full h-full border-0 hidden md:block"
+          title="Portfolio video"
+        />
+        <div
+          className="w-full h-full md:hidden"
+          style={{
+            background: 'linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 4%))',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <span
+            style={{
+              width: 48,
+              height: 48,
+              borderRadius: '50%',
+              background: 'hsl(43 76% 52% / 0.15)',
+              border: '1.5px solid hsl(43 76% 52% / 0.3)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="hsl(43 76% 52%)" stroke="none">
+              <polygon points="6,3 20,12 6,21" />
+            </svg>
+          </span>
+        </div>
+      </>
+    ) : (
+      <video
+        src={card.src}
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full h-full object-cover"
+      />
+    )}
   </div>
 ));
 VideoCard.displayName = 'VideoCard';
@@ -134,11 +149,11 @@ const HeroSection = memo(() => (
 
     <div className="groppi-strip-wrap">
       <div className="groppi-strip-track">
-        {VIMEO_IDS.map((id, i) => (
-          <VideoCard key={`a-${i}`} id={id} />
+        {HERO_CARDS.map((card, i) => (
+          <VideoCard key={`a-${i}`} card={card} />
         ))}
-        {VIMEO_IDS.map((id, i) => (
-          <VideoCard key={`b-${i}`} id={id} />
+        {HERO_CARDS.map((card, i) => (
+          <VideoCard key={`b-${i}`} card={card} />
         ))}
       </div>
     </div>
