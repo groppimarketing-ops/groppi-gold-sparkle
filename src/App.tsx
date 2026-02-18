@@ -1,5 +1,3 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { useEffect } from "react";
 import { Suspense, lazy, useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -106,7 +104,7 @@ const LANG_PREFIXES = SUPPORTED_LANGS.filter(l => l !== 'nl');
     script.async = true;
     document.head.appendChild(script);
   }, []);
-return (
+  return (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
@@ -153,5 +151,6 @@ return (
     </QueryClientProvider>
   </HelmetProvider>
 );
+};
 
 export default App;
