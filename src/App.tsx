@@ -96,8 +96,15 @@ const publicRoutes = () => [
 
 /** Non-nl language codes that need explicit route prefixes */
 const LANG_PREFIXES = SUPPORTED_LANGS.filter(l => l !== 'nl');
+  const App = () => {
 
-const App = () => (
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtm.js?id=GTM-MJ8KSVHF";
+    script.async = true;
+    document.head.appendChild(script);
+  }, []);
+return (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
