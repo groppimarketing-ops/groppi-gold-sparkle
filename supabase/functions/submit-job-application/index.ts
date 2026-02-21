@@ -15,13 +15,12 @@ interface JobApplicationRequest {
   role: string;
   linkedinUrl?: string;
   message?: string;
-  cvUrl: string;
+  cvPath: string;
 }
 
 const handler = async (req: Request): Promise<Response> => {
   console.log("Submit job application function called");
   
-  // Handle CORS preflight
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
@@ -46,7 +45,7 @@ const handler = async (req: Request): Promise<Response> => {
     if (!body.role || body.role.trim().length < 2) {
       throw new Error("Role selection is required");
     }
-    if (!body.cvUrl) {
+    if (!body.cvPath) {
       throw new Error("CV upload is required");
     }
 
@@ -61,7 +60,7 @@ const handler = async (req: Request): Promise<Response> => {
       throw new Error("Message must be less than 500 characters");
     }
 
-    // Store application in database
+    // Store the storage path, NOT a public URL
     const { data: application, error: dbError } = await supabase
       .from("job_applications")
       .insert({
@@ -71,7 +70,7 @@ const handler = async (req: Request): Promise<Response> => {
         role: body.role.trim(),
         linkedin_url: body.linkedinUrl?.trim() || null,
         message: body.message?.trim() || null,
-        cv_url: body.cvUrl,
+        cv_url: body.cvPath,
         consent: true,
       })
       .select()
@@ -83,6 +82,20 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     console.log("Application saved with ID:", application.id);
+
+    // Generate a short-lived signed URL for the email notification
+    let cvSignedUrl = "";
+    try {
+      const { data: signedData, error: signError } = await supabase.storage
+        .from("cv-uploads")
+        .createSignedUrl(body.cvPath, 7 * 24 * 60 * 60); // 7 days
+
+      if (!signError && signedData) {
+        cvSignedUrl = signedData.signedUrl;
+      }
+    } catch (e) {
+      console.error("Failed to generate signed URL for email:", e);
+    }
 
     // Send notification email
     if (resendApiKey) {
@@ -101,7 +114,7 @@ const handler = async (req: Request): Promise<Response> => {
             ${body.phone ? `<p><strong>Phone:</strong> ${body.phone}</p>` : ""}
             ${body.linkedinUrl ? `<p><strong>LinkedIn/Portfolio:</strong> <a href="${body.linkedinUrl}">${body.linkedinUrl}</a></p>` : ""}
             ${body.message ? `<p><strong>Message:</strong></p><p>${body.message}</p>` : ""}
-            <p><strong>CV:</strong> <a href="${body.cvUrl}">Download CV</a></p>
+            ${cvSignedUrl ? `<p><strong>CV:</strong> <a href="${cvSignedUrl}">Download CV</a> (link expires in 7 days)</p>` : `<p><strong>CV Path:</strong> ${body.cvPath} (generate signed URL from admin panel)</p>`}
             <hr />
             <p><em>Application submitted on ${new Date().toLocaleString("nl-BE")}</em></p>
           `,
@@ -110,7 +123,6 @@ const handler = async (req: Request): Promise<Response> => {
         console.log("Notification email sent successfully");
       } catch (emailError) {
         console.error("Email sending failed:", emailError);
-        // Don't fail the request if email fails - application is already saved
       }
     } else {
       console.log("RESEND_API_KEY not configured, skipping email notification");

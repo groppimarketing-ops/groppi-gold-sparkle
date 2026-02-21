@@ -153,12 +153,7 @@ const Careers = () => {
 
       setIsUploading(false);
 
-      // Get public URL
-      const { data: urlData } = supabase.storage
-        .from('cv-uploads')
-        .getPublicUrl(fileName);
-
-      // Submit application
+      // Submit application with storage path (not public URL)
       const response = await supabase.functions.invoke('submit-job-application', {
         body: {
           fullName: data.fullName,
@@ -167,7 +162,7 @@ const Careers = () => {
           role: data.role,
           linkedinUrl: data.linkedinUrl || undefined,
           message: data.message || undefined,
-          cvUrl: urlData.publicUrl,
+          cvPath: fileName,
         },
       });
 
