@@ -22,6 +22,8 @@ import marcoImg from '@/assets/team/marco-bianchi.png';
 import arjunImg from '@/assets/team/arjun-mehta.png';
 import bilalImg from '@/assets/team/bilal-khan.png';
 import rohanImg from '@/assets/team/rohan-iyer.png';
+import lucasImg from '@/assets/team/lucas-vermeer.png';
+import sofiaImg from '@/assets/team/sofia-laurent.png';
 
 // Office photos
 import meeting1 from '@/assets/office/meeting-1.png';
@@ -48,8 +50,8 @@ const execOps: Person = {
 };
 
 const directors: Person[] = [
-  { name: 'Lucas Vermeer', role: 'Director of Performance', tagline: 'Driving measurable results through data-led execution.' },
-  { name: 'Sofia Laurent', role: 'Director of Creative & Brand', tagline: 'Transforming strategy into powerful brand experiences.' },
+  { name: 'Lucas Vermeer', role: 'Director of Performance', tagline: 'Driving measurable results through data-led execution.', image: lucasImg },
+  { name: 'Sofia Laurent', role: 'Director of Creative & Brand', tagline: 'Transforming strategy into powerful brand experiences.', image: sofiaImg },
 ];
 
 const teamMembers: Person[] = [
