@@ -24,6 +24,8 @@ import bilalImg from '@/assets/team/bilal-khan.png';
 import rohanImg from '@/assets/team/rohan-iyer.png';
 import lucasImg from '@/assets/team/lucas-vermeer.png';
 import sofiaImg from '@/assets/team/sofia-laurent.png';
+import koenImg from '@/assets/team/koen-van-grop.png';
+import tottiImg from '@/assets/team/totti-franco.png';
 
 // Office photos
 import meeting1 from '@/assets/office/meeting-1.png';
@@ -40,8 +42,8 @@ interface Person {
 }
 
 const founders: Person[] = [
-  { name: 'Koen Van Grop', role: 'Founder & Chief Executive Officer', tagline: 'Vision-driven leadership shaping the future of performance marketing.' },
-  { name: 'Totti Franco', role: 'Co-Founder & Chief Strategy Officer', tagline: 'Strategic growth architect behind scalable brand expansion.' },
+  { name: 'Koen Van Grop', role: 'Founder & Chief Executive Officer', tagline: 'Vision-driven leadership shaping the future of performance marketing.', image: koenImg },
+  { name: 'Totti Franco', role: 'Co-Founder & Chief Strategy Officer', tagline: 'Strategic growth architect behind scalable brand expansion.', image: tottiImg },
 ];
 
 const execOps: Person = {
