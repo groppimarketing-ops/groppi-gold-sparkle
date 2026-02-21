@@ -853,8 +853,8 @@
 
   @media (max-width: 768px) {
     .founder-avatar {
-      width: 130px !important;
-      height: 130px !important;
+      width: 200px !important;
+      height: 200px !important;
       border-radius: 20px !important;
     }
   }

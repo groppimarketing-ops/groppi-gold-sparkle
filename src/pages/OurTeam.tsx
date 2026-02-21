@@ -102,8 +102,8 @@ const FounderCard = ({ person, index }: { person: Person; index: number }) => (
         <div
           className="founder-avatar relative flex items-center justify-center overflow-hidden transition-all duration-300"
           style={{
-            width: 180,
-            height: 180,
+            width: 260,
+            height: 260,
             borderRadius: 24,
             border: '2.5px solid hsl(43 76% 52% / 0.6)',
             boxShadow: '0 8px 30px hsl(0 0% 0% / 0.5), 0 0 20px hsl(43 76% 52% / 0.08)',
