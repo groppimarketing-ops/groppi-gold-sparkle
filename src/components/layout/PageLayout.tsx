@@ -11,7 +11,6 @@ interface PageLayoutProps {
 const PageLayout = ({ 
   children, 
   waveIntensity = 'medium',
-  waveSpeed = 'normal' 
 }: PageLayoutProps) => {
   return (
     <div className="min-h-screen bg-background flex flex-col relative">
