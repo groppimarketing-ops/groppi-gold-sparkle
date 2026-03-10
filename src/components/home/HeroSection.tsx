@@ -4,12 +4,12 @@ import { socialIconsData } from '@/components/shared/SocialIconsPill';
 import { trackEvent } from '@/utils/tracking';
 
 /** Only local .webm cards — no Vimeo iframes */
-const HERO_CARDS = [
-  '/videos/hero/social-media.webm',
-  '/videos/hero/ads-management.webm',
-  '/videos/hero/reputation.webm',
-  '/videos/hero/one-page-website.webm',
-  '/videos/hero/mobile-app.webm',
+const HERO_CARDS: { src: string; label: string; icon: string }[] = [
+  { src: '/videos/hero/social-media.webm',    label: 'Social Media',       icon: '📱' },
+  { src: '/videos/hero/ads-management.webm',  label: 'Advertising',        icon: '🎯' },
+  { src: '/videos/hero/reputation.webm',      label: 'Reputation',         icon: '⭐' },
+  { src: '/videos/hero/one-page-website.webm',label: 'One-Page Website',   icon: '🌐' },
+  { src: '/videos/hero/mobile-app.webm',      label: 'Mobile App',         icon: '📲' },
 ];
 
 /** Lazy video: only loads & plays when visible */
