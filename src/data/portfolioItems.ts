@@ -4,6 +4,7 @@
 // This eliminates 120+ JS chunks and saves 100+ HTTP requests.
 
 import type { PortfolioItem } from '@/types/portfolio';
+import { ndaPortfolioItems } from './ndaPortfolioItems';
 
 export const portfolioItems: PortfolioItem[] = [
   {
