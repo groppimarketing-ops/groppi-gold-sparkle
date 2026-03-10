@@ -13,47 +13,85 @@ const HERO_CARDS: HeroCard[] = [
   { src: '/videos/hero/mobile-app.webm',        label: 'Mobile App' },
 ];
 
-/** Lazy video: shows gold-gradient placeholder until in viewport */
+/**
+ * LazyVideo — loads video ONLY when the card enters the viewport.
+ *
+ * Strategy:
+ * 1. IntersectionObserver with rootMargin:'50px' (tight — avoids pre-fetching
+ *    cards that are off-screen).
+ * 2. On intersection: imperatively set <source> src + call video.load() so the
+ *    browser starts buffering exactly when needed, not a frame earlier.
+ * 3. autoplay fires once canplay fires (prevents black flash).
+ * 4. Gold placeholder covers the card until the video is ready.
+ */
 const LazyVideo = memo(({ src, label }: HeroCard) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [visible, setVisible] = useState(false);
+  const sourceRef = useRef<HTMLSourceElement>(null);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
+
     const io = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setVisible(true); io.disconnect(); } },
-      { rootMargin: '200px' }
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        io.disconnect();
+
+        const video = videoRef.current;
+        const source = sourceRef.current;
+        if (!video || !source || source.src) return; // already loaded
+
+        // Set src then imperatively trigger load — this is the key:
+        // setting src alone queues it; load() makes it start immediately.
+        source.src = src;
+        video.load();
+
+        const onCanPlay = () => {
+          setReady(true);
+          video.play().catch(() => { /* autoplay blocked — silently ignore */ });
+          video.removeEventListener('canplay', onCanPlay);
+        };
+        video.addEventListener('canplay', onCanPlay);
+      },
+      { rootMargin: '50px' } // tight — only trigger when almost visible
     );
+
     io.observe(el);
     return () => io.disconnect();
-  }, []);
+  }, [src]);
 
   return (
     <div ref={containerRef} className="groppi-card" style={{ position: 'relative' }}>
-      {!visible && (
-        <div
-          className="absolute inset-0 flex flex-col items-center justify-center gap-2"
-          style={{
-            background: 'radial-gradient(ellipse at 50% 60%, hsl(43 76% 12% / 0.95) 0%, hsl(0 0% 4%) 100%)',
-            borderRadius: 'inherit',
-          }}
-        >
-          <div style={{ width: 40, height: 2, background: 'hsl(43 76% 52%)', borderRadius: 2, opacity: 0.7 }} />
-          <span style={{ color: 'hsl(43 76% 62%)', fontSize: 13, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', textAlign: 'center', padding: '0 12px', opacity: 0.85 }}>
-            {label}
-          </span>
-          <div style={{ width: 24, height: 1, background: 'hsl(43 76% 52%)', borderRadius: 1, opacity: 0.4 }} />
-        </div>
-      )}
+      {/* Gold placeholder — visible until video is ready */}
+      <div
+        className="absolute inset-0 flex flex-col items-center justify-center gap-2"
+        style={{
+          background: 'radial-gradient(ellipse at 50% 60%, hsl(43 76% 12% / 0.95) 0%, hsl(0 0% 4%) 100%)',
+          borderRadius: 'inherit',
+          opacity: ready ? 0 : 1,
+          transition: 'opacity 0.4s ease',
+          pointerEvents: 'none',
+        }}
+      >
+        <div style={{ width: 40, height: 2, background: 'hsl(43 76% 52%)', borderRadius: 2, opacity: 0.7 }} />
+        <span style={{ color: 'hsl(43 76% 62%)', fontSize: 13, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', textAlign: 'center', padding: '0 12px', opacity: 0.85 }}>
+          {label}
+        </span>
+        <div style={{ width: 24, height: 1, background: 'hsl(43 76% 52%)', borderRadius: 1, opacity: 0.4 }} />
+      </div>
+
+      {/* Video — src is injected by IntersectionObserver, never pre-fetched */}
       <video
         ref={videoRef}
-        src={visible ? src : undefined}
-        autoPlay muted loop playsInline preload="none"
+        muted loop playsInline
+        preload="none"
         className="w-full h-full object-cover"
-        style={{ opacity: visible ? 1 : 0, transition: 'opacity 0.4s ease' }}
-      />
+        style={{ opacity: ready ? 1 : 0, transition: 'opacity 0.4s ease' }}
+      >
+        <source ref={sourceRef} type="video/webm" />
+      </video>
     </div>
   );
 });
@@ -97,8 +135,9 @@ const HeroSection = memo(() => (
   <section className="groppi-hero-pro" aria-label="GROPPI Hero Videos">
     {/*
       Background video — hidden on mobile (saves 3-8s load time).
-      On mobile: poster image shown as static background via CSS.
-      On desktop (md+): full video plays normally.
+      preload="metadata": fetches only the first ~20KB (duration/dimensions),
+      NOT the full file. Full data streams only when autoPlay kicks in.
+      On mobile: static poster image via CSS — zero video bandwidth.
     */}
     <video
       autoPlay muted loop playsInline preload="metadata"
@@ -108,7 +147,7 @@ const HeroSection = memo(() => (
       <source src="/videos/hero-bg.mp4" type="video/mp4" />
     </video>
 
-    {/* Mobile: <img> so the preload hint is consumed and fetchpriority=high works */}
+    {/* Mobile: <img> — fetchpriority=high ties into the <link rel=preload> in index.html */}
     <img
       src="/images/hero-poster.png"
       alt=""
