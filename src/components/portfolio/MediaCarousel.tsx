@@ -96,15 +96,25 @@ const MediaCarousel = memo(({ media, clientName }: MediaCarouselProps) => {
             <img
               src={currentMedia.url}
               alt={currentMedia.alt || `${clientName} - Afbeelding ${currentIndex + 1}`}
-              className={`max-w-full max-h-full ${
+            className={`max-w-full max-h-full ${
                 isVertical 
                   ? 'h-full w-auto object-contain' 
                   : 'w-full h-full object-cover'
               }`}
               loading="lazy"
               decoding="async"
-              width={isVertical ? 400 : 800}
-              height={isVertical ? 711 : 450}
+              width={
+                currentMedia.aspectRatio === '9:16' ? 400
+                : currentMedia.aspectRatio === '4:5' ? 480
+                : currentMedia.aspectRatio === '1:1' ? 600
+                : 800
+              }
+              height={
+                currentMedia.aspectRatio === '9:16' ? 711
+                : currentMedia.aspectRatio === '4:5' ? 600
+                : currentMedia.aspectRatio === '1:1' ? 600
+                : 450
+              }
             />
           ) : (
             <div className={`relative ${isVertical ? 'h-full w-auto' : 'w-full h-full'} flex items-center justify-center`}>
