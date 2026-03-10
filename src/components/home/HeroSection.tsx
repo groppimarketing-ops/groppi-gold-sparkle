@@ -121,7 +121,7 @@ HeroSocialIcons.displayName = 'HeroSocialIcons';
 const HeroSection = memo(() => (
   <section className="groppi-hero-pro" aria-label="GROPPI Hero Videos">
     <video
-      autoPlay muted loop playsInline preload="auto"
+      autoPlay muted loop playsInline preload="metadata"
       className="groppi-bg"
       poster="/images/hero-poster.png"
     >
