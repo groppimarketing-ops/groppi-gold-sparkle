@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { SERVICE_PRICING_CONFIG } from '@/config/pricingConfig';
 
 const SITE_URL = 'https://groppi.be';
 
