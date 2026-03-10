@@ -139,3 +139,103 @@ const ServiceSchema = ({ name, description, priceRange }: { name: string; descri
 };
 
 export { OrganizationSchema, BreadcrumbSchema, ServiceSchema };
+
+/* ─────────────────────────────────────────────
+   ServiceOfferingSchema
+   Full ProfessionalService + Offer markup for
+   individual service pages — boosts rich results
+   in Google Belgium (nl-BE / en).
+───────────────────────────────────────────── */
+
+/** Maps service slugs to human-readable serviceType labels */
+const SERVICE_TYPE_MAP: Record<string, string> = {
+  'social-media':           'Social Media Management',
+  'ads-management':         'Online Advertising Management',
+  'content-production':     'Content Production',
+  'seo':                    'Search Engine Optimisation',
+  'business-website':       'Business Website Design',
+  'one-page-website':       'One-Page Website Design',
+  'ecommerce-website':      'E-Commerce Website Development',
+  'branding':               'Brand Identity Design',
+  'mobile-app-development': 'Mobile Application Development',
+  'reputation':             'Online Reputation Management',
+  'data-sync':              'Data Integration & Synchronisation',
+};
+
+interface ServiceOfferingSchemaProps {
+  slug: string;
+  name: string;
+  description: string;
+}
+
+const ServiceOfferingSchema = ({ slug, name, description }: ServiceOfferingSchemaProps) => {
+  const pricing = SERVICE_PRICING_CONFIG[slug];
+  const serviceUrl = `${SITE_URL}/services/${slug}`;
+  const serviceType = SERVICE_TYPE_MAP[slug] ?? name;
+
+  /* Build Offer node only when we have real price data */
+  const offerNode = pricing?.priceMin
+    ? {
+        '@type': 'Offer',
+        url: serviceUrl,
+        priceCurrency: 'EUR',
+        price: pricing.priceMin,
+        priceSpecification: {
+          '@type': pricing.pricingType === 'monthly'
+            ? 'UnitPriceSpecification'
+            : 'PriceSpecification',
+          price: pricing.priceMin,
+          priceCurrency: 'EUR',
+          ...(pricing.pricingType === 'monthly' && {
+            unitCode: 'MON',
+            unitText: 'per month',
+          }),
+        },
+        seller: { '@id': `${SITE_URL}/#organization` },
+        availability: 'https://schema.org/InStock',
+        areaServed: [
+          { '@type': 'Country', name: 'Belgium' },
+          { '@type': 'Country', name: 'Netherlands' },
+          { '@type': 'AdministrativeArea', name: 'European Union' },
+        ],
+      }
+    : undefined;
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    '@id': `${serviceUrl}#service`,
+    name,
+    description,
+    url: serviceUrl,
+    serviceType,
+    provider: { '@id': `${SITE_URL}/#organization` },
+    areaServed: [
+      { '@type': 'Country', name: 'Belgium' },
+      { '@type': 'Country', name: 'Netherlands' },
+      { '@type': 'AdministrativeArea', name: 'European Union' },
+    ],
+    inLanguage: ['nl-BE', 'en', 'fr', 'de'],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: `${name} — GROPPI`,
+      itemListElement: [
+        {
+          '@type': 'OfferCatalogItem',
+          name,
+          description,
+          ...(offerNode && { offers: offerNode }),
+        },
+      ],
+    },
+    ...(offerNode && { offers: offerNode }),
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
+  );
+};
+
+export { OrganizationSchema, BreadcrumbSchema, ServiceSchema, ServiceOfferingSchema };
