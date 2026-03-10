@@ -163,7 +163,11 @@ const ServicePageHero = memo(({ serviceKey, posterImage }: ServicePageHeroProps)
                 src={posterImage}
                 alt={t(`servicePage.${serviceKey}.title`)}
                 className="w-full h-full object-cover"
-                loading="lazy"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width={800}
+                height={450}
               />
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
