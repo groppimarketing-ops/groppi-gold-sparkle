@@ -77,7 +77,7 @@ const PortfolioCard = memo(({
         <div className="p-5">
           <div className="flex items-center gap-3 mb-2">
             {item.clientLogo && (
-              <img src={item.clientLogo} alt={`${item.clientName} logo`} className="w-8 h-8 object-contain rounded" loading="lazy" />
+              <img src={item.clientLogo} alt={`${item.clientName} logo`} className="w-8 h-8 object-contain rounded" loading="lazy" decoding="async" />
             )}
             <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
               {item.clientName}
