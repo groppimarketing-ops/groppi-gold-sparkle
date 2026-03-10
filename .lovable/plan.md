@@ -1,40 +1,53 @@
 
-I will add the "Meet the Team" section to the About Us page, featuring the leadership, core team, and external specialists with the uploaded images.
+## الإجابة المباشرة: نعم، كل اللغات الـ 15 ستبقى ظاهرة تمامًا
 
-The plan involves:
+### لماذا؟
 
-1.  **Asset Management**:
-    *   Copy the 10 uploaded images from `user-uploads://` to `src/assets/team/` with descriptive names (e.g., `mohamed-salah.png`, `alexander-roth.png`).
-    *   Map the images to the corresponding team members based on the visual descriptions.
-    *   Use a placeholder image for the 3 specialists whose photos are not yet provided (Arjun, Bilal, Rohan).
+بعد مراجعة الكود الحالي في `src/i18n/config.ts`، لاحظت أن الـ code splitting **لم يُطبَّق بعد** في المحادثة السابقة — الملف لا يزال يحتوي على static imports لجميع اللغات الـ 15 (السطور 6–20).
 
-2.  **Component Creation**:
-    *   Create a new component `src/components/about/TeamSection.tsx`.
-    *   Implement the "Groppi style":
-        *   Dark backgrounds with subtle radial gradients.
-        *   Gold accents and borders (`border-primary/20` or similar gold hex).
-        *   Circular profile photos with gold outlines.
-        *   Responsive grid layout.
-        *   Three distinct groups: Leadership, Core Team, External Specialists.
-    *   Include hover effects using `framer-motion`.
+يعني الخطة التي شُرحت في المحادثة السابقة لم تنفَّذ بعد في الكود الفعلي.
 
-3.  **Page Integration**:
-    *   Update `src/pages/About.tsx` to import and render `<TeamSection />`.
-    *   Place the section after the "Values" block and before the "Closing CTA" to maintain a logical flow (Who We Are -> Approach -> Mission -> Timeline -> Values -> **Team** -> CTA).
+---
 
-4.  **Dependencies**:
-    *   Use existing UI components like `GlassCard`, `SectionHeader`, and `Button` (if needed).
-    *   Use `lucide-react` for any social icons if implied (though not explicitly requested, I'll stick to clean profiles first).
+### ماذا سيحدث بعد التطبيق؟
 
-Technical details:
-*   **Images**:
-    *   Mohamed Salah (Egyptian man) -> `mohamed-salah.png`
-    *   Alexander Roth (Man 34y) -> `alexander-roth.png`
-    *   Thomas De Wilde (Man 32y) -> `thomas-de-wilde.png`
-    *   Lukas Meyer (Young man 26y) -> `lukas-meyer.png`
-    *   Sophie Van Dijk (Creative woman) -> `sophie-van-dijk.png`
-    *   Claire Dumont (Woman 34y) -> `claire-dumont.png`
-    *   Elise Verhaegen (Woman 29y) -> `elise-verhaegen.png`
-    *   Camille Laurent (Woman 28y) -> `camille-laurent.png`
-    *   Julia Van Aertselaer (Woman 28y) -> `julia-van-aertselaer.png`
-    *   Marco Bianchi (Man 27y) -> `marco-bianchi.png`
+```text
+قائمة اللغات في الـ Header (languages array)
+          ↓ (لا تتغير أبدًا)
+  15 لغة ظاهرة للمستخدم دائمًا
+          ↓
+  المستخدم يضغط على "Français"
+          ↓
+  يتنقل لـ /fr
+          ↓
+  LanguageLayout.tsx يلاحظ targetLang = 'fr'
+          ↓
+  i18n.changeLanguage('fr') يطلق dynamic import تلقائيًا
+          ↓
+  fr.json يُحمَّل (~80KB) في <300ms
+          ↓
+  الصفحة تظهر بالفرنسية كاملة
+```
+
+**قائمة الـ 15 لغة** في الـ Header تأتي من مصفوفة `languages` في `config.ts` — وهذه لا تتغير إطلاقًا بعد الـ code splitting. فقط طريقة تحميل الترجمات تتغير (on-demand بدل upfront).
+
+---
+
+### ضمانات سلامة اللغات
+
+| الضمان | الحالة |
+|---|---|
+| nl (الافتراضية) | محمّلة مسبقًا — صفر تأخير |
+| en (fallback) | محمّلة مسبقًا — ضروري للـ parseMissingKeyHandler |
+| 13 لغة أخرى | تُحمَّل عند الطلب فقط — تظهر بعد <300ms |
+| RTL (ar, ur) | تعمل طبيعيًا — applyDocumentDirection يُطبَّق مع changeLanguage |
+| brand name GROPPI | لا يتغير — محمي في كل ملفات الترجمة |
+
+---
+
+### ماذا سيُطبَّق
+
+1. **`src/i18n/config.ts`**: حذف 13 static import وتحويلها لـ dynamic import عبر i18next-resources-to-backend. nl وen يبقيان pre-bundled.
+2. **`src/components/layout/LanguageLayout.tsx`**: إضافة `Suspense`-style loading state خفيف خلال <300ms عند تغيير اللغة (مرة واحدة فقط per session).
+
+لا تغيير في: قائمة اللغات، الـ Header، الـ routing، الـ SEO، أو أي ملف آخر.
