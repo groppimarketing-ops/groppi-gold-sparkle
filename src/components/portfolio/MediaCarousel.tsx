@@ -102,6 +102,7 @@ const MediaCarousel = memo(({ media, clientName }: MediaCarouselProps) => {
                   : 'w-full h-full object-cover'
               }`}
               loading="lazy"
+              decoding="async"
             />
           ) : (
             <div className={`relative ${isVertical ? 'h-full w-auto' : 'w-full h-full'} flex items-center justify-center`}>
