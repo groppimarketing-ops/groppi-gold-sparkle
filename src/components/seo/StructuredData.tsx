@@ -138,7 +138,7 @@ const ServiceSchema = ({ name, description, priceRange }: { name: string; descri
   );
 };
 
-export { OrganizationSchema, BreadcrumbSchema, ServiceSchema };
+// re-exported at bottom of file
 
 /* ─────────────────────────────────────────────
    ServiceOfferingSchema
