@@ -164,25 +164,14 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                     highlightedServices.includes(service.id) ? 'ring-2 ring-primary/60 shadow-[0_0_50px_hsl(var(--gold)/0.25)]' : ''
                   } ${service.id === featuredServiceId ? 'ring-1 ring-primary/40' : ''}`}
                 >
-                  {/* Featured Badge */}
+                  {/* Featured Badge — pure CSS glow, no Framer loop */}
                   {service.id === featuredServiceId && (
-                    <motion.div
-                      className="absolute -top-3 left-1/2 -translate-x-1/2 z-10"
-                      animate={{
-                        boxShadow: [
-                          '0 0 10px hsl(43 100% 50% / 0.3)',
-                          '0 0 20px hsl(43 100% 50% / 0.5)',
-                          '0 0 10px hsl(43 100% 50% / 0.3)',
-                        ],
-                      }}
-                      transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-                      style={{ borderRadius: '9999px' }}
-                    >
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 badge-glow-pulse rounded-full">
                       <Badge className="bg-primary/90 text-primary-foreground gap-1.5 px-3 py-1">
                         <Award className="w-3.5 h-3.5" />
                         {t('home.servicesGrid.featured')}
                       </Badge>
-                    </motion.div>
+                    </div>
                   )}
 
                   {/* Hover glow - gold only */}

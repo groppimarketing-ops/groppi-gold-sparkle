@@ -18,7 +18,7 @@ const WaveAnimation = ({ intensity = 'medium', className = '' }: WaveAnimationPr
 
   return (
     <div
-      className={`fixed inset-0 pointer-events-none ${className}`}
+      className={`absolute inset-0 pointer-events-none ${className}`}
       style={{ zIndex: 0 }}
       aria-hidden="true"
     >

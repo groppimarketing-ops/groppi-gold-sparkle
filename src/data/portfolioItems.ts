@@ -1,166 +1,9 @@
 // GROPPI Portfolio Items - Real Client Data
 // This is the single source of truth for all portfolio/case study data
-// To add a new case: append to the portfolioItems array
+// All image paths use /public/portfolio/ (string paths, NOT ES6 imports)
+// This eliminates 120+ JS chunks and saves 100+ HTTP requests.
 
 import type { PortfolioItem } from '@/types/portfolio';
-
-// Import portfolio images
-import restaurantBranding from '@/assets/portfolio/restaurant-branding.jpg';
-import modeWebshop from '@/assets/portfolio/mode-webshop.jpg';
-import b2bPlatform from '@/assets/portfolio/b2b-platform.jpg';
-import bouwbedrijfWebsite from '@/assets/portfolio/bouwbedrijf-website.jpg';
-import influencerCampagne from '@/assets/portfolio/influencer-campagne.jpg';
-import techStartupBranding from '@/assets/portfolio/tech-startup-branding.jpg';
-import ecommerceGroei from '@/assets/portfolio/e-commerce-groei.jpg';
-import contentStrategie from '@/assets/portfolio/content-strategie.jpg';
-
-// IL FUOCO PIZZA assets
-import ilFuocoChef from '@/assets/portfolio/il-fuoco/chef-pizza.jpg';
-import ilFuocoMenu from '@/assets/portfolio/il-fuoco/menu.png';
-import ilFuocoReviews from '@/assets/portfolio/il-fuoco/reviews.png';
-import ilFuocoEvents from '@/assets/portfolio/il-fuoco/events.png';
-import ilFuocoDeals from '@/assets/portfolio/il-fuoco/deals.png';
-import ilFuocoInstagram from '@/assets/portfolio/il-fuoco/instagram.png';
-
-// LEBANON RESTAURANT assets
-import lebanonCover from '@/assets/portfolio/lebanon-restaurant/cover.jpg';
-import lebanonTaouk from '@/assets/portfolio/lebanon-restaurant/taouk.jpg';
-import lebanonBurger from '@/assets/portfolio/lebanon-restaurant/burger.jpg';
-import lebanonMezzePromo from '@/assets/portfolio/lebanon-restaurant/mezze-promo.jpg';
-import lebanonReview from '@/assets/portfolio/lebanon-restaurant/review.jpg';
-import lebanonCollage from '@/assets/portfolio/lebanon-restaurant/collage.jpg';
-import lebanonKofta from '@/assets/portfolio/lebanon-restaurant/kofta.png';
-import lebanonSambousek from '@/assets/portfolio/lebanon-restaurant/sambousek.png';
-import lebanonTaboule from '@/assets/portfolio/lebanon-restaurant/taboule.png';
-
-// KMA WANDPANELEN assets
-import kma1 from '@/assets/portfolio/kma/kma-1.jpg';
-import kma2 from '@/assets/portfolio/kma/kma-2.jpg';
-import kma3 from '@/assets/portfolio/kma/kma-3.jpg';
-import kma4 from '@/assets/portfolio/kma/kma-4.jpg';
-import kma5 from '@/assets/portfolio/kma/kma-5.jpg';
-import kma6 from '@/assets/portfolio/kma/kma-6.jpg';
-import kma7 from '@/assets/portfolio/kma/kma-7.jpg';
-import kmaShowroom from '@/assets/portfolio/kma/kma-showroom.jpg';
-
-// MANGIARE 3840 assets
-import mangiareCover from '@/assets/portfolio/mangiare3840/cover.jpg';
-import mangiareLogo from '@/assets/portfolio/mangiare3840/logo.jpeg';
-
-// SANREMO PIZZERIA assets
-import sanremoCover from '@/assets/portfolio/sanremo/cover.jpg';
-
-// BOOTHUIS TURNHOUT assets
-import boothuisCover from '@/assets/portfolio/boothuis/cover.jpg';
-
-// FRATELLI ROSELLI assets
-import fratelliRoselliCover from '@/assets/portfolio/fratelli-roselli/cover.jpg';
-import fratelliRoselliPizza from '@/assets/portfolio/fratelli-roselli/pizza-hero.jpg';
-import fratelliRoselliLogo from '@/assets/portfolio/fratelli-roselli/logo.png';
-import fratelliRoselliIngredienti from '@/assets/portfolio/fratelli-roselli/ingredienti.jpg';
-import fratelliRoselliHappyDiners from '@/assets/portfolio/fratelli-roselli/happy-diners.jpg';
-import fratelliRoselliPizzaCloseup from '@/assets/portfolio/fratelli-roselli/pizza-closeup.jpg';
-import fratelliRoselliFriendsEating from '@/assets/portfolio/fratelli-roselli/friends-eating.jpg';
-
-// PUMMARO PIZZERIA assets
-import pummaroCover from '@/assets/portfolio/pummaro/cover.jpg';
-import pummaroFarinata from '@/assets/portfolio/pummaro/farinata.jpg';
-import pummaroPizzaBox from '@/assets/portfolio/pummaro/pizza-box.jpg';
-import pummaroBurger from '@/assets/portfolio/pummaro/burger.jpg';
-
-// AUGUSTO TORINO assets
-import augustoCover from '@/assets/portfolio/augusto-torino/cover.jpg';
-import augustoExterior from '@/assets/portfolio/augusto-torino/exterior.jpg';
-import augustoInterior from '@/assets/portfolio/augusto-torino/interior.jpg';
-import augustoAmbiance from '@/assets/portfolio/augusto-torino/ambiance.jpg';
-import augustoDoor from '@/assets/portfolio/augusto-torino/door.jpg';
-import augustoBar from '@/assets/portfolio/augusto-torino/bar.jpg';
-
-// COSE PAZZI TORINO assets
-import cosePazziDesktop from '@/assets/portfolio/cose-pazzi/website-desktop.webp';
-import cosePazziFoodHero from '@/assets/portfolio/cose-pazzi/food-hero.webp';
-import cosePazziInterior from '@/assets/portfolio/cose-pazzi/interior.webp';
-import cosePazziMobile from '@/assets/portfolio/cose-pazzi/website-mobile.webp';
-import cosePazziSocial from '@/assets/portfolio/cose-pazzi/social-mockup.webp';
-import cosePazziBrand from '@/assets/portfolio/cose-pazzi/brand-mood.webp';
-import cosePazziLogo from '@/assets/portfolio/cose-pazzi/logo.png';
-
-// CASTELLO VICCHIOMAGGIO assets
-import vicchiomaggioHero from '@/assets/portfolio/vicchiomaggio/hero.webp';
-import vicchiomaggioDesktop from '@/assets/portfolio/vicchiomaggio/desktop-mockup.webp';
-import vicchiomaggioMobile from '@/assets/portfolio/vicchiomaggio/mobile-mockup.webp';
-import vicchiomaggioWine from '@/assets/portfolio/vicchiomaggio/wine-cellar.webp';
-import vicchiommaggioDining from '@/assets/portfolio/vicchiomaggio/dining.webp';
-import vicchiomaggioLandscape from '@/assets/portfolio/vicchiomaggio/landscape.webp';
-import vicchiommaggioBrand from '@/assets/portfolio/vicchiomaggio/brand-mood.webp';
-import vicchiomaggioDigital from '@/assets/portfolio/vicchiomaggio/digital-presence.webp';
-import vicchiomaggioLogo from '@/assets/portfolio/vicchiomaggio/logo.png';
-
-// PILOTSCAREER assets
-import pilotscareerCover from '@/assets/portfolio/pilotscareer/cover.jpg';
-import pilotscareerDesktop from '@/assets/portfolio/pilotscareer/desktop-mockup.webp';
-import pilotscareerMobile from '@/assets/portfolio/pilotscareer/mobile-mockup.webp';
-import pilotscareerCockpit from '@/assets/portfolio/pilotscareer/cockpit.webp';
-import pilotscareerDashboard from '@/assets/portfolio/pilotscareer/dashboard.webp';
-import pilotscareerBrand from '@/assets/portfolio/pilotscareer/brand-mood.webp';
-
-// CASA MAVI assets
-import casaMaviDesktop from '@/assets/portfolio/casa-mavi/desktop-mockup.webp';
-import casaMaviInterior from '@/assets/portfolio/casa-mavi/interior.webp';
-import casaMaviFood from '@/assets/portfolio/casa-mavi/food-hero.webp';
-import casaMaviMobile from '@/assets/portfolio/casa-mavi/mobile-mockup.webp';
-import casaMaviSocial from '@/assets/portfolio/casa-mavi/social-mockup.webp';
-import casaMaviBrand from '@/assets/portfolio/casa-mavi/brand-mood.webp';
-
-// ARTE Y COCINA assets
-import arteFood from '@/assets/portfolio/arte-y-cocina/food-hero.webp';
-import arteDesktop from '@/assets/portfolio/arte-y-cocina/desktop-mockup.webp';
-import arteMobile from '@/assets/portfolio/arte-y-cocina/mobile-mockup.webp';
-import arteInterior from '@/assets/portfolio/arte-y-cocina/interior.webp';
-import arteSocial from '@/assets/portfolio/arte-y-cocina/social-mockup.webp';
-import arteBrand from '@/assets/portfolio/arte-y-cocina/brand-mood.webp';
-
-// VERONA LOS BOLICHES assets
-import veronaFood from '@/assets/portfolio/verona/food-hero.webp';
-import veronaDesktop from '@/assets/portfolio/verona/desktop-mockup.webp';
-import veronaMobile from '@/assets/portfolio/verona/mobile-mockup.webp';
-import veronaInterior from '@/assets/portfolio/verona/interior.webp';
-import veronaSocial from '@/assets/portfolio/verona/social-mockup.webp';
-import veronaBrand from '@/assets/portfolio/verona/brand-mood.webp';
-
-// HAPPY FLAVORS assets
-import happyFlavorsFood from '@/assets/portfolio/happy-flavors/food-hero.webp';
-import happyFlavorsDesktop from '@/assets/portfolio/happy-flavors/desktop-mockup.webp';
-import happyFlavorsMobile from '@/assets/portfolio/happy-flavors/mobile-mockup.webp';
-import happyFlavorsInterior from '@/assets/portfolio/happy-flavors/interior.webp';
-import happyFlavorsSocial from '@/assets/portfolio/happy-flavors/social-mockup.webp';
-import happyFlavorsBrand from '@/assets/portfolio/happy-flavors/brand-mood.webp';
-
-// GUEST RESERVATIONS assets
-import guestResHero from '@/assets/portfolio/guest-reservations/hero.webp';
-import guestResDesktop from '@/assets/portfolio/guest-reservations/desktop-mockup.webp';
-import guestResMobile from '@/assets/portfolio/guest-reservations/mobile-mockup.webp';
-import guestResDashboard from '@/assets/portfolio/guest-reservations/dashboard.webp';
-import guestResMulti from '@/assets/portfolio/guest-reservations/multi-device.webp';
-import guestResBrand from '@/assets/portfolio/guest-reservations/brand-mood.webp';
-
-// EUROSTARS HOTELS assets
-import eurostarsHero from '@/assets/portfolio/eurostars/hero.webp';
-import eurostarsDesktop from '@/assets/portfolio/eurostars/desktop-mockup.webp';
-import eurostarsMobile from '@/assets/portfolio/eurostars/mobile-mockup.webp';
-import eurostarsExterior from '@/assets/portfolio/eurostars/exterior.webp';
-import eurostarsMulti from '@/assets/portfolio/eurostars/multi-device.webp';
-import eurostarsBrand from '@/assets/portfolio/eurostars/brand-mood.webp';
-
-// AI DEALS assets
-import aidealsCover from '@/assets/portfolio/aideals/cover.jpg';
-import aidealsDesktop from '@/assets/portfolio/aideals/desktop-mockup.webp';
-import aidealsMobile from '@/assets/portfolio/aideals/mobile-mockup.webp';
-import aidealsAcademy from '@/assets/portfolio/aideals/academy.webp';
-import aidealsDashboard from '@/assets/portfolio/aideals/dashboard.webp';
-import aidealsBrand from '@/assets/portfolio/aideals/brand-mood.webp';
-import aidealsMultiDevice from '@/assets/portfolio/aideals/multi-device.webp';
-import aidealsMarketplace from '@/assets/portfolio/aideals/marketplace.webp';
 
 export const portfolioItems: PortfolioItem[] = [
   {
@@ -172,17 +15,17 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-19',
       type: 'image',
-      url: vicchiomaggioHero,
+      url: '/portfolio/vicchiomaggio/hero.webp',
       alt: 'Castello Vicchiomaggio - Tuscan winery estate at golden hour',
     },
     galleryMedia: [
-      { id: 'gallery-19-1', type: 'image', url: vicchiomaggioDesktop, alt: 'Vicchiomaggio - Website desktop mockup' },
-      { id: 'gallery-19-2', type: 'image', url: vicchiomaggioMobile, alt: 'Vicchiomaggio - Mobile booking experience', aspectRatio: '9:16' },
-      { id: 'gallery-19-3', type: 'image', url: vicchiomaggioWine, alt: 'Vicchiomaggio - Wine cellar experience' },
-      { id: 'gallery-19-4', type: 'image', url: vicchiommaggioDining, alt: 'Vicchiomaggio - Terrace dining with Tuscan views' },
-      { id: 'gallery-19-5', type: 'image', url: vicchiomaggioLandscape, alt: 'Vicchiomaggio - Chianti vineyard landscape' },
-      { id: 'gallery-19-6', type: 'image', url: vicchiommaggioBrand, alt: 'Vicchiomaggio - Brand mood and textures', aspectRatio: '4:5' },
-      { id: 'gallery-19-7', type: 'image', url: vicchiomaggioDigital, alt: 'Vicchiomaggio - Multi-device digital presence' },
+      { id: 'gallery-19-1', type: 'image', url: '/portfolio/vicchiomaggio/desktop-mockup.webp', alt: 'Vicchiomaggio - Website desktop mockup' },
+      { id: 'gallery-19-2', type: 'image', url: '/portfolio/vicchiomaggio/mobile-mockup.webp', alt: 'Vicchiomaggio - Mobile booking experience', aspectRatio: '9:16' },
+      { id: 'gallery-19-3', type: 'image', url: '/portfolio/vicchiomaggio/wine-cellar.webp', alt: 'Vicchiomaggio - Wine cellar experience' },
+      { id: 'gallery-19-4', type: 'image', url: '/portfolio/vicchiomaggio/dining.webp', alt: 'Vicchiomaggio - Terrace dining with Tuscan views' },
+      { id: 'gallery-19-5', type: 'image', url: '/portfolio/vicchiomaggio/landscape.webp', alt: 'Vicchiomaggio - Chianti vineyard landscape' },
+      { id: 'gallery-19-6', type: 'image', url: '/portfolio/vicchiomaggio/brand-mood.webp', alt: 'Vicchiomaggio - Brand mood and textures', aspectRatio: '4:5' },
+      { id: 'gallery-19-7', type: 'image', url: '/portfolio/vicchiomaggio/digital-presence.webp', alt: 'Vicchiomaggio - Multi-device digital presence' },
     ],
     shortResultLine: 'Digital presentation and visual direction for a historic Tuscan winery and hospitality estate.',
     popupContent: {
@@ -204,7 +47,7 @@ export const portfolioItems: PortfolioItem[] = [
       resultDisclaimer: 'Visuals recreated for portfolio presentation purposes.',
       deliverables: ['website-design', 'website-dev', 'content-calendar', 'photo-shoot', 'social-content'],
     },
-    clientLogo: vicchiomaggioLogo,
+    clientLogo: '/portfolio/vicchiomaggio/logo.png',
     externalUrl: 'https://www.vicchiomaggio.it/',
     featured: true,
     createdAt: new Date('2025-03-15'),
@@ -218,15 +61,15 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-18',
       type: 'image',
-      url: cosePazziFoodHero,
+      url: '/portfolio/cose-pazzi/food-hero.webp',
       alt: 'Pizzeria Cose Pazzi Torino - Premium pizza presentation',
     },
     galleryMedia: [
-      { id: 'gallery-18-1', type: 'image', url: cosePazziMobile, alt: 'Cose Pazzi - Mobile menu experience', aspectRatio: '9:16' },
-      { id: 'gallery-18-2', type: 'image', url: cosePazziFoodHero, alt: 'Cose Pazzi - Premium pizza presentation' },
-      { id: 'gallery-18-3', type: 'image', url: cosePazziInterior, alt: 'Cose Pazzi - Warm restaurant ambiance' },
-      { id: 'gallery-18-4', type: 'image', url: cosePazziSocial, alt: 'Cose Pazzi - Social media visual identity', aspectRatio: '4:5' },
-      { id: 'gallery-18-5', type: 'image', url: cosePazziBrand, alt: 'Cose Pazzi - Brand mood and palette' },
+      { id: 'gallery-18-1', type: 'image', url: '/portfolio/cose-pazzi/website-mobile.webp', alt: 'Cose Pazzi - Mobile menu experience', aspectRatio: '9:16' },
+      { id: 'gallery-18-2', type: 'image', url: '/portfolio/cose-pazzi/food-hero.webp', alt: 'Cose Pazzi - Premium pizza presentation' },
+      { id: 'gallery-18-3', type: 'image', url: '/portfolio/cose-pazzi/interior.webp', alt: 'Cose Pazzi - Warm restaurant ambiance' },
+      { id: 'gallery-18-4', type: 'image', url: '/portfolio/cose-pazzi/social-mockup.webp', alt: 'Cose Pazzi - Social media visual identity', aspectRatio: '4:5' },
+      { id: 'gallery-18-5', type: 'image', url: '/portfolio/cose-pazzi/brand-mood.webp', alt: 'Cose Pazzi - Brand mood and palette' },
     ],
     shortResultLine: 'Authentic Italian pizzeria website with strong food-focused visuals and local brand character.',
     popupContent: {
@@ -246,7 +89,7 @@ export const portfolioItems: PortfolioItem[] = [
       resultDisclaimer: 'Visuals are illustrative and created for presentation purposes.',
       deliverables: ['website-design', 'website-dev', 'content-calendar', 'social-content'],
     },
-    clientLogo: cosePazziLogo,
+    clientLogo: '/portfolio/cose-pazzi/logo.png',
     externalUrl: 'https://www.pizzeriacosepazztorino.it/',
     featured: true,
     createdAt: new Date('2025-02-10'),
@@ -260,15 +103,15 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-17',
       type: 'image',
-      url: augustoCover,
+      url: '/portfolio/augusto-torino/cover.jpg',
       alt: 'Augusto Torino - Elegant Italian restaurant in Turin',
     },
     galleryMedia: [
-      { id: 'gallery-17-1', type: 'image', url: augustoExterior, alt: 'Augusto Torino - Restaurant exterior at night' },
-      { id: 'gallery-17-2', type: 'image', url: augustoInterior, alt: 'Augusto Torino - Dining room interior' },
-      { id: 'gallery-17-3', type: 'image', url: augustoAmbiance, alt: 'Augusto Torino - Warm ambiance detail' },
-      { id: 'gallery-17-4', type: 'image', url: augustoDoor, alt: 'Augusto Torino - Signature blue door' },
-      { id: 'gallery-17-5', type: 'image', url: augustoBar, alt: 'Augusto Torino - Bar and draft beer setup' },
+      { id: 'gallery-17-1', type: 'image', url: '/portfolio/augusto-torino/exterior.jpg', alt: 'Augusto Torino - Restaurant exterior at night' },
+      { id: 'gallery-17-2', type: 'image', url: '/portfolio/augusto-torino/interior.jpg', alt: 'Augusto Torino - Dining room interior' },
+      { id: 'gallery-17-3', type: 'image', url: '/portfolio/augusto-torino/ambiance.jpg', alt: 'Augusto Torino - Warm ambiance detail' },
+      { id: 'gallery-17-4', type: 'image', url: '/portfolio/augusto-torino/door.jpg', alt: 'Augusto Torino - Signature blue door' },
+      { id: 'gallery-17-5', type: 'image', url: '/portfolio/augusto-torino/bar.jpg', alt: 'Augusto Torino - Bar and draft beer setup' },
     ],
     shortResultLine: 'Elegant restaurant website with strong visual identity and refined food presentation.',
     popupContent: {
@@ -301,13 +144,13 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-16',
       type: 'image',
-      url: pummaroCover,
+      url: '/portfolio/pummaro/cover.jpg',
       alt: 'Pizzeria Pummarò - Authentic Italian pizzeria in Torino',
     },
     galleryMedia: [
-      { id: 'gallery-16-1', type: 'image', url: pummaroPizzaBox, alt: 'Pummarò - Pizza in branded box' },
-      { id: 'gallery-16-2', type: 'image', url: pummaroFarinata, alt: 'Pummarò - Traditional farinata' },
-      { id: 'gallery-16-3', type: 'image', url: pummaroBurger, alt: 'Pummarò - Gourmet burger' },
+      { id: 'gallery-16-1', type: 'image', url: '/portfolio/pummaro/pizza-box.jpg', alt: 'Pummarò - Pizza in branded box' },
+      { id: 'gallery-16-2', type: 'image', url: '/portfolio/pummaro/farinata.jpg', alt: 'Pummarò - Traditional farinata' },
+      { id: 'gallery-16-3', type: 'image', url: '/portfolio/pummaro/burger.jpg', alt: 'Pummarò - Gourmet burger' },
     ],
     shortResultLine: 'Modern restaurant website with strong food presentation and clear customer flow.',
     popupContent: {
@@ -337,19 +180,19 @@ export const portfolioItems: PortfolioItem[] = [
     slug: 'fratelli-roselli',
     industry: 'restaurant',
     services: ['website', 'branding', 'content'],
-    clientLogo: fratelliRoselliLogo,
+    clientLogo: '/portfolio/fratelli-roselli/logo.png',
     coverMedia: {
       id: 'cover-15',
       type: 'image',
-      url: fratelliRoselliCover,
+      url: '/portfolio/fratelli-roselli/cover.jpg',
       alt: 'Pizzeria Fratelli Roselli - Logo',
     },
     galleryMedia: [
-      { id: 'gallery-15-1', type: 'image', url: fratelliRoselliPizza, alt: 'Fratelli Roselli - Pizza presentation' },
-      { id: 'gallery-15-2', type: 'image', url: fratelliRoselliIngredienti, alt: 'Fratelli Roselli - Premium ingredients' },
-      { id: 'gallery-15-3', type: 'image', url: fratelliRoselliPizzaCloseup, alt: 'Fratelli Roselli - Neapolitan pizza closeup' },
-      { id: 'gallery-15-4', type: 'image', url: fratelliRoselliHappyDiners, alt: 'Fratelli Roselli - Happy family enjoying pizza' },
-      { id: 'gallery-15-5', type: 'image', url: fratelliRoselliFriendsEating, alt: 'Fratelli Roselli - Friends having fun with pizza' },
+      { id: 'gallery-15-1', type: 'image', url: '/portfolio/fratelli-roselli/pizza-hero.jpg', alt: 'Fratelli Roselli - Pizza presentation' },
+      { id: 'gallery-15-2', type: 'image', url: '/portfolio/fratelli-roselli/ingredienti.jpg', alt: 'Fratelli Roselli - Premium ingredients' },
+      { id: 'gallery-15-3', type: 'image', url: '/portfolio/fratelli-roselli/pizza-closeup.jpg', alt: 'Fratelli Roselli - Neapolitan pizza closeup' },
+      { id: 'gallery-15-4', type: 'image', url: '/portfolio/fratelli-roselli/happy-diners.jpg', alt: 'Fratelli Roselli - Happy family enjoying pizza' },
+      { id: 'gallery-15-5', type: 'image', url: '/portfolio/fratelli-roselli/friends-eating.jpg', alt: 'Fratelli Roselli - Friends having fun with pizza' },
     ],
     shortResultLine: 'Authentic Italian restaurant website with strong food presentation and local branding.',
     popupContent: {
@@ -382,11 +225,11 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-14',
       type: 'image',
-      url: boothuisCover,
+      url: '/portfolio/boothuis/cover.jpg',
       alt: 'Boothuis Turnhout - Restaurant website & visual content',
     },
     galleryMedia: [
-      { id: 'gallery-14-1', type: 'image', url: boothuisCover, alt: 'Boothuis Turnhout - Website presentation' },
+      { id: 'gallery-14-1', type: 'image', url: '/portfolio/boothuis/cover.jpg', alt: 'Boothuis Turnhout - Website presentation' },
     ],
     shortResultLine: 'Clean restaurant website and visual presentation for a local hospitality business.',
     popupContent: {
@@ -419,11 +262,11 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-13',
       type: 'image',
-      url: sanremoCover,
+      url: '/portfolio/sanremo/cover.jpg',
       alt: 'Sanremo Pizzeria Restaurant - Social media & visual content',
     },
     galleryMedia: [
-      { id: 'gallery-13-1', type: 'image', url: sanremoCover, alt: 'Sanremo Pizzeria Restaurant - Premium restaurant visual' },
+      { id: 'gallery-13-1', type: 'image', url: '/portfolio/sanremo/cover.jpg', alt: 'Sanremo Pizzeria Restaurant - Premium restaurant visual' },
     ],
     shortResultLine: 'Strong social media presence and visual content for a local restaurant.',
     popupContent: {
@@ -453,15 +296,15 @@ export const portfolioItems: PortfolioItem[] = [
     slug: 'mangiare-3840',
     industry: 'restaurant',
     services: ['website', 'branding', 'content'],
-    clientLogo: mangiareLogo,
+    clientLogo: '/portfolio/mangiare3840/logo.jpeg',
     coverMedia: {
       id: 'cover-12',
       type: 'image',
-      url: mangiareCover,
+      url: '/portfolio/mangiare3840/cover.jpg',
       alt: 'Mangiare 3840 - Modern restaurant website',
     },
     galleryMedia: [
-      { id: 'gallery-12-1', type: 'image', url: mangiareCover, alt: 'Mangiare 3840 - Website mockup' },
+      { id: 'gallery-12-1', type: 'image', url: '/portfolio/mangiare3840/cover.jpg', alt: 'Mangiare 3840 - Website mockup' },
     ],
     shortResultLine: 'Modern restaurant website with strong visual identity.',
     popupContent: {
@@ -494,18 +337,18 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-11',
       type: 'image',
-      url: kma6,
+      url: '/portfolio/kma/kma-6.jpg',
       alt: 'KMA Wandpanelen - WPC panelen in diverse kleuren',
     },
     galleryMedia: [
-      { id: 'gallery-11-1', type: 'image', url: kma1, alt: 'KMA - Schoonmaken wandpanelen' },
-      { id: 'gallery-11-2', type: 'image', url: kma2, alt: 'KMA - Marmeren keuken design' },
-      { id: 'gallery-11-3', type: 'image', url: kma3, alt: 'KMA - Hout- en marmeralternatieven collectie' },
-      { id: 'gallery-11-4', type: 'image', url: kma4, alt: 'KMA - WPC wandpanelen exclusief aanbod' },
-      { id: 'gallery-11-5', type: 'image', url: kma5, alt: 'KMA - WPC wandpanelen donkere variant' },
-      { id: 'gallery-11-6', type: 'image', url: kma6, alt: 'KMA - WPC panelen strak en duurzaam' },
-      { id: 'gallery-11-7', type: 'image', url: kma7, alt: 'KMA - Eén materiaal, meerdere stijlen' },
-      { id: 'gallery-11-8', type: 'image', url: kmaShowroom, alt: 'KMA - Premium showroom Antwerpen' },
+      { id: 'gallery-11-1', type: 'image', url: '/portfolio/kma/kma-1.jpg', alt: 'KMA - Schoonmaken wandpanelen' },
+      { id: 'gallery-11-2', type: 'image', url: '/portfolio/kma/kma-2.jpg', alt: 'KMA - Marmeren keuken design' },
+      { id: 'gallery-11-3', type: 'image', url: '/portfolio/kma/kma-3.jpg', alt: 'KMA - Hout- en marmeralternatieven collectie' },
+      { id: 'gallery-11-4', type: 'image', url: '/portfolio/kma/kma-4.jpg', alt: 'KMA - WPC wandpanelen exclusief aanbod' },
+      { id: 'gallery-11-5', type: 'image', url: '/portfolio/kma/kma-5.jpg', alt: 'KMA - WPC wandpanelen donkere variant' },
+      { id: 'gallery-11-6', type: 'image', url: '/portfolio/kma/kma-6.jpg', alt: 'KMA - WPC panelen strak en duurzaam' },
+      { id: 'gallery-11-7', type: 'image', url: '/portfolio/kma/kma-7.jpg', alt: 'KMA - Eén materiaal, meerdere stijlen' },
+      { id: 'gallery-11-8', type: 'image', url: '/portfolio/kma/kma-showroom.jpg', alt: 'KMA - Premium showroom Antwerpen' },
     ],
     shortResultLine: '+85% showroom bezoekers',
     popupContent: {
@@ -514,7 +357,7 @@ export const portfolioItems: PortfolioItem[] = [
         'Professionele productfotografie van alle paneelvarianten',
         'Social media contentstrategie voor Instagram en Facebook',
         'Visuele vergelijking: WPC vs. traditioneel hout',
-        'Focus op USP\'s: onderhoudsvriendelijk en duurzaam',
+        "Focus op USP's: onderhoudsvriendelijk en duurzaam",
       ],
       resultPoints: [
         '+85% meer showroombezoekers',
@@ -537,20 +380,20 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-10',
       type: 'image',
-      url: lebanonCover,
+      url: '/portfolio/lebanon-restaurant/cover.jpg',
       alt: 'Lebanon Restaurant - Authentieke Libanese keuken',
     },
     galleryMedia: [
-      { id: 'gallery-10-1', type: 'image', url: lebanonCover, alt: 'Lebanon Restaurant - Hummus - Le Classique Indémodable' },
-      { id: 'gallery-10-2', type: 'image', url: lebanonTaouk, alt: 'Lebanon Restaurant - Grand Opening Taouk' },
-      { id: 'gallery-10-3', type: 'image', url: lebanonBurger, alt: 'Lebanon Restaurant - Burger Special' },
-      { id: 'gallery-10-4', type: 'image', url: lebanonMezzePromo, alt: 'Lebanon Restaurant - Plateau Mezze Complet' },
-      { id: 'gallery-10-5', type: 'image', url: lebanonReview, alt: 'Lebanon Restaurant - Critique Culinaire' },
-      { id: 'gallery-10-6', type: 'image', url: lebanonCollage, alt: 'Lebanon Restaurant - Venez nous rendre visite' },
-      { id: 'gallery-10-7', type: 'image', url: lebanonKofta, alt: 'Lebanon Restaurant - Kofta Dawood Basha' },
-      { id: 'gallery-10-8', type: 'image', url: lebanonSambousek, alt: 'Lebanon Restaurant - Sambousek' },
-      { id: 'gallery-10-9', type: 'image', url: lebanonTaboule, alt: 'Lebanon Restaurant - Taboulé' },
-      { id: 'gallery-10-10', type: 'video', url: '/videos/portfolio/lebanon-promo-1.mp4', posterUrl: lebanonCover, alt: 'Lebanon Restaurant - Promo video', aspectRatio: '9:16' },
+      { id: 'gallery-10-1', type: 'image', url: '/portfolio/lebanon-restaurant/cover.jpg', alt: 'Lebanon Restaurant - Hummus - Le Classique Indémodable' },
+      { id: 'gallery-10-2', type: 'image', url: '/portfolio/lebanon-restaurant/taouk.jpg', alt: 'Lebanon Restaurant - Grand Opening Taouk' },
+      { id: 'gallery-10-3', type: 'image', url: '/portfolio/lebanon-restaurant/burger.jpg', alt: 'Lebanon Restaurant - Burger Special' },
+      { id: 'gallery-10-4', type: 'image', url: '/portfolio/lebanon-restaurant/mezze-promo.jpg', alt: 'Lebanon Restaurant - Plateau Mezze Complet' },
+      { id: 'gallery-10-5', type: 'image', url: '/portfolio/lebanon-restaurant/review.jpg', alt: 'Lebanon Restaurant - Critique Culinaire' },
+      { id: 'gallery-10-6', type: 'image', url: '/portfolio/lebanon-restaurant/collage.jpg', alt: 'Lebanon Restaurant - Venez nous rendre visite' },
+      { id: 'gallery-10-7', type: 'image', url: '/portfolio/lebanon-restaurant/kofta.png', alt: 'Lebanon Restaurant - Kofta Dawood Basha' },
+      { id: 'gallery-10-8', type: 'image', url: '/portfolio/lebanon-restaurant/sambousek.png', alt: 'Lebanon Restaurant - Sambousek' },
+      { id: 'gallery-10-9', type: 'image', url: '/portfolio/lebanon-restaurant/taboule.png', alt: 'Lebanon Restaurant - Taboulé' },
+      { id: 'gallery-10-10', type: 'video', url: '/videos/portfolio/lebanon-promo-1.mp4', posterUrl: '/portfolio/lebanon-restaurant/cover.jpg', alt: 'Lebanon Restaurant - Promo video', aspectRatio: '9:16' },
     ],
     shortResultLine: '+120% social media bereik',
     popupContent: {
@@ -558,7 +401,7 @@ export const portfolioItems: PortfolioItem[] = [
       approachPoints: [
         'Complete social media strategie voor Instagram en Facebook',
         'Professionele food fotografie en styling',
-        'Korte promo video\'s en Reels voor engagement',
+        "Korte promo video's en Reels voor engagement",
         'Wekelijkse contentplanning met consistente posting',
         'Review & testimonial content voor social proof',
       ],
@@ -567,7 +410,7 @@ export const portfolioItems: PortfolioItem[] = [
         'Merkbare stijging in nieuwe klanten via Instagram',
         'Hogere engagement rate op posts',
         'Sterkere merkherkenning in de regio Brussel',
-        'Meer tafelreserveringen via DM\'s',
+        "Meer tafelreserveringen via DM's",
       ],
       resultDisclaimer: 'Indicatief resultaat, afhankelijk van periode & budget.',
       deliverables: ['photo-shoot', 'video-production', 'reels-production', 'social-content', 'instagram-strategy', 'content-calendar'],
@@ -584,17 +427,17 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-9',
       type: 'image',
-      url: ilFuocoChef,
+      url: '/portfolio/il-fuoco/chef-pizza.jpg',
       alt: 'Restaurant IL Fuoco - Pizzaiolo aan het werk',
     },
     galleryMedia: [
-      { id: 'gallery-9-1', type: 'image', url: ilFuocoChef, alt: 'Restaurant IL Fuoco - Chef bereidt pizza' },
-      { id: 'gallery-9-2', type: 'video', url: '/videos/portfolio/il-fuoco-promo.mp4', posterUrl: ilFuocoChef, alt: 'Restaurant IL Fuoco - Promo video' },
-      { id: 'gallery-9-3', type: 'image', url: ilFuocoMenu, alt: 'Restaurant IL Fuoco - Menu design' },
-      { id: 'gallery-9-4', type: 'image', url: ilFuocoReviews, alt: 'Restaurant IL Fuoco - Reviews sectie' },
-      { id: 'gallery-9-5', type: 'image', url: ilFuocoEvents, alt: 'Restaurant IL Fuoco - Events pagina' },
-      { id: 'gallery-9-6', type: 'image', url: ilFuocoDeals, alt: 'Restaurant IL Fuoco - Deals en acties' },
-      { id: 'gallery-9-7', type: 'image', url: ilFuocoInstagram, alt: 'Restaurant IL Fuoco - Instagram post' },
+      { id: 'gallery-9-1', type: 'image', url: '/portfolio/il-fuoco/chef-pizza.jpg', alt: 'Restaurant IL Fuoco - Chef bereidt pizza' },
+      { id: 'gallery-9-2', type: 'video', url: '/videos/portfolio/il-fuoco-promo.mp4', posterUrl: '/portfolio/il-fuoco/chef-pizza.jpg', alt: 'Restaurant IL Fuoco - Promo video' },
+      { id: 'gallery-9-3', type: 'image', url: '/portfolio/il-fuoco/menu.png', alt: 'Restaurant IL Fuoco - Menu design' },
+      { id: 'gallery-9-4', type: 'image', url: '/portfolio/il-fuoco/reviews.png', alt: 'Restaurant IL Fuoco - Reviews sectie' },
+      { id: 'gallery-9-5', type: 'image', url: '/portfolio/il-fuoco/events.png', alt: 'Restaurant IL Fuoco - Events pagina' },
+      { id: 'gallery-9-6', type: 'image', url: '/portfolio/il-fuoco/deals.png', alt: 'Restaurant IL Fuoco - Deals en acties' },
+      { id: 'gallery-9-7', type: 'image', url: '/portfolio/il-fuoco/instagram.png', alt: 'Restaurant IL Fuoco - Instagram post' },
     ],
     shortResultLine: '+65% online reserveringen',
     popupContent: {
@@ -628,11 +471,11 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-1',
       type: 'image',
-      url: restaurantBranding,
+      url: '/portfolio/restaurant-branding.jpg',
       alt: 'La Maison Dorée restaurant branding',
     },
     galleryMedia: [
-      { id: 'gallery-1-1', type: 'image', url: restaurantBranding, alt: 'La Maison Dorée restaurant branding' },
+      { id: 'gallery-1-1', type: 'image', url: '/portfolio/restaurant-branding.jpg', alt: 'La Maison Dorée restaurant branding' },
     ],
     shortResultLine: '+180% reserveringen',
     popupContent: {
@@ -663,11 +506,11 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-2',
       type: 'image',
-      url: modeWebshop,
+      url: '/portfolio/mode-webshop.jpg',
       alt: 'LUXE Mode webshop',
     },
     galleryMedia: [
-      { id: 'gallery-2-1', type: 'image', url: modeWebshop, alt: 'LUXE Mode webshop homepage' },
+      { id: 'gallery-2-1', type: 'image', url: '/portfolio/mode-webshop.jpg', alt: 'LUXE Mode webshop homepage' },
     ],
     shortResultLine: '€85K omzet in 3 maanden',
     popupContent: {
@@ -676,7 +519,7 @@ export const portfolioItems: PortfolioItem[] = [
         'Shopify webshop setup en configuratie',
         'Professionele productfotografie',
         'Meta Ads-campagnes met retargeting',
-        'Conversiegerichte landingspagina\'s',
+        "Conversiegerichte landingspagina's",
       ],
       resultPoints: [
         '€85K omzet in eerste 3 maanden',
@@ -698,20 +541,20 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-3',
       type: 'image',
-      url: b2bPlatform,
+      url: '/portfolio/b2b-platform.jpg',
       alt: 'TechFlow Solutions B2B platform',
     },
     galleryMedia: [
-      { id: 'gallery-3-1', type: 'image', url: b2bPlatform, alt: 'TechFlow Solutions platform dashboard' },
+      { id: 'gallery-3-1', type: 'image', url: '/portfolio/b2b-platform.jpg', alt: 'TechFlow Solutions platform dashboard' },
     ],
     shortResultLine: '+320% leads',
     popupContent: {
       challenge: 'Complexe B2B SaaS met lange salesfunnel. Te weinig gekwalificeerde leads en website converteerde slecht. Concurrent positionering was sterker.',
       approachPoints: [
-        'Geoptimaliseerde landingspagina\'s per persona',
+        "Geoptimaliseerde landingspagina's per persona",
         'Lead magnets (whitepapers, case studies)',
         'SEO-strategie voor long-tail keywords',
-        'A/B-testen van formulieren en CTA\'s',
+        "A/B-testen van formulieren en CTA's",
       ],
       resultPoints: [
         '+320% gekwalificeerde leads binnen 4 maanden',
@@ -733,11 +576,11 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-4',
       type: 'image',
-      url: bouwbedrijfWebsite,
+      url: '/portfolio/bouwbedrijf-website.jpg',
       alt: 'Van Damme Bouw website',
     },
     galleryMedia: [
-      { id: 'gallery-4-1', type: 'image', url: bouwbedrijfWebsite, alt: 'Van Damme Bouw portfolio' },
+      { id: 'gallery-4-1', type: 'image', url: '/portfolio/bouwbedrijf-website.jpg', alt: 'Van Damme Bouw portfolio' },
     ],
     shortResultLine: '#1 Google lokaal',
     popupContent: {
@@ -768,11 +611,11 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-5',
       type: 'image',
-      url: influencerCampagne,
+      url: '/portfolio/influencer-campagne.jpg',
       alt: 'Belgian Beauty Collective influencer campagne',
     },
     galleryMedia: [
-      { id: 'gallery-5-1', type: 'image', url: influencerCampagne, alt: 'Influencer campagne content' },
+      { id: 'gallery-5-1', type: 'image', url: '/portfolio/influencer-campagne.jpg', alt: 'Influencer campagne content' },
     ],
     shortResultLine: '2.4M bereik',
     popupContent: {
@@ -803,11 +646,11 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-6',
       type: 'image',
-      url: techStartupBranding,
+      url: '/portfolio/tech-startup-branding.jpg',
       alt: 'NovaTech AI branding',
     },
     galleryMedia: [
-      { id: 'gallery-6-1', type: 'image', url: techStartupBranding, alt: 'NovaTech AI brand identity' },
+      { id: 'gallery-6-1', type: 'image', url: '/portfolio/tech-startup-branding.jpg', alt: 'NovaTech AI brand identity' },
     ],
     shortResultLine: 'Complete merkidentiteit',
     popupContent: {
@@ -838,11 +681,11 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-7',
       type: 'image',
-      url: ecommerceGroei,
+      url: '/portfolio/e-commerce-groei.jpg',
       alt: 'HomeStyle Interieur e-commerce',
     },
     galleryMedia: [
-      { id: 'gallery-7-1', type: 'image', url: ecommerceGroei, alt: 'HomeStyle webshop analytics' },
+      { id: 'gallery-7-1', type: 'image', url: '/portfolio/e-commerce-groei.jpg', alt: 'HomeStyle webshop analytics' },
     ],
     shortResultLine: '+240% ROAS',
     popupContent: {
@@ -873,13 +716,13 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-8',
       type: 'image',
-      url: contentStrategie,
+      url: '/portfolio/content-strategie.jpg',
       alt: 'FitLife Studios content strategie',
     },
     galleryMedia: [
-      { id: 'gallery-8-1', type: 'image', url: contentStrategie, alt: 'FitLife content calendar' },
+      { id: 'gallery-8-1', type: 'image', url: '/portfolio/content-strategie.jpg', alt: 'FitLife content calendar' },
     ],
-    shortResultLine: '50+ video\'s/maand',
+    shortResultLine: "50+ video's/maand",
     popupContent: {
       challenge: 'Fitnessketen wilde consistent content produceren maar had intern geen tijd of expertise. Social media werd verwaarloosd.',
       approachPoints: [
@@ -889,7 +732,7 @@ export const portfolioItems: PortfolioItem[] = [
         'Consistente posting strategie',
       ],
       resultPoints: [
-        '50+ kwalitatieve video\'s per maand',
+        "50+ kwalitatieve video's per maand",
         'Consistente merkbeleving over alle kanalen',
         'Hogere ledenbetrokkenheid',
         'Meer aanmeldingen via social media',
@@ -908,17 +751,17 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-20',
       type: 'image',
-      url: aidealsCover,
+      url: '/portfolio/aideals/cover.jpg',
       alt: 'Ai Learn Academy premium AI platform',
     },
     galleryMedia: [
-      { id: 'gallery-20-1', type: 'image', url: aidealsDesktop, alt: 'AI Deals desktop website mockup' },
-      { id: 'gallery-20-2', type: 'image', url: aidealsMobile, alt: 'AI Deals mobile interface', aspectRatio: '9:16' },
-      { id: 'gallery-20-3', type: 'image', url: aidealsMarketplace, alt: 'AI tools marketplace grid' },
-      { id: 'gallery-20-4', type: 'image', url: aidealsAcademy, alt: 'AI Academy educational platform' },
-      { id: 'gallery-20-5', type: 'image', url: aidealsDashboard, alt: 'AI tools analytics dashboard' },
-      { id: 'gallery-20-6', type: 'image', url: aidealsBrand, alt: 'AI Deals brand mood – neural network' },
-      { id: 'gallery-20-7', type: 'image', url: aidealsMultiDevice, alt: 'AI Deals multi-device presentation' },
+      { id: 'gallery-20-1', type: 'image', url: '/portfolio/aideals/desktop-mockup.webp', alt: 'AI Deals desktop website mockup' },
+      { id: 'gallery-20-2', type: 'image', url: '/portfolio/aideals/mobile-mockup.webp', alt: 'AI Deals mobile interface', aspectRatio: '9:16' },
+      { id: 'gallery-20-3', type: 'image', url: '/portfolio/aideals/marketplace.webp', alt: 'AI tools marketplace grid' },
+      { id: 'gallery-20-4', type: 'image', url: '/portfolio/aideals/academy.webp', alt: 'AI Academy educational platform' },
+      { id: 'gallery-20-5', type: 'image', url: '/portfolio/aideals/dashboard.webp', alt: 'AI tools analytics dashboard' },
+      { id: 'gallery-20-6', type: 'image', url: '/portfolio/aideals/brand-mood.webp', alt: 'AI Deals brand mood – neural network' },
+      { id: 'gallery-20-7', type: 'image', url: '/portfolio/aideals/multi-device.webp', alt: 'AI Deals multi-device presentation' },
     ],
     shortResultLine: 'Live platform – ongoing',
     popupContent: {
@@ -955,15 +798,15 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-21',
       type: 'image',
-      url: pilotscareerCover,
+      url: '/portfolio/pilotscareer/cover.jpg',
       alt: 'PilotsCareer – Aviation recruitment platform',
     },
     galleryMedia: [
-      { id: 'gallery-21-1', type: 'image', url: pilotscareerDesktop, alt: 'PilotsCareer – Desktop website mockup' },
-      { id: 'gallery-21-2', type: 'image', url: pilotscareerMobile, alt: 'PilotsCareer – Mobile pilot profile', aspectRatio: '9:16' },
-      { id: 'gallery-21-3', type: 'image', url: pilotscareerCockpit, alt: 'PilotsCareer – Professional pilot in cockpit' },
-      { id: 'gallery-21-4', type: 'image', url: pilotscareerDashboard, alt: 'PilotsCareer – Recruitment analytics dashboard' },
-      { id: 'gallery-21-5', type: 'image', url: pilotscareerBrand, alt: 'PilotsCareer – Brand mood and platform pages' },
+      { id: 'gallery-21-1', type: 'image', url: '/portfolio/pilotscareer/desktop-mockup.webp', alt: 'PilotsCareer – Desktop website mockup' },
+      { id: 'gallery-21-2', type: 'image', url: '/portfolio/pilotscareer/mobile-mockup.webp', alt: 'PilotsCareer – Mobile pilot profile', aspectRatio: '9:16' },
+      { id: 'gallery-21-3', type: 'image', url: '/portfolio/pilotscareer/cockpit.webp', alt: 'PilotsCareer – Professional pilot in cockpit' },
+      { id: 'gallery-21-4', type: 'image', url: '/portfolio/pilotscareer/dashboard.webp', alt: 'PilotsCareer – Recruitment analytics dashboard' },
+      { id: 'gallery-21-5', type: 'image', url: '/portfolio/pilotscareer/brand-mood.webp', alt: 'PilotsCareer – Brand mood and platform pages' },
     ],
     shortResultLine: 'International aviation recruitment platform – live',
     popupContent: {
@@ -1000,16 +843,16 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-22',
       type: 'image',
-      url: casaMaviFood,
+      url: '/portfolio/casa-mavi/food-hero.webp',
       alt: 'Casa Mavi - Italian Neapolitan restaurant in Fuengirola',
     },
     galleryMedia: [
-      { id: 'gallery-22-1', type: 'image', url: casaMaviDesktop, alt: 'Casa Mavi - Desktop website mockup' },
-      { id: 'gallery-22-2', type: 'image', url: casaMaviMobile, alt: 'Casa Mavi - Mobile website mockup', aspectRatio: '9:16' as const },
-      { id: 'gallery-22-3', type: 'image', url: casaMaviFood, alt: 'Casa Mavi - Neapolitan pizza hero' },
-      { id: 'gallery-22-4', type: 'image', url: casaMaviInterior, alt: 'Casa Mavi - Restaurant interior' },
-      { id: 'gallery-22-5', type: 'image', url: casaMaviSocial, alt: 'Casa Mavi - Social media content' },
-      { id: 'gallery-22-6', type: 'image', url: casaMaviBrand, alt: 'Casa Mavi - Brand mood board' },
+      { id: 'gallery-22-1', type: 'image', url: '/portfolio/casa-mavi/desktop-mockup.webp', alt: 'Casa Mavi - Desktop website mockup' },
+      { id: 'gallery-22-2', type: 'image', url: '/portfolio/casa-mavi/mobile-mockup.webp', alt: 'Casa Mavi - Mobile website mockup', aspectRatio: '9:16' as const },
+      { id: 'gallery-22-3', type: 'image', url: '/portfolio/casa-mavi/food-hero.webp', alt: 'Casa Mavi - Neapolitan pizza hero' },
+      { id: 'gallery-22-4', type: 'image', url: '/portfolio/casa-mavi/interior.webp', alt: 'Casa Mavi - Restaurant interior' },
+      { id: 'gallery-22-5', type: 'image', url: '/portfolio/casa-mavi/social-mockup.webp', alt: 'Casa Mavi - Social media content' },
+      { id: 'gallery-22-6', type: 'image', url: '/portfolio/casa-mavi/brand-mood.webp', alt: 'Casa Mavi - Brand mood board' },
     ],
     shortResultLine: 'Complete digital presence for a Mediterranean gem in Spain.',
     popupContent: {
@@ -1027,7 +870,6 @@ export const portfolioItems: PortfolioItem[] = [
         'Doorlopend digitaal beheer en optimalisatie',
       ],
       resultDisclaimer: 'Project actief beheerd door GROPPI.',
-      
       deliverables: ['website-design', 'website-dev', 'content-calendar', 'photo-shoot'],
     },
     externalUrl: 'https://www.casamavi.es',
@@ -1043,16 +885,16 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-23',
       type: 'image',
-      url: arteFood,
+      url: '/portfolio/arte-y-cocina/food-hero.webp',
       alt: 'ArTe y CoCiNa - Artistic fine-dining restaurant in Spain',
     },
     galleryMedia: [
-      { id: 'gallery-23-1', type: 'image', url: arteDesktop, alt: 'ArTe y CoCiNa - Desktop website mockup' },
-      { id: 'gallery-23-2', type: 'image', url: arteMobile, alt: 'ArTe y CoCiNa - Mobile website mockup', aspectRatio: '9:16' as const },
-      { id: 'gallery-23-3', type: 'image', url: arteFood, alt: 'ArTe y CoCiNa - Fine dining dish' },
-      { id: 'gallery-23-4', type: 'image', url: arteInterior, alt: 'ArTe y CoCiNa - Restaurant interior' },
-      { id: 'gallery-23-5', type: 'image', url: arteSocial, alt: 'ArTe y CoCiNa - Social media content' },
-      { id: 'gallery-23-6', type: 'image', url: arteBrand, alt: 'ArTe y CoCiNa - Brand mood board' },
+      { id: 'gallery-23-1', type: 'image', url: '/portfolio/arte-y-cocina/desktop-mockup.webp', alt: 'ArTe y CoCiNa - Desktop website mockup' },
+      { id: 'gallery-23-2', type: 'image', url: '/portfolio/arte-y-cocina/mobile-mockup.webp', alt: 'ArTe y CoCiNa - Mobile website mockup', aspectRatio: '9:16' as const },
+      { id: 'gallery-23-3', type: 'image', url: '/portfolio/arte-y-cocina/food-hero.webp', alt: 'ArTe y CoCiNa - Fine dining dish' },
+      { id: 'gallery-23-4', type: 'image', url: '/portfolio/arte-y-cocina/interior.webp', alt: 'ArTe y CoCiNa - Restaurant interior' },
+      { id: 'gallery-23-5', type: 'image', url: '/portfolio/arte-y-cocina/social-mockup.webp', alt: 'ArTe y CoCiNa - Social media content' },
+      { id: 'gallery-23-6', type: 'image', url: '/portfolio/arte-y-cocina/brand-mood.webp', alt: 'ArTe y CoCiNa - Brand mood board' },
     ],
     shortResultLine: 'Premium digital identity for an artistic fine-dining experience.',
     popupContent: {
@@ -1085,16 +927,16 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-24',
       type: 'image',
-      url: veronaFood,
+      url: '/portfolio/verona/food-hero.webp',
       alt: 'Verona Los Boliches - Fusion restaurant in Spain',
     },
     galleryMedia: [
-      { id: 'gallery-24-1', type: 'image', url: veronaDesktop, alt: 'Verona Los Boliches - Desktop website mockup' },
-      { id: 'gallery-24-2', type: 'image', url: veronaMobile, alt: 'Verona Los Boliches - Mobile website mockup', aspectRatio: '9:16' as const },
-      { id: 'gallery-24-3', type: 'image', url: veronaFood, alt: 'Verona Los Boliches - Fusion cuisine' },
-      { id: 'gallery-24-4', type: 'image', url: veronaInterior, alt: 'Verona Los Boliches - Restaurant interior' },
-      { id: 'gallery-24-5', type: 'image', url: veronaSocial, alt: 'Verona Los Boliches - Social media content' },
-      { id: 'gallery-24-6', type: 'image', url: veronaBrand, alt: 'Verona Los Boliches - Brand mood board' },
+      { id: 'gallery-24-1', type: 'image', url: '/portfolio/verona/desktop-mockup.webp', alt: 'Verona Los Boliches - Desktop website mockup' },
+      { id: 'gallery-24-2', type: 'image', url: '/portfolio/verona/mobile-mockup.webp', alt: 'Verona Los Boliches - Mobile website mockup', aspectRatio: '9:16' as const },
+      { id: 'gallery-24-3', type: 'image', url: '/portfolio/verona/food-hero.webp', alt: 'Verona Los Boliches - Fusion cuisine' },
+      { id: 'gallery-24-4', type: 'image', url: '/portfolio/verona/interior.webp', alt: 'Verona Los Boliches - Restaurant interior' },
+      { id: 'gallery-24-5', type: 'image', url: '/portfolio/verona/social-mockup.webp', alt: 'Verona Los Boliches - Social media content' },
+      { id: 'gallery-24-6', type: 'image', url: '/portfolio/verona/brand-mood.webp', alt: 'Verona Los Boliches - Brand mood board' },
     ],
     shortResultLine: 'Complete online presence for a vibrant fusion restaurant.',
     popupContent: {
@@ -1127,16 +969,16 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-25',
       type: 'image',
-      url: happyFlavorsFood,
+      url: '/portfolio/happy-flavors/food-hero.webp',
       alt: 'Happy Flavors Indian Restaurant in Spain',
     },
     galleryMedia: [
-      { id: 'gallery-25-1', type: 'image', url: happyFlavorsDesktop, alt: 'Happy Flavors - Desktop website mockup' },
-      { id: 'gallery-25-2', type: 'image', url: happyFlavorsMobile, alt: 'Happy Flavors - Mobile website mockup', aspectRatio: '9:16' as const },
-      { id: 'gallery-25-3', type: 'image', url: happyFlavorsFood, alt: 'Happy Flavors - Indian cuisine' },
-      { id: 'gallery-25-4', type: 'image', url: happyFlavorsInterior, alt: 'Happy Flavors - Restaurant interior' },
-      { id: 'gallery-25-5', type: 'image', url: happyFlavorsSocial, alt: 'Happy Flavors - Social media content' },
-      { id: 'gallery-25-6', type: 'image', url: happyFlavorsBrand, alt: 'Happy Flavors - Brand mood board' },
+      { id: 'gallery-25-1', type: 'image', url: '/portfolio/happy-flavors/desktop-mockup.webp', alt: 'Happy Flavors - Desktop website mockup' },
+      { id: 'gallery-25-2', type: 'image', url: '/portfolio/happy-flavors/mobile-mockup.webp', alt: 'Happy Flavors - Mobile website mockup', aspectRatio: '9:16' as const },
+      { id: 'gallery-25-3', type: 'image', url: '/portfolio/happy-flavors/food-hero.webp', alt: 'Happy Flavors - Indian cuisine' },
+      { id: 'gallery-25-4', type: 'image', url: '/portfolio/happy-flavors/interior.webp', alt: 'Happy Flavors - Restaurant interior' },
+      { id: 'gallery-25-5', type: 'image', url: '/portfolio/happy-flavors/social-mockup.webp', alt: 'Happy Flavors - Social media content' },
+      { id: 'gallery-25-6', type: 'image', url: '/portfolio/happy-flavors/brand-mood.webp', alt: 'Happy Flavors - Brand mood board' },
     ],
     shortResultLine: 'Professional digital presence for authentic Indian cuisine in Spain.',
     popupContent: {
@@ -1169,16 +1011,16 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-26',
       type: 'image',
-      url: guestResHero,
+      url: '/portfolio/guest-reservations/hero.webp',
       alt: 'Guest Reservations - Global travel & hotel booking platform',
     },
     galleryMedia: [
-      { id: 'gallery-26-1', type: 'image', url: guestResDesktop, alt: 'Guest Reservations - Desktop platform' },
-      { id: 'gallery-26-2', type: 'image', url: guestResMobile, alt: 'Guest Reservations - Mobile booking', aspectRatio: '9:16' as const },
-      { id: 'gallery-26-3', type: 'image', url: guestResDashboard, alt: 'Guest Reservations - Analytics dashboard' },
-      { id: 'gallery-26-4', type: 'image', url: guestResMulti, alt: 'Guest Reservations - Multi-device experience' },
-      { id: 'gallery-26-5', type: 'image', url: guestResBrand, alt: 'Guest Reservations - Brand & digital presence' },
-      { id: 'gallery-26-6', type: 'image', url: guestResHero, alt: 'Guest Reservations - Platform overview' },
+      { id: 'gallery-26-1', type: 'image', url: '/portfolio/guest-reservations/desktop-mockup.webp', alt: 'Guest Reservations - Desktop platform' },
+      { id: 'gallery-26-2', type: 'image', url: '/portfolio/guest-reservations/mobile-mockup.webp', alt: 'Guest Reservations - Mobile booking', aspectRatio: '9:16' as const },
+      { id: 'gallery-26-3', type: 'image', url: '/portfolio/guest-reservations/dashboard.webp', alt: 'Guest Reservations - Analytics dashboard' },
+      { id: 'gallery-26-4', type: 'image', url: '/portfolio/guest-reservations/multi-device.webp', alt: 'Guest Reservations - Multi-device experience' },
+      { id: 'gallery-26-5', type: 'image', url: '/portfolio/guest-reservations/brand-mood.webp', alt: 'Guest Reservations - Brand & digital presence' },
+      { id: 'gallery-26-6', type: 'image', url: '/portfolio/guest-reservations/hero.webp', alt: 'Guest Reservations - Platform overview' },
     ],
     shortResultLine: 'Ongoing platform management for a global hotel booking service.',
     popupContent: {
@@ -1211,16 +1053,16 @@ export const portfolioItems: PortfolioItem[] = [
     coverMedia: {
       id: 'cover-27',
       type: 'image',
-      url: eurostarsHero,
+      url: '/portfolio/eurostars/hero.webp',
       alt: 'Eurostars Hotels - European hotel group & booking platform',
     },
     galleryMedia: [
-      { id: 'gallery-27-1', type: 'image', url: eurostarsDesktop, alt: 'Eurostars Hotels - Desktop platform' },
-      { id: 'gallery-27-2', type: 'image', url: eurostarsMobile, alt: 'Eurostars Hotels - Mobile booking', aspectRatio: '9:16' as const },
-      { id: 'gallery-27-3', type: 'image', url: eurostarsExterior, alt: 'Eurostars Hotels - Hotel exterior' },
-      { id: 'gallery-27-4', type: 'image', url: eurostarsMulti, alt: 'Eurostars Hotels - Multi-device experience' },
-      { id: 'gallery-27-5', type: 'image', url: eurostarsBrand, alt: 'Eurostars Hotels - Brand identity' },
-      { id: 'gallery-27-6', type: 'image', url: eurostarsHero, alt: 'Eurostars Hotels - Lobby & hospitality' },
+      { id: 'gallery-27-1', type: 'image', url: '/portfolio/eurostars/desktop-mockup.webp', alt: 'Eurostars Hotels - Desktop platform' },
+      { id: 'gallery-27-2', type: 'image', url: '/portfolio/eurostars/mobile-mockup.webp', alt: 'Eurostars Hotels - Mobile booking', aspectRatio: '9:16' as const },
+      { id: 'gallery-27-3', type: 'image', url: '/portfolio/eurostars/exterior.webp', alt: 'Eurostars Hotels - Hotel exterior' },
+      { id: 'gallery-27-4', type: 'image', url: '/portfolio/eurostars/multi-device.webp', alt: 'Eurostars Hotels - Multi-device experience' },
+      { id: 'gallery-27-5', type: 'image', url: '/portfolio/eurostars/brand-mood.webp', alt: 'Eurostars Hotels - Brand identity' },
+      { id: 'gallery-27-6', type: 'image', url: '/portfolio/eurostars/hero.webp', alt: 'Eurostars Hotels - Lobby & hospitality' },
     ],
     shortResultLine: 'Digital platform support & performance optimization for a European hotel group.',
     popupContent: {
@@ -1282,7 +1124,7 @@ export const filterByService = (service: string): PortfolioItem[] => {
 // Helper: Search portfolio items by client name
 export const searchPortfolio = (query: string): PortfolioItem[] => {
   const lowerQuery = query.toLowerCase();
-  return allPortfolioItems.filter(item => 
+  return allPortfolioItems.filter(item =>
     item.clientName.toLowerCase().includes(lowerQuery)
   );
 };
@@ -1294,22 +1136,22 @@ export const filterPortfolio = (
   searchQuery: string = ''
 ): PortfolioItem[] => {
   let results = [...allPortfolioItems];
-  
+
   if (industry !== 'all') {
     results = results.filter(item => item.industry === industry);
   }
-  
+
   if (service !== 'all') {
     results = results.filter(item => item.services.includes(service as any));
   }
-  
+
   if (searchQuery.trim()) {
     const lowerQuery = searchQuery.toLowerCase();
-    results = results.filter(item => 
+    results = results.filter(item =>
       item.clientName.toLowerCase().includes(lowerQuery)
     );
   }
-  
+
   // Sort by date (newest first)
   return results.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
 };

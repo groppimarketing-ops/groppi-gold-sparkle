@@ -876,6 +876,34 @@
   .animate-fade-up-9 { animation: fade-in-up 0.5s 0.45s ease-out both; }
   .animate-fade-up-10 { animation: fade-in-up 0.5s 0.50s ease-out both; }
 
+  /* ===== WHATSAPP BUTTON — pure CSS (replaces Framer Motion loops) ===== */
+  @keyframes whatsapp-entrance {
+    from { transform: scale(0); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+  }
+  @keyframes whatsapp-ring {
+    0%   { transform: scale(1); opacity: 0.6; }
+    70%  { transform: scale(1.4); opacity: 0; }
+    100% { transform: scale(1.4); opacity: 0; }
+  }
+  .floating-whatsapp {
+    animation: whatsapp-entrance 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s both;
+  }
+  .floating-whatsapp:hover { transform: scale(1.1); }
+  .floating-whatsapp:active { transform: scale(0.95); }
+  .whatsapp-pulse {
+    animation: whatsapp-ring 3s ease-out 1.5s infinite;
+  }
+
+  /* ===== FEATURED BADGE GLOW — pure CSS (replaces Framer Motion repeat: Infinity) ===== */
+  @keyframes badge-glow {
+    0%, 100% { box-shadow: 0 0 10px hsl(43 100% 50% / 0.3); }
+    50%       { box-shadow: 0 0 22px hsl(43 100% 50% / 0.55); }
+  }
+  .badge-glow-pulse {
+    animation: badge-glow 2s ease-in-out infinite;
+  }
+
   /* Founder avatar hover */
   .founder-avatar:hover {
     transform: translateY(-2px);
