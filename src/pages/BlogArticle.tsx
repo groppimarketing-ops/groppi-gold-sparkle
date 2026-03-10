@@ -124,6 +124,11 @@ const BlogArticle = () => {
                 src={article.image}
                 alt={title}
                 className="w-full aspect-[21/9] object-cover"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width={1200}
+                height={514}
               />
             </GlassCard>
           </motion.div>
