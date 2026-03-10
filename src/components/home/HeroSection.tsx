@@ -3,22 +3,25 @@ import { motion } from 'framer-motion';
 import { socialIconsData } from '@/components/shared/SocialIconsPill';
 import { trackEvent } from '@/utils/tracking';
 
+interface HeroCard { src: string; label: string }
+
 /** Only local .webm cards — no Vimeo iframes */
-const HERO_CARDS = [
-  '/videos/hero/social-media.webm',
-  '/videos/hero/ads-management.webm',
-  '/videos/hero/reputation.webm',
-  '/videos/hero/one-page-website.webm',
-  '/videos/hero/mobile-app.webm',
+const HERO_CARDS: HeroCard[] = [
+  { src: '/videos/hero/social-media.webm',     label: 'Social Media' },
+  { src: '/videos/hero/ads-management.webm',   label: 'Advertising' },
+  { src: '/videos/hero/reputation.webm',        label: 'Reputation' },
+  { src: '/videos/hero/one-page-website.webm',  label: 'One-Page Website' },
+  { src: '/videos/hero/mobile-app.webm',        label: 'Mobile App' },
 ];
 
-/** Lazy video: only loads & plays when visible */
-const LazyVideo = memo(({ src }: { src: string }) => {
-  const ref = useRef<HTMLVideoElement>(null);
+/** Lazy video: shows gold-gradient placeholder until in viewport */
+const LazyVideo = memo(({ src, label }: HeroCard) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const el = ref.current;
+    const el = containerRef.current;
     if (!el) return;
     const io = new IntersectionObserver(
       ([entry]) => {
@@ -34,9 +37,39 @@ const LazyVideo = memo(({ src }: { src: string }) => {
   }, []);
 
   return (
-    <div className="groppi-card">
+    <div ref={containerRef} className="groppi-card" style={{ position: 'relative' }}>
+      {/* Gold gradient placeholder — visible until video loads */}
+      {!visible && (
+        <div
+          className="absolute inset-0 flex flex-col items-center justify-center gap-2"
+          style={{
+            background: 'radial-gradient(ellipse at 50% 60%, hsl(43 76% 12% / 0.95) 0%, hsl(0 0% 4%) 100%)',
+            borderRadius: 'inherit',
+          }}
+        >
+          {/* Gold top line */}
+          <div style={{ width: 40, height: 2, background: 'hsl(43 76% 52%)', borderRadius: 2, opacity: 0.7 }} />
+          {/* Label */}
+          <span
+            style={{
+              color: 'hsl(43 76% 62%)',
+              fontSize: 13,
+              fontWeight: 600,
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              textAlign: 'center',
+              padding: '0 12px',
+              opacity: 0.85,
+            }}
+          >
+            {label}
+          </span>
+          {/* Gold bottom line */}
+          <div style={{ width: 24, height: 1, background: 'hsl(43 76% 52%)', borderRadius: 1, opacity: 0.4 }} />
+        </div>
+      )}
       <video
-        ref={ref}
+        ref={videoRef}
         src={visible ? src : undefined}
         autoPlay
         muted
@@ -44,6 +77,7 @@ const LazyVideo = memo(({ src }: { src: string }) => {
         playsInline
         preload="none"
         className="w-full h-full object-cover"
+        style={{ opacity: visible ? 1 : 0, transition: 'opacity 0.4s ease' }}
       />
     </div>
   );
@@ -98,12 +132,12 @@ const HeroSection = memo(() => (
 
     <div className="groppi-strip-wrap">
       <div className="groppi-strip-track">
-        {HERO_CARDS.map((src, i) => (
-          <LazyVideo key={`a-${i}`} src={src} />
+        {HERO_CARDS.map((card, i) => (
+          <LazyVideo key={`a-${i}`} src={card.src} label={card.label} />
         ))}
         {/* Duplicate for seamless loop */}
-        {HERO_CARDS.map((src, i) => (
-          <LazyVideo key={`b-${i}`} src={src} />
+        {HERO_CARDS.map((card, i) => (
+          <LazyVideo key={`b-${i}`} src={card.src} label={card.label} />
         ))}
       </div>
     </div>
