@@ -11,7 +11,7 @@ import ServiceFinalCTA from './ServiceFinalCTA';
 import ContentCalculator from './ContentCalculator';
 import PricingFAQ from './PricingFAQ';
 import PageSEO from '@/components/seo/PageSEO';
-import { BreadcrumbSchema, ServiceSchema } from '@/components/seo/StructuredData';
+import { BreadcrumbSchema, ServiceSchema, ServiceOfferingSchema } from '@/components/seo/StructuredData';
 
 interface ServicePageTemplateProps {
   serviceKey: string;
