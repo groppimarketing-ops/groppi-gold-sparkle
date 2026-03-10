@@ -15,7 +15,7 @@ const HomeAfterHeroWrapper = memo(forwardRef<HTMLDivElement, HomeAfterHeroWrappe
     return (
       <div ref={ref} className="relative">
         {/* WaveAnimation - SAME component as Services page uses via PageLayout */}
-        <WaveAnimation intensity="medium" speed="normal" />
+        <WaveAnimation intensity="medium" />
         
         {/* Content layer - above background */}
         <div className="relative z-10">

@@ -1,77 +1,54 @@
-import { memo } from 'react';
+import { memo, useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Zap, Sun, TrendingUp } from 'lucide-react';
 import { socialIconsData } from '@/components/shared/SocialIconsPill';
 import { trackEvent } from '@/utils/tracking';
 
-type HeroCard = { type: 'vimeo'; id: string } | { type: 'webm'; src: string };
-
-const HERO_CARDS: HeroCard[] = [
-  { type: 'webm', src: '/videos/hero/social-media.webm' },
-  { type: 'vimeo', id: '1164723572' },
-  { type: 'webm', src: '/videos/hero/ads-management.webm' },
-  { type: 'vimeo', id: '1164718752' },
-  { type: 'webm', src: '/videos/hero/reputation.webm' },
-  { type: 'vimeo', id: '1164721918' },
-  { type: 'webm', src: '/videos/hero/one-page-website.webm' },
-  { type: 'vimeo', id: '1164718101' },
-  { type: 'webm', src: '/videos/hero/mobile-app.webm' },
+/** Only local .webm cards — no Vimeo iframes */
+const HERO_CARDS = [
+  '/videos/hero/social-media.webm',
+  '/videos/hero/ads-management.webm',
+  '/videos/hero/reputation.webm',
+  '/videos/hero/one-page-website.webm',
+  '/videos/hero/mobile-app.webm',
 ];
 
-const vimeoSrc = (id: string) =>
-  `https://player.vimeo.com/video/${id}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&dnt=1`;
+/** Lazy video: only loads & plays when visible */
+const LazyVideo = memo(({ src }: { src: string }) => {
+  const ref = useRef<HTMLVideoElement>(null);
+  const [visible, setVisible] = useState(false);
 
-const VideoCard = memo(({ card }: { card: HeroCard }) => (
-  <div className="groppi-card">
-    {card.type === 'vimeo' ? (
-      <>
-        <iframe
-          src={vimeoSrc(card.id)}
-          allow="autoplay; fullscreen; picture-in-picture"
-          loading="lazy"
-          className="w-full h-full border-0 hidden md:block"
-          title="Portfolio video"
-        />
-        <div
-          className="w-full h-full md:hidden"
-          style={{
-            background: 'linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 4%))',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <span
-            style={{
-              width: 48,
-              height: 48,
-              borderRadius: '50%',
-              background: 'hsl(43 76% 52% / 0.15)',
-              border: '1.5px solid hsl(43 76% 52% / 0.3)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="hsl(43 76% 52%)" stroke="none">
-              <polygon points="6,3 20,12 6,21" />
-            </svg>
-          </span>
-        </div>
-      </>
-    ) : (
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: '200px' }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <div className="groppi-card">
       <video
-        src={card.src}
+        ref={ref}
+        src={visible ? src : undefined}
         autoPlay
         muted
         loop
         playsInline
+        preload="none"
         className="w-full h-full object-cover"
       />
-    )}
-  </div>
-));
-VideoCard.displayName = 'VideoCard';
+    </div>
+  );
+});
+LazyVideo.displayName = 'LazyVideo';
 
 const HeroSocialIcons = memo(() => (
   <div className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex items-center gap-4 md:gap-16 px-4 md:px-16 py-3 md:py-4 rounded-full"
@@ -98,8 +75,6 @@ const HeroSocialIcons = memo(() => (
           background: 'hsl(0 0% 4%)',
           border: '1.5px solid hsl(43 76% 52% / 0.5)',
           boxShadow: '0 4px 12px rgba(0,0,0,0.4), inset 0 1px 0 hsl(43 76% 52% / 0.1)',
-          transformStyle: 'preserve-3d',
-          perspective: '600px',
         }}
       >
         <span style={{ color: 'hsl(43 76% 52%)' }}><social.icon className="h-5 w-5 relative z-[1]" /></span>
@@ -111,20 +86,6 @@ HeroSocialIcons.displayName = 'HeroSocialIcons';
 
 const HeroSection = memo(() => (
   <section className="groppi-hero-pro" aria-label="GROPPI Hero Videos">
-    {/* SVG gradient for metallic gold icons */}
-    <svg width="0" height="0" style={{ position: 'absolute' }}>
-      <defs>
-        <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#FFF8DC" />
-          <stop offset="20%" stopColor="#FFD700" />
-          <stop offset="40%" stopColor="#DAA520" />
-          <stop offset="55%" stopColor="#8B6914" />
-          <stop offset="70%" stopColor="#FFD700" />
-          <stop offset="85%" stopColor="#FFFACD" />
-          <stop offset="100%" stopColor="#DAA520" />
-        </linearGradient>
-      </defs>
-    </svg>
     <video
       autoPlay muted loop playsInline preload="auto"
       className="groppi-bg"
@@ -135,25 +96,14 @@ const HeroSection = memo(() => (
 
     <div className="groppi-overlay" />
 
-    {/* Atmospheric Gold Elements — behind video cards */}
-    <div className="hero-gold-rain" aria-hidden="true">
-      <span className="gold-drop gold-drop--1" style={{ left: '12%' }}><Zap /></span>
-      <span className="gold-drop gold-drop--2" style={{ left: '32%' }}><Sun /></span>
-      <span className="gold-drop gold-drop--3" style={{ left: '55%' }}><TrendingUp /></span>
-      <span className="gold-drop gold-drop--4" style={{ left: '76%' }}><Zap /></span>
-      <span className="gold-drop gold-drop--5" style={{ left: '24%' }}><TrendingUp /></span>
-      <span className="gold-drop gold-drop--6" style={{ left: '48%' }}><Sun /></span>
-      <span className="gold-drop gold-drop--7 gold-flare" style={{ left: '65%' }} />
-      <span className="gold-drop gold-drop--8 gold-flare" style={{ left: '38%' }} />
-    </div>
-
     <div className="groppi-strip-wrap">
       <div className="groppi-strip-track">
-        {HERO_CARDS.map((card, i) => (
-          <VideoCard key={`a-${i}`} card={card} />
+        {HERO_CARDS.map((src, i) => (
+          <LazyVideo key={`a-${i}`} src={src} />
         ))}
-        {HERO_CARDS.map((card, i) => (
-          <VideoCard key={`b-${i}`} card={card} />
+        {/* Duplicate for seamless loop */}
+        {HERO_CARDS.map((src, i) => (
+          <LazyVideo key={`b-${i}`} src={src} />
         ))}
       </div>
     </div>
