@@ -1,4 +1,6 @@
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
+import { getLangPath } from '@/utils/languageRouting';
 import { SERVICE_PRICING_CONFIG } from '@/config/pricingConfig';
 
 const SITE_URL = 'https://groppi.be';
