@@ -5,7 +5,6 @@ import { trackEvent } from '@/utils/tracking';
 
 interface HeroCard { src: string; label: string }
 
-/** Only local .webm cards — no Vimeo iframes */
 const HERO_CARDS: HeroCard[] = [
   { src: '/videos/hero/social-media.webm',     label: 'Social Media' },
   { src: '/videos/hero/ads-management.webm',   label: 'Advertising' },
@@ -24,12 +23,7 @@ const LazyVideo = memo(({ src, label }: HeroCard) => {
     const el = containerRef.current;
     if (!el) return;
     const io = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          io.disconnect();
-        }
-      },
+      ([entry]) => { if (entry.isIntersecting) { setVisible(true); io.disconnect(); } },
       { rootMargin: '200px' }
     );
     io.observe(el);
@@ -38,7 +32,6 @@ const LazyVideo = memo(({ src, label }: HeroCard) => {
 
   return (
     <div ref={containerRef} className="groppi-card" style={{ position: 'relative' }}>
-      {/* Gold gradient placeholder — visible until video loads */}
       {!visible && (
         <div
           className="absolute inset-0 flex flex-col items-center justify-center gap-2"
@@ -47,35 +40,17 @@ const LazyVideo = memo(({ src, label }: HeroCard) => {
             borderRadius: 'inherit',
           }}
         >
-          {/* Gold top line */}
           <div style={{ width: 40, height: 2, background: 'hsl(43 76% 52%)', borderRadius: 2, opacity: 0.7 }} />
-          {/* Label */}
-          <span
-            style={{
-              color: 'hsl(43 76% 62%)',
-              fontSize: 13,
-              fontWeight: 600,
-              letterSpacing: '0.12em',
-              textTransform: 'uppercase',
-              textAlign: 'center',
-              padding: '0 12px',
-              opacity: 0.85,
-            }}
-          >
+          <span style={{ color: 'hsl(43 76% 62%)', fontSize: 13, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', textAlign: 'center', padding: '0 12px', opacity: 0.85 }}>
             {label}
           </span>
-          {/* Gold bottom line */}
           <div style={{ width: 24, height: 1, background: 'hsl(43 76% 52%)', borderRadius: 1, opacity: 0.4 }} />
         </div>
       )}
       <video
         ref={videoRef}
         src={visible ? src : undefined}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="none"
+        autoPlay muted loop playsInline preload="none"
         className="w-full h-full object-cover"
         style={{ opacity: visible ? 1 : 0, transition: 'opacity 0.4s ease' }}
       />
@@ -120,13 +95,25 @@ HeroSocialIcons.displayName = 'HeroSocialIcons';
 
 const HeroSection = memo(() => (
   <section className="groppi-hero-pro" aria-label="GROPPI Hero Videos">
+    {/*
+      Background video — hidden on mobile (saves 3-8s load time).
+      On mobile: poster image shown as static background via CSS.
+      On desktop (md+): full video plays normally.
+    */}
     <video
       autoPlay muted loop playsInline preload="metadata"
-      className="groppi-bg"
+      className="groppi-bg hidden md:block"
       poster="/images/hero-poster.png"
     >
       <source src="/videos/hero-bg.mp4" type="video/mp4" />
     </video>
+
+    {/* Mobile: static poster replaces heavy video */}
+    <div
+      className="groppi-bg md:hidden"
+      style={{ backgroundImage: 'url(/images/hero-poster.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      aria-hidden="true"
+    />
 
     <div className="groppi-overlay" />
 
@@ -135,7 +122,6 @@ const HeroSection = memo(() => (
         {HERO_CARDS.map((card, i) => (
           <LazyVideo key={`a-${i}`} src={card.src} label={card.label} />
         ))}
-        {/* Duplicate for seamless loop */}
         {HERO_CARDS.map((card, i) => (
           <LazyVideo key={`b-${i}`} src={card.src} label={card.label} />
         ))}
@@ -147,5 +133,4 @@ const HeroSection = memo(() => (
 ));
 
 HeroSection.displayName = 'HeroSection';
-
 export default HeroSection;
