@@ -124,6 +124,11 @@ const BlogArticle = () => {
                 src={article.image}
                 alt={title}
                 className="w-full aspect-[21/9] object-cover"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width={1200}
+                height={514}
               />
             </GlassCard>
           </motion.div>
@@ -219,6 +224,10 @@ const BlogArticle = () => {
                       src={related.image}
                       alt={t(related.titleKey)}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      loading="lazy"
+                      decoding="async"
+                      width={400}
+                      height={250}
                     />
                   </div>
                   <div className="p-5">
