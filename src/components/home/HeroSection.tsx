@@ -108,11 +108,17 @@ const HeroSection = memo(() => (
       <source src="/videos/hero-bg.mp4" type="video/mp4" />
     </video>
 
-    {/* Mobile: static poster replaces heavy video */}
-    <div
-      className="groppi-bg md:hidden"
-      style={{ backgroundImage: 'url(/images/hero-poster.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+    {/* Mobile: <img> so the preload hint is consumed and fetchpriority=high works */}
+    <img
+      src="/images/hero-poster.png"
+      alt=""
       aria-hidden="true"
+      fetchPriority="high"
+      decoding="sync"
+      width={390}
+      height={844}
+      className="groppi-bg md:hidden"
+      style={{ objectFit: 'cover', objectPosition: 'center' }}
     />
 
     <div className="groppi-overlay" />
