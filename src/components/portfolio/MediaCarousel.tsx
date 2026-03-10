@@ -103,6 +103,8 @@ const MediaCarousel = memo(({ media, clientName }: MediaCarouselProps) => {
               }`}
               loading="lazy"
               decoding="async"
+              width={isVertical ? 400 : 800}
+              height={isVertical ? 711 : 450}
             />
           ) : (
             <div className={`relative ${isVertical ? 'h-full w-auto' : 'w-full h-full'} flex items-center justify-center`}>
@@ -186,6 +188,8 @@ const MediaCarousel = memo(({ media, clientName }: MediaCarouselProps) => {
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
+                  width={56}
+                  height={56}
                 />
               ) : (
                 <>
@@ -195,6 +199,8 @@ const MediaCarousel = memo(({ media, clientName }: MediaCarouselProps) => {
                     className="w-full h-full object-cover"
                     loading="lazy"
                     decoding="async"
+                    width={56}
+                    height={56}
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-background/30">
                     <Play className="w-3 h-3 text-primary" />
