@@ -18,6 +18,15 @@ interface JobApplicationRequest {
   cvPath: string;
 }
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 const handler = async (req: Request): Promise<Response> => {
   console.log("Submit job application function called");
   
