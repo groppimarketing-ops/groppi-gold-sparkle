@@ -1,4 +1,4 @@
-import { memo, useRef, useEffect, useState } from 'react';
+import { memo, useRef, useEffect, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { socialIconsData } from '@/components/shared/SocialIconsPill';
 import { trackEvent } from '@/utils/tracking';
@@ -14,53 +14,84 @@ const HERO_CARDS: HeroCard[] = [
 ];
 
 /**
- * LazyVideo — loads video ONLY when the card enters the viewport.
- *
- * Strategy:
- * 1. IntersectionObserver with rootMargin:'50px' (tight — avoids pre-fetching
- *    cards that are off-screen).
- * 2. On intersection: imperatively set <source> src + call video.load() so the
- *    browser starts buffering exactly when needed, not a frame earlier.
- * 3. autoplay fires once canplay fires (prevents black flash).
- * 4. Gold placeholder covers the card until the video is ready.
+ * useUserInteracted — resolves to `true` on the first scroll, pointer,
+ * touch, or keydown event. All listeners are passive + once.
  */
-const LazyVideo = memo(({ src, label }: HeroCard) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const sourceRef = useRef<HTMLSourceElement>(null);
-  const [ready, setReady] = useState(false);
+function useUserInteracted(): boolean {
+  const [interacted, setInteracted] = useState(false);
 
   useEffect(() => {
+    if (interacted) return;
+
+    const trigger = () => setInteracted(true);
+    const opts: AddEventListenerOptions = { passive: true, once: true, capture: true };
+
+    window.addEventListener('scroll',      trigger, opts);
+    window.addEventListener('pointerdown', trigger, opts);
+    window.addEventListener('touchstart',  trigger, opts);
+    window.addEventListener('keydown',     trigger, opts);
+
+    return () => {
+      window.removeEventListener('scroll',      trigger, { capture: true });
+      window.removeEventListener('pointerdown', trigger, { capture: true });
+      window.removeEventListener('touchstart',  trigger, { capture: true });
+      window.removeEventListener('keydown',     trigger, { capture: true });
+    };
+  }, [interacted]);
+
+  return interacted;
+}
+
+/**
+ * LazyVideo — loads video ONLY when:
+ *   1. User has interacted (scroll / pointer / touch / key), AND
+ *   2. The card enters the viewport (IntersectionObserver).
+ *
+ * Until interaction: card stays at gold placeholder — zero network cost.
+ * After interaction: IO fires as normal with rootMargin:'50px'.
+ */
+const LazyVideo = memo(({ src, label, interacted }: HeroCard & { interacted: boolean }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const videoRef     = useRef<HTMLVideoElement>(null);
+  const sourceRef    = useRef<HTMLSourceElement>(null);
+  const [ready, setReady] = useState(false);
+  const ioRef = useRef<IntersectionObserver | null>(null);
+
+  const startLoad = useCallback(() => {
+    const video  = videoRef.current;
+    const source = sourceRef.current;
+    if (!video || !source || source.src) return; // already loaded
+
+    source.src = src;
+    video.load();
+
+    const onCanPlay = () => {
+      setReady(true);
+      video.play().catch(() => { /* autoplay blocked — silent */ });
+      video.removeEventListener('canplay', onCanPlay);
+    };
+    video.addEventListener('canplay', onCanPlay);
+  }, [src]);
+
+  // Wire up IntersectionObserver only after first interaction
+  useEffect(() => {
+    if (!interacted) return;
+
     const el = containerRef.current;
     if (!el) return;
 
-    const io = new IntersectionObserver(
+    ioRef.current = new IntersectionObserver(
       ([entry]) => {
         if (!entry.isIntersecting) return;
-        io.disconnect();
-
-        const video = videoRef.current;
-        const source = sourceRef.current;
-        if (!video || !source || source.src) return; // already loaded
-
-        // Set src then imperatively trigger load — this is the key:
-        // setting src alone queues it; load() makes it start immediately.
-        source.src = src;
-        video.load();
-
-        const onCanPlay = () => {
-          setReady(true);
-          video.play().catch(() => { /* autoplay blocked — silently ignore */ });
-          video.removeEventListener('canplay', onCanPlay);
-        };
-        video.addEventListener('canplay', onCanPlay);
+        ioRef.current?.disconnect();
+        startLoad();
       },
-      { rootMargin: '50px' } // tight — only trigger when almost visible
+      { rootMargin: '50px' }
     );
 
-    io.observe(el);
-    return () => io.disconnect();
-  }, [src]);
+    ioRef.current.observe(el);
+    return () => ioRef.current?.disconnect();
+  }, [interacted, startLoad]);
 
   return (
     <div ref={containerRef} className="groppi-card" style={{ position: 'relative' }}>
@@ -82,7 +113,7 @@ const LazyVideo = memo(({ src, label }: HeroCard) => {
         <div style={{ width: 24, height: 1, background: 'hsl(43 76% 52%)', borderRadius: 1, opacity: 0.4 }} />
       </div>
 
-      {/* Video — src is injected by IntersectionObserver, never pre-fetched */}
+      {/* Video — src injected only after interaction + intersection */}
       <video
         ref={videoRef}
         muted loop playsInline
@@ -96,6 +127,43 @@ const LazyVideo = memo(({ src, label }: HeroCard) => {
   );
 });
 LazyVideo.displayName = 'LazyVideo';
+
+/**
+ * HeroBgVideo — background video on desktop.
+ * Defers ALL network activity until first user interaction.
+ * Before that: only the poster image is shown (already preloaded in index.html).
+ */
+const HeroBgVideo = memo(({ interacted }: { interacted: boolean }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [srcSet, setSrcSet] = useState(false);
+
+  useEffect(() => {
+    if (!interacted || srcSet) return;
+
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Inject source + trigger load only after interaction
+    const source = document.createElement('source');
+    source.src  = '/videos/hero-bg.mp4';
+    source.type = 'video/mp4';
+    video.appendChild(source);
+    video.load();
+
+    setSrcSet(true);
+  }, [interacted, srcSet]);
+
+  return (
+    <video
+      ref={videoRef}
+      autoPlay muted loop playsInline
+      preload="none"                    /* was "metadata" — now fully deferred */
+      className="groppi-bg hidden md:block"
+      poster="/images/hero-poster.png"
+    />
+  );
+});
+HeroBgVideo.displayName = 'HeroBgVideo';
 
 const HeroSocialIcons = memo(() => (
   <div className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex items-center gap-4 md:gap-16 px-4 md:px-16 py-3 md:py-4 rounded-full"
@@ -131,51 +199,47 @@ const HeroSocialIcons = memo(() => (
 ));
 HeroSocialIcons.displayName = 'HeroSocialIcons';
 
-const HeroSection = memo(() => (
-  <section className="groppi-hero-pro" aria-label="GROPPI Hero Videos">
-    {/*
-      Background video — hidden on mobile (saves 3-8s load time).
-      preload="metadata": fetches only the first ~20KB (duration/dimensions),
-      NOT the full file. Full data streams only when autoPlay kicks in.
-      On mobile: static poster image via CSS — zero video bandwidth.
-    */}
-    <video
-      autoPlay muted loop playsInline preload="metadata"
-      className="groppi-bg hidden md:block"
-      poster="/images/hero-poster.png"
-    >
-      <source src="/videos/hero-bg.mp4" type="video/mp4" />
-    </video>
+const HeroSection = memo(() => {
+  const interacted = useUserInteracted();
 
-    {/* Mobile: <img> — fetchpriority=high ties into the <link rel=preload> in index.html */}
-    <img
-      src="/images/hero-poster.png"
-      alt=""
-      aria-hidden="true"
-      fetchPriority="high"
-      decoding="sync"
-      width={390}
-      height={844}
-      className="groppi-bg md:hidden"
-      style={{ objectFit: 'cover', objectPosition: 'center' }}
-    />
+  return (
+    <section className="groppi-hero-pro" aria-label="GROPPI Hero Videos">
+      {/*
+        Desktop: background video — deferred until first interaction.
+        Poster image (preloaded in index.html) covers the gap seamlessly.
+      */}
+      <HeroBgVideo interacted={interacted} />
 
-    <div className="groppi-overlay" />
+      {/* Mobile: static poster — zero video bandwidth */}
+      <img
+        src="/images/hero-poster.png"
+        alt=""
+        aria-hidden="true"
+        fetchPriority="high"
+        decoding="sync"
+        width={390}
+        height={844}
+        className="groppi-bg md:hidden"
+        style={{ objectFit: 'cover', objectPosition: 'center' }}
+      />
 
-    <div className="groppi-strip-wrap">
-      <div className="groppi-strip-track">
-        {HERO_CARDS.map((card, i) => (
-          <LazyVideo key={`a-${i}`} src={card.src} label={card.label} />
-        ))}
-        {HERO_CARDS.map((card, i) => (
-          <LazyVideo key={`b-${i}`} src={card.src} label={card.label} />
-        ))}
+      <div className="groppi-overlay" />
+
+      <div className="groppi-strip-wrap">
+        <div className="groppi-strip-track">
+          {HERO_CARDS.map((card, i) => (
+            <LazyVideo key={`a-${i}`} src={card.src} label={card.label} interacted={interacted} />
+          ))}
+          {HERO_CARDS.map((card, i) => (
+            <LazyVideo key={`b-${i}`} src={card.src} label={card.label} interacted={interacted} />
+          ))}
+        </div>
       </div>
-    </div>
 
-    <HeroSocialIcons />
-  </section>
-));
+      <HeroSocialIcons />
+    </section>
+  );
+});
 
 HeroSection.displayName = 'HeroSection';
 export default HeroSection;
