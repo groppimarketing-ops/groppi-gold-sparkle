@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import {
   Tooltip,
   TooltipContent,
@@ -137,21 +136,18 @@ const SocialIconsPill = ({
   };
 
   const renderIcon = (social: typeof socialIconsData[0]) => (
-    <motion.a
+    <a
       key={social.label}
       href={social.href}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={social.ariaLabel}
       onClick={() => trackEvent({ event: social.event, location })}
-      whileHover={{ y: -2, scale: 1.06 }}
-      whileTap={{ scale: 0.95 }}
-      transition={{ duration: 0.18 }}
-      className={`social-icon-glow flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded ${social.hoverGlow}`}
+      className={`social-icon-glow flex items-center justify-center hover:-translate-y-0.5 hover:scale-105 active:scale-95 transition-transform duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded ${social.hoverGlow}`}
       style={{ color: social.color }}
     >
       <social.icon className={iconSize} />
-    </motion.a>
+    </a>
   );
 
   if (showTooltips) {

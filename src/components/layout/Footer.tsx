@@ -1,7 +1,6 @@
 import { forwardRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LangLink from '@/components/LangLink';
-import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, MessageCircle, Calendar, Smartphone, Loader2, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import groppiLogo from '@/assets/groppi-logo.png';
@@ -69,19 +68,12 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
+          <div className="space-y-6 animate-fade-up">
             <LangLink to="/" className="inline-block">
-              <motion.img
+              <img
                 src={groppiLogo}
                 alt="GROPPI Digital Marketing Bureau"
-                className="h-[60px] md:h-[70px] lg:h-[80px] w-auto object-contain"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
+                className="h-[60px] md:h-[70px] lg:h-[80px] w-auto object-contain hover:scale-105 transition-transform duration-300"
               />
             </LangLink>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -93,15 +85,10 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
               iconSize="h-4 w-4"
               showTooltips={false}
             />
-          </motion.div>
+          </div>
 
           {/* Quick Links */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-          >
+          <div className="animate-fade-up-2">
             <h3 className="font-bold text-lg mb-6 gold-gradient-text">
               {t('footer.quickLinks')}
             </h3>
@@ -118,15 +105,10 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
+          <div className="animate-fade-up-3">
             <h3 className="font-bold text-lg mb-6 gold-gradient-text">
               {t('contact.title')}
             </h3>
@@ -208,15 +190,10 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
                 </a>
               </li>
             </ul>
-          </motion.div>
+          </div>
 
           {/* Newsletter */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-          >
+          <div className="animate-fade-up-4">
             <h3 className="font-bold text-lg mb-6 gold-gradient-text">
               {t('footer.newsletter.title')}
             </h3>
@@ -244,16 +221,11 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
                 </Button>
               </form>
             )}
-          </motion.div>
+          </div>
         </div>
 
         {/* Bottom Bar */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="mt-16 pt-8 border-t border-primary/10 flex flex-col md:flex-row justify-between items-center gap-4"
-        >
+        <div className="mt-16 pt-8 border-t border-primary/10 flex flex-col md:flex-row justify-between items-center gap-4 animate-fade-up">
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} GROPPI Gold Standard. {t('footer.rights')}
           </p>
@@ -265,7 +237,7 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
               {t('footer.terms')}
             </LangLink>
           </div>
-        </motion.div>
+        </div>
       </div>
     </footer>
   );
