@@ -212,9 +212,7 @@ DESIGN REQUIREMENTS:
           const imageBytes = Uint8Array.from(atob(base64Data), (c) => c.charCodeAt(0));
 
           // Upload to Supabase Storage
-          const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
-          const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-          const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
+          const supabase = serviceClient;
 
           const slug = (englishTitle as string)
             .toLowerCase()
