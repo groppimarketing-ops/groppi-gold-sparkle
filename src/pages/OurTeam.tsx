@@ -7,29 +7,29 @@ import { Button } from '@/components/ui/button';
 import LangLink from '@/components/LangLink';
 import { ArrowRight, Target, Rocket, TrendingUp, Users } from 'lucide-react';
 
-// Team photos
-import mohamedImg    from '@/assets/team/mohamed-salah.png';
-import alexanderImg  from '@/assets/team/alexander-roth.png';
-import thomasImg     from '@/assets/team/thomas-de-wilde.png';
-import eliseImg      from '@/assets/team/elise-verhaegen.png';
-import lukasImg      from '@/assets/team/lukas-meyer.png';
-import camilleImg    from '@/assets/team/camille-laurent.png';
-import sophieImg     from '@/assets/team/sophie-van-dijk.png';
-import claireImg     from '@/assets/team/claire-dumont.png';
-import juliaImg      from '@/assets/team/julia-van-aertselaer.png';
-import marcoImg      from '@/assets/team/marco-bianchi.png';
-import arjunImg      from '@/assets/team/arjun-mehta.png';
-import bilalImg      from '@/assets/team/bilal-khan.png';
-import rohanImg      from '@/assets/team/rohan-iyer.png';
-import lucasImg      from '@/assets/team/lucas-vermeer.png';
-import sofiaImg      from '@/assets/team/sofia-laurent.png';
-import koenImg       from '@/assets/team/koen-van-grop.png';
-import tottiImg      from '@/assets/team/totti-franco.png';
+// Team photos — WebP at 85% quality (~80-90% smaller than source PNG)
+import mohamedImg    from '@/assets/team/mohamed-salah.png?format=webp&quality=85';
+import alexanderImg  from '@/assets/team/alexander-roth.png?format=webp&quality=85';
+import thomasImg     from '@/assets/team/thomas-de-wilde.png?format=webp&quality=85';
+import eliseImg      from '@/assets/team/elise-verhaegen.png?format=webp&quality=85';
+import lukasImg      from '@/assets/team/lukas-meyer.png?format=webp&quality=85';
+import camilleImg    from '@/assets/team/camille-laurent.png?format=webp&quality=85';
+import sophieImg     from '@/assets/team/sophie-van-dijk.png?format=webp&quality=85';
+import claireImg     from '@/assets/team/claire-dumont.png?format=webp&quality=85';
+import juliaImg      from '@/assets/team/julia-van-aertselaer.png?format=webp&quality=85';
+import marcoImg      from '@/assets/team/marco-bianchi.png?format=webp&quality=85';
+import arjunImg      from '@/assets/team/arjun-mehta.png?format=webp&quality=85';
+import bilalImg      from '@/assets/team/bilal-khan.png?format=webp&quality=85';
+import rohanImg      from '@/assets/team/rohan-iyer.png?format=webp&quality=85';
+import lucasImg      from '@/assets/team/lucas-vermeer.png?format=webp&quality=85';
+import sofiaImg      from '@/assets/team/sofia-laurent.png?format=webp&quality=85';
+import koenImg       from '@/assets/team/koen-van-grop.png?format=webp&quality=85';
+import tottiImg      from '@/assets/team/totti-franco.png?format=webp&quality=85';
 
-// Office photos
-import meeting1 from '@/assets/office/meeting-1.png';
-import meeting2 from '@/assets/office/meeting-2.png';
-import meeting3 from '@/assets/office/meeting-3.png';
+// Office photos — WebP at 85% quality
+import meeting1 from '@/assets/office/meeting-1.png?format=webp&quality=85';
+import meeting2 from '@/assets/office/meeting-2.png?format=webp&quality=85';
+import meeting3 from '@/assets/office/meeting-3.png?format=webp&quality=85';
 
 /* ─── Data ─── */
 
