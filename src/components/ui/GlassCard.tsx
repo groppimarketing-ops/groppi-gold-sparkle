@@ -1,41 +1,48 @@
 import { forwardRef, ReactNode } from 'react';
-import { motion, HTMLMotionProps } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
-interface GlassCardProps extends Omit<HTMLMotionProps<'div'>, 'ref'> {
+interface GlassCardProps extends React.HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   className?: string;
   hover3D?: boolean;
   glowOnHover?: boolean;
+  // framer-motion pass-through props (kept for API compat, ignored)
+  initial?: unknown;
+  animate?: unknown;
+  whileInView?: unknown;
+  whileHover?: unknown;
+  viewport?: unknown;
+  transition?: unknown;
+  layout?: unknown;
+  layoutId?: unknown;
 }
 
-const GlassCard = forwardRef<HTMLDivElement, GlassCardProps>(({ 
-  children, 
-  className, 
+/**
+ * GlassCard — pure CSS version (no framer-motion).
+ * Hover lift + glow handled entirely in CSS → zero JS animation cost.
+ */
+const GlassCard = forwardRef<HTMLDivElement, GlassCardProps>(({
+  children,
+  className,
   hover3D = true,
   glowOnHover = true,
-  ...props 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  initial, animate, whileInView, whileHover, viewport, transition, layout, layoutId,
+  ...props
 }, ref) => {
   return (
-    <motion.div
+    <div
       ref={ref}
       className={cn(
         'glass-card p-6 transition-all duration-500',
-        hover3D && 'card-3d',
-        glowOnHover && 'hover:animate-pulse-glow',
+        hover3D && 'hover:-translate-y-1 hover:scale-[1.01]',
+        glowOnHover && 'hover:shadow-[0_0_30px_hsl(var(--gold)/0.18)]',
         className
       )}
-      whileHover={hover3D ? {
-        scale: 1.02,
-        rotateX: 2,
-        rotateY: -2,
-        z: 20,
-      } : undefined}
-      transition={{ duration: 0.3 }}
       {...props}
     >
       {children}
-    </motion.div>
+    </div>
   );
 });
 
