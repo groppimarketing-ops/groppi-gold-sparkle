@@ -932,6 +932,32 @@
   }
 
   /* Founder avatar hover */
+  /* ── About page: floating dots, timeline dot pulse, icon glow, hero glow ── */
+  @keyframes about-float {
+    0%, 100% { transform: translateY(0);    opacity: 0.3; }
+    50%       { transform: translateY(-18px); opacity: 0.6; }
+  }
+  .about-float { animation: about-float var(--dur, 3.5s) ease-in-out infinite; }
+
+  @keyframes timeline-pulse {
+    0%, 100% { transform: scale(1);   }
+    50%       { transform: scale(1.25); }
+  }
+  .timeline-dot { animation: timeline-pulse 2s ease-in-out infinite; }
+
+  @keyframes icon-glow {
+    0%, 100% { box-shadow: 0 0 10px hsl(43 100% 50% / 0.15); }
+    50%       { box-shadow: 0 0 22px hsl(43 100% 50% / 0.35); }
+  }
+  .icon-glow-pulse { animation: icon-glow 3s ease-in-out infinite; }
+
+  @keyframes about-hero-radial {
+    0%, 100% { background: radial-gradient(circle at 20% 50%, hsl(43 100% 50% / 0.1) 0%, transparent 50%); }
+    50%       { background: radial-gradient(circle at 80% 50%, hsl(43 100% 50% / 0.1) 0%, transparent 50%); }
+  }
+  .about-hero-glow  { animation: about-hero-radial 8s ease-in-out infinite; }
+  .about-cta-glow   { animation: icon-glow 3s ease-in-out infinite; border-radius: inherit; }
+
   .founder-avatar:hover {
     transform: translateY(-2px);
     border-color: hsl(43 76% 52% / 0.85) !important;
