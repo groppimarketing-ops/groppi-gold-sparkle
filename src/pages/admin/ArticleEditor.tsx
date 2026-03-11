@@ -89,6 +89,9 @@ const ArticleEditor = () => {
   const [showMediaPicker, setShowMediaPicker] = useState(false);
   const [mediaFiles, setMediaFiles] = useState<MediaFile[]>([]);
   const [loadingMedia, setLoadingMedia] = useState(false);
+  // Callback for inserting image URL into the active RichTextEditor
+  const insertImageRef = useRef<((url: string) => void) | null>(null);
+  const [mediaPickerMode, setMediaPickerMode] = useState<'featured' | 'content'>('featured');
 
   useEffect(() => {
     if (!isNew && id) {
