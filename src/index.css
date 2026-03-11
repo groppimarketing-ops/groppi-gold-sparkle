@@ -930,6 +930,16 @@
   .final-cta-spin {
     animation: slow-spin 20s linear infinite;
   }
+  /* Reusable slow-spin for any icon (e.g. Contact sparkle) */
+  .slow-spin {
+    animation: slow-spin 20s linear infinite;
+  }
+  /* Step number text-shadow glow for PartnerSteps */
+  @keyframes step-glow {
+    0%, 100% { text-shadow: 0 0 10px hsl(43 100% 50% / 0.3); }
+    50%       { text-shadow: 0 0 20px hsl(43 100% 50% / 0.5); }
+  }
+  .step-number-glow { animation: step-glow 2s ease-in-out infinite; }
 
   /* Founder avatar hover */
   /* ── About page: floating dots, timeline dot pulse, icon glow, hero glow ── */
