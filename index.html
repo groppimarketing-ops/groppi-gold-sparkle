@@ -22,6 +22,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://groppi.be/" />
     <meta property="og:image" content="https://groppi.be/images/hero-poster.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="GROPPI" />
     <meta property="og:locale" content="nl_BE" />
 
@@ -36,8 +38,9 @@
 
     <link rel="canonical" href="https://groppi.be/" />
 
-    <!-- LCP: preload hero poster (high-priority, desktop & mobile) -->
-    <link rel="preload" as="image" href="/images/hero-poster.png" fetchpriority="high" />
+    <!-- LCP: preload hero poster WebP (high-priority, desktop & mobile) -->
+    <!-- WebP is served to all modern browsers; PNG fallback via <picture> in HeroSection -->
+    <link rel="preload" as="image" href="/images/hero-poster.webp" fetchpriority="high" type="image/webp" />
 
     <!-- Critical assets: logo preloaded before parser reaches <img> tags -->
     <link rel="preload" as="image" href="/favicon.png" />

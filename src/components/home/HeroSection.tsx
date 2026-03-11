@@ -131,7 +131,7 @@ LazyVideo.displayName = 'LazyVideo';
 /**
  * HeroBgVideo — background video on desktop.
  * Defers ALL network activity until first user interaction.
- * Before that: only the poster image is shown (already preloaded in index.html).
+ * Before that: only the poster image is shown (already preloaded in index.html as WebP).
  */
 const HeroBgVideo = memo(({ interacted }: { interacted: boolean }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -157,9 +157,9 @@ const HeroBgVideo = memo(({ interacted }: { interacted: boolean }) => {
     <video
       ref={videoRef}
       autoPlay muted loop playsInline
-      preload="none"                    /* was "metadata" — now fully deferred */
+      preload="none"
       className="groppi-bg hidden md:block"
-      poster="/images/hero-poster.png"
+      poster="/images/hero-poster.webp"
     />
   );
 });
@@ -210,18 +210,25 @@ const HeroSection = memo(() => {
       */}
       <HeroBgVideo interacted={interacted} />
 
-      {/* Mobile: static poster — zero video bandwidth */}
-      <img
-        src="/images/hero-poster.png"
-        alt=""
-        aria-hidden="true"
-        fetchPriority="high"
-        decoding="sync"
-        width={390}
-        height={844}
-        className="groppi-bg md:hidden"
-        style={{ objectFit: 'cover', objectPosition: 'center' }}
-      />
+      {/*
+        Mobile: <picture> with WebP source + PNG fallback.
+        WebP URL matches the <link rel="preload"> in index.html exactly
+        → browser reuses the preloaded asset, ZERO duplicate network request.
+        fetchpriority="high" + decoding="sync" for fastest LCP.
+      */}
+      <picture className="groppi-bg md:hidden">
+        <source srcSet="/images/hero-poster.webp" type="image/webp" />
+        <img
+          src="/images/hero-poster.png"
+          alt=""
+          aria-hidden="true"
+          fetchPriority="high"
+          decoding="sync"
+          width={390}
+          height={844}
+          style={{ objectFit: 'cover', objectPosition: 'center', width: '100%', height: '100%' }}
+        />
+      </picture>
 
       <div className="groppi-overlay" />
 
