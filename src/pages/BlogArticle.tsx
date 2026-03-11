@@ -3,51 +3,94 @@ import DOMPurify from 'dompurify';
 import LangLink from '@/components/LangLink';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Calendar, Clock, ArrowLeft, User, Share2 } from 'lucide-react';
+import { Calendar, Clock, ArrowLeft, User, Share2, Sparkles } from 'lucide-react';
 import PageLayout from '@/components/layout/PageLayout';
 import { Button } from '@/components/ui/button';
 import { getArticleBySlug, blogArticles } from '@/data/blogArticles';
 import GlassCard from '@/components/ui/GlassCard';
 import PageSEO from '@/components/seo/PageSEO';
 import { BreadcrumbSchema } from '@/components/seo/StructuredData';
+import ArticleStructuredData from '@/components/seo/ArticleStructuredData';
 import RelatedServices from '@/components/blog/RelatedServices';
+import { useArticleBySlug } from '@/hooks/useBlogArticles';
 
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
   const isRtl = i18n.language === 'ar' || i18n.language === 'ur';
 
-  const article = slug ? getArticleBySlug(slug) : undefined;
+  // 1. Try to load from DB
+  const { data: dbArticle, isLoading } = useArticleBySlug(slug);
 
-  if (!article) {
+  // 2. Fallback to static
+  const staticArticle = slug ? getArticleBySlug(slug) : undefined;
+
+  // Loading state
+  if (isLoading) {
+    return (
+      <PageLayout>
+        <section className="relative pt-24 pb-12 md:pt-32 md:pb-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto animate-pulse space-y-6">
+              <div className="h-4 w-1/3 bg-muted/40 rounded" />
+              <div className="h-8 w-3/4 bg-muted/40 rounded" />
+              <div className="h-4 w-1/2 bg-muted/30 rounded" />
+              <div className="aspect-[21/9] bg-muted/30 rounded-xl" />
+            </div>
+          </div>
+        </section>
+      </PageLayout>
+    );
+  }
+
+  // 3. Not found in DB or static → redirect
+  if (!dbArticle && !staticArticle) {
     return <Navigate to="/blog" replace />;
   }
 
-  const title = t(article.titleKey);
-  const content = t(article.contentKey);
-  const metaTitle = t(article.metaTitleKey);
-  const metaDescription = t(article.metaDescriptionKey);
+  // 4. Determine which source to use
+  const isDynamic = !!dbArticle;
 
-  // Get related articles (excluding current)
-  const relatedArticles = blogArticles
-    .filter((a) => a.id !== article.id)
-    .slice(0, 3);
+  const title = isDynamic ? dbArticle!.title : t(staticArticle!.titleKey);
+  const content = isDynamic ? dbArticle!.content : t(staticArticle!.contentKey);
+  const excerpt = isDynamic ? dbArticle!.excerpt : t(staticArticle!.excerptKey);
+  const image = isDynamic ? dbArticle!.image : staticArticle!.image;
+  const date = isDynamic ? dbArticle!.date : staticArticle!.date;
+  const readTime = isDynamic ? dbArticle!.readTime : staticArticle!.readTime;
+  const author = isDynamic ? dbArticle!.author : staticArticle!.author;
+  const articleSlug = isDynamic ? dbArticle!.slug : staticArticle!.slug;
+  const metaTitle = isDynamic ? title : t(staticArticle!.metaTitleKey);
+  const metaDescription = isDynamic ? excerpt : t(staticArticle!.metaDescriptionKey);
+
+  // Related articles (static only for backward compat; DB articles excluded by slug)
+  const relatedArticles = blogArticles.filter((a) => a.slug !== articleSlug).slice(0, 3);
 
   return (
     <PageLayout>
       <PageSEO
         title={metaTitle}
         description={metaDescription}
-        path={`/blog/${article.slug}`}
-        ogImage={article.image}
+        path={`/blog/${articleSlug}`}
+        ogImage={image}
         type="article"
-        articlePublishedTime={article.date}
+        articlePublishedTime={date}
       />
       <BreadcrumbSchema items={[
         { name: 'Home', path: '/' },
         { name: t('nav.blog', 'Blog'), path: '/blog' },
-        { name: title, path: `/blog/${article.slug}` },
+        { name: title, path: `/blog/${articleSlug}` },
       ]} />
+      {isDynamic && (
+        <ArticleStructuredData
+          slug={articleSlug}
+          title={title}
+          excerpt={excerpt}
+          image={image}
+          datePublished={date}
+          dateModified={dbArticle!.updatedAt}
+          author={author}
+        />
+      )}
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden">
@@ -55,7 +98,6 @@ const BlogArticle = () => {
         <div className="neural-lines opacity-20" />
 
         <div className="container mx-auto px-4 relative z-10">
-          {/* Back Button */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -73,7 +115,6 @@ const BlogArticle = () => {
             </Button>
           </motion.div>
 
-          {/* Article Header */}
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -82,7 +123,7 @@ const BlogArticle = () => {
             >
               <span className="flex items-center gap-1.5">
                 <Calendar className="h-4 w-4 text-primary" />
-                {new Date(article.date).toLocaleDateString(i18n.language, {
+                {new Date(date).toLocaleDateString(i18n.language, {
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric',
@@ -90,11 +131,11 @@ const BlogArticle = () => {
               </span>
               <span className="flex items-center gap-1.5">
                 <Clock className="h-4 w-4 text-primary" />
-                {article.readTime} {t('blog.minRead')}
+                {readTime} {t('blog.minRead')}
               </span>
               <span className="flex items-center gap-1.5">
                 <User className="h-4 w-4 text-primary" />
-                {article.author}
+                {author}
               </span>
             </motion.div>
 
@@ -120,16 +161,22 @@ const BlogArticle = () => {
             className="max-w-5xl mx-auto"
           >
             <GlassCard className="overflow-hidden !p-0">
-              <img
-                src={article.image}
-                alt={title}
-                className="w-full aspect-[21/9] object-cover"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
-                width={1200}
-                height={514}
-              />
+              {image ? (
+                <img
+                  src={image}
+                  alt={title}
+                  className="w-full aspect-[21/9] object-cover"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  width={1200}
+                  height={514}
+                />
+              ) : (
+                <div className="w-full aspect-[21/9] bg-muted/20 flex items-center justify-center">
+                  <Sparkles className="w-16 h-16 text-primary/20" />
+                </div>
+              )}
             </GlassCard>
           </motion.div>
         </div>
@@ -155,13 +202,18 @@ const BlogArticle = () => {
                 prose-ul:my-5 prose-ul:space-y-2
                 prose-li:text-muted-foreground
                 prose-a:text-primary prose-a:no-underline hover:prose-a:underline"
-              dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(content, { ALLOWED_TAGS: ['h1','h2','h3','h4','h5','h6','p','a','ul','ol','li','strong','em','br','img','span','div','blockquote','table','thead','tbody','tr','th','td'], ALLOWED_ATTR: ['href','src','alt','class','target','rel'] }) }}
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(content, {
+                  ALLOWED_TAGS: ['h1','h2','h3','h4','h5','h6','p','a','ul','ol','li','strong','em','br','img','span','div','blockquote','table','thead','tbody','tr','th','td'],
+                  ALLOWED_ATTR: ['href','src','alt','class','target','rel'],
+                }),
+              }}
             />
           </motion.article>
 
           {/* Related Services */}
           <div className="max-w-3xl mx-auto">
-            <RelatedServices articleSlug={article.slug} />
+            <RelatedServices articleSlug={articleSlug} />
           </div>
 
           {/* Share & CTA */}
@@ -179,10 +231,7 @@ const BlogArticle = () => {
                   size="sm"
                   className="glass-button"
                   onClick={() => {
-                    navigator.share?.({
-                      title: title,
-                      url: window.location.href,
-                    });
+                    navigator.share?.({ title, url: window.location.href });
                   }}
                 >
                   <Share2 className="h-4 w-4" />
