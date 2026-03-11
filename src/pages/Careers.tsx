@@ -282,7 +282,7 @@ const Careers = () => {
       </section>
 
       {/* Application Form Section */}
-      <section ref={formRef} className="py-16 md:py-24 bg-gradient-to-b from-transparent to-background/50">
+      <section ref={formRef} className="py-10 md:py-20 bg-gradient-to-b from-transparent to-background/50">
         <div className="container mx-auto px-4">
           <div className="animate-fade-up max-w-2xl mx-auto">
             <div className="text-center mb-10">
