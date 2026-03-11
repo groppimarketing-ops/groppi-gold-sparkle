@@ -131,7 +131,7 @@ LazyVideo.displayName = 'LazyVideo';
 /**
  * HeroBgVideo — background video on desktop.
  * Defers ALL network activity until first user interaction.
- * Before that: only the poster image is shown (already preloaded in index.html).
+ * Before that: only the poster image is shown (already preloaded in index.html as WebP).
  */
 const HeroBgVideo = memo(({ interacted }: { interacted: boolean }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -157,9 +157,9 @@ const HeroBgVideo = memo(({ interacted }: { interacted: boolean }) => {
     <video
       ref={videoRef}
       autoPlay muted loop playsInline
-      preload="none"                    /* was "metadata" — now fully deferred */
+      preload="none"
       className="groppi-bg hidden md:block"
-      poster="/images/hero-poster.png"
+      poster="/images/hero-poster.webp"
     />
   );
 });
