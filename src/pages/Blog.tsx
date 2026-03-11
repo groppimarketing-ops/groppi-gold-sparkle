@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import { Calendar, ArrowRight, Clock, Sparkles } from 'lucide-react';
 import LangLink from '@/components/LangLink';
 import PageLayout from '@/components/layout/PageLayout';
@@ -44,19 +43,11 @@ const Blog = () => {
         <div className="neural-lines opacity-30" />
         
         <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <motion.span
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 text-primary text-xs font-semibold tracking-[0.2em] uppercase mb-4"
-            >
+          <div className="animate-fade-up max-w-3xl mx-auto text-center">
+            <span className="inline-flex items-center gap-2 text-primary text-xs font-semibold tracking-[0.2em] uppercase mb-4">
               <Sparkles className="w-4 h-4" />
               {t('blog.badge')}
-            </motion.span>
+            </span>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 gold-gradient-text">
               {t('blog.title')}
@@ -65,7 +56,7 @@ const Blog = () => {
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               {t('blog.subtitle')}
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -76,12 +67,7 @@ const Blog = () => {
             <ArticleSkeleton featured />
           ) : (
             <LangLink to={`/blog/${featuredArticle.slug}`} className="block group">
-              <GlassCard
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="grid lg:grid-cols-2 gap-0 overflow-hidden !p-0 hover:border-primary/50 transition-colors"
-              >
+              <GlassCard className="grid lg:grid-cols-2 gap-0 overflow-hidden !p-0 hover:border-primary/50 transition-colors">
                 <div className="relative aspect-[16/10] lg:aspect-auto overflow-hidden">
                   {featuredArticle.image ? (
                     <img
@@ -102,15 +88,10 @@ const Blog = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent lg:block hidden" />
                 </div>
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
-                  <motion.div 
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="flex items-center gap-2 mb-4"
-                  >
+                  <div className="flex items-center gap-2 mb-4">
                     <Sparkles className="w-4 h-4 text-primary" />
                     <span className="text-primary text-sm font-medium">{t('blog.featured')}</span>
-                  </motion.div>
+                  </div>
                   
                   <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                     <span className="flex items-center gap-1">
@@ -155,11 +136,7 @@ const Blog = () => {
               : otherArticles.map((article, index) => (
                   <LangLink key={article.id} to={`/blog/${article.slug}`} className="block group">
                     <GlassCard
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                      className="overflow-hidden !p-0 h-full hover:border-primary/50 transition-colors"
+                      className={`overflow-hidden !p-0 h-full hover:border-primary/50 transition-colors animate-fade-up-${Math.min(index + 1, 4)}`}
                     >
                       <div className="relative aspect-[16/10] overflow-hidden">
                         {article.image ? (

@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import { 
   Building2, 
   TrendingUp, 
@@ -36,34 +35,24 @@ const PartnerForWho = () => {
           centered
         />
         
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center text-muted-foreground max-w-2xl mx-auto mb-12"
+        <p
+          className="animate-fade-up text-center text-muted-foreground max-w-2xl mx-auto mb-12"
           dir="ltr"
           style={{ unicodeBidi: 'isolate' }}
         >
           {t('partner.forWho.description')}
-        </motion.p>
+        </p>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {items.map((item, index) => (
             <GlassCard
               key={item.key}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.08 }}
-              className="group text-center py-6 px-4 hover:border-primary/40 hover:shadow-[0_0_20px_hsl(43_100%_50%/0.15)] transition-all duration-500"
+              className={`group text-center py-6 px-4 hover:border-primary/40 hover:shadow-[0_0_20px_hsl(43_100%_50%/0.15)] transition-all duration-500 animate-fade-up-${Math.min(index + 1, 4)}`}
               hover3D={false}
             >
-              <motion.div 
-                className="w-12 h-12 rounded-xl glass-card flex items-center justify-center mx-auto mb-4 border border-primary/20 group-hover:border-primary/40 transition-colors"
-                whileHover={{ scale: 1.05 }}
-              >
+              <div className="w-12 h-12 rounded-xl glass-card flex items-center justify-center mx-auto mb-4 border border-primary/20 group-hover:border-primary/40 group-hover:scale-105 transition-all duration-200">
                 <item.icon className="w-6 h-6 text-primary" />
-              </motion.div>
+              </div>
               
               <h3 
                 className="font-semibold text-sm md:text-base group-hover:text-primary transition-colors"
@@ -76,16 +65,13 @@ const PartnerForWho = () => {
           ))}
         </div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center text-muted-foreground text-sm mt-8 italic"
+        <p
+          className="animate-fade-up text-center text-muted-foreground text-sm mt-8 italic"
           dir="ltr"
           style={{ unicodeBidi: 'isolate' }}
         >
           {t('partner.forWho.note')}
-        </motion.p>
+        </p>
       </div>
     </section>
   );

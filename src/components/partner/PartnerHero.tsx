@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight, Handshake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -14,72 +13,49 @@ const PartnerHero = () => {
       <div className="neural-lines opacity-30" />
       
       <div className="container mx-auto px-4 relative z-10 max-w-[1100px]">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="max-w-4xl mx-auto text-center"
+        <div
+          className="animate-fade-up max-w-4xl mx-auto text-center"
           style={{ unicodeBidi: 'isolate', direction: 'ltr' }}
         >
           {/* Eyebrow */}
-          <motion.span
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="inline-flex items-center gap-2 text-primary font-medium text-sm uppercase tracking-[0.2em] mb-6"
-          >
+          <span className="inline-flex items-center gap-2 text-primary font-medium text-sm uppercase tracking-[0.2em] mb-6">
             <Handshake className="w-4 h-4" />
             <span dir="ltr" style={{ unicodeBidi: 'isolate' }}>{t('partner.badge')}</span>
-          </motion.span>
+          </span>
 
           {/* Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+          <h1
             className="text-4xl md:text-5xl lg:text-6xl font-bold gold-shimmer-text mb-6"
             dir="ltr"
             style={{ unicodeBidi: 'isolate' }}
           >
             {t('partner.hero.title')}
-          </motion.h1>
+          </h1>
 
           {/* Subheadline */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
+          <p
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
             dir="ltr"
             style={{ unicodeBidi: 'isolate' }}
           >
             {t('partner.hero.subtitle')}
-          </motion.p>
+          </p>
 
           {/* Bullets */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-10"
-          >
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-10">
             {bullets.map((key) => (
               <div key={key} className="flex items-center gap-2" dir="ltr">
                 <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-foreground" style={{ unicodeBidi: 'isolate' }}>{t(`partner.hero.${key}`)}</span>
               </div>
             ))}
-          </motion.div>
+          </div>
 
           {/* CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center mb-6"
-          >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Button
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_8px_25px_hsl(43_100%_50%/0.25)] hover:translate-y-[-2px] transition-all duration-300"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_8px_25px_hsl(43_100%_50%/0.25)] hover:-translate-y-0.5 transition-all duration-300"
               onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}
             >
               {t('partner.hero.ctaPrimary')}
@@ -93,20 +69,17 @@ const PartnerHero = () => {
             >
               {t('partner.hero.ctaSecondary')}
             </Button>
-          </motion.div>
+          </div>
 
           {/* Microcopy */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
+          <p
             className="text-sm text-muted-foreground"
             dir="ltr"
             style={{ unicodeBidi: 'isolate' }}
           >
             {t('partner.hero.microcopy')}
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
       </div>
     </section>
   );

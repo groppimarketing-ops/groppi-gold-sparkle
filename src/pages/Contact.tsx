@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Send, Loader2, Sparkles, MessageCircle, Smartphone } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -96,7 +95,6 @@ const Contact = () => {
     }
   };
 
-  // Contact method cards for direct actions
   const contactMethods = [
     { 
       icon: MessageCircle, 
@@ -140,8 +138,6 @@ const Contact = () => {
     },
   ];
 
-
-  // Contact info items
   const contactInfoItems = [
     { 
       icon: MapPin, 
@@ -166,6 +162,7 @@ const Contact = () => {
         path="/contact"
       />
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.contact', 'Contact'), path: '/contact' }]} />
+
       {/* Hero Section */}
       <section className="relative py-24 md:py-36 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
@@ -186,20 +183,11 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <GlassCard
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="p-8"
-            >
+            <GlassCard className="p-8 animate-fade-up">
               <div className="flex items-center gap-3 mb-8">
-                <motion.div
-                  animate={{ rotate: [0, 360] }}
-                  transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                  className="w-10 h-10 rounded-xl glass-card flex items-center justify-center"
-                >
+                <div className="w-10 h-10 rounded-xl glass-card flex items-center justify-center slow-spin">
                   <Sparkles className="w-5 h-5 text-primary" />
-                </motion.div>
+                </div>
                 <h3 className="text-2xl font-bold gold-gradient-text">
                   {t('contact.send')}
                 </h3>
@@ -289,52 +277,35 @@ const Contact = () => {
             </GlassCard>
 
             {/* Contact Methods Cards + Info */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
+            <div className="space-y-6 animate-fade-up-2">
               {/* Quick Contact Methods */}
               <div className="grid gap-4">
                 {contactMethods.map((method, index) => (
-                  <motion.a
+                  <a
                     key={index}
                     href={method.href}
                     target={method.isExternal ? '_blank' : undefined}
                     rel={method.isExternal ? 'noopener noreferrer' : undefined}
                     onClick={() => trackEvent({ event: method.event, location: 'contact_page' })}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    whileHover={{ scale: 1.02, y: -2 }}
-                    className="block"
+                    className="block hover:-translate-y-0.5 hover:scale-[1.01] transition-transform duration-200"
                   >
                     <GlassCard className="flex items-center gap-4 p-5 border border-primary/20 hover:border-primary/40 transition-all duration-300 group cursor-pointer">
-                      <motion.div 
-                        className={`w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 ${method.color} shadow-lg`}
-                        whileHover={{ scale: 1.15, rotate: 10 }}
-                        transition={{ type: "spring", stiffness: 300 }}
-                      >
+                      <div className={`w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 ${method.color} shadow-lg group-hover:scale-105 transition-transform duration-200`}>
                         <method.icon className={`w-7 h-7 ${method.iconColor}`} />
-                      </motion.div>
+                      </div>
                       <div className="flex-1">
                         <h4 className="font-semibold gold-gradient-text text-lg">{method.title}</h4>
                         <p className="text-muted-foreground text-sm">{method.action}</p>
                       </div>
-                      <motion.span
-                        className="text-primary opacity-0 group-hover:opacity-100 transition-opacity"
-                        whileHover={{ x: 5 }}
-                      >
+                      <span className="text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200">
                         →
-                      </motion.span>
+                      </span>
                     </GlassCard>
-                  </motion.a>
+                  </a>
                 ))}
               </div>
 
-              {/* Social Media Profiles - Same as Header */}
+              {/* Social Media Profiles */}
               <GlassCard className="p-6 border border-primary/20">
                 <h4 className="font-semibold gold-gradient-text text-lg mb-4">{t('social.followUs')}</h4>
                 <SocialIconsPill 
@@ -348,38 +319,23 @@ const Contact = () => {
               {contactInfoItems.map((info, index) => (
                 <GlassCard
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
                   className="flex items-start gap-4 p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 group"
                 >
-                  <motion.div 
-                    className="w-14 h-14 rounded-2xl glass-card flex items-center justify-center shrink-0 border border-primary/30 shadow-lg shadow-primary/10"
-                    whileHover={{ scale: 1.15, rotate: 10 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
+                  <div className="w-14 h-14 rounded-2xl glass-card flex items-center justify-center shrink-0 border border-primary/30 shadow-lg shadow-primary/10 group-hover:scale-105 transition-transform duration-200">
                     <info.icon className="w-7 h-7 text-primary drop-shadow-[0_0_8px_rgba(218,165,32,0.5)]" />
-                  </motion.div>
+                  </div>
                   <div className="flex-1">
                     <h4 className="font-semibold mb-2 gold-gradient-text text-lg">{info.title}</h4>
                     {info.isLink ? (
-                      <motion.a
+                      <a
                         href={info.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-primary transition-colors duration-300 inline-flex items-center gap-2 group-hover:text-primary"
-                        whileHover={{ x: 5 }}
+                        className="text-muted-foreground hover:text-primary hover:translate-x-1 transition-all duration-200 inline-flex items-center gap-2 group-hover:text-primary"
                       >
                         {info.content}
-                        <motion.span
-                          initial={{ opacity: 0, x: -5 }}
-                          whileHover={{ opacity: 1, x: 0 }}
-                          className="text-primary"
-                        >
-                          →
-                        </motion.span>
-                      </motion.a>
+                        <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                      </a>
                     ) : (
                       <p className="text-muted-foreground">{info.content}</p>
                     )}
@@ -400,7 +356,7 @@ const Contact = () => {
                   title="GROPPI Location - Merksplas, Belgium"
                 />
               </GlassCard>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

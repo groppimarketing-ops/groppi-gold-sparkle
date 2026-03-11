@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { Briefcase, MapPin, Clock, Upload, ChevronDown, Loader2, CheckCircle, ExternalLink } from 'lucide-react';
 import { useForm } from 'react-hook-form';
@@ -105,21 +104,13 @@ const Careers = () => {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      // Validate file type
       const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
       if (!allowedTypes.includes(file.type)) {
-        toast({
-          title: t('careers.form.invalidFileType'),
-          variant: 'destructive',
-        });
+        toast({ title: t('careers.form.invalidFileType'), variant: 'destructive' });
         return;
       }
-      // Validate file size (10MB)
       if (file.size > 10 * 1024 * 1024) {
-        toast({
-          title: t('careers.form.fileTooLarge'),
-          variant: 'destructive',
-        });
+        toast({ title: t('careers.form.fileTooLarge'), variant: 'destructive' });
         return;
       }
       setCvFile(file);
@@ -128,10 +119,7 @@ const Careers = () => {
 
   const onSubmit = async (data: FormData) => {
     if (!cvFile) {
-      toast({
-        title: t('careers.form.cvRequired'),
-        variant: 'destructive',
-      });
+      toast({ title: t('careers.form.cvRequired'), variant: 'destructive' });
       return;
     }
 
@@ -139,21 +127,17 @@ const Careers = () => {
     setIsUploading(true);
 
     try {
-      // Upload CV to storage
       const fileExt = cvFile.name.split('.').pop();
       const fileName = `${Date.now()}-${Math.random().toString(36).substring(7)}.${fileExt}`;
       
-      const { data: uploadData, error: uploadError } = await supabase.storage
+      const { error: uploadError } = await supabase.storage
         .from('cv-uploads')
         .upload(fileName, cvFile);
 
-      if (uploadError) {
-        throw new Error('Failed to upload CV');
-      }
+      if (uploadError) throw new Error('Failed to upload CV');
 
       setIsUploading(false);
 
-      // Submit application with storage path (not public URL)
       const response = await supabase.functions.invoke('submit-job-application', {
         body: {
           fullName: data.fullName,
@@ -166,9 +150,7 @@ const Careers = () => {
         },
       });
 
-      if (response.error) {
-        throw new Error(response.error.message || 'Failed to submit application');
-      }
+      if (response.error) throw new Error(response.error.message || 'Failed to submit application');
 
       setIsSuccess(true);
       form.reset();
@@ -220,11 +202,7 @@ const Careers = () => {
       <section className="relative min-h-[50vh] flex items-center justify-center pt-32 pb-16">
         <div className="absolute inset-0 neural-lines opacity-30" />
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+          <div className="animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               <span className="gold-gradient-text">{t('careers.hero.title')}</span>
             </h1>
@@ -250,36 +228,27 @@ const Careers = () => {
                 <Upload className="ml-2 h-4 w-4" />
               </Button>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Open Roles Section */}
       <section id="roles" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
+          <div className="animate-fade-up text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               {t('careers.roles.title')}
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
               {t('careers.roles.subtitle')}
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid gap-6 max-w-4xl mx-auto">
             {jobRoles.map((role, index) => (
-              <motion.div
+              <div
                 key={role.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="glass-card p-6 hover:gold-glow transition-all duration-300"
+                className={`glass-card p-6 hover:gold-glow transition-all duration-300 animate-fade-up-${Math.min(index + 1, 4)}`}
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                   <div className="flex-1">
@@ -306,7 +275,7 @@ const Careers = () => {
                     {t('careers.roles.applyNow')}
                   </Button>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -315,12 +284,7 @@ const Careers = () => {
       {/* Application Form Section */}
       <section ref={formRef} className="py-16 md:py-24 bg-gradient-to-b from-transparent to-background/50">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-2xl mx-auto"
-          >
+          <div className="animate-fade-up max-w-2xl mx-auto">
             <div className="text-center mb-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 {t('careers.form.title')}
@@ -331,18 +295,14 @@ const Careers = () => {
             </div>
 
             {isSuccess ? (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="glass-card p-8 text-center"
-              >
+              <div className="glass-card p-8 text-center animate-scale-in">
                 <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
                 <h3 className="text-2xl font-semibold mb-2">{t('careers.form.successTitle')}</h3>
                 <p className="text-muted-foreground mb-6">{t('careers.form.successMessage')}</p>
                 <Button onClick={() => setIsSuccess(false)} variant="outline">
                   {t('careers.form.submitAnother')}
                 </Button>
-              </motion.div>
+              </div>
             ) : (
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="glass-card p-6 md:p-8 space-y-6">
@@ -523,19 +483,14 @@ const Careers = () => {
                 </form>
               </Form>
             )}
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-2xl mx-auto"
-          >
+          <div className="animate-fade-up max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
               {t('careers.faq.title')}
             </h2>
@@ -577,7 +532,7 @@ const Careers = () => {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-          </motion.div>
+          </div>
         </div>
       </section>
     </PageLayout>

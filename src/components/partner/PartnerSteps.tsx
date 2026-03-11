@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import GlassCard from '@/components/ui/GlassCard';
 import SectionHeader from '@/components/ui/SectionHeader';
 
@@ -25,13 +24,9 @@ const PartnerSteps = () => {
         
         <div className="grid md:grid-cols-3 gap-8 mt-12 max-w-4xl mx-auto">
           {steps.map((step, index) => (
-            <motion.div
+            <div
               key={step.key}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.15 }}
-              className="relative"
+              className={`relative animate-fade-up-${index + 1}`}
             >
               {/* Connector line */}
               {index < steps.length - 1 && (
@@ -42,19 +37,10 @@ const PartnerSteps = () => {
                 className="text-center relative z-10 hover:border-primary/40 hover:shadow-[0_0_25px_hsl(43_100%_50%/0.15)] transition-all duration-500 py-8"
                 hover3D={false}
               >
-                <motion.div 
-                  className="text-4xl font-bold text-primary mb-4"
-                  animate={{ 
-                    textShadow: [
-                      '0 0 10px hsl(43 100% 50% / 0.3)',
-                      '0 0 20px hsl(43 100% 50% / 0.4)',
-                      '0 0 10px hsl(43 100% 50% / 0.3)',
-                    ],
-                  }}
-                  transition={{ duration: 2, repeat: Infinity, delay: index * 0.3 }}
-                >
+                {/* Step number with CSS glow animation */}
+                <div className="text-4xl font-bold text-primary mb-4 step-number-glow">
                   {step.number}
-                </motion.div>
+                </div>
                 <h3 
                   className="font-bold text-lg mb-2"
                   dir="ltr"
@@ -70,7 +56,7 @@ const PartnerSteps = () => {
                   {t(`partner.howItWorks.steps.${step.key}.desc`)}
                 </p>
               </GlassCard>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

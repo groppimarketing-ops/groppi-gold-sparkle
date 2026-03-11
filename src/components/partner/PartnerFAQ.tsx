@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import SectionHeader from '@/components/ui/SectionHeader';
 import {
   Accordion,
@@ -22,12 +21,7 @@ const PartnerFAQ = () => {
           centered
         />
         
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="max-w-3xl mx-auto mt-12"
-        >
+        <div className="animate-fade-up max-w-3xl mx-auto mt-12">
           <Accordion type="single" collapsible className="space-y-4">
             {faqKeys.map((key) => (
               <AccordionItem 
@@ -54,7 +48,7 @@ const PartnerFAQ = () => {
               </AccordionItem>
             ))}
           </Accordion>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
