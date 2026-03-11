@@ -8,7 +8,7 @@ const PartnerHero = () => {
   const bullets = ['bullet1', 'bullet2', 'bullet3'] as const;
 
   return (
-    <section className="relative py-24 md:py-36 overflow-hidden" dir="ltr">
+    <section className="relative py-14 md:py-28 overflow-hidden" dir="ltr">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
       <div className="neural-lines opacity-30" />
       

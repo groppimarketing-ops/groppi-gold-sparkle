@@ -199,7 +199,7 @@ const Careers = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center pt-32 pb-16">
+      <section className="relative flex items-center justify-center pt-16 pb-12 md:pt-28 md:pb-16">
         <div className="absolute inset-0 neural-lines opacity-30" />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <div className="animate-fade-up">
