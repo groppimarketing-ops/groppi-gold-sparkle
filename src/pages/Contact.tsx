@@ -317,11 +317,11 @@ const Contact = () => {
 
               {/* Additional Contact Info */}
               {contactInfoItems.map((info, index) => (
-                <GlassCard
-                  key={index}
-                  className="flex items-start gap-4 p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 group"
-                >
-                  <div className="w-14 h-14 rounded-2xl glass-card flex items-center justify-center shrink-0 border border-primary/30 shadow-lg shadow-primary/10 group-hover:scale-105 transition-transform duration-200">
+                    <GlassCard
+                      key={index}
+                      className="flex items-start gap-4 p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 group"
+                    >
+                      <div className="w-14 h-14 rounded-2xl border border-primary/30 bg-primary/15 flex items-center justify-center shrink-0 shadow-lg shadow-primary/10 group-hover:scale-105 transition-transform duration-200">
                     <info.icon className="w-7 h-7 text-primary drop-shadow-[0_0_8px_rgba(218,165,32,0.5)]" />
                   </div>
                   <div className="flex-1">
