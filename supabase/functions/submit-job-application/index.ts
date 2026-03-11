@@ -18,6 +18,15 @@ interface JobApplicationRequest {
   cvPath: string;
 }
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 const handler = async (req: Request): Promise<Response> => {
   console.log("Submit job application function called");
   
@@ -105,16 +114,16 @@ const handler = async (req: Request): Promise<Response> => {
         await resend.emails.send({
           from: "GROPPI Careers <onboarding@resend.dev>",
           to: ["info@groppi.be"],
-          subject: `New Job Application: ${body.role} - ${body.fullName}`,
+          subject: `New Job Application: ${escapeHtml(body.role)} - ${escapeHtml(body.fullName)}`,
           html: `
             <h1>New Job Application Received</h1>
-            <p><strong>Position:</strong> ${body.role}</p>
-            <p><strong>Name:</strong> ${body.fullName}</p>
-            <p><strong>Email:</strong> ${body.email}</p>
-            ${body.phone ? `<p><strong>Phone:</strong> ${body.phone}</p>` : ""}
-            ${body.linkedinUrl ? `<p><strong>LinkedIn/Portfolio:</strong> <a href="${body.linkedinUrl}">${body.linkedinUrl}</a></p>` : ""}
-            ${body.message ? `<p><strong>Message:</strong></p><p>${body.message}</p>` : ""}
-            ${cvSignedUrl ? `<p><strong>CV:</strong> <a href="${cvSignedUrl}">Download CV</a> (link expires in 7 days)</p>` : `<p><strong>CV Path:</strong> ${body.cvPath} (generate signed URL from admin panel)</p>`}
+            <p><strong>Position:</strong> ${escapeHtml(body.role)}</p>
+            <p><strong>Name:</strong> ${escapeHtml(body.fullName)}</p>
+            <p><strong>Email:</strong> ${escapeHtml(body.email)}</p>
+            ${body.phone ? `<p><strong>Phone:</strong> ${escapeHtml(body.phone)}</p>` : ""}
+            ${body.linkedinUrl ? `<p><strong>LinkedIn/Portfolio:</strong> <a href="${escapeHtml(body.linkedinUrl)}">${escapeHtml(body.linkedinUrl)}</a></p>` : ""}
+            ${body.message ? `<p><strong>Message:</strong></p><p>${escapeHtml(body.message)}</p>` : ""}
+            ${cvSignedUrl ? `<p><strong>CV:</strong> <a href="${cvSignedUrl}">Download CV</a> (link expires in 7 days)</p>` : `<p><strong>CV Path:</strong> ${escapeHtml(body.cvPath)} (generate signed URL from admin panel)</p>`}
             <hr />
             <p><em>Application submitted on ${new Date().toLocaleString("nl-BE")}</em></p>
           `,
