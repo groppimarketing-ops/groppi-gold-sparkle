@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Save, Eye, Image as ImageIcon, X, Check, Upload, Sparkles, Loader2 } from 'lucide-react';
+import { ArrowLeft, Save, Eye, Image as ImageIcon, X, Check, Upload, Sparkles, Loader2, RefreshCw } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
 import AdminLayout from '@/components/admin/AdminLayout';
@@ -97,6 +97,30 @@ const ArticleEditor = () => {
   const [showAiDialog, setShowAiDialog] = useState(false);
   const [aiTopic, setAiTopic] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
+  const [isRegeneratingImage, setIsRegeneratingImage] = useState(false);
+
+  const handleRegenerateImage = async () => {
+    const topic = article.title_en || article.title_ar || article.slug;
+    if (!topic) {
+      toast({ title: 'Missing info', description: 'Add a title before generating an image.', variant: 'destructive' });
+      return;
+    }
+    setIsRegeneratingImage(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('generate-article-image', {
+        body: { topic, title: article.title_en || article.title_ar },
+      });
+      if (error) throw error;
+      if (data?.error) throw new Error(data.error);
+      setArticle(prev => ({ ...prev, featured_image: data.imageUrl }));
+      toast({ title: '🎨 New image ready!', description: 'GROPPI branded cover image generated.' });
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : 'Image generation failed';
+      toast({ title: 'Error', description: msg, variant: 'destructive' });
+    } finally {
+      setIsRegeneratingImage(false);
+    }
+  };
 
   useEffect(() => {
     if (!isNew && id) {
@@ -448,36 +472,83 @@ const ArticleEditor = () => {
 
             {/* Featured Image */}
             <GlassCard className="p-4">
-              <Label>Featured Image</Label>
-              <div className="mt-2">
+              <div className="flex items-center justify-between mb-2">
+                <Label>Featured Image</Label>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="h-7 px-2 text-xs text-primary hover:bg-primary/10 gap-1"
+                  onClick={handleRegenerateImage}
+                  disabled={isRegeneratingImage}
+                  title="Generate a new GROPPI branded cover with AI"
+                >
+                  {isRegeneratingImage ? (
+                    <Loader2 className="w-3 h-3 animate-spin" />
+                  ) : (
+                    <RefreshCw className="w-3 h-3" />
+                  )}
+                  {isRegeneratingImage ? 'Generating…' : 'AI Image'}
+                </Button>
+              </div>
+              <div>
                 {article.featured_image ? (
-                  <div className="relative">
+                  <div className="relative group">
+                    {isRegeneratingImage && (
+                      <div className="absolute inset-0 z-10 bg-background/70 rounded-lg flex flex-col items-center justify-center gap-2">
+                        <Loader2 className="w-6 h-6 animate-spin text-primary" />
+                        <span className="text-xs text-primary font-medium">Generating GROPPI cover…</span>
+                      </div>
+                    )}
                     <img
                       src={article.featured_image}
                       alt="Featured"
                       className="w-full h-40 object-cover rounded-lg"
                     />
-                    <Button
-                      variant="destructive"
-                      size="icon"
-                      className="absolute top-2 right-2 h-8 w-8"
-                      onClick={() => setArticle(prev => ({ ...prev, featured_image: '' }))}
-                    >
-                      <X className="w-4 h-4" />
-                    </Button>
+                    <div className="absolute top-2 right-2 flex gap-1">
+                      <Button
+                        variant="secondary"
+                        size="icon"
+                        className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity"
+                        onClick={() => handleOpenMediaPicker('featured')}
+                        title="Select from Media Library"
+                      >
+                        <ImageIcon className="w-4 h-4" />
+                      </Button>
+                      <Button
+                        variant="destructive"
+                        size="icon"
+                        className="h-8 w-8"
+                        onClick={() => setArticle(prev => ({ ...prev, featured_image: '' }))}
+                      >
+                        <X className="w-4 h-4" />
+                      </Button>
+                    </div>
                   </div>
                 ) : (
-                  <motion.button
-                    onClick={() => handleOpenMediaPicker('featured')}
-                    className="w-full h-40 border-2 border-dashed border-primary/30 rounded-lg flex flex-col items-center justify-center gap-2 hover:border-primary/50 transition-colors"
-                    whileHover={{ scale: 1.01 }}
-                    whileTap={{ scale: 0.99 }}
-                  >
-                    <ImageIcon className="w-8 h-8 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">
-                      Click to select image
-                    </span>
-                  </motion.button>
+                  <div className="space-y-2">
+                    <motion.button
+                      onClick={() => handleOpenMediaPicker('featured')}
+                      className="w-full h-32 border-2 border-dashed border-primary/30 rounded-lg flex flex-col items-center justify-center gap-2 hover:border-primary/50 transition-colors"
+                      whileHover={{ scale: 1.01 }}
+                      whileTap={{ scale: 0.99 }}
+                    >
+                      <ImageIcon className="w-8 h-8 text-muted-foreground" />
+                      <span className="text-sm text-muted-foreground">Select from library</span>
+                    </motion.button>
+                    <Button
+                      variant="outline"
+                      className="w-full h-9 border-primary/30 hover:border-primary text-primary hover:bg-primary/10 text-xs gap-2"
+                      onClick={handleRegenerateImage}
+                      disabled={isRegeneratingImage}
+                    >
+                      {isRegeneratingImage ? (
+                        <Loader2 className="w-3 h-3 animate-spin" />
+                      ) : (
+                        <Sparkles className="w-3 h-3" />
+                      )}
+                      {isRegeneratingImage ? 'Generating GROPPI cover…' : 'Generate with AI'}
+                    </Button>
+                  </div>
                 )}
               </div>
             </GlassCard>
