@@ -290,7 +290,7 @@ const Contact = () => {
                     className="block hover:-translate-y-0.5 hover:scale-[1.01] transition-transform duration-200"
                   >
                     <GlassCard className="flex items-center gap-4 p-5 border border-primary/20 hover:border-primary/40 transition-all duration-300 group cursor-pointer">
-                      <div className={`w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 ${method.color} shadow-lg group-hover:scale-105 transition-transform duration-200`}>
+                      <div className={`w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 ${method.color} border border-white/10 shadow-lg group-hover:scale-105 transition-transform duration-200`}>
                         <method.icon className={`w-7 h-7 ${method.iconColor}`} />
                       </div>
                       <div className="flex-1">
