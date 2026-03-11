@@ -1,0 +1,1 @@
+INSERT INTO public.media (title, file_url, file_type, description) VALUES ('Blog Cover - Digital Marketing', 'https://dffmjqjokfccdnfutdmx.supabase.co/storage/v1/object/public/media/blog-test-cover.jpg', 'image/jpeg', 'Dark luxury golden network cover image for blog articles') ON CONFLICT DO NOTHING;
