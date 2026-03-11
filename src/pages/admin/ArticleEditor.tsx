@@ -93,6 +93,11 @@ const ArticleEditor = () => {
   const insertImageRef = useRef<((url: string) => void) | null>(null);
   const [mediaPickerMode, setMediaPickerMode] = useState<'featured' | 'content'>('featured');
 
+  // AI generation state
+  const [showAiDialog, setShowAiDialog] = useState(false);
+  const [aiTopic, setAiTopic] = useState('');
+  const [isGenerating, setIsGenerating] = useState(false);
+
   useEffect(() => {
     if (!isNew && id) {
       fetchArticle(id);
