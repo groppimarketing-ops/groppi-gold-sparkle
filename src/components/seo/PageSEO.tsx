@@ -5,6 +5,7 @@ import { getLangPath } from '@/utils/languageRouting';
 
 const SITE_URL = 'https://groppi.be';
 const SITE_NAME = 'GROPPI';
+// PNG kept for OG/Twitter — crawlers have inconsistent WebP support
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-poster.png`;
 const TWITTER_HANDLE = '@Groppimarketing';
 
