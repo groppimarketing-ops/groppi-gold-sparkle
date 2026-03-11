@@ -983,20 +983,21 @@
   }
 
   @media (max-width: 768px) {
-    /* 1) HERO — صحيح الارتفاع ليسع الكروت + social icons */
+    /* 1) HERO — ارتفاع مُضبوط: يسع الكروت + social icons بدون فراغ */
     .groppi-hero-pro {
-      height: 65vh;
-      min-height: 420px;
+      height: auto;
+      min-height: 320px;
+      padding-bottom: 60px; /* مساحة لـ social icons */
     }
 
     /* كروت الـ Hero — أصغر على موبايل */
     .groppi-card {
-      width: clamp(170px, 48vw, 220px);
+      width: clamp(155px, 44vw, 195px);
     }
 
     /* strip gap أصغر على موبايل */
     .groppi-strip-track {
-      gap: 12px;
+      gap: 10px;
     }
 
     /* social icons داخل الـ Hero — أقرب للأسفل */
