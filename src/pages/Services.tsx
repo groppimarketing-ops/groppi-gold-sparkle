@@ -90,7 +90,7 @@ const Services = () => {
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.services', 'Diensten'), path: '/services' }]} />
 
       {/* ─── Hero ─── */}
-      <section className="relative py-24 md:py-32 overflow-hidden">
+      <section className="relative py-12 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
         <div className="neural-lines opacity-30" />
         <div className="container mx-auto px-4 relative z-10">
