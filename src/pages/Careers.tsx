@@ -199,7 +199,7 @@ const Careers = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center pt-32 pb-16">
+      <section className="relative flex items-center justify-center pt-16 pb-12 md:pt-28 md:pb-16">
         <div className="absolute inset-0 neural-lines opacity-30" />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <div className="animate-fade-up">
@@ -233,7 +233,7 @@ const Careers = () => {
       </section>
 
       {/* Open Roles Section */}
-      <section id="roles" className="py-16 md:py-24">
+      <section id="roles" className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="animate-fade-up text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -282,7 +282,7 @@ const Careers = () => {
       </section>
 
       {/* Application Form Section */}
-      <section ref={formRef} className="py-16 md:py-24 bg-gradient-to-b from-transparent to-background/50">
+      <section ref={formRef} className="py-10 md:py-20 bg-gradient-to-b from-transparent to-background/50">
         <div className="container mx-auto px-4">
           <div className="animate-fade-up max-w-2xl mx-auto">
             <div className="text-center mb-10">
@@ -296,7 +296,7 @@ const Careers = () => {
 
             {isSuccess ? (
               <div className="glass-card p-8 text-center animate-scale-in">
-                <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
+                <CheckCircle className="h-16 w-16 text-primary mx-auto mb-4" />
                 <h3 className="text-2xl font-semibold mb-2">{t('careers.form.successTitle')}</h3>
                 <p className="text-muted-foreground mb-6">{t('careers.form.successMessage')}</p>
                 <Button onClick={() => setIsSuccess(false)} variant="outline">
