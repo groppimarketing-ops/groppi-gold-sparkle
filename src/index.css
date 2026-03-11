@@ -1125,15 +1125,15 @@
   .navbar,
   .sticky-header {
     height: auto !important;
-    min-height: 110px !important;
-    padding-block: 10px !important;
+    min-height: 88px !important;
+    padding-block: 8px !important;
     display: flex !important;
     align-items: center !important;
   }
 
   /* Content offset for fixed header */
   main {
-    margin-top: 110px !important;
+    margin-top: 88px !important;
   }
 
   /* Responsive header + content offset */
@@ -1142,12 +1142,12 @@
     .site-header,
     .navbar,
     .sticky-header {
-      min-height: 96px !important;
-      padding-block: 8px !important;
+      min-height: 80px !important;
+      padding-block: 6px !important;
     }
 
     main {
-      margin-top: 96px !important;
+      margin-top: 80px !important;
     }
   }
 
@@ -1156,11 +1156,13 @@
     .site-header,
     .navbar,
     .sticky-header {
-      min-height: 84px !important;
+      min-height: 68px !important;
+      padding-block: 4px !important;
     }
 
     main {
-      margin-top: 84px !important;
+      margin-top: 68px !important;
     }
   }
+}
 }
