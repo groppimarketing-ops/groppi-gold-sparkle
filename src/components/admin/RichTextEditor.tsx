@@ -171,31 +171,6 @@ const Toolbar = ({
 
       <Divider />
 
-      {/* Alignment */}
-      <ToolbarBtn
-        title="Align Left"
-        active={editor.isActive({ textAlign: 'left' })}
-        onClick={() => editor.chain().focus().setTextAlign('left').run()}
-      >
-        <AlignLeft className="w-4 h-4" />
-      </ToolbarBtn>
-      <ToolbarBtn
-        title="Align Center"
-        active={editor.isActive({ textAlign: 'center' })}
-        onClick={() => editor.chain().focus().setTextAlign('center').run()}
-      >
-        <AlignCenter className="w-4 h-4" />
-      </ToolbarBtn>
-      <ToolbarBtn
-        title="Align Right"
-        active={editor.isActive({ textAlign: 'right' })}
-        onClick={() => editor.chain().focus().setTextAlign('right').run()}
-      >
-        <AlignRight className="w-4 h-4" />
-      </ToolbarBtn>
-
-      <Divider />
-
       {/* Link */}
       <ToolbarBtn
         title="Insert / Edit Link"
