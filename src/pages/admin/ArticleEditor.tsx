@@ -528,7 +528,7 @@ const ArticleEditor = () => {
             </div>
             <div className="flex items-center gap-2 text-xs text-muted-foreground bg-muted/30 rounded-lg p-3">
               <Sparkles className="w-4 h-4 text-primary shrink-0" />
-              <span>Will fill: EN, AR, FR, NL — titles, excerpts &amp; full HTML content</span>
+              <span>Will generate: EN/AR/FR/NL content + a <strong className="text-primary">GROPPI branded cover image</strong> automatically</span>
             </div>
             <div className="flex justify-end gap-2">
               <Button variant="outline" onClick={() => setShowAiDialog(false)} disabled={isGenerating}>
