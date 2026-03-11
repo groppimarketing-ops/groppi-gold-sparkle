@@ -409,7 +409,7 @@ const ArticleEditor = () => {
                   </div>
                 ) : (
                   <motion.button
-                    onClick={handleOpenMediaPicker}
+                    onClick={() => handleOpenMediaPicker('featured')}
                     className="w-full h-40 border-2 border-dashed border-primary/30 rounded-lg flex flex-col items-center justify-center gap-2 hover:border-primary/50 transition-colors"
                     whileHover={{ scale: 1.01 }}
                     whileTap={{ scale: 0.99 }}
