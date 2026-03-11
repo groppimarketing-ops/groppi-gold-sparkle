@@ -164,7 +164,7 @@ const Contact = () => {
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.contact', 'Contact'), path: '/contact' }]} />
 
       {/* Hero Section */}
-      <section className="relative py-12 md:py-20 overflow-hidden">
+      <section className="relative py-8 md:py-14 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
         <div className="neural-lines opacity-30" />
         
@@ -179,7 +179,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-10 md:py-16">
+      <section className="pb-16 pt-0">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
