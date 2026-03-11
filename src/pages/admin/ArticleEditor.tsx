@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Save, Eye, Image as ImageIcon, X, Check, Upload } from 'lucide-react';
@@ -18,6 +18,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
+import RichTextEditor from '@/components/admin/RichTextEditor';
 
 interface MediaFile {
   id: string;
@@ -88,6 +89,9 @@ const ArticleEditor = () => {
   const [showMediaPicker, setShowMediaPicker] = useState(false);
   const [mediaFiles, setMediaFiles] = useState<MediaFile[]>([]);
   const [loadingMedia, setLoadingMedia] = useState(false);
+  // Callback for inserting image URL into the active RichTextEditor
+  const insertImageRef = useRef<((url: string) => void) | null>(null);
+  const [mediaPickerMode, setMediaPickerMode] = useState<'featured' | 'content'>('featured');
 
   useEffect(() => {
     if (!isNew && id) {
@@ -154,14 +158,20 @@ const ArticleEditor = () => {
     }
   };
 
-  const handleOpenMediaPicker = () => {
+  const handleOpenMediaPicker = (mode: 'featured' | 'content' = 'featured') => {
+    setMediaPickerMode(mode);
     setShowMediaPicker(true);
     fetchMedia();
   };
 
   const handleSelectMedia = (url: string) => {
-    setArticle(prev => ({ ...prev, featured_image: url }));
+    if (mediaPickerMode === 'content' && insertImageRef.current) {
+      insertImageRef.current(url);
+    } else {
+      setArticle(prev => ({ ...prev, featured_image: url }));
+    }
     setShowMediaPicker(false);
+    insertImageRef.current = null;
   };
 
   const generateSlug = (title: string) => {
@@ -341,15 +351,17 @@ const ArticleEditor = () => {
                     )}
 
                     <div>
-                      <Label htmlFor={`content_${lang.code}`}>Content ({lang.name})</Label>
-                      <Textarea
-                        id={`content_${lang.code}`}
-                        value={article[`content_${lang.code}` as keyof ArticleData] as string}
-                        onChange={(e) => setArticle(prev => ({ ...prev, [`content_${lang.code}`]: e.target.value }))}
-                        placeholder={`Write your article in ${lang.name}`}
-                        dir={lang.dir}
-                        className="mt-1 min-h-[300px]"
-                        rows={12}
+                      <Label className="mb-1 block">Content ({lang.name})</Label>
+                      <RichTextEditor
+                        value={article[`content_${lang.code}` as keyof ArticleData] as string || ''}
+                        onChange={(html) => setArticle(prev => ({ ...prev, [`content_${lang.code}`]: html }))}
+                        placeholder={`Write your article in ${lang.name}...`}
+                        dir={lang.dir as 'ltr' | 'rtl'}
+                        minHeight="340px"
+                        onInsertImage={(insertFn) => {
+                          insertImageRef.current = insertFn;
+                          handleOpenMediaPicker('content');
+                        }}
                       />
                     </div>
                   </TabsContent>
@@ -397,7 +409,7 @@ const ArticleEditor = () => {
                   </div>
                 ) : (
                   <motion.button
-                    onClick={handleOpenMediaPicker}
+                    onClick={() => handleOpenMediaPicker('featured')}
                     className="w-full h-40 border-2 border-dashed border-primary/30 rounded-lg flex flex-col items-center justify-center gap-2 hover:border-primary/50 transition-colors"
                     whileHover={{ scale: 1.01 }}
                     whileTap={{ scale: 0.99 }}
