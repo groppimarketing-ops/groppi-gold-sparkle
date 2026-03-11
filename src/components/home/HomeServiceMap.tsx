@@ -65,7 +65,7 @@ const HomeServiceMap = memo(() => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative py-20 lg:py-28 bg-background overflow-hidden">
+    <section className="relative py-10 lg:py-24 bg-background overflow-hidden">
       <WaveAnimation />
       <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] via-transparent to-primary/[0.03] pointer-events-none" />
 
