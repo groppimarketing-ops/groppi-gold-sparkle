@@ -1,8 +1,7 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import LangLink from '@/components/LangLink';
-import { motion } from 'framer-motion';
-import { 
+import {
   Globe, FileText, ShoppingCart, Video,
   Search, MapPin, MousePointerClick, BarChart3,
   Palette, Instagram, Film, Sparkles,
@@ -67,113 +66,64 @@ const HomeServiceMap = memo(() => {
 
   return (
     <section className="relative py-20 lg:py-28 bg-background overflow-hidden">
-      {/* Gold glow background — matches other page sections */}
       <WaveAnimation />
       <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] via-transparent to-primary/[0.03] pointer-events-none" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
-        {/* Section Header */}
+        {/* Header — CSS fade-up */}
         <div className="text-center mb-12 lg:mb-16">
-          <motion.span
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-primary mb-4"
-          >
+          <span className="animate-fade-up inline-block text-xs font-semibold tracking-[0.2em] uppercase text-primary mb-4">
             {t('home.serviceMap.label')}
-          </motion.span>
-          
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 gold-gradient-text"
-          >
+          </span>
+          <h2 className="animate-fade-up-2 text-3xl md:text-4xl lg:text-5xl font-bold mb-4 gold-gradient-text">
             {t('home.serviceMap.title')}
-          </motion.h2>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-muted-foreground text-lg max-w-2xl mx-auto"
-          >
+          </h2>
+          <p className="animate-fade-up-3 text-muted-foreground text-lg max-w-2xl mx-auto">
             {t('home.serviceMap.subtitle')}
-          </motion.p>
+          </p>
         </div>
 
-        {/* Service Grid - 4 Columns */}
+        {/* Service Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12 lg:mb-16">
           {serviceColumns.map((column, colIndex) => (
-            <motion.div
+            <div
               key={column.titleKey}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: colIndex * 0.1 }}
-              className="space-y-4"
+              className={`animate-fade-up-${colIndex + 2} space-y-4`}
             >
-              {/* Column Title */}
               <h3 className="text-lg font-bold text-foreground border-b border-primary/30 pb-3 mb-4">
                 {t(column.titleKey)}
               </h3>
-              
-              {/* Service Items — informational, not clickable */}
               <div className="space-y-1">
                 {column.services.map((service) => (
-                  <div
-                    key={service.labelKey}
-                    className="flex items-center gap-3 p-3 rounded-lg"
-                  >
+                  <div key={service.labelKey} className="flex items-center gap-3 p-3 rounded-lg">
                     <service.icon className="w-5 h-5 text-primary/70 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">
-                      {t(service.labelKey)}
-                    </span>
+                    <span className="text-sm text-muted-foreground">{t(service.labelKey)}</span>
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        {/* Bottom CTAs */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <Button
-            asChild
-            size="lg"
-            className="luxury-button min-w-[240px] group"
-          >
+        {/* CTAs */}
+        <div className="animate-fade-up-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Button asChild size="lg" className="luxury-button min-w-[240px] group">
             <LangLink to="/services">
               {t('home.serviceMap.cta.viewServices')}
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </LangLink>
           </Button>
-          
-          <Button
-            asChild
-            variant="outline"
-            size="lg"
-            className="glass-button min-w-[240px] group border-primary/30 hover:border-primary/50"
-          >
+          <Button asChild variant="outline" size="lg" className="glass-button min-w-[240px] group border-primary/30 hover:border-primary/50">
             <LangLink to="/services#calculator">
               <Calculator className="w-4 h-4 mr-2" />
               {t('home.serviceMap.cta.calculatePrice')}
             </LangLink>
           </Button>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
 });
 
 HomeServiceMap.displayName = 'HomeServiceMap';
-
 export default HomeServiceMap;
