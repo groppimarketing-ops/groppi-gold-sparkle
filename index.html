@@ -38,8 +38,9 @@
 
     <link rel="canonical" href="https://groppi.be/" />
 
-    <!-- LCP: preload hero poster (high-priority, desktop & mobile) -->
-    <link rel="preload" as="image" href="/images/hero-poster.png" fetchpriority="high" />
+    <!-- LCP: preload hero poster WebP (high-priority, desktop & mobile) -->
+    <!-- WebP is served to all modern browsers; PNG fallback via <picture> in HeroSection -->
+    <link rel="preload" as="image" href="/images/hero-poster.webp" fetchpriority="high" type="image/webp" />
 
     <!-- Critical assets: logo preloaded before parser reaches <img> tags -->
     <link rel="preload" as="image" href="/favicon.png" />
