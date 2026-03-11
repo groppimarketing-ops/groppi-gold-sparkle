@@ -97,6 +97,30 @@ const ArticleEditor = () => {
   const [showAiDialog, setShowAiDialog] = useState(false);
   const [aiTopic, setAiTopic] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
+  const [isRegeneratingImage, setIsRegeneratingImage] = useState(false);
+
+  const handleRegenerateImage = async () => {
+    const topic = article.title_en || article.title_ar || article.slug;
+    if (!topic) {
+      toast({ title: 'Missing info', description: 'Add a title before generating an image.', variant: 'destructive' });
+      return;
+    }
+    setIsRegeneratingImage(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('generate-article-image', {
+        body: { topic, title: article.title_en || article.title_ar },
+      });
+      if (error) throw error;
+      if (data?.error) throw new Error(data.error);
+      setArticle(prev => ({ ...prev, featured_image: data.imageUrl }));
+      toast({ title: '🎨 New image ready!', description: 'GROPPI branded cover image generated.' });
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : 'Image generation failed';
+      toast({ title: 'Error', description: msg, variant: 'destructive' });
+    } finally {
+      setIsRegeneratingImage(false);
+    }
+  };
 
   useEffect(() => {
     if (!isNew && id) {
