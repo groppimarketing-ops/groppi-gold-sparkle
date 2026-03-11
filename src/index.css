@@ -876,6 +876,15 @@
   .animate-fade-up-9 { animation: fade-in-up 0.5s 0.45s ease-out both; }
   .animate-fade-up-10 { animation: fade-in-up 0.5s 0.50s ease-out both; }
 
+  /* ===== WHO-WE-ARE play button — pure CSS pulse (replaces framer-motion infinite) ===== */
+  @keyframes play-pulse {
+    0%, 100% { transform: scale(1); }
+    50%       { transform: scale(1.06); }
+  }
+  .who-play-btn {
+    animation: play-pulse 2.5s ease-in-out infinite;
+  }
+
   /* ===== WHATSAPP BUTTON — pure CSS (replaces Framer Motion loops) ===== */
   @keyframes whatsapp-entrance {
     from { transform: scale(0); opacity: 0; }

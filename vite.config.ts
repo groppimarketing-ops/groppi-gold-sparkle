@@ -28,6 +28,9 @@ export default defineConfig(({ mode }) => ({
     dedupe: ["react", "react-dom", "react/jsx-runtime", "framer-motion"],
   },
   build: {
+    target: 'esnext',           // modern browsers only — smaller output, no legacy polyfills
+    minify: 'esbuild',
+    cssMinify: true,
     chunkSizeWarningLimit: 600,
     rollupOptions: {
       output: {
