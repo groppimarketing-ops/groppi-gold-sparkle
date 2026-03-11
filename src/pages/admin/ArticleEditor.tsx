@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Save, Eye, Image as ImageIcon, X, Check, Upload } from 'lucide-react';
@@ -18,6 +18,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
+import RichTextEditor from '@/components/admin/RichTextEditor';
 
 interface MediaFile {
   id: string;
