@@ -166,7 +166,8 @@ const HeroBgVideo = memo(({ interacted }: { interacted: boolean }) => {
 HeroBgVideo.displayName = 'HeroBgVideo';
 
 const HeroSocialIcons = memo(() => (
-  <div className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex items-center gap-4 md:gap-16 px-4 md:px-16 py-3 md:py-4 rounded-full"
+  <div
+    className="absolute bottom-3 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2 md:gap-16 px-3 md:px-16 py-2 md:py-4 rounded-full"
     style={{
       background: 'rgba(0, 0, 0, 0.55)',
       border: '1.5px solid hsl(43 76% 52% / 0.45)',
@@ -175,25 +176,22 @@ const HeroSocialIcons = memo(() => (
     }}
   >
     {socialIconsData.map((social) => (
-      <motion.a
+      <a
         key={social.label}
         href={social.href}
         target="_blank"
         rel="noopener noreferrer"
         aria-label={social.ariaLabel}
         onClick={() => trackEvent({ event: social.event, location: 'hero' })}
-        whileHover={{ scale: 1.75, y: -8 }}
-        whileTap={{ scale: 0.9 }}
-        transition={{ type: 'spring', stiffness: 300, damping: 10 }}
-        className="hero-social-icon relative flex items-center justify-center w-9 h-9 md:w-12 md:h-12 rounded-xl"
+        className="hero-social-icon relative flex items-center justify-center w-8 h-8 md:w-12 md:h-12 rounded-xl transition-transform duration-200 hover:scale-125 hover:-translate-y-1 active:scale-90"
         style={{
           background: 'hsl(0 0% 4%)',
           border: '1.5px solid hsl(43 76% 52% / 0.5)',
           boxShadow: '0 4px 12px rgba(0,0,0,0.4), inset 0 1px 0 hsl(43 76% 52% / 0.1)',
         }}
       >
-        <span style={{ color: 'hsl(43 76% 52%)' }}><social.icon className="h-5 w-5 relative z-[1]" /></span>
-      </motion.a>
+        <span style={{ color: 'hsl(43 76% 52%)' }}><social.icon className="h-4 w-4 md:h-5 md:w-5 relative z-[1]" /></span>
+      </a>
     ))}
   </div>
 ));
