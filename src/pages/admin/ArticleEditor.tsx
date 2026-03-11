@@ -351,15 +351,17 @@ const ArticleEditor = () => {
                     )}
 
                     <div>
-                      <Label htmlFor={`content_${lang.code}`}>Content ({lang.name})</Label>
-                      <Textarea
-                        id={`content_${lang.code}`}
-                        value={article[`content_${lang.code}` as keyof ArticleData] as string}
-                        onChange={(e) => setArticle(prev => ({ ...prev, [`content_${lang.code}`]: e.target.value }))}
-                        placeholder={`Write your article in ${lang.name}`}
-                        dir={lang.dir}
-                        className="mt-1 min-h-[300px]"
-                        rows={12}
+                      <Label className="mb-1 block">Content ({lang.name})</Label>
+                      <RichTextEditor
+                        value={article[`content_${lang.code}` as keyof ArticleData] as string || ''}
+                        onChange={(html) => setArticle(prev => ({ ...prev, [`content_${lang.code}`]: html }))}
+                        placeholder={`Write your article in ${lang.name}...`}
+                        dir={lang.dir as 'ltr' | 'rtl'}
+                        minHeight="340px"
+                        onInsertImage={(insertFn) => {
+                          insertImageRef.current = insertFn;
+                          handleOpenMediaPicker('content');
+                        }}
                       />
                     </div>
                   </TabsContent>
