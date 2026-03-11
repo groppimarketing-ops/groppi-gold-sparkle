@@ -1,9 +1,9 @@
-import { motion, useReducedMotion } from 'framer-motion';
 import { Eye, Users, ShoppingCart, ArrowRight, HelpCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { memo } from 'react';
+
 interface HomeQuickChoiceProps {
   onGoalSelect: (goal: 'visibility' | 'leads' | 'sales') => void;
 }
@@ -11,48 +11,35 @@ interface HomeQuickChoiceProps {
 const HomeQuickChoice = memo(({ onGoalSelect }: HomeQuickChoiceProps) => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar' || i18n.language === 'ur';
-  const prefersReducedMotion = useReducedMotion();
+
   const goals = [
     {
       id: 'visibility' as const,
       icon: Eye,
       titleKey: 'home.quickChoice.visibility.title',
-      descKey: 'home.quickChoice.visibility.desc',
-      services: ['Social Media', 'Content Productie'],
+      descKey:  'home.quickChoice.visibility.desc',
     },
     {
       id: 'leads' as const,
       icon: Users,
       titleKey: 'home.quickChoice.leads.title',
-      descKey: 'home.quickChoice.leads.desc',
-      services: ['Advertentie Beheer', 'SEO'],
+      descKey:  'home.quickChoice.leads.desc',
     },
     {
       id: 'sales' as const,
       icon: ShoppingCart,
       titleKey: 'home.quickChoice.sales.title',
-      descKey: 'home.quickChoice.sales.desc',
-      services: ['E-commerce Website', 'Ads Management'],
+      descKey:  'home.quickChoice.sales.desc',
     },
   ];
 
-  const itemVariants = prefersReducedMotion
-    ? { hidden: { opacity: 0 }, visible: { opacity: 1 } }
-    : { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } };
-
   return (
     <section className="section-spacing relative overflow-hidden">
-      {/* Background subtle effect */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
-        {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
+        {/* Section Header — CSS fade */}
+        <div className="animate-fade-up text-center mb-12">
           <div className="inline-flex items-center gap-2 text-primary mb-4">
             <HelpCircle className="w-5 h-5" />
             <span className="text-sm font-medium uppercase tracking-wider">
@@ -65,50 +52,39 @@ const HomeQuickChoice = memo(({ onGoalSelect }: HomeQuickChoiceProps) => {
           <p className="text-muted-foreground max-w-xl mx-auto">
             {t('home.quickChoice.subtitle')}
           </p>
-        </motion.div>
+        </div>
 
-        {/* Goal Cards */}
+        {/* Goal Cards — CSS stagger */}
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {goals.map((goal, index) => (
             <GlassCard
               key={goal.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.15 }}
-              className="group relative p-8 text-center hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] hover:-translate-y-1 transition-all duration-500 cursor-pointer"
+              className={`animate-fade-up-${index + 1} group relative p-8 text-center hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] cursor-pointer`}
+              hover3D={false}
+              glowOnHover={false}
               onClick={() => onGoalSelect(goal.id)}
             >
-              {/* Hover glow - gold only */}
+              {/* Hover glow overlay */}
               <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/0 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <motion.div
-                className="absolute inset-0 rounded-xl"
-                whileHover={{
-                  boxShadow: '0 0 45px hsl(var(--gold) / 0.22)',
-                }}
-              />
-              
+
               {/* Icon */}
-              <motion.div
-                className="w-16 h-16 rounded-full glass-card flex items-center justify-center mx-auto mb-6 border border-primary/30"
-                whileHover={{ scale: 1.1, rotate: 5 }}
-              >
+              <div className="w-16 h-16 rounded-full glass-card flex items-center justify-center mx-auto mb-6 border border-primary/30 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                 <goal.icon className="w-8 h-8 text-primary" />
-              </motion.div>
+              </div>
 
               {/* Title */}
-              <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors relative">
                 {t(goal.titleKey)}
               </h3>
 
               {/* Description */}
-              <p className="text-muted-foreground text-sm mb-6">
+              <p className="text-muted-foreground text-sm mb-6 relative">
                 {t(goal.descKey)}
               </p>
 
               {/* CTA Button */}
               <Button
-                className="w-full glass-button group/btn hover:border-primary/60 hover:shadow-[0_0_25px_hsl(var(--gold)/0.22)]"
+                className="w-full glass-button group/btn hover:border-primary/60 hover:shadow-[0_0_25px_hsl(var(--gold)/0.22)] relative"
                 variant="outline"
               >
                 <span>{t('home.quickChoice.cta')}</span>
@@ -123,5 +99,4 @@ const HomeQuickChoice = memo(({ onGoalSelect }: HomeQuickChoiceProps) => {
 });
 
 HomeQuickChoice.displayName = 'HomeQuickChoice';
-
 export default HomeQuickChoice;

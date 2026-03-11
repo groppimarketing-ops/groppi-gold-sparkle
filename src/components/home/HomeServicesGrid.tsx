@@ -1,5 +1,4 @@
-import { forwardRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import { forwardRef, useState, lazy, Suspense } from 'react';
 import { Camera, Globe, ShoppingCart, Megaphone, Search, Share2, Award, Play, ArrowRight, Calculator, Smartphone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import LangLink from '@/components/LangLink';
@@ -7,13 +6,15 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import HomeServiceModal from './HomeServiceModal';
 import {
   SERVICE_PRICING_CONFIG,
   getPriceDisplayString,
   getPriceSuffix,
   type ServicePricingConfig,
 } from '@/config/pricingConfig';
+
+// Lazy-load the heavy service modal
+const HomeServiceModal = lazy(() => import('./HomeServiceModal'));
 
 export interface HomeServiceData {
   id: string;
@@ -22,7 +23,6 @@ export interface HomeServiceData {
   descKey: string;
   deliverables: string[];
   videoUrl?: string;
-  // Pricing from central config
   pricingConfig: ServicePricingConfig;
 }
 
@@ -135,11 +135,9 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
   return (
     <>
       <section ref={ref} id="services-section" className="section-spacing relative overflow-hidden">
-        {/* Background */}
         <div className="absolute inset-0 neural-lines opacity-20" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
-          {/* Section Header */}
           <SectionHeader
             subtitle={t('home.servicesGrid.subtitle')}
             title={t('home.servicesGrid.title')}
@@ -151,20 +149,21 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {services.map((service, index) => {
               const priceDisplay = getPriceDisplayString(service.pricingConfig, t);
-              const priceSuffix = getPriceSuffix(service.pricingConfig, t);
-              
+              const priceSuffix  = getPriceSuffix(service.pricingConfig, t);
+              const stagger = Math.min(index + 1, 10);
+
               return (
                 <GlassCard
                   key={service.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className={`group relative p-6 flex flex-col h-full transition-all duration-500 hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] hover:-translate-y-1 cursor-pointer ${
-                    highlightedServices.includes(service.id) ? 'ring-2 ring-primary/60 shadow-[0_0_50px_hsl(var(--gold)/0.25)]' : ''
+                  className={`animate-fade-up-${stagger} group relative p-6 flex flex-col h-full transition-all duration-500 hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] hover:-translate-y-1 cursor-pointer ${
+                    highlightedServices.includes(service.id)
+                      ? 'ring-2 ring-primary/60 shadow-[0_0_50px_hsl(var(--gold)/0.25)]'
+                      : ''
                   } ${service.id === featuredServiceId ? 'ring-1 ring-primary/40' : ''}`}
+                  hover3D={false}
+                  glowOnHover={false}
                 >
-                  {/* Featured Badge — pure CSS glow, no Framer loop */}
+                  {/* Featured Badge */}
                   {service.id === featuredServiceId && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 badge-glow-pulse rounded-full">
                       <Badge className="bg-primary/90 text-primary-foreground gap-1.5 px-3 py-1">
@@ -174,22 +173,13 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                     </div>
                   )}
 
-                  {/* Hover glow - gold only */}
+                  {/* Hover glow */}
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/0 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <motion.div
-                    className="absolute inset-0 rounded-xl pointer-events-none"
-                    whileHover={{
-                      boxShadow: '0 0 30px hsl(43 100% 50% / 0.15)',
-                    }}
-                  />
 
                   {/* Icon */}
-                  <motion.div
-                    className="relative w-14 h-14 rounded-xl glass-card flex items-center justify-center mb-4 border border-primary/20"
-                    whileHover={{ rotate: 5, scale: 1.1 }}
-                  >
+                  <div className="relative w-14 h-14 rounded-xl glass-card flex items-center justify-center mb-4 border border-primary/20 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                     <service.icon className="w-7 h-7 text-primary" />
-                  </motion.div>
+                  </div>
 
                   {/* Title */}
                   <h3 className="relative text-xl font-bold mb-2 group-hover:text-primary transition-colors">
@@ -201,7 +191,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                     {t(service.descKey)}
                   </p>
 
-                  {/* Price - from centralized config */}
+                  {/* Price */}
                   <div className="relative mb-4 p-3 rounded-lg bg-primary/5 border border-primary/10">
                     <div className="flex items-baseline gap-2">
                       <span className="text-2xl font-bold text-primary">{priceDisplay}</span>
@@ -209,12 +199,10 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                         <span className="text-xs text-muted-foreground">{priceSuffix}</span>
                       )}
                     </div>
-                    <span className="text-[10px] text-muted-foreground">
-                      {t('pricing.vatExcluded')}
-                    </span>
+                    <span className="text-[10px] text-muted-foreground">{t('pricing.vatExcluded')}</span>
                   </div>
 
-                  {/* Deliverables Preview */}
+                  {/* Deliverables */}
                   <div className="relative mb-6 space-y-2">
                     {service.deliverables.slice(0, 3).map((deliverable, idx) => (
                       <div key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -234,7 +222,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                       {t('home.servicesGrid.viewDetails')}
                       <ArrowRight className={`w-4 h-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
                     </Button>
-                    
+
                     <div className="grid grid-cols-2 gap-2">
                       <Button
                         variant="outline"
@@ -247,7 +235,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                           <span className={isRTL ? 'mr-1' : 'ml-1'}>{t('home.servicesGrid.watchVideo')}</span>
                         </LangLink>
                       </Button>
-                      
+
                       {service.pricingConfig.hasCalculator ? (
                         <Button
                           variant="outline"
@@ -276,12 +264,7 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
           </div>
 
           {/* View all services CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex justify-center mt-14"
-          >
+          <div className="animate-fade-up flex justify-center mt-14">
             <Button
               asChild
               size="lg"
@@ -292,35 +275,30 @@ const HomeServicesGrid = forwardRef<HTMLElement, HomeServicesGridProps>(({ highl
                 <ArrowRight className="w-5 h-5 ml-2" />
               </LangLink>
             </Button>
-          </motion.div>
+          </div>
 
           {/* Decorative divider */}
-          <motion.div
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mt-16 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"
-          />
+          <div className="mt-16 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
         </div>
       </section>
 
-      {/* Service Modal */}
-      {selectedService && (
-        <HomeServiceModal
-          isOpen={isModalOpen}
-          onClose={() => {
-            setIsModalOpen(false);
-            setSelectedService(null);
-          }}
-          service={selectedService}
-          initialTab={activeTab}
-        />
+      {/* Lazy modal — loads JS only when user clicks "View Details" */}
+      {isModalOpen && selectedService && (
+        <Suspense fallback={null}>
+          <HomeServiceModal
+            isOpen={isModalOpen}
+            onClose={() => {
+              setIsModalOpen(false);
+              setSelectedService(null);
+            }}
+            service={selectedService}
+            initialTab={activeTab}
+          />
+        </Suspense>
       )}
     </>
   );
 });
 
 HomeServicesGrid.displayName = 'HomeServicesGrid';
-
 export default HomeServicesGrid;
