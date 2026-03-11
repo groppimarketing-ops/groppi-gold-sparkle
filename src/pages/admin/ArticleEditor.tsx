@@ -335,6 +335,14 @@ const ArticleEditor = () => {
           <div className="flex items-center gap-2">
             <Button
               variant="outline"
+              onClick={() => setShowAiDialog(true)}
+              className="border-primary/40 hover:border-primary text-primary hover:bg-primary/10"
+            >
+              <Sparkles className="w-4 h-4 mr-2" />
+              Generate with AI
+            </Button>
+            <Button
+              variant="outline"
               onClick={() => handleSave(false)}
               disabled={isSaving}
             >
