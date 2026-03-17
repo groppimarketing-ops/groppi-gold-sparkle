@@ -213,7 +213,21 @@ const HeroSection = memo(() => {
         → browser reuses the preloaded asset, ZERO duplicate network request.
         fetchpriority="high" + decoding="sync" for fastest LCP.
       */}
+      {/*
+        Mobile: portrait-optimised WebP (390×844) served to ≤767px screens.
+        Desktop: wider landscape WebP served to ≥768px screens.
+        fetchpriority="high" + decoding="sync" for fastest LCP.
+        Both images are preloaded in index.html so the browser reuses them — zero duplicate requests.
+      */}
       <picture className="groppi-bg md:hidden">
+        {/* Mobile-specific portrait crop — much smaller file, correct aspect for phones */}
+        <source
+          srcSet="/images/hero-poster-mobile.webp 390w, /images/hero-poster.webp 768w"
+          sizes="(max-width: 767px) 390px, 768px"
+          type="image/webp"
+          media="(max-width: 767px)"
+        />
+        {/* WebP fallback for slightly wider viewports */}
         <source srcSet="/images/hero-poster.webp" type="image/webp" />
         <img
           src="/images/hero-poster.png"
