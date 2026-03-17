@@ -101,7 +101,7 @@ const PortfolioCard = memo(forwardRef<HTMLElement, PortfolioCardProps>(({
       </button>
     </motion.article>
   );
-});
+}));
 
 PortfolioCard.displayName = 'PortfolioCard';
 export default PortfolioCard;
