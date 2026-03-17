@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
-import logo from '@/assets/groppi-logo.png';
+import logo from '@/assets/groppi-logo.png?format=webp&quality=90';
 
 interface AdminLayoutProps {
   children: ReactNode;

@@ -18,7 +18,7 @@ import {
   DialogDescription,
 } from '@/components/ui/dialog';
 import GlassCard from '@/components/ui/GlassCard';
-import logo from '@/assets/groppi-logo.png';
+import logo from '@/assets/groppi-logo.png?format=webp&quality=90';
 
 const loginSchema = z.object({
   email: z.string().email('Please enter a valid email address'),

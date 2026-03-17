@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import LangLink from '@/components/LangLink';
 import { Mail, Phone, MapPin, Send, MessageCircle, Calendar, Smartphone, Loader2, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import groppiLogo from '@/assets/groppi-logo.png';
+import groppiLogo from '@/assets/groppi-logo.png?format=webp&quality=90';
 import { trackEvent, socialLinks as socialUrls, contactInfo } from '@/utils/tracking';
 import SocialIconsPill from '@/components/shared/SocialIconsPill';
 import { supabase } from '@/integrations/supabase/client';

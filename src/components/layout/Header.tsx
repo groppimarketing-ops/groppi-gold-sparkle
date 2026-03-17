@@ -16,7 +16,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import groppiLogo from '@/assets/groppi-logo.png';
+import groppiLogo from '@/assets/groppi-logo.png?format=webp&quality=90';
 import { trackEvent, socialLinks as socialUrls } from '@/utils/tracking';
 import { getCurrentLangFromPath, getBasePath, getLangPath } from '@/utils/languageRouting';
 

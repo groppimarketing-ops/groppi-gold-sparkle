@@ -6,7 +6,7 @@ import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import GlassCard from '@/components/ui/GlassCard';
-import logo from '@/assets/groppi-logo.png';
+import logo from '@/assets/groppi-logo.png?format=webp&quality=90';
 
 const ResetPassword = () => {
   const navigate = useNavigate();
