@@ -143,14 +143,19 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks(id) {
+          // react-i18next MUST be in the same chunk as React because it calls
+          // React.createContext() at module evaluation time. If it lands in a
+          // separate chunk that loads before react-core, React is undefined →
+          // "Cannot read properties of undefined (reading 'createContext')".
           if (id.includes('node_modules/react/') ||
               id.includes('node_modules/react-dom/') ||
               id.includes('node_modules/react-router-dom/') ||
-              id.includes('node_modules/@remix-run/')) {
+              id.includes('node_modules/@remix-run/') ||
+              id.includes('node_modules/react-i18next')) {
             return 'react-core';
           }
+          // Pure i18next packages have no React dependency — safe in own chunk
           if (id.includes('node_modules/i18next') ||
-              id.includes('node_modules/react-i18next') ||
               id.includes('node_modules/i18next-browser-languagedetector') ||
               id.includes('node_modules/i18next-resources-to-backend')) {
             return 'i18n';
