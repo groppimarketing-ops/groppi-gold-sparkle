@@ -113,6 +113,11 @@
     @apply border-border;
   }
 
+  html {
+    /* Prevents scrollbar appearing/disappearing from causing a layout shift (CLS) */
+    scrollbar-gutter: stable;
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', 'Noto Sans Arabic', sans-serif;
