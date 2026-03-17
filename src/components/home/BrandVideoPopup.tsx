@@ -40,11 +40,20 @@ const BrandVideoPopup = memo(() => {
     return () => window.removeEventListener('keydown', handler);
   }, [open, close]);
 
-  // Prevent body scroll while open
+  // Prevent body scroll while open — use scrollbar-gutter instead of overflow:hidden
+  // to avoid triggering a layout shift (CLS) when the scrollbar appears/disappears
   useEffect(() => {
-    if (open) document.body.style.overflow = 'hidden';
-    else document.body.style.overflow = '';
-    return () => { document.body.style.overflow = ''; };
+    if (open) {
+      document.documentElement.style.setProperty('overflow', 'hidden');
+      document.documentElement.style.setProperty('scrollbar-gutter', 'stable');
+    } else {
+      document.documentElement.style.removeProperty('overflow');
+      document.documentElement.style.removeProperty('scrollbar-gutter');
+    }
+    return () => {
+      document.documentElement.style.removeProperty('overflow');
+      document.documentElement.style.removeProperty('scrollbar-gutter');
+    };
   }, [open]);
 
   return (

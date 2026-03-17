@@ -65,11 +65,12 @@ const CookieConsent = () => {
     <AnimatePresence>
       {visible && (
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
+          initial={{ y: '100%', opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 100, opacity: 0 }}
-          transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+          exit={{ y: '100%', opacity: 0 }}
+          transition={{ type: 'spring', damping: 30, stiffness: 350 }}
           className="fixed bottom-0 left-0 right-0 z-[9999] p-4 md:p-6"
+          style={{ willChange: 'transform' }}
         >
           <div className="max-w-4xl mx-auto glass-card border border-primary/20 rounded-2xl p-5 md:p-6 shadow-2xl shadow-black/40">
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
