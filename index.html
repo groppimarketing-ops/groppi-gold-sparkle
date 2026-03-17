@@ -38,10 +38,22 @@
 
     <link rel="canonical" href="https://groppi.be/" />
 
-    <!-- LCP: preload hero poster WebP (high-priority, desktop & mobile) -->
-    <!-- WebP is served to all modern browsers; PNG fallback via <picture> in HeroSection -->
-    <!-- imagesizes helps browser allocate correct space early, reducing CLS -->
-    <link rel="preload" as="image" href="/images/hero-poster.webp" fetchpriority="high" type="image/webp" imagesizes="100vw" />
+    <!-- LCP: preload responsive hero posters -->
+    <!-- Mobile (≤767px): portrait-optimised WebP, much smaller file -->
+    <link rel="preload" as="image"
+      href="/images/hero-poster-mobile.webp"
+      imagesrcset="/images/hero-poster-mobile.webp 390w"
+      imagesizes="(max-width: 767px) 390px, 0px"
+      fetchpriority="high"
+      type="image/webp"
+      media="(max-width: 767px)" />
+    <!-- Desktop (≥768px): landscape WebP -->
+    <link rel="preload" as="image"
+      href="/images/hero-poster.webp"
+      imagesizes="100vw"
+      fetchpriority="high"
+      type="image/webp"
+      media="(min-width: 768px)" />
 
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="manifest" href="/site.webmanifest" />
