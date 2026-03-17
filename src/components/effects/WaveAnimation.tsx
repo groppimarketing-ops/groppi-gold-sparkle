@@ -1,5 +1,3 @@
-import { useReducedMotion } from 'framer-motion';
-
 interface WaveAnimationProps {
   intensity?: 'low' | 'medium' | 'high';
   className?: string;
@@ -7,18 +5,16 @@ interface WaveAnimationProps {
 
 /**
  * Lightweight gold ambient glow — pure CSS, no JS animations.
- * Replaces the previous heavy SVG wave + particles + diagonal ray.
+ * Always rendered in the DOM to prevent CLS (no conditional JS removal).
+ * Hidden via CSS @media (prefers-reduced-motion: reduce) at display layer.
  */
 const WaveAnimation = ({ intensity = 'medium', className = '' }: WaveAnimationProps) => {
-  const prefersReducedMotion = useReducedMotion();
-  if (prefersReducedMotion) return null;
-
   const opacityMap = { low: 0.08, medium: 0.14, high: 0.22 };
   const opacity = opacityMap[intensity];
 
   return (
     <div
-      className={`absolute inset-0 pointer-events-none ${className}`}
+      className={`absolute inset-0 pointer-events-none wave-animation-root ${className}`}
       style={{ zIndex: 0 }}
       aria-hidden="true"
     >

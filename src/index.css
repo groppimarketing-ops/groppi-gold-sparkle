@@ -1089,6 +1089,8 @@
   @media (prefers-reduced-motion: reduce) {
     .groppi-strip-track { animation: none; }
     .hero-gold-rain { display: none; }
+    /* Hide WaveAnimation via CSS instead of JS to prevent CLS */
+    .wave-animation-root { display: none; }
   }
 
   /* === Depth Effect (9 cards) === */

@@ -40,7 +40,8 @@
 
     <!-- LCP: preload hero poster WebP (high-priority, desktop & mobile) -->
     <!-- WebP is served to all modern browsers; PNG fallback via <picture> in HeroSection -->
-    <link rel="preload" as="image" href="/images/hero-poster.webp" fetchpriority="high" type="image/webp" />
+    <!-- imagesizes helps browser allocate correct space early, reducing CLS -->
+    <link rel="preload" as="image" href="/images/hero-poster.webp" fetchpriority="high" type="image/webp" imagesizes="100vw" />
 
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="manifest" href="/site.webmanifest" />
