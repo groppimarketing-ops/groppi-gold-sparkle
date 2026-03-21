@@ -201,23 +201,34 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
               {t('footer.newsletter.description')}
             </p>
             {isSubscribed ? (
-              <div className="flex items-center gap-2 text-sm text-primary">
-                <CheckCircle className="h-5 w-5" />
+              <div className="flex items-center gap-2 text-sm text-primary" role="status" aria-live="polite">
+                <CheckCircle className="h-5 w-5" aria-hidden="true" />
                 <span>{t('footer.newsletter.subscribed')}</span>
               </div>
             ) : (
-              <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
+              <form onSubmit={handleNewsletterSubmit} className="flex gap-2" noValidate>
+                <label htmlFor="newsletter-email" className="sr-only">
+                  {t('footer.newsletter.placeholder')}
+                </label>
                 <input
+                  id="newsletter-email"
                   type="email"
                   value={newsletterEmail}
                   onChange={(e) => setNewsletterEmail(e.target.value)}
                   placeholder={t('footer.newsletter.placeholder')}
                   required
                   disabled={isSubmitting}
+                  autoComplete="email"
+                  aria-required="true"
                   className="flex-1 px-4 py-3 glass-card !rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 bg-transparent disabled:opacity-50"
                 />
-                <Button type="submit" disabled={isSubmitting} className="luxury-button !rounded-xl !px-4">
-                  {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  aria-label={t('footer.newsletter.title')}
+                  className="luxury-button !rounded-xl !px-4"
+                >
+                  {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : <Send className="h-4 w-4" aria-hidden="true" />}
                 </Button>
               </form>
             )}
