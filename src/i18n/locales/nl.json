@@ -185,37 +185,23 @@
   },
   "common": {
     "loading": "Laden...",
-    "error": "Er is iets misgegaan",
+    "error": "Er is een fout opgetreden",
     "retry": "Opnieuw proberen",
-    "cancel": "Annuleren",
-    "save": "Opslaan",
-    "delete": "Verwijderen",
-    "edit": "Bewerken",
-    "close": "Sluiten",
-    "submit": "Verzenden",
+    "back": "Terug",
     "next": "Volgende",
     "previous": "Vorige",
-    "back": "Terug",
-    "continue": "Doorgaan",
-    "viewMore": "Meer bekijken",
-    "viewAll": "Alles bekijken",
-    "learnMore": "Meer info",
+    "close": "Sluiten",
+    "search": "Zoeken",
+    "noResults": "Geen resultaten gevonden",
+    "learnMore": "Meer informatie",
     "getStarted": "Aan de slag",
-    "contactUs": "Contacteer ons",
-    "scheduleCall": "Plan een gesprek",
-    "requestQuote": "Vraag offerte aan",
-    "required": "Verplicht",
-    "optional": "Optioneel",
-    "brandName": "GROPPI",
-    "fullscreen": "Volledig scherm"
+    "viewAll": "Bekijk alles"
   },
   "validation": {
     "required": "Dit veld is verplicht",
     "email": "Voer een geldig e-mailadres in",
-    "phone": "Voer een geldig telefoonnummer in",
-    "minLength": "Minimaal {{min}} tekens vereist",
-    "maxLength": "Maximaal {{max}} tekens toegestaan",
-    "invalidUrl": "Voer een geldige URL in"
+    "minLength": "Minimaal {{count}} tekens vereist",
+    "maxLength": "Maximaal {{count}} tekens toegestaan"
   },
   "forms": {
     "name": "Naam",
@@ -936,6 +922,10 @@
       "text": "Laten we samen ontdekken hoe we je digitale aanwezigheid kunnen versterken.",
       "bookConsultation": "Plan een gratis gesprek",
       "contactUs": "Neem contact op"
+    },
+    "teamLink": {
+      "text": "Ontmoet ons leiderschap en wereldwijd team op de",
+      "linkLabel": "Ons Team pagina"
     }
   },
   "ai": {
@@ -948,13 +938,9 @@
     "subtitle": "Wat wij bieden",
     "description": "Wij werken niet met vaste pakketten. Elke dienst wordt afgestemd op de doelstellingen van de klant en uitgevoerd door een gespecialiseerd team, ondersteund door slimme technologie waar dat waarde toevoegt.",
     "card": {
-      "requestQuote": "Offerte aanvragen",
-      "viewDetails": "Meer info",
-      "watchHowItWorks": "Bekijk hoe het werkt (60 sec)",
-      "buildYourPlan": "Stel je plan samen",
-      "watchVideo": "Bekijk video",
-      "buildPlan": "Stel plan samen",
-      "calculatorHint": "Bereken je prijs in 60 sec"
+      "watchVideo": "Bekijk hoe het werkt (60 sec)",
+      "buildPlan": "Stel je plan samen",
+      "calculatorHint": "Krijg meteen een richtprijs"
     },
     "badges": {
       "monthly": "Maandelijks",
@@ -997,11 +983,6 @@
         "description": "Zet verkeer om in echte omzet.",
         "cta": "Bouw mijn opzet"
       }
-    },
-    "card": {
-      "watchVideo": "Bekijk hoe het werkt (60 sec)",
-      "buildPlan": "Stel je plan samen",
-      "calculatorHint": "Krijg meteen een richtprijs"
     },
     "videoModal": {
       "continueToDetails": "Verder naar details",
@@ -1279,9 +1260,9 @@
         "title": "Mobiele App Ontwikkeling",
         "description": "Lanceer een snelle iOS & Android app met een native feel — gebouwd voor groei.",
         "features": {
-           "0": "iOS & Android (native gevoel)",
-           "1": "Strak UX-ontwerp + snelle prestaties",
-           "2": "App Store & Play Store lancering",
+          "0": "iOS & Android (native gevoel)",
+          "1": "Strak UX-ontwerp + snelle prestaties",
+          "2": "App Store & Play Store lancering",
           "3": "Backend & API-integraties"
         }
       }
@@ -1379,11 +1360,56 @@
     }
   },
   "blog": {
-    "title": "Inzichten & Tips",
-    "subtitle": "Blijf op de hoogte",
-    "readMore": "Lees meer",
-    "publishedOn": "Gepubliceerd op",
-    "by": "door"
+    "title": "Inzichten & Strategieën",
+    "subtitle": "Praktische inzichten over digitale groei, marketing en online prestaties.",
+    "badge": "Blog",
+    "metaTitle": "Blog | Digital Marketing Tips voor Belgische Bedrijven",
+    "metaDescription": "Praktische marketingtips voor KMO's in België: website-optimalisatie, SEO, social media en advertenties. Lees onze gratis gidsen.",
+    "featured": "Uitgelicht",
+    "readArticle": "Lees artikel",
+    "minRead": "min lezen",
+    "backToArticles": "Terug naar artikels",
+    "shareArticle": "Deel dit artikel",
+    "contactUs": "Contacteer ons",
+    "relatedArticles": "Gerelateerde Artikels",
+    "relatedServices": "Gerelateerde diensten",
+    "articles": {
+      "websiteSalesTool": {
+        "title": "Waarom je website je sterkste verkooptool is in 2025",
+        "excerpt": "Je website is meer dan een digitale brochure. In 2025 is het je belangrijkste verkoopinstrument. Hier is waarom en wat je eraan kunt doen.",
+        "metaTitle": "Website als verkooptool | Tips voor bedrijven in België",
+        "metaDescription": "Ontdek waarom je website het belangrijkste verkoopinstrument is voor je Belgisch bedrijf. Praktische tips voor snelheid, structuur en conversie.",
+        "content": "<h2>Je website is niet langer optioneel</h2><p>In 2025 is je website niet gewoon een plek waar mensen over je bedrijf leren. Het is je belangrijkste verkooptool. Voordat een potentiële klant de telefoon oppakt of een e-mail stuurt, hebben ze je website al bezocht. Ze hebben al een mening gevormd.</p><p>De vraag is simpel: helpt je website je om deals te sluiten, of kost het je kansen?</p><h2>Eerste indrukken gebeuren online</h2><p>Studies tonen aan dat mensen binnen 0,05 seconden een mening vormen over een website. Dat is sneller dan een knipoog. Als je website er verouderd uitziet, langzaam laadt of moeilijk te navigeren is, vertrekken bezoekers. Ze komen niet terug.</p><p>Je website is je eerste indruk. Het moet direct vertrouwen, professionaliteit en duidelijkheid communiceren.</p><h3>Snelheid telt</h3><p>Een website die langer dan 3 seconden laadt, verliest meer dan 50% van de bezoekers. Snelheid is geen luxe. Het is een noodzaak. Mobiele gebruikers zijn bijzonder ongeduldig. Als je website niet geoptimaliseerd is voor snelheid, verlies je elke dag potentiële klanten.</p><h2>Structuur creëert conversies</h2><p>Een mooie website is niet genoeg. Het moet bezoekers naar een specifieke actie leiden. Of dat nu een formulier invullen is, bellen of een bestelling plaatsen, het pad moet duidelijk zijn.</p><p>Goede structuur omvat:</p><ul><li>Duidelijke navigatie zonder verwarring</li><li>Een prominente call-to-action op elke pagina</li><li>Vertrouwenssignalen zoals reviews, certificeringen en klantenlogo's</li><li>Makkelijk te vinden contactinformatie</li></ul><h2>Veelgemaakte fouten door bedrijven</h2><p>Veel bedrijven behandelen hun website als een eenmalig project. Ze bouwen het, vergeten het en vragen zich af waarom het niet presteert. Dit zijn de meest voorkomende fouten:</p><h3>Geen duidelijk doel</h3><p>Als je niet weet wat je wilt dat bezoekers doen, weten zij het ook niet. Elke pagina heeft een doel nodig.</p><h3>Te veel informatie</h3><p>Bezoekers lezen niet alles. Ze scannen. Houd je tekst beknopt en gebruik koppen om het oog te leiden.</p><h3>Mobiele gebruikers negeren</h3><p>Meer dan 60% van het verkeer komt van mobiele apparaten. Als je website niet mobiel-vriendelijk is, negeer je de meerderheid van je publiek.</p><h2>Wat je vandaag kunt doen</h2><p>Begin met een audit van je huidige website. Stel jezelf deze vragen:</p><ul><li>Laadt het in minder dan 3 seconden?</li><li>Is de navigatie eenvoudig en logisch?</li><li>Is er een duidelijke call-to-action?</li><li>Werkt het perfect op mobiel?</li></ul><p>Als je op een van deze vragen nee hebt geantwoord, is het tijd om in je website te investeren. Niet als een kost, maar als een investering in je verkoopproces.</p><p>Je website zou 24/7 voor je moeten werken. Als het goed gedaan is, wordt het je beste verkoper: altijd beschikbaar, altijd consistent, altijd professioneel.</p><p>Wil je weten hoe je website presteert? <a href='/services/business-website'>Bekijk onze website-diensten</a> of <a href='/contact'>vraag een gratis website-audit aan</a>.</p>"
+      },
+      "socialMediaManagement": {
+        "title": "Social Media Beheer: Wat bedrijven echt nodig hebben",
+        "excerpt": "Social media gaat niet over volgers. Het gaat over strategie, consistentie en echte betrokkenheid. Dit is wat echt werkt voor bedrijven.",
+        "metaTitle": "Social Media Beheer voor Bedrijven | Strategie die werkt",
+        "metaDescription": "Leer wat Belgische bedrijven echt nodig hebben van social media beheer: strategie boven vanity metrics, consistentie boven trends.",
+        "content": "<h2>Voorbij volgers en likes</h2><p>Veel bedrijven zijn geobsedeerd door volgersaantallen en likes. Maar deze vanity metrics vertalen zich zelden naar daadwerkelijke bedrijfsresultaten. Een bedrijf met 500 betrokken volgers zal altijd beter presteren dan een met 50.000 passieve volgers.</p><p>Social media is een tool. Zoals elke tool is het alleen effectief wanneer het met een doel wordt gebruikt.</p><h2>Strategie voor posting</h2><p>De grootste fout die bedrijven maken is posten zonder plan. Willekeurige content op willekeurige tijden leidt tot willekeurige resultaten. Meestal betekent dat helemaal geen resultaten.</p><p>Een social media strategie beantwoordt deze vragen:</p><ul><li>Wie is je doelgroep?</li><li>Welke problemen los je voor hen op?</li><li>Waar brengen ze hun tijd online door?</li><li>Met welk type content engageren ze?</li></ul><p>Zonder antwoorden op deze vragen maak je gewoon lawaai.</p><h2>Consistentie verslaat trends</h2><p>Elke trend achterna jagen is uitputtend en ineffectief. Trending content kan tijdelijk de zichtbaarheid verhogen, maar bouwt zelden blijvende connecties met je publiek.</p><p>Wat werkt is consistentie:</p><ul><li>Regelmatig posten op voorspelbare tijden</li><li>Een consistente visuele stijl behouden</li><li>Dezelfde tone of voice gebruiken</li><li>Waarde leveren met elke post</li></ul><p>Je publiek moet weten wat ze van je kunnen verwachten. Die voorspelbaarheid bouwt vertrouwen.</p><h2>Kwaliteit boven kwantiteit</h2><p>Drie excellente posts per week zullen zeven middelmatige overtreffen. Elk stuk content moet een doel dienen: educeren, entertainen, inspireren of promoten.</p><p>Als een post niet in een van deze categorieën past, moet het waarschijnlijk niet gepubliceerd worden.</p><h3>De 80/20 regel</h3><p>Streef naar 80% waardegerichte content en 20% promotionele content. Niemand wil een bedrijf volgen dat alleen over zichzelf praat. Lever eerst waarde en verkoop volgt vanzelf.</p><h2>Engagement is tweerichtingsverkeer</h2><p>Content posten is slechts de helft van het werk. De andere helft is engageren met je publiek. Reageer op comments, beantwoord vragen en neem deel aan gesprekken.</p><p>Social media is sociaal. Als je het behandelt als een zendplatform, mis je het punt.</p><h2>Wat bedrijven echt nodig hebben</h2><p>Effectief social media beheer vereist:</p><ul><li>Een duidelijke strategie afgestemd op bedrijfsdoelen</li><li>Consistente, hoogwaardige content</li><li>Actieve community engagement</li><li>Regelmatige analyse en optimalisatie</li></ul><p>Dit gaat niet over aanwezig zijn op elk platform. Het gaat over effectief zijn op de platforms die er toe doen voor je publiek.</p><p>Focus op minder dingen beter doen. Je social media aanwezigheid moet je bedrijfsdoelen ondersteunen, niet ervan afleiden.</p><p>Klaar om je social media professioneel aan te pakken? <a href='/services/social-media-management'>Ontdek onze social media diensten</a> of bekijk <a href='/gallery'>hoe we het voor andere bedrijven hebben gedaan</a>.</p>"
+      },
+      "seoExplained": {
+        "title": "SEO simpel uitgelegd: Hoe klanten je echt online vinden",
+        "excerpt": "SEO is geen magie of manipulatie. Het gaat over je bedrijf makkelijk vindbaar maken wanneer mensen zoeken. Zo werkt het echt.",
+        "metaTitle": "SEO uitgelegd voor KMO's | Beter gevonden worden in België",
+        "metaDescription": "Eenvoudige uitleg van SEO voor Belgische bedrijfseigenaren. Leer hoe lokale SEO werkt en waarom het beter is dan snelle hacks.",
+        "content": "<h2>Wat is SEO echt?</h2><p>Search Engine Optimization klinkt technisch, maar het concept is simpel. Wanneer iemand zoekt naar een dienst of product dat je aanbiedt, bepaalt SEO of ze jou vinden of je concurrent.</p><p>Elke dag zoeken potentiële klanten naar bedrijven zoals het jouwe. Als je website niet verschijnt in zoekresultaten, ben je onzichtbaar voor hen.</p><h2>Hoe zoekmachines denken</h2><p>Google en andere zoekmachines hebben één doel: gebruikers het best mogelijke antwoord geven op hun vraag. Ze evalueren websites op basis van relevantie, kwaliteit en gebruikerservaring.</p><p>SEO gaat over het maken van je website tot het beste antwoord op de vragen die je klanten stellen.</p><h3>De drie pijlers</h3><p>SEO rust op drie pijlers:</p><ul><li><strong>Technische SEO:</strong> Je website moet snel, veilig en makkelijk leesbaar zijn voor zoekmachines.</li><li><strong>Content:</strong> Je hebt kwaliteitscontent nodig die de vragen beantwoordt die je publiek zoekt.</li><li><strong>Autoriteit:</strong> Andere gerenommeerde websites die naar jou linken, signaleren vertrouwen aan zoekmachines.</li></ul><h2>Lokale SEO voor België en Europa</h2><p>Voor de meeste lokale bedrijven ligt de echte kans in lokale SEO. Wanneer iemand zoekt naar een dienst in de buurt, geeft Google prioriteit aan lokale resultaten.</p><p>Belangrijke elementen van lokale SEO zijn:</p><ul><li>Een volledig en geoptimaliseerd Google Bedrijfsprofiel</li><li>Consistente bedrijfsinformatie over het web</li><li>Reviews van tevreden klanten</li><li>Locatie-specifieke content op je website</li></ul><p>Als je klanten bedient in een specifieke regio, moet lokale SEO je prioriteit zijn.</p><h2>Langetermijnwaarde, geen snelle hacks</h2><p>SEO gaat niet over trucjes of manipulatie. Die tactieken kunnen kort werken, maar slaan uiteindelijk terug. Zoekmachines zijn geavanceerd. Ze straffen websites die het systeem proberen te gamen.</p><p>Duurzame SEO focust op:</p><ul><li>Oprecht nuttige content creëren</li><li>Echte relaties bouwen die leiden tot natuurlijke links</li><li>Gebruikerservaring continu verbeteren</li><li>Geduldig blijven terwijl resultaten zich opstapelen</li></ul><h2>Wat je kunt verwachten</h2><p>SEO is een langetermijninvestering. De meeste bedrijven beginnen betekenisvolle resultaten te zien na 3-6 maanden consistente inspanning. Maar in tegenstelling tot betaalde advertenties, stapelen de resultaten zich op in de tijd.</p><p>Een goed geoptimaliseerde website blijft maand na maand, jaar na jaar, bezoekers aantrekken zonder doorlopende advertentiekosten.</p><h2>Beginnen</h2><p>Als je nieuw bent met SEO, begin met de basis:</p><ul><li>Claim en optimaliseer je Google Bedrijfsprofiel</li><li>Zorg dat je website snel laadt</li><li>Creëer content die klantvragen beantwoordt</li><li>Vraag tevreden klanten om reviews achter te laten</li></ul><p>SEO hoeft niet ingewikkeld te zijn. Het moet consistent zijn. Kleine verbeteringen stapelen op tot significante resultaten in de tijd.</p><p>Wil je dat je bedrijf beter gevonden wordt in Google? <a href='/services/seo'>Ontdek onze SEO-diensten</a> of <a href='/contact'>vraag een gratis SEO-scan aan</a>.</p>"
+      },
+      "paidAdvertising": {
+        "title": "Betaalde advertenties zonder verspilling: Hoe slimme campagnes worden gebouwd",
+        "excerpt": "Betaalde advertenties gaat niet over posts boosten en hopen op het beste. Het gaat over systemen bouwen die voorspelbare, meetbare resultaten leveren.",
+        "metaTitle": "Google & Meta Ads zonder verspilling | Campagnetips België",
+        "metaDescription": "Leer hoe je betaalde advertentiecampagnes bouwt die resultaten opleveren voor Belgische KMO's. Budgetcontrole, data en systemen boven gokken.",
+        "content": "<h2>Het probleem met de meeste advertenties</h2><p>Veel bedrijven proberen betaalde advertenties, zien slechte resultaten en concluderen dat het niet werkt. Maar het probleem is zelden het platform. Het probleem is de aanpak.</p><p>Een post boosten en hopen op verkoop is geen adverteren. Het is gokken met je marketingbudget.</p><h2>Adverteren is een systeem</h2><p>Effectieve betaalde advertenties gaat niet over individuele advertenties. Het gaat over het bouwen van een systeem dat potentiële klanten van bewustzijn naar actie beweegt.</p><p>Een compleet advertentiesysteem omvat:</p><ul><li>Doelgroeponderzoek en targeting</li><li>Meerdere contactmomenten langs de klantreis</li><li>Tracking en meting in elke fase</li><li>Continue testing en optimalisatie</li></ul><p>Elk onderdeel werkt samen. Verwijder er één en het hele systeem presteert ondermaats.</p><h2>Budgetcontrole</h2><p>Het mooie van digitale advertenties is controle. In tegenstelling tot traditionele advertenties kun je klein beginnen, testen en schalen wat werkt.</p><p>Slim budgetbeheer betekent:</p><ul><li>Starten met een testbudget om data te verzamelen</li><li>Resultaten analyseren voordat je opschaalt</li><li>Snel stoppen met wat niet werkt</li><li>Herinvesteren in wat wel presteert</li></ul><p>Je zou nooit meer moeten uitgeven dan je je kunt veroorloven te verliezen tijdens het testen. Zodra je bewezen resultaten hebt, wordt opschalen laag-risico.</p><h2>Data-gedreven beslissingen</h2><p>Elke advertentiebeslissing moet gebaseerd zijn op data, niet op onderbuikgevoel. Dit vereist goede tracking vanaf dag één.</p><p>Belangrijke metrics om te volgen zijn:</p><ul><li>Kosten per klik en kosten per resultaat</li><li>Conversieratio's in elke fase</li><li>Return on ad spend</li><li>Klantacquisitiekosten</li></ul><p>Zonder deze data neem je blinde beslissingen. Met deze data kun je continu optimaliseren en resultaten maand na maand verbeteren.</p><h3>De test-mindset</h3><p>Niemand weet van tevoren wat het beste werkt. Zelfs ervaren adverteerders draaien meerdere variaties en laten data de winnaar bepalen.</p><p>Test één element per keer:</p><ul><li>Verschillende koppen</li><li>Verschillende afbeeldingen of video's</li><li>Verschillende doelgroepsegmenten</li><li>Verschillende aanbiedingen</li></ul><p>Kleine verbeteringen in conversieratio's stapelen op tot significante verschillen in resultaten.</p><h2>Platforms zijn tools</h2><p>Google Ads, Facebook, Instagram, LinkedIn: elk platform heeft sterke en zwakke punten. De juiste keuze hangt af van je doelgroep en doelen.</p><p>Waar brengen je potentiële klanten hun tijd door? Welk type content resoneert met hen? Match het platform met je doelgroep, niet andersom.</p><h2>Bouwen voor de lange termijn</h2><p>Het doel is niet één succesvolle campagne. Het doel is een voorspelbaar, herhaalbaar systeem dat consistent leads of verkoop genereert.</p><p>Dit kost tijd en iteratie. Maar eenmaal gebouwd, wordt het een waardevolle bedrijfsasset die maand na maand werkt.</p><p>Begin klein, meet alles en schaal wat werkt. Zo worden slimme campagnes gebouwd.</p><p>Klaar om je advertentiebudget effectiever in te zetten? <a href='/services/advertising-management'>Bekijk onze advertentiediensten</a> of lees hoe <a href='/blog/seo-explained-simply'>SEO en advertenties samen werken</a>.</p>"
+      },
+      "onlineReputation": {
+        "title": "Online reputatie: Waarom reviews meer uitmaken dan je denkt",
+        "excerpt": "Je online reputatie beïnvloedt koopbeslissingen meer dan de meeste marketing. Dit is waarom reviews belangrijk zijn en hoe je ze effectief beheert.",
+        "metaTitle": "Online Reputatie & Reviews Beheren | Gids voor KMO's",
+        "metaDescription": "Ontdek waarom online reviews cruciaal zijn voor Belgische bedrijven en leer hoe je je reputatie effectief beheert en verbetert.",
+        "content": "<h2>De vertrouwensfactor</h2><p>Voordat ze een aankoop doen of een dienst inhuren, doen de meeste mensen hetzelfde: ze lezen reviews. Volgens onderzoek leest meer dan 90% van de consumenten online reviews voordat ze een bedrijf bezoeken.</p><p>Reviews zijn mond-tot-mondreclame op schaal. Ze bouwen of vernietigen vertrouwen voordat je ooit met een potentiële klant spreekt.</p><h2>De psychologie van reviews</h2><p>Mensen vertrouwen andere klanten meer dan ze bedrijven vertrouwen. Dit is niet nieuw. We hebben altijd vrienden en familie om aanbevelingen gevraagd. Het internet maakte het alleen mogelijk om van duizenden vreemden te horen.</p><p>Een bedrijf met tientallen positieve reviews voelt veilig. Een bedrijf zonder reviews of met negatieve reviews voelt risicovol. Deze perceptie beïnvloedt direct koopbeslissingen.</p><h3>De cijfers die er toe doen</h3><p>Onderzoek toont aan dat:</p><ul><li>Bedrijven met 4+ sterrenbeoordelingen significant meer klikken krijgen</li><li>De eerste 10 reviews de grootste impact hebben op perceptie</li><li>Een mix van beoordelingen (niet alleen perfecte scores) authentieker lijkt</li><li>Recente reviews meer tellen dan oude</li></ul><h2>Reviews en zichtbaarheid</h2><p>Reviews beïnvloeden niet alleen beslissingen. Ze beïnvloeden zichtbaarheid. Google gebruikt reviews als rankingfactor voor lokale zoekresultaten. Meer positieve reviews kunnen je letterlijk hoger duwen in zoekresultaten.</p><p>Dit creëert een deugdzame cirkel: betere reviews leiden tot meer zichtbaarheid, wat leidt tot meer klanten, wat leidt tot meer reviews.</p><h2>Je reputatie beheren</h2><p>Reputatiebeheer gaat niet over het manipuleren van reviews. Het gaat over goede reviews verdienen en negatieve professioneel afhandelen.</p><h3>Positieve reviews verdienen</h3><p>De basis is simpel: lever uitstekende service. Daarnaast:</p><ul><li>Vraag tevreden klanten om reviews achter te laten</li><li>Maak het proces makkelijk door directe links te geven</li><li>Volg op na positieve ervaringen</li><li>Bedank klanten die de tijd nemen om te reviewen</li></ul><h3>Negatieve reviews afhandelen</h3><p>Negatieve reviews zijn onvermijdelijk. Hoe je ermee omgaat is belangrijker dan de review zelf.</p><ul><li>Reageer snel en professioneel</li><li>Erken de zorg zonder defensief te zijn</li><li>Bied aan om het probleem offline op te lossen</li><li>Kom eventuele beloftes na</li></ul><p>Een professionele reactie op een negatieve review kan je reputatie daadwerkelijk verbeteren. Het laat potentiële klanten zien dat je geeft en verantwoordelijkheid neemt.</p><h2>Je reputatie monitoren</h2><p>Je kunt niet beheren wat je niet monitort. Stel alerts in om te weten wanneer iemand je bedrijf noemt. Controleer regelmatig reviewplatforms die relevant zijn voor je branche.</p><p>Belangrijke platforms om te monitoren zijn:</p><ul><li>Google Bedrijfsprofiel</li><li>Branche-specifieke reviewsites</li><li>Social media vermeldingen</li><li>Je eigen website reviews</li></ul><h2>De langetermijnvisie</h2><p>Een sterke online reputatie bouwen kost tijd. Er zijn geen shortcuts. Focus op uitstekende service leveren, consistent om feedback vragen en professioneel reageren op alle reviews.</p><p>Na verloop van tijd wordt je reputatie een competitief voordeel dat moeilijk te kopiëren is door concurrenten. Het is een van de weinige assets die waardevoller wordt naarmate je het langer koestert.</p><p>Wil je je online reputatie versterken? <a href='/services/reputation-management'>Bekijk onze reputatiebeheer-diensten</a> of ontdek hoe <a href='/blog/seo-explained-simply'>SEO en reviews samenwerken</a> voor meer zichtbaarheid.</p>"
+      }
+    }
   },
   "gallery": {
     "title": "Ons werk",
@@ -1428,322 +1454,746 @@
       "castello-vicchiomaggio": {
         "shortResult": "Digitale presentatie en visuele regie voor een historisch Toscaans wijndomein en gastvrijheidsbedrijf.",
         "challenge": "Castello Vicchiomaggio, een historisch wijndomein en gastvrijheidsbedrijf in de Chianti-streek van Toscane, had een verfijnde digitale aanwezigheid nodig die paste bij het prestige van hun eeuwenoude erfgoed en internationale gasten aantrok.",
-        "approach": { "0": "Premium website-ontwerp met focus op luxe gastvrijheid", "1": "Visuele contentregie die de sfeer van het domein vastlegt", "2": "Mobile-first boekingservaring optimalisatie", "3": "Digitale merkidentiteit afgestemd op historisch erfgoed", "4": "Multi-device responsieve presentatie" },
-        "results": { "0": "Verhoogde digitale aanwezigheid die het prestige van het domein weerspiegelt", "1": "Meeslepende visuele storytelling over alle contactpunten", "2": "Gestroomlijnde gastboekingservaring", "3": "Consistente merkpresentatie op alle apparaten", "4": "Verbeterde internationale zichtbaarheid en aantrekkingskracht" },
+        "approach": {
+          "0": "Premium website-ontwerp met focus op luxe gastvrijheid",
+          "1": "Visuele contentregie die de sfeer van het domein vastlegt",
+          "2": "Mobile-first boekingservaring optimalisatie",
+          "3": "Digitale merkidentiteit afgestemd op historisch erfgoed",
+          "4": "Multi-device responsieve presentatie"
+        },
+        "results": {
+          "0": "Verhoogde digitale aanwezigheid die het prestige van het domein weerspiegelt",
+          "1": "Meeslepende visuele storytelling over alle contactpunten",
+          "2": "Gestroomlijnde gastboekingservaring",
+          "3": "Consistente merkpresentatie op alle apparaten",
+          "4": "Verbeterde internationale zichtbaarheid en aantrekkingskracht"
+        },
         "disclaimer": "Visuals nagemaakt voor portfoliopresentatie."
       },
       "cose-pazzi-torino": {
         "shortResult": "Authentieke Italiaanse pizzeria-website met sterke food-gerichte visuals en lokaal merkkarakter.",
         "challenge": "Pizzeria Cose Pazzi in Turijn had een gepolijste digitale aanwezigheid nodig die hun authentieke Italiaanse keuken en levendig buurtkarakter weerspiegelde, zowel locals als bezoekers aantrekkend.",
-        "approach": { "0": "Website structuur & optimalisatie", "1": "Visuele presentatie & food-gerichte hiërarchie", "2": "Mobile-first bruikbaarheidsverbeteringen", "3": "Lokaal Italiaans merkgevoel en storytelling" },
-        "results": { "0": "Premium restauranthuisstijl online", "1": "Sterke food-zichtbaarheid en eetlust-appeal", "2": "Duidelijke en eenvoudige klantreis", "3": "Verbeterde online zichtbaarheid en lokale SEO" },
+        "approach": {
+          "0": "Website structuur & optimalisatie",
+          "1": "Visuele presentatie & food-gerichte hiërarchie",
+          "2": "Mobile-first bruikbaarheidsverbeteringen",
+          "3": "Lokaal Italiaans merkgevoel en storytelling"
+        },
+        "results": {
+          "0": "Premium restauranthuisstijl online",
+          "1": "Sterke food-zichtbaarheid en eetlust-appeal",
+          "2": "Duidelijke en eenvoudige klantreis",
+          "3": "Verbeterde online zichtbaarheid en lokale SEO"
+        },
         "disclaimer": "Visuals zijn illustratief en gemaakt voor presentatiedoeleinden."
       },
       "augusto-torino": {
         "shortResult": "Elegante restaurantwebsite met sterke visuele identiteit en verfijnde food-presentatie.",
         "challenge": "Ristorante Pizzeria Augusto in Turijn had een gepolijste digitale aanwezigheid nodig die hun verfijnde Italiaanse keuken en gastvrije sfeer weerspiegelde, zowel locals als bezoekers aantrekkend.",
-        "approach": { "0": "Website structuur & optimalisatie", "1": "Visuele hiërarchie & food-gerichte layout", "2": "Prestatie en mobiele bruikbaarheid", "3": "Evenement- en reserveringsintegratie" },
-        "results": { "0": "Premium restauranthuisstijl online", "1": "Duidelijke klantreis van menu tot boeking", "2": "Sterke visuele storytelling op alle pagina's", "3": "Verbeterde online zichtbaarheid en lokale SEO" },
+        "approach": {
+          "0": "Website structuur & optimalisatie",
+          "1": "Visuele hiërarchie & food-gerichte layout",
+          "2": "Prestatie en mobiele bruikbaarheid",
+          "3": "Evenement- en reserveringsintegratie"
+        },
+        "results": {
+          "0": "Premium restauranthuisstijl online",
+          "1": "Duidelijke klantreis van menu tot boeking",
+          "2": "Sterke visuele storytelling op alle pagina's",
+          "3": "Verbeterde online zichtbaarheid en lokale SEO"
+        },
         "disclaimer": "Project actief beheerd door GROPPI."
       },
       "pummaro-torino": {
         "shortResult": "Moderne restaurantwebsite met sterke food-presentatie en duidelijke klantenstroom.",
         "challenge": "Pizzeria Pummarò in Turijn had een professionele digitale aanwezigheid nodig die hun toewijding aan authentieke Italiaanse keuken met premium ingrediënten van kleine Italiaanse producenten weerspiegelde.",
-        "approach": { "0": "Website structuur & optimalisatie", "1": "Visuele hiërarchie & food-presentatie", "2": "Mobiele bruikbaarheidsverbeteringen", "3": "Online reserverings- en bezorgingsintegratie" },
-        "results": { "0": "Conversievriendelijke layout met duidelijke navigatie", "1": "Sterke lokale restaurant branding online", "2": "Professionele food-zichtbaarheid en ingrediënten-storytelling", "3": "Naadloze klantreis van menu tot reservering" },
+        "approach": {
+          "0": "Website structuur & optimalisatie",
+          "1": "Visuele hiërarchie & food-presentatie",
+          "2": "Mobiele bruikbaarheidsverbeteringen",
+          "3": "Online reserverings- en bezorgingsintegratie"
+        },
+        "results": {
+          "0": "Conversievriendelijke layout met duidelijke navigatie",
+          "1": "Sterke lokale restaurant branding online",
+          "2": "Professionele food-zichtbaarheid en ingrediënten-storytelling",
+          "3": "Naadloze klantreis van menu tot reservering"
+        },
         "disclaimer": "Project actief beheerd door GROPPI."
       },
       "fratelli-roselli": {
         "shortResult": "Authentieke Italiaanse restaurantwebsite met sterke food-presentatie en lokale branding.",
         "challenge": "Pizzeria Fratelli Roselli in Turijn had al meer dan 20 jaar een trouwe lokale aanhang, maar had een professionele digitale aanwezigheid nodig om hun toewijding aan kwaliteitsingrediënten en authentiek pizza bakken te tonen.",
-        "approach": { "0": "Website structuur & optimalisatie", "1": "Visuele presentatie & content layout", "2": "Prestatie- & bruikbaarheidsverbeteringen", "3": "Online reserveringssysteem integratie" },
-        "results": { "0": "Professionele en duidelijke website die merkkwaliteit weerspiegelt", "1": "Sterke food-zichtbaarheid met focus op premium ingrediënten", "2": "Duidelijke klantreis van menu tot reservering", "3": "Verbeterde lokale restaurant branding online" },
+        "approach": {
+          "0": "Website structuur & optimalisatie",
+          "1": "Visuele presentatie & content layout",
+          "2": "Prestatie- & bruikbaarheidsverbeteringen",
+          "3": "Online reserveringssysteem integratie"
+        },
+        "results": {
+          "0": "Professionele en duidelijke website die merkkwaliteit weerspiegelt",
+          "1": "Sterke food-zichtbaarheid met focus op premium ingrediënten",
+          "2": "Duidelijke klantreis van menu tot reservering",
+          "3": "Verbeterde lokale restaurant branding online"
+        },
         "disclaimer": "Project actief beheerd door GROPPI."
       },
       "boothuis-turnhout": {
         "shortResult": "Strakke restaurantwebsite en visuele presentatie voor een lokaal horecabedrijf.",
         "challenge": "Restaurant Boothuis Turnhout had een professionele digitale aanwezigheid nodig die de sfeer en kwaliteit van het restaurant online weerspiegelde.",
-        "approach": { "0": "Websitebeheer en doorlopende optimalisatie", "1": "Visuele content en professionele presentatie", "2": "Digitale aanwezigheid opbouwen en onderhouden", "3": "Consistente merkervaring over alle online kanalen" },
-        "results": { "0": "Professionele en duidelijke website", "1": "Sterke visuele presentatie van het restaurant", "2": "Verbeterde online zichtbaarheid", "3": "Doorlopend beheer en optimalisatie" },
+        "approach": {
+          "0": "Websitebeheer en doorlopende optimalisatie",
+          "1": "Visuele content en professionele presentatie",
+          "2": "Digitale aanwezigheid opbouwen en onderhouden",
+          "3": "Consistente merkervaring over alle online kanalen"
+        },
+        "results": {
+          "0": "Professionele en duidelijke website",
+          "1": "Sterke visuele presentatie van het restaurant",
+          "2": "Verbeterde online zichtbaarheid",
+          "3": "Doorlopend beheer en optimalisatie"
+        },
         "disclaimer": "Project actief beheerd door GROPPI."
       },
       "sanremo-pizzeria": {
         "shortResult": "Sterke social media-aanwezigheid en visuele content voor een lokaal restaurant.",
         "challenge": "Sanremo Pizzeria Restaurant had een trouwe lokale aanhang, maar miste een professionele digitale aanwezigheid om nieuwe klanten aan te trekken en de restaurantsfeer online over te brengen.",
-        "approach": { "0": "Facebook-paginabeheer en optimalisatie", "1": "Professionele visuele contentcreatie", "2": "Social media-strategie en consistent posten", "3": "Digitale aanwezigheid opbouwen en onderhouden" },
-        "results": { "0": "Professionele en consistente online aanwezigheid", "1": "Visueel sterke social media content", "2": "Betere zichtbaarheid en vindbaarheid online", "3": "Doorlopend beheer en optimalisatie" },
+        "approach": {
+          "0": "Facebook-paginabeheer en optimalisatie",
+          "1": "Professionele visuele contentcreatie",
+          "2": "Social media-strategie en consistent posten",
+          "3": "Digitale aanwezigheid opbouwen en onderhouden"
+        },
+        "results": {
+          "0": "Professionele en consistente online aanwezigheid",
+          "1": "Visueel sterke social media content",
+          "2": "Betere zichtbaarheid en vindbaarheid online",
+          "3": "Doorlopend beheer en optimalisatie"
+        },
         "disclaimer": "Project actief beheerd door GROPPI."
       },
       "mangiare-3840": {
         "shortResult": "Moderne restaurantwebsite met sterke visuele identiteit.",
         "challenge": "Mangiare 3840 had een sterke lokale reputatie maar miste een professionele online aanwezigheid die de sfeer en kwaliteit van het restaurant weerspiegelde.",
-        "approach": { "0": "Volledig op maat ontworpen website met donker premium design", "1": "Visuele content en branding passend bij de restaurantsfeer", "2": "Doorlopende digitale ondersteuning en optimalisatie", "3": "Menu en reserveringssysteem geïntegreerd" },
-        "results": { "0": "Professionele online aanwezigheid die de merkbeleving versterkt", "1": "Verbeterde gebruikerservaring voor bezoekers", "2": "Sterke visuele identiteit over alle digitale kanalen", "3": "Doorlopend beheer en optimalisatie" },
+        "approach": {
+          "0": "Volledig op maat ontworpen website met donker premium design",
+          "1": "Visuele content en branding passend bij de restaurantsfeer",
+          "2": "Doorlopende digitale ondersteuning en optimalisatie",
+          "3": "Menu en reserveringssysteem geïntegreerd"
+        },
+        "results": {
+          "0": "Professionele online aanwezigheid die de merkbeleving versterkt",
+          "1": "Verbeterde gebruikerservaring voor bezoekers",
+          "2": "Sterke visuele identiteit over alle digitale kanalen",
+          "3": "Doorlopend beheer en optimalisatie"
+        },
         "disclaimer": "Project actief beheerd door GROPPI."
       },
       "kma-wandpanelen": {
         "shortResult": "+85% showroombezoekers",
         "challenge": "KMA Wandpanelen in Antwerpen had een premium productlijn van hout- en marmeralternatieven, maar miste online zichtbaarheid. De sterke punten (vochtbestendig, krasbestendig, onderhoudsvriendelijk) werden niet duidelijk gecommuniceerd.",
-        "approach": { "0": "Professionele productfotografie van alle paneelvarianten", "1": "Social media contentstrategie voor Instagram en Facebook", "2": "Visuele vergelijking: WPC vs. traditioneel hout", "3": "Focus op USP's: onderhoudsvriendelijk en duurzaam" },
-        "results": { "0": "+85% meer showroombezoekers", "1": "Sterke online productinteresse via social", "2": "Meer gerichte aanvragen van interieurbouwers", "3": "Duidelijke positionering als premium alternatief" },
+        "approach": {
+          "0": "Professionele productfotografie van alle paneelvarianten",
+          "1": "Social media contentstrategie voor Instagram en Facebook",
+          "2": "Visuele vergelijking: WPC vs. traditioneel hout",
+          "3": "Focus op USP's: onderhoudsvriendelijk en duurzaam"
+        },
+        "results": {
+          "0": "+85% meer showroombezoekers",
+          "1": "Sterke online productinteresse via social",
+          "2": "Meer gerichte aanvragen van interieurbouwers",
+          "3": "Duidelijke positionering als premium alternatief"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "lebanon-restaurant": {
         "shortResult": "+120% social media bereik",
         "challenge": "Libanees restaurant in Brussel met authentieke gerechten, maar beperkte online aanwezigheid. De warme sfeer en traditionele keuken kwamen niet tot uiting op social media.",
-        "approach": { "0": "Complete social media-strategie voor Instagram en Facebook", "1": "Professionele food-fotografie en styling", "2": "Korte promovideo's en Reels voor engagement", "3": "Wekelijkse contentplanning met consistent posten", "4": "Review & testimonial content voor social proof" },
-        "results": { "0": "+120% social media bereik", "1": "Merkbare toename van nieuwe klanten via Instagram", "2": "Hogere engagement rate op posts", "3": "Sterkere merkherkenning in de Brusselse regio", "4": "Meer tafelreserveringen via DM's" },
+        "approach": {
+          "0": "Complete social media-strategie voor Instagram en Facebook",
+          "1": "Professionele food-fotografie en styling",
+          "2": "Korte promovideo's en Reels voor engagement",
+          "3": "Wekelijkse contentplanning met consistent posten",
+          "4": "Review & testimonial content voor social proof"
+        },
+        "results": {
+          "0": "+120% social media bereik",
+          "1": "Merkbare toename van nieuwe klanten via Instagram",
+          "2": "Hogere engagement rate op posts",
+          "3": "Sterkere merkherkenning in de Brusselse regio",
+          "4": "Meer tafelreserveringen via DM's"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "il-fuoco-pizza": {
         "shortResult": "+65% online reserveringen",
         "challenge": "Authentieke Italiaanse pizzeria met ambachtelijke aanpak, maar verouderde online aanwezigheid. De huiselijke sfeer en pizzakwaliteit kwamen niet tot uiting in hun digitale uitstraling.",
-        "approach": { "0": "Complete visuele identiteit herwerkt", "1": "Professionele food- en sfeerfotografie", "2": "Digitaal menusysteem met QR-integratie", "3": "Social media content voor Instagram & Facebook", "4": "Reviews en testimonials strategie" },
-        "results": { "0": "+65% meer online reserveringen", "1": "Sterke merkbekendheid in de regio", "2": "Hogere gemiddelde bestelwaarde", "3": "Meer terugkerende bezoekers dankzij loyaliteitscontent", "4": "Verbeterde online reviews en beoordelingen" },
+        "approach": {
+          "0": "Complete visuele identiteit herwerkt",
+          "1": "Professionele food- en sfeerfotografie",
+          "2": "Digitaal menusysteem met QR-integratie",
+          "3": "Social media content voor Instagram & Facebook",
+          "4": "Reviews en testimonials strategie"
+        },
+        "results": {
+          "0": "+65% meer online reserveringen",
+          "1": "Sterke merkbekendheid in de regio",
+          "2": "Hogere gemiddelde bestelwaarde",
+          "3": "Meer terugkerende bezoekers dankzij loyaliteitscontent",
+          "4": "Verbeterde online reviews en beoordelingen"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "restaurant-branding": {
         "shortResult": "+180% reserveringen",
         "challenge": "Premium restaurant met weinig online zichtbaarheid. De verouderde branding paste niet bij het exclusieve aanbod en de doelgroep werd niet bereikt.",
-        "approach": { "0": "Complete rebrand met luxe look and feel", "1": "Nieuwe website met reserveringssysteem", "2": "Professionele fotoshoot van interieur en gerechten", "3": "Google Ads campagne gericht op lokale zoekers" },
-        "results": { "0": "+180% reserveringen binnen 6 maanden", "1": "Hogere gemiddelde besteding per tafel", "2": "Betere online reviews en beoordelingen", "3": "Top 3 Google positie voor lokale zoekwoorden" }
+        "approach": {
+          "0": "Complete rebrand met luxe look and feel",
+          "1": "Nieuwe website met reserveringssysteem",
+          "2": "Professionele fotoshoot van interieur en gerechten",
+          "3": "Google Ads campagne gericht op lokale zoekers"
+        },
+        "results": {
+          "0": "+180% reserveringen binnen 6 maanden",
+          "1": "Hogere gemiddelde besteding per tafel",
+          "2": "Betere online reviews en beoordelingen",
+          "3": "Top 3 Google positie voor lokale zoekwoorden"
+        }
       },
       "mode-webshop": {
         "shortResult": "€85K omzet in 3 maanden",
         "challenge": "Startende online modezaak zonder digitale aanwezigheid. Beperkt marketingbudget maar hoge ambitie om snel te groeien in de Belgische markt.",
-        "approach": { "0": "Shopify webshop opzet en configuratie", "1": "Professionele productfotografie", "2": "Meta Ads campagnes met retargeting", "3": "Conversiegerichte landingspagina's" },
-        "results": { "0": "€85K omzet in eerste 3 maanden", "1": "ROAS van 4,2 op advertenties", "2": "Stabiel terugkerend klantenbestand", "3": "Succesvolle uitbreiding naar Nederland" }
+        "approach": {
+          "0": "Shopify webshop opzet en configuratie",
+          "1": "Professionele productfotografie",
+          "2": "Meta Ads campagnes met retargeting",
+          "3": "Conversiegerichte landingspagina's"
+        },
+        "results": {
+          "0": "€85K omzet in eerste 3 maanden",
+          "1": "ROAS van 4,2 op advertenties",
+          "2": "Stabiel terugkerend klantenbestand",
+          "3": "Succesvolle uitbreiding naar Nederland"
+        }
       },
       "b2b-platform": {
         "shortResult": "+320% leads",
         "challenge": "Complex B2B SaaS met lange salesfunnel. Te weinig gekwalificeerde leads en de website converteerde slecht. Concurrentiepositionering was sterker.",
-        "approach": { "0": "Geoptimaliseerde landingspagina's per persona", "1": "Leadmagneten (whitepapers, case studies)", "2": "SEO-strategie voor long-tail zoekwoorden", "3": "A/B-testen van formulieren en CTA's" },
-        "results": { "0": "+320% gekwalificeerde leads binnen 4 maanden", "1": "Lagere kosten per lead", "2": "Kortere salesfunnel doorlooptijd", "3": "Betere leadkwaliteit (SQL-ratio)" }
+        "approach": {
+          "0": "Geoptimaliseerde landingspagina's per persona",
+          "1": "Leadmagneten (whitepapers, case studies)",
+          "2": "SEO-strategie voor long-tail zoekwoorden",
+          "3": "A/B-testen van formulieren en CTA's"
+        },
+        "results": {
+          "0": "+320% gekwalificeerde leads binnen 4 maanden",
+          "1": "Lagere kosten per lead",
+          "2": "Kortere salesfunnel doorlooptijd",
+          "3": "Betere leadkwaliteit (SQL-ratio)"
+        }
       },
       "bouwbedrijf-website": {
         "shortResult": "#1 Google lokaal",
         "challenge": "Familiebouwbedrijf leefde puur op mond-tot-mondreclame. Geen website, geen online aanwezigheid. De jongere generatie wilde moderniseren.",
-        "approach": { "0": "Professionele website met projectportfolio", "1": "Google Mijn Bedrijf optimalisatie", "2": "Lokale SEO-strategie", "3": "Projectfotografie en case studies" },
-        "results": { "0": "#1 positie in Google voor lokale zoekwoorden", "1": "45+ leads per maand via website", "2": "Hogere gemiddelde projectwaarde", "3": "Sterkere positionering t.o.v. concurrenten" }
+        "approach": {
+          "0": "Professionele website met projectportfolio",
+          "1": "Google Mijn Bedrijf optimalisatie",
+          "2": "Lokale SEO-strategie",
+          "3": "Projectfotografie en case studies"
+        },
+        "results": {
+          "0": "#1 positie in Google voor lokale zoekwoorden",
+          "1": "45+ leads per maand via website",
+          "2": "Hogere gemiddelde projectwaarde",
+          "3": "Sterkere positionering t.o.v. concurrenten"
+        }
       },
       "influencer-campagne": {
         "shortResult": "2,4M bereik",
         "challenge": "Nieuw beautymerk zonder merkbekendheid. Doelgroep 18-35 moeilijk bereikbaar via traditionele kanalen.",
-        "approach": { "0": "Influencer partnership-strategie", "1": "12 Belgische creators geactiveerd", "2": "UGC-campagne op Instagram en TikTok", "3": "Branded content en giveaways" },
-        "results": { "0": "2,4 miljoen organisch bereik in 2 maanden", "1": "Hoge engagement op UGC-content", "2": "Sterke merkbekendheid bij doelgroep", "3": "Succesvolle productlancering" }
+        "approach": {
+          "0": "Influencer partnership-strategie",
+          "1": "12 Belgische creators geactiveerd",
+          "2": "UGC-campagne op Instagram en TikTok",
+          "3": "Branded content en giveaways"
+        },
+        "results": {
+          "0": "2,4 miljoen organisch bereik in 2 maanden",
+          "1": "Hoge engagement op UGC-content",
+          "2": "Sterke merkbekendheid bij doelgroep",
+          "3": "Succesvolle productlancering"
+        }
       },
       "tech-startup-branding": {
         "shortResult": "Complete merkidentiteit",
         "challenge": "Pre-seed startup had een professionele uitstraling nodig voor investeerdersbijeenkomsten. Huidige DIY-branding was niet overtuigend.",
-        "approach": { "0": "Complete merkidentiteit ontwikkeling", "1": "Logo en visuele taal ontwerp", "2": "Pitch deck ontwerp voor investeerders", "3": "Investeerder-klare website" },
-        "results": { "0": "Succesvolle seed ronde gesloten binnen 3 maanden", "1": "Professionele uitstraling richting investeerders", "2": "Consistente merkuitstraling over alle contactpunten", "3": "Fundament gelegd voor schaalbare branding" }
+        "approach": {
+          "0": "Complete merkidentiteit ontwikkeling",
+          "1": "Logo en visuele taal ontwerp",
+          "2": "Pitch deck ontwerp voor investeerders",
+          "3": "Investeerder-klare website"
+        },
+        "results": {
+          "0": "Succesvolle seed ronde gesloten binnen 3 maanden",
+          "1": "Professionele uitstraling richting investeerders",
+          "2": "Consistente merkuitstraling over alle contactpunten",
+          "3": "Fundament gelegd voor schaalbare branding"
+        }
       },
       "e-commerce-groei": {
         "shortResult": "+240% ROAS",
         "challenge": "Bestaande interieurwebshop draaide verliesgevend op advertenties. ROAS onder de 1,0 zonder duidelijke strategie. Budget werd verspild.",
-        "approach": { "0": "Volledige audit van bestaande campagnes", "1": "Nieuwe doelgroepsegmentatie", "2": "A/B-testen van creatives", "3": "Retargeting funnels opgezet" },
-        "results": { "0": "+240% ROAS-verbetering binnen 90 dagen", "1": "Winstgevende advertentie-uitgaven", "2": "Lagere kosten per acquisitie", "3": "Schaalbare campagnestructuur" }
+        "approach": {
+          "0": "Volledige audit van bestaande campagnes",
+          "1": "Nieuwe doelgroepsegmentatie",
+          "2": "A/B-testen van creatives",
+          "3": "Retargeting funnels opgezet"
+        },
+        "results": {
+          "0": "+240% ROAS-verbetering binnen 90 dagen",
+          "1": "Winstgevende advertentie-uitgaven",
+          "2": "Lagere kosten per acquisitie",
+          "3": "Schaalbare campagnestructuur"
+        }
       },
       "content-strategie": {
         "shortResult": "50+ video's/maand",
         "challenge": "Fitnessketen wilde consistent content produceren maar had intern geen tijd of expertise. Social media werd verwaarloosd.",
-        "approach": { "0": "Volledig contentpakket op abonnement", "1": "Planning, productie en publicatie", "2": "Video- en fotocontent voor alle locaties", "3": "Consistente poststrategie" },
-        "results": { "0": "50+ kwalitatieve video's per maand", "1": "Consistente merkbeleving over alle kanalen", "2": "Hogere ledenbetrokkenheid", "3": "Meer inschrijvingen via social media" }
+        "approach": {
+          "0": "Volledig contentpakket op abonnement",
+          "1": "Planning, productie en publicatie",
+          "2": "Video- en fotocontent voor alle locaties",
+          "3": "Consistente poststrategie"
+        },
+        "results": {
+          "0": "50+ kwalitatieve video's per maand",
+          "1": "Consistente merkbeleving over alle kanalen",
+          "2": "Hogere ledenbetrokkenheid",
+          "3": "Meer inschrijvingen via social media"
+        }
       },
       "ai-learn-academy": {
         "shortResult": "Live platform – doorlopend",
         "challenge": "AI Deals had een premium platform nodig dat toegang tot toonaangevende AI-tools vereenvoudigt via een abonnementsmodel, gecombineerd met een educatieve academie voor creators en professionals.",
-        "approach": { "0": "Volledig platformontwerp & UX/UI-ontwikkeling met premium donker thema", "1": "Abonnementsgebaseerd toegangsbeheer systeem", "2": "AI-tools marktplaatsstructuur met categorisering", "3": "AI Academy & educatieve contentarchitectuur", "4": "Schaalbare platforminfrastructuur voor groei", "5": "Doorlopend technisch beheer en optimalisatie" },
-        "results": { "0": "Custom AI-tools marktplaats gelanceerd", "1": "Abonnements- en toegangsbeheersysteem live", "2": "Premium donkere UI met conversiegerichte UX", "3": "Educatieve AI Academy-structuur uitgerold", "4": "Schaalbare architectuur die continue groei ondersteunt", "5": "Platform actief beheerd & geoptimaliseerd door Groppi" },
+        "approach": {
+          "0": "Volledig platformontwerp & UX/UI-ontwikkeling met premium donker thema",
+          "1": "Abonnementsgebaseerd toegangsbeheer systeem",
+          "2": "AI-tools marktplaatsstructuur met categorisering",
+          "3": "AI Academy & educatieve contentarchitectuur",
+          "4": "Schaalbare platforminfrastructuur voor groei",
+          "5": "Doorlopend technisch beheer en optimalisatie"
+        },
+        "results": {
+          "0": "Custom AI-tools marktplaats gelanceerd",
+          "1": "Abonnements- en toegangsbeheersysteem live",
+          "2": "Premium donkere UI met conversiegerichte UX",
+          "3": "Educatieve AI Academy-structuur uitgerold",
+          "4": "Schaalbare architectuur die continue groei ondersteunt",
+          "5": "Platform actief beheerd & geoptimaliseerd door Groppi"
+        },
         "disclaimer": "Dit is een live en doorlopend project. Platformontwerp & beheer door Groppi."
       },
       "pilotscareer": {
         "shortResult": "Internationaal luchtvaart-recruitmentplatform – live",
         "challenge": "PilotsCareer had een professioneel, schaalbaar recruitmentplatform nodig dat piloten verbindt met wereldwijde carrièremogelijkheden.",
-        "approach": { "0": "Volledig platformontwerp & ontwikkeling vanaf nul", "1": "Premium donkere UI met luchtvaart-geïnspireerde esthetiek", "2": "Geavanceerd vacature-zoek- en filtersysteem", "3": "Pilotenprofiel en sollicitatiebeheer", "4": "Responsief ontwerp voor desktop en mobiel", "5": "Doorlopende platformoptimalisatie en functieontwikkeling" },
-        "results": { "0": "Professioneel luchtvaart-recruitmentplatform gelanceerd", "1": "Schaalbare architectuur die internationale groei ondersteunt", "2": "Strakke, intuïtieve UX voor piloten en recruiters", "3": "Geavanceerde zoek- en filtermogelijkheden", "4": "Mobiel-geoptimaliseerde pilotprofielervaring", "5": "Platform actief beheerd & ontwikkeld door Groppi" },
+        "approach": {
+          "0": "Volledig platformontwerp & ontwikkeling vanaf nul",
+          "1": "Premium donkere UI met luchtvaart-geïnspireerde esthetiek",
+          "2": "Geavanceerd vacature-zoek- en filtersysteem",
+          "3": "Pilotenprofiel en sollicitatiebeheer",
+          "4": "Responsief ontwerp voor desktop en mobiel",
+          "5": "Doorlopende platformoptimalisatie en functieontwikkeling"
+        },
+        "results": {
+          "0": "Professioneel luchtvaart-recruitmentplatform gelanceerd",
+          "1": "Schaalbare architectuur die internationale groei ondersteunt",
+          "2": "Strakke, intuïtieve UX voor piloten en recruiters",
+          "3": "Geavanceerde zoek- en filtermogelijkheden",
+          "4": "Mobiel-geoptimaliseerde pilotprofielervaring",
+          "5": "Platform actief beheerd & ontwikkeld door Groppi"
+        },
         "disclaimer": "Dit is een live en doorlopend project. Platformontwerp & beheer door Groppi."
       },
       "casa-mavi": {
         "shortResult": "Complete digitale aanwezigheid voor een Mediterraan juweel in Spanje.",
         "challenge": "Casa Mavi, een Italiaans-Napolitaans restaurant in Fuengirola (Spanje), wilde een professionele digitale aanwezigheid opbouwen om zowel lokale gasten als toeristen langs de Costa del Sol aan te trekken.",
-        "approach": { "0": "Maatwerk website met online reserveringssysteem", "1": "Digitaal menu en visuele contentcreatie", "2": "Opbouwen van een professionele digitale aanwezigheid", "3": "Social media-strategie gericht op lokale en toeristische doelgroepen" },
-        "results": { "0": "Professionele website met geïntegreerd reserveringssysteem", "1": "Sterke visuele identiteit die de Mediterrane sfeer weerspiegelt", "2": "Verbeterde online zichtbaarheid voor toeristen en locals", "3": "Doorlopend digitaal beheer en optimalisatie" },
+        "approach": {
+          "0": "Maatwerk website met online reserveringssysteem",
+          "1": "Digitaal menu en visuele contentcreatie",
+          "2": "Opbouwen van een professionele digitale aanwezigheid",
+          "3": "Social media-strategie gericht op lokale en toeristische doelgroepen"
+        },
+        "results": {
+          "0": "Professionele website met geïntegreerd reserveringssysteem",
+          "1": "Sterke visuele identiteit die de Mediterrane sfeer weerspiegelt",
+          "2": "Verbeterde online zichtbaarheid voor toeristen en locals",
+          "3": "Doorlopend digitaal beheer en optimalisatie"
+        },
         "disclaimer": "Project actief beheerd door GROPPI."
       },
       "arte-y-cocina": {
         "shortResult": "Premium digitale identiteit voor een artistieke fine-dining ervaring.",
         "challenge": "ArTe y CoCiNa, een artistiek fine-dining restaurant in Spanje, wilde een digitale aanwezigheid die de unieke fusie van kunst en gastronomie weerspiegelt en een internationaal publiek aanspreekt.",
-        "approach": { "0": "Maatwerk website met luxueuze visuele identiteit", "1": "Professionele food- en interieur contentcreatie", "2": "Opbouwen van een sterke digitale aanwezigheid", "3": "Visuele branding die kunst en culinaire excellentie combineert" },
-        "results": { "0": "Elegante website die de fine-dining ervaring online weerspiegelt", "1": "Sterke visuele identiteit met artistieke flair", "2": "Verbeterde online zichtbaarheid en merkbeleving", "3": "Doorlopend digitaal beheer en optimalisatie" },
+        "approach": {
+          "0": "Maatwerk website met luxueuze visuele identiteit",
+          "1": "Professionele food- en interieur contentcreatie",
+          "2": "Opbouwen van een sterke digitale aanwezigheid",
+          "3": "Visuele branding die kunst en culinaire excellentie combineert"
+        },
+        "results": {
+          "0": "Elegante website die de fine-dining ervaring online weerspiegelt",
+          "1": "Sterke visuele identiteit met artistieke flair",
+          "2": "Verbeterde online zichtbaarheid en merkbeleving",
+          "3": "Doorlopend digitaal beheer en optimalisatie"
+        },
         "disclaimer": "Project actief beheerd door GROPPI."
       },
       "verona-los-boliches": {
         "shortResult": "Complete online aanwezigheid voor een levendig fusionrestaurant.",
         "challenge": "Verona Los Boliches, een uniek Italiaans-Indiaas-Mexicaans fusionrestaurant in Spanje, had een professionele digitale aanwezigheid nodig die de multiculturele keuken en levendige sfeer van de Costa del Sol weerspiegelde.",
-        "approach": { "0": "Maatwerk website met visuele identiteit", "1": "Professionele food- en sfeercontent creatie", "2": "Online aanwezigheid en zichtbaarheid opbouwen", "3": "Visuele content gericht op diverse keukenstijlen" },
-        "results": { "0": "Professionele website die de fusionkeuken sterk presenteert", "1": "Verbeterde online zichtbaarheid voor toeristen en locals", "2": "Sterke visuele content over alle digitale kanalen", "3": "Doorlopend digitaal beheer en optimalisatie" },
+        "approach": {
+          "0": "Maatwerk website met visuele identiteit",
+          "1": "Professionele food- en sfeercontent creatie",
+          "2": "Online aanwezigheid en zichtbaarheid opbouwen",
+          "3": "Visuele content gericht op diverse keukenstijlen"
+        },
+        "results": {
+          "0": "Professionele website die de fusionkeuken sterk presenteert",
+          "1": "Verbeterde online zichtbaarheid voor toeristen en locals",
+          "2": "Sterke visuele content over alle digitale kanalen",
+          "3": "Doorlopend digitaal beheer en optimalisatie"
+        },
         "disclaimer": "Project actief beheerd door GROPPI."
       },
       "happy-flavors": {
         "shortResult": "Professionele digitale aanwezigheid voor authentieke Indiase keuken in Spanje.",
         "challenge": "Happy Flavors Indian Restaurant wilde een professionele online aanwezigheid opbouwen die de authentieke Indiase keuken en warme gastvrijheid weerspiegelt, aantrekkelijk voor zowel lokale gasten als toeristen.",
-        "approach": { "0": "Maatwerk website met warme visuele identiteit", "1": "Professionele food- en sfeercontent creatie", "2": "Digitale aanwezigheid en zichtbaarheid opbouwen", "3": "Visuele content die de rijke Indiase keuken toont" },
-        "results": { "0": "Professionele website die de authentieke Indiase keuken presenteert", "1": "Sterke visuele content over alle digitale kanalen", "2": "Verbeterde online zichtbaarheid voor toeristen en locals", "3": "Doorlopend digitaal beheer en optimalisatie" },
+        "approach": {
+          "0": "Maatwerk website met warme visuele identiteit",
+          "1": "Professionele food- en sfeercontent creatie",
+          "2": "Digitale aanwezigheid en zichtbaarheid opbouwen",
+          "3": "Visuele content die de rijke Indiase keuken toont"
+        },
+        "results": {
+          "0": "Professionele website die de authentieke Indiase keuken presenteert",
+          "1": "Sterke visuele content over alle digitale kanalen",
+          "2": "Verbeterde online zichtbaarheid voor toeristen en locals",
+          "3": "Doorlopend digitaal beheer en optimalisatie"
+        },
         "disclaimer": "Project actief beheerd door GROPPI."
       },
       "guest-reservations": {
         "shortResult": "Doorlopend platformbeheer voor een wereldwijde hotelboeking service.",
         "challenge": "Guest Reservations, een internationaal hotel- en reisboekingsplatform, had doorlopend platformbeheer, websiteoptimalisatie en technische ondersteuning nodig om hun wereldwijde groei te ondersteunen.",
-        "approach": { "0": "Doorlopend platformbeheer en technische ondersteuning", "1": "Websiteoptimalisatie voor betere prestaties en conversie", "2": "Monitoring en proactief onderhoud van het boekingsplatform", "3": "Strategische ondersteuning voor schaalbare groei" },
-        "results": { "0": "Verbeterde platformprestaties en gebruikerservaring", "1": "Hogere conversieratio op het boekingsplatform", "2": "Stabiel en betrouwbaar platform voor wereldwijde gebruikers", "3": "Doorlopende technische ondersteuning en optimalisatie" },
+        "approach": {
+          "0": "Doorlopend platformbeheer en technische ondersteuning",
+          "1": "Websiteoptimalisatie voor betere prestaties en conversie",
+          "2": "Monitoring en proactief onderhoud van het boekingsplatform",
+          "3": "Strategische ondersteuning voor schaalbare groei"
+        },
+        "results": {
+          "0": "Verbeterde platformprestaties en gebruikerservaring",
+          "1": "Hogere conversieratio op het boekingsplatform",
+          "2": "Stabiel en betrouwbaar platform voor wereldwijde gebruikers",
+          "3": "Doorlopende technische ondersteuning en optimalisatie"
+        },
         "disclaimer": "Doorlopend project actief beheerd door GROPPI."
       },
       "eurostars-hotels": {
         "shortResult": "Digitale platformondersteuning & prestatieoptimalisatie voor een Europese hotelgroep.",
         "challenge": "Eurostars Hotels, een Europese hotelgroep met een uitgebreid boekingsplatform, had doorlopende digitale ondersteuning, websitebeheer en prestatieoptimalisatie nodig om hun online aanwezigheid te versterken.",
-        "approach": { "0": "Doorlopende digitale platformondersteuning en technisch beheer", "1": "Websitebeheer en boekingsplatform optimalisatie", "2": "Prestatieoptimalisatie voor snellere laadtijden en betere conversie", "3": "Strategische ondersteuning voor Europese groei" },
-        "results": { "0": "Geoptimaliseerde websiteprestaties en gebruikerservaring", "1": "Verbeterde conversieratio op het boekingsplatform", "2": "Stabiel en betrouwbaar digitaal platform voor Europese gasten", "3": "Doorlopend technisch beheer en proactieve optimalisatie" },
+        "approach": {
+          "0": "Doorlopende digitale platformondersteuning en technisch beheer",
+          "1": "Websitebeheer en boekingsplatform optimalisatie",
+          "2": "Prestatieoptimalisatie voor snellere laadtijden en betere conversie",
+          "3": "Strategische ondersteuning voor Europese groei"
+        },
+        "results": {
+          "0": "Geoptimaliseerde websiteprestaties en gebruikerservaring",
+          "1": "Verbeterde conversieratio op het boekingsplatform",
+          "2": "Stabiel en betrouwbaar digitaal platform voor Europese gasten",
+          "3": "Doorlopend technisch beheer en proactieve optimalisatie"
+        },
         "disclaimer": "Doorlopend project actief beheerd door GROPPI."
       },
       "nda-project-001": {
         "shortResult": "+42% online reserveringen",
         "challenge": "Verouderde website met slechte mobiele ervaring leidde tot gemiste reserveringen.",
-        "approach": { "0": "Responsive website herontwerp", "1": "Online reserveringssysteem", "2": "Lokale SEO optimalisatie" },
-        "results": { "0": "+42% online reserveringen", "1": "Snellere laadtijd (< 2s)" },
+        "approach": {
+          "0": "Responsive website herontwerp",
+          "1": "Online reserveringssysteem",
+          "2": "Lokale SEO optimalisatie"
+        },
+        "results": {
+          "0": "+42% online reserveringen",
+          "1": "Snellere laadtijd (< 2s)"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-002": {
         "shortResult": "+70% tafelreserveringen",
         "challenge": "Bistro in hartje stad miste online zichtbaarheid bij toeristen en locals.",
-        "approach": { "0": "Instagram Reels strategie", "1": "Food videografie", "2": "Seizoensmenu campagnes" },
-        "results": { "0": "+70% tafelreserveringen via social", "1": "Virale Reel (50K+ views)" },
+        "approach": {
+          "0": "Instagram Reels strategie",
+          "1": "Food videografie",
+          "2": "Seizoensmenu campagnes"
+        },
+        "results": {
+          "0": "+70% tafelreserveringen via social",
+          "1": "Virale Reel (50K+ views)"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-003": {
         "shortResult": "+55% Instagram volgers",
         "challenge": "Schoonheidssalon miste online zichtbaarheid bij jongere doelgroep.",
-        "approach": { "0": "Instagram contentstrategie", "1": "Before/after visuele reeks", "2": "Influencer micro-samenwerkingen" },
-        "results": { "0": "+55% Instagram volgers", "1": "Hogere booking rate via DM" },
+        "approach": {
+          "0": "Instagram contentstrategie",
+          "1": "Before/after visuele reeks",
+          "2": "Influencer micro-samenwerkingen"
+        },
+        "results": {
+          "0": "+55% Instagram volgers",
+          "1": "Hogere booking rate via DM"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-004": {
         "shortResult": "+50% boekingen",
         "challenge": "Nieuwe spa miste onderscheidend vermogen in competitieve wellness markt.",
-        "approach": { "0": "Luxe merkidentiteit ontwikkeling", "1": "Booking-geoptimaliseerde website", "2": "Sfeervolle visuele taal" },
-        "results": { "0": "+50% boekingen in eerste 6 maanden", "1": "Premium positionering bereikt" },
+        "approach": {
+          "0": "Luxe merkidentiteit ontwikkeling",
+          "1": "Booking-geoptimaliseerde website",
+          "2": "Sfeervolle visuele taal"
+        },
+        "results": {
+          "0": "+50% boekingen in eerste 6 maanden",
+          "1": "Premium positionering bereikt"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-005": {
         "shortResult": "+38% offerteaanvragen",
         "challenge": "Familiebedrijf met sterke reputatie maar verouderde merkidentiteit.",
-        "approach": { "0": "Complete merkidentiteit herwerkt", "1": "Professionele projectfotografie", "2": "Nieuwe website met portfolio" },
-        "results": { "0": "+38% offerteaanvragen", "1": "Sterkere merkherkenning" },
+        "approach": {
+          "0": "Complete merkidentiteit herwerkt",
+          "1": "Professionele projectfotografie",
+          "2": "Nieuwe website met portfolio"
+        },
+        "results": {
+          "0": "+38% offerteaanvragen",
+          "1": "Sterkere merkherkenning"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-006": {
         "shortResult": "+85% leads",
         "challenge": "Zonnepanelen installateur in groeiende markt maar slechte lead generatie.",
-        "approach": { "0": "Leadgeneratie-funnels", "1": "Google Ads campagnes", "2": "Calculator tool op website" },
-        "results": { "0": "+85% leads per maand", "1": "Cost per lead gehalveerd" },
+        "approach": {
+          "0": "Leadgeneratie-funnels",
+          "1": "Google Ads campagnes",
+          "2": "Calculator tool op website"
+        },
+        "results": {
+          "0": "+85% leads per maand",
+          "1": "Cost per lead gehalveerd"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-007": {
         "shortResult": "€62K omzet in Q1",
         "challenge": "Nieuwe webshop zonder bestaand klantenbestand of merkbekendheid.",
-        "approach": { "0": "Shopify webshop configuratie", "1": "Meta Ads campagnes", "2": "Retargeting-funnels" },
-        "results": { "0": "€62K omzet in eerste kwartaal", "1": "ROAS van 3,8" },
+        "approach": {
+          "0": "Shopify webshop configuratie",
+          "1": "Meta Ads campagnes",
+          "2": "Retargeting-funnels"
+        },
+        "results": {
+          "0": "€62K omzet in eerste kwartaal",
+          "1": "ROAS van 3,8"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-008": {
         "shortResult": "+130% online verkoop",
         "challenge": "Juwelier wilde online verkoop starten naast fysieke winkel.",
-        "approach": { "0": "WooCommerce webshop opzet", "1": "Productfotografie", "2": "Instagram shopping integratie" },
-        "results": { "0": "+130% online verkoop in 4 maanden", "1": "Sterke Instagram community" },
+        "approach": {
+          "0": "WooCommerce webshop opzet",
+          "1": "Productfotografie",
+          "2": "Instagram shopping integratie"
+        },
+        "results": {
+          "0": "+130% online verkoop in 4 maanden",
+          "1": "Sterke Instagram community"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-009": {
         "shortResult": "#2 Google positie",
         "challenge": "Medische praktijk onzichtbaar in zoekresultaten ondanks sterke reputatie.",
-        "approach": { "0": "Technische SEO audit en fixes", "1": "Medische content strategie", "2": "Google Mijn Bedrijf optimalisatie" },
-        "results": { "0": "#2 Google positie voor kernzoekwoorden", "1": "+60% organisch verkeer" },
+        "approach": {
+          "0": "Technische SEO audit en fixes",
+          "1": "Medische content strategie",
+          "2": "Google Mijn Bedrijf optimalisatie"
+        },
+        "results": {
+          "0": "#2 Google positie voor kernzoekwoorden",
+          "1": "+60% organisch verkeer"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-010": {
         "shortResult": "+35% nieuwe patiënten",
         "challenge": "Tandartspraktijk in competitieve regio met dalende nieuwe patiëntenaantallen.",
-        "approach": { "0": "Lokale SEO strategie", "1": "Google Ads campagnes", "2": "Reviewbeheer" },
-        "results": { "0": "+35% nieuwe patiënten per maand", "1": "#1 Google Maps lokaal" },
+        "approach": {
+          "0": "Lokale SEO strategie",
+          "1": "Google Ads campagnes",
+          "2": "Reviewbeheer"
+        },
+        "results": {
+          "0": "+35% nieuwe patiënten per maand",
+          "1": "#1 Google Maps lokaal"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-011": {
         "shortResult": "Seed ronde gesloten",
         "challenge": "Pre-seed startup had professionele uitstraling nodig voor investeerders.",
-        "approach": { "0": "Logo en visuele identiteit", "1": "Pitchdeck-ontwerp", "2": "Landing page ontwikkeling" },
-        "results": { "0": "Succesvolle seed ronde", "1": "Professionele investor presentatie" },
+        "approach": {
+          "0": "Logo en visuele identiteit",
+          "1": "Pitchdeck-ontwerp",
+          "2": "Landing page ontwikkeling"
+        },
+        "results": {
+          "0": "Succesvolle seed ronde",
+          "1": "Professionele investor presentatie"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-012": {
         "shortResult": "500+ sign-ups in 30 dagen",
         "challenge": "B2B SaaS product klaar voor lancering maar zonder marketing infrastructuur.",
-        "approach": { "0": "Conversiegerichte landingspagina", "1": "LinkedIn Ads campagne", "2": "Content marketing strategie" },
-        "results": { "0": "500+ sign-ups in eerste maand", "1": "Sterke product-market fit signalen" },
+        "approach": {
+          "0": "Conversiegerichte landingspagina",
+          "1": "LinkedIn Ads campagne",
+          "2": "Content marketing strategie"
+        },
+        "results": {
+          "0": "500+ sign-ups in eerste maand",
+          "1": "Sterke product-market fit signalen"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-013": {
         "shortResult": "+75% gekwalificeerde leads",
         "challenge": "Vastgoedkantoor afhankelijk van traditionele kanalen, miste online leads.",
-        "approach": { "0": "Leadgeneratie campagnes", "1": "Landingspagina's per project", "2": "CRM integratie" },
-        "results": { "0": "+75% gekwalificeerde leads", "1": "Lagere cost per lead" },
+        "approach": {
+          "0": "Leadgeneratie campagnes",
+          "1": "Landingspagina's per project",
+          "2": "CRM integratie"
+        },
+        "results": {
+          "0": "+75% gekwalificeerde leads",
+          "1": "Lagere cost per lead"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-014": {
         "shortResult": "Hogere vraagprijs gerealiseerd",
         "challenge": "Premium vastgoed miste visuele presentatie die de luxe uitstraalde.",
-        "approach": { "0": "Luxe vastgoedwebsite", "1": "Drone en interieur fotografie", "2": "Virtual tours integratie" },
-        "results": { "0": "Hogere vraagprijs gerealiseerd", "1": "Snellere verkoopcyclus" },
+        "approach": {
+          "0": "Luxe vastgoedwebsite",
+          "1": "Drone en interieur fotografie",
+          "2": "Virtual tours integratie"
+        },
+        "results": {
+          "0": "Hogere vraagprijs gerealiseerd",
+          "1": "Snellere verkoopcyclus"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-015": {
         "shortResult": "+32% projectaanvragen",
         "challenge": "Interieurontwerper toonde werk via sociale media maar miste professionele portfolio.",
-        "approach": { "0": "Portfolio website met galerij", "1": "Professionele projectfotografie", "2": "Blog strategie" },
-        "results": { "0": "+32% projectaanvragen", "1": "Hogere gemiddelde projectwaarde" },
+        "approach": {
+          "0": "Portfolio website met galerij",
+          "1": "Professionele projectfotografie",
+          "2": "Blog strategie"
+        },
+        "results": {
+          "0": "+32% projectaanvragen",
+          "1": "Hogere gemiddelde projectwaarde"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-016": {
         "shortResult": "+55% showroom bezoeken",
         "challenge": "Keukenwinkel had dalende bezoekersaantallen ondanks premium aanbod.",
-        "approach": { "0": "Google Ads met lokale focus", "1": "Inspiratie content op social", "2": "Virtuele showroomrondleiding" },
-        "results": { "0": "+55% showroom bezoeken", "1": "Hogere conversie van bezoek naar verkoop" },
+        "approach": {
+          "0": "Google Ads met lokale focus",
+          "1": "Inspiratie content op social",
+          "2": "Virtuele showroomrondleiding"
+        },
+        "results": {
+          "0": "+55% showroom bezoeken",
+          "1": "Hogere conversie van bezoek naar verkoop"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-017": {
         "shortResult": "40+ video's/maand",
         "challenge": "Fitnessstudio wilde consistent content maar had geen interne capaciteit.",
-        "approach": { "0": "Volledig contentpakket op abonnement", "1": "Video productie op locatie", "2": "Social media-planning" },
-        "results": { "0": "40+ kwalitatieve video's per maand", "1": "Hogere ledenbetrokkenheid" },
+        "approach": {
+          "0": "Volledig contentpakket op abonnement",
+          "1": "Video productie op locatie",
+          "2": "Social media-planning"
+        },
+        "results": {
+          "0": "40+ kwalitatieve video's per maand",
+          "1": "Hogere ledenbetrokkenheid"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-018": {
         "shortResult": "+45% leden",
         "challenge": "Nieuwe CrossFit box moest zich onderscheiden van gevestigde concurrenten.",
-        "approach": { "0": "Krachtige merkidentiteit", "1": "Community-gedreven content", "2": "Launch campagne" },
-        "results": { "0": "+45% leden in eerste kwartaal", "1": "Sterke community opgebouwd" },
+        "approach": {
+          "0": "Krachtige merkidentiteit",
+          "1": "Community-gedreven content",
+          "2": "Launch campagne"
+        },
+        "results": {
+          "0": "+45% leden in eerste kwartaal",
+          "1": "Sterke community opgebouwd"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-019": {
         "shortResult": "+28% showroom bezoeken",
         "challenge": "Autohandel verloor marktaandeel aan grotere dealers met sterkere online aanwezigheid.",
-        "approach": { "0": "Nieuwe website met voorraadsysteem", "1": "Google Ads campagnes", "2": "Remarketing strategie" },
-        "results": { "0": "+28% showroom bezoeken", "1": "Lagere acquisitiekosten" },
+        "approach": {
+          "0": "Nieuwe website met voorraadsysteem",
+          "1": "Google Ads campagnes",
+          "2": "Remarketing strategie"
+        },
+        "results": {
+          "0": "+28% showroom bezoeken",
+          "1": "Lagere acquisitiekosten"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       },
       "nda-project-020": {
         "shortResult": "+45% contactaanvragen",
         "challenge": "Advocatenkantoor met verouderde website en minimale online vindbaarheid.",
-        "approach": { "0": "Professionele website redesign", "1": "Content marketing strategie", "2": "Lokale SEO" },
-        "results": { "0": "+45% contactaanvragen", "1": "Top 5 Google lokaal" },
+        "approach": {
+          "0": "Professionele website redesign",
+          "1": "Content marketing strategie",
+          "2": "Lokale SEO"
+        },
+        "results": {
+          "0": "+45% contactaanvragen",
+          "1": "Top 5 Google lokaal"
+        },
         "disclaimer": "Indicatief resultaat, afhankelijk van periode & budget."
       }
     }
@@ -1820,26 +2270,6 @@
       "errorTitle": "Inschrijving mislukt",
       "errorMessage": "Er ging iets mis. Probeer het later opnieuw."
     }
-  },
-  "common": {
-    "loading": "Laden...",
-    "error": "Er is een fout opgetreden",
-    "retry": "Opnieuw proberen",
-    "back": "Terug",
-    "next": "Volgende",
-    "previous": "Vorige",
-    "close": "Sluiten",
-    "search": "Zoeken",
-    "noResults": "Geen resultaten gevonden",
-    "learnMore": "Meer informatie",
-    "getStarted": "Aan de slag",
-    "viewAll": "Bekijk alles"
-  },
-  "validation": {
-    "required": "Dit veld is verplicht",
-    "email": "Voer een geldig e-mailadres in",
-    "minLength": "Minimaal {{count}} tekens vereist",
-    "maxLength": "Maximaal {{count}} tekens toegestaan"
   },
   "stats": {
     "years": "Jaar ervaring",
@@ -1923,11 +2353,11 @@
       "5week": "5 berichten per week"
     },
     "adsBudget": {
-      "none": "Geen betaalde campagnes",
       "100": "€100 / maand",
       "250": "€250 / maand",
       "500": "€500 / maand",
-      "1000": "€1000 / maand"
+      "1000": "€1000 / maand",
+      "none": "Geen betaalde campagnes"
     },
     "addons": {
       "productPhotos": {
@@ -1981,7 +2411,7 @@
       }
     }
   },
-"partner": {
+  "partner": {
     "badge": "WAT DIT PROGRAMMA IS",
     "seo": {
       "title": "Partner met GROPPI | Partnernetwerk",
@@ -2290,17 +2720,44 @@
         "3": "Tijdsbesparing voor jouw team"
       },
       "deliverables": {
-        "1": { "title": "Strategie & planning", "desc": "Content kalender op maat van jouw doelen." },
-        "2": { "title": "Content creatie", "desc": "Posts, stories en reels die aanslaan." },
-        "3": { "title": "Communitybeheer", "desc": "Actief reageren op comments en DM's." },
-        "4": { "title": "Advertentiebeheer", "desc": "Gerichte ads voor maximaal bereik." },
-        "5": { "title": "Maandelijkse rapportage", "desc": "Duidelijke cijfers en inzichten." },
-        "6": { "title": "Persoonlijke begeleiding", "desc": "Altijd bereikbaar voor vragen." }
+        "1": {
+          "title": "Strategie & planning",
+          "desc": "Content kalender op maat van jouw doelen."
+        },
+        "2": {
+          "title": "Content creatie",
+          "desc": "Posts, stories en reels die aanslaan."
+        },
+        "3": {
+          "title": "Communitybeheer",
+          "desc": "Actief reageren op comments en DM's."
+        },
+        "4": {
+          "title": "Advertentiebeheer",
+          "desc": "Gerichte ads voor maximaal bereik."
+        },
+        "5": {
+          "title": "Maandelijkse rapportage",
+          "desc": "Duidelijke cijfers en inzichten."
+        },
+        "6": {
+          "title": "Persoonlijke begeleiding",
+          "desc": "Altijd bereikbaar voor vragen."
+        }
       },
       "process": {
-        "1": { "title": "Analyse", "desc": "We analyseren je huidige aanwezigheid en concurrentie." },
-        "2": { "title": "Uitvoering", "desc": "We creëren en publiceren content volgens planning." },
-        "3": { "title": "Groei & optimalisatie", "desc": "Continue verbetering op basis van data." }
+        "1": {
+          "title": "Analyse",
+          "desc": "We analyseren je huidige aanwezigheid en concurrentie."
+        },
+        "2": {
+          "title": "Uitvoering",
+          "desc": "We creëren en publiceren content volgens planning."
+        },
+        "3": {
+          "title": "Groei & optimalisatie",
+          "desc": "Continue verbetering op basis van data."
+        }
       }
     },
     "adsManagement": {
@@ -2312,17 +2769,44 @@
         "3": "Transparante rapportage elke maand"
       },
       "deliverables": {
-        "1": { "title": "Campagne strategie", "desc": "Doelgerichte aanpak per platform." },
-        "2": { "title": "Advertentie creatie", "desc": "Visuals en copy die converteren." },
-        "3": { "title": "A/B-testen", "desc": "Continu testen voor betere resultaten." },
-        "4": { "title": "Budget optimalisatie", "desc": "Maximaal resultaat uit je budget." },
-        "5": { "title": "Conversie tracking", "desc": "Volledige inzicht in je ROI." },
-        "6": { "title": "Wekelijkse updates", "desc": "Je weet altijd wat er gebeurt." }
+        "1": {
+          "title": "Campagne strategie",
+          "desc": "Doelgerichte aanpak per platform."
+        },
+        "2": {
+          "title": "Advertentie creatie",
+          "desc": "Visuals en copy die converteren."
+        },
+        "3": {
+          "title": "A/B-testen",
+          "desc": "Continu testen voor betere resultaten."
+        },
+        "4": {
+          "title": "Budget optimalisatie",
+          "desc": "Maximaal resultaat uit je budget."
+        },
+        "5": {
+          "title": "Conversie tracking",
+          "desc": "Volledige inzicht in je ROI."
+        },
+        "6": {
+          "title": "Wekelijkse updates",
+          "desc": "Je weet altijd wat er gebeurt."
+        }
       },
       "process": {
-        "1": { "title": "Analyse", "desc": "We onderzoeken je markt en concurrentie." },
-        "2": { "title": "Uitvoering", "desc": "We lanceren en beheren je campagnes." },
-        "3": { "title": "Groei & optimalisatie", "desc": "Continue verbetering voor meer conversies." }
+        "1": {
+          "title": "Analyse",
+          "desc": "We onderzoeken je markt en concurrentie."
+        },
+        "2": {
+          "title": "Uitvoering",
+          "desc": "We lanceren en beheren je campagnes."
+        },
+        "3": {
+          "title": "Groei & optimalisatie",
+          "desc": "Continue verbetering voor meer conversies."
+        }
       }
     },
     "contentProduction": {
@@ -2334,17 +2818,44 @@
         "3": "Snelle levering en revisies"
       },
       "deliverables": {
-        "1": { "title": "Concept & planning", "desc": "Creatieve ideeën afgestemd op je merk." },
-        "2": { "title": "Video productie", "desc": "Van scripts tot eindmontage." },
-        "3": { "title": "Fotografie", "desc": "Product- en lifestyle foto's." },
-        "4": { "title": "Editing & postproductie", "desc": "Professionele afwerking." },
-        "5": { "title": "Platform optimalisatie", "desc": "Formats voor elk kanaal." },
-        "6": { "title": "Content bibliotheek", "desc": "Alle assets overzichtelijk opgeslagen." }
+        "1": {
+          "title": "Concept & planning",
+          "desc": "Creatieve ideeën afgestemd op je merk."
+        },
+        "2": {
+          "title": "Video productie",
+          "desc": "Van scripts tot eindmontage."
+        },
+        "3": {
+          "title": "Fotografie",
+          "desc": "Product- en lifestyle foto's."
+        },
+        "4": {
+          "title": "Editing & postproductie",
+          "desc": "Professionele afwerking."
+        },
+        "5": {
+          "title": "Platform optimalisatie",
+          "desc": "Formats voor elk kanaal."
+        },
+        "6": {
+          "title": "Content bibliotheek",
+          "desc": "Alle assets overzichtelijk opgeslagen."
+        }
       },
       "process": {
-        "1": { "title": "Analyse", "desc": "We bepalen wat jouw merk nodig heeft." },
-        "2": { "title": "Uitvoering", "desc": "Productie op locatie of in studio." },
-        "3": { "title": "Groei & optimalisatie", "desc": "Feedback verwerken en verbeteren." }
+        "1": {
+          "title": "Analyse",
+          "desc": "We bepalen wat jouw merk nodig heeft."
+        },
+        "2": {
+          "title": "Uitvoering",
+          "desc": "Productie op locatie of in studio."
+        },
+        "3": {
+          "title": "Groei & optimalisatie",
+          "desc": "Feedback verwerken en verbeteren."
+        }
       }
     },
     "seo": {
@@ -2356,17 +2867,44 @@
         "3": "Langetermijn groei zonder advertentiekosten"
       },
       "deliverables": {
-        "1": { "title": "Technische audit", "desc": "We checken snelheid, structuur en indexatie." },
-        "2": { "title": "Zoekwoordenonderzoek", "desc": "De juiste zoekwoorden voor jouw markt." },
-        "3": { "title": "On-page optimalisatie", "desc": "Titels, meta's en content verbeteren." },
-        "4": { "title": "Content strategie", "desc": "SEO-gerichte artikelen en pagina's." },
-        "5": { "title": "Linkbuilding", "desc": "Kwalitatieve backlinks voor autoriteit." },
-        "6": { "title": "Maandelijkse rapportage", "desc": "Rankings en verkeerscijfers." }
+        "1": {
+          "title": "Technische audit",
+          "desc": "We checken snelheid, structuur en indexatie."
+        },
+        "2": {
+          "title": "Zoekwoordenonderzoek",
+          "desc": "De juiste zoekwoorden voor jouw markt."
+        },
+        "3": {
+          "title": "On-page optimalisatie",
+          "desc": "Titels, meta's en content verbeteren."
+        },
+        "4": {
+          "title": "Content strategie",
+          "desc": "SEO-gerichte artikelen en pagina's."
+        },
+        "5": {
+          "title": "Linkbuilding",
+          "desc": "Kwalitatieve backlinks voor autoriteit."
+        },
+        "6": {
+          "title": "Maandelijkse rapportage",
+          "desc": "Rankings en verkeerscijfers."
+        }
       },
       "process": {
-        "1": { "title": "Analyse", "desc": "Technische en content audit van je site." },
-        "2": { "title": "Uitvoering", "desc": "Optimalisaties en content implementeren." },
-        "3": { "title": "Groei & optimalisatie", "desc": "Continue verbetering van rankings." }
+        "1": {
+          "title": "Analyse",
+          "desc": "Technische en content audit van je site."
+        },
+        "2": {
+          "title": "Uitvoering",
+          "desc": "Optimalisaties en content implementeren."
+        },
+        "3": {
+          "title": "Groei & optimalisatie",
+          "desc": "Continue verbetering van rankings."
+        }
       }
     },
     "businessWebsite": {
@@ -2378,17 +2916,44 @@
         "3": "Mobiel-vriendelijk en snel"
       },
       "deliverables": {
-        "1": { "title": "Ontwerp & UX", "desc": "Custom ontwerp passend bij je merk." },
-        "2": { "title": "Ontwikkeling", "desc": "Technisch solide en schaalbaar." },
-        "3": { "title": "Content integratie", "desc": "Teksten en visuals professioneel verwerkt." },
-        "4": { "title": "SEO basis", "desc": "Technische SEO meegenomen." },
-        "5": { "title": "CMS-opleiding", "desc": "Je leert zelf content aanpassen." },
-        "6": { "title": "Onderhoud optie", "desc": "Maandelijkse updates en support." }
+        "1": {
+          "title": "Ontwerp & UX",
+          "desc": "Custom ontwerp passend bij je merk."
+        },
+        "2": {
+          "title": "Ontwikkeling",
+          "desc": "Technisch solide en schaalbaar."
+        },
+        "3": {
+          "title": "Content integratie",
+          "desc": "Teksten en visuals professioneel verwerkt."
+        },
+        "4": {
+          "title": "SEO basis",
+          "desc": "Technische SEO meegenomen."
+        },
+        "5": {
+          "title": "CMS-opleiding",
+          "desc": "Je leert zelf content aanpassen."
+        },
+        "6": {
+          "title": "Onderhoud optie",
+          "desc": "Maandelijkse updates en support."
+        }
       },
       "process": {
-        "1": { "title": "Analyse", "desc": "We bespreken je wensen en doelen." },
-        "2": { "title": "Uitvoering", "desc": "Design, development en lancering." },
-        "3": { "title": "Groei & optimalisatie", "desc": "Updates en verbeteringen na launch." }
+        "1": {
+          "title": "Analyse",
+          "desc": "We bespreken je wensen en doelen."
+        },
+        "2": {
+          "title": "Uitvoering",
+          "desc": "Design, development en lancering."
+        },
+        "3": {
+          "title": "Groei & optimalisatie",
+          "desc": "Updates en verbeteringen na launch."
+        }
       }
     },
     "onePageWebsite": {
@@ -2400,17 +2965,44 @@
         "3": "Betaalbaar en effectief"
       },
       "deliverables": {
-        "1": { "title": "Ontwerp", "desc": "Aantrekkelijk en on-brand ontwerp." },
-        "2": { "title": "Ontwikkeling", "desc": "Snelle en responsive pagina." },
-        "3": { "title": "Formulier integratie", "desc": "Lead capture functionaliteit." },
-        "4": { "title": "Mobiel geoptimaliseerd", "desc": "Perfect op elk apparaat." },
-        "5": { "title": "Analyse-instelling", "desc": "Tracking vanaf dag één." },
-        "6": { "title": "Snelle levering", "desc": "Live binnen 1-2 weken." }
+        "1": {
+          "title": "Ontwerp",
+          "desc": "Aantrekkelijk en on-brand ontwerp."
+        },
+        "2": {
+          "title": "Ontwikkeling",
+          "desc": "Snelle en responsive pagina."
+        },
+        "3": {
+          "title": "Formulier integratie",
+          "desc": "Lead capture functionaliteit."
+        },
+        "4": {
+          "title": "Mobiel geoptimaliseerd",
+          "desc": "Perfect op elk apparaat."
+        },
+        "5": {
+          "title": "Analyse-instelling",
+          "desc": "Tracking vanaf dag één."
+        },
+        "6": {
+          "title": "Snelle levering",
+          "desc": "Live binnen 1-2 weken."
+        }
       },
       "process": {
-        "1": { "title": "Analyse", "desc": "Briefing en doelen bepalen." },
-        "2": { "title": "Uitvoering", "desc": "Design en development in één sprint." },
-        "3": { "title": "Groei & optimalisatie", "desc": "A/B testing en verbeteringen." }
+        "1": {
+          "title": "Analyse",
+          "desc": "Briefing en doelen bepalen."
+        },
+        "2": {
+          "title": "Uitvoering",
+          "desc": "Design en development in één sprint."
+        },
+        "3": {
+          "title": "Groei & optimalisatie",
+          "desc": "A/B testing en verbeteringen."
+        }
       }
     },
     "ecommerceWebsite": {
@@ -2422,17 +3014,44 @@
         "3": "Schaalbaar voor groei"
       },
       "deliverables": {
-        "1": { "title": "Winkelontwerp", "desc": "Conversiegerichte productpagina's." },
-        "2": { "title": "Ontwikkeling", "desc": "Robuust e-commerce platform." },
-        "3": { "title": "Betalingsintegratie", "desc": "Alle gangbare betaalmethodes." },
-        "4": { "title": "Voorraadbeheer", "desc": "Eenvoudig producten beheren." },
-        "5": { "title": "Marketingtools", "desc": "Kortingscodes, upsells, etc." },
-        "6": { "title": "Opleiding & ondersteuning", "desc": "Je leert alles zelf beheren." }
+        "1": {
+          "title": "Winkelontwerp",
+          "desc": "Conversiegerichte productpagina's."
+        },
+        "2": {
+          "title": "Ontwikkeling",
+          "desc": "Robuust e-commerce platform."
+        },
+        "3": {
+          "title": "Betalingsintegratie",
+          "desc": "Alle gangbare betaalmethodes."
+        },
+        "4": {
+          "title": "Voorraadbeheer",
+          "desc": "Eenvoudig producten beheren."
+        },
+        "5": {
+          "title": "Marketingtools",
+          "desc": "Kortingscodes, upsells, etc."
+        },
+        "6": {
+          "title": "Opleiding & ondersteuning",
+          "desc": "Je leert alles zelf beheren."
+        }
       },
       "process": {
-        "1": { "title": "Analyse", "desc": "Productcatalogus en doelen bespreken." },
-        "2": { "title": "Uitvoering", "desc": "Design, development en producten laden." },
-        "3": { "title": "Groei & optimalisatie", "desc": "Conversie-optimalisatie na launch." }
+        "1": {
+          "title": "Analyse",
+          "desc": "Productcatalogus en doelen bespreken."
+        },
+        "2": {
+          "title": "Uitvoering",
+          "desc": "Design, development en producten laden."
+        },
+        "3": {
+          "title": "Groei & optimalisatie",
+          "desc": "Conversie-optimalisatie na launch."
+        }
       }
     },
     "branding": {
@@ -2444,17 +3063,44 @@
         "3": "Onderscheidend van concurrenten"
       },
       "deliverables": {
-        "1": { "title": "Logo ontwerp", "desc": "Uniek logo met variaties." },
-        "2": { "title": "Kleurenpalet", "desc": "Strategische kleurkeuzes." },
-        "3": { "title": "Typografie", "desc": "Lettertypen die passen bij je merk." },
-        "4": { "title": "Huisstijlhandleiding", "desc": "Handleiding voor consistent gebruik." },
-        "5": { "title": "Sjablonen", "desc": "Social media en print templates." },
-        "6": { "title": "Merkbestanden", "desc": "Alle bestanden in hoge kwaliteit." }
+        "1": {
+          "title": "Logo ontwerp",
+          "desc": "Uniek logo met variaties."
+        },
+        "2": {
+          "title": "Kleurenpalet",
+          "desc": "Strategische kleurkeuzes."
+        },
+        "3": {
+          "title": "Typografie",
+          "desc": "Lettertypen die passen bij je merk."
+        },
+        "4": {
+          "title": "Huisstijlhandleiding",
+          "desc": "Handleiding voor consistent gebruik."
+        },
+        "5": {
+          "title": "Sjablonen",
+          "desc": "Social media en print templates."
+        },
+        "6": {
+          "title": "Merkbestanden",
+          "desc": "Alle bestanden in hoge kwaliteit."
+        }
       },
       "process": {
-        "1": { "title": "Analyse", "desc": "We leren je merk en doelgroep kennen." },
-        "2": { "title": "Uitvoering", "desc": "Concepten, feedback en finalisatie." },
-        "3": { "title": "Groei & optimalisatie", "desc": "Doorontwikkeling waar nodig." }
+        "1": {
+          "title": "Analyse",
+          "desc": "We leren je merk en doelgroep kennen."
+        },
+        "2": {
+          "title": "Uitvoering",
+          "desc": "Concepten, feedback en finalisatie."
+        },
+        "3": {
+          "title": "Groei & optimalisatie",
+          "desc": "Doorontwikkeling waar nodig."
+        }
       }
     },
     "mobileAppDevelopment": {
@@ -2466,17 +3112,44 @@
         "3": "Tracking & App Store-materiaal klaar voor lancering"
       },
       "deliverables": {
-        "1": { "title": "Strategie & feature planning", "desc": "Samen bepalen wat je app moet doen." },
-        "2": { "title": "UI/UX-ontwerp", "desc": "Intuïtief ontwerp dat gebruikers begrijpen." },
-        "3": { "title": "Ontwikkeling (iOS/Android)", "desc": "Cross-platform of native ontwikkeling." },
-        "4": { "title": "Backend & integraties", "desc": "Betalingen, API's, CRM koppelingen." },
-        "5": { "title": "QA testing & optimalisatie", "desc": "Grondig testen op alle apparaten." },
-        "6": { "title": "App Store / Google Play lancering", "desc": "Volledige begeleiding bij publicatie." }
+        "1": {
+          "title": "Strategie & feature planning",
+          "desc": "Samen bepalen wat je app moet doen."
+        },
+        "2": {
+          "title": "UI/UX-ontwerp",
+          "desc": "Intuïtief ontwerp dat gebruikers begrijpen."
+        },
+        "3": {
+          "title": "Ontwikkeling (iOS/Android)",
+          "desc": "Cross-platform of native ontwikkeling."
+        },
+        "4": {
+          "title": "Backend & integraties",
+          "desc": "Betalingen, API's, CRM koppelingen."
+        },
+        "5": {
+          "title": "QA testing & optimalisatie",
+          "desc": "Grondig testen op alle apparaten."
+        },
+        "6": {
+          "title": "App Store / Google Play lancering",
+          "desc": "Volledige begeleiding bij publicatie."
+        }
       },
       "process": {
-        "1": { "title": "Analyse", "desc": "We bespreken features, doelgroep en technische vereisten." },
-        "2": { "title": "Uitvoering", "desc": "Design, development en testen in sprints." },
-        "3": { "title": "Launch & onderhoud", "desc": "Publicatie + optioneel maandelijks onderhoud." }
+        "1": {
+          "title": "Analyse",
+          "desc": "We bespreken features, doelgroep en technische vereisten."
+        },
+        "2": {
+          "title": "Uitvoering",
+          "desc": "Design, development en testen in sprints."
+        },
+        "3": {
+          "title": "Launch & onderhoud",
+          "desc": "Publicatie + optioneel maandelijks onderhoud."
+        }
       }
     },
     "reputation": {
@@ -2488,17 +3161,44 @@
         "3": "Bouw vertrouwen en geloofwaardigheid online"
       },
       "deliverables": {
-        "1": { "title": "Reviewmonitoring", "desc": "Volg reviews op Google, Facebook, Yelp en meer." },
-        "2": { "title": "Reactiebeheer", "desc": "Professionele antwoorden op positieve en negatieve reviews." },
-        "3": { "title": "Reputatiestrategie", "desc": "Proactief plan om je online imago te verbeteren." },
-        "4": { "title": "Review generatie", "desc": "Moedig tevreden klanten aan om reviews achter te laten." },
-        "5": { "title": "Merkmonitoring", "desc": "Volg vermeldingen van je merk online." },
-        "6": { "title": "Maandelijkse rapportage", "desc": "Overzicht van reputatiescore en trends." }
+        "1": {
+          "title": "Reviewmonitoring",
+          "desc": "Volg reviews op Google, Facebook, Yelp en meer."
+        },
+        "2": {
+          "title": "Reactiebeheer",
+          "desc": "Professionele antwoorden op positieve en negatieve reviews."
+        },
+        "3": {
+          "title": "Reputatiestrategie",
+          "desc": "Proactief plan om je online imago te verbeteren."
+        },
+        "4": {
+          "title": "Review generatie",
+          "desc": "Moedig tevreden klanten aan om reviews achter te laten."
+        },
+        "5": {
+          "title": "Merkmonitoring",
+          "desc": "Volg vermeldingen van je merk online."
+        },
+        "6": {
+          "title": "Maandelijkse rapportage",
+          "desc": "Overzicht van reputatiescore en trends."
+        }
       },
       "process": {
-        "1": { "title": "Analyse", "desc": "We auditen je huidige online reputatie en reviews." },
-        "2": { "title": "Uitvoering", "desc": "Actief beheer en reactie op alle reviews." },
-        "3": { "title": "Groei & optimalisatie", "desc": "Continue verbetering van je reputatiescore." }
+        "1": {
+          "title": "Analyse",
+          "desc": "We auditen je huidige online reputatie en reviews."
+        },
+        "2": {
+          "title": "Uitvoering",
+          "desc": "Actief beheer en reactie op alle reviews."
+        },
+        "3": {
+          "title": "Groei & optimalisatie",
+          "desc": "Continue verbetering van je reputatiescore."
+        }
       }
     },
     "dataSync": {
@@ -2510,17 +3210,44 @@
         "3": "Bespaar uren administratief werk"
       },
       "deliverables": {
-        "1": { "title": "Systeemaudit", "desc": "Breng al je databronnen en platformen in kaart." },
-        "2": { "title": "Integratie setup", "desc": "Koppel je CRM, POS, website en meer." },
-        "3": { "title": "Geautomatiseerde workflows", "desc": "Data stroomt automatisch tussen systemen." },
-        "4": { "title": "Foutafhandeling", "desc": "Slimme conflictoplossing en meldingen." },
-        "5": { "title": "Dashboard & bewaking", "desc": "Realtime overzicht van alle synchronisatiestatus." },
-        "6": { "title": "Doorlopende support", "desc": "Onderhoud en updates naarmate je systemen groeien." }
+        "1": {
+          "title": "Systeemaudit",
+          "desc": "Breng al je databronnen en platformen in kaart."
+        },
+        "2": {
+          "title": "Integratie setup",
+          "desc": "Koppel je CRM, POS, website en meer."
+        },
+        "3": {
+          "title": "Geautomatiseerde workflows",
+          "desc": "Data stroomt automatisch tussen systemen."
+        },
+        "4": {
+          "title": "Foutafhandeling",
+          "desc": "Slimme conflictoplossing en meldingen."
+        },
+        "5": {
+          "title": "Dashboard & bewaking",
+          "desc": "Realtime overzicht van alle synchronisatiestatus."
+        },
+        "6": {
+          "title": "Doorlopende support",
+          "desc": "Onderhoud en updates naarmate je systemen groeien."
+        }
       },
       "process": {
-        "1": { "title": "Analyse", "desc": "We brengen je huidige datalandschap en pijnpunten in kaart." },
-        "2": { "title": "Uitvoering", "desc": "Bouw en test alle integraties en automatiseringen." },
-        "3": { "title": "Groei & optimalisatie", "desc": "Monitor, optimaliseer en breid koppelingen uit." }
+        "1": {
+          "title": "Analyse",
+          "desc": "We brengen je huidige datalandschap en pijnpunten in kaart."
+        },
+        "2": {
+          "title": "Uitvoering",
+          "desc": "Bouw en test alle integraties en automatiseringen."
+        },
+        "3": {
+          "title": "Groei & optimalisatie",
+          "desc": "Monitor, optimaliseer en breid koppelingen uit."
+        }
       }
     },
     "contentCalculator": {
@@ -2668,58 +3395,6 @@
           "q": "Wat houdt data & tracking setup in?",
           "a": "Wij installeren en configureren tracking tools (Google Analytics, Meta Pixel, conversietracking) zodat je precies weet welke marketing inspanningen resultaat opleveren."
         }
-      }
-    }
-  },
-  "blog": {
-    "title": "Inzichten & Strategieën",
-    "subtitle": "Praktische inzichten over digitale groei, marketing en online prestaties.",
-    "badge": "Blog",
-    "metaTitle": "Blog | Digital Marketing Tips voor Belgische Bedrijven",
-    "metaDescription": "Praktische marketingtips voor KMO's in België: website-optimalisatie, SEO, social media en advertenties. Lees onze gratis gidsen.",
-    "featured": "Uitgelicht",
-    "readArticle": "Lees artikel",
-    "minRead": "min lezen",
-    "backToArticles": "Terug naar artikels",
-    "shareArticle": "Deel dit artikel",
-    "contactUs": "Contacteer ons",
-    "relatedArticles": "Gerelateerde Artikels",
-    "relatedServices": "Gerelateerde diensten",
-    "articles": {
-      "websiteSalesTool": {
-        "title": "Waarom je website je sterkste verkooptool is in 2025",
-        "excerpt": "Je website is meer dan een digitale brochure. In 2025 is het je belangrijkste verkoopinstrument. Hier is waarom en wat je eraan kunt doen.",
-        "metaTitle": "Website als verkooptool | Tips voor bedrijven in België",
-        "metaDescription": "Ontdek waarom je website het belangrijkste verkoopinstrument is voor je Belgisch bedrijf. Praktische tips voor snelheid, structuur en conversie.",
-        "content": "<h2>Je website is niet langer optioneel</h2><p>In 2025 is je website niet gewoon een plek waar mensen over je bedrijf leren. Het is je belangrijkste verkooptool. Voordat een potentiële klant de telefoon oppakt of een e-mail stuurt, hebben ze je website al bezocht. Ze hebben al een mening gevormd.</p><p>De vraag is simpel: helpt je website je om deals te sluiten, of kost het je kansen?</p><h2>Eerste indrukken gebeuren online</h2><p>Studies tonen aan dat mensen binnen 0,05 seconden een mening vormen over een website. Dat is sneller dan een knipoog. Als je website er verouderd uitziet, langzaam laadt of moeilijk te navigeren is, vertrekken bezoekers. Ze komen niet terug.</p><p>Je website is je eerste indruk. Het moet direct vertrouwen, professionaliteit en duidelijkheid communiceren.</p><h3>Snelheid telt</h3><p>Een website die langer dan 3 seconden laadt, verliest meer dan 50% van de bezoekers. Snelheid is geen luxe. Het is een noodzaak. Mobiele gebruikers zijn bijzonder ongeduldig. Als je website niet geoptimaliseerd is voor snelheid, verlies je elke dag potentiële klanten.</p><h2>Structuur creëert conversies</h2><p>Een mooie website is niet genoeg. Het moet bezoekers naar een specifieke actie leiden. Of dat nu een formulier invullen is, bellen of een bestelling plaatsen, het pad moet duidelijk zijn.</p><p>Goede structuur omvat:</p><ul><li>Duidelijke navigatie zonder verwarring</li><li>Een prominente call-to-action op elke pagina</li><li>Vertrouwenssignalen zoals reviews, certificeringen en klantenlogo's</li><li>Makkelijk te vinden contactinformatie</li></ul><h2>Veelgemaakte fouten door bedrijven</h2><p>Veel bedrijven behandelen hun website als een eenmalig project. Ze bouwen het, vergeten het en vragen zich af waarom het niet presteert. Dit zijn de meest voorkomende fouten:</p><h3>Geen duidelijk doel</h3><p>Als je niet weet wat je wilt dat bezoekers doen, weten zij het ook niet. Elke pagina heeft een doel nodig.</p><h3>Te veel informatie</h3><p>Bezoekers lezen niet alles. Ze scannen. Houd je tekst beknopt en gebruik koppen om het oog te leiden.</p><h3>Mobiele gebruikers negeren</h3><p>Meer dan 60% van het verkeer komt van mobiele apparaten. Als je website niet mobiel-vriendelijk is, negeer je de meerderheid van je publiek.</p><h2>Wat je vandaag kunt doen</h2><p>Begin met een audit van je huidige website. Stel jezelf deze vragen:</p><ul><li>Laadt het in minder dan 3 seconden?</li><li>Is de navigatie eenvoudig en logisch?</li><li>Is er een duidelijke call-to-action?</li><li>Werkt het perfect op mobiel?</li></ul><p>Als je op een van deze vragen nee hebt geantwoord, is het tijd om in je website te investeren. Niet als een kost, maar als een investering in je verkoopproces.</p><p>Je website zou 24/7 voor je moeten werken. Als het goed gedaan is, wordt het je beste verkoper: altijd beschikbaar, altijd consistent, altijd professioneel.</p><p>Wil je weten hoe je website presteert? <a href='/services/business-website'>Bekijk onze website-diensten</a> of <a href='/contact'>vraag een gratis website-audit aan</a>.</p>"
-      },
-      "socialMediaManagement": {
-        "title": "Social Media Beheer: Wat bedrijven echt nodig hebben",
-        "excerpt": "Social media gaat niet over volgers. Het gaat over strategie, consistentie en echte betrokkenheid. Dit is wat echt werkt voor bedrijven.",
-        "metaTitle": "Social Media Beheer voor Bedrijven | Strategie die werkt",
-        "metaDescription": "Leer wat Belgische bedrijven echt nodig hebben van social media beheer: strategie boven vanity metrics, consistentie boven trends.",
-        "content": "<h2>Voorbij volgers en likes</h2><p>Veel bedrijven zijn geobsedeerd door volgersaantallen en likes. Maar deze vanity metrics vertalen zich zelden naar daadwerkelijke bedrijfsresultaten. Een bedrijf met 500 betrokken volgers zal altijd beter presteren dan een met 50.000 passieve volgers.</p><p>Social media is een tool. Zoals elke tool is het alleen effectief wanneer het met een doel wordt gebruikt.</p><h2>Strategie voor posting</h2><p>De grootste fout die bedrijven maken is posten zonder plan. Willekeurige content op willekeurige tijden leidt tot willekeurige resultaten. Meestal betekent dat helemaal geen resultaten.</p><p>Een social media strategie beantwoordt deze vragen:</p><ul><li>Wie is je doelgroep?</li><li>Welke problemen los je voor hen op?</li><li>Waar brengen ze hun tijd online door?</li><li>Met welk type content engageren ze?</li></ul><p>Zonder antwoorden op deze vragen maak je gewoon lawaai.</p><h2>Consistentie verslaat trends</h2><p>Elke trend achterna jagen is uitputtend en ineffectief. Trending content kan tijdelijk de zichtbaarheid verhogen, maar bouwt zelden blijvende connecties met je publiek.</p><p>Wat werkt is consistentie:</p><ul><li>Regelmatig posten op voorspelbare tijden</li><li>Een consistente visuele stijl behouden</li><li>Dezelfde tone of voice gebruiken</li><li>Waarde leveren met elke post</li></ul><p>Je publiek moet weten wat ze van je kunnen verwachten. Die voorspelbaarheid bouwt vertrouwen.</p><h2>Kwaliteit boven kwantiteit</h2><p>Drie excellente posts per week zullen zeven middelmatige overtreffen. Elk stuk content moet een doel dienen: educeren, entertainen, inspireren of promoten.</p><p>Als een post niet in een van deze categorieën past, moet het waarschijnlijk niet gepubliceerd worden.</p><h3>De 80/20 regel</h3><p>Streef naar 80% waardegerichte content en 20% promotionele content. Niemand wil een bedrijf volgen dat alleen over zichzelf praat. Lever eerst waarde en verkoop volgt vanzelf.</p><h2>Engagement is tweerichtingsverkeer</h2><p>Content posten is slechts de helft van het werk. De andere helft is engageren met je publiek. Reageer op comments, beantwoord vragen en neem deel aan gesprekken.</p><p>Social media is sociaal. Als je het behandelt als een zendplatform, mis je het punt.</p><h2>Wat bedrijven echt nodig hebben</h2><p>Effectief social media beheer vereist:</p><ul><li>Een duidelijke strategie afgestemd op bedrijfsdoelen</li><li>Consistente, hoogwaardige content</li><li>Actieve community engagement</li><li>Regelmatige analyse en optimalisatie</li></ul><p>Dit gaat niet over aanwezig zijn op elk platform. Het gaat over effectief zijn op de platforms die er toe doen voor je publiek.</p><p>Focus op minder dingen beter doen. Je social media aanwezigheid moet je bedrijfsdoelen ondersteunen, niet ervan afleiden.</p><p>Klaar om je social media professioneel aan te pakken? <a href='/services/social-media-management'>Ontdek onze social media diensten</a> of bekijk <a href='/gallery'>hoe we het voor andere bedrijven hebben gedaan</a>.</p>"
-      },
-      "seoExplained": {
-        "title": "SEO simpel uitgelegd: Hoe klanten je echt online vinden",
-        "excerpt": "SEO is geen magie of manipulatie. Het gaat over je bedrijf makkelijk vindbaar maken wanneer mensen zoeken. Zo werkt het echt.",
-        "metaTitle": "SEO uitgelegd voor KMO's | Beter gevonden worden in België",
-        "metaDescription": "Eenvoudige uitleg van SEO voor Belgische bedrijfseigenaren. Leer hoe lokale SEO werkt en waarom het beter is dan snelle hacks.",
-        "content": "<h2>Wat is SEO echt?</h2><p>Search Engine Optimization klinkt technisch, maar het concept is simpel. Wanneer iemand zoekt naar een dienst of product dat je aanbiedt, bepaalt SEO of ze jou vinden of je concurrent.</p><p>Elke dag zoeken potentiële klanten naar bedrijven zoals het jouwe. Als je website niet verschijnt in zoekresultaten, ben je onzichtbaar voor hen.</p><h2>Hoe zoekmachines denken</h2><p>Google en andere zoekmachines hebben één doel: gebruikers het best mogelijke antwoord geven op hun vraag. Ze evalueren websites op basis van relevantie, kwaliteit en gebruikerservaring.</p><p>SEO gaat over het maken van je website tot het beste antwoord op de vragen die je klanten stellen.</p><h3>De drie pijlers</h3><p>SEO rust op drie pijlers:</p><ul><li><strong>Technische SEO:</strong> Je website moet snel, veilig en makkelijk leesbaar zijn voor zoekmachines.</li><li><strong>Content:</strong> Je hebt kwaliteitscontent nodig die de vragen beantwoordt die je publiek zoekt.</li><li><strong>Autoriteit:</strong> Andere gerenommeerde websites die naar jou linken, signaleren vertrouwen aan zoekmachines.</li></ul><h2>Lokale SEO voor België en Europa</h2><p>Voor de meeste lokale bedrijven ligt de echte kans in lokale SEO. Wanneer iemand zoekt naar een dienst in de buurt, geeft Google prioriteit aan lokale resultaten.</p><p>Belangrijke elementen van lokale SEO zijn:</p><ul><li>Een volledig en geoptimaliseerd Google Bedrijfsprofiel</li><li>Consistente bedrijfsinformatie over het web</li><li>Reviews van tevreden klanten</li><li>Locatie-specifieke content op je website</li></ul><p>Als je klanten bedient in een specifieke regio, moet lokale SEO je prioriteit zijn.</p><h2>Langetermijnwaarde, geen snelle hacks</h2><p>SEO gaat niet over trucjes of manipulatie. Die tactieken kunnen kort werken, maar slaan uiteindelijk terug. Zoekmachines zijn geavanceerd. Ze straffen websites die het systeem proberen te gamen.</p><p>Duurzame SEO focust op:</p><ul><li>Oprecht nuttige content creëren</li><li>Echte relaties bouwen die leiden tot natuurlijke links</li><li>Gebruikerservaring continu verbeteren</li><li>Geduldig blijven terwijl resultaten zich opstapelen</li></ul><h2>Wat je kunt verwachten</h2><p>SEO is een langetermijninvestering. De meeste bedrijven beginnen betekenisvolle resultaten te zien na 3-6 maanden consistente inspanning. Maar in tegenstelling tot betaalde advertenties, stapelen de resultaten zich op in de tijd.</p><p>Een goed geoptimaliseerde website blijft maand na maand, jaar na jaar, bezoekers aantrekken zonder doorlopende advertentiekosten.</p><h2>Beginnen</h2><p>Als je nieuw bent met SEO, begin met de basis:</p><ul><li>Claim en optimaliseer je Google Bedrijfsprofiel</li><li>Zorg dat je website snel laadt</li><li>Creëer content die klantvragen beantwoordt</li><li>Vraag tevreden klanten om reviews achter te laten</li></ul><p>SEO hoeft niet ingewikkeld te zijn. Het moet consistent zijn. Kleine verbeteringen stapelen op tot significante resultaten in de tijd.</p><p>Wil je dat je bedrijf beter gevonden wordt in Google? <a href='/services/seo'>Ontdek onze SEO-diensten</a> of <a href='/contact'>vraag een gratis SEO-scan aan</a>.</p>"
-      },
-      "paidAdvertising": {
-        "title": "Betaalde advertenties zonder verspilling: Hoe slimme campagnes worden gebouwd",
-        "excerpt": "Betaalde advertenties gaat niet over posts boosten en hopen op het beste. Het gaat over systemen bouwen die voorspelbare, meetbare resultaten leveren.",
-        "metaTitle": "Google & Meta Ads zonder verspilling | Campagnetips België",
-        "metaDescription": "Leer hoe je betaalde advertentiecampagnes bouwt die resultaten opleveren voor Belgische KMO's. Budgetcontrole, data en systemen boven gokken.",
-        "content": "<h2>Het probleem met de meeste advertenties</h2><p>Veel bedrijven proberen betaalde advertenties, zien slechte resultaten en concluderen dat het niet werkt. Maar het probleem is zelden het platform. Het probleem is de aanpak.</p><p>Een post boosten en hopen op verkoop is geen adverteren. Het is gokken met je marketingbudget.</p><h2>Adverteren is een systeem</h2><p>Effectieve betaalde advertenties gaat niet over individuele advertenties. Het gaat over het bouwen van een systeem dat potentiële klanten van bewustzijn naar actie beweegt.</p><p>Een compleet advertentiesysteem omvat:</p><ul><li>Doelgroeponderzoek en targeting</li><li>Meerdere contactmomenten langs de klantreis</li><li>Tracking en meting in elke fase</li><li>Continue testing en optimalisatie</li></ul><p>Elk onderdeel werkt samen. Verwijder er één en het hele systeem presteert ondermaats.</p><h2>Budgetcontrole</h2><p>Het mooie van digitale advertenties is controle. In tegenstelling tot traditionele advertenties kun je klein beginnen, testen en schalen wat werkt.</p><p>Slim budgetbeheer betekent:</p><ul><li>Starten met een testbudget om data te verzamelen</li><li>Resultaten analyseren voordat je opschaalt</li><li>Snel stoppen met wat niet werkt</li><li>Herinvesteren in wat wel presteert</li></ul><p>Je zou nooit meer moeten uitgeven dan je je kunt veroorloven te verliezen tijdens het testen. Zodra je bewezen resultaten hebt, wordt opschalen laag-risico.</p><h2>Data-gedreven beslissingen</h2><p>Elke advertentiebeslissing moet gebaseerd zijn op data, niet op onderbuikgevoel. Dit vereist goede tracking vanaf dag één.</p><p>Belangrijke metrics om te volgen zijn:</p><ul><li>Kosten per klik en kosten per resultaat</li><li>Conversieratio's in elke fase</li><li>Return on ad spend</li><li>Klantacquisitiekosten</li></ul><p>Zonder deze data neem je blinde beslissingen. Met deze data kun je continu optimaliseren en resultaten maand na maand verbeteren.</p><h3>De test-mindset</h3><p>Niemand weet van tevoren wat het beste werkt. Zelfs ervaren adverteerders draaien meerdere variaties en laten data de winnaar bepalen.</p><p>Test één element per keer:</p><ul><li>Verschillende koppen</li><li>Verschillende afbeeldingen of video's</li><li>Verschillende doelgroepsegmenten</li><li>Verschillende aanbiedingen</li></ul><p>Kleine verbeteringen in conversieratio's stapelen op tot significante verschillen in resultaten.</p><h2>Platforms zijn tools</h2><p>Google Ads, Facebook, Instagram, LinkedIn: elk platform heeft sterke en zwakke punten. De juiste keuze hangt af van je doelgroep en doelen.</p><p>Waar brengen je potentiële klanten hun tijd door? Welk type content resoneert met hen? Match het platform met je doelgroep, niet andersom.</p><h2>Bouwen voor de lange termijn</h2><p>Het doel is niet één succesvolle campagne. Het doel is een voorspelbaar, herhaalbaar systeem dat consistent leads of verkoop genereert.</p><p>Dit kost tijd en iteratie. Maar eenmaal gebouwd, wordt het een waardevolle bedrijfsasset die maand na maand werkt.</p><p>Begin klein, meet alles en schaal wat werkt. Zo worden slimme campagnes gebouwd.</p><p>Klaar om je advertentiebudget effectiever in te zetten? <a href='/services/advertising-management'>Bekijk onze advertentiediensten</a> of lees hoe <a href='/blog/seo-explained-simply'>SEO en advertenties samen werken</a>.</p>"
-      },
-      "onlineReputation": {
-        "title": "Online reputatie: Waarom reviews meer uitmaken dan je denkt",
-        "excerpt": "Je online reputatie beïnvloedt koopbeslissingen meer dan de meeste marketing. Dit is waarom reviews belangrijk zijn en hoe je ze effectief beheert.",
-        "metaTitle": "Online Reputatie & Reviews Beheren | Gids voor KMO's",
-        "metaDescription": "Ontdek waarom online reviews cruciaal zijn voor Belgische bedrijven en leer hoe je je reputatie effectief beheert en verbetert.",
-        "content": "<h2>De vertrouwensfactor</h2><p>Voordat ze een aankoop doen of een dienst inhuren, doen de meeste mensen hetzelfde: ze lezen reviews. Volgens onderzoek leest meer dan 90% van de consumenten online reviews voordat ze een bedrijf bezoeken.</p><p>Reviews zijn mond-tot-mondreclame op schaal. Ze bouwen of vernietigen vertrouwen voordat je ooit met een potentiële klant spreekt.</p><h2>De psychologie van reviews</h2><p>Mensen vertrouwen andere klanten meer dan ze bedrijven vertrouwen. Dit is niet nieuw. We hebben altijd vrienden en familie om aanbevelingen gevraagd. Het internet maakte het alleen mogelijk om van duizenden vreemden te horen.</p><p>Een bedrijf met tientallen positieve reviews voelt veilig. Een bedrijf zonder reviews of met negatieve reviews voelt risicovol. Deze perceptie beïnvloedt direct koopbeslissingen.</p><h3>De cijfers die er toe doen</h3><p>Onderzoek toont aan dat:</p><ul><li>Bedrijven met 4+ sterrenbeoordelingen significant meer klikken krijgen</li><li>De eerste 10 reviews de grootste impact hebben op perceptie</li><li>Een mix van beoordelingen (niet alleen perfecte scores) authentieker lijkt</li><li>Recente reviews meer tellen dan oude</li></ul><h2>Reviews en zichtbaarheid</h2><p>Reviews beïnvloeden niet alleen beslissingen. Ze beïnvloeden zichtbaarheid. Google gebruikt reviews als rankingfactor voor lokale zoekresultaten. Meer positieve reviews kunnen je letterlijk hoger duwen in zoekresultaten.</p><p>Dit creëert een deugdzame cirkel: betere reviews leiden tot meer zichtbaarheid, wat leidt tot meer klanten, wat leidt tot meer reviews.</p><h2>Je reputatie beheren</h2><p>Reputatiebeheer gaat niet over het manipuleren van reviews. Het gaat over goede reviews verdienen en negatieve professioneel afhandelen.</p><h3>Positieve reviews verdienen</h3><p>De basis is simpel: lever uitstekende service. Daarnaast:</p><ul><li>Vraag tevreden klanten om reviews achter te laten</li><li>Maak het proces makkelijk door directe links te geven</li><li>Volg op na positieve ervaringen</li><li>Bedank klanten die de tijd nemen om te reviewen</li></ul><h3>Negatieve reviews afhandelen</h3><p>Negatieve reviews zijn onvermijdelijk. Hoe je ermee omgaat is belangrijker dan de review zelf.</p><ul><li>Reageer snel en professioneel</li><li>Erken de zorg zonder defensief te zijn</li><li>Bied aan om het probleem offline op te lossen</li><li>Kom eventuele beloftes na</li></ul><p>Een professionele reactie op een negatieve review kan je reputatie daadwerkelijk verbeteren. Het laat potentiële klanten zien dat je geeft en verantwoordelijkheid neemt.</p><h2>Je reputatie monitoren</h2><p>Je kunt niet beheren wat je niet monitort. Stel alerts in om te weten wanneer iemand je bedrijf noemt. Controleer regelmatig reviewplatforms die relevant zijn voor je branche.</p><p>Belangrijke platforms om te monitoren zijn:</p><ul><li>Google Bedrijfsprofiel</li><li>Branche-specifieke reviewsites</li><li>Social media vermeldingen</li><li>Je eigen website reviews</li></ul><h2>De langetermijnvisie</h2><p>Een sterke online reputatie bouwen kost tijd. Er zijn geen shortcuts. Focus op uitstekende service leveren, consistent om feedback vragen en professioneel reageren op alle reviews.</p><p>Na verloop van tijd wordt je reputatie een competitief voordeel dat moeilijk te kopiëren is door concurrenten. Het is een van de weinige assets die waardevoller wordt naarmate je het langer koestert.</p><p>Wil je je online reputatie versterken? <a href='/services/reputation-management'>Bekijk onze reputatiebeheer-diensten</a> of ontdek hoe <a href='/blog/seo-explained-simply'>SEO en reviews samenwerken</a> voor meer zichtbaarheid.</p>"
       }
     }
   },

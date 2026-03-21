@@ -185,37 +185,23 @@
   },
   "common": {
     "loading": "Loading...",
-    "error": "Something went wrong",
-    "retry": "Try again",
-    "cancel": "Cancel",
-    "save": "Save",
-    "delete": "Delete",
-    "edit": "Edit",
-    "close": "Close",
-    "submit": "Submit",
+    "error": "An error occurred",
+    "retry": "Try Again",
+    "back": "Back",
     "next": "Next",
     "previous": "Previous",
-    "back": "Back",
-    "continue": "Continue",
-    "viewMore": "View more",
-    "viewAll": "View all",
-    "learnMore": "Learn more",
-    "getStarted": "Get started",
-    "contactUs": "Contact us",
-    "scheduleCall": "Schedule a call",
-    "requestQuote": "Request a quote",
-    "required": "Required",
-    "optional": "Optional",
-    "brandName": "GROPPI",
-    "fullscreen": "Fullscreen"
+    "close": "Close",
+    "search": "Search",
+    "noResults": "No results found",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "viewAll": "View All"
   },
   "validation": {
     "required": "This field is required",
     "email": "Please enter a valid email address",
-    "phone": "Please enter a valid phone number",
-    "minLength": "Minimum {{min}} characters required",
-    "maxLength": "Maximum {{max}} characters allowed",
-    "invalidUrl": "Please enter a valid URL"
+    "minLength": "Minimum {{count}} characters required",
+    "maxLength": "Maximum {{count}} characters allowed"
   },
   "forms": {
     "name": "Name",
@@ -936,6 +922,10 @@
       "text": "Let's discover together how we can strengthen your digital presence.",
       "bookConsultation": "Book a free consultation",
       "contactUs": "Contact us"
+    },
+    "teamLink": {
+      "text": "Meet our leadership and global team on the",
+      "linkLabel": "Our Team page"
     }
   },
   "ai": {
@@ -948,13 +938,9 @@
     "subtitle": "What We Offer",
     "description": "We don't work with fixed packages. Every service is tailored to the client's objectives and executed by a specialized team, supported by smart technology where it adds value.",
     "card": {
-      "requestQuote": "Request a quote",
-      "viewDetails": "View details",
-      "watchHowItWorks": "Watch how it works (60 sec)",
-      "buildYourPlan": "Build your plan",
-      "watchVideo": "Watch video",
-      "buildPlan": "Build plan",
-      "calculatorHint": "Calculate your price in 60 sec"
+      "watchVideo": "Watch how it works (60 sec)",
+      "buildPlan": "Build your plan",
+      "calculatorHint": "Get an indicative price instantly"
     },
     "badges": {
       "monthly": "Monthly",
@@ -997,11 +983,6 @@
         "description": "Turn traffic into real revenue.",
         "cta": "Build my setup"
       }
-    },
-    "card": {
-      "watchVideo": "Watch how it works (60 sec)",
-      "buildPlan": "Build your plan",
-      "calculatorHint": "Get an indicative price instantly"
     },
     "videoModal": {
       "continueToDetails": "Continue to details",
@@ -1379,11 +1360,56 @@
     }
   },
   "blog": {
-    "title": "Insights & Tips",
-    "subtitle": "Stay Informed",
-    "readMore": "Read More",
-    "publishedOn": "Published on",
-    "by": "by"
+    "title": "Insights & Strategies",
+    "subtitle": "Practical insights on digital growth, marketing, and online performance.",
+    "badge": "Blog",
+    "metaTitle": "Blog | Digital Marketing Tips for Belgian Businesses",
+    "metaDescription": "Practical marketing tips for SMEs in Belgium: website optimization, SEO, social media, and advertising. Read our free guides.",
+    "featured": "Featured",
+    "readArticle": "Read article",
+    "minRead": "min read",
+    "backToArticles": "Back to articles",
+    "shareArticle": "Share this article",
+    "contactUs": "Contact us",
+    "relatedArticles": "Related Articles",
+    "relatedServices": "Related services",
+    "articles": {
+      "websiteSalesTool": {
+        "title": "Why Your Website Is Your Strongest Sales Tool in 2025",
+        "excerpt": "Your website is more than a digital brochure. In 2025, it is your most important sales asset. Here is why and what you can do about it.",
+        "metaTitle": "Website as a Sales Tool | Tips for Belgian Businesses",
+        "metaDescription": "Discover why your website is the most important sales tool for your Belgian business. Practical tips for speed, structure, and conversion.",
+        "content": "<h2>Your Website Is No Longer Optional</h2><p>In 2025, your website is not just a place where people learn about your business. It is your most important sales tool. Before a potential customer picks up the phone or sends an email, they have already visited your website. They have already formed an opinion.</p><p>The question is simple: does your website help you close deals, or is it costing you opportunities?</p><h2>First Impressions Happen Online</h2><p>Studies show that people form an opinion about a website within 0.05 seconds. That is faster than a blink. If your website looks outdated, loads slowly, or is difficult to navigate, visitors leave. They do not come back.</p><p>Your website is your first impression. It needs to communicate trust, professionalism, and clarity immediately.</p><h3>Speed Matters</h3><p>A website that loads in more than 3 seconds loses over 50% of its visitors. Speed is not a luxury. It is a necessity. Mobile users are especially impatient. If your website is not optimized for speed, you are losing potential customers every single day.</p><h2>Structure Creates Conversions</h2><p>A beautiful website is not enough. It needs to guide visitors toward a specific action. Whether that is filling out a form, making a call, or placing an order, the path must be clear.</p><p>Good structure includes:</p><ul><li>Clear navigation without confusion</li><li>A prominent call-to-action on every page</li><li>Trust signals like reviews, certifications, and client logos</li><li>Easy-to-find contact information</li></ul><h2>Common Mistakes Businesses Make</h2><p>Many businesses treat their website as a one-time project. They build it, forget it, and wonder why it does not perform. Here are the most common mistakes:</p><h3>No Clear Goal</h3><p>If you do not know what you want visitors to do, they will not know either. Every page needs a purpose.</p><h3>Too Much Information</h3><p>Visitors do not read everything. They scan. Keep your text concise and use headings to guide the eye.</p><h3>Ignoring Mobile Users</h3><p>More than 60% of traffic comes from mobile devices. If your website is not mobile-friendly, you are ignoring the majority of your audience.</p><h2>What You Can Do Today</h2><p>Start by auditing your current website. Ask yourself these questions:</p><ul><li>Does it load in under 3 seconds?</li><li>Is the navigation simple and logical?</li><li>Is there a clear call-to-action?</li><li>Does it work perfectly on mobile?</li></ul><p>If you answered no to any of these, it is time to invest in your website. Not as a cost, but as an investment in your sales process.</p><p>Your website should work for you around the clock. When done right, it becomes your best salesperson: always available, always consistent, always professional.</p><p>Want to know how your website performs? <a href='/services/business-website'>View our website services</a> or <a href='/contact'>request a free website audit</a>.</p>"
+      },
+      "socialMediaManagement": {
+        "title": "Social Media Management: What Businesses Really Need",
+        "excerpt": "Social media is not about followers. It is about strategy, consistency, and real engagement. Here is what actually works for businesses.",
+        "metaTitle": "Social Media Management for Businesses | Strategy That Works",
+        "metaDescription": "Learn what businesses really need from social media management: strategy over vanity metrics, consistency over trends.",
+        "content": "<h2>Beyond Followers and Likes</h2><p>Many businesses obsess over follower counts and likes. But these vanity metrics rarely translate into actual business results. A business with 500 engaged followers will outperform one with 50,000 passive followers every time.</p><p>Social media is a tool. Like any tool, it is only effective when used with purpose.</p><h2>Strategy Before Posting</h2><p>The biggest mistake businesses make is posting without a plan. Random content at random times leads to random results. Usually, that means no results at all.</p><p>A social media strategy answers these questions:</p><ul><li>Who is your target audience?</li><li>What problems do you solve for them?</li><li>Where do they spend their time online?</li><li>What type of content do they engage with?</li></ul><p>Without answers to these questions, you are just making noise.</p><h2>Consistency Beats Trends</h2><p>Chasing every trend is exhausting and ineffective. While trending content can boost visibility temporarily, it rarely builds lasting connections with your audience.</p><p>What works is consistency:</p><ul><li>Posting regularly at predictable times</li><li>Maintaining a consistent visual style</li><li>Using the same tone of voice</li><li>Delivering value with every post</li></ul><p>Your audience needs to know what to expect from you. That predictability builds trust.</p><h2>Quality Over Quantity</h2><p>Three excellent posts per week will outperform seven mediocre ones. Every piece of content should serve a purpose: educate, entertain, inspire, or promote.</p><p>If a post does not fit one of these categories, it probably should not be published.</p><h3>The 80/20 Rule</h3><p>Aim for 80% value-driven content and 20% promotional content. Nobody wants to follow a business that only talks about itself. Provide value first, and sales will follow naturally.</p><h2>Engagement Is a Two-Way Street</h2><p>Posting content is only half the job. The other half is engaging with your audience. Respond to comments, answer questions, and participate in conversations.</p><p>Social media is social. If you treat it as a broadcasting platform, you are missing the point.</p><h2>What Businesses Actually Need</h2><p>Effective social media management requires:</p><ul><li>A clear strategy aligned with business goals</li><li>Consistent, high-quality content</li><li>Active community engagement</li><li>Regular analysis and optimization</li></ul><p>This is not about being on every platform. It is about being effective on the platforms that matter to your audience.</p><p>Focus on doing fewer things better. Your social media presence should support your business goals, not distract from them.</p><p>Ready to level up your social media? <a href='/services/social-media-management'>Explore our social media services</a> or see <a href='/gallery'>how we did it for other businesses</a>.</p>"
+      },
+      "seoExplained": {
+        "title": "SEO Explained Simply: How Clients Actually Find You Online",
+        "excerpt": "SEO is not magic or manipulation. It is about making your business easy to find when people search. Here is how it really works.",
+        "metaTitle": "SEO Explained for SMEs | Get Found Online in Belgium",
+        "metaDescription": "A simple explanation of SEO for Belgian business owners. Learn how local SEO works and why long-term strategy beats quick hacks.",
+        "content": "<h2>What Is SEO Really?</h2><p>Search Engine Optimization sounds technical, but the concept is simple. When someone searches for a service or product you offer, SEO determines whether they find you or your competitor.</p><p>Every day, potential customers search for businesses like yours. If your website does not appear in search results, you are invisible to them.</p><h2>How Search Engines Think</h2><p>Google and other search engines have one goal: give users the best possible answer to their question. They evaluate websites based on relevance, quality, and user experience.</p><p>SEO is about making your website the best answer to the questions your customers are asking.</p><h3>The Three Pillars</h3><p>SEO rests on three pillars:</p><ul><li><strong>Technical SEO:</strong> Your website needs to be fast, secure, and easy for search engines to read.</li><li><strong>Content:</strong> You need quality content that answers the questions your audience is searching for.</li><li><strong>Authority:</strong> Other reputable websites linking to yours signals trust to search engines.</li></ul><h2>Local SEO for Belgium and Europe</h2><p>For most local businesses, local SEO is where the real opportunity lies. When someone searches for a service near them, Google prioritizes local results.</p><p>Key elements of local SEO include:</p><ul><li>A complete and optimized Google Business Profile</li><li>Consistent business information across the web</li><li>Reviews from satisfied customers</li><li>Location-specific content on your website</li></ul><p>If you serve customers in a specific region, local SEO should be your priority.</p><h2>Long-Term Value, Not Quick Hacks</h2><p>SEO is not about tricks or manipulation. Those tactics might work briefly, but they eventually backfire. Search engines are sophisticated. They penalize websites that try to game the system.</p><p>Sustainable SEO focuses on:</p><ul><li>Creating genuinely useful content</li><li>Building real relationships that lead to natural links</li><li>Improving user experience continuously</li><li>Staying patient while results compound</li></ul><h2>What You Can Expect</h2><p>SEO is a long-term investment. Most businesses start seeing meaningful results after 3-6 months of consistent effort. But unlike paid advertising, the results compound over time.</p><p>A well-optimized website continues to attract visitors month after month, year after year, without ongoing advertising costs.</p><h2>Getting Started</h2><p>If you are new to SEO, start with the basics:</p><ul><li>Claim and optimize your Google Business Profile</li><li>Ensure your website loads quickly</li><li>Create content that answers customer questions</li><li>Ask satisfied customers to leave reviews</li></ul><p>SEO does not need to be complicated. It needs to be consistent. Small improvements add up to significant results over time.</p><p>Want your business to rank higher on Google? <a href='/services/seo'>Explore our SEO services</a> or <a href='/contact'>request a free SEO scan</a>.</p>"
+      },
+      "paidAdvertising": {
+        "title": "Paid Advertising Without Waste: How Smart Campaigns Are Built",
+        "excerpt": "Paid advertising is not about boosting posts and hoping for the best. It is about building systems that deliver predictable, measurable results.",
+        "metaTitle": "Google & Meta Ads Without Waste | Campaign Tips Belgium",
+        "metaDescription": "Learn how to build paid advertising campaigns that deliver results for Belgian SMEs. Budget control, data, and systems over guesswork.",
+        "content": "<h2>The Problem With Most Advertising</h2><p>Many businesses try paid advertising, see poor results, and conclude that it does not work. But the problem is rarely the platform. The problem is the approach.</p><p>Boosting a post and hoping for sales is not advertising. It is gambling with your marketing budget.</p><h2>Advertising Is a System</h2><p>Effective paid advertising is not about individual ads. It is about building a system that moves potential customers from awareness to action.</p><p>A complete advertising system includes:</p><ul><li>Audience research and targeting</li><li>Multiple touchpoints along the customer journey</li><li>Tracking and measurement at every stage</li><li>Continuous testing and optimization</li></ul><p>Each piece works together. Remove one, and the whole system underperforms.</p><h2>Budget Control</h2><p>The beauty of digital advertising is control. Unlike traditional advertising, you can start small, test, and scale what works.</p><p>Smart budget management means:</p><ul><li>Starting with a test budget to gather data</li><li>Analyzing results before scaling</li><li>Cutting what does not work quickly</li><li>Reinvesting in what performs</li></ul><p>You should never spend more than you can afford to lose while testing. Once you have proven results, scaling becomes low-risk.</p><h2>Data-Driven Decisions</h2><p>Every advertising decision should be based on data, not gut feelings. This requires proper tracking from day one.</p><p>Key metrics to track include:</p><ul><li>Cost per click and cost per result</li><li>Conversion rates at each stage</li><li>Return on ad spend</li><li>Customer acquisition cost</li></ul><p>Without this data, you are making decisions blind. With it, you can optimize continuously and improve results month over month.</p><h3>The Testing Mindset</h3><p>No one knows what will work best before testing. Even experienced advertisers run multiple variations and let data decide the winner.</p><p>Test one element at a time:</p><ul><li>Different headlines</li><li>Different images or videos</li><li>Different audience segments</li><li>Different offers</li></ul><p>Small improvements in conversion rates compound into significant differences in results.</p><h2>Platforms Are Tools</h2><p>Google Ads, Facebook, Instagram, LinkedIn: each platform has strengths and weaknesses. The right choice depends on your audience and goals.</p><p>Where do your potential customers spend time? What type of content resonates with them? Match the platform to your audience, not the other way around.</p><h2>Building for the Long Term</h2><p>The goal is not a single successful campaign. The goal is a predictable, repeatable system that consistently generates leads or sales.</p><p>This takes time and iteration. But once built, it becomes a valuable business asset that works month after month.</p><p>Start small, measure everything, and scale what works. That is how smart campaigns are built.</p><p>Ready to spend your ad budget more effectively? <a href='/services/advertising-management'>View our advertising services</a> or learn how <a href='/blog/seo-explained-simply'>SEO and ads work together</a>.</p>"
+      },
+      "onlineReputation": {
+        "title": "Online Reputation: Why Reviews Matter More Than You Think",
+        "excerpt": "Your online reputation influences buying decisions more than most marketing. Here is why reviews matter and how to manage them effectively.",
+        "metaTitle": "Online Reputation & Review Management | Guide for SMEs",
+        "metaDescription": "Discover why online reviews are crucial for Belgian businesses and learn how to manage and improve your reputation effectively.",
+        "content": "<h2>The Trust Factor</h2><p>Before making a purchase or hiring a service, most people do the same thing: they read reviews. According to research, over 90% of consumers read online reviews before visiting a business.</p><p>Reviews are word-of-mouth at scale. They build or destroy trust before you ever speak to a potential customer.</p><h2>The Psychology of Reviews</h2><p>People trust other customers more than they trust businesses. This is not new. We have always asked friends and family for recommendations. The internet just made it possible to hear from thousands of strangers.</p><p>A business with dozens of positive reviews feels safe. A business with no reviews or negative reviews feels risky. This perception directly impacts buying decisions.</p><h3>The Numbers That Matter</h3><p>Research shows that:</p><ul><li>Businesses with 4+ star ratings get significantly more clicks</li><li>The first 10 reviews have the biggest impact on perception</li><li>A mix of ratings (not just perfect scores) appears more authentic</li><li>Recent reviews matter more than old ones</li></ul><h2>Reviews and Visibility</h2><p>Reviews do not just influence decisions. They influence visibility. Google uses reviews as a ranking factor for local search results. More positive reviews can literally push you higher in search results.</p><p>This creates a virtuous cycle: better reviews lead to more visibility, which leads to more customers, which leads to more reviews.</p><h2>Managing Your Reputation</h2><p>Reputation management is not about manipulating reviews. It is about earning good reviews and handling negative ones professionally.</p><h3>Earning Positive Reviews</h3><p>The foundation is simple: deliver excellent service. Beyond that:</p><ul><li>Ask satisfied customers to leave reviews</li><li>Make the process easy by providing direct links</li><li>Follow up after positive experiences</li><li>Thank customers who take the time to review</li></ul><h3>Handling Negative Reviews</h3><p>Negative reviews are inevitable. How you handle them matters more than the review itself.</p><ul><li>Respond promptly and professionally</li><li>Acknowledge the concern without being defensive</li><li>Offer to resolve the issue offline</li><li>Follow through on any promises made</li></ul><p>A professional response to a negative review can actually improve your reputation. It shows potential customers that you care and take responsibility.</p><h2>Monitoring Your Reputation</h2><p>You cannot manage what you do not monitor. Set up alerts to know when someone mentions your business. Regularly check review platforms relevant to your industry.</p><p>Key platforms to monitor include:</p><ul><li>Google Business Profile</li><li>Industry-specific review sites</li><li>Social media mentions</li><li>Your own website reviews</li></ul><h2>The Long-Term View</h2><p>Building a strong online reputation takes time. There are no shortcuts. Focus on delivering exceptional service, consistently asking for feedback, and responding professionally to all reviews.</p><p>Over time, your reputation becomes a competitive advantage that is difficult for competitors to replicate. It is one of the few assets that grows more valuable the longer you nurture it.</p><p>Want to strengthen your online reputation? <a href='/services/reputation-management'>View our reputation management services</a> or discover how <a href='/blog/seo-explained-simply'>SEO and reviews work together</a> for more visibility.</p>"
+      }
+    }
   },
   "gallery": {
     "title": "Our Work",
@@ -1429,322 +1455,746 @@
       "castello-vicchiomaggio": {
         "shortResult": "Digital presentation and visual direction for a historic Tuscan winery and hospitality estate.",
         "challenge": "Castello Vicchiomaggio, a historic winery and hospitality estate in the Chianti region of Tuscany, needed a refined digital presence to match the prestige of their centuries-old heritage and attract international guests.",
-        "approach": { "0": "Premium website design with luxury hospitality focus", "1": "Visual content direction capturing estate atmosphere", "2": "Mobile-first booking experience optimization", "3": "Digital brand identity aligned with historic heritage", "4": "Multi-device responsive presentation" },
-        "results": { "0": "Elevated digital presence reflecting estate prestige", "1": "Immersive visual storytelling across all touchpoints", "2": "Streamlined guest booking experience", "3": "Consistent brand presentation across devices", "4": "Enhanced international visibility and appeal" },
+        "approach": {
+          "0": "Premium website design with luxury hospitality focus",
+          "1": "Visual content direction capturing estate atmosphere",
+          "2": "Mobile-first booking experience optimization",
+          "3": "Digital brand identity aligned with historic heritage",
+          "4": "Multi-device responsive presentation"
+        },
+        "results": {
+          "0": "Elevated digital presence reflecting estate prestige",
+          "1": "Immersive visual storytelling across all touchpoints",
+          "2": "Streamlined guest booking experience",
+          "3": "Consistent brand presentation across devices",
+          "4": "Enhanced international visibility and appeal"
+        },
         "disclaimer": "Visuals recreated for portfolio presentation purposes."
       },
       "cose-pazzi-torino": {
         "shortResult": "Authentic Italian pizzeria website with strong food-focused visuals and local brand character.",
         "challenge": "Pizzeria Cose Pazzi in Torino needed a polished digital presence to reflect their authentic Italian cuisine and vibrant neighborhood character, attracting both locals and visitors.",
-        "approach": { "0": "Website structure & optimization", "1": "Visual presentation & food-focused hierarchy", "2": "Mobile-first usability improvements", "3": "Local Italian brand feel and storytelling" },
-        "results": { "0": "Premium restaurant branding online", "1": "Strong food visibility and appetite appeal", "2": "Clear and simple customer journey", "3": "Improved online visibility and local SEO" },
+        "approach": {
+          "0": "Website structure & optimization",
+          "1": "Visual presentation & food-focused hierarchy",
+          "2": "Mobile-first usability improvements",
+          "3": "Local Italian brand feel and storytelling"
+        },
+        "results": {
+          "0": "Premium restaurant branding online",
+          "1": "Strong food visibility and appetite appeal",
+          "2": "Clear and simple customer journey",
+          "3": "Improved online visibility and local SEO"
+        },
         "disclaimer": "Visuals are illustrative and created for presentation purposes."
       },
       "augusto-torino": {
         "shortResult": "Elegant restaurant website with strong visual identity and refined food presentation.",
         "challenge": "Ristorante Pizzeria Augusto in Torino needed a polished digital presence to reflect their refined Italian cuisine and welcoming atmosphere, attracting both locals and visitors.",
-        "approach": { "0": "Website structure & optimization", "1": "Visual hierarchy & food-focused layout", "2": "Performance and mobile usability", "3": "Event and reservation integration" },
-        "results": { "0": "Premium restaurant branding online", "1": "Clear customer journey from menu to booking", "2": "Strong visual storytelling across all pages", "3": "Improved online visibility and local SEO" },
+        "approach": {
+          "0": "Website structure & optimization",
+          "1": "Visual hierarchy & food-focused layout",
+          "2": "Performance and mobile usability",
+          "3": "Event and reservation integration"
+        },
+        "results": {
+          "0": "Premium restaurant branding online",
+          "1": "Clear customer journey from menu to booking",
+          "2": "Strong visual storytelling across all pages",
+          "3": "Improved online visibility and local SEO"
+        },
         "disclaimer": "Project actively managed by GROPPI."
       },
       "pummaro-torino": {
         "shortResult": "Modern restaurant website with strong food presentation and clear customer flow.",
         "challenge": "Pizzeria Pummarò in Torino needed a professional digital presence that reflected their commitment to authentic Italian cuisine using premium ingredients from small Italian producers.",
-        "approach": { "0": "Website structure & optimization", "1": "Visual hierarchy & food presentation", "2": "Mobile usability improvements", "3": "Online reservation and delivery integration" },
-        "results": { "0": "Conversion-friendly layout with clear navigation", "1": "Strong local restaurant branding online", "2": "Professional food visibility and ingredient storytelling", "3": "Seamless customer journey from menu to reservation" },
+        "approach": {
+          "0": "Website structure & optimization",
+          "1": "Visual hierarchy & food presentation",
+          "2": "Mobile usability improvements",
+          "3": "Online reservation and delivery integration"
+        },
+        "results": {
+          "0": "Conversion-friendly layout with clear navigation",
+          "1": "Strong local restaurant branding online",
+          "2": "Professional food visibility and ingredient storytelling",
+          "3": "Seamless customer journey from menu to reservation"
+        },
         "disclaimer": "Project actively managed by GROPPI."
       },
       "fratelli-roselli": {
         "shortResult": "Authentic Italian restaurant website with strong food presentation and local branding.",
         "challenge": "Pizzeria Fratelli Roselli in Turin had a loyal local following for over 20 years, but needed a professional digital presence to showcase their commitment to quality ingredients and authentic pizza-making.",
-        "approach": { "0": "Website structure & optimization", "1": "Visual presentation & content layout", "2": "Performance & usability improvements", "3": "Online reservation system integration" },
-        "results": { "0": "Professional and clear website reflecting brand quality", "1": "Strong food visibility with premium ingredient focus", "2": "Clear customer journey from menu to reservation", "3": "Improved local restaurant branding online" },
+        "approach": {
+          "0": "Website structure & optimization",
+          "1": "Visual presentation & content layout",
+          "2": "Performance & usability improvements",
+          "3": "Online reservation system integration"
+        },
+        "results": {
+          "0": "Professional and clear website reflecting brand quality",
+          "1": "Strong food visibility with premium ingredient focus",
+          "2": "Clear customer journey from menu to reservation",
+          "3": "Improved local restaurant branding online"
+        },
         "disclaimer": "Project actively managed by GROPPI."
       },
       "boothuis-turnhout": {
         "shortResult": "Clean restaurant website and visual presentation for a local hospitality business.",
         "challenge": "Restaurant Boothuis Turnhout needed a professional digital presence that reflected the atmosphere and quality of the restaurant online.",
-        "approach": { "0": "Website management and ongoing optimization", "1": "Visual content and professional presentation", "2": "Digital presence building and maintenance", "3": "Consistent brand experience across all online channels" },
-        "results": { "0": "Professional and clear website", "1": "Strong visual presentation of the restaurant", "2": "Improved online visibility", "3": "Ongoing management and optimization" },
+        "approach": {
+          "0": "Website management and ongoing optimization",
+          "1": "Visual content and professional presentation",
+          "2": "Digital presence building and maintenance",
+          "3": "Consistent brand experience across all online channels"
+        },
+        "results": {
+          "0": "Professional and clear website",
+          "1": "Strong visual presentation of the restaurant",
+          "2": "Improved online visibility",
+          "3": "Ongoing management and optimization"
+        },
         "disclaimer": "Project actively managed by GROPPI."
       },
       "sanremo-pizzeria": {
         "shortResult": "Strong social media presence and visual content for a local restaurant.",
         "challenge": "Sanremo Pizzeria Restaurant had a loyal local following, but lacked a professional digital presence to attract new customers and convey the restaurant atmosphere online.",
-        "approach": { "0": "Facebook page management and optimization", "1": "Professional visual content creation", "2": "Social media strategy and consistent posting", "3": "Digital presence building and maintenance" },
-        "results": { "0": "Professional and consistent online presence", "1": "Visually strong social media content", "2": "Better visibility and findability online", "3": "Ongoing management and optimization" },
+        "approach": {
+          "0": "Facebook page management and optimization",
+          "1": "Professional visual content creation",
+          "2": "Social media strategy and consistent posting",
+          "3": "Digital presence building and maintenance"
+        },
+        "results": {
+          "0": "Professional and consistent online presence",
+          "1": "Visually strong social media content",
+          "2": "Better visibility and findability online",
+          "3": "Ongoing management and optimization"
+        },
         "disclaimer": "Project actively managed by GROPPI."
       },
       "mangiare-3840": {
         "shortResult": "Modern restaurant website with strong visual identity.",
         "challenge": "Mangiare 3840 had a strong local reputation but lacked a professional online presence that reflected the atmosphere and quality of the restaurant.",
-        "approach": { "0": "Fully custom-designed website with dark premium design", "1": "Visual content and branding matching the restaurant atmosphere", "2": "Ongoing digital support and optimization", "3": "Menu and reservation system integrated" },
-        "results": { "0": "Professional online presence strengthening the brand experience", "1": "Improved user experience for visitors", "2": "Strong visual identity across all digital channels", "3": "Ongoing management and optimization" },
+        "approach": {
+          "0": "Fully custom-designed website with dark premium design",
+          "1": "Visual content and branding matching the restaurant atmosphere",
+          "2": "Ongoing digital support and optimization",
+          "3": "Menu and reservation system integrated"
+        },
+        "results": {
+          "0": "Professional online presence strengthening the brand experience",
+          "1": "Improved user experience for visitors",
+          "2": "Strong visual identity across all digital channels",
+          "3": "Ongoing management and optimization"
+        },
         "disclaimer": "Project actively managed by GROPPI."
       },
       "kma-wandpanelen": {
         "shortResult": "+85% showroom visitors",
         "challenge": "KMA Wandpanelen in Antwerp had a premium product line of wood and marble alternatives, but lacked online visibility. The strong points (moisture-resistant, scratch-resistant, easy maintenance) were not clearly communicated.",
-        "approach": { "0": "Professional product photography of all panel variants", "1": "Social media content strategy for Instagram and Facebook", "2": "Visual comparison: WPC vs. traditional wood", "3": "Focus on USPs: maintenance-friendly and durable" },
-        "results": { "0": "+85% more showroom visitors", "1": "Strong online product interest via social", "2": "More targeted inquiries from interior builders", "3": "Clear positioning as premium alternative" },
+        "approach": {
+          "0": "Professional product photography of all panel variants",
+          "1": "Social media content strategy for Instagram and Facebook",
+          "2": "Visual comparison: WPC vs. traditional wood",
+          "3": "Focus on USPs: maintenance-friendly and durable"
+        },
+        "results": {
+          "0": "+85% more showroom visitors",
+          "1": "Strong online product interest via social",
+          "2": "More targeted inquiries from interior builders",
+          "3": "Clear positioning as premium alternative"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "lebanon-restaurant": {
         "shortResult": "+120% social media reach",
         "challenge": "Lebanese restaurant in Brussels with authentic dishes, but limited online presence. The warm atmosphere and traditional cuisine were not showcased on social media.",
-        "approach": { "0": "Complete social media strategy for Instagram and Facebook", "1": "Professional food photography and styling", "2": "Short promo videos and Reels for engagement", "3": "Weekly content planning with consistent posting", "4": "Review & testimonial content for social proof" },
-        "results": { "0": "+120% social media reach", "1": "Notable increase in new customers via Instagram", "2": "Higher engagement rate on posts", "3": "Stronger brand recognition in the Brussels region", "4": "More table reservations via DMs" },
+        "approach": {
+          "0": "Complete social media strategy for Instagram and Facebook",
+          "1": "Professional food photography and styling",
+          "2": "Short promo videos and Reels for engagement",
+          "3": "Weekly content planning with consistent posting",
+          "4": "Review & testimonial content for social proof"
+        },
+        "results": {
+          "0": "+120% social media reach",
+          "1": "Notable increase in new customers via Instagram",
+          "2": "Higher engagement rate on posts",
+          "3": "Stronger brand recognition in the Brussels region",
+          "4": "More table reservations via DMs"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "il-fuoco-pizza": {
         "shortResult": "+65% online reservations",
         "challenge": "Authentic Italian pizzeria with artisanal approach, but outdated online presence. The homely atmosphere and pizza quality were not reflected in their digital appearance.",
-        "approach": { "0": "Complete visual identity reworked", "1": "Professional food and ambiance photography", "2": "Digital menu system with QR integration", "3": "Social media content for Instagram & Facebook", "4": "Reviews and testimonials strategy" },
-        "results": { "0": "+65% more online reservations", "1": "Strong brand awareness in the region", "2": "Higher average order value", "3": "More repeat visitors thanks to loyalty content", "4": "Improved online reviews and ratings" },
+        "approach": {
+          "0": "Complete visual identity reworked",
+          "1": "Professional food and ambiance photography",
+          "2": "Digital menu system with QR integration",
+          "3": "Social media content for Instagram & Facebook",
+          "4": "Reviews and testimonials strategy"
+        },
+        "results": {
+          "0": "+65% more online reservations",
+          "1": "Strong brand awareness in the region",
+          "2": "Higher average order value",
+          "3": "More repeat visitors thanks to loyalty content",
+          "4": "Improved online reviews and ratings"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "restaurant-branding": {
         "shortResult": "+180% reservations",
         "challenge": "Premium restaurant with little online visibility. The outdated branding didn't match the exclusive offering and the target audience wasn't being reached.",
-        "approach": { "0": "Complete rebrand with luxury look and feel", "1": "New website with reservation system", "2": "Professional photo shoot of interior and dishes", "3": "Google Ads campaign targeting local searchers" },
-        "results": { "0": "+180% reservations within 6 months", "1": "Higher average spend per table", "2": "Better online reviews and ratings", "3": "Top 3 Google position for local search terms" }
+        "approach": {
+          "0": "Complete rebrand with luxury look and feel",
+          "1": "New website with reservation system",
+          "2": "Professional photo shoot of interior and dishes",
+          "3": "Google Ads campaign targeting local searchers"
+        },
+        "results": {
+          "0": "+180% reservations within 6 months",
+          "1": "Higher average spend per table",
+          "2": "Better online reviews and ratings",
+          "3": "Top 3 Google position for local search terms"
+        }
       },
       "mode-webshop": {
         "shortResult": "€85K revenue in 3 months",
         "challenge": "Starting online fashion store with no digital presence. Limited marketing budget but high ambition to grow quickly in the Belgian market.",
-        "approach": { "0": "Shopify webshop setup and configuration", "1": "Professional product photography", "2": "Meta Ads campaigns with retargeting", "3": "Conversion-focused landing pages" },
-        "results": { "0": "€85K revenue in first 3 months", "1": "ROAS of 4.2 on advertising", "2": "Stable returning customer base", "3": "Successful expansion to the Netherlands" }
+        "approach": {
+          "0": "Shopify webshop setup and configuration",
+          "1": "Professional product photography",
+          "2": "Meta Ads campaigns with retargeting",
+          "3": "Conversion-focused landing pages"
+        },
+        "results": {
+          "0": "€85K revenue in first 3 months",
+          "1": "ROAS of 4.2 on advertising",
+          "2": "Stable returning customer base",
+          "3": "Successful expansion to the Netherlands"
+        }
       },
       "b2b-platform": {
         "shortResult": "+320% leads",
         "challenge": "Complex B2B SaaS with a long sales funnel. Too few qualified leads and the website converted poorly. Competitor positioning was stronger.",
-        "approach": { "0": "Optimized landing pages per persona", "1": "Lead magnets (whitepapers, case studies)", "2": "SEO strategy for long-tail keywords", "3": "A/B testing of forms and CTAs" },
-        "results": { "0": "+320% qualified leads within 4 months", "1": "Lower cost per lead", "2": "Shorter sales funnel duration", "3": "Better lead quality (SQL ratio)" }
+        "approach": {
+          "0": "Optimized landing pages per persona",
+          "1": "Lead magnets (whitepapers, case studies)",
+          "2": "SEO strategy for long-tail keywords",
+          "3": "A/B testing of forms and CTAs"
+        },
+        "results": {
+          "0": "+320% qualified leads within 4 months",
+          "1": "Lower cost per lead",
+          "2": "Shorter sales funnel duration",
+          "3": "Better lead quality (SQL ratio)"
+        }
       },
       "bouwbedrijf-website": {
         "shortResult": "#1 Google local",
         "challenge": "Family construction company lived purely on word-of-mouth. No website, no online presence. Younger generation wanted to modernize.",
-        "approach": { "0": "Professional website with project portfolio", "1": "Google My Business optimization", "2": "Local SEO strategy", "3": "Project photography and case studies" },
-        "results": { "0": "#1 position in Google for local search terms", "1": "45+ leads per month via website", "2": "Higher average project value", "3": "Stronger positioning vs. competitors" }
+        "approach": {
+          "0": "Professional website with project portfolio",
+          "1": "Google My Business optimization",
+          "2": "Local SEO strategy",
+          "3": "Project photography and case studies"
+        },
+        "results": {
+          "0": "#1 position in Google for local search terms",
+          "1": "45+ leads per month via website",
+          "2": "Higher average project value",
+          "3": "Stronger positioning vs. competitors"
+        }
       },
       "influencer-campagne": {
         "shortResult": "2.4M reach",
         "challenge": "New beauty brand without brand awareness. Target audience 18-35 difficult to reach via traditional channels.",
-        "approach": { "0": "Influencer partnership strategy", "1": "12 Belgian creators activated", "2": "UGC campaign on Instagram and TikTok", "3": "Branded content and giveaways" },
-        "results": { "0": "2.4 million organic reach in 2 months", "1": "High engagement on UGC content", "2": "Strong brand awareness with target audience", "3": "Successful product launch" }
+        "approach": {
+          "0": "Influencer partnership strategy",
+          "1": "12 Belgian creators activated",
+          "2": "UGC campaign on Instagram and TikTok",
+          "3": "Branded content and giveaways"
+        },
+        "results": {
+          "0": "2.4 million organic reach in 2 months",
+          "1": "High engagement on UGC content",
+          "2": "Strong brand awareness with target audience",
+          "3": "Successful product launch"
+        }
       },
       "tech-startup-branding": {
         "shortResult": "Complete brand identity",
         "challenge": "Pre-seed startup needed a professional look for investor meetings. Current DIY branding was not convincing.",
-        "approach": { "0": "Complete brand identity development", "1": "Logo and visual language design", "2": "Pitch deck design for investors", "3": "Investor-ready website" },
-        "results": { "0": "Successful seed round closed within 3 months", "1": "Professional image for investors", "2": "Consistent brand image across all touchpoints", "3": "Foundation laid for scalable branding" }
+        "approach": {
+          "0": "Complete brand identity development",
+          "1": "Logo and visual language design",
+          "2": "Pitch deck design for investors",
+          "3": "Investor-ready website"
+        },
+        "results": {
+          "0": "Successful seed round closed within 3 months",
+          "1": "Professional image for investors",
+          "2": "Consistent brand image across all touchpoints",
+          "3": "Foundation laid for scalable branding"
+        }
       },
       "e-commerce-groei": {
         "shortResult": "+240% ROAS",
         "challenge": "Existing interior webshop was running at a loss on advertising. ROAS under 1.0 with no clear strategy. Budget was being wasted.",
-        "approach": { "0": "Full audit of existing campaigns", "1": "New audience segmentation", "2": "A/B testing of creatives", "3": "Retargeting funnels set up" },
-        "results": { "0": "+240% ROAS improvement within 90 days", "1": "Profitable advertising spend", "2": "Lower cost per acquisition", "3": "Scalable campaign structure" }
+        "approach": {
+          "0": "Full audit of existing campaigns",
+          "1": "New audience segmentation",
+          "2": "A/B testing of creatives",
+          "3": "Retargeting funnels set up"
+        },
+        "results": {
+          "0": "+240% ROAS improvement within 90 days",
+          "1": "Profitable advertising spend",
+          "2": "Lower cost per acquisition",
+          "3": "Scalable campaign structure"
+        }
       },
       "content-strategie": {
         "shortResult": "50+ videos/month",
         "challenge": "Fitness chain wanted to produce consistent content but had no internal time or expertise. Social media was being neglected.",
-        "approach": { "0": "Full-service content retainer set up", "1": "Planning, production and publication", "2": "Video and photo content for all locations", "3": "Consistent posting strategy" },
-        "results": { "0": "50+ quality videos per month", "1": "Consistent brand experience across all channels", "2": "Higher member engagement", "3": "More sign-ups via social media" }
+        "approach": {
+          "0": "Full-service content retainer set up",
+          "1": "Planning, production and publication",
+          "2": "Video and photo content for all locations",
+          "3": "Consistent posting strategy"
+        },
+        "results": {
+          "0": "50+ quality videos per month",
+          "1": "Consistent brand experience across all channels",
+          "2": "Higher member engagement",
+          "3": "More sign-ups via social media"
+        }
       },
       "ai-learn-academy": {
         "shortResult": "Live platform – ongoing",
         "challenge": "AI Deals needed a premium platform that simplifies access to leading AI tools through a subscription model, combined with an educational academy for creators and professionals.",
-        "approach": { "0": "Full platform design & UX/UI development with premium dark theme", "1": "Subscription-based access management system", "2": "AI tools marketplace structure with categorization", "3": "AI Academy & educational content architecture", "4": "Scalable platform infrastructure for growth", "5": "Ongoing technical management and optimization" },
-        "results": { "0": "Custom AI tools marketplace launched", "1": "Subscription & access management system live", "2": "Premium dark UI with conversion-focused UX", "3": "Educational AI Academy structure deployed", "4": "Scalable architecture supporting continuous growth", "5": "Platform actively managed & optimized by Groppi" },
+        "approach": {
+          "0": "Full platform design & UX/UI development with premium dark theme",
+          "1": "Subscription-based access management system",
+          "2": "AI tools marketplace structure with categorization",
+          "3": "AI Academy & educational content architecture",
+          "4": "Scalable platform infrastructure for growth",
+          "5": "Ongoing technical management and optimization"
+        },
+        "results": {
+          "0": "Custom AI tools marketplace launched",
+          "1": "Subscription & access management system live",
+          "2": "Premium dark UI with conversion-focused UX",
+          "3": "Educational AI Academy structure deployed",
+          "4": "Scalable architecture supporting continuous growth",
+          "5": "Platform actively managed & optimized by Groppi"
+        },
         "disclaimer": "This is a live and ongoing project. Platform design & management by Groppi."
       },
       "pilotscareer": {
         "shortResult": "International aviation recruitment platform – live",
         "challenge": "PilotsCareer needed a professional, scalable recruitment platform connecting airline pilots with global career opportunities.",
-        "approach": { "0": "Full platform design & development from scratch", "1": "Premium dark UI with aviation-inspired aesthetics", "2": "Advanced job search and filtering system", "3": "Pilot profile and application management", "4": "Responsive design for desktop and mobile", "5": "Ongoing platform optimization and feature development" },
-        "results": { "0": "Professional aviation recruitment platform launched", "1": "Scalable architecture supporting international growth", "2": "Clean, intuitive UX for pilots and recruiters", "3": "Advanced search and filtering capabilities", "4": "Mobile-optimized pilot profile experience", "5": "Platform actively managed & developed by Groppi" },
+        "approach": {
+          "0": "Full platform design & development from scratch",
+          "1": "Premium dark UI with aviation-inspired aesthetics",
+          "2": "Advanced job search and filtering system",
+          "3": "Pilot profile and application management",
+          "4": "Responsive design for desktop and mobile",
+          "5": "Ongoing platform optimization and feature development"
+        },
+        "results": {
+          "0": "Professional aviation recruitment platform launched",
+          "1": "Scalable architecture supporting international growth",
+          "2": "Clean, intuitive UX for pilots and recruiters",
+          "3": "Advanced search and filtering capabilities",
+          "4": "Mobile-optimized pilot profile experience",
+          "5": "Platform actively managed & developed by Groppi"
+        },
         "disclaimer": "This is a live and ongoing project. Platform design & management by Groppi."
       },
       "casa-mavi": {
         "shortResult": "Complete digital presence for a Mediterranean gem in Spain.",
         "challenge": "Casa Mavi, an Italian-Neapolitan restaurant in Fuengirola (Spain), wanted to build a professional digital presence to attract both local guests and tourists along the Costa del Sol.",
-        "approach": { "0": "Custom website with online reservation system", "1": "Digital menu and visual content creation", "2": "Building a professional digital presence", "3": "Social media strategy targeting local and tourist audiences" },
-        "results": { "0": "Professional website with integrated reservation system", "1": "Strong visual identity reflecting the Mediterranean atmosphere", "2": "Improved online visibility for tourists and locals", "3": "Ongoing digital management and optimization" },
+        "approach": {
+          "0": "Custom website with online reservation system",
+          "1": "Digital menu and visual content creation",
+          "2": "Building a professional digital presence",
+          "3": "Social media strategy targeting local and tourist audiences"
+        },
+        "results": {
+          "0": "Professional website with integrated reservation system",
+          "1": "Strong visual identity reflecting the Mediterranean atmosphere",
+          "2": "Improved online visibility for tourists and locals",
+          "3": "Ongoing digital management and optimization"
+        },
         "disclaimer": "Project actively managed by GROPPI."
       },
       "arte-y-cocina": {
         "shortResult": "Premium digital identity for an artistic fine-dining experience.",
         "challenge": "ArTe y CoCiNa, an artistic fine-dining restaurant in Spain, wanted a digital presence that reflects the unique fusion of art and gastronomy and appeals to an international audience.",
-        "approach": { "0": "Custom website with luxurious visual identity", "1": "Professional food and interior content creation", "2": "Building a strong digital presence", "3": "Visual branding combining art and culinary excellence" },
-        "results": { "0": "Elegant website reflecting the fine-dining experience online", "1": "Strong visual identity with artistic flair", "2": "Improved online visibility and brand experience", "3": "Ongoing digital management and optimization" },
+        "approach": {
+          "0": "Custom website with luxurious visual identity",
+          "1": "Professional food and interior content creation",
+          "2": "Building a strong digital presence",
+          "3": "Visual branding combining art and culinary excellence"
+        },
+        "results": {
+          "0": "Elegant website reflecting the fine-dining experience online",
+          "1": "Strong visual identity with artistic flair",
+          "2": "Improved online visibility and brand experience",
+          "3": "Ongoing digital management and optimization"
+        },
         "disclaimer": "Project actively managed by GROPPI."
       },
       "verona-los-boliches": {
         "shortResult": "Complete online presence for a vibrant fusion restaurant.",
         "challenge": "Verona Los Boliches, a unique Italian-Indian-Mexican fusion restaurant in Spain, needed a professional digital presence reflecting the multicultural cuisine and vibrant atmosphere of the Costa del Sol.",
-        "approach": { "0": "Custom website with visual identity", "1": "Professional food and ambiance content creation", "2": "Building online presence and visibility", "3": "Visual content targeting diverse cuisine styles" },
-        "results": { "0": "Professional website strongly presenting the fusion cuisine", "1": "Improved online visibility for tourists and locals", "2": "Strong visual content across all digital channels", "3": "Ongoing digital management and optimization" },
+        "approach": {
+          "0": "Custom website with visual identity",
+          "1": "Professional food and ambiance content creation",
+          "2": "Building online presence and visibility",
+          "3": "Visual content targeting diverse cuisine styles"
+        },
+        "results": {
+          "0": "Professional website strongly presenting the fusion cuisine",
+          "1": "Improved online visibility for tourists and locals",
+          "2": "Strong visual content across all digital channels",
+          "3": "Ongoing digital management and optimization"
+        },
         "disclaimer": "Project actively managed by GROPPI."
       },
       "happy-flavors": {
         "shortResult": "Professional digital presence for authentic Indian cuisine in Spain.",
         "challenge": "Happy Flavors Indian Restaurant wanted to build a professional online presence reflecting authentic Indian cuisine and warm hospitality, appealing to both local guests and tourists.",
-        "approach": { "0": "Custom website with warm visual identity", "1": "Professional food and ambiance content creation", "2": "Building digital presence and visibility", "3": "Visual content showcasing the rich Indian cuisine" },
-        "results": { "0": "Professional website presenting authentic Indian cuisine", "1": "Strong visual content across all digital channels", "2": "Improved online visibility for tourists and locals", "3": "Ongoing digital management and optimization" },
+        "approach": {
+          "0": "Custom website with warm visual identity",
+          "1": "Professional food and ambiance content creation",
+          "2": "Building digital presence and visibility",
+          "3": "Visual content showcasing the rich Indian cuisine"
+        },
+        "results": {
+          "0": "Professional website presenting authentic Indian cuisine",
+          "1": "Strong visual content across all digital channels",
+          "2": "Improved online visibility for tourists and locals",
+          "3": "Ongoing digital management and optimization"
+        },
         "disclaimer": "Project actively managed by GROPPI."
       },
       "guest-reservations": {
         "shortResult": "Ongoing platform management for a global hotel booking service.",
         "challenge": "Guest Reservations, an international hotel and travel booking platform, needed ongoing platform management, website optimization and technical support to sustain their worldwide growth.",
-        "approach": { "0": "Ongoing platform management and technical support", "1": "Website optimization for better performance and conversion", "2": "Monitoring and proactive maintenance of the booking platform", "3": "Strategic support for scalable growth" },
-        "results": { "0": "Improved platform performance and user experience", "1": "Higher conversion rate on the booking platform", "2": "Stable and reliable platform for global users", "3": "Ongoing technical support and optimization" },
+        "approach": {
+          "0": "Ongoing platform management and technical support",
+          "1": "Website optimization for better performance and conversion",
+          "2": "Monitoring and proactive maintenance of the booking platform",
+          "3": "Strategic support for scalable growth"
+        },
+        "results": {
+          "0": "Improved platform performance and user experience",
+          "1": "Higher conversion rate on the booking platform",
+          "2": "Stable and reliable platform for global users",
+          "3": "Ongoing technical support and optimization"
+        },
         "disclaimer": "Ongoing project actively managed by GROPPI."
       },
       "eurostars-hotels": {
         "shortResult": "Digital platform support & performance optimization for a European hotel group.",
         "challenge": "Eurostars Hotels, a European hotel group with an extensive booking platform, needed ongoing digital support, website management and performance optimization to strengthen their online presence.",
-        "approach": { "0": "Ongoing digital platform support and technical management", "1": "Website management and booking platform optimization", "2": "Performance optimization for faster load times and better conversion", "3": "Strategic support for European growth" },
-        "results": { "0": "Optimized website performance and user experience", "1": "Improved conversion rate on the booking platform", "2": "Stable and reliable digital platform for European guests", "3": "Ongoing technical management and proactive optimization" },
+        "approach": {
+          "0": "Ongoing digital platform support and technical management",
+          "1": "Website management and booking platform optimization",
+          "2": "Performance optimization for faster load times and better conversion",
+          "3": "Strategic support for European growth"
+        },
+        "results": {
+          "0": "Optimized website performance and user experience",
+          "1": "Improved conversion rate on the booking platform",
+          "2": "Stable and reliable digital platform for European guests",
+          "3": "Ongoing technical management and proactive optimization"
+        },
         "disclaimer": "Ongoing project actively managed by GROPPI."
       },
       "nda-project-001": {
         "shortResult": "+42% online reservations",
         "challenge": "Outdated website with poor mobile experience led to missed reservations.",
-        "approach": { "0": "Responsive website redesign", "1": "Online reservation system", "2": "Local SEO optimization" },
-        "results": { "0": "+42% online reservations", "1": "Faster load time (< 2s)" },
+        "approach": {
+          "0": "Responsive website redesign",
+          "1": "Online reservation system",
+          "2": "Local SEO optimization"
+        },
+        "results": {
+          "0": "+42% online reservations",
+          "1": "Faster load time (< 2s)"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-002": {
         "shortResult": "+70% table reservations",
         "challenge": "City center bistro lacked online visibility with tourists and locals.",
-        "approach": { "0": "Instagram Reels strategy", "1": "Food videography", "2": "Seasonal menu campaigns" },
-        "results": { "0": "+70% table reservations via social", "1": "Viral Reel (50K+ views)" },
+        "approach": {
+          "0": "Instagram Reels strategy",
+          "1": "Food videography",
+          "2": "Seasonal menu campaigns"
+        },
+        "results": {
+          "0": "+70% table reservations via social",
+          "1": "Viral Reel (50K+ views)"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-003": {
         "shortResult": "+55% Instagram followers",
         "challenge": "Beauty salon lacked online visibility with younger target audience.",
-        "approach": { "0": "Instagram content strategy", "1": "Before/after visual series", "2": "Influencer micro-partnerships" },
-        "results": { "0": "+55% Instagram followers", "1": "Higher booking rate via DM" },
+        "approach": {
+          "0": "Instagram content strategy",
+          "1": "Before/after visual series",
+          "2": "Influencer micro-partnerships"
+        },
+        "results": {
+          "0": "+55% Instagram followers",
+          "1": "Higher booking rate via DM"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-004": {
         "shortResult": "+50% bookings",
         "challenge": "New spa lacked differentiation in competitive wellness market.",
-        "approach": { "0": "Luxury brand identity development", "1": "Booking-optimized website", "2": "Atmospheric visual language" },
-        "results": { "0": "+50% bookings in first 6 months", "1": "Premium positioning achieved" },
+        "approach": {
+          "0": "Luxury brand identity development",
+          "1": "Booking-optimized website",
+          "2": "Atmospheric visual language"
+        },
+        "results": {
+          "0": "+50% bookings in first 6 months",
+          "1": "Premium positioning achieved"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-005": {
         "shortResult": "+38% quote requests",
         "challenge": "Family business with strong reputation but outdated brand identity.",
-        "approach": { "0": "Complete brand identity reworked", "1": "Professional project photography", "2": "New website with portfolio" },
-        "results": { "0": "+38% quote requests", "1": "Stronger brand recognition" },
+        "approach": {
+          "0": "Complete brand identity reworked",
+          "1": "Professional project photography",
+          "2": "New website with portfolio"
+        },
+        "results": {
+          "0": "+38% quote requests",
+          "1": "Stronger brand recognition"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-006": {
         "shortResult": "+85% leads",
         "challenge": "Solar panel installer in growing market with poor lead generation.",
-        "approach": { "0": "Lead generation funnels", "1": "Google Ads campaigns", "2": "Calculator tool on website" },
-        "results": { "0": "+85% leads per month", "1": "Cost per lead halved" },
+        "approach": {
+          "0": "Lead generation funnels",
+          "1": "Google Ads campaigns",
+          "2": "Calculator tool on website"
+        },
+        "results": {
+          "0": "+85% leads per month",
+          "1": "Cost per lead halved"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-007": {
         "shortResult": "€62K revenue in Q1",
         "challenge": "New webshop without existing customer base or brand awareness.",
-        "approach": { "0": "Shopify webshop configuration", "1": "Meta Ads campaigns", "2": "Retargeting funnels" },
-        "results": { "0": "€62K revenue in first quarter", "1": "ROAS of 3.8" },
+        "approach": {
+          "0": "Shopify webshop configuration",
+          "1": "Meta Ads campaigns",
+          "2": "Retargeting funnels"
+        },
+        "results": {
+          "0": "€62K revenue in first quarter",
+          "1": "ROAS of 3.8"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-008": {
         "shortResult": "+130% online sales",
         "challenge": "Jeweler wanted to start online sales alongside physical store.",
-        "approach": { "0": "WooCommerce webshop setup", "1": "Product photography", "2": "Instagram shopping integration" },
-        "results": { "0": "+130% online sales in 4 months", "1": "Strong Instagram community" },
+        "approach": {
+          "0": "WooCommerce webshop setup",
+          "1": "Product photography",
+          "2": "Instagram shopping integration"
+        },
+        "results": {
+          "0": "+130% online sales in 4 months",
+          "1": "Strong Instagram community"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-009": {
         "shortResult": "#2 Google position",
         "challenge": "Medical practice invisible in search results despite strong reputation.",
-        "approach": { "0": "Technical SEO audit and fixes", "1": "Medical content strategy", "2": "Google My Business optimization" },
-        "results": { "0": "#2 Google position for core keywords", "1": "+60% organic traffic" },
+        "approach": {
+          "0": "Technical SEO audit and fixes",
+          "1": "Medical content strategy",
+          "2": "Google My Business optimization"
+        },
+        "results": {
+          "0": "#2 Google position for core keywords",
+          "1": "+60% organic traffic"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-010": {
         "shortResult": "+35% new patients",
         "challenge": "Dental practice in competitive region with declining new patient numbers.",
-        "approach": { "0": "Local SEO strategy", "1": "Google Ads campaigns", "2": "Review management" },
-        "results": { "0": "+35% new patients per month", "1": "#1 Google Maps local" },
+        "approach": {
+          "0": "Local SEO strategy",
+          "1": "Google Ads campaigns",
+          "2": "Review management"
+        },
+        "results": {
+          "0": "+35% new patients per month",
+          "1": "#1 Google Maps local"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-011": {
         "shortResult": "Seed round closed",
         "challenge": "Pre-seed startup needed professional appearance for investors.",
-        "approach": { "0": "Logo and visual identity", "1": "Pitch deck design", "2": "Landing page development" },
-        "results": { "0": "Successful seed round", "1": "Professional investor presentation" },
+        "approach": {
+          "0": "Logo and visual identity",
+          "1": "Pitch deck design",
+          "2": "Landing page development"
+        },
+        "results": {
+          "0": "Successful seed round",
+          "1": "Professional investor presentation"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-012": {
         "shortResult": "500+ sign-ups in 30 days",
         "challenge": "B2B SaaS product ready for launch but without marketing infrastructure.",
-        "approach": { "0": "High-converting landing page", "1": "LinkedIn Ads campaign", "2": "Content marketing strategy" },
-        "results": { "0": "500+ sign-ups in first month", "1": "Strong product-market fit signals" },
+        "approach": {
+          "0": "High-converting landing page",
+          "1": "LinkedIn Ads campaign",
+          "2": "Content marketing strategy"
+        },
+        "results": {
+          "0": "500+ sign-ups in first month",
+          "1": "Strong product-market fit signals"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-013": {
         "shortResult": "+75% qualified leads",
         "challenge": "Real estate office dependent on traditional channels, missing online leads.",
-        "approach": { "0": "Lead generation campaigns", "1": "Landing pages per project", "2": "CRM integration" },
-        "results": { "0": "+75% qualified leads", "1": "Lower cost per lead" },
+        "approach": {
+          "0": "Lead generation campaigns",
+          "1": "Landing pages per project",
+          "2": "CRM integration"
+        },
+        "results": {
+          "0": "+75% qualified leads",
+          "1": "Lower cost per lead"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-014": {
         "shortResult": "Higher asking price achieved",
         "challenge": "Premium real estate lacked visual presentation that radiated luxury.",
-        "approach": { "0": "High-end property website", "1": "Drone and interior photography", "2": "Virtual tours integration" },
-        "results": { "0": "Higher asking price achieved", "1": "Faster sales cycle" },
+        "approach": {
+          "0": "High-end property website",
+          "1": "Drone and interior photography",
+          "2": "Virtual tours integration"
+        },
+        "results": {
+          "0": "Higher asking price achieved",
+          "1": "Faster sales cycle"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-015": {
         "shortResult": "+32% project inquiries",
         "challenge": "Interior designer showed work via social media but lacked professional portfolio.",
-        "approach": { "0": "Portfolio website with gallery", "1": "Professional project photography", "2": "Blog strategy" },
-        "results": { "0": "+32% project inquiries", "1": "Higher average project value" },
+        "approach": {
+          "0": "Portfolio website with gallery",
+          "1": "Professional project photography",
+          "2": "Blog strategy"
+        },
+        "results": {
+          "0": "+32% project inquiries",
+          "1": "Higher average project value"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-016": {
         "shortResult": "+55% showroom visits",
         "challenge": "Kitchen shop had declining visitor numbers despite premium offering.",
-        "approach": { "0": "Google Ads with local focus", "1": "Inspiration content on social", "2": "Virtual showroom tour" },
-        "results": { "0": "+55% showroom visits", "1": "Higher conversion from visit to sale" },
+        "approach": {
+          "0": "Google Ads with local focus",
+          "1": "Inspiration content on social",
+          "2": "Virtual showroom tour"
+        },
+        "results": {
+          "0": "+55% showroom visits",
+          "1": "Higher conversion from visit to sale"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-017": {
         "shortResult": "40+ videos/month",
         "challenge": "Fitness studio wanted consistent content but had no internal capacity.",
-        "approach": { "0": "Full-service content retainer", "1": "Video production on location", "2": "Social media planning" },
-        "results": { "0": "40+ quality videos per month", "1": "Higher member engagement" },
+        "approach": {
+          "0": "Full-service content retainer",
+          "1": "Video production on location",
+          "2": "Social media planning"
+        },
+        "results": {
+          "0": "40+ quality videos per month",
+          "1": "Higher member engagement"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-018": {
         "shortResult": "+45% members",
         "challenge": "New CrossFit box needed to differentiate from established competitors.",
-        "approach": { "0": "Powerful brand identity", "1": "Community-driven content", "2": "Launch campaign" },
-        "results": { "0": "+45% members in first quarter", "1": "Strong community built" },
+        "approach": {
+          "0": "Powerful brand identity",
+          "1": "Community-driven content",
+          "2": "Launch campaign"
+        },
+        "results": {
+          "0": "+45% members in first quarter",
+          "1": "Strong community built"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-019": {
         "shortResult": "+28% showroom visits",
         "challenge": "Car dealership was losing market share to larger dealers with stronger online presence.",
-        "approach": { "0": "New website with inventory system", "1": "Google Ads campaigns", "2": "Remarketing strategy" },
-        "results": { "0": "+28% showroom visits", "1": "Lower acquisition costs" },
+        "approach": {
+          "0": "New website with inventory system",
+          "1": "Google Ads campaigns",
+          "2": "Remarketing strategy"
+        },
+        "results": {
+          "0": "+28% showroom visits",
+          "1": "Lower acquisition costs"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       },
       "nda-project-020": {
         "shortResult": "+45% contact inquiries",
         "challenge": "Law firm with outdated website and minimal online visibility.",
-        "approach": { "0": "Professional website redesign", "1": "Content marketing strategy", "2": "Local SEO" },
-        "results": { "0": "+45% contact inquiries", "1": "Top 5 Google local" },
+        "approach": {
+          "0": "Professional website redesign",
+          "1": "Content marketing strategy",
+          "2": "Local SEO"
+        },
+        "results": {
+          "0": "+45% contact inquiries",
+          "1": "Top 5 Google local"
+        },
         "disclaimer": "Indicative result, dependent on period & budget."
       }
     }
@@ -1821,26 +2271,6 @@
       "errorTitle": "Subscription failed",
       "errorMessage": "Something went wrong. Please try again later."
     }
-  },
-  "common": {
-    "loading": "Loading...",
-    "error": "An error occurred",
-    "retry": "Try Again",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "close": "Close",
-    "search": "Search",
-    "noResults": "No results found",
-    "learnMore": "Learn More",
-    "getStarted": "Get Started",
-    "viewAll": "View All"
-  },
-  "validation": {
-    "required": "This field is required",
-    "email": "Please enter a valid email address",
-    "minLength": "Minimum {{count}} characters required",
-    "maxLength": "Maximum {{count}} characters allowed"
   },
   "stats": {
     "years": "Years of Experience",
@@ -1924,11 +2354,11 @@
       "5week": "5 posts per week"
     },
     "adsBudget": {
-      "none": "No paid campaigns",
       "100": "€100 / month",
       "250": "€250 / month",
       "500": "€500 / month",
-      "1000": "€1000 / month"
+      "1000": "€1000 / month",
+      "none": "No paid campaigns"
     },
     "addons": {
       "productPhotos": {
@@ -1982,7 +2412,7 @@
       }
     }
   },
-"partner": {
+  "partner": {
     "badge": "WHAT THIS PROGRAM IS",
     "seo": {
       "title": "Partner with GROPPI | Partner Network",
@@ -2292,17 +2722,44 @@
         "3": "Time savings for your team"
       },
       "deliverables": {
-        "1": { "title": "Strategy & planning", "desc": "Content calendar tailored to your goals." },
-        "2": { "title": "Content creation", "desc": "Posts, stories and reels that resonate." },
-        "3": { "title": "Community management", "desc": "Actively responding to comments and DMs." },
-        "4": { "title": "Ad management", "desc": "Targeted ads for maximum reach." },
-        "5": { "title": "Monthly reporting", "desc": "Clear numbers and insights." },
-        "6": { "title": "Dedicated support", "desc": "Always available for questions." }
+        "1": {
+          "title": "Strategy & planning",
+          "desc": "Content calendar tailored to your goals."
+        },
+        "2": {
+          "title": "Content creation",
+          "desc": "Posts, stories and reels that resonate."
+        },
+        "3": {
+          "title": "Community management",
+          "desc": "Actively responding to comments and DMs."
+        },
+        "4": {
+          "title": "Ad management",
+          "desc": "Targeted ads for maximum reach."
+        },
+        "5": {
+          "title": "Monthly reporting",
+          "desc": "Clear numbers and insights."
+        },
+        "6": {
+          "title": "Dedicated support",
+          "desc": "Always available for questions."
+        }
       },
       "process": {
-        "1": { "title": "Analysis", "desc": "We analyze your current presence and competition." },
-        "2": { "title": "Execution", "desc": "We create and publish content according to schedule." },
-        "3": { "title": "Growth & optimization", "desc": "Continuous improvement based on data." }
+        "1": {
+          "title": "Analysis",
+          "desc": "We analyze your current presence and competition."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "We create and publish content according to schedule."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "Continuous improvement based on data."
+        }
       }
     },
     "adsManagement": {
@@ -2314,17 +2771,44 @@
         "3": "Transparent reporting every month"
       },
       "deliverables": {
-        "1": { "title": "Campaign strategy", "desc": "Targeted approach per platform." },
-        "2": { "title": "Ad creation", "desc": "Visuals and copy that convert." },
-        "3": { "title": "A/B testing", "desc": "Continuous testing for better results." },
-        "4": { "title": "Budget optimization", "desc": "Maximum results from your budget." },
-        "5": { "title": "Conversion tracking", "desc": "Full insight into your ROI." },
-        "6": { "title": "Weekly updates", "desc": "You always know what's happening." }
+        "1": {
+          "title": "Campaign strategy",
+          "desc": "Targeted approach per platform."
+        },
+        "2": {
+          "title": "Ad creation",
+          "desc": "Visuals and copy that convert."
+        },
+        "3": {
+          "title": "A/B testing",
+          "desc": "Continuous testing for better results."
+        },
+        "4": {
+          "title": "Budget optimization",
+          "desc": "Maximum results from your budget."
+        },
+        "5": {
+          "title": "Conversion tracking",
+          "desc": "Full insight into your ROI."
+        },
+        "6": {
+          "title": "Weekly updates",
+          "desc": "You always know what's happening."
+        }
       },
       "process": {
-        "1": { "title": "Analysis", "desc": "We research your market and competition." },
-        "2": { "title": "Execution", "desc": "We launch and manage your campaigns." },
-        "3": { "title": "Growth & optimization", "desc": "Continuous improvement for more conversions." }
+        "1": {
+          "title": "Analysis",
+          "desc": "We research your market and competition."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "We launch and manage your campaigns."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "Continuous improvement for more conversions."
+        }
       }
     },
     "contentProduction": {
@@ -2336,17 +2820,44 @@
         "3": "Fast delivery and revisions"
       },
       "deliverables": {
-        "1": { "title": "Concept & planning", "desc": "Creative ideas aligned with your brand." },
-        "2": { "title": "Video production", "desc": "From scripts to final edit." },
-        "3": { "title": "Photography", "desc": "Product and lifestyle photos." },
-        "4": { "title": "Editing & post-production", "desc": "Professional finishing." },
-        "5": { "title": "Platform optimization", "desc": "Formats for every channel." },
-        "6": { "title": "Content library", "desc": "All assets neatly stored." }
+        "1": {
+          "title": "Concept & planning",
+          "desc": "Creative ideas aligned with your brand."
+        },
+        "2": {
+          "title": "Video production",
+          "desc": "From scripts to final edit."
+        },
+        "3": {
+          "title": "Photography",
+          "desc": "Product and lifestyle photos."
+        },
+        "4": {
+          "title": "Editing & post-production",
+          "desc": "Professional finishing."
+        },
+        "5": {
+          "title": "Platform optimization",
+          "desc": "Formats for every channel."
+        },
+        "6": {
+          "title": "Content library",
+          "desc": "All assets neatly stored."
+        }
       },
       "process": {
-        "1": { "title": "Analysis", "desc": "We determine what your brand needs." },
-        "2": { "title": "Execution", "desc": "Production on location or in studio." },
-        "3": { "title": "Growth & optimization", "desc": "Processing feedback and improving." }
+        "1": {
+          "title": "Analysis",
+          "desc": "We determine what your brand needs."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "Production on location or in studio."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "Processing feedback and improving."
+        }
       }
     },
     "seo": {
@@ -2358,17 +2869,44 @@
         "3": "Long-term growth without ad costs"
       },
       "deliverables": {
-        "1": { "title": "Technical audit", "desc": "We check speed, structure and indexation." },
-        "2": { "title": "Keyword research", "desc": "The right keywords for your market." },
-        "3": { "title": "On-page optimization", "desc": "Improve titles, metas and content." },
-        "4": { "title": "Content strategy", "desc": "SEO-focused articles and pages." },
-        "5": { "title": "Link building", "desc": "Quality backlinks for authority." },
-        "6": { "title": "Monthly reporting", "desc": "Rankings and traffic numbers." }
+        "1": {
+          "title": "Technical audit",
+          "desc": "We check speed, structure and indexation."
+        },
+        "2": {
+          "title": "Keyword research",
+          "desc": "The right keywords for your market."
+        },
+        "3": {
+          "title": "On-page optimization",
+          "desc": "Improve titles, metas and content."
+        },
+        "4": {
+          "title": "Content strategy",
+          "desc": "SEO-focused articles and pages."
+        },
+        "5": {
+          "title": "Link building",
+          "desc": "Quality backlinks for authority."
+        },
+        "6": {
+          "title": "Monthly reporting",
+          "desc": "Rankings and traffic numbers."
+        }
       },
       "process": {
-        "1": { "title": "Analysis", "desc": "Technical and content audit of your site." },
-        "2": { "title": "Execution", "desc": "Implementing optimizations and content." },
-        "3": { "title": "Growth & optimization", "desc": "Continuous improvement of rankings." }
+        "1": {
+          "title": "Analysis",
+          "desc": "Technical and content audit of your site."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "Implementing optimizations and content."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "Continuous improvement of rankings."
+        }
       }
     },
     "businessWebsite": {
@@ -2380,17 +2918,44 @@
         "3": "Mobile-friendly and fast"
       },
       "deliverables": {
-        "1": { "title": "Design & UX", "desc": "Custom design matching your brand." },
-        "2": { "title": "Development", "desc": "Technically solid and scalable." },
-        "3": { "title": "Content integration", "desc": "Text and visuals professionally processed." },
-        "4": { "title": "SEO basics", "desc": "Technical SEO included." },
-        "5": { "title": "CMS training", "desc": "Learn to update content yourself." },
-        "6": { "title": "Maintenance option", "desc": "Monthly updates and support." }
+        "1": {
+          "title": "Design & UX",
+          "desc": "Custom design matching your brand."
+        },
+        "2": {
+          "title": "Development",
+          "desc": "Technically solid and scalable."
+        },
+        "3": {
+          "title": "Content integration",
+          "desc": "Text and visuals professionally processed."
+        },
+        "4": {
+          "title": "SEO basics",
+          "desc": "Technical SEO included."
+        },
+        "5": {
+          "title": "CMS training",
+          "desc": "Learn to update content yourself."
+        },
+        "6": {
+          "title": "Maintenance option",
+          "desc": "Monthly updates and support."
+        }
       },
       "process": {
-        "1": { "title": "Analysis", "desc": "We discuss your wishes and goals." },
-        "2": { "title": "Execution", "desc": "Design, development and launch." },
-        "3": { "title": "Growth & optimization", "desc": "Updates and improvements post-launch." }
+        "1": {
+          "title": "Analysis",
+          "desc": "We discuss your wishes and goals."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "Design, development and launch."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "Updates and improvements post-launch."
+        }
       }
     },
     "onePageWebsite": {
@@ -2402,17 +2967,44 @@
         "3": "Affordable and effective"
       },
       "deliverables": {
-        "1": { "title": "Design", "desc": "Attractive and on-brand design." },
-        "2": { "title": "Development", "desc": "Fast and responsive page." },
-        "3": { "title": "Form integration", "desc": "Lead capture functionality." },
-        "4": { "title": "Mobile optimized", "desc": "Perfect on every device." },
-        "5": { "title": "Analytics setup", "desc": "Tracking from day one." },
-        "6": { "title": "Fast delivery", "desc": "Live within 1-2 weeks." }
+        "1": {
+          "title": "Design",
+          "desc": "Attractive and on-brand design."
+        },
+        "2": {
+          "title": "Development",
+          "desc": "Fast and responsive page."
+        },
+        "3": {
+          "title": "Form integration",
+          "desc": "Lead capture functionality."
+        },
+        "4": {
+          "title": "Mobile optimized",
+          "desc": "Perfect on every device."
+        },
+        "5": {
+          "title": "Analytics setup",
+          "desc": "Tracking from day one."
+        },
+        "6": {
+          "title": "Fast delivery",
+          "desc": "Live within 1-2 weeks."
+        }
       },
       "process": {
-        "1": { "title": "Analysis", "desc": "Briefing and defining goals." },
-        "2": { "title": "Execution", "desc": "Design and development in one sprint." },
-        "3": { "title": "Growth & optimization", "desc": "A/B testing and improvements." }
+        "1": {
+          "title": "Analysis",
+          "desc": "Briefing and defining goals."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "Design and development in one sprint."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "A/B testing and improvements."
+        }
       }
     },
     "ecommerceWebsite": {
@@ -2424,17 +3016,44 @@
         "3": "Scalable for growth"
       },
       "deliverables": {
-        "1": { "title": "Shop design", "desc": "Conversion-focused product pages." },
-        "2": { "title": "Development", "desc": "Robust e-commerce platform." },
-        "3": { "title": "Payment integration", "desc": "All common payment methods." },
-        "4": { "title": "Inventory management", "desc": "Easy product management." },
-        "5": { "title": "Marketing tools", "desc": "Discount codes, upsells, etc." },
-        "6": { "title": "Training & support", "desc": "Learn to manage everything yourself." }
+        "1": {
+          "title": "Shop design",
+          "desc": "Conversion-focused product pages."
+        },
+        "2": {
+          "title": "Development",
+          "desc": "Robust e-commerce platform."
+        },
+        "3": {
+          "title": "Payment integration",
+          "desc": "All common payment methods."
+        },
+        "4": {
+          "title": "Inventory management",
+          "desc": "Easy product management."
+        },
+        "5": {
+          "title": "Marketing tools",
+          "desc": "Discount codes, upsells, etc."
+        },
+        "6": {
+          "title": "Training & support",
+          "desc": "Learn to manage everything yourself."
+        }
       },
       "process": {
-        "1": { "title": "Analysis", "desc": "Discuss product catalog and goals." },
-        "2": { "title": "Execution", "desc": "Design, development and loading products." },
-        "3": { "title": "Growth & optimization", "desc": "Conversion optimization post-launch." }
+        "1": {
+          "title": "Analysis",
+          "desc": "Discuss product catalog and goals."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "Design, development and loading products."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "Conversion optimization post-launch."
+        }
       }
     },
     "branding": {
@@ -2446,17 +3065,44 @@
         "3": "Stand out from competitors"
       },
       "deliverables": {
-        "1": { "title": "Logo design", "desc": "Unique logo with variations." },
-        "2": { "title": "Color palette", "desc": "Strategic color choices." },
-        "3": { "title": "Typography", "desc": "Fonts that match your brand." },
-        "4": { "title": "Brand guidelines", "desc": "Guide for consistent usage." },
-        "5": { "title": "Templates", "desc": "Social media and print templates." },
-        "6": { "title": "Brand assets", "desc": "All files in high quality." }
+        "1": {
+          "title": "Logo design",
+          "desc": "Unique logo with variations."
+        },
+        "2": {
+          "title": "Color palette",
+          "desc": "Strategic color choices."
+        },
+        "3": {
+          "title": "Typography",
+          "desc": "Fonts that match your brand."
+        },
+        "4": {
+          "title": "Brand guidelines",
+          "desc": "Guide for consistent usage."
+        },
+        "5": {
+          "title": "Templates",
+          "desc": "Social media and print templates."
+        },
+        "6": {
+          "title": "Brand assets",
+          "desc": "All files in high quality."
+        }
       },
       "process": {
-        "1": { "title": "Analysis", "desc": "We get to know your brand and audience." },
-        "2": { "title": "Execution", "desc": "Concepts, feedback and finalization." },
-        "3": { "title": "Growth & optimization", "desc": "Further development where needed." }
+        "1": {
+          "title": "Analysis",
+          "desc": "We get to know your brand and audience."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "Concepts, feedback and finalization."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "Further development where needed."
+        }
       }
     },
     "mobileAppDevelopment": {
@@ -2468,17 +3114,44 @@
         "3": "Launch-ready tracking + store assets"
       },
       "deliverables": {
-        "1": { "title": "Strategy & feature planning", "desc": "Together we define what your app needs." },
-        "2": { "title": "UI/UX design", "desc": "Intuitive design that users understand." },
-        "3": { "title": "Development (iOS/Android)", "desc": "Cross-platform or native development." },
-        "4": { "title": "Backend & integrations", "desc": "Payments, APIs, CRM connections." },
-        "5": { "title": "QA testing & optimization", "desc": "Thorough testing on all devices." },
-        "6": { "title": "App Store / Google Play launch", "desc": "Full guidance through publication." }
+        "1": {
+          "title": "Strategy & feature planning",
+          "desc": "Together we define what your app needs."
+        },
+        "2": {
+          "title": "UI/UX design",
+          "desc": "Intuitive design that users understand."
+        },
+        "3": {
+          "title": "Development (iOS/Android)",
+          "desc": "Cross-platform or native development."
+        },
+        "4": {
+          "title": "Backend & integrations",
+          "desc": "Payments, APIs, CRM connections."
+        },
+        "5": {
+          "title": "QA testing & optimization",
+          "desc": "Thorough testing on all devices."
+        },
+        "6": {
+          "title": "App Store / Google Play launch",
+          "desc": "Full guidance through publication."
+        }
       },
       "process": {
-        "1": { "title": "Analysis", "desc": "We discuss features, audience and technical requirements." },
-        "2": { "title": "Execution", "desc": "Design, development and testing in sprints." },
-        "3": { "title": "Launch & maintenance", "desc": "Publication + optional monthly maintenance." }
+        "1": {
+          "title": "Analysis",
+          "desc": "We discuss features, audience and technical requirements."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "Design, development and testing in sprints."
+        },
+        "3": {
+          "title": "Launch & maintenance",
+          "desc": "Publication + optional monthly maintenance."
+        }
       }
     },
     "reputation": {
@@ -2490,17 +3163,44 @@
         "3": "Build trust and credibility online"
       },
       "deliverables": {
-        "1": { "title": "Review monitoring", "desc": "Track reviews across Google, Facebook, Yelp and more." },
-        "2": { "title": "Response management", "desc": "Professional replies to positive and negative reviews." },
-        "3": { "title": "Reputation strategy", "desc": "Proactive plan to improve your online image." },
-        "4": { "title": "Review generation", "desc": "Encourage happy customers to leave reviews." },
-        "5": { "title": "Brand monitoring", "desc": "Track mentions of your brand online." },
-        "6": { "title": "Monthly reporting", "desc": "Overview of reputation score and trends." }
+        "1": {
+          "title": "Review monitoring",
+          "desc": "Track reviews across Google, Facebook, Yelp and more."
+        },
+        "2": {
+          "title": "Response management",
+          "desc": "Professional replies to positive and negative reviews."
+        },
+        "3": {
+          "title": "Reputation strategy",
+          "desc": "Proactive plan to improve your online image."
+        },
+        "4": {
+          "title": "Review generation",
+          "desc": "Encourage happy customers to leave reviews."
+        },
+        "5": {
+          "title": "Brand monitoring",
+          "desc": "Track mentions of your brand online."
+        },
+        "6": {
+          "title": "Monthly reporting",
+          "desc": "Overview of reputation score and trends."
+        }
       },
       "process": {
-        "1": { "title": "Analysis", "desc": "We audit your current online reputation and reviews." },
-        "2": { "title": "Execution", "desc": "Active management and response to all reviews." },
-        "3": { "title": "Growth & optimization", "desc": "Continuous improvement of your reputation score." }
+        "1": {
+          "title": "Analysis",
+          "desc": "We audit your current online reputation and reviews."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "Active management and response to all reviews."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "Continuous improvement of your reputation score."
+        }
       }
     },
     "dataSync": {
@@ -2512,17 +3212,44 @@
         "3": "Save hours of administrative work"
       },
       "deliverables": {
-        "1": { "title": "System audit", "desc": "Map all your data sources and platforms." },
-        "2": { "title": "Integration setup", "desc": "Connect your CRM, POS, website and more." },
-        "3": { "title": "Automated workflows", "desc": "Data flows automatically between systems." },
-        "4": { "title": "Error handling", "desc": "Smart conflict resolution and alerts." },
-        "5": { "title": "Dashboard & monitoring", "desc": "Real-time overview of all sync status." },
-        "6": { "title": "Ongoing support", "desc": "Maintenance and updates as your systems evolve." }
+        "1": {
+          "title": "System audit",
+          "desc": "Map all your data sources and platforms."
+        },
+        "2": {
+          "title": "Integration setup",
+          "desc": "Connect your CRM, POS, website and more."
+        },
+        "3": {
+          "title": "Automated workflows",
+          "desc": "Data flows automatically between systems."
+        },
+        "4": {
+          "title": "Error handling",
+          "desc": "Smart conflict resolution and alerts."
+        },
+        "5": {
+          "title": "Dashboard & monitoring",
+          "desc": "Real-time overview of all sync status."
+        },
+        "6": {
+          "title": "Ongoing support",
+          "desc": "Maintenance and updates as your systems evolve."
+        }
       },
       "process": {
-        "1": { "title": "Analysis", "desc": "We map your current data landscape and pain points." },
-        "2": { "title": "Execution", "desc": "Build and test all integrations and automations." },
-        "3": { "title": "Growth & optimization", "desc": "Monitor, optimize and expand connections." }
+        "1": {
+          "title": "Analysis",
+          "desc": "We map your current data landscape and pain points."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "Build and test all integrations and automations."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "Monitor, optimize and expand connections."
+        }
       }
     },
     "contentCalculator": {
@@ -2670,58 +3397,6 @@
           "q": "What does data & tracking setup involve?",
           "a": "We install and configure tracking tools (Google Analytics, Meta Pixel, conversion tracking) so you know exactly which marketing efforts deliver results."
         }
-      }
-    }
-  },
-  "blog": {
-    "title": "Insights & Strategies",
-    "subtitle": "Practical insights on digital growth, marketing, and online performance.",
-    "badge": "Blog",
-    "metaTitle": "Blog | Digital Marketing Tips for Belgian Businesses",
-    "metaDescription": "Practical marketing tips for SMEs in Belgium: website optimization, SEO, social media, and advertising. Read our free guides.",
-    "featured": "Featured",
-    "readArticle": "Read article",
-    "minRead": "min read",
-    "backToArticles": "Back to articles",
-    "shareArticle": "Share this article",
-    "contactUs": "Contact us",
-    "relatedArticles": "Related Articles",
-    "relatedServices": "Related services",
-    "articles": {
-      "websiteSalesTool": {
-        "title": "Why Your Website Is Your Strongest Sales Tool in 2025",
-        "excerpt": "Your website is more than a digital brochure. In 2025, it is your most important sales asset. Here is why and what you can do about it.",
-        "metaTitle": "Website as a Sales Tool | Tips for Belgian Businesses",
-        "metaDescription": "Discover why your website is the most important sales tool for your Belgian business. Practical tips for speed, structure, and conversion.",
-        "content": "<h2>Your Website Is No Longer Optional</h2><p>In 2025, your website is not just a place where people learn about your business. It is your most important sales tool. Before a potential customer picks up the phone or sends an email, they have already visited your website. They have already formed an opinion.</p><p>The question is simple: does your website help you close deals, or is it costing you opportunities?</p><h2>First Impressions Happen Online</h2><p>Studies show that people form an opinion about a website within 0.05 seconds. That is faster than a blink. If your website looks outdated, loads slowly, or is difficult to navigate, visitors leave. They do not come back.</p><p>Your website is your first impression. It needs to communicate trust, professionalism, and clarity immediately.</p><h3>Speed Matters</h3><p>A website that loads in more than 3 seconds loses over 50% of its visitors. Speed is not a luxury. It is a necessity. Mobile users are especially impatient. If your website is not optimized for speed, you are losing potential customers every single day.</p><h2>Structure Creates Conversions</h2><p>A beautiful website is not enough. It needs to guide visitors toward a specific action. Whether that is filling out a form, making a call, or placing an order, the path must be clear.</p><p>Good structure includes:</p><ul><li>Clear navigation without confusion</li><li>A prominent call-to-action on every page</li><li>Trust signals like reviews, certifications, and client logos</li><li>Easy-to-find contact information</li></ul><h2>Common Mistakes Businesses Make</h2><p>Many businesses treat their website as a one-time project. They build it, forget it, and wonder why it does not perform. Here are the most common mistakes:</p><h3>No Clear Goal</h3><p>If you do not know what you want visitors to do, they will not know either. Every page needs a purpose.</p><h3>Too Much Information</h3><p>Visitors do not read everything. They scan. Keep your text concise and use headings to guide the eye.</p><h3>Ignoring Mobile Users</h3><p>More than 60% of traffic comes from mobile devices. If your website is not mobile-friendly, you are ignoring the majority of your audience.</p><h2>What You Can Do Today</h2><p>Start by auditing your current website. Ask yourself these questions:</p><ul><li>Does it load in under 3 seconds?</li><li>Is the navigation simple and logical?</li><li>Is there a clear call-to-action?</li><li>Does it work perfectly on mobile?</li></ul><p>If you answered no to any of these, it is time to invest in your website. Not as a cost, but as an investment in your sales process.</p><p>Your website should work for you around the clock. When done right, it becomes your best salesperson: always available, always consistent, always professional.</p><p>Want to know how your website performs? <a href='/services/business-website'>View our website services</a> or <a href='/contact'>request a free website audit</a>.</p>"
-      },
-      "socialMediaManagement": {
-        "title": "Social Media Management: What Businesses Really Need",
-        "excerpt": "Social media is not about followers. It is about strategy, consistency, and real engagement. Here is what actually works for businesses.",
-        "metaTitle": "Social Media Management for Businesses | Strategy That Works",
-        "metaDescription": "Learn what businesses really need from social media management: strategy over vanity metrics, consistency over trends.",
-        "content": "<h2>Beyond Followers and Likes</h2><p>Many businesses obsess over follower counts and likes. But these vanity metrics rarely translate into actual business results. A business with 500 engaged followers will outperform one with 50,000 passive followers every time.</p><p>Social media is a tool. Like any tool, it is only effective when used with purpose.</p><h2>Strategy Before Posting</h2><p>The biggest mistake businesses make is posting without a plan. Random content at random times leads to random results. Usually, that means no results at all.</p><p>A social media strategy answers these questions:</p><ul><li>Who is your target audience?</li><li>What problems do you solve for them?</li><li>Where do they spend their time online?</li><li>What type of content do they engage with?</li></ul><p>Without answers to these questions, you are just making noise.</p><h2>Consistency Beats Trends</h2><p>Chasing every trend is exhausting and ineffective. While trending content can boost visibility temporarily, it rarely builds lasting connections with your audience.</p><p>What works is consistency:</p><ul><li>Posting regularly at predictable times</li><li>Maintaining a consistent visual style</li><li>Using the same tone of voice</li><li>Delivering value with every post</li></ul><p>Your audience needs to know what to expect from you. That predictability builds trust.</p><h2>Quality Over Quantity</h2><p>Three excellent posts per week will outperform seven mediocre ones. Every piece of content should serve a purpose: educate, entertain, inspire, or promote.</p><p>If a post does not fit one of these categories, it probably should not be published.</p><h3>The 80/20 Rule</h3><p>Aim for 80% value-driven content and 20% promotional content. Nobody wants to follow a business that only talks about itself. Provide value first, and sales will follow naturally.</p><h2>Engagement Is a Two-Way Street</h2><p>Posting content is only half the job. The other half is engaging with your audience. Respond to comments, answer questions, and participate in conversations.</p><p>Social media is social. If you treat it as a broadcasting platform, you are missing the point.</p><h2>What Businesses Actually Need</h2><p>Effective social media management requires:</p><ul><li>A clear strategy aligned with business goals</li><li>Consistent, high-quality content</li><li>Active community engagement</li><li>Regular analysis and optimization</li></ul><p>This is not about being on every platform. It is about being effective on the platforms that matter to your audience.</p><p>Focus on doing fewer things better. Your social media presence should support your business goals, not distract from them.</p><p>Ready to level up your social media? <a href='/services/social-media-management'>Explore our social media services</a> or see <a href='/gallery'>how we did it for other businesses</a>.</p>"
-      },
-      "seoExplained": {
-        "title": "SEO Explained Simply: How Clients Actually Find You Online",
-        "excerpt": "SEO is not magic or manipulation. It is about making your business easy to find when people search. Here is how it really works.",
-        "metaTitle": "SEO Explained for SMEs | Get Found Online in Belgium",
-        "metaDescription": "A simple explanation of SEO for Belgian business owners. Learn how local SEO works and why long-term strategy beats quick hacks.",
-        "content": "<h2>What Is SEO Really?</h2><p>Search Engine Optimization sounds technical, but the concept is simple. When someone searches for a service or product you offer, SEO determines whether they find you or your competitor.</p><p>Every day, potential customers search for businesses like yours. If your website does not appear in search results, you are invisible to them.</p><h2>How Search Engines Think</h2><p>Google and other search engines have one goal: give users the best possible answer to their question. They evaluate websites based on relevance, quality, and user experience.</p><p>SEO is about making your website the best answer to the questions your customers are asking.</p><h3>The Three Pillars</h3><p>SEO rests on three pillars:</p><ul><li><strong>Technical SEO:</strong> Your website needs to be fast, secure, and easy for search engines to read.</li><li><strong>Content:</strong> You need quality content that answers the questions your audience is searching for.</li><li><strong>Authority:</strong> Other reputable websites linking to yours signals trust to search engines.</li></ul><h2>Local SEO for Belgium and Europe</h2><p>For most local businesses, local SEO is where the real opportunity lies. When someone searches for a service near them, Google prioritizes local results.</p><p>Key elements of local SEO include:</p><ul><li>A complete and optimized Google Business Profile</li><li>Consistent business information across the web</li><li>Reviews from satisfied customers</li><li>Location-specific content on your website</li></ul><p>If you serve customers in a specific region, local SEO should be your priority.</p><h2>Long-Term Value, Not Quick Hacks</h2><p>SEO is not about tricks or manipulation. Those tactics might work briefly, but they eventually backfire. Search engines are sophisticated. They penalize websites that try to game the system.</p><p>Sustainable SEO focuses on:</p><ul><li>Creating genuinely useful content</li><li>Building real relationships that lead to natural links</li><li>Improving user experience continuously</li><li>Staying patient while results compound</li></ul><h2>What You Can Expect</h2><p>SEO is a long-term investment. Most businesses start seeing meaningful results after 3-6 months of consistent effort. But unlike paid advertising, the results compound over time.</p><p>A well-optimized website continues to attract visitors month after month, year after year, without ongoing advertising costs.</p><h2>Getting Started</h2><p>If you are new to SEO, start with the basics:</p><ul><li>Claim and optimize your Google Business Profile</li><li>Ensure your website loads quickly</li><li>Create content that answers customer questions</li><li>Ask satisfied customers to leave reviews</li></ul><p>SEO does not need to be complicated. It needs to be consistent. Small improvements add up to significant results over time.</p><p>Want your business to rank higher on Google? <a href='/services/seo'>Explore our SEO services</a> or <a href='/contact'>request a free SEO scan</a>.</p>"
-      },
-      "paidAdvertising": {
-        "title": "Paid Advertising Without Waste: How Smart Campaigns Are Built",
-        "excerpt": "Paid advertising is not about boosting posts and hoping for the best. It is about building systems that deliver predictable, measurable results.",
-        "metaTitle": "Google & Meta Ads Without Waste | Campaign Tips Belgium",
-        "metaDescription": "Learn how to build paid advertising campaigns that deliver results for Belgian SMEs. Budget control, data, and systems over guesswork.",
-        "content": "<h2>The Problem With Most Advertising</h2><p>Many businesses try paid advertising, see poor results, and conclude that it does not work. But the problem is rarely the platform. The problem is the approach.</p><p>Boosting a post and hoping for sales is not advertising. It is gambling with your marketing budget.</p><h2>Advertising Is a System</h2><p>Effective paid advertising is not about individual ads. It is about building a system that moves potential customers from awareness to action.</p><p>A complete advertising system includes:</p><ul><li>Audience research and targeting</li><li>Multiple touchpoints along the customer journey</li><li>Tracking and measurement at every stage</li><li>Continuous testing and optimization</li></ul><p>Each piece works together. Remove one, and the whole system underperforms.</p><h2>Budget Control</h2><p>The beauty of digital advertising is control. Unlike traditional advertising, you can start small, test, and scale what works.</p><p>Smart budget management means:</p><ul><li>Starting with a test budget to gather data</li><li>Analyzing results before scaling</li><li>Cutting what does not work quickly</li><li>Reinvesting in what performs</li></ul><p>You should never spend more than you can afford to lose while testing. Once you have proven results, scaling becomes low-risk.</p><h2>Data-Driven Decisions</h2><p>Every advertising decision should be based on data, not gut feelings. This requires proper tracking from day one.</p><p>Key metrics to track include:</p><ul><li>Cost per click and cost per result</li><li>Conversion rates at each stage</li><li>Return on ad spend</li><li>Customer acquisition cost</li></ul><p>Without this data, you are making decisions blind. With it, you can optimize continuously and improve results month over month.</p><h3>The Testing Mindset</h3><p>No one knows what will work best before testing. Even experienced advertisers run multiple variations and let data decide the winner.</p><p>Test one element at a time:</p><ul><li>Different headlines</li><li>Different images or videos</li><li>Different audience segments</li><li>Different offers</li></ul><p>Small improvements in conversion rates compound into significant differences in results.</p><h2>Platforms Are Tools</h2><p>Google Ads, Facebook, Instagram, LinkedIn: each platform has strengths and weaknesses. The right choice depends on your audience and goals.</p><p>Where do your potential customers spend time? What type of content resonates with them? Match the platform to your audience, not the other way around.</p><h2>Building for the Long Term</h2><p>The goal is not a single successful campaign. The goal is a predictable, repeatable system that consistently generates leads or sales.</p><p>This takes time and iteration. But once built, it becomes a valuable business asset that works month after month.</p><p>Start small, measure everything, and scale what works. That is how smart campaigns are built.</p><p>Ready to spend your ad budget more effectively? <a href='/services/advertising-management'>View our advertising services</a> or learn how <a href='/blog/seo-explained-simply'>SEO and ads work together</a>.</p>"
-      },
-      "onlineReputation": {
-        "title": "Online Reputation: Why Reviews Matter More Than You Think",
-        "excerpt": "Your online reputation influences buying decisions more than most marketing. Here is why reviews matter and how to manage them effectively.",
-        "metaTitle": "Online Reputation & Review Management | Guide for SMEs",
-        "metaDescription": "Discover why online reviews are crucial for Belgian businesses and learn how to manage and improve your reputation effectively.",
-        "content": "<h2>The Trust Factor</h2><p>Before making a purchase or hiring a service, most people do the same thing: they read reviews. According to research, over 90% of consumers read online reviews before visiting a business.</p><p>Reviews are word-of-mouth at scale. They build or destroy trust before you ever speak to a potential customer.</p><h2>The Psychology of Reviews</h2><p>People trust other customers more than they trust businesses. This is not new. We have always asked friends and family for recommendations. The internet just made it possible to hear from thousands of strangers.</p><p>A business with dozens of positive reviews feels safe. A business with no reviews or negative reviews feels risky. This perception directly impacts buying decisions.</p><h3>The Numbers That Matter</h3><p>Research shows that:</p><ul><li>Businesses with 4+ star ratings get significantly more clicks</li><li>The first 10 reviews have the biggest impact on perception</li><li>A mix of ratings (not just perfect scores) appears more authentic</li><li>Recent reviews matter more than old ones</li></ul><h2>Reviews and Visibility</h2><p>Reviews do not just influence decisions. They influence visibility. Google uses reviews as a ranking factor for local search results. More positive reviews can literally push you higher in search results.</p><p>This creates a virtuous cycle: better reviews lead to more visibility, which leads to more customers, which leads to more reviews.</p><h2>Managing Your Reputation</h2><p>Reputation management is not about manipulating reviews. It is about earning good reviews and handling negative ones professionally.</p><h3>Earning Positive Reviews</h3><p>The foundation is simple: deliver excellent service. Beyond that:</p><ul><li>Ask satisfied customers to leave reviews</li><li>Make the process easy by providing direct links</li><li>Follow up after positive experiences</li><li>Thank customers who take the time to review</li></ul><h3>Handling Negative Reviews</h3><p>Negative reviews are inevitable. How you handle them matters more than the review itself.</p><ul><li>Respond promptly and professionally</li><li>Acknowledge the concern without being defensive</li><li>Offer to resolve the issue offline</li><li>Follow through on any promises made</li></ul><p>A professional response to a negative review can actually improve your reputation. It shows potential customers that you care and take responsibility.</p><h2>Monitoring Your Reputation</h2><p>You cannot manage what you do not monitor. Set up alerts to know when someone mentions your business. Regularly check review platforms relevant to your industry.</p><p>Key platforms to monitor include:</p><ul><li>Google Business Profile</li><li>Industry-specific review sites</li><li>Social media mentions</li><li>Your own website reviews</li></ul><h2>The Long-Term View</h2><p>Building a strong online reputation takes time. There are no shortcuts. Focus on delivering exceptional service, consistently asking for feedback, and responding professionally to all reviews.</p><p>Over time, your reputation becomes a competitive advantage that is difficult for competitors to replicate. It is one of the few assets that grows more valuable the longer you nurture it.</p><p>Want to strengthen your online reputation? <a href='/services/reputation-management'>View our reputation management services</a> or discover how <a href='/blog/seo-explained-simply'>SEO and reviews work together</a> for more visibility.</p>"
       }
     }
   },
