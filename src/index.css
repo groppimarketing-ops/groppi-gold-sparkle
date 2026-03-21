@@ -410,13 +410,21 @@
 @layer utilities {
   /* ===== SECTION SPACING - Consistent vertical rhythm ===== */
   .section-spacing {
-    padding-top: clamp(4rem, 8vw, 6rem);
-    padding-bottom: clamp(4rem, 8vw, 6rem);
+    padding-top: clamp(4.5rem, 9vw, 7rem);
+    padding-bottom: clamp(4.5rem, 9vw, 7rem);
   }
   
   .section-spacing-lg {
-    padding-top: clamp(5rem, 10vw, 8rem);
-    padding-bottom: clamp(5rem, 10vw, 8rem);
+    padding-top: clamp(5.5rem, 11vw, 9rem);
+    padding-bottom: clamp(5.5rem, 11vw, 9rem);
+  }
+
+  /* ===== SECTION SEPARATOR - Premium gold divider ===== */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, hsl(var(--gold) / 0.3) 30%, hsl(var(--gold) / 0.5) 50%, hsl(var(--gold) / 0.3) 70%, transparent);
+    margin: 0 auto;
+    max-width: 80%;
   }
 
   /* ===== TYPOGRAPHY IMPROVEMENTS ===== */
