@@ -1,5 +1,6 @@
 import { useState, useCallback, useMemo, memo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 import { Search, X, Lock, ChevronDown } from 'lucide-react';
 import PageLayout from '@/components/layout/PageLayout';
 import SectionHeader from '@/components/ui/SectionHeader';
