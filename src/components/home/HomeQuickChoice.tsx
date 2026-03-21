@@ -56,42 +56,44 @@ const HomeQuickChoice = memo(({ onGoalSelect }: HomeQuickChoiceProps) => {
 
         {/* Goal Cards — CSS stagger */}
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {goals.map((goal, index) => (
-            <GlassCard
-              key={goal.id}
-              className={`animate-fade-up-${index + 1} group relative p-8 text-center hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] cursor-pointer`}
-              hover3D={false}
-              glowOnHover={false}
-              onClick={() => onGoalSelect(goal.id)}
-            >
-              {/* Hover glow overlay */}
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/0 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-              {/* Icon */}
-              <div className="w-16 h-16 rounded-full glass-card flex items-center justify-center mx-auto mb-6 border border-primary/30 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
-                <goal.icon className="w-8 h-8 text-primary" />
-              </div>
-
-              {/* Title */}
-              <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors relative">
-                {t(goal.titleKey)}
-              </h3>
-
-              {/* Description */}
-              <p className="text-muted-foreground text-sm mb-6 relative">
-                {t(goal.descKey)}
-              </p>
-
-              {/* CTA Button */}
-              <Button
-                className="w-full glass-button group/btn hover:border-primary/60 hover:shadow-[0_0_25px_hsl(var(--gold)/0.22)] relative"
-                variant="outline"
+          {goals.map((goal, index) => {
+            const Icon = goal.icon;
+            return (
+              <div
+                key={goal.id}
+                role="button"
+                tabIndex={0}
+                onClick={() => onGoalSelect(goal.id)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onGoalSelect(goal.id); } }}
+                aria-label={`${t(goal.titleKey)}: ${t(goal.descKey)}`}
+                className={`animate-fade-up-${index + 1} group relative glass-card p-8 text-center hover:border-primary/50 hover:shadow-[0_0_35px_hsl(var(--gold)/0.18)] cursor-pointer hover:-translate-y-1 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-2xl`}
               >
-                <span>{t('home.quickChoice.cta')}</span>
-                <ArrowRight className={`w-4 h-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'} group-hover/btn:translate-x-1 transition-transform`} />
-              </Button>
-            </GlassCard>
-          ))}
+                {/* Hover glow overlay */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/0 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" aria-hidden="true" />
+
+                {/* Icon */}
+                <div className="w-16 h-16 rounded-full glass-card flex items-center justify-center mx-auto mb-6 border border-primary/30 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300" aria-hidden="true">
+                  <Icon className="w-8 h-8 text-primary" />
+                </div>
+
+                {/* Title */}
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors relative">
+                  {t(goal.titleKey)}
+                </h3>
+
+                {/* Description */}
+                <p className="text-muted-foreground text-sm mb-6 relative">
+                  {t(goal.descKey)}
+                </p>
+
+                {/* CTA Button — visual only, parent handles click */}
+                <div className="w-full glass-button flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-medium border border-primary/30 group-hover:border-primary/60 group-hover:shadow-[0_0_25px_hsl(var(--gold)/0.22)] transition-all duration-300 pointer-events-none">
+                  <span>{t('home.quickChoice.cta')}</span>
+                  <ArrowRight className={`w-4 h-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'} group-hover:translate-x-1 transition-transform`} />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
