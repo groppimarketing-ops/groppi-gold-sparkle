@@ -14,6 +14,11 @@ interface PageSEOProps {
   title: string;
   description: string;
   path: string;
+  /**
+   * Override the canonical + hreflang path when the current route is an alias.
+   * E.g. /portfolio renders Gallery but canonical should point to /gallery.
+   */
+  canonicalPath?: string;
   ogImage?: string;
   noIndex?: boolean;
   type?: 'website' | 'article';
@@ -29,6 +34,7 @@ const PageSEO = ({
   title,
   description,
   path,
+  canonicalPath,
   ogImage = DEFAULT_OG_IMAGE,
   noIndex = false,
   type = 'website',
@@ -36,8 +42,9 @@ const PageSEO = ({
 }: PageSEOProps) => {
   const { i18n } = useTranslation();
 
-  // Self-referencing canonical based on the active language
-  const canonicalUrl = `${SITE_URL}${getLangPath(path, i18n.language)}`;
+  // Use canonicalPath override when this route is an alias (e.g. /portfolio → /gallery)
+  const seoPath = canonicalPath ?? path;
+  const canonicalUrl = `${SITE_URL}${getLangPath(seoPath, i18n.language)}`;
   const fullTitle = path === '/' ? `${SITE_NAME} | Digital Marketing Bureau België` : `${title} | ${SITE_NAME}`;
   const truncatedDescription = description.length > 160 ? description.slice(0, 157) + '...' : description;
 
@@ -49,17 +56,17 @@ const PageSEO = ({
 
       {noIndex && <meta name="robots" content="noindex, nofollow" />}
 
-      {/* hreflang alternates for every supported language */}
+      {/* hreflang alternates for every supported language — use seoPath to avoid alias duplication */}
       {languages.map(lang => (
         <link
           key={lang.code}
           rel="alternate"
           hrefLang={lang.hreflang}
-          href={`${SITE_URL}${getLangPath(path, lang.code)}`}
+          href={`${SITE_URL}${getLangPath(seoPath, lang.code)}`}
         />
       ))}
       {/* x-default points to the nl (Belgian Dutch) version */}
-      <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}${path}`} />
+      <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}${seoPath}`} />
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />

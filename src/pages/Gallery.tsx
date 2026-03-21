@@ -1,5 +1,6 @@
 import { useState, useCallback, useMemo, memo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 import { Search, X, Lock, ChevronDown } from 'lucide-react';
 import PageLayout from '@/components/layout/PageLayout';
 import SectionHeader from '@/components/ui/SectionHeader';
@@ -84,6 +85,9 @@ SectorFilters.displayName = 'SectorFilters';
 const Gallery = () => {
   const { t, i18n } = useTranslation();
   const lang = i18n.language.startsWith('nl') ? 'nl' : 'en';
+  const location = useLocation();
+  // Detect if this Gallery is being served under the /portfolio alias
+  const isPortfolioAlias = location.pathname.replace(/^\/(en|fr|de|es|it|pt|pl|tr|ar|zh|hi|bn|ru|ur|ur)\//, '/').startsWith('/portfolio');
 
   const [searchQuery, setSearchQuery] = useState('');
   const [activeSector, setActiveSector] = useState<Sector | null>(null);
@@ -160,6 +164,7 @@ const Gallery = () => {
         title={t('gallery.title', 'Portfolio')}
         description={t('gallery.description', 'Ontdek onze projecten. Van social media campagnes tot websites — bekijk het werk van GROPPI.')}
         path="/gallery"
+        canonicalPath={isPortfolioAlias ? '/gallery' : undefined}
       />
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.gallery', 'Portfolio'), path: '/gallery' }]} />
 
