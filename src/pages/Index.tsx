@@ -73,6 +73,8 @@ const Index = () => {
     </>
   );
 
+  const isMobile = useIsMobile();
+
   return (
     <div className="min-h-screen bg-background">
       <PageSEO
@@ -81,8 +83,8 @@ const Index = () => {
         path="/"
       />
       <OrganizationSchema />
-      <Header />
-      <main id="main-content">
+      {isMobile ? <MobileHeader /> : <Header />}
+      <main id="main-content" className={isMobile ? 'pb-16' : ''}>
         {hasDynamicContent ? (
           sections.map((section) => (
             <DynamicSection
@@ -97,6 +99,7 @@ const Index = () => {
         )}
       </main>
       <Footer />
+      {isMobile && <MobileBottomTabs />}
     </div>
   );
 };
