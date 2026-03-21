@@ -1082,8 +1082,9 @@
       gap: 1.5rem !important;
     }
 
-    .glass-card {
-      padding: 1.5rem;
+    /* Only pad glass-cards that have default padding, not !p-0 */
+    .glass-card:not([class*="!p-0"]):not([class*="p-0"]) {
+      padding: max(1.25rem, 1.5vw);
     }
 
     /* 4) BUTTONS — taller for thumb interaction, rounder */
