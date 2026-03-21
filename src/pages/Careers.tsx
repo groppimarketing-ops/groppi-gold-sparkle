@@ -193,10 +193,11 @@ const Careers = () => {
 
   return (
     <PageLayout>
-      <Helmet>
-        <title>{t('careers.meta.title')} | GROPPI</title>
-        <meta name="description" content={t('careers.meta.description')} />
-      </Helmet>
+      <PageSEO
+        title={t('careers.meta.title', 'Carrière bij GROPPI')}
+        description={t('careers.meta.description', 'Sluit je aan bij het GROPPI-team. Bekijk onze vacatures en solliciteer vandaag nog.')}
+        path="/careers"
+      />
 
       {/* Hero Section */}
       <section className="relative flex items-center justify-center pt-16 pb-12 md:pt-28 md:pb-16">
