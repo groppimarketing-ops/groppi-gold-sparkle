@@ -1,7 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { useRef, useState, lazy, Suspense } from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import MobileHeader from '@/components/mobile/MobileHeader';
+import MobileBottomTabs from '@/components/mobile/MobileBottomTabs';
 import HeroSection from '@/components/home/HeroSection';
 import PostHeroTrust from '@/components/home/PostHeroTrust';
 import HomeAfterHeroWrapper from '@/components/home/HomeAfterHeroWrapper';
