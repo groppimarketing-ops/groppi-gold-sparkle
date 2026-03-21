@@ -9,7 +9,7 @@
     "franchise": "Франшиза",
     "partnership": "Франшиза",
     "careers": "Вакансии",
-    "team": "Our Team"
+    "team": "Наша команда"
   },
   "careers": {
     "meta": {
@@ -1462,28 +1462,28 @@
       "whatsapp": "Чат через WhatsApp",
       "call": "Позвонить"
     },
-    "intro": "Do you have a project in mind or want to strengthen your digital presence? Contact us for a no-obligation conversation.",
-    "mobileLabel": "Mobile",
-    "officeLabel": "Office",
+    "intro": "У вас есть проект или вы хотите усилить свое цифровое присутствие? Свяжитесь с нами для ни к чему не обязывающей беседы.",
+    "mobileLabel": "Мобильный",
+    "officeLabel": "Офис",
     "hoursLabel": "Часы работы",
-    "hoursValue": "Mon - Fri: 9:00 AM - 6:00 PM",
-    "description": "We'd love to hear from you. Fill out the form and we'll get back to you as soon as possible.",
-    "name": "Name",
-    "email": "Email Address",
+    "hoursValue": "Пн - Пт: 9:00 - 18:00",
+    "description": "Мы будем рады услышать вас. Заполните форму, и мы свяжемся с вами как можно скорее.",
+    "name": "Имя",
+    "email": "Email",
     "phone": "Номер телефона",
-    "company": "Company",
-    "subject": "Subject",
+    "company": "Компания",
+    "subject": "Тема",
     "message": "Ваше сообщение",
-    "send": "Send",
-    "sending": "Sending...",
-    "success": "Message sent successfully! We'll get back to you as soon as possible.",
-    "error": "Something went wrong. Please try again or contact us by phone.",
-    "address": "Address",
-    "phoneLabel": "Phone",
+    "send": "Отправить",
+    "sending": "Отправка...",
+    "success": "Сообщение успешно отправлено! Мы свяжемся с вами как можно скорее.",
+    "error": "Что-то пошло не так. Пожалуйста, попробуйте еще раз или свяжитесь с нами по телефону.",
+    "address": "Адрес",
+    "phoneLabel": "Телефон",
     "emailLabel": "Email",
-    "landline": "Landline",
-    "mobile": "Mobile",
-    "rateLimited": "Too many requests. Please try again later."
+    "landline": "Стационарный телефон",
+    "mobile": "Мобильный",
+    "rateLimited": "Слишком много запросов. Пожалуйста, попробуйте позже."
   },
   "footer": {
     "description": "Помощь бизнесу в росте с помощью цифровых стратегий, которые работают.",
@@ -1504,7 +1504,7 @@
       "errorTitle": "Ошибка подписки",
       "errorMessage": "Что-то пошло не так. Попробуйте позже."
     },
-    "followUs": "Follow Us"
+    "followUs": "Подпишитесь на нас"
   },
   "stats": {
     "years": "Лет опыта",
@@ -2665,7 +2665,7 @@
       "subtitle": "Без расплывчатых обещаний. Мы предоставляем конкретный план с ясными шагами.",
       "primaryCTA": "Запросить предложение",
       "secondaryCTA": "Написать в WhatsApp",
-      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
+      "trustNote": "Ни к чему не обязывающая беседа · Окончательное предложение после консультации · Цены без НДС"
     }
   },
   "privacy": {
@@ -2704,22 +2704,22 @@
       },
       "dataSecurity": {
         "title": "Безопасность данных",
-        "content": "We take the security of your data seriously. We use:\n\n• SSL encryption for all data transfer\n• Secure servers and databases\n• Limited access to personal data\n• Regular security audits\n\nDespite our efforts, no method of transmission over the internet can be 100% secure."
+        "content": "Мы серьезно относимся к безопасности ваших данных. Мы используем:\n\n• SSL-шифрование для всей передачи данных\n• Защищенные серверы и базы данных\n• Ограниченный доступ к персональным данным\n• Регулярные аудиты безопасности\n\nНесмотря на наши усилия, ни один метод передачи данных через интернет не может быть на 100% безопасным."
       },
       "yourRights": {
-        "title": "Your Rights",
-        "content": "Under GDPR, you have the following rights:\n\n• Right to access your data\n• Right to correct inaccurate data\n• Right to delete your data\n• Right to restrict processing\n• Right to data portability\n• Right to object to processing\n\nContact us to exercise these rights."
+        "title": "Ваши права",
+        "content": "В соответствии с GDPR вы имеете следующие права:\n\n• Право на доступ к вашим данным\n• Право на исправление неточных данных\n• Право на удаление ваших данных\n• Право на ограничение обработки\n• Право на переносимость данных\n• Право возражать против обработки\n\nСвяжитесь с нами, чтобы воспользоваться этими правами."
       },
       "retention": {
         "title": "Хранение данных",
-        "content": "We retain your data only as long as necessary:\n\n• Contact data: 2 years after last contact\n• Application data: 1 year after procedure completion\n• Newsletter subscribers: until unsubscription\n• Analytical data: 26 months\n\nAfter this period, data is securely deleted."
+        "content": "Мы храним ваши данные только до тех пор, пока это необходимо:\n\n• Контактные данные: 2 года после последнего контакта\n• Данные заявок: 1 год после завершения процедуры\n• Подписчики рассылки: до отмены подписки\n• Аналитические данные: 26 месяцев\n\nПо истечении этого периода данные надежно удаляются."
       }
     },
     "meta": {
       "title": "Политика конфиденциальности",
-      "description": "Learn how GROPPI protects and processes your personal data in compliance with GDPR."
+      "description": "Узнайте, как GROPPI защищает и обрабатывает ваши персональные данные в соответствии с GDPR."
     },
-    "footerNote": "Have questions about this privacy policy? Feel free to contact us at info@groppi.be"
+    "footerNote": "Есть вопросы по этой политике конфиденциальности? Свяжитесь с нами по адресу info@groppi.be"
   },
   "terms": {
     "title": "Условия использования",
@@ -2753,26 +2753,26 @@
       },
       "acceptance": {
         "title": "Принятие условий",
-        "content": "By accessing or using the GROPPI website and services, you agree to these Terms of Service.\n\nIf you do not agree to any part of these terms, you may not use our services.\n\nWe reserve the right to modify these terms at any time."
+        "content": "Получая доступ или используя веб-сайт и услуги GROPPI, вы соглашаетесь с настоящими Условиями предоставления услуг.\n\nЕсли вы не согласны с какой-либо частью этих условий, вы не можете использовать наши услуги.\n\nМы оставляем за собой право изменять эти условия в любое время."
       },
       "modifications": {
         "title": "Изменения",
-        "content": "We reserve the right to modify these terms at any time.\n\nFor significant changes, we will notify you by email if applicable.\n\nContinued use of our services after modifications constitutes acceptance of the new terms."
+        "content": "Мы оставляем за собой право изменять эти условия в любое время.\n\nВ случае существенных изменений мы уведомим вас по Email, если это применимо.\n\nПродолжение использования наших услуг после изменений означает принятие новых условий."
       },
       "governing": {
         "title": "Применимое право",
-        "content": "These terms are governed by Belgian law.\n\nDisputes will be submitted to the competent courts of Belgium.\n\nIf any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+        "content": "Настоящие условия регулируются законодательством Бельгии.\n\nСпоры будут переданы в компетентные суды Бельгии.\n\nЕсли какое-либо положение настоящих условий будет признано недействительным или неисполнимым, остальные положения останутся в полной силе и действии."
       },
       "contact": {
-        "title": "Contact",
-        "content": "For questions about these terms:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nWe aim to respond to all inquiries within 48 hours."
+        "title": "Контакты",
+        "content": "По вопросам, касающимся этих условий:\n\nGROPPI\nEmail: info@groppi.be\nТелефон: +32 456 19 87 21\n\nМы стремимся отвечать на все запросы в течение 48 часов."
       }
     },
     "meta": {
       "title": "Условия использования",
-      "description": "Read the terms and conditions for using GROPPI services and website."
+      "description": "Ознакомьтесь с условиями использования услуг и веб-сайта GROPPI."
     },
-    "footerNote": "Have questions about these terms? Contact us at info@groppi.be"
+    "footerNote": "Есть вопросы по этим условиям? Свяжитесь с нами по адресу info@groppi.be"
   },
   "gallery": {
     "title": "Наша работа",

@@ -9,7 +9,7 @@
     "partnership": "Franchising",
     "franchise": "Franchising",
     "careers": "Lavora con noi",
-    "team": "Our Team"
+    "team": "Il Nostro Team"
   },
   "careers": {
     "meta": {
@@ -23,7 +23,7 @@
       "sendCv": "Invia il tuo CV"
     },
     "types": {
-      "fullTime": "Full-time",
+      "fullTime": "Tempo pieno",
       "partTime": "Part-time",
       "freelance": "Freelance"
     },
@@ -423,7 +423,7 @@
         "description": "Gestione completa della tua presenza sui social media. Creazione contenuti, programmazione, engagement e strategie di crescita.",
         "features": {
           "0": "Calendario e programmazione contenuti",
-          "1": "Community management",
+          "1": "Gestione della community",
           "2": "Engagement e crescita",
           "3": "Reportistica mensile"
         }
@@ -551,10 +551,10 @@
       "button": "Richiedi un preventivo gratuito"
     },
     "badges": {
-      "monthly": "Monthly",
-      "oneTime": "One-time",
-      "custom": "Custom",
-      "mostChosen": "Most chosen"
+      "monthly": "Mensile",
+      "oneTime": "Una tantum",
+      "custom": "Personalizzato",
+      "mostChosen": "Più scelto"
     }
   },
   "calculator": {
@@ -831,7 +831,7 @@
           "desc": "Presenza costante su tutti i canali social.",
           "deliverables": {
             "0": "Pianificazione e creazione contenuti",
-            "1": "Community management",
+            "1": "Gestione della community",
             "2": "Analisi mensile"
           }
         },
@@ -1420,7 +1420,7 @@
         "content": "<h2>Il fattore fiducia</h2><p>Prima di fare un acquisto, la maggior parte delle persone legge le recensioni. Prima di scegliere un ristorante, controlla Google. Prima di assumere un fornitore di servizi, cerca esperienze di altri.</p><p>La tua reputazione online non è solo bella da avere. È un fattore decisivo su come i potenziali clienti scelgono tra te e i tuoi concorrenti.</p><h2>I numeri non mentono</h2><p>Considera queste statistiche:</p><ul><li>Il 93% dei consumatori dice che le recensioni online influenzano le loro decisioni d'acquisto</li><li>Il 91% dei consumatori si fida delle recensioni online tanto quanto dei consigli personali</li><li>Le aziende con una valutazione sotto le 4 stelle perdono fino al 70% dei potenziali clienti</li></ul><p>Ogni recensione è una risorsa pubblica di vendita — o un avvertimento pubblico.</p><h2>Perché le recensioni negative non sono sempre negative</h2><p>Molte aziende temono le recensioni negative. Ma una risposta gestita bene a una recensione negativa può effettivamente costruire fiducia. Mostra ai potenziali clienti che:</p><ul><li>Ti importa del feedback dei clienti</li><li>Assumi responsabilità quando le cose vanno storte</li><li>Lavori attivamente per risolvere i problemi</li></ul><p>Un'azienda con solo recensioni a 5 stelle sembra sospetta. Un'azienda con recensioni per lo più positive e risposte professionali a quelle negative sembra autentica.</p><h2>Come costruire una reputazione più forte</h2><p>La gestione della reputazione non è passiva. Richiede un approccio attivo:</p><h3>Chiedi recensioni</h3><p>I clienti soddisfatti spesso hanno bisogno di una spinta gentile. Chiedi direttamente dopo un'esperienza positiva. Rendilo facile con un link diretto al tuo profilo recensioni.</p><h3>Rispondi a tutto</h3><p>Ogni recensione merita una risposta. Le recensioni positive ricevono un ringraziamento. Le recensioni negative ricevono un riconoscimento professionale e una soluzione.</p><h3>Monitora la tua presenza</h3><p>Le recensioni appaiono su più piattaforme: Google, Facebook, Yelp, TripAdvisor, siti specifici del settore. Devi monitorarle tutte.</p><h2>L'impatto SEO</h2><p>Le recensioni influenzano direttamente il tuo posizionamento nei motori di ricerca. Google considera:</p><ul><li>Il numero di recensioni</li><li>La valutazione media</li><li>Quanto sono recenti le recensioni</li><li>Le parole chiave nelle recensioni</li></ul><p>Una strategia di recensioni forte migliora la tua visibilità locale in Google, che porta a più traffico e più clienti.</p><h2>La tua reputazione è il tuo brand</h2><p>Alla fine, la tua reputazione online è il tuo brand. Non è quello che dici di te stesso — è quello che gli altri dicono di te. E nel 2025, quello che gli altri dicono è visibile a tutti.</p><p>Gestisci la tua reputazione proattivamente, o sarà gestita per te — da recensioni, competitor e algoritmi.</p>"
       }
     },
-    "relatedServices": "Related services"
+    "relatedServices": "Servizi correlati"
   },
   "gallery": {
     "title": "I nostri lavori",
@@ -1460,7 +1460,7 @@
       "results": "Risultato",
       "ctaPrimary": "Richiedi un preventivo",
       "ctaWhatsApp": "Chatta via WhatsApp",
-      "deliverables": "What we delivered"
+      "deliverables": "Cosa abbiamo realizzato"
     },
     "items": {
       "castello-vicchiomaggio": {
@@ -2722,7 +2722,7 @@
       "subtitle": "Niente promesse vuote. Solo passi concreti verso più clienti.",
       "primaryCTA": "Richiedi un preventivo personalizzato",
       "secondaryCTA": "Chatta via WhatsApp",
-      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
+      "trustNote": "Conversazione senza impegno · Preventivo finale dopo l'incontro · Prezzi IVA esclusa"
     },
     "socialMedia": {
       "title": "Gestione social media",
@@ -2742,7 +2742,7 @@
           "desc": "Post, stories e reel che risuonano."
         },
         "3": {
-          "title": "Community management",
+          "title": "Gestione della community",
           "desc": "Risposte attive a commenti e DM."
         },
         "4": {
@@ -3509,19 +3509,19 @@
   },
   "_footer_merged": true,
   "servicesHome": {
-    "sectionTitle": "Our Services",
-    "sectionSubtitle": "Watch the video first to understand how each service works, then continue to the details.",
+    "sectionTitle": "I Nostri Servizi",
+    "sectionSubtitle": "Guarda prima il video per capire come funziona ogni servizio, poi continua con i dettagli.",
     "card": {
-      "requestQuote": "Request a quote",
-      "viewDetails": "View details",
-      "watchHowItWorks": "Watch how it works (60 sec)",
-      "buildYourPlan": "Build your plan"
+      "requestQuote": "Richiedi un preventivo",
+      "viewDetails": "Vedi dettagli",
+      "watchHowItWorks": "Guarda come funziona (60 sec)",
+      "buildYourPlan": "Crea il tuo piano"
     },
     "badges": {
-      "monthly": "Monthly",
-      "oneTime": "One-time",
-      "custom": "Custom",
-      "mostChosen": "Most chosen"
+      "monthly": "Mensile",
+      "oneTime": "Una tantum",
+      "custom": "Personalizzato",
+      "mostChosen": "Più scelto"
     }
   }
 }

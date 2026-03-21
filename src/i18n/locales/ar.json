@@ -9,7 +9,7 @@
     "partnership": "الامتياز",
     "franchise": "الامتياز",
     "careers": "الوظائف",
-    "team": "Our Team"
+    "team": "فريقنا"
   },
   "careers": {
     "meta": {
@@ -324,9 +324,9 @@
       },
       "microNote": "*النتائج تختلف حسب المجال والميزانية. نحن نبني أنظمة قابلة للتوسع.",
       "statsValues": {
-        "focus": "BE + EU + Worldwide",
+        "focus": "بلجيكا + الاتحاد الأوروبي + حول العالم",
         "system": "مدفوعة بالنظام",
-        "premium": "Premium"
+        "premium": "مميز"
       }
     },
     "trustedBelgium": {
@@ -362,32 +362,32 @@
         "outcome6": "عائد استثمار أفضل من خلال الهيكلة والاختبار"
       },
       "officialClients": "عملاء رسميون (بإذن)",
-      "europeCredibility": "Serving ambitious teams across Belgium & Europe.",
+      "europeCredibility": "نخدم فرقًا طموحة في جميع أنحاء بلجيكا وأوروبا.",
       "activeClients": "عملاء نشطون",
       "sectorsWeServe": "القطاعات التي نخدمها",
       "countries": {
-        "belgium": "Belgium",
-        "netherlands": "Netherlands",
-        "germany": "Germany",
-        "france": "France",
-        "luxembourg": "Luxembourg",
+        "belgium": "بلجيكا",
+        "netherlands": "هولندا",
+        "germany": "ألمانيا",
+        "france": "فرنسا",
+        "luxembourg": "لوكسمبورغ",
         "uk": "المملكة المتحدة",
-        "switzerland": "Switzerland",
-        "italy": "Italy",
-        "spain": "Spain",
+        "switzerland": "سويسرا",
+        "italy": "إيطاليا",
+        "spain": "إسبانيا",
         "usa": "الولايات المتحدة"
       },
       "sectors": {
         "restaurants": "المطاعم والضيافة",
-        "retail": "Retail & local shops",
+        "retail": "التجزئة والمتاجر المحلية",
         "interior": "التصميم الداخلي والتجديد",
-        "beauty": "Beauty & wellness",
-        "ecommerce": "E-commerce",
-        "realEstate": "Real estate",
+        "beauty": "الجمال والعناية",
+        "ecommerce": "التجارة الإلكترونية",
+        "realEstate": "العقارات",
         "localServices": "الخدمات المحلية",
-        "sme": "SMEs & startups",
-        "medical": "Medical / clinics",
-        "startups": "SaaS & startups",
+        "sme": "الشركات الصغيرة والمتوسطة والشركات الناشئة",
+        "medical": "الطب / العيادات",
+        "startups": "SaaS والشركات الناشئة",
         "professionalServices": "الخدمات المهنية"
       }
     },
@@ -597,11 +597,11 @@
         "about": "عن هذه الخدمة",
         "priceRange": "نطاق الأسعار",
         "content_production": "يعزز إنتاج المحتوى الاحترافي علامتك التجارية من خلال مقاطع الفيديو والصور عالية الجودة التي تنقل رسالتك بوضوح وتجذب جمهورك المستهدف.",
-        "business_website": "A professional website is the foundation of your online presence. We build websites that are not only beautiful, but also convert.",
-        "ecommerce_website": "Start selling online with a fully optimized webshop with all the functionality you need.",
-        "ads_management": "Maximize your advertising budget with data-driven campaigns on Google, Facebook, Instagram and more.",
+        "business_website": "الموقع الإلكتروني الاحترافي هو أساس تواجدك الرقمي. نصمم مواقع ليست فقط جميلة، بل تحقق التحويلات أيضًا.",
+        "ecommerce_website": "ابدأ البيع عبر الإنترنت بمتجر إلكتروني مُحسّن بالكامل مع جميع الوظائف التي تحتاجها.",
+        "ads_management": "حقق أقصى استفادة من ميزانية إعلاناتك بحملات قائمة على البيانات عبر Google و Facebook و Instagram والمزيد.",
         "seo": "نمو مستدام مع حركة مرور عضوية من خلال المحتوى المحسّن وتحسينات SEO التقنية.",
-        "social_media": "Build an engaged community with consistent, quality content on all your social media channels."
+        "social_media": "ابنِ مجتمعًا متفاعلًا بمحتوى متسق وعالي الجودة عبر جميع قنوات التواصل الاجتماعي الخاصة بك."
       },
       "deliverables": {
         "title": "ما ستحصل عليه"
@@ -740,8 +740,8 @@
       "title": "من نحن",
       "subtitle": "وكالة رقمية بلجيكية متخصصة في النمو الحقيقي.",
       "description": "منذ عام 2016، نساعد الشركات في بلجيكا وأوروبا على النمو بالاستراتيجية والعلامات التجارية القوية والحملات الفعالة.",
-      "badge": "Since 2016",
-      "text": "GROPPI started in Belgium in 2016 with one clear vision: helping businesses build a strong and authentic digital presence. No trends for the sake of trends, but solutions that truly work."
+      "badge": "منذ 2016",
+      "text": "تأسست GROPPI في بلجيكا عام 2016 برؤية واضحة: مساعدة الشركات على بناء حضور رقمي قوي وأصيل. لا نتبع الاتجاهات لمجرد الاتباع، بل نقدم حلولًا تعمل حقًا."
     },
     "whoWeAre": {
       "title": "من نحن حقاً",
@@ -750,19 +750,19 @@
       "cta": "تعرف على الفريق",
       "points": {
         "founded": {
-          "title": "Founded in 2016",
-          "text": "Over 8 years of digital marketing experience"
+          "title": "تأسست عام 2016",
+          "text": "أكثر من 8 سنوات من الخبرة في التسويق الرقمي"
         },
         "location": {
           "title": "مقرها بلجيكا",
           "text": "المقر الرئيسي في بلجيكا، خدمة محلية"
         },
         "reach": {
-          "title": "Belgium & Europe",
-          "text": "Headquartered in Belgium and actively serving clients across Europe. Expansion to the Middle East is planned for 2026."
+          "title": "بلجيكا وأوروبا",
+          "text": "مقرنا في بلجيكا ونخدم العملاء بنشاط في جميع أنحاء أوروبا. التوسع إلى الشرق الأوسط مخطط له في عام 2026."
         },
         "team": {
-          "title": "9+ professionals",
+          "title": "أكثر من 9 محترفين",
           "text": "فريق متعدد التخصصات من الخبراء"
         },
         "partnerships": {
@@ -781,11 +781,11 @@
         "التركيز على النتائج: نقيس كل شيء ونحسن باستمرار",
         "الشراكة طويلة الأمد: نبني علاقات، لا مشاريع سريعة"
       ],
-      "text": "At GROPPI, we believe in human expertise. Technology and AI support our work, but strategy, creativity, and decisions are always made by people.",
+      "text": "في GROPPI، نؤمن بالخبرة البشرية. تدعم التكنولوجيا والذكاء الاصطناعي عملنا، لكن الاستراتيجية والإبداع والقرارات تُتخذ دائمًا بواسطة البشر.",
       "tags": {
-        "strategy": "Strategy",
-        "creativity": "Creativity",
-        "technology": "Technology"
+        "strategy": "الاستراتيجية",
+        "creativity": "الإبداع",
+        "technology": "التكنولوجيا"
       },
       "humanExpertise": {
         "title": "اتخاذ القرار البشري",
@@ -816,7 +816,7 @@
           "description": "نأخذ ملكية كاملة. نتحمل المسؤولية عن النتائج."
         }
       ],
-      "subtitle": "What we stand for",
+      "subtitle": "ما نمثله",
       "items": {
         "transparency": {
           "title": "الشفافية",
@@ -824,7 +824,7 @@
         },
         "quality": {
           "title": "الجودة فوق الكمية",
-          "text": "We choose depth, not volume"
+          "text": "نختار العمق، لا الكم"
         },
         "relationships": {
           "title": "علاقات طويلة الأمد",
@@ -835,7 +835,7 @@
           "text": "تأثير قابل للقياس، لا وعود فارغة"
         },
         "humanFirst": {
-          "title": "Human first",
+          "title": "الإنسان أولاً",
           "text": "التكنولوجيا في خدمة الناس"
         }
       }
@@ -844,26 +844,26 @@
       "title": "مستعد لتنمية عملك؟",
       "subtitle": "دعنا نناقش معاً كيف يمكننا مساعدتك.",
       "button": "احجز استشارة مجانية",
-      "text": "Let's discover together how we can strengthen your digital presence.",
+      "text": "دعنا نكتشف معًا كيف يمكننا تعزيز حضورك الرقمي.",
       "bookConsultation": "احجز استشارة مجانية",
-      "contactUs": "Contact us"
+      "contactUs": "اتصل بنا"
     },
     "teamLink": {
       "text": "تعرّف على فريق قيادتنا وفريقنا العالمي في",
       "linkLabel": "صفحة فريقنا"
     },
-    "title": "About GROPPI",
-    "subtitle": "Our Story",
-    "description": "GROPPI started in Belgium in 2016 and grew through years of hands-on experience, strong partnerships, and proven results. Today, we collaborate with clients across Belgium and Europe, combining strategy, creativity, and technology to achieve sustainable digital growth. Expansion to the Middle East is planned for 2026.",
-    "mission": "Our Mission",
+    "title": "عن GROPPI",
+    "subtitle": "قصتنا",
+    "description": "تأسست GROPPI في بلجيكا عام 2016 ونمت عبر سنوات من الخبرة العملية، والشراكات القوية، والنتائج المثبتة. اليوم، نتعاون مع عملاء في جميع أنحاء بلجيكا وأوروبا، ونجمع بين الاستراتيجية والإبداع والتكنولوجيا لتحقيق نمو رقمي مستدام. التوسع إلى الشرق الأوسط مخطط له في عام 2026.",
+    "mission": "مهمتنا",
     "missionText": "مساعدة الشركات على النمو من خلال حلول رقمية استراتيجية تعتمد على الخبرة البشرية، مدعومة بالتكنولوجيا الذكية.",
-    "vision": "Our Vision",
-    "visionText": "To be a trusted partner for businesses seeking sustainable digital growth, with a team that truly understands what works.",
-    "values": "Our Values",
+    "vision": "رؤيتنا",
+    "visionText": "أن نكون شريكًا موثوقًا للشركات التي تسعى إلى نمو رقمي مستدام، مع فريق يفهم حقًا ما ينجح.",
+    "values": "قيمنا",
     "valuesText": "الموثوقية، الحرفية، الشفافية، والعلاقات طويلة الأمد.",
     "growth": {
-      "subtitle": "Our growth",
-      "title": "From Belgium to the world"
+      "subtitle": "نمونا",
+      "title": "من بلجيكا إلى العالم"
     },
     "stats": {
       "years": "سنوات الخبرة",
@@ -874,11 +874,11 @@
     "timeline": {
       "2016": {
         "title": "تأسست في بلجيكا",
-        "description": "GROPPI was founded with a clear vision: digital marketing with a personal approach."
+        "description": "تأسست GROPPI برؤية واضحة: تسويق رقمي بنهج شخصي."
       },
       "2018": {
         "title": "توسيع الفريق",
-        "description": "The team grew to 5 specialists with expertise in various domains."
+        "description": "نما الفريق إلى 5 متخصصين ذوي خبرة في مجالات متنوعة."
       },
       "2020": {
         "title": "النمو في بلجيكا",
@@ -886,11 +886,11 @@
       },
       "2023": {
         "title": "التوسع عبر أوروبا",
-        "description": "We scaled our projects across Europe with clients in the Netherlands, Germany, France, and beyond."
+        "description": "وسعنا مشاريعنا في جميع أنحاء أوروبا مع عملاء في هولندا وألمانيا وفرنسا وخارجها."
       },
       "2026": {
         "title": "الخطة المستقبلية: التوسع في الشرق الأوسط",
-        "description": "In 2026, we aim to expand into the Middle East — bringing our system-driven growth approach to new markets."
+        "description": "في عام 2026، نهدف إلى التوسع في الشرق الأوسط - جلب نهجنا للنمو القائم على الأنظمة إلى أسواق جديدة."
       }
     }
   },
@@ -978,12 +978,12 @@
           "result": "متجر محسن يحول الزوار لعملاء."
         },
         "mobile_app_development": {
-          "when": "For businesses that want to launch their own mobile app.",
-          "problem": "Solves the problem of absence in the app stores.",
-          "result": "A professional iOS & Android app that reaches customers directly."
+          "when": "للشركات التي ترغب في إطلاق تطبيقها الخاص للهاتف المحمول.",
+          "problem": "يحل مشكلة عدم التواجد في App Store.",
+          "result": "تطبيق iOS & Android احترافي يصل إلى العملاء مباشرة."
         }
       },
-      "duration": "60 sec"
+      "duration": "60 ثانية"
     },
     "simpleExplanation": {
       "content_production": "للشركات اللي محتاجة محتوى احترافي يلفت الانتباه.",
@@ -995,7 +995,7 @@
       "social_media": "للشركات اللي عايزة نتائج متسقة من غير ما تدير كل حاجة بنفسها.",
       "reputation": "احمي وقوي سمعتك الرقمية.",
       "data_sync": "خلي كل بيانات شركتك متزامنة ومحدثة.",
-      "mobile_app_development": "Launch your own iOS & Android app with a native feel — built for growth."
+      "mobile_app_development": "أطلق تطبيقك الخاص على iOS & Android بتجربة أصلية - مصمم للنمو."
     },
     "guidedEntry": {
       "title": "مش متأكد تبدأ من فين؟",
@@ -1217,12 +1217,12 @@
       },
       "mobileApp": {
         "title": "تطوير تطبيقات الجوال",
-        "description": "Launch a fast iOS & Android app with a native feel — built for growth.",
+        "description": "أطلق تطبيقًا سريعًا على iOS & Android بتجربة أصلية - مصمم للنمو.",
         "features": {
-          "0": "iOS & Android (native feel)",
-          "1": "Clean UX + fast performance",
-          "2": "App Store & Play Store launch",
-          "3": "Backend & API integrations"
+          "0": "iOS & Android (تجربة أصلية)",
+          "1": "UX نظيف + أداء سريع",
+          "2": "إطلاق على App Store & Play Store",
+          "3": "تكاملات الواجهة الخلفية و API"
         }
       }
     },
@@ -1318,10 +1318,10 @@
       "button": "اطلب عرض سعر مجاني"
     },
     "badges": {
-      "monthly": "Monthly",
-      "oneTime": "One-time",
-      "custom": "Custom",
-      "mostChosen": "Most chosen"
+      "monthly": "شهري",
+      "oneTime": "مرة واحدة",
+      "custom": "مخصص",
+      "mostChosen": "الأكثر اختيارًا"
     },
     "maintenanceFrom": "صيانة تبدأ من"
   },
@@ -1413,7 +1413,7 @@
     "emailLabel": "البريد الإلكتروني",
     "landline": "الهاتف الأرضي",
     "mobile": "الجوال",
-    "rateLimited": "Too many requests. Please try again later."
+    "rateLimited": "عدد كبير جدًا من الطلبات. يرجى المحاولة مرة أخرى لاحقًا."
   },
   "franchise": {
     "title": "الامتياز",
@@ -1457,9 +1457,9 @@
       "errorTitle": "حدث خطأ ما",
       "errorMessage": "حاول مرة أخرى.",
       "subscribed": "تم الاشتراك بالفعل",
-      "button": "Subscribe"
+      "button": "اشترك"
     },
-    "followUs": "Follow Us",
+    "followUs": "تابعنا",
     "contact": "معلومات الاتصال"
   },
   "common": {
@@ -1530,13 +1530,13 @@
     "whatsapp": "WhatsApp",
     "actions": {
       "chat": "ابدأ محادثة عبر WhatsApp",
-      "call": "Call +32 494 31 11 19",
-      "email": "Email info@groppi.be"
+      "call": "اتصل على +32 494 31 11 19",
+      "email": "أرسل بريدًا إلكترونيًا إلى info@groppi.be"
     },
-    "followInstagram": "Follow us on Instagram",
-    "followFacebook": "Follow us on Facebook",
-    "followTiktok": "Follow us on TikTok",
-    "followLinkedin": "Follow us on LinkedIn"
+    "followInstagram": "تابعنا على Instagram",
+    "followFacebook": "تابعنا على Facebook",
+    "followTiktok": "تابعنا على TikTok",
+    "followLinkedin": "تابعنا على LinkedIn"
   },
   "planBuilder": {
     "title": "مخطط الخطة الاجتماعية",
@@ -1560,12 +1560,12 @@
       "weekly": "أسبوعياً",
       "biweekly": "كل أسبوعين",
       "monthly": "شهرياً",
-      "2month": "2 posts per month",
-      "1week": "1 post per week",
-      "2week": "2 posts per week",
-      "3week": "3 posts per week",
-      "4week": "4 posts per week",
-      "5week": "5 posts per week"
+      "2month": "منشورين شهريًا",
+      "1week": "منشور واحد أسبوعيًا",
+      "2week": "منشورين أسبوعيًا",
+      "3week": "3 منشورات أسبوعيًا",
+      "4week": "4 منشورات أسبوعيًا",
+      "5week": "5 منشورات أسبوعيًا"
     },
     "addons": {
       "label": "الإضافات (اختياري)",
@@ -1575,20 +1575,20 @@
       "analytics": "تقارير مفصلة",
       "productPhotos": {
         "label": "صور منتجات إضافية",
-        "unit": "photo"
+        "unit": "صورة"
       },
       "googleReviews": {
         "label": "إدارة مراجعات Google"
       },
       "contentWriting": {
         "label": "كتابة المحتوى",
-        "unit": "hour"
+        "unit": "ساعة"
       },
       "emailMarketing": {
         "label": "حملات Email marketing"
       },
       "postsPack": {
-        "label": "Social media posts (10-pack)"
+        "label": "منشورات وسائل التواصل الاجتماعي (حزمة 10)"
       },
       "analyticsDashboard": {
         "label": "لوحة تحكم Analytics متقدمة"
@@ -1601,10 +1601,10 @@
       "frequency": "التكرار",
       "cta": "اطلب عرض سعري",
       "managementFee": "رسوم الإدارة المقدرة",
-      "addons": "Add-ons",
-      "adsBudget": "Ad budget (paid directly)",
+      "addons": "إضافات",
+      "adsBudget": "ميزانية الإعلانات (تُدفع مباشرة)",
       "total": "الإجمالي شهريًا",
-      "included": "included"
+      "included": "مشمول"
     },
     "faq": {
       "title": "أسئلة حول خطتك",
@@ -1615,31 +1615,31 @@
       "q3": "كم التقرير الشهري يفصل عنه؟",
       "a3": "أداء كل منشور، نمو المتابعين، معدل التفاعل والتوصيات.",
       "adjustLater": {
-        "question": "Can I adjust my plan later?",
-        "answer": "Yes. You can adjust at any time. We align everything with your goals and evolution."
+        "question": "هل يمكنني تعديل خطتي لاحقًا؟",
+        "answer": "نعم. يمكنك التعديل في أي وقت. نحن نُواءم كل شيء مع أهدافك وتطورك."
       },
       "setupCost": {
-        "question": "Is there a setup cost?",
-        "answer": "Setup is included in the management fee. Extras only arise with additional scope or exceptional setup."
+        "question": "هل توجد تكلفة إعداد؟",
+        "answer": "الإعداد مشمول في رسوم الإدارة. تنشأ التكاليف الإضافية فقط مع نطاق عمل إضافي أو إعداد استثنائي."
       },
       "adBudgetIncluded": {
         "question": "هل ميزانية الإعلان مشمولة؟",
-        "answer": "No. Advertising budget is paid directly to Meta/Google. Our cost is for management and optimization."
+        "answer": "لا. تُدفع ميزانية الإعلانات مباشرة إلى Meta/Google. تكلفتنا هي للإدارة والتحسين."
       }
     },
     "tab": "أنشئ خطتك",
-    "disclaimer": "This is an indicative price. Final pricing depends on scope, brand complexity, and content needs.",
-    "vatNote": "excl. VAT",
-    "adsBudgetDisclaimer": "Advertising budget is paid directly to Meta/Google and is not included in management costs.",
-    "adsBudgetNote": "Advertising budget is paid directly to Meta/Google.",
-    "pauseNote": "You can pause or stop whenever you want.",
-    "included": "Included",
-    "next": "Next",
-    "back": "Back",
-    "quantity": "Quantity",
+    "disclaimer": "هذا سعر إرشادي. يعتمد التسعير النهائي على النطاق وتعقيد العلامة التجارية واحتياجات المحتوى.",
+    "vatNote": "غير شامل ضريبة القيمة المضافة",
+    "adsBudgetDisclaimer": "يتم دفع ميزانية الإعلانات مباشرة إلى Meta/Google وهي غير مدرجة في تكاليف الإدارة.",
+    "adsBudgetNote": "يتم دفع ميزانية الإعلانات مباشرة إلى Meta/Google.",
+    "pauseNote": "يمكنك الإيقاف المؤقت أو التوقف متى شئت.",
+    "included": "متضمن",
+    "next": "التالي",
+    "back": "العودة",
+    "quantity": "الكمية",
     "viewSummary": "عرض الملخص",
     "validation": {
-      "minChannel": "Select at least 1 channel."
+      "minChannel": "اختر قناة واحدة على الأقل."
     },
     "steps": {
       "channels": "اختر قنواتك",
@@ -1648,15 +1648,15 @@
       "addons": "إضافات اختيارية"
     },
     "adsBudget": {
-      "100": "€100 / month",
-      "250": "€250 / month",
-      "500": "€500 / month",
-      "1000": "€1000 / month",
+      "100": "100 يورو / شهر",
+      "250": "250 يورو / شهر",
+      "500": "500 يورو / شهر",
+      "1000": "1000 يورو / شهر",
       "none": "لا توجد حملات مدفوعة"
     },
     "cta": {
       "primary": "اطلب عرضًا مخصصًا",
-      "secondary": "Save plan"
+      "secondary": "حفظ الخطة"
     }
   },
   "partner": {
@@ -1669,12 +1669,12 @@
       "title": "اعمل مع GROPPI",
       "subtitle": "شراكة واضحة وشفافة مع وكالة رقمية نامية.",
       "description": "اكتشف كيف يمكنك النمو بجانبنا دون الاستثمار الضخم لبدء وكالتك الخاصة.",
-      "bullet1": "No talk. Just structure.",
+      "bullet1": "لا كلام. فقط هيكل.",
       "bullet2": "نظام تسليم شفاف.",
-      "bullet3": "Premium brand & positioning.",
+      "bullet3": "علامة تجارية ومكانة متميزة.",
       "ctaPrimary": "حدد موعدًا لمقدمة",
-      "ctaSecondary": "See how it works",
-      "microcopy": "Limited number of partners per region."
+      "ctaSecondary": "اكتشف كيف يعمل",
+      "microcopy": "عدد محدود من الشركاء لكل منطقة."
     },
     "clarity": {
       "title": "لماذا نحن مختلفون",
@@ -1686,25 +1686,25 @@
         "تدريب وتطوير مستمر",
         "نمو حقيقي معنا"
       ],
-      "subtitle": "What this program is",
-      "body": "This program is designed for agencies and specialists who want to grow under a strong brand. No employment. No recruitment. And no 'talk' without system. Instead: a license-driven partnership with clear quality standards.",
+      "subtitle": "ما هو هذا البرنامج",
+      "body": "صُمم هذا البرنامج للوكالات والمتخصصين الذين يرغبون في النمو تحت علامة تجارية قوية. لا توظيف. لا استقطاب. ولا 'كلام' بدون نظام. بدلاً من ذلك: شراكة قائمة على الترخيص بمعايير جودة واضحة.",
       "cards": {
         "brand": {
-          "title": "Brand & positioning",
+          "title": "العلامة التجارية والمكانة",
           "bullets": {
-            "0": "Use the GROPPI brand",
+            "0": "استخدام علامة GROPPI التجارية",
             "1": "حضور متميز من اليوم الأول"
           }
         },
         "delivery": {
           "title": "نظام التسليم",
           "bullets": {
-            "0": "Clear services & pricing logic",
-            "1": "Tools & frameworks that work in practice"
+            "0": "خدمات واضحة ومنطق تسعير",
+            "1": "أدوات وأطر عمل فعالة في الممارسة"
           }
         },
         "growth": {
-          "title": "Growth & support",
+          "title": "النمو والدعم",
           "bullets": {
             "0": "توجيه استراتيجي",
             "1": "قابل للتطوير بدون فوضى"
@@ -1720,9 +1720,9 @@
         "يسعون إلى شراكة طويلة الأمد وليس مشروعاً قصير الأجل",
         "يريدون دعماً شاملاً من فريق متمرس"
       ],
-      "subtitle": "For whom",
-      "description": "We work with people who can deliver quality and want to scale locally.",
-      "note": "Selection is based on quality and mindset."
+      "subtitle": "لمن هذا البرنامج",
+      "description": "نحن نعمل مع الأشخاص الذين يمكنهم تقديم الجودة ويرغبون في التوسع محليًا.",
+      "note": "يعتمد الاختيار على الجودة والنهج."
     },
     "value": {
       "title": "ما تحصل عليه",
@@ -1733,26 +1733,26 @@
         "الوصول إلى شبكة شركائنا العالمية",
         "نظام يثبت نفسه وينمو بنفسه"
       ],
-      "subtitle": "What you get",
+      "subtitle": "ما ستحصل عليه",
       "cards": {
         "credibility": {
           "title": "مصداقية فورية",
-          "body": "Over 10 years of experience translated into strong positioning and clear service logic."
+          "body": "أكثر من 10 سنوات من الخبرة تُرجمت إلى مكانة قوية ومنطق خدمة واضح."
         },
         "salesReady": {
           "title": "هيكل جاهز للمبيعات",
-          "body": "Services, pricing and calculators that speed up decisions and reduce friction."
+          "body": "خدمات، تسعير، وحاسبات تسرّع القرارات وتقلل الاحتكاك."
         },
         "portfolio": {
           "title": "دعم المحفظة",
-          "body": "Case study formats, templates and quality guidelines to stay premium."
+          "body": "تنسيقات دراسات الحالة، قوالب، وإرشادات جودة للحفاظ على التميز."
         },
         "longterm": {
           "title": "تعاون طويل الأمد",
-          "body": "Projects, upsells and lasting relationships — built on trust and delivery."
+          "body": "مشاريع، مبيعات إضافية، وعلاقات دائمة — مبنية على الثقة والإنجاز."
         }
       },
-      "highlight": "You're not buying a logo. You're getting a proven system."
+      "highlight": "أنت لا تشتري شعارًا. أنت تحصل على نظام مُثبت."
     },
     "steps": {
       "title": "كيفية العمل",
@@ -1836,26 +1836,26 @@
       "item5": "عملاء محتملين وفرص",
       "item6": "نمو حقيقي مع GROPPI"
     },
-    "badge": "WHAT THIS PROGRAM IS",
+    "badge": "ما هو هذا البرنامج",
     "seo": {
-      "title": "Partner with GROPPI | Partner Network",
-      "description": "Become a GROPPI partner: a license-driven partnership with brand, system and support. Not a job, not recruitment. Limited spots per region."
+      "title": "كن شريكًا لـ GROPPI | شبكة الشركاء",
+      "description": "كن شريكًا لـ GROPPI: شراكة قائمة على الترخيص مع علامة تجارية ونظام ودعم. ليست وظيفة، وليست توظيفًا. عدد محدود من الأماكن لكل منطقة."
     },
     "howItWorks": {
-      "subtitle": "How it works",
-      "title": "How it works",
+      "subtitle": "كيف نعمل",
+      "title": "كيف نعمل",
       "steps": {
         "step1": {
-          "title": "Sign up",
-          "desc": "Leave your details and briefly tell us about your region and team."
+          "title": "سجّل",
+          "desc": "اترك تفاصيلك وأخبرنا باختصار عن منطقتك وفريقك."
         },
         "step2": {
           "title": "مكالمة قصيرة للملاءمة",
-          "desc": "We check match, quality and expectations (15–20 min)."
+          "desc": "نتحقق من التوافق والجودة والتوقعات (15-20 دقيقة)."
         },
         "step3": {
-          "title": "Start with the GROPPI system",
-          "desc": "You get onboarding, guidelines and starting assets to deliver."
+          "title": "ابدأ بنظام GROPPI",
+          "desc": "تحصل على إعداد، إرشادات، وأصول بدء لتقديم الخدمة."
         }
       }
     }
@@ -1869,63 +1869,63 @@
     "viewMore": "رؤية المزيد",
     "relatedServices": "خدمات ذات صلة",
     "backToPortfolio": "العودة إلى المحفظة",
-    "challengeLabel": "Challenge",
-    "approachLabel": "Approach",
-    "resultsLabel": "Result",
+    "challengeLabel": "التحدي",
+    "approachLabel": "النهج",
+    "resultsLabel": "النتيجة",
     "servicesUsed": "الخدمات المستخدمة",
     "ctaQuote": "اطلب عرض سعر",
-    "ctaServices": "View services & pricing",
+    "ctaServices": "عرض الخدمات والأسعار",
     "prevCase": "الحالة السابقة",
-    "nextCase": "Next case",
-    "allCases": "All cases",
+    "nextCase": "الحالة التالية",
+    "allCases": "جميع الحالات",
     "cases": {
       "restaurant-branding": {
         "title": "العلامة التجارية للمطاعم والموقع الإلكتروني",
         "challenge": "ضعف الرؤية عبر الإنترنت وقلة الحجوزات الرقمية.",
-        "approach": "New brand identity + modern website + Google Ads campaign.",
-        "result": "+180% online reservations"
+        "approach": "هوية علامة تجارية جديدة + موقع ويب حديث + حملة Google Ads.",
+        "result": "+180% حجوزات عبر الإنترنت"
       },
       "mode-webshop": {
         "title": "إطلاق متجر أزياء إلكتروني",
-        "challenge": "New brand without online presence or customer base.",
-        "approach": "Complete webshop + social media strategy + influencer marketing.",
-        "result": "€85K revenue in first 3 months"
+        "challenge": "علامة تجارية جديدة بدون تواجد على الإنترنت أو قاعدة عملاء.",
+        "approach": "متجر إلكتروني متكامل + استراتيجية وسائل التواصل الاجتماعي + تسويق المؤثرين.",
+        "result": "85 ألف يورو إيرادات في أول 3 أشهر"
       },
       "b2b-platform": {
         "title": "منصة B2B لتوليد العملاء المحتملين",
-        "challenge": "Too few qualified leads for B2B services.",
-        "approach": "Lead generation website + LinkedIn Ads + content marketing.",
-        "result": "+320% qualified leads"
+        "challenge": "عدد قليل جدًا من العملاء المحتملين المؤهلين لخدمات B2B.",
+        "approach": "موقع ويب لتوليد العملاء المحتملين + LinkedIn Ads + تسويق المحتوى.",
+        "result": "+320% عملاء محتملين مؤهلين"
       },
       "bouwbedrijf-website": {
         "title": "موقع شركة إنشاءات و SEO",
-        "challenge": "Invisible on Google despite good offline reputation.",
-        "approach": "SEO-optimized website + local SEO + Google My Business.",
-        "result": "#1 ranking on Google locally"
+        "challenge": "غير مرئي على Google على الرغم من السمعة الجيدة خارج الإنترنت.",
+        "approach": "موقع ويب مُحسّن لـ SEO + SEO محلي + Google My Business.",
+        "result": "الترتيب الأول على Google محليًا"
       },
       "influencer-campagne": {
         "title": "حملة تسويق المؤثرين",
         "challenge": "زيادة الوعي بالعلامة التجارية بين الجمهور الأصغر سنًا.",
-        "approach": "Influencer selection + content strategy + social media amplification.",
-        "result": "2.4 million reach"
+        "approach": "اختيار المؤثرين + استراتيجية المحتوى + تضخيم وسائل التواصل الاجتماعي.",
+        "result": "2.4 مليون وصول"
       },
       "tech-startup-branding": {
         "title": "العلامة التجارية الكاملة لشركة ناشئة تقنية",
         "challenge": "شركة ناشئة بدون هوية بصرية أو موقع للعلامة التجارية.",
-        "approach": "Brand strategy + logo design + website + pitch deck.",
+        "approach": "استراتيجية العلامة التجارية + تصميم الشعار + موقع الويب + عرض تقديمي.",
         "result": "تم إطلاق هوية العلامة التجارية الكاملة"
       },
       "e-commerce-groei": {
         "title": "استراتيجية نمو التجارة الإلكترونية",
-        "challenge": "Low ROAS and high advertising costs.",
-        "approach": "Campaign audit + A/B testing + retargeting optimization.",
-        "result": "+240% ROAS improvement"
+        "challenge": "ROAS منخفض وتكاليف إعلانية مرتفعة.",
+        "approach": "تدقيق الحملة + اختبار A/B + تحسين إعادة الاستهداف.",
+        "result": "تحسن ROAS بنسبة +240%"
       },
       "content-strategie": {
         "title": "استراتيجية إنتاج المحتوى",
         "challenge": "محتوى غير متناسق ونقص في التفاعل.",
-        "approach": "Content calendar + video production + social media management.",
-        "result": "50+ videos per month"
+        "approach": "تقويم المحتوى + إنتاج الفيديو + إدارة وسائل التواصل الاجتماعي.",
+        "result": "أكثر من 50 فيديو شهريًا"
       }
     }
   },
@@ -2495,46 +2495,46 @@
       "vatNote": "جميع الأسعار بدون ضريبة. سيتم إضافة الضريبة على الفاتورة.",
       "quoteCode": "رقم عرضك",
       "businessTypeLabel": "نوع العمل",
-      "goalLabel": "Your goal",
-      "packageLabel": "Package",
-      "adBudgetLabel": "Ad budget",
+      "goalLabel": "هدفك",
+      "packageLabel": "الباقة",
+      "adBudgetLabel": "ميزانية الإعلانات",
       "addonsLabel": "خيارات إضافية",
-      "selectPlaceholder": "Select...",
-      "month": "month",
+      "selectPlaceholder": "اختر...",
+      "month": "شهر",
       "monthlyFee": "الرسوم الشهرية التقديرية للخدمة",
-      "setupFee": "Setup fee",
+      "setupFee": "رسوم الإعداد",
       "firstMonthTotal": "إجمالي الشهر الأول",
-      "disclaimer": "Indicative price. Final quote after short intake.",
+      "disclaimer": "سعر إرشادي. عرض سعر نهائي بعد مقابلة قصيرة.",
       "sendCalculation": "أرسل لي هذا الحساب",
       "sendWhatsapp": "إرسال عبر WhatsApp",
       "noAddons": "لا توجد خيارات إضافية",
       "businessTypes": {
         "restaurant": "مطعم / ضيافة",
-        "retail": "Retail & local shops",
+        "retail": "متاجر التجزئة والمتاجر المحلية",
         "construction": "بناء وتجديد",
-        "beauty": "Beauty & wellness",
-        "ecommerce": "E-commerce",
-        "other": "Other"
+        "beauty": "الجمال والعافية",
+        "ecommerce": "التجارة الإلكترونية",
+        "other": "أخرى"
       },
       "goals": {
         "visibility": "المزيد من الظهور",
-        "leads": "More leads",
-        "sales": "More sales"
+        "leads": "المزيد من العملاء المحتملين",
+        "sales": "المزيد من المبيعات"
       },
       "packages": {
-        "starter": "Starter",
-        "growth": "Growth",
-        "pro": "Pro"
+        "starter": "المبتدئ",
+        "growth": "النمو",
+        "pro": "المحترف"
       },
       "addons": {
-        "extraContent4": "Extra content (4 posts/month)",
-        "extraContent12": "Extra content (12 posts/month)",
-        "extraVideo2": "Extra video ads (2/month)",
-        "extraVideo6": "Extra video ads (6/month)",
+        "extraContent4": "محتوى إضافي (4 منشورات/شهر)",
+        "extraContent12": "محتوى إضافي (12 منشور/شهر)",
+        "extraVideo2": "إعلانات فيديو إضافية (2/شهر)",
+        "extraVideo6": "إعلانات فيديو إضافية (6/شهر)",
         "extraLandingPage": "صفحة هبوط إضافية",
         "extraTracking": "إعداد تتبع إضافي"
       },
-      "whatsappTemplate": "Hello! My calculation for {{service}}:\n\n• Business type: {{businessType}}\n• Goal: {{goal}}\n• Package: {{package}}\n• Ad budget: {{adBudget}}\n• Extra options: {{addons}}\n\n💰 Estimated price: {{monthlyRange}} / month\n📋 Setup: {{setup}}\n\nCan you send me a custom quote?"
+      "whatsappTemplate": "مرحباً! حسابي لـ {{service}}:\n\n• نوع العمل: {{businessType}}\n• الهدف: {{goal}}\n• الباقة: {{package}}\n• ميزانية الإعلانات: {{adBudget}}\n• خيارات إضافية: {{addons}}\n\n💰 السعر التقديري: {{monthlyRange}} / شهر\n📋 الإعداد: {{setup}}\n\nهل يمكنك إرسال عرض سعر مخصص لي؟"
     },
     "pricingFAQ": {
       "label": "الأسئلة الشائعة",
@@ -2661,67 +2661,67 @@
     "cta": {
       "requestQuote": "طلب عرض سعر",
       "whatsapp": "الدردشة عبر WhatsApp",
-      "planCall": "Book a call"
+      "planCall": "احجز مكالمة"
     },
-    "trustNote": "Transparent pricing. No hidden costs.",
+    "trustNote": "تسعير شفاف. لا توجد تكاليف خفية.",
     "videoPlaceholder": "الفيديو قادم قريبًا",
     "whatsapp": {
-      "template": "Hello! I'd like more info about {{service}}. Can you help?"
+      "template": "مرحباً! أود الحصول على مزيد من المعلومات حول {{service}}. هل يمكنك المساعدة؟"
     },
     "deliverables": {
-      "label": "What you get",
-      "title": "What's included?"
+      "label": "ما ستحصل عليه",
+      "title": "ماذا يشمل؟"
     },
     "process": {
-      "label": "How it works",
-      "title": "Our process"
+      "label": "كيف نعمل",
+      "title": "عمليتنا"
     },
     "faq": {
       "label": "الأسئلة المتكررة",
-      "title": "FAQ",
-      "q1": "Is this a monthly contract?",
-      "a1": "Yes, you pay monthly. No annual contract required.",
-      "q2": "Can I cancel whenever I want?",
-      "a2": "Yes, with 30 days notice. No hidden clauses.",
-      "q3": "Do you work with fixed prices?",
-      "a3": "We work with price ranges. After the intake you'll get an exact quote.",
-      "q4": "What if I don't have content yet?",
-      "a4": "No problem. We produce content for you or guide your team.",
-      "q5": "How fast will I see results?",
-      "a5": "First results within 2-4 weeks. Significant growth after 2-3 months.",
-      "q6": "What if I have a small budget?",
-      "a6": "We have Starter packages for small budgets. Ask for advice."
+      "title": "الأسئلة الشائعة",
+      "q1": "هل هذا عقد شهري؟",
+      "a1": "نعم، الدفع شهري. لا يتطلب عقد سنوي.",
+      "q2": "هل يمكنني الإلغاء متى شئت؟",
+      "a2": "نعم، مع إشعار قبل 30 يومًا. لا توجد بنود خفية.",
+      "q3": "هل تعملون بأسعار ثابتة؟",
+      "a3": "نحن نعمل بنطاقات أسعار. بعد المقابلة ستحصل على عرض سعر دقيق.",
+      "q4": "ماذا لو لم يكن لدي محتوى بعد؟",
+      "a4": "لا مشكلة. ننتج المحتوى لك أو نوجه فريقك.",
+      "q5": "ما مدى سرعة رؤية النتائج؟",
+      "a5": "النتائج الأولية في غضون 2-4 أسابيع. نمو كبير بعد 2-3 أشهر.",
+      "q6": "ماذا لو كانت ميزانيتي صغيرة؟",
+      "a6": "لدينا باقات Starter للميزانيات الصغيرة. اطلب المشورة."
     },
     "finalCTA": {
-      "title": "Ready to grow with clarity?",
-      "subtitle": "No empty promises. Just concrete steps to more customers.",
+      "title": "هل أنت مستعد للنمو بوضوح؟",
+      "subtitle": "لا وعود فارغة. فقط خطوات ملموسة نحو المزيد من العملاء.",
       "primaryCTA": "طلب عرض سعر مخصص",
       "secondaryCTA": "الدردشة عبر WhatsApp",
-      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
+      "trustNote": "محادثة غير ملزمة · عرض سعر نهائي بعد المقابلة · الأسعار لا تشمل ضريبة القيمة المضافة"
     },
     "contentCalculator": {
       "label": "حاسبة المحتوى",
-      "title": "Calculate your price in 60 sec",
-      "subtitle": "Choose what you need and get an instant estimate.",
+      "title": "احسب سعرك في 60 ثانية",
+      "subtitle": "اختر ما تحتاجه واحصل على تقدير فوري.",
       "step1": "اختر نوع الدفع",
       "step2": "حدد مخرجاتك",
       "oneTime": "مشروع لمرة واحدة",
-      "oneTimeDesc": "Pay per item.",
+      "oneTimeDesc": "الدفع لكل عنصر.",
       "monthly": "اشتراك شهري",
-      "monthlyDesc": "Fixed monthly fee.",
-      "posters": "Posters",
-      "reels": "Reels",
-      "videos": "Videos",
-      "articles": "Articles",
-      "quantity": "Quantity",
-      "perItem": "per item",
-      "fixed": "fixed",
+      "monthlyDesc": "رسوم شهرية ثابتة.",
+      "posters": "ملصقات",
+      "reels": "مقاطع ريلز",
+      "videos": "مقاطع فيديو",
+      "articles": "مقالات",
+      "quantity": "الكمية",
+      "perItem": "لكل عنصر",
+      "fixed": "ثابت",
       "reelTypes": {
         "ai": "تم إنشاؤه بواسطة AI",
-        "clientFootage": "Client footage (we edit)",
-        "onSite": "We film on-site"
+        "clientFootage": "لقطات العميل (نقوم بالتحرير)",
+        "onSite": "نقوم بالتصوير في الموقع"
       },
-      "vatNote": "All prices excl. VAT. VAT will be added on the invoice.",
+      "vatNote": "جميع الأسعار لا تشمل ضريبة القيمة المضافة. ستضاف ضريبة القيمة المضافة على الفاتورة.",
       "quoteCode": "رمز عرض السعر الخاص بك"
     }
   },
@@ -2770,11 +2770,11 @@
     "vatExcluded": "بدون ض.ق.م.",
     "vatExcludedNote": "جميع الأسعار بدون ضريبة القيمة المضافة. ستُضاف في الفاتورة.",
     "customQuote": "عرض أسعار مخصص",
-    "perMonth": "/ month",
-    "oneTime": "one-time",
+    "perMonth": "/ شهر",
+    "oneTime": "مرة واحدة",
     "vatDisclaimer": {
       "title": "معلومات التسعير",
-      "line1": "All prices exclude VAT (21%)."
+      "line1": "جميع الأسعار لا تشمل ضريبة القيمة المضافة (21%)."
     }
   },
   "portfolio": {
@@ -3545,12 +3545,12 @@
       }
     },
     "page": {
-      "subtitle": "Our work",
-      "title": "Portfolio",
-      "description": "Discover our projects and the results we achieved for our clients.",
+      "subtitle": "أعمالنا",
+      "title": "المشاريع",
+      "description": "اكتشف مشاريعنا والنتائج التي حققناها لعملائنا.",
       "resultSingle": "مشروع تم العثور عليه",
       "resultPlural": "مشاريع تم العثور عليها",
-      "noResults": "No projects found with these filters."
+      "noResults": "لم يتم العثور على مشاريع بهذه الفلاتر."
     }
   },
   "privacy": {

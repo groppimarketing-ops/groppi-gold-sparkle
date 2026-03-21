@@ -2169,141 +2169,141 @@
         "shortResult": "Ronda semilla cerrada",
         "challenge": "Startup pre-seed necesitaba una imagen profesional para inversores.",
         "approach": {
-          "0": "Logo and visual identity",
-          "1": "Pitch deck design",
-          "2": "Landing page development"
+          "0": "Logotipo e identidad visual",
+          "1": "Diseño de pitch deck",
+          "2": "Desarrollo de landing page"
         },
         "results": {
-          "0": "Successful seed round",
-          "1": "Professional investor presentation"
+          "0": "Ronda semilla exitosa",
+          "1": "Presentación profesional para inversores"
         },
-        "disclaimer": "Indicative result, dependent on period & budget."
+        "disclaimer": "Resultado indicativo, sujeto a período y presupuesto."
       },
       "nda-project-012": {
-        "shortResult": "500+ sign-ups in 30 days",
-        "challenge": "B2B SaaS product ready for launch but without marketing infrastructure.",
+        "shortResult": "Más de 500 registros en 30 días",
+        "challenge": "Producto SaaS B2B listo para lanzar, pero sin infraestructura de marketing.",
         "approach": {
-          "0": "High-converting landing page",
-          "1": "LinkedIn Ads campaign",
-          "2": "Content marketing strategy"
+          "0": "Landing page de alta conversión",
+          "1": "Campaña de LinkedIn Ads",
+          "2": "Estrategia de marketing de contenidos"
         },
         "results": {
-          "0": "500+ sign-ups in first month",
-          "1": "Strong product-market fit signals"
+          "0": "Más de 500 registros en el primer mes",
+          "1": "Fuertes señales de product-market fit"
         },
-        "disclaimer": "Indicative result, dependent on period & budget."
+        "disclaimer": "Resultado indicativo, sujeto a período y presupuesto."
       },
       "nda-project-013": {
-        "shortResult": "+75% qualified leads",
-        "challenge": "Real estate office dependent on traditional channels, missing online leads.",
+        "shortResult": "+75% leads cualificados",
+        "challenge": "Oficina inmobiliaria dependiente de canales tradicionales, perdiendo leads online.",
         "approach": {
-          "0": "Lead generation campaigns",
-          "1": "Landing pages per project",
-          "2": "CRM integration"
+          "0": "Campañas de generación de leads",
+          "1": "Páginas de destino por proyecto",
+          "2": "Integración de CRM"
         },
         "results": {
-          "0": "+75% qualified leads",
-          "1": "Lower cost per lead"
+          "0": "+75% de leads cualificados",
+          "1": "Menor coste por lead"
         },
-        "disclaimer": "Indicative result, dependent on period & budget."
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
       },
       "nda-project-014": {
-        "shortResult": "Higher asking price achieved",
-        "challenge": "Premium real estate lacked visual presentation that radiated luxury.",
+        "shortResult": "Precio de venta más alto logrado",
+        "challenge": "Inmuebles de lujo carecían de una presentación visual que irradiara exclusividad.",
         "approach": {
-          "0": "High-end property website",
-          "1": "Drone and interior photography",
-          "2": "Virtual tours integration"
+          "0": "Sitio web de propiedades de alta gama",
+          "1": "Fotografía con dron e interiores",
+          "2": "Integración de tours virtuales"
         },
         "results": {
-          "0": "Higher asking price achieved",
-          "1": "Faster sales cycle"
+          "0": "Precio de venta más alto logrado",
+          "1": "Ciclo de ventas más rápido"
         },
-        "disclaimer": "Indicative result, dependent on period & budget."
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
       },
       "nda-project-015": {
-        "shortResult": "+32% project inquiries",
-        "challenge": "Interior designer showed work via social media but lacked professional portfolio.",
+        "shortResult": "+32% de consultas de proyectos",
+        "challenge": "Diseñador de interiores mostraba su trabajo en redes sociales pero carecía de un portafolio profesional.",
         "approach": {
-          "0": "Portfolio website with gallery",
-          "1": "Professional project photography",
-          "2": "Blog strategy"
+          "0": "Sitio web de portafolio con galería",
+          "1": "Fotografía profesional de proyectos",
+          "2": "Estrategia de blog"
         },
         "results": {
-          "0": "+32% project inquiries",
-          "1": "Higher average project value"
+          "0": "+32% de consultas de proyectos",
+          "1": "Mayor valor promedio de proyecto"
         },
-        "disclaimer": "Indicative result, dependent on period & budget."
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
       },
       "nda-project-016": {
-        "shortResult": "+55% showroom visits",
-        "challenge": "Kitchen shop had declining visitor numbers despite premium offering.",
+        "shortResult": "+55% de visitas al showroom",
+        "challenge": "Tienda de cocinas experimentaba una disminución de visitantes a pesar de su oferta premium.",
         "approach": {
-          "0": "Google Ads with local focus",
-          "1": "Inspiration content on social",
-          "2": "Virtual showroom tour"
+          "0": "Google Ads con enfoque local",
+          "1": "Contenido de inspiración en redes sociales",
+          "2": "Tour virtual del showroom"
         },
         "results": {
-          "0": "+55% showroom visits",
-          "1": "Higher conversion from visit to sale"
+          "0": "+55% de visitas al showroom",
+          "1": "Mayor conversión de visita a venta"
         },
-        "disclaimer": "Indicative result, dependent on period & budget."
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
       },
       "nda-project-017": {
-        "shortResult": "40+ videos/month",
-        "challenge": "Fitness studio wanted consistent content but had no internal capacity.",
+        "shortResult": "Más de 40 videos/mes",
+        "challenge": "Estudio de fitness deseaba contenido consistente pero carecía de capacidad interna.",
         "approach": {
-          "0": "Full-service content retainer",
-          "1": "Video production on location",
-          "2": "Social media planning"
+          "0": "Retainer de contenido de servicio completo",
+          "1": "Producción de video en locación",
+          "2": "Planificación de redes sociales"
         },
         "results": {
-          "0": "40+ quality videos per month",
-          "1": "Higher member engagement"
+          "0": "Más de 40 videos de calidad al mes",
+          "1": "Mayor engagement de los miembros"
         },
-        "disclaimer": "Indicative result, dependent on period & budget."
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
       },
       "nda-project-018": {
-        "shortResult": "+45% members",
-        "challenge": "New CrossFit box needed to differentiate from established competitors.",
+        "shortResult": "+45% de miembros",
+        "challenge": "Nuevo box de CrossFit necesitaba diferenciarse de competidores establecidos.",
         "approach": {
-          "0": "Powerful brand identity",
-          "1": "Community-driven content",
-          "2": "Launch campaign"
+          "0": "Identidad de marca potente",
+          "1": "Contenido impulsado por la comunidad",
+          "2": "Campaña de lanzamiento"
         },
         "results": {
-          "0": "+45% members in first quarter",
-          "1": "Strong community built"
+          "0": "+45% de miembros en el primer trimestre",
+          "1": "Comunidad sólida construida"
         },
-        "disclaimer": "Indicative result, dependent on period & budget."
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
       },
       "nda-project-019": {
-        "shortResult": "+28% showroom visits",
-        "challenge": "Car dealership was losing market share to larger dealers with stronger online presence.",
+        "shortResult": "+28% de visitas al showroom",
+        "challenge": "Concesionario de coches perdía cuota de mercado frente a concesionarios más grandes con mayor presencia online.",
         "approach": {
-          "0": "New website with inventory system",
-          "1": "Google Ads campaigns",
-          "2": "Remarketing strategy"
+          "0": "Nuevo sitio web con sistema de inventario",
+          "1": "Campañas de Google Ads",
+          "2": "Estrategia de remarketing"
         },
         "results": {
-          "0": "+28% showroom visits",
-          "1": "Lower acquisition costs"
+          "0": "+28% visitas al showroom",
+          "1": "Menores costes de adquisición"
         },
-        "disclaimer": "Indicative result, dependent on period & budget."
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
       },
       "nda-project-020": {
-        "shortResult": "+45% contact inquiries",
-        "challenge": "Law firm with outdated website and minimal online visibility.",
+        "shortResult": "+45% consultas de contacto",
+        "challenge": "Bufete de abogados con sitio web obsoleto y mínima visibilidad online.",
         "approach": {
-          "0": "Professional website redesign",
-          "1": "Content marketing strategy",
-          "2": "Local SEO"
+          "0": "Rediseño profesional del sitio web",
+          "1": "Estrategia de marketing de contenidos",
+          "2": "SEO local"
         },
         "results": {
-          "0": "+45% contact inquiries",
+          "0": "+45% consultas de contacto",
           "1": "Top 5 Google local"
         },
-        "disclaimer": "Indicative result, dependent on period & budget."
+        "disclaimer": "Resultado indicativo, dependiente del período y presupuesto."
       }
     }
   },
@@ -2340,25 +2340,25 @@
     "landline": "Fijo",
     "mobile": "Móvil",
     "rateLimited": "Demasiadas solicitudes. Inténtalo más tarde.",
-    "title": "Get in Touch",
-    "subtitle": "Let's Talk",
-    "intro": "Do you have a project in mind or want to strengthen your digital presence? Contact us for a no-obligation conversation.",
-    "mobileLabel": "Mobile",
-    "officeLabel": "Office",
-    "hoursLabel": "Business Hours",
-    "hoursValue": "Mon - Fri: 9:00 AM - 6:00 PM",
-    "description": "We'd love to hear from you. Fill out the form and we'll get back to you as soon as possible.",
-    "name": "Name",
-    "email": "Email Address",
-    "phone": "Phone Number",
-    "company": "Company",
-    "subject": "Subject",
-    "message": "Your Message",
-    "send": "Send",
-    "sending": "Sending...",
-    "success": "Message sent successfully! We'll get back to you as soon as possible.",
-    "error": "Something went wrong. Please try again or contact us by phone.",
-    "address": "Address"
+    "title": "Contáctenos",
+    "subtitle": "Hablemos",
+    "intro": "¿Tiene un proyecto en mente o desea fortalecer su presencia digital? Contáctenos para una conversación sin compromiso.",
+    "mobileLabel": "Móvil",
+    "officeLabel": "Oficina",
+    "hoursLabel": "Horario comercial",
+    "hoursValue": "Lun - Vie: 9:00 AM - 6:00 PM",
+    "description": "Nos encantaría saber de usted. Rellene el formulario y nos pondremos en contacto lo antes posible.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Número de teléfono",
+    "company": "Empresa",
+    "subject": "Asunto",
+    "message": "Su mensaje",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto lo antes posible.",
+    "error": "Algo salió mal. Por favor, inténtelo de nuevo o contáctenos por teléfono.",
+    "address": "Dirección"
   },
   "servicePage": {
     "defaultDescription": "{{service}} — Servicio profesional de GROPPI Marketing Bureau.",
@@ -2447,7 +2447,7 @@
       "subtitle": "Sin promesas vagas. Entregamos un plan concreto con pasos claros.",
       "primaryCTA": "Solicitar una propuesta",
       "secondaryCTA": "Enviar mensaje por WhatsApp",
-      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
+      "trustNote": "Conversación sin compromiso · Presupuesto final tras la consulta · Precios sin IVA"
     },
     "socialMedia": {
       "title": "Gestión de Redes Sociales",
@@ -3474,36 +3474,36 @@
         "content": "Tienes derecho a acceder, corregir o eliminar tu información personal en cualquier momento."
       },
       "dataCollection": {
-        "title": "Data Collection",
-        "content": "We collect personal data that you voluntarily provide to us, such as:\n\n• Name and contact details when you fill out our contact form\n• Email address for newsletter subscriptions\n• CV and application data for job openings\n• Business information for commercial inquiries\n\nWe also automatically collect certain technical data such as IP address, browser type, and pages visited for analytical purposes."
+        "title": "Recopilación de Datos",
+        "content": "Recopilamos datos personales que nos proporcionas voluntariamente, como:\n\n• Nombre y datos de contacto cuando rellenas nuestro formulario de contacto\n• Dirección de Email para suscripciones a newsletters\n• CV y datos de solicitud para ofertas de empleo\n• Información comercial para consultas empresariales\n\nTambién recopilamos automáticamente ciertos datos técnicos como la dirección IP, el tipo de navegador y las páginas visitadas con fines analíticos."
       },
       "dataUsage": {
-        "title": "Data Usage",
-        "content": "We use your data to:\n\n• Respond to your questions and requests\n• Send newsletters (only with your consent)\n• Improve our website and services\n• Fulfill legal obligations\n• Send relevant information about our services"
+        "title": "Uso de Datos",
+        "content": "Utilizamos sus datos para:\n\n• Responder a sus preguntas y solicitudes\n• Enviar newsletters (solo con su consentimiento)\n• Mejorar nuestro sitio web y servicios\n• Cumplir con obligaciones legales\n• Enviar información relevante sobre nuestros servicios"
       },
       "dataSecurity": {
-        "title": "Data Security",
-        "content": "We take the security of your data seriously. We use:\n\n• SSL encryption for all data transfer\n• Secure servers and databases\n• Limited access to personal data\n• Regular security audits\n\nDespite our efforts, no method of transmission over the internet can be 100% secure."
+        "title": "Seguridad de Datos",
+        "content": "Nos tomamos en serio la seguridad de sus datos. Utilizamos:\n\n• Cifrado SSL para toda transferencia de datos\n• Servidores y bases de datos seguros\n• Acceso limitado a datos personales\n• Auditorías de seguridad regulares\n\nA pesar de nuestros esfuerzos, ningún método de transmisión por internet puede ser 100% seguro."
       },
       "yourRights": {
-        "title": "Your Rights",
-        "content": "Under GDPR, you have the following rights:\n\n• Right to access your data\n• Right to correct inaccurate data\n• Right to delete your data\n• Right to restrict processing\n• Right to data portability\n• Right to object to processing\n\nContact us to exercise these rights."
+        "title": "Sus Derechos",
+        "content": "Según el GDPR, usted tiene los siguientes derechos:\n\n• Derecho a acceder a sus datos\n• Derecho a corregir datos inexactos\n• Derecho a eliminar sus datos\n• Derecho a restringir el procesamiento\n• Derecho a la portabilidad de datos\n• Derecho a oponerse al procesamiento\n\nContáctenos para ejercer estos derechos."
       },
       "cookies": {
         "title": "Cookies",
-        "content": "Our website uses cookies to enhance your experience:\n\n• Essential cookies for website functionality\n• Analytical cookies to understand how visitors use our site\n• Marketing cookies for targeted advertising (only with consent)\n\nYou can manage cookies through your browser settings."
+        "content": "Nuestro sitio web utiliza cookies para mejorar su experiencia:\n\n• Cookies esenciales para la funcionalidad del sitio web\n• Cookies analíticas para entender cómo los visitantes usan nuestro sitio\n• Cookies de marketing para publicidad dirigida (solo con consentimiento)\n\nPuede gestionar las cookies a través de la configuración de su navegador."
       },
       "retention": {
-        "title": "Data Retention",
-        "content": "We retain your data only as long as necessary:\n\n• Contact data: 2 years after last contact\n• Application data: 1 year after procedure completion\n• Newsletter subscribers: until unsubscription\n• Analytical data: 26 months\n\nAfter this period, data is securely deleted."
+        "title": "Retención de Datos",
+        "content": "Retenemos sus datos solo el tiempo necesario:\n\n• Datos de contacto: 2 años después del último contacto\n• Datos de aplicación: 1 año después de la finalización del procedimiento\n• Suscriptores de newsletter: hasta la baja\n• Datos analíticos: 26 meses\n\nDespués de este período, los datos se eliminan de forma segura."
       },
       "contact": {
-        "title": "Contact",
-        "content": "For questions about your privacy or to exercise your rights:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nYou also have the right to file a complaint with the Belgian Data Protection Authority."
+        "title": "Contacto",
+        "content": "Para preguntas sobre su privacidad o para ejercer sus derechos:\n\nGROPPI\nEmail: info@groppi.be\nTeléfono: +32 456 19 87 21\n\nTambién tiene derecho a presentar una queja ante la Autoridad de Protección de Datos de Bélgica."
       }
     },
-    "subtitle": "Your privacy matters to us. This policy explains how we collect, use, and protect your data.",
-    "footerNote": "Have questions about this privacy policy? Feel free to contact us at info@groppi.be"
+    "subtitle": "Tu privacidad es importante para nosotros. Esta política explica cómo recopilamos, usamos y protegemos tus datos.",
+    "footerNote": "¿Tienes preguntas sobre esta política de privacidad? No dudes en contactarnos en info@groppi.be"
   },
   "terms": {
     "meta": {
@@ -3531,40 +3531,40 @@
         "content": "GROPPI no es responsable por daños indirectos o consecuentes por uso de nuestros servicios."
       },
       "acceptance": {
-        "title": "Acceptance of Terms",
-        "content": "By accessing or using the GROPPI website and services, you agree to these Terms of Service.\n\nIf you do not agree to any part of these terms, you may not use our services.\n\nWe reserve the right to modify these terms at any time."
+        "title": "Aceptación de los Términos",
+        "content": "Al acceder o utilizar el sitio web y los servicios de GROPPI, usted acepta estos Términos de Servicio.\n\nSi no está de acuerdo con alguna parte de estos términos, no podrá utilizar nuestros servicios.\n\nNos reservamos el derecho de modificar estos términos en cualquier momento."
       },
       "services": {
-        "title": "Our Services",
-        "content": "GROPPI provides digital marketing services, including:\n\n• Web design and development\n• Search engine optimization (SEO)\n• Social media marketing\n• Paid advertising\n• Content creation\n• Brand identity and branding\n\nSpecific services and deliverables are defined in individual agreements."
+        "title": "Nuestros Servicios",
+        "content": "GROPPI ofrece servicios de marketing digital, incluyendo:\n\n• Diseño y desarrollo web\n• Optimización para motores de búsqueda (SEO)\n• Marketing en redes sociales\n• Publicidad pagada\n• Creación de contenido\n• Identidad de marca y branding\n\nLos servicios y entregables específicos se definen en acuerdos individuales."
       },
       "payment": {
-        "title": "Payment and Billing",
-        "content": "• All prices are exclusive of VAT unless otherwise stated\n• Payments are due within 14 days of invoice date\n• A 50% deposit may be required for projects\n• Late payments may incur administrative fees\n• We reserve the right to suspend services for outstanding payments"
+        "title": "Pago y Facturación",
+        "content": "• Todos los precios son sin IVA, a menos que se indique lo contrario\n• Los pagos vencen dentro de los 14 días posteriores a la fecha de la factura\n• Se puede requerir un depósito del 50% para proyectos\n• Los pagos atrasados pueden incurrir en tarifas administrativas\n• Nos reservamos el derecho de suspender los servicios por pagos pendientes"
       },
       "liability": {
-        "title": "Liability",
-        "content": "• GROPPI is not liable for indirect or consequential damages\n• Our liability is limited to the amount paid for the specific service\n• We do not guarantee specific results from marketing campaigns\n• Clients are responsible for the accuracy of information provided\n• We are not liable for changes made by third-party platforms"
+        "title": "Responsabilidad",
+        "content": "• GROPPI no es responsable de daños indirectos o consecuentes\n• Nuestra responsabilidad se limita al monto pagado por el servicio específico\n• No garantizamos resultados específicos de las campañas de marketing\n• Los clientes son responsables de la exactitud de la información proporcionada\n• No somos responsables de los cambios realizados por plataformas de terceros"
       },
       "termination": {
-        "title": "Termination",
-        "content": "• Either party may terminate the agreement with 30 days written notice\n• Immediate termination may occur in case of serious breach\n• Upon termination, all outstanding amounts become immediately due\n• We will facilitate reasonable transfer of materials after termination"
+        "title": "Terminación",
+        "content": "• Cualquiera de las partes puede rescindir el acuerdo con un aviso por escrito de 30 días\n• La terminación inmediata puede ocurrir en caso de incumplimiento grave\n• Tras la terminación, todos los montos pendientes vencen inmediatamente\n• Facilitaremos la transferencia razonable de materiales después de la terminación"
       },
       "modifications": {
-        "title": "Modifications",
-        "content": "We reserve the right to modify these terms at any time.\n\nFor significant changes, we will notify you by email if applicable.\n\nContinued use of our services after modifications constitutes acceptance of the new terms."
+        "title": "Modificaciones",
+        "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento.\n\nPara cambios significativos, le notificaremos por Email si corresponde.\n\nEl uso continuado de nuestros servicios después de las modificaciones constituye la aceptación de los nuevos términos."
       },
       "governing": {
-        "title": "Governing Law",
-        "content": "These terms are governed by Belgian law.\n\nDisputes will be submitted to the competent courts of Belgium.\n\nIf any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+        "title": "Ley Aplicable",
+        "content": "Estos términos se rigen por la ley belga.\n\nLas disputas se someterán a los tribunales competentes de Bélgica.\n\nSi alguna disposición de estos términos se considera inválida o inaplicable, las demás disposiciones permanecerán en pleno vigor y efecto."
       },
       "contact": {
-        "title": "Contact",
-        "content": "For questions about these terms:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nWe aim to respond to all inquiries within 48 hours."
+        "title": "Contacto",
+        "content": "Para preguntas sobre estos términos:\n\nGROPPI\nEmail: info@groppi.be\nTeléfono: +32 456 19 87 21\n\nNuestro objetivo es responder a todas las consultas en un plazo de 48 horas."
       }
     },
-    "subtitle": "These terms govern your use of our website and services. By using our services, you agree to these terms.",
-    "footerNote": "Have questions about these terms? Contact us at info@groppi.be"
+    "subtitle": "Estos términos rigen el uso de nuestro sitio web y servicios. Al utilizar nuestros servicios, usted acepta estos términos.",
+    "footerNote": "¿Tiene preguntas sobre estos términos? Contáctenos en info@groppi.be"
   },
   "social": {
     "whatsapp": "WhatsApp",
@@ -3606,13 +3606,13 @@
       "errorTitle": "Algo salió mal",
       "errorMessage": "Algo salió mal. Por favor intenta de nuevo.",
       "subscribed": "Ya suscrito",
-      "description": "Stay updated with our latest insights and tips.",
-      "placeholder": "Your email address",
-      "button": "Subscribe"
+      "description": "Mantente al día con nuestras últimas novedades y consejos.",
+      "placeholder": "Tu dirección de Email",
+      "button": "Suscribirse"
     },
-    "rights": "All rights reserved.",
-    "description": "Digital solutions since 2016. Based in Belgium.",
-    "followUs": "Follow Us"
+    "rights": "Todos los derechos reservados.",
+    "description": "Soluciones digitales desde 2016. Con sede en Bélgica.",
+    "followUs": "Síguenos"
   },
   "cookies": {
     "title": "Usamos cookies",
@@ -3623,53 +3623,53 @@
   },
   "_footer_merged": true,
   "franchise": {
-    "title": "Franchise",
-    "subtitle": "Become a Franchisee",
-    "description": "Are you interested in partnering with GROPPI? Discover the opportunities to grow together.",
+    "title": "Franquicia",
+    "subtitle": "Conviértase en Franquiciado",
+    "description": "¿Le interesa asociarse con GROPPI? Descubra las oportunidades para crecer juntos.",
     "benefits": {
-      "title": "Franchise Benefits",
+      "title": "Beneficios de la Franquicia",
       "items": {
-        "0": "Access to proven processes and methodologies",
-        "1": "Support from our experienced team",
-        "2": "Joint marketing efforts",
-        "3": "Knowledge sharing and training"
+        "0": "Acceso a procesos y metodologías probadas",
+        "1": "Apoyo de nuestro equipo experimentado",
+        "2": "Esfuerzos de marketing conjuntos",
+        "3": "Intercambio de conocimientos y formación"
       }
     },
     "requirements": {
-      "title": "What We're Looking For",
+      "title": "Lo que Buscamos",
       "items": {
-        "0": "Experience in digital marketing or related field",
-        "1": "Entrepreneurial mindset and growth mentality",
-        "2": "Commitment to quality and customer satisfaction",
-        "3": "Willingness for long-term collaboration"
+        "0": "Experiencia en marketing digital o campo relacionado",
+        "1": "Mentalidad emprendedora y de crecimiento",
+        "2": "Compromiso con la calidad y la satisfacción del cliente",
+        "3": "Disposición para la colaboración a largo plazo"
       }
     },
-    "cta": "Contact us for more information",
-    "apply": "Apply Now",
-    "call": "Call Us"
+    "cta": "Contáctenos para más información",
+    "apply": "Aplicar Ahora",
+    "call": "Llámenos"
   },
   "stats": {
-    "years": "Years of Experience",
+    "years": "Años de Experiencia",
     "yearsValue": "9+",
-    "clients": "Happy Clients",
+    "clients": "Clientes Satisfechos",
     "clientsValue": "150+",
-    "projects": "Projects",
+    "projects": "Proyectos",
     "projectsValue": "500+",
-    "team": "Team Members",
+    "team": "Miembros del Equipo",
     "teamValue": "9+"
   },
   "admin": {
-    "dashboard": "Dashboard",
-    "articles": "Articles",
-    "media": "Media",
-    "services": "Services",
-    "messages": "Messages",
-    "settings": "Settings",
-    "logout": "Log Out",
-    "login": "Log In",
+    "dashboard": "Panel de Control",
+    "articles": "Artículos",
+    "media": "Medios",
+    "services": "Servicios",
+    "messages": "Mensajes",
+    "settings": "Configuración",
+    "logout": "Cerrar Sesión",
+    "login": "Iniciar Sesión",
     "email": "Email",
-    "password": "Password",
-    "loginTitle": "Admin Login",
-    "loginButton": "Log In"
+    "password": "Contraseña",
+    "loginTitle": "Acceso de Administrador",
+    "loginButton": "Iniciar Sesión"
   }
 }

@@ -9,7 +9,7 @@
     "partnership": "Franquia",
     "franchise": "Franquia",
     "careers": "Carreiras",
-    "team": "Our Team"
+    "team": "Nossa Equipe"
   },
   "careers": {
     "meta": {
@@ -112,38 +112,38 @@
       }
     },
     "form": {
-      "title": "Apply now",
-      "subtitle": "Fill in the form and upload your CV. We'll get back to you soon.",
-      "fullName": "Full name",
-      "fullNamePlaceholder": "John Smith",
-      "email": "Email address",
-      "emailPlaceholder": "john@example.com",
-      "phone": "Phone number",
+      "title": "Candidate-se agora",
+      "subtitle": "Preencha o formulário e faça o upload do seu CV. Entraremos em contato em breve.",
+      "fullName": "Nome completo",
+      "fullNamePlaceholder": "João Silva",
+      "email": "Endereço de Email",
+      "emailPlaceholder": "joao@exemplo.com",
+      "phone": "Número de telefone",
       "phonePlaceholder": "+32 400 00 00 00",
-      "role": "Position",
-      "rolePlaceholder": "Select a position",
-      "otherRole": "Other / Spontaneous application",
-      "linkedin": "LinkedIn / Portfolio URL",
-      "linkedinPlaceholder": "https://linkedin.com/in/your-profile",
-      "message": "Short message",
-      "messagePlaceholder": "Tell us why you're interested (optional)",
-      "cv": "Upload CV",
-      "cvPlaceholder": "Click to upload your CV (PDF, DOC, DOCX)",
-      "cvHint": "Max 10MB. Supported formats: PDF, DOC, DOCX",
-      "cvRequired": "CV is required",
-      "invalidFileType": "Invalid file type. Please upload a PDF, DOC or DOCX.",
-      "fileTooLarge": "File is too large. Maximum 10MB allowed.",
-      "consent": "I agree to be contacted about my application.",
-      "submit": "Submit application",
-      "submitting": "Submitting...",
-      "uploading": "Uploading CV...",
-      "successTitle": "Application received!",
-      "successMessage": "Thank you for your interest. We'll get back to you as soon as possible.",
-      "submitAnother": "Submit another application",
-      "errorTitle": "Something went wrong",
-      "errorMessage": "We couldn't process your application. Please try again.",
-      "privacyNote": "Your data is used only for recruitment. CVs are handled confidentially.",
-      "contactLink": "Contact us"
+      "role": "Cargo",
+      "rolePlaceholder": "Selecione um cargo",
+      "otherRole": "Outro / Candidatura espontânea",
+      "linkedin": "URL do LinkedIn / Portfólio",
+      "linkedinPlaceholder": "https://linkedin.com/in/seu-perfil",
+      "message": "Mensagem curta",
+      "messagePlaceholder": "Diga-nos por que está interessado (opcional)",
+      "cv": "Carregar CV",
+      "cvPlaceholder": "Clique para carregar seu CV (PDF, DOC, DOCX)",
+      "cvHint": "Máx. 10MB. Formatos suportados: PDF, DOC, DOCX",
+      "cvRequired": "O CV é obrigatório",
+      "invalidFileType": "Tipo de arquivo inválido. Por favor, carregue um PDF, DOC ou DOCX.",
+      "fileTooLarge": "O arquivo é muito grande. Máximo de 10MB permitido.",
+      "consent": "Concordo em ser contactado sobre a minha candidatura.",
+      "submit": "Enviar candidatura",
+      "submitting": "Enviando...",
+      "uploading": "Carregando CV...",
+      "successTitle": "Candidatura recebida!",
+      "successMessage": "Obrigado pelo seu interesse. Entraremos em contato o mais breve possível.",
+      "submitAnother": "Enviar outra candidatura",
+      "errorTitle": "Algo deu errado",
+      "errorMessage": "Não foi possível processar sua candidatura. Por favor, tente novamente.",
+      "privacyNote": "Os seus dados são utilizados apenas para recrutamento. Os CVs são tratados confidencialmente.",
+      "contactLink": "Contacte-nos"
     }
   },
   "pricing": {
@@ -276,7 +276,7 @@
       "proof3": "Mais clientes, menos orçamento desperdiçado",
       "ctaPrimary": "Ver serviços & preços",
       "ctaSecondary": "Pedir orçamento",
-      "scrollHint": "Scroll",
+      "scrollHint": "Rolar",
       "logoAlt": "GROPPI Gold Standard",
       "chartLeads": "LEADS",
       "chartSales": "VENDAS",
@@ -495,7 +495,7 @@
         "deliverables": "O que recebe",
         "pricing": "Preço & lógica",
         "video": "Vídeo",
-        "calculator": "Plan Builder"
+        "calculator": "Construtor de Planos"
       },
       "overview": {
         "about": "Sobre este serviço",
@@ -523,7 +523,7 @@
         "uploadNote": "O admin pode carregar um vídeo aqui"
       },
       "calculator": {
-        "title": "Plan Builder",
+        "title": "Construtor de Planos",
         "desc": "Construa o seu próprio plano e obtenha um preço indicativo imediatamente.",
         "cta": "Abrir calculadora completa"
       },
@@ -536,7 +536,7 @@
       "subtitle": "Confiado por empresas",
       "title": "Confiado por empresas na Bélgica e Europa",
       "ndaNote": "*Alguns projetos estão sob NDA e não podem ser mostrados publicamente.*",
-      "logoPlaceholder": "LOGO"
+      "logoPlaceholder": "LOGOTIPO"
     },
     "clientLogoMarquee": {
       "eyebrow": "OS NOSSOS CLIENTES",
@@ -1617,7 +1617,7 @@
   "admin": {
     "dashboard": "Dashboard",
     "articles": "Artigos",
-    "media": "Media",
+    "media": "Mídia",
     "services": "Serviços",
     "messages": "Mensagens",
     "settings": "Definições",
@@ -1660,7 +1660,7 @@
   },
   "planBuilder": {
     "tab": "Construir o seu plano",
-    "title": "Plan Builder",
+    "title": "Construtor de Planos",
     "subtitle": "Construa o seu plano de redes sociais e obtenha uma estimativa imediata.",
     "disclaimer": "Este é um preço indicativo. O preço final depende do âmbito, complexidade da marca e necessidades de conteúdo.",
     "vatNote": "excl. IVA",
@@ -1891,16 +1891,16 @@
           "answer": "Comprometemo-nos com qualidade e entrega. Espere orientação, não microgestão."
         },
         "leads": {
-          "question": "Do you deliver leads?",
-          "answer": "We support positioning and growth systems. Results depend on region and execution."
+          "question": "Vocês entregam leads?",
+          "answer": "Apoiamos sistemas de posicionamento e crescimento. Os resultados dependem da região e da execução."
         },
         "team": {
-          "question": "Can I work with my own team?",
-          "answer": "Yes, as long as quality standards are followed."
+          "question": "Posso trabalhar com a minha própria equipa?",
+          "answer": "Sim, desde que os padrões de qualidade sejam seguidos."
         },
         "howToApply": {
-          "question": "How can I become a partner?",
-          "answer": "Via the partner form. We'll contact you within 24 hours."
+          "question": "Como posso tornar-me um parceiro?",
+          "answer": "Através do formulário de parceiro. Entraremos em contacto em 24 horas."
         }
       }
     },
@@ -1918,7 +1918,7 @@
       "body": "Escolha um horário para uma breve chamada. Sem compromisso.",
       "ctaPrimary": "Agendar chamada",
       "helperText": "Escolha um horário conveniente",
-      "cta": "Schedule call"
+      "cta": "Agendar chamada"
     }
   },
   "servicePage": {
@@ -2375,7 +2375,7 @@
           "desc": "Fontes que combinam com a sua marca."
         },
         "4": {
-          "title": "Brand guidelines",
+          "title": "Diretrizes de marca",
           "desc": "Guia para uso consistente."
         },
         "5": {
@@ -2559,7 +2559,7 @@
       "oneTimeDesc": "Pague por artigo.",
       "monthly": "Assinatura mensal",
       "monthlyDesc": "Tarifa mensal fixa.",
-      "posters": "Posters",
+      "posters": "Pôsteres",
       "reels": "Reels",
       "videos": "Vídeos",
       "articles": "Artigos",
@@ -3022,7 +3022,7 @@
         "challenge": "SaaS B2B complexo com funil de vendas longo. Poucos leads qualificados e o website convertia mal.",
         "approach": {
           "0": "Landing pages otimizadas por persona",
-          "1": "Lead magnets (whitepapers, case studies)",
+          "1": "Iscas digitais (whitepapers, estudos de caso)",
           "2": "Estratégia SEO para keywords long-tail",
           "3": "Testes A/B de formulários e CTAs"
         },
@@ -3540,90 +3540,90 @@
     }
   },
   "franchise": {
-    "title": "Franchise",
-    "subtitle": "Become a Franchisee",
-    "description": "Are you interested in partnering with GROPPI? Discover the opportunities to grow together.",
+    "title": "Franquia",
+    "subtitle": "Torne-se um Franqueado",
+    "description": "Tem interesse em fazer parceria com a GROPPI? Descubra as oportunidades para crescermos juntos.",
     "benefits": {
-      "title": "Franchise Benefits",
+      "title": "Benefícios da Franquia",
       "items": {
-        "0": "Access to proven processes and methodologies",
-        "1": "Support from our experienced team",
-        "2": "Joint marketing efforts",
-        "3": "Knowledge sharing and training"
+        "0": "Acesso a processos e metodologias comprovadas",
+        "1": "Suporte da nossa equipa experiente",
+        "2": "Esforços de marketing conjuntos",
+        "3": "Partilha de conhecimento e formação"
       }
     },
     "requirements": {
-      "title": "What We're Looking For",
+      "title": "O Que Procuramos",
       "items": {
-        "0": "Experience in digital marketing or related field",
-        "1": "Entrepreneurial mindset and growth mentality",
-        "2": "Commitment to quality and customer satisfaction",
-        "3": "Willingness for long-term collaboration"
+        "0": "Experiência em marketing digital ou área relacionada",
+        "1": "Mentalidade empreendedora e de crescimento",
+        "2": "Compromisso com a qualidade e satisfação do cliente",
+        "3": "Disposição para colaboração a longo prazo"
       }
     },
-    "cta": "Contact us for more information",
-    "apply": "Apply Now",
-    "call": "Call Us"
+    "cta": "Contacte-nos para mais informações",
+    "apply": "Candidatar-se Agora",
+    "call": "Ligue-nos"
   },
   "caseStudy": {
-    "backToPortfolio": "Back to portfolio",
-    "challengeLabel": "Challenge",
-    "approachLabel": "Approach",
-    "resultsLabel": "Result",
-    "servicesUsed": "Services used",
-    "ctaQuote": "Request a quote",
-    "ctaServices": "View services & pricing",
-    "prevCase": "Previous case",
-    "nextCase": "Next case",
-    "allCases": "All cases",
+    "backToPortfolio": "Voltar ao portfólio",
+    "challengeLabel": "Desafio",
+    "approachLabel": "Abordagem",
+    "resultsLabel": "Resultado",
+    "servicesUsed": "Serviços utilizados",
+    "ctaQuote": "Solicitar orçamento",
+    "ctaServices": "Ver serviços e preços",
+    "prevCase": "Caso anterior",
+    "nextCase": "Próximo caso",
+    "allCases": "Todos os casos",
     "cases": {
       "restaurant-branding": {
-        "title": "Restaurant Branding & Website",
-        "challenge": "Low online visibility and few digital reservations.",
-        "approach": "New brand identity + modern website + Google Ads campaign.",
-        "result": "+180% online reservations"
+        "title": "Branding e Website para Restaurante",
+        "challenge": "Baixa visibilidade online e poucas reservas digitais.",
+        "approach": "Nova identidade de marca + website moderno + campanha Google Ads.",
+        "result": "+180% de reservas online"
       },
       "mode-webshop": {
-        "title": "Fashion Webshop Launch",
-        "challenge": "New brand without online presence or customer base.",
-        "approach": "Complete webshop + social media strategy + influencer marketing.",
-        "result": "€85K revenue in first 3 months"
+        "title": "Lançamento de Webshop de Moda",
+        "challenge": "Marca nova sem presença online ou base de clientes.",
+        "approach": "Webshop completo + estratégia de redes sociais + marketing de influência.",
+        "result": "€85K de receita nos primeiros 3 meses"
       },
       "b2b-platform": {
-        "title": "B2B Lead Generation Platform",
-        "challenge": "Too few qualified leads for B2B services.",
-        "approach": "Lead generation website + LinkedIn Ads + content marketing.",
-        "result": "+320% qualified leads"
+        "title": "Plataforma de Geração de Leads B2B",
+        "challenge": "Poucos leads qualificados para serviços B2B.",
+        "approach": "Website de geração de leads + LinkedIn Ads + marketing de conteúdo.",
+        "result": "+320% de leads qualificados"
       },
       "bouwbedrijf-website": {
-        "title": "Construction Company Website & SEO",
-        "challenge": "Invisible on Google despite good offline reputation.",
-        "approach": "SEO-optimized website + local SEO + Google My Business.",
-        "result": "#1 ranking on Google locally"
+        "title": "Website e SEO para Construtora",
+        "challenge": "Invisível no Google apesar da boa reputação offline.",
+        "approach": "Website otimizado para SEO + SEO local + Google My Business.",
+        "result": "Classificação #1 no Google localmente"
       },
       "influencer-campagne": {
-        "title": "Influencer Marketing Campaign",
-        "challenge": "Increase brand awareness among younger audience.",
-        "approach": "Influencer selection + content strategy + social media amplification.",
-        "result": "2.4 million reach"
+        "title": "Campanha de Marketing de Influência",
+        "challenge": "Aumentar o reconhecimento da marca junto ao público mais jovem.",
+        "approach": "Seleção de influenciadores + estratégia de conteúdo + amplificação em redes sociais.",
+        "result": "2.4 milhões de alcance"
       },
       "tech-startup-branding": {
-        "title": "Tech Startup Complete Branding",
-        "challenge": "Startup without visual identity or brand position.",
-        "approach": "Brand strategy + logo design + website + pitch deck.",
-        "result": "Complete brand identity launched"
+        "title": "Branding Completo para Tech Startup",
+        "challenge": "Startup sem identidade visual ou posicionamento de marca.",
+        "approach": "Estratégia de marca + design de logotipo + website + pitch deck.",
+        "result": "Identidade de marca completa lançada"
       },
       "e-commerce-groei": {
-        "title": "E-commerce Growth Strategy",
-        "challenge": "Low ROAS and high advertising costs.",
-        "approach": "Campaign audit + A/B testing + retargeting optimization.",
-        "result": "+240% ROAS improvement"
+        "title": "Estratégia de Crescimento para E-commerce",
+        "challenge": "Baixo ROAS e altos custos de publicidade.",
+        "approach": "Auditoria de campanha + testes A/B + otimização de retargeting.",
+        "result": "+240% de melhoria no ROAS"
       },
       "content-strategie": {
-        "title": "Content Production Strategy",
-        "challenge": "Inconsistent content and lack of engagement.",
-        "approach": "Content calendar + video production + social media management.",
-        "result": "50+ videos per month"
+        "title": "Estratégia de Produção de Conteúdo",
+        "challenge": "Conteúdo inconsistente e falta de engajamento.",
+        "approach": "Calendário de conteúdo + produção de vídeo + gestão de redes sociais.",
+        "result": "Mais de 50 vídeos por mês"
       }
     }
   }

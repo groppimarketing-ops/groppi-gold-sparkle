@@ -9,7 +9,7 @@
     "partnership": "Franczyza",
     "franchise": "Franczyza",
     "careers": "Kariera",
-    "team": "Our Team"
+    "team": "Nasz Zespół"
   },
   "careers": {
     "meta": {
@@ -112,38 +112,38 @@
       }
     },
     "form": {
-      "title": "Apply now",
-      "subtitle": "Fill in the form and upload your CV. We'll get back to you soon.",
-      "fullName": "Full name",
-      "fullNamePlaceholder": "John Smith",
-      "email": "Email address",
-      "emailPlaceholder": "john@example.com",
-      "phone": "Phone number",
+      "title": "Aplikuj teraz",
+      "subtitle": "Wypełnij formularz i prześlij swoje CV. Skontaktujemy się z Tobą wkrótce.",
+      "fullName": "Imię i nazwisko",
+      "fullNamePlaceholder": "Jan Kowalski",
+      "email": "Adres Email",
+      "emailPlaceholder": "jan@example.com",
+      "phone": "Numer telefonu",
       "phonePlaceholder": "+32 400 00 00 00",
-      "role": "Position",
-      "rolePlaceholder": "Select a position",
-      "otherRole": "Other / Spontaneous application",
-      "linkedin": "LinkedIn / Portfolio URL",
-      "linkedinPlaceholder": "https://linkedin.com/in/your-profile",
-      "message": "Short message",
-      "messagePlaceholder": "Tell us why you're interested (optional)",
-      "cv": "Upload CV",
-      "cvPlaceholder": "Click to upload your CV (PDF, DOC, DOCX)",
-      "cvHint": "Max 10MB. Supported formats: PDF, DOC, DOCX",
-      "cvRequired": "CV is required",
-      "invalidFileType": "Invalid file type. Please upload a PDF, DOC or DOCX.",
-      "fileTooLarge": "File is too large. Maximum 10MB allowed.",
-      "consent": "I agree to be contacted about my application.",
-      "submit": "Submit application",
-      "submitting": "Submitting...",
-      "uploading": "Uploading CV...",
-      "successTitle": "Application received!",
-      "successMessage": "Thank you for your interest. We'll get back to you as soon as possible.",
-      "submitAnother": "Submit another application",
-      "errorTitle": "Something went wrong",
-      "errorMessage": "We couldn't process your application. Please try again.",
-      "privacyNote": "Your data is used only for recruitment. CVs are handled confidentially.",
-      "contactLink": "Contact us"
+      "role": "Stanowisko",
+      "rolePlaceholder": "Wybierz stanowisko",
+      "otherRole": "Inne / Aplikacja spontaniczna",
+      "linkedin": "URL LinkedIn / Portfolio",
+      "linkedinPlaceholder": "https://linkedin.com/in/twoj-profil",
+      "message": "Krótka wiadomość",
+      "messagePlaceholder": "Napisz, dlaczego jesteś zainteresowany (opcjonalnie)",
+      "cv": "Prześlij CV",
+      "cvPlaceholder": "Kliknij, aby przesłać CV (PDF, DOC, DOCX)",
+      "cvHint": "Maks. 10MB. Obsługiwane formaty: PDF, DOC, DOCX",
+      "cvRequired": "CV jest wymagane",
+      "invalidFileType": "Nieprawidłowy typ pliku. Prześlij plik PDF, DOC lub DOCX.",
+      "fileTooLarge": "Plik jest za duży. Maksymalnie 10MB.",
+      "consent": "Zgadzam się na kontakt w sprawie mojej aplikacji.",
+      "submit": "Wyślij aplikację",
+      "submitting": "Wysyłanie...",
+      "uploading": "Przesyłanie CV...",
+      "successTitle": "Aplikacja otrzymana!",
+      "successMessage": "Dziękujemy za zainteresowanie. Skontaktujemy się z Tobą najszybciej, jak to możliwe.",
+      "submitAnother": "Wyślij kolejną aplikację",
+      "errorTitle": "Coś poszło nie tak",
+      "errorMessage": "Nie udało nam się przetworzyć Twojej aplikacji. Spróbuj ponownie.",
+      "privacyNote": "Twoje dane są wykorzystywane wyłącznie do celów rekrutacyjnych. CV są traktowane poufnie.",
+      "contactLink": "Skontaktuj się z nami"
     }
   },
   "pricing": {
@@ -557,7 +557,7 @@
         "beauty": "Klinika Urody Belgia",
         "realEstate": "Agencja Nieruchomości (BE)",
         "construction": "Studio Budowlane Bruksela",
-        "startup": "Tech Startup (EU)",
+        "startup": "Startup technologiczny (UE)",
         "logistics": "Firma Logistyczna (BE)",
         "professional": "Biuro Usług Profesjonalnych",
         "hospitality": "Zespół Hotelarstwa",
@@ -1568,7 +1568,7 @@
       "results": "Wynik",
       "ctaPrimary": "Poproś o wycenę",
       "ctaWhatsApp": "Czat na WhatsApp",
-      "deliverables": "What we delivered"
+      "deliverables": "Co zrealizowaliśmy"
     },
     "items": {
       "caseStudy": "Przypadek użytkownika",
@@ -2355,25 +2355,25 @@
     "landline": "Stacjonarny",
     "mobile": "Komórkowy",
     "rateLimited": "Zbyt wiele zapytań. Spróbuj później.",
-    "title": "Get in Touch",
-    "subtitle": "Let's Talk",
-    "intro": "Do you have a project in mind or want to strengthen your digital presence? Contact us for a no-obligation conversation.",
-    "mobileLabel": "Mobile",
-    "officeLabel": "Office",
-    "hoursLabel": "Business Hours",
-    "hoursValue": "Mon - Fri: 9:00 AM - 6:00 PM",
-    "description": "We'd love to hear from you. Fill out the form and we'll get back to you as soon as possible.",
-    "name": "Name",
-    "email": "Email Address",
-    "phone": "Phone Number",
-    "company": "Company",
-    "subject": "Subject",
-    "message": "Your Message",
-    "send": "Send",
-    "sending": "Sending...",
-    "success": "Message sent successfully! We'll get back to you as soon as possible.",
-    "error": "Something went wrong. Please try again or contact us by phone.",
-    "address": "Address"
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Porozmawiajmy",
+    "intro": "Masz projekt na myśli lub chcesz wzmocnić swoją obecność cyfrową? Skontaktuj się z nami na niezobowiązującą rozmowę.",
+    "mobileLabel": "Telefon komórkowy",
+    "officeLabel": "Biuro",
+    "hoursLabel": "Godziny pracy",
+    "hoursValue": "Pon - Pt: 9:00 - 18:00",
+    "description": "Chętnie Cię wysłuchamy. Wypełnij formularz, a skontaktujemy się z Tobą najszybciej, jak to możliwe.",
+    "name": "Imię i nazwisko",
+    "email": "Adres Email",
+    "phone": "Numer telefonu",
+    "company": "Firma",
+    "subject": "Temat",
+    "message": "Twoja wiadomość",
+    "send": "Wyślij",
+    "sending": "Wysyłanie...",
+    "success": "Wiadomość wysłana pomyślnie! Skontaktujemy się z Tobą najszybciej, jak to możliwe.",
+    "error": "Coś poszło nie tak. Spróbuj ponownie lub skontaktuj się z nami telefonicznie.",
+    "address": "Adres"
   },
   "servicePage": {
     "defaultDescription": "{{service}} — Profesjonalna usługa od GROPPI Marketing Bureau.",
@@ -2428,7 +2428,7 @@
       },
       "packages": {
         "starter": "Starter",
-        "growth": "Growth",
+        "growth": "Wzrost",
         "pro": "Pro"
       },
       "addons": {
@@ -2462,7 +2462,7 @@
       "subtitle": "Bez niejasnych obietnic. Dostarczamy konkretny plan z jasnymi krokami.",
       "primaryCTA": "Poproś o propozycję",
       "secondaryCTA": "Wyślij wiadomość na WhatsApp",
-      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
+      "trustNote": "Rozmowa bez zobowiązań · Ostateczna wycena po konsultacji · Ceny bez VAT"
     },
     "socialMedia": {
       "title": "Zarządzanie mediami społecznościowymi",
@@ -2719,7 +2719,7 @@
       },
       "deliverables": {
         "1": {
-          "title": "Design",
+          "title": "Projekt",
           "desc": "Atrakcyjny, zgodny z marką."
         },
         "2": {
@@ -2829,7 +2829,7 @@
           "desc": "Czcionki pasujące do Twojej marki."
         },
         "4": {
-          "title": "Brand guidelines",
+          "title": "Wytyczne marki",
           "desc": "Instrukcja spójnego użycia."
         },
         "5": {
@@ -2837,7 +2837,7 @@
           "desc": "Szablony do mediów społecznościowych i druku."
         },
         "6": {
-          "title": "Brand assets",
+          "title": "Zasoby marki",
           "desc": "Wszystkie pliki w wysokiej jakości."
         }
       },
@@ -3489,36 +3489,36 @@
         "content": "Masz prawo dostępu, korygowania lub usuwania Twojej informacji osobistej w dowolnym momencie."
       },
       "dataCollection": {
-        "title": "Data Collection",
-        "content": "We collect personal data that you voluntarily provide to us, such as:\n\n• Name and contact details when you fill out our contact form\n• Email address for newsletter subscriptions\n• CV and application data for job openings\n• Business information for commercial inquiries\n\nWe also automatically collect certain technical data such as IP address, browser type, and pages visited for analytical purposes."
+        "title": "Gromadzenie Danych",
+        "content": "Gromadzimy dane osobowe, które dobrowolnie nam przekazujesz, takie jak:\n\n• Imię i nazwisko oraz dane kontaktowe podczas wypełniania formularza kontaktowego\n• Adres Email do subskrypcji newslettera\n• CV i dane aplikacyjne w przypadku ofert pracy\n• Informacje biznesowe w przypadku zapytań handlowych\n\nAutomatycznie zbieramy również pewne dane techniczne, takie jak adres IP, typ przeglądarki i odwiedzane strony, w celach analitycznych."
       },
       "dataUsage": {
-        "title": "Data Usage",
-        "content": "We use your data to:\n\n• Respond to your questions and requests\n• Send newsletters (only with your consent)\n• Improve our website and services\n• Fulfill legal obligations\n• Send relevant information about our services"
+        "title": "Wykorzystanie Danych",
+        "content": "Wykorzystujemy Twoje dane do:\n\n• Odpowiadania na Twoje pytania i prośby\n• Wysyłania newsletterów (wyłącznie za Twoją zgodą)\n• Ulepszania naszej strony internetowej i usług\n• Wypełniania zobowiązań prawnych\n• Wysyłania istotnych informacji o naszych usługach"
       },
       "dataSecurity": {
-        "title": "Data Security",
-        "content": "We take the security of your data seriously. We use:\n\n• SSL encryption for all data transfer\n• Secure servers and databases\n• Limited access to personal data\n• Regular security audits\n\nDespite our efforts, no method of transmission over the internet can be 100% secure."
+        "title": "Bezpieczeństwo Danych",
+        "content": "Poważnie traktujemy bezpieczeństwo Twoich danych. Stosujemy:\n\n• Szyfrowanie SSL dla wszystkich transferów danych\n• Bezpieczne serwery i bazy danych\n• Ograniczony dostęp do danych osobowych\n• Regularne audyty bezpieczeństwa\n\nPomimo naszych wysiłków, żadna metoda transmisji danych przez internet nie jest w 100% bezpieczna."
       },
       "yourRights": {
-        "title": "Your Rights",
-        "content": "Under GDPR, you have the following rights:\n\n• Right to access your data\n• Right to correct inaccurate data\n• Right to delete your data\n• Right to restrict processing\n• Right to data portability\n• Right to object to processing\n\nContact us to exercise these rights."
+        "title": "Twoje Prawa",
+        "content": "Zgodnie z RODO, przysługują Ci następujące prawa:\n\n• Prawo dostępu do Twoich danych\n• Prawo do sprostowania niedokładnych danych\n• Prawo do usunięcia Twoich danych\n• Prawo do ograniczenia przetwarzania\n• Prawo do przenoszenia danych\n• Prawo do sprzeciwu wobec przetwarzania\n\nSkontaktuj się z nami, aby skorzystać z tych praw."
       },
       "cookies": {
         "title": "Cookies",
-        "content": "Our website uses cookies to enhance your experience:\n\n• Essential cookies for website functionality\n• Analytical cookies to understand how visitors use our site\n• Marketing cookies for targeted advertising (only with consent)\n\nYou can manage cookies through your browser settings."
+        "content": "Nasza strona internetowa używa plików cookies, aby poprawić Twoje doświadczenia:\n\n• Niezbędne cookies dla funkcjonalności strony\n• Analityczne cookies do zrozumienia, jak odwiedzający korzystają z naszej strony\n• Marketingowe cookies do ukierunkowanych reklam (wyłącznie za zgodą)\n\nMożesz zarządzać plikami cookies poprzez ustawienia swojej przeglądarki."
       },
       "retention": {
-        "title": "Data Retention",
-        "content": "We retain your data only as long as necessary:\n\n• Contact data: 2 years after last contact\n• Application data: 1 year after procedure completion\n• Newsletter subscribers: until unsubscription\n• Analytical data: 26 months\n\nAfter this period, data is securely deleted."
+        "title": "Przechowywanie Danych",
+        "content": "Przechowujemy Twoje dane tylko tak długo, jak jest to konieczne:\n\n• Dane kontaktowe: 2 lata od ostatniego kontaktu\n• Dane aplikacyjne: 1 rok po zakończeniu procedury\n• Subskrybenci newslettera: do momentu rezygnacji z subskrypcji\n• Dane analityczne: 26 miesięcy\n\nPo tym okresie dane są bezpiecznie usuwane."
       },
       "contact": {
-        "title": "Contact",
-        "content": "For questions about your privacy or to exercise your rights:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nYou also have the right to file a complaint with the Belgian Data Protection Authority."
+        "title": "Kontakt",
+        "content": "W przypadku pytań dotyczących Twojej prywatności lub w celu skorzystania z Twoich praw:\n\nGROPPI\nEmail: info@groppi.be\nTelefon: +32 456 19 87 21\n\nMasz również prawo złożyć skargę do Belgijskiego Urzędu Ochrony Danych."
       }
     },
-    "subtitle": "Your privacy matters to us. This policy explains how we collect, use, and protect your data.",
-    "footerNote": "Have questions about this privacy policy? Feel free to contact us at info@groppi.be"
+    "subtitle": "Twoja prywatność jest dla nas ważna. Niniejsza polityka wyjaśnia, w jaki sposób gromadzimy, wykorzystujemy i chronimy Twoje dane.",
+    "footerNote": "Masz pytania dotyczące niniejszej polityki prywatności? Skontaktuj się z nami pod adresem info@groppi.be"
   },
   "terms": {
     "meta": {
@@ -3546,40 +3546,40 @@
         "content": "GROPPI nie jest odpowiedzialny za pośrednie lub następcze uszkodzenia z użycia naszych usług."
       },
       "acceptance": {
-        "title": "Acceptance of Terms",
-        "content": "By accessing or using the GROPPI website and services, you agree to these Terms of Service.\n\nIf you do not agree to any part of these terms, you may not use our services.\n\nWe reserve the right to modify these terms at any time."
+        "title": "Akceptacja Warunków",
+        "content": "Uzyskując dostęp do strony internetowej i usług GROPPI lub korzystając z nich, akceptujesz niniejsze Warunki Świadczenia Usług.\n\nJeśli nie zgadzasz się z którąkolwiek częścią tych warunków, nie możesz korzystać z naszych usług.\n\nZastrzegamy sobie prawo do zmiany tych warunków w dowolnym momencie."
       },
       "services": {
-        "title": "Our Services",
-        "content": "GROPPI provides digital marketing services, including:\n\n• Web design and development\n• Search engine optimization (SEO)\n• Social media marketing\n• Paid advertising\n• Content creation\n• Brand identity and branding\n\nSpecific services and deliverables are defined in individual agreements."
+        "title": "Nasze Usługi",
+        "content": "GROPPI świadczy usługi marketingu cyfrowego, w tym:\n\n• Projektowanie i rozwój stron internetowych\n• Optymalizacja dla wyszukiwarek (SEO)\n• Marketing w mediach społecznościowych\n• Płatne reklamy\n• Tworzenie treści\n• Identyfikacja wizualna i branding\n\nKonkretne usługi i rezultaty są określone w indywidualnych umowach."
       },
       "payment": {
-        "title": "Payment and Billing",
-        "content": "• All prices are exclusive of VAT unless otherwise stated\n• Payments are due within 14 days of invoice date\n• A 50% deposit may be required for projects\n• Late payments may incur administrative fees\n• We reserve the right to suspend services for outstanding payments"
+        "title": "Płatności i Rozliczenia",
+        "content": "• Wszystkie ceny są podane bez VAT, chyba że zaznaczono inaczej\n• Płatności są wymagalne w ciągu 14 dni od daty wystawienia faktury\n• W przypadku projektów może być wymagana zaliczka w wysokości 50%\n• Opóźnienia w płatnościach mogą skutkować naliczeniem opłat administracyjnych\n• Zastrzegamy sobie prawo do zawieszenia usług w przypadku zaległych płatności"
       },
       "liability": {
-        "title": "Liability",
-        "content": "• GROPPI is not liable for indirect or consequential damages\n• Our liability is limited to the amount paid for the specific service\n• We do not guarantee specific results from marketing campaigns\n• Clients are responsible for the accuracy of information provided\n• We are not liable for changes made by third-party platforms"
+        "title": "Odpowiedzialność",
+        "content": "• GROPPI nie ponosi odpowiedzialności za szkody pośrednie lub wtórne\n• Nasza odpowiedzialność jest ograniczona do kwoty zapłaconej za konkretną usługę\n• Nie gwarantujemy konkretnych wyników kampanii marketingowych\n• Klienci są odpowiedzialni za dokładność dostarczonych informacji\n• Nie ponosimy odpowiedzialności za zmiany wprowadzone przez platformy stron trzecich"
       },
       "termination": {
-        "title": "Termination",
-        "content": "• Either party may terminate the agreement with 30 days written notice\n• Immediate termination may occur in case of serious breach\n• Upon termination, all outstanding amounts become immediately due\n• We will facilitate reasonable transfer of materials after termination"
+        "title": "Wypowiedzenie",
+        "content": "• Każda ze stron może wypowiedzieć umowę z 30-dniowym pisemnym wyprzedzeniem\n• Natychmiastowe wypowiedzenie może nastąpić w przypadku poważnego naruszenia\n• Po wypowiedzeniu wszystkie zaległe kwoty stają się natychmiast wymagalne\n• Po wypowiedzeniu ułatwimy rozsądne przekazanie materiałów"
       },
       "modifications": {
-        "title": "Modifications",
-        "content": "We reserve the right to modify these terms at any time.\n\nFor significant changes, we will notify you by email if applicable.\n\nContinued use of our services after modifications constitutes acceptance of the new terms."
+        "title": "Modyfikacje",
+        "content": "Zastrzegamy sobie prawo do zmiany niniejszych warunków w dowolnym momencie.\n\nW przypadku istotnych zmian powiadomimy Cię pocztą Email, jeśli to możliwe.\n\nDalsze korzystanie z naszych usług po modyfikacjach oznacza akceptację nowych warunków."
       },
       "governing": {
-        "title": "Governing Law",
-        "content": "These terms are governed by Belgian law.\n\nDisputes will be submitted to the competent courts of Belgium.\n\nIf any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+        "title": "Prawo Właściwe",
+        "content": "Niniejsze warunki podlegają prawu belgijskiemu.\n\nSpory będą rozstrzygane przez właściwe sądy w Belgii.\n\nJeśli którekolwiek postanowienie niniejszych warunków zostanie uznane za nieważne lub niewykonalne, pozostałe postanowienia pozostaną w pełnej mocy."
       },
       "contact": {
-        "title": "Contact",
-        "content": "For questions about these terms:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nWe aim to respond to all inquiries within 48 hours."
+        "title": "Kontakt",
+        "content": "W przypadku pytań dotyczących tych warunków:\n\nGROPPI\nEmail: info@groppi.be\nTelefon: +32 456 19 87 21\n\nStaramy się odpowiadać na wszystkie zapytania w ciągu 48 godzin."
       }
     },
-    "subtitle": "These terms govern your use of our website and services. By using our services, you agree to these terms.",
-    "footerNote": "Have questions about these terms? Contact us at info@groppi.be"
+    "subtitle": "Niniejsze warunki regulują korzystanie z naszej strony internetowej i usług. Korzystając z naszych usług, akceptujesz niniejsze warunki.",
+    "footerNote": "Masz pytania dotyczące tych warunków? Skontaktuj się z nami pod adresem info@groppi.be"
   },
   "social": {
     "whatsapp": "WhatsApp",
@@ -3621,13 +3621,13 @@
       "errorTitle": "Coś poszło nie tak",
       "errorMessage": "Coś poszło nie tak. Spróbuj ponownie.",
       "subscribed": "Już zasubskrybowano",
-      "description": "Stay updated with our latest insights and tips.",
-      "placeholder": "Your email address",
-      "button": "Subscribe"
+      "description": "Bądź na bieżąco z naszymi najnowszymi spostrzeżeniami i wskazówkami.",
+      "placeholder": "Twój adres Email",
+      "button": "Subskrybuj"
     },
-    "rights": "All rights reserved.",
-    "description": "Digital solutions since 2016. Based in Belgium.",
-    "followUs": "Follow Us"
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "description": "Rozwiązania cyfrowe od 2016 roku. Siedziba w Belgii.",
+    "followUs": "Obserwuj nas"
   },
   "cookies": {
     "title": "Używamy cookies",
@@ -3638,53 +3638,53 @@
   },
   "_footer_merged": true,
   "franchise": {
-    "title": "Franchise",
-    "subtitle": "Become a Franchisee",
-    "description": "Are you interested in partnering with GROPPI? Discover the opportunities to grow together.",
+    "title": "Franczyza",
+    "subtitle": "Zostań Franczyzobiorcą",
+    "description": "Jesteś zainteresowany współpracą z GROPPI? Odkryj możliwości wspólnego rozwoju.",
     "benefits": {
-      "title": "Franchise Benefits",
+      "title": "Korzyści z Franczyzy",
       "items": {
-        "0": "Access to proven processes and methodologies",
-        "1": "Support from our experienced team",
-        "2": "Joint marketing efforts",
-        "3": "Knowledge sharing and training"
+        "0": "Dostęp do sprawdzonych procesów i metodologii",
+        "1": "Wsparcie naszego doświadczonego zespołu",
+        "2": "Wspólne działania marketingowe",
+        "3": "Wymiana wiedzy i szkolenia"
       }
     },
     "requirements": {
-      "title": "What We're Looking For",
+      "title": "Czego szukamy",
       "items": {
-        "0": "Experience in digital marketing or related field",
-        "1": "Entrepreneurial mindset and growth mentality",
-        "2": "Commitment to quality and customer satisfaction",
-        "3": "Willingness for long-term collaboration"
+        "0": "Doświadczenie w marketingu cyfrowym lub pokrewnej dziedzinie",
+        "1": "Przedsiębiorcze podejście i mentalność nastawiona na rozwój",
+        "2": "Zaangażowanie w jakość i satysfakcję klienta",
+        "3": "Gotowość do długoterminowej współpracy"
       }
     },
-    "cta": "Contact us for more information",
-    "apply": "Apply Now",
-    "call": "Call Us"
+    "cta": "Skontaktuj się z nami, aby uzyskać więcej informacji",
+    "apply": "Aplikuj teraz",
+    "call": "Zadzwoń do nas"
   },
   "stats": {
-    "years": "Years of Experience",
+    "years": "Lat doświadczenia",
     "yearsValue": "9+",
-    "clients": "Happy Clients",
+    "clients": "Zadowolonych klientów",
     "clientsValue": "150+",
-    "projects": "Projects",
+    "projects": "Projektów",
     "projectsValue": "500+",
-    "team": "Team Members",
+    "team": "Członków zespołu",
     "teamValue": "9+"
   },
   "admin": {
-    "dashboard": "Dashboard",
-    "articles": "Articles",
+    "dashboard": "Panel",
+    "articles": "Artykuły",
     "media": "Media",
-    "services": "Services",
-    "messages": "Messages",
-    "settings": "Settings",
-    "logout": "Log Out",
-    "login": "Log In",
+    "services": "Usługi",
+    "messages": "Wiadomości",
+    "settings": "Ustawienia",
+    "logout": "Wyloguj",
+    "login": "Zaloguj",
     "email": "Email",
-    "password": "Password",
-    "loginTitle": "Admin Login",
-    "loginButton": "Log In"
+    "password": "Hasło",
+    "loginTitle": "Logowanie administratora",
+    "loginButton": "Zaloguj"
   }
 }
