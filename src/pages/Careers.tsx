@@ -483,9 +483,9 @@ const Careers = () => {
 
                   <p className="text-xs text-muted-foreground text-center">
                     {t('careers.form.privacyNote')}{' '}
-                    <a href="/contact" className="text-primary hover:underline">
+                    <LangLink to="/contact" className="text-primary hover:underline">
                       {t('careers.form.contactLink')}
-                    </a>
+                    </LangLink>
                   </p>
                 </form>
               </Form>
