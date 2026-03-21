@@ -1,5 +1,4 @@
 import { useState, useCallback, memo, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import type { MediaItem } from '@/types/portfolio';
@@ -83,16 +82,11 @@ const MediaCarousel = memo(({ media, clientName }: MediaCarouselProps) => {
         />
       )}
 
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentIndex}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          className="absolute inset-0 flex items-center justify-center"
-        >
-          {currentMedia.type === 'image' ? (
+      <div
+        key={currentIndex}
+        className="absolute inset-0 flex items-center justify-center animate-[fadeIn_0.3s_ease]"
+      >
+        {currentMedia.type === 'image' ? (
             <img
               src={currentMedia.url}
               alt={currentMedia.alt || `${clientName} - Afbeelding ${currentIndex + 1}`}
@@ -150,8 +144,7 @@ const MediaCarousel = memo(({ media, clientName }: MediaCarouselProps) => {
               </button>
             </div>
           )}
-        </motion.div>
-      </AnimatePresence>
+      </div>
 
       {/* Navigation Arrows */}
       {hasMultipleItems && (

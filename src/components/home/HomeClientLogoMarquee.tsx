@@ -92,7 +92,7 @@ const HomeClientLogoMarquee = memo(() => {
         </div>
 
         {/* NDA Disclaimer */}
-        <p className="text-center text-sm text-muted-foreground/60 italic mt-8 max-w-2xl mx-auto">
+        <p className="text-center text-sm text-muted-foreground/80 italic mt-8 max-w-2xl mx-auto">
           {t('home.clientLogoMarquee.ndaNote')}
         </p>
 

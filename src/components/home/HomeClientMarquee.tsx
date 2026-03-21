@@ -87,7 +87,7 @@ const HomeClientMarquee = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="text-center text-muted-foreground/60 text-sm mt-10 italic"
+          className="text-center text-muted-foreground/80 text-sm mt-10 italic"
         >
           {t('home.clientMarquee.ndaNote')}
         </motion.p>

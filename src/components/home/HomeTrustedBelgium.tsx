@@ -55,7 +55,7 @@ const HomeTrustedBelgium = memo(() => {
 
         {/* NDA Disclaimer */}
         <div className="animate-fade-up text-center space-y-1 mb-12">
-          <p className="text-muted-foreground/60 text-sm italic">
+          <p className="text-muted-foreground/80 text-sm italic">
             {t('home.trustedBelgium.disclaimer')}
           </p>
         </div>

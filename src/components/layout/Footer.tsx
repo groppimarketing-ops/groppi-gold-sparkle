@@ -73,6 +73,8 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
               <img
                 src={groppiLogo}
                 alt="GROPPI Digital Marketing Bureau"
+                width={80}
+                height={80}
                 className="h-[60px] md:h-[70px] lg:h-[80px] w-auto object-contain hover:scale-105 transition-transform duration-300"
               />
             </LangLink>
