@@ -8,7 +8,8 @@
     "contact": "Kontakt",
     "franchise": "Franchise",
     "partnership": "Franchise",
-    "careers": "Karriere"
+    "careers": "Karriere",
+    "team": "Our Team"
   },
   "careers": {
     "meta": {
@@ -1614,7 +1615,8 @@
       "approach": "Unser Ansatz",
       "results": "Ergebnis",
       "ctaPrimary": "Angebot anfordern",
-      "ctaWhatsApp": "Chat per WhatsApp"
+      "ctaWhatsApp": "Chat per WhatsApp",
+      "deliverables": "What we delivered"
     },
     "items": {
       "castello-vicchiomaggio": {
@@ -2377,7 +2379,9 @@
       "linkedin": "LinkedIn",
       "tiktok": "TikTok",
       "pinterest": "Pinterest",
-      "xTwitter": "X (Twitter)"
+      "xTwitter": "X (Twitter)",
+      "youtube": "YouTube",
+      "googleBusiness": "Google Business"
     },
     "frequency": {
       "2month": "2 Posts pro Monat",
@@ -2444,6 +2448,26 @@
         "question": "Ist das Werbebudget inbegriffen?",
         "answer": "Nein. Werbebudget zahlen Sie direkt an Meta/Google. Unsere Kosten sind für Verwaltung und Optimierung."
       }
+    },
+    "tab": "Build Your Plan",
+    "disclaimer": "This is an indicative price. Final pricing depends on scope, brand complexity, and content needs.",
+    "vatNote": "excl. VAT",
+    "adsBudgetDisclaimer": "Advertising budget is paid directly to Meta/Google and is not included in management costs.",
+    "adsBudgetNote": "Advertising budget is paid directly to Meta/Google.",
+    "pauseNote": "You can pause or stop whenever you want.",
+    "included": "Included",
+    "next": "Next",
+    "back": "Back",
+    "quantity": "Quantity",
+    "viewSummary": "View summary",
+    "validation": {
+      "minChannel": "Select at least 1 channel."
+    },
+    "steps": {
+      "channels": "Choose your channels",
+      "frequency": "Post frequency",
+      "campaigns": "Paid campaigns",
+      "addons": "Optional add-ons"
     }
   },
   "partner": {
@@ -2744,7 +2768,8 @@
       "title": "Bereit, mehr Kunden zu gewinnen?",
       "subtitle": "Keine vagen Versprechen. Wir liefern einen konkreten Plan mit klaren Schritten.",
       "primaryCTA": "Angebot anfordern",
-      "secondaryCTA": "Nachricht per WhatsApp senden"
+      "secondaryCTA": "Nachricht per WhatsApp senden",
+      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
     },
     "socialMedia": {
       "title": "Social Media Management",
@@ -3429,6 +3454,55 @@
         "dataSyncExplained": {
           "q": "Was beinhaltet Data & Tracking Setup?",
           "a": "Wir installieren und konfigurieren Tracking-Tools (Google Analytics, Meta Pixel, Conversion-Tracking), damit Sie genau wissen, welche Marketing-Maßnahmen Ergebnisse liefern."
+        }
+      }
+    },
+    "onePageWebsite": {
+      "title": "One-page Website",
+      "subtitle": "A powerful landing page for quick impact.",
+      "benefits": {
+        "1": "Get online fast with your message",
+        "2": "Perfect for launches or campaigns",
+        "3": "Affordable and effective"
+      },
+      "deliverables": {
+        "1": {
+          "title": "Design",
+          "desc": "Attractive and on-brand design."
+        },
+        "2": {
+          "title": "Development",
+          "desc": "Fast and responsive page."
+        },
+        "3": {
+          "title": "Form integration",
+          "desc": "Lead capture functionality."
+        },
+        "4": {
+          "title": "Mobile optimized",
+          "desc": "Perfect on every device."
+        },
+        "5": {
+          "title": "Analytics setup",
+          "desc": "Tracking from day one."
+        },
+        "6": {
+          "title": "Fast delivery",
+          "desc": "Live within 1-2 weeks."
+        }
+      },
+      "process": {
+        "1": {
+          "title": "Analysis",
+          "desc": "Briefing and defining goals."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "Design and development in one sprint."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "A/B testing and improvements."
         }
       }
     }

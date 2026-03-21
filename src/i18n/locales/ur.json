@@ -8,7 +8,8 @@
     "contact": "رابطہ",
     "partnership": "فرنچائز",
     "franchise": "فرنچائز",
-    "careers": "ملازمتیں"
+    "careers": "ملازمتیں",
+    "team": "Our Team"
   },
   "notFound": {
     "message": "یہ صفحہ موجود نہیں ہے یا منتقل ہو چکا ہے۔",
@@ -210,7 +211,9 @@
     "required": "ضروری",
     "optional": "اختیاری",
     "brandName": "GROPPI",
-    "fullscreen": "فل سکرین"
+    "fullscreen": "فل سکرین",
+    "search": "Search",
+    "noResults": "No results found"
   },
   "validation": {
     "required": "یہ خانہ ضروری ہے",
@@ -850,7 +853,8 @@
         },
         "team": {
           "title": "9+ پیشہ ور",
-          "desc": "ماہرین کی کثیر الجہتی ٹیم"
+          "desc": "ماہرین کی کثیر الجہتی ٹیم",
+          "text": "Multidisciplinary team of experts"
         },
         "partnerships": {
           "title": "طویل مدتی تعلقات",
@@ -2227,7 +2231,20 @@
     "whatsapp": "WhatsApp",
     "call": "کال کریں",
     "email": "ای میل کریں",
-    "follow": "فالو کریں"
+    "follow": "فالو کریں",
+    "whatsappChat": "Chat via WhatsApp",
+    "callUs": "Call us",
+    "emailUs": "Send an email",
+    "followUs": "Follow us on social media",
+    "actions": {
+      "chat": "Start a conversation via WhatsApp",
+      "call": "Call +32 494 31 11 19",
+      "email": "Email info@groppi.be"
+    },
+    "followInstagram": "Follow us on Instagram",
+    "followFacebook": "Follow us on Facebook",
+    "followTiktok": "Follow us on TikTok",
+    "followLinkedin": "Follow us on LinkedIn"
   },
   "contact": {
     "title": "ہم سے رابطہ کریں",
@@ -2254,7 +2271,28 @@
       "email": "براہ راست ای میل",
       "phone": "براہ راست کال",
       "whatsapp": "WhatsApp"
-    }
+    },
+    "intro": "Do you have a project in mind or want to strengthen your digital presence? Contact us for a no-obligation conversation.",
+    "mobileLabel": "Mobile",
+    "officeLabel": "Office",
+    "hoursLabel": "Business Hours",
+    "hoursValue": "Mon - Fri: 9:00 AM - 6:00 PM",
+    "name": "Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "company": "Company",
+    "subject": "Subject",
+    "message": "Your Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We'll get back to you as soon as possible.",
+    "error": "Something went wrong. Please try again or contact us by phone.",
+    "address": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "landline": "Landline",
+    "mobile": "Mobile",
+    "rateLimited": "Too many requests. Please try again later."
   },
   "footer": {
     "rights": "جملہ حقوق محفوظ ہیں۔",
@@ -2295,7 +2333,8 @@
       "linkedin": "LinkedIn",
       "youtube": "YouTube",
       "pinterest": "Pinterest",
-      "xTwitter": "X (Twitter)"
+      "xTwitter": "X (Twitter)",
+      "googleBusiness": "Google Business"
     },
     "frequency": {
       "2month": "ماہانہ 2 پوسٹس",
@@ -2362,6 +2401,26 @@
         "question": "کیا اشتہاری بجٹ شامل ہے؟",
         "answer": "نہیں۔ اشتہاری بجٹ آپ براہ راست Meta/Google کو ادا کرتے ہیں۔ ہماری لاگت انتظام اور آپٹیمائزیشن کے لیے ہے۔"
       }
+    },
+    "tab": "Build Your Plan",
+    "disclaimer": "This is an indicative price. Final pricing depends on scope, brand complexity, and content needs.",
+    "vatNote": "excl. VAT",
+    "adsBudgetDisclaimer": "Advertising budget is paid directly to Meta/Google and is not included in management costs.",
+    "adsBudgetNote": "Advertising budget is paid directly to Meta/Google.",
+    "pauseNote": "You can pause or stop whenever you want.",
+    "included": "Included",
+    "next": "Next",
+    "back": "Back",
+    "quantity": "Quantity",
+    "viewSummary": "View summary",
+    "validation": {
+      "minChannel": "Select at least 1 channel."
+    },
+    "steps": {
+      "channels": "Choose your channels",
+      "frequency": "Post frequency",
+      "campaigns": "Paid campaigns",
+      "addons": "Optional add-ons"
     }
   },
   "partner": {
@@ -2662,7 +2721,8 @@
       "title": "زیادہ گاہکوں کو راغب کرنے کے لیے تیار؟",
       "subtitle": "کوئی مبہم وعدے نہیں۔ ہم واضح اقدامات کے ساتھ ٹھوس پلان فراہم کرتے ہیں۔",
       "primaryCTA": "تجویز کی درخواست کریں",
-      "secondaryCTA": "WhatsApp پر پیغام بھیجیں"
+      "secondaryCTA": "WhatsApp پر پیغام بھیجیں",
+      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
     },
     "socialMedia": {
       "title": "سوشل میڈیا مینجمنٹ",
@@ -3379,8 +3439,25 @@
       "contact": {
         "title": "رابطہ",
         "content": "رازداری سے متعلق سوالات کے لیے ہم سے رابطہ کریں۔"
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We take the security of your data seriously. We use:\n\n• SSL encryption for all data transfer\n• Secure servers and databases\n• Limited access to personal data\n• Regular security audits\n\nDespite our efforts, no method of transmission over the internet can be 100% secure."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "content": "Under GDPR, you have the following rights:\n\n• Right to access your data\n• Right to correct inaccurate data\n• Right to delete your data\n• Right to restrict processing\n• Right to data portability\n• Right to object to processing\n\nContact us to exercise these rights."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "content": "We retain your data only as long as necessary:\n\n• Contact data: 2 years after last contact\n• Application data: 1 year after procedure completion\n• Newsletter subscribers: until unsubscription\n• Analytical data: 26 months\n\nAfter this period, data is securely deleted."
       }
-    }
+    },
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "Learn how GROPPI protects and processes your personal data in compliance with GDPR."
+    },
+    "footerNote": "Have questions about this privacy policy? Feel free to contact us at info@groppi.be"
   },
   "terms": {
     "title": "شرائط و ضوابط",
@@ -3410,8 +3487,29 @@
       "disputes": {
         "title": "تنازعات",
         "content": "تنازعات بیلجیم کے قانون کے تحت حل کیے جاتے ہیں۔"
+      },
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using the GROPPI website and services, you agree to these Terms of Service.\n\nIf you do not agree to any part of these terms, you may not use our services.\n\nWe reserve the right to modify these terms at any time."
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "We reserve the right to modify these terms at any time.\n\nFor significant changes, we will notify you by email if applicable.\n\nContinued use of our services after modifications constitutes acceptance of the new terms."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These terms are governed by Belgian law.\n\nDisputes will be submitted to the competent courts of Belgium.\n\nIf any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about these terms:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nWe aim to respond to all inquiries within 48 hours."
       }
-    }
+    },
+    "meta": {
+      "title": "Terms of Service",
+      "description": "Read the terms and conditions for using GROPPI services and website."
+    },
+    "footerNote": "Have questions about these terms? Contact us at info@groppi.be"
   },
   "cookies": {
     "banner": {
@@ -3420,6 +3518,62 @@
       "accept": "سب قبول کریں",
       "decline": "صرف ضروری",
       "customize": "اپنی مرضی سے ترتیب دیں"
-    }
-  }
+    },
+    "title": "We use cookies",
+    "description": "This website uses cookies to improve your experience and measure our performance. By clicking \"Accept\", you agree to our cookie policy.",
+    "learnMore": "Learn more",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
+  "franchise": {
+    "title": "Franchise",
+    "subtitle": "Become a Franchisee",
+    "description": "Are you interested in partnering with GROPPI? Discover the opportunities to grow together.",
+    "benefits": {
+      "title": "Franchise Benefits",
+      "items": {
+        "0": "Access to proven processes and methodologies",
+        "1": "Support from our experienced team",
+        "2": "Joint marketing efforts",
+        "3": "Knowledge sharing and training"
+      }
+    },
+    "requirements": {
+      "title": "What We're Looking For",
+      "items": {
+        "0": "Experience in digital marketing or related field",
+        "1": "Entrepreneurial mindset and growth mentality",
+        "2": "Commitment to quality and customer satisfaction",
+        "3": "Willingness for long-term collaboration"
+      }
+    },
+    "cta": "Contact us for more information",
+    "apply": "Apply Now",
+    "call": "Call Us"
+  },
+  "stats": {
+    "years": "Years of Experience",
+    "yearsValue": "9+",
+    "clients": "Happy Clients",
+    "clientsValue": "150+",
+    "projects": "Projects",
+    "projectsValue": "500+",
+    "team": "Team Members",
+    "teamValue": "9+"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "articles": "Articles",
+    "media": "Media",
+    "services": "Services",
+    "messages": "Messages",
+    "settings": "Settings",
+    "logout": "Log Out",
+    "login": "Log In",
+    "email": "Email",
+    "password": "Password",
+    "loginTitle": "Admin Login",
+    "loginButton": "Log In"
+  },
+  "_footer_merged": true
 }

@@ -8,7 +8,8 @@
     "contact": "Kontakt",
     "partnership": "Franczyza",
     "franchise": "Franczyza",
-    "careers": "Kariera"
+    "careers": "Kariera",
+    "team": "Our Team"
   },
   "careers": {
     "meta": {
@@ -109,6 +110,40 @@
         "q": "Co powinienem umieścić w CV?",
         "a": "Skup się na odpowiednim doświadczeniu i wynikach. Pokaż projekty lub portfolio, jeśli to możliwe. Bądź zwięzły (maks. 2 strony)."
       }
+    },
+    "form": {
+      "title": "Apply now",
+      "subtitle": "Fill in the form and upload your CV. We'll get back to you soon.",
+      "fullName": "Full name",
+      "fullNamePlaceholder": "John Smith",
+      "email": "Email address",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone number",
+      "phonePlaceholder": "+32 400 00 00 00",
+      "role": "Position",
+      "rolePlaceholder": "Select a position",
+      "otherRole": "Other / Spontaneous application",
+      "linkedin": "LinkedIn / Portfolio URL",
+      "linkedinPlaceholder": "https://linkedin.com/in/your-profile",
+      "message": "Short message",
+      "messagePlaceholder": "Tell us why you're interested (optional)",
+      "cv": "Upload CV",
+      "cvPlaceholder": "Click to upload your CV (PDF, DOC, DOCX)",
+      "cvHint": "Max 10MB. Supported formats: PDF, DOC, DOCX",
+      "cvRequired": "CV is required",
+      "invalidFileType": "Invalid file type. Please upload a PDF, DOC or DOCX.",
+      "fileTooLarge": "File is too large. Maximum 10MB allowed.",
+      "consent": "I agree to be contacted about my application.",
+      "submit": "Submit application",
+      "submitting": "Submitting...",
+      "uploading": "Uploading CV...",
+      "successTitle": "Application received!",
+      "successMessage": "Thank you for your interest. We'll get back to you as soon as possible.",
+      "submitAnother": "Submit another application",
+      "errorTitle": "Something went wrong",
+      "errorMessage": "We couldn't process your application. Please try again.",
+      "privacyNote": "Your data is used only for recruitment. CVs are handled confidentially.",
+      "contactLink": "Contact us"
     }
   },
   "pricing": {
@@ -1532,7 +1567,8 @@
       "approach": "Nasze podejście",
       "results": "Wynik",
       "ctaPrimary": "Poproś o wycenę",
-      "ctaWhatsApp": "Czat na WhatsApp"
+      "ctaWhatsApp": "Czat na WhatsApp",
+      "deliverables": "What we delivered"
     },
     "items": {
       "caseStudy": "Przypadek użytkownika",
@@ -2318,7 +2354,26 @@
     "emailLabel": "Email",
     "landline": "Stacjonarny",
     "mobile": "Komórkowy",
-    "rateLimited": "Zbyt wiele zapytań. Spróbuj później."
+    "rateLimited": "Zbyt wiele zapytań. Spróbuj później.",
+    "title": "Get in Touch",
+    "subtitle": "Let's Talk",
+    "intro": "Do you have a project in mind or want to strengthen your digital presence? Contact us for a no-obligation conversation.",
+    "mobileLabel": "Mobile",
+    "officeLabel": "Office",
+    "hoursLabel": "Business Hours",
+    "hoursValue": "Mon - Fri: 9:00 AM - 6:00 PM",
+    "description": "We'd love to hear from you. Fill out the form and we'll get back to you as soon as possible.",
+    "name": "Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "company": "Company",
+    "subject": "Subject",
+    "message": "Your Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We'll get back to you as soon as possible.",
+    "error": "Something went wrong. Please try again or contact us by phone.",
+    "address": "Address"
   },
   "servicePage": {
     "defaultDescription": "{{service}} — Profesjonalna usługa od GROPPI Marketing Bureau.",
@@ -2406,7 +2461,8 @@
       "title": "Gotowy aby przyciągnąć więcej klientów?",
       "subtitle": "Bez niejasnych obietnic. Dostarczamy konkretny plan z jasnymi krokami.",
       "primaryCTA": "Poproś o propozycję",
-      "secondaryCTA": "Wyślij wiadomość na WhatsApp"
+      "secondaryCTA": "Wyślij wiadomość na WhatsApp",
+      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
     },
     "socialMedia": {
       "title": "Zarządzanie mediami społecznościowymi",
@@ -3431,8 +3487,38 @@
       "3": {
         "title": "4. Twoje prawa",
         "content": "Masz prawo dostępu, korygowania lub usuwania Twojej informacji osobistej w dowolnym momencie."
+      },
+      "dataCollection": {
+        "title": "Data Collection",
+        "content": "We collect personal data that you voluntarily provide to us, such as:\n\n• Name and contact details when you fill out our contact form\n• Email address for newsletter subscriptions\n• CV and application data for job openings\n• Business information for commercial inquiries\n\nWe also automatically collect certain technical data such as IP address, browser type, and pages visited for analytical purposes."
+      },
+      "dataUsage": {
+        "title": "Data Usage",
+        "content": "We use your data to:\n\n• Respond to your questions and requests\n• Send newsletters (only with your consent)\n• Improve our website and services\n• Fulfill legal obligations\n• Send relevant information about our services"
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We take the security of your data seriously. We use:\n\n• SSL encryption for all data transfer\n• Secure servers and databases\n• Limited access to personal data\n• Regular security audits\n\nDespite our efforts, no method of transmission over the internet can be 100% secure."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "content": "Under GDPR, you have the following rights:\n\n• Right to access your data\n• Right to correct inaccurate data\n• Right to delete your data\n• Right to restrict processing\n• Right to data portability\n• Right to object to processing\n\nContact us to exercise these rights."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Our website uses cookies to enhance your experience:\n\n• Essential cookies for website functionality\n• Analytical cookies to understand how visitors use our site\n• Marketing cookies for targeted advertising (only with consent)\n\nYou can manage cookies through your browser settings."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "content": "We retain your data only as long as necessary:\n\n• Contact data: 2 years after last contact\n• Application data: 1 year after procedure completion\n• Newsletter subscribers: until unsubscription\n• Analytical data: 26 months\n\nAfter this period, data is securely deleted."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about your privacy or to exercise your rights:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nYou also have the right to file a complaint with the Belgian Data Protection Authority."
       }
-    }
+    },
+    "subtitle": "Your privacy matters to us. This policy explains how we collect, use, and protect your data.",
+    "footerNote": "Have questions about this privacy policy? Feel free to contact us at info@groppi.be"
   },
   "terms": {
     "meta": {
@@ -3458,8 +3544,42 @@
       "3": {
         "title": "4. Ograniczenie odpowiedzialności",
         "content": "GROPPI nie jest odpowiedzialny za pośrednie lub następcze uszkodzenia z użycia naszych usług."
+      },
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using the GROPPI website and services, you agree to these Terms of Service.\n\nIf you do not agree to any part of these terms, you may not use our services.\n\nWe reserve the right to modify these terms at any time."
+      },
+      "services": {
+        "title": "Our Services",
+        "content": "GROPPI provides digital marketing services, including:\n\n• Web design and development\n• Search engine optimization (SEO)\n• Social media marketing\n• Paid advertising\n• Content creation\n• Brand identity and branding\n\nSpecific services and deliverables are defined in individual agreements."
+      },
+      "payment": {
+        "title": "Payment and Billing",
+        "content": "• All prices are exclusive of VAT unless otherwise stated\n• Payments are due within 14 days of invoice date\n• A 50% deposit may be required for projects\n• Late payments may incur administrative fees\n• We reserve the right to suspend services for outstanding payments"
+      },
+      "liability": {
+        "title": "Liability",
+        "content": "• GROPPI is not liable for indirect or consequential damages\n• Our liability is limited to the amount paid for the specific service\n• We do not guarantee specific results from marketing campaigns\n• Clients are responsible for the accuracy of information provided\n• We are not liable for changes made by third-party platforms"
+      },
+      "termination": {
+        "title": "Termination",
+        "content": "• Either party may terminate the agreement with 30 days written notice\n• Immediate termination may occur in case of serious breach\n• Upon termination, all outstanding amounts become immediately due\n• We will facilitate reasonable transfer of materials after termination"
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "We reserve the right to modify these terms at any time.\n\nFor significant changes, we will notify you by email if applicable.\n\nContinued use of our services after modifications constitutes acceptance of the new terms."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These terms are governed by Belgian law.\n\nDisputes will be submitted to the competent courts of Belgium.\n\nIf any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about these terms:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nWe aim to respond to all inquiries within 48 hours."
       }
-    }
+    },
+    "subtitle": "These terms govern your use of our website and services. By using our services, you agree to these terms.",
+    "footerNote": "Have questions about these terms? Contact us at info@groppi.be"
   },
   "social": {
     "whatsapp": "WhatsApp",
@@ -3500,8 +3620,14 @@
       "successMessage": "Dziękuję za subskrypcję!",
       "errorTitle": "Coś poszło nie tak",
       "errorMessage": "Coś poszło nie tak. Spróbuj ponownie.",
-      "subscribed": "Już zasubskrybowano"
-    }
+      "subscribed": "Już zasubskrybowano",
+      "description": "Stay updated with our latest insights and tips.",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    },
+    "rights": "All rights reserved.",
+    "description": "Digital solutions since 2016. Based in Belgium.",
+    "followUs": "Follow Us"
   },
   "cookies": {
     "title": "Używamy cookies",
@@ -3510,5 +3636,55 @@
     "accept": "Zaakceptuj",
     "reject": "Odrzuć"
   },
-  "_footer_merged": true
+  "_footer_merged": true,
+  "franchise": {
+    "title": "Franchise",
+    "subtitle": "Become a Franchisee",
+    "description": "Are you interested in partnering with GROPPI? Discover the opportunities to grow together.",
+    "benefits": {
+      "title": "Franchise Benefits",
+      "items": {
+        "0": "Access to proven processes and methodologies",
+        "1": "Support from our experienced team",
+        "2": "Joint marketing efforts",
+        "3": "Knowledge sharing and training"
+      }
+    },
+    "requirements": {
+      "title": "What We're Looking For",
+      "items": {
+        "0": "Experience in digital marketing or related field",
+        "1": "Entrepreneurial mindset and growth mentality",
+        "2": "Commitment to quality and customer satisfaction",
+        "3": "Willingness for long-term collaboration"
+      }
+    },
+    "cta": "Contact us for more information",
+    "apply": "Apply Now",
+    "call": "Call Us"
+  },
+  "stats": {
+    "years": "Years of Experience",
+    "yearsValue": "9+",
+    "clients": "Happy Clients",
+    "clientsValue": "150+",
+    "projects": "Projects",
+    "projectsValue": "500+",
+    "team": "Team Members",
+    "teamValue": "9+"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "articles": "Articles",
+    "media": "Media",
+    "services": "Services",
+    "messages": "Messages",
+    "settings": "Settings",
+    "logout": "Log Out",
+    "login": "Log In",
+    "email": "Email",
+    "password": "Password",
+    "loginTitle": "Admin Login",
+    "loginButton": "Log In"
+  }
 }

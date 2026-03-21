@@ -8,7 +8,8 @@
     "contact": "联系我们",
     "partnership": "特许经营",
     "franchise": "特许经营",
-    "careers": "招聘"
+    "careers": "招聘",
+    "team": "Our Team"
   },
   "notFound": {
     "message": "页面不存在或已被移除。",
@@ -1474,7 +1475,8 @@
       "approach": "我们的方法",
       "results": "结果",
       "ctaPrimary": "请求报价",
-      "ctaWhatsApp": "通过WhatsApp聊天"
+      "ctaWhatsApp": "通过WhatsApp聊天",
+      "deliverables": "What we delivered"
     },
     "items": {
       "castello-vicchiomaggio": {
@@ -2757,7 +2759,8 @@
       "title": "准备好吸引更多客户？",
       "subtitle": "没有模糊承诺。我们提供具有明确步骤的具体计划。",
       "primaryCTA": "请求方案",
-      "secondaryCTA": "通过WhatsApp发送消息"
+      "secondaryCTA": "通过WhatsApp发送消息",
+      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
     },
     "socialMedia": {
       "title": "社交媒体管理",
@@ -3477,8 +3480,30 @@
       "changes": {
         "title": "变更",
         "content": "我们保留修改这些条款的权利。变更将在网站上公布。"
+      },
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using the GROPPI website and services, you agree to these Terms of Service.\n\nIf you do not agree to any part of these terms, you may not use our services.\n\nWe reserve the right to modify these terms at any time."
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "We reserve the right to modify these terms at any time.\n\nFor significant changes, we will notify you by email if applicable.\n\nContinued use of our services after modifications constitutes acceptance of the new terms."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These terms are governed by Belgian law.\n\nDisputes will be submitted to the competent courts of Belgium.\n\nIf any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about these terms:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nWe aim to respond to all inquiries within 48 hours."
       }
-    }
+    },
+    "meta": {
+      "title": "Terms of Service",
+      "description": "Read the terms and conditions for using GROPPI services and website."
+    },
+    "subtitle": "These terms govern your use of our website and services. By using our services, you agree to these terms.",
+    "footerNote": "Have questions about these terms? Contact us at info@groppi.be"
   },
   "privacy": {
     "title": "隐私政策",
@@ -3507,13 +3532,39 @@
       "contact": {
         "title": "联系",
         "content": "关于隐私问题：info@groppi.be"
+      },
+      "dataUsage": {
+        "title": "Data Usage",
+        "content": "We use your data to:\n\n• Respond to your questions and requests\n• Send newsletters (only with your consent)\n• Improve our website and services\n• Fulfill legal obligations\n• Send relevant information about our services"
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We take the security of your data seriously. We use:\n\n• SSL encryption for all data transfer\n• Secure servers and databases\n• Limited access to personal data\n• Regular security audits\n\nDespite our efforts, no method of transmission over the internet can be 100% secure."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "content": "Under GDPR, you have the following rights:\n\n• Right to access your data\n• Right to correct inaccurate data\n• Right to delete your data\n• Right to restrict processing\n• Right to data portability\n• Right to object to processing\n\nContact us to exercise these rights."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "content": "We retain your data only as long as necessary:\n\n• Contact data: 2 years after last contact\n• Application data: 1 year after procedure completion\n• Newsletter subscribers: until unsubscription\n• Analytical data: 26 months\n\nAfter this period, data is securely deleted."
       }
-    }
+    },
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "Learn how GROPPI protects and processes your personal data in compliance with GDPR."
+    },
+    "subtitle": "Your privacy matters to us. This policy explains how we collect, use, and protect your data.",
+    "footerNote": "Have questions about this privacy policy? Feel free to contact us at info@groppi.be"
   },
   "cookies": {
     "message": "我们使用cookies来改善您的体验。",
     "accept": "接受",
     "decline": "拒绝",
-    "learnMore": "了解更多"
-  }
+    "learnMore": "了解更多",
+    "title": "We use cookies",
+    "description": "This website uses cookies to improve your experience and measure our performance. By clicking \"Accept\", you agree to our cookie policy.",
+    "reject": "Reject"
+  },
+  "_footer_merged": true
 }

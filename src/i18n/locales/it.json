@@ -8,7 +8,8 @@
     "contact": "Contatti",
     "partnership": "Franchising",
     "franchise": "Franchising",
-    "careers": "Lavora con noi"
+    "careers": "Lavora con noi",
+    "team": "Our Team"
   },
   "careers": {
     "meta": {
@@ -548,6 +549,12 @@
       "title": "Pronto a rafforzare la tua presenza digitale?",
       "description": "Contattaci oggi per una conversazione senza impegno su come possiamo aiutarti a raggiungere i tuoi obiettivi aziendali.",
       "button": "Richiedi un preventivo gratuito"
+    },
+    "badges": {
+      "monthly": "Monthly",
+      "oneTime": "One-time",
+      "custom": "Custom",
+      "mostChosen": "Most chosen"
     }
   },
   "calculator": {
@@ -994,7 +1001,12 @@
         "system": "struttura invece di caos",
         "premium": "branding + prestazioni"
       },
-      "microNote": "*I risultati variano per settore e budget. Costruiamo sistemi scalabili."
+      "microNote": "*I risultati variano per settore e budget. Costruiamo sistemi scalabili.",
+      "statsValues": {
+        "focus": "BE + EU + Worldwide",
+        "system": "System-driven",
+        "premium": "Premium"
+      }
     },
     "trustedBelgium": {
       "eyebrow": "PROVA SOCIALE",
@@ -1407,7 +1419,8 @@
         "metaDescription": "Scopri perché le recensioni online sono fondamentali per il successo aziendale e come gestire la tua reputazione in modo strategico.",
         "content": "<h2>Il fattore fiducia</h2><p>Prima di fare un acquisto, la maggior parte delle persone legge le recensioni. Prima di scegliere un ristorante, controlla Google. Prima di assumere un fornitore di servizi, cerca esperienze di altri.</p><p>La tua reputazione online non è solo bella da avere. È un fattore decisivo su come i potenziali clienti scelgono tra te e i tuoi concorrenti.</p><h2>I numeri non mentono</h2><p>Considera queste statistiche:</p><ul><li>Il 93% dei consumatori dice che le recensioni online influenzano le loro decisioni d'acquisto</li><li>Il 91% dei consumatori si fida delle recensioni online tanto quanto dei consigli personali</li><li>Le aziende con una valutazione sotto le 4 stelle perdono fino al 70% dei potenziali clienti</li></ul><p>Ogni recensione è una risorsa pubblica di vendita — o un avvertimento pubblico.</p><h2>Perché le recensioni negative non sono sempre negative</h2><p>Molte aziende temono le recensioni negative. Ma una risposta gestita bene a una recensione negativa può effettivamente costruire fiducia. Mostra ai potenziali clienti che:</p><ul><li>Ti importa del feedback dei clienti</li><li>Assumi responsabilità quando le cose vanno storte</li><li>Lavori attivamente per risolvere i problemi</li></ul><p>Un'azienda con solo recensioni a 5 stelle sembra sospetta. Un'azienda con recensioni per lo più positive e risposte professionali a quelle negative sembra autentica.</p><h2>Come costruire una reputazione più forte</h2><p>La gestione della reputazione non è passiva. Richiede un approccio attivo:</p><h3>Chiedi recensioni</h3><p>I clienti soddisfatti spesso hanno bisogno di una spinta gentile. Chiedi direttamente dopo un'esperienza positiva. Rendilo facile con un link diretto al tuo profilo recensioni.</p><h3>Rispondi a tutto</h3><p>Ogni recensione merita una risposta. Le recensioni positive ricevono un ringraziamento. Le recensioni negative ricevono un riconoscimento professionale e una soluzione.</p><h3>Monitora la tua presenza</h3><p>Le recensioni appaiono su più piattaforme: Google, Facebook, Yelp, TripAdvisor, siti specifici del settore. Devi monitorarle tutte.</p><h2>L'impatto SEO</h2><p>Le recensioni influenzano direttamente il tuo posizionamento nei motori di ricerca. Google considera:</p><ul><li>Il numero di recensioni</li><li>La valutazione media</li><li>Quanto sono recenti le recensioni</li><li>Le parole chiave nelle recensioni</li></ul><p>Una strategia di recensioni forte migliora la tua visibilità locale in Google, che porta a più traffico e più clienti.</p><h2>La tua reputazione è il tuo brand</h2><p>Alla fine, la tua reputazione online è il tuo brand. Non è quello che dici di te stesso — è quello che gli altri dicono di te. E nel 2025, quello che gli altri dicono è visibile a tutti.</p><p>Gestisci la tua reputazione proattivamente, o sarà gestita per te — da recensioni, competitor e algoritmi.</p>"
       }
-    }
+    },
+    "relatedServices": "Related services"
   },
   "gallery": {
     "title": "I nostri lavori",
@@ -1446,7 +1459,8 @@
       "approach": "Il nostro approccio",
       "results": "Risultato",
       "ctaPrimary": "Richiedi un preventivo",
-      "ctaWhatsApp": "Chatta via WhatsApp"
+      "ctaWhatsApp": "Chatta via WhatsApp",
+      "deliverables": "What we delivered"
     },
     "items": {
       "castello-vicchiomaggio": {
@@ -2707,7 +2721,8 @@
       "title": "Pronto a crescere con chiarezza?",
       "subtitle": "Niente promesse vuote. Solo passi concreti verso più clienti.",
       "primaryCTA": "Richiedi un preventivo personalizzato",
-      "secondaryCTA": "Chatta via WhatsApp"
+      "secondaryCTA": "Chatta via WhatsApp",
+      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
     },
     "socialMedia": {
       "title": "Gestione social media",
@@ -3492,5 +3507,21 @@
     "accept": "Accetta",
     "reject": "Rifiuta"
   },
-  "_footer_merged": true
+  "_footer_merged": true,
+  "servicesHome": {
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "Watch the video first to understand how each service works, then continue to the details.",
+    "card": {
+      "requestQuote": "Request a quote",
+      "viewDetails": "View details",
+      "watchHowItWorks": "Watch how it works (60 sec)",
+      "buildYourPlan": "Build your plan"
+    },
+    "badges": {
+      "monthly": "Monthly",
+      "oneTime": "One-time",
+      "custom": "Custom",
+      "mostChosen": "Most chosen"
+    }
+  }
 }

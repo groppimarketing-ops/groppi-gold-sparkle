@@ -1448,7 +1448,8 @@
       "approach": "Onze aanpak",
       "results": "Resultaat",
       "ctaPrimary": "Vraag een offerte aan",
-      "ctaWhatsApp": "Stuur een bericht via WhatsApp"
+      "ctaWhatsApp": "Stuur een bericht via WhatsApp",
+      "deliverables": "What we delivered"
     },
     "items": {
       "castello-vicchiomaggio": {
@@ -2709,7 +2710,8 @@
       "title": "Klaar om meer klanten aan te trekken?",
       "subtitle": "Geen vage beloftes. Wij leveren een concreet plan met duidelijke stappen.",
       "primaryCTA": "Vraag een voorstel aan",
-      "secondaryCTA": "Stuur een bericht via WhatsApp"
+      "secondaryCTA": "Stuur een bericht via WhatsApp",
+      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
     },
     "socialMedia": {
       "title": "Social mediabeheer",

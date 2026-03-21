@@ -8,7 +8,8 @@
     "contact": "যোগাযোগ",
     "franchise": "ফ্র্যাঞ্চাইজ",
     "partnership": "ফ্র্যাঞ্চাইজ",
-    "careers": "ক্যারিয়ার"
+    "careers": "ক্যারিয়ার",
+    "team": "Our Team"
   },
   "careers": {
     "meta": {
@@ -311,7 +312,13 @@
       },
       "overview": {
         "about": "এই সেবা সম্পর্কে",
-        "priceRange": "মূল্য সীমা"
+        "priceRange": "মূল্য সীমা",
+        "content_production": "Professional content production strengthens your brand with quality videos and photos that clearly convey your message and appeal to your target audience.",
+        "business_website": "A professional website is the foundation of your online presence. We build websites that are not only beautiful, but also convert.",
+        "ecommerce_website": "Start selling online with a fully optimized webshop with all the functionality you need.",
+        "ads_management": "Maximize your advertising budget with data-driven campaigns on Google, Facebook, Instagram and more.",
+        "seo": "Grow sustainably with organic traffic through optimized content and technical SEO improvements.",
+        "social_media": "Build an engaged community with consistent, quality content on all your social media channels."
       },
       "deliverables": {
         "title": "কী পাবেন"
@@ -394,7 +401,52 @@
     "portfolio": {
       "subtitle": "আমাদের কাজ",
       "title": "নির্বাচিত প্রকল্প",
-      "viewAll": "সম্পূর্ণ পোর্টফোলিও দেখুন"
+      "viewAll": "সম্পূর্ণ পোর্টফোলিও দেখুন",
+      "thumbnailPlaceholder": "Project image",
+      "viewCase": "View case",
+      "tags": {
+        "website": "Website",
+        "branding": "Branding",
+        "ads": "Ads",
+        "social": "Social",
+        "ecommerce": "E-commerce",
+        "seo": "SEO",
+        "content": "Content"
+      },
+      "projects": {
+        "restaurant-branding": {
+          "title": "Restaurant Branding",
+          "metric": "+180% reservations"
+        },
+        "mode-webshop": {
+          "title": "Fashion Webshop",
+          "metric": "€85K revenue in 3 months"
+        },
+        "b2b-platform": {
+          "title": "B2B Platform",
+          "metric": "+320% leads"
+        },
+        "bouwbedrijf-website": {
+          "title": "Construction Website",
+          "metric": "#1 Google local"
+        },
+        "influencer-campagne": {
+          "title": "Influencer Campaign",
+          "metric": "2.4M reach"
+        },
+        "tech-startup-branding": {
+          "title": "Tech Startup Branding",
+          "metric": "Complete brand identity"
+        },
+        "e-commerce-groei": {
+          "title": "E-commerce Growth",
+          "metric": "+240% ROAS"
+        },
+        "content-strategie": {
+          "title": "Content Strategy",
+          "metric": "50+ videos/month"
+        }
+      }
     },
     "caseStudies": {
       "subtitle": "প্রমাণিত ফলাফল",
@@ -870,7 +922,34 @@
       "videoDuration": "⏱ সময়কাল: ৬০ সেকেন্ড",
       "cta": "ব্যক্তিগত কোটেশন অনুরোধ করুন",
       "description": "চূড়ান্ত মূল্য আপনার নির্দিষ্ট প্রয়োজন এবং প্রকল্পের পরিধির উপর নির্ভর করে। বাধ্যবাধকতা ছাড়া আলোচনার জন্য আমাদের সাথে যোগাযোগ করুন।",
-      "noVideo": "ভিডিও শীঘ্রই আসছে"
+      "noVideo": "ভিডিও শীঘ্রই আসছে",
+      "whatYouGet": "What you get",
+      "pricingLogic": "How pricing works",
+      "explainerVideo": "Explainer video",
+      "indicativePrice": "Indicative price",
+      "pricingFactors": "What affects the price?",
+      "pricingNote": "Final pricing is determined based on your specific requirements and project scope. Contact us for a no-obligation conversation and a personalized quote.",
+      "availablePackages": "Available packages",
+      "packagesNote": "Packages can be customized based on the number and type of content.",
+      "videoSummary": "See how this service can transform your business and discover what we can do for you.",
+      "factors": {
+        "quantity": {
+          "title": "Content quantity",
+          "description": "More content means a higher price, but also more value for your investment."
+        },
+        "complexity": {
+          "title": "Complexity & editing",
+          "description": "Video editing, animations, and special effects influence the price."
+        },
+        "onsite": {
+          "title": "On-site filming",
+          "description": "On-location filming requires additional costs for travel and professional equipment."
+        },
+        "customization": {
+          "title": "Customization & strategy",
+          "description": "Personalized strategies and creative concepts are always included."
+        }
+      }
     },
     "maintenanceFrom": "রক্ষণাবেক্ষণ থেকে",
     "featuredBadge": "সর্বাধিক জনপ্রিয়",
@@ -954,7 +1033,8 @@
           "0": "সম্পূর্ণ অনলাইন শপ সেটআপ",
           "1": "পেমেন্ট গেটওয়ে ইন্টিগ্রেশন",
           "2": "প্রোডাক্ট ম্যানেজমেন্ট সিস্টেম",
-          "3": "ক্রয় প্রক্রিয়া অপ্টিমাইজেশন"
+          "3": "ক্রয় প্রক্রিয়া অপ্টিমাইজেশন",
+          "4": "Conversion optimization"
         }
       },
       "ads": {
@@ -1004,7 +1084,28 @@
           "0": "সোশ্যাল মিডিয়ার জন্য শর্ট ভিডিও",
           "1": "ওয়েবসাইট ও YouTube-এর জন্য লং ভিডিও",
           "2": "পেশাদার প্রোডাক্ট ফটোগ্রাফি",
-          "3": "সোশ্যাল মিডিয়া ভিজ্যুয়াল ও গ্রাফিক্স"
+          "3": "সোশ্যাল মিডিয়া ভিজ্যুয়াল ও গ্রাফিক্স",
+          "4": "Brand-aligned content calendar"
+        },
+        "packages": {
+          "starter": {
+            "0": "2-4 short videos per month",
+            "1": "8 social media posts",
+            "2": "Basic content planning",
+            "3": "1 platform focus"
+          },
+          "growth": {
+            "0": "4-8 short + 1-2 long videos",
+            "1": "16 social media posts",
+            "2": "Articles (priced per word count)",
+            "3": "Multi-platform optimization"
+          },
+          "pro": {
+            "0": "Unlimited video production",
+            "1": "Complete content calendar",
+            "2": "Advanced brand strategy",
+            "3": "Multi-platform campaigns"
+          }
         }
       },
       "businessWebsite": {
@@ -1014,7 +1115,8 @@
           "0": "আপনার পছন্দের ৫-১৫ পৃষ্ঠা",
           "1": "কন্টেন্ট ম্যানেজমেন্ট সিস্টেম (CMS)",
           "2": "ব্লগ ফাংশনালিটি",
-          "3": "অ্যাডভান্সড SEO অপ্টিমাইজেশন"
+          "3": "অ্যাডভান্সড SEO অপ্টিমাইজেশন",
+          "4": "Analytics integration"
         }
       },
       "onePage": {
@@ -1025,6 +1127,26 @@
           "1": "রেসপন্সিভ ডিজাইন",
           "2": "যোগাযোগ ফর্ম ইন্টিগ্রেশন",
           "3": "বেসিক SEO অপ্টিমাইজেশন"
+        }
+      },
+      "dataSync": {
+        "title": "Data Synchronization",
+        "description": "Keep your business data synchronized across all platforms. Inventory, pricing, and product information management.",
+        "features": {
+          "0": "Multi-platform synchronization",
+          "1": "Real-time updates",
+          "2": "Inventory management",
+          "3": "API integrations"
+        }
+      },
+      "mobileApp": {
+        "title": "Mobile App Development",
+        "description": "Launch a fast iOS & Android app with a native feel — built for growth.",
+        "features": {
+          "0": "iOS & Android (native feel)",
+          "1": "Clean UX + fast performance",
+          "2": "App Store & Play Store launch",
+          "3": "Backend & API integrations"
         }
       }
     },
@@ -1133,6 +1255,85 @@
       "title": "আপনার ডিজিটাল উপস্থিতি শক্তিশালী করতে প্রস্তুত?",
       "description": "আজই আমাদের সাথে যোগাযোগ করুন — কোন বাধ্যবাধকতা ছাড়া আলোচনা করতে কীভাবে আমরা আপনার ব্যবসায়িক লক্ষ্য অর্জনে সাহায্য করতে পারি।",
       "button": "বিনামূল্যে কোটেশন অনুরোধ করুন"
+    },
+    "guidedEntry": {
+      "title": "Not sure where to start?",
+      "subtitle": "Tell us your goal, we'll help you choose.",
+      "ctaPrimary": "Help me choose",
+      "ctaSecondary": "I'll browse everything myself"
+    },
+    "audience": {
+      "business": "Businesses",
+      "individual": "Individuals",
+      "creator": "Creators"
+    },
+    "packages": {
+      "starter": "Starter",
+      "growth": "Growth",
+      "pro": "Pro"
+    },
+    "calculatorHelperText": "Use this tool to get an indicative price based on your needs.",
+    "ads": {
+      "tab": {
+        "framework": "Budget Advisor"
+      },
+      "recommendedBudget": "Recommended budget",
+      "qualification": {
+        "headline": "Start With Your Goal",
+        "description": "Advertising success starts with a clear goal. Different goals require different budget levels to generate meaningful results.",
+        "note": "Budgets below these levels may limit data collection and result accuracy."
+      },
+      "goals": {
+        "leadGeneration": {
+          "title": "Lead Generation",
+          "description": "Allows enough data to optimize campaigns and generate qualified leads."
+        },
+        "ecommerce": {
+          "title": "E-commerce Sales",
+          "description": "Ensures stable traffic, conversion testing, and performance scaling."
+        },
+        "brandAwareness": {
+          "title": "Brand Awareness",
+          "description": "Delivers effective reach and frequency for visibility."
+        }
+      },
+      "transparency": {
+        "headline": "Full Budget Control",
+        "subheadline": "You decide the budget. We maximize its performance.",
+        "description": "Our advertising management fees cover strategy, setup, optimization, and reporting only. Advertising budgets are paid directly to platforms such as Google or Meta, giving you full transparency and control.",
+        "shortNote": "Ad spend is paid directly to advertising platforms."
+      },
+      "salesFlow": {
+        "title": "Our Collaboration Process",
+        "steps": {
+          "0": "Client defines advertising goal",
+          "1": "GROPPI recommends suitable budget range",
+          "2": "Client approves budget",
+          "3": "Campaign setup and launch",
+          "4": "Data collection and optimization",
+          "5": "Performance reporting and scaling"
+        },
+        "closingStatement": "We guide the strategy. You control the budget. Results come from alignment between both."
+      },
+      "faq": {
+        "title": "Advertising FAQs",
+        "budgetIncluded": {
+          "question": "Is the advertising budget included in the management price?",
+          "answer": "No. Management fees cover strategy, setup, optimization, and reporting only. Ad spend is paid directly to advertising platforms."
+        },
+        "smallBudget": {
+          "question": "Can I run ads with a very small budget?",
+          "answer": "Yes, but very low budgets may not generate enough data for meaningful or measurable results."
+        },
+        "whoDecides": {
+          "question": "Who decides the advertising budget?",
+          "answer": "We recommend a budget based on your goal and market. You approve and control the final budget."
+        },
+        "lowerBudget": {
+          "question": "What happens if I choose a lower budget than recommended?",
+          "answer": "Campaigns will be managed professionally, but performance and optimization may be limited due to insufficient data."
+        }
+      }
     }
   },
   "servicePage": {
@@ -1221,7 +1422,8 @@
       "title": "বৃদ্ধির জন্য প্রস্তুত?",
       "subtitle": "আসুন এই পরিকল্পনা বাস্তবে রূপ দিই।",
       "primaryCTA": "সঠিক কোটেশন চান",
-      "secondaryCTA": "WhatsApp-এ লিখুন"
+      "secondaryCTA": "WhatsApp-এ লিখুন",
+      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
     },
     "socialMedia": {
       "title": "সোশ্যাল মিডিয়া ম্যানেজমেন্ট",
@@ -1917,7 +2119,8 @@
       "channels": "চ্যানেল",
       "frequency": "ফ্রিকোয়েন্সি",
       "ads": "বিজ্ঞাপন",
-      "addons": "অ্যাড-অন"
+      "addons": "অ্যাড-অন",
+      "campaigns": "Paid campaigns"
     },
     "channels": {
       "title": "কোথায় উপস্থিত থাকতে চান?",
@@ -1928,7 +2131,15 @@
         "linkedin": "LinkedIn",
         "tiktok": "TikTok",
         "youtube": "YouTube"
-      }
+      },
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "googleBusiness": "Google Business",
+      "pinterest": "Pinterest",
+      "xTwitter": "X (Twitter)"
     },
     "frequency": {
       "title": "সপ্তাহে কয়টি পোস্ট?",
@@ -1938,7 +2149,13 @@
         "3perWeek": "৩টি পোস্ট / সপ্তাহ",
         "daily": "প্রতিদিন",
         "custom": "অন্য পরিমাণ"
-      }
+      },
+      "2month": "2 posts per month",
+      "1week": "1 post per week",
+      "2week": "2 posts per week",
+      "3week": "3 posts per week",
+      "4week": "4 posts per week",
+      "5week": "5 posts per week"
     },
     "ads": {
       "title": "বিজ্ঞাপন চালু করতে চান?",
@@ -1958,6 +2175,26 @@
         "communityManagement": "কমেন্টের উত্তর দেওয়া",
         "monthlyReporting": "উন্নত রিপোর্টিং",
         "influencerCollab": "ইনফ্লুয়েন্সার সহযোগিতা"
+      },
+      "productPhotos": {
+        "label": "Extra product photos",
+        "unit": "photo"
+      },
+      "googleReviews": {
+        "label": "Google Review Management"
+      },
+      "contentWriting": {
+        "label": "Content writing",
+        "unit": "hour"
+      },
+      "emailMarketing": {
+        "label": "Email marketing campaigns"
+      },
+      "postsPack": {
+        "label": "Social media posts (10-pack)"
+      },
+      "analyticsDashboard": {
+        "label": "Advanced Analytics Dashboard"
       }
     },
     "summary": {
@@ -1971,7 +2208,9 @@
       "total": "আনুমানিক মাসিক খরচ",
       "disclaimer": "নেট মূল্য। বিজ্ঞাপন বাজেট আলাদা প্রদেয়।",
       "ctaWhatsapp": "হোয়াটসঅ্যাপে প্ল্যান পাঠান",
-      "ctaCall": "এই প্ল্যান আলোচনা করুন"
+      "ctaCall": "এই প্ল্যান আলোচনা করুন",
+      "adsBudget": "Ad budget (paid directly)",
+      "included": "included"
     },
     "faq": {
       "title": "বিল্ডার FAQ",
@@ -1988,7 +2227,44 @@
           "q": "কবে শুরু করব?",
           "a": "শর্তাবলী গ্রহণ এবং অ্যাক্সেস হস্তান্তরের পর।"
         }
+      },
+      "adjustLater": {
+        "question": "Can I adjust my plan later?",
+        "answer": "Yes. You can adjust at any time. We align everything with your goals and evolution."
+      },
+      "setupCost": {
+        "question": "Is there a setup cost?",
+        "answer": "Setup is included in the management fee. Extras only arise with additional scope or exceptional setup."
+      },
+      "adBudgetIncluded": {
+        "question": "Is advertising budget included?",
+        "answer": "No. Advertising budget is paid directly to Meta/Google. Our cost is for management and optimization."
       }
+    },
+    "tab": "Build Your Plan",
+    "disclaimer": "This is an indicative price. Final pricing depends on scope, brand complexity, and content needs.",
+    "vatNote": "excl. VAT",
+    "adsBudgetDisclaimer": "Advertising budget is paid directly to Meta/Google and is not included in management costs.",
+    "adsBudgetNote": "Advertising budget is paid directly to Meta/Google.",
+    "pauseNote": "You can pause or stop whenever you want.",
+    "included": "Included",
+    "next": "Next",
+    "back": "Back",
+    "quantity": "Quantity",
+    "viewSummary": "View summary",
+    "validation": {
+      "minChannel": "Select at least 1 channel."
+    },
+    "adsBudget": {
+      "100": "€100 / month",
+      "250": "€250 / month",
+      "500": "€500 / month",
+      "1000": "€1000 / month",
+      "none": "No paid campaigns"
+    },
+    "cta": {
+      "primary": "Request a custom proposal",
+      "secondary": "Save plan"
     }
   },
   "partner": {
@@ -3014,7 +3290,17 @@
     "email": "ইমেল",
     "followInstagram": "ইনস্টাগ্রামে অনুসরণ করুন",
     "followFacebook": "ফেসবুকে লাইক দিন",
-    "followLinkedin": "লিঙ্কডইনে অনুসরণ করুন"
+    "followLinkedin": "লিঙ্কডইনে অনুসরণ করুন",
+    "whatsappChat": "Chat via WhatsApp",
+    "callUs": "Call us",
+    "emailUs": "Send an email",
+    "followUs": "Follow us on social media",
+    "actions": {
+      "chat": "Start a conversation via WhatsApp",
+      "call": "Call +32 494 31 11 19",
+      "email": "Email info@groppi.be"
+    },
+    "followTiktok": "Follow us on TikTok"
   },
   "footer": {
     "rights": "সর্বস্বত্ব সংরক্ষিত।",
@@ -3095,5 +3381,200 @@
         "content": "<h2>বিশ্বাসের কারণ</h2><p>একটি ক্রয় করার বা সেবা নেওয়ার আগে, বেশিরভাগ মানুষ একই কাজ করে: তারা রিভিউ পড়ে। গবেষণা অনুসারে, ৯০% এর বেশি ভোক্তা একটি ব্যবসা পরিদর্শনের আগে অনলাইন রিভিউ পড়ে।</p><h2>রিভিউর মনোবিজ্ঞান</h2><p>মানুষ ব্যবসার চেয়ে অন্য গ্রাহকদের বেশি বিশ্বাস করে। ডজনখানেক ইতিবাচক রিভিউ সহ একটি ব্যবসা নিরাপদ মনে হয়।</p><h2>আপনার সুনাম পরিচালনা</h2><ul><li>সন্তুষ্ট গ্রাহকদের রিভিউ দিতে বলুন</li><li>প্রক্রিয়াটি সহজ করুন সরাসরি লিঙ্ক প্রদান করে</li><li>পেশাদারভাবে নেতিবাচক রিভিউতে সাড়া দিন</li></ul>"
       }
     }
-  }
+  },
+  "servicesHome": {
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "Watch the video first to understand how each service works, then continue to the details.",
+    "card": {
+      "requestQuote": "Request a quote",
+      "viewDetails": "View details",
+      "watchHowItWorks": "Watch how it works (60 sec)",
+      "buildYourPlan": "Build your plan"
+    },
+    "badges": {
+      "monthly": "Monthly",
+      "oneTime": "One-time",
+      "custom": "Custom",
+      "mostChosen": "Most chosen"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try Again",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "search": "Search",
+    "noResults": "No results found",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "viewAll": "View All"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "minLength": "Minimum {{count}} characters required",
+    "maxLength": "Maximum {{count}} characters allowed"
+  },
+  "forms": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "message": "Message",
+    "subject": "Subject",
+    "website": "Website",
+    "budget": "Budget",
+    "submitSuccess": "Thank you! We'll be in touch soon.",
+    "submitError": "Something went wrong. Please try again."
+  },
+  "gallery": {
+    "title": "Our Work",
+    "subtitle": "Portfolio",
+    "description": "Discover a selection of projects we've delivered for our clients.",
+    "filters": {
+      "all": "All",
+      "web": "Websites",
+      "branding": "Branding",
+      "social": "Social Media",
+      "ecommerce": "E-commerce"
+    }
+  },
+  "franchise": {
+    "title": "Franchise",
+    "subtitle": "Become a Franchisee",
+    "description": "Are you interested in partnering with GROPPI? Discover the opportunities to grow together.",
+    "benefits": {
+      "title": "Franchise Benefits",
+      "items": {
+        "0": "Access to proven processes and methodologies",
+        "1": "Support from our experienced team",
+        "2": "Joint marketing efforts",
+        "3": "Knowledge sharing and training"
+      }
+    },
+    "requirements": {
+      "title": "What We're Looking For",
+      "items": {
+        "0": "Experience in digital marketing or related field",
+        "1": "Entrepreneurial mindset and growth mentality",
+        "2": "Commitment to quality and customer satisfaction",
+        "3": "Willingness for long-term collaboration"
+      }
+    },
+    "cta": "Contact us for more information",
+    "apply": "Apply Now",
+    "call": "Call Us"
+  },
+  "stats": {
+    "years": "Years of Experience",
+    "yearsValue": "9+",
+    "clients": "Happy Clients",
+    "clientsValue": "150+",
+    "projects": "Projects",
+    "projectsValue": "500+",
+    "team": "Team Members",
+    "teamValue": "9+"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "articles": "Articles",
+    "media": "Media",
+    "services": "Services",
+    "messages": "Messages",
+    "settings": "Settings",
+    "logout": "Log Out",
+    "login": "Log In",
+    "email": "Email",
+    "password": "Password",
+    "loginTitle": "Admin Login",
+    "loginButton": "Log In"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "Learn how GROPPI protects and processes your personal data in compliance with GDPR."
+    },
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy matters to us. This policy explains how we collect, use, and protect your data.",
+    "lastUpdated": "Last updated",
+    "footerNote": "Have questions about this privacy policy? Feel free to contact us at info@groppi.be",
+    "sections": {
+      "dataCollection": {
+        "title": "Data Collection",
+        "content": "We collect personal data that you voluntarily provide to us, such as:\n\n• Name and contact details when you fill out our contact form\n• Email address for newsletter subscriptions\n• CV and application data for job openings\n• Business information for commercial inquiries\n\nWe also automatically collect certain technical data such as IP address, browser type, and pages visited for analytical purposes."
+      },
+      "dataUsage": {
+        "title": "Data Usage",
+        "content": "We use your data to:\n\n• Respond to your questions and requests\n• Send newsletters (only with your consent)\n• Improve our website and services\n• Fulfill legal obligations\n• Send relevant information about our services"
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We take the security of your data seriously. We use:\n\n• SSL encryption for all data transfer\n• Secure servers and databases\n• Limited access to personal data\n• Regular security audits\n\nDespite our efforts, no method of transmission over the internet can be 100% secure."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "content": "Under GDPR, you have the following rights:\n\n• Right to access your data\n• Right to correct inaccurate data\n• Right to delete your data\n• Right to restrict processing\n• Right to data portability\n• Right to object to processing\n\nContact us to exercise these rights."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Our website uses cookies to enhance your experience:\n\n• Essential cookies for website functionality\n• Analytical cookies to understand how visitors use our site\n• Marketing cookies for targeted advertising (only with consent)\n\nYou can manage cookies through your browser settings."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "content": "We retain your data only as long as necessary:\n\n• Contact data: 2 years after last contact\n• Application data: 1 year after procedure completion\n• Newsletter subscribers: until unsubscription\n• Analytical data: 26 months\n\nAfter this period, data is securely deleted."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about your privacy or to exercise your rights:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nYou also have the right to file a complaint with the Belgian Data Protection Authority."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Service",
+      "description": "Read the terms and conditions for using GROPPI services and website."
+    },
+    "title": "Terms of Service",
+    "subtitle": "These terms govern your use of our website and services. By using our services, you agree to these terms.",
+    "lastUpdated": "Last updated",
+    "footerNote": "Have questions about these terms? Contact us at info@groppi.be",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using the GROPPI website and services, you agree to these Terms of Service.\n\nIf you do not agree to any part of these terms, you may not use our services.\n\nWe reserve the right to modify these terms at any time."
+      },
+      "services": {
+        "title": "Our Services",
+        "content": "GROPPI provides digital marketing services, including:\n\n• Web design and development\n• Search engine optimization (SEO)\n• Social media marketing\n• Paid advertising\n• Content creation\n• Brand identity and branding\n\nSpecific services and deliverables are defined in individual agreements."
+      },
+      "payment": {
+        "title": "Payment and Billing",
+        "content": "• All prices are exclusive of VAT unless otherwise stated\n• Payments are due within 14 days of invoice date\n• A 50% deposit may be required for projects\n• Late payments may incur administrative fees\n• We reserve the right to suspend services for outstanding payments"
+      },
+      "liability": {
+        "title": "Liability",
+        "content": "• GROPPI is not liable for indirect or consequential damages\n• Our liability is limited to the amount paid for the specific service\n• We do not guarantee specific results from marketing campaigns\n• Clients are responsible for the accuracy of information provided\n• We are not liable for changes made by third-party platforms"
+      },
+      "termination": {
+        "title": "Termination",
+        "content": "• Either party may terminate the agreement with 30 days written notice\n• Immediate termination may occur in case of serious breach\n• Upon termination, all outstanding amounts become immediately due\n• We will facilitate reasonable transfer of materials after termination"
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "We reserve the right to modify these terms at any time.\n\nFor significant changes, we will notify you by email if applicable.\n\nContinued use of our services after modifications constitutes acceptance of the new terms."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These terms are governed by Belgian law.\n\nDisputes will be submitted to the competent courts of Belgium.\n\nIf any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about these terms:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nWe aim to respond to all inquiries within 48 hours."
+      }
+    }
+  },
+  "_footer_merged": true
 }

@@ -8,7 +8,8 @@
     "contact": "Контакты",
     "franchise": "Франшиза",
     "partnership": "Франшиза",
-    "careers": "Вакансии"
+    "careers": "Вакансии",
+    "team": "Our Team"
   },
   "careers": {
     "meta": {
@@ -1460,7 +1461,29 @@
       "quote": "Запросить предложение",
       "whatsapp": "Чат через WhatsApp",
       "call": "Позвонить"
-    }
+    },
+    "intro": "Do you have a project in mind or want to strengthen your digital presence? Contact us for a no-obligation conversation.",
+    "mobileLabel": "Mobile",
+    "officeLabel": "Office",
+    "hoursLabel": "Business Hours",
+    "hoursValue": "Mon - Fri: 9:00 AM - 6:00 PM",
+    "description": "We'd love to hear from you. Fill out the form and we'll get back to you as soon as possible.",
+    "name": "Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "company": "Company",
+    "subject": "Subject",
+    "message": "Your Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We'll get back to you as soon as possible.",
+    "error": "Something went wrong. Please try again or contact us by phone.",
+    "address": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "landline": "Landline",
+    "mobile": "Mobile",
+    "rateLimited": "Too many requests. Please try again later."
   },
   "footer": {
     "description": "Помощь бизнесу в росте с помощью цифровых стратегий, которые работают.",
@@ -1480,7 +1503,8 @@
       "successMessage": "Вы успешно подписались на нашу рассылку.",
       "errorTitle": "Ошибка подписки",
       "errorMessage": "Что-то пошло не так. Попробуйте позже."
-    }
+    },
+    "followUs": "Follow Us"
   },
   "stats": {
     "years": "Лет опыта",
@@ -2640,7 +2664,8 @@
       "title": "Готовы привлечь больше клиентов?",
       "subtitle": "Без расплывчатых обещаний. Мы предоставляем конкретный план с ясными шагами.",
       "primaryCTA": "Запросить предложение",
-      "secondaryCTA": "Написать в WhatsApp"
+      "secondaryCTA": "Написать в WhatsApp",
+      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
     }
   },
   "privacy": {
@@ -2676,8 +2701,25 @@
       "contact": {
         "title": "Контактируйте нас",
         "content": "Если у вас есть вопросы, свяжитесь с нами через контактную форму или info@groppi.be."
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We take the security of your data seriously. We use:\n\n• SSL encryption for all data transfer\n• Secure servers and databases\n• Limited access to personal data\n• Regular security audits\n\nDespite our efforts, no method of transmission over the internet can be 100% secure."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "content": "Under GDPR, you have the following rights:\n\n• Right to access your data\n• Right to correct inaccurate data\n• Right to delete your data\n• Right to restrict processing\n• Right to data portability\n• Right to object to processing\n\nContact us to exercise these rights."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "content": "We retain your data only as long as necessary:\n\n• Contact data: 2 years after last contact\n• Application data: 1 year after procedure completion\n• Newsletter subscribers: until unsubscription\n• Analytical data: 26 months\n\nAfter this period, data is securely deleted."
       }
-    }
+    },
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "Learn how GROPPI protects and processes your personal data in compliance with GDPR."
+    },
+    "footerNote": "Have questions about this privacy policy? Feel free to contact us at info@groppi.be"
   },
   "terms": {
     "title": "Условия использования",
@@ -2708,8 +2750,29 @@
       "disputes": {
         "title": "Разрешение споров",
         "content": "Споры разрешаются через переговоры. Если не возможно, применимо бельгийское право."
+      },
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using the GROPPI website and services, you agree to these Terms of Service.\n\nIf you do not agree to any part of these terms, you may not use our services.\n\nWe reserve the right to modify these terms at any time."
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "We reserve the right to modify these terms at any time.\n\nFor significant changes, we will notify you by email if applicable.\n\nContinued use of our services after modifications constitutes acceptance of the new terms."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These terms are governed by Belgian law.\n\nDisputes will be submitted to the competent courts of Belgium.\n\nIf any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about these terms:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nWe aim to respond to all inquiries within 48 hours."
       }
-    }
+    },
+    "meta": {
+      "title": "Terms of Service",
+      "description": "Read the terms and conditions for using GROPPI services and website."
+    },
+    "footerNote": "Have questions about these terms? Contact us at info@groppi.be"
   },
   "gallery": {
     "title": "Наша работа",
@@ -2763,7 +2826,8 @@
       "approach": "Наш подход",
       "results": "Результат",
       "ctaPrimary": "Запросить предложение",
-      "ctaWhatsApp": "Чат через WhatsApp"
+      "ctaWhatsApp": "Чат через WhatsApp",
+      "deliverables": "What we delivered"
     },
     "items": {
       "castello-vicchiomaggio": {

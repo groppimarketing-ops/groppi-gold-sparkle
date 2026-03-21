@@ -8,7 +8,8 @@
     "contact": "संपर्क",
     "franchise": "फ्रैंचाइज़ी",
     "partnership": "फ्रैंचाइज़ी",
-    "careers": "करियर"
+    "careers": "करियर",
+    "team": "Our Team"
   },
   "careers": {
     "meta": {
@@ -274,7 +275,13 @@
       },
       "overview": {
         "about": "इस सेवा के बारे में",
-        "priceRange": "मूल्य सीमा"
+        "priceRange": "मूल्य सीमा",
+        "content_production": "Professional content production strengthens your brand with quality videos and photos that clearly convey your message and appeal to your target audience.",
+        "business_website": "A professional website is the foundation of your online presence. We build websites that are not only beautiful, but also convert.",
+        "ecommerce_website": "Start selling online with a fully optimized webshop with all the functionality you need.",
+        "ads_management": "Maximize your advertising budget with data-driven campaigns on Google, Facebook, Instagram and more.",
+        "seo": "Grow sustainably with organic traffic through optimized content and technical SEO improvements.",
+        "social_media": "Build an engaged community with consistent, quality content on all your social media channels."
       },
       "deliverables": {
         "title": "क्या मिलेगा"
@@ -357,7 +364,52 @@
     "portfolio": {
       "subtitle": "हमारा काम",
       "title": "चयनित परियोजनाएं",
-      "viewAll": "पूर्ण पोर्टफोलियो देखें"
+      "viewAll": "पूर्ण पोर्टफोलियो देखें",
+      "thumbnailPlaceholder": "Project image",
+      "viewCase": "View case",
+      "tags": {
+        "website": "Website",
+        "branding": "Branding",
+        "ads": "Ads",
+        "social": "Social",
+        "ecommerce": "E-commerce",
+        "seo": "SEO",
+        "content": "Content"
+      },
+      "projects": {
+        "restaurant-branding": {
+          "title": "Restaurant Branding",
+          "metric": "+180% reservations"
+        },
+        "mode-webshop": {
+          "title": "Fashion Webshop",
+          "metric": "€85K revenue in 3 months"
+        },
+        "b2b-platform": {
+          "title": "B2B Platform",
+          "metric": "+320% leads"
+        },
+        "bouwbedrijf-website": {
+          "title": "Construction Website",
+          "metric": "#1 Google local"
+        },
+        "influencer-campagne": {
+          "title": "Influencer Campaign",
+          "metric": "2.4M reach"
+        },
+        "tech-startup-branding": {
+          "title": "Tech Startup Branding",
+          "metric": "Complete brand identity"
+        },
+        "e-commerce-groei": {
+          "title": "E-commerce Growth",
+          "metric": "+240% ROAS"
+        },
+        "content-strategie": {
+          "title": "Content Strategy",
+          "metric": "50+ videos/month"
+        }
+      }
     },
     "caseStudies": {
       "subtitle": "सिद्ध परिणाम",
@@ -2841,6 +2893,55 @@
           "a": "ताकि ग्राहक हमेशा सही पता और वर्तमान खुलने का समय पा सके।"
         }
       }
+    },
+    "seo": {
+      "title": "SEO",
+      "subtitle": "Rank higher in Google for more organic traffic.",
+      "benefits": {
+        "1": "Better visibility in search engines",
+        "2": "More quality traffic to your site",
+        "3": "Long-term growth without ad costs"
+      },
+      "deliverables": {
+        "1": {
+          "title": "Technical audit",
+          "desc": "We check speed, structure and indexation."
+        },
+        "2": {
+          "title": "Keyword research",
+          "desc": "The right keywords for your market."
+        },
+        "3": {
+          "title": "On-page optimization",
+          "desc": "Improve titles, metas and content."
+        },
+        "4": {
+          "title": "Content strategy",
+          "desc": "SEO-focused articles and pages."
+        },
+        "5": {
+          "title": "Link building",
+          "desc": "Quality backlinks for authority."
+        },
+        "6": {
+          "title": "Monthly reporting",
+          "desc": "Rankings and traffic numbers."
+        }
+      },
+      "process": {
+        "1": {
+          "title": "Analysis",
+          "desc": "Technical and content audit of your site."
+        },
+        "2": {
+          "title": "Execution",
+          "desc": "Implementing optimizations and content."
+        },
+        "3": {
+          "title": "Growth & optimization",
+          "desc": "Continuous improvement of rankings."
+        }
+      }
     }
   },
   "planBuilder": {
@@ -2850,7 +2951,8 @@
       "channels": "चैनल",
       "frequency": "आवृत्ति",
       "ads": "विज्ञापन",
-      "addons": "एड-ऑन"
+      "addons": "एड-ऑन",
+      "campaigns": "Paid campaigns"
     },
     "channels": {
       "title": "आप कहाँ मौजूद रहना चाहते हैं?",
@@ -2861,7 +2963,15 @@
         "linkedin": "LinkedIn",
         "tiktok": "TikTok",
         "youtube": "YouTube"
-      }
+      },
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "googleBusiness": "Google Business",
+      "pinterest": "Pinterest",
+      "xTwitter": "X (Twitter)"
     },
     "frequency": {
       "title": "सप्ताह में कितने पोस्ट?",
@@ -2871,7 +2981,13 @@
         "3perWeek": "3 पोस्ट / सप्ताह",
         "daily": "प्रतिदिन",
         "custom": "अन्य मात्रा"
-      }
+      },
+      "2month": "2 posts per month",
+      "1week": "1 post per week",
+      "2week": "2 posts per week",
+      "3week": "3 posts per week",
+      "4week": "4 posts per week",
+      "5week": "5 posts per week"
     },
     "ads": {
       "title": "क्या आप विज्ञापन चालू करना चाहते हैं?",
@@ -2891,6 +3007,26 @@
         "communityManagement": "टिप्पणियों का जवाब देना",
         "monthlyReporting": "उन्नत रिपोर्टिंग",
         "influencerCollab": "इन्फ्लुएंसर सहयोग"
+      },
+      "productPhotos": {
+        "label": "Extra product photos",
+        "unit": "photo"
+      },
+      "googleReviews": {
+        "label": "Google Review Management"
+      },
+      "contentWriting": {
+        "label": "Content writing",
+        "unit": "hour"
+      },
+      "emailMarketing": {
+        "label": "Email marketing campaigns"
+      },
+      "postsPack": {
+        "label": "Social media posts (10-pack)"
+      },
+      "analyticsDashboard": {
+        "label": "Advanced Analytics Dashboard"
       }
     },
     "summary": {
@@ -2904,7 +3040,9 @@
       "total": "अनुमानित मासिक लागत",
       "disclaimer": "नेट मूल्य। विज्ञापन बजट अलग से देय।",
       "ctaWhatsapp": "प्लान WhatsApp पर भेजें",
-      "ctaCall": "इस प्लान पर चर्चा करें"
+      "ctaCall": "इस प्लान पर चर्चा करें",
+      "adsBudget": "Ad budget (paid directly)",
+      "included": "included"
     },
     "faq": {
       "title": "बिल्डर FAQ",
@@ -2921,7 +3059,44 @@
           "q": "हम कब शुरू करेंगे?",
           "a": "शर्तें स्वीकार करने और एक्सेस सौंपने के बाद।"
         }
+      },
+      "adjustLater": {
+        "question": "Can I adjust my plan later?",
+        "answer": "Yes. You can adjust at any time. We align everything with your goals and evolution."
+      },
+      "setupCost": {
+        "question": "Is there a setup cost?",
+        "answer": "Setup is included in the management fee. Extras only arise with additional scope or exceptional setup."
+      },
+      "adBudgetIncluded": {
+        "question": "Is advertising budget included?",
+        "answer": "No. Advertising budget is paid directly to Meta/Google. Our cost is for management and optimization."
       }
+    },
+    "tab": "Build Your Plan",
+    "disclaimer": "This is an indicative price. Final pricing depends on scope, brand complexity, and content needs.",
+    "vatNote": "excl. VAT",
+    "adsBudgetDisclaimer": "Advertising budget is paid directly to Meta/Google and is not included in management costs.",
+    "adsBudgetNote": "Advertising budget is paid directly to Meta/Google.",
+    "pauseNote": "You can pause or stop whenever you want.",
+    "included": "Included",
+    "next": "Next",
+    "back": "Back",
+    "quantity": "Quantity",
+    "viewSummary": "View summary",
+    "validation": {
+      "minChannel": "Select at least 1 channel."
+    },
+    "adsBudget": {
+      "100": "€100 / month",
+      "250": "€250 / month",
+      "500": "€500 / month",
+      "1000": "€1000 / month",
+      "none": "No paid campaigns"
+    },
+    "cta": {
+      "primary": "Request a custom proposal",
+      "secondary": "Save plan"
     }
   },
   "partner": {
@@ -3263,5 +3438,166 @@
     "learnMore": "और जानें",
     "accept": "स्वीकार करें",
     "reject": "अस्वीकार करें"
-  }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try Again",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "search": "Search",
+    "noResults": "No results found",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "viewAll": "View All"
+  },
+  "forms": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "message": "Message",
+    "subject": "Subject",
+    "website": "Website",
+    "budget": "Budget",
+    "submitSuccess": "Thank you! We'll be in touch soon.",
+    "submitError": "Something went wrong. Please try again."
+  },
+  "franchise": {
+    "title": "Franchise",
+    "subtitle": "Become a Franchisee",
+    "description": "Are you interested in partnering with GROPPI? Discover the opportunities to grow together.",
+    "benefits": {
+      "title": "Franchise Benefits",
+      "items": {
+        "0": "Access to proven processes and methodologies",
+        "1": "Support from our experienced team",
+        "2": "Joint marketing efforts",
+        "3": "Knowledge sharing and training"
+      }
+    },
+    "requirements": {
+      "title": "What We're Looking For",
+      "items": {
+        "0": "Experience in digital marketing or related field",
+        "1": "Entrepreneurial mindset and growth mentality",
+        "2": "Commitment to quality and customer satisfaction",
+        "3": "Willingness for long-term collaboration"
+      }
+    },
+    "cta": "Contact us for more information",
+    "apply": "Apply Now",
+    "call": "Call Us"
+  },
+  "stats": {
+    "years": "Years of Experience",
+    "yearsValue": "9+",
+    "clients": "Happy Clients",
+    "clientsValue": "150+",
+    "projects": "Projects",
+    "projectsValue": "500+",
+    "team": "Team Members",
+    "teamValue": "9+"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "articles": "Articles",
+    "media": "Media",
+    "services": "Services",
+    "messages": "Messages",
+    "settings": "Settings",
+    "logout": "Log Out",
+    "login": "Log In",
+    "email": "Email",
+    "password": "Password",
+    "loginTitle": "Admin Login",
+    "loginButton": "Log In"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "Learn how GROPPI protects and processes your personal data in compliance with GDPR."
+    },
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy matters to us. This policy explains how we collect, use, and protect your data.",
+    "lastUpdated": "Last updated",
+    "footerNote": "Have questions about this privacy policy? Feel free to contact us at info@groppi.be",
+    "sections": {
+      "dataCollection": {
+        "title": "Data Collection",
+        "content": "We collect personal data that you voluntarily provide to us, such as:\n\n• Name and contact details when you fill out our contact form\n• Email address for newsletter subscriptions\n• CV and application data for job openings\n• Business information for commercial inquiries\n\nWe also automatically collect certain technical data such as IP address, browser type, and pages visited for analytical purposes."
+      },
+      "dataUsage": {
+        "title": "Data Usage",
+        "content": "We use your data to:\n\n• Respond to your questions and requests\n• Send newsletters (only with your consent)\n• Improve our website and services\n• Fulfill legal obligations\n• Send relevant information about our services"
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We take the security of your data seriously. We use:\n\n• SSL encryption for all data transfer\n• Secure servers and databases\n• Limited access to personal data\n• Regular security audits\n\nDespite our efforts, no method of transmission over the internet can be 100% secure."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "content": "Under GDPR, you have the following rights:\n\n• Right to access your data\n• Right to correct inaccurate data\n• Right to delete your data\n• Right to restrict processing\n• Right to data portability\n• Right to object to processing\n\nContact us to exercise these rights."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Our website uses cookies to enhance your experience:\n\n• Essential cookies for website functionality\n• Analytical cookies to understand how visitors use our site\n• Marketing cookies for targeted advertising (only with consent)\n\nYou can manage cookies through your browser settings."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "content": "We retain your data only as long as necessary:\n\n• Contact data: 2 years after last contact\n• Application data: 1 year after procedure completion\n• Newsletter subscribers: until unsubscription\n• Analytical data: 26 months\n\nAfter this period, data is securely deleted."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about your privacy or to exercise your rights:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nYou also have the right to file a complaint with the Belgian Data Protection Authority."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Service",
+      "description": "Read the terms and conditions for using GROPPI services and website."
+    },
+    "title": "Terms of Service",
+    "subtitle": "These terms govern your use of our website and services. By using our services, you agree to these terms.",
+    "lastUpdated": "Last updated",
+    "footerNote": "Have questions about these terms? Contact us at info@groppi.be",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using the GROPPI website and services, you agree to these Terms of Service.\n\nIf you do not agree to any part of these terms, you may not use our services.\n\nWe reserve the right to modify these terms at any time."
+      },
+      "services": {
+        "title": "Our Services",
+        "content": "GROPPI provides digital marketing services, including:\n\n• Web design and development\n• Search engine optimization (SEO)\n• Social media marketing\n• Paid advertising\n• Content creation\n• Brand identity and branding\n\nSpecific services and deliverables are defined in individual agreements."
+      },
+      "payment": {
+        "title": "Payment and Billing",
+        "content": "• All prices are exclusive of VAT unless otherwise stated\n• Payments are due within 14 days of invoice date\n• A 50% deposit may be required for projects\n• Late payments may incur administrative fees\n• We reserve the right to suspend services for outstanding payments"
+      },
+      "liability": {
+        "title": "Liability",
+        "content": "• GROPPI is not liable for indirect or consequential damages\n• Our liability is limited to the amount paid for the specific service\n• We do not guarantee specific results from marketing campaigns\n• Clients are responsible for the accuracy of information provided\n• We are not liable for changes made by third-party platforms"
+      },
+      "termination": {
+        "title": "Termination",
+        "content": "• Either party may terminate the agreement with 30 days written notice\n• Immediate termination may occur in case of serious breach\n• Upon termination, all outstanding amounts become immediately due\n• We will facilitate reasonable transfer of materials after termination"
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "We reserve the right to modify these terms at any time.\n\nFor significant changes, we will notify you by email if applicable.\n\nContinued use of our services after modifications constitutes acceptance of the new terms."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These terms are governed by Belgian law.\n\nDisputes will be submitted to the competent courts of Belgium.\n\nIf any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "For questions about these terms:\n\nGROPPI\nEmail: info@groppi.be\nPhone: +32 456 19 87 21\n\nWe aim to respond to all inquiries within 48 hours."
+      }
+    }
+  },
+  "_footer_merged": true
 }

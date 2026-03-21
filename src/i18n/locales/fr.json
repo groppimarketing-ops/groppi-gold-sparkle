@@ -8,7 +8,8 @@
     "contact": "Contact",
     "partnership": "Partenariat",
     "franchise": "Partenariat",
-    "careers": "Carrières"
+    "careers": "Carrières",
+    "team": "Our Team"
   },
   "careers": {
     "meta": {
@@ -547,6 +548,12 @@
       "title": "Prêt à renforcer votre présence digitale ?",
       "description": "Contactez-nous aujourd'hui pour une conversation sans engagement sur la façon dont nous pouvons vous aider à atteindre vos objectifs commerciaux.",
       "button": "Demander un devis gratuit"
+    },
+    "badges": {
+      "monthly": "Monthly",
+      "oneTime": "One-time",
+      "custom": "Custom",
+      "mostChosen": "Most chosen"
     }
   },
   "calculator": {
@@ -1417,7 +1424,8 @@
         "metaDescription": "Découvrez pourquoi les avis en ligne sont cruciaux pour le succès de l'entreprise et apprenez les bases de la gestion de réputation.",
         "content": "<h2>Le facteur confiance</h2><p>Avant de faire un achat ou d'engager un service, la plupart des gens font la même chose : ils lisent les avis. Selon les recherches, plus de 90% des consommateurs lisent les avis en ligne avant de visiter une entreprise.</p><p>Les avis sont le bouche-à-oreille à grande échelle. Ils construisent ou détruisent la confiance avant que vous ne parliez jamais à un client potentiel.</p><h2>La psychologie des avis</h2><p>Les gens font plus confiance aux autres clients qu'aux entreprises. Ce n'est pas nouveau. Nous avons toujours demandé des recommandations à nos amis et notre famille. Internet a simplement rendu possible d'entendre des milliers d'inconnus.</p><p>Une entreprise avec des dizaines d'avis positifs semble sûre. Une entreprise sans avis ou avec des avis négatifs semble risquée. Cette perception influence directement les décisions d'achat.</p><h3>Les chiffres qui comptent</h3><p>Les recherches montrent que :</p><ul><li>Les entreprises avec des notes de 4+ étoiles obtiennent significativement plus de clics</li><li>Les 10 premiers avis ont le plus grand impact sur la perception</li><li>Un mélange de notes (pas seulement des scores parfaits) semble plus authentique</li><li>Les avis récents comptent plus que les anciens</li></ul><h2>Avis et visibilité</h2><p>Les avis n'influencent pas seulement les décisions. Ils influencent la visibilité. Google utilise les avis comme facteur de classement pour les résultats de recherche locaux. Plus d'avis positifs peuvent littéralement vous pousser plus haut dans les résultats.</p><p>Cela crée un cercle vertueux : de meilleurs avis mènent à plus de visibilité, qui mène à plus de clients, qui mène à plus d'avis.</p><h2>Gérer votre réputation</h2><p>La gestion de réputation ne consiste pas à manipuler les avis. Il s'agit de gagner de bons avis et de gérer les négatifs professionnellement.</p><h3>Gagner des avis positifs</h3><p>La base est simple : fournir un service excellent. Au-delà :</p><ul><li>Demandez aux clients satisfaits de laisser des avis</li><li>Facilitez le processus en fournissant des liens directs</li><li>Faites un suivi après les expériences positives</li><li>Remerciez les clients qui prennent le temps de laisser un avis</li></ul><h3>Gérer les avis négatifs</h3><p>Les avis négatifs sont inévitables. La façon dont vous les gérez compte plus que l'avis lui-même.</p><ul><li>Répondez rapidement et professionnellement</li><li>Reconnaissez la préoccupation sans être défensif</li><li>Proposez de résoudre le problème hors ligne</li><li>Tenez les promesses faites</li></ul><p>Une réponse professionnelle à un avis négatif peut en fait améliorer votre réputation. Cela montre aux clients potentiels que vous vous souciez et prenez vos responsabilités.</p><h2>Surveiller votre réputation</h2><p>Vous ne pouvez pas gérer ce que vous ne surveillez pas. Configurez des alertes pour savoir quand quelqu'un mentionne votre entreprise. Vérifiez régulièrement les plateformes d'avis pertinentes pour votre secteur.</p><p>Plateformes clés à surveiller :</p><ul><li>Profil Google Business</li><li>Sites d'avis spécifiques au secteur</li><li>Mentions sur les réseaux sociaux</li><li>Avis sur votre propre site</li></ul><h2>La vision à long terme</h2><p>Construire une réputation en ligne solide prend du temps. Il n'y a pas de raccourcis. Concentrez-vous sur fournir un service exceptionnel, demander régulièrement des retours et répondre professionnellement à tous les avis.</p><p>Au fil du temps, votre réputation devient un avantage concurrentiel difficile à reproduire par les concurrents. C'est l'un des rares atouts qui gagne en valeur plus vous en prenez soin.</p>"
       }
-    }
+    },
+    "relatedServices": "Related services"
   },
   "gallery": {
     "title": "Nos réalisations",
@@ -1456,7 +1464,8 @@
       "approach": "Notre approche",
       "results": "Résultat",
       "ctaPrimary": "Demander un devis",
-      "ctaWhatsApp": "Discuter via WhatsApp"
+      "ctaWhatsApp": "Discuter via WhatsApp",
+      "deliverables": "What we delivered"
     },
     "items": {
       "castello-vicchiomaggio": {
@@ -2229,7 +2238,8 @@
     "phoneLabel": "Téléphone",
     "emailLabel": "E-mail",
     "landline": "Téléphone fixe",
-    "mobile": "Mobile"
+    "mobile": "Mobile",
+    "rateLimited": "Too many requests. Please try again later."
   },
   "franchise": {
     "title": "Partenariat",
@@ -2715,7 +2725,8 @@
       "title": "Prêt à grandir avec clarté ?",
       "subtitle": "Pas de promesses vides. Juste des étapes concrètes vers plus de clients.",
       "primaryCTA": "Demander un devis personnalisé",
-      "secondaryCTA": "Discuter via WhatsApp"
+      "secondaryCTA": "Discuter via WhatsApp",
+      "trustNote": "No-obligation conversation · Final quote after intake · Prices excl. VAT"
     },
     "socialMedia": {
       "title": "Gestion des réseaux sociaux",
@@ -3402,7 +3413,8 @@
           "a": "Nous installons et configurons des outils de tracking (Google Analytics, Meta Pixel, suivi de conversion) pour que vous sachiez exactement quels efforts marketing produisent des résultats."
         }
       }
-    }
+    },
+    "defaultDescription": "{{service}} — Professional service by GROPPI Marketing Bureau."
   },
   "privacy": {
     "meta": {

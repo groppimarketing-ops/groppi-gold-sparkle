@@ -8,7 +8,8 @@
     "contact": "Contacto",
     "partnership": "Franquia",
     "franchise": "Franquia",
-    "careers": "Carreiras"
+    "careers": "Carreiras",
+    "team": "Our Team"
   },
   "careers": {
     "meta": {
@@ -109,6 +110,40 @@
         "q": "O que devo incluir no meu CV?",
         "a": "Foque-se em experiência relevante e resultados. Mostre projetos ou portfólio quando possível. Mantenha-o conciso (máx 2 páginas)."
       }
+    },
+    "form": {
+      "title": "Apply now",
+      "subtitle": "Fill in the form and upload your CV. We'll get back to you soon.",
+      "fullName": "Full name",
+      "fullNamePlaceholder": "John Smith",
+      "email": "Email address",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone number",
+      "phonePlaceholder": "+32 400 00 00 00",
+      "role": "Position",
+      "rolePlaceholder": "Select a position",
+      "otherRole": "Other / Spontaneous application",
+      "linkedin": "LinkedIn / Portfolio URL",
+      "linkedinPlaceholder": "https://linkedin.com/in/your-profile",
+      "message": "Short message",
+      "messagePlaceholder": "Tell us why you're interested (optional)",
+      "cv": "Upload CV",
+      "cvPlaceholder": "Click to upload your CV (PDF, DOC, DOCX)",
+      "cvHint": "Max 10MB. Supported formats: PDF, DOC, DOCX",
+      "cvRequired": "CV is required",
+      "invalidFileType": "Invalid file type. Please upload a PDF, DOC or DOCX.",
+      "fileTooLarge": "File is too large. Maximum 10MB allowed.",
+      "consent": "I agree to be contacted about my application.",
+      "submit": "Submit application",
+      "submitting": "Submitting...",
+      "uploading": "Uploading CV...",
+      "successTitle": "Application received!",
+      "successMessage": "Thank you for your interest. We'll get back to you as soon as possible.",
+      "submitAnother": "Submit another application",
+      "errorTitle": "Something went wrong",
+      "errorMessage": "We couldn't process your application. Please try again.",
+      "privacyNote": "Your data is used only for recruitment. CVs are handled confidentially.",
+      "contactLink": "Contact us"
     }
   },
   "pricing": {
@@ -1854,6 +1889,18 @@
         "commitment": {
           "question": "Qual é o compromisso?",
           "answer": "Comprometemo-nos com qualidade e entrega. Espere orientação, não microgestão."
+        },
+        "leads": {
+          "question": "Do you deliver leads?",
+          "answer": "We support positioning and growth systems. Results depend on region and execution."
+        },
+        "team": {
+          "question": "Can I work with my own team?",
+          "answer": "Yes, as long as quality standards are followed."
+        },
+        "howToApply": {
+          "question": "How can I become a partner?",
+          "answer": "Via the partner form. We'll contact you within 24 hours."
         }
       }
     },
@@ -1870,7 +1917,8 @@
       "title": "Agendar uma introdução",
       "body": "Escolha um horário para uma breve chamada. Sem compromisso.",
       "ctaPrimary": "Agendar chamada",
-      "helperText": "Escolha um horário conveniente"
+      "helperText": "Escolha um horário conveniente",
+      "cta": "Schedule call"
     }
   },
   "servicePage": {
@@ -3488,6 +3536,94 @@
           "1": "Top 5 Google local"
         },
         "disclaimer": "Resultado indicativo, dependente do período e orçamento."
+      }
+    }
+  },
+  "franchise": {
+    "title": "Franchise",
+    "subtitle": "Become a Franchisee",
+    "description": "Are you interested in partnering with GROPPI? Discover the opportunities to grow together.",
+    "benefits": {
+      "title": "Franchise Benefits",
+      "items": {
+        "0": "Access to proven processes and methodologies",
+        "1": "Support from our experienced team",
+        "2": "Joint marketing efforts",
+        "3": "Knowledge sharing and training"
+      }
+    },
+    "requirements": {
+      "title": "What We're Looking For",
+      "items": {
+        "0": "Experience in digital marketing or related field",
+        "1": "Entrepreneurial mindset and growth mentality",
+        "2": "Commitment to quality and customer satisfaction",
+        "3": "Willingness for long-term collaboration"
+      }
+    },
+    "cta": "Contact us for more information",
+    "apply": "Apply Now",
+    "call": "Call Us"
+  },
+  "caseStudy": {
+    "backToPortfolio": "Back to portfolio",
+    "challengeLabel": "Challenge",
+    "approachLabel": "Approach",
+    "resultsLabel": "Result",
+    "servicesUsed": "Services used",
+    "ctaQuote": "Request a quote",
+    "ctaServices": "View services & pricing",
+    "prevCase": "Previous case",
+    "nextCase": "Next case",
+    "allCases": "All cases",
+    "cases": {
+      "restaurant-branding": {
+        "title": "Restaurant Branding & Website",
+        "challenge": "Low online visibility and few digital reservations.",
+        "approach": "New brand identity + modern website + Google Ads campaign.",
+        "result": "+180% online reservations"
+      },
+      "mode-webshop": {
+        "title": "Fashion Webshop Launch",
+        "challenge": "New brand without online presence or customer base.",
+        "approach": "Complete webshop + social media strategy + influencer marketing.",
+        "result": "€85K revenue in first 3 months"
+      },
+      "b2b-platform": {
+        "title": "B2B Lead Generation Platform",
+        "challenge": "Too few qualified leads for B2B services.",
+        "approach": "Lead generation website + LinkedIn Ads + content marketing.",
+        "result": "+320% qualified leads"
+      },
+      "bouwbedrijf-website": {
+        "title": "Construction Company Website & SEO",
+        "challenge": "Invisible on Google despite good offline reputation.",
+        "approach": "SEO-optimized website + local SEO + Google My Business.",
+        "result": "#1 ranking on Google locally"
+      },
+      "influencer-campagne": {
+        "title": "Influencer Marketing Campaign",
+        "challenge": "Increase brand awareness among younger audience.",
+        "approach": "Influencer selection + content strategy + social media amplification.",
+        "result": "2.4 million reach"
+      },
+      "tech-startup-branding": {
+        "title": "Tech Startup Complete Branding",
+        "challenge": "Startup without visual identity or brand position.",
+        "approach": "Brand strategy + logo design + website + pitch deck.",
+        "result": "Complete brand identity launched"
+      },
+      "e-commerce-groei": {
+        "title": "E-commerce Growth Strategy",
+        "challenge": "Low ROAS and high advertising costs.",
+        "approach": "Campaign audit + A/B testing + retargeting optimization.",
+        "result": "+240% ROAS improvement"
+      },
+      "content-strategie": {
+        "title": "Content Production Strategy",
+        "challenge": "Inconsistent content and lack of engagement.",
+        "approach": "Content calendar + video production + social media management.",
+        "result": "50+ videos per month"
       }
     }
   }
