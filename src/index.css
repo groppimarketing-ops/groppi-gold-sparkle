@@ -918,7 +918,7 @@
     animation: badge-glow 2s ease-in-out infinite;
   }
 
-  /* ===== HomeFinalCTA — CSS shimmer sweep + slow spin (replaces framer-motion infinite) ===== */
+  /* ===== HomeFinalCTA — CSS shimmer sweep (slowed, subtle) ===== */
   @keyframes cta-shimmer {
     0%   { transform: translateX(-100%); }
     100% { transform: translateX(100%);  }
@@ -927,13 +927,15 @@
     from { transform: rotate(0deg);   }
     to   { transform: rotate(360deg); }
   }
+  /* Shimmer now runs every 8s instead of 5s, much less distracting */
   .final-cta-shimmer {
-    background: linear-gradient(90deg, transparent 0%, hsl(43 76% 52% / 0.1) 50%, transparent 100%);
-    animation: cta-shimmer 5s ease-in-out infinite;
+    background: linear-gradient(90deg, transparent 0%, hsl(43 76% 52% / 0.07) 50%, transparent 100%);
+    animation: cta-shimmer 8s ease-in-out infinite;
     border-radius: inherit;
   }
+  /* final-cta-spin removed from JSX — class kept for legacy but unused */
   .final-cta-spin {
-    animation: slow-spin 20s linear infinite;
+    /* no animation — icon stays static */
   }
   /* Reusable slow-spin for any icon (e.g. Contact sparkle) */
   .slow-spin {
