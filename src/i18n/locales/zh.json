@@ -3566,5 +3566,84 @@
     "description": "本网站使用 cookies 来改善您的体验并衡量我们的表现。点击“接受”即表示您同意我们的 cookie 政策。",
     "reject": "拒绝"
   },
-  "_footer_merged": true
+  "_footer_merged": true,
+  "team": {
+    "meta": {
+      "title": "我们的团队 — GROPPI",
+      "description": "认识GROPPI每一个策略、活动和成果背后的创始人、领导层和全球团队。"
+    },
+    "hero": {
+      "badge": "GROPPI背后的人",
+      "title": "我们的团队",
+      "subtitle": "每一个策略、每一次活动、每一个成果背后的人。"
+    },
+    "sections": {
+      "founders": "创始人",
+      "executiveLeadership": "执行领导层",
+      "behindScenes": "幕后故事",
+      "insideOffice": "我们的办公室",
+      "whoWeAre": "我们是谁",
+      "ourTeam": "我们的团队",
+      "ourProcess": "我们的流程",
+      "howWeWork": "我们如何工作"
+    },
+    "officeSubtitle": "真实的讨论。真实的决策。真实的执行。",
+    "roles": {
+      "ceo": "创始人兼首席执行官",
+      "cso": "联合创始人兼首席战略官",
+      "headOps": "全球运营主管",
+      "dirPerformance": "绩效总监",
+      "dirCreative": "创意与品牌总监",
+      "md": "总经理",
+      "coo": "首席运营官",
+      "headBrand": "品牌与战略主管",
+      "perfMarketing": "效果营销经理",
+      "dataLead": "数据与分析主管",
+      "creativeDir": "创意总监",
+      "clientSuccess": "客户成功总监",
+      "bdManager": "业务发展经理",
+      "contentMedia": "内容与媒体制作人",
+      "frontendDev": "外部前端开发者",
+      "techConsultant": "技术性能顾问",
+      "backendDev": "外部后端开发者"
+    },
+    "taglines": {
+      "koen": "引领效果营销未来的远见卓识领导力。",
+      "totti": "可扩展品牌扩张背后的战略增长架构师。",
+      "mohamed": "在全球市场中协调团队、绩效与执行。",
+      "lucas": "通过数据驱动的执行实现可衡量的成果。",
+      "sofia": "将战略转化为强大的品牌体验。",
+      "alexander": "将愿景转化为收入。",
+      "thomas": "每个流程都精益求精。",
+      "elise": "创造能转化的故事。",
+      "lukas": "数据驱动，结果至上。",
+      "camille": "数字讲述真实故事。",
+      "sophie": "大胆创意成形之地。",
+      "claire": "您的增长是我们的使命。",
+      "julia": "打开大门，达成交易。",
+      "marco": "打动人心的视觉作品。",
+      "arjun": "像素级完美，每一次。",
+      "bilal": "速度与规模，全面优化。",
+      "rohan": "打造底层引擎。"
+    },
+    "howWeWork": {
+      "strategy": {
+        "title": "策略",
+        "description": "基于研究和绩效洞察的清晰规划。"
+      },
+      "execution": {
+        "title": "执行",
+        "description": "跨职能协作实现可衡量的增长。"
+      },
+      "optimization": {
+        "title": "优化",
+        "description": "由数据智能驱动的持续改进。"
+      }
+    },
+    "cta": {
+      "title": "想与一个交付真实成果的团队合作吗？",
+      "subtitle": "让我们聊聊。",
+      "button": "联系我们"
+    }
+  }
 }

@@ -3671,5 +3671,84 @@
     "password": "Contraseña",
     "loginTitle": "Acceso de Administrador",
     "loginButton": "Iniciar Sesión"
+  },
+  "team": {
+    "meta": {
+      "title": "Nuestro Equipo — GROPPI",
+      "description": "Conoce a los fundadores, el liderazgo y el equipo global detrás de cada estrategia, campaña y resultado en GROPPI."
+    },
+    "hero": {
+      "badge": "Las Personas Detrás de GROPPI",
+      "title": "Nuestro Equipo",
+      "subtitle": "Las personas detrás de cada estrategia, cada campaña, cada resultado."
+    },
+    "sections": {
+      "founders": "Fundadores",
+      "executiveLeadership": "Liderazgo Ejecutivo",
+      "behindScenes": "Detrás de Escena",
+      "insideOffice": "En Nuestra Oficina",
+      "whoWeAre": "Quiénes Somos",
+      "ourTeam": "Nuestro Equipo",
+      "ourProcess": "Nuestro Proceso",
+      "howWeWork": "Cómo Trabajamos"
+    },
+    "officeSubtitle": "Discusiones reales. Decisiones reales. Ejecución real.",
+    "roles": {
+      "ceo": "Fundador y CEO",
+      "cso": "Cofundador y Director de Estrategia",
+      "headOps": "Director de Operaciones Globales",
+      "dirPerformance": "Director de Rendimiento",
+      "dirCreative": "Directora Creativa y de Marca",
+      "md": "Director General",
+      "coo": "Director de Operaciones",
+      "headBrand": "Directora de Marca y Estrategia",
+      "perfMarketing": "Gerente de Marketing de Rendimiento",
+      "dataLead": "Líder de Datos y Analítica",
+      "creativeDir": "Directora Creativa",
+      "clientSuccess": "Directora de Éxito del Cliente",
+      "bdManager": "Gerente de Desarrollo de Negocios",
+      "contentMedia": "Productor de Contenido y Medios",
+      "frontendDev": "Desarrollador Frontend Externo",
+      "techConsultant": "Consultor de Rendimiento Técnico",
+      "backendDev": "Desarrollador Backend Externo"
+    },
+    "taglines": {
+      "koen": "Liderazgo visionario que da forma al futuro del marketing de rendimiento.",
+      "totti": "Arquitecto de crecimiento estratégico detrás de la expansión escalable de marcas.",
+      "mohamed": "Alineando equipos, rendimiento y ejecución en mercados globales.",
+      "lucas": "Resultados medibles a través de ejecución basada en datos.",
+      "sofia": "Transformando estrategia en experiencias de marca poderosas.",
+      "alexander": "Convertir la visión en ingresos.",
+      "thomas": "Precisión en cada proceso.",
+      "elise": "Creando historias que convierten.",
+      "lukas": "Impulsado por datos, obsesionado con resultados.",
+      "camille": "Los números cuentan la historia real.",
+      "sophie": "Donde las ideas audaces toman forma.",
+      "claire": "Tu crecimiento es nuestra misión.",
+      "julia": "Abriendo puertas, cerrando acuerdos.",
+      "marco": "Visuales que conmueven.",
+      "arjun": "Pixel perfecto, siempre.",
+      "bilal": "Velocidad y escala, optimizadas.",
+      "rohan": "Construyendo el motor desde dentro."
+    },
+    "howWeWork": {
+      "strategy": {
+        "title": "Estrategia",
+        "description": "Planificación clara basada en investigación e insights de rendimiento."
+      },
+      "execution": {
+        "title": "Ejecución",
+        "description": "Colaboración multifuncional que genera crecimiento medible."
+      },
+      "optimization": {
+        "title": "Optimización",
+        "description": "Refinamiento continuo impulsado por inteligencia de datos."
+      }
+    },
+    "cta": {
+      "title": "¿Quieres trabajar con un equipo que entrega resultados reales?",
+      "subtitle": "Hablemos.",
+      "button": "Contáctanos"
+    }
   }
 }

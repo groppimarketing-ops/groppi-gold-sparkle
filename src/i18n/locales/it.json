@@ -3523,5 +3523,84 @@
       "custom": "Personalizzato",
       "mostChosen": "Più scelto"
     }
+  },
+  "team": {
+    "meta": {
+      "title": "Il Nostro Team — GROPPI",
+      "description": "Scopri i fondatori, la leadership e il team globale dietro ogni strategia, campagna e risultato di GROPPI."
+    },
+    "hero": {
+      "badge": "Le Persone Dietro GROPPI",
+      "title": "Il Nostro Team",
+      "subtitle": "Le persone dietro ogni strategia, ogni campagna, ogni risultato."
+    },
+    "sections": {
+      "founders": "Fondatori",
+      "executiveLeadership": "Leadership Esecutiva",
+      "behindScenes": "Dietro le Quinte",
+      "insideOffice": "Nel Nostro Ufficio",
+      "whoWeAre": "Chi Siamo",
+      "ourTeam": "Il Nostro Team",
+      "ourProcess": "Il Nostro Processo",
+      "howWeWork": "Come Lavoriamo"
+    },
+    "officeSubtitle": "Discussioni reali. Decisioni reali. Esecuzione reale.",
+    "roles": {
+      "ceo": "Fondatore e CEO",
+      "cso": "Co-fondatore e Chief Strategy Officer",
+      "headOps": "Responsabile Operazioni Globali",
+      "dirPerformance": "Direttore Performance",
+      "dirCreative": "Direttrice Creativa e Brand",
+      "md": "Direttore Generale",
+      "coo": "Chief Operating Officer",
+      "headBrand": "Responsabile Brand e Strategia",
+      "perfMarketing": "Performance Marketing Manager",
+      "dataLead": "Data & Analytics Lead",
+      "creativeDir": "Direttrice Creativa",
+      "clientSuccess": "Direttrice Successo Clienti",
+      "bdManager": "Business Development Manager",
+      "contentMedia": "Produttore Contenuti e Media",
+      "frontendDev": "Sviluppatore Frontend Esterno",
+      "techConsultant": "Consulente Performance Tecnica",
+      "backendDev": "Sviluppatore Backend Esterno"
+    },
+    "taglines": {
+      "koen": "Leadership visionaria che plasma il futuro del performance marketing.",
+      "totti": "Architetto di crescita strategica dietro l'espansione scalabile dei brand.",
+      "mohamed": "Allineare team, performance ed esecuzione nei mercati globali.",
+      "lucas": "Risultati misurabili attraverso un'esecuzione guidata dai dati.",
+      "sofia": "Trasformare la strategia in esperienze di brand potenti.",
+      "alexander": "Trasformare la visione in ricavi.",
+      "thomas": "Precisione in ogni processo.",
+      "elise": "Creare storie che convertono.",
+      "lukas": "Guidato dai dati, ossessionato dai risultati.",
+      "camille": "I numeri raccontano la vera storia.",
+      "sophie": "Dove le idee audaci prendono forma.",
+      "claire": "La tua crescita è la nostra missione.",
+      "julia": "Aprire porte, chiudere accordi.",
+      "marco": "Visual che emozionano.",
+      "arjun": "Pixel-perfect, ogni volta.",
+      "bilal": "Velocità e scala, ottimizzate.",
+      "rohan": "Costruire il motore sotto il cofano."
+    },
+    "howWeWork": {
+      "strategy": {
+        "title": "Strategia",
+        "description": "Pianificazione chiara basata su ricerca e insight sulle performance."
+      },
+      "execution": {
+        "title": "Esecuzione",
+        "description": "Collaborazione interfunzionale che genera crescita misurabile."
+      },
+      "optimization": {
+        "title": "Ottimizzazione",
+        "description": "Perfezionamento continuo alimentato dall'intelligenza dei dati."
+      }
+    },
+    "cta": {
+      "title": "Vuoi lavorare con un team che offre risultati reali?",
+      "subtitle": "Parliamone.",
+      "button": "Contattaci"
+    }
   }
 }

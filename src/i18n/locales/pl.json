@@ -3686,5 +3686,84 @@
     "password": "Hasło",
     "loginTitle": "Logowanie administratora",
     "loginButton": "Zaloguj"
+  },
+  "team": {
+    "meta": {
+      "title": "Nasz Zespół — GROPPI",
+      "description": "Poznaj założycieli, kadrę zarządzającą i globalny zespół stojący za każdą strategią, kampanią i wynikiem w GROPPI."
+    },
+    "hero": {
+      "badge": "Ludzie Stojący za GROPPI",
+      "title": "Nasz Zespół",
+      "subtitle": "Ludzie stojący za każdą strategią, każdą kampanią, każdym wynikiem."
+    },
+    "sections": {
+      "founders": "Założyciele",
+      "executiveLeadership": "Zarząd",
+      "behindScenes": "Za Kulisami",
+      "insideOffice": "W Naszym Biurze",
+      "whoWeAre": "Kim Jesteśmy",
+      "ourTeam": "Nasz Zespół",
+      "ourProcess": "Nasz Proces",
+      "howWeWork": "Jak Pracujemy"
+    },
+    "officeSubtitle": "Prawdziwe dyskusje. Prawdziwe decyzje. Prawdziwa realizacja.",
+    "roles": {
+      "ceo": "Założyciel i CEO",
+      "cso": "Współzałożyciel i Dyrektor ds. Strategii",
+      "headOps": "Dyrektor Operacji Globalnych",
+      "dirPerformance": "Dyrektor ds. Wydajności",
+      "dirCreative": "Dyrektor Kreatywna i Marki",
+      "md": "Dyrektor Zarządzający",
+      "coo": "Dyrektor Operacyjny",
+      "headBrand": "Dyrektor ds. Marki i Strategii",
+      "perfMarketing": "Menedżer Marketingu Efektywnościowego",
+      "dataLead": "Lider Danych i Analityki",
+      "creativeDir": "Dyrektor Kreatywna",
+      "clientSuccess": "Dyrektor ds. Sukcesu Klienta",
+      "bdManager": "Menedżer Rozwoju Biznesu",
+      "contentMedia": "Producent Treści i Mediów",
+      "frontendDev": "Zewnętrzny Developer Frontend",
+      "techConsultant": "Konsultant ds. Wydajności Technicznej",
+      "backendDev": "Zewnętrzny Developer Backend"
+    },
+    "taglines": {
+      "koen": "Wizjonerskie przywództwo kształtujące przyszłość marketingu efektywnościowego.",
+      "totti": "Strategiczny architekt wzrostu stojący za skalowalną ekspansją marek.",
+      "mohamed": "Koordynowanie zespołów, wydajności i realizacji na rynkach globalnych.",
+      "lucas": "Mierzalne wyniki dzięki realizacji opartej na danych.",
+      "sofia": "Przekształcanie strategii w potężne doświadczenia marki.",
+      "alexander": "Przekształcanie wizji w przychody.",
+      "thomas": "Precyzja w każdym procesie.",
+      "elise": "Tworzenie historii, które konwertują.",
+      "lukas": "Napędzany danymi, nastawiony na wyniki.",
+      "camille": "Liczby opowiadają prawdziwą historię.",
+      "sophie": "Gdzie odważne pomysły nabierają kształtu.",
+      "claire": "Twój rozwój to nasza misja.",
+      "julia": "Otwieranie drzwi, zamykanie transakcji.",
+      "marco": "Wizualizacje, które poruszają.",
+      "arjun": "Pixel-perfect, za każdym razem.",
+      "bilal": "Szybkość i skala, zoptymalizowane.",
+      "rohan": "Budowanie silnika od środka."
+    },
+    "howWeWork": {
+      "strategy": {
+        "title": "Strategia",
+        "description": "Jasne planowanie oparte na badaniach i analizie wydajności."
+      },
+      "execution": {
+        "title": "Realizacja",
+        "description": "Współpraca międzyfunkcyjna generująca mierzalny wzrost."
+      },
+      "optimization": {
+        "title": "Optymalizacja",
+        "description": "Ciągłe doskonalenie napędzane inteligencją danych."
+      }
+    },
+    "cta": {
+      "title": "Chcesz pracować z zespołem, który dostarcza realne wyniki?",
+      "subtitle": "Porozmawiajmy.",
+      "button": "Skontaktuj się"
+    }
   }
 }
