@@ -3662,5 +3662,84 @@
     "learnMore": "Daha fazla bilgi",
     "accept": "Kabul Et",
     "reject": "Reddet"
+  },
+  "team": {
+    "meta": {
+      "title": "Ekibimiz — GROPPI",
+      "description": "GROPPI'deki her stratejinin, kampanyanın ve sonucun arkasındaki kurucuları, liderliği ve küresel ekibi tanıyın."
+    },
+    "hero": {
+      "badge": "GROPPI'nin Arkasındaki İnsanlar",
+      "title": "Ekibimiz",
+      "subtitle": "Her stratejinin, her kampanyanın, her sonucun arkasındaki insanlar."
+    },
+    "sections": {
+      "founders": "Kurucular",
+      "executiveLeadership": "Üst Yönetim",
+      "behindScenes": "Sahne Arkası",
+      "insideOffice": "Ofisimizden",
+      "whoWeAre": "Biz Kimiz",
+      "ourTeam": "Ekibimiz",
+      "ourProcess": "Sürecimiz",
+      "howWeWork": "Nasıl Çalışıyoruz"
+    },
+    "officeSubtitle": "Gerçek tartışmalar. Gerçek kararlar. Gerçek uygulama.",
+    "roles": {
+      "ceo": "Kurucu ve CEO",
+      "cso": "Kurucu Ortak ve Strateji Direktörü",
+      "headOps": "Küresel Operasyon Müdürü",
+      "dirPerformance": "Performans Direktörü",
+      "dirCreative": "Kreatif ve Marka Direktörü",
+      "md": "Genel Müdür",
+      "coo": "Operasyon Direktörü",
+      "headBrand": "Marka ve Strateji Müdürü",
+      "perfMarketing": "Performans Pazarlama Yöneticisi",
+      "dataLead": "Veri ve Analitik Lideri",
+      "creativeDir": "Kreatif Direktör",
+      "clientSuccess": "Müşteri Başarı Direktörü",
+      "bdManager": "İş Geliştirme Yöneticisi",
+      "contentMedia": "İçerik ve Medya Yapımcısı",
+      "frontendDev": "Harici Frontend Geliştirici",
+      "techConsultant": "Teknik Performans Danışmanı",
+      "backendDev": "Harici Backend Geliştirici"
+    },
+    "taglines": {
+      "koen": "Performans pazarlamasının geleceğini şekillendiren vizyoner liderlik.",
+      "totti": "Ölçeklenebilir marka genişlemesinin arkasındaki stratejik büyüme mimarı.",
+      "mohamed": "Küresel pazarlarda ekipleri, performansı ve uygulamayı koordine etmek.",
+      "lucas": "Veriye dayalı uygulama ile ölçülebilir sonuçlar.",
+      "sofia": "Stratejiyi güçlü marka deneyimlerine dönüştürmek.",
+      "alexander": "Vizyonu gelire dönüştürmek.",
+      "thomas": "Her süreçte hassasiyet.",
+      "elise": "Dönüşüm sağlayan hikayeler yaratmak.",
+      "lukas": "Veriye dayalı, sonuç odaklı.",
+      "camille": "Rakamlar gerçek hikayeyi anlatır.",
+      "sophie": "Cesur fikirlerin şekillendiği yer.",
+      "claire": "Büyümeniz bizim misyonumuz.",
+      "julia": "Kapılar açmak, anlaşmalar kapatmak.",
+      "marco": "İnsanları etkileyen görseller.",
+      "arjun": "Piksel mükemmelliği, her seferinde.",
+      "bilal": "Hız ve ölçek, optimize edilmiş.",
+      "rohan": "Motorun altını inşa etmek."
+    },
+    "howWeWork": {
+      "strategy": {
+        "title": "Strateji",
+        "description": "Araştırma ve performans içgörülerine dayalı net planlama."
+      },
+      "execution": {
+        "title": "Uygulama",
+        "description": "Ölçülebilir büyüme sağlayan çapraz fonksiyonel işbirliği."
+      },
+      "optimization": {
+        "title": "Optimizasyon",
+        "description": "Veri zekası ile desteklenen sürekli iyileştirme."
+      }
+    },
+    "cta": {
+      "title": "Gerçek sonuçlar sunan bir ekiple çalışmak ister misiniz?",
+      "subtitle": "Konuşalım.",
+      "button": "Bize Ulaşın"
+    }
   }
 }

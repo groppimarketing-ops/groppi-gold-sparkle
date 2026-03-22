@@ -3626,5 +3626,84 @@
         "result": "Mais de 50 vídeos por mês"
       }
     }
+  },
+  "team": {
+    "meta": {
+      "title": "Nossa Equipe — GROPPI",
+      "description": "Conheça os fundadores, a liderança e a equipe global por trás de cada estratégia, campanha e resultado na GROPPI."
+    },
+    "hero": {
+      "badge": "As Pessoas Por Trás da GROPPI",
+      "title": "Nossa Equipe",
+      "subtitle": "As pessoas por trás de cada estratégia, cada campanha, cada resultado."
+    },
+    "sections": {
+      "founders": "Fundadores",
+      "executiveLeadership": "Liderança Executiva",
+      "behindScenes": "Nos Bastidores",
+      "insideOffice": "No Nosso Escritório",
+      "whoWeAre": "Quem Somos",
+      "ourTeam": "Nossa Equipe",
+      "ourProcess": "Nosso Processo",
+      "howWeWork": "Como Trabalhamos"
+    },
+    "officeSubtitle": "Discussões reais. Decisões reais. Execução real.",
+    "roles": {
+      "ceo": "Fundador e CEO",
+      "cso": "Cofundador e Diretor de Estratégia",
+      "headOps": "Diretor de Operações Globais",
+      "dirPerformance": "Diretor de Performance",
+      "dirCreative": "Diretora Criativa e de Marca",
+      "md": "Diretor Geral",
+      "coo": "Diretor de Operações",
+      "headBrand": "Diretora de Marca e Estratégia",
+      "perfMarketing": "Gerente de Marketing de Performance",
+      "dataLead": "Líder de Dados e Analytics",
+      "creativeDir": "Diretora Criativa",
+      "clientSuccess": "Diretora de Sucesso do Cliente",
+      "bdManager": "Gerente de Desenvolvimento de Negócios",
+      "contentMedia": "Produtor de Conteúdo e Mídia",
+      "frontendDev": "Desenvolvedor Frontend Externo",
+      "techConsultant": "Consultor de Performance Técnica",
+      "backendDev": "Desenvolvedor Backend Externo"
+    },
+    "taglines": {
+      "koen": "Liderança visionária moldando o futuro do marketing de performance.",
+      "totti": "Arquiteto de crescimento estratégico por trás da expansão escalável de marcas.",
+      "mohamed": "Alinhando equipes, performance e execução em mercados globais.",
+      "lucas": "Resultados mensuráveis através de execução orientada por dados.",
+      "sofia": "Transformando estratégia em experiências de marca poderosas.",
+      "alexander": "Transformar visão em receita.",
+      "thomas": "Precisão em cada processo.",
+      "elise": "Criar histórias que convertem.",
+      "lukas": "Orientado por dados, obcecado por resultados.",
+      "camille": "Os números contam a história real.",
+      "sophie": "Onde ideias ousadas ganham forma.",
+      "claire": "Seu crescimento é nossa missão.",
+      "julia": "Abrindo portas, fechando negócios.",
+      "marco": "Visuais que emocionam.",
+      "arjun": "Pixel-perfect, sempre.",
+      "bilal": "Velocidade e escala, otimizadas.",
+      "rohan": "Construindo o motor por baixo."
+    },
+    "howWeWork": {
+      "strategy": {
+        "title": "Estratégia",
+        "description": "Planejamento claro baseado em pesquisa e insights de performance."
+      },
+      "execution": {
+        "title": "Execução",
+        "description": "Colaboração multifuncional gerando crescimento mensurável."
+      },
+      "optimization": {
+        "title": "Otimização",
+        "description": "Refinamento contínuo alimentado por inteligência de dados."
+      }
+    },
+    "cta": {
+      "title": "Quer trabalhar com uma equipe que entrega resultados reais?",
+      "subtitle": "Vamos conversar.",
+      "button": "Entre em Contato"
+    }
   }
 }

@@ -3598,5 +3598,84 @@
     "learnMore": "Mehr erfahren",
     "accept": "Akzeptieren",
     "reject": "Ablehnen"
+  },
+  "team": {
+    "meta": {
+      "title": "Unser Team — GROPPI",
+      "description": "Lernen Sie die Gründer, Führungskräfte und das globale Team hinter jeder Strategie, Kampagne und jedem Ergebnis bei GROPPI kennen."
+    },
+    "hero": {
+      "badge": "Die Menschen Hinter GROPPI",
+      "title": "Unser Team",
+      "subtitle": "Die Menschen hinter jeder Strategie, jeder Kampagne, jedem Ergebnis."
+    },
+    "sections": {
+      "founders": "Gründer",
+      "executiveLeadership": "Geschäftsführung",
+      "behindScenes": "Hinter den Kulissen",
+      "insideOffice": "In Unserem Büro",
+      "whoWeAre": "Wer Wir Sind",
+      "ourTeam": "Unser Team",
+      "ourProcess": "Unser Prozess",
+      "howWeWork": "Wie Wir Arbeiten"
+    },
+    "officeSubtitle": "Echte Gespräche. Echte Entscheidungen. Echte Umsetzung.",
+    "roles": {
+      "ceo": "Gründer & CEO",
+      "cso": "Mitgründer & Chief Strategy Officer",
+      "headOps": "Leiter Globale Operationen",
+      "dirPerformance": "Direktor Performance",
+      "dirCreative": "Direktorin Kreativ & Marke",
+      "md": "Geschäftsführer",
+      "coo": "Chief Operating Officer",
+      "headBrand": "Leiterin Marke & Strategie",
+      "perfMarketing": "Performance Marketing Manager",
+      "dataLead": "Data & Analytics Lead",
+      "creativeDir": "Creative Director",
+      "clientSuccess": "Direktorin Kundenerfolg",
+      "bdManager": "Business Development Manager",
+      "contentMedia": "Content & Media Producer",
+      "frontendDev": "Externer Frontend-Entwickler",
+      "techConsultant": "Technischer Performance-Berater",
+      "backendDev": "Externer Backend-Entwickler"
+    },
+    "taglines": {
+      "koen": "Visionäre Führung, die die Zukunft des Performance-Marketings gestaltet.",
+      "totti": "Strategischer Wachstumsarchitekt hinter skalierbarer Markenexpansion.",
+      "mohamed": "Teams, Leistung und Umsetzung auf globalen Märkten ausrichten.",
+      "lucas": "Messbare Ergebnisse durch datengesteuerte Umsetzung.",
+      "sofia": "Strategie in starke Markenerlebnisse verwandeln.",
+      "alexander": "Vision in Umsatz verwandeln.",
+      "thomas": "Präzision in jedem Prozess.",
+      "elise": "Geschichten schaffen, die konvertieren.",
+      "lukas": "Datengetrieben, ergebnisorientiert.",
+      "camille": "Zahlen erzählen die wahre Geschichte.",
+      "sophie": "Wo mutige Ideen Gestalt annehmen.",
+      "claire": "Ihr Wachstum ist unsere Mission.",
+      "julia": "Türen öffnen, Deals abschließen.",
+      "marco": "Visuals, die Menschen bewegen.",
+      "arjun": "Pixelperfekt, jedes Mal.",
+      "bilal": "Geschwindigkeit und Skalierung, optimiert.",
+      "rohan": "Den Motor unter der Haube bauen."
+    },
+    "howWeWork": {
+      "strategy": {
+        "title": "Strategie",
+        "description": "Klare Planung basierend auf Forschung und Performance-Einblicken."
+      },
+      "execution": {
+        "title": "Umsetzung",
+        "description": "Bereichsübergreifende Zusammenarbeit für messbares Wachstum."
+      },
+      "optimization": {
+        "title": "Optimierung",
+        "description": "Kontinuierliche Verfeinerung durch Datenintelligenz."
+      }
+    },
+    "cta": {
+      "title": "Möchten Sie mit einem Team arbeiten, das echte Ergebnisse liefert?",
+      "subtitle": "Lassen Sie uns reden.",
+      "button": "Kontaktieren Sie uns"
+    }
   }
 }

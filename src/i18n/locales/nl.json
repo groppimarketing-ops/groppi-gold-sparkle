@@ -3491,5 +3491,84 @@
     "learnMore": "Meer info",
     "accept": "Accepteren",
     "reject": "Weigeren"
+  },
+  "team": {
+    "meta": {
+      "title": "Ons Team — GROPPI",
+      "description": "Maak kennis met de oprichters, het leiderschap en het wereldwijde team achter elke strategie, campagne en elk resultaat bij GROPPI."
+    },
+    "hero": {
+      "badge": "De Mensen Achter GROPPI",
+      "title": "Ons Team",
+      "subtitle": "De mensen achter elke strategie, elke campagne, elk resultaat."
+    },
+    "sections": {
+      "founders": "Oprichters",
+      "executiveLeadership": "Directie",
+      "behindScenes": "Achter de Schermen",
+      "insideOffice": "In Ons Kantoor",
+      "whoWeAre": "Wie We Zijn",
+      "ourTeam": "Ons Team",
+      "ourProcess": "Ons Proces",
+      "howWeWork": "Hoe We Werken"
+    },
+    "officeSubtitle": "Echte gesprekken. Echte beslissingen. Echte uitvoering.",
+    "roles": {
+      "ceo": "Oprichter & CEO",
+      "cso": "Medeoprichter & Chief Strategy Officer",
+      "headOps": "Hoofd Wereldwijde Operaties",
+      "dirPerformance": "Directeur Performance",
+      "dirCreative": "Directeur Creatie & Merk",
+      "md": "Managing Director",
+      "coo": "Chief Operating Officer",
+      "headBrand": "Hoofd Merk & Strategie",
+      "perfMarketing": "Performance Marketing Manager",
+      "dataLead": "Data & Analytics Lead",
+      "creativeDir": "Creative Director",
+      "clientSuccess": "Directeur Klantsucces",
+      "bdManager": "Business Development Manager",
+      "contentMedia": "Content & Media Producer",
+      "frontendDev": "Externe Frontend Developer",
+      "techConsultant": "Technisch Performance Consultant",
+      "backendDev": "Externe Backend Developer"
+    },
+    "taglines": {
+      "koen": "Visionair leiderschap dat de toekomst van performance marketing vormgeeft.",
+      "totti": "Strategische groeiarchitect achter schaalbare merkuitbreiding.",
+      "mohamed": "Teams, prestaties en uitvoering op elkaar afstemmen over wereldwijde markten.",
+      "lucas": "Meetbare resultaten door datagedreven uitvoering.",
+      "sofia": "Strategie omzetten in krachtige merkervaringen.",
+      "alexander": "Visie omzetten in omzet.",
+      "thomas": "Precisie in elk proces.",
+      "elise": "Verhalen creëren die converteren.",
+      "lukas": "Datagedreven, resultaatgericht.",
+      "camille": "Cijfers vertellen het echte verhaal.",
+      "sophie": "Waar gedurfde ideeën vorm krijgen.",
+      "claire": "Jouw groei is onze missie.",
+      "julia": "Deuren openen, deals sluiten.",
+      "marco": "Beelden die mensen raken.",
+      "arjun": "Pixelperfect, elke keer.",
+      "bilal": "Snelheid en schaal, geoptimaliseerd.",
+      "rohan": "De motor onder de motorkap bouwen."
+    },
+    "howWeWork": {
+      "strategy": {
+        "title": "Strategie",
+        "description": "Duidelijke planning op basis van onderzoek en prestatie-inzichten."
+      },
+      "execution": {
+        "title": "Uitvoering",
+        "description": "Cross-functionele samenwerking die meetbare groei oplevert."
+      },
+      "optimization": {
+        "title": "Optimalisatie",
+        "description": "Continue verfijning aangedreven door data-intelligentie."
+      }
+    },
+    "cta": {
+      "title": "Wil je samenwerken met een team dat echte resultaten levert?",
+      "subtitle": "Laten we praten.",
+      "button": "Contacteer Ons"
+    }
   }
 }
