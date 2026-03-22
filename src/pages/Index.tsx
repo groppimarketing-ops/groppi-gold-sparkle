@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useRef, useState, lazy, Suspense } from 'react';
+import ChatWidget from '@/components/chat/ChatWidget';
 import { useIsMobile } from '@/hooks/use-mobile';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -102,6 +103,7 @@ const Index = () => {
       </main>
       <Footer />
       {isMobile && <MobileBottomTabs />}
+      <ChatWidget />
     </div>
   );
 };
