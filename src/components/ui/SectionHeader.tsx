@@ -25,7 +25,6 @@ const SectionHeader = memo(forwardRef<HTMLDivElement, SectionHeaderProps>(({
     <div
       ref={ref}
       className={`mb-12 md:mb-16 animate-fade-up ${centered ? 'text-center' : ''}`}
-      dir="ltr"
     >
       {subtitle && (
         <div className={`flex items-center gap-2 mb-4 ${centered ? 'justify-center' : ''}`}>

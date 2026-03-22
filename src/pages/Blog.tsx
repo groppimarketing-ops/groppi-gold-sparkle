@@ -38,7 +38,7 @@ const Blog = () => {
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.blog', 'Blog'), path: '/blog' }]} />
 
       {/* Hero Section */}
-      <section className="relative py-24 md:py-32 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
         <div className="neural-lines opacity-30" />
         
@@ -128,7 +128,7 @@ const Blog = () => {
       </section>
 
       {/* Blog Grid */}
-      <section className="py-20">
+      <section className="section-spacing">
         <div className="container mx-auto px-4">
           {!isLoading && articles.length === 0 ? (
             <div className="text-center py-20">

@@ -238,7 +238,7 @@ const Careers = () => {
       </section>
 
       {/* Open Roles Section */}
-      <section id="roles" className="py-10 md:py-20">
+      <section id="roles" className="section-spacing">
         <div className="container mx-auto px-4">
           <div className="animate-fade-up text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -287,7 +287,7 @@ const Careers = () => {
       </section>
 
       {/* Application Form Section */}
-      <section ref={formRef} className="py-10 md:py-20 bg-gradient-to-b from-transparent to-background/50">
+      <section ref={formRef} className="section-spacing bg-gradient-to-b from-transparent to-background/50">
         <div className="container mx-auto px-4">
           <div className="animate-fade-up max-w-2xl mx-auto">
             <div className="text-center mb-10">

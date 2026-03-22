@@ -88,7 +88,7 @@ const Services = () => {
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.services', 'Diensten'), path: '/services' }]} />
 
       {/* ─── Hero ─── */}
-      <section className="relative py-12 md:py-24 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
         <div className="neural-lines opacity-30" />
         <div className="container mx-auto px-4 relative z-10">
@@ -108,7 +108,7 @@ const Services = () => {
       <GoalBasedEntry onGoalSelect={handleGoalSelect} />
 
       {/* ─── Filter Tabs — CSS transitions, no framer-motion ─── */}
-      <section className="py-8 border-b border-primary/10">
+      <section className="py-10 border-b border-primary/10">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Filter className="w-5 h-5 text-muted-foreground" />
@@ -130,7 +130,7 @@ const Services = () => {
       </section>
 
       {/* ─── Services Grid ─── */}
-      <section id="services-grid" ref={servicesGridRef} className="py-24">
+      <section id="services-grid" ref={servicesGridRef} className="section-spacing">
         <div className="container mx-auto px-4">
           <div className="animate-fade-up text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">{t('services.gridTitle')}</h2>
@@ -182,7 +182,7 @@ const Services = () => {
       )}
 
       {/* ─── AI Section ─── */}
-      <section className="py-20 relative overflow-hidden">
+      <section className="section-spacing relative overflow-hidden">
         <div className="absolute inset-0 neural-bg" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="animate-fade-up max-w-4xl mx-auto">
@@ -217,7 +217,7 @@ const Services = () => {
       </section>
 
       {/* ─── Process Section ─── */}
-      <section className="py-20">
+      <section className="section-spacing">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle={t('services.process.subtitle')}
@@ -255,7 +255,7 @@ const Services = () => {
       <GeneralFAQ />
 
       {/* ─── CTA Section ─── */}
-      <section className="py-20">
+      <section className="section-spacing">
         <div className="container mx-auto px-4">
           <div className="animate-fade-up max-w-3xl mx-auto text-center">
             <GlassCard className="p-8 md:p-12" hover3D={false} glowOnHover={false}>

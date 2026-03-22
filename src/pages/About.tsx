@@ -48,7 +48,7 @@ const About = () => {
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: t('nav.about', 'Over ons'), path: '/about' }]} />
 
       {/* ─── Hero ─── */}
-      <section className="relative py-24 md:py-36 overflow-hidden">
+      <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
         {/* CSS radial pulse — replaces framer-motion animated background */}
         <div className="about-hero-glow absolute inset-0 opacity-20 pointer-events-none" />
@@ -73,7 +73,7 @@ const About = () => {
       </section>
 
       {/* ─── Who We Are ─── */}
-      <section className="py-20">
+      <section className="section-spacing">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle={t('about.whoWeAre.subtitle')}
@@ -106,7 +106,7 @@ const About = () => {
       </section>
 
       {/* ─── Our Approach ─── */}
-      <section className="py-20 relative overflow-hidden">
+      <section className="section-spacing relative overflow-hidden">
         <div className="absolute inset-0 neural-bg" />
 
         {/* CSS floating dots — replaces framer-motion animated particles */}
@@ -170,7 +170,7 @@ const About = () => {
       </section>
 
       {/* ─── Mission & Vision ─── */}
-      <section className="py-20">
+      <section className="section-spacing">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {([
@@ -195,7 +195,7 @@ const About = () => {
       </section>
 
       {/* ─── Growth & Timeline ─── */}
-      <section className="py-20 relative overflow-hidden">
+      <section className="section-spacing relative overflow-hidden">
         <div className="absolute inset-0 neural-lines opacity-20" />
 
         <div className="container mx-auto px-4 relative z-10">
@@ -245,7 +245,7 @@ const About = () => {
       </section>
 
       {/* ─── Values ─── */}
-      <section className="py-20">
+      <section className="section-spacing">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle={t('about.valuesSection.subtitle')}
@@ -281,8 +281,9 @@ const About = () => {
       </section>
 
       {/* ─── Team link ─── */}
-      <section className="pb-8">
+      <section className="py-12">
         <div className="container mx-auto px-4 text-center">
+          <div className="section-divider mb-8" />
           <p className="animate-fade-up text-muted-foreground text-lg">
             {t('about.teamLink.text', 'Meet our leadership and global team on the')}{' '}
             <LangLink to="/team" className="text-primary font-semibold hover:underline underline-offset-4 transition-colors">
@@ -294,7 +295,7 @@ const About = () => {
       </section>
 
       {/* ─── Closing CTA ─── */}
-      <section className="py-20 relative overflow-hidden">
+      <section className="section-spacing relative overflow-hidden">
         <div className="absolute inset-0 neural-bg" />
 
         <div className="container mx-auto px-4 relative z-10">

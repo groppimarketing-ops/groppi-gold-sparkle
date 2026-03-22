@@ -3491,5 +3491,84 @@
     "learnMore": "Learn more",
     "accept": "Accept",
     "reject": "Reject"
+  },
+  "team": {
+    "meta": {
+      "title": "Our Team — GROPPI",
+      "description": "Meet the founders, leadership, and global team behind every strategy, campaign, and result at GROPPI."
+    },
+    "hero": {
+      "badge": "The People Behind GROPPI",
+      "title": "Our Team",
+      "subtitle": "The people behind every strategy, every campaign, every result."
+    },
+    "sections": {
+      "founders": "Founders",
+      "executiveLeadership": "Executive Leadership",
+      "behindScenes": "Behind the Scenes",
+      "insideOffice": "Inside Our Office",
+      "whoWeAre": "Who We Are",
+      "ourTeam": "Our Team",
+      "ourProcess": "Our Process",
+      "howWeWork": "How We Work"
+    },
+    "officeSubtitle": "Real discussions. Real decisions. Real execution.",
+    "roles": {
+      "ceo": "Founder & Chief Executive Officer",
+      "cso": "Co-Founder & Chief Strategy Officer",
+      "headOps": "Head of Global Operations",
+      "dirPerformance": "Director of Performance",
+      "dirCreative": "Director of Creative & Brand",
+      "md": "Managing Director",
+      "coo": "Chief Operating Officer",
+      "headBrand": "Head of Brand & Strategy",
+      "perfMarketing": "Performance Marketing Manager",
+      "dataLead": "Data & Analytics Lead",
+      "creativeDir": "Creative Director",
+      "clientSuccess": "Client Success Director",
+      "bdManager": "Business Development Manager",
+      "contentMedia": "Content & Media Producer",
+      "frontendDev": "External Frontend Developer",
+      "techConsultant": "Technical Performance Consultant",
+      "backendDev": "External Backend Developer"
+    },
+    "taglines": {
+      "koen": "Vision-driven leadership shaping the future of performance marketing.",
+      "totti": "Strategic growth architect behind scalable brand expansion.",
+      "mohamed": "Aligning teams, performance, and execution across global markets.",
+      "lucas": "Driving measurable results through data-led execution.",
+      "sofia": "Transforming strategy into powerful brand experiences.",
+      "alexander": "Turning vision into revenue.",
+      "thomas": "Precision in every process.",
+      "elise": "Crafting stories that convert.",
+      "lukas": "Data-driven, results-obsessed.",
+      "camille": "Numbers tell the real story.",
+      "sophie": "Where bold ideas take shape.",
+      "claire": "Your growth is our mission.",
+      "julia": "Opening doors, sealing deals.",
+      "marco": "Visuals that move people.",
+      "arjun": "Pixel-perfect, every time.",
+      "bilal": "Speed and scale, optimized.",
+      "rohan": "Building the engine underneath."
+    },
+    "howWeWork": {
+      "strategy": {
+        "title": "Strategy",
+        "description": "Clear planning based on research and performance insight."
+      },
+      "execution": {
+        "title": "Execution",
+        "description": "Cross-functional collaboration delivering measurable growth."
+      },
+      "optimization": {
+        "title": "Optimization",
+        "description": "Continuous refinement powered by data intelligence."
+      }
+    },
+    "cta": {
+      "title": "Want to work with a team that delivers real results?",
+      "subtitle": "Let's talk.",
+      "button": "Contact Us"
+    }
   }
 }
