@@ -238,7 +238,7 @@ const Careers = () => {
       </section>
 
       {/* Open Roles Section */}
-      <section id="roles" className="py-10 md:py-20">
+      <section id="roles" className="section-spacing">
         <div className="container mx-auto px-4">
           <div className="animate-fade-up text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
