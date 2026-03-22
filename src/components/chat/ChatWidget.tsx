@@ -77,8 +77,9 @@ async function streamChat({
       }
     }
     onDone();
-  } catch {
-    onError('Connection failed. Please check your internet and try again.');
+  } catch (err) {
+    console.error('Chat fetch error:', err);
+    onError('Our assistant is temporarily unavailable. Please contact our team via WhatsApp or the contact form.');
   }
 }
 
