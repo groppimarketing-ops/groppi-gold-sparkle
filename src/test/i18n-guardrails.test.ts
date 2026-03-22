@@ -53,9 +53,10 @@ function isLikelyEnglish(value: string): boolean {
   if (/^\{\{.*\}\}$/.test(value)) return false;
   if (/@/.test(value)) return false;
 
-  // Remove allowed terms
+  // Remove allowed terms (longest first to avoid partial removal)
   let cleaned = value;
-  for (const term of ALLOWED_ENGLISH) {
+  const sortedTerms = [...ALLOWED_ENGLISH].sort((a, b) => b.length - a.length);
+  for (const term of sortedTerms) {
     cleaned = cleaned.split(term).join('');
   }
   cleaned = cleaned.replace(/\{\{[^}]+\}\}/g, '').trim();
