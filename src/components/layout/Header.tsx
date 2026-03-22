@@ -11,7 +11,6 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import groppiLogo from '@/assets/groppi-logo.png?format=webp&quality=90';
-import { trackEvent, socialLinks as socialUrls } from '@/utils/tracking';
 import { getCurrentLangFromPath, getBasePath, getLangPath } from '@/utils/languageRouting';
 
 const languageOptions = languages.map(lang => ({
@@ -56,11 +55,38 @@ const Header = () => {
     { path: '/contact',   label: t('nav.contact') },
   ];
 
-  // All items for mobile menu
   const allNavItems = [
-    { path: '/',          label: t('nav.home') },
+    { path: '/', label: t('nav.home') },
     ...navItems,
   ];
+
+  const changeLanguage = (code: LanguageCode) => {
+    i18n.changeLanguage(code);
+    applyDocumentDirection(code);
+    navigate(getLangPath(getBasePath(location.pathname), code));
+  };
+
+  return (
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isHidden ? '-translate-y-full' : 'translate-y-0'
+      } ${isScrolled ? 'glass-card !rounded-none border-x-0 border-t-0' : 'bg-transparent'}`}
+    >
+      <nav className="container mx-auto px-4 py-3">
+        <div className="flex items-center justify-between">
+
+          {/* Logo */}
+          <Link to={getLangPath('/', currentUrlLang)} className="flex items-center group">
+            <img
+              src={groppiLogo}
+              alt="GROPPI Digital Marketing Bureau"
+              width={90}
+              height={90}
+              className="h-[64px] md:h-[76px] lg:h-[90px] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+              fetchPriority="high"
+              decoding="sync"
+            />
+          </Link>
 
           {/* Desktop Navigation — flat nav */}
           <div className="hidden lg:flex items-center gap-1">
@@ -79,7 +105,7 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Right side — Language + CTA + Mobile toggle */}
+          {/* Right side — Language + Mobile toggle */}
           <div className="flex items-center gap-2 md:gap-3">
             {/* Language Switcher */}
             <DropdownMenu>
@@ -115,11 +141,6 @@ const Header = () => {
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
-
-            {/* Contact CTA */}
-            <Button asChild size="sm" className="hidden sm:flex luxury-button text-primary-foreground">
-              <Link to={getLangPath('/contact', currentUrlLang)}>{t('nav.contact')}</Link>
-            </Button>
 
             {/* Mobile Menu Toggle */}
             <Button
