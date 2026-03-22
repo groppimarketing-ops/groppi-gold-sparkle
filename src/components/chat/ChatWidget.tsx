@@ -1,9 +1,10 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { MessageCircle, X, Send, Calendar, Phone, Mail } from 'lucide-react';
+import { X, Send, Calendar, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { socialLinks } from '@/utils/tracking';
 import ReactMarkdown from 'react-markdown';
+import chatIcon3d from '@/assets/chat-icon-3d.png';
 
 type Msg = { role: 'user' | 'assistant'; content: string };
 
