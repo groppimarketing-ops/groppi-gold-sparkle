@@ -83,6 +83,20 @@ export function useVoiceChat({ onTranscript, lang = 'nl-BE' }: UseVoiceChatOptio
     utterance.lang = lang;
     utterance.rate = 0.95;
     utterance.pitch = 1;
+
+    // Actively select the best matching voice, preferring Belgian Dutch for nl-BE
+    const voices = window.speechSynthesis.getVoices();
+    if (voices.length > 0) {
+      // Exact lang match (e.g. nl-BE)
+      let match = voices.find(v => v.lang === lang);
+      // Fallback: same base language (e.g. nl)
+      if (!match) {
+        const base = lang.split('-')[0];
+        match = voices.find(v => v.lang.startsWith(base));
+      }
+      if (match) utterance.voice = match;
+    }
+
     utterance.onstart = () => setIsSpeaking(true);
     utterance.onend = () => setIsSpeaking(false);
     utterance.onerror = () => setIsSpeaking(false);
