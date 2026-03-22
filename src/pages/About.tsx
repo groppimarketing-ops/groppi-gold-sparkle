@@ -281,8 +281,9 @@ const About = () => {
       </section>
 
       {/* ─── Team link ─── */}
-      <section className="pb-8">
+      <section className="py-12">
         <div className="container mx-auto px-4 text-center">
+          <div className="section-divider mb-8" />
           <p className="animate-fade-up text-muted-foreground text-lg">
             {t('about.teamLink.text', 'Meet our leadership and global team on the')}{' '}
             <LangLink to="/team" className="text-primary font-semibold hover:underline underline-offset-4 transition-colors">
