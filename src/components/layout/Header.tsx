@@ -62,77 +62,13 @@ const Header = () => {
     ...navItems,
   ];
 
-  const isAboutActive = aboutDropdownItems.some(item => currentBasePath === item.path);
-
-  const changeLanguage = (code: LanguageCode) => {
-    i18n.changeLanguage(code);
-    applyDocumentDirection(code);
-    navigate(getLangPath(getBasePath(location.pathname), code));
-  };
-
-  return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isHidden ? '-translate-y-full' : 'translate-y-0'
-      } ${isScrolled ? 'glass-card !rounded-none border-x-0 border-t-0' : 'bg-transparent'}`}
-    >
-      <nav className="container mx-auto px-4 py-3">
-        <div className="flex items-center justify-between">
-
-          {/* Logo */}
-          <Link to={getLangPath('/', currentUrlLang)} className="flex items-center group">
-            <img
-              src={groppiLogo}
-              alt="GROPPI Digital Marketing Bureau"
-              width={90}
-              height={90}
-              className="h-[64px] md:h-[76px] lg:h-[90px] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
-              fetchPriority="high"
-              decoding="sync"
-            />
-          </Link>
-
-          {/* Desktop Navigation — clean 5-item nav with About dropdown */}
+          {/* Desktop Navigation — flat nav */}
           <div className="hidden lg:flex items-center gap-1">
-            {/* About dropdown (About Us, Our Team, Careers) */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button
-                  className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${
-                    isAboutActive
-                      ? 'text-primary drop-shadow-[0_0_8px_hsl(43_76%_52%/0.6)] bg-white/5 border border-primary/40 shadow-[0_0_15px_hsl(43_76%_52%/0.25)]'
-                      : 'text-foreground/70 hover:text-foreground hover:text-primary/90 hover:drop-shadow-[0_0_6px_hsl(43_76%_52%/0.3)]'
-                  }`}
-                >
-                  {t('nav.about')}
-                  <ChevronDown className="h-3 w-3 opacity-60" />
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent
-                align={isRtl ? 'end' : 'start'}
-                className="z-[100] bg-background/98 backdrop-blur-md border-primary/20 shadow-xl min-w-[180px]"
-              >
-                {aboutDropdownItems.map((item) => (
-                  <DropdownMenuItem key={item.path} asChild>
-                    <Link
-                      to={getLangPath(item.path, currentUrlLang)}
-                      className={`flex items-center gap-2 cursor-pointer px-3 py-2 ${
-                        currentBasePath === item.path ? 'bg-primary/20 text-primary font-medium' : 'hover:bg-primary/10'
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            {/* Primary nav items */}
-            {primaryNavItems.map((item) => (
+            {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={getLangPath(item.path, currentUrlLang)}
-                className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${
+                className={`relative px-3 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${
                   currentBasePath === item.path
                     ? 'text-primary drop-shadow-[0_0_8px_hsl(43_76%_52%/0.6)] bg-white/5 border border-primary/40 shadow-[0_0_15px_hsl(43_76%_52%/0.25)]'
                     : 'text-foreground/70 hover:text-foreground hover:text-primary/90 hover:drop-shadow-[0_0_6px_hsl(43_76%_52%/0.3)]'
