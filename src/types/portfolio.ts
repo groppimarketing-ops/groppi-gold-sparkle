@@ -71,16 +71,16 @@ export type Sector =
   | 'educational-academies';
 
 export const sectorLabels: Record<Sector, { nl: string; en: string }> = {
-  'restaurants-hotels': { nl: "Restaurant's & Hotel's", en: "Restaurant's & Hotel's" },
+  'restaurants-hotels': { nl: 'Restaurants & Hotels', en: 'Restaurants & Hotels' },
   'interior-architecture': { nl: 'Interieur & Architectuur', en: 'Interior & Architecture' },
-  'retail-local-shops': { nl: 'Retail & lokale winkels', en: 'Retail & local shops' },
+  'retail-local-shops': { nl: 'Retail & Lokale Winkels', en: 'Retail & Local Shops' },
   'ecommerce': { nl: 'E-commerce', en: 'E-commerce' },
-  'real-estate': { nl: 'Vastgoed', en: 'Real estate' },
+  'real-estate': { nl: 'Vastgoed', en: 'Real Estate' },
   'beauty-care': { nl: 'Beauty & Care', en: 'Beauty & Care' },
-  'local-services': { nl: 'Lokale diensten', en: 'Local services' },
-  'smes-startups': { nl: "KMO's & startups", en: 'SMEs & startups' },
-  'medical-clinics': { nl: 'Medische klinieken', en: 'Medical clinics' },
-  'educational-academies': { nl: 'Educatieve academies', en: 'Educational academies' },
+  'local-services': { nl: 'Lokale Diensten', en: 'Local Services' },
+  'smes-startups': { nl: "KMO's & Startups", en: 'SMEs & Startups' },
+  'medical-clinics': { nl: 'Medische Klinieken', en: 'Medical Clinics' },
+  'educational-academies': { nl: 'Educatieve Academies', en: 'Educational Academies' },
 };
 
 // Order for display
