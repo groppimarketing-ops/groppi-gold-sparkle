@@ -54,6 +54,7 @@ const Index = () => {
   const renderStaticContent = () => (
     <>
       <HeroSection />
+      <HeroSocialProof />
       <HomeAfterHeroWrapper>
         <PostHeroTrust />
         <Suspense fallback={<LazyFallback />}>
