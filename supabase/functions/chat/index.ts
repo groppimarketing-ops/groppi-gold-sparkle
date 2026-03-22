@@ -192,9 +192,9 @@ serve(async (req) => {
       );
     }
 
-    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
-    if (!LOVABLE_API_KEY) {
-      console.error("LOVABLE_API_KEY is not configured");
+    const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY");
+    if (!OPENAI_API_KEY) {
+      console.error("OPENAI_API_KEY is not configured");
       return new Response(
         JSON.stringify({ error: "AI service is not configured. Please contact support." }),
         { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
@@ -209,28 +209,29 @@ serve(async (req) => {
     console.log(`Chat request: lang=${detectedLang}, messages=${recentMessages.length}`);
 
     const response = await fetch(
-      "https://ai.gateway.lovable.dev/v1/chat/completions",
+      "https://api.openai.com/v1/chat/completions",
       {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${LOVABLE_API_KEY}`,
+          Authorization: `Bearer ${OPENAI_API_KEY}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "google/gemini-3-flash-preview",
+          model: "gpt-4o",
           messages: [
             { role: "system", content: buildSystemPrompt(detectedLang) },
             ...recentMessages,
           ],
           stream: true,
           temperature: 0.7,
+          max_tokens: 1024,
         }),
       }
     );
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error(`AI gateway error [${response.status}]:`, errorText);
+      console.error(`OpenAI API error [${response.status}]:`, errorText);
 
       if (response.status === 429) {
         return new Response(
@@ -238,10 +239,11 @@ serve(async (req) => {
           { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
         );
       }
-      if (response.status === 402) {
+      if (response.status === 401) {
+        console.error("OpenAI API key is invalid or expired");
         return new Response(
           JSON.stringify({ error: "Our assistant is temporarily unavailable. Please contact us directly via WhatsApp (+32 494 31 11 19) or email info@groppi.be." }),
-          { status: 402, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+          { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
         );
       }
       return new Response(
