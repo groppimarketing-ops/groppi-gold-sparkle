@@ -194,9 +194,9 @@ serve(async (req) => {
       );
     }
 
-    const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY");
-    if (!OPENAI_API_KEY) {
-      console.error("OPENAI_API_KEY is not configured");
+    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
+    if (!LOVABLE_API_KEY) {
+      console.error("LOVABLE_API_KEY is not configured");
       return new Response(
         JSON.stringify({ error: "AI service is not configured. Please contact support." }),
         { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
@@ -210,42 +210,32 @@ serve(async (req) => {
 
     console.log(`Chat request: lang=${detectedLang}, messages=${recentMessages.length}`);
 
-    const response = await fetch(
-      "https://api.openai.com/v1/chat/completions",
-      {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${OPENAI_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          model: "gpt-4o",
-          messages: [
-            { role: "system", content: buildSystemPrompt(detectedLang) },
-            ...recentMessages,
-          ],
-          stream: true,
-          temperature: 0.7,
-          max_tokens: 1024,
-        }),
-      }
-    );
+    const response = await fetch(LOVABLE_API_URL, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${LOVABLE_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "google/gemini-2.5-flash",
+        messages: [
+          { role: "system", content: buildSystemPrompt(detectedLang) },
+          ...recentMessages,
+        ],
+        stream: true,
+        temperature: 0.7,
+        max_tokens: 1024,
+      }),
+    });
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error(`OpenAI API error [${response.status}]:`, errorText);
+      console.error(`AI API error [${response.status}]:`, errorText);
 
       if (response.status === 429) {
         return new Response(
           JSON.stringify({ error: "We're receiving a lot of messages right now. Please try again in a moment! 🙏" }),
           { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
-        );
-      }
-      if (response.status === 401) {
-        console.error("OpenAI API key is invalid or expired");
-        return new Response(
-          JSON.stringify({ error: "Our assistant is temporarily unavailable. Please contact us directly via WhatsApp (+32 494 31 11 19) or email info@groppi.be." }),
-          { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
         );
       }
       return new Response(
