@@ -103,6 +103,7 @@ const Index = () => {
       </main>
       <Footer />
       {isMobile && <MobileBottomTabs />}
+      <ChatWidget />
     </div>
   );
 };
