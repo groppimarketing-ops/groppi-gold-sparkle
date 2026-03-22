@@ -1,6 +1,8 @@
 import { memo, useRef, useEffect, useState, useCallback } from 'react';
-import { socialIconsData } from '@/components/shared/SocialIconsPill';
-import { trackEvent } from '@/utils/tracking';
+import { useTranslation } from 'react-i18next';
+import { ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import LangLink from '@/components/LangLink';
 
 interface HeroCard { src: string; label: string }
 
@@ -45,9 +47,6 @@ function useUserInteracted(): boolean {
  * LazyVideo — loads video ONLY when:
  *   1. User has interacted (scroll / pointer / touch / key), AND
  *   2. The card enters the viewport (IntersectionObserver).
- *
- * Until interaction: card stays at gold placeholder — zero network cost.
- * After interaction: IO fires as normal with rootMargin:'50px'.
  */
 const LazyVideo = memo(({ src, label, interacted }: HeroCard & { interacted: boolean }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -59,20 +58,19 @@ const LazyVideo = memo(({ src, label, interacted }: HeroCard & { interacted: boo
   const startLoad = useCallback(() => {
     const video  = videoRef.current;
     const source = sourceRef.current;
-    if (!video || !source || source.src) return; // already loaded
+    if (!video || !source || source.src) return;
 
     source.src = src;
     video.load();
 
     const onCanPlay = () => {
       setReady(true);
-      video.play().catch(() => { /* autoplay blocked — silent */ });
+      video.play().catch(() => {});
       video.removeEventListener('canplay', onCanPlay);
     };
     video.addEventListener('canplay', onCanPlay);
   }, [src]);
 
-  // Wire up IntersectionObserver only after first interaction
   useEffect(() => {
     if (!interacted) return;
 
@@ -94,7 +92,6 @@ const LazyVideo = memo(({ src, label, interacted }: HeroCard & { interacted: boo
 
   return (
     <div ref={containerRef} className="groppi-card" style={{ position: 'relative' }}>
-      {/* Gold placeholder — visible until video is ready */}
       <div
         className="absolute inset-0 flex flex-col items-center justify-center gap-2"
         style={{
@@ -112,7 +109,6 @@ const LazyVideo = memo(({ src, label, interacted }: HeroCard & { interacted: boo
         <div style={{ width: 24, height: 1, background: 'hsl(43 76% 52%)', borderRadius: 1, opacity: 0.4 }} />
       </div>
 
-      {/* Video — src injected only after interaction + intersection */}
       <video
         ref={videoRef}
         muted loop playsInline
@@ -129,8 +125,6 @@ LazyVideo.displayName = 'LazyVideo';
 
 /**
  * HeroBgVideo — background video on desktop.
- * Defers ALL network activity until first user interaction.
- * Before that: only the poster image is shown (already preloaded in index.html as WebP).
  */
 const HeroBgVideo = memo(({ interacted }: { interacted: boolean }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -142,7 +136,6 @@ const HeroBgVideo = memo(({ interacted }: { interacted: boolean }) => {
     const video = videoRef.current;
     if (!video) return;
 
-    // Inject source + trigger load only after interaction
     const source = document.createElement('source');
     source.src  = '/videos/hero-bg.mp4';
     source.type = 'video/mp4';
@@ -164,74 +157,21 @@ const HeroBgVideo = memo(({ interacted }: { interacted: boolean }) => {
 });
 HeroBgVideo.displayName = 'HeroBgVideo';
 
-const HeroSocialIcons = memo(() => (
-  <div
-    className="absolute bottom-3 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2 md:gap-16 px-3 md:px-16 py-2 md:py-4 rounded-full"
-    style={{
-      background: 'rgba(0, 0, 0, 0.55)',
-      border: '1.5px solid hsl(43 76% 52% / 0.45)',
-      backdropFilter: 'blur(20px)',
-      boxShadow: '0 8px 32px rgba(0,0,0,0.5), 0 0 24px hsl(43 76% 52% / 0.12)',
-    }}
-  >
-    {socialIconsData.map((social) => (
-      <a
-        key={social.label}
-        href={social.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={social.ariaLabel}
-        onClick={() => trackEvent({ event: social.event, location: 'hero' })}
-        className="hero-social-icon relative flex items-center justify-center w-8 h-8 md:w-12 md:h-12 rounded-xl transition-transform duration-200 hover:scale-125 hover:-translate-y-1 active:scale-90"
-        style={{
-          background: 'hsl(0 0% 4%)',
-          border: '1.5px solid hsl(43 76% 52% / 0.5)',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.4), inset 0 1px 0 hsl(43 76% 52% / 0.1)',
-        }}
-      >
-        <span style={{ color: 'hsl(43 76% 52%)' }}><social.icon className="h-4 w-4 md:h-5 md:w-5 relative z-[1]" /></span>
-      </a>
-    ))}
-  </div>
-));
-HeroSocialIcons.displayName = 'HeroSocialIcons';
-
 const HeroSection = memo(() => {
   const interacted = useUserInteracted();
+  const { t } = useTranslation();
 
   return (
     <section className="groppi-hero-pro" aria-labelledby="hero-heading">
-      {/* Screen-reader-only H1 for homepage SEO — visible H1 is the brand name */}
-      <h1 id="hero-heading" className="sr-only">
-        GROPPI Digital Marketing Bureau — Social Media, SEO, Webdesign &amp; Advertenties in België
-      </h1>
-      {/*
-        Desktop: background video — deferred until first interaction.
-        Poster image (preloaded in index.html) covers the gap seamlessly.
-      */}
       <HeroBgVideo interacted={interacted} />
 
-      {/*
-        Mobile: <picture> with WebP source + PNG fallback.
-        WebP URL matches the <link rel="preload"> in index.html exactly
-        → browser reuses the preloaded asset, ZERO duplicate network request.
-        fetchpriority="high" + decoding="sync" for fastest LCP.
-      */}
-      {/*
-        Mobile: portrait-optimised WebP (390×844) served to ≤767px screens.
-        Desktop: wider landscape WebP served to ≥768px screens.
-        fetchpriority="high" + decoding="sync" for fastest LCP.
-        Both images are preloaded in index.html so the browser reuses them — zero duplicate requests.
-      */}
       <picture className="groppi-bg md:hidden">
-        {/* Mobile-specific portrait crop — much smaller file, correct aspect for phones */}
         <source
           srcSet="/images/hero-poster-mobile.webp 390w, /images/hero-poster.webp 768w"
           sizes="(max-width: 767px) 390px, 768px"
           type="image/webp"
           media="(max-width: 767px)"
         />
-        {/* WebP fallback for slightly wider viewports */}
         <source srcSet="/images/hero-poster.webp" type="image/webp" />
         <img
           src="/images/hero-poster.png"
@@ -247,6 +187,51 @@ const HeroSection = memo(() => {
 
       <div className="groppi-overlay" />
 
+      {/* Hero Content — headline, subheadline, CTA */}
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4 pointer-events-none">
+        <div className="pointer-events-auto max-w-3xl mx-auto mb-20 md:mb-28 animate-fade-up">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 text-xs font-semibold uppercase tracking-[0.15em]"
+            style={{
+              background: 'hsl(43 76% 52% / 0.12)',
+              border: '1px solid hsl(43 76% 52% / 0.3)',
+              color: 'hsl(43 76% 62%)',
+            }}
+          >
+            {t('home.heroNew.badge', 'Structure. Content. Growth.')}
+          </div>
+
+          {/* Headline */}
+          <h1
+            id="hero-heading"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-5 gold-shimmer-text"
+          >
+            {t('home.heroNew.headline', 'We build your digital foundation — and scale your growth.')}
+          </h1>
+
+          {/* Subheadline */}
+          <p className="text-base sm:text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-8 leading-relaxed">
+            {t('home.heroNew.subtitle', 'We help Belgian businesses grow with a clear approach: strategy, branding and performance — without wasted budgets or vague promises.')}
+          </p>
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <Button asChild size="lg" className="luxury-button text-primary-foreground px-8 py-3 text-base font-semibold">
+              <LangLink to="/services">
+                {t('home.heroNew.ctaPrimary', 'View services & pricing')}
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </LangLink>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-primary/40 text-primary hover:bg-primary/10 px-8 py-3 text-base font-semibold">
+              <LangLink to="/contact">
+                {t('home.heroNew.ctaSecondary', 'Request a quote')}
+              </LangLink>
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Service card strip */}
       <div className="groppi-strip-wrap">
         <div className="groppi-strip-track">
           {HERO_CARDS.map((card, i) => (
@@ -257,8 +242,6 @@ const HeroSection = memo(() => {
           ))}
         </div>
       </div>
-
-      <HeroSocialIcons />
     </section>
   );
 });
