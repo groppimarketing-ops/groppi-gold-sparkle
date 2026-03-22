@@ -1024,14 +1024,19 @@
   @media (max-width: 768px) {
     /* 1) HERO — ارتفاع يسع الكروت + social icons معاً */
     .groppi-hero-pro {
-      height: 60vh;
-      min-height: 360px;
+      height: auto;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
 
-    /* strip في المنتصف الصحيح */
+    /* strip pinned to bottom on mobile */
     .groppi-strip-wrap {
-      top: 50%;
-      transform: translateY(-50%);
+      position: relative;
+      top: auto;
+      transform: none;
+      padding-bottom: 1rem;
     }
 
     /* كروت الـ Hero — أصغر على موبايل */
