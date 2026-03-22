@@ -1,5 +1,12 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 
+declare global {
+  interface Window {
+    SpeechRecognition: typeof SpeechRecognition;
+    webkitSpeechRecognition: typeof SpeechRecognition;
+  }
+}
+
 interface UseVoiceChatOptions {
   onTranscript: (text: string) => void;
   lang?: string;
