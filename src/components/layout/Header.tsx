@@ -45,26 +45,21 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Grouped nav: 5 primary items + About dropdown
-  const aboutDropdownItems = [
-    { path: '/about',   label: t('nav.about') },
-    { path: '/team',    label: t('nav.team', 'Our Team') },
-    { path: '/careers', label: t('nav.careers') },
-  ];
-
-  const primaryNavItems = [
+  const navItems = [
+    { path: '/about',     label: t('nav.about') },
+    { path: '/team',      label: t('nav.team', 'Our Team') },
     { path: '/services',  label: t('nav.services') },
     { path: '/gallery',   label: t('nav.gallery') },
     { path: '/blog',      label: t('nav.blog') },
+    { path: '/careers',   label: t('nav.careers') },
     { path: '/franchise', label: t('nav.franchise') },
+    { path: '/contact',   label: t('nav.contact') },
   ];
 
   // All items for mobile menu
   const allNavItems = [
     { path: '/',          label: t('nav.home') },
-    ...aboutDropdownItems,
-    ...primaryNavItems,
-    { path: '/contact',   label: t('nav.contact') },
+    ...navItems,
   ];
 
   const isAboutActive = aboutDropdownItems.some(item => currentBasePath === item.path);
