@@ -814,6 +814,18 @@
       "description": "Erzählen Sie uns Ihre Situation. Wir kommen mit einem Plan zurück — unverbindlich.",
       "contact": "Kontakt aufnehmen",
       "whatsapp": "Chat per WhatsApp"
+    },
+    "socialProof": {
+      "metrics": {
+        "clients": "Zufriedene Kunden",
+        "countries": "Länder bedient",
+        "growth": "Durchschn. Wachstum",
+        "rating": "Kundenbewertung"
+      },
+      "testimonial": {
+        "quote": "GROPPI hat unsere Online-Präsenz transformiert. Innerhalb von 3 Monaten haben sich unsere Leads verdreifacht.",
+        "author": "Restaurantbesitzer, Brüssel"
+      }
     }
   },
   "about": {

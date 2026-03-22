@@ -694,6 +694,18 @@
       "description": "İşletmenizin işe yarayan bir stratejiyle büyümesine nasıl yardımcı olabileceğimizi birlikte tartışalım.",
       "contact": "İletişime geçin",
       "whatsapp": "WhatsApp üzerinden sohbet edin"
+    },
+    "socialProof": {
+      "metrics": {
+        "clients": "Mutlu müşteri",
+        "countries": "Hizmet verilen ülke",
+        "growth": "Ortalama büyüme",
+        "rating": "Müşteri puanı"
+      },
+      "testimonial": {
+        "quote": "GROPPI çevrimiçi varlığımızı dönüştürdü. 3 ay içinde potansiyel müşterilerimiz üç katına çıktı.",
+        "author": "Restoran Sahibi, Brüksel"
+      }
     }
   },
   "hero": {

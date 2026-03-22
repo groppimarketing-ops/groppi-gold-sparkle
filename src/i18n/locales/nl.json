@@ -798,6 +798,18 @@
       "description": "Vertel ons je situatie. Wij komen terug met een plan dat past bij jouw bedrijf — zonder verplichtingen.",
       "contact": "Neem contact op",
       "whatsapp": "Stuur een bericht via WhatsApp"
+    },
+    "socialProof": {
+      "metrics": {
+        "clients": "Tevreden klanten",
+        "countries": "Landen bediend",
+        "growth": "Gemiddelde groei",
+        "rating": "Klantbeoordeling"
+      },
+      "testimonial": {
+        "quote": "GROPPI heeft onze online aanwezigheid getransformeerd. Binnen 3 maanden zijn onze leads verdrievoudigd en ziet ons merk er eindelijk premium uit.",
+        "author": "Restauranteigenaar, Brussel"
+      }
     }
   },
   "about": {

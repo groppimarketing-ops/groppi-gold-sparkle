@@ -878,6 +878,18 @@
       "description": "Cuéntanos tu situación. Respondemos con un plan que se adapta a tu negocio — sin compromiso.",
       "contact": "Contáctanos",
       "whatsapp": "Chat por WhatsApp"
+    },
+    "socialProof": {
+      "metrics": {
+        "clients": "Clientes satisfechos",
+        "countries": "Países atendidos",
+        "growth": "Crecimiento promedio",
+        "rating": "Valoración"
+      },
+      "testimonial": {
+        "quote": "GROPPI transformó nuestra presencia online. En 3 meses, nuestros leads se triplicaron y nuestra marca finalmente luce premium.",
+        "author": "Propietario de restaurante, Bruselas"
+      }
     }
   },
   "about": {

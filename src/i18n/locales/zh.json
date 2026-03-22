@@ -818,6 +818,18 @@
       "description": "告诉我们您的情况。我们将制定适合您企业的计划 — 无义务。",
       "contact": "联系我们",
       "whatsapp": "通过WhatsApp聊天"
+    },
+    "socialProof": {
+      "metrics": {
+        "clients": "满意客户",
+        "countries": "服务国家",
+        "growth": "平均增长",
+        "rating": "客户评分"
+      },
+      "testimonial": {
+        "quote": "GROPPI改变了我们的线上形象。3个月内，我们的潜在客户翻了三倍，品牌终于看起来高端了。",
+        "author": "餐厅老板，布鲁塞尔"
+      }
     }
   },
   "about": {

@@ -798,6 +798,18 @@
       "description": "Let's discuss together how we can help your business grow with a strategy that works.",
       "contact": "Get in touch",
       "whatsapp": "Chat via WhatsApp"
+    },
+    "socialProof": {
+      "metrics": {
+        "clients": "Happy clients",
+        "countries": "Countries served",
+        "growth": "Average growth",
+        "rating": "Client rating"
+      },
+      "testimonial": {
+        "quote": "GROPPI transformed our online presence. Within 3 months, our leads tripled and our brand finally looks as premium as our service.",
+        "author": "Restaurant Owner, Brussels"
+      }
     }
   },
   "about": {

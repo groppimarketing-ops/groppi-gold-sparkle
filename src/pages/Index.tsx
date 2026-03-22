@@ -6,6 +6,7 @@ import Footer from '@/components/layout/Footer';
 import MobileHeader from '@/components/mobile/MobileHeader';
 import MobileBottomTabs from '@/components/mobile/MobileBottomTabs';
 import HeroSection from '@/components/home/HeroSection';
+import HeroSocialProof from '@/components/home/HeroSocialProof';
 import PostHeroTrust from '@/components/home/PostHeroTrust';
 import HomeAfterHeroWrapper from '@/components/home/HomeAfterHeroWrapper';
 import DynamicSection from '@/components/sections/DynamicSection';
@@ -53,6 +54,7 @@ const Index = () => {
   const renderStaticContent = () => (
     <>
       <HeroSection />
+      <HeroSocialProof />
       <HomeAfterHeroWrapper>
         <PostHeroTrust />
         <Suspense fallback={<LazyFallback />}>

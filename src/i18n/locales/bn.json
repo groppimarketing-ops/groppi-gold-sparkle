@@ -738,6 +738,18 @@
         "startups": "SaaS ও স্টার্টআপ",
         "professionalServices": "পেশাদার সেবা"
       }
+    },
+    "socialProof": {
+      "metrics": {
+        "clients": "সন্তুষ্ট ক্লায়েন্ট",
+        "countries": "দেশে সেবা",
+        "growth": "গড় বৃদ্ধি",
+        "rating": "ক্লায়েন্ট রেটিং"
+      },
+      "testimonial": {
+        "quote": "GROPPI আমাদের অনলাইন উপস্থিতি পরিবর্তন করেছে। ৩ মাসের মধ্যে আমাদের লিড তিনগুণ বেড়েছে।",
+        "author": "রেস্তোরাঁর মালিক, ব্রাসেলস"
+      }
     }
   },
   "pricing": {

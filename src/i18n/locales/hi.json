@@ -701,6 +701,18 @@
         "startups": "SaaS और स्टार्टअप",
         "professionalServices": "पेशेवर सेवाएं"
       }
+    },
+    "socialProof": {
+      "metrics": {
+        "clients": "खुश ग्राहक",
+        "countries": "देशों में सेवा",
+        "growth": "औसत वृद्धि",
+        "rating": "ग्राहक रेटिंग"
+      },
+      "testimonial": {
+        "quote": "GROPPI ने हमारी ऑनलाइन उपस्थिति बदल दी। 3 महीने में हमारी लीड्स तीन गुना बढ़ गईं।",
+        "author": "रेस्तरां मालिक, ब्रसेल्स"
+      }
     }
   },
   "gallery": {
