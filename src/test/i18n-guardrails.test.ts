@@ -9,7 +9,7 @@ const EN_PATH = path.join(LOCALES_DIR, 'en.json');
 const ALLOWED_ENGLISH = new Set([
   'GROPPI', 'SEO', 'CMS', 'API', 'CRO', 'SEA', 'SEM', 'PPC', 'ROI', 'CTA',
   'UX', 'UI', 'HTML', 'CSS', 'B2B', 'B2C', 'KPI', 'URL', 'SSL', 'HTTPS',
-  'Google', 'Facebook', 'Instagram', 'TikTok', 'LinkedIn', 'WhatsApp', 'YouTube',
+  'Google', 'Google Business', 'Facebook', 'Instagram', 'TikTok', 'LinkedIn', 'WhatsApp', 'YouTube',
   'WordPress', 'Shopify', 'WooCommerce', 'Analytics', 'Ads', 'Maps',
   'E-commerce', 'e-commerce', 'AI', 'SaaS', 'PDF', 'FAQ', 'OK', 'Email',
   'email', 'online', 'Online', 'website', 'Website', 'marketing', 'Marketing',
