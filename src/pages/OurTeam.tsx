@@ -110,7 +110,7 @@ const FounderCard = ({ person, index, t }: { person: Person; index: number; t: a
 );
 
 /** Executive card — medium size */
-const ExecCard = ({ person, index, large, t }: { person: Person; index: number; large?: boolean; t: (key: string, fallback?: string) => string }) => (
+const ExecCard = ({ person, index, large, t }: { person: Person; index: number; large?: boolean; t: any }) => (
   <div className={`animate-fade-up-${Math.min(index + 1, 10)} group`}>
     <div className="glass-card border border-primary/10 hover:border-primary/40 rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-[0_8px_40px_hsl(43_100%_50%/0.12)]">
       <div className={`relative ${large ? 'aspect-[3/4]' : 'aspect-[4/5]'} bg-gradient-to-b from-primary/[0.04] to-background flex items-center justify-center overflow-hidden`}>
