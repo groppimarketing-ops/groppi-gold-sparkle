@@ -997,13 +997,13 @@
       },
       "stats": {
         "experience": "anni di esperienza",
-        "focus": "BE + UE + Worldwide",
+        "focus": "Belgio, Europa e oltre",
         "system": "struttura invece di caos",
         "premium": "branding + prestazioni"
       },
       "microNote": "*I risultati variano per settore e budget. Costruiamo sistemi scalabili.",
       "statsValues": {
-        "focus": "BE + EU + Worldwide",
+        "focus": "7 Paesi",
         "system": "System-driven",
         "premium": "Premium"
       }
@@ -2234,7 +2234,8 @@
     "emailLabel": "Email",
     "landline": "Fisso",
     "mobile": "Cellulare",
-    "rateLimited": "Troppe richieste. Riprova più tardi."
+    "rateLimited": "Troppe richieste. Riprova più tardi.",
+    "formHeading": "Inviaci un messaggio"
   },
   "franchise": {
     "title": "Franchising",

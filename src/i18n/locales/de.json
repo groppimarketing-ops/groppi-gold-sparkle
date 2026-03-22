@@ -576,12 +576,12 @@
       },
       "stats": {
         "experience": "Jahre Erfahrung",
-        "focus": "BE + EU + Weltweit",
+        "focus": "Belgien, Europa & weltweit",
         "system": "kein Chaos, sondern Struktur",
         "premium": "Branding + Performance"
       },
       "statsValues": {
-        "focus": "BE + EU + Weltweit",
+        "focus": "7 Länder",
         "system": "Systemgestützt",
         "premium": "Premium"
       },
@@ -1494,7 +1494,8 @@
     "emailLabel": "E-Mail",
     "landline": "Festnetz",
     "mobile": "Mobil",
-    "rateLimited": "Zu viele Anfragen. Bitte versuchen Sie es später erneut."
+    "rateLimited": "Zu viele Anfragen. Bitte versuchen Sie es später erneut.",
+    "formHeading": "Schreiben Sie uns"
   },
   "franchise": {
     "title": "Franchise",

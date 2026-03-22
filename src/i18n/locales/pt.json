@@ -640,12 +640,12 @@
       },
       "stats": {
         "experience": "anos de experiência",
-        "focus": "BE + UE + Mundial",
+        "focus": "Bélgica, Europa e além",
         "system": "sem caos, com estrutura",
         "premium": "branding + performance"
       },
       "statsValues": {
-        "focus": "BE + UE + Mundial",
+        "focus": "7 Países",
         "system": "Baseado em sistemas",
         "premium": "Premium"
       },
@@ -1656,7 +1656,8 @@
     "emailLabel": "Email",
     "landline": "Telefone fixo",
     "mobile": "Telemóvel",
-    "rateLimited": "Demasiados pedidos. Por favor tente novamente mais tarde."
+    "rateLimited": "Demasiados pedidos. Por favor tente novamente mais tarde.",
+    "formHeading": "Envie-nos uma mensagem"
   },
   "planBuilder": {
     "tab": "Construir o seu plano",

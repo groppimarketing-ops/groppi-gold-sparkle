@@ -561,12 +561,12 @@
       },
       "stats": {
         "experience": "yıl deneyim",
-        "focus": "BE + AB + Dünya",
+        "focus": "Belçika, Avrupa ve dünya",
         "system": "kaos yok, yapı var",
         "premium": "markalaşma + performans"
       },
       "statsValues": {
-        "focus": "BE + AB + Dünya",
+        "focus": "7 Ülke",
         "system": "Sistem odaklı",
         "premium": "Premium"
       },
@@ -1408,7 +1408,8 @@
     "emailLabel": "E-posta",
     "landline": "Sabit Hat",
     "mobile": "Mobil",
-    "rateLimited": "Çok fazla istek. Lütfen daha sonra tekrar deneyin."
+    "rateLimited": "Çok fazla istek. Lütfen daha sonra tekrar deneyin.",
+    "formHeading": "Bize mesaj gönderin"
   },
   "franchise": {
     "title": "Franchise",

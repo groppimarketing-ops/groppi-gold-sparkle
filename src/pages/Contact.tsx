@@ -189,7 +189,7 @@ const Contact = () => {
                   <Sparkles className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="text-2xl font-bold gold-gradient-text">
-                  {t('contact.send')}
+                  {t('contact.formHeading', 'Send us a message')}
                 </h3>
               </div>
               

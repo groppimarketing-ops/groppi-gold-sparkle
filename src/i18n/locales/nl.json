@@ -560,12 +560,12 @@
       },
       "stats": {
         "experience": "jaar ervaring",
-        "focus": "BE + EU + Wereldwijd",
+        "focus": "België, Europa & wereldwijd",
         "system": "geen chaos, wél structuur",
         "premium": "branding + prestaties"
       },
       "statsValues": {
-        "focus": "BE + EU + Wereldwijd",
+        "focus": "7 Landen",
         "system": "Systeemgestuurd",
         "premium": "Premium"
       },
@@ -2223,7 +2223,8 @@
     "emailLabel": "E-mail",
     "landline": "Vaste lijn",
     "mobile": "Mobiel",
-    "rateLimited": "Te veel aanvragen. Probeer het later opnieuw."
+    "rateLimited": "Te veel aanvragen. Probeer het later opnieuw.",
+    "formHeading": "Stuur ons een bericht"
   },
   "franchise": {
     "title": "Partnernetwerk",

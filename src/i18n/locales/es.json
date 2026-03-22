@@ -640,12 +640,12 @@
       },
       "stats": {
         "experience": "años de experiencia",
-        "focus": "BE + EU + Mundial",
+        "focus": "Bélgica, Europa y el mundo",
         "system": "sin caos, sí estructura",
         "premium": "branding + rendimiento"
       },
       "statsValues": {
-        "focus": "BE + EU + Mundial",
+        "focus": "7 Países",
         "system": "Basado en sistemas",
         "premium": "Calidad premium"
       },
@@ -2358,7 +2358,8 @@
     "sending": "Enviando...",
     "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto lo antes posible.",
     "error": "Algo salió mal. Por favor, inténtelo de nuevo o contáctenos por teléfono.",
-    "address": "Dirección"
+    "address": "Dirección",
+    "formHeading": "Envíenos un mensaje"
   },
   "servicePage": {
     "defaultDescription": "{{service}} — Servicio profesional de GROPPI Marketing Bureau.",

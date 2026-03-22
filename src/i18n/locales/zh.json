@@ -580,12 +580,12 @@
       },
       "stats": {
         "experience": "年经验",
-        "focus": "BE + EU + 全球",
+        "focus": "比利时、欧洲及全球",
         "system": "无混乱，有结构",
         "premium": "品牌 + 绩效"
       },
       "statsValues": {
-        "focus": "BE + EU + 全球",
+        "focus": "7个国家",
         "system": "系统驱动",
         "premium": "优质"
       },
@@ -2272,7 +2272,8 @@
       "email": "直接电子邮件",
       "phone": "直接电话",
       "whatsapp": "WhatsApp"
-    }
+    },
+    "formHeading": "给我们留言"
   },
   "franchise": {
     "title": "特许经营",

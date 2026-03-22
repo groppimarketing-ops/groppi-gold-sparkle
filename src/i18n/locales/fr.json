@@ -1002,12 +1002,12 @@
       },
       "stats": {
         "experience": "ans d'expérience",
-        "focus": "BE + UE + Mondial",
+        "focus": "Belgique, Europe et au-delà",
         "system": "structure plutôt que chaos",
         "premium": "image de marque + performance"
       },
       "statsValues": {
-        "focus": "BE + UE + Mondial",
+        "focus": "7 Pays",
         "system": "Systémique",
         "premium": "Premium"
       },
@@ -2239,7 +2239,8 @@
     "emailLabel": "E-mail",
     "landline": "Téléphone fixe",
     "mobile": "Mobile",
-    "rateLimited": "Trop de requêtes. Veuillez réessayer plus tard."
+    "rateLimited": "Trop de requêtes. Veuillez réessayer plus tard.",
+    "formHeading": "Envoyez-nous un message"
   },
   "franchise": {
     "title": "Partenariat",
