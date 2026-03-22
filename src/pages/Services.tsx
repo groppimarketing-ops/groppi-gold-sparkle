@@ -217,7 +217,7 @@ const Services = () => {
       </section>
 
       {/* ─── Process Section ─── */}
-      <section className="py-20">
+      <section className="section-spacing">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle={t('services.process.subtitle')}
