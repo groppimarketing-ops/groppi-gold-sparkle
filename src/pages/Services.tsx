@@ -182,7 +182,7 @@ const Services = () => {
       )}
 
       {/* ─── AI Section ─── */}
-      <section className="py-20 relative overflow-hidden">
+      <section className="section-spacing relative overflow-hidden">
         <div className="absolute inset-0 neural-bg" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="animate-fade-up max-w-4xl mx-auto">
